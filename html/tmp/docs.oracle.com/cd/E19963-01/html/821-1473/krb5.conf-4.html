@@ -1,0 +1,973 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 4: File Formats</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section outlines the formats of various files including the C structure declarations where applicable. The headers containing  these structure declarations are generally found in the directories  /usr/include or /usr/include/sys.In the pages that outline the various library structures, both public  and private interfaces are listed. A public interface provides a stable,  committed set of symbols for application development. Private interfaces  are for internal use only, and may change at any time. This section is for software engineers.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1473";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 4: File Formats </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1473.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN4 (821-1473-06)&body=Page: krb5.conf-4.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-39.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-196.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-220.html">File Formats</a></p>
+<p class="toc level2"><a href="addresses-4.html"><tt>addresses</tt>(4)</a></p>
+<p class="toc level2"><a href="admin-4.html"><tt>admin</tt>(4)</a></p>
+<p class="toc level2"><a href="alias-4.html"><tt>alias</tt>(4)</a></p>
+<p class="toc level2"><a href="aliases-4.html"><tt>aliases</tt>(4)</a></p>
+<p class="toc level2"><a href="a.out-4.html"><tt>a.out</tt>(4)</a></p>
+<p class="toc level2"><a href="au-4.html"><tt>au</tt>(4)</a></p>
+<p class="toc level2"><a href="audit-class-4.html"><tt>audit_class</tt>(4)</a></p>
+<p class="toc level2"><a href="audit-event-4.html"><tt>audit_event</tt>(4)</a></p>
+<p class="toc level2"><a href="audit.log-4.html"><tt>audit.log</tt>(4)</a></p>
+<p class="toc level2"><a href="auth-attr-4.html"><tt>auth_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="autofs-4.html"><tt>autofs</tt>(4)</a></p>
+<p class="toc level2"><a href="bart-manifest-4.html"><tt>bart_manifest</tt>(4)</a></p>
+<p class="toc level2"><a href="bart-rules-4.html"><tt>bart_rules</tt>(4)</a></p>
+<p class="toc level2"><a href="bootparams-4.html"><tt>bootparams</tt>(4)</a></p>
+<p class="toc level2"><a href="cardbus-4.html"><tt>cardbus</tt>(4)</a></p>
+<p class="toc level2"><a href="cdtoc-4.html"><tt>cdtoc</tt>(4)</a></p>
+<p class="toc level2"><a href="clustertoc-4.html"><tt>clustertoc</tt>(4)</a></p>
+<p class="toc level2"><a href="compver-4.html"><tt>compver</tt>(4)</a></p>
+<p class="toc level2"><a href="contents-4.html"><tt>contents</tt>(4)</a></p>
+<p class="toc level2"><a href="contract-4.html"><tt>contract</tt>(4)</a></p>
+<p class="toc level2"><a href="copyright-4.html"><tt>copyright</tt>(4)</a></p>
+<p class="toc level2"><a href="core-4.html"><tt>core</tt>(4)</a></p>
+<p class="toc level2"><a href="crypt.conf-4.html"><tt>crypt.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="crypto-certs-4.html"><tt>crypto_certs</tt>(4)</a></p>
+<p class="toc level2"><a href="dacf.conf-4.html"><tt>dacf.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="dat.conf-4.html"><tt>dat.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="defaultdomain-4.html"><tt>defaultdomain</tt>(4)</a></p>
+<p class="toc level2"><a href="default-fs-4.html"><tt>default_fs</tt>(4)</a></p>
+<p class="toc level2"><a href="defaultrouter-4.html"><tt>defaultrouter</tt>(4)</a></p>
+<p class="toc level2"><a href="depend-4.html"><tt>depend</tt>(4)</a></p>
+<p class="toc level2"><a href="device-allocate-4.html"><tt>device_allocate</tt>(4)</a></p>
+<p class="toc level2"><a href="device-contract-4.html"><tt>device_contract</tt>(4)</a></p>
+<p class="toc level2"><a href="device-maps-4.html"><tt>device_maps</tt>(4)</a></p>
+<p class="toc level2"><a href="devices-4.html"><tt>devices</tt>(4)</a></p>
+<p class="toc level2"><a href="devid-cache-4.html"><tt>devid_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="devname-cache-4.html"><tt>devname_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="dfstab-4.html"><tt>dfstab</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcp-inittab-4.html"><tt>dhcp_inittab</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcp-network-4.html"><tt>dhcp_network</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcpsvc.conf-4.html"><tt>dhcpsvc.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcptab-4.html"><tt>dhcptab</tt>(4)</a></p>
+<p class="toc level2"><a href="dialups-4.html"><tt>dialups</tt>(4)</a></p>
+<p class="toc level2"><a href="dir-4.html"><tt>dir</tt>(4)</a></p>
+<p class="toc level2"><a href="dir-ufs-4.html"><tt>dir_ufs</tt>(4)</a></p>
+<p class="toc level2"><a href="d-passwd-4.html"><tt>d_passwd</tt>(4)</a></p>
+<p class="toc level2"><a href="driver.conf-4.html"><tt>driver.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ds.log-4.html"><tt>ds.log</tt>(4)</a></p>
+<p class="toc level2"><a href="dumpdates-4.html"><tt>dumpdates</tt>(4)</a></p>
+<p class="toc level2"><a href="ethers-4.html"><tt>ethers</tt>(4)</a></p>
+<p class="toc level2"><a href="exec-attr-4.html"><tt>exec_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="fbtab-4.html"><tt>fbtab</tt>(4)</a></p>
+<p class="toc level2"><a href="fd-4.html"><tt>fd</tt>(4)</a></p>
+<p class="toc level2"><a href="fdi-4.html"><tt>fdi</tt>(4)</a></p>
+<p class="toc level2"><a href="flash-archive-4.html"><tt>flash_archive</tt>(4)</a></p>
+<p class="toc level2"><a href="format.dat-4.html"><tt>format.dat</tt>(4)</a></p>
+<p class="toc level2"><a href="forward-4.html"><tt>forward</tt>(4)</a></p>
+<p class="toc level2"><a href="fs-4.html"><tt>fs</tt>(4)</a></p>
+<p class="toc level2"><a href="fspec-4.html"><tt>fspec</tt>(4)</a></p>
+<p class="toc level2"><a href="fstypes-4.html"><tt>fstypes</tt>(4)</a></p>
+<p class="toc level2"><a href="ftp-4.html"><tt>ftp</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpaccess-4.html"><tt>ftpaccess</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpconversions-4.html"><tt>ftpconversions</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpgroups-4.html"><tt>ftpgroups</tt>(4)</a></p>
+<p class="toc level2"><a href="ftphosts-4.html"><tt>ftphosts</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpservers-4.html"><tt>ftpservers</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpusers-4.html"><tt>ftpusers</tt>(4)</a></p>
+<p class="toc level2"><a href="fx-dptbl-4.html"><tt>fx_dptbl</tt>(4)</a></p>
+<p class="toc level2"><a href="gateways-4.html"><tt>gateways</tt>(4)</a></p>
+<p class="toc level2"><a href="geniconvtbl-4.html"><tt>geniconvtbl</tt>(4)</a></p>
+<p class="toc level2"><a href="group-4.html"><tt>group</tt>(4)</a></p>
+<p class="toc level2"><a href="gsscred.conf-4.html"><tt>gsscred.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="hba.conf-4.html"><tt>hba.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="holidays-4.html"><tt>holidays</tt>(4)</a></p>
+<p class="toc level2"><a href="hosts-4.html"><tt>hosts</tt>(4)</a></p>
+<p class="toc level2"><a href="hosts.equiv-4.html"><tt>hosts.equiv</tt>(4)</a></p>
+<p class="toc level2"><a href="ib-4.html"><tt>ib</tt>(4)</a></p>
+<p class="toc level2"><a href="idnkit.pc-4.html"><tt>idnkit.pc</tt>(4)</a></p>
+<p class="toc level2"><a href="ike.config-4.html"><tt>ike.config</tt>(4)</a></p>
+<p class="toc level2"><a href="ike.preshared-4.html"><tt>ike.preshared</tt>(4)</a></p>
+<p class="toc level2"><a href="inetd.conf-4.html"><tt>inetd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="inet-type-4.html"><tt>inet_type</tt>(4)</a></p>
+<p class="toc level2"><a href="infiniband-hca-persistent-cache-4.html"><tt>infiniband_hca_persistent_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="init.d-4.html"><tt>init.d</tt>(4)</a></p>
+<p class="toc level2"><a href="inittab-4.html"><tt>inittab</tt>(4)</a></p>
+<p class="toc level2"><a href="ipaddrsel.conf-4.html"><tt>ipaddrsel.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipf-4.html"><tt>ipf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipf.conf-4.html"><tt>ipf.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipnat-4.html"><tt>ipnat</tt>(4)</a></p>
+<p class="toc level2"><a href="ipnat.conf-4.html"><tt>ipnat.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipnodes-4.html"><tt>ipnodes</tt>(4)</a></p>
+<p class="toc level2"><a href="ippool-4.html"><tt>ippool</tt>(4)</a></p>
+<p class="toc level2"><a href="ippool.conf-4.html"><tt>ippool.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="isa-4.html"><tt>isa</tt>(4)</a></p>
+<p class="toc level2"><a href="issue-4.html"><tt>issue</tt>(4)</a></p>
+<p class="toc level2"><a href="kadm5.acl-4.html"><tt>kadm5.acl</tt>(4)</a></p>
+<p class="toc level2"><a href="kdc.conf-4.html"><tt>kdc.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="keytables-4.html"><tt>keytables</tt>(4)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>krb5.conf</tt>(4)</a></p>
+</div>
+<p class="toc level2"><a href="label-encodings-4.html"><tt>label_encodings</tt>(4)</a></p>
+<p class="toc level2"><a href="ldapfilter.conf-4.html"><tt>ldapfilter.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ldapsearchprefs.conf-4.html"><tt>ldapsearchprefs.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ldaptemplates.conf-4.html"><tt>ldaptemplates.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="llc2-4.html"><tt>llc2</tt>(4)</a></p>
+<p class="toc level2"><a href="logadm.conf-4.html"><tt>logadm.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="logindevperm-4.html"><tt>logindevperm</tt>(4)</a></p>
+<p class="toc level2"><a href="loginlog-4.html"><tt>loginlog</tt>(4)</a></p>
+<p class="toc level2"><a href="lutab-4.html"><tt>lutab</tt>(4)</a></p>
+<p class="toc level2"><a href="magic-4.html"><tt>magic</tt>(4)</a></p>
+<p class="toc level2"><a href="md.cf-4.html"><tt>md.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="mddb.cf-4.html"><tt>mddb.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="mdi-ib-cache-4.html"><tt>mdi_ib_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="mdi-scsi-vhci-cache-4.html"><tt>mdi_scsi_vhci_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="md.tab-4.html"><tt>md.tab</tt>(4)</a></p>
+<p class="toc level2"><a href="mech-4.html"><tt>mech</tt>(4)</a></p>
+<p class="toc level2"><a href="meddb-4.html"><tt>meddb</tt>(4)</a></p>
+<p class="toc level2"><a href="mnttab-4.html"><tt>mnttab</tt>(4)</a></p>
+<p class="toc level2"><a href="mod-ipp-4.html"><tt>mod_ipp</tt>(4)</a></p>
+<p class="toc level2"><a href="mpapi.conf-4.html"><tt>mpapi.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="named.conf-4.html"><tt>named.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ncad-addr-4.html"><tt>ncad_addr</tt>(4)</a></p>
+<p class="toc level2"><a href="nca.if-4.html"><tt>nca.if</tt>(4)</a></p>
+<p class="toc level2"><a href="ncakmod.conf-4.html"><tt>ncakmod.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ncalogd.conf-4.html"><tt>ncalogd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ncaport.conf-4.html"><tt>ncaport.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ndmp-4.html"><tt>ndmp</tt>(4)</a></p>
+<p class="toc level2"><a href="ndpd.conf-4.html"><tt>ndpd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="netconfig-4.html"><tt>netconfig</tt>(4)</a></p>
+<p class="toc level2"><a href="netgroup-4.html"><tt>netgroup</tt>(4)</a></p>
+<p class="toc level2"><a href="netid-4.html"><tt>netid</tt>(4)</a></p>
+<p class="toc level2"><a href="netmasks-4.html"><tt>netmasks</tt>(4)</a></p>
+<p class="toc level2"><a href="netrc-4.html"><tt>netrc</tt>(4)</a></p>
+<p class="toc level2"><a href="networks-4.html"><tt>networks</tt>(4)</a></p>
+<p class="toc level2"><a href="nfs-4.html"><tt>nfs</tt>(4)</a></p>
+<p class="toc level2"><a href="nfslog.conf-4.html"><tt>nfslog.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="nfssec.conf-4.html"><tt>nfssec.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="nisldapmapping-4.html"><tt>NISLDAPmapping</tt>(4)</a></p>
+<p class="toc level2"><a href="nodename-4.html"><tt>nodename</tt>(4)</a></p>
+<p class="toc level2"><a href="nologin-4.html"><tt>nologin</tt>(4)</a></p>
+<p class="toc level2"><a href="note-4.html"><tt>note</tt>(4)</a></p>
+<p class="toc level2"><a href="notrouter-4.html"><tt>notrouter</tt>(4)</a></p>
+<p class="toc level2"><a href="nscd.conf-4.html"><tt>nscd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="nsmbrc-4.html"><tt>nsmbrc</tt>(4)</a></p>
+<p class="toc level2"><a href="nss-4.html"><tt>nss</tt>(4)</a></p>
+<p class="toc level2"><a href="nsswitch.conf-4.html"><tt>nsswitch.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="order-4.html"><tt>order</tt>(4)</a></p>
+<p class="toc level2"><a href="packagetoc-4.html"><tt>packagetoc</tt>(4)</a></p>
+<p class="toc level2"><a href="packingrules-4.html"><tt>packingrules</tt>(4)</a></p>
+<p class="toc level2"><a href="pam.conf-4.html"><tt>pam.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="passwd-4.html"><tt>passwd</tt>(4)</a></p>
+<p class="toc level2"><a href="path-to-inst-4.html"><tt>path_to_inst</tt>(4)</a></p>
+<p class="toc level2"><a href="pci-4.html"><tt>pci</tt>(4)</a></p>
+<p class="toc level2"><a href="pcie-4.html"><tt>pcie</tt>(4)</a></p>
+<p class="toc level2"><a href="pci-unitaddr-persistent-4.html"><tt>pci_unitaddr_persistent</tt>(4)</a></p>
+<p class="toc level2"><a href="phones-4.html"><tt>phones</tt>(4)</a></p>
+<p class="toc level2"><a href="pkginfo-4.html"><tt>pkginfo</tt>(4)</a></p>
+<p class="toc level2"><a href="pkgmap-4.html"><tt>pkgmap</tt>(4)</a></p>
+<p class="toc level2"><a href="platform-4.html"><tt>platform</tt>(4)</a></p>
+<p class="toc level2"><a href="plot-4b.html"><tt>plot</tt>(4B)</a></p>
+<p class="toc level2"><a href="policy.conf-4.html"><tt>policy.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="power.conf-4.html"><tt>power.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="printers-4.html"><tt>printers</tt>(4)</a></p>
+<p class="toc level2"><a href="printers.conf-4.html"><tt>printers.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="priv-names-4.html"><tt>priv_names</tt>(4)</a></p>
+<p class="toc level2"><a href="proc-4.html"><tt>proc</tt>(4)</a></p>
+<p class="toc level2"><a href="process-4.html"><tt>process</tt>(4)</a></p>
+<p class="toc level2"><a href="prof-attr-4.html"><tt>prof_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="profile-4.html"><tt>profile</tt>(4)</a></p>
+<p class="toc level2"><a href="project-4.html"><tt>project</tt>(4)</a></p>
+<p class="toc level2"><a href="protocols-4.html"><tt>protocols</tt>(4)</a></p>
+<p class="toc level2"><a href="prototype-4.html"><tt>prototype</tt>(4)</a></p>
+<p class="toc level2"><a href="pseudo-4.html"><tt>pseudo</tt>(4)</a></p>
+<p class="toc level2"><a href="publickey-4.html"><tt>publickey</tt>(4)</a></p>
+<p class="toc level2"><a href="qop-4.html"><tt>qop</tt>(4)</a></p>
+<p class="toc level2"><a href="queuedefs-4.html"><tt>queuedefs</tt>(4)</a></p>
+<p class="toc level2"><a href="rcmscript-4.html"><tt>rcmscript</tt>(4)</a></p>
+<p class="toc level2"><a href="rdc.cf-4.html"><tt>rdc.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="registration-profile-4.html"><tt>registration_profile</tt>(4)</a></p>
+<p class="toc level2"><a href="remote-4.html"><tt>remote</tt>(4)</a></p>
+<p class="toc level2"><a href="resolv.conf-4.html"><tt>resolv.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="rhosts-4.html"><tt>rhosts</tt>(4)</a></p>
+<p class="toc level2"><a href="rmtab-4.html"><tt>rmtab</tt>(4)</a></p>
+<p class="toc level2"><a href="rndc.conf-4.html"><tt>rndc.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="rpc-4.html"><tt>rpc</tt>(4)</a></p>
+<p class="toc level2"><a href="rt-dptbl-4.html"><tt>rt_dptbl</tt>(4)</a></p>
+<p class="toc level2"><a href="sasl-appname.conf-4.html"><tt>sasl_appname.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="sbus-4.html"><tt>sbus</tt>(4)</a></p>
+<p class="toc level2"><a href="sccsfile-4.html"><tt>sccsfile</tt>(4)</a></p>
+<p class="toc level2"><a href="scsi-4.html"><tt>scsi</tt>(4)</a></p>
+<p class="toc level2"><a href="securenets-4.html"><tt>securenets</tt>(4)</a></p>
+<p class="toc level2"><a href="sel-config-4.html"><tt>sel_config</tt>(4)</a></p>
+<p class="toc level2"><a href="sendmail-4.html"><tt>sendmail</tt>(4)</a></p>
+<p class="toc level2"><a href="sendmail.cf-4.html"><tt>sendmail.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="service-bundle-4.html"><tt>service_bundle</tt>(4)</a></p>
+<p class="toc level2"><a href="service-provider.conf-4.html"><tt>service_provider.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="services-4.html"><tt>services</tt>(4)</a></p>
+<p class="toc level2"><a href="shadow-4.html"><tt>shadow</tt>(4)</a></p>
+<p class="toc level2"><a href="sharetab-4.html"><tt>sharetab</tt>(4)</a></p>
+<p class="toc level2"><a href="shells-4.html"><tt>shells</tt>(4)</a></p>
+<p class="toc level2"><a href="slp.conf-4.html"><tt>slp.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="slpd.reg-4.html"><tt>slpd.reg</tt>(4)</a></p>
+<p class="toc level2"><a href="smb-4.html"><tt>smb</tt>(4)</a></p>
+<p class="toc level2"><a href="smbautohome-4.html"><tt>smbautohome</tt>(4)</a></p>
+<p class="toc level2"><a href="smhba.conf-4.html"><tt>smhba.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="snapshot-cache-4.html"><tt>snapshot_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="sndr-4.html"><tt>sndr</tt>(4)</a></p>
+<p class="toc level2"><a href="sock2path.d-4.html"><tt>sock2path.d</tt>(4)</a></p>
+<p class="toc level2"><a href="space-4.html"><tt>space</tt>(4)</a></p>
+<p class="toc level2"><a href="ssh-config-4.html"><tt>ssh_config</tt>(4)</a></p>
+<p class="toc level2"><a href="sshd-config-4.html"><tt>sshd_config</tt>(4)</a></p>
+<p class="toc level2"><a href="submit.cf-4.html"><tt>submit.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="sulog-4.html"><tt>sulog</tt>(4)</a></p>
+<p class="toc level2"><a href="synclist-4.html"><tt>synclist</tt>(4)</a></p>
+<p class="toc level2"><a href="sysbus-4.html"><tt>sysbus</tt>(4)</a></p>
+<p class="toc level2"><a href="sysidcfg-4.html"><tt>sysidcfg</tt>(4)</a></p>
+<p class="toc level2"><a href="syslog.conf-4.html"><tt>syslog.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="system-4.html"><tt>system</tt>(4)</a></p>
+<p class="toc level2"><a href="telnetrc-4.html"><tt>telnetrc</tt>(4)</a></p>
+<p class="toc level2"><a href="term-4.html"><tt>term</tt>(4)</a></p>
+<p class="toc level2"><a href="terminfo-4.html"><tt>terminfo</tt>(4)</a></p>
+<p class="toc level2"><a href="uc-timezone-4.html"><tt>TIMEZONE</tt>(4)</a></p>
+<p class="toc level2"><a href="timezone-4.html"><tt>timezone</tt>(4)</a></p>
+<p class="toc level2"><a href="tnf-kernel-probes-4.html"><tt>tnf_kernel_probes</tt>(4)</a></p>
+<p class="toc level2"><a href="trustedextensionspolicy-4.html"><tt>TrustedExtensionsPolicy</tt>(4)</a></p>
+<p class="toc level2"><a href="ts-dptbl-4.html"><tt>ts_dptbl</tt>(4)</a></p>
+<p class="toc level2"><a href="ttydefs-4.html"><tt>ttydefs</tt>(4)</a></p>
+<p class="toc level2"><a href="ttysrch-4.html"><tt>ttysrch</tt>(4)</a></p>
+<p class="toc level2"><a href="ufsdump-4.html"><tt>ufsdump</tt>(4)</a></p>
+<p class="toc level2"><a href="updaters-4.html"><tt>updaters</tt>(4)</a></p>
+<p class="toc level2"><a href="user-attr-4.html"><tt>user_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="utmp-4.html"><tt>utmp</tt>(4)</a></p>
+<p class="toc level2"><a href="utmpx-4.html"><tt>utmpx</tt>(4)</a></p>
+<p class="toc level2"><a href="vfstab-4.html"><tt>vfstab</tt>(4)</a></p>
+<p class="toc level2"><a href="volume-config-4.html"><tt>volume-config</tt>(4)</a></p>
+<p class="toc level2"><a href="volume-defaults-4.html"><tt>volume-defaults</tt>(4)</a></p>
+<p class="toc level2"><a href="volume-request-4.html"><tt>volume-request</tt>(4)</a></p>
+<p class="toc level2"><a href="wanboot.conf-4.html"><tt>wanboot.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="warn.conf-4.html"><tt>warn.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="wtmp-4.html"><tt>wtmp</tt>(4)</a></p>
+<p class="toc level2"><a href="wtmpx-4.html"><tt>wtmpx</tt>(4)</a></p>
+<p class="toc level2"><a href="xferlog-4.html"><tt>xferlog</tt>(4)</a></p>
+<p class="toc level2"><a href="ypfiles-4.html"><tt>ypfiles</tt>(4)</a></p>
+<p class="toc level2"><a href="yppasswdd-4.html"><tt>yppasswdd</tt>(4)</a></p>
+<p class="toc level2"><a href="ypserv-4.html"><tt>ypserv</tt>(4)</a></p>
+<p class="toc level2"><a href="zoneinfo-4.html"><tt>zoneinfo</tt>(4)</a></p>
+
+</div>
+
+<a name="REFMAN4content"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN4krb5.conf-4"></a><a name="krb5.conf-4"></a><h3>krb5.conf</h3>
+<p>- Kerberos configuration file</p><h3>Synopsis</h3>
+<pre>/etc/krb5/krb5.conf</pre><h3>Description</h3>
+<p>The <tt>krb5.conf</tt> file contains Kerberos configuration information, including the locations of KDCs
+and administration daemons for the Kerberos realms of interest, defaults for the
+current realm and for Kerberos applications, and mappings of host names onto Kerberos
+realms. This file must reside on all Kerberos clients.</p><p>The format of the <tt>krb5.conf</tt> consists of sections headings in square brackets.
+Each section can contain zero or more configuration variables (called <var>relations</var>), of
+the form:</p><p><var>relation</var>= <var>relation-value</var> </p><p>or</p><p><var>relation-subsection</var> = {</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop">
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>relation</var>= <var>relation-value</var> </div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>relation</var>= <var>relation-value</var> </div></td>
+</tr>
+</table>
+</td></tr></table>
+<p>}</p><p>The <tt>krb5.conf</tt> file can contain any or all of the following sections:</p><dl><dt><tt>libdefaults</tt></dt>
+<dd><p>Contains default values used by the Kerberos V5 library.</p></dd>
+<dt><tt>appdefaults</tt></dt>
+<dd><p>Contains subsections for Kerberos V5 applications, where <var>relation-subsection</var> is the name of an application. Each subsection describes application-specific defaults.</p></dd>
+<dt><tt>realms</tt></dt>
+<dd><p>Contains subsections for Kerberos realms, where <var>relation-subsection</var> is the name of a realm. Each subsection contains relations that define the properties for that particular realm.</p></dd>
+<dt><tt>domain_realm</tt></dt>
+<dd><p>Contains relations which map domain names and subdomains onto Kerberos realm names. This is used by programs to determine what realm a host should be in, given its fully qualified domain name.</p></dd>
+<dt><tt>logging</tt></dt>
+<dd><p>Contains relations which determine how Kerberos programs are to perform logging.</p></dd>
+<dt><tt>capaths</tt></dt>
+<dd><p>Contains the authentication paths used with direct (nonhierarchical) cross-realm authentication. Entries in this section are used by the client to determine the intermediate realms which can be used in cross-realm authentication. It is also used by the end-service when checking the transited field for trusted intermediate realms.</p></dd>
+<dt><tt>dbmodules</tt></dt>
+<dd><p>Contains relations for Kerberos database plug-in-specific configuration information.</p></dd>
+<dt><tt>kdc</tt></dt>
+<dd><p>For a Key Distribution Center (KDC), can contain the location of the <tt>kdc.conf</tt> file.</p></dd>
+</dl>
+<h4>The <tt>[libdefaults]</tt> Section</h4>
+<p>The <tt>[libdefaults]</tt> section can contain any of the following relations:</p><dl><dt><tt>database_module</tt></dt>
+<dd><p>Selects the <tt>dbmodule</tt> section entry to use to access the Kerberos database. If this parameter is not present the code uses the standard <tt>db2</tt>&#8211;based Kerberos database.</p></dd>
+<dt><tt>default_keytab_name</tt></dt>
+<dd><p>Specifies the default keytab name to be used by application servers such as <tt>telnetd</tt> and <tt>rlogind</tt>. The default is <tt>/etc/krb5/krb5.keytab</tt>.</p></dd>
+<dt><tt>default_realm</tt></dt>
+<dd><p>Identifies the default Kerberos realm for the client. Set its value to your Kerberos realm.</p></dd>
+<dt><tt>default_tgs_enctypes</tt></dt>
+<dd><p>Identifies the supported list of session key encryption types that should be returned by the KDC. The list can be delimited with commas or whitespace. The supported encryption types are <tt>des3-cbc-sha1-kd</tt>, <tt>des-cbc-crc</tt>, <tt>des-cbc-md5</tt>, <tt>arcfour-hmac-md5</tt>, <tt>arcfour-hmac-md5-exp</tt>, <tt>aes128-cts-hmac-sha1-96</tt>, and <tt>aes256-cts-hmac-sha1-96</tt>.</p></dd>
+<dt><tt>default_tkt_enctypes</tt></dt>
+<dd><p>Identifies the supported list of session key encryption types that should be requested by the client. The format is the same as for <tt>default_tgs_enctypes</tt>. The supported encryption types are <tt>des3-cbc-sha1-kd</tt>, <tt>des-cbc-crc</tt>, <tt>des-cbc-md5</tt>, <tt>arcfour-hmac-md5</tt>, <tt>arcfour-hmac-md5-exp</tt>, <tt>aes128-cts-hmac-sha1-96</tt>, and <tt>aes256-cts-hmac-sha1-96</tt>.</p></dd>
+<dt><tt>clockskew</tt></dt>
+<dd><p>Sets the maximum allowable amount of clock skew in seconds that the library tolerates before assuming that a Kerberos message is invalid. The default value is 300 seconds, or five minutes.</p></dd>
+<dt><tt>forwardable =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>Sets the &#8220;<tt>forwardable</tt>&#8221; flag in all tickets. This allows users to transfer their credentials from one host to another without reauthenticating. This option can also be set in the <tt>[appdefaults]</tt> or <tt>[realms]</tt> section (see below) to limit its use in particular applications or just to a specific realm.</p></dd>
+<dt><tt>permitted_enctypes</tt></dt>
+<dd><p>This relation controls the encryption types for session keys permitted by server applications that use Kerberos for authentication. In addition, it controls the encryption types of keys added to a <tt>keytab</tt> by means of the <a href="../821-1462/kadmin-1m.html#REFMAN1Mkadmin-1m"><tt>kadmin</tt>(1M)</a> <tt>ktadd</tt> command. The default is: <tt>aes256-cts-hmac-sha1-96</tt>, <tt>aes128-cts-hmac-sha1-96</tt>, <tt>des3-hmac-sha1-kd</tt>, <tt>arcfour-hmac-md5</tt>, <tt>arcfour-hmac-md5-exp</tt>, <tt>des-cbc-md5</tt>, <tt>des-cbc-crc</tt>.</p></dd>
+<dt><tt>proxiable =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>Sets the <tt>proxiable</tt> flag in all tickets. This allows users to create a proxy ticket that can be transferred to a kerberized service to allow that service to perform some function on behalf of the original user. This option can also be set in the <tt>[appdefaults]</tt> or <tt>[realms]</tt> section (see below) to limit its use in particular applications or just to a specific realm.</p></dd>
+<dt><tt>renew_lifetime =</tt><var>lifetime</var></dt>
+<dd><p>Requests renewable tickets, with a total lifetime of <var>lifetime</var>. The value for <var>lifetime</var> must be followed immediately by one of the following delimiters:</p><dl><dt><tt>s</tt></dt>
+<dd><p>seconds</p></dd>
+<dt><tt>m</tt></dt>
+<dd><p>minutes</p></dd>
+<dt><tt>h</tt></dt>
+<dd><p>hours</p></dd>
+<dt><tt>d</tt></dt>
+<dd><p>days</p></dd>
+</dl>
+<p>Example:</p><pre><b>renew_lifetime = 90m</b></pre><p>Do not mix units. A value of &#8220;<tt>3h30m</tt>&#8221; results in an error.</p></dd>
+<dt><tt>max_lifetime =</tt><var>lifetime</var></dt>
+<dd><p>Sets the requested maximum lifetime of the ticket. The values for <var>lifetime</var> follow the format described for the <tt>renew_lifetime</tt> option, above.</p></dd>
+<dt><tt>dns_lookup_kdc</tt></dt>
+<dd><p>Indicates whether DNS SRV records need to be used to locate the KDCs and the other servers for a realm, if they have not already been listed in the <tt>[realms]</tt> section. This option makes the machine vulnerable to a certain type of DoS attack if somone spoofs the DNS records and does a redirect to another server. This is, however, no worse than a DoS, since the bogus KDC is unable to decode anything sent (excepting the initial ticket request, which has no encrypted data). Also, anything the fake KDC sends out isl not trusted without verification (the local machine is unaware of the secret key to be used). If <tt>dns_lookup_kdc</tt> is not specified but <tt>dns_fallback</tt> is, then that value is used instead. In either case, values (if present) in the <tt>[realms]</tt> section override DNS. <tt>dns_lookup_kdc</tt> is enabled by default.</p></dd>
+<dt><tt>dns_lookup_realm</tt></dt>
+<dd><p>Indicates whether DNS TXT records need to be used to determine the Kerberos realm information and/or the host/domain name-to-realm mapping of a host, if this information is not already present in the <tt>krb5.conf</tt> file. Enabling this option might make the host vulnerable to a redirection attack, wherein spoofed DNS replies persuade a client to authenticate to the wrong realm. In a realm with no cross-realm trusts, this a DoS attack. If <tt>dns_lookup_realm</tt> is not specified but <tt>dns_fallback</tt> is, then that value is used instead. In either case, values (if present) in the <tt>[libdefaults]</tt> and <tt>[domain_realm]</tt> sections override DNS.</p></dd>
+<dt><tt>dns_fallback</tt></dt>
+<dd><p>Generic flag controlling the use of DNS for retrieval of information about Kerberos servers and host/domain name-to-realm mapping. If both <tt>dns_lookup_kdc</tt> and <tt>dns_lookup_realm</tt> have been specified, this option has no effect.</p></dd>
+<dt><tt>verify_ap_req_nofail [true | false]</tt></dt>
+<dd><p>If <tt>true</tt>, the local keytab file (<tt>/etc/krb5/krb5.keytab</tt>) must contain an entry for the local <tt>host</tt> principal, for example, <tt>host/foo.bar.com@FOO.COM</tt>. This entry is needed to verify that the TGT requested was issued by the same KDC that issued the key for the host principal. If undefined, the behavior is as if this option were set to <tt>true</tt>. Setting this value to <tt>false</tt> leaves the system vulnerable to DNS spoofing attacks. This parameter can be in the <tt>[realms]</tt> section to set it on a per-realm basis, or it can be in the <tt>[libdefaults]</tt> section to make it a network-wide setting for all realms.</p></dd>
+</dl>
+<h4>The <tt>[appdefaults]</tt> Section</h4>
+<p>This section contains subsections for Kerberos V5 applications, where <var>relation-subsection</var> is the
+name of an application. Each subsection contains relations that define the default
+behaviors for that application.</p><p>The following relations can be found in the <tt>[appdefaults]</tt> section, though not
+all relations are recognized by all kerberized applications. Some are specific to
+particular applications.</p><dl><dt><tt>autologin =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>Forces the application to attempt automatic login by presenting Kerberos credentials. This is valid for the following applications: <tt>rlogin</tt>, <tt>rsh</tt>, <tt>rcp</tt>, <tt>rdist</tt>, and <tt>telnet</tt>.</p></dd>
+<dt><tt>encrypt =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>Forces applications to use encryption by default (after authentication) to protect the privacy of the sessions. This is valid for the following applications: <tt>rlogin</tt>, <tt>rsh</tt>, <tt>rcp</tt>, <tt>rdist</tt>, and <tt>telnet</tt>.</p></dd>
+<dt><tt>forward =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>Forces applications to forward the user'ss credentials (after authentication) to the remote server. This is valid for the following applications: <tt>rlogin</tt>, <tt>rsh</tt>, <tt>rcp</tt>, <tt>rdist</tt>, and <tt>telnet</tt>.</p></dd>
+<dt><tt>forwardable =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>See the description in the <tt>[libdefaults]</tt> section above. This is used by any application that creates a ticket granting ticket and also by applications that can forward tickets to a remote server.</p></dd>
+<dt><tt>proxiable =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>See the description in the <tt>[libdefaults]</tt> section above. This is used by any application that creates a ticket granting ticket.</p></dd>
+<dt><tt>renewable =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>Creates a TGT that can be renewed (prior to the ticket expiration time). This is used by any application that creates a ticket granting ticket.</p></dd>
+<dt><tt>no_addresses =</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>Creates tickets with no address bindings. This is to allow tickets to be used across a NAT boundary or when using multi-homed systems. This option is valid in the <tt>kinit</tt> <tt>[appdefault]</tt> section only.</p></dd>
+<dt><tt>max_life =</tt><var>lifetime</var></dt>
+<dd><p>Sets the maximum lifetime of the ticket, with a total lifetime of <var>lifetime</var>. The values for <var>lifetime</var> follow the format described in the <tt>[libdefaults]</tt> section above. This option is obsolete and is removed in a future release of the Solaris operating system.</p></dd>
+<dt><tt>max_renewable_life =</tt><var>lifetime</var></dt>
+<dd><p>Requests renewable tickets, with a total lifetime of <var>lifetime</var>. The values for <var>lifetime</var> follow the format described in the <tt>[libdefaults]</tt> section above. This option is obsolete and is removed in a future release of the Solaris operating system.</p></dd>
+<dt><tt>rcmd_protocol =</tt> [ <tt>rcmdv1</tt> | <tt>rcmdv2</tt> ]</dt>
+<dd><p>Specifies which Kerberized &#8220;<tt>rcmd</tt>&#8221; protocol to use when using the Kerberized <a href="../821-1461/rlogin-1.html#REFMAN1rlogin-1"><tt>rlogin</tt>(1)</a>, <a href="../821-1461/rsh-1.html#REFMAN1rsh-1"><tt>rsh</tt>(1)</a>, <a href="../821-1461/rcp-1.html#REFMAN1rcp-1"><tt>rcp</tt>(1)</a>, or <tt>rdist</tt>(1) programs. The default is to use <tt>rcmdv2</tt> by default, as this is the more secure and more recent update of the protocol. However, when talking to older MIT or SEAM-based &#8220;<tt>rcmd</tt>&#8221; servers, it can be necessary to force the new clients to use the older <tt>rcmdv1</tt> protocol. This option is valid only for the following applications: <tt>rlogin</tt>, <tt>rcp</tt>, <tt>rsh</tt>, and <tt>rdist</tt>.</p></dd>
+</dl>
+<pre>gkadmin = {
+      help_url = \
+http://docs.sun.com/app/docs/doc/816-4557/6maosrjmr?q=gkadmin&#38;a=view
+}</pre><p>The preceding URL is subject to change. On the <tt>docs.sun.com</tt> web site,
+view the chapter on the Solaris Kerberos implementation in the <a href="../821-1456/index.html"><i>System Administration Guide: Security Services</i></a>.</p><p>The following application defaults can be set to <tt>true</tt> or <tt>false</tt>:</p><pre>kinit
+   forwardable = true
+   proxiable = true
+   renewable = true
+   no_addresses = true
+   max_life = <var>delta_time</var>
+   max_renewable_life = <var>delta_time</var></pre><p>See <a href="../821-1461/kinit-1.html#REFMAN1kinit-1"><tt>kinit</tt>(1)</a> for the valid time duration formats you can specify for
+<var>delta_time</var>.</p><p>In the following example, <tt>kinit</tt> gets forwardable tickets by default and <tt>telnet</tt>
+has three default behaviors specified:</p><pre>[appdefaults]
+   kinit = {
+      forwardable = true
+   }
+
+   telnet = {
+      forward = true
+      encrypt = true
+      autologin = true
+   }</pre><p>The application defaults specified here are overridden by those specified in the
+<tt>[realms]</tt> section.</p><h4>The <tt>[realms]</tt> Section</h4>
+<p>This section contains subsections for Kerberos realms, where <var>relation-subsection</var> is the name
+of a realm. Each subsection contains relations that define the properties for
+that particular realm. The following relations can be specified in each <tt>[realms]</tt>
+subsection:</p><dl><dt><tt>admin_server</tt></dt>
+<dd><p>Identifies the host where the Kerberos administration daemon (<tt>kadmind</tt>) is running. Typically, this is the master KDC.</p></dd>
+<dt><var>application defaults</var></dt>
+<dd><p>Application defaults that are specific to a particular realm can be specified within a <tt>[realms]</tt> subsection. Realm-specific application defaults override the global defaults specified in the <tt>[appdefaults]</tt> section.</p></dd>
+<dt><tt>auth_to_local_realm</tt></dt>
+<dd><p>For use in the default realm, non-default realms can be equated with the default realm for authenticated name-to-local name mapping.</p></dd>
+<dt><tt>auth_to_local_names</tt></dt>
+<dd><p>This subsection allows you to set explicit mappings from principal names to local user names. The tag is the mapping name and the value is the corresponding local user name.</p></dd>
+<dt><tt>auth_to_local</tt></dt>
+<dd><p>This tag allows you to set a general rule for mapping principal names to local user names. It is used if there is not an explicit mapping for the principal name that is being translated. The possible values are:</p><pre>RULE:[&#60;ncomps>:&#60;format>](&#60;regex>)s/&#60;regex>/&#60;text>/</pre><p>Each rule has three parts:</p><dl><dt>First part&#8212;Formulate the string on which to perform operations:</dt>
+<dd><p>If not present then the string defaults to the fully flattened principal minus the realm name. Otherwise the syntax is as follows:</p><pre>"[" <var>&#60;ncomps></var> ":" <var>&#60;format></var> "]"</pre><p>Where:</p><p><var>&#60;ncomps></var> is the number of expected components for this rule. If the particular principal does not have this number of components, then this rule does not apply.</p><p><var>&#60;format></var> is a string of <var>&#60;component></var> or verbatim characters to be inserted.</p><p><var>&#60;component></var> is of the form &#8220;<tt>$</tt>&#8221;<var>&#60;number></var> to select the <var>&#60;number></var>th component. <var>&#60;number></var> begins from 1.</p></dd>
+<dt>Second part&#8212;select rule validity:</dt>
+<dd><p>If not present, this rule can apply to all selections. Otherwise the syntax is as follows:</p><pre>"(" <var>&#60;regex></var> ")"</pre><p>Where:</p><p><var>&#60;regex></var> is a selector regular expression. If this regular expression matches the whole pattern generated from the first part, then this rule still applies.</p></dd>
+<dt>Third part&#8212;Transform rule:</dt>
+<dd><p>If not present, then the selection string is passed verbatim and is matched. Otherwise, the syntax is as follows:</p><pre><var>&#60;rule></var> ...</pre><p>Where:</p><p><var>&#60;rule></var> is of the form:</p><pre>"s/" &#60;regex> "/" &#60;text> "/" ["g"]</pre><p>Regular expressions are defined in <a href="../821-1474/regex-5.html#REFMAN5regex-5"><tt>regex</tt>(5)</a>.</p><p>For example:</p><p>auth_to_local = RULE:[1:$1@$0](.*@.*ACME\.COM)s/@.*//</p><p>The preceding maps <tt><var>username</var>@ACME.COM</tt> and all sub-realms of <tt>ACME.COM</tt> to <var>username</var>.</p></dd>
+<dt>DEFAULT</dt>
+<dd><p>The principal name is used as the local name. If the principal has more than one component or is not in the default realm, this rule is not applicable and the conversion fails.</p></dd>
+</dl>
+</dd>
+<dt><tt>database_module</tt></dt>
+<dd><p>Selects the <tt>dbmodule</tt> section entry to use to access the Kerberos database.</p></dd>
+<dt><tt>extra_addresses</tt>...</dt>
+<dd><p>This allows a computer to use multiple local addresses, to allow Kerberos to work in a network that uses NATs. The addresses should be in a comma-separated list.</p></dd>
+<dt><tt>kdc</tt></dt>
+<dd><p>The name of a host running a KDC for that realm. An optional port number (separated from the hostname by a colon) can be included.</p></dd>
+<dt><tt>kpasswd_server</tt></dt>
+<dd><p>Identifies the host where the Kerberos password-changing server is running. Typically, this is the same as host indicated in the <tt>admin_server</tt>. If this parameter is omitted, the host in <tt>admin_server</tt> is used. You can also specify a port number if the server indicated by <tt>kpasswd_server</tt> runs on a port other than 464 (the default). The format of this parameter is: <var>hostname</var>[:<var>port</var>].</p></dd>
+<dt><tt>kpasswd_protocol</tt></dt>
+<dd><p>Identifies the protocol to be used when communicating with the server indicated by <tt>kpasswd_server</tt>. By default, this parameter is defined to be <tt>RPCSEC_GSS</tt>, which is the protocol used by Solaris-based administration servers. To be able to change a principal's password stored on non-Solaris Kerberos server, such as Microsoft Active Directory or MIT Kerberos, this value should be <tt>SET_CHANGE</tt>. This indicates that a non-RPC&#8211; based protocol is used to communicate the password change request to the server in the <tt>kpasswd_server</tt> entry.</p></dd>
+<dt><tt>udp_preference_limit</tt></dt>
+<dd><p>When sending a message to the KDC, the library tries using TCP before UDP if the size of the message is above <tt>udp_preference_limit</tt>. If the message is smaller than <tt>udp_preference_limit</tt>, then UDP is tried before TCP. Regardless of the size, both protocols are tried if the first attempt fails.</p></dd>
+<dt><tt>verify_ap_req_nofail</tt> [<tt>true</tt> | <tt>false</tt>]</dt>
+<dd><p>If <tt>true</tt>, the local keytab file (<tt>/etc/krb5/krb5.keytab</tt>) must contain an entry for the local <tt>host</tt> principal, for example, <tt>host/foo.bar.com@FOO.COM</tt>. This entry is needed to verify that the TGT requested was issued by the same KDC that issued the key for the host principal. If undefined, the behavior is as if this option were set to <tt>true</tt>. Setting this value to <tt>false</tt> leaves the system vulnerable to DNS spoofing attacks. This parameter might be in the <tt>[realms]</tt> section to set it on a per-realm basis, or it might be in the <tt>[libdefaults]</tt> section to make it a network-wide setting for all realms.</p></dd>
+</dl>
+<p>The parameters &#8220;<tt>forwardable</tt>&#8221;, &#8220;<tt>proxiable</tt>&#8221;, and &#8220;<tt>renew_lifetime</tt>&#8221; as described in the <tt>[libdefaults]</tt> section
+(see above) are also valid in the <tt>[realms]</tt> section.</p><p>Notice that <tt>kpasswd_server</tt> and <tt>kpasswd_protocol</tt> are realm-specific parameters. Most often, you need
+to specify them only when using a non-Solaris-based Kerberos server. Otherwise, the
+change request is sent over <tt>RPCSEC_GSS</tt> to the Solaris Kerberos administration server.</p><h4>The <tt>[domain_realm]</tt> Section</h4>
+<p>This section provides a translation from a domain name or hostname to
+a Kerberos realm name. The <var>relation</var> can be a host name, or
+a domain name, where domain names are indicated by a period (`<tt>.</tt>')
+prefix. <var>relation-value</var> is the Kerberos realm name for that particular host or domain.
+Host names and domain names should be in lower case.</p><p>If no translation entry applies, the host's realm is considered to be
+the hostname's domain portion converted to upper case. For example, the following
+<tt>[domain_realm]</tt> section maps <tt>crash.mit.edu</tt> into the <tt>TEST.ATHENA.MIT.EDU</tt> realm:</p><pre>[domain_realm]
+   .mit.edu = ATHENA.MIT.EDU
+   mit.edu = ATHENA.MIT.EDU
+   crash.mit.edu = TEST.ATHENA.MIT.EDU
+   .fubar.org = FUBAR.ORG
+   fubar.org = FUBAR.ORG</pre><p>All other hosts in the <tt>mit.edu</tt> domain maps by default to the
+<tt>ATHENA.MIT.EDU</tt> realm, and all hosts in the <tt>fubar.org</tt> domain maps by default
+into the <tt>FUBAR.ORG</tt> realm. The entries for the hosts <tt>mit.edu</tt> and <tt>fubar.org</tt>.
+Without these entries, these hosts would be mapped into the Kerberos realms
+<tt>EDU</tt> and <tt>ORG</tt>, respectively.</p><h4>The <tt>[logging]</tt> Section</h4>
+<p>This section indicates how Kerberos programs are to perform logging. There are
+two types of relations for this section: relations to specify how to
+log and a relation to specify how to rotate <tt>kdc</tt> log files.</p><p>The following relations can be defined to specify how to log. The
+same relation can be repeated if you want to assign it multiple
+logging methods.</p><dl><dt><tt>admin_server</tt></dt>
+<dd><p>Specifies how to log the Kerberos administration daemon (<tt>kadmind</tt>). The default is <tt>FILE:/var/krb5/kadmin.log.</tt></p></dd>
+<dt><tt>default</tt></dt>
+<dd><p>Specifies how to perform logging in the absence of explicit specifications otherwise.</p></dd>
+<dt><tt>kdc</tt></dt>
+<dd><p>Specifies how the KDC is to perform its logging. The default is <tt>FILE:/var/krb5/kdc.log</tt>.</p></dd>
+</dl>
+<p>The <tt>admin_server</tt>, <tt>default</tt>, and <tt>kdc</tt> relations can have the following values:</p><dl><dt><tt>FILE:</tt><var>filename</var></dt>
+<dt><tt>FILE=</tt><var>filename</var></dt>
+<dd><p>This value causes the entity's logging messages to go to the specified file. If the `=' form is used, the file is overwritten. If the `:' form is used, the file is appended to.</p></dd>
+<dt><tt>STDERR</tt></dt>
+<dd><p>This value causes the entity's logging messages to go to its standard error stream. </p></dd>
+<dt><tt>CONSOLE</tt></dt>
+<dd><p>This value causes the entity's logging messages to go to the console, if the system supports it.</p></dd>
+<dt><tt>DEVICE=</tt><var>devicename</var></dt>
+<dd><p>This causes the entity's logging messages to go to the specified device.</p></dd>
+<dt><tt>SYSLOG[:</tt><var>severity</var><tt>[:</tt><var>facility</var><tt>]]</tt></dt>
+<dd><p>This causes the entity's logging messages to go to the system log.</p></dd>
+</dl>
+<p>The <var>severity</var> argument specifies the default severity of system log messages. This
+can be any of the following severities supported by the <a href="../821-1465/syslog-3c.html#REFMAN3Asyslog-3c"><tt>syslog</tt>(3C)</a> call,
+minus the <tt>LOG_</tt> prefix: <tt>LOG_EMERG</tt>, <tt>LOG_ALERT</tt>, <tt>LOG_CRIT</tt>, <tt>LOG_ERR</tt>, <tt>LOG_WARNING</tt>, <tt>LOG_NOTICE</tt>, <tt>LOG_INFO</tt>, and
+<tt>LOG_DEBUG</tt>. For example, a value of <tt>CRIT</tt> would specify <tt>LOG_CRIT</tt> severity.</p><p>The <var>facility</var> argument specifies the facility under which the messages are logged.
+This can be any of the following facilities supported by the <a href="../821-1465/syslog-3c.html#REFMAN3Asyslog-3c"><tt>syslog</tt>(3C)</a>
+call minus the <tt>LOG_</tt> prefix: <tt>LOG_KERN</tt>, <tt>LOG_USER</tt>, <tt>LOG_MAIL</tt>, <tt>LOG_DAEMON</tt>, <tt>LOG_AUTH</tt>, <tt>LOG_LPR</tt>, <tt>LOG_NEWS</tt>,
+<tt>LOG_UUCP</tt>, <tt>LOG_CRON</tt>, and <tt>LOG_LOCAL0</tt> through <tt>LOG_LOCAL7</tt>. </p><p>If no severity is specified, the default is <tt>ERR</tt>. If no facility
+is specified, the default is <tt>AUTH</tt>. </p><p>The following relation can be defined  to  specify  how
+ to      rotate <tt>kadmin</tt> and <tt>kdc</tt> log
+files if the <tt>FILE:</tt> value is being used to   
+  log: </p><dl><dt><tt>admin_server_rotate</tt></dt>
+<dt><tt>kdc_rotate</tt></dt>
+<dd><p>A relation subsection that enables <tt>kadmin</tt> (<tt>admin_server_rotate</tt>) and/or <tt>kdc</tt> (<tt>kdc_rotate</tt>) logging to be rotated to multiple files based on a time interval. This can be used to avoid logging to one file, which might grow too large and bring the <tt>KDC</tt> to a halt.</p></dd>
+</dl>
+<p>The time interval for the rotation is specified by the <tt>period</tt> relation.
+The number of log files to be rotated is specified by the
+<tt>versions</tt> relation. Both the <tt>period</tt> and <tt>versions</tt> (described below) should be included in
+this subsection. And, this subsection applies only if the <tt>kdc</tt> relation has
+a <tt>FILE:</tt> value.</p><p>The following relations can be specified for the <tt>kdc_rotate</tt> relation subsection:</p><dl><dt><tt></tt><tt>period=<var>delta_time</var></tt></dt>
+<dd><p>Specifies the time interval before a new log file is created. See the <tt>Time</tt><tt>Formats</tt> section in <a href="../821-1461/kinit-1.html#REFMAN1kinit-1"><tt>kinit</tt>(1)</a> for the valid time duration formats you can specify for <var>delta_time</var>. If <tt>period</tt> is not specified or set to <tt>never</tt>, no rotation occurs.</p></dd>
+</dl>
+<p>Specifying a time interval does not mean that the log files are
+rotated at the time interval based on real time. This is because
+the time interval is checked at each attempt to write a record
+to the log, or when logging is actually occurring. Therefore, rotation occurs
+only when logging has actually occurred for the specified time interval.</p><dl><dt><tt>versions=</tt><var>number</var></dt>
+<dd><p>Specifies how many previous versions are saved before the rotation begins. A number is appended to the log file, starting with 0 and ending with (<var>number</var> - 1). For example, if <tt>versions</tt> is set to <tt>2</tt>, up to three logging files are created (<var>filename</var>, <var>filename</var>.0, and <var>filename</var>.1) before the first one is overwritten to begin the rotation.</p></dd>
+</dl>
+<p>Notice that if <tt>versions</tt> is not specified or set to <tt>0</tt>, only
+one log file is created, but it is overwritten whenever the time
+interval is met. </p><p>In the following example, the logging messages from the Kerberos administration daemon
+goes to the console. The logging messages from the KDC is appended
+to the <tt>/var/krb5/kdc.log</tt>, which is rotated between twenty-one log files with a
+specified time interval of a day.</p><pre>[logging]
+   admin_server = CONSOLE
+   kdc = FILE:/export/logging/kadmin.log
+   kdc_rotate = {
+      period = 1d
+      versions = 20
+   }</pre><h4>The <tt>[capaths]</tt> Section</h4>
+<p>In order to perform direct (non-hierarchical) cross-realm authentication, a database is needed
+to construct the authentication paths between the realms. This section defines that
+database.</p><p>A client uses this section to find the authentication path between its
+realm and the realm of the server. The server uses this section
+to verify the authentication path used by the client, by checking the
+transited field of the received ticket.</p><p>There is a subsection for each participating realm, and each subsection has
+relations named for each of the realms. The <var>relation-value</var> is an intermediate
+realm which can participate in the cross-realm authentication. The relations can be
+repeated if there is more than one intermediate realm. A value of '.'
+means that the two realms share keys directly, and no intermediate realms
+should be allowed to participate.</p><p>There are n**2 possible entries in this table, but only those entries
+which is needed on the client or the server need to be
+present. The client needs a subsection named for its local realm, with
+relations named for all the realms of servers it needs to authenticate
+with. A server needs a subsection named for each realm of the clients
+it serves.</p><p>For example, <tt>ANL.GOV</tt>, <tt>PNL.GOV</tt>, and <tt>NERSC.GOV</tt> all wish to use the <tt>ES.NET</tt>
+realm as an intermediate realm. <tt>ANL</tt> has a sub realm of <tt>TEST.ANL.GOV</tt>,
+which authenticates with <tt>NERSC.GOV</tt> but not <tt>PNL.GOV</tt>. The <tt>[capath]</tt> section for <tt>ANL.GOV</tt>
+systems would look like this:</p><pre>[capaths]
+   ANL.GOV = { 
+       TEST.ANL.GOV = .
+       PNL.GOV = ES.NET
+       NERSC.GOV = ES.NET
+       ES.NET = .
+   }
+
+   TEST.ANL.GOV = { 
+       ANL.GOV = .
+   }
+
+   PNL.GOV = { 
+       ANL.GOV = ES.NET
+   }
+
+   NERSC.GOV = { 
+      ANL.GOV = ES.NET
+   }
+
+   ES.NET = { 
+      ANL.GOV = .
+   }</pre><p>The <tt>[capath]</tt> section of the configuration file used on <tt>NERSC.GOV</tt> systems would
+look like this:</p><pre>[capaths]
+   NERSC.GOV = {
+      ANL.GOV = ES.NET
+      TEST.ANL.GOV = ES.NET
+      TEST.ANL.GOV = ANL.GOV
+      PNL.GOV = ES.NET
+      ES.NET = .
+   }
+
+   ANL.GOV = { 
+      NERSC.GOV = ES.NET
+   }
+
+   PNL.GOV = { 
+      NERSC.GOV = ES.NET
+   }
+
+   ES.NET = { 
+      NERSC.GOV = .
+   }
+
+   TEST.ANL.GOV = { 
+      NERSC.GOV = ANL.GOV
+      NERSC.GOV = ES.NET
+   }</pre><p>In the above examples, the ordering is not important, except when the
+same relation is used more than once. The client uses this to
+determine the path. (It is not important to the server, since the
+transited field is not sorted.)</p><h4>PKINIT-specific Options</h4>
+<p>The following are <tt>pkinit-specific</tt> options. These values can be specified in <tt>[libdefaults]</tt>
+as global defaults, or within a realm-specific subsection of <tt>[libdefaults]</tt>, or can
+be specified as realm-specific values in the <tt>[realms]</tt> section. A realm-specific value overrides,
+does not add to, a generic <tt>[libdefaults]</tt> specification.  </p><p>The search order is:</p>
+<ol><li><p>realm-specific subsection of <tt>[libdefaults]</tt></p><pre>          [libdefaults]
+              EXAMPLE.COM = {
+                  pkinit_anchors = FILE:/usr/local/example.com.crt</pre></li>
+<li><p>realm-specific value in the <tt>[realms]</tt> section</p><pre>          [realms]
+              OTHERREALM.ORG = {
+                  pkinit_anchors = FILE:/usr/local/otherrealm.org.crt</pre></li>
+<li><p>generic value in the <tt>[libdefaults]</tt> section</p><pre>          [libdefaults]
+              pkinit_anchors = DIR:/usr/local/generic_trusted_cas/</pre></li></ol>
+<p>The syntax for specifying Public Key identity, trust, and revocation information for
+<tt>pkinit</tt> is as follows:</p><dl><dt><tt>pkinit_identities</tt> <tt>=</tt> <var>URI</var></dt>
+<dd><p>Specifies the location(s) to be used to find the user's X.509 identity information. This option can be specified multiple times. Each value is attempted in order until identity information is found and authentication is attempted. These values are not used if the user specifies <tt>X509_user_identity</tt> on the command line.</p><p>Valid <var>URI</var> types are <tt>FILE</tt>, <tt>DIR</tt>, <tt>PKCS11</tt>, <tt>PKCS12</tt>, and <tt>ENV</tt>. See the <tt>PKINIT URI Types</tt> section for more details.</p></dd>
+<dt><tt>pkinit_anchors</tt> <tt>=</tt> <var>URI</var></dt>
+<dd><p>Specifies the location of trusted anchor (root) certificates which the client trusts to sign KDC certificates. This option can be specified multiple times. These values from the <tt>config</tt> file are not used if the user specifies <tt>X509_anchors</tt> on the command line. </p><p>Valid <var>URI</var> types are <tt>FILE</tt> and <tt>DIR</tt>. See the <tt>PKINIT URI Types</tt> section for more details.</p></dd>
+<dt><tt>pkinit_pool</tt> <tt>=</tt> <var>URI</var></dt>
+<dd><p>Specifies the location of intermediate certificates which can be used by the client to complete the trust chain between a KDC certificate and a trusted anchor. This option can be specified multiple times.</p><p>Valid <var>URI</var> types are <tt>FILE</tt> and <tt>DIR</tt>. See the <tt>PKINIT URI Types</tt> section for more details.</p></dd>
+<dt><tt>pkinit_revoke</tt> <tt>=</tt> <var>URI</var></dt>
+<dd><p>Specifies the location of Certificate Revocation List (CRL) information to be used by the client when verifying the validity of the KDC certificate presented. This option can be specified multiple times. </p><p>The only valid <var>URI</var> type is <tt>DIR</tt>. See the <tt>PKINIT URI Types</tt> section for more details.</p></dd>
+<dt><tt>pkinit_require_crl_checking</tt> <tt>=</tt> <var>value</var></dt>
+<dd><p>The default certificate verification process always checks the available revocation information to see if a certificate has been revoked. If a match is found for the certificate in a CRL, verification fails. If the certificate being verified is not listed in a CRL, or there is no CRL present for its issuing CA, and <tt>pkinit_require_crl_checking</tt> is <tt>false</tt>, then verification succeeds. However, if <tt>pkinit_require_crl_checking</tt> is <tt>true</tt> and there is no CRL information available for the issuing CA, then verification fails. <tt>pkinit_require_crl_checking</tt> should be set to <tt>true</tt> if the policy is such that up-to-date CRLs must be present for every CA. </p></dd>
+<dt><tt>pkinit_dh_min_bits</tt> <tt>=</tt> <var>value</var></dt>
+<dd><p>Specifies the size of the Diffie-Hellman key the client attempts to use. The acceptable values are currently 1024, 2048, and 4096. The default is 2048.</p></dd>
+<dt><tt>pkinit_win2k</tt> <tt>=</tt> <var>value</var></dt>
+<dd><p>This flag specifies whether the target realm is assumed to support only the old, pre-RFC version of the protocol. The default is <tt>false</tt>.</p></dd>
+<dt><tt>pkinit_win2k_require_binding</tt> <tt>=</tt> <var>value</var></dt>
+<dd><p>If this flag is set to <tt>true</tt>, it expects that the target KDC is patched to return a reply with a checksum rather than a nonce. The default is <tt>false</tt>.</p></dd>
+<dt><tt>pkinit_eku_checking</tt> <tt>=</tt> <var>value</var></dt>
+<dd><p>This option specifies what Extended Key Usage value the KDC certificate presented to the client must contain. If the KDC certificate has the <tt>pkinit SubjectAlternativeName</tt> encoded as the Kerberos TGS name, EKU checking is not necessary since the issuing CA has certified this as a KDC certificate. The values recognized in the <tt>krb5.conf</tt> file are:</p><dl><dt><tt>kpKDC</tt></dt>
+<dd><p>This is the default value and specifies that the KDC must have the <tt>id-pkinit-KPKdc EKU</tt> as defined in RFC4556.</p></dd>
+<dt><tt>kpServerAuth</tt></dt>
+<dd><p>If <tt>kpServerAuth</tt> is specified, a KDC certificate with the <tt>id-kp-serverAuth EKU</tt> as used by Microsoft is accepted.</p></dd>
+<dt><tt>none</tt></dt>
+<dd><p>If <tt>none</tt> is specified, then the KDC certificate is not checked to verify it has an acceptable EKU. The use of this option is not recommended.</p></dd>
+</dl>
+</dd>
+<dt><tt>pkinit_kdc_hostname</tt> <tt>=</tt> <var>value</var></dt>
+<dd><p>The presense of this option indicates that the client is willing to accept a KDC certificate with a <tt>dNSName</tt> SAN (Subject Alternative Name) rather than requiring the <tt>id-pkinit-san</tt> as defined in RFC4556. This option can be specified multiple times. Its value should contain the acceptable hostname for the KDC (as contained in its certificate).</p></dd>
+<dt><tt>pkinit_cert_match</tt> <tt>=</tt> <var>rule</var></dt>
+<dd><p>Specifies matching rules that the client certificate must match before it is used to attempt <tt>pkinit</tt> authentication. If a user has multiple certificates available (on a smart card, or by way of another media), there must be exactly one certificate chosen before attempting <tt>pkinit</tt> authentication. This option can be specified multiple times. All the available certificates are checked against each rule in order until there is a match of exactly one certificate.</p><p>The Subject and Issuer comparison strings are the RFC2253 string representations from the certificate Subject DN and Issuer DN values.</p><p>The syntax of the matching rules is:</p><pre>[relation-operator]component-rule `...'</pre><p>where</p><dl><dt><var>relation-operator</var></dt>
+<dd><p>Specify <var>relation-operator</var> as <tt>&#38;&#38;</tt>, meaning all component rules must match, or <tt>||</tt>, meaning only one component rule must match. If <var>relation-operator</var> is not specified, the default is <tt>&#38;&#38;</tt>.</p></dd>
+<dt><var>component-rule</var></dt>
+<dd><p>There is no punctuation or white space between component rules.Specify <var>component-rule</var> as one of the following: </p><pre>`&#60;SUBJECT>'regular-expression
+
+`&#60;ISSUER>'regular-expression
+
+`&#60;SAN>'regular-expression
+
+`&#60;EKU>'extended-key-usage-list
+               where extended-key-usage-list is a comma-separated list
+               of required Extended Key Usage values.  All values in
+               the list must be present in the certificate.
+                    `pkinit'
+                    `msScLogin'
+                    `clientAuth'
+                    `emailProtection'
+`&#60;KU>'key-usage-list
+               where key-usage-list is a comma-separated list of
+               required Key Usage values.  All values in the list must
+               be present in the certificate.
+                    `digitalSignature'</pre></dd>
+</dl>
+<p>Examples:</p><pre>pkinit_cert_match = ||&#60;SUBJECT>.*DoE.*&#60;SAN>.*@EXAMPLE.COM
+pkinit_cert_match = &#38;&#38;&#60;EKU>msScLogin,clientAuth&#60;ISSUER>.*DoE.*
+pkinit_cert_match = &#60;EKU>msScLogin,clientAuth&#60;KU>digitalSignature</pre></dd>
+</dl>
+<h4>PKINIT URI Types</h4>
+<dl><dt><tt>FILE:</tt><var>file-name[,key-file-name]</var></dt>
+<dd><p>This option has context-specific behavior.</p><dl><dt><tt>pkinit_identities</tt></dt>
+<dd><p><var>file-name</var> specifies the name of a PEM-format file containing the user's certificate. If <var>key-file-name</var> is not specified, the user's private key is expected to be in <var>file-name</var> as well. Otherwise, <var>key-file-name</var> is the name of the file containing the private key.</p></dd>
+<dt><tt>pkinit_anchors</tt></dt>
+<dt><tt>pkinit_pool</tt></dt>
+<dd><p><var>file-name</var> is assumed to be the name of an <tt>OpenSSL-style ca-bundle</tt> file. The <tt>ca-bundle</tt> file should be base-64 encoded. </p></dd>
+</dl>
+</dd>
+<dt><tt>DIR:</tt><var>directory-name</var></dt>
+<dd><p>This option has context-specific behavior.</p><dl><dt><tt>pkinit_identities</tt></dt>
+<dd><p><var>directory-name</var> specifies a directory with files named <tt>*.crt</tt> and <tt>*.key</tt>, where the first part of the file name is the same for matching pairs of certificate and private key files. When a file with a name ending with .<tt>crt</tt> is found, a matching file ending with <tt>.key</tt> is assumed to contain the private key. If no such file is found, then the certificate in the <tt>.crt</tt> is not used.</p></dd>
+<dt><tt>pkintit_anchors</tt></dt>
+<dt><tt>pkinit_pool</tt></dt>
+<dd><p><var>directory-name</var> is assumed to be an OpenSSL-style hashed CA directory where each CA cert is stored in a file named <tt>hash-of-ca-cert</tt>.<var>#</var>. This infrastructure is encouraged, but all files in the directory is examined and if they contain certificates (in PEM format), they are used.</p></dd>
+</dl>
+</dd>
+<dt><tt>PKCS12:</tt><var>pkcs12-file-name</var></dt>
+<dd><p><var>pkcs12-file-name</var> is the name of a <tt>PKCS #12</tt> format file, containing the user's certificate and private key. </p></dd>
+<dt><tt>PKCS11:[slotid=</tt><var>slot-id</var><tt>][:token=</tt><var>token-label</var><tt>][:certid=</tt><var>cert-id</var><tt>][:certlabel=</tt><var>cert-label</var><tt>]</tt></dt>
+<dd><p>All keyword/values are optional. PKCS11 modules (for example, <tt>opensc-pkcs11.so</tt>) must be installed as a <tt>crypto</tt> provider under <a href="../821-1464/libpkcs11-3lib.html#REFMAN3Flibpkcs11-3lib"><tt>libpkcs11</tt>(3LIB)</a>. <tt>slotid=</tt> and/or <tt>token=</tt> can be specified to force the use of a particular smart card reader or token if there is more than one available. <tt>certid=</tt> and/or <tt>certlabel=</tt> can be specified to force the selection of a particular certificate on the device. See the <tt>pkinit_cert_match</tt> configuration option for more ways to select a particular certificate to use for <tt>pkinit</tt>. </p></dd>
+<dt><tt>ENV:</tt><var>environment-variable-name</var></dt>
+<dd><p><var>environment-variable-name</var> specifies the name of an environment variable which has been set to a value conforming to one of the previous values. For example, <tt>ENV:X509_PROXY</tt>, where environment variable <tt>X509_PROXY</tt> has been set to <tt>FILE:/tmp/my_proxy.pem</tt>.</p></dd>
+</dl>
+<h4>The <tt>[dbmodules]</tt> Section</h4>
+<p>This section consists of relations that provide configuration information for plug-in modules.
+In particular, the relations describe the configuration for LDAP KDB plug-in. Use
+of the <tt>db2</tt> KDB plug-in is the default behavior and that this
+section does not need to be filled out in that case.</p><dl><dt><tt>db_library</tt></dt>
+<dd><p>Name of the plug-in library. To use the LDAP KDB plug-in the name must be <tt>kdb_ldap</tt>. The default value is <tt>db2</tt>.</p></dd>
+<dt><tt>db_module_dir</tt></dt>
+<dd><p>Path to the plug-in libraries. The default is <tt>/usr/lib/krb5</tt>.</p></dd>
+<dt><tt>ldap_cert_path</tt></dt>
+<dd><p>Path to the Network Security Services (NSS) trusted database for an SSL connection. This is a required parameter when using the LDAP KDB plug-in.</p></dd>
+<dt><tt>ldap_conns_per_server</tt></dt>
+<dd><p>Number of connections per LDAP instance. The default is <tt>5</tt>.</p></dd>
+<dt><tt>ldap_kadmind_dn</tt></dt>
+<dd><p>Bind DN for <tt>kadmind</tt>. This specifies the DN that the <tt>kadmind</tt> service uses when binding to the LDAP Directory Server. The password for this bind DN should be in the <tt>ldap_service_password_file</tt>.</p></dd>
+<dt><tt>ldap_kdc_dn</tt></dt>
+<dd><p>Bind DN for a Key Distribution Center (KDC). This specifies the DN that the <tt>krb5kdc</tt> service use when binding to the LDAP Directory Server. The password for this bind DN should be in the <tt>ldap_service_password_file</tt>.</p></dd>
+<dt><tt>ldap_servers</tt></dt>
+<dd><p>List of LDAP directory servers in URI format. Use of either of the following is acceptable.</p><pre>ldap://<var>&#60;ds hostname></var>:<var>&#60;SSL port></var>
+ldap://<var>&#60;ds hostname></var></pre><p>Each server URI should be separated by whitespace.</p></dd>
+<dt><tt>ldap_service_password_file</tt></dt>
+<dd><p>File containing stashed passwords used by the KDC when binding to the LDAP Directory Server. The default is <tt>/var/krb5/service_passwd</tt>. This file is created using <a href="../821-1462/kdb5-ldap-util-1m.html#REFMAN1Mkdb5-ldap-util-1m"><tt>kdb5_ldap_util</tt>(1M)</a>.</p></dd>
+<dt><tt>ldap_ssl_port</tt></dt>
+<dd><p>Port number for SSL connection with directory server. The default is <tt>389</tt>.</p></dd>
+</dl>
+<h3>Examples</h3>
+<p><b>Example&#160;1 Sample File</b></p><p>The following is an example of a generic <tt>krb5.conf</tt> file:</p><pre>[libdefaults]
+   default_realm = ATHENA.MIT.EDU
+   default_tkt_enctypes = des-cbc-crc
+   default_tgs_enctypes = des-cbc-crc
+
+[realms]
+   ATHENA.MIT.EDU = { 
+      kdc = kerberos.mit.edu
+      kdc = kerberos-1.mit.edu
+      kdc = kerberos-2.mit.edu
+      admin_server = kerberos.mit.edu
+      auth_to_local_realm = KRBDEV.ATHENA.MIT.EDU
+   }
+
+   FUBAR.ORG = { 
+      kdc = kerberos.fubar.org
+      kdc = kerberos-1.fubar.org
+      admin_server = kerberos.fubar.org
+  }
+
+[domain_realm]
+   .mit.edu = ATHENA.MIT.EDU
+   mit.edu = ATHENA.MIT.EDU</pre><p><b>Example&#160;2 KDC Using the LDAP KDB plug-in, <tt>realms</tt> and <tt>dbmodules</tt> Sections</b></p><p>The following is an example of the <tt>realms</tt> and <tt>dbmodules</tt> sections of
+a Kerberos configuration file when the KDC is using the LDAP KDB
+plug-in.</p><pre>[realms]
+    SUN.COM = {
+        kdc = kc-umpk-01.athena.mit.edu
+        kdc = kc-umpk-02.athena.mit.edu
+        admin_server = kc-umpk-01.athena.mit.edu
+        database_module = LDAP
+    }
+
+[dbmodules]
+    LDAP = {
+        db_library = kdb_ldap
+        ldap_kerberos_container_dn = "cn=krbcontainer,dc=mit,dc=edu"
+        ldap_kdc_dn = "cn=kdc service,ou=profile,dc=mit,dc=edu"
+        ldap_kadmind_dn = "cn=kadmin service,ou=profile,dc=mit,dc=edu"
+        ldap_cert_path = /var/ldap
+        ldap_servers = ldaps://ds.mit.edu
+    }</pre><h3>Files</h3>
+<dl><dt><tt>/var/krb5/kdc.log</tt></dt>
+<dd><p>KDC logging file</p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Interface Stability</div></td>
+<td align="left" valign="top"><div class="pad5x10">See below.</div></td>
+</tr>
+</table>
+</td></tr></table>
+<p>All of the keywords are Committed, except for the <tt>PKINIT</tt> keywords, which
+are Volatile.</p><h3>See Also</h3>
+<p><a href="../821-1461/kinit-1.html#REFMAN1kinit-1"><tt>kinit</tt>(1)</a>, <a href="../821-1461/rcp-1.html#REFMAN1rcp-1"><tt>rcp</tt>(1)</a>, <tt>rdist</tt>(1), <a href="../821-1461/rlogin-1.html#REFMAN1rlogin-1"><tt>rlogin</tt>(1)</a>, <a href="../821-1461/rsh-1.html#REFMAN1rsh-1"><tt>rsh</tt>(1)</a>, <a href="../821-1461/telnet-1.html#REFMAN1telnet-1"><tt>telnet</tt>(1)</a>, <a href="../821-1465/syslog-3c.html#REFMAN3Asyslog-3c"><tt>syslog</tt>(3C)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a>, <a href="../821-1474/kerberos-5.html#REFMAN5kerberos-5"><tt>kerberos</tt>(5)</a>, <a href="../821-1474/regex-5.html#REFMAN5regex-5"><tt>regex</tt>(5)</a></p><h3>Notes</h3>
+<p>If the <tt>krb5.conf</tt> file is not formatted properly, the <tt>telnet</tt> command fails.
+However, the <tt>dtlogin</tt> and <tt>login</tt> commands still succeed, even if the <tt>krb5.conf</tt>
+file is specified as required for the commands. If this occurs, the following
+error message is displayed:</p><pre>Error initializing krb5: Improper format of <var>item</var></pre><p>To bypass any other problems that might occur, you should fix the
+file as soon as possible.</p><p>The <tt>max_life</tt> and <tt>max_renewable_life</tt> options are obsolete and is removed in a
+future release of the Solaris operating system.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="keytables-4.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="label-encodings-4.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

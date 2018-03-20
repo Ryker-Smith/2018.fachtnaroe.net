@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/find2.html -->
+
+<HEAD>
+<TITLE>Examples of executing commands with the find command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of executing commands with the find command</H1>
+
+<P>To remove several files:</P>
+
+<PRE WIDTH=80>   <STRONG>find . -name 'mtg_*' -print -exec rm {} \;</STRONG>
+</PRE>
+
+<P>This will search for and remove all files starting with
+the expression <SAMP>mtg_</SAMP> from the current directory and
+its subdirectories.</P>
+
+<HR>
+
+<P>To find and remove specific files:</P>
+
+<PRE WIDTH=80>   <STRONG>find . -name '*.tmp' -ctime +30 -print -exec rm {} \;</STRONG>
+</PRE>
+
+<P>This removes all files in the current directory and its
+subdirectories with the filename extension <SAMP>.tmp</SAMP> which
+have not been changed within the last 30 days.</P>
+
+<HR>
+
+<P>To find and remove files interactively;</P>
+
+<PRE WIDTH=80>   <STRONG>find ~/Docs -name '*.ps' -print -ok rm {} \;</STRONG>
+</PRE>
+
+<P>This searches for files with the extension <SAMP>.ps</SAMP> starting
+in the subdirectory "Docs" in the user's home directory. Each
+time a file is found that matches this expression, the
+user is prompted to confirm that they want to remove it.</P>
+
+<P>Entering <STRONG>y</STRONG> removes the file.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

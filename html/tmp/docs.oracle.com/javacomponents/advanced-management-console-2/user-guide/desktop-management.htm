@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Desktop Management</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="The Advanced Management Console provides administrators with information about how Java technology is used in their enterprise. Through the Advanced Management Console, administrators can determine such things as how many computers are running an insecure version of Java, what versions of the JRE are installed on enterprise computers, and what deployment rule sets are active in the enterprise. The Advanced Management Console also enables administrators to push deployment rule sets to managed computers." />
+<meta name="dcterms.created" content="2017-01-20T02:15:31Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Advanced Management Console User's Guide" />
+<meta name="dcterms.identifier" content="E62444-09" />
+<meta name="dcterms.isVersionOf" content="JSAMV" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="introduction-advanced-management-console.htm" title="Previous" type="text/html" />
+<link rel="Next" href="java-usage.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JSAMV.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSAMV.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSAMV.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-3AF10F11-6162-40F0-837A-BC0115655A89"></a> <span id="PAGE" style="display:none;">6/13</span> <!-- End Header -->
+<a id="JSAMV112"></a><a id="JSAMV111"></a>
+<h1 id="JSAMV-GUID-3AF10F11-6162-40F0-837A-BC0115655A89" class="sect1"><span class="enumeration_chapter">3</span> Desktop Management</h1>
+<div>
+<p>The <span>Advanced Management Console</span> provides administrators with information about how Java technology is used in their enterprise. Through the <span>Advanced Management Console</span>, administrators can determine such things as how many computers are running an insecure version of Java, what versions of the JRE are installed on enterprise computers, and what deployment rule sets are active in the enterprise. The <span>Advanced Management Console</span> also enables administrators to push deployment rule sets to managed computers.</p>
+<p>The Desktop Management topic includes the following sections:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="desktop-management.htm#GUID-8970619A-7678-4F45-838E-ACAC0C4444FC" title="Desktops in the Advanced Management Console represent the client computers in an enterprise. Information about the desktops that are managed by the Advanced Management Console is shown in the Desktops tab and the Status tab.">About Desktops</a></p>
+</li>
+<li>
+<p><a href="desktop-management.htm#GUID-FC56225F-DB27-4C1F-886F-F625A24A4286" title="The Desktops tab of the Advanced Management Console shows information about the desktops that are managed by the Advanced Management Console. Filters are available to get reports about selected desktop properties. The ability to push Deployment Rule Sets to desktops and export desktop information to an HTML file or comma-separated values (CSV) file is also provided.">Desktops Tab</a></p>
+</li>
+<li>
+<p><a href="desktop-management.htm#GUID-926A1E84-9603-416E-9AF9-EC346D144843" title="Data from the desktop reports that are generated by Advanced Management Console can be exported to an external file. Filter criteria is used to choose the desktops that are included in the exported data.">Exporting Desktop Reports</a></p>
+</li>
+<li>
+<p><a href="desktop-management.htm#GUID-48A5B7AB-2E96-4B2A-ADE1-C67F44395956">Pushing a Deployment Rule Set</a></p>
+</li>
+<li>
+<p><a href="desktop-management.htm#GUID-75A814EA-9A70-4BE2-AC78-E3005DAF99D6" title="The Advanced Management Console agents can detect whether or not the Java Runtime Environments (JREs) are web enabled. If the JREs are web enabled, then they can be used to run applets and Java Web Start applications.">Desktop Properties</a></p>
+</li>
+<li>
+<p><a href="desktop-management.htm#GUID-99B8EC8F-3C18-4020-9905-6737B911468E">Filter Criteria for Desktops</a></p>
+</li>
+<li>
+<p><a href="desktop-management.htm#GUID-D10964E5-9E3F-42E7-9636-D38AB8156413">JRE Security Baseline</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMV113"></a>
+<div class="props_rev_3"><a id="GUID-8970619A-7678-4F45-838E-ACAC0C4444FC"></a>
+<h2 id="JSAMV-GUID-8970619A-7678-4F45-838E-ACAC0C4444FC" class="sect2">About Desktops</h2>
+<div>
+<p>Desktops in the <span>Advanced Management Console</span> represent the client computers in an enterprise. Information about the desktops that are managed by the <span>Advanced Management Console</span> is shown in the Desktops tab and the Status tab.</p>
+<p>For a desktop to be managed by the <span>Advanced Management Console</span>, the <span>Advanced Management Console</span> agent must be installed on the desktop. The agent gathers the information about the desktop and sends it to the central server. The agent also processes the requests to install a deployment rule set on the desktop. See <a class="olink JSAMI141" target="_blank" href="../install-guide/advanced-management-console-agent-installation-and-configuration.htm#JSAMI141">Advanced Management Console Agent Installation and Configuration</a> in the <span class="italic"><span>Advanced Management Console</span> Installation and Configuration Guide</span>.</p>
+<p>A report of retired desktops and rule set failures is available from the Status tab.</p>
+</div>
+</div>
+<a id="JSAMV114"></a>
+<div class="props_rev_3"><a id="GUID-FC56225F-DB27-4C1F-886F-F625A24A4286"></a>
+<h2 id="JSAMV-GUID-FC56225F-DB27-4C1F-886F-F625A24A4286" class="sect2">Desktops Tab</h2>
+<p>The Desktops tab of the <span>Advanced Management Console</span> shows information about the desktops that are managed by the <span>Advanced Management Console</span>. Filters are available to get reports about selected desktop properties. The ability to push Deployment Rule Sets to desktops and export desktop information to an HTML file or comma-separated values (CSV) file is also provided.</p>
+<a id="JSAMV115"></a>
+<div class="props_rev_3"><a id="GUID-1C7DDB59-0F40-45D4-9040-64EC2F3A7DF3"></a>
+<h3 id="JSAMV-GUID-1C7DDB59-0F40-45D4-9040-64EC2F3A7DF3" class="sect3">Views for Desktops</h3>
+<div>
+<p>The table in the Desktops tab shows the properties for desktops that are managed by the <span>Advanced Management Console</span>. The properties view provides more detailed information for each desktop. Depending on the display option selected, information can also be shown as a pie chart or a bar chart.</p>
+<p>The table view is the default view. The table view is available for all display options. However the properties that are shown are dependent on the display option selected. Click the arrow that appears in the column heading to sort the data by the values in that column. Use the navigation bar below the table to view additional pages when the number of desktops exceeds the page size.</p>
+<p>The properties view is available only when <span class="bold">Desktop</span> is selected as the display option. Click the column heading in the Installed JREs table or Command Queue table to sort the data by the values in that column. Use the navigation bar to scroll through the properties for other desktops that match the filter criteria.</p>
+<p>The pie chart and bar chart are available when something other than <span class="bold">Desktop</span> is selected as the display option. Click a segment from the pie chart or a bar from the bar chart to see the desktops that match the selected value.</p>
+</div>
+</div>
+<a id="JSAMV116"></a>
+<div class="props_rev_3"><a id="GUID-807DF1A6-E662-47A2-A192-112E9992C120"></a>
+<h3 id="JSAMV-GUID-807DF1A6-E662-47A2-A192-112E9992C120" class="sect3">Filters for Desktop Properties</h3>
+<div>
+<p>The display option and the filter criteria in the Desktops tab determine what information is shown for the desktops managed by <span>Advanced Management Console</span>.</p>
+<p>The default display option is <span class="bold">Desktop</span>, which shows the properties for each managed desktop in a table. The other choices for the display option show the values for the selected option and the number of desktops that match each value. For example, selecting Java Runtime Environment (JRE) Major Version shows every major version of the JRE that is installed on at least one desktop and the number of desktops on which it is installed.</p>
+<p>The filter criteria further refine the information shown. The choices available for the criteria are based on the properties of the desktops. For example, if the only major JRE versions found across all managed desktops are 1.7.0 and 1.8.0, then 1.6.0 is not shown as a choice for the JRE Major Version criterion.</p>
+<p>You can use the display option and filter criteria together to get answers to questions similar to the ones in the following list:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Which desktops are running insecure versions of the JRE?</p>
+<p>Set <span class="bold">Display</span> to <span class="bold">Desktop</span>. Add the criterion <span class="bold">JRE Security</span>, and set it to <span class="bold">some JREs are insecure</span>. The table shows the list of desktops that have at least one insecure JRE installed.</p>
+</li>
+<li>
+<p>How many desktops are running versions of JRE 6?</p>
+<p>Set <span class="bold">Display</span> to <span class="bold">JRE Major Version</span>. See the number in the Hosts column for the row showing JRE Major Version 1.6.0.</p>
+<p>To show only the data for version 1.6.0, add the criterion <span class="bold">JRE Major Version</span> and set it to <span class="bold">1.6.0</span>. If 1.6.0 is not shown in the table or in the list of major versions available, then no desktops are running a version of JRE 6.</p>
+</li>
+<li>
+<p>Which deployment rule sets are desktops using?</p>
+<p>Set <span class="bold">Display</span> to <span class="bold">Active Rule Set</span>. The table shows the list of rules sets that are active and the number of desktops for each rule set.</p>
+</li>
+<li>
+<p>Which desktops are using the rule set <span class="variable">rule-set-name</span>?</p>
+<p>Set <span class="bold">Display</span> to <span class="bold">Desktop</span>. Add the criterion <span class="bold">Active Rule Set</span> and set it to the name of the rule set that you are interested in. The table shows the list of desktops that are using the selected rule set.</p>
+</li>
+</ul>
+</div>
+</div>
+<a id="JSAMV117"></a>
+<div class="props_rev_3"><a id="GUID-2E4A09B6-86C3-4B68-9380-6F595CEAB13F"></a>
+<h3 id="JSAMV-GUID-2E4A09B6-86C3-4B68-9380-6F595CEAB13F" class="sect3">Deployment Rule Set Distribution</h3>
+<div>
+<p>A deployment rule set helps you manage the applications that are allowed to run in your enterprise. The Desktops tab in <span>Advanced Management Console</span> contains an option for pushing a deployment rule set to selected desktops.</p>
+<p>The <span>Advanced Management Console</span> agent is used to install the rule set on a desktop. Pushing a rule set sends a command to the agent. The next time the agent contacts the <span>Advanced Management Console</span> server, the agent processes the command. View the status of the rule set by selecting the <span class="bold">Rule Set Status</span> display option or setting the <span class="bold">Rule Set Status</span> filter criteria.</p>
+</div>
+</div>
+</div>
+<a id="JSAMV118"></a>
+<div class="props_rev_3"><a id="GUID-3A93F0E1-B476-4F16-948D-528FEDC5D114"></a>
+<h2 id="JSAMV-GUID-3A93F0E1-B476-4F16-948D-528FEDC5D114" class="sect2">Generating Reports for Desktops</h2>
+<div>
+<p>Reports are used to answer questions about desktops that are managed by <span>Advanced Management Console</span> and about the JRE versions and deployment rule sets installed on those desktops. Set the display option and filter criteria in the Desktops tab to generate the type of report that you want. Report data can be exported to an external file.</p>
+<div class="section">
+<p>Depending on the filters that are used, reports are available as a table, pie chart, or bar chart. See <a href="desktop-management.htm#GUID-1C7DDB59-0F40-45D4-9040-64EC2F3A7DF3" title="The table in the Desktops tab shows the properties for desktops that are managed by the Advanced Management Console. The properties view provides more detailed information for each desktop. Depending on the display option selected, information can also be shown as a pie chart or a bar chart.">Views for Desktops</a>.</p>
+<p>Reports about retired desktops or desktops with rule set failures are available from the Status tab.</p>
+</div>
+<!-- class="section" --></div>
+<a id="JSAMV119"></a>
+<div class="props_rev_3"><a id="GUID-EC5A1F42-645D-4B4B-BFAC-586A7FDC7AAB"></a>
+<h3 id="JSAMV-GUID-EC5A1F42-645D-4B4B-BFAC-586A7FDC7AAB" class="sect3">Setting the Display Option for Desktop Reports</h3>
+<div>
+<div class="section">
+<p>Set the display option in the Desktops tab to show how many desktops managed by <span>Advanced Management Console</span> match each value for a specific property.</p>
+<p>To set the display option:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Desktops</span> tab.</span></li>
+<li class="stepexpand"><span>Select a property to see the report for that property.</span>
+<div>
+<p>The following examples show how the display option is used:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>To show the JRE versions installed on desktops and the number of desktops that have each version installed, set <span class="bold">Display</span> to <span class="bold">JRE Full Version</span>. The first column in the table shows the JRE versions that are found. The second column shows how many desktops have that version installed.</p>
+</li>
+<li>
+<p>To show the rule sets that are active on desktops and the number of desktops that have each rule set installed, set <span class="bold">Display</span> to <span class="bold">Active Rule Set</span>. The first column in the table shows the names of the active rule sets that are found. The second column shows how many desktops have that rule set installed.</p>
+</li>
+<li>
+<p>If a desktop group exists, then show the number of desktops associated with each value for a desktop group by setting <span class="bold">Display</span> to the name of a desktop group.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<a id="JSAMV120"></a>
+<div class="props_rev_3"><a id="GUID-73E94B6A-32B3-465B-9EB4-7B61E33C47AF"></a>
+<h3 id="JSAMV-GUID-73E94B6A-32B3-465B-9EB4-7B61E33C47AF" class="sect3">Setting Filters for Desktop Reports</h3>
+<div>
+<div class="section">
+<p>Use filters in the Desktops tab to show only desktops managed by <span>Advanced Management Console</span> that match specific values for selected desktop properties.</p>
+<p>To filter the information by a desktop property:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In <span>Advanced Management Console</span>, click the <span class="bold">Desktops</span> tab.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Add Criteria</span> and select one or more filters from the list.</span></li>
+<li class="stepexpand"><span>For each filter selected, select or enter the value to match.</span>
+<div>
+<p>Filters that provide a list of values show only values that are present in at least one desktop. For example, the JRE Major Version filter shows only major versions that are installed on at least one desktop. For filters that do not provide a list of values, such as First Name and Last Name, enter the string to match and press Enter. Wildcards are not currently supported.</p>
+<p>Some filters require a secondary filter. The secondary filter is automatically shown when the primary filter is selected. For example, if the filter criterion <span class="bold">OS Version</span> is selected, then the <span class="bold">OS Family</span> filter is also displayed.</p>
+</div>
+</li>
+</ol>
+<div class="section">
+<p>To see which desktops match the filter criteria, set <span class="bold">Display</span> to <span class="bold">Desktop</span>.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+</div>
+<a id="JSAMV210"></a>
+<div class="props_rev_3"><a id="GUID-926A1E84-9603-416E-9AF9-EC346D144843"></a>
+<h2 id="JSAMV-GUID-926A1E84-9603-416E-9AF9-EC346D144843" class="sect2">Exporting Desktop Reports</h2>
+<div>
+<p>Data from the desktop reports that are generated by <span>Advanced Management Console</span> can be exported to an external file. Filter criteria is used to choose the desktops that are included in the exported data.</p>
+<div class="section">
+<p>To export data for desktops:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Desktops</span> tab.</span></li>
+<li class="stepexpand"><span>Make sure that <span class="bold">Display</span> is set to <span class="bold">Desktop</span>.</span>
+<div>
+<p>The <span class="bold">Export Data</span> button is available only with the <span class="bold">Desktop</span> display option.</p>
+</div>
+</li>
+<li class="stepexpand"><span>(Optional) Set the filter criteria to show only the desktops that you want included in the exported data.</span>
+<div>
+<p>Click <span class="bold">Add Criteria</span> and set the values for each filter that you select. Only information that matches the criteria is exported.</p>
+<p>If no filters are set, then all desktops are included in the exported data.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Export Data</span>.</span>
+<div>
+<p>The Export Data window is shown.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Choose the output format.</span>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p>HTML: The generated file contains the data in a table with HTML formatting.</p>
+</li>
+<li>
+<p>CSV: The generated file contains the data in text fields that are separated by the value separator that you select.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Confirm</span>.</span>
+<div>
+<p>The browser prompts you to either save or view the data. Depending on the format selected, the default file name is <code>amc2-desktops_<span class="variable">YYYY-MM-DD_HH-MM</span>.csv</code> or <code>amc2-desktops_<span class="variable">YYYY-MM-DD_HH-MM</span>.html</code>, where <code><span class="variable">YYYY-MM-DD_HH-MM</span></code> is the server-side time stamp of when the file was created.</p>
+</div>
+</li>
+</ol>
+<div class="section">
+<p>The following data is exported for each application that meets the filter criteria.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Operating system name</p>
+</li>
+<li>
+<p>Operating system version</p>
+</li>
+<li>
+<p>Operating system architecture</p>
+</li>
+<li>
+<p>Owner name</p>
+</li>
+<li>
+<p>Owner email address</p>
+</li>
+<li>
+<p>Time stamp of last contact</p>
+</li>
+<li>
+<p>Host name</p>
+</li>
+<li>
+<p>IP address</p>
+</li>
+<li>
+<p>Name of active rule set</p>
+</li>
+<li>
+<p>Agent version</p>
+</li>
+<li>
+<p>Number of secure JRE versions installed on the desktop</p>
+</li>
+<li>
+<p>Number of insecure JRE versions installed on the desktop</p>
+</li>
+<li>
+<p>Desktop groups and the value of the group property for any group that includes the desktop</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV121"></a>
+<div class="props_rev_3"><a id="GUID-48A5B7AB-2E96-4B2A-ADE1-C67F44395956"></a>
+<h2 id="JSAMV-GUID-48A5B7AB-2E96-4B2A-ADE1-C67F44395956" class="sect2">Pushing a Deployment Rule Set</h2>
+<div>
+<div class="section">
+<p>A deployment rule set provides rules for allowing or blocking Java applications based on the criteria set in the rule. The <span>Advanced Management Console</span> enables you to distribute signed deployment rule sets to the desktops in your enterprise. When the <span>Advanced Management Console</span> pushes a signed <code>DeploymentRuleSet.jar</code> file to a desktop, the <span>Advanced Management Console</span> agent edits the Java <code>deployment.properties</code> on that desktop to point to a specific truststore that holds the certificates from this <code>DeploymentRuleSet.jar</code> file. By default, the <code>deployment.properties</code> file is located at: <code>C:\Windows\Sun\Java\Deployment\</code>.</p>
+<p>If your desktop already contains a <code>deployment.properties</code> file with the <code>deployment.user.security.trusted.cacerts</code> property set to a specific location, then <span>Advanced Management Console</span> overwrites that property value.</p>
+<div class="infobox-note" id="GUID-48A5B7AB-2E96-4B2A-ADE1-C67F44395956__GUID-9A3468B5-3822-4252-89AB-A5BD2C344467">
+<p class="notep1">Note:</p>
+<p>A signed deployment rule set must be available in <span>Advanced Management Console</span>. Otherwise, the option to push a deployment rule set is not enabled.</p>
+</div>
+<p>To push a deployment rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In <span>Advanced Management Console</span>, click the <span class="bold">Desktops</span> tab.</span></li>
+<li class="stepexpand"><span>Make sure that <span class="bold">Display</span> is set to <span class="bold">Desktop</span>.</span>
+<div>
+<p>The <span class="bold">Push Deployment Rule Set</span> button is available only with the <span class="bold">Desktop</span> display option.</p>
+</div>
+</li>
+<li class="stepexpand"><span>(Optional) Set the filter criteria to show the subset of desktops to which you want to push the rule set.</span></li>
+<li class="stepexpand"><span>(Optional) Select the target desktops by selecting the check box for the desktop.</span>
+<div>
+<p>If no desktops are selected, then the target is all desktops that match the filter criteria that is set.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Push Deployment Rule Set</span> to display the Push Deployment Rule Set dialog</span></li>
+<li class="stepexpand"><span>Choose one rule set from the list provided.</span>
+<div>
+<p>Only signed rule sets can be distributed. If the rule set that you want to push is not in the list, then the rule set is currently unsigned.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Choose the target.</span>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p>To push only to selected desktops, select <span class="bold">Selected Desktops</span>.</p>
+</li>
+<li>
+<p>To push to all desktops matched by the filter criteria that is set, select <span class="bold">All Filtered Desktops</span>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Push</span>.</span></li>
+</ol>
+<div class="section">
+<p>The next time the agent on the target desktops contacts the <span>Advanced Management Console</span> server, the agent downloads and installs the rule set. View the status of the rule set by selecting the <span class="bold">Rule Set Status</span> display option or setting the <span class="bold">Rule Set Status</span> filter criteria.</p>
+<div class="infobox-note" id="GUID-48A5B7AB-2E96-4B2A-ADE1-C67F44395956__GUID-DA92C412-7ACF-414A-995C-7479F225CD0F">
+<p class="notep1">Note:</p>
+<p>A rule set that is altered on a desktop after being deployed from <span>Advanced Management Console</span> is no longer recognized by <span>Advanced Management Console</span>. Properties for any desktop with an altered rule set are updated to indicate that the desktop does not have an active rule set.</p>
+</div>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV122"></a>
+<div class="props_rev_3"><a id="GUID-75A814EA-9A70-4BE2-AC78-E3005DAF99D6"></a>
+<h2 id="JSAMV-GUID-75A814EA-9A70-4BE2-AC78-E3005DAF99D6" class="sect2">Desktop Properties</h2>
+<div>
+<div class="section">
+<p>The <span>Advanced Management Console</span> agent collects information about the desktops managed by <span>Advanced Management Console</span>. The properties describe such things as the JRE versions, the operating system, and the deployment rule set for each desktop.</p>
+<p>The following table describes the desktop properties that are shown when the display option is set to <span class="bold">Desktop</span>. Properties that are shown only in the properties view are indicated by an X in the Properties View Only column.</p>
+</div>
+<!-- class="section" -->
+<div class="tblformalwide" id="GUID-75A814EA-9A70-4BE2-AC78-E3005DAF99D6__GUID-59716607-8BAE-4C37-8144-CC19A669BB2F">
+<table class="cellalignment141" summary="Describes the attributes that are available for each desktop in the enterprise. In the AMCUser.properties file, the properties indicated as optional can be left blank.">
+<thead>
+<tr class="cellalignment107">
+<th class="cellalignment154" id="d2055e832">Property</th>
+<th class="cellalignment155" id="d2055e835">Description</th>
+<th class="cellalignment154" id="d2055e838">Properties View Only</th>
+<th class="cellalignment154" id="d2055e841">Optional</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e845" headers="d2055e832">
+<p>Active Rule Set</p>
+</td>
+<td class="cellalignment157" headers="d2055e845 d2055e835">
+<p>Name of the active rule set, if any</p>
+</td>
+<td class="cellalignment156" headers="d2055e845 d2055e838">&nbsp;</td>
+<td class="cellalignment156" headers="d2055e845 d2055e841">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e857" headers="d2055e832">
+<p>Architecture</p>
+</td>
+<td class="cellalignment157" headers="d2055e857 d2055e835">
+<p>Architecture of the JRE, for example, 32-bit</p>
+</td>
+<td class="cellalignment156" headers="d2055e857 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e857 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e868" headers="d2055e832">
+<p>Command Queue</p>
+</td>
+<td class="cellalignment157" headers="d2055e868 d2055e835">
+<p>List of commands executed for the desktop, the status of each command, and any additional details, such as the name of the deployment rule set that was pushed</p>
+</td>
+<td class="cellalignment156" headers="d2055e868 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e868 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e879" headers="d2055e832">
+<p>First Name</p>
+</td>
+<td class="cellalignment157" headers="d2055e879 d2055e835">
+<p>First name of the registered user of the desktop</p>
+</td>
+<td class="cellalignment156" headers="d2055e879 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e879 d2055e841">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e892" headers="d2055e832">
+<p>Host Name</p>
+</td>
+<td class="cellalignment157" headers="d2055e892 d2055e835">
+<p>Host name of the desktop</p>
+</td>
+<td class="cellalignment156" headers="d2055e892 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e892 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e903" headers="d2055e832">
+<p>IP Address</p>
+</td>
+<td class="cellalignment157" headers="d2055e903 d2055e835">
+<p>IP address of the desktop</p>
+</td>
+<td class="cellalignment156" headers="d2055e903 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e903 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e914" headers="d2055e832">
+<p>Java Vendor</p>
+</td>
+<td class="cellalignment157" headers="d2055e914 d2055e835">
+<p>Name of the vendor that distributed the JRE</p>
+</td>
+<td class="cellalignment156" headers="d2055e914 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e914 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e925" headers="d2055e832">
+<p>Java Versions</p>
+</td>
+<td class="cellalignment157" headers="d2055e925 d2055e835">
+<p>List all <a href="desktop-management.htm#GUID-699818E0-61D6-43E3-AEC2-3FAF93760CE0" title="The Advanced Management Console agents can detect whether or not the Java Runtime Environments (JREs) are web enabled. If the JREs are web enabled, then they can be used to run applets and Java Web Start applications.">web-enabled JREs</a> found on the desktop.</p>
+</td>
+<td class="cellalignment156" headers="d2055e925 d2055e838">&nbsp;</td>
+<td class="cellalignment156" headers="d2055e925 d2055e841">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e947" headers="d2055e832">
+<p>Last Contact</p>
+</td>
+<td class="cellalignment157" headers="d2055e947 d2055e835">
+<p>Time stamp of the last contact with the agent</p>
+</td>
+<td class="cellalignment156" headers="d2055e947 d2055e838">&nbsp;</td>
+<td class="cellalignment156" headers="d2055e947 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e957" headers="d2055e832">
+<p>Last Name</p>
+</td>
+<td class="cellalignment157" headers="d2055e957 d2055e835">
+<p>Last name of the registered user of the desktop</p>
+</td>
+<td class="cellalignment156" headers="d2055e957 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e957 d2055e841">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e970" headers="d2055e832">
+<p>OS</p>
+</td>
+<td class="cellalignment157" headers="d2055e970 d2055e835">
+<p>Operating system that the desktop is running</p>
+</td>
+<td class="cellalignment156" headers="d2055e970 d2055e838">&nbsp;</td>
+<td class="cellalignment156" headers="d2055e970 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e981" headers="d2055e832">
+<p>OS Architecture</p>
+</td>
+<td class="cellalignment157" headers="d2055e981 d2055e835">
+<p>Architecture of the operating system that the desktop is running, for example, 64-bit</p>
+</td>
+<td class="cellalignment156" headers="d2055e981 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e981 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e992" headers="d2055e832">
+<p>OS Family</p>
+</td>
+<td class="cellalignment157" headers="d2055e992 d2055e835">
+<p>Operating system for the desktop</p>
+</td>
+<td class="cellalignment156" headers="d2055e992 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e992 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e1003" headers="d2055e832">
+<p>Other JREs</p>
+</td>
+<td class="cellalignment157" headers="d2055e1003 d2055e835">
+<p>Lists all other JREs (not web-enabled) found on the desktop.</p>
+</td>
+<td class="cellalignment156" headers="d2055e1003 d2055e838">&nbsp;</td>
+<td class="cellalignment156" headers="d2055e1003 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e1012" headers="d2055e832">
+<p>Owner Email</p>
+</td>
+<td class="cellalignment157" headers="d2055e1012 d2055e835">
+<p>Email for the registered user of the desktop</p>
+</td>
+<td class="cellalignment156" headers="d2055e1012 d2055e838">&nbsp;</td>
+<td class="cellalignment156" headers="d2055e1012 d2055e841">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e1024" headers="d2055e832">
+<p>Secure</p>
+</td>
+<td class="cellalignment157" headers="d2055e1024 d2055e835">
+<p>Flag that indicates if the JRE is a secure version. A check mark means that it is secure.</p>
+</td>
+<td class="cellalignment156" headers="d2055e1024 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e1024 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e1035" headers="d2055e832">
+<p>Path</p>
+</td>
+<td class="cellalignment157" headers="d2055e1035 d2055e835">
+<p>Path to the location of the JRE. If the JRE is in more than one location, then all paths are shown, separated by semicolons (;).</p>
+</td>
+<td class="cellalignment156" headers="d2055e1035 d2055e838">
+<p>X</p>
+</td>
+<td class="cellalignment156" headers="d2055e1035 d2055e841">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment156" id="d2055e1046" headers="d2055e832">
+<p>Version</p>
+</td>
+<td class="cellalignment157" headers="d2055e1046 d2055e835">
+<p>Version of the Advanced Management Console agent installed on the desktop</p>
+</td>
+<td class="cellalignment156" headers="d2055e1046 d2055e838">&nbsp;</td>
+<td class="cellalignment156" headers="d2055e1046 d2055e841">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- class="inftblhruleinformal" -->
+<div class="section">
+<p>When the display option is set to something other than <span class="bold">Desktop</span>, the table shows the values for the selected <a href="desktop-management.htm#GUID-99B8EC8F-3C18-4020-9905-6737B911468E">filter criteria for desktops</a> and the number of desktops that match each value.</p>
+</div>
+<!-- class="section" --></div>
+<div class="sect3"><a id="GUID-699818E0-61D6-43E3-AEC2-3FAF93760CE0"></a>
+<h3 id="JSAMV-GUID-699818E0-61D6-43E3-AEC2-3FAF93760CE0" class="sect3">Web-Enabled JREs</h3>
+<div>
+<p>The <span>Advanced Management Console</span> agents can detect whether or not the Java Runtime Environments (JREs) are web enabled. If the JREs are web enabled, then they can be used to run applets and Java Web Start applications.</p>
+<p>The <span>Advanced Management Console</span> can detect what JREs are actually used by Java Plugin or the Java Web Start to run Rich Internet Applications (RIAs). These web-enabled JREs are displayed in the <span class="bold">Java Versions</span> column of the <a href="desktop-management.htm#GUID-75A814EA-9A70-4BE2-AC78-E3005DAF99D6" title="The Advanced Management Console agents can detect whether or not the Java Runtime Environments (JREs) are web enabled. If the JREs are web enabled, then they can be used to run applets and Java Web Start applications.">Desktop Properties</a> and in the Web Enabled JREs table in the Properties view. To view the Web Enabled JREs table, in the <span class="bold">Desktops</span> tab, select a Desktop, and click the <span class="bold">Properties</span> icon. Details of the selected desktop are displayed in the following tables: <span class="bold">Web Enabled JREs</span>, <span class="bold">Installed JREs</span>, and <span class="bold">Command Queue</span>. All the other JREs are listed in the <span class="bold">Other JREs</span> column of the <span class="bold">Desktop</span> tab.</p>
+<p>You can also view the web-enabled JREs when you select either the JRE Full Version or the JRE Major Version from the <span class="bold">Display</span> drop-down list in the Desktop tab.</p>
+</div>
+</div>
+</div>
+<a id="JSAMV123"></a>
+<div class="props_rev_3"><a id="GUID-99B8EC8F-3C18-4020-9905-6737B911468E"></a>
+<h2 id="JSAMV-GUID-99B8EC8F-3C18-4020-9905-6737B911468E" class="sect2">Filter Criteria for Desktops</h2>
+<div>
+<div class="section">
+<p>The filter criteria available in the Desktops tab is used to generate reports about the desktops managed by <span>Advanced Management Console</span>. The filters and the values chosen provide administrators with specific information about the desktops and JRE versions in use in the enterprise.</p>
+<p>The following table describes the filters that are available for desktops, and indicates if the criteria is set as the display option or as a filter. For filters, the valid values are provided in the drop-down list, except where noted in the description.</p>
+</div>
+<!-- class="section" -->
+<div class="tblformalwide" id="GUID-99B8EC8F-3C18-4020-9905-6737B911468E__GUID-61E1AE94-21E6-4293-9958-D0F221C806CA">
+<table class="cellalignment141" summary="Description of the filters that are available for selecting the type of information to be shown about desktops.">
+<thead>
+<tr class="cellalignment107">
+<th class="cellalignment158" id="d2055e1163">Criteria</th>
+<th class="cellalignment159" id="d2055e1166">Description</th>
+<th class="cellalignment160" id="d2055e1169">Display Option</th>
+<th class="cellalignment161" id="d2055e1172">Filter Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1177" headers="d2055e1163">
+<p>Desktop</p>
+</td>
+<td class="cellalignment163" headers="d2055e1177 d2055e1166">
+<p>List of desktops managed by <span>Advanced Management Console</span></p>
+</td>
+<td class="cellalignment164" headers="d2055e1177 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1177 d2055e1172">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1191" headers="d2055e1163">
+<p>JRE Major Version</p>
+</td>
+<td class="cellalignment163" headers="d2055e1191 d2055e1166">
+<p>Major version of the JRE, such as 1.7.0 or 1.8.0.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1191 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1191 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1204" headers="d2055e1163">
+<p>JRE Minor Version</p>
+</td>
+<td class="cellalignment163" headers="d2055e1204 d2055e1166">
+<p>Version number of the update release for a major release. The JRE major version filter is also shown when this filter is selected.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1204 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1204 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1216" headers="d2055e1163">
+<p>JRE Full Version</p>
+</td>
+<td class="cellalignment163" headers="d2055e1216 d2055e1166">
+<p>Major and minor version of the JRE, such as 1.7.0_67 or 1.8.0_40</p>
+</td>
+<td class="cellalignment164" headers="d2055e1216 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1216 d2055e1172">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1228" headers="d2055e1163">
+<p>JRE Architecture</p>
+</td>
+<td class="cellalignment163" headers="d2055e1228 d2055e1166">
+<p>Architecture of the JRE, such as 32 for the 32-bit JRE</p>
+</td>
+<td class="cellalignment164" headers="d2055e1228 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1228 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1241" headers="d2055e1163">
+<p>JRE Security</p>
+</td>
+<td class="cellalignment163" headers="d2055e1241 d2055e1166">
+<p>Security status based on the <a href="desktop-management.htm#GUID-D10964E5-9E3F-42E7-9636-D38AB8156413">JRE security baseline</a>. Set the filter to show desktops where all installed JREs are secure, all installed JREs are insecure, or some installed JREs are insecure.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1241 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1241 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1257" headers="d2055e1163">
+<p>OS Family</p>
+</td>
+<td class="cellalignment163" headers="d2055e1257 d2055e1166">
+<p>Operating system for the desktop</p>
+</td>
+<td class="cellalignment164" headers="d2055e1257 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1257 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1270" headers="d2055e1163">
+<p>OS Version</p>
+</td>
+<td class="cellalignment163" headers="d2055e1270 d2055e1166">
+<p>Version of the operating system. The OS family filter is also shown when this filter is selected.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1270 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1270 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1282" headers="d2055e1163">
+<p>OS (Family + Version)</p>
+</td>
+<td class="cellalignment163" headers="d2055e1282 d2055e1166">
+<p>Family and version of the operating system</p>
+</td>
+<td class="cellalignment164" headers="d2055e1282 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1282 d2055e1172">&nbsp;</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1294" headers="d2055e1163">
+<p>OS Architecture</p>
+</td>
+<td class="cellalignment163" headers="d2055e1294 d2055e1166">
+<p>Architecture of the operating system</p>
+</td>
+<td class="cellalignment164" headers="d2055e1294 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1294 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1307" headers="d2055e1163">
+<p>Last Contact</p>
+</td>
+<td class="cellalignment163" headers="d2055e1307 d2055e1166">
+<p>The following types of desktops listed in this drop-down list: Retired, Online, and Offline. Set the filter to display the desktop type:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Retired: a desktop that hasn't contacted the <span>Advanced Management Console</span> server for more than a month. It is a desktop that contacts the <span>Advanced Management Console</span>agent and not the server. It may happen that a desktop is actually on, but for some reason the agent can't contact the server, and such a desktop is shown either as retired, or as offline.</p>
+</li>
+<li>
+<p>Offline: a desktop that hasn't contacted the <span>Advanced Management Console</span> server for more than a day but less than a month.</p>
+</li>
+<li>
+<p>Online: desktops that have contacted the server in the last 24 hours.</p>
+</li>
+</ul>
+<div class="infobox-note" id="GUID-99B8EC8F-3C18-4020-9905-6737B911468E__GUID-DC7EF5A3-5F91-4673-B594-A871444C0735">
+<p class="notep1">Note:</p>
+In the future releases of the <span>Advanced Management Console</span>, the values (1 month or 1 day) can be changed, or a way to configure them may be provided in the <span>Advanced Management Console</span> UI.</div>
+</td>
+<td class="cellalignment164" headers="d2055e1307 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1307 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1347" headers="d2055e1163">
+<p>Owner First Name</p>
+</td>
+<td class="cellalignment163" headers="d2055e1347 d2055e1166">
+<p>First name of the registered user of the desktop. Enter the name to match.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1347 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1347 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1359" headers="d2055e1163">
+<p>Owner Last Name</p>
+</td>
+<td class="cellalignment163" headers="d2055e1359 d2055e1166">
+<p>Last name of the registered user of the desktop. Enter the name to match.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1359 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1359 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1371" headers="d2055e1163">
+<p>Owner Email</p>
+</td>
+<td class="cellalignment163" headers="d2055e1371 d2055e1166">
+<p>Email of the registered user of the desktop. Enter the email address to match.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1371 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1371 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1383" headers="d2055e1163">
+<p>Active Rule Set</p>
+</td>
+<td class="cellalignment163" headers="d2055e1383 d2055e1166">
+<p>Name of the active rule set installed on the desktop</p>
+</td>
+<td class="cellalignment164" headers="d2055e1383 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1383 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1396" headers="d2055e1163">
+<p>Rule Set Status</p>
+</td>
+<td class="cellalignment163" headers="d2055e1396 d2055e1166">
+<p>Status of the request to push a rule set to the desktop</p>
+</td>
+<td class="cellalignment164" headers="d2055e1396 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1396 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1409" headers="d2055e1163">
+<p>Agent Version</p>
+</td>
+<td class="cellalignment163" headers="d2055e1409 d2055e1166">
+<p>Version of the <span>Advanced Management Console</span> agent that is running on the desktop</p>
+</td>
+<td class="cellalignment164" headers="d2055e1409 d2055e1169">&nbsp;</td>
+<td class="cellalignment165" headers="d2055e1409 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment162" id="d2055e1424" headers="d2055e1163">
+<p><span class="variable">Desktop-group</span></p>
+</td>
+<td class="cellalignment163" headers="d2055e1424 d2055e1166">
+<p>Filter for each desktop group that is defined, if any. <span class="variable">Desktop-group</span> is the name of the group.</p>
+</td>
+<td class="cellalignment164" headers="d2055e1424 d2055e1169">
+<p>X</p>
+</td>
+<td class="cellalignment165" headers="d2055e1424 d2055e1172">
+<p>X</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- class="inftblhruleinformal" --></div>
+</div>
+<a id="JSAMV124"></a>
+<div class="props_rev_3"><a id="GUID-D10964E5-9E3F-42E7-9636-D38AB8156413"></a>
+<h2 id="JSAMV-GUID-D10964E5-9E3F-42E7-9636-D38AB8156413" class="sect2">JRE Security Baseline</h2>
+<div>
+<p>The JRE security baseline identifies the latest version of the JRE that contains security-related changes. A baseline is identified for each JRE family. The Status tab of <span>Advanced Management Console</span> shows the current security baseline.</p>
+<p>The Java Security Baseline section of the Status tab shows the following information:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><span class="bold">URL</span>: Location from which <span>Advanced Management Console</span> downloads information about the security baseline version</p>
+</li>
+<li>
+<p><span class="bold">Baseline Date</span>: Date and time that the security baseline at the location identified by the <span class="bold">URL</span> field was last updated</p>
+</li>
+<li>
+<p><span class="bold">Baseline</span>: The security baseline version for each JRE family</p>
+</li>
+<li>
+<p><span class="bold">Last Check</span>: Date and time that information about the security baseline was last checked by the <span>Advanced Management Console</span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment106">
+<tr>
+<td class="cellalignment113">
+<table class="cellalignment111">
+<tr>
+<td class="cellalignment110"><a href="introduction-advanced-management-console.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment110"><a href="java-usage.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2014, 2017, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment115">
+<table class="cellalignment109">
+<tr>
+<td class="cellalignment110"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment110"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment110"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,41 @@
+Mary Egan
+Page 1
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <title>page1</title>
+</head>
+<body text="#000000" bgcolor="#C0C0FF" link="#0000FF" vlink="#800080" alink="#FF0080">
+&nbsp;
+<center>
+<p><b><u><font face="Courier New,Courier"><font size=+2>What is cancer?</font></font></u></b></center>
+
+<p><br>
+<br>
+<br>
+<p><font face="Courier New,Courier">Our bodies are made up of millions
+of buildingblocks called cells.</font>
+<p><font face="Courier New,Courier">Cancer occurs when one or more of the
+cells break free from the normal</font>
+<br><font face="Courier New,Courier">restraint it is under and starts to
+multiply in an abnormal,uncontrolled way.</font>
+<p><font face="Courier New,Courier">This can happen to more or less any
+type of cell: bone,skin,blood, glands,muscle etc. so there are as many
+types of cancers as there are different cells in the body - about 200!</font>
+<p><font face="Courier New,Courier">Unfortunately all these</font>
+<br><font face="Courier New,Courier">diseases have different causes,different
+symptoms and often respond</font>
+<br><font face="Courier New,Courier">differently to treatment.</font>
+<p><font face="Courier New,Courier">Different cancers affect people at
+different ages, but the risk of getting the disease rises rapidly as we
+get older - over</font>
+<center>
+<p>&nbsp; <a href="file:////VIENNA/itclass1999/it.megan/index.html">Return
+to Index</a></center>
+
+<p><br>
+</body>
+</html>

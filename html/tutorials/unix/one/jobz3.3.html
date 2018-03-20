@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- shell/jobz3.3.html -->
+
+<HEAD>
+<TITLE>Bring a job into the foreground</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Bring a job into the foreground</H1>
+
+<P>To bring a specific background job into the foreground:</P>
+
+<P><STRONG>1.</STRONG> Enter the <STRONG>fg</STRONG>
+(foreground) command followed by the job number.</P>
+
+<PRE WIDTH=80>   <STRONG>fg <EM>job_number</EM></STRONG>
+</PRE>
+
+<P>If there is only one job running in the background just
+enter the <STRONG>fg</STRONG> command.</P>
+
+<P>For example:</P>
+
+<PRE WIDTH=80>   <STRONG>lpr -Pps23 interface.ps &</STRONG>
+   <STRONG>jobs</STRONG>
+   [1]  + Running              xterm -g 90x55
+   [2]  - Running              xterm -g 90x55
+   [3]    Running              lpr -Ppsa interface.ps
+   <STRONG>fg 3</STRONG>
+   lpr -Pps23 interface.ps
+</PRE>
+
+<P>This starts a process to print a file as a background job.
+The user then checks the current active jobs and brings
+the print job - job number three (3) - into the foreground.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

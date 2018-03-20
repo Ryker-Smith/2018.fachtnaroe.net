@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#include virtual="/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<div id="content">
+<h1>System Maintenance (Level 6)</h1>
+<h2>Tutorials</h2>
+<h2>Assessment</h2>
+<ol>
+	<li>Practical Exam (40%)</li>
+	<h3>"The internal assessor will devise a pactical examination that assesses candidates’ mastery of 7 specified practical skills demonstrated in a set period of time under restricted conditions.<br>Candidates must demonstrate an ability to build a PC from supplied components and make it function properly. The PC, built by the candidate must include motherboard, CPU and Fan, memory, hard drive, floppy drive, CD-ROM, power supply, operating system and at least one perpheral device.<br>The candidate will have to complete the assembly in a set time, agreed with the internal assessor."</h3>
+
+		<table width="80%" border="0" cellspacing="0" cellpadding="1" align="center" bgcolor="#000000">
+		<tr>
+		<td>		
+		<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff">
+		<tr>
+		<td>
+		<center>
+		<h3><font size="+1">System Maintenance Level 6 - 2007/8</font></h3>
+		<h2><font size="+2">Practical Exam</font></h2>
+		</center>
+		<h3><b><u>Task: Build a Computer</u></b></h3>
+		<h2>Brief:</h2>
+		&nbsp;Build a PC from the components provided.
+		<h2>Deliverables:</h2>
+		<ol>
+		<li>List materials required for the task.</li>
+		<li>Outline all major steps taken.</li>
+		<li>Detail any problems encountered and the steps taken to deal with those problems.</li>
+		<li>Provide photographic evidence of the task undertaken.</li>
+		<li>Provide proof of completion.</li>
+		</ol>
+		</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+
+	<li>Theory Exam (30%)</li>
+	<h3>"The internal assessor will devise a theory based examination that assesses candidates’ ability to recall and apply theory and understanding, requiring responses to structured questions. These questions may be answered in different media such as in writing or orally.<br>The examination will be based on a range of specific learning outcomes.<br>The examination will be 1.5 hours in duration.<br>The format of the examination will be 4 structured questions: Candidates are required to answer 3 questions (10 marks each)"</h3>
+        <h3><a href="00-System-Maintenance-Exam-2008.pdf">Theory Exam 2007/8</a></h3>
+
+	<li>Skills Demonstration - 30%</li>
+	<h3>"In three skills demonstrations, candidates will be assessed in a range of practical skills as outlined in the specific learning outcomes not assessed elsewhere.<br>Adherence to safe working practices should be considered as an integral part of each skill demonstration.<br>The skills can be assessed at any time throughout the learning process.<br>The candidate must submit a supporting document outlining the steps/process followed."</h3>
+		<table width="80%" border="0" cellspacing="0" cellpadding="1" align="center" bgcolor="#000000">
+		<tr>
+		<td>		
+		<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff">
+		<tr>
+		<td>
+		<center>
+		<h3><font size="+1">System Maintenance Level 6 - 2007/8</font></h3>
+		<h2><font size="+2">Practical Tasks</font></h2>
+		</center>
+		<h3><b><u>Task 1: Install a Printer</u></b></h3>
+		<h2>Brief:</h2>
+		&nbsp;Physically install an <i>HP Deskjet 1280 A3</i> printer on a local PC.
+		<h2>Deliverables:</h2>
+		<ol>
+		<li>List materials required for the task.</li>
+		<li>Outline all major steps taken.</li>
+		<li>Detail any problems encountered and the steps taken to deal with those problems.</li>
+		<li>Provide photographic evidence of the task undertaken.</li>
+		<li>Provide proof of completion.</li>
+		</ol>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+		<h3><b><u>Task 2: Locally Share and Remotely Connect to a printer</u></b></h3>
+		<h2>Brief:</h2>
+		&nbsp;Share a printer on the network. Then access and install the printer for use on a remote PC.
+		<h2>Deliverables:</h2>
+		<ol>
+		<li>List materials required for the task.</li>
+		<li>Outline all major steps taken.</li>
+		<li>Detail any problems encountered and the steps taken tp deal with those problems.</li>
+		<li>Provide photographic evidence of the task undertaken.</li>
+		<li>Provide proof of completion</li>
+		</ol>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+		<h3><b><u>Task 3: Install a Scanner</u></b></h3>
+		<h2>Brief:</h2>
+		&nbsp;Physically install a <i>Mustek Scan Express A3</i> scanner on a local PC.
+		<h2>Deliverables:</h2>
+		<ol>
+		<li>List materials required for the task.</li>
+		<li>Outline all major steps taken.</li>
+		<li>Detail any problems encountered and the steps taken to deal with those problems.</li>
+		<li>Provide photographic evidence of the task undertaken.</li>
+		<li>Provide proof of completion.</li>
+		</ol>
+		</td>
+		</tr>
+		</table>
+		</td>
+		</tr>
+		</table>
+</ol>
+<h2>Related</h2>
+<ul>
+<li><a href="http://www.fetac.ie/modules/C30146.pdf">Module Descriptor</a>.</li>
+</ul>
+</div>
+</body>
+</html>

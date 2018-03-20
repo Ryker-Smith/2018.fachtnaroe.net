@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_custom_modules/test_bulls_and_cows
+END
+test_bac_commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_custom_modules/test_bulls_and_cows/test_bac_commands.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_custom_modules/test_bulls_and_cows/__init__.py
+END

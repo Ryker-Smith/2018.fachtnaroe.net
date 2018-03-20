@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt2.1.3.html -->
+
+<HEAD>
+<TITLE>Using the shift command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Using the <SAMP>shift</SAMP> command</H1>
+
+<P>Usually only nine command line arguments can be accessed
+using positional parameters.  The <SAMP>shift</SAMP> command gives
+access to command line arguments greater than nine by
+shifting each of the arguments.</P>
+
+<P>The second argument ($2) becomes the first ($1), the
+third ($3) becomes the second ($2) and so on.  This gives
+you access to the tenth command line argument by making
+it the ninth.  The first argument is no longer available.</P>
+
+<P>Successive <SAMP>shift</SAMP> commands make additional arguments
+available.  Note that there is no "unshift" command to
+bring back arguments that are no longer available!</P>
+
+<UL>
+<LI><A HREF="scrpt2.1.3.1.html">Example</A>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

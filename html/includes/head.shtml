@@ -1,0 +1,69 @@
+<head>
+  <title>A rational thinker, in an irrational State</title>
+  <link href="/images/favicon-cti.ico" rel="SHORTCUT ICON" />
+  <link rel="stylesheet" type="text/css" href="/includes/2015.css" media="all"/>
+  <!--<link rel="stylesheet" type="text/css" href="http://www.fachtnaroe.net/style-2013-02.css" media="print"/>-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="keywords" content="information technology, computer studies, mentoring, computer science, clonmelinux, programming, QQI, FETAC, IT, systems, college, adult education, computing, computers, architecture, perl, C, work, Linux, unix, cli, fedora" />
+  <meta name="description" content="Information Technology (Computing) Education in Clonmel, Tipperary, Ireland." />
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
+
+<script type="text/javascript">
+  window.onclick = function(event) { 
+    var mylocation='';
+    var myhost='www.fachtnaroe.net';
+    var href=event.target.href;
+    //alert('['+href+']');
+    //return false;
+    
+    var pathArray = href.split( '/' );
+   // foreach()
+    var x, content;
+    content='';
+    if (myhost == pathArray[2]) {
+//       $('#content').load(event.target.href);
+//       return false;
+//       for (x=3; x<=15; x++) {
+//         if (pathArray[x] != '') {
+//           content = '/' + content;
+//         }
+//       }
+    }
+    /*for (x=0;x<10;x++) {
+      alert('['+x+']['+pathArray[x]+']');
+    //alert('a');
+    } */
+  };
+</script>
+  
+<script  type="text/javascript">
+  function startAnimation() { 
+    var divAnim = document.getElementById("animation");
+    //var divBlurb = document.getElementById("topBlurb");
+    var changeX=0;
+    var changeY=0;
+    // should this be setTimeout ?
+    setInterval(function () { 
+        changeX +=1;
+        changeY +=1;
+        divAnim.style.backgroundPosition = changeX + "px " + changeY + "px";
+    }, 100); 
+  }
+
+  function actionMenuRemote (action) {
+    if (action==1) {
+      document.getElementById('menuRemote').style.backgroundImage="url('images/menuRemote_Full-500-on.png')";
+    }
+    else {
+      document.getElementById('menuRemote').style.backgroundImage="url('images/menuRemote_Full-500.png')";
+    }
+  }
+
+  function onloadProc() {
+    var imageMenuOn=new Image();
+    imageMenuOn="images/menuRemote_Full-500.png";
+    startAnimation();
+  }
+</script>
+
+</head>

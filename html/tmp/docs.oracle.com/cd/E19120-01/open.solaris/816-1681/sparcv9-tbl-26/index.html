@@ -1,0 +1,1832 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd"><html><head><title>E.6 UltraSPARC and VIS Instruction Set Extensions (SPARC Assembly Language Reference Manual) </title><meta content="text/html; charset=utf-8" http-equiv="Content-Type" /><link type="text/css" rel="stylesheet" href="/docs/dcommon/dsc/css/default.css" /><link type="text/css" rel="stylesheet" href="/docs/dcommon/dsc/css/www.css" /><link type="text/css" rel="stylesheet" href="/docs/dcommon/dsc/css/dsc.css" /><script language="javascript1.2" type="text/javascript" src="/docs/dcommon/dsc/js/sniff.js"></script></head><body><div id='a0v0' class='a0 a0v0'><div class='a2w0'><div id='a2v7' class='a2'><div class='a2w1'><div class='a2w2'><div class='a2w3'><div class='a2w4'><div class='a2topiclinks'><div class='a2x1'></div><a id='sunlogo' title='Oracle Home Page' href='http://www.oracle.com'><img width='98' height='58' border='0' alt='Oracle Homeage' src='/docs/dcommon/dsc/im/a.gif'></a><img width='1' height='33' border='0' alt='test' src='/docs/dcommon/dsc/im/a.gif' id='venuespacer'></div></div></div></div></div></div></div><div id='breadcrumb'><a href='http://www.oracle.com/technetwork/indexes/documentation/index.html'>Documentation Home</a> &nbsp;&gt; <a href='../index.html'>SPARC Assembly Language Reference Manual </a>  &nbsp;&gt; <a href='../6m83631lm/index.html'>Appendix E SPARC-V9 Instruction Set </a>  </a> &nbsp;&gt; E.6 UltraSPARC and VIS Instruction Set Extensions</div><br /><div class='pagetitle' id='sharepage'>SPARC Assembly Language Reference Manual</div><div class='d8 d8v1' style='margin: 10px;'><div class='d8w1'><div class='d8w2'><div class='d8w3'><div class='d8w4'><ul><li class='d8left'><a href='../sparcv9-tbl-21/index.html'><em>Previous</em>: E.5 SPARC-V9 Synthetic Instruction-Set Mapping</a></li></ul></div></div></div></div></div><div class='pc11 imgMax-590' style='margin: 10px;'><a xmlns:str="http://xml.apache.org/xalan/java/java.lang.String" name="6m83631m2"></a><h1 class="sol">E.6 UltraSPARC and VIS Instruction Set Extensions</h1>
+<a name="sparcv9-ix220"></a><a name="sparcv9-ix221"></a><p>This section describes
+extensions that require SPARC-V9. The extensions support enhanced graphics
+functionality and improved memory access efficiency. </p>
+<hr><b>Note &ndash; </b><p>SPARC-V9 instruction set extensions used in executables may not
+be portable to other SPARC-V9 systems.</p>
+<hr>
+<a name="sparcv9-22"></a><h2 class="sol">E.6.1 Graphics Data Formats</h2>
+<a name="sparcv9-ix222"></a><p>The overhead of converting to and
+from floating-point arithmetic is high, so the graphics instructions are optimized
+for short-integer arithmetic. Image components are 8 or 16 bits. Intermediate
+results are 16 or 32 bits.</p>
+<a name="sparcv9-23"></a><h2 class="sol">E.6.2 Eight-bit Format </h2>
+<a name="sparcv9-ix223"></a><p>A 32-bit word contains pixels of four
+unsigned 8-bit integers. The integers represent image intensity values (<img alt="Graphic" title="Graphic" src="../images/agr.tiff.gif" width="15" height="9">, G, B, R). Support is provided for <b>band interleaved</b> images (store color components of a point), and <b>band sequential</b> images (store all values of one color component). </p>
+<a name="sparcv9-24"></a><h2 class="sol">E.6.3 Fixed Data Formats</h2>
+<a name="sparcv9-ix224"></a><p>A 64-bit word contains four 16-bit
+signed fixed-point values. This is the fixed 16-bit data format.</p>
+<p>A 64-bit word contains two 8-bit signed fixed-point values. This is
+the fixed 32-bit data format.</p>
+<p>Enough precision and dynamic range (for filtering and simple image computations
+on pixel values) can be provided by an intermediate format of fixed data values.
+Pixel multiplication is used to convert from pixel data to fixed data. Pack
+instructions are used to convert from fixed data to pixel data (clip and truncate
+to an 8-bit unsigned value). The FPACKFIX instruction supports conversion
+from 32-bit fixed to 16-bit fixed. Rounding is done by adding one to the rounding
+bit position. You should use floating-point data to perform complex calculations
+needing more precision or dynamic range.</p>
+<a name="sparcv9-25"></a><h2 class="sol">E.6.4 SHUTDOWN Instruction</h2>
+<p>All outstanding transactions are completed before the SHUTDOWN instruction
+completes.</p>
+<a name="sparcv9-tbl-26"></a>Table E&ndash;13   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>SHUTDOWN</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>shutdown</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>shutdown to enter power down mode&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><a name="sparcv9-27"></a><h2 class="sol">E.6.5 Graphics Status Register (GSR)</h2>
+<p>You use ASR 0x13 instructions RDASR and WRASR to access the Graphics
+Status Register.</p>
+<a name="sparcv9-tbl-28"></a>Table E&ndash;14   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>RDASR</tt>
+</p>
+<p>
+<tt>WRASR</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>rdasr</tt>
+</p>
+<p>
+<tt>wrasr</tt>
+</p>
+</td><td align="left" valign="top">
+<p>%gsr<b>, reg</b><sub><font size="-1">rd  </font></sub>
+</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg_or_imm, </b>%gsr</p>
+</td><td align="left" valign="top">
+<p>read GSR&nbsp;</p>
+<p>write GSR&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><a name="sparcv9-29"></a><h2 class="sol">E.6.6 Graphics Instructions</h2>
+<p>Unless otherwise specified, floating-point registers contain all instruction
+operands. There are 32 double-precision registers. Single-precision floating-point
+registers contain the pixel values, and double-precision floating-point registers
+contain the fixed values.</p>
+<p>The opcode space reserved for the Implementation-Dependent Instruction1
+(IMPDEP1) instructions is where the graphics instruction set is mapped.</p>
+<p>Partitioned add/subtract instructions perform two 32-bit or four 16-bit
+partitioned adds or subtracts between the source operands corresponding fixed
+point values. </p>
+<a name="sparcv9-tbl-30"></a>Table E&ndash;15   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FPADD16</tt>
+</p>
+<p>
+<tt>FPADD16S</tt>
+</p>
+<p>
+<tt>FPADD32</tt>
+</p>
+<p>
+<tt>FPADD32S</tt>
+</p>
+<p>
+<tt>FPSUB16</tt>
+</p>
+<p>
+<tt>FPSUB16S</tt>
+</p>
+<p>
+<tt>FPSUB32</tt>
+</p>
+<p>
+<tt>FPSUB32S</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fpadd16</tt>
+</p>
+<p>
+<tt>fpadd16s</tt>
+</p>
+<p>
+<tt>fpadd32</tt>
+</p>
+<p>
+<tt>fpadd32s</tt>
+</p>
+<p>
+<tt>fpsub16</tt>
+</p>
+<p>
+<tt>fpsub16s</tt>
+</p>
+<p>
+<tt>fpsub32</tt>
+</p>
+<p>
+<tt>fpsub32s</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd  </font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>four 16-bit
+add&nbsp;</p>
+<p>two 16-bit add&nbsp;</p>
+<p>two 32-bit add&nbsp;</p>
+<p>one
+32-bit add&nbsp;</p>
+<p>four 16-bit subtract&nbsp;</p>
+<p>two 16-bit subtract&nbsp;</p>
+<p>two 32-bit subtract&nbsp;</p>
+<p>one 32-bit subtract&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Pack instructions convert to a lower pixel or precision fixed format.</p>
+<a name="sparcv9-tbl-31"></a>Table E&ndash;16   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FPACK16</tt>
+</p>
+<p>
+<tt>FPACK32</tt>
+</p>
+<p>
+<tt>FPACKFIX</tt>
+</p>
+<p>
+<tt>FEXPAND</tt>
+</p>
+<p>
+<tt>FPMERGE</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fpack16</tt>
+</p>
+<p>
+<tt>fpack32</tt>
+</p>
+<p>
+<tt>fpackfix</tt>
+</p>
+<p>
+<tt>fexpand</tt>
+</p>
+<p>
+<tt>fpmerge</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd  </font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>four 16-bit
+packs&nbsp;</p>
+<p>two 32-bit packs&nbsp;</p>
+<p>four 16-bit packs&nbsp;</p>
+<p>four 16-bit expands&nbsp;</p>
+<p>two 32-bit merges&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Partitioned multiply instructions have the following variations.</p>
+<a name="sparcv9-tbl-32"></a>Table E&ndash;17   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FMUL8x16</tt>
+</p>
+<p>
+<tt>FMUL8x16AU</tt>
+</p>
+<p>
+<tt>FMUL8x16AL</tt>
+</p>
+<p>
+<tt>FMUL8SUx16</tt>
+</p>
+<p>
+<tt>FMUL8ULx16</tt>
+</p>
+<p>
+<tt>FMULD8SUx16</tt>
+</p>
+<p>
+<tt>FMULD8ULx16</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fmul8x16</tt>
+</p>
+<p>
+<tt>fmul8x16au</tt>
+</p>
+<p>
+<tt>fmul8x16al</tt>
+</p>
+<p>
+<tt>fmul8sux16</tt>
+</p>
+<p>
+<tt>fmul8ulx16</tt>
+</p>
+<p>
+<tt>fmuld8sux16</tt>
+</p>
+<p>
+<tt>fmuld8ulx16</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub><sub><font size="-1"></font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub><sub><font size="-1"></font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub><sub><font size="-1"></font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub><sub><font size="-1"></font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub><sub><font size="-1"></font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub><sub><font size="-1"></font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>8x16-bit partition&nbsp;</p>
+<p>8x16-bit
+upper <img alt="Graphic" title="Graphic" src="../images/agr.tiff.gif" width="15" height="9"> partition</p>
+<p>8x16-bit lower <img alt="Graphic" title="Graphic" src="../images/agr.tiff.gif" width="15" height="9"> partition</p>
+<p>upper 8x16-bit partition&nbsp;</p>
+<p>lower unsigned 8x16-bit
+partition&nbsp;</p>
+<p>upper 8x16-bit partition&nbsp;</p>
+<p>lower unsigned
+8x16-bit partition&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Alignment instructions have the following variations.</p>
+<a name="sparcv9-tbl-33"></a>Table E&ndash;18   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>ALIGNADDRESS</tt>
+</p>
+<p>
+<tt>ALIGNADDRESS_LITTLE</tt>
+</p>
+<p>
+<tt>FALIGNDATA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>alignaddr</tt>
+</p>
+<p>
+<tt>alignaddrl</tt>
+</p>
+<p>&nbsp;</p>
+<p>
+<tt>faligndata</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>&nbsp;</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>find misaligned data access address&nbsp;</p>
+<p>same as above, but little-endian&nbsp;</p>
+<p>&nbsp;</p>
+<p>do
+misaligned data, data alignment&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Logical operate instructions perform one of sixteen 64-bit logical operations
+between <b>rs1</b> and <b>rs2</b> (in the standard
+64-bit version).</p>
+<a name="sparcv9-tbl-34"></a>Table E&ndash;19   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FZERO</tt>
+</p>
+<p>
+<tt>FZEROS</tt>
+</p>
+<p>
+<tt>FONE</tt>
+</p>
+<p>
+<tt>FONES</tt>
+</p>
+<p>
+<tt>FSRC1</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fzero</tt>
+</p>
+<p>
+<tt>fzeros</tt>
+</p>
+<p>
+<tt>fone</tt>
+</p>
+<p>
+<tt>fones</tt>
+</p>
+<p>
+<tt>fsrc1</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<var>freg<sub><font size="-1">rd</font></sub></var>
+</p>
+<p>
+<var>freg<sub><font size="-1">rd</font></sub></var>
+</p>
+<p>
+<var>freg<sub><font size="-1">rd</font></sub></var>
+</p>
+<p>
+<var>freg<sub><font size="-1">rd</font></sub></var>
+</p>
+<p>
+<var>freg<sub><font size="-1">rs1</font></sub></var>, <var>freg<sub><font size="-1">rd</font></sub></var>
+</p>
+</td><td align="left" valign="top">
+<p>zero fill&nbsp;</p>
+<p>zero
+fill, single precision&nbsp;</p>
+<p>one fill&nbsp;</p>
+<p>one fill, single precision&nbsp;</p>
+<p>copy src1&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FSRC1S</tt>
+</p>
+<p>
+<tt>FSRC2</tt>
+</p>
+<p>
+<tt>FSRC2S</tt>
+</p>
+<p>
+<tt>FNOT1</tt>
+</p>
+<p>
+<tt>FNOT1S</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fsrc1s</tt>
+</p>
+<p>
+<tt>fsrc2</tt>
+</p>
+<p>
+<tt>fsrc2s</tt>
+</p>
+<p>
+<tt>fnot1</tt>
+</p>
+<p>
+<tt>fnot1s</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>copy src1, single precision&nbsp;</p>
+<p>copy src2&nbsp;</p>
+<p>copy src2, single precision&nbsp;</p>
+<p>negate src1,
+1's complement&nbsp;</p>
+<p>same as above, single precision&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FNOT2</tt>
+</p>
+<p>
+<tt>FNOT2S</tt>
+</p>
+<p>
+<tt>FOR</tt>
+</p>
+<p>
+<tt>FORS</tt>
+</p>
+<p>
+<tt>FNOR</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fnot2</tt>
+</p>
+<p>
+<tt>fnot2s</tt>
+</p>
+<p>
+<tt>for</tt>
+</p>
+<p>
+<tt>fors</tt>
+</p>
+<p>
+<tt>fnor</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>negate src2, 1's complement&nbsp;</p>
+<p>same as above, single precision&nbsp;</p>
+<p>logical OR&nbsp;</p>
+<p>logical OR, single precision&nbsp;</p>
+<p>logical NOR&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FNORS</tt>
+</p>
+<p>
+<tt>FAND</tt>
+</p>
+<p>
+<tt>FANDS</tt>
+</p>
+<p>
+<tt>FNAND</tt>
+</p>
+<p>
+<tt>FNANDS</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fnors</tt>
+</p>
+<p>
+<tt>fand</tt>
+</p>
+<p>
+<tt>fands</tt>
+</p>
+<p>
+<tt>fnand</tt>
+</p>
+<p>
+<tt>fnands</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>logical NOR, single precision&nbsp;</p>
+<p>logical
+AND&nbsp;</p>
+<p>logical AND, single precision&nbsp;</p>
+<p>logical NAND&nbsp;</p>
+<p>logical NAND, single precision&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FXOR</tt>
+</p>
+<p>
+<tt>FXORS</tt>
+</p>
+<p>
+<tt>FXNOR</tt>
+</p>
+<p>
+<tt>FXNORS</tt>
+</p>
+<p>
+<tt>FORNOT1</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fxor</tt>
+</p>
+<p>
+<tt>fxors</tt>
+</p>
+<p>
+<tt>fxnor</tt>
+</p>
+<p>
+<tt>fxnors</tt>
+</p>
+<p>
+<tt>fornot1</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub>, freg<sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>logical XOR&nbsp;</p>
+<p>logical XOR, single precision&nbsp;</p>
+<p>logical
+XNOR&nbsp;</p>
+<p>logical XNOR, single precision&nbsp;</p>
+<p>negated src1 OR
+src2&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FORNOT1S</tt>
+</p>
+<p>
+<tt>FORNOT2</tt>
+</p>
+<p>
+<tt>FORNOT2S</tt>
+</p>
+<p>
+<tt>FANDNOT1</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fornot1s</tt>
+</p>
+<p>
+<tt>fornot2</tt>
+</p>
+<p>
+<tt>fornot2s</tt>
+</p>
+<p>
+<tt>fandnot1</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>same as above, single precision&nbsp;</p>
+<p>src1 OR negated src2&nbsp;</p>
+<p>same as above, single precision&nbsp;</p>
+<p>negated src1 AND src2&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FANDNOT1S</tt>
+</p>
+<p>
+<tt>FANDNOT2</tt>
+</p>
+<p>
+<tt>FANDNOT2S</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fandnot1s</tt>
+</p>
+<p>
+<tt>fandnot2</tt>
+</p>
+<p>
+<tt>fandnot2s</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>same as above, single precision&nbsp;</p>
+<p>src1 AND negated src2&nbsp;</p>
+<p>same as above, single precision&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Pixel compare instructions compare fixed-point values in <b>rs1</b> and <b>rs2</b> (two 32 bit or four 16 bit)</p>
+<a name="sparcv9-tbl-35"></a>Table E&ndash;20   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FCMPGT16</tt>
+</p>
+<p>
+<tt>FCMPGT32</tt>
+</p>
+<p>
+<tt>FCMPLE16</tt>
+</p>
+<p>
+<tt>FCMPLE32</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fcmpgt16</tt>
+</p>
+<p>
+<tt>fcmpgt32</tt>
+</p>
+<p>
+<tt>fcmple16</tt>
+</p>
+<p>
+<tt>fcmple32</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>4 16-bit compare, set rd if src1&gt;src2&nbsp;</p>
+<p>2 32-bit compare, set rd if src1&gt;src2&nbsp;</p>
+<p>4 16-bit compare,
+set rd if src1&le;src2&nbsp;</p>
+<p>2 32-bit compare, set rd if src1&le;src2&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>FCMPNE16</tt>
+</p>
+<p>
+<tt>FCMPNE32</tt>
+</p>
+<p>
+<tt>FCMPEQ16</tt>
+</p>
+<p>
+<tt>FCMPEQ32</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>fcmpne16</tt>
+</p>
+<p>
+<tt>fcmpne32</tt>
+</p>
+<p>
+<tt>fcmpeq16</tt>
+</p>
+<p>
+<tt>fcmpeq32</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>4 16-bit compare, set rd if src1&ne;src2&nbsp;</p>
+<p>2
+32-bit compare, set rd if src1&ne;src2&nbsp;</p>
+<p>4 16-bit compare, set rd
+if src1=src2&nbsp;</p>
+<p>2 32-bit compare, set rd if src1=src2&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Edge handling instructions handle the boundary conditions for parallel
+pixel scan line loops. </p>
+<a name="sparcv9-tbl-36"></a>Table E&ndash;21   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>EDGE8</tt>
+</p>
+<p>
+<tt>EDGE8L</tt>
+</p>
+<p>
+<tt>EDGE16</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>edge8</tt>
+</p>
+<p>
+<tt>edge8l</tt>
+</p>
+<p>
+<tt>edge16</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>8 8-bit edge boundary processing&nbsp;</p>
+<p>same as above, little-endian&nbsp;</p>
+<p>4 16-bit edge boundary processing&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>EDGE16L</tt>
+</p>
+<p>
+<tt>EDGE32</tt>
+</p>
+<p>
+<tt>EDGE32L</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>edge16l</tt>
+</p>
+<p>
+<tt>edge32</tt>
+</p>
+<p>
+<tt>edge32l</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>same as
+above, little-endian&nbsp;</p>
+<p>2 32-bit edge boundary processing&nbsp;</p>
+<p>same as above, little-endian&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>Pixel component distance instructions are used for motion estimation
+in video compression algorithms. </p>
+<a name="sparcv9-tbl-37"></a>Table E&ndash;22   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>PDIST</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>pdist</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>freg</b><sub><font size="-1">rs1</font></sub><b>, freg</b><sub><font size="-1">rs2</font></sub><b>, freg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>8 8-bit components, distance between&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><p>The three-dimensional array addressing instructions convert three- dimensional
+fixed-point addresses (in rs1) to a blocked-byte address. The result is stored
+in rd.</p>
+<a name="sparcv9-tbl-38"></a>Table E&ndash;23   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Mnemonic&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>ARRAY8</tt>
+</p>
+<p>&nbsp;</p>
+<p>
+<tt>ARRAY16</tt>
+</p>
+<p>
+<tt>ARRAY32</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>array8</tt>
+</p>
+<p>&nbsp;</p>
+<p>
+<tt>array16</tt>
+</p>
+<p>
+<tt>array32</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>&nbsp;</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>
+<b>reg</b><sub><font size="-1">rs1</font></sub><b>, reg</b><sub><font size="-1">rs2</font></sub><b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>convert 8-bit 3-D address to blocked byte address&nbsp;</p>
+<p>same as above, but 16-bit&nbsp;</p>
+<p>same as above, but 32-bit&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><a name="sparcv9-39"></a><h2 class="sol">E.6.7 Memory Access Instructions</h2>
+<p>These memory access instructions are part of the SPARC-V9 instruction
+set extensions.</p>
+<a name="sparcv9-tbl-40"></a>Table E&ndash;24   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>imm_asi&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>ASI_PST8_P</tt>
+</p>
+<p>
+<tt>ASI_PST8_S</tt>
+</p>
+<p>
+<tt>ASI_PST8_PL</tt>
+</p>
+<p>
+<tt>ASI_PST8_SL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>stda<b>  freg</b><sub><font size="-1">rd</font></sub><b>, </b>[<b>freg</b><sub><font size="-1">rs1</font></sub>]<b> reg</b><sub><font size="-1">mask,</font></sub><b> imm_asi</b>
+</p>
+</td><td align="left" valign="top">
+<p>eight 8-bit conditional stores to:&nbsp;</p>
+<p>   primary address space&nbsp;</p>
+<p>   secondary address space&nbsp;</p>
+<p>   primary address space, little endian&nbsp;</p>
+<p>   secondary address space, little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>ASI_PST16_P</tt>
+</p>
+<p>
+<tt>ASI_PST16_S</tt>
+</p>
+<p>
+<tt>ASI_PST16_PL</tt>
+</p>
+<p>
+<tt>ASI_PST16_SL</tt>
+</p>
+</td><td align="left" valign="top">&nbsp;</td><td align="left" valign="top">
+<p>four 16-bit conditional stores to:&nbsp;</p>
+<p>   primary address space&nbsp;</p>
+<p>   secondary address space&nbsp;</p>
+<p>   primary address space, little endian&nbsp;</p>
+<p>   secondary address space, little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>ASI_PST32_P</tt>
+</p>
+<p>
+<tt>ASI_PST32_S</tt>
+</p>
+<p>
+<tt>ASI_PST32_PL</tt>
+</p>
+<p>
+<tt>ASI_PST32_SL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>two 32-bit conditional stores to:&nbsp;</p>
+<p>   primary address space&nbsp;</p>
+<p>   secondary address space&nbsp;</p>
+<p>   primary address space, little endian&nbsp;</p>
+<p>   secondary address space,
+little endian&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><hr><b>Note &ndash; </b><p>To select a partial store instruction, use one of the partial
+store ASIs with the STDA instruction. </p>
+<hr>
+<a name="sparcv9-tbl-41"></a>Table E&ndash;25   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>imm_asi&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>ASI_FL8_P</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>ldda  [<b>reg_addr</b>] <b>imm_asi, freq</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>stda <b> freq</b><sub><font size="-1">rd</font></sub><b>,</b> [<b>reg_addr</b>]<b> imm_asi</b>
+</p>
+</td><td align="left" valign="top">
+<p>8-bit load/store from/to:&nbsp;</p>
+<p>   primary address space &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_FL8_S</tt>
+</p>
+</td><td align="left" valign="top">
+<p>ldda [<b>reg_plus_imm</b>]<b> </b>%asi<b>, freq</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>stda [<b>reg_plus_imm</b>] %asi</p>
+</td><td align="left" valign="top">
+<p>   secondary address space&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_FL8_PL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   primary address space, little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_FL8_SL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   secondary address space,
+little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>ASI_FL16_P</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>16-bit load/store from/to:&nbsp;</p>
+<p>   primary address space&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_FL16_S</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   secondary address space&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_FL16_PL</tt>
+</p>
+</td><td align="left" valign="top">&nbsp;</td><td align="left" valign="top">
+<p>   primary address space,
+little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_FL16_SL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   secondary address space, little
+endian&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><hr><b>Note &ndash; </b><p>To select a short floating-point load and store instruction, use
+one of the short ASIs with the LDDA and STDA instructions.</p>
+<hr>
+<a name="sparcv9-tbl-42"></a>Table E&ndash;26   <table width="100%" cellpadding="10" cellspacing="0" border="2">
+<caption>
+<b></b>
+</caption>
+<thead>
+<tr>
+<th scope="col" align="left" valign="bottom">
+<p>SPARC&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>imm_asi&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Argument List&nbsp;</p>
+</th><th scope="col" align="left" valign="bottom">
+<p>Description&nbsp;</p>
+</th>
+</tr>
+
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDA</tt>
+</p>
+<p>
+<tt>LDDA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_NUCLEUS_QUAD_LDD</tt>
+</p>
+<p>
+<tt>ASI_NUCLEUS_QUAD_LDD_L</tt>
+</p>
+</td><td align="left" valign="top">
+<p>[<b>reg_addr</b>]<b> imm_asi, reg</b><sub><font size="-1">rd</font></sub><b> </b>
+</p>
+<p>[<b>reg_plus_imm</b>] %asi<b>, reg</b><sub><font size="-1">rd</font></sub>
+</p>
+</td><td align="left" valign="top">
+<p>128-bit atomic load&nbsp;</p>
+<p>128-bit atomic load, little
+endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>
+<tt>ASI_BLK_AIUP</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+<p>ldda  [<b>reg_addr</b>] <b>imm_asi, freq</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>stda <b> freq</b><sub><font size="-1">rd</font></sub><b>,</b> [<b>reg_addr</b>]<b> imm_asi</b>
+</p>
+</td><td align="left" valign="top">
+<p>64-byte block load/store
+from/to:&nbsp;</p>
+<p>   primary address space, user privilege &nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_AIUS</tt>
+</p>
+</td><td align="left" valign="top">
+<p>ldda [reg_plus_imm] %asi<b>, freq</b><sub><font size="-1">rd</font></sub>
+</p>
+<p>stda<b> freg</b><sub><font size="-1">rd</font></sub><b>, </b>[<b>reg_plus_imm</b>] %asi</p>
+</td><td align="left" valign="top">
+<p>   secondary address space, user privilege.&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_AIUPL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   primary address space,
+user privilege,     little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_AIUSL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   secondary address space,
+user privilege     little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_P</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   primary address space&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_S</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   secondary address space&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_PL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   primary address space,
+little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_SL</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>   secondary address space,
+little endian&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_COMMIT_P</tt>
+</p>
+</td><td align="left" valign="top">&nbsp;</td><td align="left" valign="top">
+<p>64-byte block commit store
+to primary      address space&nbsp;</p>
+</td>
+</tr>
+
+<tr>
+<td align="left" valign="top">
+<p>
+<tt>LDDFA</tt>
+</p>
+<p>
+<tt>STDFA</tt>
+</p>
+</td><td align="left" valign="top">
+<p>
+<tt>ASI_BLK_COMMIT_S</tt>
+</p>
+</td><td align="left" valign="top">
+<p>&nbsp;</p>
+</td><td align="left" valign="top">
+<p>64-byte block commit store to secondary
+address space&nbsp;</p>
+</td>
+</tr>
+
+</tbody>
+</table>
+<p> 
+</p><hr><b>Note &ndash; </b><p>To select a block load and store instruction, use one of the block
+transfer ASIs with the LDDA and STDA instructions.</p>
+<hr>
+</div><div class='d8 d8v1' style='margin: 10px;'><div class='d8w1'><div class='d8w2'><div class='d8w3'><div class='d8w4'><ul><li class='d8left'><a href='../sparcv9-tbl-21/index.html'><em>Previous</em>: E.5 SPARC-V9 Synthetic Instruction-Set Mapping</a></li></ul></div></div></div></div></div><div class='a5 a5v0' id='a5'>
+<ul>
+    <li class='copyright'>&copy; 2010, Oracle Corporation and/or its affiliates</li>
+</ul>
+</div>
+</div></body></html>

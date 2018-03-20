@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Computer Programming Comparisons</h1>
+<p>This section deals with why we do the things we do when programming. Principles learned in class on this section apply to other aspects of what we do. Take notes!</p>
+<p>Simulator commands (Do not type 'sim>'!):</p>
+<pre>
+sim> attach dsk0 cpm2.dsk
+sim> attach dsk1 tp3.dsk
+sim> set cpu 64k
+sim> set cpu z80
+sim> set cpu nonbanked
+sim> set cpu altairrom
+sim> set cpu itrap
+sim> d tracks[0-7] 254
+#sim> d clock 1000 if you want to slow the clock down
+sim> reset cpu
+sim> boot dsk0
+</pre>
+<p>When the simulator starts use MBASIC (Microsoft BASIC) from A: to enter the BASIC program below. CTRL-E will reset the simulator.</p>
+<h2>BASIC</h2>
+<p>Pre-requisite: Altair simlulator, CP/M, BASIC. This program prompts for a radius, calculates the area of a circle, asks to repeat.</p>
+<pre>
+10 REM This program calculates the area of a circle
+20 PRINT "Enter a number: "
+30 INPUT RADIUS
+40 AREA = RADIUS * RADIUS * 3.14
+50 PRINT "Answer: ", AREA
+60 PRINT "Again? "
+70 INPUT X$
+80 IF X$="Y" GOTO 20
+99 END
+</pre>
+<hr>
+<h2>PASCAL</h2>
+<p>Start the simulator as shown above. Change to the disk B: then start TURBO.</p>
+<p>Pre-requisite: Altair simlulator, CP/M, Turbo Pascal. This program prompts for a radius, calculates the area of a circle.</p>
+<pre>
+PROGRAM circle;
+VAR
+  radius,
+  area: REAL;
+BEGIN
+  WRITELN('Enter a radius');
+  READLN (radius);
+  area := radius * radius * 3.14;
+  WRITELN ('Area is: ',area:3:2);
+END.
+</pre>
+<p>Pre-requisite: Altair simlulator, CP/M, Turbo Pascal. This program prompts for a radius, calculates the area of a circle, asks to repeat.</p>
+<pre>
+(*
+  Program to calculate area of a circle
+  repeating until user does not indicate 'Y'
+*)
+PROGRAM circle;
+VAR
+  radius,
+  area: REAL;
+  again : CHAR;
+BEGIN
+  again := 'Y';
+  WHILE (again = 'Y') DO
+  BEGIN
+    WRITELN('Enter a radius');
+    READLN (radius);
+    area := radius * radius * 3.14;
+    WRITELN ('Area is: ',area:3:2);
+    WRITE ('Again? ');
+    READLN (again);
+  END;
+END.
+</pre>
+<hr>
+<h2>Assembly</h2>
+<p>Pre-requisite: Linux, NASM assembler. This is "Hello World" program in Linux assembly language (borrowed from elsewhere).</p>
+<pre>
+section .text				;section declaration
+
+        			;we must export the entry point to the ELF linker or
+global _start	;loader. They conventionally recognize _start as their
+			        ;entry point. Use ld -e foo to override the default.
+
+_start:
+
+;write our string to stdout
+
+        mov     edx,len ;third argument: message length
+        mov     ecx,msg ;second argument: pointer to message to write
+        mov     ebx,1   ;first argument: file handle (stdout)
+        mov     eax,4   ;system call number (sys_write)
+        int     0x80	;call kernel - would be 0x21 in DOS
+
+;and exit
+
+        mov	ebx,0	;first syscall argument: exit code
+        mov     eax,1   ;system call number (sys_exit)
+        int     0x80	;call kernel
+
+section .data				;section declaration
+
+msg     db      "Hello, world!",0xa	;our string
+len     equ     $ - msg                 ;length of our string
+</pre>
+<p>NOTE: Ensure correct architecture. Examine final linked file size.</p>
+<hr>
+<h2>C</h2>
+<p>Pre-requisites: Any OS. For Linux install and use gcc C compiler. "Hello World" in C.</p>
+<pre>
+#include &lt;stdio.h&gt;
+int main () {
+  printf ("Hello, world!\n");
+}
+</pre>
+<p>Pre-requisites; Any OS. For Linux install and gcc C compiler. This program prompts for a radius, calculates the area of a circle, asks to repeat.</p>
+<pre>
+#include &lt;stdio.h&gt;
+/* Demonstration program to show
+   how C looks. Calculates area of circle
+   aand ask to repeat. */
+int main ()
+{
+  float radius, area;
+  char answer, filler;
+  answer = 'Y';
+  while (answer == 'Y') {
+    printf ("Radius: ");
+    scanf ("%f", &radius);
+    area = radius * radius * 3.14;
+    printf ("Area is: %5.2f\n", area);
+    printf ("Again? ");
+    // the filler variable is use to soak up EOL character
+    scanf ("%c%c", &filler, &answer);
+  }
+}
+</pre>
+<p>NOTE: examine binary vs source distribution.</p>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 1 of 25 parts.</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h3>Views differ on Perl. Greatly.</h3>
+<h3>Created by <a href="http://www.google.co.uk/search?q=Larry+Wall&start=0&ie=utf-8&oe=utf-8">Larry Wall</a>, he called it the <b>P</b>ractical <b>E</b>xtraction and <b>R</b>eport <b>L</b>anguage. Others call it the <b>P</b>athetically <b>E</b>clectic <b>R</b>ubbish <b>L</b>ister. A bit of a difference in attitude, you'll agree.</h3>
+<h3>But there's hardly a webserver (or indeed any other significant server) in the world that doesn't use PERL somewhere for something. So love it or hate it, you're going to have to respect it. Tough.</h3>
+<h2>"Hello World"</h3>
+<h3>The first program traditionally written by all programmers (no matter how expert) in a new language is the <a href="http://www.google.co.uk/search?q=hello+world&start=0&ie=utf-8&oe=utf-8">"Hello World"</a> program. This program writes <i>Hello World</i> on screen and then stops. Why do we write such a daft program? Well for a start it's not daft; it serves a very valuable function. Here's a quote from the <b>wikipedia:</b></h3>
+
+<h3><b>&quot;</b><font face="Courier New" color="#000000">A "hello world" program can be a useful sanity test to make sure that a language's compiler, development environment, and run-time environment are correctly installed. Configuring a complete programming toolchain from scratch to the point where even trivial programs can be compiled and run can involve substantial amounts of work. For this reason, a simple program is used first when testing a new tool chain.</font><b>&quot;</b></h3>
+
+<h3>As a matter of fact, go read <a href="http://en.wikipedia.org/wiki/Hello_world_program">the whole thing. It's good for you and has useful links</a>. Better still read the <a href="http://perldoc.perl.org/index-faq.html">FAQ</a> - it's mind-blowing.</h3>
+
+<h2>"Hello World" becomes <b>hello.pl</b></h2>
+<h3>This a LINUX/UNIX version of the program. Get it running then have fun playing around to make it look different:</h3>
+
+<h3><font face="Courier" color="#000000"">
+<p>#!/usr/bin/perl
+<br>print "Hello World!";
+</font>
+<p>The above program should display the words <b>Hello World!</b> and immediately exit. If you find that the program doesn't run, or runs but doesn't do what you expected of it, check what you've typed: programming languages tend to be quite precise and the slightest error can lead to unexpected outcomes, at the least, failure to execute properly.
+
+<p>Even if the program does run as expected, you should notice that the output text is lumped onto the same line as the command prompt. To make the program a little more attactive we can use an <i>escape</i> sequence to move onto the next line after printing the required text. The escape code for this is \n (where n stands for new line). Edit your program again until the modified code looks like this:
+<font face="Courier" color="#000000">
+<p>#!/usr/bin/perl
+<br>print "Hello World!\n";
+</font>
+<p>And yes, that is all there is to this little traditional program that has probably been created and run more times than any other program. The fun will coming from entering it and getting it to run.......</h3>
+<br>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<hr>
+<h2>Some Useful Links on or about Perl</h2>
+<ul>
+<li><a href="http://perldoc.perl.org/index-functions.html">http://perldoc.perl.org/index-functions.html</a></li>
+<li><a href="http://www.yourhtmlsource.com/cgi/basicperl.html">http://www.yourhtmlsource.com/cgi/basicperl.html</a></li>
+<li><a href="http://perldoc.perl.org/index-faq.html">http://perldoc.perl.org/index-faq.html</a></li>
+<li><a href="http://computer.howstuffworks.com/perl2.htm">http://computer.howstuffworks.com/perl2.htm</a></li>
+<ul>
+</div>
+</body>
+
+</html>

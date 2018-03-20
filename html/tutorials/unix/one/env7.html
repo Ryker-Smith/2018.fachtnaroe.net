@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- environment/env7.html -->
+
+<HEAD>
+<TITLE>Safeguarding your files</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>Safeguarding your files</H1>
+
+<P>It's easy to overwrite (clobber) existing files when you
+are <A HREF="../commanz/cmd3.html">redirecting output</A> to a file.
+To prevent this from happening you need to set the <SAMP>noclobber</SAMP>
+ shell variable by adding a line to your 
+ <A HREF="../tables/shells.html">shell start-up file</A>.</P>
+
+<P>Depending on which shell <A HREF="env6.html">you are using</A>
+ this is:
+
+<DL>
+<DT>C shell</DT>
+<DD><SAMP>set noclobber</SAMP></DD>
+<DT>TC shell</DT>
+<DD><SAMP>set noclobber</SAMP></DD>
+<DT>Korn shell</DT>
+<DD><SAMP>set -o noclobber</SAMP</DD>
+<DT>BASH</DT>
+<DD>set noclobber</DD>
+</DL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

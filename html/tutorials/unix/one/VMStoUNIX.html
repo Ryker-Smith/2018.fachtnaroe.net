@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- VMStoUNIX.html -->
+
+<HEAD>
+<TITLE>VMS to UNIX Translation</TITLE>
+</HEAD>
+
+<BODY>
+<H1>VMS to UNIX Translation</H1>
+
+<PRE WIDTH=80>
+<STRONG>To ...                      VMS                     UNIX</STRONG>
+<HR>
+display list of files       DIRECTORY               <A HREF="list.html">ls</A>
+                            DIRECTORY/FULL          <A HREF="list.html">ls -l</A>
+display contents of file    TYPE                    <A HREF="display0.html">cat</A>
+display file with pauses    TYPE/PAGE               <A HREF="display1.html">more, less</A>
+display first few lines of file                     <A HREF="display2.html">head</A>
+display last  few lines of file                     <A HREF="display3.html">tail</A>
+copy file                   COPY                    <A HREF="copying.html">cp</A>
+find string in file         SEARCH                  <A HREF="grep.html">grep</A>
+                                                    <A HREF="grep2.1.html">fgrep</A>
+compare files               DIFF                    <A HREF="diff.html">diff</A>
+                                                    <A HREF="man-cgi_cmp.html">cmp</A>
+rename file                 RENAME                  <A HREF="mv.html">mv</A>
+delete file or directory    DELETE                  <A HREF="rm.html">rm</A>
+                                                    <A HREF="rm1.2.html">rmdir</A>
+change file protection      SET FILE/PROT           <A HREF="change_perm.html">chmod</A>
+change file ownership       SET FILE/OWNER          <A HREF="change_own.html">chown</A>
+                                                    <A HREF="change_own.html">chgrp</A>
+create directory            CREATE/DIR              <A HREF="mkdir.html">mkdir</A>
+change working directory    SET DEFAULT             <A HREF="cd.html">cd</A>
+display working directory   SHOW DEFAULT            <A HREF="pwd.html">pwd</A>
+get help                    HELP                    <A HREF="index9.html">man</A>
+                                                    <A HREF="man-cgi_apropos.html">apropos</A>
+display date and time       SHOW TIME               <A HREF="man-cgi_date.html">date</A>
+display free disk space     SHOW DEV                <A HREF="man-cgi_df.html">df</A>
+stop process                STOP                    <A HREF="jobz5.html">kill</A>
+link program modules        LINK                    <A HREF="man-cgi_ld.html">ld</A>
+print file                  PRINT                   <A HREF="lpr.html">lpr</A>
+display print queue         SHOW QUEUE              <A HREF="lpr4.html">lpq</A>
+display print entries       SHOW ENTRY              <A HREF="lpr4.html">lpq</A>
+change password             SET PASSWORD            <A HREF="basic3.1.html">passwd</A>
+display logged-in users     SHOW USERS              <A HREF="basic1.3.4.html">who</A>
+                                                    <A HREF="man-cgi_finger.html">finger</A>
+                                                    <A HREF="man-cgi_w.html">w</A>
+display processes           SHOW PROCESS            <A HREF="jobz4.html">ps</A>
+change terminal settings    SET TERMINAL            <A HREF="man-cgi_stty_from_defaults.html">stty</A>
+talk to another user        PHONE                   <A HREF="man-cgi_talk.html">talk</A>
+disable messages            SET NOBROADCAST         <A HREF="man-cgi_mesg.html">mesg</A> n
+</PRE>
+
+<P>Thanks to Dave Atkin at the <A HREF="http://www.york.ac.uk">University of York</A>
+for permission to adapt his VMS/Unix translation.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="index15.html"><IMG SRC="weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="unixhelp_search.html"><IMG SRC="weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="index.html"><IMG SRC="weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

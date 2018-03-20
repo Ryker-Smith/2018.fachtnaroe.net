@@ -1,0 +1,107 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>WildeWare Studios: Internet Tips and Tricks</title>
+
+<link rel="stylesheet" HREF="../../images/style.css" type="text/css">
+
+</head>
+
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+
+<table border="0" bgcolor="black" width="100%">
+      <tr><td><a href="index.html"><img src="http://wildeware.tripod.com/images/logo.jpg" border="0" alt="[home]"></a></td></tr>
+</table>
+
+<table border="0" bgcolor="silver" width="100%">
+      <tr><td><font face="arial" size="2"><i>&nbsp;Some cause happiness wherever they go; others whenever they go.</i></font></td></tr>
+</table>
+
+<br><br>
+
+<div align="center">
+<table border="0" width="100%" cellpadding="7">
+<tr>
+
+<!-- Navigation -->
+<td width="20%" valign="top">
+<font face="arial" size="2">
+<b> Article Navigation: </B><br><br>
+-Vertical Marquee<br>
+-<a href="http://wildeware.tripod.com/tips_tricks/internet/tips2.html">Form Processing</a><br>
+-<a href="http://wildeware.tripod.com/tips_tricks/internet/tips3.html">Title Parameter<br>
+</td>
+
+<!-- Main column with article text -->
+<td width="60%" valign="top">
+<font face="times" size="3"><b>Internet Tips and Tricks</B><br></font>
+<hr size="2">
+<font face="arial" size="2">
+Chad Mazzola</font><br>
+<font face="arial" size="2"><p>
+
+<b>VERTICAL MARQUEE</B>
+
+<p>During your romps through the internet you’ve probably seen more than a few text
+scrollers made in Java. Personally, I think they stink (Uh...except for that one that
+Teto made of course). Why should I sit there waiting for an applet to load, and then
+have the whole page respond slowly, just so I can have “magical” scrolling text.</p>
+
+<p>If you have the incurable desire to put a scroller on your page, here is a much
+better option. By setting the direction parameter on the dreaded <code> &lt;marquee&gt;</code> tag to
+<code>UP</code> rather than <code>left</code> or <code>right</code>, you suddenly have a vertical scroller. 
+Not only do you not have to wait for an applet to load, but you can have ANY content at all(such as
+images or links) in this scroller instead of being limited to just text. If you consider
+yourself an avant-garde designer (or an idiot) you could even nest multiple
+<code> &lt;marquee&gt;</code> tags inside of each other. You can also gain additional control over your
+scroller by stopping and starting the scroller. For instance, any time the user puts
+their cursor in the marquee you could stop it, and when they move the cursor out,
+start it again.</p>
+
+<p>There are a ton of ways to modify the marquee tag, but here is a fairly basic
+example.</p>
+
+
+<blockquote><code>
+<p>&lt;marquee behavior=&quot;scroll&quot; direction=&quot;up&quot; height=&quot;250&quot; scrolldelay=&quot;185&quot; width=&quot;30%&quot;
+bgcolor=&quot;silver&quot; onMouseOver=&quot;stop()&quot;onMouseOut=&quot;start()&quot;&gt; <br>
+<br>
+&lt;b&gt; I love WildeWare &lt;/b&gt; <br>
+&lt;/marquee&gt;</p>
+</code></Blockquote>
+
+<div align="center">
+<marquee behavior="scroll" direction="up" height="250" scrolldelay="185" width="30%" bgcolor="silver" onMouseOver="stop()" onMouseOut="start()"> 
+<center>
+<b> I love WildeWare </B>	
+</center>
+</marquee>
+</div>
+
+<br><br>
+<div align="right">
+<a href="http://wildeware.tripod.com/tips_tricks/internet/tips2.html"> Next page... </a>
+</div>
+<br><br>
+
+<div align="center"><font face="arial" size="2">
+      Copyright (c) 2000 WildeWare Studios<br>
+      <a href="mailto:webmaster@wildeware.tripod.com">webmaster@wildeware.tripod.com</a><br>
+    </div>
+</td>
+
+<!-- Right hand navigation -->
+<td width="20%" valign="top">
+
+
+</td>
+
+</tr>
+</table>
+</div>
+
+</font>
+</BODY>
+</html>
+

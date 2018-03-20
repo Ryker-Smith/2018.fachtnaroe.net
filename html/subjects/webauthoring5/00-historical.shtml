@@ -1,0 +1,103 @@
+<h2>Assessment 2008/9:</h2>
+<ul>
+<li>Apart from the standard FTP open, edit, save, FTP upload, browser view and restart cycle, you can also download the source of your html file and work on it <b>live</b> at <a href="http://www.squarefree.com/htmledit/">http://www.squarefree.com/</a> and copy it back into place when done.</li>
+</ul>
+<p>Your topic for this year is <b>Culloughty's Country Hostel</b> near the town of <b>Ballyamiel</b> (<b>Baile na Meala</b>) not far from the beautiful hill-walking charms of <b>Cnoc M&oacute;r na Cail&iacute;n&iacute;</b>.</p>
+<!--#include virtual="/subjects/webauthoring5/web-project-2009.shtml" -->
+<ul>
+  <li><a href="https://www.fachtnaroe.net/~fachtna/00-booking-2009.html">Sample reservation form</a></li>
+</ul>
+<ol>
+<!--#include virtual="/images/stockimages/stockimages.shtml" -->
+</ol>
+<hr>
+<h2>Assessment 2007/8:</h2>
+<ul>
+<li><a href="https://www.fachtnaroe.net/~fachtna/00-booking-2008.html">Sample Booking Form with working script.</a></li>
+<li><a target="_top" href="https://www.fachtnaroe.net/cgi-bin/fachtna/database-2008.pl">View bookings database</a></li>
+</ul>
+<p>Your topic for this year is <b>FitzGeralds Park</b>, on the <b>The Mardyke</b> in Cork.</p>
+<p>Note that The Mardyke doesn't exist as it once did. Where once it was fabled in song for it's Elm Trees...
+<center>
+<table width="60%">
+<tr>
+<td>
+<b>The Banks Of My Own Lovely Lee</b>
+<i>
+<br>Oh how oft do my thoughts in their fancy take flight
+<br>To the home of my childhood away
+<br>To the days when each patriot’s vision seemed bright 
+<br>Ere I dreamed that those joys would decay
+<br>My heart was as light as the fair wind that blows
+<br>Down the Mardyke through each elm tree
+<br>Where I sported and played ‘neath each green leafy shade
+<br>On the banks of my own lovely Lee
+<br>Where I sported and played ‘neath each green leafy shade
+<br>On the banks of my own lovely Lee
+</i>
+</td>
+</tr>
+<tr>
+<td>
+<p>Words and chords for the above song are available in:</p>
+<ul>
+<li><a href="the banks of my own lovely lee.odt">OpenOffice.org format</a></li>
+<li><a href="the banks of my own lovely lee.doc">Microsoft Word format</a></li>
+</ul>
+</td>
+</table>
+</center>
+<p>...those Elm trees have died long since as a result of <a href="http://en.wikipedia.org/wiki/Dutch_elm_disease">Dutch Elm Disease</a>, and The Mardyke itself has seen development that the author of the song would not know how to describe.</p>
+<p>Each page <b>must</b> have a language option carefully placed on the page that allows the reader to change from viewing the website in the current language to the other supported languages. The supported languages are:
+<ul>
+<li>English</li>
+<li>French</li>
+<li>Irish (Optional for extra marks)</li>
+<li>Any other optional languages you wish to add</li>
+</ul>
+Once an alternate language is chosen, the site should remain operating in that language until another language is chosen.</p>
+<p>A suggested language switcher might look like this:<img align="center" src="2008/languageselect.gif" width="150"></p>
+
+<p>All normal rules about website creation will apply.</p>
+
+<center><p><b>Due Dates: 20<sup>th</sup> December 2007</b><br />(English version with French <i>links</i> in place)<br />
+<b>3<sup>rd</sup> January 2008</b><br />(Multi-lingual version with all links in place)<br /><b>18<sup>th</sup> Janary 2008</b><br />(<a href="../computerprogramming/programming-index.shtml">Tour booking version</a> with start of feedback in place)</p></center>
+<hr>
+<h2>Assessment 2006/7:</h2>
+<p>
+The two topics thus far selected upon which students may create a website on are:
+<ul>
+<li><a href="Assignment 2007.pdf">Greenstock Abbey</a>. Cross reference to <a href="http://www.fachtnaroe.com/subjects/computerprogramming/programming-index.shtml">Computer Programming</a>.</li>
+<li><a href="https://www.fachtnaroe.net/subjects/webauthoring/00-2007_a2_input_form.html">Current Draft of Input Form</a> Refer back for updates.</a></li>
+<li><a href="https://www.fachtnaroe.net/subjects/webauthoring/00-2007_a2_input_form.txt">Current HTML of Input Form</a> Refer back for updates.</a></li>
+<li><a href="https://www.fachtnaroe.net/subjects/webauthoring/picture_stock_67.html">Stock Pictures to use (legally) in your site.</a></li>
+<!--<li><a href="http://www.google.co.uk/search?hl=en&q=shandon+cork&btnG=Search&meta=">S<sup>t</sup> Annes Shandon, Cork City</a></li>
+<li><a href="http://www.google.co.uk/search?hl=en&q=tintern+wexford&btnG=Search&meta=">Tintern Abbey, Co. Wexford</a></li>
+<li>Other suggestion will be entertained, but consult your tutor first...</li> -->
+</ul>
+<!-- It's hoped to organize a day trip to each site to gather information and pictures. -->
+
+<p><b>On-line Submission:</b></p>
+<p>Your project should be SFTP'd securely, using our alternate secure port, to the folder <pre><center><big><big>/home/yourusername/public_html</big></big></center></pre> on the webserver <pre><center><big><big>mymailbox.fachtnaroe.net</big></big></center></pre> - this will enable viewing of the site by pointing of the browser at the location:<pre><center><big><big>https://www.fachtnaroe.net/~yourusername/</big></big></center></pre>
+</p>
+<ul>
+<li><a href="https://www.fachtnaroe.net/~fachtna/00-booking-2007.html">Sample Booking Form with working script.</a></li>
+<li><a target="_top" href="https://www.fachtnaroe.net/cgi-bin/fachtna/database-2007.pl">View bookings database</a></li>
+<li>Sites were meant to be &lt;= 1.5MB in size maximum. Here's how it worked out:</li>
+<ol>
+<ul>
+<li><a href="20070522-websizes.html">20070522</a></li>
+<li><a href="20070523-websizes.html">20070523</a></li>
+</ul>
+</ol>
+</ul>
+<hr>
+<h2>Assessment 2000-2004:</h2>
+<ul>
+  <li><a href="websites2004/index.html">Submissions 2004</a></li>
+  <li><a href="websites2003/index.html">Submissions 2003</a></li>
+  <li><a href="websites2002/index.html">Submissions 2002</a></li>
+  <li><a href="websites2001/index.html">Submissions 2001</a></li>
+  <li><a href="websites2000/index.html">Submissions 2000</a></li>
+</ul>
+<p>The website must be submitted online, so that the extern can check it for appearance and for working links <i>etc</i>. <small>(<i>The online submission should be matched by a paper submission. The paper submission should include a signed </i>'My Own Work'<i> form</i>).</small></p>

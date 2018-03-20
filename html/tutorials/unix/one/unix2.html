@@ -1,0 +1,395 @@
+<head>  
+<title> UNIX Tutorial Two </title>  
+</head>  
+  
+<body bgcolor="white">
+<hr size="1" noshade>
+<div align="center"><font size="+4" face="Verdana, Arial, Helvetica, sans-serif"><b>UNIX 
+  Tutorial Two</b></font> </div>
+<hr size="1" noshade>
+<br>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>2.1 
+        Copying Files</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">cp (copy)</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono" color="#CC0000">cp 
+      <i>file1 file2</i></font></b> is the command which makes a copy of <b>file1</b> 
+      in the current working directory and calls it <b>file2</b> </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> What we are going to 
+      do now, is to take a file stored in an open access area of the file system, 
+      and use the <b><font face="Courier New, Courier, mono" color="#CC0000">cp</font></b> 
+      command to copy it to your <b>unixstuff</b> directory. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> First, <b>cd</b> to 
+      your <b>unixstuff</b> directory.</font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        cd ~/unixstuff</font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Then at the UNIX prompt, 
+      type, </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        cp /vol/examples/tutorial/science.txt . </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> (Note: Don't forget 
+      the dot "<b>.</b>" at the end. Remember, in UNIX, the dot means the current 
+      directory.) </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> The above command means 
+      copy the file <b>science.txt</b> to the current directory, keeping the name 
+      the same. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> (Note: The directory 
+      <b>/vol/examples/tutorial/</b> is an area to which everyone in the department 
+      has read and copy access. If you are from outside the University, you can 
+      grab a copy of the file <a
+href="science.txt">here</a>. Use "File/Save As.." from the menu bar to save it 
+      into your <b>unixstuff</b> directory.)</font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">Exercise 2a</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Create a backup of your 
+      <b>science.txt</b> file by copying it to a file called <b>science.bak </b></font></p>
+    <p>&nbsp;</p>
+  </blockquote>
+</blockquote>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>2.2 
+        Moving files</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">mv (move)</font></h3>
+    <p><font face="Courier New, Courier, mono" color="#CC0000"><b>mv <i>file1</i> 
+      <i>file2</i></b></font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+      moves (or renames) <b>file1</b> to <b>file2</b> </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> To move a file from 
+      one place to another, use the <b><font face="Courier New, Courier, mono" color="#CC0000">mv</font></b> 
+      command. This has the effect of moving rather than copying the file, so 
+      you end up with only one file rather than two. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> It can also be used 
+      to rename a file, by "moving" the file to the same directory, but giving 
+      it a different name. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> We are now going to 
+      move the file <b>science.bak</b> to your backup directory. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">First, change directories 
+      to your <b>unixstuff</b> directory (can you remember how?). Then, inside 
+      the unixstuff directory, type</font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        mv science.bak backups/.</font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Type <b><font face="Courier New, Courier, mono" color="#CC0000">ls</font></b> 
+      and <b><font face="Courier New, Courier, mono" color="#CC0000">ls backups</font></b> 
+      to see if it has worked. </font></p>
+  </blockquote>
+  <h3>&nbsp; </h3>
+</blockquote>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>2.3 
+        Removing files and directories</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">rm (remove), rmdir 
+      (remove directory)</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">To delete (remove) a 
+      file, use the <b><font face="Courier New, Courier, mono" color="#CC0000">rm</font></b> 
+      command. As an example, we are going to create a copy of the science.txt 
+      file then delete it. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Inside your unixstuff 
+      directory, type</font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        cp science.txt tempfile.txt<br>
+        </font><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        ls </font></b><font face="Courier New, Courier, mono" size="-1"><font face="Verdana, Arial, Helvetica, sans-serif">(to 
+        check if it has created the file)</font></font><font face="Courier New, Courier, mono" color="#CC0000"></font><b><font face="Courier New, Courier, mono" color="#CC0000"><br>
+        </font><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        rm tempfile.txt </font></b> <br>
+        <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        ls </font></b><font face="Courier New, Courier, mono" size="-1"><font face="Verdana, Arial, Helvetica, sans-serif">(to 
+        check if it has deleted the file)</font></font><font face="Courier New, Courier, mono" color="#CC0000"></font><b><font face="Courier New, Courier, mono" color="#CC0000"></font></b> 
+        </font></p>
+      </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> You can use the <b><font face="Courier New, Courier, mono" color="#CC0000">rmdir</font></b> 
+      command to remove a directory (make sure it is empty first). Try to remove 
+      the backups directory. You will not be able to since UNIX will not let you 
+      remove a non-empty directory.</font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">Exercise 2b</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Create a directory called 
+      <b>tempstuff</b> using <b><font face="Courier New, Courier, mono" color="#CC0000">mkdir</font></b> 
+      , then remove it using the <b><font face="Courier New, Courier, mono" color="#CC0000">rmdir</font></b> 
+      command.</font></p>
+    <p>&nbsp; </p>
+  </blockquote>
+</blockquote>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>2.4 
+        Displaying the contents of a file on the screen</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">clear (clear screen)</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Before you start the 
+      next section, you may like to clear the terminal window of the previous 
+      commands so the output of the following commands can be clearly understood. 
+      </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> At the prompt, type 
+      </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        clear </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> This will clear all 
+      text and leave you with the % prompt at the top of the window. </font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">cat (concatenate)</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The command <b><font face="Courier New, Courier, mono" color="#CC0000">cat</font></b> 
+      can be used to display the contents of a file on the screen. Type: </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        cat science.txt </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> As you can see, the 
+      file is longer than than the size of the window, so it scrolls past making 
+      it unreadable. </font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">less</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The command <b><font face="Courier New, Courier, mono" color="#CC0000">less</font></b> 
+      writes the contents of a file onto the screen a page at a time. Type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        less science.txt </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Press the space-bar 
+      if you want to see another page, type <b>q</b> if you want to quit reading. 
+      As you can see, less is used in preference to cat for long files. </font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">head</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The <b><font face="Courier New, Courier, mono" color="#CC0000">head</font></b> 
+      command writes the first ten lines of a file to the screen. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> First clear the screen 
+      then type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        head science.txt </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Then type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        head -5 science.txt </font></b> </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> What difference did 
+      the -5 do to the head command? </font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">tail</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The <b><font face="Courier New, Courier, mono" color="#CC0000">tail</font></b> 
+      command writes the last ten lines of a file to the screen. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Clear the screen and 
+      type </font></p>
+    <blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        tail science.txt </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> How can you view the 
+      last 15 lines of the file? </font></p>
+    <p>&nbsp;</p>
+  </blockquote>
+</blockquote>
+<p> 
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>2.5 
+        Searching the contents of a file</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">Simple searching using 
+      less</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Using <b><font face="Courier New, Courier, mono" color="#CC0000">less</font></b>, 
+      you can search though a text file for a keyword (pattern). For example, 
+      to search through <b>science.txt</b> for the word <i><b>science</b></i>, 
+      type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        less science.txt </font></b> </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> then, still in less 
+      (i.e. don't press q to quit), type a slash followed by the word to search</font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono" color="#CC0000">/science</font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> As you can see, <b><font face="Courier New, Courier, mono" color="#CC0000">less</font></b> 
+      finds and highlights the keyword. Type <b>n</b> to search for the next occurrence 
+      of the word. </font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">grep (don't ask why 
+      it is called grep)</font></h3>
+    <p><font face="Courier New, Courier, mono" color="#CC0000"><b>grep</b></font><font face="Verdana, Arial, Helvetica, sans-serif"> 
+      is one of many standard UNIX utilities. It searches files for specified 
+      words or patterns. First clear the screen, then type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        grep science science.txt </font></b> </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> As you can see, grep 
+      has printed out each line containg the word science. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Or has it???? </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Try typing </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        grep Science </font><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Courier New, Courier, mono" color="#CC0000">science.txt</font></b></font></b> 
+        </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> The grep command is 
+      "case sensitive"; it distinguishes between Science and science. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> To ignore upper/lower 
+      case distinctions, use the <b><font face="Courier New, Courier, mono">-i</font></b> 
+      option, i.e. type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        grep -i science </font><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Courier New, Courier, mono" color="#CC0000">science.txt</font></b></font></b></font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> To search for a phrase 
+      or pattern, you must enclose it in single quotes (the apostrophe symbol). 
+      For example to search for spinning top, type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        grep -i 'spinning top' </font><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Courier New, Courier, mono" color="#CC0000">science.txt</font></b></font></b></font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Some of the other options 
+      of grep are: </font></p>
+    <blockquote> 
+      <p> <font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">-v 
+        </font></b>display those lines that do NOT match <br>
+        <b><font face="Courier New, Courier, mono">-n </font></b>precede each 
+        maching line with the line number <br>
+        <b><font face="Courier New, Courier, mono">-c </font></b>print only the 
+        total count of matched lines <br>
+        </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Try some of them and 
+      see the different results. Don't forget, you can use more than one option 
+      at a time, for example, the number of lines without the words science or 
+      Science is</font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        grep -ivc science </font><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Courier New, Courier, mono" color="#CC0000">science.txt</font></b></font></b></font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        </font></b></font></p>
+      <p>&nbsp;</p>
+    </blockquote>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">wc (word count)</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">A handy little utility 
+      is the <b><font face="Courier New, Courier, mono" color="#CC0000">wc</font></b> 
+      command, short for word count. To do a word count on <b>science.txt</b>, 
+      type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        wc -w </font><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Courier New, Courier, mono" color="#CC0000">science.txt</font></b></font></b></font></b></font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        </font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> To find out how many 
+      lines the file has, type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        wc -l </font><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Verdana, Arial, Helvetica, sans-serif"><b><font face="Courier New, Courier, mono" color="#CC0000">science.txt</font></b></font></b></font></b></font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        </font></b></font></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p> 
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>Summary</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <table border="0" cellpadding="5">
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">cp 
+          <i>file1</i> <i>file2</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">copy file1 and 
+          call it file2</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">mv 
+          <i>file1</i> <i>file2</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">move or rename 
+          file1 to file2</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">rm 
+          <i>file</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">remove a file</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">rmdir 
+          <i>directory</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">remove a directory</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">cat 
+          <i>file</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">display a file</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">more 
+          <i>file</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">display a file 
+          a page at a time</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">head 
+          <i>file</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">display the first 
+          few lines of a file</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">tail 
+          <i>file</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">display the last 
+          few lines of a file</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">grep 
+          'keyword' <i>file</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">search a file for 
+          keywords</font></td>
+      </tr>
+      <tr> 
+        <td width="202"><b><font face="Courier New, Courier, mono" color="#CC0000">wc 
+          <i>file</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">count number of 
+          lines/words/characters in file</font></td>
+      </tr>
+    </table>
+    
+  </blockquote>
+</blockquote>
+<hr size="1" noshade>
+<address><font face="Verdana, Arial, Helvetica, sans-serif"><b><font size="-1">M.Stonebank@surrey.ac.uk</font></b></font></address>
+<address><font size="-1"><b><font face="Verdana, Arial, Helvetica, sans-serif"> 
+&copy; 9th October 2000 </font></b></font></address>
+</body>  
+ 
+ 
+

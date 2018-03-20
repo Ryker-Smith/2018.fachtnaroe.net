@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Installer Configuration</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="The Advanced Management Console enables administrators to set up installer packages (MSI for Windows and PKG for OS X) for versions of the Java Runtime Environment (JRE) that are used in their enterprise. The customized installer package contains the installation options that are set according to the needs of the enterprise." />
+<meta name="dcterms.created" content="2017-01-20T02:15:31Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Advanced Management Console User's Guide" />
+<meta name="dcterms.identifier" content="E62444-09" />
+<meta name="dcterms.isVersionOf" content="JSAMV" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="jre-management.htm" title="Previous" type="text/html" />
+<link rel="Next" href="user-management.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JSAMV.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSAMV.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSAMV.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-DE67CBC0-279F-477B-A550-796A406CFC54"></a> <span id="PAGE" style="display:none;">9/13</span> <!-- End Header -->
+<a id="JSAMV136"></a><a id="JSAMV135"></a>
+<h1 id="JSAMV-GUID-DE67CBC0-279F-477B-A550-796A406CFC54" class="sect1"><span class="enumeration_chapter">6</span> Installer Configuration</h1>
+<div>
+<p>The <span>Advanced Management Console</span> enables administrators to set up installer packages (MSI for Windows and PKG for OS X) for versions of the Java Runtime Environment (JRE) that are used in their enterprise. The customized installer package contains the installation options that are set according to the needs of the enterprise.</p>
+<p>The Installer Configuration topic includes the following sections:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="installer-configuration.htm#GUID-4FE843ED-7CE5-4CA9-8E47-B93F2A9A415E" title="Commercial customers have access to MSI (Windows installer) and PKG (OS X installer) for the JRE. These files contain installer properties that you can set to customize the installation of the JRE. The Advanced Management Console enables you to create configuration files and custom installer files to use when deploying a JRE to desktops that run on these operating systems.">About Installer Configurations</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-A0F53ABC-BDAF-4E00-96E5-86603137C558" title="If you have an installer file for a Java Runtime Environment (JRE) version that is used in your enterprise, then add this Java version to the Advanced Management Console. As new versions of Java are released, add the installer files for each version. A default configuration is created for each version based on the settings in the installer file.">Adding a Java Version</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-13AEBE5C-B176-4A42-8854-A2ECCFBEB962" title="After you add a Java version to Advanced Management Console, you can add more configurations for that version as needed. Different configurations enable you to customize the installation for the different groups that you support.">Adding an Installer Configuration</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-6D39FF5C-3E2D-4CA3-A92E-86F974585581">Editing an Installer Configuration</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-DBA4A31F-1019-43F7-BD55-4C9DD8BF47D6" title="When a configuration is no longer needed, you can delete this installer configuration from Advanced Management Console.">Deleting an Installer Configuration</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-DDF94DE7-8264-47A0-B4D8-3EE63A9C061F" title="To create a custom installer file, apply an installer configuration in Advanced Management Console to the base installer file for a Java version. The custom installer file then contains the settings needed to install the Java Runtime Environment (JRE) in your enterprise.">Applying a Configuration to an Installer File</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-48003D03-A817-4C98-A0F6-6D46908F2032" title="A configuration file for installer can be exported using the Export to File option. This configuration contains customized setting applicable to related Java version installer and can be used to run a customized installations.">Exporting an Installer Configuration to a File</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-E4BF404A-B678-41F9-BFB0-CD412C838B7D" title="The Installers tab of Advanced Management Console provides information about the available installer configurations and the attributes. Configurations for each Java version that was added to Advanced Management Console are grouped by Java version.">Installer Configuration Attributes</a></p>
+</li>
+<li>
+<p><a href="installer-configuration.htm#GUID-4145BCE9-68F2-4536-9460-74ACBB5E048B" title="Property settings are used to manage the installation of the Java Runtime Environment (JRE). These settings control such things as the location of the deployment rule set, where the JRE is installed, and if Java applications are allowed to run in the browser.">Installer Configuration Properties</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMV137"></a>
+<div class="props_rev_3"><a id="GUID-4FE843ED-7CE5-4CA9-8E47-B93F2A9A415E"></a>
+<h2 id="JSAMV-GUID-4FE843ED-7CE5-4CA9-8E47-B93F2A9A415E" class="sect2">About Installer Configurations</h2>
+<div>
+<p>Commercial customers have access to MSI (Windows installer) and PKG (OS X installer) for the JRE. These files contain installer properties that you can set to customize the installation of the JRE. The <span>Advanced Management Console</span> enables you to create configuration files and custom installer files to use when deploying a JRE to desktops that run on these operating systems.</p>
+<p>Additional configurations can be created as needed. For example, if the organizations in your enterprise have different requirements for installing the JRE, then you can create a custom configuration for each organization. A custom installer file can be generated for each configuration, or the configuration can be exported to a file, which is then passed to the installer when the installer is invoked.</p>
+<p>The initial configuration is created when the Java version is added to the <span>Advanced Management Console</span>. This configuration shows the default settings for the installer properties.</p>
+<p>The Installers tab of the <span>Advanced Management Console</span> comprises the Windows tab and the OS X tabs that show the installer configurations that have been created on Windows and OS X respectively. Information about each installer is also shown, such as the date it was last modified and the number of properties that have been customized.</p>
+</div>
+</div>
+<a id="JSAMV138"></a>
+<div class="props_rev_3"><a id="GUID-A0F53ABC-BDAF-4E00-96E5-86603137C558"></a>
+<h2 id="JSAMV-GUID-A0F53ABC-BDAF-4E00-96E5-86603137C558" class="sect2">Adding a Java Version</h2>
+<div>
+<p>If you have an installer file for a Java Runtime Environment (JRE) version that is used in your enterprise, then add this Java version to the <span>Advanced Management Console</span>. As new versions of Java are released, add the installer files for each version. A default configuration is created for each version based on the settings in the installer file.</p>
+<div class="section">
+<p>To add a Java version:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Installers</span> tab.</span>
+<div>
+<p>The <span class="bold">Windows</span> tab is displayed by default. Start the <span>Advanced Management Console</span> UI as described in <a href="introduction-advanced-management-console.htm#GUID-BB8D86CC-D7A8-4C89-AA33-5C0D0A69AE0D">Starting the <span>Advanced Management Console</span> User Interface</a>, in case the user interface is not running. If you want to add a Java version in a OS X environment, then click the <span class="bold">Mac OS X</span> tab.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Add Java Version</span>.</span>
+<div>
+<p>A Java Web Start application is downloaded to your system and started. If you are prompted to allow the application to run, then click <span class="bold">Run</span>.</p>
+</div>
+</li>
+<li class="stepexpand"><span>In the Select installer for Configuration window, select installer file for the JRE that you want to add, and click <span class="bold">Open</span>.</span>
+<div>
+<p>After the installer file is uploaded to <span>Advanced Management Console</span>, refresh the page in the browser to see the configuration file.</p>
+</div>
+</li>
+</ol>
+<div class="section">
+<p>The installer file shown next to the Java version contains the default settings for the installer properties. This is the base version, which is never changed in the <span>Advanced Management Console</span>.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV139"></a>
+<div class="props_rev_3"><a id="GUID-13AEBE5C-B176-4A42-8854-A2ECCFBEB962"></a>
+<h2 id="JSAMV-GUID-13AEBE5C-B176-4A42-8854-A2ECCFBEB962" class="sect2">Adding an Installer Configuration</h2>
+<div>
+<p>After you add a Java version to <span>Advanced Management Console</span>, you can add more configurations for that version as needed. Different configurations enable you to customize the installation for the different groups that you support.</p>
+<div class="section">
+<p>To add an installer configuration:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Installers</span> tab.</span>
+<div>
+<p>The <span class="bold">Windows</span> tab is displayed by default. The list of Java versions and existing configurations is shown. See <a href="installer-configuration.htm#GUID-A0F53ABC-BDAF-4E00-96E5-86603137C558" title="If you have an installer file for a Java Runtime Environment (JRE) version that is used in your enterprise, then add this Java version to the Advanced Management Console. As new versions of Java are released, add the installer files for each version. A default configuration is created for each version based on the settings in the installer file.">Adding a Java Version</a>. If you want to add a configuration in a OS X environment, then click the <span class="bold">Mac OS X</span> tab.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Add a configuration.</span>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p>To add a configuration using the default settings, click <span class="bold">Add New Configuration</span> in the table for the Java version of interest.</p>
+<p>Enter the name for the configuration when prompted. The page of properties is then shown.</p>
+</li>
+<li>
+<p>To add a configuration using the settings from an existing configuration, click <span class="bold">Duplicate</span> in the Actions column for that configuration.</p>
+<p>The page of properties is shown. The name of the configuration defaults to the name of the configuration that was duplicated followed by <code>-copy</code>. Edit the <span class="bold">Configuration</span> field to change the name.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="stepexpand"><span>Set the properties as needed.</span>
+<div>
+<p>If you change a property from its default setting, then the <span class="bold">Reset</span> option is shown in the Set Default column. To restore the default value for a property, click <span class="bold">Reset</span>. If you duplicate an existing configuration and change a property, then reset sets the property to the default value, not to the value in the configuration that was duplicated.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Save</span> to save the configuration.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMV140"></a>
+<div class="props_rev_3"><a id="GUID-6D39FF5C-3E2D-4CA3-A92E-86F974585581"></a>
+<h2 id="JSAMV-GUID-6D39FF5C-3E2D-4CA3-A92E-86F974585581" class="sect2">Editing an Installer Configuration</h2>
+<div>
+<div class="section">
+<p>You can modify existing installer configurations in <span>Advanced Management Console</span> as needed.</p>
+<p>To edit an installer configuration:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Installers</span> tab.</span>
+<div>
+<p>The <span class="bold">Windows</span> tab is displayed by default. The list of Java versions and existing configurations is shown.</p>
+<p>If you want to edit a configuration in an OS X environment, then click the <span class="bold">Mac OS X</span> tab.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Edit</span> in the Actions column for the configuration that you want to edit.</span>
+<div>
+<p>The page of properties is shown.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Change the settings as needed.</span>
+<div>
+<p>If you change a property from its default setting, then the <span class="bold">Reset</span> option is shown in the Set Default column. To restore the default value for a property, click <span class="bold">Reset</span>.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Save</span> to save the configuration.</span></li>
+</ol>
+<div class="section">
+<p>Any customized MSI files and exported configuration files that were created before the configuration was edited are not changed.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV141"></a>
+<div class="props_rev_3"><a id="GUID-DBA4A31F-1019-43F7-BD55-4C9DD8BF47D6"></a>
+<h2 id="JSAMV-GUID-DBA4A31F-1019-43F7-BD55-4C9DD8BF47D6" class="sect2">Deleting an Installer Configuration</h2>
+<div>
+<p>When a configuration is no longer needed, you can delete this installer configuration from <span>Advanced Management Console</span>.</p>
+<div class="section">
+<p>To delete an installer configuration:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Installers</span> tab.</span>
+<div>
+<p>The <span class="bold">Windows</span> tab is displayed by default. The list of Java versions and existing configurations is displayed. If you want to delete a configuration from an OS X environment, then click the <span class="bold">Mac OS X</span> tab.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Delete</span> in the Actions column for the configuration that you want to remove.</span></li>
+<li class="stepexpand"><span>Confirm the deletion when prompted.</span>
+<div>
+<p>The page automatically refreshes and shows that the installer configuration has been deleted.</p>
+</div>
+</li>
+<li class="stepexpand"><span>(Optional) Manually delete any customized MSI files and exported configuration files that you created from the deleted configuration.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMV142"></a>
+<div class="props_rev_3"><a id="GUID-DDF94DE7-8264-47A0-B4D8-3EE63A9C061F"></a>
+<h2 id="JSAMV-GUID-DDF94DE7-8264-47A0-B4D8-3EE63A9C061F" class="sect2">Applying a Configuration to an Installer File</h2>
+<div>
+<p>To create a custom installer file, apply an installer configuration in <span>Advanced Management Console</span> to the base installer file for a Java version. The custom installer file then contains the settings needed to install the Java Runtime Environment (JRE) in your enterprise.</p>
+<div class="section">
+<p>To apply a configuration to an installer file:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Installers</span> tab.</span>
+<div>
+<p>The <span class="bold">Windows</span> tab is displayed by default. The list of Java versions and existing configurations is shown.</p>
+<div class="infobox-note" id="GUID-DDF94DE7-8264-47A0-B4D8-3EE63A9C061F__GUID-6162A823-5A43-4A1A-BC4B-6D17A97E8AA7">
+<p class="notep1">Note:</p>
+You cannot apply a configuration to an installer file in the OS X environment.</div>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Apply to MSI</span> in the Actions column for the configuration that you want to use to create the custom MSI file.</span>
+<div>
+<p>A Java Web Start application is downloaded to your system and started. If you are prompted to allow the application to run, then click <span class="bold">Run</span>.</p>
+</div>
+</li>
+<li class="stepexpand"><span>In the <span class="bold">Save Configured MSI File As</span> window, go to the location where you want to save the custom MSI file and provide a name for the file.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Save</span> to start downloading the base MSI and applying the configuration.</span>
+<div>
+<p>The message "File <span class="variable">file-name</span> patched successfully" is shown when the customized MSI file is successfully saved.</p>
+</div>
+</li>
+</ol>
+<div class="section">
+<p>Use this installer (MSI) file with system management software to distribute the JRE and ensure that it is installed with the settings required by your enterprise. If needed, settings in the MSI file can be overridden by settings passed from the command line or a configuration file.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV143"></a>
+<div class="props_rev_3"><a id="GUID-48003D03-A817-4C98-A0F6-6D46908F2032"></a>
+<h2 id="JSAMV-GUID-48003D03-A817-4C98-A0F6-6D46908F2032" class="sect2">Exporting an Installer Configuration to a File</h2>
+<div>
+<p>A configuration file for installer can be exported using the <span class="bold">Export to File</span> option. This configuration contains customized setting applicable to related Java version installer and can be used to run a customized installations.</p>
+<div class="section">
+<p>To export an installer configuration to a file:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Installers</span> tab.</span>
+<div>
+<p>The <span class="bold">Windows</span> tab is displayed by default. The list of Java versions and existing configurations is shown. If you want to export an installer configuration in an OS X environment, then click the <span class="bold">Mac OS X</span> tab.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Export to File</span> in the Actions column for the configuration that you want to export.</span>
+<div>
+<p>You are prompted to either open the file with a text editor or save the file.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>To save the file, select <span class="bold">Save File</span>.</p>
+<p>Navigate to the location where you want to save the file and enter a name of your choice. Click <span class="bold">Save</span>.</p>
+</li>
+<li>
+<p>To view the file in an editor, select <span class="bold">Open With</span> and choose the editor to use.</p>
+<p>Make any changes that you want and then save the file to the location of your choice.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+<div class="section">
+<p>When you install a JRE, pass the file that you created while installing an MSI file. This step is required to provide custom settings to the file that is created during MSI installation. Ensure that the version of the JRE you are installing matches the version of the JRE for which the configuration file was created. Make sure that the Settings in the configuration file override the settings in the MSI file. Settings from the command line override both the configuration file and the MSI file.</p>
+<p>You can use this configuration file to test configurations without needing to create multiple MSI files. Also, if most settings are the same for all organizations, then you can create a custom MSI file for most settings and then pass in a configuration file for the few settings that are different.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV144"></a>
+<div class="props_rev_3"><a id="GUID-E4BF404A-B678-41F9-BFB0-CD412C838B7D"></a>
+<h2 id="JSAMV-GUID-E4BF404A-B678-41F9-BFB0-CD412C838B7D" class="sect2">Installer Configuration Attributes</h2>
+<div>
+<p>The Installers tab of <span>Advanced Management Console</span> provides information about the available installer configurations and the attributes. Configurations for each Java version that was added to <span>Advanced Management Console</span> are grouped by Java version.</p>
+<div class="section">
+<p>The following table describes the information shown for each configuration:</p>
+</div>
+<!-- class="section" -->
+<div class="tblformal" id="GUID-E4BF404A-B678-41F9-BFB0-CD412C838B7D__GUID-DD8A6D61-2EC9-481A-8CCA-C6223559CFD3">
+<table class="cellalignment116" summary="Describes the attributes for installer configurations">
+<thead>
+<tr class="cellalignment107">
+<th class="cellalignment150" id="d9449e643">Attribute</th>
+<th class="cellalignment151" id="d9449e646">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment107">
+<td class="cellalignment152" id="d9449e651" headers="d9449e643">
+<p>Configuration</p>
+</td>
+<td class="cellalignment153" headers="d9449e651 d9449e646">
+<p>Name of the configuration</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment152" id="d9449e658" headers="d9449e643">
+<p>Created On</p>
+</td>
+<td class="cellalignment153" headers="d9449e658 d9449e646">
+<p>Date and time that the configuration was created</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment152" id="d9449e665" headers="d9449e643">
+<p>Last Modified On</p>
+</td>
+<td class="cellalignment153" headers="d9449e665 d9449e646">
+<p>Date and time of the most recent modification</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment152" id="d9449e672" headers="d9449e643">
+<p># Customized Properties</p>
+</td>
+<td class="cellalignment153" headers="d9449e672 d9449e646">
+<p>Number of properties that have a value different than the default value</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment152" id="d9449e679" headers="d9449e643">
+<p>Actions</p>
+</td>
+<td class="cellalignment153" headers="d9449e679 d9449e646">
+<p>Actions that are available for the configuration</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- class="inftblhruleinformal" --></div>
+</div>
+<a id="JSAMV145"></a>
+<div class="props_rev_3"><a id="GUID-4145BCE9-68F2-4536-9460-74ACBB5E048B"></a>
+<h2 id="JSAMV-GUID-4145BCE9-68F2-4536-9460-74ACBB5E048B" class="sect2">Installer Configuration Properties</h2>
+<div>
+<p>Property settings are used to manage the installation of the Java Runtime Environment (JRE). These settings control such things as the location of the deployment rule set, where the JRE is installed, and if Java applications are allowed to run in the browser.</p>
+<div class="section">
+<p>The properties that are available differ by the version of the JRE. See <a href="http://docs-uat.us.oracle.com/javacomponents/E67782_01/msi-jre8/install-guide/config_msi.htm#msi_config_file_options" target="_blank">Installer Configuration File Options</a> in <span class="italic">MSI Enterprise JRE Installer Guide for Windows</span>.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment106">
+<tr>
+<td class="cellalignment113">
+<table class="cellalignment111">
+<tr>
+<td class="cellalignment110"><a href="jre-management.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment110"><a href="user-management.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2014, 2017, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment115">
+<table class="cellalignment109">
+<tr>
+<td class="cellalignment110"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment110"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment110"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Using Perl Online</h1>
+<!--#include virtual="/subjects/computerprogramming/perl_online/navigate.shtml" -->
+<h2>Input</h2>
+<p>What you should be finding is that the <b>input -> process -> output</b> method that you have been using at the command line is not available to you. We need to start looking at some basic input methods, using input forms.</p>
+<p>Navigate to:
+<br /><center><b>/home/<i>your_username</i>/public_html/</b></center><br />
+within our server and create the file <b>addnumbers.html</b> entering the following html code, putting your username in place as required :</p>
+<font face="Courier" >
+<br />&lt;html&gt;
+<br />&lt;body&gt;
+<br />&lt;h2&gt;Sample Sum&lt;/h2&gt;
+<br />&lt;form action="/~YOURUSERNAME/cgi-bin/addnumbers.pl" method="post"&gt;
+<br />&lt;br /&gt;Enter a number:&nbsp;&lt;input type="text" size="10" name="first_num"&gt;
+<br />&lt;br /&gt;Enter a number:&nbsp;&lt;input type="text" size="10" name="secnd_num"&gt;
+<br />&lt;br /&gt;Enter a number:&nbsp;&lt;input type="text" size="10" name="third_num"&gt;
+<br />&lt;br /&gt;
+<br />&lt;input type="submit" value="Press to add the numbers!"&gt;
+<br />&lt;/form&gt;
+<br />&lt;/body&gt;
+<br />&lt;/html&gt;
+</font>
+<p>To open this page, use your browser to open the location:
+<br /><center><b>http://treebeard.ie:1916/~<i>your_username</i>/addnumbers.html</b></center><br />
+and see what appears on screen. It should be a short, simple form allowing you to enter numbers and submit them for addition. If there are errors in the page, edit the html to confirm your code is correct.</p>
+<center><a href="images/sample_sum.png"><img border="0" width="85%" src="images/sample_sum.png"></a></center>
+<p>It is not normal to place .html files in the cgi-bin folders. This is why we have put the html file in your private folder, but referenced the script in the cgi-bin folder. Equally, it is not normal to place executable scripts outside of the cgi-bin location. (Furthermore, the normal system-wide location for cgi-bin is /var/www/cgi-bin)</p>
+<h2>In the background...</h2>
+<p>Once the submit button in the web form is pressed, the action specified in the &lt;form &gt; tag is carried out, namely the execution of the specified script. Now we need to make that script. Pressing the submit button until that exists will yield a 404 (File not found) error from the browser.</p>
+<p><a href="perl_online_process.shtml">Next, processing the input...</a></p>
+<br />
+<!--#include virtual="/subjects/computerprogramming/perl_online/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl_online_input.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

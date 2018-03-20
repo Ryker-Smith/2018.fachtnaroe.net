@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>WildeWare Studios: Stylesheet Tutorial - Lesson One</title>
+
+<link rel="stylesheet" HREF="../../images/style.css" type="text/css">
+
+</head>
+
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+
+<table border="0" bgcolor="black" width="100%">
+      <tr><td><a href="index.html"><img src="http://wildeware.tripod.com/images/logo.jpg" border="0" alt="[home]"></a></td></tr>
+</table>
+
+<table border="0" bgcolor="silver" width="100%">
+      <tr><td><font face="arial" size="2"><i>&nbsp;Some cause happiness wherever they go; others whenever they go.</i></font></td></tr>
+</table>
+
+<br><br>
+
+<div align="center">
+<table border="0" width="100%" cellpadding="7">
+<tr>
+
+<!-- Navigation -->
+<td width="23%" valign="top">
+<font face="arial" size="2">
+<b> Article Navigation: </B><br><br>
+-<a href="stylesheet.html">Introduction<a> <br>
+-Adding CSS to your pages<br>
+-<a href="stylesheet3.html">Controlling Fonts</a><br>
+-<a href="stylesheet4.html">Controlling Layout</a><br>
+-<a href="stylesheet5.html">Color and Background</a><br>
+-<a href="stylesheet6.html">Position and Visibility</a><br>
+-<a href="stylesheet7.html">Conclusion</a>
+</td>
+
+<!-- Main column with article text -->
+<td width="60%" valign="top">
+<font face="times" size="3"><b>LESSON ONE: Adding stylesheets to your pages</B></font>
+<hr size="2">
+<font face="arial" size="2">
+
+<p>Stylesheets can be implemented in several different ways, and usually one method makes the
+most sense for the particular page(s) you are working with.  The most common way is to have
+the stylesheet properties embedded into the head of your page with the following code:<p>
+
+<blockquote><code>
+<p>&lt;style type=&#148;text/css&#148;&gt;<br>
+<br>
+h1 { color: green }<br>
+p { font-family: arial }<br>
+etc...<br>
+<br>
+&lt;/style&gt;</p>
+</code>
+</Blockquote>
+
+<p>You can use your personal discretion and decide if you want to expend the extra energy to
+include the comments (&lt;!-- --&gt;) around the stylesheet properties. Older browsers (2.0 versions)
+may display the actual code if these are not included, but in my humble opinion if you have
+someone who visits your site, and they are actually using that old of a browser, some sort of
+punishment is definitely in order. I personally do not include the comment tags. <p>
+
+<p>From the example above you can see the basic syntax used in stylesheets. In consists of an HTML tag, an
+open brace, followed by the various properties separated by semi-colons, and then closed with another brace. Obviously we will be
+spending the majority of our time discussing how to use these properties, so sit tight while we
+finish up how to implement the stylesheet.</p>
+
+
+<p>Another extremely useful feature of CSS is the ability to link to an external stylesheet. If you are
+maintaining multiple pages, all with the same layout, then this can prove to be very valuable.
+Again, simply include this into the head of your HTML document:<p>
+
+<blockquote><code>
+<p>&lt;link rel=&#148;stylesheet&#148; HREF=&#148;stylesheet.css&#148;
+type=&#148;text/css&#148;&gt;</p>
+</code></Blockquote>
+
+<p>This would reference the file “stylesheet.css” which would contain all the same code that the
+above example included. However, these parameters can now be shared across an unlimited
+number of pages.<p>
+
+<p>The third way to use stylesheets is to include the code right inside the HTML tag (also called
+inline stylesheets). This allows you to set the properties of just that one object on the page. I find
+this very useful for form elements which are harder to set correct properties to using the other methods of CSS inclusion.
+Take a look at the following code:<p>
+
+<blockquote><code>
+<p>&lt;input type=&#148;button&#148; value=&#148;Go&#148; style=&#148;font-size:
+17 pt; font-family: verdana&#148;&gt;</p>
+</code></Blockquote>
+
+<center>
+<input type="button" value="Go" style="font-size: 17 pt; font-family: verdana">
+</center>
+
+<p>No longer are you restricted to the generic input button, as you now have virtually the same
+control you would have when designing a button in Visual Basic.<p>
+
+<p>The forth and final way of implementing a stylesheet is probably the least used, and maybe the
+least useful. This involves importing a stylesheet from an external source. The code looks like
+this:<p>
+
+<blockquote><code>
+<p>&lt;style type=&#148;text/css&#148;&gt;<br>
+@import url(stylesheet.css)<br>
+&lt;/style&gt;</p>
+</code></Blockquote>
+
+
+<p>Useful? Perhaps. I would think that you would probably not see many examples of this. This
+method is also not supported very well by the various browsers, so maybe this would be a good
+time to listen to the advice I gave at the outset. Know about it, but don’t use it just yet.<p>
+
+I know you are chomping at the bit to get to the meat and potatoes of stylesheets, so let us move
+on to the good stuff.
+
+<br><br>
+<div align="right">
+<a href="stylesheet3.html"> Next page... </a>
+</div>
+<br><br>
+
+<div align="center"><font face="arial" size="2">
+      Copyright (c) 2000 WildeWare Studios<br>
+      <a href="mailto:webmaster@wildeware.tripod.com">webmaster@wildeware.tripod.com</a><br>
+</div>
+
+</td>
+
+
+<!-- Right hand navigation -->
+<td width="20%" valign="top">
+
+
+</td>
+
+</tr>
+</table>
+</div>
+
+</font>
+</BODY>
+</html>

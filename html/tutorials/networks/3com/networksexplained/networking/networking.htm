@@ -1,0 +1,308 @@
+<html>
+<head>
+<title>Networking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Page"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(8));
+</script>
+
+<table border="0" width="400">
+  <tr> 
+    <td align="left" valign="top" width="400"> 
+      <p><font size="5" face="Arial, Helvetica, sans-serif"> <a name="overview"></a><a name="1.1.1.1"></a>1 
+        Overview</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">1.1 Setting up a network 
+        is easy. This subsection shows you:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">What a network 
+          consists of </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">How different types 
+          of networks operate</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">What sort of network 
+          you can create using this CD</font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="5"><a name="1.1.2.1"></a> 
+        2 What is a network?</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 2.1 A computer network 
+        is a collection of PCs and other devices connected together with cables.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">This allows them to 
+        communicate with each other and share information and resources.</font></p>
+      <p align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="250" height="200">
+          <param name="SRC" value="images/networking_1.swf">
+          <embed src="images/networking_1.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="250" height="200">
+          </embed> 
+        </object></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> Networks vary in 
+        size; they could be contained in a single office or span the globe. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">A network that is 
+        connected over a limited area is called a Local Area Network (<A href="javascript:launchglossary('lan');"onMouseOver="status=statusbar_glos;return true">LAN</a>). 
+        </font><font face="Arial, Helvetica, sans-serif" size="2">A LAN is often 
+        contained in a single location. A Wide Area Network (<A href="javascript:launchglossary('wan');"onMouseOver="status=statusbar_glos;return true">WAN</a>) 
+        is a group of devices or LANs that are connected over a larger geographical 
+        area, often by telephone lines or other wiring, such as a high speed leased 
+        line, fiber, or satellite link. One of the largest examples of a WAN is 
+        the Internet itself.</font> </p>
+      <hr width="390" size="3">
+      <p> <font size="2" face="Arial, Helvetica, sans-serif"> <a name="1.1.2.2"></a>2.2 
+        There are various LAN </font><font size="2" face="Arial, Helvetica, sans-serif">technologies, 
+        the most common being <a href="javascript:launchglossary('ethernet')"onMouseOver="status=statusbar_glos;return true">Ethernet</a> 
+        and <a href="javascript:launchglossary('fastethernet')"onMouseOver="status=statusbar_glos;return true">Fast 
+        Ethernet</a>. A network can be made up of one or more of these technologies. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Ethernet and Fast 
+        Ethernet networks operate in a similar way, the main difference being 
+        the speed at which they transfer information.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Ethernet operates 
+        at 10 Megabits per second (or <a href="javascript:launchglossary('mbps')"onMouseOver="status=statusbar_glos;return true">Mbps</a>) 
+        and Fast Ethernet operates at 100 Mbps. </font></p>
+      <p><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="395" height="175">
+          <param name="SRC" value="images/networking_2.swf">
+          <embed src="images/networking_2.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="395" height="175">
+          </embed> 
+        </object></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a name="1.1.2.3"></a>2.3 
+        Devices on a network communicate by transmitting information to each other 
+        in groups of small electrical pulses (known as <a href="javascript:launchglossary('packet')"onMouseOver="status=statusbar_glos;return true">packets</a>).</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> Each packet contains 
+        the address of the transmitting device (the source address) and that of 
+        the recipient (the destination address). </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">This information is 
+        used by PCs and other equipment in the network to help the packet reach 
+        its destination.</font> </p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a name="1.1.2.4"></a>2.4 
+        Ethernet and Fast Ethernet networks use a protocol called <a href="javascript:launchglossary('csmacd')"onMouseOver="status=statusbar_glos;return true">CSMA/CD</a> 
+        (<b>C</b>arrier-<b>s</b>ense <b>M</b>ultiple <b>A</b>ccess with <b>C</b>ollision 
+        <b>D</b>etection). This allows only one device to communicate at a time. 
+        </font></p>
+      <font size="2" face="Arial, Helvetica, sans-serif">
+      <p>When two devices try to communicate simultaneously, a <a href="javascript:launchglossary('collision')"onMouseOver="status=statusbar_glos;return true">collision</a> 
+        occurs between the transmitted packets which is detected by the transmitting 
+        devices. The devices then stop transmitting and wait before re-sending 
+        their <a href="javascript:launchglossary('packet')"onMouseOver="status=statusbar_glos;return true">packets</a>. 
+      </p>
+      <p>The mechanism is like a conversation between a group of people; if two 
+        people speak at the same time, they both stop and then one starts to speak 
+        again. </p>
+      </font> 
+      <hr width="390" size="3">
+      <font size="2" face="Arial, Helvetica, sans-serif"> 
+      <p><br>
+        <font face="Arial, Helvetica, sans-serif" size="5"><a name="1.1.3.1"></a>3 
+        What are the benefits of networking?</font></p>
+      <p>3.1 In a network, information and resources can be shared. This brings 
+        a number of advantages: </p>
+      </font> 
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">You can share expensive 
+          peripherals, such as printers. In a network, all the computers can access 
+          the same printer. </font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">You can pass data 
+          between users without using floppy disks. Transferring files over the 
+          network eliminates time wasted copying files onto a floppy disk and 
+          then onto another PC. Also, there is less restriction on the size of 
+          file that can be transferred over a network.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> You can centralize 
+          key computer programs, such as finance and accounting. Often users need 
+          to access the same program so they can work on it simultaneously. One 
+          example would be a ticket booking office system where it would important 
+          to prevent a ticket being sold twice.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> You can institute 
+          automatic file backup. A computer program can be used to back up key 
+          files automatically, saving time and ensuring that all your work is 
+          safe.</font></li>
+      </ul>
+      <font size="2" face="Arial, Helvetica, sans-serif"> 
+      <p>In a Wide Area Network, information and resources can be shared over 
+        a greater geographical area. This brings a number of advantages:</p>
+      </font> 
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> You can send and 
+          receive e-mail from all over the world, communicating messages and announcements 
+          to many people, in many different areas, quickly and inexpensively. 
+          </font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">You can transfer 
+          files to and from colleagues in other locations, or access the company 
+          network from home. </font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">You can access 
+          the vast resources of the Internet and the World Wide Web.</font></li>
+      </ul>
+      <font size="2" face="Arial, Helvetica, sans-serif"> 
+      <p>The installation sections (<b>Setting Up a PC, Installing a Device, Adding 
+        a Printer</b> and <b>Using Your Network</b>) of this CD tell you about 
+        the equipment and the steps required to set up your network. </p>
+      </font>
+<hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="5"><a name="whatkindofnetwork"></a><a name="1.1.4.1"></a>4 
+        What kind of network can I create?</font></p>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">4.1 </font><font face="Arial, Helvetica, sans-serif" size="2">The 
+        installation sections of this CD (<b>Setting Up a PC, Installing a Device, 
+        Adding a Printer</b> and <b>Using Your Network</b>) describe how to set 
+        up a small <a href="javascript:launchglossary('peer-to-peernetwork')"onMouseOver="status=statusbar_glos;return true"> 
+        peer-to-peer</a> Local Area Network (LAN) and describe the structure of 
+        a <a href="javascript:launchglossary('wan')"onMouseOver="status=statusbar_glos;return true">Wide 
+        Area Network (WAN)</a> and how to access the Internet.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">OfficeConnect 
+        devices are very flexible and can be used in many different types of network. 
+        This CD is ideal for guiding you through the installation of a simple 
+        Windows 95 or Windows 98 peer-to-peer network.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a name="1.1.4.2"></a>4.2 
+        After creating the network, you can use the installation steps in <b>Using 
+        Your Network</b> to set up:</font> </p>
+      <div align="left"> 
+        <ul>
+          <li> <font size="2" face="Arial, Helvetica, sans-serif"> Folder and 
+            drive sharing - you can specify which PC folders and drives you want 
+            other users to access so that information in those folders and drives 
+            can be shared.</font></li>
+          <li> <font size="2" face="Arial, Helvetica, sans-serif"> <a href="javascript:launchglossary('e-mail')"onMouseOver="status=statusbar_glos;return true">E-mail</a> 
+            - you can set up electronic mail or <i>e-mail</i> so that all PC users 
+            can send and receive messages.</font></li>
+          <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="javascript:launchglossary('ip')"onMouseOver="status=statusbar_glos;return true">IP</a> 
+            - you can set up an <i>Internet Protocol</i> or IP address to </font><font size="2" face="Arial, Helvetica, sans-serif">connect 
+            your PC to the <a href="javascript:launchglossary('internet')"onMouseOver="status=statusbar_glos;return true">Internet</a> 
+            or another network.</font></li>
+        </ul>
+        
+      </div>
+      <font size="2" face="Arial, Helvetica, sans-serif"> 
+      <p align="left"> You can add more users to the network. The installation 
+        instructions in <b>Installing a Device</b> describe how to do this and 
+        how to add more OfficeConnect devices. </p>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <font size="2" face="Arial, Helvetica, sans-serif">
+<div align="left">
+<p><a name="1.1.4.3"></a>4.3 A WAN allows you to share resources and information 
+          across a large geographical area, such as browsing the Web or transferring 
+          files and messages via e-mail. </p>
+        <p>To access a WAN you will need a <a href="javascript:launchglossary('modem')"onMouseOver="status=statusbar_glos;return true">modem</a> 
+          or a <a href="javascript:launchglossary('router')"onMouseOver="status=statusbar_glos;return true">router</a>. 
+        </p>
+        <p>To access the Internet you will also need an account with an Internet 
+          Service Provider (ISP) or an online service. </p>
+        <p>3Com produces several modems and routers, and this tutorial explains 
+          how to use the OfficeConnect ISDN LAN Modem and the OfficeConnect 56K 
+          LAN Modem. If you have a different modem or router, follow the instructions 
+          that accompany your device. </p>
+        <p>Information on setting up an OfficeConnect LAN Modem can be found under 
+          <b>Installing a Device</b>. Setting up and using e-mail is explained 
+          under <b>Using Your Network</b>.</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+      </font></td> 
+</table>
+</body>
+</html>

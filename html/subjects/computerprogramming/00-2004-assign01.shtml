@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#include virtual=/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<div id="content">
+<h1>Computer Programming Sample Solution</h1>
+<h3>
+<big><pre>
+/*
+========================================================
+                 COMPILATION SUCCESSFUL                 
+Submitted on: 20031215 at: 14:05:15 from: 192.168.0.27
+========================================================
+*/
+/***************************************************************************
+                          main.c  -  description
+                             -------------------
+    begin                : Mon Dec  8 12:25:40 GMT 2003
+    copyright            : (C) 2003 by jane Murphy
+    email                : it.janem@pyonyang.cti-clonmel.ie
+    note				 : may need -lncurses parameter to gcc to compile
+ ***************************************************************************/
+
+/***************************************************************************
+ *Program to calculate wages                                               *
+ ***************************************************************************/
+
+
+
+#include <stdio.h>
+#define taxcredit 41.92
+#define prsirate 6
+#define payrate 20
+main()
+{
+ float Originalgross,Hourlyrate,Hours,Gross,PRSI,PAYE,Taxpayable,Nettpay,
+ Total,Overall,Praise,Puddle,Netts;
+ Hourlyrate = 15;
+ int loopc;
+ printf ("Please enter hourly rate:");
+ scanf ("%f",&Hourlyrate);
+ loopc = 0;
+ Overall = 0;
+ Praise = 0;
+ Puddle = 0;
+ Netts = 0;
+
+ while (loopc <= 3)
+  {
+   printf ("-----------------------\n");
+   printf ("Please enter hours:");
+   scanf ("%f",&Hours);
+   Gross = Hours * Hourlyrate;
+   //Gross = Hours * Hourlyrate means that in getting the gross I need
+   // to multiply the hours worked by the hourlyrate given.//
+   Overall = Overall + Gross;
+   //My Overall means the overall total of gross of all employees.//
+   PRSI = Gross/100*prsirate;
+   //To get my PRSI total I need to Divide the total gross by 100 and
+   //multiply it by the PRSI rate//
+   Praise = Praise += PRSI;
+   //Praise is my total PRSI of all the employees.//
+   Gross = Gross-PRSI;
+   //My total Gross will then be calculated by subtracting the PRSI
+   //amount from the Gross//
+   PAYE = Gross/100*payrate;
+   //To calculate my PAYE I need to divide my gross by 100 and multiply
+   // it by my payrate//
+   PAYE = PAYE-taxcredit;
+   //My total PAYE is calculated by taking the tax credit from the total
+   // PAYE which will give me the amount of PAYE needed to pay.//
+   Puddle = Puddle + PAYE;
+   //Puddle is my total PAYE of all the employees.//
+   Nettpay = Gross-PAYE;
+   //Nettpay is calculated by taking the PAYE from the Gross.//
+   Netts = Netts + Nettpay;
+   //Netts is the total amount of nett pay of all employees.//
+   Gross = Hours * Hourlyrate;
+   //The total Gross is calculated by multiplying the Hours by the
+   // Hourlyrate.//
+   printf ("grosswage : %1.2f\n",Gross);
+   printf ("prsi : %1.2f\n",PRSI);
+   printf ("taxpaid : %1.2f\n",PAYE);
+   printf ("totalpay : %1.2f\n",Nettpay);
+   loopc++;
+  }
+ printf ("Total Gross: %1.2f\n",Overall);
+ printf ("Total PRSI: %1.2f\n",Praise);
+ printf ("Total PAYE: %1.2f\n",Puddle);
+ printf ("Total Nettpays: %1.2f\n",Netts);
+}
+</pre></big>
+</div>
+</body>
+</html>

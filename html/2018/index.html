@@ -1,0 +1,150 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+<title>Space Desktop</title>
+<style type="text/css">
+
+body {
+background-image: url(/data/openwebmail/images/backgrounds/starfield.gif);
+background-color:"#000000";
+background-repeat: repeat;
+font-family: Arial, Helvetica, sans-serif; font-size: 10pt
+}
+A:link    { text-decoration: none; color: blue}
+A:visited { text-decoration: none; color: blue}
+A:hover   { text-decoration: none; color: red}
+.medtext { font-size: 9pt;}
+
+#testbox {
+  background-color: blue;
+  width: 100px;
+  height:100px;
+  z-index: 10;
+  top: 100;
+  left: 100;
+  position: absolute;
+  border: 2px blue;
+}
+
+#viewer {
+  float: right;
+  position: relative;
+  width: 200px;
+  height: 400px;
+  font: 40px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+*[id$='_head'] {  /* wildcard to select all titles  */
+  background-color: white;
+}
+</style>
+
+<script  type="text/javascript">
+
+function startAnimation() {
+    var divAnim = document.body;
+    var changeX=0;
+    var changeY=0;
+    // should this be setTimeout ?
+    setInterval(function () {
+        changeX +=1;
+        changeY +=1;
+        divAnim.style.backgroundPosition = changeX + "px " + changeY + "px";
+    }, 100);
+  }
+
+  function onloadProc() {
+  // Is this required too?
+    startAnimation();
+    // this is an invocation of the function that will (Eventually!) create new 'windows' for us easily.
+    
+    
+    newWindow('sample1', 'sample1', 'nothing here');
+    newWindow('sample2', 'sample2', 'more nothing here');
+    newWindow('sample3', 'sample3', 'still nothing here');
+//     newWindow('testbox', 'testbox', 'nothing here');
+dragElement(document.getElementById("testbox"));
+  }
+
+   function newWindow (title, id, content) {
+    var temp;
+     temp = '<div id="' + id + '"><div id="' + id + '_head">' + title + '</div><div id="' + id + '_content">' + content + '</div></div>' +
+     '<style> #' + id + '{ background-color: green; float: right; z-index: 5; width: 200px; height: 200px; position: absolute;  }</style>';
+     
+     document.getElementById('body').innerHTML = document.getElementById('body').innerHTML + temp;
+     document.getElementById('debug2').value= document.getElementById('debug2').value + temp;
+     dragElement(document.getElementById(id));
+//      dragElement(document.getElementById((id + '_head')));
+   }
+//Make the DIV element draggagle:
+
+  function clickWindowSize(e) {
+    var head = e.target.id;
+    var body = head.replace ('_head', '_content');
+//     alert(body);
+    document.getElementById(body).style.visible="false";
+    if (document.getElementById(body).style.height = "0px") {
+        document.getElementById(body).style.height = "100px";
+    } else {
+        document.getElementById(body).style.height = "0px";
+    }
+    
+  }
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "_head")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "_head").onmousedown = dragMouseDown;
+    document.getElementById(elmnt.id + "_head").onclick = clickWindowSize;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+    document.getElementById('debug1').value= '(' + pos3 + ',' + pos4 + ')';
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    document.getElementById('debug1').value= '(' + pos3 + ',' + pos4 + ')';
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body id="body" onload="onloadProc()">
+
+<div id="testbox"><div id="testbox_head">Window title</div><div id="testbox_content">Window Content</div></div>
+
+<div id="viewer">Some stuff here<input type="text" id ="debug1"><textarea id ="debug2" width="100%" height="100%"></textarea></div>
+<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">https://www.w3schools.com/jsref/dom_obj_event.asp</a>
+</body></html> 

@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="Description" CONTENT="Add pong-playing capability to any Excel97 spreadsheet you have.">
+   <TITLE>Pong for Excel 97</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000" BACKGROUND="tile.gif">
+&nbsp;
+<TABLE CELLSPACING=0 WIDTH="100%" >
+<TR ALIGN=LEFT>
+<TD ALIGN=LEFT VALIGN=BOTTOM>
+<CENTER><A HREF="~webspace.html"><IMG SRC="smallduck.gif" ALT="Eric's Webspace" HSPACE=10 BORDER=0 HEIGHT=71 WIDTH=150></A></CENTER>
+</TD>
+
+<TD ALIGN=LEFT VALIGN=BOTTOM>
+<CENTER><B><I><FONT SIZE=+3>Pong for Microsoft Excel 97</FONT></I></B></CENTER>
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE CELLSPACING=0 CELLPADDING=0 WIDTH="100%" BGCOLOR="#666699" >
+<TR>
+<TD WIDTH="100%">
+<DIV ALIGN=right><A HREF="http://www.calweb.com/~webspace/pong/pong.zip"><IMG SRC="download.gif" ALT="Download Now!" BORDER=0 HEIGHT=19 WIDTH=130></A><A HREF="http://www.calweb.com/~webspace/pong/pong.zip"><IMG SRC="excelico.gif" BORDER=0 HEIGHT=38 WIDTH=44></A></DIV>
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE>
+<TR>
+<TD><IMG SRC="100.gif" ALT="100 pixel spacer" HEIGHT=1 WIDTH=100></TD>
+
+<TD>This is a VBA module that can be dropped into any Excel97 spreadsheet
+to give it single-player Pong-playing capability.&nbsp; This was done just
+because it <B>can</B> be done. What other reason is there?&nbsp;
+
+<P>As it is currently written, pressing the "F12" key starts Pong, and
+pressing the "Escape" key stops Pong. The right and left arrow keys move
+your paddle. If you hit the ball with the side of the paddle, you change
+the angle of the resulting bounce. You get a "beep" if you miss the ball.
+I usually miss, so I hear lots of beeps. Because I miss so much, I decided
+Pong wouldn't keep score. The longest recorded time before becoming bored
+with the game is 45 seconds. <B>Pong doesn't affect any data on your spreadsheet.</B>
+
+<P>Here's <A HREF="http://www.calweb.com/~webspace/pong/pong.gif">how to add the pong module</A> into your spreadsheet.&nbsp;
+Here's <A HREF="http://www.calweb.com/~webspace/pong/pong.txt">the actual pong module</A> you'll need (you might
+have to right-click or shift-click it). If you don't want to add Pong to
+one of your spreadsheets, here's a blank spreadsheet with <A HREF="http://www.calweb.com/~webspace/pong/pong.xls">the
+pong module already installed</A>. If you click the "Download Now" icon
+at the top of the page, you get both the separate module and the installed
+spreadsheet together in a zip file.&nbsp;
+
+<P>Although the web isn't the place to try to demo "high-speed" action
+games, the animated picture below should give you some small idea of what
+the game looks like.&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE>
+<TR>
+<TD><IMG SRC="100.gif" HEIGHT=1 WIDTH=100></TD>
+
+<TD>&nbsp;<IMG SRC="play.gif" HEIGHT=345 WIDTH=460>&nbsp;
+<BR>This is actually a demo of how to use callbacks from inside VBA. You
+aren't actually supposed to be able to do it! VBA doesn't support the "AddressOf"
+function, and without it you can't find the address of a function for a
+callback. Of course, there is always a low-level undocumented workaround!
+Here I use a Windows timer API function and convince it to call back to
+one of my routines so I can move the pong ball every few milliseconds.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P><P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+</BODY>
+</HTML>

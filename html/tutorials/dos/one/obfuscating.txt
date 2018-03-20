@@ -1,0 +1,73 @@
+Sometimes you have to embed passwords, user names, phone 
+numbers, etc. in a batch file you'd rather not make 
+publicly visible. You don't need it truly hidden, you 
+just don't want it to be obvious. Here are a few 
+approaches you can take. The best ones first:
+
+1 - If you look around in your favorite program archive, you 
+might find a program called "bat2exe", "bat2com", or 
+something similar. Try this as a good starting point:
+ftp://ftp.cdrom.com/pub/simtelnet/msdos/pcmag/v9n14.zip
+ftp://ftp.cdrom.com/pub/simtelnet/msdos/batchutl/bat2ex15.zip
+These (they are the same program) will "compile" your batch 
+program into a COM file. You can then use a program compressor 
+like PKLITE or TINYPROG to compress and/or encrypyt the resulting 
+program. You can find lots of program compressors here:
+ftp://ftp.cdrom.com/pub/simtelnet/msdos/execomp/
+Compiled batch programs are only good for very simple batch 
+files, so try to compile just the bare minimum code you need. 
+This is the best solution IF you can get your compiled batch 
+file to run. And IF the compiler you pick doesn't work by 
+spitting out a temporary plain-text version of your batch 
+file.
+
+2 - Use Windows Scripting:
+http://msdn.microsoft.com/scripting/windowshost/default.htm
+and the script encoder
+http://msdn.microsoft.com/scripting/vbscript/download/vbsdown.htm
+I have a sample
+http://www.calweb.com/~webspace/scripting/samples/MakeAndRunBatchFile.vbs
+that shows how scripting can create a batch file on-the-fly. 
+And of course, you can use the script encoder to encrypt the 
+entire script so nobody could read it. Scripting came standard 
+with Windows 98 and was included in NT Service Pack 4. 
+Unfortunately, both need to have the "Windows Scripting Host" 
+upgraded to understand encrypted scripts. This is a good
+solution because nobody you are likely to know will know how to 
+hack through an encoded script. But it does create a temporary 
+plain-text version of your batch file.
+
+3 - Look in any software archive for a file encrypter. Then 
+you can encrypt your batch file and store it encrypted. You'll 
+need another batch file that will decrypt your batch file, 
+run it, then delete the decrypted version when finished. 
+Because the secondary batch file will have the name of the 
+decryption program, the name of your encrypted file, and the 
+password needed to decrypt it, all you've really done is 
+make someone take two extra steps before reading what you
+wanted hidden. At a minimum you should rename your decryption 
+program so it doesn't look interesting. And do the same with 
+your encrypted batch file name, the unencrypted temporary 
+name, and the decryption password:
+linefeed.exe index.dat ~temp3.bat -crlf
+call ~temp3.bat
+del ~temp3.bat
+In the above example, "linefeed.exe" is the decryption 
+program, index.dat is the encrypted file, "~temp3.bat" 
+is the unencrypted batch file, and "-crlf" is the password. 
+If it doesn't look like a decryption program, nobody will be 
+tempted to run it. 
+
+4 - Get the REGISTERED version of WinZip's Self-Extractor. 
+You can create a self extracting exe with your batch file in 
+it. If you set it up for "software distribution", it can be 
+set to automatically extract your batch file, run it, then 
+delete the extracted batch file when it finishes. It may be 
+obvious to you and me, but most people have no idea how to 
+open a self-extracting zip file to look at the files inside.
+
+5 - Change the name of the batch file to "printer.sys" or some 
+other unexciting name. Put it in an unexciting place like a folder 
+under the system directory. Nobody will think of opening it. Have another 
+batch file copy the "printer.sys" file over to a real BAT file name, 
+run it, and delete the copy when finished.

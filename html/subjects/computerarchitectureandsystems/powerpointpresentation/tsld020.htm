@@ -1,0 +1,59 @@
+
+<HTML>
+
+<HEAD>
+
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Sample Assembly Language</TITLE> 
+</HEAD>
+
+<BODY     >
+
+ <H1>Sample Assembly Language</H1> 
+ <P><UL>
+ MAIN   PROC  FAR
+</UL><UL>
+        PUSH  DS
+</UL><UL>
+        MOV   AX,0
+</UL><UL>
+        PUSH  AX
+</UL><UL>
+        MOV   AX,DSEG
+</UL><UL>
+        MOV   DS,AX
+</UL><UL>
+
+</UL><UL>
+        MOV   AH,00H    ;reset screen i.e..clearscreen
+</UL><UL>
+        MOV   AL,02H
+</UL><UL>
+        INT   10H
+</UL><UL>
+
+</UL><UL>
+        MOV   AH,00H	  ;set up graphics mode
+</UL><UL>
+			  ;(640*480graphics,16 colours)
+</UL><UL>
+        MOV   AL,18     ;(VGA only)
+</UL><UL>
+        INT   10H
+</UL><UL>
+        </UL></P>
+<P></P> 
+<P>
+<TABLE>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld019.htm">Previous slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=100> <A HREF="tsld021.htm">Next slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="tsld001.htm">Back to first slide</A> </TD>
+  <TD HEIGHT=100 WIDTH=150> <A HREF="sld020.htm">View graphic version</A> </TD>
+</TABLE>
+<BR>
+</P>
+
+
+
+</Body>
+</HTML>

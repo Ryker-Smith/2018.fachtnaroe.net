@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitional//EN" 
+"http://www.w3.org/tr/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<h1>Standard Formatting</h1>
+<hr>
+You know the question. You've asked it yourself hundreds of times: '<i>How many pages are required?</i>'.
+<p>When writing an essay or making a project submission we all want to know how much to write. But once you know how many pages to write, you then need to know: '<I>How big is a page?</I>'. After all, if your writing is bigger, you have to write fewer words to fill a page. This is especially an issue when you type your projects, as it's so easy to choose a large font and to fill a page with just one word! To solve this problem, all submissions are expected to be in what we call 'standard format'.
+<p>Standard format defines the font sizes and other characteristics of your submission and makes sure that the same amount of work is done by everyone.
+<p><b>The Standard Formatting Specification:</b>
+
+<table BORDER=1>
+<tr><td>Paper size<td>A4 (297mm X 210mm)
+<tr><td>Headings<td>16 point, Arial. Any alignment.
+<tr><td>Body text<td>12 point, Times New Roman, justified.
+<tr><td>Line spacing<td>Single line spacing should be used throughout. There should be one blank line between paragraphs. You may choose to have a blank line under a heading if you wish.
+<tr><td>Emphasis<td>Bold and italic. Underlining should be used sparingly.
+<tr><td>Colors<td>Excessive use of color is <b>not</b> advised. Black text with suitable emphasis is preferred.
+<tr><td>Page margins<td>2.0cm all around.
+<tr><td>Page numbering<td>Page numbering is preferred but not essential unless the project is quite long.
+<tr><td>Cover page<td>Most projects will have a '<a HREF="myownwork.html">My Own Work</a>' form available. Print this page, sign it and use it as a cover page.
+</table>
+</div>
+</body>
+</html>
+

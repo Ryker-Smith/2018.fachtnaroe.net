@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>WildeWare Studios: Stylesheet Tutorial - Lesson Two</title>
+
+<link rel="stylesheet" HREF="../../images/style.css" type="text/css">
+
+</head>
+
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+
+<table border="0" bgcolor="black" width="100%">
+      <tr><td><a href="index.html"><img src="http://wildeware.tripod.com/images/logo.jpg" border="0" alt="[home]"></a></td></tr>
+</table>
+
+<table border="0" bgcolor="silver" width="100%">
+      <tr><td><font face="arial" size="2"><i>&nbsp;Some cause happiness wherever they go; others whenever they go.</i></font></td></tr>
+</table>
+
+<br><br>
+
+<div align="center">
+<table border="0" width="100%" cellpadding="7">
+<tr>
+
+<!-- Navigation -->
+<td width="23%" valign="top">
+<font face="arial" size="2">
+<b> Article Navigation: </B><br><br>
+-<a href="stylesheet.html">Introduction<a> <br>
+-<a href="stylesheet2.html">Adding CSS to your pages</a><br>
+-Controlling Fonts<br>
+-<a href="stylesheet4.html">Controlling Layout</a><br>
+-<a href="stylesheet5.html">Color and Background</a><br>
+-<a href="stylesheet6.html">Position and Visibility</a><br>
+-<a href="stylesheet7.html">Conclusion</a><br>
+</td>
+
+<!-- Main column with article text -->
+<td width="60%" valign="top">
+<font face="times" size="3"><b>LESSON TWO: Controlling Fonts</B></font>
+<hr size="2">
+<font face="arial" size="2">
+
+<p>Font attributes are probably the most used of the CSS properties. These properties can be applied to
+everything from the anchor tag (<code>a { font-size: 10 px }</code>) to the various headings (<code>h4 {
+text-decoration: none }</code>). You use these anytime you want to control the properties of any tag that
+handles text.</p>
+
+<p>This is the way that all stylesheet properties are used. First you specify which tag you wish to apply the properties to.
+Then you simply list all of the specific properties that you want to set for the tag. When this tag is used in the body of the
+HTML page, it will have all of the attributes you set for it already applied. Later in this lesson we will see how to specify multiple 
+classes of the same tag.</p>
+
+<p>The most important font attributes are as follows:</p>
+
+<blockquote><code>
+font-family <br>
+font-size <br>
+font-weight <br>
+font-style <br>
+font-variant <br>
+text-transform <br>
+text-decoration <br><br>
+</code></Blockquote>
+
+<b>FONT FAMILY</B><br>
+
+<p>The most basic of the font attributes is font-family. This, as the brighter among you may have
+guessed, is used to define the typeface that will be used. When using this it is best to include
+several fonts to make sure your viewer has at least one of the specified fonts.</p>
+
+<blockquote><code>
+p { font-family: arial, verdana, sans-serif }
+</code></Blockquote>
+
+<p>The browser will look at the fonts sequentially, using the first recognized font. It is good practice
+to include as the last choice a generic font face that serves as a default. These default names
+include:</p>
+
+<blockquote><code>
+serif  (most likely Times) <br>
+sans-serif  (probably Arial) <br>
+monospace (probably Courier) <br>
+cursive  (please just don’t use this) <br>
+fantasy (again, why?) <br>
+</code></Blockquote>
+
+<p>A few tips. If your font name consists of two or more words (ex: Gill Sans) enclose it in quotes.
+Also, an odd quirk of stylesheets is that when you define several properties for the same tag (ex: <code>
+h2 { color:green; margin: 10 px; font-family: verdana} </code>) make sure that the font-family attribute is
+the last one. It’s just one of the stupid quirks of CSS. </p>
+
+<b>FONT SIZE</B>
+
+<p>When you are specifying font size you have several choices. The most common methods of
+declaring font sizes are using points or pixels, although it is possible to use inches, millimeters or
+even percentage values.</p>
+
+<p>When declaring the font size use pt to declare points and px for pixels.</p>
+
+<blockquote><code>
+P { font-size: 16 pt }
+</code></Blockquote>
+
+<p>As you can see, no longer are you forced to use the familiar HTML sizes of 1 through 7 to
+declare font size. You can use 7 pt, 56 px, or even 12 in. This allows you to add a unique touch
+to your pages since you can use a font size that seems unique when the viewer is used to seeing
+the common 2’s and 3’s of HTML font size. </p>
+
+<p>Hopefully you are starting to get the hang of how CSS syntax looks, so we’ll cover the next topics
+a little more quickly.</p>
+
+
+<b>FONT STYLE</B>
+
+<p>This handles the italic attribute of the font. You can also specify the font as normal.</p>
+
+<blockquote><code>
+h3 { font-style: italic } 
+</code></Blockquote>
+
+<b>FONT WEIGHT</B>
+
+<p>This handles the bold attribute.</p>
+
+<blockquote><code>
+a { font-weight: bold } 
+</code></Blockquote>
+
+<p>You can also use a numeric value (from 100 - 900) that will handle the various levels of
+boldness, if the font supports it.</p>
+
+<b>TEXT TRANSFORM</B><br><br>
+
+Converts text to uppercase.
+
+<blockquote><code>
+b { text-transform: uppercase }
+</code></Blockquote>
+
+Converts text to lowercase.
+
+<blockquote><code>
+h1 { text-transform: lowercase }
+</code></Blockquote>
+
+Capitalizes first letter of each word.
+
+<blockquote><code>
+a { text-transform: capitalize }
+</code></Blockquote>
+
+Makes sure that all text is unchanged.
+
+<blockquote><code>
+p { text-transform: none }
+</code></Blockquote>
+
+<b>TEXT DECORATION</B><br><br>
+
+These are most commonly associated with the anchor tag.
+
+<blockquote><code>
+a { text-decoration: underline } <br>
+a { text-decoration: overline } <br>
+a { text-decoration: line-through } <br>
+a { text-decoration: none } <br>
+</code></Blockquote>
+
+Writing text rollovers with CSS is a breeze. Take a look at the following code:
+
+<blockquote><code>
+a:link { text-decoration: underline } <br>
+a:hover { text-decoration: none } <br>
+a:visited {text-decoration: underline } <br>
+</code></Blockquote>
+
+<b>CLASSES</B>
+
+<p>The above lines of code can now apply to every single link on your page. But what if
+you wanted some links to be of a different style? Well, this is where classes come into play. To
+define tags with various classes, simply write:</p>
+
+<blockquote><code>
+a:link.secondtype { text-decoration: underline } 
+</code></Blockquote>
+
+or with other tags:
+
+<blockquote><code>
+b.nim { color: green }
+</code></Blockquote>
+
+To use the different class, specify it when you write the tag in the body of your code:
+
+<blockquote><code>
+<p>&lt;a class=&#148;secondtype&#148; href=&#148;www.wildeware.com&#148;&gt;WildeWare
+Studios &lt;/a&gt;</p>
+</code></Blockquote>
+
+<blockquote><code>
+<p>&lt;b class=&#148;nim&#148;&gt; www.wildeware.com &lt;/b&gt;</p>
+</code></Blockquote>
+
+Leaving out the class will use simply use the parent properties of the tag. 
+
+<br><br>
+<div align="right">
+<a href="stylesheet4.html"> Next page... </a>
+</div>
+<br><br>
+
+<div align="center"><font face="arial" size="2">
+      Copyright (c) 2000 WildeWare Studios<br>
+      <a href="mailto:webmaster@wildeware.tripod.com">webmaster@wildeware.tripod.com</a><br>
+</div>
+</td>
+
+<!-- Right hand navigation -->
+<td width="20%" valign="top">
+
+
+</td>
+
+</tr>
+</table>
+</div>
+
+</font>
+</BODY>
+</html>
+

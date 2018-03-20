@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl - Part 21</h1>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<h2>Saving More Complex Data</h2>
+<p>In the program <font face="Courier">names04.pl</font> you created a program that stored both names and telephone numbers. Previously you had only stored names.</p>
+<p>Realistically, it would be unlikely that you would create a "real-world" program just to save names; and if you did, you'd undoubtedly expect to have a better means of recovering the names than expecting to remember the order in which they were entered. That being said, this was suitable for our first few programs.</p>
+<p>Our next stage was to create a program that saved both names and telephone numbers. Initially we again expected to be able to recover a name and number by the order in which they were entered; we quickly changed that to enable us to recover a phone number using the name of the person.</p>
+<h2>Task 024</h2>
+<p>This, essentially, will be our task again. But since then we have learned how to write data to a disk file, as well as read back the contents of the disk file. To do this, we're going to try two different methods and see how they work out for us. First copy file <font face="Courier">names04.pl</font> to <font face="Courier">names04a.pl</font>. Then modify the file to look as shown below:</p>
+<center><img width="100%" src="/images/names04a.png"></center>
+<p>Now enter some data, consisting of names and numbers, like this:</p>
+<center><img width="90%" src="/images/names04a1.png"></center>
+<p>Whatever data you enter, you can examine with the <b>cat</b> command as shown here:</p>
+<center><img width="90%" src="/images/names04a2.png"></center>
+<h2>Task 025</h2>
+<p>Having accepted the input, created the file and output the data, we need to be able to read that data back in to make use of it. This we can do by modifying the file <font face="Courier">names04.pl</font> again. Copy it to <font face="Courier">names04b.pl</font> and modify it as below:</p>
+<center><img width="100%" src="/images/names04b.png"></center>
+<p>In this program we want to read in the names and then the telephone numbers. However, when you run the program you'll find the output is probably similar to that show below:</p>
+<center><img width="90%" src="/images/names04b1.png"></center>
+<p><b>Clearly we have an issue with how the data is being stored and retrieved. What is the problem?</b></p>
+<p><i>Before moving on</i> you should be able to volunteer some explanation as to why the data is not retrieved in the manner in which it was input, and in which it was confirmed (using <b>cat</b>) that it was saved.</p>
+<p>Onwards...</p>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl-part21.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

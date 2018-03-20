@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#exec cgi="/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+<script type="text/javascript" language="JavaScript" src="cgi-bin/flipmenu.js">
+
+/***********************************************
+* Flip Menu- by Osem Websystems (http://www.osem.nl/)
+* Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
+***********************************************/
+
+</script>
+</head>
+<body>
+<a name="top"></a>
+<!--#exec cgi="/navigation.shtml" -->
+<div id="content">
+<table cellspacing="0" cellpadding="0"><tr><!--<td border="1">
+<center><small><b><a target="_top" href="http://www.fachtnaroe.com/mymeteor/">Do you know about the appalling Meteor mobile phone customer website?</a>.</b></small> -->
+<!-- <tr><td>
+<table border="1" cellspacing="2" cellpadding="2" bgcolor="#FFFFFF"><tr><td>[20080316_20:00] Server restart due. <b>NOTE:</b> VNC session numbers will be cleared and new VNC server sessions will need to be started via the secure shell.</td></tr></table>
+</td></tr> 
+<tr class="real_empty"><td class="real_empty">&nbsp;</td></tr> -->
+
+<tr width="100%">
+<td width="100%">
+<h1><a name="CITXX">&nbsp;</a>Information Technology (CITXX - Level 5) Award</h1>
+<ul class="flipMenu">
+<li><h2>IT PLC Subjects <b>2007/8</b> (Subject to *constant* change):</h2>
+<ul>
+<li><strike><a href="subjects/communications/communications-index.shtml">Communications</a></strike>&nbsp;(<b>M</b>)</li>
+<li><strike><a href="subjects/computerarchitectureandsystems/computerarchitectureandsystems-index.shtml">Computer Architecture &amp; Systems</a>&nbsp;(Written Exam: Wednesday 30<sup>th</sup> April)</strike>&nbsp;(<b>M</b>)</li>
+<li><strike><b>&gt;Mandatory Module:</b>&nbsp;<a href="subjects/computerprogramming/programming-index.shtml">Computer Programming</a>&nbsp;(Written Exam: Thursday 1<sup>st</sup> May)</strike>&nbsp;(<b>M</b>)</li>
+<li><strike><a href="subjects/databasemethods/databasemethods-index.shtml">Database Methods</a>&nbsp;(Practical Exam: Monday 28<sup>th</sup> April)</strike></li>
+<li><strike><a href="subjects/desktoppublishing/desktoppublishing-index.shtml">Design</a></strike></li>
+<li><strike><a href="subjects/desktoppublishing/desktoppublishing-index.shtml">Desktop Publishing</a></strike></li>
+<li><strike>Language: <a href="http://french.about.com/">French</a></strike></li>
+<li><strike><b>&gt;Permission Required:</b>&nbsp;<a href="subjects/spreadsheetmethods/spreadsheetmethods-index.shtml">Spreadsheet Methods</a>&nbsp;(Practical Exam: Wednesday 23<sup>rd</sup> April)</strike></li>
+<li><strike><a href="subjects/theinternet/theinternet-index.shtml">The Internet</a></strike></li>
+<li><strike><a href="subjects/webauthoring5/webauthoring-index.shtml">Web Authoring</a> (5) <a href="subjects/webauthoring6/webauthoring6-index.shtml">(6)</a></strike></li>
+<li><strike><a href="subjects/workexperience/workexperience-index.shtml">Work Experience</a></strike>&nbsp;(<b>M</b>)</li>
+<li><strike><a href="subjects/wordprocessing-mode2/wordprocessing-index.shtml">Word Processing</a></strike></li>
+		<li>(<b>M</b>) = Mandatory Modules for Full Award (<a href="/citxx.shtml">CITXX</a>)
+		<br />&#149;<b><a href="http://fachtnaroe.servehttp.com/cgi-bin/events/event-list.pl#today">List of Deadlines</a></b>
+		<br />&#149;Items <strike>crossed off</strike> are considered FULLY completed &amp; with deadlines expired. All other items are at varying stages of progress.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+
+
+<tr class="real_empty" width="100%"><td class="real_empty" width="100%">&nbsp;</td></tr>
+
+<tr width="100%">
+<td width="100%">
+<h1><a name="BIPXX">&nbsp;</a>Information Processing (BIPXX - Level 5) Award</h1>
+<ul class="flipMenu">
+<li><h2>IP PLC Subjects <b>2007/8</b> (Subject to *constant* change):</h2>
+<ul>
+<li><strike><a href="subjects/communications/communications-index.shtml">Communications</a></strike>&nbsp;(<b>M</b>)</li>
+<li><strike><b>&gt;Permission Required:&nbsp;</b><a href="subjects/computerprogramming/programming-index.shtml">Computer Programming</a>&nbsp;(Written Exam: Thursday 1<sup>st</sup> May)</strike></li>
+<li><strike><a href="subjects/databasemethods/databasemethods-index.shtml">Database Methods</a>&nbsp;(Practical Exam: Monday 28<sup>th</sup> April)</strike>&nbsp;(<b>M</b>)</li>
+<li><strike><a href="subjects/desktoppublishing/desktoppublishing-index.shtml">Design</a></strike></li>
+<li><strike><a href="subjects/desktoppublishing/desktoppublishing-index.shtml">Desktop Publishing</a></strike></li>
+<li><strike><a href="subjects/informationandcommunicationssystems/informationandcommunicationssystems-index.shtml">Information &amp; Communication Systems</a>&nbsp;(Written Exam: Wednesday 30<sup>th</sup> April)</strike>&nbsp;(<b>M</b>)</li>
+<li><strike>Language: <a href="http://french.about.com/">French</a></strike></li>
+<li><strike><b>&gt;Mandatory Module:</b>&nbsp;<a href="subjects/spreadsheetmethods/spreadsheetmethods-index.shtml">Spreadsheet Methods</a>&nbsp;(Practical Exam: Wednesday 23<sup>rd</sup> April)</strike>&nbsp;(<b>M</b>)</li>
+<li><strike><a href="subjects/theinternet/theinternet-index.shtml">The Internet</a></strike></li>
+<li><strike><a href="subjects/webauthoring5/webauthoring-index.shtml">Web Authoring</a> (5) <a href="subjects/webauthoring6/webauthoring6-index.shtml">(6)</a></strike></li>
+<li><strike><a href="subjects/workexperience/workexperience-index.shtml">Work Experience</a></strike>&nbsp;(<b>M</b>)</li>
+<li><strike><a href="subjects/wordprocessing-mode2/wordprocessing-index.shtml">Word Processing</a></strike></li>
+	<li>(<b>M</b>) = Mandatory Modules for Full Award (<a href="/bipxx.shtml">BIPXX</a>)
+	<br />&#149;<b><a href="http://fachtnaroe.servehttp.com/cgi-bin/events/event-list.pl#today">List of Deadlines</a></b>
+	<br />&#149;Items <strike>crossed off</strike> are considered completed &amp; with deadlines expired.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+
+<tr class="real_empty" width="100%"><td class="real_empty" width="100%">&nbsp;</td></tr>
+
+<tr width="100%">
+<td width="100%">
+<h1>&nbsp;Record of Achievement</h1>
+<ul class="flipMenu">
+<li>How to get an ROA:
+<ul>
+<li>A Record of Achievement is awarded to a learner who successfully completes one <i>or more</i> modules at any level, but does not have either:
+<br />&#149;sufficient modules (minimum 8) for that level, or
+<br />&#149;an apropriate combination of modules for an award,
+<br />and thus does qualify for a full award Certificate.</li>
+<li>Credits may be accumulated over a period of time towards the achievement of your FETAC award.
+<br />&#149;For further details please consult the publication <strong><a href="http://www.fetac.ie/directory_of_awards_and_updates/default.htm">FETAC (NCVA) Awards</a></strong> or visit <a href="http://www.fetac.ie">www.fetac.ie</a>.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+
+<tr class="real_empty" width="100%"><td class="real_empty" width="100%">&nbsp;</td></tr>
+
+<tr width="100%">
+<td width="100%">
+<h1>&nbsp;Obtaining a Second FETAC Level 5 Certificate</h1>
+<ul class="flipMenu">
+<li>How to obtain a second FETAC certificate:
+<ul>
+<li>A maximum of four module credits (to include <a href="subjects/communications/communications-index.shtml">Communications</a>, the <a href="subjects/workexperience/workexperience-index.shtml">Work Experience</a> module, and two other modules) <b>must</b> be carried forward to another certificate, where a candidate has already met the requirements for a previous certificate.</li>
+<li>To qualify for the second certificate, a candidate must reach the required standards in four additional vocational modules from the list for that certificate.</li>
+<li>The extra four modules <strong>must</strong> include the vocational mandatory modules required for the second award.</li>
+<li>In the case of Information Technology (<a href="#CITXX">CITXX</a>) these required modules are:
+	<ul>
+	<li><a href="subjects/computerprogramming/programming-index.shtml">Computer Programming</a></li>
+	<li><a href="subjects/computerarchitectureandsystems/computerarchitectureandsystems-index.shtml">Computer Architecture &amp; Systems</a></li>
+	</ul>
+</li>
+<li>In the case of Information Processing (<a href="#BIPXX">BIPXX</a>) these required modules are:
+	<ul>
+	<li><a href="subjects/informationandcommunicationssystems/informationandcommunicationssystems-index.shtml">Information &amp; Communications Systems</a></li>
+	<li><a href="subjects/spreadsheetmethods/spreadsheetmethods-index.shtml">Spreadsheet Methods</a></li>
+	<li><a href="subjects/databasemethods/databasemethods-index.shtml">Database Methods</a></li>
+	</ul>
+</li>
+<li>Talk to your tutor to clarify your situation.</li>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+
+
+<tr class="real_empty" width="100%"><td class="real_empty" width="100%">&nbsp;</td></tr>
+
+<tr width="100%">
+<td width="100%">
+<h1>&nbsp;Miscellaneous</h1>
+<ul class="flipMenu">
+<li>Other links, subjects, CAO, H.E. Links Scheme:
+<ul>
+<li>All Level 5 (<i>formerly level 2</i>) FETAC/NCVA module descriptors may be found <a href="http://www.fetac.ie/guide/level5_alp_list_mod.htm"><b>here</b></a>. (External link)</li>
+<li><a href="http://www.fetac.ie/modules/b20148.pdf">e-Business Studies</a> (Level 5: Module descriptor only at present)</li>
+<li><a href="subjects/filmproduction/filmproduction-index.shtml">Film Production</a> (Level 5: Module descriptor only at present)</li>
+<li><a href="subjects/mathematicsforcomputing/mathematicsforcomputing-index.shtml">Mathematics for Computing (5)</a></li>
+<li><a href="subjects/pcconstructionandrepair/pcconstructionandrepair-index.shtml">PC Construction and Repair (5)</a></li>
+<li><a href="subjects/systemmaintenance6/systemmaintenance-index.shtml">System Maintenance (6)</a>&nbsp;(Written Exam: Thursday 1<sup>st</sup> May)</li>
+<li><a href="subjects/webauthoring6/webauthoring6-index.shtml">Web Authoring (6)</a></li>
+<li><a href="http://www2.cao.ie/fetac/FETAC_scoring.pdf">CAO Points</a> for your FETAC subjects.</li>
+<br />&#149;The <a href="http://www.fetac.ie/hels/default.htm">3<sup>rd</sup> Level Links Scheme</a> on the FETAC website &amp; the <a href="http://www.fetac.ie/hels/Prog_HEC_2008.pdf">2008 booklet</a> about the scheme.</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+
+<tr class="real_empty" width="100%"><td class="real_empty" width="100%">&nbsp;</td></tr>
+
+</table>
+</div>
+</body>
+</html>

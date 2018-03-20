@@ -1,0 +1,155 @@
+body	{
+	color: #000;
+	background-color: #fff;
+	margin:0px;
+	padding:0px;
+	font: 100% Arial, Sans-Serif;
+	voice-family:"\"}"";
+	voice-family:inherit;
+	}
+h1	{
+	Font-size: 200%;
+	Font-weight: 400;
+	padding: 0px;
+	margin: 0px;
+	} 
+
+h2	{
+	colour: #769400;
+	font-size: 150%;
+	font-weight: 100;
+	font weight: 600;
+	padding: 0px;
+	margin: 0px;
+	}
+
+h3	{
+	colour; #808080;
+	font-size: 100%;
+	font-weight: 600;
+	}
+
+h4	{
+	font-size: 80%;
+	font weight: 600;
+	}
+
+h5	{
+	font-size: 60%;
+	font-weight: 100;
+	colour: #808080;
+	text-align: center;
+	}
+
+h6	{
+	font weight: 100;
+	font-size: 50%;
+	}
+#logo	{
+	width: 133px;
+	height: 444px;
+	background-color: #eaeae7;
+	background-image: url(img/thestatue.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	} 
+
+#logo h1{
+	display: none;
+	}
+
+#links	{
+	position: absolute;
+	text-align: right;
+	top: 454px;
+	left: 0px;
+	width: 150px;
+	}
+#content	{
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	width: 550px;
+	padding: 10px;
+	border-bottom: 1px #808080 solid;
+	border-left: 1px #808080 solid;
+	border-right: 1px #808080 solid;
+	}
+#links a{
+	font-size: 80%;
+	color: #000;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 150px;
+	}
+#links a:hover {
+	font-weight: 600;
+	padding-right: 10px;
+	border-right: 10px #769400;
+	background-image: url(img/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	}
+#content2	{
+	position: absolute;
+	top: 160px;
+	left:  200px;
+	width: 600px;
+	padding: 10px;
+	border-bottom: 1px #808080 solid;
+	border-left: 1px #808080 solid;
+	border-right: 1px #808080 solid;
+	}
+#logo2	{
+	width: 100%;
+	height: 160px;
+	background-colour: #eaeae7;
+	background-image: url(img/gal1.gif);
+	}
+#content3	{
+	position: absolute;
+	top: 160px;
+	left: 200px;
+	width: 600px;
+	padding: 10px;
+	border-bottom: 1px #808080 solid;
+	border-left: 1px #808080 solid;
+	border-right: 1px #808080 solid;
+	}
+#logo3	{
+	width: 100%;
+	height: 160px;
+	background-colour: #eaeae7;
+	background-image: url(img/gal2.gif);
+	}
+#content4	{
+	position: absolute;
+	top: 160px;
+	left: 200px;
+	width: 600px;
+	padding: 10px;
+	border-bottom: 1px #808080 solid;
+	border-left: 1px #808080 solid;
+	border-right: 1px #808080 solid;
+	}
+#logo4	{
+	width: 100%;
+	height: 125px;
+	background-colour: #eaeae7;
+	background-image: url(img/gal3.gif);
+	}	
+#content5	{
+	positon: absolute;
+	top: 250px;
+	left: 200px;
+	width: 1000px;
+	padding: 10px;
+	border: 1px #000 solid;
+	}
+#logo5	{
+	width: 100%;
+	height: 329px;
+	background-colour: #eaeae7;
+	background-image: url(img/PATT.JPG);
+	}	

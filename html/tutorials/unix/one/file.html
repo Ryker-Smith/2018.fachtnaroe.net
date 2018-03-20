@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- concepts/file.html -->
+<HEAD>
+<TITLE>Understanding UNIX files</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Understanding UNIX files</H1>
+
+<P>Files do not actually reside inside directories. A directory is
+a file that contains references to other files.  The directory
+holds two pieces of information about each file:</P>
+
+<UL>
+<LI>its filename</LI>
+<LI>an <A HREF="../glossary/gi.html#inodenumber">inode number</A> which
+acts as a pointer to where the system can find the information it needs
+about this file.</LI>
+</UL>
+
+<P>Filenames are only used by the system to locate a file and its
+corresponding inode number. This correspondence is called a
+ <A HREF="../glossary/gl.html#link">link</A>.</P>
+
+<P>To the system, the file is the inode number. Multiple
+filenames can be used to refer to the same file by creating
+a link between an inode and each of the filenames.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

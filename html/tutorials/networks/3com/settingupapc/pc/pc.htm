@@ -1,0 +1,583 @@
+
+<HTML>
+<HEAD>
+<TITLE>Adding a PC</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Page"
+</script>
+
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+
+<SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(8));
+</script>
+ 
+<TABLE border="0" width="400">
+	
+  <TR> 
+    <TD width="400" height="1508"> 
+      <P><FONT size="5" face="Arial, Helvetica, sans-serif"> <a name="overview"></a><a name="2.1.1.1"></a>1 
+        Overview</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">1.1 </FONT><FONT size="2" face="Arial, Helvetica, sans-serif">To 
+        set up a network you must have a network interface card (NIC) in each 
+        PC. A NIC (sometimes referred to as an adapter card) is a circuit board 
+        that you install into the PC so it can connect to the network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">Alternatively, you 
+        may wish to use a <A href="javascript:launchglossary('usbnetworkinterface')"onMouseOver="status=statusbar_glos;return true">USB 
+        Network Interface</a> to connect a Windows 98 PC to your network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">This subsection describes 
+        how to install a NIC in the PC and how to configure the PC for use with 
+        the network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">If you are using the 
+        USB Network Interface you must first install it following the instructions 
+        in your installation guide, and then go to <a href="#makingapc"onMouseOver="status=statusbar_anchor;return true">Making 
+        a PC ready for network use</a>.<BR>
+        <BR>
+        <b>We assume that Windows 95 or Windows 98 is already installed on the 
+        PC.</b></FONT></P>
+      <hr width="390" size="3">
+      <P><font face="Arial, Helvetica, sans-serif" size="2"><a name="2.1.1.2"></a>1.2 
+        Now read the following:</font></P>
+      <UL>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif"> If you need to 
+          set-up a Laptop as opposed to a PC, go to <a  href="javascript:hotlink_se('laptop/laptop.htm','2.2.1.1')"onMouseOver="status=statusbar_se;return true">Adding 
+          a Laptop</a>.</FONT></LI>
+        <LI><font size="2" face="Arial, Helvetica, sans-serif">If the PC does 
+          not have a NIC in it you need to install a NIC. Go to <a href="#installinganic"onMouseOver="status=statusbar_anchor;return true">Installing 
+          the NIC</a>.</font></LI>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">If the PC has a 
+          NIC in it go to <a href="#makingapc"onMouseOver="status=statusbar_anchor;return true">Making 
+          a PC ready for network use</a>.</FONT></LI>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">If the PC is a 
+          'network ready' PC (a PC with a built-in network card) go to <a href="#makingapc"onMouseOver="status=statusbar_anchor;return true">Making 
+          a PC ready for network use</a>.</FONT></LI>
+        <LI><font size="2" face="Arial, Helvetica, sans-serif"> <img src="images/pc_1.gif" width="172" height="139" align="right">If 
+          you are <i>not sure</i> whether there is a NIC already in the PC look 
+          on the back to see if there is a suitable RJ-45 connector. If there 
+          is you may well have a NIC, so go to<b> </b><a href="#makingapc"onMouseOver="status=statusbar_anchor;return true">Making 
+          a PC ready for network use</a>.</font></LI>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">If you want to 
+          upgrade the NIC's driver go to the subsection <a  href="javascript:hotlink_se('driver/driver.htm','2.3.1.1')"onMouseOver="status=statusbar_se;return true">Changing 
+          the Driver</a>.</FONT></LI>
+      </UL>
+      <hr width="390" size="3">
+      <P><FONT size="5" face="Arial, Helvetica, sans-serif"><A name="installinganic"></A><a name="2.1.2.1"></a>2 
+        Installing the NIC</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 2.1 To install your 
+        network adapter card (NIC) you should have:</FONT></P>
+      <ul>
+        <li><img src="images/pc_2.gif" width="231" height="182" align="right"> 
+          <FONT size="2" face="Arial, Helvetica, sans-serif"> The manual that 
+          accompanies the PC.</FONT></li>
+        <li><FONT size="2" face="Arial, Helvetica, sans-serif"> The NIC itself 
+          and accompanying CDs, disks and manuals. </FONT></li>
+        <li><FONT size="2" face="Arial, Helvetica, sans-serif">A suitable screwdriver 
+          for removing the PC's cover and securing the NIC in place.</FONT></li>
+        <li><FONT size="2" face="Arial, Helvetica, sans-serif"> Windows 95 or 
+          Windows 98 CD-ROM or disks.</FONT></li>
+      </ul>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">Carefully read the 
+        instructions that accompany your card because the slots and connections 
+        vary. </FONT></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">2.2<a name="2.1.2.2"></a> 
+        To install the NIC into the PC:</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 1. Ensure that you 
+        know the exact name for the NIC. When configuring the NIC there may be 
+        several similar driver names and selecting the correct one is important.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> <img src="images/pc_3.gif" width="261" height="246" align="right"></FONT><FONT size="2" face="Arial, Helvetica, sans-serif">2. 
+        Power off the PC and disconnect its power cable.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3. Refer to the PC's 
+        manual for safety information and instructions on removing the PC's cover.</FONT></P>
+      </td></tr><tr>
+    <td>
+<hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">2.3<a name="2.1.2.3"></a> 
+        Remove the cover of the PC and insert the NIC into the PC.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">Make any necessary 
+        connections, referring to the instructions in the NIC's manual. Avoid 
+        touching the components on the PC and NIC as they can be damaged easily. 
+        If there is more than one slot of the required type, insert the NIC into 
+        any of these.</FONT></P>
+      <P align="center"><img src="images/pc_4.gif" width="325" height="350"></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> It is very important 
+        that the NIC is <b>fully</b> inserted into the appropriate slot. This 
+        may mean using a little force when pushing the NIC in place.</FONT></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">2.4 <a name="2.1.2.4"></a>Replace 
+        the top cover of the PC and reconnect its power cable and any other cables 
+        that you may have disconnected when removing the cover. </FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">Power on the PC and 
+        restart Windows 95 or Windows 98.</FONT></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">2.5 <a name="2.1.2.5"></a>When 
+        the PC and Windows 95 or Windows 98 are starting up, the NIC may be detected 
+        automatically.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">If so, configuration 
+        screens should appear to allow you to configure it.</FONT></P>
+      <UL>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">If the NIC is <b>not</b> 
+          detected, go to <a href="#configuring"onMouseOver="status=statusbar_anchor;return true">Configuring the NIC</a>.</FONT></LI>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">If the NIC is detected 
+          automatically and configuration screens appear for it, follow the configuration 
+          instructions on the PC screen and those that are in the NIC's manual. 
+          </FONT></LI>
+      </UL>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> Other new hardware 
+        may be detected at the same time as the NIC. Refer to the documentation 
+        accompanying that hardware for information on installing it. </FONT></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">2.6 <a name="2.1.2.6"></a>With 
+        Windows 95, when configuring the NIC you may be asked for:</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> <b>The Computer name 
+        </b><BR>
+        This is the name that will identify the PC on the network. It can be any 
+        name (such as 'Fred's PC') but it must be unique from other PCs and laptops 
+        on the network. We recommend that you keep a record of all the names on 
+        the network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> <b>The Workgroup 
+        name</b> <BR>
+        This is the name for the network. It can be any name but it must be the 
+        same as the workgroup name entered for other PCs and laptops on the network. 
+        We recommend that you keep a record of the workgroup name.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">Windows 98 will assume 
+        the Computer and Workgroup names entered when Windows 98 was installed. 
+        To check the names, continue to section 2.7. If you are not running Windows 
+        98, or do not want to check the names, go straight to <a href="#2.1.2.8"onMouseOver="status=statusbar_anchor;return true">section 
+        2.8</a> of this topic.</FONT></P>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">2.7</font> <font size="2" face="Arial, Helvetica, sans-serif"><a name="2.1.2.7"></a>To 
+        check the Computer and Workgroup names in Windows 98: </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1. From the <i>Start</i> 
+        menu, choose <i>Settings</i> and then <i>Control Panel</i>.</font></p>
+      <p align="center"><img src="images/pc_5.gif" width="329" height="403"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2. In the Control 
+        Panel window, double-click <i>Network</i>.</font></p>
+      <p align="center"><img src="images/pc_6.gif" width="382" height="394"></p>
+      <P><font size="2" face="Arial, Helvetica, sans-serif">3. In the Network 
+        dialog box, select the <i>Identification</i> tab.</font></P>
+      <P align="center"><img src="images/pc_7.gif" width="367" height="460"></P>
+      <P><font size="2" face="Arial, Helvetica, sans-serif">4. Check the names 
+        are suitable:</font></P>
+      <P><font size="2" face="Arial, Helvetica, sans-serif"><b>Computer name </b><br>
+        This is the name that will identify the PC on the network. It can be any 
+        name (such as 'Fred's PC') but it must be unique from other PCs and laptops 
+        on the network. We recommend that you keep a record of all the names on 
+        the network.</font></P>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <b> Workgroup name</b> 
+        <br>
+        This is the name for the network. It can be any name but it must be the 
+        same as the workgroup name entered for other PCs and laptops on the network. 
+        We recommend that you keep a record of the workgroup name.</font></p>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 2.8<a name="2.1.2.8"></a> 
+        When the configuration process is completed, restart the PC and Windows 
+        as prompted and go to <a href="#2.1.4.1"onMouseOver="status=statusbar_anchor;return true">Making 
+        a PC ready for network use</a>.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> If a DHCP error message 
+        appears when the PC and Windows 95 have been restarted go to the <a href="javascript:launchtrouble('troubleshooter.htm')"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a> 
+        section.</FONT></P>
+      <P align="center"><img src="images/pc_8.gif" width="400" height="99"></P>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a name="2.1.2.9"></a>2.9 
+        To make the PC ready for network use:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> Start Windows 95 
+        or Windows 98.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If the NIC was automatically 
+        detected and the Computer name and Workgroup have already been specified, 
+        Windows may ask you to log in. If you have logged on into this PC before, 
+        enter your User name and Password as normal. If this is the <i>first</i> 
+        time you have logged on to this PC, enter a new User name in the <i>User 
+        name</i> field (for example, your name). This name should be unique to 
+        the network. To set a password, simply type the desired password into 
+        the <i>Password</i> field. Click <i>OK</i>. Windows asks you to confirm 
+        the password. Retype it and click <i>OK</i>.</font></p>
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"><img src="images/pc_9.gif" width="400" height="128" alt="Enter Password"></font></p>
+      <hr width="390" size="3">
+      <P><FONT size="5" face="Arial, Helvetica, sans-serif"> <A name="configuring"></A><a name="2.1.3.1"></a>3 
+        Configuring the NIC</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.1 You need to complete 
+        this section only if the NIC was not automatically detected as described 
+        in the previous section <b>Installing the NIC</b>.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">To configure the network 
+        adapter card (NIC) you will need:</FONT></P>
+      <ul>
+        <li><FONT size="2" face="Arial, Helvetica, sans-serif"> The CDs, disks 
+          and manuals that came with the NIC</FONT></li>
+        <li><FONT size="2" face="Arial, Helvetica, sans-serif"> Windows 95 or 
+          Windows 98 CD-ROM or disks</FONT></li>
+      </ul>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> <img src="images/pc_10.gif" width="205" height="157" align="right" alt="Configuring the NIC">The 
+        process uses a 'Wizard' that is part of your Windows 95 or Windows 98 
+        software. </FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">A Wizard is a series 
+        of screens in which you are asked to make choices or indicate where software 
+        can be found. If you follow each step carefully the right software (or 
+        'driver') for your NIC will be installed.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"><img src="../../images/notesymb.gif" width="16" height="22" align="left">Note: 
+        The detailed appearance of the Wizard screens may differ depending on 
+        the version of Windows you are running.</FONT></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.2<a name="2.1.3.2"></a> 
+        To configure the NIC:</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 1. Power on the PC 
+        and start Windows 95 or Windows 98, if necessary. <BR>
+        2. From the Start menu, choose <i>Settings</i> and then <i>Control Panel</i>. 
+        </FONT></P>
+      <P align="center"><img src="images/pc_11.gif" width="288" height="295"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.3<a name="2.1.3.3"></a> 
+        In the Control Panel window, double-click <i>Add New Hardware</i>.</FONT></P>
+      <P align="center"><img src="images/pc_12.gif" width="395" height="369"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.4<a name="2.1.3.4"></a> 
+        In the Add New Hardware Wizard dialog box, click <I>Next></I>. </FONT></P>
+      <P align="center"><img src="images/pc_13.gif" width="400" height="293" alt="Add New Hardware"></P>
+      <P><font size="2" face="Arial, Helvetica, sans-serif">If you are using Windows 
+        98, click <i>Next></i> again.</font></P>
+      <P align="center"><img src="images/pc_14.gif" width="400" height="293"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.5 <a name="2.1.3.5"></a>Select 
+        <i>Yes</i> for the Windows new hardware search option, and click <I>Next></I>. 
+        </FONT></P>
+      <P align="center"><img src="images/pc_15.gif" width="400" height="293"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.6 <a name="2.1.3.6"></a>A 
+        message appears warning that the detection process may take some time. 
+        Click <I>Next></I>.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> The Add New Hardware 
+        Wizard tries to detect the NIC. This process may take a few minutes depending 
+        on the speed of the PC.</font></P>
+      <P align="center"><img src="images/pc_16.gif" width="400" height="293"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 3.7<a name="2.1.3.7"></a> 
+        If the NIC is detected: </FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">Click <i>Finish</i>. 
+        </FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">The Add New Hardware 
+        Wizard asks you to insert the Windows 95 or Windows 98 CD or various Windows 
+        95 disks. Provide them as required and remove after use.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> When finished, restart 
+        the PC as prompted.</FONT></P>
+      
+      <ul>
+        <li><FONT size="2" face="Arial, Helvetica, sans-serif"> If the NIC is 
+          not detected, you must add the NIC manually. <BR>
+          Click <i>Next</i>. </FONT><FONT size="2" face="Arial, Helvetica, sans-serif"> 
+          </font> </li>
+      </ul>
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> </font><FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.8<a name="2.1.3.8"></a> 
+        You only need to continue with the following manual process if the NIC 
+        was <b>not</b> detected. </FONT><FONT size="2" face="Arial, Helvetica, sans-serif">To 
+        add the NIC manually: <BR>
+        In the list box, select <i>Network Adapter</i> and click <i>Next</i>.</FONT></P>
+      <P><img src="images/pc_17.gif" width="400" height="293"></P>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.9<a name="2.1.3.9"></a> 
+        In the list boxes, select the manufacturer and model of the NIC you have 
+        installed. If the manufacturer or model is not listed, click <i>Have Disk</i> 
+        and provide the disks that are supplied with the NIC (refer to the NIC's 
+        manual if necessary).</FONT></P>
+      <P align="center"><img src="images/pc_18.gif" width="400" height="292"></P>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">3.10<a name="2.1.3.10"></a> 
+        Windows asks you to insert your Windows 95 or <font size="2" face="Arial, Helvetica, sans-serif">Windows 
+        9</font>8 CD or various Windows disks. Provide them as required.<BR>
+        When finished, click <i>Finish</i> and restart the PC.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">If, in the future, 
+        you need to upgrade the NIC’s driver (for example, to a new driver with 
+        improved features), go to the subsection <b>Changing the Driver</b>.</FONT></P>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT face="Arial, Helvetica, sans-serif" size="5"> <A name="makingapc"></A><a name="2.1.4.1"></a>4 
+        Making a PC ready for network use</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">4.1 To make the PC 
+        ready for network use: <br>
+        <BR>
+        Start Windows 95 or Windows 98.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> If the NIC was automatically 
+        detected and the Computer name and Workgroup have already been specified, 
+        Windows may ask you to log in. If you have logged on into this PC before, 
+        enter your User name and Password as normal. If this is the <i>first</i> 
+        time you have logged on to this PC, enter a new User name in the <i>User 
+        name</i> field (for example, your name). This name should be unique to 
+        the network. To set a password, simply type the desired password into 
+        the <i>Password</i> field. Click <i>OK</i>. Windows asks you to confirm 
+        the password. Retype it and click <i>OK</i>.</FONT></P>
+      <P align="center"><img src="images/pc_19.gif" width="400" height="128" alt="Enter Password"></P>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">4.2 <a name="2.1.4.2"></a>Look 
+        to see that the desktop contains an icon called Network Neighborhood:</FONT></P>
+      </font> 
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"><img src="images/pc_20.gif" width="78" height="77" alt="Network Neighborhood"></font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If the icon is 
+          not present the NIC is not installed correctly. Go to the <a href="javascript:launchtrouble('Installation problems/installation_7a.htm');"onMouseOver="status=statusbar_trou;return true">Network 
+          Neighborhood icon is absent from the desktop screen</a> section.</font></li>
+        <li><FONT size="2" face="Arial, Helvetica, sans-serif">If the icon is 
+          there, then the PC has detected the physical installation of your NIC. 
+          You may need to check the software configuration of you NIC if you experience 
+          problems later on.</font><FONT size="2" face="Arial, Helvetica, sans-serif"></font> 
+        </li>
+      </ul>
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">4.3 <a name="2.1.4.3"></a>You 
+        now need to configure the PC so that it can be recognized on the network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> From the <i>Start</i> 
+        menu, choose <i>Settings</i> and then <i>Control Panel</i>.</FONT></P>
+      <P align="center"><img src="images/pc_21.gif" width="288" height="295"></P>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 4.4<a name="2.1.4.4"></a> 
+        In the Control Panel window, double-click <i>System</i>. </FONT></P>
+      <P align="center"><img src="images/pc_22.gif" width="395" height="369"></P>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">4.5 <a name="2.1.4.5"></a>In 
+        the Systems Properties dialog box select the <i>Device Manager </i>tab.</FONT></P>
+      <P align="center"><img src="images/pc_23.gif" width="400" height="437"></P>
+      </font> 
+      <hr width="390" size="3">
+      <br>
+      <FONT size="2" face="Arial, Helvetica, sans-serif"> 
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 4.6<a name="2.1.4.6"></a> 
+        In the listbox double-click <i>Network adapters</i>. <BR>
+        The Network adapters item should expand to show the name of the NIC that 
+        you have installed.</FONT></P>
+      <P align="center"><img src="images/pc_24.gif" width="400" height="223"></P>
+      </font>
+<hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a name="2.1.4.7"></a>4.7 
+        </font></p>
+      <p align="center"><img src="images/pc_25.gif" width="400" height="437"></p>
+      
+      <UL>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif"> If the NIC is 
+          detected and the icon for it does not have a yellow circle and exclamation 
+          mark (!) on it, the NIC is configured correctly. </FONT> 
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">If the NIC is<b> 
+          not</b> detected (or the icon for it has a yellow circle and an exclamation 
+          mark (!) on it), the NIC is not configured correctly. </FONT></LI>
+      </UL>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> If the NIC was automatically 
+        detected and the Computer name and Workgroup have already been specified, 
+        go straight to <font color="#000000"><a href="#4.11"onMouseOver="status=statusbar_anchor;return true">section 
+        4.11</a></font> of this topic. </FONT></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">4.8<a name="2.1.4.8"></a> 
+        In the Control Panel window double-click <i>Network</i>.</FONT></P>
+      <P align="center"><img src="images/pc_26.gif" width="395" height="369"></P>
+      <P><font size="2" face="Arial, Helvetica, sans-serif"><img src="../../images/notesymb.gif" width="16" height="22" align="left">Note: 
+        the following section only applies if you have a network with some PCs 
+        running Windows 95, and some PCs running Windows 98. If all your PCs are 
+        running Windows 95, or if all your PCs are running Windows 98, go straight 
+        to <a href="#4.9"onMouseOver="status=statusbar_anchor;return true">section 
+        4.9</a> of this topic.</font></P>
+      <P><font face="Arial, Helvetica, sans-serif" size="2">By default, Windows 
+        95 and Windows 98 install different network protocols. Windows 95 installs 
+        NetBEUI by default, and Windows 98 installs TCP/IP by default. </font></P>
+      <P><font face="Arial, Helvetica, sans-serif" size="2">If different network 
+        protocols are used, Windows 95 PCs and Windows 98 PCs will not be able 
+        to communicate. We suggest that you configure your Windows 95 PCs to use 
+        TCP/IP. To do this, refer to the section <a  href="javascript:hotlink_hub('lan_modem/lan_modem.htm','3.5.3.1')"onMouseOver="status=statusbar_hub;return true">Setting 
+        up IP</a>, then return here and continue. </font></P>
+      <P><font face="Arial, Helvetica, sans-serif" size="2">In the Network dialog 
+        box, select the <i>Configuration</i> tab. The network protocols in use 
+        are shown in the listbox, identified by the <img src="images/pc_27.gif" width="34" height="19">symbol. 
+        You will need to check the correct protocol is used for each of the PCs 
+        in your network.</font> </P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> <a name="4.9"></a><a name="2.1.4.9"></a>4.9 
+        Windows 98 will assume the Computer and Workgroup names entered when Windows 
+        98 was installed. If you do not wish to change the names, click <i>Cancel</i> 
+        and go straight to the <a href="#2.1.4.10"onMouseOver="status=statusbar_anchor;return true">next page</a>.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif">In the Network dialog 
+        box, select the <i>Identification</i> tab.</FONT></P>
+      <P align="center"><img src="images/pc_28.gif" width="367" height="460"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 4.10<a name="2.1.4.10"></a> 
+        In the<i> Computer name</i> field, type a descriptive name for the PC.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> This is the name 
+        that will identify the PC on the network. It can be any name (such as 
+        'Fred's PC') but it must be unique from the other PCs and laptops on the 
+        network. We recommend that you keep a record of the names given to all 
+        the PCs and laptops on the network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> In the <i>Workgroup</i> 
+        field, type a name for your network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> This is the name 
+        for the network. It can be any name but it must be the same as the workgroup 
+        name entered for the other PCs and laptops on your network. We recommend 
+        that you keep a record of the workgroup name.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> Click <i>OK</i>.</FONT></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> <a name="4.11"></a><a name="2.1.4.11"></a>4.11 
+        In the Control Panel window, double-click <i>Network</i>.</FONT></P>
+      <P align="center"><img src="images/pc_29.gif" width="395" height="369" alt="Control Panel"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 4.12<a name="2.1.4.12"></a> 
+        In the <i>Configuration</i> tab (which displays by default), click <i>File 
+        and Print Sharing</i> (this needs to be configured to utilize your network).</FONT></P>
+      <P align="center"><img src="images/pc_30.gif" width="367" height="460" alt="Network"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 4.13<a name="2.1.4.13"></a> 
+        In the File and Print Sharing dialog box, select both of the checkboxes, 
+        and click <i>OK</i>.</FONT></P>
+      <P align="center"><img src="images/pc_31.gif" width="336" height="139" alt="File and Print Sharing"></P>
+      <hr width="390" size="3">
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> 4.14<a name="2.1.4.14"></a> 
+        In the Network dialog box, ensure the Primary Network Logon is set to 
+        <i>Client for Microsoft Networks</i>. Click <i>OK</i>. Restart the PC.</FONT></P>
+      <P align="center"><img src="images/pc_32.gif" width="367" height="460"></P>
+      <hr width="390" size="3">
+      <P><font size="2" face="Arial, Helvetica, sans-serif">4.15<a name="2.1.4.15"></a> 
+        In the future when you power on the PC and start Windows 95 or Windows 
+        98, you will be asked to log in. You must enter your User name in the 
+        <i>User name</i> field (and specify a password if one has been used previously), 
+        then click <i>OK </i>to log in to the network.</FONT></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> To set a password 
+        (if one is not already set up) simply type in the desired password into 
+        the <i>Password</i> field. When <i>OK</i> is clicked, Windows 95 or Windows 
+        98 asks you to confirm the password. Retype it and click <i>OK</i>.</FONT></P>
+      <P align="center"><img src="images/pc_33.gif" width="400" height="128" alt="Log in"></P>
+      <P><FONT size="2" face="Arial, Helvetica, sans-serif"> This PC is now ready 
+        to be installed on your network. <BR>
+        Tasks to perform next:</FONT></P>
+      <UL>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">Do you have other 
+          PCs to set up?&#151;go through this subsection again for each PC.</FONT></LI>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">Do you have laptops 
+          to set up?&#151;go through the subsection <a  href="javascript:hotlink_se('laptop/laptop.htm','2.2.1.1')"onMouseOver="status=statusbar_se;return true">Adding 
+          a Laptop</a> for each laptop.</FONT></LI>
+        <LI><FONT size="2" face="Arial, Helvetica, sans-serif">If all your PCs 
+          and laptops are ready to connect to the OfficeConnect hub&#151;go to 
+          the next section <a  href="javascript:hotlink_hub('mainoverview_hub.htm','')"onMouseOver="status=statusbar_hub;return true">Installing 
+          a Device</a>.</font></LI>
+      </UL>
+      <p>&nbsp;</p>
+      <p align="right">&nbsp;</p>
+    </TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

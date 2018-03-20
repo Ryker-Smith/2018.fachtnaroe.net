@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<title>Installing the JRE with the MSI Enterprise JRE Installer</title>
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Merged Version 1085" />
+<meta name="description" content="This page describes how to install and uninstall the JRE 7 and JRE 8 for Windows with the Microsoft Windows Installer (MSI) Enterprise Installer." />
+<meta name="dcterms.created" content="2016-07-05T17:6:10Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition MSI Enterprise JRE Installer Guide" />
+<meta name="dcterms.identifier" content="E58397-04" />
+<meta name="dcterms.isVersionOf" content="JSMSI" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="preface.htm" title="Previous" type="text/html" />
+<link rel="Next" href="config_msi.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JSMSI.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSMSI.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSMSI.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<span id="PAGE" style="display:none;">4/5</span> <!-- End Header -->
+<div class="chapter"><a id="CHDEDHAJ"></a>
+<h1 class="chapter"><span class="secnum">1</span> Installing the JRE with the MSI Enterprise JRE Installer</h1>
+<p>This page describes how to install and uninstall the JRE 7 and JRE 8 for Windows with the Microsoft Windows Installer (MSI) Enterprise Installer.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+MSI Enterprise JRE Installer requires a commercial license for use in production. To learn more about commercial features and how to enable them, visit
+<p><a href="http://www.oracle.com/technetwork/java/javaseproducts/"><code dir="ltr">http://www.oracle.com/technetwork/java/javaseproducts/</code></a>.</p>
+</div>
+<p>The Microsoft Windows Installer (MSI) Enterprise JRE Installer enables you to install the JRE across your enterprise. Because it fully supports Windows Installer 3.0, it is fully compatible with system management software, such as Systems Management Server (SMS) and Systems Center Configuration Manager (SCCM). These software management suites enable you to deploy software across your enterprise. In addition to the features and options you can specify with the JRE Offline Installer, you can specify a Java Usage Tracker configuration file and a deployment rule set.</p>
+<p>The page has these topics:</p>
+<ul>
+<li>
+<p><a href="#msi_system_requirements">"System Requirements"</a></p>
+</li>
+<li>
+<p><a href="#msi_install_instructions">"Installing the JRE"</a></p>
+</li>
+<li>
+<p><a href="#msi_install_command_line">"Installing the JRE from the Command Line"</a></p>
+</li>
+<li>
+<p><a href="#msi_log_file">"Creating a Log File"</a></p>
+</li>
+<li>
+<p><a href="#msi_static_installation">"Performing a Static Installation"</a></p>
+</li>
+<li>
+<p><a href="#msi_uninstall_jre">"Uninstalling the JRE"</a></p>
+</li>
+<li>
+<p><a href="#msi_uninstall_command_line">"Uninstalling the JRE with the Command Line"</a></p>
+</li>
+</ul>
+<a id="msi_system_requirements"></a>
+<div class="sect1">
+<h2 class="sect1">System Requirements</h2>
+<p>See <a href="http://www.oracle.com/technetwork/java/javase/certconfig-2095354.html"><code dir="ltr">http://www.oracle.com/technetwork/java/javase/certconfig-2095354.html</code></a> for information about supported platforms, operating systems, and browsers.</p>
+<p>For JRE 7 minimum processor, disk space, and memory requirements, see Windows System Requirements for JDK and JRE at</p>
+<p><a href="http://docs.oracle.com/javase/7/docs/webnotes/install/windows/windows-system-requirements.html"><code dir="ltr">http://docs.oracle.com/javase/7/docs/webnotes/install/windows/windows-system-requirements.html</code></a>.</p>
+<p>For JRE 8 minimum processor, disk space, and memory requirements, see Windows System Requirements for JDK and JRE at</p>
+<p><a href="http://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_system_requirements.html"><code dir="ltr">http://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_system_requirements.html</code></a>.</p>
+<p>If you have any difficulties, see <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/index.html"><code dir="ltr">http://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/index.html</code></a> or submit a bug report at <a href="http://bugreport.java.com/bugreport/"><code dir="ltr">http://bugreport.java.com/bugreport/</code></a>.</p>
+</div>
+<!-- class="sect1" -->
+<a id="msi_install_instructions"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Installing the JRE</h2>
+<ol>
+<li>
+<p>Obtain the MSI Enterprise Installer (either for 32-bit or 64-bit Windows operating systems) from My Oracle Support. The following URL, "Information Center: Installation &amp; Configuration for Oracle Java SE" (document ID 1412103.2) contains a link, "Complete List of Java SE downloads" (document ID 1439822.1), from which you can obtain the MSI Enterprise Installer:</p>
+<p><a href="https://support.oracle.com/epmos/faces/DocContentDisplay?id=1412103.2"><code dir="ltr">https://support.oracle.com/epmos/faces/DocContentDisplay?id=1412103.2</code></a></p>
+<p>The file name of the installer has one of the following formats:</p>
+<ul>
+<li>
+<p><code dir="ltr">jre-</code><code dir="ltr"><span class="codeinlineitalic">version</span></code><code dir="ltr">-windows-i586.msi</code> (for 32-bit systems)</p>
+</li>
+<li>
+<p><code dir="ltr">jre-</code><code dir="ltr"><span class="codeinlineitalic">version</span></code><code dir="ltr">-windows-x64.msi</code> (for 64-bit systems)</p>
+</li>
+</ul>
+<p>Substitute the appropriate version number for <code dir="ltr"><span class="codeinlineitalic">version</span></code>. For example, if you using the installer for update 1.8.0_40, the file name: <code dir="ltr">jre-</code><code dir="ltr"><span class="codeinlineitalic">version</span></code><code dir="ltr">-windows-i586.msi</code> would become <code dir="ltr">jre-8</code><code dir="ltr"><span class="codeinlineitalic">u40</span></code><code dir="ltr">-windows-i586.msi</code>.</p>
+</li>
+<li>
+<p>Run the installer with elevated/administrative permissions under supported Windows Installer environments.</p>
+<p>Follow the instructions the installer provides. The installer notifies you if Java content is disabled in web browsers and provides instructions for enabling it. If you previously chose to hide some security prompts for applets and Java Web Start applications, the installer provides an option for restoring the prompts. When you are finished with the installation, you can delete the installer file from the downloaded location to recover disk space.</p>
+</li>
+</ol>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+<ul>
+<li>You must have administrative permissions to install the JRE.</li>
+<li>
+<p>By default, Java Access Bridge is disabled. To enable it, see <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/access/enable_and_test.html#enabling_jab"><code dir="ltr">http://docs.oracle.com/javase/8/docs/technotes/guides/access/enable_and_test.html#enabling_jab</code></a>.</p>
+</li>
+<li>
+<p>After installation, use the <span class="gui-object-action">Java</span> item in the Windows <span class="gui-object-action">Start</span> menu to get access to essential Java information and functions, including help, the Java Control Panel, and checking for updates.</p>
+</li>
+</ul>
+</div>
+</div>
+<!-- class="sect1" -->
+<a id="msi_install_command_line"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Installing the JRE from the Command Line</h2>
+<ol>
+<li>
+<p>Obtain the MSI Enterprise JRE Installer (either for 32-bit or 64-bit Windows operating systems) from Java SE Advanced or Java SE Suite.</p>
+</li>
+<li>
+<p>Open a MS-DOS prompt with Administrative permissions.</p>
+</li>
+<li>
+<p>Run one of the following commands depending on what kind of installation you want to perform.</p>
+<ul>
+<li>
+<p>Basic UI mode:</p>
+<pre dir="ltr">
+msiexec.exe /i <span class="italic">installer.msi</span> [INSTALLCFG=<span class="variable">configuration_file_path</span>] [<span class="italic">options</span>] /qb
+</pre></li>
+<li>
+<p>Silent or unattended mode:</p>
+<pre dir="ltr">
+msiexec.exe /i <span class="italic">installer.msi</span> [INSTALLCFG=<span class="variable">configuration_file_path</span>] [<span class="italic">options</span>] /qn
+</pre></li>
+</ul>
+<p>The following describes the variables used in these commands:</p>
+<ul>
+<li>
+<p><code dir="ltr"><span class="codeinlineitalic">installer.msi</span></code>: The name of the MSI Enterprise JRE Installer that you obtained in the previous step.</p>
+</li>
+<li>
+<p><code dir="ltr"><span class="codeinlineitalic">configuration_file_path</span></code>: The path of the installer configuration file; see <a href="config_msi.htm#installing_with_config_file">"Installing With a Configuration File"</a> for more information.</p>
+</li>
+<li>
+<p><code dir="ltr"><span class="codeinlineitalic">options</span></code>: Options with specified values, separated by spaces. Use the options listed in <a href="config_msi.htm#msi_table_config_file_options">Table 2-1, "Configuration File Options"</a>. In addition, you may also use standard Windows Installer options.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+for JRE 7, the INSTALLDIR, REMOVEOLDERJRES, and TRANSFORM options listed in <a href="config_msi.htm#msi_table_config_file_options">Table 2-1, "Configuration File Options"</a> must be passed in from the command line. They are not supported for use from a configuration file.</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="msi_log_file"></a>
+<div class="sect1">
+<h2 class="sect1">Creating a Log File</h2>
+<p>Use a log file to verify that an installation succeeded. To create a log file describing the installation, append <code dir="ltr">/L C:\</code><code dir="ltr"><span class="codeinlineitalic">path</span></code><code dir="ltr">\setup.log</code> to the install command and scroll to the end of the log file to verify.</p>
+<p>The following is an example of creating a log file:</p>
+<pre dir="ltr">
+msiexec.exe /i <span class="italic">installer.msi</span> /qn /L C:\<span class="italic">path</span>\setup.log
+</pre>
+<p>This example causes the log to be written to the <code dir="ltr">C:\</code><code dir="ltr"><span class="codeinlineitalic">path</span></code><code dir="ltr">\setup.log</code> file.</p>
+</div>
+<!-- class="sect1" -->
+<a id="msi_static_installation"></a>
+<div class="sect1">
+<h2 class="sect1">Performing a Static Installation</h2>
+<p>If you perform a static installation of the JRE (by specifying the command-line or configuration file option <code dir="ltr">STATIC=1</code>), then the Java Auto Update feature will leave that JRE installed during a Java update. A later version of the same JRE family will be installed in a separate directory. This mode ensures that vendors, who require a specific version of the JRE for their product, can be certain that the JRE will not be overwritten by a newer version.</p>
+<p>The default installation directory of a static JRE is <code dir="ltr">C:\Program Files (x86)\Java\jre</code><code dir="ltr"><span class="codeinlineitalic">n</span></code> (for 32-bit versions) or <code dir="ltr">C:\Program Files\Java\jre</code><code dir="ltr"><span class="codeinlineitalic">n</span></code> (for 64-bit versions), where <code dir="ltr"><span class="codeinlineitalic">n</span></code> is the full Java SE release and update number (for example, <code dir="ltr"><span class="codeinlineitalic">n</span></code> = 1.8.0_20 for release 8 update 20).</p>
+</div>
+<!-- class="sect1" -->
+<a id="msi_uninstall_jre"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Uninstalling the JRE</h2>
+<p>To uninstall the JRE, use the Java Uninstall tool, which you can access in the following ways:</p>
+<ul>
+<li>
+<p>If the JRE is version 8u20 or later, uninstall it with the "Add/Remove Programs" utility in the Microsoft Windows Control Panel. The Java Removal Tool is integrated with the uninstallation process, and it will guide you through the removal of older JREs.</p>
+</li>
+<li>
+<p>Use the online Java Uninstall tool:</p>
+<p><a href="https://www.java.com/en/download/uninstallapplet.jsp"><code dir="ltr">https://www.java.com/en/download/uninstallapplet.jsp</code></a></p>
+</li>
+</ul>
+<p>The Java Uninstall tool helps you improve your computer security by simplifying the process of finding and uninstalling older versions of Java. The Uninstall tool shows you a list of the Java versions on your computer and then removes those that are out-of-date.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+The Java Uninstall tool will not run if your system administrator specified a deployment rule set in your organization.
+<p>A deployment rule set enables enterprises to manage their Java desktop environment directly and continue using legacy business applications in an environment of ever-tightening Java applet and Java Web Start application security policies. A deployment rule set enables administrators to specify rules for applets and Java Web Start applications; these rules may specify that a specific JRE version must be used. Consequently, the Java Uninstall tool will not run if it detects a deployment rule set to ensure that no required JREs are uninstalled.</p>
+<p>For JRE 7, see <a href="http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/security/deployment_rules.html"><code dir="ltr">http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/security/deployment_rules.html</code></a> and for JRE 8, see <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/deploy/deployment_rules.html"><code dir="ltr">http://docs.oracle.com/javase/8/docs/technotes/guides/deploy/deployment_rules.html</code></a> for more information about the Deployment Rule Set feature.</p>
+</div>
+</div>
+<!-- class="sect1" -->
+<a id="msi_uninstall_command_line"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Uninstalling the JRE with the Command Line</h2>
+<p>Run the following command to uninstall the JRE:</p>
+<ul>
+<li>
+<p>32-bit JRE:</p>
+<pre dir="ltr">
+msiexec /x {26A24AE4-039D-4CA4-87B4-2F832<span class="bold">18025</span>F0}
+</pre></li>
+<li>
+<p>64-bit JRE:</p>
+<pre dir="ltr">
+msiexec /x {26A24AE4-039D-4CA4-87B4-2F864<span class="bold">18025</span>F0}
+</pre></li>
+</ul>
+<p>The value in curly braces is the MSI product code for the JRE you want to uninstall. The text in bold, <code dir="ltr"><span class="codeinlinebold">18025</span></code>, correlates to the JRE version 1.8.0_25. Modify the MSI product code accordingly depending on the JRE version that you want to uninstall.</p>
+</div>
+<!-- class="sect1" --></div>
+<!-- class="chapter" --></div>
+<!-- class="ind" -->
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment39">
+<tr>
+<td class="cellalignment46">
+<table class="cellalignment50">
+<tr>
+<td class="cellalignment43"><a href="preface.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment43"><a href="config_msi.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2015, 2016,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment48">
+<table class="cellalignment49">
+<tr>
+<td class="cellalignment43"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment43"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment43"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

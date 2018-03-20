@@ -1,0 +1,20 @@
+<html>
+
+<head> <title> HTML page with a picture </TITLE>
+
+</head>
+
+<p>
+
+<body> 	
+ Here's an example of a web page with an image inserted
+                                  
+<img src="images/art.jpg">  <P>
+	           
+<P>
+  Here's an image 
+ <img src=file:/home/it.stephenmcg/Web/Images/art.2jpg >
+ 
+ </body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content"><h1>Murphys Law <i>et al.</i></h1>
+<!--#include virtual="/include/topblurb.shtml" -->
+<h2>Murphy's Law:</h2>
+<p>The correct, original Murphy's Law reads: "If there are two or more ways to do something, and one of those ways can result in a catastrophe, then someone will do it." This is a principle of defensive design, cited here because it is usually given in mutant forms less descriptive of the challenges of design for lusers. For example, you don't make a two-pin plug symmetrical and then label it "THIS WAY UP"; if it matters which way it is plugged in, then you make the design asymmetrical.</p>
+<p>Edward A. Murphy, Jr. was one of McDonnell-Douglas's test engineers on the rocket-sled experiments that were done by the U.S. Air Force in 1949 to test human acceleration tolerances (USAF project MX981). One experiment involved a set of 16 accelerometers mounted to different parts of the subject's body. There were two ways each sensor could be glued to its mount, and somebody methodically installed all 16 in a replacement set the wrong way around. Murphy then made the original form of his pronouncement, which the test subject (Major John Paul Stapp) mis-quoted (apparently in the more general form "Whatever can go wrong, will go wrong)" at a news conference a few days later.</p>
+<p>Within months "Murphy's Law" had spread to various technical cultures connected to aerospace engineering. Before too many years had gone by variants had passed into the popular imagination, changing as they went. Most of these are variants on "Anything that can go wrong, will"; this is more correctly referred to as Finagle's Law. The memetic drift apparent in these mutants clearly demonstrates Murphy's Law acting on itself!</p>
+<h2>Finagle's Law:</h2>
+<p>The generalized or "folk" version of Murphy's Law, fully named "Finagle's Law of Dynamic Negatives" and usually rendered "Anything that can go wrong, will". May have been first published by Francis P. Chisholm in his 1963 essay The Chisholm Effect, later reprinted in the classic anthology A Stress Analysis Of A Strapless Evening Gown: And Other Essays For A Scientific Eye (Robert Baker ed, Prentice-Hall, ISBN 0-13-852608-7).</p>
+<p>The label "Finagle's Law" was popularized by SF author Larry Niven in several stories depicting a frontier culture of asteroid miners; this "Belter" culture professed a religion and/or running joke involving the worship of the dread god Finagle and his mad prophet Murphy. Some technical and scientific cultures (e.g., paleontologists) know it under the name Sod's Law; this usage may be more common in Great Britain. One variant favored among hackers is "The perversity of the Universe tends towards a maximum"; Niven specifically referred to this as O'Toole's Corollary of Finagle's Law. See also Hanlon's Razor.</p>
+<h2>Hanlon's Razor:</h2>
+<p>A corollary of Finagle's Law, similar to Occam's Razor, that reads "Never attribute to malice that which can be adequately explained by stupidity." Quoted here because it seems to be a particular favorite of hackers, often showing up in sig blocks, fortune cookie files and the login banners of BBS systems and commercial networks. This probably reflects the hacker's daily experience of environments created by well-intentioned but short-sighted people. Compare Sturgeon's Law, Ninety-Ninety Rule.</p>
+<p>At http://www.statusq.org/2001/11/26.html it is claimed that Hanlon's Razor was coined by one Robert J. Hanlon of Scranton, PA. However, a curiously similar remark ("You have attributed conditions to villainy that simply result from stupidity.") appears in Logic of Empire, a classic 1941 SF story by Robert A. Heinlein, who calls the error it indicates the "devil theory" of sociology. Similar epigrams have been attributed to William James and (on dubious evidence) Napoleon Bonaparte.</p>
+<h2>Ninety-Ninety Rule:</h2>
+<p> "The first 90% of the code accounts for the first 90% of the development time. The remaining 10% of the code accounts for the other 90% of the development time." Attributed to Tom Cargill of Bell Labs, and popularized by Jon Bentley's September 1985 Bumper-Sticker Computer Science column in Communications of the ACM. It was there called the "Rule of Credibility", a name which seems not to have stuck. Other maxims in the same vein include the law attributed to the early British computer scientist Douglas Hartree: "The time from now until the completion of the project tends to become constant."</p>
+<!--#include virtual="/backbutton.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="murphyslaw.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

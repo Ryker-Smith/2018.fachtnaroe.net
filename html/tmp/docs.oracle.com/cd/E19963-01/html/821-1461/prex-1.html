@@ -1,0 +1,1165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1: User Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the commands and utilities available with this operating system, including commands found only in the SunOS/BSD Compatibility Package, commands for communicating with other systems, commands associated with the Form and Menu Language Interpreter (FMLI), and commands specific to the SunOS&#8482; system.The available options, arguments, and operands for each command are provided in accordance with standard rules of command syntax, along with availability attributes, diagnostic information, and cross-references to other manual pages and reference material with relevant information.This section is for all UNIX&#174; system users.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1461";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1: User Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1461.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1 (821-1461-06)&body=Page: prex-1.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-39.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-193.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-474.html">User Commands</a></p>
+<p class="toc level2"><a href="acctcom-1.html"><tt>acctcom</tt>(1)</a></p>
+<p class="toc level2"><a href="adb-1.html"><tt>adb</tt>(1)</a></p>
+<p class="toc level2"><a href="addbib-1.html"><tt>addbib</tt>(1)</a></p>
+<p class="toc level2"><a href="admin-1.html"><tt>admin</tt>(1)</a></p>
+<p class="toc level2"><a href="alias-1.html"><tt>alias</tt>(1)</a></p>
+<p class="toc level2"><a href="allocate-1.html"><tt>allocate</tt>(1)</a></p>
+<p class="toc level2"><a href="amt-1.html"><tt>amt</tt>(1)</a></p>
+<p class="toc level2"><a href="appcert-1.html"><tt>appcert</tt>(1)</a></p>
+<p class="toc level2"><a href="apptrace-1.html"><tt>apptrace</tt>(1)</a></p>
+<p class="toc level2"><a href="apropos-1.html"><tt>apropos</tt>(1)</a></p>
+<p class="toc level2"><a href="ar-1.html"><tt>ar</tt>(1)</a></p>
+<p class="toc level2"><a href="arch-1.html"><tt>arch</tt>(1)</a></p>
+<p class="toc level2"><a href="as-1.html"><tt>as</tt>(1)</a></p>
+<p class="toc level2"><a href="asa-1.html"><tt>asa</tt>(1)</a></p>
+<p class="toc level2"><a href="at-1.html"><tt>at</tt>(1)</a></p>
+<p class="toc level2"><a href="atq-1.html"><tt>atq</tt>(1)</a></p>
+<p class="toc level2"><a href="atrm-1.html"><tt>atrm</tt>(1)</a></p>
+<p class="toc level2"><a href="audioconvert-1.html"><tt>audioconvert</tt>(1)</a></p>
+<p class="toc level2"><a href="audioctl-1.html"><tt>audioctl</tt>(1)</a></p>
+<p class="toc level2"><a href="audioplay-1.html"><tt>audioplay</tt>(1)</a></p>
+<p class="toc level2"><a href="audiorecord-1.html"><tt>audiorecord</tt>(1)</a></p>
+<p class="toc level2"><a href="audiotest-1.html"><tt>audiotest</tt>(1)</a></p>
+<p class="toc level2"><a href="auths-1.html"><tt>auths</tt>(1)</a></p>
+<p class="toc level2"><a href="auto-ef-1.html"><tt>auto_ef</tt>(1)</a></p>
+<p class="toc level2"><a href="awk-1.html"><tt>awk</tt>(1)</a></p>
+<p class="toc level2"><a href="banner-1.html"><tt>banner</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1.html"><tt>basename</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1b.html"><tt>basename</tt>(1B)</a></p>
+<p class="toc level2"><a href="batch-1.html"><tt>batch</tt>(1)</a></p>
+<p class="toc level2"><a href="bc-1.html"><tt>bc</tt>(1)</a></p>
+<p class="toc level2"><a href="bdiff-1.html"><tt>bdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="bfs-1.html"><tt>bfs</tt>(1)</a></p>
+<p class="toc level2"><a href="bg-1.html"><tt>bg</tt>(1)</a></p>
+<p class="toc level2"><a href="biff-1b.html"><tt>biff</tt>(1B)</a></p>
+<p class="toc level2"><a href="break-1.html"><tt>break</tt>(1)</a></p>
+<p class="toc level2"><a href="builtin-1.html"><tt>builtin</tt>(1)</a></p>
+<p class="toc level2"><a href="cal-1.html"><tt>cal</tt>(1)</a></p>
+<p class="toc level2"><a href="calendar-1.html"><tt>calendar</tt>(1)</a></p>
+<p class="toc level2"><a href="cancel-1.html"><tt>cancel</tt>(1)</a></p>
+<p class="toc level2"><a href="case-1.html"><tt>case</tt>(1)</a></p>
+<p class="toc level2"><a href="cat-1.html"><tt>cat</tt>(1)</a></p>
+<p class="toc level2"><a href="cd-1.html"><tt>cd</tt>(1)</a></p>
+<p class="toc level2"><a href="cdc-1.html"><tt>cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="cdrw-1.html"><tt>cdrw</tt>(1)</a></p>
+<p class="toc level2"><a href="chdir-1.html"><tt>chdir</tt>(1)</a></p>
+<p class="toc level2"><a href="checkeq-1.html"><tt>checkeq</tt>(1)</a></p>
+<p class="toc level2"><a href="checknr-1.html"><tt>checknr</tt>(1)</a></p>
+<p class="toc level2"><a href="chgrp-1.html"><tt>chgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="chkey-1.html"><tt>chkey</tt>(1)</a></p>
+<p class="toc level2"><a href="chmod-1.html"><tt>chmod</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1.html"><tt>chown</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1b.html"><tt>chown</tt>(1B)</a></p>
+<p class="toc level2"><a href="ckdate-1.html"><tt>ckdate</tt>(1)</a></p>
+<p class="toc level2"><a href="ckgid-1.html"><tt>ckgid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckint-1.html"><tt>ckint</tt>(1)</a></p>
+<p class="toc level2"><a href="ckitem-1.html"><tt>ckitem</tt>(1)</a></p>
+<p class="toc level2"><a href="ckkeywd-1.html"><tt>ckkeywd</tt>(1)</a></p>
+<p class="toc level2"><a href="ckpath-1.html"><tt>ckpath</tt>(1)</a></p>
+<p class="toc level2"><a href="ckrange-1.html"><tt>ckrange</tt>(1)</a></p>
+<p class="toc level2"><a href="ckstr-1.html"><tt>ckstr</tt>(1)</a></p>
+<p class="toc level2"><a href="cksum-1.html"><tt>cksum</tt>(1)</a></p>
+<p class="toc level2"><a href="cktime-1.html"><tt>cktime</tt>(1)</a></p>
+<p class="toc level2"><a href="ckuid-1.html"><tt>ckuid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckyorn-1.html"><tt>ckyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="clear-1.html"><tt>clear</tt>(1)</a></p>
+<p class="toc level2"><a href="cmp-1.html"><tt>cmp</tt>(1)</a></p>
+<p class="toc level2"><a href="col-1.html"><tt>col</tt>(1)</a></p>
+<p class="toc level2"><a href="comb-1.html"><tt>comb</tt>(1)</a></p>
+<p class="toc level2"><a href="comm-1.html"><tt>comm</tt>(1)</a></p>
+<p class="toc level2"><a href="command-1.html"><tt>command</tt>(1)</a></p>
+<p class="toc level2"><a href="compress-1.html"><tt>compress</tt>(1)</a></p>
+<p class="toc level2"><a href="continue-1.html"><tt>continue</tt>(1)</a></p>
+<p class="toc level2"><a href="cp-1.html"><tt>cp</tt>(1)</a></p>
+<p class="toc level2"><a href="cpio-1.html"><tt>cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="cpp-1.html"><tt>cpp</tt>(1)</a></p>
+<p class="toc level2"><a href="cputrack-1.html"><tt>cputrack</tt>(1)</a></p>
+<p class="toc level2"><a href="crle-1.html"><tt>crle</tt>(1)</a></p>
+<p class="toc level2"><a href="crontab-1.html"><tt>crontab</tt>(1)</a></p>
+<p class="toc level2"><a href="crypt-1.html"><tt>crypt</tt>(1)</a></p>
+<p class="toc level2"><a href="csh-1.html"><tt>csh</tt>(1)</a></p>
+<p class="toc level2"><a href="csplit-1.html"><tt>csplit</tt>(1)</a></p>
+<p class="toc level2"><a href="ct-1c.html"><tt>ct</tt>(1C)</a></p>
+<p class="toc level2"><a href="ctags-1.html"><tt>ctags</tt>(1)</a></p>
+<p class="toc level2"><a href="ctrun-1.html"><tt>ctrun</tt>(1)</a></p>
+<p class="toc level2"><a href="ctstat-1.html"><tt>ctstat</tt>(1)</a></p>
+<p class="toc level2"><a href="ctwatch-1.html"><tt>ctwatch</tt>(1)</a></p>
+<p class="toc level2"><a href="cu-1c.html"><tt>cu</tt>(1C)</a></p>
+<p class="toc level2"><a href="cut-1.html"><tt>cut</tt>(1)</a></p>
+<p class="toc level2"><a href="date-1.html"><tt>date</tt>(1)</a></p>
+<p class="toc level2"><a href="dc-1.html"><tt>dc</tt>(1)</a></p>
+<p class="toc level2"><a href="deallocate-1.html"><tt>deallocate</tt>(1)</a></p>
+<p class="toc level2"><a href="decrypt-1.html"><tt>decrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="delta-1.html"><tt>delta</tt>(1)</a></p>
+<p class="toc level2"><a href="deroff-1.html"><tt>deroff</tt>(1)</a></p>
+<p class="toc level2"><a href="des-1.html"><tt>des</tt>(1)</a></p>
+<p class="toc level2"><a href="df-1b.html"><tt>df</tt>(1B)</a></p>
+<p class="toc level2"><a href="dhcpinfo-1.html"><tt>dhcpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="diff-1.html"><tt>diff</tt>(1)</a></p>
+<p class="toc level2"><a href="diff3-1.html"><tt>diff3</tt>(1)</a></p>
+<p class="toc level2"><a href="diffmk-1.html"><tt>diffmk</tt>(1)</a></p>
+<p class="toc level2"><a href="digest-1.html"><tt>digest</tt>(1)</a></p>
+<p class="toc level2"><a href="digestp-1.html"><tt>digestp</tt>(1)</a></p>
+<p class="toc level2"><a href="dircmp-1.html"><tt>dircmp</tt>(1)</a></p>
+<p class="toc level2"><a href="dirname-1.html"><tt>dirname</tt>(1)</a></p>
+<p class="toc level2"><a href="dirs-1.html"><tt>dirs</tt>(1)</a></p>
+<p class="toc level2"><a href="dis-1.html"><tt>dis</tt>(1)</a></p>
+<p class="toc level2"><a href="disable-1.html"><tt>disable</tt>(1)</a></p>
+<p class="toc level2"><a href="disown-1.html"><tt>disown</tt>(1)</a></p>
+<p class="toc level2"><a href="dispgid-1.html"><tt>dispgid</tt>(1)</a></p>
+<p class="toc level2"><a href="dispuid-1.html"><tt>dispuid</tt>(1)</a></p>
+<p class="toc level2"><a href="dos2unix-1.html"><tt>dos2unix</tt>(1)</a></p>
+<p class="toc level2"><a href="download-1.html"><tt>download</tt>(1)</a></p>
+<p class="toc level2"><a href="dpost-1.html"><tt>dpost</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1.html"><tt>du</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1b.html"><tt>du</tt>(1B)</a></p>
+<p class="toc level2"><a href="dump-1.html"><tt>dump</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpcs-1.html"><tt>dumpcs</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpkeys-1.html"><tt>dumpkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1.html"><tt>echo</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1b.html"><tt>echo</tt>(1B)</a></p>
+<p class="toc level2"><a href="ed-1.html"><tt>ed</tt>(1)</a></p>
+<p class="toc level2"><a href="edit-1.html"><tt>edit</tt>(1)</a></p>
+<p class="toc level2"><a href="egrep-1.html"><tt>egrep</tt>(1)</a></p>
+<p class="toc level2"><a href="eject-1.html"><tt>eject</tt>(1)</a></p>
+<p class="toc level2"><a href="elfdump-1.html"><tt>elfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="elfedit-1.html"><tt>elfedit</tt>(1)</a></p>
+<p class="toc level2"><a href="elfsign-1.html"><tt>elfsign</tt>(1)</a></p>
+<p class="toc level2"><a href="elfwrap-1.html"><tt>elfwrap</tt>(1)</a></p>
+<p class="toc level2"><a href="enable-1.html"><tt>enable</tt>(1)</a></p>
+<p class="toc level2"><a href="encrypt-1.html"><tt>encrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="enhance-1.html"><tt>enhance</tt>(1)</a></p>
+<p class="toc level2"><a href="env-1.html"><tt>env</tt>(1)</a></p>
+<p class="toc level2"><a href="eqn-1.html"><tt>eqn</tt>(1)</a></p>
+<p class="toc level2"><a href="errange-1.html"><tt>errange</tt>(1)</a></p>
+<p class="toc level2"><a href="errdate-1.html"><tt>errdate</tt>(1)</a></p>
+<p class="toc level2"><a href="errgid-1.html"><tt>errgid</tt>(1)</a></p>
+<p class="toc level2"><a href="errint-1.html"><tt>errint</tt>(1)</a></p>
+<p class="toc level2"><a href="erritem-1.html"><tt>erritem</tt>(1)</a></p>
+<p class="toc level2"><a href="error-1.html"><tt>error</tt>(1)</a></p>
+<p class="toc level2"><a href="errpath-1.html"><tt>errpath</tt>(1)</a></p>
+<p class="toc level2"><a href="errstr-1.html"><tt>errstr</tt>(1)</a></p>
+<p class="toc level2"><a href="errtime-1.html"><tt>errtime</tt>(1)</a></p>
+<p class="toc level2"><a href="erruid-1.html"><tt>erruid</tt>(1)</a></p>
+<p class="toc level2"><a href="erryorn-1.html"><tt>erryorn</tt>(1)</a></p>
+<p class="toc level2"><a href="eval-1.html"><tt>eval</tt>(1)</a></p>
+<p class="toc level2"><a href="ex-1.html"><tt>ex</tt>(1)</a></p>
+<p class="toc level2"><a href="exec-1.html"><tt>exec</tt>(1)</a></p>
+<p class="toc level2"><a href="exit-1.html"><tt>exit</tt>(1)</a></p>
+<p class="toc level2"><a href="expand-1.html"><tt>expand</tt>(1)</a></p>
+<p class="toc level2"><a href="export-1.html"><tt>export</tt>(1)</a></p>
+<p class="toc level2"><a href="exportfs-1b.html"><tt>exportfs</tt>(1B)</a></p>
+<p class="toc level2"><a href="expr-1.html"><tt>expr</tt>(1)</a></p>
+<p class="toc level2"><a href="expr-1b.html"><tt>expr</tt>(1B)</a></p>
+<p class="toc level2"><a href="exstr-1.html"><tt>exstr</tt>(1)</a></p>
+<p class="toc level2"><a href="factor-1.html"><tt>factor</tt>(1)</a></p>
+<p class="toc level2"><a href="false-1.html"><tt>false</tt>(1)</a></p>
+<p class="toc level2"><a href="fastboot-1b.html"><tt>fastboot</tt>(1B)</a></p>
+<p class="toc level2"><a href="fasthalt-1b.html"><tt>fasthalt</tt>(1B)</a></p>
+<p class="toc level2"><a href="fc-1.html"><tt>fc</tt>(1)</a></p>
+<p class="toc level2"><a href="fdformat-1.html"><tt>fdformat</tt>(1)</a></p>
+<p class="toc level2"><a href="fg-1.html"><tt>fg</tt>(1)</a></p>
+<p class="toc level2"><a href="fgrep-1.html"><tt>fgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1.html"><tt>file</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1b.html"><tt>file</tt>(1B)</a></p>
+<p class="toc level2"><a href="filebench-1.html"><tt>filebench</tt>(1)</a></p>
+<p class="toc level2"><a href="filep-1.html"><tt>filep</tt>(1)</a></p>
+<p class="toc level2"><a href="filesync-1.html"><tt>filesync</tt>(1)</a></p>
+<p class="toc level2"><a href="filofaxp-1.html"><tt>filofaxp</tt>(1)</a></p>
+<p class="toc level2"><a href="find-1.html"><tt>find</tt>(1)</a></p>
+<p class="toc level2"><a href="finger-1.html"><tt>finger</tt>(1)</a></p>
+<p class="toc level2"><a href="fmt-1.html"><tt>fmt</tt>(1)</a></p>
+<p class="toc level2"><a href="fmtmsg-1.html"><tt>fmtmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="fold-1.html"><tt>fold</tt>(1)</a></p>
+<p class="toc level2"><a href="for-1.html"><tt>for</tt>(1)</a></p>
+<p class="toc level2"><a href="foreach-1.html"><tt>foreach</tt>(1)</a></p>
+<p class="toc level2"><a href="franklinp-1.html"><tt>franklinp</tt>(1)</a></p>
+<p class="toc level2"><a href="from-1b.html"><tt>from</tt>(1B)</a></p>
+<p class="toc level2"><a href="ftp-1.html"><tt>ftp</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpcount-1.html"><tt>ftpcount</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpwho-1.html"><tt>ftpwho</tt>(1)</a></p>
+<p class="toc level2"><a href="function-1.html"><tt>function</tt>(1)</a></p>
+<p class="toc level2"><a href="gcore-1.html"><tt>gcore</tt>(1)</a></p>
+<p class="toc level2"><a href="gencat-1.html"><tt>gencat</tt>(1)</a></p>
+<p class="toc level2"><a href="geniconvtbl-1.html"><tt>geniconvtbl</tt>(1)</a></p>
+<p class="toc level2"><a href="genmsg-1.html"><tt>genmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="get-1.html"><tt>get</tt>(1)</a></p>
+<p class="toc level2"><a href="getconf-1.html"><tt>getconf</tt>(1)</a></p>
+<p class="toc level2"><a href="getfacl-1.html"><tt>getfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="getlabel-1.html"><tt>getlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="getopt-1.html"><tt>getopt</tt>(1)</a></p>
+<p class="toc level2"><a href="getoptcvt-1.html"><tt>getoptcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="getopts-1.html"><tt>getopts</tt>(1)</a></p>
+<p class="toc level2"><a href="gettext-1.html"><tt>gettext</tt>(1)</a></p>
+<p class="toc level2"><a href="gettxt-1.html"><tt>gettxt</tt>(1)</a></p>
+<p class="toc level2"><a href="getzonepath-1.html"><tt>getzonepath</tt>(1)</a></p>
+<p class="toc level2"><a href="glob-1.html"><tt>glob</tt>(1)</a></p>
+<p class="toc level2"><a href="goto-1.html"><tt>goto</tt>(1)</a></p>
+<p class="toc level2"><a href="gprof-1.html"><tt>gprof</tt>(1)</a></p>
+<p class="toc level2"><a href="grep-1.html"><tt>grep</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1.html"><tt>groups</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1b.html"><tt>groups</tt>(1B)</a></p>
+<p class="toc level2"><a href="grpck-1b.html"><tt>grpck</tt>(1B)</a></p>
+<p class="toc level2"><a href="hash-1.html"><tt>hash</tt>(1)</a></p>
+<p class="toc level2"><a href="hashcheck-1.html"><tt>hashcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="hashmake-1.html"><tt>hashmake</tt>(1)</a></p>
+<p class="toc level2"><a href="hashstat-1.html"><tt>hashstat</tt>(1)</a></p>
+<p class="toc level2"><a href="head-1.html"><tt>head</tt>(1)</a></p>
+<p class="toc level2"><a href="help-1.html"><tt>help</tt>(1)</a></p>
+<p class="toc level2"><a href="helpdate-1.html"><tt>helpdate</tt>(1)</a></p>
+<p class="toc level2"><a href="helpgid-1.html"><tt>helpgid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpint-1.html"><tt>helpint</tt>(1)</a></p>
+<p class="toc level2"><a href="helpitem-1.html"><tt>helpitem</tt>(1)</a></p>
+<p class="toc level2"><a href="helppath-1.html"><tt>helppath</tt>(1)</a></p>
+<p class="toc level2"><a href="helprange-1.html"><tt>helprange</tt>(1)</a></p>
+<p class="toc level2"><a href="helpstr-1.html"><tt>helpstr</tt>(1)</a></p>
+<p class="toc level2"><a href="helptime-1.html"><tt>helptime</tt>(1)</a></p>
+<p class="toc level2"><a href="helpuid-1.html"><tt>helpuid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpyorn-1.html"><tt>helpyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="hist-1.html"><tt>hist</tt>(1)</a></p>
+<p class="toc level2"><a href="history-1.html"><tt>history</tt>(1)</a></p>
+<p class="toc level2"><a href="hostid-1.html"><tt>hostid</tt>(1)</a></p>
+<p class="toc level2"><a href="hostname-1.html"><tt>hostname</tt>(1)</a></p>
+<p class="toc level2"><a href="i286-1.html"><tt>i286</tt>(1)</a></p>
+<p class="toc level2"><a href="i386-1.html"><tt>i386</tt>(1)</a></p>
+<p class="toc level2"><a href="i486-1.html"><tt>i486</tt>(1)</a></p>
+<p class="toc level2"><a href="i860-1.html"><tt>i860</tt>(1)</a></p>
+<p class="toc level2"><a href="iapx286-1.html"><tt>iAPX286</tt>(1)</a></p>
+<p class="toc level2"><a href="iconv-1.html"><tt>iconv</tt>(1)</a></p>
+<p class="toc level2"><a href="idnconv-1.html"><tt>idnconv</tt>(1)</a></p>
+<p class="toc level2"><a href="if-1.html"><tt>if</tt>(1)</a></p>
+<p class="toc level2"><a href="indxbib-1.html"><tt>indxbib</tt>(1)</a></p>
+<p class="toc level2"><a href="install-1b.html"><tt>install</tt>(1B)</a></p>
+<p class="toc level2"><a href="ipcrm-1.html"><tt>ipcrm</tt>(1)</a></p>
+<p class="toc level2"><a href="ipcs-1.html"><tt>ipcs</tt>(1)</a></p>
+<p class="toc level2"><a href="isainfo-1.html"><tt>isainfo</tt>(1)</a></p>
+<p class="toc level2"><a href="isalist-1.html"><tt>isalist</tt>(1)</a></p>
+<p class="toc level2"><a href="jobs-1.html"><tt>jobs</tt>(1)</a></p>
+<p class="toc level2"><a href="join-1.html"><tt>join</tt>(1)</a></p>
+<p class="toc level2"><a href="jsh-1.html"><tt>jsh</tt>(1)</a></p>
+<p class="toc level2"><a href="kbd-1.html"><tt>kbd</tt>(1)</a></p>
+<p class="toc level2"><a href="kdestroy-1.html"><tt>kdestroy</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogin-1.html"><tt>keylogin</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogout-1.html"><tt>keylogout</tt>(1)</a></p>
+<p class="toc level2"><a href="kill-1.html"><tt>kill</tt>(1)</a></p>
+<p class="toc level2"><a href="kinit-1.html"><tt>kinit</tt>(1)</a></p>
+<p class="toc level2"><a href="klist-1.html"><tt>klist</tt>(1)</a></p>
+<p class="toc level2"><a href="kmdb-1.html"><tt>kmdb</tt>(1)</a></p>
+<p class="toc level2"><a href="kmfcfg-1.html"><tt>kmfcfg</tt>(1)</a></p>
+<p class="toc level2"><a href="kpasswd-1.html"><tt>kpasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="krb5-config-1.html"><tt>krb5-config</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh-1.html"><tt>ksh</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh93-1.html"><tt>ksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="ktutil-1.html"><tt>ktutil</tt>(1)</a></p>
+<p class="toc level2"><a href="lari-1.html"><tt>lari</tt>(1)</a></p>
+<p class="toc level2"><a href="last-1.html"><tt>last</tt>(1)</a></p>
+<p class="toc level2"><a href="lastcomm-1.html"><tt>lastcomm</tt>(1)</a></p>
+<p class="toc level2"><a href="ld-1.html"><tt>ld</tt>(1)</a></p>
+<p class="toc level2"><a href="ldap-1.html"><tt>ldap</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapadd-1.html"><tt>ldapadd</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapdelete-1.html"><tt>ldapdelete</tt>(1)</a></p>
+<p class="toc level2"><a href="ldaplist-1.html"><tt>ldaplist</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodify-1.html"><tt>ldapmodify</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodrdn-1.html"><tt>ldapmodrdn</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapsearch-1.html"><tt>ldapsearch</tt>(1)</a></p>
+<p class="toc level2"><a href="ldd-1.html"><tt>ldd</tt>(1)</a></p>
+<p class="toc level2"><a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="let-1.html"><tt>let</tt>(1)</a></p>
+<p class="toc level2"><a href="lex-1.html"><tt>lex</tt>(1)</a></p>
+<p class="toc level2"><a href="lgrpinfo-1.html"><tt>lgrpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="limit-1.html"><tt>limit</tt>(1)</a></p>
+<p class="toc level2"><a href="line-1.html"><tt>line</tt>(1)</a></p>
+<p class="toc level2"><a href="list-devices-1.html"><tt>list_devices</tt>(1)</a></p>
+<p class="toc level2"><a href="listusers-1.html"><tt>listusers</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-autoconfig-1.html"><tt>llc2_autoconfig</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-config-1.html"><tt>llc2_config</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-stats-1.html"><tt>llc2_stats</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1.html"><tt>ln</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1b.html"><tt>ln</tt>(1B)</a></p>
+<p class="toc level2"><a href="loadkeys-1.html"><tt>loadkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="locale-1.html"><tt>locale</tt>(1)</a></p>
+<p class="toc level2"><a href="localedef-1.html"><tt>localedef</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1.html"><tt>logger</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1b.html"><tt>logger</tt>(1B)</a></p>
+<p class="toc level2"><a href="login-1.html"><tt>login</tt>(1)</a></p>
+<p class="toc level2"><a href="logname-1.html"><tt>logname</tt>(1)</a></p>
+<p class="toc level2"><a href="logout-1.html"><tt>logout</tt>(1)</a></p>
+<p class="toc level2"><a href="look-1.html"><tt>look</tt>(1)</a></p>
+<p class="toc level2"><a href="lookbib-1.html"><tt>lookbib</tt>(1)</a></p>
+<p class="toc level2"><a href="lorder-1.html"><tt>lorder</tt>(1)</a></p>
+<p class="toc level2"><a href="lp-1.html"><tt>lp</tt>(1)</a></p>
+<p class="toc level2"><a href="lpc-1b.html"><tt>lpc</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpq-1b.html"><tt>lpq</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpr-1b.html"><tt>lpr</tt>(1B)</a></p>
+<p class="toc level2"><a href="lprm-1b.html"><tt>lprm</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpstat-1.html"><tt>lpstat</tt>(1)</a></p>
+<p class="toc level2"><a href="lptest-1b.html"><tt>lptest</tt>(1B)</a></p>
+<p class="toc level2"><a href="ls-1.html"><tt>ls</tt>(1)</a></p>
+<p class="toc level2"><a href="ls-1b.html"><tt>ls</tt>(1B)</a></p>
+<p class="toc level2"><a href="m4-1.html"><tt>m4</tt>(1)</a></p>
+<p class="toc level2"><a href="mac-1.html"><tt>mac</tt>(1)</a></p>
+<p class="toc level2"><a href="mach-1.html"><tt>mach</tt>(1)</a></p>
+<p class="toc level2"><a href="machid-1.html"><tt>machid</tt>(1)</a></p>
+<p class="toc level2"><a href="madv.so.1-1.html"><tt>madv.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="mail-1.html"><tt>mail</tt>(1)</a></p>
+<p class="toc level2"><a href="z-mail-1b.html"><tt>Mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mail-1b.html"><tt>mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mailcompat-1.html"><tt>mailcompat</tt>(1)</a></p>
+<p class="toc level2"><a href="mailp-1.html"><tt>mailp</tt>(1)</a></p>
+<p class="toc level2"><a href="mailq-1.html"><tt>mailq</tt>(1)</a></p>
+<p class="toc level2"><a href="mailstats-1.html"><tt>mailstats</tt>(1)</a></p>
+<p class="toc level2"><a href="mailx-1.html"><tt>mailx</tt>(1)</a></p>
+<p class="toc level2"><a href="make-1s.html"><tt>make</tt>(1S)</a></p>
+<p class="toc level2"><a href="makekey-1.html"><tt>makekey</tt>(1)</a></p>
+<p class="toc level2"><a href="man-1.html"><tt>man</tt>(1)</a></p>
+<p class="toc level2"><a href="mconnect-1.html"><tt>mconnect</tt>(1)</a></p>
+<p class="toc level2"><a href="mcs-1.html"><tt>mcs</tt>(1)</a></p>
+<p class="toc level2"><a href="mdb-1.html"><tt>mdb</tt>(1)</a></p>
+<p class="toc level2"><a href="mesg-1.html"><tt>mesg</tt>(1)</a></p>
+<p class="toc level2"><a href="mkdir-1.html"><tt>mkdir</tt>(1)</a></p>
+<p class="toc level2"><a href="mkmsgs-1.html"><tt>mkmsgs</tt>(1)</a></p>
+<p class="toc level2"><a href="mkstr-1b.html"><tt>mkstr</tt>(1B)</a></p>
+<p class="toc level2"><a href="mktemp-1.html"><tt>mktemp</tt>(1)</a></p>
+<p class="toc level2"><a href="moe-1.html"><tt>moe</tt>(1)</a></p>
+<p class="toc level2"><a href="more-1.html"><tt>more</tt>(1)</a></p>
+<p class="toc level2"><a href="mp-1.html"><tt>mp</tt>(1)</a></p>
+<p class="toc level2"><a href="mpss.so.1-1.html"><tt>mpss.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcc-1.html"><tt>msgcc</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcpp-1.html"><tt>msgcpp</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcvt-1.html"><tt>msgcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="msgfmt-1.html"><tt>msgfmt</tt>(1)</a></p>
+<p class="toc level2"><a href="msggen-1.html"><tt>msggen</tt>(1)</a></p>
+<p class="toc level2"><a href="msgget-1.html"><tt>msgget</tt>(1)</a></p>
+<p class="toc level2"><a href="mt-1.html"><tt>mt</tt>(1)</a></p>
+<p class="toc level2"><a href="mv-1.html"><tt>mv</tt>(1)</a></p>
+<p class="toc level2"><a href="nawk-1.html"><tt>nawk</tt>(1)</a></p>
+<p class="toc level2"><a href="nc-1.html"><tt>nc</tt>(1)</a></p>
+<p class="toc level2"><a href="nca-1.html"><tt>nca</tt>(1)</a></p>
+<p class="toc level2"><a href="ncab2clf-1.html"><tt>ncab2clf</tt>(1)</a></p>
+<p class="toc level2"><a href="ncakmod-1.html"><tt>ncakmod</tt>(1)</a></p>
+<p class="toc level2"><a href="neqn-1.html"><tt>neqn</tt>(1)</a></p>
+<p class="toc level2"><a href="newform-1.html"><tt>newform</tt>(1)</a></p>
+<p class="toc level2"><a href="newgrp-1.html"><tt>newgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="news-1.html"><tt>news</tt>(1)</a></p>
+<p class="toc level2"><a href="newsp-1.html"><tt>newsp</tt>(1)</a></p>
+<p class="toc level2"><a href="newtask-1.html"><tt>newtask</tt>(1)</a></p>
+<p class="toc level2"><a href="nice-1.html"><tt>nice</tt>(1)</a></p>
+<p class="toc level2"><a href="nl-1.html"><tt>nl</tt>(1)</a></p>
+<p class="toc level2"><a href="nm-1.html"><tt>nm</tt>(1)</a></p>
+<p class="toc level2"><a href="nohup-1.html"><tt>nohup</tt>(1)</a></p>
+<p class="toc level2"><a href="notify-1.html"><tt>notify</tt>(1)</a></p>
+<p class="toc level2"><a href="nroff-1.html"><tt>nroff</tt>(1)</a></p>
+<p class="toc level2"><a href="od-1.html"><tt>od</tt>(1)</a></p>
+<p class="toc level2"><a href="on-1.html"><tt>on</tt>(1)</a></p>
+<p class="toc level2"><a href="onintr-1.html"><tt>onintr</tt>(1)</a></p>
+<p class="toc level2"><a href="optisa-1.html"><tt>optisa</tt>(1)</a></p>
+<p class="toc level2"><a href="pack-1.html"><tt>pack</tt>(1)</a></p>
+<p class="toc level2"><a href="page-1.html"><tt>page</tt>(1)</a></p>
+<p class="toc level2"><a href="pagesize-1.html"><tt>pagesize</tt>(1)</a></p>
+<p class="toc level2"><a href="pargs-1.html"><tt>pargs</tt>(1)</a></p>
+<p class="toc level2"><a href="passwd-1.html"><tt>passwd</tt>(1)</a></p>
+<p class="toc level2"><a href="paste-1.html"><tt>paste</tt>(1)</a></p>
+<p class="toc level2"><a href="patch-1.html"><tt>patch</tt>(1)</a></p>
+<p class="toc level2"><a href="pathchk-1.html"><tt>pathchk</tt>(1)</a></p>
+<p class="toc level2"><a href="pax-1.html"><tt>pax</tt>(1)</a></p>
+<p class="toc level2"><a href="pcat-1.html"><tt>pcat</tt>(1)</a></p>
+<p class="toc level2"><a href="pcred-1.html"><tt>pcred</tt>(1)</a></p>
+<p class="toc level2"><a href="pdp11-1.html"><tt>pdp11</tt>(1)</a></p>
+<p class="toc level2"><a href="perl-1.html"><tt>perl</tt>(1)</a></p>
+<p class="toc level2"><a href="pfcsh-1.html"><tt>pfcsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pfexec-1.html"><tt>pfexec</tt>(1)</a></p>
+<p class="toc level2"><a href="pfiles-1.html"><tt>pfiles</tt>(1)</a></p>
+<p class="toc level2"><a href="pfksh-1.html"><tt>pfksh</tt>(1)</a></p>
+<p class="toc level2"><a href="pflags-1.html"><tt>pflags</tt>(1)</a></p>
+<p class="toc level2"><a href="pfsh-1.html"><tt>pfsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pg-1.html"><tt>pg</tt>(1)</a></p>
+<p class="toc level2"><a href="pgrep-1.html"><tt>pgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="pkcs11-inspect-1.html"><tt>pkcs11_inspect</tt>(1)</a></p>
+<p class="toc level2"><a href="pkginfo-1.html"><tt>pkginfo</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgmk-1.html"><tt>pkgmk</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgparam-1.html"><tt>pkgparam</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgproto-1.html"><tt>pkgproto</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgtrans-1.html"><tt>pkgtrans</tt>(1)</a></p>
+<p class="toc level2"><a href="pkill-1.html"><tt>pkill</tt>(1)</a></p>
+<p class="toc level2"><a href="pklogin-finder-1.html"><tt>pklogin_finder</tt>(1)</a></p>
+<p class="toc level2"><a href="pktool-1.html"><tt>pktool</tt>(1)</a></p>
+<p class="toc level2"><a href="plabel-1.html"><tt>plabel</tt>(1)</a></p>
+<p class="toc level2"><a href="pldd-1.html"><tt>pldd</tt>(1)</a></p>
+<p class="toc level2"><a href="plgrp-1.html"><tt>plgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="plimit-1.html"><tt>plimit</tt>(1)</a></p>
+<p class="toc level2"><a href="pmadvise-1.html"><tt>pmadvise</tt>(1)</a></p>
+<p class="toc level2"><a href="pmap-1.html"><tt>pmap</tt>(1)</a></p>
+<p class="toc level2"><a href="popd-1.html"><tt>popd</tt>(1)</a></p>
+<p class="toc level2"><a href="postdaisy-1.html"><tt>postdaisy</tt>(1)</a></p>
+<p class="toc level2"><a href="postdmd-1.html"><tt>postdmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postio-1.html"><tt>postio</tt>(1)</a></p>
+<p class="toc level2"><a href="postmd-1.html"><tt>postmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postplot-1.html"><tt>postplot</tt>(1)</a></p>
+<p class="toc level2"><a href="postprint-1.html"><tt>postprint</tt>(1)</a></p>
+<p class="toc level2"><a href="postreverse-1.html"><tt>postreverse</tt>(1)</a></p>
+<p class="toc level2"><a href="posttek-1.html"><tt>posttek</tt>(1)</a></p>
+<p class="toc level2"><a href="ppgsz-1.html"><tt>ppgsz</tt>(1)</a></p>
+<p class="toc level2"><a href="ppriv-1.html"><tt>ppriv</tt>(1)</a></p>
+<p class="toc level2"><a href="pr-1.html"><tt>pr</tt>(1)</a></p>
+<p class="toc level2"><a href="praliases-1.html"><tt>praliases</tt>(1)</a></p>
+<p class="toc level2"><a href="prctl-1.html"><tt>prctl</tt>(1)</a></p>
+<p class="toc level2"><a href="preap-1.html"><tt>preap</tt>(1)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>prex</tt>(1)</a></p>
+</div>
+<p class="toc level2"><a href="print-1.html"><tt>print</tt>(1)</a></p>
+<p class="toc level2"><a href="printenv-1b.html"><tt>printenv</tt>(1B)</a></p>
+<p class="toc level2"><a href="printf-1.html"><tt>printf</tt>(1)</a></p>
+<p class="toc level2"><a href="priocntl-1.html"><tt>priocntl</tt>(1)</a></p>
+<p class="toc level2"><a href="proc-1.html"><tt>proc</tt>(1)</a></p>
+<p class="toc level2"><a href="prof-1.html"><tt>prof</tt>(1)</a></p>
+<p class="toc level2"><a href="profiles-1.html"><tt>profiles</tt>(1)</a></p>
+<p class="toc level2"><a href="projects-1.html"><tt>projects</tt>(1)</a></p>
+<p class="toc level2"><a href="prs-1.html"><tt>prs</tt>(1)</a></p>
+<p class="toc level2"><a href="prt-1.html"><tt>prt</tt>(1)</a></p>
+<p class="toc level2"><a href="prun-1.html"><tt>prun</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1.html"><tt>ps</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1b.html"><tt>ps</tt>(1B)</a></p>
+<p class="toc level2"><a href="psig-1.html"><tt>psig</tt>(1)</a></p>
+<p class="toc level2"><a href="pstack-1.html"><tt>pstack</tt>(1)</a></p>
+<p class="toc level2"><a href="pstop-1.html"><tt>pstop</tt>(1)</a></p>
+<p class="toc level2"><a href="ptime-1.html"><tt>ptime</tt>(1)</a></p>
+<p class="toc level2"><a href="ptree-1.html"><tt>ptree</tt>(1)</a></p>
+<p class="toc level2"><a href="pushd-1.html"><tt>pushd</tt>(1)</a></p>
+<p class="toc level2"><a href="pvs-1.html"><tt>pvs</tt>(1)</a></p>
+<p class="toc level2"><a href="pwait-1.html"><tt>pwait</tt>(1)</a></p>
+<p class="toc level2"><a href="pwd-1.html"><tt>pwd</tt>(1)</a></p>
+<p class="toc level2"><a href="pwdx-1.html"><tt>pwdx</tt>(1)</a></p>
+<p class="toc level2"><a href="ranlib-1.html"><tt>ranlib</tt>(1)</a></p>
+<p class="toc level2"><a href="rcapstat-1.html"><tt>rcapstat</tt>(1)</a></p>
+<p class="toc level2"><a href="rcp-1.html"><tt>rcp</tt>(1)</a></p>
+<p class="toc level2"><a href="rdist-1.html"><tt>rdist</tt>(1)</a></p>
+<p class="toc level2"><a href="read-1.html"><tt>read</tt>(1)</a></p>
+<p class="toc level2"><a href="readonly-1.html"><tt>readonly</tt>(1)</a></p>
+<p class="toc level2"><a href="red-1.html"><tt>red</tt>(1)</a></p>
+<p class="toc level2"><a href="refer-1.html"><tt>refer</tt>(1)</a></p>
+<p class="toc level2"><a href="regcmp-1.html"><tt>regcmp</tt>(1)</a></p>
+<p class="toc level2"><a href="rehash-1.html"><tt>rehash</tt>(1)</a></p>
+<p class="toc level2"><a href="remote-shell-1.html"><tt>remote_shell</tt>(1)</a></p>
+<p class="toc level2"><a href="remsh-1.html"><tt>remsh</tt>(1)</a></p>
+<p class="toc level2"><a href="renice-1.html"><tt>renice</tt>(1)</a></p>
+<p class="toc level2"><a href="repeat-1.html"><tt>repeat</tt>(1)</a></p>
+<p class="toc level2"><a href="reset-1b.html"><tt>reset</tt>(1B)</a></p>
+<p class="toc level2"><a href="return-1.html"><tt>return</tt>(1)</a></p>
+<p class="toc level2"><a href="rev-1.html"><tt>rev</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh-1.html"><tt>rksh</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh93-1.html"><tt>rksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="rlogin-1.html"><tt>rlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="rm-1.html"><tt>rm</tt>(1)</a></p>
+<p class="toc level2"><a href="rmail-1.html"><tt>rmail</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdel-1.html"><tt>rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdir-1.html"><tt>rmdir</tt>(1)</a></p>
+<p class="toc level2"><a href="rmformat-1.html"><tt>rmformat</tt>(1)</a></p>
+<p class="toc level2"><a href="rmmount-1.html"><tt>rmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="rmumount-1.html"><tt>rmumount</tt>(1)</a></p>
+<p class="toc level2"><a href="roffbib-1.html"><tt>roffbib</tt>(1)</a></p>
+<p class="toc level2"><a href="roles-1.html"><tt>roles</tt>(1)</a></p>
+<p class="toc level2"><a href="rpcgen-1.html"><tt>rpcgen</tt>(1)</a></p>
+<p class="toc level2"><a href="rpm2cpio-1.html"><tt>rpm2cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="rsh-1.html"><tt>rsh</tt>(1)</a></p>
+<p class="toc level2"><a href="runat-1.html"><tt>runat</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1.html"><tt>rup</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1c.html"><tt>rup</tt>(1C)</a></p>
+<p class="toc level2"><a href="ruptime-1.html"><tt>ruptime</tt>(1)</a></p>
+<p class="toc level2"><a href="rusage-1b.html"><tt>rusage</tt>(1B)</a></p>
+<p class="toc level2"><a href="rusers-1.html"><tt>rusers</tt>(1)</a></p>
+<p class="toc level2"><a href="rwho-1.html"><tt>rwho</tt>(1)</a></p>
+<p class="toc level2"><a href="sact-1.html"><tt>sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sar-1.html"><tt>sar</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-1.html"><tt>sccs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-admin-1.html"><tt>sccs-admin</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-cdc-1.html"><tt>sccs-cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-comb-1.html"><tt>sccs-comb</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-delta-1.html"><tt>sccs-delta</tt>(1)</a></p>
+<p class="toc level2"><a href="sccsdiff-1.html"><tt>sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-get-1.html"><tt>sccs-get</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-help-1.html"><tt>sccs-help</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prs-1.html"><tt>sccs-prs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prt-1.html"><tt>sccs-prt</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-rmdel-1.html"><tt>sccs-rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sact-1.html"><tt>sccs-sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sccsdiff-1.html"><tt>sccs-sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-unget-1.html"><tt>sccs-unget</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-val-1.html"><tt>sccs-val</tt>(1)</a></p>
+<p class="toc level2"><a href="scp-1.html"><tt>scp</tt>(1)</a></p>
+<p class="toc level2"><a href="script-1.html"><tt>script</tt>(1)</a></p>
+<p class="toc level2"><a href="sdiff-1.html"><tt>sdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1.html"><tt>sed</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1b.html"><tt>sed</tt>(1B)</a></p>
+<p class="toc level2"><a href="select-1.html"><tt>select</tt>(1)</a></p>
+<p class="toc level2"><a href="set-1.html"><tt>set</tt>(1)</a></p>
+<p class="toc level2"><a href="setenv-1.html"><tt>setenv</tt>(1)</a></p>
+<p class="toc level2"><a href="setfacl-1.html"><tt>setfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="setlabel-1.html"><tt>setlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="setpgrp-1.html"><tt>setpgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="settime-1.html"><tt>settime</tt>(1)</a></p>
+<p class="toc level2"><a href="sftp-1.html"><tt>sftp</tt>(1)</a></p>
+<p class="toc level2"><a href="sh-1.html"><tt>sh</tt>(1)</a></p>
+<p class="toc level2"><a href="shcomp-1.html"><tt>shcomp</tt>(1)</a></p>
+<p class="toc level2"><a href="shell-builtins-1.html"><tt>shell_builtins</tt>(1)</a></p>
+<p class="toc level2"><a href="shift-1.html"><tt>shift</tt>(1)</a></p>
+<p class="toc level2"><a href="shutdown-1b.html"><tt>shutdown</tt>(1B)</a></p>
+<p class="toc level2"><a href="size-1.html"><tt>size</tt>(1)</a></p>
+<p class="toc level2"><a href="sleep-1.html"><tt>sleep</tt>(1)</a></p>
+<p class="toc level2"><a href="smbutil-1.html"><tt>smbutil</tt>(1)</a></p>
+<p class="toc level2"><a href="snca-1.html"><tt>snca</tt>(1)</a></p>
+<p class="toc level2"><a href="soelim-1.html"><tt>soelim</tt>(1)</a></p>
+<p class="toc level2"><a href="sort-1.html"><tt>sort</tt>(1)</a></p>
+<p class="toc level2"><a href="sortbib-1.html"><tt>sortbib</tt>(1)</a></p>
+<p class="toc level2"><a href="sotruss-1.html"><tt>sotruss</tt>(1)</a></p>
+<p class="toc level2"><a href="source-1.html"><tt>source</tt>(1)</a></p>
+<p class="toc level2"><a href="sparc-1.html"><tt>sparc</tt>(1)</a></p>
+<p class="toc level2"><a href="spell-1.html"><tt>spell</tt>(1)</a></p>
+<p class="toc level2"><a href="spellin-1.html"><tt>spellin</tt>(1)</a></p>
+<p class="toc level2"><a href="split-1.html"><tt>split</tt>(1)</a></p>
+<p class="toc level2"><a href="srchtxt-1.html"><tt>srchtxt</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-1.html"><tt>ssh</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-add-1.html"><tt>ssh-add</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-agent-1.html"><tt>ssh-agent</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-http-proxy-connect-1.html"><tt>ssh-http-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keygen-1.html"><tt>ssh-keygen</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keyscan-1.html"><tt>ssh-keyscan</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-socks5-proxy-connect-1.html"><tt>ssh-socks5-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="stop-1.html"><tt>stop</tt>(1)</a></p>
+<p class="toc level2"><a href="strchg-1.html"><tt>strchg</tt>(1)</a></p>
+<p class="toc level2"><a href="strconf-1.html"><tt>strconf</tt>(1)</a></p>
+<p class="toc level2"><a href="strings-1.html"><tt>strings</tt>(1)</a></p>
+<p class="toc level2"><a href="strip-1.html"><tt>strip</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1.html"><tt>stty</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1b.html"><tt>stty</tt>(1B)</a></p>
+<p class="toc level2"><a href="sum-1.html"><tt>sum</tt>(1)</a></p>
+<p class="toc level2"><a href="sum-1b.html"><tt>sum</tt>(1B)</a></p>
+<p class="toc level2"><a href="sun-1.html"><tt>sun</tt>(1)</a></p>
+<p class="toc level2"><a href="suspend-1.html"><tt>suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="svcprop-1.html"><tt>svcprop</tt>(1)</a></p>
+<p class="toc level2"><a href="svcs-1.html"><tt>svcs</tt>(1)</a></p>
+<p class="toc level2"><a href="switch-1.html"><tt>switch</tt>(1)</a></p>
+<p class="toc level2"><a href="symorder-1.html"><tt>symorder</tt>(1)</a></p>
+<p class="toc level2"><a href="sys-suspend-1.html"><tt>sys-suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="sysv-make-1.html"><tt>sysV-make</tt>(1)</a></p>
+<p class="toc level2"><a href="t300-1.html"><tt>t300</tt>(1)</a></p>
+<p class="toc level2"><a href="t300s-1.html"><tt>t300s</tt>(1)</a></p>
+<p class="toc level2"><a href="t4014-1.html"><tt>t4014</tt>(1)</a></p>
+<p class="toc level2"><a href="t450-1.html"><tt>t450</tt>(1)</a></p>
+<p class="toc level2"><a href="tabs-1.html"><tt>tabs</tt>(1)</a></p>
+<p class="toc level2"><a href="tail-1.html"><tt>tail</tt>(1)</a></p>
+<p class="toc level2"><a href="talk-1.html"><tt>talk</tt>(1)</a></p>
+<p class="toc level2"><a href="tar-1.html"><tt>tar</tt>(1)</a></p>
+<p class="toc level2"><a href="tbl-1.html"><tt>tbl</tt>(1)</a></p>
+<p class="toc level2"><a href="tcopy-1.html"><tt>tcopy</tt>(1)</a></p>
+<p class="toc level2"><a href="tee-1.html"><tt>tee</tt>(1)</a></p>
+<p class="toc level2"><a href="tek-1.html"><tt>tek</tt>(1)</a></p>
+<p class="toc level2"><a href="telnet-1.html"><tt>telnet</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1.html"><tt>test</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1b.html"><tt>test</tt>(1B)</a></p>
+<p class="toc level2"><a href="tftp-1.html"><tt>tftp</tt>(1)</a></p>
+<p class="toc level2"><a href="time-1.html"><tt>time</tt>(1)</a></p>
+<p class="toc level2"><a href="timemanp-1.html"><tt>timemanp</tt>(1)</a></p>
+<p class="toc level2"><a href="times-1.html"><tt>times</tt>(1)</a></p>
+<p class="toc level2"><a href="timesysp-1.html"><tt>timesysp</tt>(1)</a></p>
+<p class="toc level2"><a href="timex-1.html"><tt>timex</tt>(1)</a></p>
+<p class="toc level2"><a href="tip-1.html"><tt>tip</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfdump-1.html"><tt>tnfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfxtract-1.html"><tt>tnfxtract</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1.html"><tt>touch</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1b.html"><tt>touch</tt>(1B)</a></p>
+<p class="toc level2"><a href="tplot-1.html"><tt>tplot</tt>(1)</a></p>
+<p class="toc level2"><a href="tput-1.html"><tt>tput</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1.html"><tt>tr</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1b.html"><tt>tr</tt>(1B)</a></p>
+<p class="toc level2"><a href="trap-1.html"><tt>trap</tt>(1)</a></p>
+<p class="toc level2"><a href="troff-1.html"><tt>troff</tt>(1)</a></p>
+<p class="toc level2"><a href="true-1.html"><tt>true</tt>(1)</a></p>
+<p class="toc level2"><a href="truss-1.html"><tt>truss</tt>(1)</a></p>
+<p class="toc level2"><a href="tset-1b.html"><tt>tset</tt>(1B)</a></p>
+<p class="toc level2"><a href="tsort-1.html"><tt>tsort</tt>(1)</a></p>
+<p class="toc level2"><a href="tty-1.html"><tt>tty</tt>(1)</a></p>
+<p class="toc level2"><a href="type-1.html"><tt>type</tt>(1)</a></p>
+<p class="toc level2"><a href="typeset-1.html"><tt>typeset</tt>(1)</a></p>
+<p class="toc level2"><a href="u370-1.html"><tt>u370</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b-1.html"><tt>u3b</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b15-1.html"><tt>u3b15</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b2-1.html"><tt>u3b2</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b5-1.html"><tt>u3b5</tt>(1)</a></p>
+<p class="toc level2"><a href="ul-1.html"><tt>ul</tt>(1)</a></p>
+<p class="toc level2"><a href="ulimit-1.html"><tt>ulimit</tt>(1)</a></p>
+<p class="toc level2"><a href="umask-1.html"><tt>umask</tt>(1)</a></p>
+<p class="toc level2"><a href="unalias-1.html"><tt>unalias</tt>(1)</a></p>
+<p class="toc level2"><a href="uname-1.html"><tt>uname</tt>(1)</a></p>
+<p class="toc level2"><a href="uncompress-1.html"><tt>uncompress</tt>(1)</a></p>
+<p class="toc level2"><a href="unexpand-1.html"><tt>unexpand</tt>(1)</a></p>
+<p class="toc level2"><a href="unget-1.html"><tt>unget</tt>(1)</a></p>
+<p class="toc level2"><a href="unhash-1.html"><tt>unhash</tt>(1)</a></p>
+<p class="toc level2"><a href="unifdef-1.html"><tt>unifdef</tt>(1)</a></p>
+<p class="toc level2"><a href="uniq-1.html"><tt>uniq</tt>(1)</a></p>
+<p class="toc level2"><a href="units-1.html"><tt>units</tt>(1)</a></p>
+<p class="toc level2"><a href="unix2dos-1.html"><tt>unix2dos</tt>(1)</a></p>
+<p class="toc level2"><a href="unlimit-1.html"><tt>unlimit</tt>(1)</a></p>
+<p class="toc level2"><a href="unpack-1.html"><tt>unpack</tt>(1)</a></p>
+<p class="toc level2"><a href="unset-1.html"><tt>unset</tt>(1)</a></p>
+<p class="toc level2"><a href="unsetenv-1.html"><tt>unsetenv</tt>(1)</a></p>
+<p class="toc level2"><a href="until-1.html"><tt>until</tt>(1)</a></p>
+<p class="toc level2"><a href="uptime-1.html"><tt>uptime</tt>(1)</a></p>
+<p class="toc level2"><a href="userattr-1.html"><tt>userattr</tt>(1)</a></p>
+<p class="toc level2"><a href="users-1b.html"><tt>users</tt>(1B)</a></p>
+<p class="toc level2"><a href="uucp-1c.html"><tt>uucp</tt>(1C)</a></p>
+<p class="toc level2"><a href="uudecode-1c.html"><tt>uudecode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuencode-1c.html"><tt>uuencode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuglist-1c.html"><tt>uuglist</tt>(1C)</a></p>
+<p class="toc level2"><a href="uulog-1c.html"><tt>uulog</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuname-1c.html"><tt>uuname</tt>(1C)</a></p>
+<p class="toc level2"><a href="uupick-1c.html"><tt>uupick</tt>(1C)</a></p>
+<p class="toc level2"><a href="uustat-1c.html"><tt>uustat</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuto-1c.html"><tt>uuto</tt>(1C)</a></p>
+<p class="toc level2"><a href="uux-1c.html"><tt>uux</tt>(1C)</a></p>
+<p class="toc level2"><a href="vacation-1.html"><tt>vacation</tt>(1)</a></p>
+<p class="toc level2"><a href="val-1.html"><tt>val</tt>(1)</a></p>
+<p class="toc level2"><a href="valdate-1.html"><tt>valdate</tt>(1)</a></p>
+<p class="toc level2"><a href="valgid-1.html"><tt>valgid</tt>(1)</a></p>
+<p class="toc level2"><a href="valint-1.html"><tt>valint</tt>(1)</a></p>
+<p class="toc level2"><a href="valpath-1.html"><tt>valpath</tt>(1)</a></p>
+<p class="toc level2"><a href="valrange-1.html"><tt>valrange</tt>(1)</a></p>
+<p class="toc level2"><a href="valstr-1.html"><tt>valstr</tt>(1)</a></p>
+<p class="toc level2"><a href="valtime-1.html"><tt>valtime</tt>(1)</a></p>
+<p class="toc level2"><a href="valuid-1.html"><tt>valuid</tt>(1)</a></p>
+<p class="toc level2"><a href="valyorn-1.html"><tt>valyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="vax-1.html"><tt>vax</tt>(1)</a></p>
+<p class="toc level2"><a href="vc-1.html"><tt>vc</tt>(1)</a></p>
+<p class="toc level2"><a href="vedit-1.html"><tt>vedit</tt>(1)</a></p>
+<p class="toc level2"><a href="ver-1.html"><tt>ver</tt>(1)</a></p>
+<p class="toc level2"><a href="vgrind-1.html"><tt>vgrind</tt>(1)</a></p>
+<p class="toc level2"><a href="vi-1.html"><tt>vi</tt>(1)</a></p>
+<p class="toc level2"><a href="view-1.html"><tt>view</tt>(1)</a></p>
+<p class="toc level2"><a href="vipw-1b.html"><tt>vipw</tt>(1B)</a></p>
+<p class="toc level2"><a href="volcheck-1.html"><tt>volcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="volrmmount-1.html"><tt>volrmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="w-1.html"><tt>w</tt>(1)</a></p>
+<p class="toc level2"><a href="wait-1.html"><tt>wait</tt>(1)</a></p>
+<p class="toc level2"><a href="wc-1.html"><tt>wc</tt>(1)</a></p>
+<p class="toc level2"><a href="what-1.html"><tt>what</tt>(1)</a></p>
+<p class="toc level2"><a href="whatis-1.html"><tt>whatis</tt>(1)</a></p>
+<p class="toc level2"><a href="whence-1.html"><tt>whence</tt>(1)</a></p>
+<p class="toc level2"><a href="whereis-1b.html"><tt>whereis</tt>(1B)</a></p>
+<p class="toc level2"><a href="which-1.html"><tt>which</tt>(1)</a></p>
+<p class="toc level2"><a href="while-1.html"><tt>while</tt>(1)</a></p>
+<p class="toc level2"><a href="who-1.html"><tt>who</tt>(1)</a></p>
+<p class="toc level2"><a href="whoami-1b.html"><tt>whoami</tt>(1B)</a></p>
+<p class="toc level2"><a href="whocalls-1.html"><tt>whocalls</tt>(1)</a></p>
+<p class="toc level2"><a href="whois-1.html"><tt>whois</tt>(1)</a></p>
+<p class="toc level2"><a href="write-1.html"><tt>write</tt>(1)</a></p>
+<p class="toc level2"><a href="xargs-1.html"><tt>xargs</tt>(1)</a></p>
+<p class="toc level2"><a href="xgettext-1.html"><tt>xgettext</tt>(1)</a></p>
+<p class="toc level2"><a href="xstr-1.html"><tt>xstr</tt>(1)</a></p>
+<p class="toc level2"><a href="yacc-1.html"><tt>yacc</tt>(1)</a></p>
+<p class="toc level2"><a href="yes-1.html"><tt>yes</tt>(1)</a></p>
+<p class="toc level2"><a href="ypcat-1.html"><tt>ypcat</tt>(1)</a></p>
+<p class="toc level2"><a href="ypmatch-1.html"><tt>ypmatch</tt>(1)</a></p>
+<p class="toc level2"><a href="yppasswd-1.html"><tt>yppasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="ypwhich-1.html"><tt>ypwhich</tt>(1)</a></p>
+<p class="toc level2"><a href="zcat-1.html"><tt>zcat</tt>(1)</a></p>
+<p class="toc level2"><a href="zlogin-1.html"><tt>zlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="zonename-1.html"><tt>zonename</tt>(1)</a></p>
+<p class="toc level2"><a href="zonestat-1.html"><tt>zonestat</tt>(1)</a></p>
+
+</div>
+
+<a name="REFMAN1content"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1prex-1"></a><a name="prex-1"></a><h3>prex</h3>
+<p>- control tracing and manipulate probe points in a process or the kernel</p><h3>Synopsis</h3>
+<pre><tt>prex</tt> [<tt>-o</tt> <var>trace_file_name</var>] [<tt>-l</tt> <var>libraries</var>] [<tt>-s</tt> <var>kbytes_size</var>] <var>cmd</var> 
+     [<var>cmd-args</var>]...</pre><pre><tt>prex</tt> [<tt>-o</tt> <var>trace_file_name</var>] [<tt>-l</tt> <var>libraries</var>] [<tt>-s</tt> <var>kbytes_size</var>] <tt>-p</tt> <var>pid</var></pre><pre><tt>prex</tt> <tt>-k</tt> [<tt>-s</tt> <var>kbytes_size</var>]</pre><h3>Description</h3>
+<p>The <tt>prex</tt> command is the part of the Solaris tracing architecture that
+controls probes in a process or the kernel. See <tt>tracing</tt>(3TNF) for an overview
+of this tracing architecture, including example source code using it.</p><p><tt>prex</tt> is the application used for external control of probes. It automatically
+preloads the <tt>libtnfprobe</tt> library. <tt>prex</tt> locates all the probes in a target
+executable or the kernel and provides an interface for the user to
+manipulate them. It allows a probe to be turned on for tracing, debugging,
+or both. Tracing generates a TNF (Trace Normal Form) trace file that
+can be converted to ASCII by <a href="tnfdump-1.html"><tt>tnfdump</tt>(1)</a> and used for performance analysis.
+Debugging generates a line to standard error whenever the probe is hit
+at run time.</p><p><tt>prex</tt> does not work on static executables. It only works on dynamic
+executables.</p><h4>Invoking prex</h4>
+<p>There are three ways to invoke <tt>prex</tt>:</p>
+<ol><li><p>Use <tt>prex</tt> to start the target application <var>cmd</var>. In this case, the target application need not be built with a dependency on <tt>libtnfprobe</tt>. See <tt>TNF_PROBE</tt>(3TNF). <tt>prex</tt> sets the environment variable <tt>LD_PRELOAD</tt> to load <tt>libtnfprobe</tt> into the target process. See <a href="ld-1.html"><tt>ld</tt>(1)</a>. <tt>prex</tt> then uses the environment variable <tt>PATH</tt> to find the target application.</p></li>
+<li><p>Attach <tt>prex</tt> to a running application. In this case, the running target application should have <tt>libtnfprobe</tt> already linked in. Alternatively, the user may manually set <tt>LD_PRELOAD</tt> to include <tt>libtnfprobe.so.1</tt> prior to invoking the target.</p></li>
+<li><p>Use <tt>prex</tt> with the <tt>-k</tt> option to set <tt>prex</tt> to <tt>kernel mode</tt>. <tt>prex</tt> can then be used to control probes in the Solaris kernel. In kernel mode, additional commands are defined, and some commands that are valid in other modes are invalid. See <tt>Kernel</tt> <tt>Mode</tt> below.</p></li></ol>
+<h4>Control File Format and Command Language</h4>
+<p>In a future release of <tt>prex</tt>, the command language may be moved
+to a syntax that is supported by an existing scripting language like
+<a href="ksh-1.html"><tt>ksh</tt>(1)</a>. In the meantime, the interface to <tt>prex</tt> is uncommitted.</p>
+<ul><li><p>Commands should be in ASCII.</p></li>
+<li><p>Each command is terminated with the NEWLINE character.</p></li>
+<li><p>A command can be continued onto the next line by ending the previous line with the backslash (&#8220;<tt>\</tt>&#8221;) character.</p></li>
+<li><p>Tokens in a command must be separated by whitespace (one or more spaces or tabs).</p></li>
+<li><p>The "<tt>#</tt>" character implies that the rest of the line is a comment.</p></li></ul>
+<h4>Basic prex Commands</h4>
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="left" valign="top"><div class="headerpadding">Command</div></th>
+<th class="columncaption" align="left" valign="top"><div class="headerpadding">Result</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">% <tt><b>prex a.out</b></tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Attaches <tt>prex</tt> to your program and starts <tt>prex</tt>.</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">prex> <tt><b>enable $all</b></tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Enables all the
+probes.</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">prex> <tt><b>quit resume</b></tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Quits <tt>prex</tt> and resumes execution of program.</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h4>Control File Search Path</h4>
+<p>There are two different methods of communicating with <tt>prex</tt>:</p>
+<ul><li><p>By specifications in a control file. During start-up, <tt>prex</tt> searches for a file named <tt>.prexrc</tt> in the directories specified below. <tt>prex</tt> does not stop at the first one it finds. This way a user can override any defaults that are set up. The search order is:</p><pre>$HOME/
+./</pre></li>
+<li><p>By typing commands at the <tt>prex</tt> prompt.</p></li></ul>
+<p>The command language for both methods is the same and is specified
+in USAGE. The commands that return output will not make sense in
+a control file. The output will go to standard output.</p><p>When using <tt>prex</tt> on a target process, the target will be in
+one of two states, running or stopped. This can be detected by
+the presence or absence of the <tt>prex></tt> prompt. If the prompt is
+absent, it means that the target process is running. Typing Control-C will stop
+the target pr ocess and return the user to the prompt. There
+is no guarantee that Control-C will return to a <tt>prex</tt> prompt immediately.
+For example, if the target process is stopped on a job control
+stop (<tt>SIGSTOP</tt>), then Control-C in <tt>prex</tt> will wait until the target has been
+continued (<tt>SIGCONT</tt>). See <tt>Signals to Target Program</tt> below for more information on signals and the
+target process.</p><h3>Options</h3>
+<p>The following options are supported:</p><dl><dt><tt>-k</tt></dt>
+<dd><p><tt>kernel mode</tt>: <tt>prex</tt> is used to control probes in the Solaris kernel. In kernel mode, additional commands are defined, and some commands valid in other modes are invalid. See <tt>Kernel Mode</tt> below.</p></dd>
+<dt><tt>-l</tt> <var>libraries</var></dt>
+<dd><p>The <var>libraries</var> mentioned are linked in to the target application using <tt>LD_PRELOAD</tt> (see <a href="ld-1.html"><tt>ld</tt>(1)</a>). This option cannot be used when attaching to a running process. The argument to the <tt>-l</tt> option should be a space-separated string enclosed in double quotes. Each token in the string is a library name. It follows the <tt>LD_PRELOAD</tt> rules on how libraries should be specified and where they will be found.</p></dd>
+<dt><tt>-o</tt> <var>trace_file_name</var></dt>
+<dd><p>File to be used for the trace output. <var>trace_file_name</var> is assumed to be relative to the current working directory of <tt>prex</tt> (that is, the directory that the user was in when <tt>prex</tt> was started).</p><p>If <tt>prex</tt> attaches to a process that is already tracing, the new <var>trace_file_name</var> (if provided) will not be used. If no <var>trace_file_name</var> is specified, the default is <tt>/$TMPDIR/trace-</tt><var>pid</var> where <var>pid</var> is the process id of the target program. If <tt>TMPDIR</tt> is not set, <tt>/tmp</tt> is used.</p></dd>
+<dt><tt>-s</tt> <var>kbytes_size</var></dt>
+<dd><p>Maximum size of the output trace file in Kbytes. The default size of the trace <var>kbytes_size</var> is <tt>4096</tt> (2<sup>10</sup>) bytes or <tt>4</tt> Mbytes for normal usage, and <tt>384</tt> or <tt>384</tt> kbytes in kernel mode. The minimum size that can be specified is <tt>128</tt> Kbytes. The trace file can be thought of as a least recently used circular buffer. Once the file has been filled, newer events will overwrite the older ones.</p></dd>
+</dl>
+<h3>Usage</h3>
+<p>This section describes the usage of the <tt>prex</tt> utility.</p><h4>Grammar</h4>
+<p>Probes are specified by a list of space-separated selectors. Selectors are of
+the form:</p><pre><var>attribute</var>=<var>value</var></pre><p>(See <tt>TNF_PROBE</tt>(3TNF)). The &#8220;<var>attribute</var>=&#8221; is optional. If it is not specified, it
+defaults to &#8220;<tt>keys=</tt>&#8221;.</p><p>The <var>attribute</var> or <var>value</var> (generically called &#8220;spec&#8221;) can be any of the
+following:</p><dl><dt><tt>IDENT</tt></dt>
+<dd><p>Any sequence of letters, digits, _&#32;, \&#32;, ., % not beginning with a digit. <tt>IDENT</tt> implies an exact match.</p></dd>
+<dt><tt>QUOTED_STR</tt></dt>
+<dd><p>Usually used to escape reserved words (any commands in the command language). <tt>QUOTED_STR</tt> implies an exact match and has to be enclosed in single quotes (' ').</p></dd>
+<dt><tt>REGEXP</tt></dt>
+<dd><p>An <a href="ed-1.html"><tt>ed</tt>(1)</a> regular expression pattern match. <tt>REGEXP</tt> has to be enclosed in slashes (/ /), A / can be included in a <tt>REGEXP</tt> by escaping it with a backslash \&#32;.</p></dd>
+</dl>
+<p>The following grammar explains the syntax.</p><pre>selector_list ::=   |                /* empty */
+                    <var>selector_list</var> <var>selector</var>
+selector ::=        <var>spec</var>=<var>spec</var> |  /* whitespace around `=' opt */
+                    <var>spec</var>
+spec ::=            IDENT |
+                    QUOTED_STR |
+                    REGEXP</pre><p>The terminals in the above grammar are:</p><pre>IDENT =       [a-zA-Z_\.%]{[a-zA-Z0-9_\.%]}+
+QUOTED_STR =  '[^\n']*'   /* any string in single quotes */
+REGEXP =      /[^\n/]*/   /* regexp's have to be in / / */</pre><p>This is a list of the remaining grammar that is needed to
+understand the syntax of the command language (defined in next subsection):</p><pre>filename ::=     QUOTED_STR    /* QUOTED_STR defined above */
+spec_list ::=    /* empty */ |
+                 <var>spec_list</var> <var>spec</var>  /* <var>spec</var> defined above */
+fcn_handle ::=   &#38;IDENT        /* IDENT defined above */
+set_name ::=     $IDENT        /* IDENT defined above */</pre><h4>Command Language</h4>
+
+<ol><li><p>Set Creation and Set Listing</p><pre><b>create $<var>set_name</var> <var>selector_list</var> list sets # list the defined sets</b></pre><p><tt>create</tt> can be used to define a set which contains probes that match the <var>selector_list</var>. The set <tt>$all</tt> is pre-defined as /.*/ and it matches all the probes.</p></li>
+<li><p>Function Listing</p><pre><b>list fcns # list the available <var>fcn_handle</var></b></pre><p>The user can list the different functions that can be connected to probe points. Currently, only the debug function called <tt>&#38;debug</tt> is available.</p></li>
+<li><p>Commands to Connect and Disconnect Probe Functions</p><pre><b>connect &#38;<var>fcn_handle</var> $<var>set_name</var> connect &#38;<var>fcn_handle</var> <var>selector_list</var> clear $<var>set_name</var> clear <var>selector_list</var></b></pre><p>The <tt>connect</tt> command is used to connect probe functions (which must be prefixed by `<tt>&#38;</tt>') to probes. The probes are specified either as a single set (with a `<tt>$</tt>'), or by explicitly listing the probe selectors in the command. The probe function has to be one that is listed by the <tt>list fcns</tt> command. This command does not enable the probes.</p><p>The <tt>clear</tt> command is used to disconnect all connected probe functions from the specified probes.</p></li>
+<li><p>Commands to Toggle the Tracing Mode</p><pre><b>trace $<var>set_name</var> trace <var>selector_list</var> untrace $<var>set_name</var> untrace <var>selector_list</var></b></pre><p>The <tt>trace</tt> and <tt>untrace</tt> commands are used to toggle the tracing action of a probe point (that is, whether a probe will emit a trace record or not if it is hit). This command does not enable the probes specified. Probes have tracing on by default. The most efficient way to turn off tracing is by using the <tt>disable</tt> command. <tt>untrace</tt> is useful if you want debug output but no tracing. If so, set the state of the probe to enabled, untraced, and the debug function connected.</p></li>
+<li><p>Commands to Enable and Disable Probes</p><pre><b>enable $<var>set_name</var> enable <var>selector_list</var> disable $<var>set_name</var> disable <var>selector_list</var></b></pre><p>The <tt>enable</tt> and <tt>disable</tt> commands are used to control whether the probes perform the action that they have been set up for. To trace a probe, it has to be both enabled and traced (using the <tt>trace</tt> command). Probes are disabled by default. The <tt>list history</tt> command is used to list the probe control commands issued: <tt>connect</tt>, <tt>clear</tt>, <tt>trace</tt>, <tt>untrace</tt>, <tt>enable</tt>, and <tt>disable</tt>. These are the commands that are executed whenever a new shared object is brought in to the target program by <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a>. See the subsection, <tt>dlopen'ed Libraries</tt>, below for more information.</p><p>The following table shows the actions that result from specific combinations of tracing, enabling, and connecting:</p><pre>Enabled or   Tracing State     Debug State        Results
+Disabled       (On/Off)     (Connected/Cleared)    In
+------------------------------------------------------------
+Enabled          On             Connected        Tracing and
+                                                 Debugging
+
+Enabled          On             Cleared          Tracing only
+
+Enabled          Off            Connected        Debugging only
+
+Enabled          Off            Cleared          Nothing
+
+Disabled         On             Connected        Nothing
+
+Disabled         On             Cleared          Nothing
+
+Disabled         Off            Connected        Nothing
+
+Disabled         Off            Cleared          Nothing</pre></li>
+<li><p>List History</p><pre><b>list history # lists probe control command history</b></pre><p>The <tt>list history</tt> command displays a list of the probe control commands previously issued in the tracing session, for example, <tt>connect</tt>, <tt>clear</tt>, <tt>trace</tt>, <tt>disable</tt>. Commands in the history list are executed wherever a new shared object is brought into the target program by <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a>.</p></li>
+<li><p>Commands to List Probes, List Values, or List Trace File Name</p><pre><b>list <var>spec_list</var> probes $<var>set_name</var> # list probes $all list <var>spec_list</var> probes <var>selector_list</var> # list name probes file=test.c list values <var>spec_list</var> # list values keys given in <var>spec_list</var> list tracefile # list tracefile</b></pre><p>The first two commands list the selected attributes and values of the specified probes. They can be used to check the state of a probe. The third command lists the various values associated with the selected attributes. The fourth command lists the current tracefile.</p></li>
+<li><p>Help Command</p><pre><b>help <var>topic</var></b></pre><p>To get a list of the help topics that are available, invoke the <tt>help</tt> command with no arguments. If a <var>topic</var> argument is specified, help is printed for that topic.</p></li>
+<li><p>Source a File</p><pre><b>source <var>filename</var></b></pre><p>The <tt>source</tt> command can be used to source a file of <tt>prex</tt> commands. <tt>source</tt> can be nested (that is, a file can source another file). <var>filename</var> is a quoted string.</p></li>
+<li><p>Process Control</p><pre><b>continue # resumes the target process quit kill # quit prex, kill target quit resume # quit prex, continue target quit suspend # quit prex, leave target suspended quit # quit prex (continue or kill target)</b></pre><p>The default <tt>quit</tt> will continue the target process if <tt>prex</tt> attached to it. Instead, if <tt>prex</tt> had started the target program, <tt>quit</tt> will kill the target process.</p></li></ol>
+<h4>dlopen'ed Libraries</h4>
+<p>Probes in shared objects that are brought in by <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a> are automatically
+set up according to the command history of <tt>prex</tt>. When a shared object
+is removed by a <a href="../821-1465/dlclose-3c.html#REFMAN3Adlclose-3c"><tt>dlclose</tt>(3C)</a>, <tt>prex</tt> again needs to refresh its understanding
+of the probes in the target program. This implies that there is more
+work to do for <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a> and <a href="../821-1465/dlclose-3c.html#REFMAN3Adlclose-3c"><tt>dlclose</tt>(3C)</a> &#8212;so they will take slightly
+longer. If a user is not interested in this feature and doesn't
+want to interfere with <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a> and <a href="../821-1465/dlclose-3c.html#REFMAN3Adlclose-3c"><tt>dlclose</tt>(3C)</a>, detach <tt>prex</tt> from the target
+to inhibit this feature.</p><h4>Signals to Target Program</h4>
+<p><tt>prex</tt> does not interfere with signals that are delivered directly to the
+target program. However, <tt>prex</tt> receives all signals normally generated from the terminal,
+for example, Control-C (<tt>SIGINT</tt>), and Control-Z (<tt>SIGSTOP</tt>), and does not forward them to
+the target program. To signal the target program, use the <a href="kill-1.html"><tt>kill</tt>(1)</a> command
+from a shell.</p><h4>Interactions with Other Applications</h4>
+<p>Process managing applications like <tt>dbx</tt>, <a href="truss-1.html"><tt>truss</tt>(1)</a>, and <tt>prex</tt> cannot operate on the
+same target program simultaneously. <tt>prex</tt> will not be able to attach to
+a target which is being controlled by another application. A user can
+trace and debug a program serially by the following method: first attach
+<tt>prex</tt> to target (or start target through <tt>prex</tt>), set up the probes
+using the command language, and then type <tt>quit suspend</tt>. The user can then attach
+<tt>dbx</tt> to the suspended process and debug it. A user can also
+suspend the target by sending it a <tt>SIGSTOP</tt> signal, and then by
+typing <tt>quit resume</tt> to <tt>prex</tt>. In this case, the user should also send
+a <tt>SIGCONT</tt> signal after invoking <tt>dbx</tt> on the stopped process (else <tt>dbx</tt>
+will be hung).</p><h4>Failure of Event Writing Operations</h4>
+<p>There are a few failure points that are possible when writing out
+events to a trace file, for example, system call failures. These failures
+result in a failure code being set in the target process. The
+target process continues normally, but no trace records are written. Whenever a
+user enters Control-C to <tt>prex</tt> to get to a <tt>prex</tt> prompt, <tt>prex</tt> will
+check the failure code in the target and inform the user if
+there was a tracing failure.</p><h4>Target Executing a Fork or exec</h4>
+<p>If the target program does a <a href="../821-1463/fork-2.html#REFMAN2fork-2"><tt>fork</tt>(2)</a>, any probes that the child
+encounters will cause events to be logged to the same trace file.
+Events are annotated with a process id, so it will be possible to
+determine which process a particular event came from. In multi-threaded programs, there
+is a race condition with a thread doing a fork while the
+other threads are still running.  For the trace file not to
+get corrupted, the user should either use <a href="../821-1463/fork1-2.html#REFMAN2fork1-2"><tt>fork1</tt>(2)</a>, or make sure that
+all other threads are quiescent when doing a <a href="../821-1463/fork-2.html#REFMAN2fork-2"><tt>fork</tt>(2)</a>,</p><p>If the target program itself (not any children it may <a href="../821-1463/fork-2.html#REFMAN2fork-2"><tt>fork</tt>(2)</a>) does
+an <a href="../821-1463/exec-2.html#REFMAN2exec-2"><tt>exec</tt>(2)</a>, <tt>prex</tt> detaches from the target and exits. The user can
+reconnect <tt>prex</tt> with <tt>prex</tt> <tt>-p</tt> <var>pid</var>.</p><p>A <a href="../821-1463/vfork-2.html#REFMAN2vfork-2"><tt>vfork</tt>(2)</a> is generally followed quickly by an  <a href="../821-1463/exec-2.html#REFMAN2exec-2"><tt>exec</tt>(2)</a> in the
+child, and in the interim, the child borrows the parent's process while
+the parent waits for the <a href="../821-1463/exec-2.html#REFMAN2exec-2"><tt>exec</tt>(2)</a>. Any events logged by the child from
+the parent process will appear to have been logged by the parent.</p><h4>Kernel Mode</h4>
+<p>Invoking <tt>prex</tt> with the <tt>-k</tt> flag causes <tt>prex</tt> to run in <tt>kernel mode</tt>.
+In kernel mode, <tt>prex</tt> controls probes in the Solaris kernel. See <tt>tnf_kernel_probes</tt>(4)
+for a list of available probes in the Solaris kernel. A few
+<tt>prex</tt> commands are unavailable in kernel mode; many other commands are valid
+in kernel mode only.</p><p>The <tt>-l</tt>, <tt>-o</tt>, and <tt>-p</tt> command-line options are not valid in kernel
+mode (that is, they may not be combined with the <tt>-k</tt> flag).</p><p>The rest of this section describes the differences in the <tt>prex</tt> command
+language when running <tt>prex</tt> in kernel mode.</p>
+<ol><li><p><tt>prex</tt> will not stop the kernel</p><p>When <tt>prex</tt> attaches to a running user program, it stops the user program. Obviously, it cannot do this when attaching to the kernel. Instead, <tt>prex</tt> provides a ``tracing master switch'':  no probes will have any effect unless the tracing master switch is on. This allows the user to iteratively select probes to enable, then enable them all at once by turning on the master switch.</p><p>The command</p><pre><b>ktrace [ on | off ]</b></pre><p>is used to inspect and set the value of the master switch. Without an argument, <tt>prex</tt> reports the current state of the master switch.</p><p>Since <tt>prex</tt> will not stop or kill the kernel, the</p><pre><b>quit resume</b></pre><p>and</p><pre><b>quit kill</b></pre><p>commands are not valid in kernel mode.</p></li>
+<li><p>No functions may be attached to probes in the kernel</p><p>In particular, the debug function is unavailable in kernel mode.</p></li>
+<li><p>Trace output is written to an in-core buffer</p><p>In kernel mode, a trace output file is not generated directly, in order to allow probes to be placed in time-critical code. Instead, trace output is written to an in-core buffer, and copied out by a separate program, <a href="tnfxtract-1.html"><tt>tnfxtract</tt>(1)</a>.</p><p>The in-core buffer is not automatically created. The following <tt>prex</tt> command controls buffer allocation and deallocation:</p><pre><b>buffer [ alloc [ <var>size</var> ] | dealloc ]</b></pre><p>Without an argument, the <tt>buffer</tt> command reports the size of the currently allocated buffer, if any. With an argument of <tt>alloc</tt> [<var>size</var>], <tt>prex</tt> allocates a buffer of the given size. <var>size</var> is in bytes, with an optional suffix of '<tt>k</tt>' or '<tt>m</tt>' specifying a multiplier of <tt>1024</tt> or <tt>1048576</tt>, respectively. If no <var>size</var> is specified, the <var>size</var> specified on the command line with the <tt>-s</tt> option is used as a default. If the <tt>-s</tt> command line option was not used, the ``default default'' is 384 kilobytes.</p><p>With an argument of <tt>dealloc</tt>, <tt>prex</tt> deallocates the trace buffer in the kernel.</p><p><tt>prex</tt> will reject attempts to turn the tracing master switch on when no buffer is allocated, and to deallocate the buffer when the tracing master switch is on. <tt>prex</tt> will refuse to allocate a buffer when one is already allocated; use <tt>buffer dealloc</tt> first.</p><p><tt>prex</tt> will not allocate a buffer larger than one-half of a machine's physical memory.</p></li>
+<li><p><tt>prex</tt> supports per-process probe enabling in the kernel</p><p>In kernel mode, it is possible to select a set of processes for which probes are enabled. No trace output will be written when other processes traverse these probe points. This is called "process filter mode". By default, process filter mode is off, and all processes cause the generation of trace records when they hit an enabled probe.</p><p>Some kernel events such as interrupts cannot be associated with a particular user process. By convention, these events are considered to be generated by process id 0.</p><p><tt>prex</tt> provides commands to turn process filter mode on and off, to get the current status of the process filter mode switch, to add and delete processes (by process id) from the process filter set, and to list the current process filter set.</p><p>The process filter set is maintained even when process filter mode is off, but has no effect unless process filter mode is on.</p><p>When a process in the process filter set exits, its process id is automatically deleted from the process filter set.</p><p>The command:</p><pre><b>pfilter [ on | off | add <var>pidlist</var> | delete <var>pidlist</var> ]</b></pre><p>controls the process filter switch, and process filter set membership. With no arguments, <tt>pfilter</tt> prints the current process filter set and the state of the process filter mode switch:</p><dl><dt><tt>on</tt> or <tt>off</tt></dt>
+<dd><p>set the state of the process filter mode switch.</p></dd>
+<dt><tt>add</tt> <var>pidlist</var></dt>
+<dt><tt>delete</tt> <var>pidlist</var></dt>
+<dd><p>add or delete processes from the process filter set. <var>pidlist</var> is a comma-separated list of one or more process ids.</p></dd>
+</dl>
+</li></ol>
+<h3>Examples</h3>
+<p>See <tt>tracing</tt>(3TNF) for complete examples showing, among other things, the use of
+<tt>prex</tt> to do simple probe control.</p><p>When either the process or kernel is started, all probes are disabled.</p><p><b>Example&#160;1 Set creation and set listing</b></p><pre><b>create $out name=/out/ # $out = probes with "out" in # value of "name" attribute create $foo /page/ name=biodone # $foo = union of # probes with "page" in value of keys attribute # probes with "biodone" as value of "name" attribute list sets # list the defined sets list fcns # list the defined probe fcns</b></pre><p><b>Example&#160;2 Commands to trace and connect probe functions</b></p><pre><b>trace foobar='on' # exact match on foobar attribute trace $all # trace all probes (predefined set $all) connect &#38;debug $foo # connect debug func to probes in $foo</b></pre><p><b>Example&#160;3 Commands to enable and disable probes</b></p><pre><b>enable $all # enable all probes enable /vm/ name=alloc # enable the specified probes disable $foo # disable probes in set $foo list history # list probe control commands issued</b></pre><p><b>Example&#160;4 Process control</b></p><pre><b>continue # resumes the target process ^C # stop target; give control to prex quit resume # exit prex, leave process running # and resume execution of program</b></pre><p><b>Example&#160;5 Kernel mode</b></p><pre><b>buffer alloc 2m # allocate a 2 Megabyte buffer enable $all # enable all probes trace $all # trace all probes ktrace on # turn tracing on ktrace off # turn tracing back off pfilter on # turn process filter mode on pfilter add 1379 # add pid 1379 to process filter ktrace on # turn tracing on # (only pid 1379 will be traced)</b></pre><h3>Files</h3>
+<dl><dt><tt>.prexrc</tt></dt>
+<dd><p>local <tt>prex</tt> initialization file</p></dd>
+<dt><tt>~/.prexrc</tt></dt>
+<dd><p>user's <tt>prex</tt> initialization file</p></dd>
+<dt><tt>/proc/<var>nnnnn</var></tt></dt>
+<dd><p>process files</p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">system/tnf</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h3>See Also</h3>
+<p><a href="ed-1.html"><tt>ed</tt>(1)</a>, <a href="kill-1.html"><tt>kill</tt>(1)</a>, <a href="ksh-1.html"><tt>ksh</tt>(1)</a>, <a href="ld-1.html"><tt>ld</tt>(1)</a>, <a href="tnfdump-1.html"><tt>tnfdump</tt>(1)</a>, <a href="tnfxtract-1.html"><tt>tnfxtract</tt>(1)</a>, <a href="truss-1.html"><tt>truss</tt>(1)</a>, <a href="../821-1463/exec-2.html#REFMAN2exec-2"><tt>exec</tt>(2)</a>, <a href="../821-1463/fork-2.html#REFMAN2fork-2"><tt>fork</tt>(2)</a>, <a href="../821-1463/fork1-2.html#REFMAN2fork1-2"><tt>fork1</tt>(2)</a>, <a href="../821-1463/vfork-2.html#REFMAN2vfork-2"><tt>vfork</tt>(2)</a>, <tt>TNF_DECLARE_RECORD</tt>(3TNF),
+<tt>TNF_PROBE</tt>(3TNF), <a href="../821-1465/dlclose-3c.html#REFMAN3Adlclose-3c"><tt>dlclose</tt>(3C)</a>, <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a>, <a href="../821-1465/gethrtime-3c.html#REFMAN3Agethrtime-3c"><tt>gethrtime</tt>(3C)</a>, <tt>libtnfctl</tt>(3TNF), <tt>tnf_process_disable</tt>(3TNF), <tt>tracing</tt>(3TNF), <tt>tnf_kernel_probes</tt>(4), <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a></p><h3>Notes</h3>
+<p>Currently, the only probe function that is available is the <tt>&#38;debug</tt> function.
+When this function is executed, it prints out the arguments sent in
+to the probe as well as the value associated with the <tt>sunw%debug</tt>
+attribute in the detail field (if any) to <tt>stderr</tt>.</p><p>For example, for the following probe point:</p><pre>TNF_PROBE_2(input_values, "testapp main",
+                "sunw%debug 'have read input values successfully'",
+                tnf_long, int_input, x,
+                tnf_string, string_input, input);</pre><p>If <var>x</var> was 100 and <var>input</var> was the string "success", then the
+output of the debug probe function would be:</p><pre>probe input_values; sunw%debug "have read input values successfully";
+int_input=100; string_input="success";</pre><p>Some non-SPARC hardware lacks a true high-resolution timer, causing <tt>gethrtime()</tt> to return
+the same value multiple times in succession. This can lead to problems
+in how some tools interpret the trace file. This situation can be
+improved by interposing a version of <tt>gethrtime()</tt>, which causes these successive values
+to be artificially incremented by one nanosecond:</p><pre>hrtime_t
+gethrtime()
+{
+    static mutex_t lock;
+    static hrtime_t (*real_gethrtime)(void) = NULL;
+    static hrtime_t last_time = 0;
+
+    hrtime_t this_time;
+
+    if (real_gethrtime == NULL) {
+        real_gethrtime =
+             (hrtime_t (*)(void)) dlsym(RTLD_NEXT, "gethrtime");
+    }
+    this_time = real_gethrtime();
+
+    mutex_lock(&#38;lock);
+    if (this_time &#60;= last_time)
+        this_time = ++last_time;
+    else
+        last_time = this_time;
+    mutex_unlock(&#38;lock);
+
+    return (this_time);
+}</pre><p>Of course, this does not increase the resolution of the timer, so
+timestamps for individual events are still relatively inaccurate. But this technique maintains
+ordering, so that if event A causes event B, B never appears
+to happen before or at the same time as A.</p><p><tt>dbx</tt> is available with the Sun Workshop Products.</p><h3>Bugs</h3>
+<p><tt>prex</tt> should issue a notification when a process id has been automatically
+deleted from the filter set.</p><p>There is a known bug in <tt>prex</tt> which can result in this
+message:</p><pre>Tracing shut down in target program due to an internal
+error - Please restart prex and target</pre><p>When <tt>prex</tt> runs as root, and the target process is not root,
+and the tracefile is placed in a directory where it cannot be
+removed and re-created (a directory with the sticky bit on, like <tt>/tmp</tt>),mm
+then the target process will not be able to open the tracefile when
+it needs to. This results in tracing being disabled.</p><p>Changing any of the circumstances listed above should fix the problem. Either
+don't run <tt>prex</tt> as root, or run the target process as root,
+or specify the tracefile in a directory other than <tt>/tmp</tt>.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="preap-1.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="print-1.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

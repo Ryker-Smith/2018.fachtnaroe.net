@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- shell/jobz4.html -->
+
+<HEAD>
+<TITLE>Monitoring processes</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Monitoring processes</H1>
+
+<P>To monitor the state of your processes use the ps
+command.</P>
+
+<PRE WIDTH=80>   <STRONG>ps [-option]</STRONG>
+</PRE>
+
+<P>Used without options this produces a list of all the
+processes owned by you and associated with your terminal.</P>
+
+<P>Options for this command vary with the type of UNIX system
+that you are using.  Consult the <A HREF="man_org4.html">man page</A>
+for the <STRONG>ps</STRONG> command
+to check which command options are available on your UNIX.</P>
+
+<P>It may be that you are running more than one terminal
+session on the system and/or that you have processes
+which have no controlling terminal associated with them.
+This is likely if you are working within a networked
+windowing environment such as 
+<A HREF="http://www.nads.de/EXUG/FAQ/FAQ-X/head.html">X</A>.</P>
+
+<P>To display details about all the processes which belong
+to you use one of the following commands:</P>
+
+<H4>System V</H4>
+
+<PRE WIDTH=80>   <STRONG>ps -u <EM>your_user_name</EM></STRONG>
+</PRE>
+
+<H4>BSD</H4>
+<PRE WIDTH=80>   <STRONG>ps -x</STRONG>
+</PRE>
+
+<UL>
+<LI><A HREF="http://www.ee.surrey.ac.uk/Docs/Unixhelp/shell/jobz4.2.html">Examples</A></LI>
+<LI><A HREF="http://www.ee.surrey.ac.uk/Docs/Unixhelp/shell/jobz4.2b.html">Understanding process information</A></LI>
+<LI><A HREF="http://www.ee.surrey.ac.uk/Docs/Unixhelp/shell/jobz4.3.html">Displaying information about other user's processes</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="index15.html"><IMG SRC="weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="unixhelp_search.html"><IMG SRC="weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="index.html"><IMG SRC="weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

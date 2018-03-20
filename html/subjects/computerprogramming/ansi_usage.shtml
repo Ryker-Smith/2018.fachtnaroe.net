@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Sample ANSI usage</h1>
+<p>Copy and run this program; make changes to see how it does what it does. You can use ANSI codes to make your text programs more attractive.</p>
+<pre>
+#!/usr/bin/perl
+use strict;
+
+# Purpose:  Samples for using ANSI codes for pretty text
+# Date:     2013
+# Author:   Fachtna Roe
+# Ref:      http://ascii-table.com/ansi-escape-sequences.php
+#
+# All ANSI character sequences start with ESC and "["
+# I'll concatenate using the . operator
+# Define constants to save later typing
+use constant ESC =&gt; "\x1B";
+use constant LeftSquare =&gt; "[";
+# I'll put these together for easier use
+use constant ANSI =&gt; ESC . LeftSquare;
+# Erase display = esc[2J
+use constant clrscr =&gt; ANSI . "2J";
+# black foreground = esc[30m
+use constant black =&gt; ANSI . "30m";
+# red foreground = esc[31m
+use constant red =&gt; ANSI . "31m";
+# blue foreground = esc[34m
+use constant blue =&gt; ANSI . "34m";
+# yellow forground = esc[33m
+use constant yellow =&gt; ANSI . "33m";
+# color elements can be combined with ; between them
+# yellow on blue is esc[33;44m
+use constant yellow_on_blue =&gt; ANSI . "33;44m";
+use constant blue_on_yellow =&gt; ANSI . "34;43m";
+use constant white_on_black =&gt; ANSI . "37;40m";
+use constant black_back =&gt; ANSI . "40m";
+# cursor can be positioned also 0,0 is top-left
+use constant top_left =&gt; ANSI . "0;0H";
+# bold = esc[1m
+use constant bold =&gt; ANSI . "1m";
+# all attributes off =  esc[0m
+use constant all_off =&gt; ANSI . "0m";
+
+# start demo...
+# Clear the screen
+print clrscr;
+print red, "Red: Hello World\n";
+print blue, "Blue: Hello World\n";
+print yellow, "Yellow: Hello World\n", black;
+# pause for a bit
+print "Press return to continue";
+&lt;STDIN&gt;;
+print yellow_on_blue, bold, clrscr, top_left;
+print "Hello World\n";
+print black, "Press return to continue";
+&lt;STDIN&gt;;
+print blue_on_yellow, bold, clrscr, top_left;
+print "Hello World\n";
+print black, "Press return to continue";
+&lt;STDIN&gt;;
+print white_on_black, bold, clrscr, top_left;
+print "Hello World\n";
+print black, "Press return to continue";
+&lt;STDIN&gt;;
+print red, black_back;
+my (@text, @numbers, $count, $spaces);
+push @text, "Some random-ish text";
+push @text, "More of it";
+push @text, "some more again";
+push @numbers, "903.01";
+push @numbers, "1.99";
+push @numbers, "24.95";
+print clrscr, top_left, "This text is NOT in columns\n";
+$count = 0;
+foreach (@numbers) {
+  print "$count: ",$text[$count];
+  print $numbers[$count];
+  print "\n";
+  $count++;
+}
+&lt;STDIN&gt;;
+print "This text IS in columns\n";
+$count = 0;
+foreach (@numbers) {
+  print "$count: ",$text[$count];
+  my $spaces = 25-length($text[$count]);
+  print ANSI . $spaces . "C";
+  print $numbers[$count];
+  print "\n";
+  $count++;
+}
+&lt;STDIN&gt;;
+print "This text IS in columns - plus correct spacing for numbers\n";
+$count = 0;
+foreach (@numbers) {
+  print "$count: ",$text[$count];
+  $spaces = 25-length($text[$count]);
+  $spaces = $spaces + (10 - length($numbers[$count]));
+  print ANSI . $spaces . "C";
+  print $numbers[$count];
+  print "\n";
+  $count++;
+}
+&lt;STDIN&gt;;
+print all_off, clrscr;
+</pre>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="ansi_usage.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

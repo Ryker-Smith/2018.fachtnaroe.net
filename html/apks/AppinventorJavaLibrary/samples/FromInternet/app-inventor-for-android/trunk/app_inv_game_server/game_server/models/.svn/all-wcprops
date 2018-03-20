@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/models
+END
+game.py
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/models/game.py
+END
+game_instance.py
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/models/game_instance.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/models/__init__.py
+END
+message.py
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/models/message.py
+END

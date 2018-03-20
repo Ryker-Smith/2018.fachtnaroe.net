@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- emacs/replace_query.html -->
+
+<HEAD>
+<TITLE>Query replace</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Query replace</H1>
+
+<P>This is like Global Replace, but instead of
+replacing every occurrence, it stops at each one and
+asks whether you want to replace it or move to the
+next occurence.</P>
+
+<P><STRONG>1.</STRONG> Type <STRONG>M-^R</STRONG>
+
+<P>You are first prompted for the text you want to
+replace.  The prompt will look like this:</P>
+
+<PRE WIDTH=80>   Query replace []&lt;META&gt;:
+</PRE>
+
+<P><STRONG>2.</STRONG> Type in the text you want to replace and
+press the META key.</P>
+
+<P>You will then be prompted for the text you want to
+insert.  The prompt will look like this:</P>
+
+<PRE WIDTH=80>   with []&lt;META&gt;:
+</PRE>
+
+<P><STRONG>3.</STRONG> Type in the text you want to insert and
+press the META key.</P>
+
+<P>The cursor will move to each occurrence of the text
+you want to replace.  Each time you will be given a
+prompt like this:</P>
+
+<PRE WIDTH=80>   Replace 'junk' with 'test'?
+</PRE>
+
+<P><STRONG>4.</STRONG> Type in one of the options:</P>
+
+<PRE WIDTH=80>
+    <STRONG>y</STRONG>  <EM>(yes, do this replace)</EM>
+
+    <STRONG>n</STRONG>  <EM>(no, don't do this replace)</EM>
+
+    <STRONG>!</STRONG>  <EM>(Do replaces without asking)</EM>
+
+    <STRONG>^G</STRONG> <EM>(stop now)</EM>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

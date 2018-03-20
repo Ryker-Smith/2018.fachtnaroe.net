@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt1.2.html -->
+
+<HEAD>
+<TITLE>Executing a shell script</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Executing a shell script</H1>
+
+<P>Before using a file as a shell script you must change its
+<A HREF="../tasks/change_perm.html">access permissions</A>
+so that you have execute permission on the file, otherwise the error message 
+<SAMP>Permission denied</SAMP>is displayed.</P>
+
+<P>To run the shell script, simply type its name at the
+prompt.  The commands in the script will then execute one
+at a time as though you were typing them in at the
+terminal.</P>
+
+<P>To give yourself execute permission for the file
+containing the script use the command:</P>
+
+<PRE WIDTH=80>   <STRONG>chmod u+rwx </STRONG>filename
+</PRE>
+
+<P>The <SAMP>+rwx</SAMP> after the <SAMP>u</SAMP>
+ allows you to read, write to and
+execute the script: no one else has permission to read,
+write or execute.</P>
+
+<P>To give other users permission to read and execute but
+not alter the shell script use:</P>
+
+<PRE WIDTH=80>   <STRONG>chmod go+rx </STRONG>filename
+</PRE>
+
+<UL>
+<LI><A HREF="scrpt1.2.2.html">Example</A></LI>
+<LI><A HREF="scrpt1.2.3.html">Problems?</A>
+<LI><A HREF="scrpt1.2.4.html">Using the Bourne shell to interpret a shell
+script</A></LI> 
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

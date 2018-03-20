@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util
+END
+YailNumberToString.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/YailNumberToString.java
+END
+PlayerListDelta.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/PlayerListDelta.java
+END
+PhoneCallUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/PhoneCallUtil.java
+END
+AsyncCallbackPair.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/AsyncCallbackPair.java
+END
+ClientLoginHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/ClientLoginHelper.java
+END
+ViewUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/ViewUtil.java
+END
+PaintUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/PaintUtil.java
+END
+SdkLevel.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/SdkLevel.java
+END
+InternalTextToSpeech.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/InternalTextToSpeech.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/FileUtil.java
+END
+TextViewUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/TextViewUtil.java
+END
+TimerInternal.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/TimerInternal.java
+END
+AnimationUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/AnimationUtil.java
+END
+MediaUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/MediaUtil.java
+END
+TelnetRepl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/TelnetRepl.java
+END
+AccountChooser.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/AccountChooser.java
+END
+BluetoothReflection.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/BluetoothReflection.java
+END
+IClientLoginHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/IClientLoginHelper.java
+END
+ReplCommController.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/ReplCommController.java
+END
+PropertyUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/PropertyUtil.java
+END
+ExternalTextToSpeech.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/ExternalTextToSpeech.java
+END
+AsynchUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/AsynchUtil.java
+END
+RuntimeErrorAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/RuntimeErrorAlert.java
+END
+LoginServiceUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/LoginServiceUtil.java
+END
+DonutUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/DonutUtil.java
+END
+ITextToSpeech.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/ITextToSpeech.java
+END
+CsvUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/CsvUtil.java
+END
+BiggerFuture.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/BiggerFuture.java
+END
+WebServiceUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/WebServiceUtil.java
+END
+GameInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/49/trunk/src/components/runtime/components/android/util/GameInstance.java
+END

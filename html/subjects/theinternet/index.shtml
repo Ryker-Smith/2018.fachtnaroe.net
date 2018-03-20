@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>The Internet</h1>
+<p>MUST SEE: How does The Internet work? Inter-networking, protocols, ownership and the sharing agreements that allow data to flow freely. A video from European Internet Exchange Association. It's well worth watching it full screen. It's only 5:24 in length.</p>
+<!-- following object was originally sized 640x360 -->
+<iframe width="640" height="360" src="//www.youtube.com/embed/TKNQ1lgguM8?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+<h2>Tutorials</h2>
+<ul>
+  <li><a href="http://www.spamhaus.org/whitepapers/dnsbl_function/">How spam blocklists work</a></li>
+  <li>It may help to refer to the <a href="/subjects/webauthoring5/">Web Authoring</a> page.</li>
+  <li>There is also a short history <a href="http://www.walthowe.com/navnet/history.html">here</a>.</li>
+<!--  <li>There is a Security & confidentiality <a href="01-Security%20&amp;%20Confidentiality%20-%20Discussion%20Pack.pdf">discussion pack</a>. (PDF, 3.82MB)</li> -->
+<!-- <li>There is an OpenOffice.org presentation in <a href="The%20Internet.pdf">PDF format</a>. -->
+  <li>What's a URL? Look at this:
+      <br><a href="url.png"><img width="150" src="url.png" alt=""></a>Click to embiggen.</li>
+  <li>Do you know what <a href="00-PHISHING.pdf">phishing</a> is? (1.23MB file containing a warning letter from permanent TSB bank about it).</li>
+  <li>This is a <a href="00-Clever-Phishing.jpg">very clever example</a> of phishing. Apart from the anti-virus warning, can you see what gives the game away? It's very, very subtle...</li>
+  <li>Sometimes viruses, or in this case trojans, get into your computer from <a href="e-Mail-Trap.jpg">seemingly helpful sources</a>. Never trust an email attachment from anyone - especially someone you don't know. Guess what's in the 'helpful' attachment....?</li>
+  <li><a href="http://www.feep.net/sendmail/tutorial/">How email <i>really</i> works: without magic, just computer programs like sendmail</a>. (external link)</li>
+  <li><a href="http://arstechnica.com/tech-policy/2013/04/how-a-banner-ad-for-hs-ok/?utm_source=Ars+Technica+Newsletter&utm_campaign=f1203d8a4f-September_02_2011_Newsletter&utm_medium=email#image-2">Who sees your traffic?</a></li>
+  <li>What's FTP? Look at this screen:
+      <br><a href="gFTP_in_use.jpg"><img width="150" src="gFTP_in_use.jpg" alt=""></a>Click to embiggen.</li>
+</ul>
+<h1><a id="present"></a>Current Year</h1>
+<h2>Assessment 2014/2015</h2>
+<ol>
+<li>Research assignment on <a href="00-SecurityAndConfidentiality2015.pdf">Security &amp; Confidentiality</a>. (40%)
+<div id="table75center">
+  <b>Student work:</b><br>
+  <a href="https://treebeard.ie">treebeard.ie</a>
+</div>
+</li>
+<li>Research assignment on <a href="00-HistoryandStructureofTheInternetAssignment-2014-2015.pdf">History &amp; Structure: Lesser known heroes of IT</a>. (30%)<br>(This assignment is also to be submitted for <a href="/subjects/communications/">Communications</a> (for which it is worth 25% of the marks), and for <a href="/subjects/webauthoring5">Web Authoring</a> (for which it is worth 30% of the marks) - so the standard must be high)
+<br>
+<br>
+<div id="table75center">
+  <b>Student work:</b><br>
+  <a href="https://treebeard.ie">treebeard.ie</a>
+</div>
+</li>
+<li><a href="00-Email Etiquette Assignment 2014-2015.pdf">Assignment on email etiquette</a>. (30%)</li>
+</ol>
+<h1><a id="past"></a>Previous Years</h1>
+<p><a href="previous.shtml">Click here</a>.</p>
+<h2>Related</h2>
+<ul>
+  <li><a href="/fetacmodules/2011-C20168_AwardSpecifications_English.pdf">The module descriptor</a>.</li>
+</ul>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

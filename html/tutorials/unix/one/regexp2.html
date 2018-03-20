@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- concepts/regexp2.html -->
+
+<HEAD>
+<TITLE>Characters with special meaning for the shell</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>Characters with special meaning for the shell</H1>
+
+<P>The characters</P>
+
+<PRE WIDTH=80><STRONG>   ;  &  ( )  |  ^  &lt;  &gt;  ~  %  { }
+   $  #   '  "  \  @@  *  ?  [ ]  -  !
+   Newline (a &lt;Return&gt;)
+   Space   (a &lt;Space&gt;)
+   Tab	   (a &lt;Tab&gt;)</STRONG></PRE>
+
+<P>are all shell
+ <A HREF="../glossary/gm.html#metachar">metacharacters</A>.  To the 
+ <A HREF="../glossary/gs.html#shell">shell</A>, they
+represent something other than the character or symbol
+that they are.</P>
+
+<P>You must <A HREF="../commanz/cmd2.2.html">quote</A> any command 
+ <A HREF="../commanz/cmd1.html">argument</A> or 
+ <A HREF="regexp.html">regular expression</A> containing
+one or more of these, so that it is passed to
+the command unchanged.</P>
+
+<UL>
+<LI><A HREF="regexp2.1.html">Removing special meaning from a
+metacharacter</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

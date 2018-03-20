@@ -1,0 +1,1 @@
+BUTTON_ONE=Chronology&BUTTON_TWO=Stories&BUTTON_THREE=Works&BUTTON_FOUR=Extract

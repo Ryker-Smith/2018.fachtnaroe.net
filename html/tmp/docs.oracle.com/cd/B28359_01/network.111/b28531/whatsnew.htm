@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<title>What's New in Oracle Database Security?</title>
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Version 5.1.2 Build 743" />
+<meta name="dcterms.created" content="2014-01-15T13:27:4Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Database Security Guide" />
+<meta name="dcterms.identifier" content="B28531-21" />
+<meta name="dcterms.isVersionOf" content="DBSEG" />
+<link rel="Start" href="../../index.htm" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Index" href="index.htm" title="Index" type="text/html" />
+<link rel="Glossary" href="glossary.htm" title="Glossary" type="text/html" />
+<link rel="Prev" href="preface.htm" title="Previous" type="text/html" />
+<link rel="Next" href="intro.htm" title="Next" type="text/html" />
+<link rel="alternate" href="../b28531.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="../B28531-21.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="../B28531-21.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<span id="PAGE" style="display:none;">7/19</span> <!-- End Header -->
+<div id="DBSEG000" class="preface"><a id="sthref4"></a>
+<h1 class="preface">What's New in Oracle Database Security?</h1>
+<p><a id="sthref5"></a>The Oracle Database 11<span class="italic">g</span> Release 1 (11.1) security features and enhancements described in this section comprise the overall effort to provide superior access control, privacy, and accountability with this release of Oracle Database.</p>
+<p>The following sections describe new security features of Oracle Database 11<span class="italic">g</span> Release 1 (11.1) and provide pointers to additional information:</p>
+<ul>
+<li>
+<p><a href="#CJAHEFJF">Automatic Secure Configuration</a></p>
+</li>
+<li>
+<p><a href="#CJAIGJCB">New Password Protections</a></p>
+</li>
+<li>
+<p><a href="#CJACHCBF">SYSDBA and SYSOPER Strong Authentication</a></p>
+</li>
+<li>
+<p><a href="#CJAFHEJA">SYSASM Privilege for Automatic Storage Management</a></p>
+</li>
+<li>
+<p><a href="#CJABIGGH">Encryption Enhancements</a></p>
+</li>
+<li>
+<p><a href="#CJAICBFD">Fine-Grained Access Control on Network Services on the Database</a></p>
+</li>
+<li>
+<p><a href="#CJABBIGH">Change to AUDIT BY SESSION</a></p>
+</li>
+<li>
+<p><a href="#CJADAEHA">Oracle XML DB Security Enhancements</a></p>
+</li>
+<li>
+<p><a href="#CJAFGEAB">Directory Security Enhancements</a></p>
+</li>
+<li>
+<p><a href="#CJAICDHJ">Oracle Call Interface Security Enhancements</a></p>
+</li>
+</ul>
+<div id="DBSEG00101" class="prefsect1"><a id="CJAHEFJF"></a>
+<h2 class="prefsect1">Automatic Secure Configuration</h2>
+<p>When you create a new database, you can use Database Configuration Assistant (DBCA) to automatically create a more secure configuration than in previous releases of Oracle Database. You can enable the following secure configuration settings in one operation:</p>
+<ul>
+<li>
+<p><span class="bold">Password-specific settings in the default profile.</span> This feature enables you to enforce password expiration and other password policies. See <a href="authentication.htm#CHDCGJED">"Configuring Password Settings in the Default Profile"</a> for more information.</p>
+</li>
+<li>
+<p><span class="bold">Auditing.</span> This feature enables auditing for specific events such as database connections. See <a href="auditing.htm#CEGGCIAE">"Using Default Auditing for Security-Relevant SQL Statements and Privileges"</a> for more information.</p>
+</li>
+</ul>
+<p>To configure your database for greater security, follow the guidelines in <a href="guidelines.htm#CHDCEBFA">Chapter 10, "Keeping Your Oracle Database Secure"</a>.</p>
+</div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00102" class="prefsect1"><a id="CJAIGJCB"></a>
+<h2 class="prefsect1">New Password Protections</h2>
+<p>Oracle Database now includes the following new password protections:</p>
+<ul>
+<li>
+<p><span class="bold">Easy ability to find default passwords.</span> If you have upgraded from an earlier release of Oracle Database, you may have user accounts that still have default passwords. For greater security, you should find and change these passwords. See <a href="authentication.htm#CHDHCDFE">"Finding User Accounts That Have Default Passwords"</a> for more information.</p>
+</li>
+<li>
+<p><span class="bold">Password complexity verification.</span> Password complexity verification ensures that users set complex passwords when setting or resetting passwords. You can enforce password complexity by using the default settings provided by Oracle Database, or create custom requirements to further secure the password complexity requirements for your site.</p>
+<p><a href="authentication.htm#i1007341">"Enforcing Password Complexity Verification"</a> describes built-in password verification.</p>
+</li>
+<li>
+<p><span class="bold">Enforced case sensitivity.</span> See <a href="authentication.htm#CHDJDCGI">"Enabling or Disabling Password Case Sensitivity"</a> for more information.</p>
+</li>
+<li>
+<p><span class="bold">Stronger password hashing algorithm.</span> This enhancement enables users to create passwords that contain mixed case or special characters. See <a href="authentication.htm#CHDEFIHB">"Ensuring Against Password Security Threats by Using the SHA-1 Hashing Algorithm"</a> for more information.</p>
+</li>
+</ul>
+</div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00103" class="prefsect1"><a id="CJACHCBF"></a>
+<h2 class="prefsect1">SYSDBA and SYSOPER Strong Authentication</h2>
+<p>You can now use the Secure Sockets Layer (SSL) and Kerberos strong authentication methods to authenticate users who have the <code>SYSDBA</code> and <code>SYSOPER</code> privileges.</p>
+<p>See <a href="authentication.htm#CHDCADIA">"Strong Authentication and Centralized Management for Database Administrators"</a> for more information.</p>
+</div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00104" class="prefsect1"><a id="CJAFHEJA"></a>
+<h2 class="prefsect1">SYSASM Privilege for Automatic Storage Management</h2>
+<p><a id="sthref6"></a><a id="sthref7"></a><a id="sthref8"></a>The <code>SYSASM</code> system privilege has been added to Oracle Database 11<span class="italic">g</span> Release 1 (11.1), to be used exclusively to administer Automatic Storage Management (ASM). Use the <code>SYSASM</code> privilege instead of the <code>SYSDBA</code> privilege to connect to and administer ASM instances.</p>
+<p>See <a class="olink OSTMG02600" href="../../server.111/b31107/asminst.htm#OSTMG02600"><span class="italic">Oracle Database Storage Administrator's Guide</span></a> for more information about the <code>SYSASM</code> privilege.</p>
+</div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00105" class="prefsect1"><a id="CJABIGGH"></a>
+<h2 class="prefsect1">Encryption Enhancements</h2>
+<p>This section describes the following enhancements in encryption:</p>
+<ul>
+<li>
+<p><a href="#CJABEBIF">Intelligent LOB Compression, Deduplication, and Encryption with SecureFiles</a></p>
+</li>
+<li>
+<p><a href="#CJACAEJJ">Compressed and Encrypted Dump File Sets</a></p>
+</li>
+<li>
+<p><a href="#CJAFDGGC">Transparent Data Encryption with Hardware Security Module Integration</a></p>
+</li>
+<li>
+<p><a href="#CJABIJDG">Transparent Tablespace Encryption</a></p>
+</li>
+</ul>
+<div id="DBSEG01051" class="prefsect2"><a id="CJABEBIF"></a>
+<h3 class="prefsect2">Intelligent LOB Compression, Deduplication, and Encryption with SecureFiles</h3>
+<p>Oracle Database supports a new, faster, and scalable Large Object (LOB) storage paradigm called SecureFiles. SecureFiles, in addition to performance, supports efficient compression, deduplication (that is, coalescing duplicate data), and encryption. LOB data can now be encrypted with Oracle Database, and is available for random reads and writes.</p>
+<p>For more information about SecureFiles, see <a class="olink ADLOB4444" href="../../appdev.111/b28393/adlob_smart.htm#ADLOB4444"><span class="italic">Oracle Database SecureFiles and Large Objects Developer's Guide</span></a>. See also <a class="olink SQLRF" href="../../server.111/b28286/toc.htm"><span class="italic">Oracle Database SQL Language Reference</span></a> for updates in the <code>CREATE TABLE</code> and <code>ALTER TABLE</code> statements to support this feature.</p>
+</div>
+<!-- class="prefsect2" -->
+<div id="DBSEG01052" class="prefsect2"><a id="CJACAEJJ"></a>
+<h3 class="prefsect2">Compressed and Encrypted Dump File Sets</h3>
+<p>In this release, you can use Oracle Data Pump to compress and encrypt an entire dump file set. You can optionally compress and encrypt the data, metadata, or complete dump file set during an Oracle Data Pump export.</p>
+<p>For more information, see <a class="olink SUTIL200" href="../../server.111/b28319/dp_export.htm#SUTIL200"><span class="italic">Oracle Database Utilities</span></a>.</p>
+</div>
+<!-- class="prefsect2" -->
+<div id="DBSEG01053" class="prefsect2"><a id="CJAFDGGC"></a>
+<h3 class="prefsect2">Transparent Data Encryption with Hardware Security Module Integration</h3>
+<p>Transparent data encryption (TDE) stores the master key in an encrypted software wallet and uses this key to encrypt the column keys, which in turn encrypt column data. While this approach to key management is sufficient for many applications, it may not be sufficient for environments that require stronger security. TDE has been extended to use hardware security modules (HSMs). This enhancement provides high assurance requirements of protecting the master key.</p>
+<p>This release enables you to store the TDE master encryption key within a hardware security module (HSM) at all times, leveraging its key management capabilities. Only the table keys (for TDE column encryption) and tablespace keys (for TDE tablespace encryption) are decrypted on the HSM, before they are returned to the database; the encryption and decryption of application data remains with the database. Oracle recommends that you encrypt the traffic between HSM device and databases. This new feature provides additional security for transparent data encryption, because the master encryption key cannot leave the HSM, neither in clear text nor in encrypted format. Furthermore, it enables the sharing of the same key between multiple databases and instances in an Oracle Real Applications Clusters (Oracle RAC) or Data Guard environment.</p>
+<p>To configure transparent data encryption with hardware security module integration, see <a class="olink ASOAG620" href="http://www.oracle.com/pls/topic/lookup?ctx=db111&amp;id=ASOAG620"><span class="italic">Oracle Database Advanced Security Administrator's Guide</span></a>.</p>
+</div>
+<!-- class="prefsect2" -->
+<div id="DBSEG01054" class="prefsect2"><a id="CJABIJDG"></a>
+<h3 class="prefsect2">Transparent Tablespace Encryption</h3>
+<p>Transparent tablespace encryption enables you to encrypt entire application tablespaces, encrypting all the data within these tablespaces. When a properly authorized application accesses the tablespace, Oracle Database transparently decrypts the relevant data blocks for the application.</p>
+<p>Transparent tablespace encryption provides an alternative to TDE column encryption: It eliminates the need for granular analysis of applications to determine which columns to encrypt, especially for applications with a large number of columns containing personally identifiable information (PII), such as Social Security numbers or patient health care records. If your tables have small amounts of data to encrypt, then you can continue to use the TDE column encryption solution.</p>
+<p>For an introduction to transparent encryption, see <a class="olink TDPSG40043" href="../../server.111/b28337/tdpsg_securing_data.htm#TDPSG40043"><span class="italic">Oracle Database 2 Day + Security Guide</span></a>. For detailed information about transparent tablespace encryption, see <a class="olink ASOAG620" href="http://www.oracle.com/pls/topic/lookup?ctx=db111&amp;id=ASOAG620"><span class="italic">Oracle Database Advanced Security Administrator's Guide</span></a>.</p>
+</div>
+<!-- class="prefsect2" --></div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00106" class="prefsect1"><a id="CJAICBFD"></a>
+<h2 class="prefsect1">Fine-Grained Access Control on Network Services on the Database</h2>
+<p>Oracle Database provides a set of PL/SQL utility packages, such as <code>UTL_TCP</code>, <code>UTL_SMTP</code>, <code>UTL_MAIL</code>, <code>UTL_HTTP</code>, and <code>UTL_INADDR</code>, that are designed to enable database users to access network services on the database. <a class="olink ARPLS" href="../../appdev.111/b28419/toc.htm"><span class="italic">Oracle Database PL/SQL Packages and Types Reference</span></a> describes the PL/SQL utility packages in detail.</p>
+<p>In a default database installation, these packages are created with the <code>EXECUTE</code> privilege granted to the <code>PUBLIC</code> role. This release enhances the security of these packages by providing database administrators the ability to control access to applications in the database that use these packages.</p>
+<p>See <a href="authorization.htm#CIHDAJDJ">"Managing Fine-Grained Access to External Network Services"</a> for more information.</p>
+</div>
+<!-- class="prefsect1" -->
+<div id="DBSEG97864" class="prefsect1"><a id="CJABBIGH"></a>
+<h2 class="prefsect1">Change to AUDIT BY SESSION</h2>
+<p>The <code>BY SESSION</code> clause of the <code>AUDIT</code> statement now writes one audit record for every audited event. In previous releases, <code>BY SESSION</code> wrote one audit record for all SQL statements or operations of the same type that were executed on the same schema objects in the same user session. Now, both <code>BY SESSION</code> and <code>BY ACCESS</code> write one audit record for each audit operation. In addition, there are separate audit records for <code>LOGON</code> and <code>LOGOFF</code> events. If you omit the <code>BY ACCESS</code> clause, then <code>BY SESSION</code> is used as the default.</p>
+<p>Be aware that this change applies only to statement options and system privileges that audit SQL statements other than data definition language (DDL) statements. The database has always audited using the <code>BY ACCESS</code> clause on all SQL statements and system privileges that audit a DDL statement.</p>
+<p>See <a href="auditing.htm#CEGFCCHE">"Auditing the Number of Statement Executions"</a> for more information.</p>
+</div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00107" class="prefsect1"><a id="CJADAEHA"></a>
+<h2 class="prefsect1">Oracle XML DB Security Enhancements</h2>
+<p>This section contains:</p>
+<ul>
+<li>
+<p><a href="#CJAHGBGH">XML Translation Support for Oracle Database XML</a></p>
+</li>
+<li>
+<p><a href="#CJAJGCJD">Support for Web Services</a></p>
+</li>
+</ul>
+<div id="DBSEG01072" class="prefsect2"><a id="CJAHGBGH"></a>
+<h3 class="prefsect2">XML Translation Support for Oracle Database XML</h3>
+<p>Security objects are now stored in the Oracle XML DB repository as XMLType objects. These security objects can contain strings that need to be translated to different languages so that they can be searched or displayed in those languages. Developers can store translated strings with the XMLType and retrieve and operate on these strings depending on the language settings of the user. The advantage of this feature is that it reduces the costs associated with developing applications that are independent of the target preferred language of the user.</p>
+<p>To configure security for XMLType objects, see <a class="olink ADXDB0650" href="../../appdev.111/b28369/xdb05sto.htm#ADXDB0650"><span class="italic">Oracle XML DB Developer's Guide</span></a>.</p>
+</div>
+<!-- class="prefsect2" -->
+<div id="DBSEG01073" class="prefsect2"><a id="CJAJGCJD"></a>
+<h3 class="prefsect2">Support for Web Services</h3>
+<p>You can now <a id="sthref9"></a><a id="sthref10"></a>use the Oracle XML DB HTTP server for service-oriented architecture (SOA) operations. This allows the database to be treated as simply another service provider in an SOA environment. Security administrators can control user access to Oracle Database Web services and their associated database objects by using the <code>XDB_WEBSERVICES</code>, <code>XDB_WEBSERVICES_OVER_HTTP</code>, and <code>XDB_WEBSERVICES_WITH_PUBLIC</code> predefined roles.</p>
+<p>To configure Oracle Database Web services, see <a class="olink ADXDB3900" href="../../appdev.111/b28369/xdb_web_services.htm#ADXDB3900"><span class="italic">Oracle XML DB Developer's Guide</span></a>.For information on this feature's predefined roles, see <a href="authorization.htm#g2199949">Table 4-3, "Oracle Database Predefined Roles"</a>.</p>
+</div>
+<!-- class="prefsect2" --></div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00108" class="prefsect1"><a id="CJAFGEAB"></a>
+<h2 class="prefsect1">Directory Security Enhancements</h2>
+<p>In this release, administrators can now disallow anonymous access to database service information in a directory and require clients to authenticate when performing LDAP directory-based name look-ups. If you are using Microsoft Active Directory-based name lookups, then Oracle Database uses the native operating system-based authentication. If you are using Oracle Internet Directory (OID)-based name lookups, then Oracle Database performs authentication by using wallets.</p>
+<p>To configure directory security, see <a class="olink NETRF" href="../b28317/toc.htm"><span class="italic">Oracle Database Net Services Reference</span></a>.</p>
+</div>
+<!-- class="prefsect1" -->
+<div id="DBSEG00109" class="prefsect1"><a id="CJAICDHJ"></a>
+<h2 class="prefsect1">Oracle Call Interface Security Enhancements</h2>
+<p>The following security enhancements are available for Oracle Call Interface (OCI):</p>
+<ul>
+<li>
+<p>Reporting bad packets that may come from malicious users or intruders</p>
+</li>
+<li>
+<p>Terminating or resuming the client or server process on receiving a bad packet</p>
+</li>
+<li>
+<p>Configuring the maximum number of authentication attempts</p>
+</li>
+<li>
+<p>Controlling the display of the Oracle database version banner, to prevent intruders from finding information about the security vulnerabilities present in the database software based on the version</p>
+</li>
+<li>
+<p>Adding banner information, such as "Unauthorized Access" and "User Actions Audited," to server connections so that clients can display this information</p>
+</li>
+</ul>
+<p>Database administrators can manage these security enhancements for Oracle Call Interface developers by configuring a set of new initialization parameters. See <a href="app_devs.htm#CJAHDAEI">"Parameters for Enhanced Security of Database Communication"</a> for more information. See also <a class="olink LNOCI" href="../../appdev.111/b28395/toc.htm"><span class="italic">Oracle Call Interface Programmer's Guide</span></a> for detailed information on Oracle Call Interface.</p>
+</div>
+<!-- class="prefsect1" --></div>
+<!-- class="preface" --></div>
+<!-- class="ind" -->
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment1569">
+<tr>
+<td class="cellalignment1578">
+<table class="cellalignment1574">
+<tr>
+<td class="cellalignment1573"><a href="preface.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment1573"><a href="intro.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2006, 2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment1581">
+<table class="cellalignment1572">
+<tr>
+<td class="cellalignment1573"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment1573"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td class="cellalignment1573"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment1573"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td class="cellalignment1573"><a href="../../nav/mindx.htm"><img width="24" height="24" src="../../dcommon/gifs/masterix.gif" alt="Go to Master Index" /><br />
+<span class="icon">Master Index</span></a></td>
+<td class="cellalignment1573"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

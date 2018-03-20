@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/sort7.1.html -->
+
+<HEAD>
+<TITLE>Examples of changing the sort order</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of changing the sort order</H1>
+
+<P>To sort a file in dictionary order:</P>
+
+<PRE WIDTH=80>   <STRONG>sort -d +1 -2names &gt; orders</STRONG>
+</PRE>
+
+<P>Lines in the file <SAMP>names</SAMP> are sorted on field 2 into
+dictionary order and the result placed in the file 
+<SAMP>orders</SAMP>.</P>
+
+<HR>
+
+<P>To sort a file in month order:</P>
+
+<PRE WIDTH=80>   <STRONG>sort -M +2 -3 -o breakdown orders</STRONG>
+</PRE>
+
+<P>Lines in the file <SAMP>orders</SAMP> are sorted on field 3 into month
+order and the result placed in the file <SAMP>breakdown</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

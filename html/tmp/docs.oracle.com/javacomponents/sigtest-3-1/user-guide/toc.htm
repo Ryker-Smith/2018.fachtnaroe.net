@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>SigTest User's Guide - Contents</title>
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Merged Version 1028" />
+<meta name="description" content="This guide describes how to install and run the SigTest collection of tools. This collection includes the Signature Test tool and the API Coverage tool. Signature Test tool includes utilities used to develop signature test components that can be used to compare API test signatures. API Coverage tool is used to estimate the test coverage a test suite provides for an implementation of a specified API." />
+<meta name="dcterms.created" content="2014-10-27T11:46:10Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="SigTest User's Guide" />
+<meta name="dcterms.identifier" content="E19036-03" />
+<meta name="dcterms.isVersionOf" content="SIGTS" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"   src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"   src="../../nav/js/doccd.js"></script>
+<link rel="Next" href="loe.htm" title="Next" type="text/html" />
+<link rel="alternate" href="SIGTS.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="SIGTS.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="SIGTS.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript"  src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript"  src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript"  src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript"  src="../../dcommon/js/foundation.min.js"></script>
+<script type="application/javascript"  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript"  src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript"  src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="application/javascript"  src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="application/javascript"  src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="application/javascript"  src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="application/javascript"  src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<span id="PAGE" style="display:none;">1/25</span> <!-- End Header -->
+<h1 class="toc">Contents</h1>
+<h2 class="tocheader"><a href="loe.htm">List of Examples</a></h2>
+<h2 class="tocheader"><a href="lof.htm">List of Figures</a></h2>
+<h2 class="tocheader"><a href="lot.htm">List of Tables</a></h2>
+<h2 class="tocheader"><a href="title.htm">Title and Copyright Information</a></h2>
+<h2 class="tocheader"><a href="preface.htm#Z4000c4213093">Preface</a></h2>
+<ul style="list-style-type:none">
+<li><a href="preface.htm#sthref2">Documentation Accessibility</a></li>
+<li><a href="preface.htm#Z4000c4213032">Who Should Use This Guide</a></li>
+<li><a href="preface.htm#Z4000c4213040">Before You Read This Guide</a></li>
+<li><a href="preface.htm#Z4000c4213046">How This Guide Is Organized</a></li>
+<li><a href="preface.htm#Z4000c4213056">Related Documentation</a></li>
+<li><a href="preface.htm#Z4000c4213062">Typographic Conventions</a></li>
+</ul>
+<h2 class="tocheader"><a href="security.htm#sthref4"><span class="secnum">1</span> Important Security Information</a></h2>
+<ul style="list-style-type:none">
+<li><a href="security.htm#A1148812"><span class="secnum">1.1</span> Introduction</a></li>
+<li><a href="security.htm#A1148789"><span class="secnum">1.2</span> File Access Risks</a>
+<ul style="list-style-type:none">
+<li><a href="security.htm#sthref5"><span class="secnum">1.2.1</span> Path Vulnerabilites</a></li>
+<li><a href="security.htm#sthref6"><span class="secnum">1.2.2</span> File Creation Permissions</a></li>
+</ul>
+</li>
+<li><a href="security.htm#A1148972"><span class="secnum">1.3</span> Network Access Risks</a></li>
+<li><a href="security.htm#A1149742"><span class="secnum">1.4</span> Remote Agent Risks</a></li>
+</ul>
+<h2 class="tocheader"><a href="intro.htm#Z4000c4324081"><span class="secnum">2</span> Introduction</a></h2>
+<ul style="list-style-type:none">
+<li><a href="intro.htm#Z4000c4324066"><span class="secnum">2.1</span> Global Functionality</a>
+<ul style="list-style-type:none">
+<li><a href="intro.htm#Z4000c4324047"><span class="secnum">2.1.1</span> Option File</a>
+<ul style="list-style-type:none">
+<li><a href="intro.htm#Z4000c4324041"><span class="secnum">2.1.1.1</span> Option File Format</a></li>
+</ul>
+</li>
+<li><a href="intro.htm#Z4000c4324059"><span class="secnum">2.1.2</span> The -version Option</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="part1.htm#sthref7">Part I Signature Test Tool</a></h2>
+<h2 class="tocheader"><a href="sig_intro.htm#Z4000c4424697"><span class="secnum">3</span> Introduction to Signature Test Tool</a></h2>
+<ul style="list-style-type:none">
+<li><a href="sig_intro.htm#Z4000c4424616"><span class="secnum">3.1</span> Signature Test Basics</a></li>
+<li><a href="sig_intro.htm#Z4000c4424627"><span class="secnum">3.2</span> What is Tested</a>
+<ul style="list-style-type:none">
+<li><a href="sig_intro.htm#Z4000c4424582"><span class="secnum">3.2.1</span> Mutual Binary Compatibility Check</a></li>
+<li><a href="sig_intro.htm#Z4000c4424588"><span class="secnum">3.2.2</span> Mutual Source Compatibility Check</a>
+<ul style="list-style-type:none">
+<li><a href="sig_intro.htm#sthref8"><span class="secnum">3.2.2.1</span> Extended Source Compatibility</a></li>
+</ul>
+</li>
+<li><a href="sig_intro.htm#Z4000c4424594"><span class="secnum">3.2.3</span> Migration Binary and Source Code Check</a></li>
+<li><a href="sig_intro.htm#Z4000c4424598"><span class="secnum">3.2.4</span> Class and Class Member Attributes Checked</a></li>
+</ul>
+</li>
+<li><a href="sig_intro.htm#Z4000c4424658"><span class="secnum">3.3</span> Source and Binary Compatibility Modes</a></li>
+<li><a href="sig_intro.htm#Z4000c4424681"><span class="secnum">3.4</span> Using Custom Signature Loaders</a></li>
+</ul>
+<h2 class="tocheader"><a href="sig_using.htm#Z4000c461059399"><span class="secnum">4</span> Using the Signature Test Tool</a></h2>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058975"><span class="secnum">4.1</span> Signature Test Tool Basics</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058585"><span class="secnum">4.1.1</span> Reflection and Static Run Modes</a></li>
+<li><a href="sig_using.htm#Z4000c461058595"><span class="secnum">4.1.2</span> Constant Checking in Differing Run Modes</a></li>
+<li><a href="sig_using.htm#Z4000c461058601"><span class="secnum">4.1.3</span> Generics Checking in Binary Mode</a></li>
+<li><a href="sig_using.htm#Z4000c461058612"><span class="secnum">4.1.4</span> <code dir="ltr">CLASSPATH</code> and <code dir="ltr">-classpath</code> Settings</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058460"><span class="secnum">4.1.4.1</span> Bootstrap and Extension Classes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="sig_using.htm#Z4000c461059042"><span class="secnum">4.2</span> Signature File <code dir="ltr">Merge</code> Rules</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058645"><span class="secnum">4.2.1</span> Java ME Platform-based Merge</a></li>
+</ul>
+</li>
+<li><a href="sig_using.htm#Z4000c461059107"><span class="secnum">4.3</span> <code dir="ltr">Setup</code> Command</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058703"><span class="secnum">4.3.1</span> Command Description</a></li>
+<li><a href="sig_using.htm#Z4000c461058755"><span class="secnum">4.3.2</span> Case Sensitivity of Option Arguments</a></li>
+<li><a href="sig_using.htm#Z4000c461058761"><span class="secnum">4.3.3</span> Signature File Formats</a></li>
+<li><a href="sig_using.htm#Z4000c461058786"><span class="secnum">4.3.4</span> Signature File Contents</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058511"><span class="secnum">4.3.4.1</span> Signature File Header</a></li>
+<li><a href="sig_using.htm#Z4000c461058523"><span class="secnum">4.3.4.2</span> Signature File Body</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="sig_using.htm#Z4000c461059240"><span class="secnum">4.4</span> <code dir="ltr">SignatureTest</code> Command</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058838"><span class="secnum">4.4.1</span> Command Description</a></li>
+<li><a href="sig_using.htm#Z4000c461058901"><span class="secnum">4.4.2</span> Using Update Files</a></li>
+<li><a href="sig_using.htm#Z4000c461058912"><span class="secnum">4.4.3</span> Report Formats</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058565"><span class="secnum">4.4.3.1</span> Sorted Report</a></li>
+<li><a href="sig_using.htm#Z4000c461058572"><span class="secnum">4.4.3.2</span> Unsorted Report</a></li>
+<li><a href="sig_using.htm#Z4000c461058581"><span class="secnum">4.4.3.3</span> Human-Readable Report</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="sig_using.htm#Z4000c461059340"><span class="secnum">4.5</span> <code dir="ltr">SetupAndTest</code> Command</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058931"><span class="secnum">4.5.1</span> Command Description</a></li>
+</ul>
+</li>
+<li><a href="sig_using.htm#Z4000c461059373"><span class="secnum">4.6</span> <code dir="ltr">Merge</code> Command</a>
+<ul style="list-style-type:none">
+<li><a href="sig_using.htm#Z4000c461058957"><span class="secnum">4.6.1</span> Command Description</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="part2.htm#sthref17">Part II API Coverage Tool</a></h2>
+<h2 class="tocheader"><a href="cover_intro.htm#Z400001024000"><span class="secnum">5</span> Introduction to API Coverage Tool</a></h2>
+<ul style="list-style-type:none">
+<li><a href="cover_intro.htm#Z4000c4925054"><span class="secnum">5.1</span> Static API Coverage Analysis</a>
+<ul style="list-style-type:none">
+<li><a href="cover_intro.htm#Z4000c4924981"><span class="secnum">5.1.1</span> Major Source of Error</a></li>
+<li><a href="cover_intro.htm#Z4000c4924985"><span class="secnum">5.1.2</span> Advantages of Static Coverage Analysis</a></li>
+</ul>
+</li>
+<li><a href="cover_intro.htm#Z4000c4925062"><span class="secnum">5.2</span> How It Works</a>
+<ul style="list-style-type:none">
+<li><a href="cover_intro.htm#Z4000c4924991"><span class="secnum">5.2.1</span> Level of Accuracy During Analysis</a></li>
+<li><a href="cover_intro.htm#Z4000c4925041"><span class="secnum">5.2.2</span> Coverage Analysis Modes</a></li>
+<li><a href="cover_intro.htm#Z4000c4925048"><span class="secnum">5.2.3</span> Filtering Coverage By Marking Up Signature Files</a>
+<ul style="list-style-type:none">
+<li><a href="cover_intro.htm#Z4000c4924960"><span class="secnum">5.2.3.1</span> Filtering Markup Format</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="cover_using.htm#Z4000c4b1051662"><span class="secnum">6</span> Using the API Coverage Tool</a></h2>
+<ul style="list-style-type:none">
+<li><a href="cover_using.htm#Z4000c4b1051587"><span class="secnum">6.1</span> Running API Coverage Tool</a>
+<ul style="list-style-type:none">
+<li><a href="cover_using.htm#Z4000c4b1051560"><span class="secnum">6.1.1</span> Special Report File</a></li>
+<li><a href="cover_using.htm#Z4000c4b1051569"><span class="secnum">6.1.2</span> Exclude List</a></li>
+</ul>
+</li>
+<li><a href="cover_using.htm#sthref21"><span class="secnum">6.2</span> Merging API Coverage XML Reports</a></li>
+</ul>
+<h2 class="tocheader"><a href="part3.htm#sthref23">Part III API Check Tool</a></h2>
+<h2 class="tocheader"><a href="check_intro.htm#Z4000c4d23988"><span class="secnum">7</span> Introduction API Check Tool</a></h2>
+<ul style="list-style-type:none">
+<li><a href="check_intro.htm#Z400002b24284"><span class="secnum">7.1</span> The API Check Tool</a></li>
+</ul>
+<h2 class="tocheader"><a href="check_using.htm#Z4000c4e1051143"><span class="secnum">8</span> Using the API Check Tool</a></h2>
+<ul style="list-style-type:none">
+<li><a href="check_using.htm#Z4000c4e1051091"><span class="secnum">8.1</span> API Check Tool Verification Scope</a></li>
+<li><a href="check_using.htm#Z4000c4e1051128"><span class="secnum">8.2</span> Running API Check Tool</a></li>
+</ul>
+<h2 class="tocheader"><a href="part4.htm#sthref25">Part IV Appendix</a></h2>
+<h2 class="tocheader"><a href="a_sig_examples.htm#Z40001031034631"><span class="secnum">A</span> Signature Test Tool Quick Start Examples</a></h2>
+<ul style="list-style-type:none">
+<li><a href="a_sig_examples.htm#Z40001031037531"><span class="secnum">A.1</span> Example Programs</a></li>
+<li><a href="a_sig_examples.htm#Z4000c501037466"><span class="secnum">A.2</span> Example 1: Compare Two Different Implementations of the Same API</a>
+<ul style="list-style-type:none">
+<li><a href="a_sig_examples.htm#Z4000c501037367"><span class="secnum">A.2.1</span> Using the <code dir="ltr">Setup</code> and <code dir="ltr">SignatureTest</code> Commands</a></li>
+<li><a href="a_sig_examples.htm#Z4000c501037398"><span class="secnum">A.2.2</span> Using the <code dir="ltr">SetupAndTest</code> Command</a></li>
+</ul>
+</li>
+<li><a href="a_sig_examples.htm#Z4000c501037517"><span class="secnum">A.3</span> Example 2: Merge Two Signature Files</a>
+<ul style="list-style-type:none">
+<li><a href="a_sig_examples.htm#Z4000c501037413"><span class="secnum">A.3.1</span> Running Merge Example</a></li>
+<li><a href="a_sig_examples.htm#Z4000c501037460"><span class="secnum">A.3.2</span> Example Result Files</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="a_api_examples.htm#Z40000981034657"><span class="secnum">B</span> API Coverage Tool Quick Start Examples</a></h2>
+<ul style="list-style-type:none">
+<li><a href="a_api_examples.htm#Z40001ef1036699"><span class="secnum">B.1</span> Example Procedures</a>
+<ul style="list-style-type:none">
+<li><a href="a_api_examples.htm#Z40001ef1036708"><span class="secnum">B.1.1</span> Set Up the API Coverage Tool Ant Build Script</a></li>
+<li><a href="a_api_examples.htm#Z40001ef1037023"><span class="secnum">B.1.2</span> Build API Coverage Tool Examples</a></li>
+<li><a href="a_api_examples.htm#Z40001ef1037276"><span class="secnum">B.1.3</span> Run the Example Test Suite</a></li>
+<li><a href="a_api_examples.htm#Z40001ef1037299"><span class="secnum">B.1.4</span> Generate a Signature File for the Tested API</a></li>
+<li><a href="a_api_examples.htm#Z40001ef1037322"><span class="secnum">B.1.5</span> Use the API Coverage Tool to Calculate Test Coverage</a></li>
+<li><a href="a_api_examples.htm#Z40001ef1037347"><span class="secnum">B.1.6</span> Worst Case Mode</a></li>
+<li><a href="a_api_examples.htm#Z4000c511036266"><span class="secnum">B.1.7</span> Real World Mode</a></li>
+<li><a href="a_api_examples.htm#Z4000c511036272"><span class="secnum">B.1.8</span> Real World Mode Without Fields and Enum Constants, detail Level 5</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="a_compat.htm#Z4000c521043455"><span class="secnum">C</span> API Migration Compatibility Rules (Signature Test)</a></h2>
+<ul style="list-style-type:none">
+<li><a href="a_compat.htm#Z40000ca1045175"><span class="secnum">C.1</span> The Compatibility Rules</a>
+<ul style="list-style-type:none">
+<li><a href="a_compat.htm#sthref26"><span class="secnum">C.1.1</span> General Rules</a></li>
+<li><a href="a_compat.htm#sthref28"><span class="secnum">C.1.2</span> Interfaces and Annotation Types</a></li>
+<li><a href="a_compat.htm#sthref31"><span class="secnum">C.1.3</span> Interfaces and Class Methods</a></li>
+<li><a href="a_compat.htm#sthref34"><span class="secnum">C.1.4</span> Interfaces and Class Fields</a></li>
+<li><a href="a_compat.htm#sthref37"><span class="secnum">C.1.5</span> Classes</a></li>
+</ul>
+</li>
+<li><a href="a_compat.htm#Z4000c521043429"><span class="secnum">C.2</span> Comments and Clarifications</a>
+<ul style="list-style-type:none">
+<li><a href="a_compat.htm#Z4000c521043371"><span class="secnum">C.2.1</span> Rule 1.1</a></li>
+<li><a href="a_compat.htm#Z4000c521043377"><span class="secnum">C.2.2</span> Rule 1.4</a></li>
+<li><a href="a_compat.htm#Z4000c521043389"><span class="secnum">C.2.3</span> Rule 2.3</a></li>
+<li><a href="a_compat.htm#Z4000c521043395"><span class="secnum">C.2.4</span> Rules 2.5, 2.6</a></li>
+<li><a href="a_compat.htm#Z4000c521043399"><span class="secnum">C.2.5</span> Rule 3.6</a></li>
+<li><a href="a_compat.htm#Z4000c521043403"><span class="secnum">C.2.6</span> Rule 4.2</a></li>
+<li><a href="a_compat.htm#Z4000c521043411"><span class="secnum">C.2.7</span> Rule 5.1</a></li>
+<li><a href="a_compat.htm#Z4000c521043419"><span class="secnum">C.2.8</span> Rule 5.3</a></li>
+<li><a href="a_compat.htm#Z4000c521043425"><span class="secnum">C.2.9</span> Rule 5.7.2</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="a_merge.htm#CGFIJBBF"><span class="secnum">D</span> Merge Command Operative Principles</a></h2>
+<ul style="list-style-type:none">
+<li><a href="a_merge.htm#Z40000851295828"><span class="secnum">D.1</span> <code dir="ltr">Merge</code> Command Operative Principles</a>
+<ul style="list-style-type:none">
+<li><a href="a_merge.htm#Z40000851058472"><span class="secnum">D.1.1</span> Element Handling by <code dir="ltr">Merge</code></a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="a_ant.htm#Z4000c531036240"><span class="secnum">E</span> Using the SigTest Tools With Ant</a></h2>
+<ul style="list-style-type:none">
+<li><a href="a_ant.htm#Z4000c531036163"><span class="secnum">E.1</span> Using the Setup Command From an Ant Script</a></li>
+<li><a href="a_ant.htm#Z4000c531036180"><span class="secnum">E.2</span> Using the SignatureTest Command From an Ant Script</a></li>
+<li><a href="a_ant.htm#Z4000c531036213"><span class="secnum">E.3</span> Using the Merge Command From an Ant Script</a></li>
+<li><a href="a_ant.htm#Z4000c531036230"><span class="secnum">E.4</span> Using APICheck From an Ant Script</a></li>
+</ul>
+<h2 class="tocheader"><a href="a_maven.htm#Z4000c551039922"><span class="secnum">F</span> Using the SigTest Tools With Apache Maven</a></h2>
+<ul style="list-style-type:none">
+<li><a href="a_maven.htm#Z4000c551039867"><span class="secnum">F.1</span> Goal Overview</a></li>
+<li><a href="a_maven.htm#Z4000c551039878"><span class="secnum">F.2</span> Goal Descriptions</a>
+<ul style="list-style-type:none">
+<li><a href="a_maven.htm#Z4000c551039813"><span class="secnum">F.2.1</span> sigtest-plugin:setup</a></li>
+<li><a href="a_maven.htm#Z4000c551039828"><span class="secnum">F.2.2</span> sigtest-plugin:test</a></li>
+<li><a href="a_maven.htm#Z4000c551039841"><span class="secnum">F.2.3</span> sigtest-plugin:merge</a></li>
+<li><a href="a_maven.htm#Z4000c551039854"><span class="secnum">F.2.4</span> apicover-plugin:apicover</a></li>
+</ul>
+</li>
+</ul>
+<h2 class="tocheader"><a href="a_serialization_example.htm#CIABEGJC"><span class="secnum">G</span> Custom SigTest Tool Example</a></h2>
+<ul style="list-style-type:none">
+<li><a href="a_serialization_example.htm#A1012444"><span class="secnum">G.1</span> Overview</a></li>
+<li><a href="a_serialization_example.htm#A1083791"><span class="secnum">G.2</span> Usage</a></li>
+<li><a href="a_serialization_example.htm#A1096012"><span class="secnum">G.3</span> Implementation</a></li>
+</ul>
+</div>
+<!-- class="ind" -->
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment24">
+<tr>
+<td class="cellalignment31">
+<table class="cellalignment35">
+<tr>
+<td class="cellalignment28"><a href="loe.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2006, 2014,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment33">
+<table class="cellalignment34">
+<tr>
+<td class="cellalignment28"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment28"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

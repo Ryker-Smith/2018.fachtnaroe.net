@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Developer Migration Guide</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="Learn the changes between version 3.4 of the Oracle Java ME Embedded and the current instance, version 8.3 , if you need to port earlier applications to the latest version of the Oracle Java ME Embedded runtime. You can safely skip this chapter, if you have not developed IMlets using version 3.4 or earlier of the Oracle Java ME Embedded platform." />
+<meta name="dcterms.created" content="2016-07-12T02:30:24Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java ME Embedded Developer&rsquo;s Guide" />
+<meta name="dcterms.identifier" content="E73093-02" />
+<meta name="dcterms.isVersionOf" content="MEEDG" />
+<link rel="Start" href="../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Glossary" href="glossary.htm" title="Glossary" type="text/html" />
+<link rel="Prev" href="preface.htm" title="Previous" type="text/html" />
+<link rel="Next" href="java-embedded-vm-proxy-and-console.htm" title="Next" type="text/html" />
+<link rel="alternate" href="MEEDG.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="MEEDG.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="MEEDG.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../nav/css/html5.css">
+<link rel="stylesheet" href="../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-221E0417-C278-428A-AF2D-0B0170A67DA5"></a> <span id="PAGE" style="display:none;">4/18</span> <!-- End Header --><a id="MEEDG109"></a>
+<h1 id="MEEDG-GUID-221E0417-C278-428A-AF2D-0B0170A67DA5" class="sect1"><span class="enumeration_chapter">1</span> Developer Migration Guide</h1>
+<div>
+<p>Learn the changes between version 3.4 of the Oracle Java ME Embedded and the current instance, version <span>8.3</span> , if you need to port earlier applications to the latest version of the Oracle Java ME Embedded runtime. You can safely skip this chapter, if you have not developed IMlets using version 3.4 or earlier of the Oracle Java ME Embedded platform.</p>
+<p>Topics:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="developer-migration-guide.htm#GUID-42CCE95C-388C-4B53-850F-1B2DFE614C44">Overview</a></p>
+</li>
+<li>
+<p><a href="developer-migration-guide.htm#GUID-D39410A9-FDFA-45E5-AF08-DFC5A058960C">Modified Permission Model</a></p>
+</li>
+<li>
+<p><a href="developer-migration-guide.htm#GUID-A5A153D0-BB6C-43CA-9550-13CDA63B4B01">Device I/O Namespace</a></p>
+</li>
+<li>
+<p><a href="developer-migration-guide.htm#GUID-56C7E336-DE51-43C9-AC08-50DC17D1769D">Generic Connection Framework Changes</a></p>
+</li>
+</ul>
+</div>
+<a id="MEEDG110"></a>
+<div class="props_rev_3"><a id="GUID-42CCE95C-388C-4B53-850F-1B2DFE614C44"></a>
+<h2 id="MEEDG-GUID-42CCE95C-388C-4B53-850F-1B2DFE614C44" class="sect2">Overview</h2>
+<div>
+<p>Java ME 8 is an umbrella terms for two new JSRs: CLDC 8 and MEEP 8. CLDC 8 is a major evolution of CLDC 1.1, while MEEP 8 is a major evolution of IMP-NG. Java ME 8 also includes support for the new Device I/O API.</p>
+<p>CLDC 8 is backwards compatible with CLDC 1.1, but includes alignment with the Java SE 7 and 8 language, core APIs, and VM functionality, Java SE-style class-based fine-grain permissions, as well as a significantly enhanced Generic Connection Framework (GCF).</p>
+<p>MEEP 8 allows execution of most IMP-NG applications, and includes significant enhancements by leveraging the CLDC 8 features, improvements in the application platform, improved software provisioning and management, footprint scalability through optional APIs, improved connectivity options, and more flexible authentication and authorization mechanisms.</p>
+<p>The Device I/O API defines an API that allows Java applications running on small embedded devices to access peripheral devices, from a peripheral device external to the host device to a peripheral chip embedded in the host device.</p>
+<p>It is strongly recommended that developers familiarize themselves with the CLDC 8 specification and API, the MEEP 8 specification and API, and the Device I/O API.</p>
+</div>
+</div>
+<a id="MEEDG111"></a>
+<div class="props_rev_3"><a id="GUID-D39410A9-FDFA-45E5-AF08-DFC5A058960C"></a>
+<h2 id="MEEDG-GUID-D39410A9-FDFA-45E5-AF08-DFC5A058960C" class="sect2">Modified Permission Model</h2>
+<div>
+<p>There are a number of new permissions that object methods must obtain before they can successfully access peripherals. These permissions are covered in more detail in Chapter 2. However, developers should be aware of the following:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Java ME 8 now uses Java SE-style class-based fine-grain permissions.</p>
+</li>
+<li>
+<p>Applications should request the <code>jdk.dio.DeviceMgmtPermission</code> permission when accessing any devices connected to the board through protocols such as GPIO, I2C, SPI, or MMIO, in addition to the permissions required by the communication bus they are using.</p>
+</li>
+<li>
+<p>The syntax for the permissions request has changed. The request now includes the device identifier and any specific actions that are requested, if applicable. Device identifiers (e.g., GPIO7, SPI) are listed in the appropriate appendix of the Getting Started Guide for that development board.</p>
+</li>
+<li>
+<p>A single request cannot be used for multiple devices; each permissions must be listed separately. For example, you cannot do the following:</p>
+<pre dir="ltr">
+MIDlet-Permission-1: jdk.dio.GPIOPinPermission "GPIO7,GPIO8" "open"
+</pre>
+<p>Instead, you must do this:</p>
+<pre dir="ltr">
+MIDlet-Permission-1: jdk.dio.GPIOPinPermission "GPIO7" "open"
+MIDlet-Permission-2: jdk.dio.GPIOPinPermission "GPIO8" "open"
+</pre>
+<p>In some cases, you can use an asterisk as a wildcard.</p>
+</li>
+</ul>
+</div>
+</div>
+<a id="MEEDG112"></a>
+<div class="props_rev_3"><a id="GUID-A5A153D0-BB6C-43CA-9550-13CDA63B4B01"></a>
+<h2 id="MEEDG-GUID-A5A153D0-BB6C-43CA-9550-13CDA63B4B01" class="sect2">Device I/O Namespace</h2>
+<div>
+<p>The Device Access API of the Oracle Java ME Embedded platform is now referred to as the Device I/O API, and is no longer part of the <code>com.oracle.deviceaccess</code> package. Instead, all classes now use the <code>jdk.dio</code> namespace. In addition:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Classes that contain "Peripheral" have been changed to "Device." So, for example, <code>PeripheralManager</code> has been replaced by <code>DeviceManager</code>, and <code>PeripheralPermission</code> has been replaced by <code>DevicePermission</code>.</p>
+</li>
+<li>
+<p>Support now exists for pulse width modulation (PWM) on all platforms.</p>
+</li>
+<li>
+<p>Almost all of the individual class methods are unchanged.</p>
+</li>
+</ul>
+</div>
+</div>
+<a id="MEEDG113"></a>
+<div class="props_rev_3"><a id="GUID-56C7E336-DE51-43C9-AC08-50DC17D1769D"></a>
+<h2 id="MEEDG-GUID-56C7E336-DE51-43C9-AC08-50DC17D1769D" class="sect2">Generic Connection Framework Changes</h2>
+<div>
+<p>The IMP-NG <code>javax.microedition</code> classes are now replaced by the Generic Connection Framework (GCF) with JSR-360 and Java ME Embedded Profile classes (MEEP) with JSR-361. There are a large number of changes that are included in these new profiles. See the specification pages online for more information on each of these classes.</p>
+</div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment1">
+<tr>
+<td class="cellalignment16">
+<table class="cellalignment6">
+<tr>
+<td class="cellalignment5"><a href="preface.htm"><img width="24" height="24" src="../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment5"><a href="java-embedded-vm-proxy-and-console.htm"><img width="24" height="24" src="../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2012, 2016, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment18">
+<table class="cellalignment4">
+<tr>
+<td class="cellalignment5"><a href="../index.html"><img width="24" height="24" src="../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment5"><a href="toc.htm"><img width="24" height="24" src="../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment5"><a href="../dcommon/html/feedback.htm"><img width="24" height="24" src="../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*
+ * Copyright 2011 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+This is a repository of publically released pieces of the App Inventor
+for Android project.  
+
+Contents:
+
++ jars/libSimpleAndroidRuntime.jar
+    A Jar containing a version of App Inventor's Android runtime
+    library.  This library jar file can be used to build Android apps
+    in Java that make use of the App Inventor components.
+
++ samples/HelloHappyFace/
+    A sample Android source tree for a simple Android app that uses
+    App Inventor components.  Note that unlike the BridgeToJava sample
+    it does yet contain all the pieces to build right out of the box -
+    it is just illustrative.
+
++ samples/BridgeToJava/
+    A more extensive and annotated sample of using App Inventor
+    components in a standard Android Java program.  It can be
+    relatively easily built out of the box via ant or imported into
+    Eclipse (assuming it contains the Android ADT plugin).  See the
+    README file in that directory for more info.
+
++ samples/AppInventorInJavaSample/
+    Another example of using App Inventor components in a standard
+    Android Java program.  This one also includes a simple new
+    component definition.  Note that unlike the BridgeToJava sample
+    it does yet contain all the pieces to build right out of the box -
+    it is just illustrative.
+
++ src/components
+    The source code to the App Inventor components.  This is the
+    component code that is compiled into the
+    jars/libSimpleAndroidRuntime.jar mentioned above.  This code is
+    provided mostly for use in understanding the App Inventor
+    component architecture and is intended be useful for folks wanting
+    to write their own components.

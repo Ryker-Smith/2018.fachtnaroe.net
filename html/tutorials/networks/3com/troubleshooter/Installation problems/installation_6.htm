@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Troubleshooter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(26);
+parent.creator.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(25);
+parent.creator.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(20);
+parent.creator.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(24);
+parent.creator.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(23);
+parent.creator.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(27);
+parent.creator.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="560" border="0">
+  <tr> 
+    <td> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b><a name="installation6"></a>The 
+        Add New Hardware Wizard did Not Detect the NIC:</b></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The NIC is probably 
+        incorrectly seated in the slot or may be faulty. <br>
+        To get Add New Hardware wizard to detect the NIC you need to carry out 
+        the following instructions:</font> 
+      <ol>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Remove the NIC 
+          and re-install it. You may need to apply more pressure to ensure that 
+          the NIC is correctly seated in the slot. When the NIC is correctly seated, 
+          the gold connector on the edge of the NIC is normally completely inside 
+          the slot. <br>
+          <br>
+          See instructions on Installing the NIC in Setting up your PC. If re-installing 
+          the NIC does not solve the problem go to step 2.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> If you have a 
+          NIC that you know works, install this NIC in the PC. If it installs 
+          correctly, then the first NIC is probably faulty. Refer to your supplier 
+          for more details on warranty and service.<br>
+          <br>
+          If the NIC does not install correctly, there may be some problem with 
+          the configuration of your PC. The problem may be complex. Refer to your 
+          user guide and use any diagnostic tools available to you. </font> </li>
+      </ol>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl - Part 2</h1>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<p>What can I do in Perl? If it's for report extraction and so on surely it's not a general programming language; won't it be dull and limited?</p>
+<p>No. Perl was written with a wide core functionality that allows a lot of freedom. However, the language was designed to be extensible - you can add things to it! And people did, such was the popularity of the language. If you want to know more about how to do anything, find a suitable site and do a search. Download the <b>module</b> necessary, include it in you program and away you go.</p>
+<p>For example if you wanted to do clever stuff with the keyboard, <a href="http://perldoc.perl.org/perlfaq8.html#How-do-I-do-fancy-stuff-with-the-keyboard%2fscreen%2fmouse%3f">look here</a>.</p>
+<h2>How do I start?</h2>
+<p>All programming languages need <b><u>3</u></b> components:</p>
+<ol>
+<li>An editor to create the program</li>
+<li>A <b>Compiler</b> or <b>Interpreter</b> to translate and execute the program</li>
+<li>An environment in which to run the created programs (a.k.a. a computer!)</li>
+</ol>
+<p>So to get started, log in to a UNIX/Linux computer. Perl is available for Windows<sup>&trade;</sup> as well but why use an imitation of the real thing; why have glitter when you can have gold?</p>
+<h2>Programming Component 3: Where do I Log In?</h2>
+<p>You can either use the CLI or the GUI to interact with the programming server. <a href="http://www.fachtnaroe.com/help/software/">Download putty</a> and follow the instructions given in class.</p>
+<p><b>S</b>ecure <b>SH</b>ell GUI login with <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY</a> (under Windows). Under Linux use the SSH command.</p>
+<p><center><img src="/images/ssh01.png" width="90%"></center>
+<p>Once the server, connection protocol, port and other settings are correct (you'll be given the details of the server you are to connect to in class) click on Open. Provide your username and password to the remote system and you're ready to start.</p>
+<p>You'll know you're ready to start because after a successful login you'll see a command prompt with a flashing cursor waiting for your next move........</p>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl-part2.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

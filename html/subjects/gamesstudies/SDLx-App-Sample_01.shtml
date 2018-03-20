@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>SDLx::App call-back based game loop</h1>
+<p>This sample program registers callbacks to handle game operation.</p>
+<p>It requires a background image and two foreground images - a 'goodguy' and a 'badguy'.</p>
+You can use this as a basis for further experimentation.</p>
+<pre>
+#!/usr/bin/perl
+use strict;
+# Purpose: Demonstration program
+# Date:   2013
+# Author: Fachtna Roe
+
+use SDL; #needed to get all constants
+use SDL::Video;
+use SDLx::App;
+use SDL::Surface;
+use SDL::Rect;
+use SDL::Image;
+use SDL::Event;
+use SDL::Mouse;
+
+my ($application, $background, $background_rect, $event, $filename, $goodguy, $goodguy_rect, $goodguy_x, $goodguy_y);
+my ($granularity, $goodguy_x_min, $goodguy_x_max, $goodguy_y_min, $goodguy_y_max, $badguy_step) = (5, 0, 750, 0, 550, 3);
+my ($cover);
+my ($badguy_x, $badguy_y, $badguy_rect, $badguy);
+my ($new_badguy_rect, $cover_rect, $old_x);
+my ($badguymaster, $goodguymaster);
+
+# First create a new App
+$application = SDLx::App-&gt;new(
+    title  =&gt; "Generic Space Game",
+    width  =&gt; 800, # use same width as background image
+    height =&gt; 600, # use same height as background image
+    depth  =&gt; 16, 
+    exit_on_quit =&gt; 1 # Enable 'X' button
+);
+
+$application-&gt;add_event_handler( \&amp;quit_event);
+$application-&gt;add_event_handler( \&amp;key_event);
+$application-&gt;add_move_handler( \&amp;move_badguy);
+$application-&gt;add_show_handler( \&amp;show_badguy);
+
+# Set up the background image + rectangle
+$filename = "SimpleBack_01.gif";
+$background = SDL::Image::load($filename);
+$cover = $background;
+$background_rect = SDL::Rect-&gt;new(0,0,$background-&gt;w,$background-&gt;h);
+
+# load and prepare the badguy
+$filename = "alien_02.gif";
+$badguy = SDL::Image::load($filename);
+# first set a master copy for later copying
+$badguymaster = SDL::Rect-&gt;new(0, 0, $badguy-&gt;w, $badguy-&gt;h);
+$badguy_x = 100;
+$badguy_y = 100;
+# now set up the start for the b-g
+$badguy_rect = SDL::Rect-&gt;new($badguy_x,$badguy_y,$badguy-&gt;w,$badguy-&gt;h);
+
+# prepare the good guy
+$filename = "Ship_01.gif";
+$goodguy = SDL::Image::load($filename);
+# make master recatngle for later copying
+$goodguymaster = SDL::Rect-&gt;new(0, 0,$goodguy-&gt;w,$goodguy-&gt;h);
+# now do the actual start for the g-g
+$goodguy_x = 200;
+$goodguy_y = 500;
+$goodguy_rect = SDL::Rect-&gt;new($goodguy_x,$goodguy_y,$goodguy-&gt;w,$goodguy-&gt;h,);
+
+SDL::Video::blit_surface($background, $background_rect, $application, $background_rect );
+SDL::Video::blit_surface ($goodguy, $goodguymaster, $application, $goodguy_rect);
+SDL::Video::blit_surface ($badguy, $badguymaster, $application, $badguy_rect);
+SDL::Video::update_rects($application, $goodguy_rect, $badguy_rect, $background_rect);
+
+# set key repeat on after 100ms, then every 0ms
+SDL::Events::enable_key_repeat(100, 1);
+
+# Start the game loop
+$application-&gt;run;
+
+sub move_badguy {
+  # Calculate where the bad guy should be
+  my ($step, $app, $t) = @_;
+  
+  $old_x = $badguy_x;
+  $badguy_x+=$badguy_step;
+  if ($badguy_x &gt; 650) {
+    $badguy_x = 650;
+    $badguy_step *= -1
+  }
+  elsif ($badguy_x &lt; 50) {
+    $badguy_x = 50;
+    $badguy_step *= -1  
+  }
+}
+
+sub show_badguy {
+  # Draw the bad guy
+  my ($delta, $app) = @_;
+  $new_badguy_rect = SDL::Rect-&gt;new($badguy_x,$badguy_y,$badguy-&gt;w,$badguy-&gt;h);  
+  $cover_rect = SDL::Rect-&gt;new($old_x, $badguy_y, $badguy-&gt;w, $badguy-&gt;h);
+  SDL::Video::blit_surface($cover, $cover_rect, $app, $cover_rect );      
+  SDL::Video::blit_surface ($badguy, $badguymaster, $app, $new_badguy_rect);
+  SDL::Video::update_rects($app, $new_badguy_rect);
+  $app-&gt;sync();  
+}
+
+sub quit_event {
+  my ($event, $app) = @_;
+	if($event-&gt;type == SDL_QUIT) {
+    $app-&gt;stop;
+  }
+}
+
+sub key_event {
+  my ($event, $app) = @_;
+  my $key_name = SDL::Events::get_key_name( $event-&gt;key_sym );  
+  my ($old_ship_x, $old_ship_y, $new_ship_rect, $cover_rect);
+  if (($key_name eq "x") || ($key_name eq "X") ) {
+    $app-&gt;stop;
+  }
+  elsif ($key_name eq "up") {
+    $old_ship_y = $goodguy_y;
+    $goodguy_y -=$granularity;
+    if ($goodguy_y &lt; $goodguy_y_min) {
+      $goodguy_y = $goodguy_y_min;
+    }
+    $new_ship_rect = SDL::Rect-&gt;new($goodguy_x,$goodguy_y,$goodguy-&gt;w,$goodguy-&gt;h);
+    $cover_rect = SDL::Rect-&gt;new($goodguy_x, $old_ship_y, $goodguy-&gt;w, $goodguy-&gt;h);
+    SDL::Video::blit_surface($cover, $cover_rect, $app, $cover_rect );    
+    SDL::Video::blit_surface ($goodguy, $goodguymaster, $app, $new_ship_rect);
+    SDL::Video::update_rects($app,  $cover_rect, $new_ship_rect);
+  }
+  elsif ($key_name eq "down") {
+    $old_ship_y = $goodguy_y;
+    $goodguy_y +=$granularity;
+    if ($goodguy_y &gt; $goodguy_y_max) {
+      $goodguy_y = $goodguy_y_max;
+    }
+    $new_ship_rect = SDL::Rect-&gt;new($goodguy_x,$goodguy_y,$goodguy-&gt;w,$goodguy-&gt;h);
+    $cover_rect = SDL::Rect-&gt;new($goodguy_x, $old_ship_y, $goodguy-&gt;w, $goodguy-&gt;h);
+    SDL::Video::blit_surface($cover, $cover_rect, $app, $cover_rect );    
+    SDL::Video::blit_surface ($goodguy, $goodguymaster, $app, $new_ship_rect);
+    SDL::Video::update_rects($app,  $cover_rect, $new_ship_rect);
+  }
+  elsif ($key_name eq "left") {
+    $old_ship_x = $goodguy_x;
+    $goodguy_x -=$granularity;
+    if ($goodguy_x &lt; $goodguy_x_min) {
+      $goodguy_x = $goodguy_x_min;
+    }
+    $new_ship_rect = SDL::Rect-&gt;new($goodguy_x,$goodguy_y,$goodguy-&gt;w,$goodguy-&gt;h);
+    $cover_rect = SDL::Rect-&gt;new($old_ship_x, $goodguy_y, $goodguy-&gt;w, $goodguy-&gt;h);
+    SDL::Video::blit_surface($cover, $cover_rect, $app, $cover_rect );    
+    SDL::Video::blit_surface ($goodguy, $goodguymaster, $app, $new_ship_rect);
+    SDL::Video::update_rects($app, $cover_rect, $new_ship_rect);
+  }
+  elsif ($key_name eq "right") {
+    $old_ship_x = $goodguy_x;
+    $goodguy_x +=$granularity;
+    if ($goodguy_x &gt; $goodguy_x_max) {
+      $goodguy_x = $goodguy_x_max;
+    }
+    $new_ship_rect = SDL::Rect-&gt;new($goodguy_x,$goodguy_y,$goodguy-&gt;w,$goodguy-&gt;h);
+    $cover_rect = SDL::Rect-&gt;new($old_ship_x, $goodguy_y, $goodguy-&gt;w, $goodguy-&gt;h);
+    SDL::Video::blit_surface($cover, $cover_rect, $app, $cover_rect );    
+    SDL::Video::blit_surface ($goodguy, $goodguymaster, $app, $new_ship_rect);
+    SDL::Video::update_rects($app,  $cover_rect, $new_ship_rect);
+  }
+}
+
+</pre>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="SDLx-App-Sample_01.shtml" --></small>
+</div> <!--#content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!--#pagewrap -->
+</body>
+</html>

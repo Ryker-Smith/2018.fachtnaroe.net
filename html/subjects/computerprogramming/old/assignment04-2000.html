@@ -1,0 +1,756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>Cti-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:18.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'>Computer
+Programming<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+<HR>
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><span lang=EN-US style='font-size:14.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>C Programming Assignment #4</span></b><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>Brief:</span></i></b><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>Your target is to create a simple
+text-based, arcade-style game. The object of the game is to guide your
+character from his initial starting point to the exit of a maze. There are no
+bad guys required, though some objects in the maze will kill.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>Informative:<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>This a task based on a classic game style.
+Though the implementation sounds rather difficult, this is actually a very
+manageable program.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>There is no fancy graphics, as it emulates
+a type of game written when fancy graphics were not possible. There is little
+complicated program structure, as earlier systems were less powerful than
+modern ones. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>Your Task:<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>Write a program that reads in a series of
+strings from a file on the keyboard. The strings are stored in a
+one-dimensional array. However, since a string can be thought of as a
+specialised array for characters, this effectively produces a two dimensional array.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-US>This series of strings will be displayed
+on the screen. The contents of the strings are just ASCII characters, but
+different characters represent different objects.</span></p>
+
+<p class=MsoBodyText><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-US>The list of objects is given here:</span></p>
+
+<p class=MsoBodyText><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div align=center>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=83 valign=top style='width:62.1pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><b><span
+  lang=EN-US>Symbol<o:p></o:p></span></b></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><b><span
+  lang=EN-US>Name<o:p></o:p></span></b></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><b><span
+  lang=EN-US>Represents<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=83 valign=top style='width:62.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><span lang=EN-US>#</span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>cardinal number, pound or hash symbol</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>Wall</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=83 valign=top style='width:62.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><span lang=EN-US>@</span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>at symbol</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>your character</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=83 valign=top style='width:62.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><span lang=EN-US>P</span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>letter P</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>Poison</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=83 valign=top style='width:62.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><span lang=EN-US>T</span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>letter T</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>Tonic</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=83 valign=top style='width:62.1pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText align=center style='text-align:center'><span lang=EN-US>[
+  ]</span></p>
+  </td>
+  <td width=265 valign=top style='width:7.0cm;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>space between two square brackets</span></p>
+  </td>
+  <td width=104 valign=top style='width:78.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoBodyText><span lang=EN-US>The exit</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoBodyText><span lang=EN-US><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span lang=EN-US>A sample maze might look like this:</span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>###[ ]##################################</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>##<span style="mso-spacerun: yes"> </span>#<span
+style="mso-spacerun: yes"> </span>P<span style="mso-spacerun:
+yes"> </span>#<span style="mso-spacerun: yes"> </span># # #T#</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>##P#P#P##################### ### # # # #</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>## # #<span style="mso-spacerun: yes"> </span>#<span
+style="mso-spacerun: yes"> </span>###<span style="mso-spacerun: yes">
+</span>P<span style="mso-spacerun: yes"> </span># # # #</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>## # # ## #<span style="mso-spacerun: yes"> </span>######### ### ###
+# # # #</span><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>## # # ## #########<span style="mso-spacerun: yes"> </span>P# ###<span
+style="mso-spacerun: yes"> </span>#<span style="mso-spacerun: yes">
+</span>#</span><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>#<span style="mso-spacerun: yes"> </span>#### #<span
+style="mso-spacerun: yes"> </span>## #### #### ###### # #</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># ######T <span style="mso-spacerun: yes"></span># ## ## ####<span
+style="mso-spacerun: yes"> </span>###### ###</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># ## ## ### # ## ## #### ########### ###</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>#<span style="mso-spacerun: yes"> </span>## ##<span
+style="mso-spacerun: yes"> </span>## ## ##<span style="mso-spacerun:
+yes"> </span>###</span><span lang=EN-US style='font-size:10.0pt;
+font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># ##<span style="mso-spacerun: yes"> </span># ## ##<span
+style="mso-spacerun: yes"> </span>## ########## ## ###</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># ###### # ## ######## ####<span style="mso-spacerun: yes">
+</span>#<span style="mso-spacerun: yes"> </span>## ###</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>#<span style="mso-spacerun: yes"> </span>###<span
+style="mso-spacerun: yes"> </span># ## ##<span style="mso-spacerun: yes">
+</span>##<span style="mso-spacerun: yes"> </span>######<span
+style="mso-spacerun: yes"> </span>#</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># ###### #### ## ##### ## ####<span style="mso-spacerun: yes">
+</span>### #</span><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>####<span style="mso-spacerun: yes"> </span>## #<span
+style="mso-spacerun: yes"> </span># #<span style="mso-spacerun: yes">
+</span>## #<span style="mso-spacerun: yes"> </span>####### #</span><span
+lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># ## ##<span style="mso-spacerun: yes"> </span># ## # ## ###### #
+####<span style="mso-spacerun: yes"> </span># #</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># #<span style="mso-spacerun: yes"> </span>## ## # ## ###### #
+###### # # #</span><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'># ## ## ##<span style="mso-spacerun: yes"> </span>#<span
+style="mso-spacerun: yes"> </span>###<span style="mso-spacerun:
+yes"> </span>## # # #</span><span lang=EN-US style='font-size:10.0pt;
+font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>#<span style="mso-spacerun: yes"> </span># #####<span
+style="mso-spacerun: yes"> </span>######### #####<span style="mso-spacerun:
+yes"> </span>#@# #</span><span lang=EN-US style='font-size:10.0pt;
+font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:10.0pt;font-family:"Courier New";color:black;mso-ansi-language:
+EN-US'>########################################</span><span lang=EN-US
+style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>Once the maze is displayed, the program
+should enter a loop in which program awaits keyboard input and then acts upon
+it.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>The list of expected inputs and actions is
+given here:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<div align=center>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=45 valign=top style='width:33.75pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><b><span lang=EN-US
+  style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'>Key<o:p></o:p></span></b></p>
+  </td>
+  <td width=180 valign=top style='width:134.7pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><b><span lang=EN-US
+  style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'>Name<o:p></o:p></span></b></p>
+  </td>
+  <td width=274 valign=top style='width:205.5pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><b><span lang=EN-US
+  style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'>Expected
+  action<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=45 valign=top style='width:33.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:10.0pt;font-family:Symbol;mso-ascii-font-family:Arial;
+  mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black;
+  mso-ansi-language:EN-US;mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'></span></span><span
+  lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:134.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>Left arrow<o:p></o:p></span></p>
+  </td>
+  <td width=274 valign=top style='width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>If possible, character moves left
+  one cell<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=45 valign=top style='width:33.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:10.0pt;font-family:Symbol;mso-ascii-font-family:Arial;
+  mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black;
+  mso-ansi-language:EN-US;mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'></span></span><span
+  lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:134.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>Right arrow<o:p></o:p></span></p>
+  </td>
+  <td width=274 valign=top style='width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>If possible, character moves right
+  one cell<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=45 valign=top style='width:33.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:10.0pt;font-family:Symbol;mso-ascii-font-family:Arial;
+  mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black;
+  mso-ansi-language:EN-US;mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'></span></span><span
+  lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:134.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>Up arrow<o:p></o:p></span></p>
+  </td>
+  <td width=274 valign=top style='width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>If possible, character moves up
+  one cell<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=45 valign=top style='width:33.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:10.0pt;font-family:Symbol;mso-ascii-font-family:Arial;
+  mso-hansi-font-family:Arial;mso-bidi-font-family:Arial;color:black;
+  mso-ansi-language:EN-US;mso-char-type:symbol;mso-symbol-font-family:Symbol'><span
+  style='mso-char-type:symbol;mso-symbol-font-family:Symbol'></span></span><span
+  lang=EN-US style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:
+  EN-US'><o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:134.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>Down arrow<o:p></o:p></span></p>
+  </td>
+  <td width=274 valign=top style='width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>If possible, character moves down
+  one cell<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=45 valign=top style='width:33.75pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+  mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+  style='font-size:10.0pt;font-family:Arial;color:black;mso-ansi-language:EN-US'>Q<o:p></o:p></span></p>
+  </td>
+  <td width=180 valign=top style='width:134.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>Upper or lower case letter q<o:p></o:p></span></p>
+  </td>
+  <td width=274 valign=top style='width:205.5pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+  text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:
+  Arial;color:black;mso-ansi-language:EN-US'>Quit game<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>The character should be moved around until
+it either reaches the exit or comes into contact with a poison cell.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>If the character comes into contact with a
+poison cell the character will die if there is not an unused tonic in its
+possession. The tonic so used is then considered cancelled out and no longer
+available. The character obtains tonic by coming into contact with a tonic
+cell.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>The character comes into contact with
+poison and tonic cells by moving onto them. Merely being on the adjacent cell
+does not count as coming into contact with those cells. Once a tonic cell is
+moved onto it is taken by the character and removed from the maze.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>When the character is in the space between
+the square brackets of the exit the game is considered to be over.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>Navigation of the maze is based on the
+current position of the character, and a request to move that is received. If
+the cell in the direction in which the character seeks to move is empty, the
+character is permitted to move. If not, the character is not permitted to move.
+Sounds simple, huh?<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>Useful links:<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'>However,
+for anyone able to read English well, and to reason their way through computer
+documentation independently, you can gain a head start by read the manual by
+typing: <o:p></o:p></span></p>
+
+<pre><span style='color:black'>man ncurses<o:p></o:p></span></pre>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'>at
+the linux prompt (which includes cross references to many other man pages), or
+by reading up on the new curses library on the internet. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:Arial;
+color:black'>There is a document by <a
+href="http://sunse.jinr.dubna.su/local/ncurses/ncurses-intro.html">Eric S.
+Raymond</a> which might be too good, as he writes C like a native(!). The
+ncurses package is based upon the curses package, which has a page <a
+href="http://hoth.stsci.edu/man/man3X/curses.html">here</a> but has some dodgy
+links.</span><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>Supporting Code:<o:p></o:p></span></i></b></p>
+<B>(1)</B>&nbsp;This is the file <B>drawmap.c</B> which will open, read and display the contents of the file containg the map of the maze.
+<P><P><PRE>
+#include &#60;stdio.h&#62;
+#include &#60;curses.h&#62;
+#include &#60;string.h&#62;
+
+char gamearray[21][41];
+
+main ()
+{
+ drawmap ();
+}
+
+int drawmap ()
+{
+ /* the file-handle variable to access the file is called mapfile
+    looper is the control variable that controls the reading in of the lines of the map
+    oneline is a local variable into which each map line is read, prior ro being copied into the
+    main map array called gamearray
+ */
+ int mapfile, looper;
+ char oneline[41];
+ /* The man pages fully document the use of the fopen command
+    the first parameter is the filename containing the map. The second is the access mode - in this case read-only.
+    The file should *not* *not* *not* be a DOS-mode file (with CR, LF line endings). This code won't work properly
+    if it is. Use the Linux system and vi to create the map file. Use a different file name if you wish.
+ */
+ mapfile = fopen ("maze04.map", "r");
+ looper = 0;
+ /* The loop executes until no more (a NULL quantity) of characters are available to be read. This signifies EOF.
+    The second parameter here specifies the number of characters +1 that should be read in. In this case 42 means
+    that 41 characters shoul be read. This is 40 characters for the map line plus one CR character for the end-of-line
+    (EOL) marker.
+ */
+ while (fgets (oneline, 42, mapfile) != NULL)
+ {
+  /* Once read into the temporary array called oneline, the line is copied into the correct part of the screen array,
+     which is called gamearray. Simply assigning oneline into the arrray doesn't work, the strcpy command has to be used.
+  */
+  strcpy (gamearray[looper], oneline);
+//  mvprintw (looper, 1, "%s", gamearray[looper]);
+  printf ("%s", gamearray[looper]);
+  looper ++;
+  refresh;
+ }
+ // Close the file once finished with it
+ fclose (mapfile);
+}
+</PRE>
+<HR>
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>Documentation:<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'>Provide evidence of your planning process,
+the commented source code and sample data used. You should also include a
+hand-drawn as well as a SmartDraw formatted flow-chart. Any other appropriate
+documentation may be included if you wish. The submission should be preceeded
+with a signed copy of the <a href="idunit-c20013.pdf">my own work</a> form.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><span lang=EN-US style='font-size:10.0pt;font-family:Arial;
+color:black;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-pagination:none;mso-layout-grid-align:none;
+text-autospace:none'><b><i><span lang=EN-US style='font-size:10.0pt;font-family:
+Arial;color:black;mso-ansi-language:EN-US'>Due Date:<o:p></o:p></span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:red;
+mso-ansi-language:EN-US'>Thursday, March 29<sup>th</sup> 2000, 17:00<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:16.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:red;
+mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;mso-pagination:none;
+mso-layout-grid-align:none;text-autospace:none'><span lang=EN-US
+style='font-size:24.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;color:red;
+mso-ansi-language:EN-US'>More information will follow.<o:p></o:p></span></p>
+
+</div>
+</body>
+</html>

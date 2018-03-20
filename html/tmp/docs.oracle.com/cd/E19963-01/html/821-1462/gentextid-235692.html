@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>System Administration Commands - Part 3 - man pages section 1M: System Administration Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the Solaris (TM) system administration and  maintenance utilities and is for system and network administrators.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1462";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1M: System Administration Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1462.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1M (821-1462-06)&body=Page: gentextid-235692.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-37.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-194.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-310.html">System Administration Commands - Part 1</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-123700.html">System Administration Commands - Part 2</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level1 tocsp"><a href="">System Administration Commands - Part 3</a></p>
+</div>
+<p class="toc level2"><a href="txzonemgr-1m.html"><tt>txzonemgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="tzreload-1m.html"><tt>tzreload</tt>(1M)</a></p>
+<p class="toc level2"><a href="tzselect-1m.html"><tt>tzselect</tt>(1M)</a></p>
+<p class="toc level2"><a href="uadmin-1m.html"><tt>uadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="ucodeadm-1m.html"><tt>ucodeadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ufsdump-1m.html"><tt>ufsdump</tt>(1M)</a></p>
+<p class="toc level2"><a href="ufsrestore-1m.html"><tt>ufsrestore</tt>(1M)</a></p>
+<p class="toc level2"><a href="umount-1m.html"><tt>umount</tt>(1M)</a></p>
+<p class="toc level2"><a href="umountall-1m.html"><tt>umountall</tt>(1M)</a></p>
+<p class="toc level2"><a href="umount-smbfs-1m.html"><tt>umount_smbfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="unlink-1m.html"><tt>unlink</tt>(1M)</a></p>
+<p class="toc level2"><a href="unshare-1m.html"><tt>unshare</tt>(1M)</a></p>
+<p class="toc level2"><a href="unshareall-1m.html"><tt>unshareall</tt>(1M)</a></p>
+<p class="toc level2"><a href="unshare-nfs-1m.html"><tt>unshare_nfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="update-drv-1m.html"><tt>update_drv</tt>(1M)</a></p>
+<p class="toc level2"><a href="updatehome-1m.html"><tt>updatehome</tt>(1M)</a></p>
+<p class="toc level2"><a href="updatemanager-1m.html"><tt>updatemanager</tt>(1M)</a></p>
+<p class="toc level2"><a href="updatemedia-1m.html"><tt>updatemedia</tt>(1M)</a></p>
+<p class="toc level2"><a href="useradd-1m.html"><tt>useradd</tt>(1M)</a></p>
+<p class="toc level2"><a href="userdel-1m.html"><tt>userdel</tt>(1M)</a></p>
+<p class="toc level2"><a href="usermod-1m.html"><tt>usermod</tt>(1M)</a></p>
+<p class="toc level2"><a href="utmp2wtmp-1m.html"><tt>utmp2wtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="utmpd-1m.html"><tt>utmpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="uucheck-1m.html"><tt>uucheck</tt>(1M)</a></p>
+<p class="toc level2"><a href="uucico-1m.html"><tt>uucico</tt>(1M)</a></p>
+<p class="toc level2"><a href="uucleanup-1m.html"><tt>uucleanup</tt>(1M)</a></p>
+<p class="toc level2"><a href="uucpd-1m.html"><tt>uucpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="uusched-1m.html"><tt>uusched</tt>(1M)</a></p>
+<p class="toc level2"><a href="uutry-1m.html"><tt>Uutry</tt>(1M)</a></p>
+<p class="toc level2"><a href="z-uutry-1m.html"><tt>uutry</tt>(1M)</a></p>
+<p class="toc level2"><a href="uuxqt-1m.html"><tt>uuxqt</tt>(1M)</a></p>
+<p class="toc level2"><a href="vdiskadm-1m.html"><tt>vdiskadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="virsh-1m.html"><tt>virsh</tt>(1M)</a></p>
+<p class="toc level2"><a href="virt-clone-1m.html"><tt>virt-clone</tt>(1M)</a></p>
+<p class="toc level2"><a href="virt-convert-1m.html"><tt>virt-convert</tt>(1M)</a></p>
+<p class="toc level2"><a href="virtinfo-1m.html"><tt>virtinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="virt-install-1m.html"><tt>virt-install</tt>(1M)</a></p>
+<p class="toc level2"><a href="vmstat-1m.html"><tt>vmstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="vntsd-1m.html"><tt>vntsd</tt>(1M)</a></p>
+<p class="toc level2"><a href="volcopy-1m.html"><tt>volcopy</tt>(1M)</a></p>
+<p class="toc level2"><a href="volcopy-ufs-1m.html"><tt>volcopy_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="vrrpadm-1m.html"><tt>vrrpadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="vrrpd-1m.html"><tt>vrrpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="vscanadm-1m.html"><tt>vscanadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="vscand-1m.html"><tt>vscand</tt>(1M)</a></p>
+<p class="toc level2"><a href="vtdaemon-1m.html"><tt>vtdaemon</tt>(1M)</a></p>
+<p class="toc level2"><a href="wall-1m.html"><tt>wall</tt>(1M)</a></p>
+<p class="toc level2"><a href="wanboot-keygen-1m.html"><tt>wanboot_keygen</tt>(1M)</a></p>
+<p class="toc level2"><a href="wanboot-keymgmt-1m.html"><tt>wanboot_keymgmt</tt>(1M)</a></p>
+<p class="toc level2"><a href="wanboot-p12split-1m.html"><tt>wanboot_p12split</tt>(1M)</a></p>
+<p class="toc level2"><a href="wanbootutil-1m.html"><tt>wanbootutil</tt>(1M)</a></p>
+<p class="toc level2"><a href="wbemadmin-1m.html"><tt>wbemadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="wbemconfig-1m.html"><tt>wbemconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="wbemlogviewer-1m.html"><tt>wbemlogviewer</tt>(1M)</a></p>
+<p class="toc level2"><a href="wcadmin-1m.html"><tt>wcadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="whodo-1m.html"><tt>whodo</tt>(1M)</a></p>
+<p class="toc level2"><a href="wificonfig-1m.html"><tt>wificonfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="wpad-1m.html"><tt>wpad</tt>(1M)</a></p>
+<p class="toc level2"><a href="wracct-1m.html"><tt>wracct</tt>(1M)</a></p>
+<p class="toc level2"><a href="wtmpfix-1m.html"><tt>wtmpfix</tt>(1M)</a></p>
+<p class="toc level2"><a href="wusbadm-1m.html"><tt>wusbadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="xenconsoled-1m.html"><tt>xenconsoled</tt>(1M)</a></p>
+<p class="toc level2"><a href="xend-1m.html"><tt>xend</tt>(1M)</a></p>
+<p class="toc level2"><a href="xenstored-1m.html"><tt>xenstored</tt>(1M)</a></p>
+<p class="toc level2"><a href="xentop-1m.html"><tt>xentop</tt>(1M)</a></p>
+<p class="toc level2"><a href="xm-1m.html"><tt>xm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypbind-1m.html"><tt>ypbind</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypinit-1m.html"><tt>ypinit</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypmake-1m.html"><tt>ypmake</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypmap2src-1m.html"><tt>ypmap2src</tt>(1M)</a></p>
+<p class="toc level2"><a href="yppasswdd-1m.html"><tt>yppasswdd</tt>(1M)</a></p>
+<p class="toc level2"><a href="yppoll-1m.html"><tt>yppoll</tt>(1M)</a></p>
+<p class="toc level2"><a href="yppush-1m.html"><tt>yppush</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypserv-1m.html"><tt>ypserv</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypset-1m.html"><tt>ypset</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypstart-1m.html"><tt>ypstart</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypstop-1m.html"><tt>ypstop</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypupdated-1m.html"><tt>ypupdated</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypxfr-1m.html"><tt>ypxfr</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypxfr-1perday-1m.html"><tt>ypxfr_1perday</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypxfr-1perhour-1m.html"><tt>ypxfr_1perhour</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypxfr-2perday-1m.html"><tt>ypxfr_2perday</tt>(1M)</a></p>
+<p class="toc level2"><a href="ypxfrd-1m.html"><tt>ypxfrd</tt>(1M)</a></p>
+<p class="toc level2"><a href="zdb-1m.html"><tt>zdb</tt>(1M)</a></p>
+<p class="toc level2"><a href="zdump-1m.html"><tt>zdump</tt>(1M)</a></p>
+<p class="toc level2"><a href="zfs-1m.html"><tt>zfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="zic-1m.html"><tt>zic</tt>(1M)</a></p>
+<p class="toc level2"><a href="zoneadm-1m.html"><tt>zoneadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="zoneadmd-1m.html"><tt>zoneadmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="zonecfg-1m.html"><tt>zonecfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="zonestatd-1m.html"><tt>zonestatd</tt>(1M)</a></p>
+<p class="toc level2"><a href="zpool-1m.html"><tt>zpool</tt>(1M)</a></p>
+<p class="toc level2"><a href="zstreamdump-1m.html"><tt>zstreamdump</tt>(1M)</a></p>
+<p class="toc level2"><a href="zuludaemon-1m.html"><tt>zuludaemon</tt>(1M)</a></p>
+
+</div>
+
+<a name="REFMAN1Mcontent"></a><a name="content"></a>
+<div class="ContentPane">
+	<a name="REFMAN1Mgentextid-235692"></a><a name="gentextid-235692"></a><h3>System Administration Commands - Part 3</h3>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="turnacct-1m.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="txzonemgr-1m.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

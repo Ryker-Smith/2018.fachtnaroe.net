@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/sort3.2.html -->
+
+<HEAD>
+<TITLE>Defining the sort field</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Defining the sort field</H1>
+
+<P>The first field of each line starts at 0 (zero); the
+second is 1 (one) and so on.</P>
+
+<P>To define which field to sort on you give the position
+of the field at which to start the sort followed by the
+position at which to end the sort.</P>
+
+<P>The position at which to start the sort is given as the
+number of fields to skip to get to this position. For example</P>
+
+<PRE WIDTH=80>   <STRONG>+2</STRONG>
+</PRE>
+
+<P>tells <STRONG>sort</STRONG> to skip the first two fields.</P>
+
+<P>The position at which to stop the sort is given as the
+number of the field at the end of which the sort stops.
+For example</P>
+
+<PRE WIDTH=80>   <STRONG>-3</STRONG>
+</PRE>
+
+<P>tells <STRONG>sort</STRONG> to stop the sort at the end of field three.</P>
+
+<P>To sort on the third field of a line use the definition:</P>
+
+<PRE WIDTH=80>   <STRONG>+2 -3</STRONG>
+</PRE>
+
+<P>To sort on the fields 5 and 6:</P>
+
+<PRE WIDTH=80>   <STRONG>+4 -6</STRONG>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

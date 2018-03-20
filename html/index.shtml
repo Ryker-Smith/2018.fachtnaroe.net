@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<!--#include file="includes/head.shtml" -->
+<body onload="onloadProc()">
+<!-- <div id="overlay"> -->
+<style>
+#overlay {
+  background: white;
+  
+  border: 2px solid silver;
+  font: 12px, Sans Serif, black;
+  z-index: 2000;
+  width: 80%;
+  margin-left: auto;
+  margin-right: 50px;
+  float: right;
+  position: relative;
+  border-radius: 10px;
+/*   left: 50px; */
+  top: 150px;
+  overflow: hidden;
+  visibility: none;
+  
+}
+#blog {
+height: 0px;
+visibility: none;
+overflow: hidden;
+}
+#blog h1 {
+  font-size: 14px;
+}
+#blog h2 {
+  font-size:12px;
+}
+#blog p {
+  font-size: 11px;
+}
+</style>
+<!-- <div id="blog">
+<!-- <p><small>OK, granted this page is a <b>mess</b>, but it hasn't been maintained in ages. It'll get better. I'm out of practice. I'll get better.<br>And I'll even tidy it up...eventually.</small></p>
+<h1>The beginning of a beautiful ... blogship?</h1>
+<h2>What is my job?</h2>
+<p>I am a de-programmer. <i>(more follows)</i></p>
+<h2>What is my job title?</h2>
+<p>Teacher of Computer Science</p>
+<h2>Is that an important job?</h2>
+<p>Depends on where you do it I guess.<p>
+<h2>Where do you do it?</h2>
+<p>Inland Ireland. A county called Tipperary. In the relatively sane north, but residing in the cow-boy south, in a former colonial town.</p>
+<h2>Is it dangerous?</h2>
+<p>Physically or mentally? It's only occasionally physically dangerous, but mentally harmful most of the time depending on circumstances.<p>
+<h2>?</h2>
+<p></p>
+<h6>Bits, thoughts  started left undone</h6>
+<p>Well, sort of. I teach Computer Science and Maths, or that at least was my contracted role until recently when my contract changed (in circumstances to which I shall not refer) to teacher of Computer Science.</p>
+<p>You see, I came to the realisation a while back that in the end we could all just be machines. I don't think we are, but it's entirely possible. -->
+<!-- </div> <!-- blog -->
+<!-- </div> <!-- content -->
+<a name="top_of_page"></a>
+<!--#include file="includes/animation.shtml"-->
+<div id="pagewrap">
+<!--#include file="includes/sitename.shtml"-->
+<div id="topstripe"></div>
+<!--#include file="includes/sidemenu.shtml"-->
+<style>
+.quotes {
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-family: Helvetica;
+  float: right;
+  width: auto;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+attrib{
+  float: right;
+  font-style: italic;
+  font-family: Helvetica;
+}
+#quotesbox{
+  top: 100px;
+  width: 300px;
+  float: right;
+}
+</style>
+
+<div id="quotesbox">
+<span class="quotes"><br>The one thing that doesn’t abide by majority rule is a person’s conscience.<br><attrib>― Harper Lee</attrib><br></span><br>
+<span class="quotes"><br>Many people, especially ignorant people, want to punish you for speaking the truth, for being correct, for being you. Never apologize for being correct, or for being years ahead of your time. If you’re right and you know it, speak your mind. Speak your mind. Even if you are a minority of one, the truth is still the truth.<br><attrib>― Mahatma Gandhi</attrib><br></span>
+<span class="quotes"><br>Anti-social behaviour is a trait of intelligence in a world full of conformists.<br><attrib>― Nikola Tesla</attrib><br></span><br>
+</div>
+
+<iframe width="450" height="250" src="https://www.youtube.com/embed/QdVFvsCWXrA" frameborder="0" allowfullscreen></iframe>
+<iframe width="450" height="250" src="https://www.oreilly.com/ideas/climbing-down-from-the-clouds?imm_mid=0e2861&cmp=em-prog-na-na-newsltr_20160409" frameborder="0" allowfullscreen></iframe>
+
+<div id="temp22" style="width: 200px; height: 100px"></div>
+<div id="content">
+<p><small>OK, granted this page is a <b>mess</b>, but it hasn't been maintained in ages. It'll get better. I'm out of practice. I'll get better.<br>And I'll even tidy it up...eventually.</small></p>
+<h1>The beginning of a beautiful ... blogship?</h1>
+<h2>What is my job?</h2>
+<p>I am a de-programmer. <i>(more follows)</i></p>
+<h2>What is my job title?</h2>
+<p>Teacher of Computer Science</p>
+<h2>Is that an important job?</h2>
+<p>Depends on where you do it I guess.<p>
+<h2>Where do you do it?</h2>
+<p>Inland Ireland. A county called Tipperary. In the relatively sane north, but residing in the cow-boy south, in a former colonial town.</p>
+<h2>Is it dangerous?</h2>
+<p>Physically or mentally? It's only occasionally physically dangerous, but mentally harmful most of the time depending on circumstances.<p>
+<h2>?</h2>
+<p></p>
+<h6>Bits, thoughts  started left undone</h6>
+<p>Well, sort of. I teach Computer Science and Maths, or that at least was my contracted role until recently when my contract changed (in circumstances to which I shall not refer) to teacher of Computer Science.</p>
+<p>You see, I came to the realisation a while back that in the end we could all just be machines. I don't think we are, but it's entirely possible.
+
+</div> <!-- content -->
+<!--#include file="includes/backtotop.shtml"-->
+
+</div> <!-- pagewrap -->
+
+</body>
+</html>

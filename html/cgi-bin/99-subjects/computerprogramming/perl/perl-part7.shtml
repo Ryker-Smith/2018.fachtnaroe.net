@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 7</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h2>Program Line Types</h2>
+<h3>All lines in a Perl program are either:
+<ol>
+<li>Blank lines, for appearance.</li>
+<li>Comment lines -  for our benefit - giving an internal explanation of the program functions, Author etc. These lines start with a <b>#</b> and a space.</li>
+<li>Program or Directive lines. The most common (or only) directive line is <font face="Courier" >#!/usr/bin/perl</font> at the very start of each file. Normal program lines are written in Perl.</li>
+	<ul>
+	<li>Program lines should be indented, again for appearance. Indent consistently by one or by two spaces.<li>
+	<li>This tidy appearance can pay major dividends in a larger program when you're fault finding.</li>
+	<li>When you start to add program-flow control instructions you'll indent further again, but by the same number of spaces that you've already chosen.
+	</ul>
+</ol>
+These guidlines about program line types are generally true for all programming languages.</h3>
+<h2>Task 003</h2>
+<h3>This task again comes with a specification, as well as sample (but completely unnacceptably unfriendly) output.</h3>
+<h3><b>Specification:</b></h3>
+<ol>
+<li>Create a file called <b>multy01.pl</b></li>
+<li>This program should first display your name and one clear blank line before commencing proper.</li>
+<li>The program should prompt the user to enter 3 numbers</li>
+<li>The program should then request and accept each number in turn</li>
+<li>Once all three numbers have been accepted the program should calculate the product (multiply!) the three numbers</li>
+<li>The product should be displayed with suitable explanatory text</li>
+<li>One clear line should be displayed at the program end before the command prompt appears</li>
+<li><i>Internally</i> the program should have comment lines to indicate Author, Date, Task &amp; Purpose. These comments should <i>not</i> prevent the line <font face="Courier" >#!/usr/bin/perl</font> from being the very first line in the program as this would most likely cause errors.</li>
+</ol>
+<h3>Sample output <b>without any explanatory text - which you must provide</b> is shown here:
+<center><img width="90%"  src="/images/multy01-pl.png" /></center>
+<h3>Hint: Don't re-invent the wheel!<h3>
+<h3>This is a sample comment section for the head of a program:
+<br><font face="Courier"><pre>
+#
+# ----------------------------------------------------------------------------------
+# Author:	Fachtna Roe	Date:		20061206
+# Title:	multy01.pl	Purpose:	To prompt for and
+#						to accept three numbers, then to output
+#						the product of the numbers.
+# ----------------------------------------------------------------------------------
+#
+</pre></font>
+</h3>
+<h3>Further challenges lie ahead......</h3>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+</div>
+</body>
+</html>

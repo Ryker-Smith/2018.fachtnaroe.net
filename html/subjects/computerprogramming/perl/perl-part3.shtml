@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl - Part 3</h1>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<h2>Programming Component 1: The Editor</h2>
+We'll be using gedit the slightly ancient editor known as <b>vi</b>. It has the advantage of being available on most *NIX platforms so once you get used to it your knowledge will be transferable. That being said, you might prefer to have that part of your brain amputated afterwards; vi is old, awkward and strict and may cause you slight mental damage if you let it.
+To edit a program with vi first <b>cd</b> to the directory with the file; then type <i>vi filename</i> on the command line. Immediately enter <b>insert</b> mode by pressing <b>i</b>. Enter or edit your program as required. When finished, press the <b>ESC</b> key once, press <b>:wq</b> and <b>return</b> to <b>w</b>rite and <b>q</b>uit.
+If you haven't already done so, create a folder called <b>perl_progs</b>, enter that folder and create the Hello World program. Use the name <b>hello.pl</b> for the file to clearly identify the pupose of the program as well as the type of file. Into that file, enter the following code to make your own Hello World program. Enter the code exactly as given, complete with indentation, capitalisation, symbols etc as shown:
+<font face="Courier" >
+<p>#!/usr/bin/perl
+<br># This is my first program.
+<br>
+<br>&nbsp;&nbsp;print "Hello World!";
+<p>
+</font>
+<h2>Programming Component 2: Running Your Program</h2>
+Now use the generic command <i>perl filename</i> to run the program. This calls the Perl interpreter, passes it the name of the file to run and gets the Perl interpreter to first check and then carry out the commands in the file.
+The checking process is essential; it makes sure the program is typed correctly. If you get error messages don't blame the computer: go back, edit the file again, and see what <b>you</b> did wrong. Then try to run the program again. When you succeed you'll see the message like this:
+<center><img width="90%" src="/images/hello01-pl.png" /></center>
+As you can see, this displays the correct message, but doesn't move on to the next line. In programming, appearance is all important; so it's worth while to make a small alteration:
+<font face="Courier" >
+<p>#!/usr/bin/perl
+<br># This is my first program.
+<br>
+<br>&nbsp;&nbsp;print "Hello World!<b>\n</b>";
+<p>
+</font>
+The use of the <b>escape sequence \n</b> will cause the output (in this case the next command prompt) to move to a <b>n</b>ew line. It looks better and is more thorough; either one is as good a reason as is required to make the change. The output should now look like this:
+<center><img width="90%"  src="/images/hello02-pl.png" /></center>
+This completes the creation of the essential first Perl program, confirming that we can edit and run a program. Read on for more......
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl-part26.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

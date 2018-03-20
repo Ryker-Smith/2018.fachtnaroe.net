@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 6</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h2>Programming Component Continued: Task 001<h2>
+<h3>To practice your skills with the commands used so far, see can you create a program called <b>square.pl</b> that generates the following output when you run it:
+<center><img width="90%"  src="/images/square01-pl.png" /></center>
+<br>There is no specification given in this case, just guideline output which you should mimic. Normally a program has a specification with which you must comply.</h3>
+<h2>Task 002<h2>
+<h3>This is a sample specification for a programming task. Carry this out and ensure you comply with the task instructions.</h3>
+<h3><b>Specification:</b></h3>
+<ol>
+<li>Create a program that displays a <a href="http://en.wikipedia.org/wiki/Star_of_david">Star of David</a> on screen. The Star of David is the symbol on the Israeli flag and consists of two equilateral triangles intersecting. One is 'right way up', the other is 'upside down'.</li>
+<li>The right way up triangle should be composed of <b>+</b> symbols, and the upside down triangle should consist of <b>=</b> symbols. Where (or if) the + and = symbols intersect a <b>#</b> symbol should be used.</li>
+<li>The Star can be of any size but should be symmetrical within the limitations of the screen display.</li>
+<li>The Star should be preceeded by your name displayed on-screen and two clear blank lines. It should be followed by two clear blank lines before the command prompt re-appears.</li>
+<li>The file should be called <b>star.pl</b></li>
+</ol>
+<h3>Below is sample output that corresponds with the specification:</h3>
+<center><img width="90%"  src="/images/star01-pl.png" /></center>
+<br>
+<h3>The next task will test your use of both input and output......</h3>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+</div>
+</body>
+</html>

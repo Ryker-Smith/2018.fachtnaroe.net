@@ -1,0 +1,27 @@
+@echo off
+:: Parses the output of the chkdsk command to get
+:: the size of a disk. Uses debug to trim
+:: away all unwanted info from the response line.
+set disksize=
+:: Use chkdsk to get size data
+chkdsk | find "total disk space" > ~dsize.txt
+>> script echo rcx
+>> script echo d
+>> script echo w
+>> script echo q
+debug ~dsize.txt < script > nul
+:: Create a line fragment
+>  script echo e 0100 "set disksize="
+>> script echo rcx
+>> script echo d
+>> script echo n ~dsize.bat
+>> script echo w
+>> script echo q
+debug < script > nul
+:: Copy the fragment and the data to produce a batch file
+copy ~dsize.bat + ~dsize.txt > nul
+call ~dsize.bat
+del ~dsize.bat
+del ~dsize.txt
+del script
+echo disk size is %disksize%

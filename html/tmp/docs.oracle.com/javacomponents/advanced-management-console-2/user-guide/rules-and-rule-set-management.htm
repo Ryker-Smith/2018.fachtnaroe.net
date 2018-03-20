@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Rule Sets and Rules Management</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="The Advanced Management Console enables administrators to create and distribute deployment rule sets, which provide control over the browser-based Java applications that are run on desktops in their enterprise. Usage information collected from Java Usage Tracker reports can be used to create rules and rule sets. Existing rule sets can be imported and managed by Advanced Management Console." />
+<meta name="dcterms.created" content="2017-01-20T02:15:31Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Advanced Management Console User's Guide" />
+<meta name="dcterms.identifier" content="E62444-09" />
+<meta name="dcterms.isVersionOf" content="JSAMV" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="user-management.htm" title="Previous" type="text/html" />
+<link rel="Next" href="desktop-groups-configuration.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JSAMV.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSAMV.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSAMV.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-F363B022-918E-46B2-85B6-F68C1C625234"></a> <span id="PAGE" style="display:none;">11/13</span> <!-- End Header -->
+<a id="JSAMV147"></a><a id="JSAMV146"></a>
+<h1 id="JSAMV-GUID-F363B022-918E-46B2-85B6-F68C1C625234" class="sect1"><span class="enumeration_chapter">8</span> Rule Sets and Rules Management</h1>
+<div>
+<p>The <span>Advanced Management Console</span> enables administrators to create and distribute deployment rule sets, which provide control over the browser-based Java applications that are run on desktops in their enterprise. Usage information collected from Java Usage Tracker reports can be used to create rules and rule sets. Existing rule sets can be imported and managed by <span>Advanced Management Console</span>.</p>
+<p>The Rule Sets and Rules Management topic includes the following sections:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-760FF3FC-05D9-4557-AC0B-0CEC85E1335C" title="A deployment rule set enables enterprises to continue using legacy business applications in an environment of ever-tightening application security policies. You can use a deployment rule set to manage which web-based Java applications, such as Java applets or Java Web Start applications, are allowed to run in an enterprise. You can also use a deployment rule set to control the version of the Java Runtime Environment (JRE) that is used for an application. The Advanced Management Console provides administrators with a tool for creating and managing deployment rules sets, which can then be distributed throughout the enterprise.">About Deployment Rule Sets</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-7BE40E8A-A826-49C6-B8CA-7C4B0429F6AD" title="The Rule Sets tab of the Advanced Management Console shows a list of rule sets and list of rules in each rule sets. The tab also displays an artificial rule set called All Rules, which is not a rule set, but is a collection of all rules in the Advanced Management Console. For each rule set, the name of the rule set and its title, action of the rule, rule version, and the location of the rule are displayed.">Rule Sets Tab</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-7B11BF74-370D-4E6C-A2DF-822A4A14FBDA" title="Use the Rule Set tab in the Advanced Management Console to manage rule sets and view the relationship between rule sets and applications.">Managing Rule Sets and Rules</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-D21E37F3-C8A3-44DD-8B79-DF12DB61897D" title="The Advanced Management Console provides administrators with a way to distribute a deployment rule set to desktops in their enterprise. The desktops must be registered with the Advanced Management Console.">Deploying Rule Sets</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-641A918F-A608-47F1-B1B9-4094EB5B036F" title="In the Configuration tab of the Advanced Management Console, you can generate a self-signed certificate on the server to sign rule set jars.">Generating a Self-Signing Certificate</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMV148"></a>
+<div class="props_rev_3"><a id="GUID-760FF3FC-05D9-4557-AC0B-0CEC85E1335C"></a>
+<h2 id="JSAMV-GUID-760FF3FC-05D9-4557-AC0B-0CEC85E1335C" class="sect2">About Deployment Rule Sets</h2>
+<div>
+<p>A deployment rule set enables enterprises to continue using legacy business applications in an environment of ever-tightening application security policies. You can use a deployment rule set to manage which web-based Java applications, such as Java applets or Java Web Start applications, are allowed to run in an enterprise. You can also use a deployment rule set to control the version of the Java Runtime Environment (JRE) that is used for an application. The <span>Advanced Management Console</span> provides administrators with a tool for creating and managing deployment rules sets, which can then be distributed throughout the enterprise.</p>
+<p>Deployment rule sets contain deployment rules. These rules are used in the deployment process to determine if a browser-based Java application is allowed to run, if the application is automatically blocked, or if default processing is used. Applications are compared to the rules based on criteria such as location, title, JAR file checksum, and certificate used to sign the application. Rules are compared in the order in which they appear in the rule set. The first rule that an application matches determines the action taken for that application.</p>
+<p>Although multiple rule sets can be defined, only one rule set can be active on a user's system. That rule set must be a signed JAR file. The export feature of the in the <span class="bold">Rule Sets</span> tab generates the necessary JAR file. If JAR signing is enabled, then signing is done as part of the export process; otherwise, the JAR file must be signed manually. After the JAR file is signed, it must be imported into the <span>Advanced Management Console</span> to be available for distribution. See <a href="rules-and-rule-set-management.htm#GUID-1560B06C-81D8-4A32-9826-FFF12B9009DA" title="When you have a deployment rule set ready for production, you can export that rule set and create the file that can be distributed to desktops. The file is signed if the tool is configured to supporting signing the rule set as part of the export process.">Exporting a Rule Set</a>.</p>
+<p>See <a href="http://docs.oracle.com/javase/8/docs/technotes/guides/deploy/deployment_rules.html" target="_blank">Deployment Rule Set</a> in the <span class="italic">Java Platform, Standard Edition Deployment Guide</span>.</p>
+</div>
+</div>
+<a id="JSAMV149"></a>
+<div class="props_rev_3"><a id="GUID-7BE40E8A-A826-49C6-B8CA-7C4B0429F6AD"></a>
+<h2 id="JSAMV-GUID-7BE40E8A-A826-49C6-B8CA-7C4B0429F6AD" class="sect2">Rule Sets Tab</h2>
+<div>
+<p>The Rule Sets tab of the <span>Advanced Management Console</span> shows a list of rule sets and list of rules in each rule sets. The tab also displays an artificial rule set called All Rules, which is not a rule set, but is a collection of all rules in the <span>Advanced Management Console</span>. For each rule set, the name of the rule set and its title, action of the rule, rule version, and the location of the rule are displayed.</p>
+<p>In the <span class="bold">Display Rule As</span> table, click the arrow that appears in the column heading to sort the data by the values in that column. Use the navigation bar below the table to view additional pages when the number of entries exceeds the page size. Click the <span class="bold">Properties</span> icon next to <span class="bold">Display Rule As</span> to view the properties of the selected Rule. The following figure displays the Display Rule As table and its properties:</p>
+<img width="1359" height="186" src="img/display-rule-table_with-arrows.png" alt="Description of display-rule-table_with-arrows.png follows" title="Description of display-rule-table_with-arrows.png follows" /><br />
+<a href="img_text/display-rule-table_with-arrows.htm">Description of the illustration display-rule-table_with-arrows.png</a>
+<div class="p">Click the <span class="bold">Rule Set Action</span> icon to do the following:
+<ul style="list-style-type: disc;">
+<li>
+<p>Create a new rule</p>
+</li>
+<li>
+<p>Edit the selected rule</p>
+</li>
+<li>
+<p>Add the rule to the rule set</p>
+</li>
+<li>
+<p>Move the selected rule up or down by clicking the <span class="bold">Up</span> and <span class="bold">Down</span> arrow icons</p>
+</li>
+</ul>
+</div>
+<div class="p">Under <span class="bold">Display Rule Set As</span> , select a Rule Set and click the <span class="bold">Rule Set Details</span> icon to view the Rule Set details. You can do the following:
+<ul style="list-style-type: disc;">
+<li>
+<p>Create a rule set</p>
+</li>
+<li>
+<p>Delete the selected rule set</p>
+</li>
+<li>
+<p>Sign the selected rule set</p>
+</li>
+<li>
+<p>Import a rule set</p>
+</li>
+<li>
+<p>Export a rule set</p>
+</li>
+</ul>
+</div>
+<p>In the <span class="bold">Rule Set Details</span> pane, click the <span class="bold">Edit</span> icon to edit the selected rule set. Click the <span class="bold">Rule Set Details</span> (search) icon to view the details of the rule set both in tabular as well as properties view.</p>
+</div>
+</div>
+<a id="JSAMV171"></a>
+<div class="props_rev_3"><a id="GUID-7B11BF74-370D-4E6C-A2DF-822A4A14FBDA"></a>
+<h2 id="JSAMV-GUID-7B11BF74-370D-4E6C-A2DF-822A4A14FBDA" class="sect2">Managing Rules and Rule Sets</h2>
+<div>
+<p>Use the Rule Set tab in the <span>Advanced Management Console</span> to manage rule sets and view the relationship between rule sets and applications.</p>
+<div class="p">The following table under <span class="bold">Rule Set Details</span> describes the information that is shown for each rule set. To view the details, click the <span class="bold">Rule Set Details icon</span> :
+<div class="figure" id="GUID-7B11BF74-370D-4E6C-A2DF-822A4A14FBDA__GUID-6B44CB05-6DD6-4DE0-A88B-CEEB1393660F"><img width="37" height="34" src="img/rule-set-details.png" alt="Rule Set Details icon" title="Rule Set Details icon" /></div>
+<!-- class="figure" --></div>
+<div class="tblformal" id="GUID-7B11BF74-370D-4E6C-A2DF-822A4A14FBDA__GUID-AEFAC0A3-0BF3-42E7-BD13-394DDAA18E5E">
+<table class="cellalignment116" summary="Description of the information that is shown for each rule set in the rule sets table:">
+<thead>
+<tr class="cellalignment107">
+<th class="cellalignment131" id="d11864e268">Property</th>
+<th class="cellalignment139" id="d11864e271">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment107">
+<td class="cellalignment135" id="d11864e276" headers="d11864e268">
+<p>Rule Set Name</p>
+</td>
+<td class="cellalignment140" headers="d11864e276 d11864e271">
+<p>Name of the rule set. This name is not part of the exported rule set. Double-click the rule set name to show and hide the names of the rules that are in the rule set.</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment135" id="d11864e283" headers="d11864e268">
+<p># of Rules</p>
+</td>
+<td class="cellalignment140" headers="d11864e283 d11864e271">
+<p>Number of rules in the rule set</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment135" id="d11864e290" headers="d11864e268">
+<p>Signed</p>
+</td>
+<td class="cellalignment140" headers="d11864e290 d11864e271">
+<p>Indicator that the rule set is signed. Rule sets that show a check mark in this column are signed. Only signed rule sets can be distributed to desktops in your enterprise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- class="inftblhruleinformal" -->
+<p>This topic contains the following sections:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-B2812279-3473-4392-98DB-C93E065DC759" title="You can manage rule sets in the Rule Sets tab of the Advanced Management Console.">Managing Rule Sets</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-C3086497-8E25-4D41-BF7A-735778199D83" title="In the Advanced Management Console, click the Rule Sets tab to create, edit, and delete deployment rules. The rules that you create can then be added to deployment rule sets to manage the web-based Java applications that are being run in your enterprise.">Managing Rules</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMV150"></a>
+<div class="props_rev_3"><a id="GUID-B2812279-3473-4392-98DB-C93E065DC759"></a>
+<h3 id="JSAMV-GUID-B2812279-3473-4392-98DB-C93E065DC759" class="sect3">Managing Rule Sets</h3>
+<div>
+<p>You can manage rule sets in the Rule Sets tab of the <span>Advanced Management Console</span>.</p>
+<div class="section">This topic contains the following sections:
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-A2DEC8A2-3B16-4A8B-8B3C-72ADD107FB8B" title="You can add deployment rules to the rule set to define the action that you to be applied for a web-based Java application in the Rule Sets tab. The order of the rules matters.">Adding Rules to a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-38BF6D1A-ED78-4095-96D2-590DCE983DF0" title="After a deployment rule set is created, you can add more deployment rules and delete rules that are not needed in the Rule Sets tab in the Advanced Management Console. You can also reorder the rules. The order of the rules in the rule set is important, because the action taken for a web-based Java application is determined by the first rule that the application matches.">Editing a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-DBE11537-BB01-4B48-8CDD-D6D95CDEEE0E" title="When you no longer need one of the deployment rule sets that you created, you can delete the rule set in the Rule Sets tab of the Advanced Management Console.">Deleting a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-1560B06C-81D8-4A32-9826-FFF12B9009DA" title="When you have a deployment rule set ready for production, you can export that rule set and create the file that can be distributed to desktops. The file is signed if the tool is configured to supporting signing the rule set as part of the export process.">Exporting a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-85DEB692-947B-4530-AC34-21320739BDD7">Signing a Rule Set</a></p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+<a id="JSAMV172"></a>
+<div class="props_rev_3"><a id="GUID-C3CE2FCF-1E1B-4C21-9E1B-DC8CC1B96D5E"></a>
+<h4 id="JSAMV-GUID-C3CE2FCF-1E1B-4C21-9E1B-DC8CC1B96D5E" class="sect4">Adding a Rule Set</h4>
+<div>
+<p>Only one deployment rule set can be active on a desktop. However, you can have more than one rule set in <span>Advanced Management Console</span>. You can also create rule sets for different purposes, such as providing a customized rule set for each department in your enterprise. Working with multiple rule sets also enables you to try out different combinations of rules.</p>
+<p>Adding a Rule Set includes the following:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-7FE188D2-9051-49FA-B82F-7E29CFA2C3ED" title="If you have an existing rule set, then you can import it into Advanced Management Console from the Rule Set tab.">Importing an Existing Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-D752C5FD-5B59-4258-8C4F-A6E3AFA7C285" title="To create new Rule Sets for managing web-based Java applications in your enterprise, go to the Rule Set tab in theAdvanced Management Console.">Creating a Rule Set</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMV173"></a>
+<div class="props_rev_3"><a id="GUID-7FE188D2-9051-49FA-B82F-7E29CFA2C3ED"></a>
+<h5 id="JSAMV-GUID-7FE188D2-9051-49FA-B82F-7E29CFA2C3ED" class="sect5">Importing an Existing Rule Set</h5>
+<div>
+<p>If you have an existing rule set, then you can import it into <span>Advanced Management Console</span> from the Rule Set tab.</p>
+<div class="section">
+<p>To import a rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click <span class="bold">Rule Set</span>.</span></li>
+<li class="stepexpand"><span>In the <span class="bold">Display Rule Set As</span>, click the <span class="bold">Rule Set Actions</span> drop-down arrow icon and select <span class="bold">Import</span> to display the Import New Rule Set dialog.</span></li>
+<li class="stepexpand"><span>Enter or browse to the location of the file that you want to import.</span>
+<div>
+<p>You can import a signed or unsigned rule set JAR file named <code>DeploymentRuleSet.jar</code>, or a rule set definition file named <code>ruleset.xml</code>.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Enter a name in <span class="bold">Rule Set Name</span>.</span>
+<div>
+<p><span>Advanced Management Console</span> uses this name is used to manage the rule set. The name is not included when a rule set is exported.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Import</span> to import the rule set.</span>
+<div>
+<p>The rule set is added to the Rule Sets table, and the rules included in the rule set are added to the Rules table. Expand the rule set to see the rules that were imported. The names for the rules in the imported rule set default to the name of the rule set followed by a rule number. See <a href="rules-and-rule-set-management.htm#GUID-F38A9CB8-F8F6-489D-B2C6-C1C485A99B91" title="You can modify existing deployment rules by using the Edit button in the Rule Sets tab of the Advanced Management Console.">Editing a Rule</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<a id="JSAMV174"></a>
+<div class="props_rev_3"><a id="GUID-D752C5FD-5B59-4258-8C4F-A6E3AFA7C285"></a>
+<h5 id="JSAMV-GUID-D752C5FD-5B59-4258-8C4F-A6E3AFA7C285" class="sect5">Creating a Rule Set</h5>
+<div>
+<p>To create new Rule Sets for managing web-based Java applications in your enterprise, go to the Rule Set tab in the<span>Advanced Management Console</span>.</p>
+<div class="section">
+<p>To create a rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click <span class="bold">Rule Set</span>.</span></li>
+<li class="stepexpand"><span>In <span class="bold">Display Rule Set As</span>, click the <span class="bold">Rule Set Actions</span> icon to display the <span class="bold">New Rule Set</span> dialog.</span></li>
+<li class="stepexpand"><span>Enter a Name for the rule set.</span></li>
+<li class="stepexpand"><span>(Optional) Enter the <span class="bold">Customer Data</span> for the rule set.</span>
+<div>
+<p>The Custom Data information is added to the Java Usage Tracker record when no rules in the rule set match the application.</p>
+<p>Add valid XML in the Customer Data field. A block of data must begin with the <code>&lt;customer&gt;</code> element and end with the <code>&lt;/customer&gt;</code> element. Multiple <code>&lt;customer&gt;</code> blocks are valid and all XML elements must be within a <code>&lt;customer&gt;</code> block. If the data is invalid, then the rule cannot be saved.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Create</span> to create the rule set.</span>
+<div>
+<p>The rule set is added to the Rule Sets table. If you added rules when you created the rule set, then you can expand the rule set to see the rules. See <a href="rules-and-rule-set-management.htm#GUID-A2DEC8A2-3B16-4A8B-8B3C-72ADD107FB8B" title="You can add deployment rules to the rule set to define the action that you to be applied for a web-based Java application in the Rule Sets tab. The order of the rules matters.">Adding a Rule to a Rule Set</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<a id="JSAMV175"></a>
+<div class="props_rev_3"><a id="GUID-38BF6D1A-ED78-4095-96D2-590DCE983DF0"></a>
+<h4 id="JSAMV-GUID-38BF6D1A-ED78-4095-96D2-590DCE983DF0" class="sect4">Editing a Rule Set</h4>
+<div>
+<p>After a deployment rule set is created, you can add more deployment rules and delete rules that are not needed in the <span class="bold">Rule Sets</span> tab in the <span>Advanced Management Console</span>. You can also reorder the rules. The order of the rules in the rule set is important, because the action taken for a web-based Java application is determined by the first rule that the application matches.</p>
+<p>The Editing a Rule Set topic includes the following sections:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-A2DEC8A2-3B16-4A8B-8B3C-72ADD107FB8B" title="You can add deployment rules to the rule set to define the action that you to be applied for a web-based Java application in the Rule Sets tab. The order of the rules matters.">Adding a Rule to a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-188F9D82-E308-440E-A28E-A830338C0C1D">Reordering Rules in a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-E598341A-808C-49A3-A0A9-E8D11C43554F" title="When you no longer need a deployment rule, remove it from the Rule Sets tab in the Advanced Management Console.">Removing Rules from a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-7AB7530C-2800-4204-BBF5-6AE84D7CF57B" title="Add custom data to a rule set or modify that data in the Rule Sets tab of the Advanced Management Console. This data is added to the Java Usage Tracker record when no rules in the rule set match the application.">Editing Customer Data in a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-AEDC7D05-EA37-4D8A-AD0C-C397B14B2E49" title="A signed deployment rule set is locked and is ready to be distributed in Advanced Management Console. When you edit a signed rule set, a warning message is displayed indicating that the rule set is locked. If you proceed to edit the rule set, then the rule set gets unlocked and is no longer considered signed.">Editing a Signed Rule Set</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMV176"></a>
+<div class="props_rev_3"><a id="GUID-A2DEC8A2-3B16-4A8B-8B3C-72ADD107FB8B"></a>
+<h5 id="JSAMV-GUID-A2DEC8A2-3B16-4A8B-8B3C-72ADD107FB8B" class="sect5">Adding a Rule to a Rule Set</h5>
+<div>
+<p>You can add deployment rules to the rule set to define the action that you to be applied for a web-based Java application in the Rule Sets tab. The order of the rules matters.</p>
+<div class="section">
+<p>To add rules to a rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Click the <span class="bold">Rule Sets</span> tab in the <span>Advanced Management Console</span>.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rule As</span>, select a rule in the Rules table.</span></li>
+<li class="stepexpand"><span>Use one of the following methods to add the selected rule to a rule set:</span>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p>Use the mouse to drag the selected rule from the Rules table to the target rule set in the Rule Sets table.</p>
+</li>
+<li>
+<p>Click <span class="bold">Add to Rule Set</span>. In the Add a Rule to a Rule Set dialog, select a target rule sets, and click <span class="bold">Add</span>.</p>
+</li>
+<li>
+<p>In the Rule Sets table, select a rule in a rule set. Use the mouse to drag the rule to a different rule set. The rule is added to the target rule set and also remains in the source rule set.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+<div class="section">
+<p>See <a href="rules-and-rule-set-management.htm#GUID-AEDC7D05-EA37-4D8A-AD0C-C397B14B2E49" title="A signed deployment rule set is locked and is ready to be distributed in Advanced Management Console. When you edit a signed rule set, a warning message is displayed indicating that the rule set is locked. If you proceed to edit the rule set, then the rule set gets unlocked and is no longer considered signed.">Editing a Signed Rule Set</a> for actions that are needed if you edit a signed rule set.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV177"></a>
+<div class="props_rev_3"><a id="GUID-188F9D82-E308-440E-A28E-A830338C0C1D"></a>
+<h5 id="JSAMV-GUID-188F9D82-E308-440E-A28E-A830338C0C1D" class="sect5">Reordering Rules in a Rule Set</h5>
+<div>
+<div class="section">
+<p>The order of the deployment rules in a deployment rule set matters. The first rule to match an application is used to determine the action for that application. You can reorder rules using the Up and Down arrows in the Rule Sets tab. For best results, place rules with the most restrictive matching criteria ahead of rules with less restrictive matching criteria.</p>
+<p>To reorder rules in a rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Click the <span class="bold">Rule Sets</span> tab in the <span>Advanced Management Console</span>.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rule Set As</span>, select a Rule Set from the Rule Set table.</span>
+<div>The associated rules are displayed in the Rules table under <span class="bold">Display Rule As</span>.</div>
+</li>
+<li class="stepexpand"><span>Select a rule that you want to reorder and use <span class="bold">Up</span> or <span class="bold">Down</span> buttons accordingly to move the selected rule.</span>
+<div>If the rule set is a signed rule set, then when you reorder the rules, a warning message is displayed indicating that you are about to modify a signed rule set. Typically, if rules are reordered in a signed rule set, then the rule set becomes unsigned and you need to sign the rule set to make your changes effective. See <a href="rules-and-rule-set-management.htm#GUID-AEDC7D05-EA37-4D8A-AD0C-C397B14B2E49" title="A signed deployment rule set is locked and is ready to be distributed in Advanced Management Console. When you edit a signed rule set, a warning message is displayed indicating that the rule set is locked. If you proceed to edit the rule set, then the rule set gets unlocked and is no longer considered signed.">Editing a Signed Rule Set</a>.</div>
+</li>
+</ol>
+</div>
+</div>
+<a id="JSAMV178"></a>
+<div class="props_rev_3"><a id="GUID-E598341A-808C-49A3-A0A9-E8D11C43554F"></a>
+<h5 id="JSAMV-GUID-E598341A-808C-49A3-A0A9-E8D11C43554F" class="sect5">Removing Rules from a Rule Set</h5>
+<div>
+<p>When you no longer need a deployment rule, remove it from the Rule Sets tab in the <span>Advanced Management Console</span>.</p>
+<div class="section">
+<p>To remove rules from a rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Click the <span class="bold">Rule Sets</span> tab in the <span>Advanced Management Console</span>.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rule As</span>, select a rule in the Rules table.</span></li>
+<li class="stepexpand"><span>Select the rule that you want to remove.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Remove from Rule Set</span>.</span>
+<div>The rule gets deleted from the rule set. If the rule set is a signed rule set, then when you try to remove a rule, a warning message is displayed in the <span class="bold">Remove Rule From Rule Set</span> dialog indicating that you are about to modify a signed rule set. Typically, if rules are removed from a signed rule set, then the rule set becomes unsigned and you need to sign the rule set to make your changes effective. See <a href="rules-and-rule-set-management.htm#GUID-AEDC7D05-EA37-4D8A-AD0C-C397B14B2E49" title="A signed deployment rule set is locked and is ready to be distributed in Advanced Management Console. When you edit a signed rule set, a warning message is displayed indicating that the rule set is locked. If you proceed to edit the rule set, then the rule set gets unlocked and is no longer considered signed.">Editing a Signed Rule Set</a>.</div>
+</li>
+</ol>
+<div class="section">
+<p>The selected rules are removed from the rule set, but remain in the Rules table for future use. See <a href="rules-and-rule-set-management.htm#GUID-179465EF-F597-434E-9264-D81B9C7C38B6" title="You can delete existing deployment rules by using the Delete button in the Rule Sets tab of the Advanced Management Console.">Deleting a Rule</a>.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMV214"></a>
+<div class="props_rev_3"><a id="GUID-7AB7530C-2800-4204-BBF5-6AE84D7CF57B"></a>
+<h5 id="JSAMV-GUID-7AB7530C-2800-4204-BBF5-6AE84D7CF57B" class="sect5">Editing Customer Data in a Rule Set</h5>
+<div>
+<p>Add custom data to a rule set or modify that data in the <span class="bold">Rule Sets</span> tab of the <span>Advanced Management Console</span>. This data is added to the Java Usage Tracker record when no rules in the rule set match the application.</p>
+<div class="section">
+<p>To edit customer data:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Click the <span class="bold">Rule Sets</span> tab in the <span>Advanced Management Console</span>.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rule As</span>, select a rule in the Rules table and click <span class="bold">Edit</span> to display the Edit Rule dialog.</span></li>
+<li class="stepexpand"><span>In the Customer Data section, make the changes that you want.</span>
+<div>
+<p>Add valid XML in the Customer Data field. A block of data must begin with the <code>&lt;customer&gt;</code> element and end with the <code>&lt;/customer&gt;</code> element. Multiple <code>&lt;customer&gt;</code> blocks are valid and all XML elements must be within a <code>&lt;customer&gt;</code> block. If the data is invalid, then the rule cannot be saved.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Apply</span> to save the changes.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMV208"></a>
+<div class="props_rev_3"><a id="GUID-AEDC7D05-EA37-4D8A-AD0C-C397B14B2E49"></a>
+<h5 id="JSAMV-GUID-AEDC7D05-EA37-4D8A-AD0C-C397B14B2E49" class="sect5">Editing a Signed Rule Set</h5>
+<div>
+<p>A signed deployment rule set is locked and is ready to be distributed in <span>Advanced Management Console</span>. When you edit a signed rule set, a warning message is displayed indicating that the rule set is locked. If you proceed to edit the rule set, then the rule set gets unlocked and is no longer considered signed.</p>
+<div class="section">
+<div class="p">The following tasks provides information about editing a signed deployment rule set:
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-A2DEC8A2-3B16-4A8B-8B3C-72ADD107FB8B" title="You can add deployment rules to the rule set to define the action that you to be applied for a web-based Java application in the Rule Sets tab. The order of the rules matters.">Adding Rules to a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-188F9D82-E308-440E-A28E-A830338C0C1D">Reordering Rules in a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-E598341A-808C-49A3-A0A9-E8D11C43554F" title="When you no longer need a deployment rule, remove it from the Rule Sets tab in the Advanced Management Console.">Removing Rules from a Rule Set</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-7AB7530C-2800-4204-BBF5-6AE84D7CF57B" title="Add custom data to a rule set or modify that data in the Rule Sets tab of the Advanced Management Console. This data is added to the Java Usage Tracker record when no rules in the rule set match the application.">Editing Customer Data in a Rule Set</a></p>
+</li>
+</ul>
+</div>
+<p>To use the rule set after it is edited, you must export and sign the rule set. To sign the rule set, you can do either of the following:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Select the option to sign the rule set internally in the <span>Advanced Management Console</span> when you export: In this case, you need not import the signed rule set back into <span>Advanced Management Console</span>, because the import is automatically done. See <a href="rules-and-rule-set-management.htm#GUID-1560B06C-81D8-4A32-9826-FFF12B9009DA" title="When you have a deployment rule set ready for production, you can export that rule set and create the file that can be distributed to desktops. The file is signed if the tool is configured to supporting signing the rule set as part of the export process.">Exporting a Rule Set</a>.</p>
+</li>
+<li>
+<p>Sign the rule set externally after you have exported it. Typically, you can do this when you have your own corporate code signing group or service that signs artifacts for you: In this scenario, when you export the rule set and sign externally, you must import the signed rule set back to Advanced Management Console. See <a href="rules-and-rule-set-management.htm#GUID-7FE188D2-9051-49FA-B82F-7E29CFA2C3ED" title="If you have an existing rule set, then you can import it into Advanced Management Console from the Rule Set tab.">Importing an Existing Rule Set</a>.</p>
+</li>
+</ul>
+<div class="infobox-note" id="GUID-AEDC7D05-EA37-4D8A-AD0C-C397B14B2E49__GUID-621EC4A8-6374-4295-AB38-26088F7EDCE8">
+<p class="notep1">Note:</p>
+<p>After an existing rule set is signed, it is redeployed to all the managed desktops, to which the rule set was originally deployed. For example, if the rule set was the most recent rule set deployed to desktop A, then desktop A gets an automatic update with a new version of the rule set after it is signed again.</p>
+</div>
+</div>
+<!-- class="section" --></div>
+</div>
+</div>
+<a id="JSAMV182"></a>
+<div class="props_rev_3"><a id="GUID-DBE11537-BB01-4B48-8CDD-D6D95CDEEE0E"></a>
+<h4 id="JSAMV-GUID-DBE11537-BB01-4B48-8CDD-D6D95CDEEE0E" class="sect4">Deleting a Rule Set</h4>
+<div>
+<p>When you no longer need one of the deployment rule sets that you created, you can delete the rule set in the Rule Sets tab of the <span>Advanced Management Console</span>.</p>
+<div class="section">
+<p>To delete a rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li><span>In the <span>Advanced Management Console</span>, click <span class="bold">Rule Set</span>.</span></li>
+<li><span>Under <span class="bold">Display Rule Set As</span>, select a Rule Set that you want to delete.</span></li>
+<li><span>Click the <span class="bold">Rule Set Actions</span> icon and select <span class="bold">Delete</span>.</span></li>
+<li><span>In the Delete Rule Set confirmation dialog, click <span class="bold">Delete</span> to delete the selected rule set.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMV183"></a>
+<div class="props_rev_3"><a id="GUID-1560B06C-81D8-4A32-9826-FFF12B9009DA"></a>
+<h4 id="JSAMV-GUID-1560B06C-81D8-4A32-9826-FFF12B9009DA" class="sect4">Exporting a Rule Set</h4>
+<div>
+<p>When you have a deployment rule set ready for production, you can export that rule set and create the file that can be distributed to desktops. The file is signed if the tool is configured to supporting signing the rule set as part of the export process.</p>
+<div class="section">
+<p>To export a rule set:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Rule Sets</span> tab.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rule Set As</span> select a Rule Set that you want to export.</span></li>
+<li class="stepexpand"><span>Click the <span class="bold">Rule Set Actions</span> icon and select <span class="bold">Export</span> to display the Export Rule Set dialog</span></li>
+<li class="stepexpand"><span>Provide the following information:</span>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p><span class="bold">DRS Version</span>: Select the deployment rule set version for the rule set. Rules might contain information that is not supported in earlier versions. Select <span class="bold">Auto</span> to have the version set automatically based on the rules in the rule set.</p>
+</li>
+<li>
+<p><span class="bold">Sign Rule Set</span>: Select this option to sign the rule set as part of the export process.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Export</span> to export the rule set.</span>
+<div>
+<p>If you have selected the JAR option, then the <span class="bold">Opening Deployment RuleSet.Jar</span> dialog is displayed indicating that the <code>DeploymentRuleSet.jar</code> file is created in the output directory specified. Click <span class="bold">Save</span> to save the JAR file to your system.</p>
+<p>If you have selected the XML option, then the <span class="bold">Opening ruleset.xml</span> dialog is displayed indicating that the <code>ruleset.xml</code> file is created in the output directory specified. See <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/deployment_rules.html#JSDPG933" target="_blank">Package and Install the Rule Set</a> in the <span class="italic">Java Platform, Standard Edition Deployment Guide</span> .</p>
+<p>A signed rule set is ready to be distributed to your users. To use <span>Advanced Management Console</span> for distribution, you must import the signed rule set from the Rule Sets tab. See <a href="rules-and-rule-set-management.htm#GUID-7FE188D2-9051-49FA-B82F-7E29CFA2C3ED" title="If you have an existing rule set, then you can import it into Advanced Management Console from the Rule Set tab.">Importing an Existing Rule Set</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect4"><a id="GUID-85DEB692-947B-4530-AC34-21320739BDD7"></a>
+<h4 id="JSAMV-GUID-85DEB692-947B-4530-AC34-21320739BDD7" class="sect4">Signing a Rule Set</h4>
+<div>
+<div class="section">To sign a rule set:</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Rule Sets</span> tab.</span></li>
+<li class="stepexpand"><span>In the Rules table, select the Rule you want to sign.</span></li>
+<li class="stepexpand"><span>Click the down arrow above the Rules table and click <span class="bold">Sign...</span> to display the Sign Rule Set JAR File dialog.</span>
+<div>If the selected Rule has already been signed, then a warning message is displayed in the dialog indicating that the rule set has already been signed.</div>
+</li>
+<li class="stepexpand"><span>Select one of the following options in the Sign Rule Set JAR File dialog:</span>
+<ul>
+<li><span class="bold">Sign with self-signed certificate</span></li>
+<li><span class="bold">Sign with local keystore and private key provided by user</span></li>
+<li><span class="bold">Import a signed JAR</span></li>
+</ul>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span>.The Signing Details are as shown as shown:</span>
+<div>
+<div class="figure" id="GUID-85DEB692-947B-4530-AC34-21320739BDD7__FIG-122531-5A92E5D7"><img width="754" height="553" src="img/rules-set-signing-details.png" alt="Description of rules-set-signing-details.png follows" title="Description of rules-set-signing-details.png follows" /><br />
+<a href="img_text/rules-set-signing-details.htm">Description of the illustration rules-set-signing-details.png</a></div>
+<!-- class="figure" --></div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Sign</span>.</span></li>
+</ol>
+<div class="section">If the Rule Set has been signed, then it is indicated with a success message in the Summary page of the Sign Rule Set Jar File dialog box.</div>
+<!-- class="section" --></div>
+</div>
+<div class="props_rev_3"><a id="GUID-482DCDD3-4DA5-4E7D-9252-A02D99842941"></a>
+<h4 id="JSAMV-GUID-482DCDD3-4DA5-4E7D-9252-A02D99842941" class="sect4">Viewing Relationships between Rule Sets and Applications</h4>
+<div>
+<p>Identify the deployment rule sets that match a specific application from the <span class="bold">Rule Sets</span> tab. Viewing rule set relationships enables you to verify that you have defined a deployment rule to provide the desired action for a web-based Java application.</p>
+<div class="section">
+<p>To view the relationships for a specific application:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Rule Sets</span> tab.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rule Set As</span> select a rule set from the rule set table.</span></li>
+<li class="stepexpand"><span>Click the <span class="bold">Rule Set &mdash; App Relationship</span> icon to display a tree view of all rule sets and their related applications.</span></li>
+<li class="stepexpand"><span>Expand the <span class="bold">All Rule Sets</span> tree and select a rule set to display the relationship in the <span class="bold">Related Applications</span> panel.</span>
+<div>
+<p>The <span class="bold">Related Applications</span> panel shows the web-based Java applications that you selected and the JAR file and extensions for that application.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click the <span class="bold">Table</span> icon to go back to the rule sets table view.</span></li>
+</ol>
+</div>
+</div>
+</div>
+<a id="JSAMV161"></a>
+<div class="props_rev_3"><a id="GUID-C3086497-8E25-4D41-BF7A-735778199D83"></a>
+<h3 id="JSAMV-GUID-C3086497-8E25-4D41-BF7A-735778199D83" class="sect3">Managing Rules</h3>
+<div>
+<p>In the <span>Advanced Management Console</span>, click the <span class="bold">Rule Sets</span> tab to create, edit, and delete deployment rules. The rules that you create can then be added to deployment rule sets to manage the web-based Java applications that are being run in your enterprise.</p>
+<p>The following actions are available for managing rules:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-B1C49CCE-E817-4A5D-B68D-51B28CD49A4C" title="Create deployment rules from both the Java Usage tab and the Rule Set tab of the Advanced Management Console. A rule is used to define the action taken when a web-based Java application that matches the rule is started.">Creating a Rule</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-F38A9CB8-F8F6-489D-B2C6-C1C485A99B91" title="You can modify existing deployment rules by using the Edit button in the Rule Sets tab of the Advanced Management Console.">Editing a Rule</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-179465EF-F597-434E-9264-D81B9C7C38B6" title="You can delete existing deployment rules by using the Delete button in the Rule Sets tab of the Advanced Management Console.">Deleting a Rule</a></p>
+</li>
+<li>
+<p><a href="rules-and-rule-set-management.htm#GUID-96E6A1FA-C4A9-4EFE-8B23-834A4F3D96DE" title="Each deployment rule contains information that is used to determine if a web-based Java application matches the rule. When an application is run, the application properties are compared with the rule properties to determine if the application is allowed to run.">Rule Properties</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMV163"></a>
+<div class="props_rev_3"><a id="GUID-B1C49CCE-E817-4A5D-B68D-51B28CD49A4C"></a>
+<h4 id="JSAMV-GUID-B1C49CCE-E817-4A5D-B68D-51B28CD49A4C" class="sect4">Creating a Rule</h4>
+<div>
+<p>Create deployment rules from both the Java Usage tab and the Rule Set tab of the <span>Advanced Management Console</span>. A rule is used to define the action taken when a web-based Java application that matches the rule is started.</p>
+<div class="section">
+<p>To create a rule from the Rule Sets tab:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li><span>In the <span>Advanced Management Console</span> click the <span class="bold">Rule Sets</span> tab.</span></li>
+<li><span>Click <span class="bold">New</span> on the <span class="bold">Display Rule As</span> panel to display the Create a New Rule dialog.</span></li>
+<li><span>Enter a name for the rule, and provide information for the remaining fields.</span></li>
+<li><span>Click <span class="bold">Create</span> to save the rule.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMV165"></a>
+<div class="props_rev_3"><a id="GUID-F38A9CB8-F8F6-489D-B2C6-C1C485A99B91"></a>
+<h4 id="JSAMV-GUID-F38A9CB8-F8F6-489D-B2C6-C1C485A99B91" class="sect4">Editing a Rule</h4>
+<div>
+<p>You can modify existing deployment rules by using the <span class="bold">Edit</span> button in the <span class="bold">Rule Sets</span> tab of the <span>Advanced Management Console</span>.</p>
+<div class="section">
+<p>To edit a rule:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span> click the <span class="bold">Rule Sets</span> tab.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rules As</span>, select a Rule from the Rules table.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Edit</span> to display the Edit Rule dialog.</span></li>
+<li class="stepexpand"><span>Edit the rule details.</span>
+<div>
+<p>If you edit a rule that is associated with a signed rule set, then the respective rule set becomes unsigned and out of date. You need to sign the rule sets again to make them effective.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Apply</span> to apply your changes to the rule.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMV166"></a>
+<div class="props_rev_3"><a id="GUID-179465EF-F597-434E-9264-D81B9C7C38B6"></a>
+<h4 id="JSAMV-GUID-179465EF-F597-434E-9264-D81B9C7C38B6" class="sect4">Deleting a Rule</h4>
+<div>
+<p>You can delete existing deployment rules by using the <span class="bold">Delete</span> button in the <span class="bold">Rule Sets</span> tab of the <span>Advanced Management Console</span>.</p>
+<div class="section">
+<p>To delete a rule:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span> click the <span class="bold">Rule Sets</span> tab.</span></li>
+<li class="stepexpand"><span>Under <span class="bold">Display Rules As</span>, select a Rule from the Rules table.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Delete</span> to display the Delete Rule confirmation dialog.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Delete</span> to delete the rule.</span>
+<div>The rule gets deleted from the Rules table.</div>
+</li>
+</ol>
+</div>
+</div>
+<a id="JSAMV170"></a>
+<div class="props_rev_3"><a id="GUID-96E6A1FA-C4A9-4EFE-8B23-834A4F3D96DE"></a>
+<h4 id="JSAMV-GUID-96E6A1FA-C4A9-4EFE-8B23-834A4F3D96DE" class="sect4">Rule Properties</h4>
+<div>
+<p>Each deployment rule contains information that is used to determine if a web-based Java application matches the rule. When an application is run, the application properties are compared with the rule properties to determine if the application is allowed to run.</p>
+<div class="section">
+<p>The following table describes the rule properties:</p>
+</div>
+<!-- class="section" -->
+<div class="tblformalwide" id="GUID-96E6A1FA-C4A9-4EFE-8B23-834A4F3D96DE__GUID-65727710-0108-49D1-AB21-9635FA83DE7D">
+<table class="cellalignment141" summary="Description of the rule properties that are used to determine if an application is allowed to run">
+<thead>
+<tr class="cellalignment107">
+<th class="cellalignment142" id="d11864e1658">Property</th>
+<th class="cellalignment143" id="d11864e1661">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1666" headers="d11864e1658">
+<p>Name</p>
+</td>
+<td class="cellalignment145" headers="d11864e1666 d11864e1661">
+<p>Name given to the rule. This name is required for identification purposes within <span>Advanced Management Console</span>. The name is not exported with the rule set.</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1676" headers="d11864e1658">
+<p>Title</p>
+</td>
+<td class="cellalignment145" headers="d11864e1676 d11864e1661">
+<p>Title of the application. If no title is provided, then all applications are considered a match to the title property. If a title is provided and Rule Action is set to either <code>default</code> or <code>run</code>, then information must be provided for Location, Certificate, or both.</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1689" headers="d11864e1658">
+<p>Location</p>
+</td>
+<td class="cellalignment145" headers="d11864e1689 d11864e1661">
+<p>URL for the source of the application. If no URL is provided, then all applications are considered a match to the URL field. For applications that use JNLP, this is the location of the JNLP file. For applications embedded in a web page, this is the location of the web page.</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1696" headers="d11864e1658">
+<p>Certificate</p>
+</td>
+<td class="cellalignment145" headers="d11864e1696 d11864e1661">
+<p>Hash value for the certificate that was used to sign the application and the algorithm used to create the hash value. Certificate hash values are typically used to identify signed applications.</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1703" headers="d11864e1658">
+<p>Checksum</p>
+</td>
+<td class="cellalignment145" headers="d11864e1703 d11864e1661">
+<p>Hash value for the checksum for the JAR file and the algorithm used to create the hash value. Checksum hash values are typically used to identify unsigned JAR files.</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1710" headers="d11864e1658">
+<p>Rule Action</p>
+</td>
+<td class="cellalignment145" headers="d11864e1710 d11864e1661">
+<p>Action taken for any application that matches the rule. Select one of the following options:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>default</code>: Use default processing to determine if the application is allowed to run.</p>
+</li>
+<li>
+<p><code>block</code>: Always block the application.</p>
+</li>
+<li>
+<p><code>run</code>: Allow the application to run. If this option is selected, then you must also specify a JRE version and at least one of the following properties: Title, Location, Hash value.</p>
+</li>
+<li>
+<p><code>force-run</code>: Override the JRE requested by the application, if any, and run the application with the JRE specified in the rule. If this option is selected, then you must also specify a JRE version.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1738" headers="d11864e1658">
+<p>Version</p>
+</td>
+<td class="cellalignment145" headers="d11864e1738 d11864e1661">
+<p>JRE version to use to run the application. This property is enabled only if the Rule Action is set to <code>run</code> or <code>force-run</code>.</p>
+<p>The version specified for the rule must match the version specified by the application; otherwise, the application is blocked. The versions don't need to be an exact match, for example, 1.7+ and 1.8* are considered a match. For <span class="bold">Version</span>, choose one of the following options and select a release or enter a version number:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>SECURE: Any secure version. This option matches the secure version from any API level.</p>
+</li>
+<li>
+<p>SECURE + API level: A secure version from the API level selected from the list. Select <span class="bold">Or Later</span> to allow secure versions newer than the selected API level to be used. For example, SECURE-1.7 matches any secure version from the 1.7 release only, and SECURE-1.7+ matches any secure version from the 1.7 release and later releases.</p>
+</li>
+<li>
+<p>API level: Any version from the API level selected from the list. Select <span class="bold">Or Later</span> to allow versions newer than the selected API level to be used. For example, 1.7* matches any version of the 1.7 release only, and 1.7+ matches any version of the 1.7 release and later releases. An asterisk is added to the API level when the rule is saved if <span class="bold">Or Later</span> is not selected.</p>
+</li>
+<li>
+<p>Product: The specific version entered in the field for versions. Enter the version that you want, or select a release from the list. Select <span class="bold">Or Later</span> to allow versions newer than the specified version to be used. For example, 1.8.0_05 matches only the 1.8.0_05 version of the 1.8 release, and 1.8.0_05+ matches the 1.8.0_05 version and later versions in the 1.8 release as well as versions in later releases.</p>
+</li>
+<li>
+<p>Latest available JRE: The latest version that is available on the user's system.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1784" headers="d11864e1658">
+<p>Message</p>
+</td>
+<td class="cellalignment145" headers="d11864e1784 d11864e1661">
+<p>Message shown to the user. If no message is provided, then a default message is shown when an application is blocked, and no message is shown when an application matches a run rule.</p>
+<p>To add a message, right click in the message table and select <span class="bold">Add Message</span>. A new row is added to the table.</p>
+<p>In the Locale column, enter the locale for the message and Enter. In the Message column, enter the message to show the user and press the Enter key. If the Locale field is set to <code>&lt;default&gt;</code>, then the message is used when no message is provided for the user's locale.</p>
+<p>If multiple messages are provided, then all messages are compared with the user's locale in the order shown. If more than one message matches the locale, then the last message matched is used. To reorder the messages in the table, delete and reenter the messages as needed.</p>
+</td>
+</tr>
+<tr class="cellalignment107">
+<td class="cellalignment144" id="d11864e1803" headers="d11864e1658">
+<p>Customer Data</p>
+</td>
+<td class="cellalignment145" headers="d11864e1803 d11864e1661">
+<p>Custom information that is included in a rule. This information is added to the Java Usage Tracker record when an application that matches the rule is run.</p>
+<p>Add valid XML in the Customer Data field. Each block of data must begin with the <code>&lt;customer&gt;</code> element and end with the <code>&lt;/customer&gt;</code> element. Multiple <code>&lt;customer&gt;</code> blocks can be entered. All XML elements must be within a <code>&lt;customer&gt;</code> block. If the data is invalid, the rule cannot be saved.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- class="inftblhruleinformal" --></div>
+</div>
+</div>
+</div>
+<a id="JSAMV151"></a>
+<div class="props_rev_3"><a id="GUID-D21E37F3-C8A3-44DD-8B79-DF12DB61897D"></a>
+<h2 id="JSAMV-GUID-D21E37F3-C8A3-44DD-8B79-DF12DB61897D" class="sect2">Deploying Rule Sets</h2>
+<p>The <span>Advanced Management Console</span> provides administrators with a way to distribute a deployment rule set to desktops in their enterprise. The desktops must be registered with the <span>Advanced Management Console</span>.</p>
+</div>
+<div class="sect2"><a id="GUID-641A918F-A608-47F1-B1B9-4094EB5B036F"></a>
+<h2 id="JSAMV-GUID-641A918F-A608-47F1-B1B9-4094EB5B036F" class="sect2">Generating a Self-Signed Certificate</h2>
+<div>
+<p>In the Configuration tab of the <span>Advanced Management Console</span>, you can generate a self-signed certificate on the server to sign rule set jars.</p>
+<div class="p"></div>
+<!-- class="section" -->
+<div class="section">To generate a self-signed certificate:</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span> click the <span class="bold">Configuration</span> tab.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Jar Signing</span>.</span>
+<div>If a generated certificate already exists, the corresponding data is displayed, and the <span class="bold">Generate</span> button is disabled.</div>
+</li>
+<li class="stepexpand"><span>Enter the following details in the <span class="bold">Create Certificate</span> dialog:</span>
+<ul>
+<li>Common Name</li>
+<li>Organizational Unit</li>
+<li>Organization</li>
+<li>City</li>
+<li>State/Region</li>
+<li>Country</li>
+<li>Days Valid: Optional field. By default, the value in the <span class="bold">Days Valid</span> field is set to 365 days.</li>
+</ul>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Generate</span>.</span>
+<div>The details of the self-signed certificate are displayed under <span class="bold">Generated certificate for signing deployment rule set JARs</span>. Click <span class="bold">Export Certificate</span> to download the generated certificate in PEM (Privacy-Enhanced Mail) format .</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment106">
+<tr>
+<td class="cellalignment113">
+<table class="cellalignment111">
+<tr>
+<td class="cellalignment110"><a href="user-management.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment110"><a href="desktop-groups-configuration.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2014, 2017, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment115">
+<table class="cellalignment109">
+<tr>
+<td class="cellalignment110"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment110"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment110"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

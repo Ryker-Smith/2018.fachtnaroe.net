@@ -1,0 +1,1526 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1: User Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the commands and utilities available with this operating system, including commands found only in the SunOS/BSD Compatibility Package, commands for communicating with other systems, commands associated with the Form and Menu Language Interpreter (FMLI), and commands specific to the SunOS&#8482; system.The available options, arguments, and operands for each command are provided in accordance with standard rules of command syntax, along with availability attributes, diagnostic information, and cross-references to other manual pages and reference material with relevant information.This section is for all UNIX&#174; system users.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1461";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1: User Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1461.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1 (821-1461-06)&body=Page: mailx-1.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-39.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-193.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-474.html">User Commands</a></p>
+<p class="toc level2"><a href="acctcom-1.html"><tt>acctcom</tt>(1)</a></p>
+<p class="toc level2"><a href="adb-1.html"><tt>adb</tt>(1)</a></p>
+<p class="toc level2"><a href="addbib-1.html"><tt>addbib</tt>(1)</a></p>
+<p class="toc level2"><a href="admin-1.html"><tt>admin</tt>(1)</a></p>
+<p class="toc level2"><a href="alias-1.html"><tt>alias</tt>(1)</a></p>
+<p class="toc level2"><a href="allocate-1.html"><tt>allocate</tt>(1)</a></p>
+<p class="toc level2"><a href="amt-1.html"><tt>amt</tt>(1)</a></p>
+<p class="toc level2"><a href="appcert-1.html"><tt>appcert</tt>(1)</a></p>
+<p class="toc level2"><a href="apptrace-1.html"><tt>apptrace</tt>(1)</a></p>
+<p class="toc level2"><a href="apropos-1.html"><tt>apropos</tt>(1)</a></p>
+<p class="toc level2"><a href="ar-1.html"><tt>ar</tt>(1)</a></p>
+<p class="toc level2"><a href="arch-1.html"><tt>arch</tt>(1)</a></p>
+<p class="toc level2"><a href="as-1.html"><tt>as</tt>(1)</a></p>
+<p class="toc level2"><a href="asa-1.html"><tt>asa</tt>(1)</a></p>
+<p class="toc level2"><a href="at-1.html"><tt>at</tt>(1)</a></p>
+<p class="toc level2"><a href="atq-1.html"><tt>atq</tt>(1)</a></p>
+<p class="toc level2"><a href="atrm-1.html"><tt>atrm</tt>(1)</a></p>
+<p class="toc level2"><a href="audioconvert-1.html"><tt>audioconvert</tt>(1)</a></p>
+<p class="toc level2"><a href="audioctl-1.html"><tt>audioctl</tt>(1)</a></p>
+<p class="toc level2"><a href="audioplay-1.html"><tt>audioplay</tt>(1)</a></p>
+<p class="toc level2"><a href="audiorecord-1.html"><tt>audiorecord</tt>(1)</a></p>
+<p class="toc level2"><a href="audiotest-1.html"><tt>audiotest</tt>(1)</a></p>
+<p class="toc level2"><a href="auths-1.html"><tt>auths</tt>(1)</a></p>
+<p class="toc level2"><a href="auto-ef-1.html"><tt>auto_ef</tt>(1)</a></p>
+<p class="toc level2"><a href="awk-1.html"><tt>awk</tt>(1)</a></p>
+<p class="toc level2"><a href="banner-1.html"><tt>banner</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1.html"><tt>basename</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1b.html"><tt>basename</tt>(1B)</a></p>
+<p class="toc level2"><a href="batch-1.html"><tt>batch</tt>(1)</a></p>
+<p class="toc level2"><a href="bc-1.html"><tt>bc</tt>(1)</a></p>
+<p class="toc level2"><a href="bdiff-1.html"><tt>bdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="bfs-1.html"><tt>bfs</tt>(1)</a></p>
+<p class="toc level2"><a href="bg-1.html"><tt>bg</tt>(1)</a></p>
+<p class="toc level2"><a href="biff-1b.html"><tt>biff</tt>(1B)</a></p>
+<p class="toc level2"><a href="break-1.html"><tt>break</tt>(1)</a></p>
+<p class="toc level2"><a href="builtin-1.html"><tt>builtin</tt>(1)</a></p>
+<p class="toc level2"><a href="cal-1.html"><tt>cal</tt>(1)</a></p>
+<p class="toc level2"><a href="calendar-1.html"><tt>calendar</tt>(1)</a></p>
+<p class="toc level2"><a href="cancel-1.html"><tt>cancel</tt>(1)</a></p>
+<p class="toc level2"><a href="case-1.html"><tt>case</tt>(1)</a></p>
+<p class="toc level2"><a href="cat-1.html"><tt>cat</tt>(1)</a></p>
+<p class="toc level2"><a href="cd-1.html"><tt>cd</tt>(1)</a></p>
+<p class="toc level2"><a href="cdc-1.html"><tt>cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="cdrw-1.html"><tt>cdrw</tt>(1)</a></p>
+<p class="toc level2"><a href="chdir-1.html"><tt>chdir</tt>(1)</a></p>
+<p class="toc level2"><a href="checkeq-1.html"><tt>checkeq</tt>(1)</a></p>
+<p class="toc level2"><a href="checknr-1.html"><tt>checknr</tt>(1)</a></p>
+<p class="toc level2"><a href="chgrp-1.html"><tt>chgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="chkey-1.html"><tt>chkey</tt>(1)</a></p>
+<p class="toc level2"><a href="chmod-1.html"><tt>chmod</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1.html"><tt>chown</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1b.html"><tt>chown</tt>(1B)</a></p>
+<p class="toc level2"><a href="ckdate-1.html"><tt>ckdate</tt>(1)</a></p>
+<p class="toc level2"><a href="ckgid-1.html"><tt>ckgid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckint-1.html"><tt>ckint</tt>(1)</a></p>
+<p class="toc level2"><a href="ckitem-1.html"><tt>ckitem</tt>(1)</a></p>
+<p class="toc level2"><a href="ckkeywd-1.html"><tt>ckkeywd</tt>(1)</a></p>
+<p class="toc level2"><a href="ckpath-1.html"><tt>ckpath</tt>(1)</a></p>
+<p class="toc level2"><a href="ckrange-1.html"><tt>ckrange</tt>(1)</a></p>
+<p class="toc level2"><a href="ckstr-1.html"><tt>ckstr</tt>(1)</a></p>
+<p class="toc level2"><a href="cksum-1.html"><tt>cksum</tt>(1)</a></p>
+<p class="toc level2"><a href="cktime-1.html"><tt>cktime</tt>(1)</a></p>
+<p class="toc level2"><a href="ckuid-1.html"><tt>ckuid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckyorn-1.html"><tt>ckyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="clear-1.html"><tt>clear</tt>(1)</a></p>
+<p class="toc level2"><a href="cmp-1.html"><tt>cmp</tt>(1)</a></p>
+<p class="toc level2"><a href="col-1.html"><tt>col</tt>(1)</a></p>
+<p class="toc level2"><a href="comb-1.html"><tt>comb</tt>(1)</a></p>
+<p class="toc level2"><a href="comm-1.html"><tt>comm</tt>(1)</a></p>
+<p class="toc level2"><a href="command-1.html"><tt>command</tt>(1)</a></p>
+<p class="toc level2"><a href="compress-1.html"><tt>compress</tt>(1)</a></p>
+<p class="toc level2"><a href="continue-1.html"><tt>continue</tt>(1)</a></p>
+<p class="toc level2"><a href="cp-1.html"><tt>cp</tt>(1)</a></p>
+<p class="toc level2"><a href="cpio-1.html"><tt>cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="cpp-1.html"><tt>cpp</tt>(1)</a></p>
+<p class="toc level2"><a href="cputrack-1.html"><tt>cputrack</tt>(1)</a></p>
+<p class="toc level2"><a href="crle-1.html"><tt>crle</tt>(1)</a></p>
+<p class="toc level2"><a href="crontab-1.html"><tt>crontab</tt>(1)</a></p>
+<p class="toc level2"><a href="crypt-1.html"><tt>crypt</tt>(1)</a></p>
+<p class="toc level2"><a href="csh-1.html"><tt>csh</tt>(1)</a></p>
+<p class="toc level2"><a href="csplit-1.html"><tt>csplit</tt>(1)</a></p>
+<p class="toc level2"><a href="ct-1c.html"><tt>ct</tt>(1C)</a></p>
+<p class="toc level2"><a href="ctags-1.html"><tt>ctags</tt>(1)</a></p>
+<p class="toc level2"><a href="ctrun-1.html"><tt>ctrun</tt>(1)</a></p>
+<p class="toc level2"><a href="ctstat-1.html"><tt>ctstat</tt>(1)</a></p>
+<p class="toc level2"><a href="ctwatch-1.html"><tt>ctwatch</tt>(1)</a></p>
+<p class="toc level2"><a href="cu-1c.html"><tt>cu</tt>(1C)</a></p>
+<p class="toc level2"><a href="cut-1.html"><tt>cut</tt>(1)</a></p>
+<p class="toc level2"><a href="date-1.html"><tt>date</tt>(1)</a></p>
+<p class="toc level2"><a href="dc-1.html"><tt>dc</tt>(1)</a></p>
+<p class="toc level2"><a href="deallocate-1.html"><tt>deallocate</tt>(1)</a></p>
+<p class="toc level2"><a href="decrypt-1.html"><tt>decrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="delta-1.html"><tt>delta</tt>(1)</a></p>
+<p class="toc level2"><a href="deroff-1.html"><tt>deroff</tt>(1)</a></p>
+<p class="toc level2"><a href="des-1.html"><tt>des</tt>(1)</a></p>
+<p class="toc level2"><a href="df-1b.html"><tt>df</tt>(1B)</a></p>
+<p class="toc level2"><a href="dhcpinfo-1.html"><tt>dhcpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="diff-1.html"><tt>diff</tt>(1)</a></p>
+<p class="toc level2"><a href="diff3-1.html"><tt>diff3</tt>(1)</a></p>
+<p class="toc level2"><a href="diffmk-1.html"><tt>diffmk</tt>(1)</a></p>
+<p class="toc level2"><a href="digest-1.html"><tt>digest</tt>(1)</a></p>
+<p class="toc level2"><a href="digestp-1.html"><tt>digestp</tt>(1)</a></p>
+<p class="toc level2"><a href="dircmp-1.html"><tt>dircmp</tt>(1)</a></p>
+<p class="toc level2"><a href="dirname-1.html"><tt>dirname</tt>(1)</a></p>
+<p class="toc level2"><a href="dirs-1.html"><tt>dirs</tt>(1)</a></p>
+<p class="toc level2"><a href="dis-1.html"><tt>dis</tt>(1)</a></p>
+<p class="toc level2"><a href="disable-1.html"><tt>disable</tt>(1)</a></p>
+<p class="toc level2"><a href="disown-1.html"><tt>disown</tt>(1)</a></p>
+<p class="toc level2"><a href="dispgid-1.html"><tt>dispgid</tt>(1)</a></p>
+<p class="toc level2"><a href="dispuid-1.html"><tt>dispuid</tt>(1)</a></p>
+<p class="toc level2"><a href="dos2unix-1.html"><tt>dos2unix</tt>(1)</a></p>
+<p class="toc level2"><a href="download-1.html"><tt>download</tt>(1)</a></p>
+<p class="toc level2"><a href="dpost-1.html"><tt>dpost</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1.html"><tt>du</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1b.html"><tt>du</tt>(1B)</a></p>
+<p class="toc level2"><a href="dump-1.html"><tt>dump</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpcs-1.html"><tt>dumpcs</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpkeys-1.html"><tt>dumpkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1.html"><tt>echo</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1b.html"><tt>echo</tt>(1B)</a></p>
+<p class="toc level2"><a href="ed-1.html"><tt>ed</tt>(1)</a></p>
+<p class="toc level2"><a href="edit-1.html"><tt>edit</tt>(1)</a></p>
+<p class="toc level2"><a href="egrep-1.html"><tt>egrep</tt>(1)</a></p>
+<p class="toc level2"><a href="eject-1.html"><tt>eject</tt>(1)</a></p>
+<p class="toc level2"><a href="elfdump-1.html"><tt>elfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="elfedit-1.html"><tt>elfedit</tt>(1)</a></p>
+<p class="toc level2"><a href="elfsign-1.html"><tt>elfsign</tt>(1)</a></p>
+<p class="toc level2"><a href="elfwrap-1.html"><tt>elfwrap</tt>(1)</a></p>
+<p class="toc level2"><a href="enable-1.html"><tt>enable</tt>(1)</a></p>
+<p class="toc level2"><a href="encrypt-1.html"><tt>encrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="enhance-1.html"><tt>enhance</tt>(1)</a></p>
+<p class="toc level2"><a href="env-1.html"><tt>env</tt>(1)</a></p>
+<p class="toc level2"><a href="eqn-1.html"><tt>eqn</tt>(1)</a></p>
+<p class="toc level2"><a href="errange-1.html"><tt>errange</tt>(1)</a></p>
+<p class="toc level2"><a href="errdate-1.html"><tt>errdate</tt>(1)</a></p>
+<p class="toc level2"><a href="errgid-1.html"><tt>errgid</tt>(1)</a></p>
+<p class="toc level2"><a href="errint-1.html"><tt>errint</tt>(1)</a></p>
+<p class="toc level2"><a href="erritem-1.html"><tt>erritem</tt>(1)</a></p>
+<p class="toc level2"><a href="error-1.html"><tt>error</tt>(1)</a></p>
+<p class="toc level2"><a href="errpath-1.html"><tt>errpath</tt>(1)</a></p>
+<p class="toc level2"><a href="errstr-1.html"><tt>errstr</tt>(1)</a></p>
+<p class="toc level2"><a href="errtime-1.html"><tt>errtime</tt>(1)</a></p>
+<p class="toc level2"><a href="erruid-1.html"><tt>erruid</tt>(1)</a></p>
+<p class="toc level2"><a href="erryorn-1.html"><tt>erryorn</tt>(1)</a></p>
+<p class="toc level2"><a href="eval-1.html"><tt>eval</tt>(1)</a></p>
+<p class="toc level2"><a href="ex-1.html"><tt>ex</tt>(1)</a></p>
+<p class="toc level2"><a href="exec-1.html"><tt>exec</tt>(1)</a></p>
+<p class="toc level2"><a href="exit-1.html"><tt>exit</tt>(1)</a></p>
+<p class="toc level2"><a href="expand-1.html"><tt>expand</tt>(1)</a></p>
+<p class="toc level2"><a href="export-1.html"><tt>export</tt>(1)</a></p>
+<p class="toc level2"><a href="exportfs-1b.html"><tt>exportfs</tt>(1B)</a></p>
+<p class="toc level2"><a href="expr-1.html"><tt>expr</tt>(1)</a></p>
+<p class="toc level2"><a href="expr-1b.html"><tt>expr</tt>(1B)</a></p>
+<p class="toc level2"><a href="exstr-1.html"><tt>exstr</tt>(1)</a></p>
+<p class="toc level2"><a href="factor-1.html"><tt>factor</tt>(1)</a></p>
+<p class="toc level2"><a href="false-1.html"><tt>false</tt>(1)</a></p>
+<p class="toc level2"><a href="fastboot-1b.html"><tt>fastboot</tt>(1B)</a></p>
+<p class="toc level2"><a href="fasthalt-1b.html"><tt>fasthalt</tt>(1B)</a></p>
+<p class="toc level2"><a href="fc-1.html"><tt>fc</tt>(1)</a></p>
+<p class="toc level2"><a href="fdformat-1.html"><tt>fdformat</tt>(1)</a></p>
+<p class="toc level2"><a href="fg-1.html"><tt>fg</tt>(1)</a></p>
+<p class="toc level2"><a href="fgrep-1.html"><tt>fgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1.html"><tt>file</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1b.html"><tt>file</tt>(1B)</a></p>
+<p class="toc level2"><a href="filebench-1.html"><tt>filebench</tt>(1)</a></p>
+<p class="toc level2"><a href="filep-1.html"><tt>filep</tt>(1)</a></p>
+<p class="toc level2"><a href="filesync-1.html"><tt>filesync</tt>(1)</a></p>
+<p class="toc level2"><a href="filofaxp-1.html"><tt>filofaxp</tt>(1)</a></p>
+<p class="toc level2"><a href="find-1.html"><tt>find</tt>(1)</a></p>
+<p class="toc level2"><a href="finger-1.html"><tt>finger</tt>(1)</a></p>
+<p class="toc level2"><a href="fmt-1.html"><tt>fmt</tt>(1)</a></p>
+<p class="toc level2"><a href="fmtmsg-1.html"><tt>fmtmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="fold-1.html"><tt>fold</tt>(1)</a></p>
+<p class="toc level2"><a href="for-1.html"><tt>for</tt>(1)</a></p>
+<p class="toc level2"><a href="foreach-1.html"><tt>foreach</tt>(1)</a></p>
+<p class="toc level2"><a href="franklinp-1.html"><tt>franklinp</tt>(1)</a></p>
+<p class="toc level2"><a href="from-1b.html"><tt>from</tt>(1B)</a></p>
+<p class="toc level2"><a href="ftp-1.html"><tt>ftp</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpcount-1.html"><tt>ftpcount</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpwho-1.html"><tt>ftpwho</tt>(1)</a></p>
+<p class="toc level2"><a href="function-1.html"><tt>function</tt>(1)</a></p>
+<p class="toc level2"><a href="gcore-1.html"><tt>gcore</tt>(1)</a></p>
+<p class="toc level2"><a href="gencat-1.html"><tt>gencat</tt>(1)</a></p>
+<p class="toc level2"><a href="geniconvtbl-1.html"><tt>geniconvtbl</tt>(1)</a></p>
+<p class="toc level2"><a href="genmsg-1.html"><tt>genmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="get-1.html"><tt>get</tt>(1)</a></p>
+<p class="toc level2"><a href="getconf-1.html"><tt>getconf</tt>(1)</a></p>
+<p class="toc level2"><a href="getfacl-1.html"><tt>getfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="getlabel-1.html"><tt>getlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="getopt-1.html"><tt>getopt</tt>(1)</a></p>
+<p class="toc level2"><a href="getoptcvt-1.html"><tt>getoptcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="getopts-1.html"><tt>getopts</tt>(1)</a></p>
+<p class="toc level2"><a href="gettext-1.html"><tt>gettext</tt>(1)</a></p>
+<p class="toc level2"><a href="gettxt-1.html"><tt>gettxt</tt>(1)</a></p>
+<p class="toc level2"><a href="getzonepath-1.html"><tt>getzonepath</tt>(1)</a></p>
+<p class="toc level2"><a href="glob-1.html"><tt>glob</tt>(1)</a></p>
+<p class="toc level2"><a href="goto-1.html"><tt>goto</tt>(1)</a></p>
+<p class="toc level2"><a href="gprof-1.html"><tt>gprof</tt>(1)</a></p>
+<p class="toc level2"><a href="grep-1.html"><tt>grep</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1.html"><tt>groups</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1b.html"><tt>groups</tt>(1B)</a></p>
+<p class="toc level2"><a href="grpck-1b.html"><tt>grpck</tt>(1B)</a></p>
+<p class="toc level2"><a href="hash-1.html"><tt>hash</tt>(1)</a></p>
+<p class="toc level2"><a href="hashcheck-1.html"><tt>hashcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="hashmake-1.html"><tt>hashmake</tt>(1)</a></p>
+<p class="toc level2"><a href="hashstat-1.html"><tt>hashstat</tt>(1)</a></p>
+<p class="toc level2"><a href="head-1.html"><tt>head</tt>(1)</a></p>
+<p class="toc level2"><a href="help-1.html"><tt>help</tt>(1)</a></p>
+<p class="toc level2"><a href="helpdate-1.html"><tt>helpdate</tt>(1)</a></p>
+<p class="toc level2"><a href="helpgid-1.html"><tt>helpgid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpint-1.html"><tt>helpint</tt>(1)</a></p>
+<p class="toc level2"><a href="helpitem-1.html"><tt>helpitem</tt>(1)</a></p>
+<p class="toc level2"><a href="helppath-1.html"><tt>helppath</tt>(1)</a></p>
+<p class="toc level2"><a href="helprange-1.html"><tt>helprange</tt>(1)</a></p>
+<p class="toc level2"><a href="helpstr-1.html"><tt>helpstr</tt>(1)</a></p>
+<p class="toc level2"><a href="helptime-1.html"><tt>helptime</tt>(1)</a></p>
+<p class="toc level2"><a href="helpuid-1.html"><tt>helpuid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpyorn-1.html"><tt>helpyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="hist-1.html"><tt>hist</tt>(1)</a></p>
+<p class="toc level2"><a href="history-1.html"><tt>history</tt>(1)</a></p>
+<p class="toc level2"><a href="hostid-1.html"><tt>hostid</tt>(1)</a></p>
+<p class="toc level2"><a href="hostname-1.html"><tt>hostname</tt>(1)</a></p>
+<p class="toc level2"><a href="i286-1.html"><tt>i286</tt>(1)</a></p>
+<p class="toc level2"><a href="i386-1.html"><tt>i386</tt>(1)</a></p>
+<p class="toc level2"><a href="i486-1.html"><tt>i486</tt>(1)</a></p>
+<p class="toc level2"><a href="i860-1.html"><tt>i860</tt>(1)</a></p>
+<p class="toc level2"><a href="iapx286-1.html"><tt>iAPX286</tt>(1)</a></p>
+<p class="toc level2"><a href="iconv-1.html"><tt>iconv</tt>(1)</a></p>
+<p class="toc level2"><a href="idnconv-1.html"><tt>idnconv</tt>(1)</a></p>
+<p class="toc level2"><a href="if-1.html"><tt>if</tt>(1)</a></p>
+<p class="toc level2"><a href="indxbib-1.html"><tt>indxbib</tt>(1)</a></p>
+<p class="toc level2"><a href="install-1b.html"><tt>install</tt>(1B)</a></p>
+<p class="toc level2"><a href="ipcrm-1.html"><tt>ipcrm</tt>(1)</a></p>
+<p class="toc level2"><a href="ipcs-1.html"><tt>ipcs</tt>(1)</a></p>
+<p class="toc level2"><a href="isainfo-1.html"><tt>isainfo</tt>(1)</a></p>
+<p class="toc level2"><a href="isalist-1.html"><tt>isalist</tt>(1)</a></p>
+<p class="toc level2"><a href="jobs-1.html"><tt>jobs</tt>(1)</a></p>
+<p class="toc level2"><a href="join-1.html"><tt>join</tt>(1)</a></p>
+<p class="toc level2"><a href="jsh-1.html"><tt>jsh</tt>(1)</a></p>
+<p class="toc level2"><a href="kbd-1.html"><tt>kbd</tt>(1)</a></p>
+<p class="toc level2"><a href="kdestroy-1.html"><tt>kdestroy</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogin-1.html"><tt>keylogin</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogout-1.html"><tt>keylogout</tt>(1)</a></p>
+<p class="toc level2"><a href="kill-1.html"><tt>kill</tt>(1)</a></p>
+<p class="toc level2"><a href="kinit-1.html"><tt>kinit</tt>(1)</a></p>
+<p class="toc level2"><a href="klist-1.html"><tt>klist</tt>(1)</a></p>
+<p class="toc level2"><a href="kmdb-1.html"><tt>kmdb</tt>(1)</a></p>
+<p class="toc level2"><a href="kmfcfg-1.html"><tt>kmfcfg</tt>(1)</a></p>
+<p class="toc level2"><a href="kpasswd-1.html"><tt>kpasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="krb5-config-1.html"><tt>krb5-config</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh-1.html"><tt>ksh</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh93-1.html"><tt>ksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="ktutil-1.html"><tt>ktutil</tt>(1)</a></p>
+<p class="toc level2"><a href="lari-1.html"><tt>lari</tt>(1)</a></p>
+<p class="toc level2"><a href="last-1.html"><tt>last</tt>(1)</a></p>
+<p class="toc level2"><a href="lastcomm-1.html"><tt>lastcomm</tt>(1)</a></p>
+<p class="toc level2"><a href="ld-1.html"><tt>ld</tt>(1)</a></p>
+<p class="toc level2"><a href="ldap-1.html"><tt>ldap</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapadd-1.html"><tt>ldapadd</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapdelete-1.html"><tt>ldapdelete</tt>(1)</a></p>
+<p class="toc level2"><a href="ldaplist-1.html"><tt>ldaplist</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodify-1.html"><tt>ldapmodify</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodrdn-1.html"><tt>ldapmodrdn</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapsearch-1.html"><tt>ldapsearch</tt>(1)</a></p>
+<p class="toc level2"><a href="ldd-1.html"><tt>ldd</tt>(1)</a></p>
+<p class="toc level2"><a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="let-1.html"><tt>let</tt>(1)</a></p>
+<p class="toc level2"><a href="lex-1.html"><tt>lex</tt>(1)</a></p>
+<p class="toc level2"><a href="lgrpinfo-1.html"><tt>lgrpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="limit-1.html"><tt>limit</tt>(1)</a></p>
+<p class="toc level2"><a href="line-1.html"><tt>line</tt>(1)</a></p>
+<p class="toc level2"><a href="list-devices-1.html"><tt>list_devices</tt>(1)</a></p>
+<p class="toc level2"><a href="listusers-1.html"><tt>listusers</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-autoconfig-1.html"><tt>llc2_autoconfig</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-config-1.html"><tt>llc2_config</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-stats-1.html"><tt>llc2_stats</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1.html"><tt>ln</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1b.html"><tt>ln</tt>(1B)</a></p>
+<p class="toc level2"><a href="loadkeys-1.html"><tt>loadkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="locale-1.html"><tt>locale</tt>(1)</a></p>
+<p class="toc level2"><a href="localedef-1.html"><tt>localedef</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1.html"><tt>logger</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1b.html"><tt>logger</tt>(1B)</a></p>
+<p class="toc level2"><a href="login-1.html"><tt>login</tt>(1)</a></p>
+<p class="toc level2"><a href="logname-1.html"><tt>logname</tt>(1)</a></p>
+<p class="toc level2"><a href="logout-1.html"><tt>logout</tt>(1)</a></p>
+<p class="toc level2"><a href="look-1.html"><tt>look</tt>(1)</a></p>
+<p class="toc level2"><a href="lookbib-1.html"><tt>lookbib</tt>(1)</a></p>
+<p class="toc level2"><a href="lorder-1.html"><tt>lorder</tt>(1)</a></p>
+<p class="toc level2"><a href="lp-1.html"><tt>lp</tt>(1)</a></p>
+<p class="toc level2"><a href="lpc-1b.html"><tt>lpc</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpq-1b.html"><tt>lpq</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpr-1b.html"><tt>lpr</tt>(1B)</a></p>
+<p class="toc level2"><a href="lprm-1b.html"><tt>lprm</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpstat-1.html"><tt>lpstat</tt>(1)</a></p>
+<p class="toc level2"><a href="lptest-1b.html"><tt>lptest</tt>(1B)</a></p>
+<p class="toc level2"><a href="ls-1.html"><tt>ls</tt>(1)</a></p>
+<p class="toc level2"><a href="ls-1b.html"><tt>ls</tt>(1B)</a></p>
+<p class="toc level2"><a href="m4-1.html"><tt>m4</tt>(1)</a></p>
+<p class="toc level2"><a href="mac-1.html"><tt>mac</tt>(1)</a></p>
+<p class="toc level2"><a href="mach-1.html"><tt>mach</tt>(1)</a></p>
+<p class="toc level2"><a href="machid-1.html"><tt>machid</tt>(1)</a></p>
+<p class="toc level2"><a href="madv.so.1-1.html"><tt>madv.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="mail-1.html"><tt>mail</tt>(1)</a></p>
+<p class="toc level2"><a href="z-mail-1b.html"><tt>Mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mail-1b.html"><tt>mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mailcompat-1.html"><tt>mailcompat</tt>(1)</a></p>
+<p class="toc level2"><a href="mailp-1.html"><tt>mailp</tt>(1)</a></p>
+<p class="toc level2"><a href="mailq-1.html"><tt>mailq</tt>(1)</a></p>
+<p class="toc level2"><a href="mailstats-1.html"><tt>mailstats</tt>(1)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>mailx</tt>(1)</a></p>
+</div>
+<p class="toc level2"><a href="make-1s.html"><tt>make</tt>(1S)</a></p>
+<p class="toc level2"><a href="makekey-1.html"><tt>makekey</tt>(1)</a></p>
+<p class="toc level2"><a href="man-1.html"><tt>man</tt>(1)</a></p>
+<p class="toc level2"><a href="mconnect-1.html"><tt>mconnect</tt>(1)</a></p>
+<p class="toc level2"><a href="mcs-1.html"><tt>mcs</tt>(1)</a></p>
+<p class="toc level2"><a href="mdb-1.html"><tt>mdb</tt>(1)</a></p>
+<p class="toc level2"><a href="mesg-1.html"><tt>mesg</tt>(1)</a></p>
+<p class="toc level2"><a href="mkdir-1.html"><tt>mkdir</tt>(1)</a></p>
+<p class="toc level2"><a href="mkmsgs-1.html"><tt>mkmsgs</tt>(1)</a></p>
+<p class="toc level2"><a href="mkstr-1b.html"><tt>mkstr</tt>(1B)</a></p>
+<p class="toc level2"><a href="mktemp-1.html"><tt>mktemp</tt>(1)</a></p>
+<p class="toc level2"><a href="moe-1.html"><tt>moe</tt>(1)</a></p>
+<p class="toc level2"><a href="more-1.html"><tt>more</tt>(1)</a></p>
+<p class="toc level2"><a href="mp-1.html"><tt>mp</tt>(1)</a></p>
+<p class="toc level2"><a href="mpss.so.1-1.html"><tt>mpss.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcc-1.html"><tt>msgcc</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcpp-1.html"><tt>msgcpp</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcvt-1.html"><tt>msgcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="msgfmt-1.html"><tt>msgfmt</tt>(1)</a></p>
+<p class="toc level2"><a href="msggen-1.html"><tt>msggen</tt>(1)</a></p>
+<p class="toc level2"><a href="msgget-1.html"><tt>msgget</tt>(1)</a></p>
+<p class="toc level2"><a href="mt-1.html"><tt>mt</tt>(1)</a></p>
+<p class="toc level2"><a href="mv-1.html"><tt>mv</tt>(1)</a></p>
+<p class="toc level2"><a href="nawk-1.html"><tt>nawk</tt>(1)</a></p>
+<p class="toc level2"><a href="nc-1.html"><tt>nc</tt>(1)</a></p>
+<p class="toc level2"><a href="nca-1.html"><tt>nca</tt>(1)</a></p>
+<p class="toc level2"><a href="ncab2clf-1.html"><tt>ncab2clf</tt>(1)</a></p>
+<p class="toc level2"><a href="ncakmod-1.html"><tt>ncakmod</tt>(1)</a></p>
+<p class="toc level2"><a href="neqn-1.html"><tt>neqn</tt>(1)</a></p>
+<p class="toc level2"><a href="newform-1.html"><tt>newform</tt>(1)</a></p>
+<p class="toc level2"><a href="newgrp-1.html"><tt>newgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="news-1.html"><tt>news</tt>(1)</a></p>
+<p class="toc level2"><a href="newsp-1.html"><tt>newsp</tt>(1)</a></p>
+<p class="toc level2"><a href="newtask-1.html"><tt>newtask</tt>(1)</a></p>
+<p class="toc level2"><a href="nice-1.html"><tt>nice</tt>(1)</a></p>
+<p class="toc level2"><a href="nl-1.html"><tt>nl</tt>(1)</a></p>
+<p class="toc level2"><a href="nm-1.html"><tt>nm</tt>(1)</a></p>
+<p class="toc level2"><a href="nohup-1.html"><tt>nohup</tt>(1)</a></p>
+<p class="toc level2"><a href="notify-1.html"><tt>notify</tt>(1)</a></p>
+<p class="toc level2"><a href="nroff-1.html"><tt>nroff</tt>(1)</a></p>
+<p class="toc level2"><a href="od-1.html"><tt>od</tt>(1)</a></p>
+<p class="toc level2"><a href="on-1.html"><tt>on</tt>(1)</a></p>
+<p class="toc level2"><a href="onintr-1.html"><tt>onintr</tt>(1)</a></p>
+<p class="toc level2"><a href="optisa-1.html"><tt>optisa</tt>(1)</a></p>
+<p class="toc level2"><a href="pack-1.html"><tt>pack</tt>(1)</a></p>
+<p class="toc level2"><a href="page-1.html"><tt>page</tt>(1)</a></p>
+<p class="toc level2"><a href="pagesize-1.html"><tt>pagesize</tt>(1)</a></p>
+<p class="toc level2"><a href="pargs-1.html"><tt>pargs</tt>(1)</a></p>
+<p class="toc level2"><a href="passwd-1.html"><tt>passwd</tt>(1)</a></p>
+<p class="toc level2"><a href="paste-1.html"><tt>paste</tt>(1)</a></p>
+<p class="toc level2"><a href="patch-1.html"><tt>patch</tt>(1)</a></p>
+<p class="toc level2"><a href="pathchk-1.html"><tt>pathchk</tt>(1)</a></p>
+<p class="toc level2"><a href="pax-1.html"><tt>pax</tt>(1)</a></p>
+<p class="toc level2"><a href="pcat-1.html"><tt>pcat</tt>(1)</a></p>
+<p class="toc level2"><a href="pcred-1.html"><tt>pcred</tt>(1)</a></p>
+<p class="toc level2"><a href="pdp11-1.html"><tt>pdp11</tt>(1)</a></p>
+<p class="toc level2"><a href="perl-1.html"><tt>perl</tt>(1)</a></p>
+<p class="toc level2"><a href="pfcsh-1.html"><tt>pfcsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pfexec-1.html"><tt>pfexec</tt>(1)</a></p>
+<p class="toc level2"><a href="pfiles-1.html"><tt>pfiles</tt>(1)</a></p>
+<p class="toc level2"><a href="pfksh-1.html"><tt>pfksh</tt>(1)</a></p>
+<p class="toc level2"><a href="pflags-1.html"><tt>pflags</tt>(1)</a></p>
+<p class="toc level2"><a href="pfsh-1.html"><tt>pfsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pg-1.html"><tt>pg</tt>(1)</a></p>
+<p class="toc level2"><a href="pgrep-1.html"><tt>pgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="pkcs11-inspect-1.html"><tt>pkcs11_inspect</tt>(1)</a></p>
+<p class="toc level2"><a href="pkginfo-1.html"><tt>pkginfo</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgmk-1.html"><tt>pkgmk</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgparam-1.html"><tt>pkgparam</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgproto-1.html"><tt>pkgproto</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgtrans-1.html"><tt>pkgtrans</tt>(1)</a></p>
+<p class="toc level2"><a href="pkill-1.html"><tt>pkill</tt>(1)</a></p>
+<p class="toc level2"><a href="pklogin-finder-1.html"><tt>pklogin_finder</tt>(1)</a></p>
+<p class="toc level2"><a href="pktool-1.html"><tt>pktool</tt>(1)</a></p>
+<p class="toc level2"><a href="plabel-1.html"><tt>plabel</tt>(1)</a></p>
+<p class="toc level2"><a href="pldd-1.html"><tt>pldd</tt>(1)</a></p>
+<p class="toc level2"><a href="plgrp-1.html"><tt>plgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="plimit-1.html"><tt>plimit</tt>(1)</a></p>
+<p class="toc level2"><a href="pmadvise-1.html"><tt>pmadvise</tt>(1)</a></p>
+<p class="toc level2"><a href="pmap-1.html"><tt>pmap</tt>(1)</a></p>
+<p class="toc level2"><a href="popd-1.html"><tt>popd</tt>(1)</a></p>
+<p class="toc level2"><a href="postdaisy-1.html"><tt>postdaisy</tt>(1)</a></p>
+<p class="toc level2"><a href="postdmd-1.html"><tt>postdmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postio-1.html"><tt>postio</tt>(1)</a></p>
+<p class="toc level2"><a href="postmd-1.html"><tt>postmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postplot-1.html"><tt>postplot</tt>(1)</a></p>
+<p class="toc level2"><a href="postprint-1.html"><tt>postprint</tt>(1)</a></p>
+<p class="toc level2"><a href="postreverse-1.html"><tt>postreverse</tt>(1)</a></p>
+<p class="toc level2"><a href="posttek-1.html"><tt>posttek</tt>(1)</a></p>
+<p class="toc level2"><a href="ppgsz-1.html"><tt>ppgsz</tt>(1)</a></p>
+<p class="toc level2"><a href="ppriv-1.html"><tt>ppriv</tt>(1)</a></p>
+<p class="toc level2"><a href="pr-1.html"><tt>pr</tt>(1)</a></p>
+<p class="toc level2"><a href="praliases-1.html"><tt>praliases</tt>(1)</a></p>
+<p class="toc level2"><a href="prctl-1.html"><tt>prctl</tt>(1)</a></p>
+<p class="toc level2"><a href="preap-1.html"><tt>preap</tt>(1)</a></p>
+<p class="toc level2"><a href="prex-1.html"><tt>prex</tt>(1)</a></p>
+<p class="toc level2"><a href="print-1.html"><tt>print</tt>(1)</a></p>
+<p class="toc level2"><a href="printenv-1b.html"><tt>printenv</tt>(1B)</a></p>
+<p class="toc level2"><a href="printf-1.html"><tt>printf</tt>(1)</a></p>
+<p class="toc level2"><a href="priocntl-1.html"><tt>priocntl</tt>(1)</a></p>
+<p class="toc level2"><a href="proc-1.html"><tt>proc</tt>(1)</a></p>
+<p class="toc level2"><a href="prof-1.html"><tt>prof</tt>(1)</a></p>
+<p class="toc level2"><a href="profiles-1.html"><tt>profiles</tt>(1)</a></p>
+<p class="toc level2"><a href="projects-1.html"><tt>projects</tt>(1)</a></p>
+<p class="toc level2"><a href="prs-1.html"><tt>prs</tt>(1)</a></p>
+<p class="toc level2"><a href="prt-1.html"><tt>prt</tt>(1)</a></p>
+<p class="toc level2"><a href="prun-1.html"><tt>prun</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1.html"><tt>ps</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1b.html"><tt>ps</tt>(1B)</a></p>
+<p class="toc level2"><a href="psig-1.html"><tt>psig</tt>(1)</a></p>
+<p class="toc level2"><a href="pstack-1.html"><tt>pstack</tt>(1)</a></p>
+<p class="toc level2"><a href="pstop-1.html"><tt>pstop</tt>(1)</a></p>
+<p class="toc level2"><a href="ptime-1.html"><tt>ptime</tt>(1)</a></p>
+<p class="toc level2"><a href="ptree-1.html"><tt>ptree</tt>(1)</a></p>
+<p class="toc level2"><a href="pushd-1.html"><tt>pushd</tt>(1)</a></p>
+<p class="toc level2"><a href="pvs-1.html"><tt>pvs</tt>(1)</a></p>
+<p class="toc level2"><a href="pwait-1.html"><tt>pwait</tt>(1)</a></p>
+<p class="toc level2"><a href="pwd-1.html"><tt>pwd</tt>(1)</a></p>
+<p class="toc level2"><a href="pwdx-1.html"><tt>pwdx</tt>(1)</a></p>
+<p class="toc level2"><a href="ranlib-1.html"><tt>ranlib</tt>(1)</a></p>
+<p class="toc level2"><a href="rcapstat-1.html"><tt>rcapstat</tt>(1)</a></p>
+<p class="toc level2"><a href="rcp-1.html"><tt>rcp</tt>(1)</a></p>
+<p class="toc level2"><a href="rdist-1.html"><tt>rdist</tt>(1)</a></p>
+<p class="toc level2"><a href="read-1.html"><tt>read</tt>(1)</a></p>
+<p class="toc level2"><a href="readonly-1.html"><tt>readonly</tt>(1)</a></p>
+<p class="toc level2"><a href="red-1.html"><tt>red</tt>(1)</a></p>
+<p class="toc level2"><a href="refer-1.html"><tt>refer</tt>(1)</a></p>
+<p class="toc level2"><a href="regcmp-1.html"><tt>regcmp</tt>(1)</a></p>
+<p class="toc level2"><a href="rehash-1.html"><tt>rehash</tt>(1)</a></p>
+<p class="toc level2"><a href="remote-shell-1.html"><tt>remote_shell</tt>(1)</a></p>
+<p class="toc level2"><a href="remsh-1.html"><tt>remsh</tt>(1)</a></p>
+<p class="toc level2"><a href="renice-1.html"><tt>renice</tt>(1)</a></p>
+<p class="toc level2"><a href="repeat-1.html"><tt>repeat</tt>(1)</a></p>
+<p class="toc level2"><a href="reset-1b.html"><tt>reset</tt>(1B)</a></p>
+<p class="toc level2"><a href="return-1.html"><tt>return</tt>(1)</a></p>
+<p class="toc level2"><a href="rev-1.html"><tt>rev</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh-1.html"><tt>rksh</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh93-1.html"><tt>rksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="rlogin-1.html"><tt>rlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="rm-1.html"><tt>rm</tt>(1)</a></p>
+<p class="toc level2"><a href="rmail-1.html"><tt>rmail</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdel-1.html"><tt>rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdir-1.html"><tt>rmdir</tt>(1)</a></p>
+<p class="toc level2"><a href="rmformat-1.html"><tt>rmformat</tt>(1)</a></p>
+<p class="toc level2"><a href="rmmount-1.html"><tt>rmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="rmumount-1.html"><tt>rmumount</tt>(1)</a></p>
+<p class="toc level2"><a href="roffbib-1.html"><tt>roffbib</tt>(1)</a></p>
+<p class="toc level2"><a href="roles-1.html"><tt>roles</tt>(1)</a></p>
+<p class="toc level2"><a href="rpcgen-1.html"><tt>rpcgen</tt>(1)</a></p>
+<p class="toc level2"><a href="rpm2cpio-1.html"><tt>rpm2cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="rsh-1.html"><tt>rsh</tt>(1)</a></p>
+<p class="toc level2"><a href="runat-1.html"><tt>runat</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1.html"><tt>rup</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1c.html"><tt>rup</tt>(1C)</a></p>
+<p class="toc level2"><a href="ruptime-1.html"><tt>ruptime</tt>(1)</a></p>
+<p class="toc level2"><a href="rusage-1b.html"><tt>rusage</tt>(1B)</a></p>
+<p class="toc level2"><a href="rusers-1.html"><tt>rusers</tt>(1)</a></p>
+<p class="toc level2"><a href="rwho-1.html"><tt>rwho</tt>(1)</a></p>
+<p class="toc level2"><a href="sact-1.html"><tt>sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sar-1.html"><tt>sar</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-1.html"><tt>sccs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-admin-1.html"><tt>sccs-admin</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-cdc-1.html"><tt>sccs-cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-comb-1.html"><tt>sccs-comb</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-delta-1.html"><tt>sccs-delta</tt>(1)</a></p>
+<p class="toc level2"><a href="sccsdiff-1.html"><tt>sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-get-1.html"><tt>sccs-get</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-help-1.html"><tt>sccs-help</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prs-1.html"><tt>sccs-prs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prt-1.html"><tt>sccs-prt</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-rmdel-1.html"><tt>sccs-rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sact-1.html"><tt>sccs-sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sccsdiff-1.html"><tt>sccs-sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-unget-1.html"><tt>sccs-unget</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-val-1.html"><tt>sccs-val</tt>(1)</a></p>
+<p class="toc level2"><a href="scp-1.html"><tt>scp</tt>(1)</a></p>
+<p class="toc level2"><a href="script-1.html"><tt>script</tt>(1)</a></p>
+<p class="toc level2"><a href="sdiff-1.html"><tt>sdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1.html"><tt>sed</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1b.html"><tt>sed</tt>(1B)</a></p>
+<p class="toc level2"><a href="select-1.html"><tt>select</tt>(1)</a></p>
+<p class="toc level2"><a href="set-1.html"><tt>set</tt>(1)</a></p>
+<p class="toc level2"><a href="setenv-1.html"><tt>setenv</tt>(1)</a></p>
+<p class="toc level2"><a href="setfacl-1.html"><tt>setfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="setlabel-1.html"><tt>setlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="setpgrp-1.html"><tt>setpgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="settime-1.html"><tt>settime</tt>(1)</a></p>
+<p class="toc level2"><a href="sftp-1.html"><tt>sftp</tt>(1)</a></p>
+<p class="toc level2"><a href="sh-1.html"><tt>sh</tt>(1)</a></p>
+<p class="toc level2"><a href="shcomp-1.html"><tt>shcomp</tt>(1)</a></p>
+<p class="toc level2"><a href="shell-builtins-1.html"><tt>shell_builtins</tt>(1)</a></p>
+<p class="toc level2"><a href="shift-1.html"><tt>shift</tt>(1)</a></p>
+<p class="toc level2"><a href="shutdown-1b.html"><tt>shutdown</tt>(1B)</a></p>
+<p class="toc level2"><a href="size-1.html"><tt>size</tt>(1)</a></p>
+<p class="toc level2"><a href="sleep-1.html"><tt>sleep</tt>(1)</a></p>
+<p class="toc level2"><a href="smbutil-1.html"><tt>smbutil</tt>(1)</a></p>
+<p class="toc level2"><a href="snca-1.html"><tt>snca</tt>(1)</a></p>
+<p class="toc level2"><a href="soelim-1.html"><tt>soelim</tt>(1)</a></p>
+<p class="toc level2"><a href="sort-1.html"><tt>sort</tt>(1)</a></p>
+<p class="toc level2"><a href="sortbib-1.html"><tt>sortbib</tt>(1)</a></p>
+<p class="toc level2"><a href="sotruss-1.html"><tt>sotruss</tt>(1)</a></p>
+<p class="toc level2"><a href="source-1.html"><tt>source</tt>(1)</a></p>
+<p class="toc level2"><a href="sparc-1.html"><tt>sparc</tt>(1)</a></p>
+<p class="toc level2"><a href="spell-1.html"><tt>spell</tt>(1)</a></p>
+<p class="toc level2"><a href="spellin-1.html"><tt>spellin</tt>(1)</a></p>
+<p class="toc level2"><a href="split-1.html"><tt>split</tt>(1)</a></p>
+<p class="toc level2"><a href="srchtxt-1.html"><tt>srchtxt</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-1.html"><tt>ssh</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-add-1.html"><tt>ssh-add</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-agent-1.html"><tt>ssh-agent</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-http-proxy-connect-1.html"><tt>ssh-http-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keygen-1.html"><tt>ssh-keygen</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keyscan-1.html"><tt>ssh-keyscan</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-socks5-proxy-connect-1.html"><tt>ssh-socks5-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="stop-1.html"><tt>stop</tt>(1)</a></p>
+<p class="toc level2"><a href="strchg-1.html"><tt>strchg</tt>(1)</a></p>
+<p class="toc level2"><a href="strconf-1.html"><tt>strconf</tt>(1)</a></p>
+<p class="toc level2"><a href="strings-1.html"><tt>strings</tt>(1)</a></p>
+<p class="toc level2"><a href="strip-1.html"><tt>strip</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1.html"><tt>stty</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1b.html"><tt>stty</tt>(1B)</a></p>
+<p class="toc level2"><a href="sum-1.html"><tt>sum</tt>(1)</a></p>
+<p class="toc level2"><a href="sum-1b.html"><tt>sum</tt>(1B)</a></p>
+<p class="toc level2"><a href="sun-1.html"><tt>sun</tt>(1)</a></p>
+<p class="toc level2"><a href="suspend-1.html"><tt>suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="svcprop-1.html"><tt>svcprop</tt>(1)</a></p>
+<p class="toc level2"><a href="svcs-1.html"><tt>svcs</tt>(1)</a></p>
+<p class="toc level2"><a href="switch-1.html"><tt>switch</tt>(1)</a></p>
+<p class="toc level2"><a href="symorder-1.html"><tt>symorder</tt>(1)</a></p>
+<p class="toc level2"><a href="sys-suspend-1.html"><tt>sys-suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="sysv-make-1.html"><tt>sysV-make</tt>(1)</a></p>
+<p class="toc level2"><a href="t300-1.html"><tt>t300</tt>(1)</a></p>
+<p class="toc level2"><a href="t300s-1.html"><tt>t300s</tt>(1)</a></p>
+<p class="toc level2"><a href="t4014-1.html"><tt>t4014</tt>(1)</a></p>
+<p class="toc level2"><a href="t450-1.html"><tt>t450</tt>(1)</a></p>
+<p class="toc level2"><a href="tabs-1.html"><tt>tabs</tt>(1)</a></p>
+<p class="toc level2"><a href="tail-1.html"><tt>tail</tt>(1)</a></p>
+<p class="toc level2"><a href="talk-1.html"><tt>talk</tt>(1)</a></p>
+<p class="toc level2"><a href="tar-1.html"><tt>tar</tt>(1)</a></p>
+<p class="toc level2"><a href="tbl-1.html"><tt>tbl</tt>(1)</a></p>
+<p class="toc level2"><a href="tcopy-1.html"><tt>tcopy</tt>(1)</a></p>
+<p class="toc level2"><a href="tee-1.html"><tt>tee</tt>(1)</a></p>
+<p class="toc level2"><a href="tek-1.html"><tt>tek</tt>(1)</a></p>
+<p class="toc level2"><a href="telnet-1.html"><tt>telnet</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1.html"><tt>test</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1b.html"><tt>test</tt>(1B)</a></p>
+<p class="toc level2"><a href="tftp-1.html"><tt>tftp</tt>(1)</a></p>
+<p class="toc level2"><a href="time-1.html"><tt>time</tt>(1)</a></p>
+<p class="toc level2"><a href="timemanp-1.html"><tt>timemanp</tt>(1)</a></p>
+<p class="toc level2"><a href="times-1.html"><tt>times</tt>(1)</a></p>
+<p class="toc level2"><a href="timesysp-1.html"><tt>timesysp</tt>(1)</a></p>
+<p class="toc level2"><a href="timex-1.html"><tt>timex</tt>(1)</a></p>
+<p class="toc level2"><a href="tip-1.html"><tt>tip</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfdump-1.html"><tt>tnfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfxtract-1.html"><tt>tnfxtract</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1.html"><tt>touch</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1b.html"><tt>touch</tt>(1B)</a></p>
+<p class="toc level2"><a href="tplot-1.html"><tt>tplot</tt>(1)</a></p>
+<p class="toc level2"><a href="tput-1.html"><tt>tput</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1.html"><tt>tr</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1b.html"><tt>tr</tt>(1B)</a></p>
+<p class="toc level2"><a href="trap-1.html"><tt>trap</tt>(1)</a></p>
+<p class="toc level2"><a href="troff-1.html"><tt>troff</tt>(1)</a></p>
+<p class="toc level2"><a href="true-1.html"><tt>true</tt>(1)</a></p>
+<p class="toc level2"><a href="truss-1.html"><tt>truss</tt>(1)</a></p>
+<p class="toc level2"><a href="tset-1b.html"><tt>tset</tt>(1B)</a></p>
+<p class="toc level2"><a href="tsort-1.html"><tt>tsort</tt>(1)</a></p>
+<p class="toc level2"><a href="tty-1.html"><tt>tty</tt>(1)</a></p>
+<p class="toc level2"><a href="type-1.html"><tt>type</tt>(1)</a></p>
+<p class="toc level2"><a href="typeset-1.html"><tt>typeset</tt>(1)</a></p>
+<p class="toc level2"><a href="u370-1.html"><tt>u370</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b-1.html"><tt>u3b</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b15-1.html"><tt>u3b15</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b2-1.html"><tt>u3b2</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b5-1.html"><tt>u3b5</tt>(1)</a></p>
+<p class="toc level2"><a href="ul-1.html"><tt>ul</tt>(1)</a></p>
+<p class="toc level2"><a href="ulimit-1.html"><tt>ulimit</tt>(1)</a></p>
+<p class="toc level2"><a href="umask-1.html"><tt>umask</tt>(1)</a></p>
+<p class="toc level2"><a href="unalias-1.html"><tt>unalias</tt>(1)</a></p>
+<p class="toc level2"><a href="uname-1.html"><tt>uname</tt>(1)</a></p>
+<p class="toc level2"><a href="uncompress-1.html"><tt>uncompress</tt>(1)</a></p>
+<p class="toc level2"><a href="unexpand-1.html"><tt>unexpand</tt>(1)</a></p>
+<p class="toc level2"><a href="unget-1.html"><tt>unget</tt>(1)</a></p>
+<p class="toc level2"><a href="unhash-1.html"><tt>unhash</tt>(1)</a></p>
+<p class="toc level2"><a href="unifdef-1.html"><tt>unifdef</tt>(1)</a></p>
+<p class="toc level2"><a href="uniq-1.html"><tt>uniq</tt>(1)</a></p>
+<p class="toc level2"><a href="units-1.html"><tt>units</tt>(1)</a></p>
+<p class="toc level2"><a href="unix2dos-1.html"><tt>unix2dos</tt>(1)</a></p>
+<p class="toc level2"><a href="unlimit-1.html"><tt>unlimit</tt>(1)</a></p>
+<p class="toc level2"><a href="unpack-1.html"><tt>unpack</tt>(1)</a></p>
+<p class="toc level2"><a href="unset-1.html"><tt>unset</tt>(1)</a></p>
+<p class="toc level2"><a href="unsetenv-1.html"><tt>unsetenv</tt>(1)</a></p>
+<p class="toc level2"><a href="until-1.html"><tt>until</tt>(1)</a></p>
+<p class="toc level2"><a href="uptime-1.html"><tt>uptime</tt>(1)</a></p>
+<p class="toc level2"><a href="userattr-1.html"><tt>userattr</tt>(1)</a></p>
+<p class="toc level2"><a href="users-1b.html"><tt>users</tt>(1B)</a></p>
+<p class="toc level2"><a href="uucp-1c.html"><tt>uucp</tt>(1C)</a></p>
+<p class="toc level2"><a href="uudecode-1c.html"><tt>uudecode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuencode-1c.html"><tt>uuencode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuglist-1c.html"><tt>uuglist</tt>(1C)</a></p>
+<p class="toc level2"><a href="uulog-1c.html"><tt>uulog</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuname-1c.html"><tt>uuname</tt>(1C)</a></p>
+<p class="toc level2"><a href="uupick-1c.html"><tt>uupick</tt>(1C)</a></p>
+<p class="toc level2"><a href="uustat-1c.html"><tt>uustat</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuto-1c.html"><tt>uuto</tt>(1C)</a></p>
+<p class="toc level2"><a href="uux-1c.html"><tt>uux</tt>(1C)</a></p>
+<p class="toc level2"><a href="vacation-1.html"><tt>vacation</tt>(1)</a></p>
+<p class="toc level2"><a href="val-1.html"><tt>val</tt>(1)</a></p>
+<p class="toc level2"><a href="valdate-1.html"><tt>valdate</tt>(1)</a></p>
+<p class="toc level2"><a href="valgid-1.html"><tt>valgid</tt>(1)</a></p>
+<p class="toc level2"><a href="valint-1.html"><tt>valint</tt>(1)</a></p>
+<p class="toc level2"><a href="valpath-1.html"><tt>valpath</tt>(1)</a></p>
+<p class="toc level2"><a href="valrange-1.html"><tt>valrange</tt>(1)</a></p>
+<p class="toc level2"><a href="valstr-1.html"><tt>valstr</tt>(1)</a></p>
+<p class="toc level2"><a href="valtime-1.html"><tt>valtime</tt>(1)</a></p>
+<p class="toc level2"><a href="valuid-1.html"><tt>valuid</tt>(1)</a></p>
+<p class="toc level2"><a href="valyorn-1.html"><tt>valyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="vax-1.html"><tt>vax</tt>(1)</a></p>
+<p class="toc level2"><a href="vc-1.html"><tt>vc</tt>(1)</a></p>
+<p class="toc level2"><a href="vedit-1.html"><tt>vedit</tt>(1)</a></p>
+<p class="toc level2"><a href="ver-1.html"><tt>ver</tt>(1)</a></p>
+<p class="toc level2"><a href="vgrind-1.html"><tt>vgrind</tt>(1)</a></p>
+<p class="toc level2"><a href="vi-1.html"><tt>vi</tt>(1)</a></p>
+<p class="toc level2"><a href="view-1.html"><tt>view</tt>(1)</a></p>
+<p class="toc level2"><a href="vipw-1b.html"><tt>vipw</tt>(1B)</a></p>
+<p class="toc level2"><a href="volcheck-1.html"><tt>volcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="volrmmount-1.html"><tt>volrmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="w-1.html"><tt>w</tt>(1)</a></p>
+<p class="toc level2"><a href="wait-1.html"><tt>wait</tt>(1)</a></p>
+<p class="toc level2"><a href="wc-1.html"><tt>wc</tt>(1)</a></p>
+<p class="toc level2"><a href="what-1.html"><tt>what</tt>(1)</a></p>
+<p class="toc level2"><a href="whatis-1.html"><tt>whatis</tt>(1)</a></p>
+<p class="toc level2"><a href="whence-1.html"><tt>whence</tt>(1)</a></p>
+<p class="toc level2"><a href="whereis-1b.html"><tt>whereis</tt>(1B)</a></p>
+<p class="toc level2"><a href="which-1.html"><tt>which</tt>(1)</a></p>
+<p class="toc level2"><a href="while-1.html"><tt>while</tt>(1)</a></p>
+<p class="toc level2"><a href="who-1.html"><tt>who</tt>(1)</a></p>
+<p class="toc level2"><a href="whoami-1b.html"><tt>whoami</tt>(1B)</a></p>
+<p class="toc level2"><a href="whocalls-1.html"><tt>whocalls</tt>(1)</a></p>
+<p class="toc level2"><a href="whois-1.html"><tt>whois</tt>(1)</a></p>
+<p class="toc level2"><a href="write-1.html"><tt>write</tt>(1)</a></p>
+<p class="toc level2"><a href="xargs-1.html"><tt>xargs</tt>(1)</a></p>
+<p class="toc level2"><a href="xgettext-1.html"><tt>xgettext</tt>(1)</a></p>
+<p class="toc level2"><a href="xstr-1.html"><tt>xstr</tt>(1)</a></p>
+<p class="toc level2"><a href="yacc-1.html"><tt>yacc</tt>(1)</a></p>
+<p class="toc level2"><a href="yes-1.html"><tt>yes</tt>(1)</a></p>
+<p class="toc level2"><a href="ypcat-1.html"><tt>ypcat</tt>(1)</a></p>
+<p class="toc level2"><a href="ypmatch-1.html"><tt>ypmatch</tt>(1)</a></p>
+<p class="toc level2"><a href="yppasswd-1.html"><tt>yppasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="ypwhich-1.html"><tt>ypwhich</tt>(1)</a></p>
+<p class="toc level2"><a href="zcat-1.html"><tt>zcat</tt>(1)</a></p>
+<p class="toc level2"><a href="zlogin-1.html"><tt>zlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="zonename-1.html"><tt>zonename</tt>(1)</a></p>
+<p class="toc level2"><a href="zonestat-1.html"><tt>zonestat</tt>(1)</a></p>
+
+</div>
+
+<a name="REFMAN1content"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1mailx-1"></a><a name="mailx-1"></a><h3>mailx</h3>
+<p>- interactive message processing system</p><h3>Synopsis</h3>
+<pre><tt>mailx</tt> [<tt>-BdeHiInNURvV~</tt>] [<tt>-f</tt> [<var>file</var> | <var>+folder</var>]] [<tt>-T</tt> <var>file</var>] 
+     [<tt>-u</tt> <var>user</var>]</pre><pre><tt>mailx</tt> [<tt>-BdFintUv~</tt>] [<tt>-b</tt> <var>bcc</var>] [<tt>-c</tt> <var>cc</var>] [<tt>-h</tt> <var>number</var>] 
+     [<tt>-r</tt> <var>address</var>] [<tt>-s</tt> <var>subject</var>] <var>recipient</var>...</pre><pre><tt>/usr/ucb/mail</tt> ...</pre><pre><tt>/usr/ucb/Mail</tt> ...</pre><h3>Description</h3>
+<p>The mail utilities listed above provide a comfortable, flexible environment for sending
+and receiving mail messages electronically.</p><p>When reading mail, the mail utilities provide commands to facilitate saving, deleting,
+and responding to messages. When sending mail, the mail utilities allow editing,
+reviewing and other modification of the message as it is entered.</p><p>Incoming mail is stored in a standard file for each user, called
+the <tt>mailbox</tt> for that user. When the mail utilities are called to
+read messages, the <tt>mailbox</tt> is the default place to find them. As
+messages are read, they are marked to be moved to a secondary
+file for storage, unless specific action is taken, so that the messages
+need not be seen again.This secondary file is called the <tt>mbox</tt> and
+is normally located in the user's <tt>HOME</tt> directory (see <tt>MBOX</tt> in ENVIRONMENT
+VARIABLES for a description of this file). Messages can be saved in
+other secondary files named by the user. Messages remain in a secondary
+file until forcibly removed.</p><p>The user can access a secondary file by using the <tt>-f</tt> option.
+Messages in the secondary file can then be read or otherwise processed
+using the same <tt>Commands</tt> as in the primary <tt>mailbox</tt>. This gives rise
+within these pages to the notion of a current <tt>mailbox</tt>.</p><h3>Options</h3>
+<p>On the command line options start with a dash (&#45;). Any other
+arguments are taken to be destinations (recipients). If no recipients are specified,
+<tt>mailx</tt> attempts to read messages from the <tt>mailbox</tt>.</p><dl><dt><tt>-B</tt></dt>
+<dd><p>Do not buffer standard input or standard output.</p></dd>
+<dt><tt>-b</tt> <var>bcc</var></dt>
+<dd><p>Set the blind carbon copy list to <var>bcc</var>. <var>bcc</var> should be enclosed in quotes if it contains more than one name.</p></dd>
+<dt><tt>-c</tt> <var>cc</var></dt>
+<dd><p>Set the carbon copy list to <var>cc</var>. <var>cc</var> should be enclosed in quotes if it contains more than one name.</p></dd>
+<dt><tt>-d</tt></dt>
+<dd><p>Turn on debugging output. (Neither particularly interesting nor recommended.)</p></dd>
+<dt><tt>-e</tt></dt>
+<dd><p>Test for the presence of mail. <tt>mailx</tt> prints nothing and exits with a successful return code if there is mail to read.</p></dd>
+<dt><tt>-F</tt></dt>
+<dd><p>Record the message in a file named after the first recipient. Overrides the <tt>record</tt> variable, if set (see <tt>Internal Variables</tt>).</p></dd>
+<dt><tt></tt><tt>-f</tt><tt> [</tt><var>file</var><tt>]</tt></dt>
+<dd><p>Read messages from <var>file</var> instead of <tt>mailbox</tt>. If no <var>file</var> is specified, the <tt>mbox</tt> is used.</p></dd>
+<dt><tt></tt><tt>-f</tt><tt> [ </tt><tt>+</tt><var>folder</var><tt>]</tt></dt>
+<dd><p>Use the file <var>folder</var> in the folder directory (same as the <tt>fold</tt>er command). The name of this directory is listed in the <tt>folder</tt> variable.</p></dd>
+<dt><tt>-H</tt></dt>
+<dd><p>Print header summary only.</p></dd>
+<dt><tt>-h</tt> <var>number</var></dt>
+<dd><p>The number of network &#8220;hops&#8221; made so far. This is provided for network software to avoid infinite delivery loops. This option and its argument are passed to the delivery program.</p></dd>
+<dt><tt>-I</tt></dt>
+<dd><p>Include the newsgroup and article-id header lines when printing mail messages. This option requires the <tt>-f</tt> option to be specified.</p></dd>
+<dt><tt>-i</tt></dt>
+<dd><p>Ignore interrupts. See also <tt>ignore</tt> in <tt>Internal Variables</tt>.</p></dd>
+<dt><tt>-N</tt></dt>
+<dd><p>Do not print initial header summary.</p></dd>
+<dt><tt>-n</tt></dt>
+<dd><p>Do not initialize from the system default <tt>mailx.rc</tt> or <tt>Mail.rc</tt> file. See USAGE.</p></dd>
+<dt><tt>-r</tt> <var>address</var></dt>
+<dd><p>Use <var>address</var> as the return address when invoking the delivery program. All tilde commands are disabled. This option and its argument is passed to the delivery program.</p></dd>
+<dt><tt>-s</tt> <var>subject</var></dt>
+<dd><p>Set the Subject header field to <var>subject</var>. <var>subject</var> should be enclosed in quotes if it contains embedded white space.</p></dd>
+<dt><tt>-T</tt> <var>file</var></dt>
+<dd><p>Message-id and article-id header lines are recorded in <var>file</var> after the message is read. This option also sets the <tt>-I</tt> option.</p></dd>
+<dt><tt>-t</tt></dt>
+<dd><p>Scan the input for <tt>To:</tt>, <tt>Cc:</tt>, and <tt>Bcc:</tt> fields. Any recipients on the command line will be ignored.</p></dd>
+<dt><tt>-U</tt></dt>
+<dd><p>Convert UUCP-style addresses to internet standards. Overrides the <tt>conv</tt> environment variable.</p></dd>
+<dt><tt>-u</tt> <var>user</var></dt>
+<dd><p>Read <var>user</var>'s <tt>mailbox</tt>. This is only effective if <var>user</var>'s <tt>mailbox</tt> is not read protected.</p></dd>
+<dt><tt>-V</tt></dt>
+<dd><p>Print the <tt>mailx</tt> version number and exit.</p></dd>
+<dt><tt>-v</tt></dt>
+<dd><p>Pass the <tt>-v</tt> flag to <a href="../821-1462/sendmail-1m.html#REFMAN1Msendmail-1m"><tt>sendmail</tt>(1M)</a>.</p></dd>
+<dt><tt>-~</tt></dt>
+<dd><p>Interpret tilde escapes in the input even if not reading from a tty.</p></dd>
+</dl>
+<h3>Operands</h3>
+<p>The following operands are supported:</p><dl><dt><var>recipient</var></dt>
+<dd><p>Addressee of message.</p></dd>
+</dl>
+<h3>Usage</h3>
+<h4>Starting Mail</h4>
+<p>At startup time, <tt>mailx</tt> executes the system startup file <tt>/etc/mail/mailx.rc</tt>. If invoked
+as <tt>mail</tt> or <tt>Mail</tt>, the system startup file <tt>/etc/mail/Mail.rc</tt> is used instead.</p><p>The system startup file sets  up initial display options and alias
+lists and assigns values to some internal variables. These variables are flags
+and valued parameters which are set and cleared using the <tt>se</tt>t and
+<tt>uns</tt>et commands. See <tt>Internal Variables</tt>.</p><p>With the following exceptions, regular commands are legal inside startup files: <tt>!</tt>,
+<tt>C</tt>opy, <tt>e</tt>dit, <tt>fo</tt>llowup, <tt>F</tt>ollowup, <tt>ho</tt>ld, <tt>m</tt>ail, <tt>pre</tt>serve, <tt>r</tt>eply, <tt>R</tt>eply, <tt>sh</tt>ell, and <tt>v</tt>isual.
+An error in the startup file causes the remaining lines in the
+file to be ignored.</p><p>After executing the system startup file,  the mail utilities execute the
+optional personal startup file <tt>$HOME/.mailrc</tt>, wherein the user can override the values
+of the internal variables as set by the system startup file.</p><p>If the <tt>-n</tt> option is specified, however, the mail utilities do not
+execute the system startup file.</p><p>Many system administrators include the commands</p><pre>set appenddeadletter
+unset replyall
+unset pipeignore</pre><p>in the system startup files (to be compatible with past Solaris behavior),
+but this does not meet standards requirements for <tt>mailx</tt>. To get standard
+behavior for <tt>mailx</tt>, users should use the <tt>-n</tt> option or include the
+following commands in a personal startup file:</p><pre>unset appenddeadletter
+set replyall
+set pipeignore</pre><p>When reading mail, the mail utilities are in <var>command mode</var>. A header summary
+of the first several messages is displayed, followed by a prompt indicating
+the mail utilities can accept regular commands (see <tt>Commands</tt> below). When sending
+mail, the mail utilities are in <var>input mode</var>. If no subject is specified
+on the command line, and the <tt>asksub</tt> variable is set, a prompt
+for the subject is printed.</p><p>As the message is typed, the mail utilities read the message and
+store it in a temporary file. Commands may be entered by beginning
+a line with the tilde (~) escape character followed by a single
+command letter and optional arguments. See <tt>Tilde Escapes</tt> for a summary of these
+commands.</p><h4>Reading Mail</h4>
+<p>Each message is assigned a sequential number, and there is at any
+time the notion of a current message, marked by a right angle
+bracket (>) in the header summary. Many commands take an optional list
+of messages (<var>message-list</var>) to operate on.  In most cases, the current
+message is set to the highest-numbered message in the list after the
+command is finished executing.</p><p>The default for <var>message-list</var> is the current message. A <var>message-list</var> is a
+list of message identifiers separated by spaces, which may include:</p><dl><dt><var>n</var></dt>
+<dd><p>Message number <var>n</var>.</p></dd>
+<dt><tt>.</tt></dt>
+<dd><p>The current message.</p></dd>
+<dt><tt>^</tt></dt>
+<dd><p>The first undeleted message.</p></dd>
+<dt><tt>$</tt></dt>
+<dd><p>The last message.</p></dd>
+<dt><tt>*</tt></dt>
+<dd><p>All messages.</p></dd>
+<dt><tt>+</tt></dt>
+<dd><p>The next undeleted message.</p></dd>
+<dt><tt>&#45;</tt></dt>
+<dd><p>The previous undeleted message.</p></dd>
+<dt><var>n</var><tt>&#45;</tt><var>m</var></dt>
+<dd><p>An inclusive range of message numbers.</p></dd>
+<dt><var>user</var></dt>
+<dd><p>All messages from <var>user</var>.</p></dd>
+<dt><var>/string</var></dt>
+<dd><p>All messages with <var>string</var> in the Subject line (case ignored).</p></dd>
+<dt><tt>:</tt><var>c</var></dt>
+<dd><p>All messages of type <var>c</var>, where <var>c</var> is one of: </p><dl><dt><tt>d</tt></dt>
+<dd><p>deleted messages</p></dd>
+<dt><tt>n</tt></dt>
+<dd><p>new messages</p></dd>
+<dt><tt>o</tt></dt>
+<dd><p>old messages</p></dd>
+<dt><tt>r</tt></dt>
+<dd><p>read messages</p></dd>
+<dt><tt>u</tt></dt>
+<dd><p>unread messages</p></dd>
+</dl>
+<p>Notice that the context of the command determines whether this type of message specification makes sense.</p></dd>
+</dl>
+<p>Other arguments are usually arbitrary strings whose usage depends on the command
+involved. Filenames, where expected, are expanded using the normal shell conventions (see
+<a href="sh-1.html"><tt>sh</tt>(1)</a>). Special characters are recognized by certain commands and are documented with
+the commands below.</p><h4>Sending Mail</h4>
+<p>Recipients listed on the command line may be of three types: login
+names, shell commands, or alias groups. Login names may be any network
+address, including mixed network addressing. If mail is found to be undeliverable,
+an attempt is made to return it to the sender's <tt>mailbox</tt>. If
+the recipient name begins with a pipe symbol ( | ), the
+rest of the name is taken to be a shell command to
+pipe the message through. This provides an automatic interface with any program
+that reads the standard input, such as <a href="lp-1.html"><tt>lp</tt>(1)</a> for recording outgoing mail on
+paper. Alias groups are set by the <tt>a</tt>lias command (see <tt>Commands</tt> below)
+or in a system startup file (for example, <tt>$HOME/.mailrc</tt>). Aliases are lists
+of recipients of any type.</p><h4>Forwarding Mail</h4>
+<p>To forward a specific message, include it in a message to the
+desired recipients with the <tt>~f</tt> or <tt>~m</tt> tilde escapes. See <tt>Tilde</tt> <tt>Escapes</tt>
+below. To forward mail automatically, add a comma-separated list of addresses for
+additional recipients to the <tt>.forward</tt> file in your home directory. This is
+different from the format of the <tt>alias</tt> command, which takes a space-separated
+list instead. <b>Note:</b> Forwarding addresses must be valid, or the messages will
+&#8220;bounce.&#8221; You cannot, for instance, reroute your mail to a new host
+by forwarding it to your new address if it is not yet
+listed in the NIS aliases domain.</p><h4>Commands</h4>
+<p>Regular commands are of the form</p><pre>[ <var>command</var> ] [ <var>message-list</var> ] [ <var>arguments</var> ]</pre><p>In <var>input mode</var>, commands are recognized by the escape character, <tt>tilde(~)</tt>, and lines
+not treated as commands are taken as input for the message. If
+no command is specified in <var>command mode</var>, <tt>n</tt>ext is assumed. The following is
+a complete list of <tt>mailx</tt> commands:</p><dl><dt><tt>!</tt><var>shell-command</var></dt>
+<dd><p>Escape to the shell. See <tt>SHELL</tt> in ENVIRONMENT VARIABLES.</p></dd>
+<dt><tt>#</tt> <var>comment</var></dt>
+<dd><p><tt>NULL</tt> command (comment). Useful in <tt>mailrc</tt> files.</p></dd>
+<dt><tt>=</tt></dt>
+<dd><p>Print the current message number.</p></dd>
+<dt><tt>?</tt></dt>
+<dd><p>Prints a summary of commands.</p></dd>
+<dt><tt>a</tt>lias <var>alias name</var> .&#32;.&#32;.</dt>
+<dt><tt>g</tt>roup <var>alias name</var> .&#32;.&#32;.</dt>
+<dd><p>Declare an alias for the given names. The names are substituted when <tt>alias</tt> is used as a recipient. Useful in the <tt>mailrc</tt> file. With no arguments, the command displays the list of defined aliases.</p></dd>
+<dt><tt>alt</tt>ernates <var>name .&#32;.&#32;.</var></dt>
+<dd><p>Declare a list of alternate names for your login. When responding to a message, these names are removed from the list of recipients for the response. With no arguments, print the current list of alternate names. See also <tt>allnet</tt> in <tt>Internal Variables</tt>. </p></dd>
+<dt><tt>cd</tt> [<var>directory</var>]</dt>
+<dt><tt>ch</tt>dir [<var>directory</var>]</dt>
+<dd><p>Change directory. If <var>directory</var> is not specified, <tt>$HOME</tt> is used.</p></dd>
+<dt><tt>c</tt>opy [<var>file</var>]</dt>
+<dt><tt>c</tt>opy [<var>message-list</var>] <var>file</var></dt>
+<dd><p>Copy messages to the file without marking the messages as saved. Otherwise equivalent to the <tt>s</tt>ave command.</p></dd>
+<dt><tt>C</tt>opy [<var>message-list</var>]</dt>
+<dd><p>Save the specified messages in a file whose name is derived from the author of the message to be saved, without marking the messages as saved. Otherwise equivalent to the <tt>S</tt>ave command.</p></dd>
+<dt><tt>d</tt>elete [<var>message-list</var>]</dt>
+<dd><p>Delete messages from the <tt>mailbox</tt>. If <tt>autoprint</tt> is set, the next message after the last one deleted is printed (see <tt>Internal Variables</tt>). </p></dd>
+<dt><tt>di</tt>scard [<var>header-field</var>.&#32;.&#32;.&#32;]</dt>
+<dt><tt>ig</tt>nore [<var>header-field</var>.&#32;.&#32;.&#32;]</dt>
+<dd><p>Suppress printing of the specified header fields when displaying messages on the screen. Examples of header fields to ignore are <tt>Status</tt> and <tt>Received</tt>. The fields are included when the message is saved, unless the <tt>alwaysignore</tt> variable is set. The <tt>Mo</tt>re, <tt>Pa</tt>ge, <tt>P</tt>rint, and <tt>T</tt>ype commands override this command. If no header is specified, the current list of header fields being ignored is printed. See also the <tt>undi</tt>scard and <tt>unig</tt>nore commands.</p></dd>
+<dt><tt>dp</tt> [<var>message-list</var>]</dt>
+<dt><tt>dt </tt>[<var>message-list</var>]</dt>
+<dd><p>Delete the specified messages from the <tt>mailbox</tt> and print the next message after the last one deleted. Roughly equivalent to a <tt>d</tt>elete command followed by a <tt>p</tt>rint command.</p></dd>
+<dt><tt>ec</tt>ho <var>string </var>.&#32;.&#32;.</dt>
+<dd><p>Echo the given strings (like <a href="echo-1.html"><tt>echo</tt>(1)</a>). </p></dd>
+<dt><tt>e</tt>dit [<var>message-list</var>]</dt>
+<dd><p>Edit the given messages. Each message is placed in a temporary file and the program named by the <tt>EDITOR</tt> variable is invoked to edit it (see ENVIRONMENT VARIABLES). Default editor is <a href="ed-1.html"><tt>ed</tt>(1)</a>. </p></dd>
+<dt><tt>ex</tt>it</dt>
+<dt><tt>x</tt>it</dt>
+<dd><p>Exit from <tt>mailx</tt>, without changing the <tt>mailbox</tt>. No messages are saved in the <tt>mbox</tt> (see also <tt>q</tt>uit). </p></dd>
+<dt><tt>fie</tt>ld [<var>message-list</var>] header-file</dt>
+<dd><p>Display the value of the header field in the specified message.</p></dd>
+<dt><tt>fi</tt>le [<var>file</var>]</dt>
+<dt><tt>fold</tt>er [<var>file</var>]</dt>
+<dd><p>Quit from the current file of messages and read in the specified file. Several special characters are recognized when used as file names: </p><dl><dt><tt>%</tt></dt>
+<dd><p>the current <tt>mailbox</tt>.</p></dd>
+<dt><tt>%</tt><var>user</var></dt>
+<dd><p>the <tt>mailbox</tt> for <var>user</var>.</p></dd>
+<dt><tt>#</tt></dt>
+<dd><p>the previous mail file.</p></dd>
+<dt><tt>&#38;</tt></dt>
+<dd><p>the current <tt>mbox</tt>.</p></dd>
+<dt><tt>+</tt><var>file</var></dt>
+<dd><p>The named file in the <var>folder</var> directory (listed in the <tt>folder</tt> variable).</p></dd>
+</dl>
+<p>With no arguments, print the name of the current mail file, and the number of messages and characters it contains.</p></dd>
+<dt><tt>folders</tt></dt>
+<dd><p>Print the names of the files in the directory set by the <tt>folder</tt> variable (see <tt>Internal Variables</tt>). </p></dd>
+<dt><tt>Fo</tt>llowup [<var>message</var>]</dt>
+<dd><p>Respond to a message, recording the response in a file whose name is derived from the author of the message. Overrides the <tt>record</tt> variable, if set. If the <tt>replyall</tt> variable is set, the actions of <tt>Fo</tt>llowup and <tt>fo</tt>llowup are reversed. See also the <tt>f</tt>ollowup, <tt>S</tt>ave, and <tt>C</tt>opy commands and <tt>outfolder</tt> in <tt>Internal Variables</tt>, and the <tt>Starting Mail</tt> section in USAGE above.</p></dd>
+<dt><tt>f</tt>ollowup [<var>message-list</var>]</dt>
+<dd><p>Respond to the first message in the <var>message-list</var>, sending the message to the author of each message in the <var>message-list</var>. The subject line is taken from the first message and the response is recorded in a file whose name is derived from the author of the first message. If the <tt>replyall</tt> variable is set, the actions of <tt>fo</tt>llowup and <tt>Fo</tt>llowup are reversed. See also the <tt>Fo</tt>llowup, <tt>S</tt>ave, and <tt>C</tt>opy commands and <tt>outfolder</tt> in <tt>Internal Variables</tt>, and the <tt>Starting Mail</tt> section in USAGE above.</p></dd>
+<dt><tt>f</tt>rom [<var>message-list</var>]</dt>
+<dd><p>Print the header summary for the specified messages. If no messages are specified, print the header summary for the current message.</p></dd>
+<dt><tt>g</tt>roup <var>alias name </var>.&#32;.&#32;.</dt>
+<dt><tt>a</tt>lias <var>alias name </var>.&#32;.&#32;.</dt>
+<dd><p>Declare an alias for the given names. The names are substituted when <tt>alias</tt> is used as a recipient. Useful in the <tt>mailrc</tt> file.</p></dd>
+<dt><tt>h</tt>eaders [<var>message</var>]</dt>
+<dd><p>Print the page of headers which includes the message specified. The <tt>screen</tt> variable sets the number of headers per page (see <tt>Internal Variables</tt>). See also the <tt>z</tt> command. </p></dd>
+<dt><tt>hel</tt>p</dt>
+<dd><p>Print a summary of commands.</p></dd>
+<dt><tt>ho</tt>ld [<var>message-list</var>]</dt>
+<dt><tt>pre</tt>serve [<var>message-list</var>]</dt>
+<dd><p>Hold the specified messages in the <tt>mailbox</tt>. </p></dd>
+<dt><tt>i</tt>f <tt>s</tt> | <tt>r</tt> | <tt>t</tt></dt>
+<dt><var>mail-commands</var></dt>
+<dt></dt>
+<dt><tt>el</tt>se</dt>
+<dt><var>mail-commands</var></dt>
+<dt></dt>
+<dt><tt>en</tt>dif</dt>
+<dd><p>Conditional execution, where <var>s</var> executes following <var>mail-commands</var>, up to an <tt>el</tt>se or <tt>en</tt>dif, if the program is in <var>send</var> mode, <var>r</var> causes the <var>mail-commands</var> to be executed only in <var>receive</var> mode, and <tt>t</tt> causes the <var>mail-commands</var> to be executed only if <tt>mailx</tt> is being run from a terminal. Useful in the <tt>mailrc</tt> file.</p></dd>
+<dt><tt>inc</tt></dt>
+<dd><p>Incorporate messages that arrive while you are reading the system mailbox. The new messages are added to the message list in the current <tt>mail</tt> session. This command does not commit changes made during the session, and prior messages are not renumbered.</p></dd>
+<dt><tt>ig</tt>nore [<var>header-field </var>.&#32;.&#32;.&#32;]</dt>
+<dt><tt>di</tt>scard [<var>header-field </var>.&#32;.&#32;.&#32;]</dt>
+<dd><p>Suppress printing of the specified header fields when displaying messages on the screen. Examples of header fields to ignore are <tt>Status</tt> and <tt>Cc</tt>. All fields are included when the message is saved. The <tt>Mo</tt>re, <tt>Pa</tt>ge, <tt>P</tt>rint and <tt>T</tt>ype commands override this command. If no header is specified, the current list of header fields being ignored is printed. See also the <tt>undi</tt>scard and <tt>unig</tt>nore commands.</p></dd>
+<dt><tt>l</tt>ist</dt>
+<dd><p>Print all commands available. No explanation is given.</p></dd>
+<dt><tt>lo</tt>ad</dt>
+<dd><p>[<var>message</var>] <tt>file</tt> The specified message is replaced by the message in the named file. <tt>file</tt> should contain a single mail message including mail headers (as saved by the <tt>s</tt>ave command).</p></dd>
+<dt><tt>m</tt>ail <var>recipient </var>.&#32;.&#32;.</dt>
+<dd><p>Mail a message to the specified recipients.</p></dd>
+<dt><tt>M</tt>ail <var>recipient</var></dt>
+<dd><p>Mail a message to the specified recipients, and record it in a file whose name is derived from the author of the message. Overrides the <tt>record</tt> variable, if set. See also the <tt>Save</tt> and <tt>Copy</tt> commands and <tt>outfolder</tt> in <tt>Internal Variables</tt>. </p></dd>
+<dt><tt>mb</tt>ox [<var>message-list</var>]</dt>
+<dd><p>Arrange for the given messages to end up in the standard <tt>mbox</tt> save file when <tt>mailx</tt> terminates normally. See <tt>MBOX</tt> in ENVIRONMENT VARIABLES for a description of this file. See also the <tt>ex</tt>it and <tt>q</tt>uit commands.</p></dd>
+<dt><tt>mo</tt>re [<var>message-list</var>]</dt>
+<dt><tt>pa</tt>ge [<var>message-list</var>]</dt>
+<dd><p>Print the specified messages. If <tt>crt</tt> is set, the messages longer than the number of lines specified by the <tt>crt</tt> variable are paged through the command specified by the <tt>PAGER</tt> variable. The default command is <a href="pg-1.html"><tt>pg</tt>(1)</a> or if the <tt>bsdcompat</tt> variable is set, the default is <a href="more-1.html"><tt>more</tt>(1)</a>. See ENVIRONMENT VARIABLES. Same as the <tt>p</tt>rint and <tt>t</tt>ype commands.</p></dd>
+<dt><tt>Mo</tt>re [<var>message-list</var>]</dt>
+<dt><tt>Pa</tt>ge [<var>message-list</var>]</dt>
+<dd><p>Print the specified messages on the screen, including all header fields. Overrides suppression of fields by the <tt>ig</tt>nore command. Same as the <tt>P</tt>rint and <tt>T</tt>ype commands.</p></dd>
+<dt><tt>ne</tt>w [<var>message-list</var>]</dt>
+<dt><tt>N</tt>ew [<var>message-list</var>]</dt>
+<dt><tt>unr</tt>ead [<var>message-list</var>]</dt>
+<dt><tt>U</tt>nread</dt>
+<dd><p>[<var>message-list</var>] Take a message list and mark each message as <var>not</var> having been read.</p></dd>
+<dt><tt>n</tt>ext [<var>message</var>]</dt>
+<dd><p>Go to the next message matching <var>message</var>. If message is not supplied, this command finds the next message that was not deleted or saved. A <var>message-list</var> may be specified, but in this case the first valid message in the list is the only one used. This is useful for jumping to the next message from a specific user, since the name would be taken as a command in the absence of a real command. See the discussion of <var>message-list</var> above for a description of possible message specifications.</p></dd>
+<dt><tt>pi</tt>pe [<var>message-list</var>] [<var>shell-command</var>]</dt>
+<dt><tt>|</tt> [<var>message-list</var>] [<var>shell-command</var>]</dt>
+<dd><p>Pipe the message through the given <var>shell-command</var>. The message is treated as if it were read. If no arguments are given, the current message is piped through the command specified by the value of the <tt>cmd</tt> variable. If the <tt>page</tt> variable is set, a form feed character is inserted after each message (see <tt>Internal Variables</tt>). </p></dd>
+<dt><tt>pre</tt>serve [<var>message-list</var>]</dt>
+<dt><tt>ho</tt>ld [<var>message-list</var>]</dt>
+<dd><p>Preserve the specified messages in the <tt>mailbox</tt>. </p></dd>
+<dt><tt>p</tt>rint [<var>message-list</var>]</dt>
+<dt><tt>t</tt>ype [<var>message-list</var>]</dt>
+<dd><p>Print the specified messages. If <tt>crt</tt> is set, the messages longer than the number of lines specified by the <tt>crt</tt> variable are paged through the command specified by the <tt>PAGER</tt> variable. The default command is <a href="pg-1.html"><tt>pg</tt>(1)</a> or if the <tt>bsdcompat</tt> variable is set, the default is <a href="more-1.html"><tt>more</tt>(1)</a>. See ENVIRONMENT VARIABLES. Same as the <tt>mo</tt>re and <tt>pa</tt>ge commands.</p></dd>
+<dt><tt>P</tt>rint [<var>message-list</var>]</dt>
+<dt><tt>T</tt>ype [<var>message-list</var>]</dt>
+<dd><p>Print the specified messages on the screen, including all header fields. Overrides suppression of fields by the <tt>ig</tt>nore command. Same as the <tt>Mo</tt>re and <tt>Pa</tt>ge commands.</p></dd>
+<dt><tt>pu</tt>t [<var>file</var>]</dt>
+<dt><tt>pu</tt>t [<var>message-list</var>] <var>file</var></dt>
+<dd><p>Save the specified message in the given file. Use the same conventions as the <tt>p</tt>rint command for which header fields are ignored.</p></dd>
+<dt><tt>Pu</tt>t [<var>file</var>]</dt>
+<dt><tt>Pu</tt>t [<var>message-list</var>] <var>file</var></dt>
+<dd><p>Save the specified message in the given file. Overrides suppression of fields by the <tt>ig</tt>nore command.</p></dd>
+<dt><tt>q</tt>uit</dt>
+<dd><p>Exit from <tt>mailx</tt>, storing messages that were read in <tt>mbox</tt> and unread messages in the <tt>mailbox</tt>. Messages that have been explicitly saved in a file are deleted unless the <tt>keepsave</tt> variable is set.</p></dd>
+<dt><tt>r</tt>eply [<var>message-list</var>]</dt>
+<dt><tt>r</tt>espond [<var>message-list</var>]</dt>
+<dt><tt>replys</tt>ender [<var>message-list</var>]</dt>
+<dd><p>Send a response to the author of each message in the <var>message-list</var>. The subject line is taken from the first message. If <tt>record</tt> is set to a file, a copy of the reply is added to that file. If the <tt>replyall</tt> variable is set, the actions of <tt>R</tt>eply/<tt>R</tt>espond and <tt>r</tt>eply/<tt>r</tt>espond are reversed. The <tt>replys</tt>ender command is not affected by the <tt>replyall</tt> variable, but sends each reply only to the sender of each message. See the <tt>Starting Mail</tt> section in USAGE above.</p></dd>
+<dt><tt>R</tt>eply [<var>message</var>]</dt>
+<dt><tt>R</tt>espond [<var>message</var>]</dt>
+<dt><tt>replya</tt>ll [<var>message</var>]</dt>
+<dd><p>Reply to the specified message, including all other recipients of that message. If the variable <tt>record</tt> is set to a file, a copy of the reply added to that file. If the <tt>replyall</tt> variable is set, the actions of <tt>R</tt>eply/<tt>R</tt>espond and <tt>r</tt>eply/<tt>r</tt>espond are reversed. The <tt>replya</tt>ll command is not affected by the <tt>replyall</tt> variable, but always sends the reply to all recipients of the message. See the <tt>Starting Mail</tt> section in USAGE above.</p></dd>
+<dt><tt>ret</tt>ain</dt>
+<dd><p>Add the list of header fields named to the <var>retained list</var>. Only the header fields in the retain list are shown on your terminal when you print a message. All other header fields are suppressed. The set of retained fields specified by the <tt>ret</tt>ain command overrides any list of ignored fields specified by the <tt>ig</tt>nore command. The <tt>T</tt>ype and <tt>P</tt>rint commands can be used to print a message in its entirety. If <tt>ret</tt>ain is executed with no arguments, it lists the current set of retained fields.</p></dd>
+<dt><tt>S</tt>ave [<var>message-list</var>]</dt>
+<dd><p>Save the specified messages in a file whose name is derived from the author of the first message. The name of the file is taken to be the author's name with all network addressing stripped off. See also the <tt>C</tt>opy, <tt>fo</tt>llowup, and <tt>F</tt>ollowup commands and <tt>outfolder</tt> in <tt>Internal Variables</tt>. </p></dd>
+<dt><tt>s</tt>ave [<var>file</var>]</dt>
+<dt><tt>s</tt>ave [<var>message-list</var>] <var>file</var></dt>
+<dd><p>Save the specified messages in the given file. The file is created if it does not exist. The file defaults to <tt>mbox</tt>. The message is deleted from the <tt>mailbox</tt> when <tt>mailx</tt> terminates unless <tt>keepsave</tt> is set (see also <tt>Internal Variables</tt> and the <tt>ex</tt>it and <tt>q</tt>uit commands).</p></dd>
+<dt><tt>se</tt>t</dt>
+<dt><tt>se</tt>t <var>variable</var></dt>
+<dt><tt>se</tt>t <var>variable</var><tt>=</tt><var>string</var></dt>
+<dt><tt>se</tt>t <var>variable</var><tt>=</tt><var>number</var></dt>
+<dd><p>Define a <var>variable</var>. To assign a <var>value</var> to <var>variable</var>, separate the variable name from the value by an `<tt>=</tt>' (there must be no space before or after the `<tt>=</tt>'). A variable may be given a null, string, or numeric <var>value</var>. To embed SPACE characters within a <var>value</var>, enclose it in quotes.</p><p>With no arguments, <tt>se</tt>t displays all defined variables and any values they might have. See <tt>Internal Variables</tt> for a description of all predefined <tt>mail</tt> variables.</p></dd>
+<dt><tt>sh</tt>ell</dt>
+<dd><p>Invoke an interactive shell. See also <tt>SHELL</tt> in ENVIRONMENT VARIABLES. </p></dd>
+<dt><tt>si</tt>ze [<var>message-list</var>]</dt>
+<dd><p>Print the size in characters of the specified messages.</p></dd>
+<dt><tt>so</tt>urce <var>file</var></dt>
+<dd><p>Read commands from the given file and return to command mode.</p></dd>
+<dt><tt>to</tt>p [<var>message-list</var>]</dt>
+<dd><p>Print the top few lines of the specified messages. If the <tt>toplines</tt> variable is set, it is taken as the number of lines to print (see <tt>Internal Variables</tt>). The default is 5.</p></dd>
+<dt><tt>tou</tt>ch [<var>message-list</var>]</dt>
+<dd><p>Touch the specified messages. If any message in <var>message-list</var> is not specifically saved in a file, it is placed in the <tt>mbox</tt>, or the file specified in the <tt>MBOX</tt> environment variable, upon normal termination. See <tt>ex</tt>it and <tt>q</tt>uit. </p></dd>
+<dt><tt>T</tt>ype [<var>message-list</var>]</dt>
+<dt><tt>P</tt>rint [<var>message-list</var>]</dt>
+<dd><p>Print the specified messages on the screen, including all header fields. Overrides suppression of fields by the <tt>ig</tt>nore command.</p></dd>
+<dt><tt>t</tt>ype [<var>message-list</var>]</dt>
+<dt><tt>p</tt>rint [<var>message-list</var>]</dt>
+<dd><p>Print the specified messages. If <tt>crt</tt> is set, the messages longer than the number of lines specified by the <tt>crt</tt> variable are paged through the command specified by the <tt>PAGER</tt> variable. The default command is <a href="pg-1.html"><tt>pg</tt>(1)</a>. See ENVIRONMENT VARIABLES. </p></dd>
+<dt><tt>una</tt>lias [<tt>alias</tt>] .&#32;.&#32;.</dt>
+<dt><tt>ung</tt>roup [<tt>alias</tt>] .&#32;.&#32;.</dt>
+<dd><p>Remove the definitions of the specified aliases.</p></dd>
+<dt><tt>u</tt>ndelete [<var>message-list</var>]</dt>
+<dd><p>Restore the specified deleted messages. Will only restore messages deleted in the current mail session. If <tt>autoprint</tt> is set, the last message of those restored is printed (see <tt>Internal Variables</tt>). </p></dd>
+<dt><tt>undi</tt>scard [<var>header-field</var>&#32;.&#32;.&#32;.]</dt>
+<dt><tt>unig</tt>nore [<var>header-field</var>&#32;.&#32;.&#32;.]</dt>
+<dd><p>Remove the specified header fields from the list being ignored. If no header fields are specified, all header fields are removed from the list being ignored.</p></dd>
+<dt><tt>unret</tt>ain [<var>header-field</var>&#32;.&#32;.&#32;.]</dt>
+<dd><p>Remove the specified header fields from the list being retained. If no header fields are specified, all header fields are removed from the list being retained.</p></dd>
+<dt><tt>unr</tt>ead [<var>message-list</var>]</dt>
+<dt><tt>U</tt>nread [<var>message-list</var>] Same as the <tt>ne</tt>w command.</dt>
+<dd><p></p></dd>
+<dt><tt>uns</tt>et <var>variable</var>&#32;.&#32;.&#32;.</dt>
+<dd><p>Erase the specified variables. If the variable was imported from the environment (that is, an environment variable or exported shell variable), it cannot be unset from within <tt>mailx</tt>. </p></dd>
+<dt><tt>ve</tt>rsion</dt>
+<dd><p>Print the current version and release date of the <tt>mailx</tt> utility.</p></dd>
+<dt><tt>v</tt>isual [<var>message-list</var>]</dt>
+<dd><p>Edit the given messages with a screen editor. Each messages is placed in a temporary file and the program named by the <tt>VISUAL</tt> variable is invoked to edit it (see ENVIRONMENT VARIABLES). Notice that the default visual editor is <tt>vi</tt>. </p></dd>
+<dt><tt>w</tt>rite [<var>message-list</var>] <tt>file</tt></dt>
+<dd><p>Write the given messages on the specified file, minus the header and trailing blank line. Otherwise equivalent to the <tt>s</tt>ave command.</p></dd>
+<dt><tt>x</tt>it</dt>
+<dt><tt>ex</tt>it</dt>
+<dd><p>Exit from <tt>mailx</tt>, without changing the <tt>mailbox</tt>. No messages are saved in the <tt>mbox</tt> (see also <tt>q</tt>uit). </p></dd>
+<dt><tt>z</tt>[<tt>+</tt>&#32;|&#32;<tt>&#45;</tt>]</dt>
+<dd><p>Scroll the header display forward or backward one screen&#45;full. The number of headers displayed is set by the <tt>screen</tt> variable (see <tt>Internal Variables</tt>).</p></dd>
+</dl>
+<h4>Tilde Escapes</h4>
+<p>The following tilde escape commands can be used when composing mail to
+send. These may be entered only from <var>input mode</var>, by beginning a line
+with the tilde escape character (~). See <tt>escape</tt> in <tt>Internal Variables</tt> for changing
+this special character. The escape character can be entered as text by typing
+it twice.</p><dl><dt><tt>~&#32;!</tt><var>shell-command</var></dt>
+<dd><p>Escape to the shell. If present, run <var>shell-command</var>.</p></dd>
+<dt><tt>~.</tt></dt>
+<dd><p>Simulate end of file (terminate message input).</p></dd>
+<dt><tt>~&#32;:</tt><var>mail-command</var></dt>
+<dt><tt>~_&#32;</tt><var>mail-command</var></dt>
+<dd><p>Perform the command-level request. Valid only when sending a message while reading mail.</p></dd>
+<dt><tt>~?</tt></dt>
+<dd><p>Print a summary of tilde escapes.</p></dd>
+<dt><tt>~A</tt></dt>
+<dd><p>Insert the autograph string <tt>Sign</tt> into the message (see <tt>Internal Variables</tt>).</p></dd>
+<dt><tt>~a</tt></dt>
+<dd><p>Insert the autograph string <tt>sign</tt> into the message (see <tt>Internal Variables</tt>).</p></dd>
+<dt><tt>~b</tt><var> name &#32;.&#32;.&#32;.</var></dt>
+<dd><p>Add the <var>name</var>s to the blind carbon copy (<tt>Bcc</tt>) list. This is like the carbon copy (<tt>Cc</tt>) list, except that the names in the <tt>Bcc</tt> list are not shown in the header of the mail message.</p></dd>
+<dt><tt>~c</tt><var> name &#32;.&#32;.&#32;.</var></dt>
+<dd><p>Add the <var>name</var>s to the carbon copy (<tt>Cc</tt>) list.</p></dd>
+<dt><tt>~d</tt></dt>
+<dd><p>Read in the <tt>dead-letter</tt> file. See <tt>DEAD</tt> in ENVIRONMENT VARIABLES for a description of this file.</p></dd>
+<dt><tt>~e</tt></dt>
+<dd><p>Invoke the editor on the partial message. See also <tt>EDITOR</tt> in ENVIRONMENT VARIABLES.</p></dd>
+<dt><tt>~f</tt> [<var>message-list</var>]</dt>
+<dd><p>Forward the specified message, or the current message being read. Valid only when sending a message while reading mail. The messages are inserted into the message without alteration (as opposed to the <tt>~m</tt> escape).</p></dd>
+<dt><tt>~F</tt> [<var>message-list</var>]</dt>
+<dd><p>Forward the specified message, or the current message being read, including all header fields. Overrides the suppression of fields by the <tt>ig</tt>nore command.</p></dd>
+<dt><tt>~h</tt></dt>
+<dd><p>Prompt for <tt>Subject</tt> line and <tt>To</tt>, <tt>Cc</tt>, and <tt>Bcc</tt> lists. If the field is displayed with an initial value, it may be edited as if you had just typed it.</p></dd>
+<dt><tt>~i</tt> <var>variable</var></dt>
+<dd><p>Insert the value of the named variable into the text of the message. For example, <tt>~A</tt> is equivalent to `<tt>~i Sign</tt>.' Environment variables set and exported in the shell are also accessible by <tt>~i</tt>.</p></dd>
+<dt><tt>~m</tt> [<var>message-list</var>]</dt>
+<dd><p>Insert the listed messages, or the current message being read into the letter. Valid only when sending a message while reading mail. The text of the message is shifted to the right, and the string contained in the <tt>indentprefix</tt> variable is inserted as the leftmost characters of each line. If <tt>indentprefix</tt> is not set, a TAB character is inserted into each line.</p></dd>
+<dt><tt>~M</tt> [<var>message-list</var>]</dt>
+<dd><p>Insert the listed messages, or the current message being read, including the header fields, into the letter. Valid only when sending a message while reading mail. The text of the message is shifted to the right, and the string contained in the <tt>indentprefix</tt> variable is inserted as the leftmost characters of each line. If <tt>indentprefix</tt> is not set, a TAB character is inserted into each line. Overrides the suppression of fields by the <tt>ig</tt>nore command.</p></dd>
+<dt><tt>~p</tt></dt>
+<dd><p>Print the message being entered.</p></dd>
+<dt><tt>~q</tt></dt>
+<dd><p>Quit from input mode by simulating an interrupt. If the body of the message is not null, the partial message is saved in <tt>dead-letter</tt>. See <tt>DEAD</tt> in ENVIRONMENT VARIABLES for a description of this file.</p></dd>
+<dt><tt>~R</tt></dt>
+<dd><p>Mark message for return receipt.</p></dd>
+<dt><tt>~r</tt> <var>file</var></dt>
+<dt><tt>~&#60;</tt> <var>file</var></dt>
+<dt><tt>~&#60; ! </tt><var>shell-command</var></dt>
+<dd><p>Read in the specified file. If the argument begins with an exclamation point (!), the rest of the string is taken as an arbitrary shell command and is executed, with the standard output inserted into the message.</p></dd>
+<dt><tt>~s</tt> <var>string &#32;.&#32;.&#32;.</var></dt>
+<dd><p>Set the subject line to <var>string</var>.</p></dd>
+<dt><tt>~t</tt> <var>name &#32;.&#32;.&#32;.</var></dt>
+<dd><p>Add the given <var>name</var>s to the To list.</p></dd>
+<dt><tt>~v</tt></dt>
+<dd><p>Invoke a preferred screen editor on the partial message. The default visual editor is <a href="vi-1.html"><tt>vi</tt>(1)</a>. See also <tt>VISUAL</tt> in ENVIRONMENT VARIABLES.</p></dd>
+<dt><tt>~w</tt> <var>file</var></dt>
+<dd><p>Write the message into the given file, without the header.</p></dd>
+<dt><tt>~x</tt></dt>
+<dd><p>Exit as with <tt>~q</tt> except the message is not saved in <tt>dead-letter</tt>.</p></dd>
+<dt><tt>~|</tt> <var>shell-command</var></dt>
+<dd><p>Pipe the body of the message through the given <var>shell-command</var>. If the <var>shell-command</var> returns a successful exit status, the output of the command replaces the message.</p></dd>
+</dl>
+<h4>Internal Variables</h4>
+<p>The following variables are internal variables. They may be imported from the
+execution environment or set using the <tt>se</tt>t command at any time. The
+<tt>uns</tt>et command may be used to erase variables.</p><dl><dt><tt>allnet</tt></dt>
+<dd><p>All network names whose last component (login name) match are treated as identical. This causes the <var>message-list</var> message specifications to behave similarly. Disabled by default. See also the <tt>alt</tt>ernates command and the <tt>metoo</tt> and <tt>fuzzymatch</tt> variables.</p></dd>
+<dt><tt>alwaysignore</tt></dt>
+<dd><p>Ignore header fields with <tt>ig</tt>nore everywhere, not just during <tt>p</tt>rint or <tt>t</tt>ype. Affects the <tt>s</tt>ave, <tt>S</tt>ave, <tt>c</tt>opy, <tt>C</tt>opy, <tt>to</tt>p, <tt>pi</tt>pe, and <tt>w</tt>rite commands, and the <tt>~m</tt> and <tt>~f</tt> tilde escapes. Enabled by default.</p></dd>
+<dt><tt>append</tt></dt>
+<dd><p>Upon termination, append messages to the end of the <tt>mbox</tt> file instead of prepending them. Although disabled by default, <tt>append</tt> is set in the system startup file (which can be suppressed with the <tt>-n</tt> command line option).</p></dd>
+<dt><tt>appenddeadletter</tt></dt>
+<dd><p>Append to the deadletter file rather than overwrite it. Although disabled by default, <tt>appenddeadletter</tt> is frequently set in the system startup file. See <tt>Starting Mail</tt> in USAGE above.</p></dd>
+<dt><tt>askbcc</tt></dt>
+<dd><p>Prompt for the <tt>Bcc</tt> list after the <tt>Subject</tt> is entered if it is not specified on the command line with the <tt>-b</tt> option. Disabled by default.</p></dd>
+<dt><tt>askcc</tt></dt>
+<dd><p>Prompt for the <tt>Cc</tt> list after the <tt>Subject</tt> is entered if it is not specified on the command line with the <tt>-c</tt> option. Disabled by default.</p></dd>
+<dt><tt>asksub</tt></dt>
+<dd><p>Prompt for subject if it is not specified on the command line with the <tt>-s</tt> option. Enabled by default.</p></dd>
+<dt><tt>autoinc</tt></dt>
+<dd><p>Automatically incorporate new messages into the current session as they arrive. This has an affect similar to issuing the <tt>inc</tt> command every time the command prompt is displayed. Disabled by default, but <tt>autoinc</tt> is set in the default system startup file for <tt>mailx</tt>; it is not set for <tt>/usr/ucb/mail</tt> or <tt>/usr/ucb/Mail</tt>.</p></dd>
+<dt><tt>autoprint</tt></dt>
+<dd><p>Enable automatic printing of messages after <tt>d</tt>elete and <tt>u</tt>ndelete commands. Disabled by default.</p></dd>
+<dt><tt>bang</tt></dt>
+<dd><p>Enable the special-casing of exclamation points (!) in shell escape command lines as in <a href="vi-1.html"><tt>vi</tt>(1)</a>. Disabled by default.</p></dd>
+<dt><tt>bsdcompat</tt></dt>
+<dd><p>Set automatically if <tt>mailx</tt> is invoked as <tt>mail</tt> or <tt>Mail</tt>. Causes <tt>mailx</tt> to use <tt>/etc/mail/Mail.rc</tt> as the system startup file. Changes the default pager to <a href="more-1.html"><tt>more</tt>(1)</a>.</p></dd>
+<dt><tt>cmd=</tt><var>shell-command</var></dt>
+<dd><p>Set the default command for the <tt>pi</tt>pe command. No default value.</p></dd>
+<dt><tt>conv=</tt><var>conversion</var></dt>
+<dd><p>Convert <tt>uucp</tt> addresses to the specified address style, which can be either: </p><dl><dt><tt>internet</tt></dt>
+<dd><p>This requires a mail delivery program conforming to the RFC822 standard for electronic mail addressing.</p></dd>
+<dt><tt>optimize</tt></dt>
+<dd><p>Remove loops in <a href="uucp-1c.html"><tt>uucp</tt>(1C)</a> address paths (typically generated by the <tt>r</tt>eply command). No rerouting is performed; <tt>mail</tt> has no knowledge of UUCP routes or connections.</p></dd>
+</dl>
+<p>Conversion is disabled by default. See also <a href="../821-1462/sendmail-1m.html#REFMAN1Msendmail-1m"><tt>sendmail</tt>(1M)</a> and the <tt>-U</tt> command-line option.</p></dd>
+<dt><tt>crt</tt>[<tt>=</tt><var>number</var>]</dt>
+<dd><p>Pipe messages having more than <var>number</var> lines through the command specified by the value of the <tt>PAGER</tt> variable ( <a href="pg-1.html"><tt>pg</tt>(1)</a> or <a href="more-1.html"><tt>more</tt>(1)</a> by default). If <var>number</var> is not specified, the current window size is used. Disabled by default.</p></dd>
+<dt><tt>debug</tt></dt>
+<dd><p>Enable verbose diagnostics for debugging. Messages are not delivered. Disabled by default.</p></dd>
+<dt><tt>dot</tt></dt>
+<dd><p>Take a period on a line by itself, or EOF during input from a terminal as end-of-file. Disabled by default, but <tt>dot</tt> is set in the system startup file (which can be suppressed with the <tt>-n</tt> command line option).</p></dd>
+<dt><tt>fcc</tt></dt>
+<dd><p>By default, <tt>mailx</tt> will treat any address containing a slash ("/") character as a local "send to file" address. By unsetting this option, this behavior is disabled. Enabled by default.</p></dd>
+<dt><tt>flipr</tt></dt>
+<dd><p>Reverse the effect of the <tt>fo</tt>llowup/<tt>Fo</tt>llowup and <tt>r</tt>eply/<tt>R</tt>eply command pairs. If both <tt>flipr</tt> and <tt>replyall</tt> are set, the effect is as if neither was set.</p></dd>
+<dt><tt>from</tt></dt>
+<dd><p>Extract the author listed in the header summary from the <tt>From:</tt> header instead of the UNIX <tt>From</tt> line. Enabled by default.</p></dd>
+<dt><tt>fuzzymatch</tt></dt>
+<dd><p>The <tt>from</tt> command searches for messages from the indicated sender. By default, the full sender address must be specified. By setting this option, only a sub-string of the sender address need be specified. Disabled by default.</p></dd>
+<dt><tt>escape=</tt><var>c</var></dt>
+<dd><p>Substitute <var>c</var> for the ~ escape character. Takes effect with next message sent.</p></dd>
+<dt><tt>folder=</tt><var>directory</var></dt>
+<dd><p>The directory for saving standard mail files. User-specified file names beginning with a plus (+) are expanded by preceding the file name with this directory name to obtain the real file name. If <var>directory</var> does not start with a slash (/), <tt>$HOME</tt> is prepended to it. There is no default for the <tt>folder</tt> variable. See also <tt>outfolder</tt> below.</p></dd>
+<dt><tt>header</tt></dt>
+<dd><p>Enable printing of the header summary when entering <tt>mailx</tt>. Enabled by default.</p></dd>
+<dt><tt>hold</tt></dt>
+<dd><p>Preserve all messages that are read in the <tt>mailbox</tt> instead of putting them in the standard <tt>mbox</tt> save file. Disabled by default.</p></dd>
+<dt><tt>ignore</tt></dt>
+<dd><p>Ignore interrupts while entering messages. Handy for noisy dial-up lines. Disabled by default.</p></dd>
+<dt><tt>ignoreeof</tt></dt>
+<dd><p>Ignore end-of-file during message input. Input must be terminated by a period (.) on a line by itself or by the <tt>~.</tt> command. See also <tt>dot</tt> above. Disabled by default.</p></dd>
+<dt><tt>indentprefix=</tt><var>string</var></dt>
+<dd><p>When <tt>indentprefix</tt> is set, <var>string</var> is used to mark indented lines from messages included with <tt>~m</tt>. The default is a TAB character.</p></dd>
+<dt><tt>keep</tt></dt>
+<dd><p>When the <tt>mailbox</tt> is empty, truncate it to zero length instead of removing it. Disabled by default.</p></dd>
+<dt><tt>iprompt=</tt><var>string</var></dt>
+<dd><p>The specified prompt string is displayed before each line on input is requested when sending a message.</p></dd>
+<dt><tt>keepsave</tt></dt>
+<dd><p>Keep messages that have been saved in other files in the <tt>mailbox</tt> instead of deleting them. Disabled by default.</p></dd>
+<dt><tt>makeremote</tt></dt>
+<dd><p>When replying to all recipients of a message, if an address does not include a machine name, it is assumed to be relative to the sender of the message. Normally not needed when dealing with hosts that support RFC822.</p></dd>
+<dt><tt>metoo</tt></dt>
+<dd><p>If your login appears as a recipient, do not delete it from the list. Disabled by default.</p></dd>
+<dt><tt>mustbang</tt></dt>
+<dd><p>Force all mail addresses to be in bang format.</p></dd>
+<dt><tt>onehop</tt></dt>
+<dd><p>When responding to a message that was originally sent to several recipients, the other recipient addresses are normally forced to be relative to the originating author's machine for the response. This flag disables alteration of the recipients' addresses, improving efficiency in a network where all machines can send directly to all other machines (that is, one hop away). Disabled by default.</p></dd>
+<dt><tt>outfolder</tt></dt>
+<dd><p>Locate the files used to record outgoing messages in the directory specified by the <tt>folder</tt> variable unless the path name is absolute. Disabled by default. See <tt>folder</tt> above and the <tt>S</tt>ave, <tt>C</tt>opy, <tt>fo</tt>llowup, and <tt>F</tt>ollowup commands.</p></dd>
+<dt><tt>page</tt></dt>
+<dd><p>Used with the <tt>pi</tt>pe command to insert a form feed after each message sent through the pipe. Disabled by default.</p></dd>
+<dt><tt>pipeignore</tt></dt>
+<dd><p>Omit ignored header when outputting to the <tt>pipe</tt> command. Although disabled by default, <tt>pipeignore</tt> is frequently set in the system startup file. See <tt>Starting Mail</tt> in USAGE above.</p></dd>
+<dt><tt>postmark</tt></dt>
+<dd><p>Your "real name" to be included in the From line of messages you send. By default this is derived from the comment field in your <a href="../821-1473/passwd-4.html#REFMAN4passwd-4"><tt>passwd</tt>(4)</a> file entry.</p></dd>
+<dt><tt>prompt=</tt><var>string</var></dt>
+<dd><p>Set the <var>command mode</var> prompt to <var>string</var>. Default is &#8220;<tt>? </tt>&#8221;, unless the <tt>bsdcompat</tt> variable is set, then the default is &#8220;<tt>&#38;</tt>&#8221;.</p></dd>
+<dt><tt>quiet</tt></dt>
+<dd><p>Refrain from printing the opening message and version when entering <tt>mailx</tt>. Disabled by default.</p></dd>
+<dt><tt>record=</tt><var>file</var></dt>
+<dd><p>Record all outgoing mail in <var>file</var>. Disabled by default. See also <tt>outfolder</tt> above.</p></dd>
+<dt><tt>replyall</tt></dt>
+<dd><p>Reverse the effect of the <tt>r</tt>eply and <tt>R</tt>eply and <tt>fo</tt>llowup and <tt>Fo</tt>llowup commands. Although set by default, <tt>replayall</tt> is frequently unset in the system startup file. See <tt>flipr</tt> and <tt>Starting Mail</tt> in USAGE above.</p></dd>
+<dt><tt>returnaddr=</tt><var>string</var></dt>
+<dd><p>The default sender address is that of the current user. This variable can be used to set the sender address to any arbitrary value. Set with caution.</p></dd>
+<dt><tt>save</tt></dt>
+<dd><p>Enable saving of messages in <tt>dead-letter</tt> on interrupt or delivery error. See <tt>DEAD</tt> for a description of this file. Enabled by default.</p></dd>
+<dt><tt>screen=</tt><var>number</var></dt>
+<dd><p>Sets the number of lines in a screen-full of headers for the <tt>h</tt>eaders command. <var>number</var> must be a positive number.</p><p>The default is set according to baud rate or window size. With a baud rate less than <tt>1200</tt>, <var>number</var> defaults to <tt>5</tt>, if baud rate is exactly <tt>1200</tt>, it defaults to <tt>10</tt>. If you are in a window, <var>number</var> defaults to the default window size minus 4. Otherwise, the default is <tt>20</tt>.</p></dd>
+<dt><tt>sendmail=</tt><var>shell-command</var></dt>
+<dd><p>Alternate command for delivering messages. <b>Note:</b> In addition to the expected list of recipients, <tt>mail</tt> also passes the <tt>-i</tt> and <tt>-m</tt>, flags to the command. Since these flags are not appropriate to other commands, you may have to use a shell script that strips them from the arguments list before invoking the desired command. Default is <tt>/usr/bin/rmail</tt>.</p></dd>
+<dt><tt>sendwait</tt></dt>
+<dd><p>Wait for background mailer to finish before returning. Disabled by default.</p></dd>
+<dt><tt>showname</tt></dt>
+<dd><p>Causes the message header display to show the sender's real name (if known) rather than their mail address. Disabled by default, but <tt>showname</tt> is set in the <tt>/etc/mail/mailx.rc</tt> system startup file for <tt>mailx</tt>.</p></dd>
+<dt><tt>showto</tt></dt>
+<dd><p>When displaying the header summary and the message is from you, print the recipient's name instead of the author's name.</p></dd>
+<dt><tt>sign=</tt><var>string</var></dt>
+<dd><p>The variable inserted into the text of a message when the <tt>~a</tt> (autograph) command is given. No default (see also <tt>~i</tt> in <tt>Tilde Escapes</tt>).</p><p>`</p></dd>
+<dt><tt>Sign=</tt><var>string</var></dt>
+<dd><p>The variable inserted into the text of a message when the <tt>~A</tt> command is given. No default (see also <tt>~i</tt> in <tt>Tilde Escapes</tt>).</p></dd>
+<dt><tt>toplines=</tt><var>number</var></dt>
+<dd><p>The number of lines of header to print with the <tt>to</tt>p command. Default is <tt>5</tt>.</p></dd>
+<dt><tt>verbose</tt></dt>
+<dd><p>Invoke <a href="../821-1462/sendmail-1m.html#REFMAN1Msendmail-1m"><tt>sendmail</tt>(1M)</a> with the <tt>-v</tt> flag.</p></dd>
+<dt><tt>translate</tt></dt>
+<dd><p>The name of a program to translate mail addresses. The program receives mail addresses as arguments. The program produces, on the standard output, lines containing the following data, in this order: </p>
+<ul><li><p>the postmark for the sender (see the postmark variable)</p></li>
+<li><p>translated mail addresses, one per line, corresponding to the program's arguments. Each translated address will replace the corresponding address in the mail message being sent.</p></li>
+<li><p>a line containing only "y" or "n". if the line contains "y" the user will be asked to confirm that the message should be sent.</p></li></ul>
+<p>The translate program will be invoked for each mail message to be sent. If the program exits with a non-zero exit status, or fails to produce enough output, the message is not sent.</p></dd>
+</dl>
+<h4>Large File Behavior</h4>
+<p>See <a href="../821-1474/largefile-5.html#REFMAN5largefile-5"><tt>largefile</tt>(5)</a> for the description of the behavior of <tt>mailx</tt> when encountering
+files greater than or equal to 2 Gbyte ( 2<sup>31</sup> bytes).</p><h3>Environment Variables</h3>
+<p>See <a href="../821-1474/environ-5.html#REFMAN5environ-5"><tt>environ</tt>(5)</a> for descriptions of the following environment variables that affect the
+execution of <tt>mailx</tt>: <tt>HOME</tt>, <tt>LANG</tt>, <tt>LC_CTYPE</tt>, <tt>LC_TIME</tt>, <tt>LC_MESSAGES</tt>, <tt>NLSPATH</tt>, and <tt>TERM</tt>.</p><dl><dt><tt>DEAD</tt></dt>
+<dd><p>The name of the file in which to save partial letters in case of untimely interrupt. Default is <tt>$HOME/dead.letter</tt>.</p></dd>
+<dt><tt>EDITOR</tt></dt>
+<dd><p>The command to run when the <tt>e</tt>dit or <tt>~e</tt> command is used. Default is <a href="ed-1.html"><tt>ed</tt>(1)</a>.</p></dd>
+<dt><tt>LISTER</tt></dt>
+<dd><p>The command (and options) to use when listing the contents of the <tt>folder</tt> directory. The default is <a href="ls-1.html"><tt>ls</tt>(1)</a>.</p></dd>
+<dt><tt>MAIL</tt></dt>
+<dd><p>The name of the initial mailbox file to read (in lieu of the standard system mailbox). The default is <tt>/var/mail/<var>username</var> .</tt></p></dd>
+<dt><tt>MAILRC</tt></dt>
+<dd><p>The name of the startup file. Default is <tt>$HOME/.mailrc</tt>.</p></dd>
+<dt><tt>MAILX_HEAD</tt></dt>
+<dd><p>The specified string is included at the beginning of the body of each message that is sent.</p></dd>
+<dt><tt>MAILX_TAIL</tt></dt>
+<dd><p>The specified string is included at the end of the body of each message that is sent.</p></dd>
+<dt><tt>MBOX</tt></dt>
+<dd><p>The name of the file to save messages which have been read. The <tt>ex</tt>it command overrides this function, as does saving the message explicitly in another file. Default is <tt>$HOME/mbox</tt>.</p></dd>
+<dt><tt>PAGER</tt></dt>
+<dd><p>The command to use as a filter for paginating output. This can also be used to specify the options to be used. Default is <a href="pg-1.html"><tt>pg</tt>(1)</a>, or if the <tt>bsdcompat</tt> variable is set, the default is <a href="more-1.html"><tt>more</tt>(1)</a>. See <tt>Internal Variables</tt>.</p></dd>
+<dt><tt>SHELL</tt></dt>
+<dd><p>The name of a preferred command interpreter. Default is <a href="sh-1.html"><tt>sh</tt>(1)</a>.</p></dd>
+<dt><tt>VISUAL</tt></dt>
+<dd><p>The name of a preferred screen editor. Default is <a href="vi-1.html"><tt>vi</tt>(1)</a>.</p></dd>
+</dl>
+<h3>Exit Status</h3>
+<p>When the <tt>-e</tt> option is specified, the following exit values are returned:</p><dl><dt><tt>0</tt></dt>
+<dd><p>Mail was found.</p></dd>
+<dt><tt>>0</tt></dt>
+<dd><p>Mail was not found or an error occurred.</p></dd>
+</dl>
+<p>Otherwise, the following exit values are returned:</p><dl><dt><tt>0</tt></dt>
+<dd><p>Successful completion. Notice that this status implies that all messages were <b>sent</b>, but it gives no assurances that any of them were actually <b>delivered</b>.</p></dd>
+<dt><tt>>0</tt></dt>
+<dd><p>An error occurred</p></dd>
+</dl>
+<h3>Files</h3>
+<dl><dt><tt>$HOME/.mailrc</tt></dt>
+<dd><p> personal startup file</p></dd>
+<dt><tt>$HOME/mbox</tt></dt>
+<dd><p>secondary storage file</p></dd>
+<dt><tt>$HOME/.Maillock</tt></dt>
+<dd><p>lock file to prevent multiple writers of system mailbox</p></dd>
+<dt><tt>/etc/mail/mailx.rc</tt></dt>
+<dd><p>optional system startup file for <tt>mailx</tt> only</p></dd>
+<dt><tt>/etc/mail/Mail.rc</tt></dt>
+<dd><p>BSD compatibility system-wide startup file for <tt>/usr/ucb/mail</tt> and <tt>/usr/ucb/Mail</tt></p></dd>
+<dt><tt>/tmp/R[emqsx]*</tt></dt>
+<dd><p>temporary files</p></dd>
+<dt><tt>/usr/share/lib/mailx/mailx.help*</tt></dt>
+<dd><p>help message files</p></dd>
+<dt><tt>/var/mail/*</tt></dt>
+<dd><p>post office directory</p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">SUNWcs</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Interface Stability</div></td>
+<td align="left" valign="top"><div class="pad5x10">Committed</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Standard</div></td>
+<td align="left" valign="top"><div class="pad5x10">See <a href="../821-1474/standards-5.html#REFMAN5standards-5"><tt>standards</tt>(5)</a>.</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h3>See Also</h3>
+<p><a href="biff-1b.html"><tt>biff</tt>(1B)</a>, <a href="echo-1.html"><tt>echo</tt>(1)</a>, <a href="ed-1.html"><tt>ed</tt>(1)</a>, <a href="ex-1.html"><tt>ex</tt>(1)</a>, <a href="fmt-1.html"><tt>fmt</tt>(1)</a>, <a href="lp-1.html"><tt>lp</tt>(1)</a>, <a href="ls-1.html"><tt>ls</tt>(1)</a>, <a href="mail-1.html"><tt>mail</tt>(1)</a>, <a href="mail-1b.html"><tt>mail</tt>(1B)</a>, <a href="mailcompat-1.html"><tt>mailcompat</tt>(1)</a>, <a href="more-1.html"><tt>more</tt>(1)</a>, <a href="pg-1.html"><tt>pg</tt>(1)</a>,
+<a href="sh-1.html"><tt>sh</tt>(1)</a>, <a href="uucp-1c.html"><tt>uucp</tt>(1C)</a>, <a href="vacation-1.html"><tt>vacation</tt>(1)</a>, <a href="vi-1.html"><tt>vi</tt>(1)</a>, <a href="../821-1462/newaliases-1m.html#REFMAN1Mnewaliases-1m"><tt>newaliases</tt>(1M)</a>, <a href="../821-1462/sendmail-1m.html#REFMAN1Msendmail-1m"><tt>sendmail</tt>(1M)</a>, <a href="../821-1473/aliases-4.html#REFMAN4aliases-4"><tt>aliases</tt>(4)</a>, <a href="../821-1473/passwd-4.html#REFMAN4passwd-4"><tt>passwd</tt>(4)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a>, <a href="../821-1474/environ-5.html#REFMAN5environ-5"><tt>environ</tt>(5)</a>, <a href="../821-1474/largefile-5.html#REFMAN5largefile-5"><tt>largefile</tt>(5)</a>, <a href="../821-1474/standards-5.html#REFMAN5standards-5"><tt>standards</tt>(5)</a></p><h3>Notes</h3>
+<p>Where <var>shell-command</var> is shown as valid, arguments are not always allowed. Experimentation
+is recommended.</p><p>Internal variables imported from the execution environment cannot be <tt>uns</tt>et.</p><p>The full internet addressing is not fully supported by <tt>mailx</tt>. The new
+standards need some time to settle down.</p><p>Replies do not always generate correct return addresses.  Try resending the
+errant reply with <tt>onehop</tt> set.</p><p><tt>mailx</tt> does not lock your record file. So, if you use a
+record file and send two or more messages simultaneously, lines from the
+messages may be interleaved in the record file.</p><p>The format for the <tt>alias</tt> command is a space-separated list of recipients,
+while the format for an alias in either the <tt>.forward</tt> or <tt>/etc/aliases</tt>
+is a comma-separated list.</p><p>To read mail on a workstation running Solaris 1.<var>x</var> when your mail
+server is running Solaris 2.<var>x</var>, first execute the <a href="mailcompat-1.html"><tt>mailcompat</tt>(1)</a> program.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="mailstats-1.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="make-1s.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

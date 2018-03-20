@@ -1,0 +1,305 @@
+<html>
+<head>
+<title>Setting Up File Sharing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Page"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(8));
+</script>
+
+<table border="0" width="400">
+  <tr>
+    <td width="400"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="5"><a name="overview"></a><a name="5.1.1.1"></a>1 
+        Overview </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1.1 </font><font size="2" face="Arial, Helvetica, sans-serif">This 
+        subsection shows you how to share information across a network. The topics 
+        describe how to set up shared folders and drives (for example a CD-ROM 
+        drive) and how to access them from other PCs and laptops over the network. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The subsection also 
+        describes how to prevent sharing of folders and drives, which is particularly 
+        important if the information in the folder is 'sensitive' or you do not 
+        wish someone else to use your drive. </font></p>
+		
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"> <a name="shared"></a><a name="5.1.2.1"></a>2 
+        Making folders and drives shared</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.1 To specify a shared 
+        folder or drive on a PC or laptop: </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1. In the Windows 
+        95 or Windows 98 desktop on that PC or laptop, either: </font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Double-click the 
+          <i>My Computer</i> icon and locate the folder or drive you wish to share.</font></li>
+      </ul>
+      <p align="center"><img src="images/file_sharing_1.gif" width="84" height="73"></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Or use Windows 
+          Explorer to locate the folder or drive. </font></li>
+      </ul>
+      <p align="center"><img src="images/file_sharing_2.gif" width="336" height="324"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2. To start Windows 
+        Explorer, go to the <i>Start</i> menu and select <i>Programs</i> and then 
+        <i>Windows Explorer</i>. For information on how to use Windows Explorer, 
+        refer to the Windows manual and Help system. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <img src="images/file_sharing_3.gif" width="240" height="275" align="right"></font><font size="2" face="Arial, Helvetica, sans-serif"><a name="5.1.2.2"></a>2.2 
+        When you have located the folder or drive you wish to share, right-click 
+        on it (using the right mouse button) and select <i>Sharing</i>. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The Properties dialog 
+        box appears with the <i>Sharing</i> tab displayed.</font></p>
+     
+	 </td></tr>
+  <tr> 
+    <td height="1494"> 
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><img src="../../images/notesymb.gif" width="16" height="22" align="left">Note: 
+        If the Sharing option is not shown, you are either trying to share a file 
+        (only folders and drives can be shared), or you need to configure your 
+        PC or laptop for sharing. To configure your PC for sharing see <a  href="javascript:hotlink_se('pc/pc.htm','2.1.4.1')"onMouseOver="status=statusbar_se;return true">Making 
+        a PC ready for network use</a>. To configure your laptop see <a  href="javascript:hotlink_se('laptop/laptop.htm','2.2.3.10')"onMouseOver="status=statusbar_se;return true">Making 
+        a laptop ready for network use</a> for laptops.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.3<a name="5.1.2.3"></a> 
+        In the <i>Sharing</i> tab, select <i>Shared As</i>.</font></p>
+      <p align="center"><img src="images/file_sharing_4.gif" width="367" height="419" alt="Sharing files"></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.4 <a name="5.1.2.4"></a>Select 
+        the <i>Access Type</i> for the folder or drive. This sets the type of 
+        access for PCs and laptops that are chosen to access the folder or drive. 
+        Access options are: </font></p>
+      <ul>
+        <li> <font size="2" face="Arial, Helvetica, sans-serif"><i>Read-Only</i>, 
+          if the users of the network are to have 'read' access to the folder 
+          but cannot alter anything in the folder. You can restrict 'read' access 
+          by entering a password.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> <i>Full,</i> if 
+          the users of the network are to have 'read' and 'write' access to the 
+          folder or drive. To restrict access, you can enter a password in the 
+          Password field below it. </font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"><i>Depends on Password</i>, 
+          if access to the folder or drive is to be a combination of 'read-only' 
+          or 'full', depending on the password. You must specify a 'full' password 
+          and a different 'read-only' password for users of other PCs and laptops 
+          to determine their method of access. </font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <a name="5.1.2.5"></a>2.5 
+        Click <i>OK</i> to make the folder or drive accessible. </font></p>
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"><img src="images/file_sharing_5.gif" width="367" height="419"></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="../../images/notesymb.gif" width="16" height="22" align="left">Note: 
+        A shared folder will provide access to all its contents and subfolders. 
+        </font></p>
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td height> 
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.6<a name="5.1.2.6"></a> 
+        Some examples of access settings:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If you want users 
+          to have 'read' and 'write' access to the folder or drive, specify <i>Full 
+          </i>access and leave the password field blank.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If you want selected 
+          users only to have 'read' access to the folder or drive, specify <i>Read-Only</i> 
+          access and type in a password. This password is then used when setting 
+          up PC and laptop access for the selected users.</font></li>
+      </ul>
+
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"> <a name="accessing"></a><a name="5.1.3.1"></a>3 
+        Accessing a shared folder or drive</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.1 To access a shared 
+        folder or drive on the network from another PC or laptop, perform the 
+        following steps: </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">On the PC or laptop that 
+        is to access the folder or drive, double-click the <i>Network Neighborhood</i> 
+        icon. </font></p>
+      <p align="center"><img src="images/file_sharing_6.gif" width="78" height="77"></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.2<a name="5.1.3.2"></a> 
+        In the Network Neighborhood window, from the <i>View</i> menu select <i>Refresh.</i></font></p>
+      <p align="center"><img src="images/file_sharing_7.gif" width="177" height="247" alt="Network Neighborhood"></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 3.3<a name="5.1.3.3"></a> 
+        Locate the folder or drive by double-clicking the icon for the PC or laptop 
+        that has the shared folder or drive on it. </font></p>
+      <p align="center"><img src="images/file_sharing_8.gif" width="305" height="232" alt="Network Neighborhood"></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.4<a name="5.1.3.4"></a> 
+        Double-click on the folder or drive and enter a password, if required. 
+        This is the password that was set up on the PC or laptop when specifying 
+        the folder or drive for shared use. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">This PC or laptop can now 
+        access the folder or drive. </font></p>
+      <p align="center"><img src="images/file_sharing_9.gif" width="292" height="233" alt="Sharing folders"></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.5<a name="5.1.3.5"></a> 
+        If the user is going to access the folder or drive frequently, it is a 
+        good idea to map it to a network drive on the user's PC or laptop. To 
+        do this: </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">In the Network Neighborhood 
+        window, right-click on the folder or drive and select <i>Map Network Drive</i>. 
+        Only map the network drive to the main shared folder or drive, and not 
+        one of its subfolders.<br>
+        </font><font size="2" face="Arial, Helvetica, sans-serif"><br>
+        </font><img src="images/file_sharing_10.gif" width="400" height="411" alt="Map Network Drive"> 
+      </p>
+      </td>
+  </tr><tr>
+    <td height="1" > 
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="5"> <a name="unshared"></a><a name="5.1.4.1"></a>4 
+        Making folders and drives unshared</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">4.1 To make a shared 
+        folder or drive unshared, perform the following steps:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> In the Windows 95 
+        or Windows 98 desktop on the PC or laptop that contains the folder or 
+        drive, either: </font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Double-click the 
+          <i>My Computer</i> icon and locate the folder or drive.</font><font size="2" face="Arial, Helvetica, sans-serif"> 
+          </font></li>
+      </ul>
+      <p align="center"><img src="images/file_sharing_11.gif" width="84" height="73"></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Or use Windows 
+          Explorer to locate the folder or drive. </font></li>
+      </ul>
+      <p align="center"><img src="images/file_sharing_12.gif" width="336" height="324"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">To start Windows Explorer, 
+        go to the <i>Start</i> menu and select<i> Programs</i> and then <i>Windows 
+        Explorer.</i> For information on how to use Windows Explorer, refer to 
+        the Windows manual and help system. </font></p>
+      <p align="center">&nbsp;</p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="images/file_sharing_13.gif" width="240" height="275" align="right"><a name="5.1.4.2"></a>4.2 
+        When you have located the folder or drive, right-click on it and select 
+        <i>Sharing</i>. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The Properties dialog 
+        box appears with the <i>Sharing</i> tab displayed. </font></p>
+      
+	  </td></tr>
+  <tr valign="top"> 
+    <td> 
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">4.3<a name="5.1.4.3"></a> 
+        In the <i>Sharing</i> tab, select <i>Not Shared. </i>Click <i>OK</i>. 
+        </font></p>
+      <p align="center"><img src="images/file_sharing_14.gif" width="367" height="419" alt="Sharing"> 
+      </p>
+      <hr width="390" size="3">
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">4.4<a name="5.1.4.4"></a> 
+        The folder or drive is now no longer accessible to other PCs and laptops.</font></p>
+      <p align="left">&nbsp;</p>
+      <p align="left">&nbsp;</p>
+      </td></tr></table>
+</body>
+</html>

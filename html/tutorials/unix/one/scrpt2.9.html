@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt2.9.html -->
+
+<HEAD>
+<TITLE>Trapping operating system signals</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Trapping operating system signals</H1>
+
+<P>Shell procedures may use the <STRONG>trap</STRONG> command to catch or
+ignore Unix operating system <A HREF="../didyou/kill.html">signals</A>.
+The form of the trap command is:</P>
+
+<PRE WIDTH=80>   <STRONG>trap '<EM>command-list</EM>' <EM>signal-list</EM></STRONG>
+</PRE>
+
+<P>Several traps may be in effect at the same time.  If
+multiple signals are received simultaneously, they are
+serviced in ascending order.</P>
+
+<P>To check what traps are currently set use the trap
+command.  For example:</P>
+
+<PRE WIDTH=80>   <STRONG>trap</STRONG>
+</PRE>
+
+<UL>
+<LI><A HREF="scrpt2.9.1.html">Most common signals to be caught</A></LI>
+<LI><A HREF="scrpt2.9.2.html">Handling command lists</A></LI>
+<LI><A HREF="scrpt2.9.3.html">Examples</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

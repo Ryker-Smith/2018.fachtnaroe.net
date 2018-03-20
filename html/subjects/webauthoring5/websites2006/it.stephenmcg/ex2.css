@@ -1,0 +1,17 @@
+body {background-color: yellow} 
+
+h1 {color:maroon; font-size:20pt} 
+
+hr {color:navy} 
+
+p {font-size:7pt; margin-left: 15px} 
+
+a:link {color:red; text-decoration:none}
+
+a:visited {color:yellow}
+
+a:hover {color:blue; text-decoration:underline} 
+
+a:active {color:blue} 
+
+

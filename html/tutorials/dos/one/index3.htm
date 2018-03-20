@@ -1,0 +1,302 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win95; U) [Netscape]">
+   <meta name="Author" content="Eric Phelps">
+   <meta name="Description" content="A discussion of the four main ways of getting user input: Menus, CHOICE, COPY CON, and FC/DATE.">
+   <title>Getting User Input</title>
+</head>
+<body>
+
+<center>
+<h2>
+Getting User Input</h2></center>
+
+<center>
+<hr WIDTH="100%"><i>There are six main ways of getting user input. <a href="#menu">Making
+batch file menus</a> is "Out-of-the-Book" DOS. It allows simple choices.
+<a href="#choice">Using
+the CHOICE command</a> allows for somewhat more complex possibilities.
+Using <a href="#con">COPY CON</a> used to be very popular in the DOS 5
+and 6 days, but it requires ANSI.SYS in any reasonable implementation.
+Using <a href="#fc">FC and DATE</a>, on the other hand, is the most common
+solution. <b>Not exactly pure DOS solutions (so the links take you off
+this page) but having the advantage of working under Win9x or NT are solutions
+that use <a href="ntinput.bat.txt">QBASIC or Windows Scripting</a>.</b></i>
+<hr WIDTH="100%"></center>
+
+<p><a NAME="menu"></a><b><u><font size=+1>Batch file menus.</font></u></b>
+Don't laugh. If you want the user to choose one of three options, you make
+a simple menu, then make three batch files whose names correspond to the
+menu choices:
+<br><b><tt>@echo off</tt></b>
+<br><b><tt>echo Please pick a number and hit Enter:</tt></b>
+<br><b><tt>echo 1 - Doom</tt></b>
+<br><b><tt>echo 2 - Duke</tt></b>
+<br><b><tt>echo 3 - Keen</tt></b>
+<br>After the above batch file runs, the user is dropped back to a DOS
+prompt. All you'd have to do is create three more batch files ( 1.bat,
+2.bat, and 3.bat ) which would launch the appropriate programs.
+<p>
+<hr WIDTH="100%"><a NAME="choice"></a><b><u><font size=+1>CHOICE.</font></u></b>
+At least you won't have to press Enter. CHOICE responds immediately to
+your keypress.
+<br><b><tt>@echo off</tt></b>
+<br><b><tt>choice /n /c:123 Please choose 1 for Doom, 2 for Duke, or 3
+for Keen:</tt></b>
+<br><b><tt>if errorlevel 3 echo Keen</tt></b>
+<br><b><tt>if not errorlevel 3 if errorlevel 2 echo Duke</tt></b>
+<br><b><tt>if not errorlevel 2 if errorlevel 1 echo Doom</tt></b>
+<br>In this case, all I did was echo the word corresponding to the number
+you select. You'd probably want to run a more useful command or launch
+another batch file. Read the help on IF to learn more about ERRORLEVEL.
+Because ERRORLEVEL always tests for a "greater than or equal to" condition,
+complicated testing for exact error levels like shown above (Or using lots
+of GOTOs and labels) is usually necessary.
+<p>If you want to use CHOICE in an somewhat more complicated way, you could
+have it check for every possible keypress, then accumulate each key in
+an environment value. This way you could build up an entire word or number
+a character at a time. The following example shows a limited password-entry
+example:
+<pre><b><tt>@echo off
+set userin=
+echo Please enter a sequence of letters a, b, or c. Enter q to quit.
+:rerun
+choice /n /c:abcq > nul
+for %%x in (1,2,3,4) do if errorlevel %%x goto add%%x
+:add1
+set userin=%userin%a
+goto rerun
+:add2
+set userin=%userin%b
+goto rerun
+:add3
+set userin=%userin%c
+goto rerun
+:add4
+echo Your sequence was %userin%</tt></b></pre>
+In the above example, I only checked for three legal input characters,
+but it is easy (though code-intensive) to extend. Also note how I seem
+to have suspended the rules for ERRORLEVEL testing on the FOR line. It
+seems that FOR passes the values on to IF in reverse order. Turning echo
+on shows FOR evaluates in 1234 order, but IF gets it as 4321. After the
+first true condition, the GOTO stops IF from coming back to evaluate the
+next condition.
+<p>
+<hr WIDTH="100%"><a NAME="con"></a><b><u><font size=+1>COPY CON</font></u></b>&nbsp;
+I'll cover this for historical interest. CON, the system console (the keyboard
+and display), can be treated like a file. If you copy a file to con, it
+appears on the display. If you copy con to a file, it will put whatever
+you type into the file. The problem is that there is no way to tell how
+big the "con" file is. Should a command like
+<br><b><tt>copy con testfile.txt</tt></b>
+<br>stop after getting one character? A hundred? A thousand? Since con
+has no length, we have to designate the end of the file by including the
+almost-obsolete DOS end-of-file character Ctrl-z (decimal 26, hex 1A).
+When you're done typing, you hold down the "Ctrl" key, tap the "z" key,
+let off both keys, then hit "Enter". Great for you, but can you imagine
+trying to explain that to an office full of users? The solution was to
+redefine the Enter key so that it sends both a Ctrl-z and Enter. If you
+have <b><tt>device=ansi.sys</tt></b> in your config.sys file, you can do
+it. The trouble is that you can't depend on anybody else to have ansi in
+their config.sys file. There is another problem. If you can redefine Enter
+to send a Ctrl-z, why can't you redefine it to send a "format c:" command?
+The answer is that you can. This is known as an ANSI BOMB. If you have
+ansi loaded and you view a file with such a bomb in DOS (by using the TYPE
+command), you can be screwed. There are several ansi replacements that
+warn you about or stop such keyboard redefinitions. PKWare includes one
+if you register PKZIP (Because those message screens that display when
+you unzip something in DOS can hide bombs). So virtually nobody uses ansi
+except in terminal emulators (which are immune to bombs, since they aren't
+at a DOS prompt).
+<p>Anyway, if you really want to do it, the code to redefine the Enter
+key to "Ctrl-z Enter" is <b><tt>[13;26;13p</tt></b> and the code to return
+Enter to normal is <b><tt>[13;13p</tt></b>. Both these codes must be preceeded
+by the "escape" character (which doesn't print, so isn't displayed on this
+web page). An escape character can be generated in Windows Write by holding
+down the Alt key while typing in 027 using the <i>numeric keypad</i>. You
+can generate an escape in DOS EDIT by hitting Ctrl-p, then the Esc key.
+The classic use is to append the con to a <a href="frag-man.htm">line
+fragment</a>, creating a batch file. Suppose you had a pre-existing line
+fragment called userfrag.txt containing <b><tt>set userin=</tt></b>
+<pre><b><tt>@echo off
+echo Enter your name: [13;26;13p
+copy userfrag.txt + con temp.bat
+echo [13;13p
+call temp.bat
+del temp.bat
+echo Your name is %userin%</tt></b></pre>
+Again, the ansi codes above must be preceeded by an escape character
+<p>
+<hr WIDTH="100%"><a NAME="fc"></a><b><u><font size=+1>FC and DATE</font></u></b>
+All the batch gurus know this trick. Just like the "copy con" example above,
+we use the CON device to get user input. But instead of trying to define
+the end of con by adding a ctrl-z, we switch viewpoints and define when
+we will quit reading con. The FC command can do this with it's /LB option.
+The trick is to use FC not to compare files (which is what FC is made for),
+but to compare the CON device with the NUL device. Treating devices like
+files comes easy to Unix types, so it'll make you seem more worldly if
+you act like it doesn't bother you.
+<p>Now, the NUL device has nothing in it, so when FC compares NUL to CON,
+the difference will always be exactly what the user keys into CON. Duh.
+But FC's /lb option allows us to specify how many different lines will
+be accepted. With /lb1 specified, FC will quit reading con after the first
+different line (which will be the first line). All the user has to do is
+hit "Enter" to define the end of the line.
+<p>We also use FC's /n (line numbering) option for two reasons: First,
+FC puts out quite a few lines. Having it number the lines makes it easy
+to FIND the line we want. Second, we'll be putting the output of FC into
+the input of DATE (wonder why?). By numbering the line, we can allow for
+the otherwise embarrassing problem of having the user enter as a first
+word something that might be interpreted as a date. The first word will
+be "1:", which is not a date.
+<p>Let me illustrate FC. First, with no options. Notice how I had to enter
+a Ctrl-z to terminate things. FC's output starts with the line containing
+"****** CON". My input is the line "this is a test".
+<p><b><tt>C:\Temp>fc con nul</tt></b>
+<br><b><tt>Comparing files CON and nul</tt></b>
+<br><b><tt>this is a test</tt></b>
+<br><b><tt>^Z</tt></b>
+<br><b><tt>****** CON</tt></b>
+<br><b><tt>this is a test</tt></b>
+<br><b><tt>****** nul</tt></b>
+<br><b><tt>******</tt></b>
+<p><a NAME="lb"></a>Next, I'll add in the /LB1 option.
+<pre><b><tt>C:\Temp>fc /lb1 con nul
+Comparing files CON and nul
+this is a test
+Resync failed.&nbsp; Files are too different
+****** CON
+this is a test
+****** nul
+******</tt></b></pre>
+Notice all I had to do was hit Enter. Extracting the original line from
+FC's output poses problems. No matter how you configure FIND, a user could
+enter something which could mess you up. So yes, now I'll demonstrate FC's
+line numbering:
+<pre><b>C:\Temp>fc /lb1 /n con nul
+Comparing files CON and nul
+this is a test
+Resync failed.&nbsp; Files are too different
+****** CON
+&nbsp;&nbsp;&nbsp;&nbsp; 1:&nbsp; this is a test
+****** nul
+******
+
+
+
+C:\Temp></b></pre>
+Now it would be trivial to use FIND to extract the desired line by searching
+for <b><tt>"1:".</tt></b> But I want you to notice something else. This
+time I showed the next prompt. See how much room there is between FC's
+output and the prompt? FC always adds a blank line to it's output. This
+is going to come in real handy, because next I'll <a href="errors.htm#date">pipe
+the output of FC into DATE</a>.
+<pre><b><tt>C:\Temp>fc con nul /lb1 /n | date
+this is a test
+Current date is Wed 05-14-1997
+Enter new date (mm-dd-yy): Comparing files CON and nul
+
+Invalid date
+Enter new date (mm-dd-yy): Resync failed.&nbsp; Files are too different
+
+Invalid date
+Enter new date (mm-dd-yy): ****** CON
+
+Invalid date
+Enter new date (mm-dd-yy):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1:&nbsp; this is a test
+
+Invalid date
+Enter new date (mm-dd-yy): ****** nul
+
+Invalid date
+Enter new date (mm-dd-yy): ******
+
+Invalid date
+Enter new date (mm-dd-yy):
+
+C:\Temp></tt></b></pre>
+If you've ever tried to set the date, you've noticed how persistent DATE
+is. It will keep asking you to enter a new date until you either enter
+a date or until you just press Enter. Since we never (in this example)
+give DATE a valid date, it will keep rejecting our lines until it hits
+the blank line at the end of FC's output. If you count, you'll see my single
+line has resulted in twenty lines of output from DATE (6 of which are blank).
+By piping DATE's output through FIND looking for "1:", we'll end up with
+just one line:
+<pre><b><tt>Enter new date (mm-dd-yy):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1:&nbsp; this is a test</tt></b></pre>
+Now, if we were to take that line and call it a batch file (Which I'll
+call TEMP.BAT), when we ran it it would try to execute the ENTER command
+(Since "Enter" is the first word on the line). Luckily, there is no "enter"
+command, so we can write <u>our own</u> batch file called ENTER.BAT. When
+TEMP.BAT runs, it will run our ENTER.BAT and pass <b><tt>new date (mm-dd-yy):
+1: this is a test</tt></b> to ENTER.BAT as arguments. Notice how "this"
+(The first word I typed) is the fifth argument ("new" is first, "date"
+is second, etc.).
+<p>Now it's time to show the completed example. This only asks for one
+word:
+<p><b><tt>echo Enter your first name</tt></b>
+<br><b><tt>echo set name=%%5>enter.bat</tt></b>
+<br><b><tt>fc con nul /lb1 /n | date | find " 1: " > temp.bat</tt></b>
+<br><b><tt>call temp.bat</tt></b>
+<br><b><tt>del temp.bat>nul</tt></b>
+<br><b><tt>del enter.bat>nul</tt></b>
+<br><b><tt>echo Your name is %name%.</tt></b>
+<p>In this example, because my ENTER.BAT was very simple (set name =%5),
+I created it by using echo in the second line of the example. Your ENTER.BAT
+can contain anything you want. If you have a need to process an unknown
+number of words, just keep using SHIFT to get the next argument. Test each
+argument after you get it to see if it is blank. If it is, you have no
+more arguments. Here is an example ENTER.BAT illustrating this:
+<pre><b><tt>set name=
+:loop
+set name=%name% %5
+shift
+if not "%5"=="" goto loop</tt></b></pre>
+A word of explanation is in order. The above 5 code lines are junk (even
+though they work). A space will be inserted in front of each argument as
+the "name" value is built (See the space between the <b><tt>%name%</tt></b>
+and the <b><tt>%5</tt></b>). If only one word is entered, it will have
+a space in front of it. You can (should) change things so the space goes
+<i>after</i>
+each word -- and only if there is another word that will follow it. I didn't
+because you can't see a space at the end of a line (So how can I show you
+code you can't see?). Additionally, if the user enters any of the many
+DOS delimiters (space, comma, equal, semicolon...) or multiple delimiters,
+you will just convert it to a single space. Maybe you want that. Maybe
+not. Just keep it in mind.
+<p>Generally, if you write a batch file that expects multiple arguments
+to be entered by the user on a single line, you're asking for trouble.
+Think about how much easier it is to get user input and verify it's validity
+if you do it one step at a time. Nobody enjoys retyping an entire line
+because one word got messed up the first time. But you'll assume mistakes
+will never happen.and write multiple-argument code anyway. You can reference
+%5, %6, %7 (for example) as your first, second, and third arguments. You
+can go all the way to %9 for your fifth argument. Usually it's enough.
+If you expect more than five arguments, you'll need to use shift.
+<p>
+<hr WIDTH="100%"><a NAME="env"></a>If you absolutely must capture an entire
+line of user input and you know it will contain punctuation or multiple
+spaces, it can be done. Above (<a href="#lb">far, far above</a>) you saw
+how<b><tt> fc /lb1 con nul </tt></b>returns an unadulterated user line.
+Separate it out with FIND and save it to a file. Add that file (concatenate
+it) to a "<a href="frag-man.htm">line fragment</a>" which assigns
+the entire line to an environment variable. Assume you have pre-made a
+line fragment which says<b><tt> set name= </tt></b>(and like all fragments,
+it has no "return" at the end of the line). For this example, I'll assume
+the name of the fragment is <b><tt>fragment.txt</tt></b>:
+<pre><b><tt>fc /lb1 con nul | find /v "*****" | find /v "Resync failed." | find /v "Comparing files" > temp.txt
+copy fragment.txt + temp.txt temp.bat</tt></b></pre>
+By doing reverse searches for "******", "Comparing files", and "Resync
+failed.", I hope that only the user line will appear in temp.txt. If the
+user types "Foo, King of Bar", then temp.bat will contain:
+<pre><b>set name=Foo, King of Bar</b></pre>
+Now you can call temp.bat and you'll have your user input <a href="line-env.htm">line
+preserved intact in an environment variable</a>.
+<center>
+<p>Bad links? Questions? <a href="mail.htm">Send
+me mail</a>.</center>
+
+</body>
+</html>

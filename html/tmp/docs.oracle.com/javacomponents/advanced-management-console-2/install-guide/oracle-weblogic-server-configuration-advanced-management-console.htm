@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Oracle WebLogic Server Configuration for Advanced Management Console</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="The WebLogic Server instance provides web services to communicate with the agents and the data source to access the database. It also provides a user interface (UI) to configure the Advanced Management Console and the Java Usage Tracker parser as Advanced Management Console server components." />
+<meta name="dcterms.created" content="2017-01-17T10:23:38Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Advanced Management Console Installation and Configuration Guide" />
+<meta name="dcterms.identifier" content="E58638-09" />
+<meta name="dcterms.isVersionOf" content="JSAMI" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="oracle-database-installation-and-configuration-advanced-management-console.htm" title="Previous" type="text/html" />
+<link rel="Next" href="advanced-management-console-server-deployment-and-initialization.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JSAMI.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSAMI.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSAMI.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-C6A23984-54AB-4D35-9478-9CF66DC8D851"></a> <span id="PAGE" style="display:none;">8/16</span> <!-- End Header -->
+<a id="JSAMI124"></a><a id="JSAMI123"></a>
+<h1 id="JSAMI-GUID-C6A23984-54AB-4D35-9478-9CF66DC8D851" class="sect1"><span class="enumeration_chapter">5</span> Oracle WebLogic Server Configuration for <span>Advanced Management Console</span></h1>
+<div>
+<p>The WebLogic Server instance provides web services to communicate with the agents and the data source to access the database. It also provides a user interface (UI) to configure the <span>Advanced Management Console</span> and the Java Usage Tracker parser as <span>Advanced Management Console</span> server components.</p>
+<p>The Oracle WebLogic Server Configuration for <span>Advanced Management Console</span> topic contains the following sections that describe software requirements for installing and configuring Oracle WebLogic Server for <span>Advanced Management Console</span>:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-2815591F-E395-4E96-9099-776C1172B35D">Software Requirements for Oracle WebLogic Server</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-60DAA3C8-9B80-48AB-B72D-D812EDD52C3B">Installing WebLogic Server</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-B00161C6-B941-424F-A99B-DDC417FA0C37" title="You can configure Oracle WebLogic Server with MySQL database to provide services to access and modify user data. The database is accessed using JDBC. You can configure Oracle WebLogic Server with Oracle database to provide services to access and modify user data. The database is accessed using JDBC.">Configuring WebLogic Server with Databases</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-F399AF6C-C057-4323-A10E-22A3BA5AC052" title="If the Advanced Management Console needs to use JAX-RS 2.0 RESTful Management API for Web Services, then you must deploy the jax-rs-2.0.war file to WebLogic Server deployment libraries.">Deploying JAX-RS 2.0 to WebLogic Server Deployment Libraries</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-CA5E86E4-9539-4465-A9D4-C158A21EDC2C" title="Errors in WebLogic Server may occur if the Java transaction timeout interval is not set to a long enough value for the database access. You need WebLogic Server administrator credentials to define the timeout interval using the Java Transaction API (JTA).">Setting Up WebLogic Server JTA</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-88FC8225-7757-4524-A134-93A0AA0B647B">Setting Up Java Heap Size and Proxy Servers</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-6BE171A1-4408-47B0-B18D-0C3275E877DA" title="The Advanced Management Console uses HTTPS only for communication between the Advanced Management Console server and clients (agent, web UI, Deployment Rule Set tool, and Java installer configuration). The HTTPS setup for Advanced Management Console requires a valid HTTPS certificate, trusted by the client-side Java Runtime Environment (JRE).">Trusted HTTPS Certificate</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-2BC22DD9-0F56-4086-A0BD-11B1E4F98971" title="The Advanced Management Console server optionally sends an email notification to managed desktop users who register agents with their credentials. The Advanced Management Console server uses JavaMail APIs built into the Oracle WebLogic Server to act as a medium between theAdvanced Management Console and the actual SMTP mail server. The WebLogic Server must be configured to use a specific mail server.">Setting Up WebLogic Server Mail Notification</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-8BD97E0A-01C2-4DB9-BFE3-3DC2FE509980" title="You can use the Java Security Manager in WebLogic Server to provide protection for resources running in a Java Virtual Machine (JVM), and to improve the Advanced Management Console security.">Securing WebLogic Server Configuration</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMI125"></a>
+<div class="props_rev_3"><a id="GUID-2815591F-E395-4E96-9099-776C1172B35D"></a>
+<h2 id="JSAMI-GUID-2815591F-E395-4E96-9099-776C1172B35D" class="sect2">Software Requirements for Oracle WebLogic Server</h2>
+<div>
+<p>The <span>Advanced Management Console</span> requires Oracle WebLogic Server and <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank">Java SE Development Kit 8 Downloads</a>.</p>
+<p>If you&rsquo;re using Oracle WebLogic Server for only the <span>Advanced Management Console</span>, then in <a href="http://www.oracle.com/technetwork/middleware/weblogic/downloads/wls-for-dev-1703574.html" target="_blank">Oracle WebLogic Server Installers for Development</a>, go to Oracle WebLogic Server 12.1.3 or later, such as WebLogic Server 12.2.1, and then select <span class="bold">Zip distribution for Mac OS X, Windows, and Linux</span> option. If you have a license for Oracle WebLogic Server, then you can download Oracle WebLogic Server 12.2.1 from the <a href="http://edelivery.oracle.com" target="_blank">Oracle Software Delivery</a>.</p>
+</div>
+</div>
+<a id="JSAMI126"></a>
+<div class="props_rev_3"><a id="GUID-60DAA3C8-9B80-48AB-B72D-D812EDD52C3B"></a>
+<h2 id="JSAMI-GUID-60DAA3C8-9B80-48AB-B72D-D812EDD52C3B" class="sect2">Installing WebLogic Server</h2>
+<div>
+<p>There are different ways of installing Oracle WebLogic Server. <a href="oracle-weblogic-server-installation-example.htm#GUID-60A88C2B-48E3-490C-9E72-91FF2F4365F1" title="There are different ways of installing Oracle WebLogic Server. This topic contains an example to install Oracle WebLogic Server.">Oracle WebLogic Server Installation Example</a> provides an example of installing, creating a domain, creating an Administration Server, and creating a Managed Server for Oracle WebLogic Server.</p>
+</div>
+</div>
+<div class="sect2"><a id="GUID-B00161C6-B941-424F-A99B-DDC417FA0C37"></a>
+<h2 id="JSAMI-GUID-B00161C6-B941-424F-A99B-DDC417FA0C37" class="sect2">Configuring WebLogic Server with Databases</h2>
+<div>
+<div class="section">
+<p>This topic contains the following sections that describe how to configure Oracle WebLogic Server with databases and deploy the JDBC server:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-39338400-D619-4B98-9ED0-83D5A3445D6D" title="You can configure Oracle WebLogic Server with MySQL database to provide services to access and modify user data. The database is accessed using JDBC.">Configuring WebLogic Server with MySQL Database</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-5561AE00-8D3C-4524-8078-05BF1CBBB2B2" title="You can configure Oracle WebLogic Server with Oracle database to provide services to access and modify user data. The database is accessed using JDBC.">Configuring WebLogic Server with Oracle Database</a></p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+<a id="JSAMI127"></a>
+<div class="props_rev_3"><a id="GUID-39338400-D619-4B98-9ED0-83D5A3445D6D"></a>
+<h3 id="JSAMI-GUID-39338400-D619-4B98-9ED0-83D5A3445D6D" class="sect3">Configuring WebLogic Server with MySQL Database</h3>
+<div>
+<p>You can configure Oracle WebLogic Server with MySQL database to provide services to access and modify user data. The database is accessed using JDBC.</p>
+<div class="section">
+<p>To configure WebLogic Server with the database:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Open the Oracle WebLogic Server Administration Console in a browser.</span>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p>If the SSL listen port is configured in the WebLogic Server instance, then go to <code>https://<span class="codeinlineitalic">wls-hostname</span>:<span class="codeinlineitalic">port</span>/console</code>, for example, <code>https://<span class="codeinlineitalic">localhost</span>:<span class="codeinlineitalic">7001</span>/console</code>.</p>
+</li>
+<li>
+<p>If the SSL listen port is not configured in WebLogic Server, then go to <code>https://<span class="codeinlineitalic">wls-hostname</span>:<span class="codeinlineitalic">port</span>/console</code>, for example, <span class="italic"><code>https://<span class="codeinlineitalic">localhost</span>:<span class="codeinlineitalic">7001</span>/console</code></span>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="stepexpand"><span>From the <span class="bold">Domain Structure</span> block in the left panel, select <span class="bold">Domain</span>, <span class="bold">Services</span> and then select <span class="bold">Data Sources</span>.</span></li>
+<li class="stepexpand"><span>Create a new Generic Data Source. Set the data source name (for example, <code>amc2 mysql</code>).</span></li>
+<li class="stepexpand"><span>Set the <code>JNDI</code> name to <code>amc2/db/mysql</code>. This is the critical value for the <span>Advanced Management Console</span> to locate the DataSource object.</span></li>
+<li class="stepexpand"><span>Select the database type as <code>MySQL</code>.</span></li>
+<li class="stepexpand"><span>Select the database driver as <code>MySQL's Driver (Type 4) Versions:using com.mysql.jdbc.Driver</code>.</span></li>
+<li class="stepexpand"><span>In the <span class="bold">Transaction Options</span> section, ensure that you don&rsquo;t select the <span class="bold">Supports Global Transactions</span> check box, as Advanced Management Console doesn&rsquo;t support global transactions.</span></li>
+<li class="stepexpand"><span>Set the database name to your MySQL database name, which you created in <a href="installing-and-configuring-mysql-database-advanced-management-console.htm#GUID-0E1C48EF-2FCE-4DB6-AF06-30E497EAAE91">Installing MySQL Database for Advanced Management Console</a>.</span></li>
+<li class="stepexpand"><span>Set the database <code><span class="codeinlineitalic">host-name</span></code> and <code><span class="codeinlineitalic">port</span></code> to the host name where MySQL database resides, for example, <code><span class="codeinlineitalic">localhost</span></code>. Leave the port as default or change it to the database port if it is different.</span></li>
+<li class="stepexpand"><span>Set the database user name and password for your MySQL database (for example, user name as <code>amc2</code> and a strong password). The MySQL database user name and password are the values you configured during <a href="installing-and-configuring-mysql-database-advanced-management-console.htm#GUID-0E1C48EF-2FCE-4DB6-AF06-30E497EAAE91">Installing MySQL Database for Advanced Management Console</a>.</span></li>
+<li class="stepexpand"><span>In the <span class="bold">Properties</span> text box, add the following lines to enable Unicode for this JDBC connection:</span>
+<div>
+<p><code>useUnicode=yes</code></p>
+<p><code>characterEncoding=UTF-8</code></p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Finish</span> to save the changes.</span></li>
+<li class="stepexpand"><span>In the Data Sources table, click the data source that you just created.</span></li>
+<li class="stepexpand"><span>Click the <span class="bold">Connection Pool</span> tab.</span></li>
+<li class="stepexpand"><span>Set <span class="bold">Maximum Capacity</span> to <code>50</code>.</span></li>
+<li class="stepexpand"><span>Select the servers where this data source gets deployed to. To select the server, click the <span class="bold">Configuration</span> tab and select the DataSource name, <code>amc2 mysql</code> according to your database.</span></li>
+<li class="stepexpand"><span>Click the <code>Targets</code> tab and select the check box for <code>AdminServer</code> or the server where you want to deploy the <span>Advanced Management Console</span> server.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Save</span> to save the changes.</span></li>
+</ol>
+<div class="section">
+<p>The <span>Advanced Management Console</span> doesn&rsquo;t need to know your database user credentials. MySQL database user credentials are only required to configure the DataSource connection in the application server; therefore, the <code>JNDI</code> name mentioned in step 4 is critical for the setup.</p>
+<p>When WebLogic Server is configured with the database, deploy the JDBC data source for the database to connect to WebLogic Server.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMI183"></a>
+<div class="props_rev_3"><a id="GUID-5561AE00-8D3C-4524-8078-05BF1CBBB2B2"></a>
+<h3 id="JSAMI-GUID-5561AE00-8D3C-4524-8078-05BF1CBBB2B2" class="sect3">Configuring WebLogic Server with Oracle Database</h3>
+<div>
+<p>You can configure Oracle WebLogic Server with Oracle database to provide services to access and modify user data. The database is accessed using JDBC.</p>
+<div class="section">
+<p>To configure WebLogic Server with Oracle Database:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Open the Oracle WebLogic Server Administration Console in a browser.</span>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p>If the SSL listen port is configured in the WebLogic Server instance, then go to <code>https://<span class="codeinlineitalic">wls-hostname</span>:<span class="codeinlineitalic">port</span>/console</code>, for example, <code>https://<span class="codeinlineitalic">localhost</span>:<span class="codeinlineitalic">7001</span>/console</code>.</p>
+</li>
+<li>
+<p>If the SSL listen port is not configured in WebLogic Server, then go to <code>https://<span class="codeinlineitalic">wls-hostname</span>:<span class="codeinlineitalic">port</span>/console</code>, for example, <span class="italic"><code>http://localhost:7001/console</code></span>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="stepexpand"><span>From the <span class="bold">Domain Structure</span> block in the left panel, select <span class="bold">Domain Services</span>, and then select <span class="bold">Data Sources</span>.</span></li>
+<li class="stepexpand"><span>Create a new Generic Data Source. Set the data source name, for example, <code>amc2 oracle</code>.</span></li>
+<li class="stepexpand"><span>Set the <code>JNDI</code> name to <code>amc2/db/oracle</code> (in case of Oracle 12c database). If the database is Oracle 11g, then set the <code>JNDI</code> name to <code>amc2/db/oracle11</code>. This is the critical value for <span>Advanced Management Console</span> to locate the DataSource object.</span></li>
+<li class="stepexpand"><span>Select the database type as <code>Oracle</code>.</span></li>
+<li class="stepexpand"><span>Select the database driver as <code>Oracle's Driver (Thin) for Instance Connections</code>, and Versions as <code>Any</code>.</span></li>
+<li class="stepexpand"><span>In the <span class="bold">Transaction Options</span> section, ensure that you don&rsquo;t select the <span class="bold">Supports Global Transactions</span> check box, as Advanced Management Console doesn&rsquo;t support global transactions.</span></li>
+<li class="stepexpand"><span>Set the database name to the Oracle Database name, which you created in <a href="oracle-database-installation-and-configuration-advanced-management-console.htm#GUID-6298D716-EC83-4F49-A85E-7751430EF545" title="You need to install and configure Oracle database for Advanced Management Console.">Configuring Oracle Database for Advanced Management Console</a>.</span></li>
+<li class="stepexpand"><span>Set the database <code><span class="codeinlineitalic">host-name</span></code> and <code>port</code> to the host name where Oracle Database resides. Leave the port as default or change it to the database port if it is different.</span></li>
+<li class="stepexpand"><span>Set the database user name and password for your Oracle Database (for example, user name as <code>amc2</code> and a strong password). This Oracle database user name and password are the values you configured during <a href="oracle-database-installation-and-configuration-advanced-management-console.htm#GUID-6298D716-EC83-4F49-A85E-7751430EF545" title="You need to install and configure Oracle database for Advanced Management Console.">Configuring Oracle Database for Advanced Management Console</a>.</span></li>
+<li class="stepexpand"><span>In the <span class="bold">Properties</span> text box, add the lines below to enable Unicode for this JDBC connection:</span>
+<div>
+<p><code>user=amc2</code></p>
+<p><code>useUnicode=yes</code></p>
+<p><code>characterEncoding=UTF-8</code></p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span>.</span></li>
+<li class="stepexpand"><span>Select the servers where this data source gets deployed to. To select the server, click the <span class="bold">Configuration</span> tab and select the DataSource name, <code>amc2 oracle</code> according to your database.</span></li>
+<li class="stepexpand"><span>Click the <code>Targets</code> tab and select the check box for <code>AdminServer</code> or the server where you want to deploy the <span>Advanced Management Console</span> server.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Finish</span> to save the changes.</span></li>
+</ol>
+<div class="section">
+<p>The <span>Advanced Management Console</span> doesn&rsquo;t need to know your Oracle Database user credentials. The Oracle Database user credentials are only required to configure the DataSource connection in the application server; therefore, the <code>JNDI</code> name mentioned in step 4 is critical for the setup.</p>
+<p>When WebLogic Server is configured with the database, then deploy the JDBC data source for the database to connect to WebLogic Server.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+</div>
+<a id="JSAMI130"></a>
+<div class="props_rev_3"><a id="GUID-F399AF6C-C057-4323-A10E-22A3BA5AC052"></a>
+<h2 id="JSAMI-GUID-F399AF6C-C057-4323-A10E-22A3BA5AC052" class="sect2">Deploying JAX-RS 2.0 to WebLogic Server Deployment Libraries</h2>
+<div>
+<p>If the <span>Advanced Management Console</span> needs to use JAX-RS 2.0 RESTful Management API for Web Services, then you must deploy the <code>jax-rs-2.0.war</code> file to WebLogic Server deployment libraries.</p>
+<div class="section">
+<p>To deploy the file from the WebLogic Server Administration Console:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Log in to the WebLogic Server <code>Administration</code> console.</span></li>
+<li class="stepexpand"><span>From the <span class="bold">Domain Structure</span> block in the left panel, select <span class="bold">Deployments</span>.</span></li>
+<li class="stepexpand"><span>Click the <span class="bold">Install</span> button.</span></li>
+<li class="stepexpand"><span>For a Windows operating system, enter the path <code>%MW_HOME%\wlserver\common\deployable-libraries</code>.</span>
+<div>
+<p>For a Linux operating system, enter the path <code>$MW_HOME/wlserver/common/deployable-libraries</code>.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Select <code>jax-rs-2.0.war</code>.</span></li>
+<li class="stepexpand"><span>Accept the default values for all the rest of the settings and then click <span class="bold">Next</span>, <span class="bold">Next</span>, <span class="bold">Next</span>, and <span class="bold">Finish</span>.</span></li>
+<li class="stepexpand"><span>Check in the <span class="bold">Deployments</span> section for a new entry <code>Name=jax-rs(2.0)</code> and <code>Type=Library</code>.</span></li>
+<li class="stepexpand"><span>From the Deployments list, click <code>jax-rs(2.X.X)</code>, then click the <span class="bold">Targets</span> tab, and select the box next to your Administrative Server or the server where you want to deploy the <span>Advanced Management Console</span>, and click <span class="bold">Save</span>.</span></li>
+</ol>
+<div class="section"></div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMI133"></a>
+<div class="props_rev_3"><a id="GUID-CA5E86E4-9539-4465-A9D4-C158A21EDC2C"></a>
+<h2 id="JSAMI-GUID-CA5E86E4-9539-4465-A9D4-C158A21EDC2C" class="sect2">Setting Up WebLogic Server JTA</h2>
+<div>
+<p>Errors in WebLogic Server may occur if the Java transaction timeout interval is not set to a long enough value for the database access. You need WebLogic Server administrator credentials to define the timeout interval using the Java Transaction API (JTA).</p>
+<div class="section">
+<p>To define the Java Transaction API (JTA) configuration for the WebLogic Server domain time out to 300 seconds:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li><span>Log in to the WebLogic Server <code>Admin</code> console.</span></li>
+<li><span>From the <span class="bold">Domain Structure</span> block in the left panel, go to <span class="bold">Services</span> and select <span class="bold">JTA</span> from services.</span></li>
+<li><span>Click the <span class="bold">Configurations</span> tab and then click the subtab <span class="bold">JTA</span>.</span></li>
+<li><span>On the Java Transaction API (JTA) page, enter the <span class="bold">Timeout Seconds</span> value as 300.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMI129"></a>
+<div class="props_rev_3"><a id="GUID-88FC8225-7757-4524-A134-93A0AA0B647B"></a>
+<h2 id="JSAMI-GUID-88FC8225-7757-4524-A134-93A0AA0B647B" class="sect2">Setting Up Java Heap Size and Proxy Servers</h2>
+<div>
+<div class="section">If direct access to the Internet from the server is not available, then you should set up the proxy server for the WebLogic Server. The <span>Advanced Management Console</span> requires access to <a href="http://javadl-esd-secure.oracle.com/update/baseline.version" target="_blank">Java Security Baselines</a>. Internet access is also required to introspect JNLP files if they&rsquo;re outside of the corporate network. For example, when you launch a JNLP application from Oracle Tutorials, in order to display the information correctly, the <span>Advanced Management Console</span> needs to download the JNLP file as well as the referenced jars.
+<p>To set up the Java Heap Size and proxy servers:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Log in to the WebLogic Server Administration Console.</span></li>
+<li class="stepexpand"><span>From the Administration Console, select <span class="bold">Environment Servers</span>, and then select <span class="bold">Managed Server</span>.</span></li>
+<li class="stepexpand"><span>Click the <span class="bold">Configuration</span> tab, and click the sub tab <span class="bold">Server Start</span>.</span></li>
+<li class="stepexpand"><span>Add the following VM options to the <code>Arguments</code> text field, which includes heap size and proxy settings (both HTTPS and HTTP proxy settings).</span>
+<div>
+<pre dir="ltr">
+-Xmx4G
+-Dhttps.proxyHost=<span class="variable">host_name</span> -Dhttps.proxyPort=<span class="variable">proxy_port</span>
+-Dhttp.proxyHost=<span class="variable">host_name</span> -Dhttp.proxyPort=<span class="variable">proxy_port</span>
+-Dhttp.nonProxyHosts=<span class="variable">server_hostname</span>|<span class="variable">server_IP</span>
+</pre>
+<div class="infobox-note" id="GUID-88FC8225-7757-4524-A134-93A0AA0B647B__GUID-9F20186B-5AAA-4BC4-AFA4-DA4D4D35E34F">
+<p class="notep1">Note:</p>
+You need to adjust the Java Heap Size as recommended. Oracle recommends 4 GB heap size or higher. The <code>-Xmx4G</code> option changes the maximum heap size to 4G. A 32-bit JVM cannot be started with 4Gb heap size, therefore it is recommended to use a 64-bit JVM. If the <span>Advanced Management Console</span> detects low Java heap size, then the corresponding warning message is displayed in the login screen.</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<a id="JSAMI185"></a>
+<div class="props_rev_3"><a id="GUID-6BE171A1-4408-47B0-B18D-0C3275E877DA"></a>
+<h2 id="JSAMI-GUID-6BE171A1-4408-47B0-B18D-0C3275E877DA" class="sect2">Trusted HTTPS Certificate</h2>
+<div>
+<p>The <span>Advanced Management Console</span> uses HTTPS only for communication between the <span>Advanced Management Console</span> server and clients (agent, web UI, Deployment Rule Set tool, and Java installer configuration). The HTTPS setup for <span>Advanced Management Console</span> requires a valid HTTPS certificate, trusted by the client-side Java Runtime Environment (JRE).</p>
+<p>Ensure that a valid HTTP certificate is available and that the Oracle WebLogic Server Identity Keystore is set up with it. See <a href="http://docs.oracle.com/middleware/1213/wls/SECMG/identity_trust.htm#SECMG365" target="_blank">Configuring Keystores</a>.</p>
+<div class="infobox-note" id="GUID-6BE171A1-4408-47B0-B18D-0C3275E877DA__GUID-4C7A7F19-9A92-4889-9008-44E6402278D3">
+<p class="notep1">Note:</p>
+<p>You can use self-signed certificates only for demonstrations and not in production systems.</p>
+</div>
+</div>
+</div>
+<a id="JSAMI131"></a>
+<div class="props_rev_3"><a id="GUID-2BC22DD9-0F56-4086-A0BD-11B1E4F98971"></a>
+<h2 id="JSAMI-GUID-2BC22DD9-0F56-4086-A0BD-11B1E4F98971" class="sect2">Setting Up WebLogic Server Mail Notification</h2>
+<div>
+<p>The <span>Advanced Management Console</span> server optionally sends an email notification to managed desktop users who register agents with their credentials. The <span>Advanced Management Console</span> server uses JavaMail APIs built into the Oracle WebLogic Server to act as a medium between the<span>Advanced Management Console</span> and the actual SMTP mail server. The WebLogic Server must be configured to use a specific mail server.</p>
+<div class="section">
+<p>To configure WebLogic Server for mail notification setup in the WebLogic Server console:</p>
+<ol>
+<li>
+<p>Log in to the WebLogic Server Administration Console.</p>
+</li>
+<li>
+<p>From the domain structure block, select <span class="bold">Services</span> and <span class="bold">Mail Sessions</span>.</p>
+</li>
+<li>
+<p>Click <span class="bold">New</span> and complete the form.</p>
+</li>
+</ol>
+<p>Complete the form with the following details:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Name: Provide an arbitrary name.</span></li>
+<li class="stepexpand"><span>JNDI Name: Provide the JNDI name as <code>amc2/mail</code>. This is a critical value for the mail server setup.</span></li>
+<li class="stepexpand"><span>Provide your session user name and password.</span></li>
+<li class="stepexpand"><span>Set up the JavaMail properties.</span>
+<div>
+<p><code>mail.transport.protocol=smtp</code></p>
+<p><code>mail.smtp.ssl.enable=true</code></p>
+<p><code>mail.smtp.auth=true</code></p>
+<p><code>mail.smtp.host=&lt;your email host name&gt;</code></p>
+</div>
+</li>
+<li class="stepexpand"><span>To trace SMTP sessions, set <code>mail.debug=true</code>.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span> and then select the server that <span>Advanced Management Console</span> is deployed on.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Finish</span>.</span></li>
+</ol>
+<div class="section">
+<p>In the <span>Advanced Management Console</span> user interface, the <span class="bold">Settings</span> sub tab of the Configuration tab has a check box to enable or disable WebLogic Server mail notifications. If no JNDI name is found, then this check box is disabled and you cannot enable WebLogic Server mail notifications.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMI132"></a>
+<div class="props_rev_3"><a id="GUID-8BD97E0A-01C2-4DB9-BFE3-3DC2FE509980"></a>
+<h2 id="JSAMI-GUID-8BD97E0A-01C2-4DB9-BFE3-3DC2FE509980" class="sect2">Securing WebLogic Server Configuration</h2>
+<p>You can use the Java Security Manager in WebLogic Server to provide protection for resources running in a Java Virtual Machine (JVM), and to improve the <span>Advanced Management Console</span> security.</p>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment82">
+<tr>
+<td class="cellalignment89">
+<table class="cellalignment87">
+<tr>
+<td class="cellalignment86"><a href="oracle-database-installation-and-configuration-advanced-management-console.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment86"><a href="advanced-management-console-server-deployment-and-initialization.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2014, 2017, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment91">
+<table class="cellalignment85">
+<tr>
+<td class="cellalignment86"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment86"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment86"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

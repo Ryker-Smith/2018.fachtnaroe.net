@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Topbar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="JavaScript">
+function launchtrouble(anchorname)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="troubleshooter/troubleshooter.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_topicons="Go to Another Section"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<EMBED SRC="images/topbar.swf"
+        swLiveConnect="true"
+        name="topmovie"
+        LOOP=false 
+        WIDTH=800
+        HEIGHT=100
+        QUALITY=high 
+        BGCOLOR=#FFFFFF
+
+        TYPE="application/x-shockwave-flash"    PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" scale="noborder">
+</EMBED> 
+</body>
+</html>

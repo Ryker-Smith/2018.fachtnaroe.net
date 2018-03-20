@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/vi2.html -->
+
+<HEAD>
+<TITLE>Examples of replacing text</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of replacing text</H1>
+
+<P>To replace one word in the current line with
+another:</P>
+
+<PRE WIDTH=80>   <STRONG>:s/that/which</STRONG>
+</PRE>
+
+<P>This replaces the first instance of the word "that" in
+the current line with the word "which".</P>
+
+<HR>
+
+<P>To replace every instance of one word in the
+current line with another:</P>
+
+<PRE WIDTH=80>   <STRONG>:s/destroy/delete/g</STRONG>
+</PRE>
+
+<P>This replaces every occurrence of the word "destroy" with
+the word "delete" in the current line.</P>
+
+<HR>
+
+<P>To replace every occurence of a word throughout the
+file,  with another:</P>
+
+<PRE WIDTH=80>   <STRONG>:g/insert/s//add/g</STRONG>
+</PRE>
+
+<P>This replaces every occurence of "insert" with "add".</P>
+
+<HR>
+
+<P>To interactively replace every occurence of a
+word throughout the file, with another:</P>
+
+<PRE WIDTH=80>   <STRONG>:g/in conjunction with/s//with/gc</STRONG>
+   option used in conjunction with the ls command
+           ^^^^^^^^^^^^^^^^^^
+</PRE>
+
+<P>This displays the first line containing an occurence of
+the pattern "in conjunction with", and identifies this
+occurence by underlining each character with a ^ (caret).</P>
+
+<P>Entering <STRONG>y</STRONG> (yes) replaces this instance of "in
+conjunction with" by "with" and proceeds on to the next.</P>
+
+<P>Pressing <SAMP>&lt;RETURN&gt;</SAMP> leaves this instance unchanged
+and proceeds to the next.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

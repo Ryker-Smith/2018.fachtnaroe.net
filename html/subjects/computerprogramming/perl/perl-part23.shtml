@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl - Part 23</h1>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<h2>Task 026</h2>
+<p>First create this file called <font face="Courier">friends01.pl</font> and test it to ensure it provides output via the debugging line which consists of the details you have just input, separated by our chosen 'special character', and all of that data concatenated by the '.' (dot) operator. You should be able to answer why it is you think that ':' has been chosen as the character. You should also be able to say why the <b>chop</b> function is not used after the address.</p>
+<p>This program contains at least one error.</p>
+<center><img width="100%" src="/images/friends01a.png"></center>
+<p>If the program behaves correctly, move on.</p>
+<p>Onwards...</p>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl-part23.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

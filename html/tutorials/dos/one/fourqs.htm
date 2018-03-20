@@ -1,0 +1,142 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win95; U) [Netscape]">
+   <meta name="Author" content="Eric Phelps">
+   <meta name="Description" content="The questions you need answered before you can successfully send attachments via email.">
+   <title>The Four Questions</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" >
+<tr>
+<td ALIGN=LEFT VALIGN=BOTTOM><a href="~webspace.html"><img SRC="duck.gif" BORDER=0 height=82 width=159></a></td>
+
+<td>
+<center>
+<h1>
+&nbsp;The Four Questions</h1></center>
+</td>
+</tr>
+
+<tr BGCOLOR="#666699">
+<td BGCOLOR="#666699">&nbsp;</td>
+
+<td WIDTH="100%">&nbsp;</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT VALIGN=TOP><img SRC="114x50.gif" height=50 width=114></td>
+
+<td>
+<center><i>The questions you need answered before you can successfully
+send attachments via email.</i></center>
+</td>
+</tr>
+</table>
+
+<p>Before you can send an attachment to somebody, you have to know four
+things about them. The easiest way to tell is usually to have a few canned
+test messages you can send to see what they can handle. Obviously, the
+major effort lies with you to be able to send the same thing in the many
+different ways that may be required! Regardless of how bad things seem,
+there are standalone mail encoding/decoding programs freely available on
+the Internet that will allow you to send or receive anything to or from
+anybody. Some examples of <b>free</b> encoders or decoders are <a href="http://www.hotfiles.com/?0001ES">WinCode</a>,
+<a href="ftp://ftp.andrew.cmu.edu/pub/mpack/mpack15d.zip">MPack</a>,
+and
+<a href="ftp://ftp.simtel.net/pub/simtelnet/msdos/decode/netsend1.zip">NetSend.</a>
+One of my favorite decoders is the shareware program <a href="http://www.winzip.com/">WinZip</a>.
+<p>Here are the four questions:
+<p><b><font color="#993366"><font size=+1>(1) WHAT CAN THEY DECODE?</font></font></b>&nbsp;
+This is usually <a href="http://www.zdwebopedia.com/Uuencode.htm">UU</a>
+(Unix), <a href="http://www.cis.ohio-state.edu/text/faq/usenet/mail/mime-faq/top.html">MIME</a>
+(Netscape), or <a href="http://www.browncs.com/binhex.html">BINHEX</a>
+(Macintosh). If you use Microsoft Outlook, you have to worry if they can
+decode the <a href="index24.htm">MS-TNEF</a> format Outlook uses
+to send attachments. Some mail programs can't decode any attachment formats!
+All attachments have to be encoded somehow before they can be sent over
+the Internet. The encoding converts a "binary" attached file to a "plain-text"
+file, and plain text is the only thing that is guaranteed to pass through
+all networks along the way. Obviously, once you encode it, they have to
+decode it. Otherwise they see the random-looking encoded text. When things
+work correctly, you never know about the encoding. You attach something,
+and they see your attachment. Neither of you knows or cares about how it
+gets encoded.
+<p><b><font size=+1><font color="#993366">(2) HOW BIG A MESSAGE CAN THEY
+HANDLE?</font><font color="#663366"> </font></font></b>Common answers range
+from 32k and 64k (Default Windows text and integer limitations) to 10 megs
+(mail account disk space limitations). I've crashed many a mail program
+and corrupted many a file by trying to send or receive something bigger
+than allowed. Amazingly, the maximum allowed size is almost never mentioned
+in any documentation.
+<p><b><font size=+1><font color="#993366">(3) CAN THEY HANDLE MULTIPLE
+ATTACHMENTS?</font><font color="#663366">&nbsp;</font></font></b> Some
+email programs will only get the first attachment if you send several in
+the same message. Some others have a limit as to how many attachments they
+will accept. If this becomes a problem, you'll either have to send each
+attachment separately or archive them all together in one file (Then you
+have to worry about if they can un-<a href="http://www.matisse.net/files/formats.html">ZIP,
+ARJ, LHA, ARC, PAK, or TAR</a> whatever it is you sent them...).
+<p><b><font color="#993366"><font size=+1>(4) CAN THEY COMBINE SPLIT ATTACHMENTS?</font></font></b>Sometimes
+you'll be stuck sending something that is bigger than either you can send
+or the other person can receive. The only thing that can be done is to
+split the file into smaller parts. This is so common that many mail programs
+handle the splitting, naming (1 of 3, 2 of 3, etc.) and concatenating automatically.
+But most mail programs can't do it at all!
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr WIDTH="100%">
+<br>Now... Here are a couple tricks you can use when you have to send something
+to someone whose capabilities you don't know. The "Catch-22" you get caught
+in is this: If you encode something, the other person has to have a decoder.
+If they don't have a decoder, you can't send them one, because you have
+to encode it to send it and they can't decode it!
+<p>If the person you are sending to has BASIC (Even the <a href="ftp://ftp.microsoft.com/softlib/mslfiles/olddos.exe">QBASIC</a>
+that has been included free with MSDOS since version 5.0), you can embed
+the text from <a href="http://www.calweb.com/~webspace/mail/uudecode.bas.txt">UUDECODE.BAS</a> in your message.
+To make sure UUDECODE.BAS isn't itself encoded, you'll have to include
+it in the BODY of your message. You'll have to instruct the recipient to
+save your message with just the lines with line numbers to a separate file
+named UUDECODE.BAS. Do it by cutting and pasting or whatever, but be sure
+to save it as "plain text". Then start whatever BASIC program is available
+and open UUDECODE.BAS wherever it was stored. When UUDECODE is run, it
+will ask for the input file (the saved message with the uu-encoded file
+in it) and the output file (the name of the attachment). If you're smart,
+the first thing you'll send is a better decoding program so the recipient
+won't have to use UUDECODE.BAS ever again. Even smarter is to send a small
+decoding program just in case the person has a size problem.
+<p>Another approach is to send whatever you want as a self-extracting program
+in text format. How is this done? Well, less than half of the PC instructions
+use bytes that can be printed out as text, but an enterprising programmer
+named Jim Tucker used those few commands to build build a full encoder/decoder/extractor
+program. It's called <a href="ftp://ftp.simtel.net/pub/simtelnet/msdos/decode/netsend1.zip">netsend</a>,
+and as long as the recipient can figure out how to clip text, they can
+get whatever you send them. Well, since COM files can't be any bigger than
+64k, that limits you to sending small files. But it's still a big help!
+Netsend can also produce a "mini uu decoder" (called muud.com) which, because
+it is plain text, can be sent to people in the body of a message! Click
+<a href="http://www.calweb.com/~webspace/mail/smallduck.txt">here</a>
+to see an actual output from netsend where I've encoded one of my graphics
+called "smallduck.gif".
+<p>Of course, there are always other "gotchas" waiting for you. For example,
+if the person you are sending to has Outlook, they might have security
+set up to not even show certain types of attachments. If you send to an
+AOL account, AOL might convert multiple attachments into a single zipped
+attachment. Or maybe the other guy's mail client will foolishly trigger
+on some word in your message. Like sending a line with nothing but a period
+on it might end your message. Or sending the word "begin" followed by two
+spaces could hide your message.
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<center>
+<p>Bad links? Questions? <a href="mail.htm">Send
+me mail</a>.</center>
+
+<p><br>
+</body>
+</html>

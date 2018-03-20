@@ -1,0 +1,1142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+
+
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<title></title>
+	<meta name="GENERATOR" content="OpenOffice.org 2.4  (Linux)">
+	<meta name="AUTHOR" content="Fachtna Roe">
+	<meta name="CREATED" content="20090323;19412900">
+	<meta name="CHANGEDBY" content="Fachtna Roe">
+	<meta name="CHANGED" content="20090323;19492200">
+</head><body dir="ltr" lang="en-IE">
+<p><br><br>
+</p>
+<table border="0" cellpadding="2" cellspacing="0" width="990">
+	<col width="986">
+	<tbody><tr>
+		<td valign="top" width="986">
+			<h1><b>Hello World Bash Shell Script</b></h1>
+			<p align="center"><br><br>
+			</p>
+			<p><b>First you need to find out where is your bash interpreter
+			located. Enter the following into your command line: </b>
+			</p>
+			<pre style="margin-bottom: 0.5cm;"><b>$ which bash</b></pre>
+			<dl>
+				<dd style="margin-bottom: 0.5cm;">
+				<a href="http://www.linuxconfig.org/Image:Bash_01.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_01.jpg" name="graphics1" alt="bash interpreter location: /bin/bash" align="bottom" border="1" height="43" width="484"></font></a>
+								</dd></dl>
+			<p>
+			<b>Open up you favorite text editor ( <a href="http://www.linuxconfig.org/Vim_Tutorial">Here
+			is a tutorial where you can learn how to use vi / vim text editor.</a>
+			) and a create file called hello_world.sh. Insert the following
+			lines to a file: </b>
+			</p>
+			<p><b>NOTE:Every bash shell script in this tutorial starts with
+			&lt;b&gt;shebang:"#!"</b> which is not read as a
+			comment. First line is also a place where you put your interpreter
+			which is in this case: /bin/bash. 
+			</p>
+			<p>Here is our first bash shell script example: 
+			</p>
+			<pre>#!/bin/bash
+# declare STRING variable
+STRING="Hello World"
+#print variable on a screen
+echo $STRING</pre><p>
+			<a href="http://www.linuxconfig.org/Image:Hellobash.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Hellobash.gif" name="graphics2" alt="Example of simple bash shell script" align="bottom" border="1" height="43" width="214"></font></a>
+						</p>
+			<p>Navigate to a directory where your hello_world.sh is located
+			and make the file executable: 
+			</p>
+			<pre style="margin-bottom: 0.5cm;">$ chmod +x hello_world.sh</pre>
+			<dl>
+				<dd style="margin-bottom: 0.5cm;">
+				<a href="http://www.linuxconfig.org/Image:Bash_02.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_02.jpg" name="graphics3" alt="Make bash shell script executable" align="bottom" border="1" height="30" width="484"></font></a>
+								</dd></dl>
+			<p>
+			Now you are ready to execute your first bash script: 
+			</p>
+			<pre style="margin-bottom: 0.5cm;">./hello_world.sh</pre>
+			<dl>
+				<dd>
+				<a href="http://www.linuxconfig.org/Image:Bash_03.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_03.jpg" name="graphics4" alt="execute bash shell script" align="bottom" border="1" height="43" width="484"></font></a></dd></dl>
+		</td>
+	</tr>
+</tbody></table>
+<p><br><br>
+</p>
+<h2><a name="Simple_Backup_bash_shell_script"></a>Simple Backup bash
+shell script</h2>
+<pre>#!/bin/bash
+tar -czf myhome_directory.tar.gz /home/linuxconfig</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_04.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_04.jpg" name="graphics5" alt="Simple Backup bash script" align="bottom" border="1" height="69" width="484"></font></a>
+		</dd></dl>
+<h2>
+<a name="Variables"></a>Variables</h2>
+<p>In this example we declare simple bash variable and print it on
+the screen ( stdout ) with echo command. 
+</p>
+<pre>#!/bin/bash
+STRING="HELLO WORLD!!!"
+echo $STRING</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_05.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_05.jpg" name="graphics6" alt="String Variables in bash script" align="bottom" border="1" height="43" width="484"></font></a>
+		</dd></dl>
+<p>
+Your backup script and variables: 
+</p>
+<pre>#!/bin/bash
+OF=myhome_directory_$(date +%Y%m%d).tar.gz
+tar -czf $OF /home/linuxconfig</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_06.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_06.jpg" name="graphics7" alt="Bash backup Script with Variables" align="bottom" border="1" height="69" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="Global_vs._Local_variables"></a>Global vs. Local variables</h3>
+<pre>#!/bin/bash
+#Define bash global variable
+#This variable is global and can be used anywhere in this bash script
+VAR="global variable"
+function bash {
+#Define bash local variable
+#This variable is local to bash function only
+local VAR="local variable"
+echo $VAR
+}
+echo $VAR
+bash
+# Note the bash global variable did not change
+# "local" is bash reserved word
+echo $VAR</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_global_local.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_global_local.gif" name="graphics8" alt="Global vs. Local variables in bash script" align="bottom" border="1" height="69" width="190"></font></a>
+		</dd></dl>
+<h2>
+<a name="Passing_arguments_to_the_bash_script"></a>Passing arguments
+to the bash script</h2>
+<pre>#!/bin/bash
+# use predefined variables to access passed arguments
+#echo arguments to the shell
+echo $1 $2 $3 ' -&gt; echo $1 $2 $3'
+
+# We can also store arguments from bash command line in special array
+args=("$@")
+#echo arguments to the shell
+echo ${args[0]} ${args[1]} ${args[2]} ' -&gt; args=("$@"); echo ${args[0]} ${args[1]} ${args[2]}'
+
+#use $@ to print out all arguments at once
+echo $@ ' -&gt; echo $@'
+
+# use $# variable to print out
+# number of arguments passed to the bash script
+echo Number of arguments passed: $# ' -&gt; echo Number of arguments passed: $#'
+./arguments.sh Bash Scripting Tutorial</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_args.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_args.gif" name="graphics9" alt="Passing arguments to the bash script" align="bottom" border="1" height="82" width="472"></font></a>
+		</dd></dl>
+<h2>
+<a name="Executing_shell_commands_with_bash"></a>Executing shell
+commands with bash</h2>
+<pre>#!/bin/bash
+
+# use backticks " ` ` " to execute shell command
+echo `uname -o`
+# executing bash command without backticks
+echo uname -o</pre><p>
+<a href="http://www.linuxconfig.org/Image:Execute_shell_commands.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Execute_shell_commands.gif" name="graphics10" alt="Executing shell commands with bash" align="bottom" border="1" height="82" width="220"></font></a>
+</p>
+<h2><a name="Reading_User_Input"></a>Reading User Input</h2>
+<pre>#!/bin/bash
+
+echo -e "Hi, please type the word: \c "
+read  word
+echo "The word you entered is: $word"
+echo -e "Can you please enter two words? "
+read word1 word2
+echo "Here is your input: \"$word1\" \"$word2\""
+echo -e "How do you feel about bash scripting? "
+# read command now stores a reply into the default build-in variable $REPLY
+read
+echo "You said $REPLY, I'm glad to hear that! "
+echo -e "What are your favorite colours&nbsp;? "
+# -a makes read command to read into an array
+read -a colours
+echo "My favorite colours are also ${colours[0]}, ${colours[1]} and ${colours[2]}:-)"</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_read.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_read.gif" name="graphics11" alt="Reading User Input with bash" align="bottom" border="1" height="173" width="322"></font></a>
+		</dd></dl>
+<h2>
+<a name="Bash_Trap_Command"></a>Bash Trap Command</h2>
+<table cellpadding="2" cellspacing="2">
+	<tbody><tr>
+		<td>
+			<pre>#!/bin/bash
+# bash trap command
+trap bashtrap INT
+# bash clear screen command
+clear;
+# bash trap function is executed when CTRL-C is pressed:
+# bash prints message =&gt; Executing bash trap subrutine&nbsp;!
+bashtrap()
+{
+    echo "CTRL+C Detected&nbsp;!...executing bash trap&nbsp;!"
+}
+# for loop from 1/10 to 10/10
+for a in `seq 1 10`; do
+    echo "$a/10 to Exit." 
+    sleep 1;
+done
+echo "Exit Bash Trap Example!!!"</pre>
+		</td>
+		<td width="300">
+			<p align="center"><br>
+			</p>
+		</td>
+	</tr>
+</tbody></table>
+<h2><a name="Arrays"></a>Arrays</h2>
+<h3><a name="Declare_simple_bash_array"></a>Declare simple bash array</h3>
+<pre>#!/bin/bash
+#Declare array with 4 elements
+ARRAY=( 'Debian Linux' 'Redhat Linux' Ubuntu Linux )
+# get number of elements in the array
+ELEMENTS=${#ARRAY[@]}
+
+# echo each element in array 
+# for loop
+for (( i=0;i&lt;$ELEMENTS;i++)); do
+    echo ${ARRAY[${i}]}
+done</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Array.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Array.gif" name="graphics12" alt="Declare simple bash array" align="bottom" border="1" height="82" width="154"></font></a>
+		</dd></dl>
+<h3>
+<a name="Read_file_into_bash_array"></a>Read file into bash array</h3>
+<pre>#!/bin/bash
+#Declare array 
+declare -a ARRAY
+#Open file for reading to array
+exec 10&lt;bash.txt
+let count=0
+
+while read LINE &lt;&amp;10; do
+
+    ARRAY[$count]=$LINE
+    ((count++))
+done
+
+echo Number of elements: ${#ARRAY[@]}
+# echo array's content
+echo ${ARRAY[@]}
+# close file 
+exec 10&gt;&amp;-</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Array01.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Array01.gif" name="graphics13" alt="Read file into bash array" align="bottom" border="1" height="121" width="232"></font></a>
+		</dd></dl>
+<h2>
+<a name="Bash_if.2Felse_statements"></a>Bash if/else statements</h2>
+<h3><a name="Simple_Bash_if.2Felse_statement"></a>Simple Bash if/else
+statement</h3>
+<p>Please note the spacing inside the [ and ] brackets! Without the
+spaces, it won't work! 
+</p>
+<pre>#!/bin/bash
+directory="./BashScripting"
+
+# bash check if directory exists
+if [ -d $directory ]; then
+        echo "Directory exists"
+else 
+        echo "Directory does not exists"
+fi</pre><p>
+<a href="http://www.linuxconfig.org/Image:Bash_if_else.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_if_else.gif" name="graphics14" alt="Bash if else statement" align="bottom" border="1" height="82" width="232"></font></a>
+</p>
+<h3><a name="Nested_if.2Felse"></a>Nested if/else</h3>
+<pre>#!/bin/bash
+
+# Declare variable choice and assign value 4
+choice=4
+# Print to stdout
+ echo "1. Bash"
+ echo "2. Scripting"
+ echo "3. Tutorial"
+ echo -n "Please choose a word [1,2 or 3]? "
+# Loop while the variable choice is equal 4
+# bash while loop
+while [ $choice -eq 4 ]; do
+
+# read user input
+read choice
+# bash nested if/else
+if [ $choice -eq 1 ]&nbsp;; then
+
+        echo "You have chosen word: Bash"
+
+else                   
+
+        if [ $choice -eq 2 ]&nbsp;; then
+                 echo "You have chosen word: Scripting"
+        else
+         
+                if [ $choice -eq 3 ]&nbsp;; then
+                        echo "You have chosen word: Tutorial"
+                else
+                        echo "Please make a choice between 1-3&nbsp;!"
+                        echo "1. Bash"
+                        echo "2. Scripting"
+                        echo "3. Tutorial"
+                        echo -n "Please choose a word [1,2 or 3]? "
+                        choice=4
+                fi   
+        fi
+fi
+done</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash30.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash30.gif" name="graphics15" alt="Nested Bash if else statement" align="bottom" border="1" height="160" width="232"></font></a>
+		</dd></dl>
+<h2>
+<a name="Bash_Comparisons"></a>Bash Comparisons</h2>
+<h3><a name="Arithmetic_Comparisons"></a>Arithmetic Comparisons</h3>
+<table border="1" cellpadding="2" cellspacing="2">
+	<tbody><tr>
+		<td width="50">
+			<p align="center">-lt 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">&lt;</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">-gt 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">&gt;</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">-le 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">&lt;=</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">-ge 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">&gt;=</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">-eq 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">==</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">-ne 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">!=</p>
+		</td>
+	</tr>
+</tbody></table>
+<pre>#!/bin/bash
+# declare integers
+NUM1=2
+NUM2=2
+if [ $NUM1 -eq $NUM2 ]; then
+        echo "Both Values are equal"
+else 
+        echo "Values are NOT equal"
+fi</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_07.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_07.jpg" name="graphics16" alt="Bash Arithmetic Comparisons - values are equal" align="bottom" border="1" height="43" width="484"></font></a>
+		</dd></dl>
+<pre>#!/bin/bash
+# declare integers
+NUM1=2
+NUM2=1
+if [ $NUM1 -eq $NUM2 ]; then
+        echo "Both Values are equal"
+else 
+        echo "Values are NOT equal"
+fi</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_08.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_08.jpg" name="graphics17" alt="Bash Arithmetic Comparisons - values are NOT equal" align="bottom" border="1" height="43" width="484"></font></a>
+		</dd></dl>
+<pre>#!/bin/bash
+# declare integers
+NUM1=2
+NUM2=1
+if   [ $NUM1 -eq $NUM2 ]; then
+        echo "Both Values are equal"
+elif [ $NUM1 -gt $NUM2 ]; then
+        echo "NUM1 is greater then NUM2"
+else 
+        echo "NUM2 is greater then NUM1"
+fi</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_statement.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_statement.jpg" name="graphics18" alt="Bash Arithmetic Comparisons - greater then" align="bottom" border="1" height="43" width="370"></font></a>
+		</dd></dl>
+<h3>
+<a name="String_Comparisons"></a>String Comparisons</h3>
+<table border="1" cellpadding="2" cellspacing="2">
+	<tbody><tr>
+		<td width="50">
+			<p align="center">= 
+			</p>
+		</td>
+		<td width="200">
+			<p align="center">equal</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">&nbsp;!= 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">not equal</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">&lt; 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">less then</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">&gt; 
+			</p>
+		</td>
+		<td width="50">
+			<p align="center">greater then</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">-n s1</p>
+		</td>
+		<td width="50">
+			<p align="center">string s1 is not empty</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">-z s1</p>
+		</td>
+		<td width="50">
+			<p align="center">string s1 is empty</p>
+		</td>
+	</tr>
+</tbody></table>
+<pre>#!/bin/bash
+#Declare string S1
+S1="Bash"
+#Declare string S2
+S2="Scripting"
+if [ $S1 = $S2 ]; then
+        echo "Both Strings are equal"
+else 
+        echo "Strings are NOT equal"
+fi</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_statement1.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_statement1.jpg" name="graphics19" alt="Bash String Comparisons - values are NOT equal" align="bottom" border="1" height="43" width="370"></font></a>
+		</dd></dl>
+<pre>#!/bin/bash
+#Declare string S1
+S1="Bash"
+#Declare string S2
+S2="Bash"
+if [ $S1 = $S2 ]; then
+        echo "Both Strings are equal"
+else 
+        echo "Strings are NOT equal"
+fi</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_statement2.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_statement2.jpg" name="graphics20" alt="Bash String Comparisons - values are equal" align="bottom" border="1" height="43" width="370"></font></a>
+		</dd></dl>
+<h2>
+<a name="Bash_File_Testing"></a>Bash File Testing</h2>
+<table cellpadding="2" cellspacing="2">
+	<tbody><tr>
+		<td width="140">
+			<p>-b filename</p>
+		</td>
+		<td width="500">
+			<p>Block special file</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-c filename</p>
+		</td>
+		<td width="300">
+			<p>Special character file</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-d directoryname</p>
+		</td>
+		<td width="300">
+			<p>Check for directory existence</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-e filename</p>
+		</td>
+		<td width="300">
+			<p>Check for file existence</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-f filename</p>
+		</td>
+		<td width="300">
+			<p>Check for regular file existence not a directory</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-G filename</p>
+		</td>
+		<td width="300">
+			<p>Check if file exists and is owned by effective group ID.</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-g filename</p>
+		</td>
+		<td width="300">
+			<p>true if file exists and is set-group-id.</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-k filename</p>
+		</td>
+		<td width="300">
+			<p>Sticky bit</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-L filename</p>
+		</td>
+		<td width="300">
+			<p>Symbolic link</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-O filename</p>
+		</td>
+		<td width="300">
+			<p>True if file exists and is owned by the effective user id.</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-r filename</p>
+		</td>
+		<td width="300">
+			<p>Check if file is a readable</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-S filename</p>
+		</td>
+		<td width="300">
+			<p>Check if file is socket</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-s filename</p>
+		</td>
+		<td width="300">
+			<p>Check if file is nonzero size</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-u filename</p>
+		</td>
+		<td width="300">
+			<p>Check if file set-ser-id bit is set</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-w filename</p>
+		</td>
+		<td width="300">
+			<p>Check if file is writable</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100">
+			<p>-x filename</p>
+		</td>
+		<td width="300">
+			<p>Check if file is executable</p>
+		</td>
+	</tr>
+</tbody></table>
+<pre>#!/bin/bash
+file="./file"
+if [ -e $file ]; then
+        echo "File exists"
+else 
+        echo "File does not exists"
+fi</pre>
+<dl>
+	<dd>
+	<a href="http://www.linuxconfig.org/Image:Bash_filetesting1.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_filetesting1.jpg" name="graphics21" alt="Bash File Testing - File does not exist" align="bottom" border="1" height="43" width="370"></font></a>
+		</dd><dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_filetesting2.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_filetesting2.jpg" name="graphics22" alt="Bash File Testing - File exists" align="bottom" border="1" height="82" width="370"></font></a>
+		</dd></dl>
+<p>
+Similarly for example we can use while loop to check if file does not
+exists. This script will sleep until file does exists. Note bash
+negator "!" which negates the -e option. 
+</p>
+<pre>#!/bin/bash
+
+while [&nbsp;! -e myfile ]; do
+# Sleep until file does exists/is created
+sleep 1
+done</pre><h2>
+<a name="Loops"></a>Loops</h2>
+<h3><a name="Bash_for_loop"></a>Bash for loop</h3>
+<pre>#!/bin/bash
+
+# bash for loop
+for f in $( ls /var/ ); do
+        echo $f
+done</pre><p>
+Running for loop from bash shell command line: 
+</p>
+<pre style="margin-bottom: 0.5cm;">$ for f in $( ls /var/ ); do echo $f; done</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_09.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_09.jpg" name="graphics23" alt="Bash for loop" align="bottom" border="1" height="173" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="Bash_while_loop"></a>Bash while loop</h3>
+<pre>#!/bin/bash
+COUNT=6
+# bash while loop
+while [ $COUNT -gt 0 ]; do
+        echo Value of count is: $COUNT
+        let COUNT=COUNT-1
+done</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_10.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_10.jpg" name="graphics24" alt="Bash while loop" align="bottom" border="1" height="108" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="Bash_until_loop"></a>Bash until loop</h3>
+<pre>#!/bin/bash
+COUNT=0
+# bash until loop
+until [ $COUNT -gt 5 ]; do
+        echo Value of count is: $COUNT
+        let COUNT=COUNT+1
+done</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_11.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_11.jpg" name="graphics25" alt="Bash until loop" align="bottom" border="1" height="108" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="Control_bash_loop_with_.3CSTDIN.3E"></a>Control bash loop
+with &lt;STDIN&gt;</h3>
+<p>Here is a example of while loop controlled by standard input.
+Until the redirection chain from STDOUT to STDIN to the read command
+exists the while loop continues. 
+</p>
+<pre>#!/bin/bash
+# This bash script will locate and replace spaces
+# in the filenames
+DIR="."
+# Controlling a loop with bash read command by redirecting STDOUT as
+# a STDIN to while loop
+# find will not truncate filenames containing spaces
+find $DIR -type f | while read file; do
+# using POSIX class [:space:] to find space in the filename
+if [[ "$file" = *[[:space:]]* ]]; then
+# substitute space with "_" character and consequently rename the file
+mv "$file" `echo $file | tr ' ' '_'`
+fi;
+# end of while loop
+done</pre><p>
+<a href="http://www.linuxconfig.org/Image:Rename_files_containing_spaces.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Rename_files_containing_spaces.gif" name="graphics26" alt="Bash script to replace spaces in the filenames with _" align="bottom" border="1" height="160" width="442"></font></a>
+</p>
+<h2><a name="Bash_Functions"></a>Bash Functions</h2>
+<pre>!/bin/bash
+# BASH FUNCTIONS CAN BE DECLARED IN ANY ORDER
+function function_B {
+        echo Function B.
+}
+function function_A {
+        echo $1
+}
+function function_D {
+        echo Function D.
+}
+function function_C {
+        echo $1
+}
+# FUNCTION CALLS
+# Pass parameter to function A
+function_A "Function A."
+function_B
+# Pass parameter to function C
+function_C "Function C."
+function_D</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_12.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_12.jpg" name="graphics27" alt="Bash Functions" align="bottom" border="1" height="82" width="484"></font></a>
+		</dd></dl>
+<h2>
+<a name="Bash_Select"></a>Bash Select</h2>
+<pre>#!/bin/bash
+
+PS3='Choose one word: ' 
+
+# bash select
+select word in "linux" "bash" "scripting" "tutorial" 
+do
+  echo "The word you have selected is: $word"
+# Break, otherwise endless loop
+  break  
+done
+
+exit 0</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bash_13.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_13.gif" name="graphics28" alt="Bash Select" align="bottom" border="1" height="108" width="214"></font></a>
+		</dd></dl>
+<h2>
+<a name="Case_statement_conditional"></a>Case statement conditional</h2>
+<pre>#!/bin/bash
+echo "What is your preferred programming / scripting language"
+echo "1) bash"
+echo "2) perl"
+echo "3) phyton"
+echo "4) c++"
+echo "5) I do not know&nbsp;!"
+read case;
+#simple case bash structure
+# note in this case $case is variable and does not have to
+# be named case this is just an example
+case $case in
+    1) echo "You selected bash";;
+    2) echo "You selected perl";;
+    3) echo "You selected phyton";;
+    4) echo "You selected c++";;
+    5) exit
+esac</pre><p>
+<a href="http://www.linuxconfig.org/Image:Bash_case_statement.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_case_statement.gif" name="graphics29" alt="bash case statement conditional" align="bottom" border="1" height="134" width="340"></font></a>
+</p>
+<h2><a name="Bash_quotes_and_quotations"></a>Bash quotes and
+quotations</h2>
+<p>Quotations and quotes are important part of bash and bash
+scripting. Here are some bash quotes and quotations basics. 
+</p>
+<h3><a name="Escaping_Meta_characters"></a>Escaping Meta characters</h3>
+<p>Before we start with quotes and quotations we should know
+something about escaping meta characters. Escaping will suppress a
+special meaning of meta characters and therefore meta characters will
+be read by bash literally. To do this we need to use backslash "\"
+character. Example: 
+</p>
+<pre>#!/bin/bash
+
+#Declare bash string variable
+BASH_VAR="Bash Script"
+
+# echo variable BASH_VAR
+echo $BASH_VAR
+
+#when meta character such us "$" is escaped with "\" it will be read literally
+echo \$BASH_VAR 
+
+# backslash has also special meaning and it can be suppressed with yet another "\"
+echo "\\"</pre><p>
+<a href="http://www.linuxconfig.org/Image:Escaping_meta.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Escaping_meta.gif" name="graphics30" alt="escaping meta characters in bash" align="bottom" border="1" height="69" width="202"></font></a>
+</p>
+<h3><a name="Single_quotes"></a>Single quotes</h3>
+<p>Single quotes in bash will suppress special meaning of every meta
+characters. Therefore meta characters will be read literally. It is
+not possible to use another single quote within two single quotes not
+even if the single quote is escaped by backslash. 
+</p>
+<pre>#!/bin/bash
+
+#Declare bash string variable
+BASH_VAR="Bash Script"
+
+# echo variable BASH_VAR
+echo $BASH_VAR
+
+# meta characters special meaning in bash is suppressed when  using single quotes 
+echo '$BASH_VAR  "$BASH_VAR"'</pre><p>
+<a href="http://www.linuxconfig.org/Image:Bash_single_quotes.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_single_quotes.gif" name="graphics31" alt="Using single quotes in bash" align="bottom" border="1" height="56" width="214"></font></a>
+</p>
+<h3><a name="Double_Quotes"></a>Double Quotes</h3>
+<p>Double quotes in bash will suppress special meaning of every meta
+characters except "$", "\" and "`". Any
+other meta characters will be read literally. It is also possible to
+use single quote within double quotes. If we need to use double
+quotes within double quotes bash can read them literally when
+escaping them with "\". Example: 
+</p>
+<pre>#!/bin/bash
+
+#Declare bash string variable
+BASH_VAR="Bash Script"
+
+# echo variable BASH_VAR
+echo $BASH_VAR
+
+# meta characters and its special meaning in bash is 
+# suppressed when using double quotes except "$", "\" and "`"
+
+echo "It's $BASH_VAR  and \"$BASH_VAR\" using backticks: `date`"</pre><p>
+<a href="http://www.linuxconfig.org/Image:Bash_double_quotes.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_double_quotes.gif" name="graphics32" alt="Using double quotes in bash" align="bottom" border="1" height="56" width="490"></font></a>
+</p>
+<h3><a name="Bash_quoting_with_ANSI-C_style"></a>Bash quoting with
+ANSI-C style</h3>
+<p>There is also another type of quoting and that is ANSI-C. In this
+type of quoting characters escaped with "\" will gain
+special meaning according to the ANSI-C standard. 
+</p>
+<table border="1" cellpadding="2" cellspacing="2">
+	<tbody><tr>
+		<td width="50">
+			<p align="center">/a</p>
+		</td>
+		<td width="250">
+			<p align="center">alert (bell)</p>
+		</td>
+		<td width="50">
+			<p align="center">/b</p>
+		</td>
+		<td width="250">
+			<p align="center">backspace</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">/e</p>
+		</td>
+		<td width="250">
+			<p align="center">an escape character</p>
+		</td>
+		<td width="50">
+			<p align="center">/f</p>
+		</td>
+		<td width="250">
+			<p align="center">form feed</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">/n</p>
+		</td>
+		<td width="250">
+			<p align="center">newline</p>
+		</td>
+		<td width="50">
+			<p align="center">/r</p>
+		</td>
+		<td width="250">
+			<p align="center">carriage return</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">/t</p>
+		</td>
+		<td width="250">
+			<p align="center">horizontal tab</p>
+		</td>
+		<td width="50">
+			<p align="center">/v</p>
+		</td>
+		<td width="250">
+			<p align="center">vertical tab</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">\\</p>
+		</td>
+		<td width="250">
+			<p align="center">backslash</p>
+		</td>
+		<td width="50">
+			<p align="center">\`</p>
+		</td>
+		<td width="250">
+			<p align="center">single quote</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="50">
+			<p align="center">\nnn</p>
+		</td>
+		<td width="250">
+			<p align="center">octal value of characters ( see <a href="http://www.asciitable.com/">ASCII
+			table</a> )</p>
+		</td>
+		<td width="50">
+			<p align="center">\xnn</p>
+		</td>
+		<td width="250">
+			<p align="center">hexadecimal value of characters ( see <a href="http://www.asciitable.com/">ASCII
+			table</a> )</p>
+		</td>
+	</tr>
+</tbody></table>
+<p>The syntax fo ansi-c bash quoting is: $'&lt;your string&gt;' .
+Here is an example: 
+</p>
+<pre>#!/bin/bash
+
+# as a example we have used \n as a new line, \x40 is hex value for @
+# and \56 is octal value for .
+echo $'web: www.linuxconfig.org\nemail: web\x40linuxconfig\56org'</pre><p>
+<a href="http://www.linuxconfig.org/Image:Ansi-c_bash.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Ansi-c_bash.gif" name="graphics33" alt="quoting in bash with ansi-c stype" align="bottom" border="1" height="56" width="202"></font></a>
+</p>
+<h2><a name="Arithmetic_Operations"></a>Arithmetic Operations</h2>
+<h3><a name="Simple_Bash_Addition_Calculator_Example"></a>Simple Bash
+Addition Calculator Example</h3>
+<pre>#!/bin/bash
+
+let RESULT1=$1+$2
+echo $1+$2=$RESULT1 ' -&gt; # let RESULT1=$1+$2'
+declare -i RESULT2
+RESULT2=$1+$2
+echo $1+$2=$RESULT2 ' -&gt; # declare -i RESULT2; RESULT2=$1+$2'
+echo $1+$2=$(($1 + $2)) ' -&gt; # $(($1 + $2))'</pre><p>
+<a href="http://www.linuxconfig.org/Image:Bash_addition_calc.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_addition_calc.gif" name="graphics34" alt="Bash Addition Calculator" align="bottom" border="1" height="69" width="304"></font></a>
+</p>
+<h3><a name="Bash_Arithmetics"></a>Bash Arithmetics</h3>
+<pre>#!/bin/bash
+
+echo '### let ###'
+# bash addition
+let ADDITION=3+5
+echo "3 + 5 =" $ADDITION
+
+# bash subtraction
+let SUBTRACTION=7-8
+echo "7 - 8 =" $SUBTRACTION 
+
+# bash multiplication
+let MULTIPLICATION=5*8
+echo "5 * 8 =" $MULTIPLICATION
+
+# bash division
+let DIVISION=4/2
+echo "4 / 2 =" $DIVISION
+
+# bash modulus
+let MODULUS=9%4
+echo "9 % 4 =" $MODULUS
+
+# bash power of two
+let POWEROFTWO=2**2
+echo "2 ^ 2 =" $POWEROFTWO
+
+
+echo '### Bash Arithmetic Expansion ###'
+# There are two formats for arithmetic expansion: $[ expression ] 
+# and $(( expression #)) its your choice which you use
+
+echo 4 + 5 = $((4 + 5))
+echo 7 - 7 = $[ 7 - 7 ]
+echo 4 x 6 = $((3 * 2))
+echo 6 / 3 = $((6 / 3))
+echo 8 % 7 = $((8 % 7))
+echo 2 ^ 8 = $[ 2 ** 8 ]
+
+
+echo '### Declare ###'
+
+echo -e "Please enter two numbers \c"
+# read user input
+read num1 num2
+declare -i result
+result=$num1+$num2
+echo "Result is:$result "
+
+# bash convert binary number 10001
+result=2#10001
+echo $result
+
+# bash convert octal number 16
+result=8#16
+echo $result
+
+# bash convert hex number 0xE6A
+result=16#E6A
+echo $result</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Arithmetic_operations.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Arithmetic_operations.gif" name="graphics35" alt="Arithmetic Operations" align="bottom" border="1" height="290" width="262"></font></a>
+		</dd></dl>
+<p>
+<br><br>
+</p>
+<h3><a name="Round_floating_point_number"></a>Round floating point
+number</h3>
+<pre>#!/bin/bash
+# get floating point number
+floating_point_number=3.3446
+echo $floating_point_number
+# round floating point number with bash
+for bash_rounded_number in $(printf %.0f $floating_point_number); do
+echo "Rounded number with bash:" $bash_rounded_number
+done</pre><p>
+<a href="http://www.linuxconfig.org/Image:Bash_round_floating_point_number.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_round_floating_point_number.gif" name="graphics36" alt="Round floating point number with bash" align="bottom" border="1" height="56" width="178"></font></a>
+</p>
+<h3><a name="Bash_floating_point_calculations"></a>Bash floating
+point calculations</h3>
+<pre>#!/bin/bash
+# Simple linux bash calculator 
+echo "Enter input:" 
+read userinput
+echo "Result with 2 digits after decimal point:"
+echo "scale=2; ${userinput}" | bc 
+echo "Result with 10 digits after decimal point:"
+echo "scale=10; ${userinput}" | bc 
+echo "Result as rounded integer:"
+echo $userinput | bc</pre><p>
+<a href="http://www.linuxconfig.org/Image:Bash_floating_point.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bash_floating_point.gif" name="graphics37" alt="Bash floating point calculations" align="bottom" border="1" height="134" width="256"></font></a>
+</p>
+<h2><a name="Redirections"></a>Redirections</h2>
+<h3><a name="STDOUT_from_bash_script_to_STDERR"></a>STDOUT from bash
+script to STDERR</h3>
+<pre>#!/bin/bash
+
+echo "Redirect this STDOUT to STDERR" 1&gt;&amp;2</pre><p>
+To proof that STDOUT is redirected to STDERR we can redirect script's
+output to file:</p>
+<p> 
+<a href="http://www.linuxconfig.org/Image:STDOUTtoSTDERR.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/STDOUTtoSTDERR.gif" name="graphics38" alt="STDOUT from bash script to STDERR" align="bottom" border="1" height="147" width="286"></font></a>
+</p>
+<h3><a name="STDERR_from_bash_script_to_STDOUT"></a>STDERR from bash
+script to STDOUT</h3>
+<pre>#!/bin/bash
+
+cat $1 2&gt;&amp;1</pre><p>
+To proof that STDERR is redirected to STDOUT we can redirect script's
+output to file: 
+</p>
+<dl>
+	<dd><a href="http://www.linuxconfig.org/Image:STDERRtoSTDOUT.gif"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/STDERRtoSTDOUT.gif" name="graphics39" alt="STDERR from bash script to STDOUT" align="bottom" border="1" height="147" width="358"></font></a>
+		</dd></dl>
+<h3>
+<a name="stdout_to_screen"></a>stdout to screen</h3>
+<p>The simple way to redirect a standard output ( stdout ) is to
+simply use any command, because by default stdout is automatically
+redirected to screen. 
+</p>
+<pre style="margin-bottom: 0.5cm;">cat /proc/partitions</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bashscripting100.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bashscripting100.jpg" name="graphics40" alt="bash stdout to screen" align="bottom" border="1" height="121" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="stdout_to_file"></a>stdout to file</h3>
+<p>Here we use "&gt;" to redirect stdout to a file
+"partitions.txt". 
+</p>
+<pre style="margin-bottom: 0.5cm;">cat /proc/partitions &gt; partitions.txt</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bashscripting101.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bashscripting101.jpg" name="graphics41" alt="bash stdout to file" align="bottom" border="1" height="134" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="stderr_to_file"></a>stderr to file</h3>
+<p>In this example you will redirect the standard error ( stderr ) to
+a file and stdout to a default screen. 
+</p>
+<pre style="margin-bottom: 0.5cm;">grep -r hda6 * . 2&gt; stderr.txt</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bashscripting102.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bashscripting102.jpg" name="graphics42" alt="bash stderr to file" align="bottom" border="1" height="251" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="stdout_to_stderr"></a>stdout to stderr</h3>
+<p>In this case the output of a command will be written to the same
+descriptor as a stderr. 
+</p>
+<pre style="margin-bottom: 0.5cm;">grep -r hda6 * . 1&gt;&amp;2 stderr.txt</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bashscripting103.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bashscripting103.jpg" name="graphics43" alt="bash stdout to stderr" align="bottom" border="1" height="225" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="stderr_to_stdout"></a>stderr to stdout</h3>
+<p>In this case the stderr of a command will be written to the same
+descriptor as a stdout. 
+</p>
+<pre style="margin-bottom: 0.5cm;">grep -r hda6 * . 2&gt;&amp;1 stderr.txt</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bashscripting104.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bashscripting104.jpg" name="graphics44" alt="stderr to stdout" align="bottom" border="1" height="225" width="484"></font></a>
+		</dd></dl>
+<h3>
+<a name="stderr_and_stdout_to_file"></a>stderr and stdout to file</h3>
+<pre style="margin-bottom: 0.5cm;">grep -r hda6 * . &amp;&gt; stderr_and_stdout.txt</pre>
+<dl>
+	<dd style="margin-bottom: 0.5cm;">
+	<a href="http://www.linuxconfig.org/Image:Bashscripting105.jpg"><font color="#000080"><img src="Bash%20Scripting%20-%20from%20Basics%20to%20Advanced_files/Bashscripting105.jpg" name="graphics45" alt="stderr and stdout to file" align="bottom" border="1" height="251" width="484"></font></a>
+		</dd></dl>
+<p>
+<br><br>
+</p>
+</body></html>

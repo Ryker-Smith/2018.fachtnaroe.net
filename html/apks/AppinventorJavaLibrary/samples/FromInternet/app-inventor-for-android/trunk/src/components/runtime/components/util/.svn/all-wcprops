@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/49/trunk/src/components/runtime/components/util
+END
+BoundingBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/49/trunk/src/components/runtime/components/util/BoundingBox.java
+END
+ErrorMessages.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/49/trunk/src/components/runtime/components/util/ErrorMessages.java
+END
+JsonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/49/trunk/src/components/runtime/components/util/JsonUtil.java
+END
+YailList.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/49/trunk/src/components/runtime/components/util/YailList.java
+END
+YailConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/49/trunk/src/components/runtime/components/util/YailConstants.java
+END

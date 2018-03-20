@@ -1,0 +1,1165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1M: System Administration Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the Solaris (TM) system administration and  maintenance utilities and is for system and network administrators.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1462";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1M: System Administration Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1462.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1M (821-1462-06)&body=Page: boot-1m.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-37.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-194.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-310.html">System Administration Commands - Part 1</a></p>
+<p class="toc level2"><a href="x-6to4relay-1m.html"><tt>6to4relay</tt>(1M)</a></p>
+<p class="toc level2"><a href="accept-1m.html"><tt>accept</tt>(1M)</a></p>
+<p class="toc level2"><a href="acct-1m.html"><tt>acct</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctadm-1m.html"><tt>acctadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcms-1m.html"><tt>acctcms</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon1-1m.html"><tt>acctcon1</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon-1m.html"><tt>acctcon</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon2-1m.html"><tt>acctcon2</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctdisk-1m.html"><tt>acctdisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctdusg-1m.html"><tt>acctdusg</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctmerg-1m.html"><tt>acctmerg</tt>(1M)</a></p>
+<p class="toc level2"><a href="accton-1m.html"><tt>accton</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc1-1m.html"><tt>acctprc1</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc-1m.html"><tt>acctprc</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc2-1m.html"><tt>acctprc2</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctsh-1m.html"><tt>acctsh</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctwtmp-1m.html"><tt>acctwtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="acpihpd-1m.html"><tt>acpihpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="adbgen-1m.html"><tt>adbgen</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-allocatable-1m.html"><tt>add_allocatable</tt>(1M)</a></p>
+<p class="toc level2"><a href="addbadsec-1m.html"><tt>addbadsec</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-drv-1m.html"><tt>add_drv</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-install-client-1m.html"><tt>add_install_client</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-to-install-server-1m.html"><tt>add_to_install_server</tt>(1M)</a></p>
+<p class="toc level2"><a href="afbconfig-1m.html"><tt>afbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="apache-1m.html"><tt>apache</tt>(1M)</a></p>
+<p class="toc level2"><a href="arp-1m.html"><tt>arp</tt>(1M)</a></p>
+<p class="toc level2"><a href="atohexlabel-1m.html"><tt>atohexlabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="audit-1m.html"><tt>audit</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditconfig-1m.html"><tt>auditconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditd-1m.html"><tt>auditd</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditrecord-1m.html"><tt>auditrecord</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditreduce-1m.html"><tt>auditreduce</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditstat-1m.html"><tt>auditstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="audit-warn-1m.html"><tt>audit_warn</tt>(1M)</a></p>
+<p class="toc level2"><a href="automount-1m.html"><tt>automount</tt>(1M)</a></p>
+<p class="toc level2"><a href="automountd-1m.html"><tt>automountd</tt>(1M)</a></p>
+<p class="toc level2"><a href="autopush-1m.html"><tt>autopush</tt>(1M)</a></p>
+<p class="toc level2"><a href="bart-1m.html"><tt>bart</tt>(1M)</a></p>
+<p class="toc level2"><a href="beadm-1m.html"><tt>beadm</tt>(1M)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>boot</tt>(1M)</a></p>
+</div>
+<p class="toc level2"><a href="bootadm-1m.html"><tt>bootadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootconfchk-1m.html"><tt>bootconfchk</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootparamd-1m.html"><tt>bootparamd</tt>(1M)</a></p>
+<p class="toc level2"><a href="busstat-1m.html"><tt>busstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefsd-1m.html"><tt>cachefsd</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefslog-1m.html"><tt>cachefslog</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefspack-1m.html"><tt>cachefspack</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefsstat-1m.html"><tt>cachefsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefswssize-1m.html"><tt>cachefswssize</tt>(1M)</a></p>
+<p class="toc level2"><a href="captoinfo-1m.html"><tt>captoinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="catman-1m.html"><tt>catman</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-1m.html"><tt>cfgadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-ac-1m.html"><tt>cfgadm_ac</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-cardbus-1m.html"><tt>cfgadm_cardbus</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-fp-1m.html"><tt>cfgadm_fp</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-ib-1m.html"><tt>cfgadm_ib</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-pci-1m.html"><tt>cfgadm_pci</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sata-1m.html"><tt>cfgadm_sata</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sbd-1m.html"><tt>cfgadm_sbd</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-scsi-1m.html"><tt>cfgadm_scsi</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sdcard-1m.html"><tt>cfgadm_sdcard</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-shp-1m.html"><tt>cfgadm_shp</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sysctrl-1m.html"><tt>cfgadm_sysctrl</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-usb-1m.html"><tt>cfgadm_usb</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfsadmin-1m.html"><tt>cfsadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="chargefee-1m.html"><tt>chargefee</tt>(1M)</a></p>
+<p class="toc level2"><a href="chat-1m.html"><tt>chat</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-1m.html"><tt>check</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-hostname-1m.html"><tt>check-hostname</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-permissions-1m.html"><tt>check-permissions</tt>(1M)</a></p>
+<p class="toc level2"><a href="chk-encodings-1m.html"><tt>chk_encodings</tt>(1M)</a></p>
+<p class="toc level2"><a href="chroot-1m.html"><tt>chroot</tt>(1M)</a></p>
+<p class="toc level2"><a href="cimworkshop-1m.html"><tt>cimworkshop</tt>(1M)</a></p>
+<p class="toc level2"><a href="ckpacct-1m.html"><tt>ckpacct</tt>(1M)</a></p>
+<p class="toc level2"><a href="clear-locks-1m.html"><tt>clear_locks</tt>(1M)</a></p>
+<p class="toc level2"><a href="clinfo-1m.html"><tt>clinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="closewtmp-1m.html"><tt>closewtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="clri-1m.html"><tt>clri</tt>(1M)</a></p>
+<p class="toc level2"><a href="comsat-1m.html"><tt>comsat</tt>(1M)</a></p>
+<p class="toc level2"><a href="consadm-1m.html"><tt>consadm</tt>(1m)</a></p>
+<p class="toc level2"><a href="conv-lp-1m.html"><tt>conv_lp</tt>(1M)</a></p>
+<p class="toc level2"><a href="conv-lpd-1m.html"><tt>conv_lpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="coreadm-1m.html"><tt>coreadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cpustat-1m.html"><tt>cpustat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cron-1m.html"><tt>cron</tt>(1M)</a></p>
+<p class="toc level2"><a href="cryptoadm-1m.html"><tt>cryptoadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cvcd-1m.html"><tt>cvcd</tt>(1M)</a></p>
+<p class="toc level2"><a href="datadm-1m.html"><tt>datadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dcopy-1m.html"><tt>dcopy</tt>(1M)</a></p>
+<p class="toc level2"><a href="dcs-1m.html"><tt>dcs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dd-1m.html"><tt>dd</tt>(1M)</a></p>
+<p class="toc level2"><a href="devattr-1m.html"><tt>devattr</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfree-1m.html"><tt>devfree</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfsadm-1m.html"><tt>devfsadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfsadmd-1m.html"><tt>devfsadmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="device-allocate-1m.html"><tt>device_allocate</tt>(1M)</a></p>
+<p class="toc level2"><a href="device-remap-1m.html"><tt>device_remap</tt>(1M)</a></p>
+<p class="toc level2"><a href="devinfo-1m.html"><tt>devinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="devlinks-1m.html"><tt>devlinks</tt>(1M)</a></p>
+<p class="toc level2"><a href="devnm-1m.html"><tt>devnm</tt>(1M)</a></p>
+<p class="toc level2"><a href="devprop-1m.html"><tt>devprop</tt>(1M)</a></p>
+<p class="toc level2"><a href="devreserv-1m.html"><tt>devreserv</tt>(1M)</a></p>
+<p class="toc level2"><a href="df-1m.html"><tt>df</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfmounts-1m.html"><tt>dfmounts</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfmounts-nfs-1m.html"><tt>dfmounts_nfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfshares-1m.html"><tt>dfshares</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfshares-nfs-1m.html"><tt>dfshares_nfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="df-ufs-1m.html"><tt>df_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpagent-1m.html"><tt>dhcpagent</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpconfig-1m.html"><tt>dhcpconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpmgr-1m.html"><tt>dhcpmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhtadm-1m.html"><tt>dhtadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dig-1m.html"><tt>dig</tt>(1M)</a></p>
+<p class="toc level2"><a href="directoryserver-1m.html"><tt>directoryserver</tt>(1M)</a></p>
+<p class="toc level2"><a href="disks-1m.html"><tt>disks</tt>(1M)</a></p>
+<p class="toc level2"><a href="diskscan-1m.html"><tt>diskscan</tt>(1M)</a></p>
+<p class="toc level2"><a href="dispadmin-1m.html"><tt>dispadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="dladm-1m.html"><tt>dladm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dlmgmtd-1m.html"><tt>dlmgmtd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dlstat-1m.html"><tt>dlstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="dmesg-1m.html"><tt>dmesg</tt>(1M)</a></p>
+<p class="toc level2"><a href="dminfo-1m.html"><tt>dminfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="dns-sd-1m.html"><tt>dns-sd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-dsfromkey-1m.html"><tt>dnssec-dsfromkey</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-keyfromlabel-1m.html"><tt>dnssec-keyfromlabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-keygen-1m.html"><tt>dnssec-keygen</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-makekeyset-1m.html"><tt>dnssec-makekeyset</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-signkey-1m.html"><tt>dnssec-signkey</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-signzone-1m.html"><tt>dnssec-signzone</tt>(1M)</a></p>
+<p class="toc level2"><a href="dodisk-1m.html"><tt>dodisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="domainname-1m.html"><tt>domainname</tt>(1M)</a></p>
+<p class="toc level2"><a href="drd-1m.html"><tt>drd</tt>(1M)</a></p>
+<p class="toc level2"><a href="drvconfig-1m.html"><tt>drvconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsbitmap-1m.html"><tt>dsbitmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfg-1m.html"><tt>dscfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfgadm-1m.html"><tt>dscfgadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfglockd-1m.html"><tt>dscfglockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsstat-1m.html"><tt>dsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsvclockd-1m.html"><tt>dsvclockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dtrace-1m.html"><tt>dtrace</tt>(1M)</a></p>
+<p class="toc level2"><a href="dumpadm-1m.html"><tt>dumpadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="editmap-1m.html"><tt>editmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="edquota-1m.html"><tt>edquota</tt>(1M)</a></p>
+<p class="toc level2"><a href="eeprom-1m.html"><tt>eeprom</tt>(1M)</a></p>
+<p class="toc level2"><a href="efdaemon-1m.html"><tt>efdaemon</tt>(1M)</a></p>
+<p class="toc level2"><a href="embedded-su-1m.html"><tt>embedded_su</tt>(1M)</a></p>
+<p class="toc level2"><a href="etrn-1m.html"><tt>etrn</tt>(1M)</a></p>
+<p class="toc level2"><a href="fbconfig-1m.html"><tt>fbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="fbconf-xorg-1m.html"><tt>fbconf_xorg</tt>(1M)</a></p>
+<p class="toc level2"><a href="fcadm-1m.html"><tt>fcadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fcinfo-1m.html"><tt>fcinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="fdetach-1m.html"><tt>fdetach</tt>(1M)</a></p>
+<p class="toc level2"><a href="fdisk-1m.html"><tt>fdisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="ff-1m.html"><tt>ff</tt>(1M)</a></p>
+<p class="toc level2"><a href="ffbconfig-1m.html"><tt>ffbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ff-ufs-1m.html"><tt>ff_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fingerd-1m.html"><tt>fingerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fiocompress-1m.html"><tt>fiocompress</tt>(1M)</a></p>
+<p class="toc level2"><a href="flar-1m.html"><tt>flar</tt>(1M)</a></p>
+<p class="toc level2"><a href="flarcreate-1m.html"><tt>flarcreate</tt>(1M)</a></p>
+<p class="toc level2"><a href="flowadm-1m.html"><tt>flowadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="flowstat-1m.html"><tt>flowstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmadm-1m.html"><tt>fmadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmd-1m.html"><tt>fmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmdump-1m.html"><tt>fmdump</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmstat-1m.html"><tt>fmstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmthard-1m.html"><tt>fmthard</tt>(1M)</a></p>
+<p class="toc level2"><a href="format-1m.html"><tt>format</tt>(1M)</a></p>
+<p class="toc level2"><a href="fpsd-1m.html"><tt>fpsd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fruadm-1m.html"><tt>fruadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-1m.html"><tt>fsck</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-cachefs-1m.html"><tt>fsck_cachefs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-pcfs-1m.html"><tt>fsck_pcfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-udfs-1m.html"><tt>fsck_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-ufs-1m.html"><tt>fsck_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-1m.html"><tt>fsdb</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-udfs-1m.html"><tt>fsdb_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-ufs-1m.html"><tt>fsdb_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsirand-1m.html"><tt>fsirand</tt>(1M)</a></p>
+<p class="toc level2"><a href="fssnap-1m.html"><tt>fssnap</tt>(1M)</a></p>
+<p class="toc level2"><a href="fssnap-ufs-1m.html"><tt>fssnap_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsstat-1m.html"><tt>fsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fstyp-1m.html"><tt>fstyp</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpaddhost-1m.html"><tt>ftpaddhost</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpconfig-1m.html"><tt>ftpconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpd-1m.html"><tt>ftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftprestart-1m.html"><tt>ftprestart</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpshut-1m.html"><tt>ftpshut</tt>(1M)</a></p>
+<p class="toc level2"><a href="fuser-1m.html"><tt>fuser</tt>(1M)</a></p>
+<p class="toc level2"><a href="fwflash-1m.html"><tt>fwflash</tt>(1M)</a></p>
+<p class="toc level2"><a href="fwtmp-1m.html"><tt>fwtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdev-1m.html"><tt>getdev</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdevpolicy-1m.html"><tt>getdevpolicy</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdgrp-1m.html"><tt>getdgrp</tt>(1M)</a></p>
+<p class="toc level2"><a href="getent-1m.html"><tt>getent</tt>(1M)</a></p>
+<p class="toc level2"><a href="gettable-1m.html"><tt>gettable</tt>(1M)</a></p>
+<p class="toc level2"><a href="getty-1m.html"><tt>getty</tt>(1M)</a></p>
+<p class="toc level2"><a href="getvol-1m.html"><tt>getvol</tt>(1M)</a></p>
+<p class="toc level2"><a href="gfxconfig-1m.html"><tt>GFXconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="gkadmin-1m.html"><tt>gkadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupadd-1m.html"><tt>groupadd</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupdel-1m.html"><tt>groupdel</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupmod-1m.html"><tt>groupmod</tt>(1M)</a></p>
+<p class="toc level2"><a href="growfs-1m.html"><tt>growfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="grpck-1m.html"><tt>grpck</tt>(1M)</a></p>
+<p class="toc level2"><a href="gsscred-1m.html"><tt>gsscred</tt>(1M)</a></p>
+<p class="toc level2"><a href="gssd-1m.html"><tt>gssd</tt>(1M)</a></p>
+<p class="toc level2"><a href="hald-1m.html"><tt>hald</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-device-1m.html"><tt>hal-device</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-fdi-validate-1m.html"><tt>hal-fdi-validate</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-1m.html"><tt>hal-find</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-by-capability-1m.html"><tt>hal-find-by-capability</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-by-property-1m.html"><tt>hal-find-by-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-get-property-1m.html"><tt>hal-get-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-set-property-1m.html"><tt>hal-set-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="halt-1m.html"><tt>halt</tt>(1M)</a></p>
+<p class="toc level2"><a href="hextoalabel-1m.html"><tt>hextoalabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="host-1m.html"><tt>host</tt>(1M)</a></p>
+<p class="toc level2"><a href="hostconfig-1m.html"><tt>hostconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="hotplug-1m.html"><tt>hotplug</tt>(1M)</a></p>
+<p class="toc level2"><a href="hotplugd-1m.html"><tt>hotplugd</tt>(1M)</a></p>
+<p class="toc level2"><a href="htable-1m.html"><tt>htable</tt>(1M)</a></p>
+<p class="toc level2"><a href="ickey-1m.html"><tt>ickey</tt>(1M)</a></p>
+<p class="toc level2"><a href="id-1m.html"><tt>id</tt>(1M)</a></p>
+<p class="toc level2"><a href="idmap-1m.html"><tt>idmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="idmapd-1m.html"><tt>idmapd</tt>(1M)</a></p>
+<p class="toc level2"><a href="idsconfig-1m.html"><tt>idsconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ifconfig-1m.html"><tt>ifconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="if-mpadm-1m.html"><tt>if_mpadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ifparse-1m.html"><tt>ifparse</tt>(1M)</a></p>
+<p class="toc level2"><a href="iiadm-1m.html"><tt>iiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="iicpbmp-1m.html"><tt>iicpbmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="iicpshd-1m.html"><tt>iicpshd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ikeadm-1m.html"><tt>ikeadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ikecert-1m.html"><tt>ikecert</tt>(1M)</a></p>
+<p class="toc level2"><a href="ilbadm-1m.html"><tt>ilbadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ilbd-1m.html"><tt>ilbd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqadmin-1m.html"><tt>imqadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqbrokerd-1m.html"><tt>imqbrokerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqcmd-1m.html"><tt>imqcmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqdbmgr-1m.html"><tt>imqdbmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqkeytool-1m.html"><tt>imqkeytool</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqobjmgr-1m.html"><tt>imqobjmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqusermgr-1m.html"><tt>imqusermgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.chargend-1m.html"><tt>in.chargend</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.comsat-1m.html"><tt>in.comsat</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.daytimed-1m.html"><tt>in.daytimed</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.dhcpd-1m.html"><tt>in.dhcpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.discardd-1m.html"><tt>in.discardd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.echod-1m.html"><tt>in.echod</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetadm-1m.html"><tt>inetadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetconv-1m.html"><tt>inetconv</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetd-1m.html"><tt>inetd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.fingerd-1m.html"><tt>in.fingerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="infocmp-1m.html"><tt>infocmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ftpd-1m.html"><tt>in.ftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.iked-1m.html"><tt>in.iked</tt>(1M)</a></p>
+<p class="toc level2"><a href="init-1m.html"><tt>init</tt>(1M)</a></p>
+<p class="toc level2"><a href="init.sma-1m.html"><tt>init.sma</tt>(1M)</a></p>
+<p class="toc level2"><a href="init.wbem-1m.html"><tt>init.wbem</tt>(1M)</a></p>
+<p class="toc level2"><a href="inityp2l-1m.html"><tt>inityp2l</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.lpd-1m.html"><tt>in.lpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.mpathd-1m.html"><tt>in.mpathd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.named-1m.html"><tt>in.named</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ndpd-1m.html"><tt>in.ndpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rarpd-1m.html"><tt>in.rarpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rdisc-1m.html"><tt>in.rdisc</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rexecd-1m.html"><tt>in.rexecd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ripngd-1m.html"><tt>in.ripngd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rlogind-1m.html"><tt>in.rlogind</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.routed-1m.html"><tt>in.routed</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rshd-1m.html"><tt>in.rshd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rwhod-1m.html"><tt>in.rwhod</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-1m.html"><tt>install</tt>(1M)</a></p>
+<p class="toc level2"><a href="installboot-1m.html"><tt>installboot</tt>(1M)</a></p>
+<p class="toc level2"><a href="installer-1m.html"><tt>installer</tt>(1M)</a></p>
+<p class="toc level2"><a href="installf-1m.html"><tt>installf</tt>(1M)</a></p>
+<p class="toc level2"><a href="installgrub-1m.html"><tt>installgrub</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-scripts-1m.html"><tt>install_scripts</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-solaris-1m.html"><tt>install-solaris</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.stdiscover-1m.html"><tt>in.stdiscover</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.stlisten-1m.html"><tt>in.stlisten</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.talkd-1m.html"><tt>in.talkd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.telnetd-1m.html"><tt>in.telnetd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.tftpd-1m.html"><tt>in.tftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.timed-1m.html"><tt>in.timed</tt>(1M)</a></p>
+<p class="toc level2"><a href="intrd-1m.html"><tt>intrd</tt>(1M)</a></p>
+<p class="toc level2"><a href="intrstat-1m.html"><tt>intrstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.uucpd-1m.html"><tt>in.uucpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="iostat-1m.html"><tt>iostat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipaddrsel-1m.html"><tt>ipaddrsel</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipadm-1m.html"><tt>ipadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipf-1m.html"><tt>ipf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipfs-1m.html"><tt>ipfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipfstat-1m.html"><tt>ipfstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmgmtd-1m.html"><tt>ipmgmtd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmon-1m.html"><tt>ipmon</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmpstat-1m.html"><tt>ipmpstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipnat-1m.html"><tt>ipnat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ippool-1m.html"><tt>ippool</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipqosconf-1m.html"><tt>ipqosconf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipsecalgs-1m.html"><tt>ipsecalgs</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipsecconf-1m.html"><tt>ipsecconf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipseckey-1m.html"><tt>ipseckey</tt>(1M)</a></p>
+<p class="toc level2"><a href="iscsiadm-1m.html"><tt>iscsiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="isns-1m.html"><tt>isns</tt>(1M)</a></p>
+<p class="toc level2"><a href="isnsadm-1m.html"><tt>isnsadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="itadm-1m.html"><tt>itadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="itu-1m.html"><tt>itu</tt>(1M)</a></p>
+<p class="toc level2"><a href="k5srvutil-1m.html"><tt>k5srvutil</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadb-1m.html"><tt>kadb</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmin-1m.html"><tt>kadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmind-1m.html"><tt>kadmind</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmin.local-1m.html"><tt>kadmin.local</tt>(1M)</a></p>
+<p class="toc level2"><a href="kcfd-1m.html"><tt>kcfd</tt>(1M)</a></p>
+<p class="toc level2"><a href="kclient-1m.html"><tt>kclient</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdb5-ldap-util-1m.html"><tt>kdb5_ldap_util</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdb5-util-1m.html"><tt>kdb5_util</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdcmgr-1m.html"><tt>kdcmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="kernel-1m.html"><tt>kernel</tt>(1M)</a></p>
+<p class="toc level2"><a href="keyserv-1m.html"><tt>keyserv</tt>(1M)</a></p>
+<p class="toc level2"><a href="killall-1m.html"><tt>killall</tt>(1M)</a></p>
+<p class="toc level2"><a href="kmscfg-1m.html"><tt>kmscfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="kprop-1m.html"><tt>kprop</tt>(1M)</a></p>
+<p class="toc level2"><a href="kpropd-1m.html"><tt>kpropd</tt>(1M)</a></p>
+<p class="toc level2"><a href="kproplog-1m.html"><tt>kproplog</tt>(1M)</a></p>
+<p class="toc level2"><a href="krb5kdc-1m.html"><tt>krb5kdc</tt>(1M)</a></p>
+<p class="toc level2"><a href="ksslcfg-1m.html"><tt>ksslcfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="kstat-1m.html"><tt>kstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ktkt-warnd-1m.html"><tt>ktkt_warnd</tt>(1M)</a></p>
+<p class="toc level2"><a href="labeld-1m.html"><tt>labeld</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-1m.html"><tt>labelit</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-hsfs-1m.html"><tt>labelit_hsfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-udfs-1m.html"><tt>labelit_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-ufs-1m.html"><tt>labelit_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="lastlogin-1m.html"><tt>lastlogin</tt>(1M)</a></p>
+<p class="toc level2"><a href="latencytop-1m.html"><tt>latencytop</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldapaddent-1m.html"><tt>ldapaddent</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldap-cachemgr-1m.html"><tt>ldap_cachemgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldapclient-1m.html"><tt>ldapclient</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldmad-1m.html"><tt>ldmad</tt>(1M)</a></p>
+<p class="toc level2"><a href="link-1m.html"><tt>link</tt>(1M)</a></p>
+<p class="toc level2"><a href="listdgrp-1m.html"><tt>listdgrp</tt>(1M)</a></p>
+<p class="toc level2"><a href="listen-1m.html"><tt>listen</tt>(1M)</a></p>
+<p class="toc level2"><a href="llc2-loop-1m.html"><tt>llc2_loop</tt>(1M)</a></p>
+<p class="toc level2"><a href="lms-1m.html"><tt>lms</tt>(1M)</a></p>
+<p class="toc level2"><a href="localeadm-1m.html"><tt>localeadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="localectr-1m.html"><tt>localectr</tt>(1M)</a></p>
+<p class="toc level2"><a href="locator-1m.html"><tt>locator</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockd-1m.html"><tt>lockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockfs-1m.html"><tt>lockfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockstat-1m.html"><tt>lockstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="lofiadm-1m.html"><tt>lofiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="logadm-1m.html"><tt>logadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="logins-1m.html"><tt>logins</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpadmin-1m.html"><tt>lpadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpfilter-1m.html"><tt>lpfilter</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpforms-1m.html"><tt>lpforms</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpget-1m.html"><tt>lpget</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpmove-1m.html"><tt>lpmove</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpsched-1m.html"><tt>lpsched</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpset-1m.html"><tt>lpset</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpshut-1m.html"><tt>lpshut</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpsystem-1m.html"><tt>lpsystem</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpusers-1m.html"><tt>lpusers</tt>(1M)</a></p>
+<p class="toc level2"><a href="lu-1m.html"><tt>lu</tt>(1M)</a></p>
+<p class="toc level2"><a href="luactivate-1m.html"><tt>luactivate</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucancel-1m.html"><tt>lucancel</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucompare-1m.html"><tt>lucompare</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucreate-1m.html"><tt>lucreate</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucurr-1m.html"><tt>lucurr</tt>(1M)</a></p>
+<p class="toc level2"><a href="ludelete-1m.html"><tt>ludelete</tt>(1M)</a></p>
+<p class="toc level2"><a href="ludesc-1m.html"><tt>ludesc</tt>(1M)</a></p>
+<p class="toc level2"><a href="lufslist-1m.html"><tt>lufslist</tt>(1M)</a></p>
+<p class="toc level2"><a href="lumake-1m.html"><tt>lumake</tt>(1M)</a></p>
+<p class="toc level2"><a href="lumount-1m.html"><tt>lumount</tt>(1M)</a></p>
+<p class="toc level2"><a href="lurename-1m.html"><tt>lurename</tt>(1M)</a></p>
+<p class="toc level2"><a href="lustatus-1m.html"><tt>lustatus</tt>(1M)</a></p>
+<p class="toc level2"><a href="luumount-1m.html"><tt>luumount</tt>(1M)</a></p>
+<p class="toc level2"><a href="luupgrade-1m.html"><tt>luupgrade</tt>(1M)</a></p>
+<p class="toc level2"><a href="luxadm-1m.html"><tt>luxadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="m64config-1m.html"><tt>m64config</tt>(1M)</a></p>
+<p class="toc level2"><a href="mail.local-1m.html"><tt>mail.local</tt>(1M)</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-123700.html">System Administration Commands - Part 2</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-235692.html">System Administration Commands - Part 3</a></p>
+
+</div>
+
+<a name="REFMAN1Mcontent"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1Mboot-1m"></a><a name="boot-1m"></a><h3>boot</h3>
+<p>- start the system kernel or a standalone program</p><h3>Synopsis</h3>
+<h4>SPARC</h4>
+<pre><tt>boot</tt> [<var>OBP</var> <var>names</var>] [<var>file</var>] [<tt>-aLV</tt>] [<tt>-F</tt> <var>object</var>] [<tt>-D</tt> <var>default-file</var>]
+     [<tt>-Z</tt> <var>dataset</var>] [<var>boot-flags</var>] [<tt>&#45;&#45;</tt>] [<var>client-program-args</var>]</pre><h4>x86</h4>
+<pre><tt>kernel$</tt> <tt>/platform/i86pc/kernel/$ISADIR/unix</tt> [<var>boot-args</var>]
+     [<tt>-B</tt> <var>prop</var>=<var>val</var> [,<var>val</var>...]]</pre><h3>Description</h3>
+<p>Bootstrapping is the process of loading and executing a standalone program. For
+the purpose of this discussion, bootstrapping means the process of loading and
+executing the bootable operating system. Typically, the standalone program is the operating
+system kernel (see <a href="kernel-1m.html"><tt>kernel</tt>(1M)</a>), but any standalone program can be booted instead.
+On a SPARC-based system, the diagnostic monitor for a machine is a
+good example of a standalone program other than the operating system that can
+be booted.</p><p>If the standalone is identified as a dynamically-linked executable, <tt>boot</tt> will load
+the interpreter (linker/loader) as indicated by the executable format and then transfer
+control to the interpreter. If the standalone is statically-linked, it will jump
+directly to the standalone.</p><p>Once the kernel is loaded, it starts the UNIX system, mounts the
+necessary file systems (see <a href="../821-1473/vfstab-4.html#REFMAN4vfstab-4"><tt>vfstab</tt>(4)</a>), and runs <tt>/sbin/init</tt> to bring the system to
+the &#8220;initdefault&#8221; state specified in <tt>/etc/inittab</tt>. See <a href="../821-1473/inittab-4.html#REFMAN4inittab-4"><tt>inittab</tt>(4)</a>.</p><h4>SPARC Bootstrap Procedure</h4>
+<p>On SPARC based systems, the bootstrap procedure on most machines consists of
+the following basic phases.</p><p>After the machine is turned on, the system firmware (in PROM) executes
+power-on self-test (POST). The form and scope of these tests depends on
+the version of the firmware in your system.</p><p>After the tests have been completed successfully, the firmware attempts to autoboot
+if the appropriate flag has been set in the non-volatile storage area
+used by the firmware. The name of the file to load, and
+the device to load it from can also be manipulated.</p><p>These flags and names can be set using the <a href="eeprom-1m.html"><tt>eeprom</tt>(1M)</a> command from
+the shell, or by using PROM commands from the <tt>ok</tt> prompt after the
+system has been halted.</p><p>The second level program is either a fileystem-specific boot block (when booting
+from a disk), or <tt>inetboot</tt> or <tt>wanboot</tt> (when booting across the network).</p><p>Network Booting</p><p>Network booting occurs in two steps: the client first obtains an IP
+address and any other parameters necessary to permit it to load the
+second-stage booter. The second-stage booter in turn loads the boot archive from
+the boot device.</p><p>An IP address can be obtained in one of three ways: RARP,
+DHCP, or manual configuration, depending on the functions available in and configuration
+of the PROM. Machines of the <tt>sun4u</tt> and <tt>sun4v</tt> kernel architectures have
+DHCP-capable PROMs.</p><p>The boot command syntax for specifying the two methods of network booting
+are:</p><pre>boot net:rarp
+boot net:dhcp</pre><p>The command:</p><pre>boot net</pre><p>without a <tt>rarp</tt> or <tt>dhcp</tt> specifier, invokes the default method for network
+booting over the network interface for which <tt>net</tt> is an alias.</p><p>The sequence of events for network booting using RARP/<tt>bootparams</tt> is described in
+the following paragraphs. The sequence for DHCP follows the RARP/<tt>bootparams</tt> description. </p><p>When booting over the network using RARP/<tt>bootparams</tt>, the PROM begins by broadcasting
+a reverse ARP request until it receives a reply. When a reply
+is received, the PROM then broadcasts a TFTP request to fetch the
+first block of <tt>inetboot</tt>. Subsequent requests will be sent to the server that
+initially answered the first block request. After loading, <tt>inetboot</tt> will also use
+reverse ARP to fetch its IP address, then broadcast <tt>bootparams</tt> RPC calls
+(see <a href="../821-1473/bootparams-4.html#REFMAN4bootparams-4"><tt>bootparams</tt>(4)</a>) to locate configuration information and its root file system. <tt>inetboot</tt>
+then loads the boot archive by means of NFS and transfers control
+to that archive.</p><p>When booting over the network using DHCP, the PROM broadcasts the hardware
+address and kernel architecture and requests an IP address, boot parameters, and
+network configuration information. After a DHCP server responds and is selected (from
+among potentially multiple servers), that server sends to the client an IP address
+and all other information needed to boot the client. After receipt of
+this information, the client PROM examines the name of the file to
+be loaded, and will behave in one of two ways, depending on
+whether the file's name appears to be an HTTP URL. If it
+does not, the PROM downloads <tt>inetboot</tt>, loads that file into memory, and executes
+it. <tt>inetboot</tt> loads the boot archive, which takes over the machine and
+releases <tt>inetboot</tt>. Startup scripts then initiate the DHCP agent (see <a href="dhcpagent-1m.html"><tt>dhcpagent</tt>(1M)</a>), which
+implements further DHCP activities.</p><p>If the file to be loaded is an HTTP URL, the PROM
+will use HTTP to load the referenced file. If the client has
+been configured with an HMAC SHA-1 key, it will check the integrity
+of the loaded file before proceeding to execute it. The file is
+expected to be the <tt>wanboot</tt> binary. The WAN boot process can be configured
+to use either DHCP or NVRAM properties to discover the install server
+and router and the proxies needed to connect to it. When <tt>wanboot</tt>
+begins executing, it determines whether sufficient information is available to it to
+allow it to proceed. If any necessary information is missing, it will either
+exit with an appropriate error or bring up a command interpreter and
+prompt for further configuration information. Once <tt>wanboot</tt> has obtained the necessary information,
+it loads the boot loader into memory by means of HTTP. If an
+encryption key has been installed on the client, <tt>wanboot</tt> will verify the
+boot loader's signature and its accompanying hash. Presence of an encryption key
+but no hashing key is an error.</p><p>The <tt>wanboot</tt> boot loader can communicate with the client using either HTTP
+or secure HTTP. If the former, and if the client has been
+configured with an HMAC SHA-1 key, the boot loader will perform an
+integrity check of the root file system. Once the root file system
+has been loaded into memory (and possibly had an integrity check performed), the
+boot archive is transferred from the server. If provided with a <tt>boot_logger</tt>
+URL by means of the <a href="../821-1473/wanboot.conf-4.html#REFMAN4wanboot.conf-4"><tt>wanboot.conf</tt>(4)</a> file, <tt>wanboot</tt> will periodically log its
+progress.</p><p>Not all PROMs are capable of consuming URLs. You can determine whether
+a client is so capable using the <tt>list-security-keys</tt> OBP command (see <a href="monitor-1m.html"><tt>monitor</tt>(1M)</a>).</p><p>WAN booting is not currently available on the x86 platform.</p><p>The <tt>wanboot</tt> Command Line</p><p>When the client program is <tt>wanboot</tt>, it accepts <tt>client-program-args</tt> of the form:</p><pre>boot ... -o <var>opt1</var>[,<var>opt2</var>[,...]]</pre><p>where each option may be an action:</p><dl><dt><tt>dhcp</tt></dt>
+<dd><p>Require <tt>wanboot</tt> to obtain configuration parameters by means of DHCP.</p></dd>
+<dt><tt>prompt</tt></dt>
+<dd><p>Cause <tt>wanboot</tt> to enter its command interpreter.</p></dd>
+<dt><var>&#60;cmd></var></dt>
+<dd><p>One of the interpreter commands listed below.</p></dd>
+</dl>
+<p>...or an assignment, using the interpreter's parameter names listed below.</p><p>The <tt>wanboot</tt> Command Interpreter</p><p>The <tt>wanboot</tt> command interpreter is invoked by supplying a <tt>client-program-args</tt> of &#8220;<tt>-o prompt</tt>&#8221;
+when booting. Input consists of single commands or assignments, or a comma-separated
+list of commands or assignments. The configuration parameters are:</p><dl><dt><tt>host-ip</tt></dt>
+<dd><p>IP address of the client (in dotted-decimal notation)</p></dd>
+<dt><tt>router-ip</tt></dt>
+<dd><p>IP address of the default router (in dotted-decimal notation)</p></dd>
+<dt><tt>subnet-mask</tt></dt>
+<dd><p>subnet mask (in dotted-decimal notation)</p></dd>
+<dt><tt>client-id</tt></dt>
+<dd><p>DHCP client identifier (a quoted ASCII string or hex ASCII)</p></dd>
+<dt><tt>hostname</tt></dt>
+<dd><p>hostname to request in DHCP transactions (ASCII)</p></dd>
+<dt><tt>http-proxy</tt></dt>
+<dd><p>HTTP proxy server specification (IPADDR[:PORT])</p></dd>
+</dl>
+<p>The key names are:</p><dl><dt><tt>3des</tt></dt>
+<dd><p>the triple DES encryption key (48 hex ASCII characters)</p></dd>
+<dt><tt>aes</tt></dt>
+<dd><p>the AES encryption key (32 hex ASCII characters)</p></dd>
+<dt><tt>sha1</tt></dt>
+<dd><p>the HMAC SHA-1 signature key (40 hex ASCII characters)</p></dd>
+</dl>
+<p>Finally, the URL or the WAN boot CGI is referred to by
+means of:</p><dl><dt><tt>bootserver</tt></dt>
+<dd><p>URL of WAN boot's CGI (the equivalent of OBP's <tt>file</tt> parameter)</p></dd>
+</dl>
+<p>The interpreter accepts the following commands:</p><dl><dt><tt>help</tt></dt>
+<dd><p>Print a brief description of the available commands</p></dd>
+<dt><tt><var>var</var>=<var>val</var></tt></dt>
+<dd><p>Assign <var>val</var> to <var>var</var>, where <var>var</var> is one of the configuration parameter names, the key names, or <tt>bootserver</tt>.</p></dd>
+<dt><tt><var>var</var>=</tt></dt>
+<dd><p>Unset parameter <var>var</var>.</p></dd>
+<dt><tt>list</tt></dt>
+<dd><p>List all parameters and their values (key values retrieved by means of OBP are never shown).</p></dd>
+<dt><tt>prompt</tt></dt>
+<dd><p>Prompt for values for unset parameters. The name of each parameter and its current value (if any) is printed, and the user can accept this value (press Return) or enter a new value.</p></dd>
+<dt><tt>go</tt></dt>
+<dd><p>Once the user is satisfied that all values have been entered, leave the interpreter and continue booting.</p></dd>
+<dt><tt>exit</tt></dt>
+<dd><p>Quit the boot interpreter and return to OBP's <tt>ok</tt> prompt.</p></dd>
+</dl>
+<p>Any of these assignments or commands can be passed on the command
+line as part of the <tt>-o</tt> options, subject to the OBP limit
+of 128 bytes for boot arguments. For example, <tt>-o</tt> <tt>list,go</tt> would simply
+list current (default) values of the parameters and then continue booting.</p><h4>iSCSI Boot</h4>
+<p>iSCSI boot is supported on both x86 and SPARC.</p>iSCSI Boot on x86<p>For iSCSI boot on x86, the host being booted must be equipped
+with NIC(s) capable of iBFT (iSCSI Boot Firmware Table) or have the
+mainboard's BIOS be iBFT-capable. iBFT, defined in the Advanced Configuration and Power
+Interface (ACPI) 3.0b specification, specifies a block of information that contains various parameters
+that are useful to the iSCSI Boot process.</p><p>Firmware implementing iBFT presents an iSCSI disk in the BIOS during startup
+as a bootable device by establishing the connection to the iSCSI target.
+The rest of the process of iSCSI booting is the same as
+booting from a local disk.</p><p>To configure the iBFT properly, users need to refer to the documentation
+from their hardware vendors.</p>iSCSI Boot on SPARC<p>iSCSI boot on SPARC is supported with OpenBoot level 4.31 and above,
+and does not require a specific NIC.</p><p>The boot command in OpenBoot takes a series of keywords to identify
+the destination iSCSI target, following the <var>keyword</var>=<var>value</var> format. The complete form of
+the iSCSI boot command is:</p><pre>boot net:iscsi-target-ip=<var>t-ip</var>,iscsi-target-name=<var>name</var>
+     host-ip=<var>h-ip</var>[,router-ip=<var>r-ip</var>]
+     [,subnet-mask=<var>m-ip</var>]
+     [,iscsi-port=<var>port</var>]
+     [,iscsi-lun=<var>lun</var>]
+     [,iscsi-partition=<var>partition</var>]</pre><p>The descriptions of the preceding keywords are as follows:</p><dl><dt><tt>host-ip</tt></dt>
+<dd><p>IP address of booting host.</p></dd>
+<dt><tt>router-ip</tt></dt>
+<dd><p>IP address of routing gateway.</p></dd>
+<dt><tt>subnet-mask</tt></dt>
+<dd><p>Subnet mask of <tt>host-ip</tt>.</p></dd>
+<dt><tt>iscsi-target-ip</tt></dt>
+<dd><p>IP address of iSCSI target storing OS.</p></dd>
+<dt><tt>iscsi-target-name</tt></dt>
+<dd><p>Name of iSCSI target storing OS.</p></dd>
+<dt><tt>iscsi-partition</tt></dt>
+<dd><p>Partition containing the bootable root.</p></dd>
+<dt><tt>iscsi-port</tt></dt>
+<dd><p>IP port of the target.</p></dd>
+<dt><tt>iscsi-lun</tt></dt>
+<dd><p>LUN to be booted off on target.</p></dd>
+</dl>
+<p>The values of <tt>iscsi-target-ip</tt>, <tt>route-ip</tt>, and <tt>subnet-mask</tt> are in standard, IPv4 dotted-decimal
+format; for example, <tt>255.255.255.0</tt> for <tt>subnet-mask</tt>. IPv6 is not supported in the
+current OpenBoot implementation.</p><p>The value of <tt>iscsi-port</tt>, a decimal number, is in the range of
+1 to 65535.</p><p>The value of <tt>iscsi-lun</tt> is in the format of a dashed hexadecimal
+LUN, <var>ffff</var>-<var>ffff</var>-<var>ffff</var>-<var>ffff</var>. Please refer to section 5 of RFC 4173 for details.
+Leading zeroes and trailing dashes can be excluded, thus, <tt>3</tt>, for example, is
+equivalent to <tt>0003-0000-0000-0000</tt>.</p><p>The value of <tt>iscsi-partition</tt> is one ASCII character, used to specify the
+root partition. Most commonly, it is <tt>a</tt>.</p><p>The value of <tt>iscsi-target-name</tt> is in the format of a string, as
+specified by RFC 3720 and RFC 3722.</p><p>Two security keys are added to provide CHAP authentication on the target
+side. These are:</p><dl><dt><tt>chap-user</tt></dt>
+<dd><p>CHAP name</p></dd>
+<dt><tt>chap-password</tt></dt>
+<dd><p>CHAP secret</p></dd>
+</dl>
+<p>Currently these two keys can be set with the command <tt>set-ascii-security-key</tt> at
+the Open Boot PROM (<tt>ok</tt>) prompt. For example:</p><pre>ok <b>set-ascii-security-key chap-user <var>chap name</var></b>
+ok <b>set-ascii-security-key chap-password <var>chap password</var></b></pre><p>Bi-directional authentication is not yet supported. These two variables can be changed
+only under the Open Boot PROM prompt.</p><p>RFC 4173 is supported, to retrieve iSCSI boot information from a DHCP
+server. The DHCP server must specify the Root Path option for the
+booting client, after which the client can do an iSCSI boot by
+means of the simple command:</p><pre>boot net:dhcp</pre><p>Currently the key <tt>boot-device</tt> is used to retrieve the physical boot device
+path during iSCSI boot. This key is setup during the Solaris installation.
+A manually modified key value might break iSCSI boot.</p><h4>Booting from Disk</h4>
+<p>When booting from disk, the OpenBoot PROM firmware reads the boot blocks
+from blocks 1 to 15 of the partition specified as the boot
+device. This standalone booter usually contains a file system-specific reader capable of
+reading the boot archive.</p><p>If the pathname to the standalone is relative (does not begin with
+a slash), the second level boot will look for the standalone in
+a platform-dependent search path. This path is guaranteed to contain <tt>/platform/</tt><var>platform-name</var>. Many
+SPARC platforms next search the platform-specific path entry <tt>/platform/</tt><var>hardware-class-name</var>. See <a href="../821-1474/filesystem-5.html#REFMAN5filesystem-5"><tt>filesystem</tt>(5)</a>. If the
+pathname is absolute, <tt>boot</tt> will use the specified path. The <tt>boot</tt> program then
+loads the standalone at the appropriate address, and then transfers control.</p><p>Once the boot archive has been transferred from the boot device, Solaris
+can initialize and take over control of the machine. This process is
+further described in the &#8220;Boot Archive Phase,&#8221; below, and is identical on
+all platforms.</p><p>If the filename is not given on the command line or otherwise
+specified, for example, by the <tt>boot-file</tt> NVRAM variable, <tt>boot</tt> chooses an appropriate
+default file to load based on what software is installed on the
+system and the capabilities of the hardware and firmware.</p><p>The path to the kernel must not contain any whitespace.</p><h4>Booting from ZFS</h4>
+<p>Booting from ZFS differs from booting from UFS in that, with ZFS,
+a device specifier identifies a storage pool, not a single root file
+system. A storage pool can contain multiple bootable datasets (that is, root
+file systems). Therefore, when booting from ZFS, it is not sufficient to
+specify a boot device. One must also identify a root file system within
+the pool that was identified by the boot device. By default, the
+dataset selected for booting is the one identified by the pool's <tt>bootfs</tt>
+property. This default selection can be overridden by specifying an alternate bootable dataset
+with the <tt>-Z</tt> option.</p><h4>Boot Archive Phase</h4>
+<p>The boot archive contains a file system image that is mounted using
+an in-memory disk. The image is self-describing, specifically containing a file system
+reader in the boot block. This file system reader mounts and opens
+the RAM disk image, then reads and executes the kernel contained within it.
+By default, this kernel is in:</p><pre>/platform/`uname -i`/kernel/unix</pre><p>If booting from ZFS, the pathnames of both the archive and the
+kernel file are resolved in the root file system (that is, dataset)
+selected for booting as described in the previous section.</p><p>The initialization of the kernel continues by loading necessary drivers and modules
+from the in-memory filesystem until I/O can be turned on and the
+root filesystem mounted. Once the root filesystem is mounted, the in-memory filesystem
+is no longer needed and is discarded.</p><h4>OpenBoot PROM <tt>boot</tt> Command Behavior</h4>
+<p>The OpenBoot <tt>boot</tt> command takes arguments of the following form:</p><pre>ok boot [<var>device-specifier</var>] [<var>arguments</var>]</pre><p>The default <tt>boot</tt> command has no arguments:</p><pre>ok boot</pre><p>If no <var>device-specifier</var> is given on the <tt>boot</tt> command line, OpenBoot typically
+uses the <var>boot-device</var> or <var>diag-device</var> <tt>NVRAM</tt> variable. If no optional <var>arguments</var> are given
+on the command line, OpenBoot typically uses the <var>boot-file</var> or <var>diag-file</var> <tt>NVRAM</tt>
+variable as default <tt>boot</tt> arguments. (If the system is in diagnostics mode,
+<var>diag-device</var> and <var>diag-file</var> are used instead of <var>boot-device</var> and <var>boot-file</var>).</p><p><var>arguments</var> may include more than one string. All <var>argument</var> strings are passed
+to the secondary booter; they are not interpreted by OpenBoot. </p><p>If any <var>arguments</var> are specified on the <tt>boot</tt> command line, then neither
+the <var>boot-file</var> nor the <var>diag-file</var> <tt>NVRAM</tt> variable is used. The contents of
+the <tt>NVRAM</tt> variables are not merged with command line arguments. For example, the
+command:</p><pre>ok <tt>boot</tt> <tt>-s</tt></pre><p>ignores the settings in both <var>boot-file</var> and <var>diag-file</var>; it interprets the string
+<tt>"-s"</tt> as <var>arguments</var>. <tt>boot</tt> will not use the contents of <var>boot-file</var> or
+<var>diag-file</var>.</p><p>With older PROMs, the command:</p><pre>ok <tt>boot net</tt></pre><p>took no arguments, using instead the settings in <var>boot-file</var> or <var>diag-file</var> (if
+set) as the default file name and arguments to pass to boot.
+In most cases, it is best to allow the <tt>boot</tt> command to
+choose an appropriate default based upon the system type, system hardware and firmware,
+and upon what is installed on the root file system. Changing <var>boot-file</var>
+or <var>diag-file</var> can generate unexpected results in certain circumstances.</p><p>This behavior is found on most OpenBoot 2.x and 3.x based systems.
+Note that differences may occur on some platforms.</p><p>The command:</p><p>ok <tt><b>boot cdrom</b></tt></p><p>...also normally takes no arguments. Accordingly, if <var>boot-file</var> is set to the
+64-bit kernel filename and you attempt to boot the installation CD or
+DVD with <tt>boot cdrom</tt>, boot will fail if the installation media contains only
+a 32-bit kernel.</p><p>Because the contents of <var>boot-file</var> or <var>diag-file</var> can be ignored depending on
+the form of the <tt>boot</tt> command used, reliance upon <var>boot-file</var> should be
+discouraged for most production systems.</p><p>When executing a WAN boot from a local (CD or DVD) copy
+of wanboot, one must use:</p><p>ok <tt><b>boot cdrom -F wanboot - install</b></tt></p><p>Modern PROMs have enhanced the network boot support package to support the
+following syntax for arguments to be processed by the package:</p><p>[<var>protocol</var>,] [<var>key</var>=<var>value</var>,]*</p><p>All arguments are optional and can appear in any order. Commas are
+required unless the argument is at the end of the list. If
+specified, an argument takes precedence over any default values, or, if booting
+using DHCP, over configuration information provided by a DHCP server for those
+parameters.</p><p><var>protocol</var>, above, specifies the address discovery protocol to be used.</p><p>Configuration parameters, listed below, are specified as <var>key</var>=<var>value</var> attribute pairs.</p><dl><dt><tt>tftp-server</tt></dt>
+<dd><p>IP address of the TFTP server</p></dd>
+<dt><tt>file</tt></dt>
+<dd><p>file to download using TFTP or URL for WAN boot</p></dd>
+<dt><tt>host-ip</tt></dt>
+<dd><p>IP address of the client (in dotted-decimal notation)</p></dd>
+<dt><tt>router-ip</tt></dt>
+<dd><p>IP address of the default router</p></dd>
+<dt><tt>subnet-mask</tt></dt>
+<dd><p>subnet mask (in dotted-decimal notation)</p></dd>
+<dt><tt>client-id</tt></dt>
+<dd><p>DHCP client identifier</p></dd>
+<dt><tt>hostname</tt></dt>
+<dd><p>hostname to use in DHCP transactions</p></dd>
+<dt><tt>http-proxy</tt></dt>
+<dd><p>HTTP proxy server specification (IPADDR[:PORT])</p></dd>
+<dt><tt>tftp-retries</tt></dt>
+<dd><p>maximum number of TFTP retries</p></dd>
+<dt><tt>dhcp-retries</tt></dt>
+<dd><p>maximum number of DHCP retries</p></dd>
+</dl>
+<p>The list of arguments to be processed by the network boot support
+package is specified in one of two ways:</p>
+<ul><li><p>As arguments passed to the package's <tt>open</tt> method, or</p></li>
+<li><p>arguments listed in the NVRAM variable <tt>network-boot-arguments</tt>.</p></li></ul>
+<p>Arguments specified in <tt>network-boot-arguments</tt> will be processed only if there are no
+arguments passed to the package's <tt>open</tt> method.</p><p>Argument Values</p><p><var>protocol</var> specifies the address discovery protocol to be used. If present, the
+possible values are <tt>rarp</tt> or <tt>dhcp</tt>.</p><p>If other configuration parameters are specified in the new syntax and style
+specified by this document, absence of the <var>protocol</var> parameter implies manual configuration.</p><p>If no other configuration parameters are specified, or if those arguments are
+specified in the positional parameter syntax currently supported, the absence of the
+<var>protocol</var> parameter causes the network boot support package to use the platform-specific
+default address discovery protocol.</p><p>Manual configuration requires that the client be provided its IP address, the
+name of the boot file, and the address of the server providing
+the boot file image. Depending on the network configuration, it might be
+required that <tt>subnet-mask</tt> and <tt>router-ip</tt> also be specified.</p><p>If the <var>protocol</var> argument is not specified, the network boot support package
+uses the platform-specific default address discovery protocol.</p><p><tt>tftp-server</tt> is the IP address (in standard IPv4 dotted-decimal notation) of the
+TFTP server that provides the file to download if using TFTP.</p><p>When using DHCP, the value, if specified, overrides the value of the
+TFTP server specified in the DHCP response.</p><p>The TFTP RRQ is unicast to the server if one is specified
+as an argument or in the DHCP response. Otherwise, the TFTP RRQ
+is broadcast.</p><p><var>file</var> specifies the file to be loaded by TFTP from the TFTP
+server, or the URL if using HTTP. The use of HTTP is
+triggered if the file name is a URL, that is, the file
+name starts with <tt>http:</tt> (case-insensitive).</p><p>When using RARP and TFTP, the default file name is the ASCII
+hexadecimal representation of the IP address of the client, as documented in
+a preceding section of this document.</p><p>When using DHCP, this argument, if specified, overrides the name of the
+boot file specified in the DHCP response.</p><p>When using DHCP and TFTP, the default file name is constructed from
+the root node's <tt>name</tt> property, with commas (,) replaced by periods (.).</p><p>When specified on the command line, the filename must not contain slashes
+(<tt>/</tt>).</p><p>The format of URLs is described in RFC 2396. The HTTP server
+must be specified as an IP address (in standard IPv4 dotted-decimal notation).
+The optional port number is specified in decimal. If a port is
+not specified, port 80 (decimal) is implied.</p><p>The URL presented must be &#8220;safe-encoded&#8221;, that is, the package does not
+apply escape encodings to the URL presented. URLs containing commas must be
+presented as a quoted string. Quoting URLs is optional otherwise.</p><p><tt>host-ip</tt> specifies the IP address (in standard IPv4 dotted-decimal notation) of the
+client, the system being booted. If using RARP as the address discovery
+protocol, specifying this argument makes use of RARP unnecessary.</p><p>If DHCP is used, specifying the <tt>host-ip</tt> argument causes the client to
+follow the steps required of a client with an &#8220;Externally Configured Network
+Address&#8221;, as specified in RFC 2131.</p><p><tt>router-ip</tt> is the IP address (in standard IPv4 dotted-decimal notation) of a
+router on a directly connected network. The router will be used as
+the first hop for communications spanning networks. If this argument is supplied,
+the router specified here takes precedence over the preferred router specified in the
+DHCP response.</p><p><tt>subnet-mask</tt> (specified in standard IPv4 dotted-decimal notation) is the subnet mask on
+the client's network. If the subnet mask is not provided (either by
+means of this argument or in the DHCP response), the default mask
+appropriate to the network class (Class A, B, or C) of the address
+assigned to the booting client will be assumed.</p><p><tt>client-id</tt> specifies the unique identifier for the client. The DHCP client identifier
+is derived from this value. Client identifiers can be specified as:</p>
+<ul><li><p>The ASCII hexadecimal representation of the identifier, or</p></li>
+<li><p>a quoted string</p></li></ul>
+<p>Thus, <tt>client-id="openboot"</tt> and <tt>client-id=6f70656e626f6f74</tt> both represent a DHCP client identifier of 6F70656E626F6F74.</p><p>Identifiers specified on the command line must must not include slash (<tt>/</tt>)
+or spaces.</p><p>The maximum length of the DHCP client identifier is 32 bytes, or
+64 characters representing 32 bytes if using the ASCII hexadecimal form. If
+the latter form is used, the number of characters in the identifier
+must be an even number. Valid characters are 0-9, a-f, and A-F.</p><p>For correct identification of clients, the client identifier must be unique among
+the client identifiers used on the subnet to which the client is
+attached. System administrators are responsible for choosing identifiers that meet this requirement.</p><p>Specifying a client identifier on a command line takes precedence over any
+other DHCP mechanism of specifying identifiers.</p><p><tt>hostname</tt> (specified as a string) specifies the hostname to be used in
+DHCP transactions. The name might or might not be qualified with the
+local domain name. The maximum length of the hostname is 255 characters.</p>
+<div class="sgnote"><hr><p><b>Note - </b>The <tt>hostname</tt> parameter can be used in service environments that require that
+the client provide the desired hostname to the DHCP server. Clients provide
+the desired hostname to the DHCP server, which can then register the
+hostname and IP address assigned to the client with DNS.</p>
+<hr></div>
+<p><tt>http-proxy</tt> is specified in the following standard notation for a host:</p><pre><var>host</var> [":"" <var>port</var>]</pre><p>...where <var>host</var> is specified as an IP ddress (in standard IPv4 dotted-decimal
+notation) and the optional <var>port</var> is specified in decimal. If a port
+is not specified, port 8080 (decimal) is implied.</p><p><tt>tftp-retries</tt> is the maximum number of retries (specified in decimal) attempted before
+the TFTP process is determined to have failed. Defaults to using infinite
+retries.</p><p><tt>dhcp-retries</tt> is the maximum number of retries (specified in decimal) attempted before
+the DHCP process is determined to have failed. Defaults to of using
+infinite retries.</p><h4>x86 Bootstrap Procedure</h4>
+<p>On x86 based systems, the bootstrapping process consists of two conceptually distinct
+phases, kernel loading and kernel initialization. Kernel loading is implemented in GRUB
+(GRand Unified Bootloader) using the BIOS ROM on the system board, and
+BIOS extensions in ROMs on peripheral boards. The BIOS loads GRUB, starting with
+the first physical sector from a hard disk, DVD, or CD. If
+supported by the ROM on the network adapter, the BIOS can also
+download the <tt>pxegrub</tt> binary from a network boot server. Once GRUB is
+located, it executes a command in a menu to load the <tt>unix</tt> kernel
+and a pre-constructed boot archive containing kernel modules and data.</p><p>If the device identified by GRUB as the boot device contains a
+ZFS storage pool, the <tt>menu.lst</tt> file used to create the GRUB menu
+will be found in the dataset at the root of the pool's
+dataset hierarchy. This is the dataset with the same name as the
+pool itself. There is always exactly one such dataset in a pool, and
+so this dataset is well-suited for pool-wide data such as the <tt>menu.lst</tt>
+file. After the system is booted, this dataset is mounted at /<var>poolname</var>
+in the root file system.</p><p>There can be multiple bootable datasets (that is, root file systems) within
+a pool. By default, the file system in which file name entries
+in a <tt>menu.lst</tt> file are resolved is the one identified by the
+pool's <tt>bootfs</tt> property (see <a href="zpool-1m.html"><tt>zpool</tt>(1M)</a>). However, a <tt>menu.lst</tt> entry can contain a
+<tt>bootfs</tt> command, which specifies an alternate dataset in the pool. In this
+way, the <tt>menu.lst</tt> file can contain entries for multiple root file systems
+within the pool.</p><p>Kernel initialization starts when GRUB finishes loading the boot archive and hands
+control over to the <tt>unix</tt> binary. At this point, GRUB becomes inactive
+and no more I/O occurs with the boot device. The Unix operating
+system initializes, links in the necessary modules from the boot archive and mounts
+the root file system on the real root device. At this point,
+the kernel regains storage I/O, mounts additional file systems (see <a href="../821-1473/vfstab-4.html#REFMAN4vfstab-4"><tt>vfstab</tt>(4)</a>), and starts
+various operating system services (see <a href="../821-1474/smf-5.html#REFMAN5smf-5"><tt>smf</tt>(5)</a>).</p><h4>Enabling Automatic Rebooting (x86)</h4>
+<p>The Solaris operating system supports an <a href="../821-1474/smf-5.html#REFMAN5smf-5"><tt>smf</tt>(5)</a> property that enables a system
+to automatically reboot from the current boot device, to recover from conditions such
+as an out-of-date boot archive.</p><p>The service <tt>svc:/system/boot-config:default</tt> contains the boolean property <tt>auto-reboot-safe</tt>, which is set to
+<tt>false</tt> by default. Setting it to <tt>true</tt> communicates that both the system's
+BIOS and default GRUB menu entry are set to boot from the current
+boot device. The value of this property can be changed using <a href="svccfg-1m.html"><tt>svccfg</tt>(1M)</a>
+and <a href="svcadm-1m.html"><tt>svcadm</tt>(1M)</a>. For example, to set <tt>auto-reboot-safe</tt> to enable automatic rebooting, enter
+a command such as:</p><pre>example# <b>svccfg -s svc:/system/boot-config:default \</b>
+      <b>setprop config/auto-reboot-safe = true</b></pre><p>Most systems are configured for automatic reboot from the current boot device.
+However, in some instances, automatic rebooting to an unknown operating system might
+produce undesirable results. For these instances, the <tt>auto-reboot-safe</tt> property allows you to
+specify the behavior you want.</p><h4>Failsafe Mode</h4>
+<p>A requirement of booting from a root filesystem image built into a
+boot archive then remounting root onto the actual root device is that
+the contents of the boot archive and the root filesystem must be
+consistent. Otherwise, the proper operation and integrity of the machine cannot be
+guaranteed.</p><p>The term &#8220;consistent&#8221; means that all files and modules in the root
+filesystem are also present in the boot archive and have identical contents.
+Since the boot strategy requires first reading and mounting the boot archive
+as the first-stage root image, all unloadable kernel modules and initialization derived from
+the contents of the boot archive are required to match the real
+root filesystem. Without such consistency, it is possible that the system could
+be running with a kernel module or parameter setting applied to the
+root device before reboot, but not yet updated in the root archive. This
+inconsistency could result in system instability or data loss.</p><p>Once the root filesystem is mounted, and before relinquishing the in-memory filesystem,
+Solaris performs a consistency verification against the two file systems. If an
+inconsistency is detected, Solaris suspends the normal boot sequence and falls back
+to failsafe mode. Correcting this state requires the administrator take one of two
+steps. The recommended procedure is to reboot to the failsafe archive and
+rebuild the boot archive. This ensures that a known kernel is booted
+and functioning for the archive rebuild process. Alternatively, the administrator can elect
+to clear the inconsistent boot archive service state and continue system bring-up if
+the inconsistency is such that correct system operation will not be impaired.
+See <a href="svcadm-1m.html"><tt>svcadm</tt>(1M)</a>.</p><p>If the boot archive service is cleared and system bring-up is continued
+(the second alternative above), the system may be running with unloadable kernel
+drivers or other modules that are out-of-date with respect to the root
+filesystem. As such, correct system operation may be compromised.</p><p>To ensure that the boot archive is consistent, the normal system shutdown
+process, as initiated by <a href="reboot-1m.html"><tt>reboot</tt>(1M)</a> and <a href="shutdown-1m.html"><tt>shutdown</tt>(1M)</a>, checks for and applies updates
+to the boot archive at the conclusion of the <a href="umountall-1m.html"><tt>umountall</tt>(1M)</a> milestone.</p><p>An update to any kernel file, driver, module or driver configuration file
+that needs to be included in the boot archive after the <tt>umountall</tt>
+service is complete will result in a failed boot archive consistency check
+during the next boot. To avoid this, it is recommended to always shut
+down a machine cleanly.</p><p>If an update is required to the kernel after completion of the
+<tt>umountall</tt> service, the administrator may elect to rebuild the archive by invoking:</p><pre># <b>bootadm update-archive</b></pre><h4>Failsafe Boot Archive</h4>
+<p>The failsafe archive can be used to boot the machine at any
+time for maintenance or troubleshooting. The failsafe boot archive is installed on
+the machine, sourced from the miniroot archive. Booting the failsafe archive causes
+the machine to boot using the in-memory filesystem as the root device.</p>SPARC<p>The SPARC failsafe archive is:</p><pre>/platform/`uname -i`/failsafe</pre><p>...and can be booted as follows:</p><pre>ok <b>boot [<var>device-specifier</var>] -F failsafe</b></pre><p>If a user wishes to boot a failsafe archive from a particular
+ZFS bootable dataset, this can be done as follows:</p><pre>ok <b>boot [<var>device-specifier</var>] -Z <var>dataset</var> -F failsafe</b></pre>x86<p>The x86 failsafe archive is:</p><pre>/boot/x86.miniroot-safe</pre><p>...and can be booted by selecting the <tt>Solaris failsafe</tt> item from the GRUB
+menu.</p><h3>Options</h3>
+<h4>SPARC</h4>
+<p>The following SPARC options are supported:</p><dl><dt><tt>-a</tt></dt>
+<dd><p>The boot program interprets this flag to mean <tt>ask me</tt>, and so it prompts for the name of the standalone. The <tt>'</tt><tt>-a</tt><tt>'</tt> flag is then passed to the standalone program.</p></dd>
+<dt><tt>-D</tt> <var>default-file</var></dt>
+<dd><p>Explicitly specify the <var>default-file</var>. On some systems, <tt>boot</tt> chooses a dynamic default file, used when none is otherwise specified. This option allows the <var>default-file</var> to be explicitly set and can be useful when booting <a href="../821-1461/kmdb-1.html#REFMAN1kmdb-1"><tt>kmdb</tt>(1)</a> since, by default, <tt>kmdb</tt> loads the default-file as exported by the <tt>boot</tt> program.</p></dd>
+<dt><tt>-F</tt> <var>object</var></dt>
+<dd><p>Boot using the named object. The object must be either an ELF executable or bootable object containing a boot block. The primary use is to boot the failsafe or <tt>wanboot</tt> boot archive.</p></dd>
+<dt><tt>-L</tt></dt>
+<dd><p>List the bootable datasets within a ZFS pool. You can select one of the bootable datasets in the list, after which detailed instructions for booting that dataset are displayed. Boot the selected dataset by following the instructions. This option is supported only when the boot device contains a ZFS storage pool.</p></dd>
+<dt><tt>-V</tt></dt>
+<dd><p>Display verbose debugging information.</p></dd>
+<dt><var>boot-flags</var></dt>
+<dd><p>The boot program passes all <var>boot-flags</var> to <tt>file</tt>. They are not interpreted by <tt>boot</tt>. See the <a href="kernel-1m.html"><tt>kernel</tt>(1M)</a> and <a href="../821-1461/kmdb-1.html#REFMAN1kmdb-1"><tt>kmdb</tt>(1)</a> manual pages for information about the options available with the default standalone program.</p></dd>
+<dt><var>client-program-args</var></dt>
+<dd><p>The <tt>boot</tt> program passes all <var>client-program-args</var> to <var>file</var>. They are not interpreted by <tt>boot</tt>.</p></dd>
+<dt><var>file</var></dt>
+<dd><p>Name of a standalone program to <tt>boot</tt>. If a filename is not explicitly specified, either on the <tt>boot</tt> command line or in the <var>boot-file</var> NVRAM variable, <tt>boot</tt> chooses an appropriate default filename.</p></dd>
+<dt><var>OBP</var> <var>names</var></dt>
+<dd><p>Specify the open boot prom designations. For example, on Desktop SPARC based systems, the designation <tt>/sbus/esp@0,800000/sd@3,0:a</tt> indicates a SCSI disk (sd) at target 3, lun0 on the SCSI bus, with the esp host adapter plugged into slot 0.</p></dd>
+<dt><tt>-Z</tt> <var>dataset</var></dt>
+<dd><p>Boot from the root file system in the specified ZFS dataset.</p></dd>
+</dl>
+<h4>x86</h4>
+<p>The following x86 options are supported:</p><dl><dt><tt>-B</tt> <var>prop</var>=<var>val</var>...</dt>
+<dd><p>One or more property-value pairs to be passed to the kernel. Multiple property-value pairs must be separated by a comma. Use of this option is the equivalent of the command: <tt>eeprom</tt> <var>prop</var>=<var>val</var>. See <a href="eeprom-1m.html"><tt>eeprom</tt>(1M)</a> for available properties and valid values.</p><p>If the root file system corresponding to this menu entry is a ZFS dataset, the menu entry needs the following option added:</p><pre>-B $ZFS-BOOTFS</pre></dd>
+<dt><var>boot-args</var></dt>
+<dd><p>The boot program passes all <var>boot-args</var> to <tt>file</tt>. They are not interpreted by <tt>boot</tt>. See <a href="kernel-1m.html"><tt>kernel</tt>(1M)</a> and <a href="../821-1461/kmdb-1.html#REFMAN1kmdb-1"><tt>kmdb</tt>(1)</a> for information about the options available with the kernel.</p></dd>
+<dt><tt>/platform/i86pc/kernel/$ISADIR/unix</tt></dt>
+<dd><p>Name of the kernel to boot. When using the <tt>kernel$</tt> token, <tt>$ISADIR</tt> expands to <tt>amd64</tt> on 64-bit machines, and a null string on other machines. As a result of this dereferencing, this path expands to the proper kernel for the machine.</p></dd>
+</dl>
+<h3>x86 BOOT SEQUENCE DETAILS</h3>
+<p>After a PC-compatible machine is turned on, the system firmware in the
+BIOS ROM executes a power-on self test (POST), runs BIOS extensions in peripheral
+board ROMs, and invokes software interrupt INT 19h, Bootstrap. The INT 19h
+handler typically performs the standard PC-compatible boot, which consists of trying to read
+the first physical sector from the first diskette drive, or, if that
+fails, from the first hard disk. The processor then jumps to the
+first byte of the sector image in memory.</p><h3>x86 Primary Boot</h3>
+<p>The first sector on a floppy disk contains the master boot block
+(GRUB <tt>stage1</tt>). The stage 1 is responsible for loading GRUB <tt>stage2</tt>. Now
+GRUB is fully functional. It reads and executes the menu file <tt>/boot/grub/menu.lst</tt>.
+A similar sequence occurs for DVD or CD boot, but the master boot
+block location and contents are dictated by the El Torito specification. The
+El Torito boot also leads to <tt>strap.com</tt>, which in turn loads <tt>boot.bin</tt>.</p><p>The first sector on a hard disk contains the master boot block,
+which contains the master boot program and the FDISK table, named for
+the PC program that maintains it. The master boot finds the active
+partition in the FDISK table, loads its first sector (GRUB <tt>stage1</tt>), and jumps
+to its first byte in memory. This completes the standard PC-compatible hard
+disk boot sequence. If GRUB <tt>stage1</tt> is installed on the master boot
+block (see the <tt>-m</tt> option of <a href="installgrub-1m.html"><tt>installgrub</tt>(1M)</a>), then <tt>stage2</tt> is loaded directly
+from the Solaris <tt>FDISK</tt> partition regardless of the active partition.</p><p>An x86 FDISK partition for the Solaris software begins with a one-cylinder
+boot slice, which contains GRUB <tt>stage1</tt> in the first sector, the standard
+Solaris disk label and volume table of contents (VTOC) in the second
+and third sectors, and GRUB <tt>stage2</tt> in the fiftieth and subsequent sectors.
+The area from sector 4 to 49 might contain boot blocks for
+older versions of Solaris. This makes it possible for multiple Solaris releases
+on the same FDISK to coexist. When the FDISK partition for the
+Solaris software is the active partition, the master boot program (<tt>mboot</tt>) reads the
+partition boot program in the first sector into memory and jumps to
+it. It in turn reads GRUB <tt>stage2</tt> program into memory and jumps
+to it. Once the GRUB menu is displayed, the user can choose to
+boot an operating system on a different partition, a different disk, or
+possibly from the network.</p><p>For network booting, the supported method is Intel's Preboot eXecution Environment (PXE)
+standard. When booting from the network using PXE, the system or network
+adapter BIOS uses DHCP to locate a network bootstrap program (<tt>pxegrub</tt>) on
+a boot server and reads it using Trivial File Transfer Protocol (TFTP). The
+BIOS executes the <tt>pxegrub</tt> by jumping to its first byte in memory.
+The <tt>pxegrub</tt> program downloads a menu file and presents the entries to
+user.</p><h3>x86 Kernel Startup</h3>
+<p>The kernel startup process is independent of the kernel loading process. During
+kernel startup, console I/O goes to the device specified by the <tt>console</tt>
+property.</p><p>When booting from UFS, the root device is specified by the <tt>bootpath</tt>
+property, and the root file system type is specified by the <tt>fstype</tt>
+property. These properties should be setup by the Solaris Install/Upgrade process in
+<tt>/boot/solaris/bootenv.rc</tt> and can be overridden with the <tt>-B</tt> option, described above (see the
+<a href="eeprom-1m.html"><tt>eeprom</tt>(1M)</a> man page).</p><p>When booting from ZFS, the root device is specified by a boot
+parameter specified by the <tt>-B</tt> <tt>$ZFS-BOOTFS</tt> parameter on either the <tt>kernel</tt> or
+<tt>module</tt> line in the GRUB menu entry. This value (as with all
+parameters specified by the <tt>-B</tt> option) is passed by GRUB to the kernel.</p><p>If the console properties are not present, console I/O defaults to <tt>screen</tt>
+and <tt>keyboard</tt>. The root device defaults to <tt>ramdisk</tt> and the file system
+defaults to <tt>ufs</tt>.</p><h3>Examples</h3>
+<h4>SPARC</h4>
+<p><b>Example&#160;1 To Boot the Default Kernel In Single-User Interactive Mode</b></p><p>To boot the default kernel in single-user interactive mode, respond to the
+<tt>ok</tt> prompt with one of the following:</p><pre><tt>boot</tt> <tt></tt><tt>-as</tt>
+
+<tt>boot</tt> <tt>disk3</tt> <tt>-as</tt></pre><p><b>Example&#160;2 Network Booting with WAN Boot-Capable PROMs</b></p><p>To illustrate some of the subtle repercussions of various boot command line
+invocations, assume that the <tt>network-boot-arguments</tt> are set and that <tt>net</tt> is devaliased
+as shown in the commands below.</p><p>In the following command, device arguments in the device alias are processed
+by the device driver. The network boot support package processes arguments in
+<tt>network-boot-arguments</tt>.</p><pre><b>boot net</b></pre><p>The command below results in no device arguments. The network boot support
+package processes arguments in <tt>network-boot-arguments</tt>.</p><pre><b>boot net:</b></pre><p>The command below results in no device arguments. <tt>rarp</tt> is the only
+network boot support package argument. <tt>network-boot-arguments</tt> is ignored.</p><pre><b>boot net:rarp</b></pre><p>In the command below, the specified device arguments are honored. The network
+boot support package processes arguments in <tt>network-boot-arguments</tt>.</p><pre><b>boot net:speed=100,duplex=full</b></pre><p><b>Example&#160;3 Using <tt>wanboot</tt> with Older PROMs</b></p><p>The command below results in the <tt>wanboot</tt> binary being loaded from DVD
+or CD, at which time <tt>wanboot</tt> will perform DHCP and then drop
+into its command interpreter to allow the user to enter keys and
+any other necessary configuration.</p><pre><b>boot cdrom -F wanboot -o dhcp,prompt</b></pre><h4>x86 (32&#8211;bit)</h4>
+<p><b>Example&#160;4 To Boot the Default Kernel In 32&#8211;bit Single-User Interactive Mode</b></p><p>To boot the default kernel in single-user interactive mode, edit the GRUB
+kernel command line to read:</p><pre>kernel /platform/i86pc/kernel/unix -as</pre><h4>x86 (64&#8211;bit Only)</h4>
+<p><b>Example&#160;5 To Boot the Default Kernel In 64&#8211;bit Single-User Interactive Mode</b></p><p>To boot the default kernel in single-user interactive mode, edit the GRUB
+kernel command line to read:</p><pre>kernel /platform/i86pc/kernel/amd64/unix -as</pre><p><b>Example&#160;6 Switching Between 32-bit and 64-bit Kernels on 64-bit x86 Platform</b></p><p>To be able to boot both 32-bit and 64-bit kernels, add entries
+for both kernels to <tt>/boot/grub/menu.lst</tt>, and use the <tt>set-menu</tt> subcommand of <a href="bootadm-1m.html"><tt>bootadm</tt>(1M)</a>
+to switch. See <a href="bootadm-1m.html"><tt>bootadm</tt>(1M)</a> for an example of the <tt>bootadm set-menu</tt>.</p><h3>Files</h3>
+<dl><dt><tt>/platform/</tt><var>platform-name</var><tt>/ufsboot</tt></dt>
+<dd><p>Second-level program to boot from a disk, DVD, or CD</p></dd>
+<dt><tt>/etc/inittab</tt></dt>
+<dd><p>Table in which the <tt>initdefault</tt> state is specified</p></dd>
+<dt><tt>/sbin/init</tt></dt>
+<dd><p>Program that brings the system to the <tt>initdefault</tt> state</p></dd>
+</dl>
+<h4>64-bit SPARC Only</h4>
+<dl><dt><tt>/platform/</tt><var>platform-name</var><tt>/kernel/sparcv9/unix</tt></dt>
+<dd><p>Default program to boot system.</p></dd>
+</dl>
+<h4>x86 Only</h4>
+<dl><dt><tt>/boot</tt></dt>
+<dd><p>Directory containing boot-related files.</p></dd>
+<dt><tt>/boot/grub/menu.lst</tt></dt>
+<dd><p>Menu of bootable operating systems displayed by GRUB.</p></dd>
+<dt><tt>/platform/i86pc/kernel/unix</tt></dt>
+<dd><p>32&#8211;bit kernel.</p></dd>
+</dl>
+<h4>64&#8211;bit x86 Only</h4>
+<dl><dt><tt>/platform/i86pc/kernel/amd64/unix</tt></dt>
+<dd><p>64&#8211;bit kernel.</p></dd>
+</dl>
+<h3>See Also</h3>
+<p><a href="../821-1461/kmdb-1.html#REFMAN1kmdb-1"><tt>kmdb</tt>(1)</a>, <a href="../821-1461/uname-1.html#REFMAN1uname-1"><tt>uname</tt>(1)</a>, <a href="bootadm-1m.html"><tt>bootadm</tt>(1M)</a>, <a href="eeprom-1m.html"><tt>eeprom</tt>(1M)</a>, <a href="init-1m.html"><tt>init</tt>(1M)</a>, <a href="installboot-1m.html"><tt>installboot</tt>(1M)</a>, <a href="kernel-1m.html"><tt>kernel</tt>(1M)</a>, <a href="monitor-1m.html"><tt>monitor</tt>(1M)</a>, <a href="shutdown-1m.html"><tt>shutdown</tt>(1M)</a>, <a href="svcadm-1m.html"><tt>svcadm</tt>(1M)</a>, <a href="svccfg-1m.html"><tt>svccfg</tt>(1M)</a>, <a href="umountall-1m.html"><tt>umountall</tt>(1M)</a>,
+<a href="zpool-1m.html"><tt>zpool</tt>(1M)</a>, <a href="../821-1463/uadmin-2.html#REFMAN2uadmin-2"><tt>uadmin</tt>(2)</a>, <a href="../821-1473/bootparams-4.html#REFMAN4bootparams-4"><tt>bootparams</tt>(4)</a>, <a href="../821-1473/inittab-4.html#REFMAN4inittab-4"><tt>inittab</tt>(4)</a>, <a href="../821-1473/vfstab-4.html#REFMAN4vfstab-4"><tt>vfstab</tt>(4)</a>, <a href="../821-1473/wanboot.conf-4.html#REFMAN4wanboot.conf-4"><tt>wanboot.conf</tt>(4)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a>, <a href="../821-1474/filesystem-5.html#REFMAN5filesystem-5"><tt>filesystem</tt>(5)</a>, <a href="../821-1474/smf-5.html#REFMAN5smf-5"><tt>smf</tt>(5)</a></p><p>RFC 903, <i>A Reverse Address Resolution Protocol</i>, <tt>http://www.ietf.org/rfc/rfc903.txt</tt></p><p>RFC 2131, <i>Dynamic Host Configuration Protocol</i>, <tt>http://www.ietf.org/rfc/rfc2131.txt</tt></p><p>RFC 2132, <i>DHCP Options and BOOTP Vendor Extensions</i>, <tt>http://www.ietf.org/rfc/rfc2132.txt</tt></p><p>RFC 2396, <i>Uniform Resource Identifiers (URI): Generic Syntax</i>, <tt>http://www.ietf.org/rfc/rfc2396.txt</tt></p><p><a href="../821-1451/index.html"><i>System Administration Guide: Basic Administration</i></a></p><p><i>Sun Hardware Platform Guide</i></p><p><i>OpenBoot Command Reference Manual</i></p><h3>Warnings</h3>
+<p>The <tt>boot</tt> utility is unable to determine which files can be used
+as bootable programs. If the booting of a file that is not
+bootable is requested, the <tt>boot</tt> utility loads it and branches to it.
+What happens after that is unpredictable.</p><a name="REFMAN1Mboot-1m-note"></a><a name="boot-1m-note"></a><h3>Notes</h3>
+<p><var>platform-name</var> can be found using the <tt>-i</tt> option of <a href="../821-1461/uname-1.html#REFMAN1uname-1"><tt>uname</tt>(1)</a>. <var>hardware-class-name</var> can be
+found using the <tt>-m</tt> option of <a href="../821-1461/uname-1.html#REFMAN1uname-1"><tt>uname</tt>(1)</a>.</p><p>The current release of the Solaris operating system does not support machines
+running an UltraSPARC-I CPU.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="beadm-1m.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="bootadm-1m.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

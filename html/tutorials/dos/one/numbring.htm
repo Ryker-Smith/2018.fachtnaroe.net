@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Description" CONTENT="FIND can be used to number each line in a file. This makes the lines unique and prepares them for being passed as arguments.">
+   <TITLE>Numbering Lines with FIND</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H2>
+Numbering Lines with FIND</H2></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"><I>Numbering lines accomplishes two things: (1) It makes
+each line unique (so you can use FIND to extract a particular line), and
+(2) It "poisons" each line, insuring that the first word will not be a
+valid command or legitimate argument for a command.</I>&nbsp;
+<HR WIDTH="100%"></CENTER>
+
+
+<P>Both FIND and FC can be used with their /N options to number lines for
+you. Here are typical commands and outputs using a "DIR.TXT" file generated
+by the output of my <B><TT>DIR \DOS\*.COM /OS > DIR.TXT</TT></B> command.
+
+<P><B><TT>FIND /N " " &lt; DIR.TXT</TT></B> gives the following output:
+<PRE><B><TT>[2] Volume in drive C is MS-DOS&nbsp;
+[3] Volume Serial Number is 20A4-6627&nbsp;
+[4] Directory of C:\DOS&nbsp;
+[6]HELP&nbsp;&nbsp;&nbsp;&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 413&nbsp; 03-10-93&nbsp; 6:00a HELP.COM&nbsp;
+[7]LOADFIX&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,131&nbsp; 03-10-93&nbsp; 6:00a LOADFIX.COM&nbsp;
+[8]DOSSHELL COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4,620&nbsp; 03-10-93&nbsp; 6:00a DOSSHELL.COM&nbsp;
+[9]TREE&nbsp;&nbsp;&nbsp;&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6,945&nbsp; 05-31-94&nbsp; 6:22a TREE.COM&nbsp;
+[10]DISKCOMP COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10,748&nbsp; 05-31-94&nbsp; 6:22a DISKCOMP.COM&nbsp;
+[11]UNFORMAT COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12,738&nbsp; 03-10-93&nbsp; 6:00a UNFORMAT.COM&nbsp;
+[12]GRAPHICS COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19,742&nbsp; 05-31-94&nbsp; 6:22a GRAPHICS.COM&nbsp;
+[13]COMMAND&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 54,645&nbsp; 05-31-94&nbsp; 6:22a COMMAND.COM&nbsp;
+[14]VSAFE&nbsp;&nbsp;&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 62,576&nbsp; 03-10-93&nbsp; 6:00a VSAFE.COM&nbsp;
+[15]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9 file(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 173,558 bytes&nbsp;
+[16]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 dir(s)&nbsp;&nbsp;&nbsp;&nbsp; 258,334,720 bytes free</TT></B></PRE>
+The advantage of using FIND is that it could have accepted input piping,
+eliminating the need for the intermediate DIR.TXT file. You may have to
+adjust your FIND string to make sure it returns all the lines (For example,
+a reverse search for a very unlikely string). Since I searched for lines
+containing spaces, I did not return blank lines (Notice the missing lines
+numbered 1 and 5). The disadvantage of FIND is that it affixes its numbers
+to the beginning of the line, effectively ruining the first word of each
+line.
+
+<P><B><TT>FC /N DIR.TXT NUL</TT></B> gives the following output:
+<PRE><B><TT>Comparing files dir.txt and NUL&nbsp;
+****** dir.txt
+&nbsp;&nbsp;&nbsp;&nbsp; 1:&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 2:&nbsp;&nbsp; Volume in drive C is MS-DOS&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 3:&nbsp;&nbsp; Volume Serial Number is 20A4-6627&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 4:&nbsp;&nbsp; Directory of C:\DOS&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 5:&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 6:&nbsp; HELP&nbsp;&nbsp;&nbsp;&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 413&nbsp; 03-10-93&nbsp; 6:00a HELP.COM&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 7:&nbsp; LOADFIX&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,131&nbsp; 03-10-93&nbsp; 6:00a LOADFIX.COM&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 8:&nbsp; DOSSHELL COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4,620&nbsp; 03-10-93&nbsp; 6:00a DOSSHELL.COM&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; 9:&nbsp; TREE&nbsp;&nbsp;&nbsp;&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6,945&nbsp; 05-31-94&nbsp; 6:22a TREE.COM&nbsp;
+&nbsp;&nbsp;&nbsp; 10:&nbsp; DISKCOMP COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10,748&nbsp; 05-31-94&nbsp; 6:22a DISKCOMP.COM&nbsp;
+&nbsp;&nbsp;&nbsp; 11:&nbsp; UNFORMAT COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12,738&nbsp; 03-10-93&nbsp; 6:00a UNFORMAT.COM&nbsp;
+&nbsp;&nbsp;&nbsp; 12:&nbsp; GRAPHICS COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 19,742&nbsp; 05-31-94&nbsp; 6:22a GRAPHICS.COM&nbsp;
+&nbsp;&nbsp;&nbsp; 13:&nbsp; COMMAND&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 54,645&nbsp; 05-31-94&nbsp; 6:22a COMMAND.COM&nbsp;
+&nbsp;&nbsp;&nbsp; 14:&nbsp; VSAFE&nbsp;&nbsp;&nbsp; COM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 62,576&nbsp; 03-10-93&nbsp; 6:00a VSAFE.COM&nbsp;
+&nbsp;&nbsp;&nbsp; 15:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9 file(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 173,558 bytes&nbsp;
+&nbsp;&nbsp;&nbsp; 16:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 dir(s)&nbsp;&nbsp;&nbsp;&nbsp; 258,334,720 bytes free&nbsp;
+****** NUL&nbsp;
+******</TT></B></PRE>
+FC is used here to compare the file against the "NUL" device. It numbers
+all the differing lines. Since NUL always contains nothing, all the lines
+in DIR.TXT will differ and they will all be numbered -- even the blank
+ones.
+
+<P>Regardless of whether FIND or FC is used, the lines are now all unique!
+If I wanted the first file name, it would always be on line six. If I had
+used FC, I could search for <B><TT>"&nbsp;&nbsp;&nbsp;&nbsp; 6:&nbsp; "</TT></B>.
+If I had used FIND, I could search for <B><TT>"[6]"</TT></B>. Likewise,
+since the numbering poisoned each line (making sure the first word is not
+a valid command, device, date, etc.), I could <A HREF="prompts.htm">pass
+them all as commands to a separate command processor</A> or <A HREF="errors.htm">pass
+them as arguments to commands</A>.
+<P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+</BODY>
+</HTML>

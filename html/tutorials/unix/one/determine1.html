@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/determine1.html -->
+
+<HEAD>
+<TITLE>Examples of using the file command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the file command</H1>
+
+<P>To check the identity of a single file:</P>
+
+<PRE WIDTH=80>   <STRONG>file ReportA</STRONG>
+   ReportA:        Frame Maker document
+</PRE>
+
+<P>This checks the identity of the file <SAMP>ReportA</SAMP> and reports
+that this file has been created using the Frame Maker
+application.</P>
+
+<HR>
+
+<P>To check the identity of several files:</P>
+
+<PRE WIDTH=80>   <STRONG>file *</STRONG>
+   external.c:     c program text
+   external.h:     c program text
+   mc:             sparc demand paged dynamically linked executable
+   mcXThelp:       executable shell script
+   mcdemo:         executable shell script
+   mchelp:         executable shell script
+   mchome:         executable shell script
+   mctools:        executable shell script
+</PRE>
+
+<P>This checks the identity of every file in the current
+directory. Notice how it reports whether a file is an
+executable binary or a shell script.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

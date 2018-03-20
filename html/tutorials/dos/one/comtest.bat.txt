@@ -1,0 +1,68 @@
+@echo off
+:: This batch file will test to see if a com port is 
+:: available. It creates a separate batch file and runs
+:: it in a separate shell for three reasons. First, it lets
+:: us capture the entire output of that second shell.
+:: Second, we run the shell with the /f option which
+:: lets us recover from the dreaded Abort/Retry/Fail
+:: condition if the port is in use or invalid.
+:: Third, once DOS writes to a serial port, that port
+:: does not close until the DOS command session ends.
+:: As written, the code tests for COM2. Change it to
+:: whatever com port you want by editing the line that says
+:: "echo ctty com2>comtest2.bat" (the first executable line)
+
+:: First make the comtest2.bat that does the real work
+echo ctty com2>comtest2.bat
+echo echo at>>comtest2.bat
+echo ctty con>>comtest2.bat
+:: Run commtest2
+command /f /c comtest2.bat > comtest.txt
+cls
+del comtest2.bat
+:: Check the captured output to see if it worked
+type comtest.txt | find "Invalid"
+if errorlevel 1 goto OKAY
+goto INUSE
+
+:INUSE
+cls
+del comtest.txt
+:: Set error level (return code) 1 to indicate failure
+echo.|find " "
+goto CONTINUE
+
+:OKAY
+cls
+del comtest.txt
+:: Set errorlevel (return code) 0 to indicate success
+echo. | find " "
+goto CONTINUE
+
+:CONTINUE
+:: ******** Remove this line  and ALL lines below it if ********
+:: ******** you will use your own batch file or program ********
+:: ******** to test error level.  If you write your own ********
+:: ******** code, the lines below are a starting point. ********
+if errorlevel 1 goto FAIL
+goto PASS
+
+:PASS
+:: Enter any program code you want to happen if the 
+:: serial port IS available. I use NOTEPAD as a demo.
+notepad.exe
+goto DONE
+
+:FAIL
+:: Enter any program code you want to happen if the
+:: serial port is NOT available. Here I give a five-second
+:: failure message and quit.
+echo.
+echo.
+echo   Sorry, serial port is in use by another program!
+:: Five-second time delay code from 
+:: http://www.calweb.com/~webspace/batch/samples/sleep.txt
+choice /n /c±-1234567890qwertyuiopasdfghjklzxcvbnm /t±,5
+
+:DONE
+cls

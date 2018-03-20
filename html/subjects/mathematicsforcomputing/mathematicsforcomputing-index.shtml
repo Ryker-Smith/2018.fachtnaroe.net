@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#include virtual=/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<div id="content">
+<h1>Mathematics for Computing</h1>
+<h2>Assignments</h2>
+<h3><a href="assignment01-2001.pdf">Assignment #1 - Multiplication Algorithms</a></h3>
+<h2>Tutorials</h2>
+<h2>Related:</h2>
+<h3><a href="#">Module Descriptor</a></h3>
+<h3>Click <a href="mathematicsforcomputing.pdf">here</a> for Module Descriptor.</h3>
+<h2>Miscellaneous:</h2>
+</div>
+</body>
+</html>
+

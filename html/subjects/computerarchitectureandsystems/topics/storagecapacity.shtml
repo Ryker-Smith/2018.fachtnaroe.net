@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Storage Capacity</h1>
+Storage capacity is measured at it's lowest in bytes. One byte can store a decimal value up to 255 or one ASCII code as shown in this <a href="00-ASCII.pdf">chart</a>. Combining more bytes increases capacity. Some key terms are:
+<ul>
+<li>Byte (8 bits)</li>
+<li>Kilobyte (1024 bytes)</li>
+<li>Megabyte (1024 Kilobytes, or 1048576 bytes)</li>
+<li>Gigabyte (1024 Megabytes, or 1048576 Kilobytes, or 1073741824 bytes)</li>
+<li>Terabyte (1024 Gigabytes)</li>
+</ul> 
+The above values tend to hold true for <a href="mainmemory.shtml">main memory</a> - RAM, <b>R</b>andom <b>A</b>ccess <b>M</b>emory - within the computer. However the manufacturers of hard disks have a more metric approach:
+<ul>
+<li>Byte (8 bits)</li>
+<li>Kilobyte (1000 bytes)</li>
+<li>Megabyte (1000 Kilobytes)</li>
+<li>Gigabyte (1000 Megabytes)</li>
+<li>Terabyte (1000 Gigabytes)</li>
+</ul> 
+This difference may seem minor, but over a larger hard drive may mean many millions of bytes less for storage. Each byte can store one ASCII code as shown in this <a href="00-ASCII.pdf">chart</a>.
+<a name="capacities"></a><h2>Typical Drive Capacities</h2>
+These are typical storage capacities for modern storage devices:
+<ul>
+<li>Floppy disk - 1.44MB (not modern, only used as a last resort; a 'legacy' device; removeable)</li>
+<li>Zip Disk - 100-250MB (different drive models have different capacities; removeable)</li>
+<li>CD-ROM - 650-800MB (anything above 650MB is a result of 'overburning'; removeable)</li>
+<li>Hard disk - 20GB-250GB+ (capacities and speeds always increasing)</li>
+<li>DVD-ROM - 4.7GB (Theoretical capacity much higher; removeable)</li>
+<li>Backup Tapes - 12GB-100GB+ (always increasing; removeable)</li>
+</ul>
+<h2>Secondary Storage</h2>
+All of the above are considered forms of <i>Secondary Storage</i>. They store programs and files until they are required by the computer. At that stage, the programs or files are called into <a href="mainmemory.shtml">main memory</a> and processed. The larger the amount of secondary storage your computer has, the more data it can retain when switched off.
+Note that removeable disks (see <a href="#capacities">above</a>) mean that the drive that operates them has no upper limit on storage (theoretically) as when one disk is filled, another can be inserted instead.
+<h2>Understanding Capacity</h2>
+To understand storage capacity slightly better, 1MB is about the size, on disk, of a modern novel. This file is about 4.5KB. But the method of storing a file can have a bearing on the storage size as well. An image can be stored in different forms. Below are three links to the same image file, but stored with different mechanisms:
+<ul>
+<li>BMP <small>Windows Bitmap</small> (<a href="/subjects/computerarchitectureandsystems/screen1.bmp">2.25MB</a> - 2,359,350 bytes)</li>
+<li>JPG <small>Joint Photography Experts Group</small> (<a href="/subjects/computerarchitectureandsystems/screen1.jpg">0.17MB</a> - 180,671 bytes)</li>
+<li>PNG <small>Portable Network Graphic</small> (<a href="/subjects/computerarchitectureandsystems/screen1.png">72.08KB</a> - 73,805 bytes)</li>
+</ul>
+Obviously the larger the file, the less files can be fitted onto the medium - in this case, the drive. If you click on each of the above <i>from home</i> and time how long they take to transfer across the network you will also get a sense of how file sizes can affect transfer times of webpages across the internet. This is known as bandwidth and is key to modern <a href="TransmissionOfData.pdf">data communications</a> (PDF, 3.89MB).
+
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="storagecapacity.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

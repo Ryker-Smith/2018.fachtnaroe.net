@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- commanz/sleep.html -->
+
+<HEAD>
+<TITLE>Suspending commands with the sleep command</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>Suspending commands with the sleep command</H1>
+
+<P>To suspend the execution of a command for a specific
+amount of time use the command:</P>
+
+<PRE WIDTH=80>   sleep <EM>time_in_seconds</EM>; <EM>command</EM>
+</PRE>
+
+<P>The second command will not be carried out until the
+amount of time specified as an 
+ <A HREF="cmd1.1.html">argument</A> to the 
+ <STRONG>sleep</STRONG> command has elapsed. The semicolon 
+(<SAMP>;</SAMP>) is used to allow the
+two commands to be <A HREF="cmd2.3.html">entered on the
+ same command line</A>.</P>
+
+<P>You can also enclose the commands in parentheses to group them
+together and then run the combined command in the background, allowing
+you to carry on working at the shell prompt:</P>
+
+<PRE WIDTH=80>   (sleep <EM>time_in_seconds</EM>; <EM>command</EM>) &
+</PRE>
+
+<P>This command is very useful if you need to do something
+else before a command is executed.</P>
+
+<UL>
+<LI><A HREF="sleep1.html">Example</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,502 @@
+The following are responses to questions answered by Joseph Hayes. They are
+listed here in no order only because I'm too lazy to really try to organize
+NT batch tips.
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+Hi,
+
+I recently visited the webspace page and I have a question.  Eric has an
+excellent batch file section that describes how to extract short/long
+filenames in windows 98/95.
+
+However, I need to do this is Windows NT.  In particular, windows nt
+doesn't have a truename command.  Is there an equivalent?  What I 
+really need is someway to get the short version of the current path.
+
+Thanks
+
+
+
+From: Joseph Hayes
+
+If you are dealing with variables, check the documentation for CALL and FOR
+for usage of the new ~ variable modifiers. For example the following FOR
+statement will list the shortnames of all the directories under the current
+one:
+
+h:\>for /f %i in ('dir /ad /s /b') do @echo %~fsi
+
+HTH,
+
+Joe
+
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+I found a quirk that may prove interesting. Say you have a batch file
+like this:
+
+===========================
+START SHOWQUIRK.BAT
+===========================
+@echo off
+SET BRANCHTEST=002
+SET ZONETEST=Z1
+
+:: :Z1
+:: ECHO first Z1 label!
+:: goto :end
+
+If %BRANCHTEST%==001 goto 001
+if %BRANCHTEST%==002 goto 002
+GOTO :end
+
+:001
+IF %ZONETEST%==Z1 GOTO Z1
+
+:Z1
+ECHO 001's Z1 label!
+GOTO :end
+
+:002
+IF %ZONETEST%==Z1 GOTO Z1
+
+:Z1
+ECHO 002's Z1 label!
+GOTO :end
+
+:end
+echo done!
+===========================
+END SHOWQUIRK.BAT
+===========================
+
+If you run this under NT 4.0 you will get the following output:
+
+002's Z1 label!
+done!
+
+If you run this under Windows 95 you will get the following output:
+
+001's Z1 label!
+done!
+
+And if you uncomment the first Z1 you will get the following output
+under NT 4.0 or Windows 95.
+
+first Z1 label!
+done!
+
+Looks like NT 4.0's cmd.exe is treating the 001/Z1 and 002/Z1 like
+nested labels. 
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+Here is a quick way to kill all of your network connections:
+
+net use * /d /y
+
+the /y suppresses the confirmation prompt.
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+ Eric,
+     I cc'd you on this as it is quite an interesting 
+issue that occurs using the basics of your "Run a command 
+in every sub-directory" script.
+
+Joseph,
+     As you are listed as the NT guru, I am hoping 
+you can shed some light on this issue.  In effect, I 
+am working on automating a rather tedious task utilizing 
+the code I learned on the webspace page combined with a 
+few ideas of my own. Basically, it is designed to move 
+daily reports from the various subfolders to their 
+respective "Arch" folders.  I ended up with the LOOPSTART 
+subroutine listed below.
+      I came across a first glitch that was rather easily 
+worked around. For whatever reason, when trimming the 
+directories.bat file to the first line, the output on 
+NT does not work when going to the same file.  As a 
+workaround, I simply had it create a second file called 
+directories2.bat and call it to set the "dir" variable.  
+The next issue I came across is the one that's stumping 
+me. As best I can tell, in the NT os, removing the first 
+line of directories.txt does not completely remove the 
+line, rather just the text.  As a result, when the file 
+is emptied out, the file size does not go to 0 bytes.  
+The leftover size depends on how many subdirectories 
+there are off the root.  I came across results from 13 
+to 76k on the four folders this would be run on. 
+Unfortunately, the number of subdirectories can change, 
+so I can't rely on the file to be any specific size.  
+I was trying to devise a way to count the lines of text 
+and look for 0, but couldn't come up with anything that 
+worked correctly 100%.
+      Any help you can provide with this would be 
+greatly appreciated.  FYI the %next% and %sitedir% 
+variables are set earlier in the script.  I'm setting 
+it up to run against four different directories.  I also 
+modifed the directory list creating string removing the 
+/s.  It is set to start in the folder and only scan the 
+subdirectories off of it, then perform the command on 
+each of them. Without the /s, the output file lists only 
+the directory names, and no formatting. (ie.. it gives me 
+"subdir" instead of "c:\root\subdir" in the file)  I 
+modified the scripting to work with this design.
+
+:: Create Directory List
+dir %sitedir% /ad /b   | find /v ":\Recycled" > directories.txt
+:: Process Directories
+:LOOPSTART
+  rem Check for 0 bytes to end sub
+  dir directories.txt | find "directories.txt" | find " 0 " > nul
+  if errorlevel 1 goto %next%
+  copy /b setdir.txt + directories.txt directories.bat > nul
+  rem Remove first line for next loop
+  type directories.bat | find /v "set dir=" > directories.txt
+  type directories.bat | find "set dir=" > directories2.bat
+  call directories2.bat
+  rem Execute Move Command
+  move %dir%\*.??? %dir%\arch
+goto LOOPSTART
+
+
+From: Joseph Hayes 
+
+What about something like this?
+
+=============================
+ START - mv2arch.bat 
+=============================
+
+:: pass the directory you want to use as your base directory
+:: as a parameter to the batch file
+
+:: change to passed directory
+cd /d %1
+
+:: Create Directory List
+dir %1 /ad /b   | find /v ":\Recycled" > directories.txt
+
+for /f %%x in (directories.txt) do move .\%%x\*.* .\%%x\arch
+
+==============================
+ END - mv2arch.bat
+==============================
+
+I hope this helps,
+
+Joe
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+Hi,
+
+I am trying to append data from several files to one
+file in a Loop. These are the commands I used.
+
+COPY file1 OutFile
+COPY OutFile + file2 OutFile
+COPY OutFile + file3 OutFile
+
+When I issued these commands, I found that NT wrote a
+special character (End Of File) between the file1 and
+file2 data in OutFile. Do you know how to get rid of
+this character?.
+
+On Win95, these commands work fine.
+
+Thanks.
+Matt.
+
+From: Joseph Hayes 
+
+try copy /b file.txt+file2.txt /b outfile.txt /b
+
+the /b says to copy as if the file is a binary and it skips the end of file
+marker.
+
+HTH,
+
+Joe
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+Hi
+ 
+I have a batch program that check to see if the file is there. If it is it
+deletes it. It then starts another program. The problem is that I can't
+get it to close the batch prompt, because it waits for the main program to
+stop before it closes itself
+ 
+I am using NT
+ 
+I basically want to execute the program at the end and then close itself
+ 
+Thanks
+ 
+Simon
+
+From: Joseph Hayes
+
+2 suggestions:
+
+1) Try changing the line:
+
+theguard!.exe
+
+to
+
+start theguard!.exe
+
+2) Make the "exit" command the last line of your batch file...
+
+Hope this helps,
+
+Joe Hayes
+ 
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+Hi,
+
+I was surfing and came across your site. this is my first time writing a 
+bacth file and hope I don't have to do it too often. I was doing pretty good 
+for my first time till I ran into a stumbling block - a huge one. I have 
+writen a batch file in NT and it works until I start to try and pass 
+information to Oracle.
+
+Basically, I have a stats.txt file that contains on each line a listing 
+(with full path) of logical files names that I need to send to sqlloqder in 
+Oracle so as to load the data in them from there physical  location as 
+described in the stats.txt file.
+
+The problem is when I do
+for %%x in (stats.txt) do sqlldr userid=i/i con=x,data=%%x
+it sends the stats.txt file name to oracle instead of the contents of 
+stats.txt (which are individaul file names that represent the location of 
+actual files that need to be loaded to oracle.
+
+Everything else works except for this line. unfortunately, this is the main 
+reason for writing the program in the first place. In effect, if this does
+not work, all my efforts have been wasted. Can you help????? Urgent need
+of assistance.
+
+example of stats.txt file:(I need this file names to be sent via the 'for'
+command, not the .txt
+
+e:\oracle\sqldir\datafile1.txt
+e:\oracle\sqldir\datafile2.txt
+e:\oracle\sqldir\datafile3.txt
+e:\oracle\sqldir\datafile4.txt
+e:\oracle\sqldir\datafile5.txt
+e:\oracle\sqldir\datafile5.txt
+
+example of contents of datafile1.txt
+
+1,345,566,666,66
+2,33,55,55,66,66
+4,65,75,434,789,
+
+Regards,
+Ade
+Atlanta,GA
+
+From: Joseph Hayes
+
+Under NT 4.0 try:
+
+for /f %%x in (stats.txt) do sqlldr userid=i/i con=x,data=%%x
+
+this will pass each line of stats.txt into the variable %%x. For more
+information try "for /?" at the command line.
+
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+Joseph,
+I'm trying to automate an FTP login, but its just not working. The script
+I'm using is this:
+
+START====
+
+c:\winnt\system32\ftp.exe -s:%0
+goto done
+open sapnt45b 21 
+eoin 
+guess 
+cd C:\ftpfiles\new
+put *.bat
+:done
+@echo off
+
+END====
+
+But when I try to run it I get this error message: 
+"error opening script file sap" (I used the name sap.bat) Any ideas?
+
+Thanks in advance for any help!!
+
+
+From: Joseph Hayes 
+
+Hi!
+
+The problem is that ftp cannot "find" your script file. Change "%0" to
+"%f0" and give it a try.
+
+HTH,
+
+Joe
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+
+Hello Joseph,
+The following details on my problem are as follows:
+
+I initially created a simple batch file to copy files (several of them) 
+from our server to my PC (copy [source file, from server] to 
+[destination, my PC]) and triggered it automatically with NORTON 
+anti-virus. The problem that I encountered is that when the file is 
+triggered by the NAVNT not all the lines work (only item # 2 runs, 
+attached below), but if I type the bat file MANUALLY on the prompt it 
+does perform its job (items 1 and 2 runs). I am currently using a 
+Windows NT set up.
+
+The next thing that I did was to trigger it using the "AT" command 
+on the DOS prompt, still the files from the server (item 1) were 
+never copied. Attached is the sample file that I used to run, and 
+the "AT" command.
+ 
+C:\COPY.BAT
+--------------------
+@ ECHO OFF
+net use k:\\dbas11\sys
+::item 1
+copy k:\dtr.xls c:\backup\dtr.xls
+::item 2
+copy d:\eos.xls c:\backup\eos.xls
+net use k: /delete
+--------------------
+
+AT 3:43 /EVERY:M,T,W,Th,F c:\copy.bat
+--------------------------------------
+
+Thanks and regards
+
+
+From: Joseph Hayes
+
+I can almost guarantee that this has to do with user permissions. 
+On NT, the scheduler  service (i.e., the AT command) runs under 
+the SYSTEM account. When you run the batch file manually you are 
+running from your account. To fix this, you can grant additional 
+permissions to the SYSTEM account or change the account under 
+which the Schedule Service runs 
+(Start->Settings->Control Panel->Services).
+
+Hope this helps,
+
+Joe
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+The following script will handle multiple "most recent" files easily.
+What
+do you think?
+
+***
+* START - MostRecent.bat
+***
+@echo off
+::
+:: MostRecent.bat
+:: Created: 25 Sep 2000
+:: Author: Joe Hayes (jhayes@cbny.com)
+:: Description: Given a source and destination directory will
+:: move the most recent files (relative to system date) from the
+:: source directory to the destination directory
+::
+
+if "%1"=="" goto :syntax
+if "%2"=="" goto :syntax
+
+echo Using %1 as source directory
+echo Using %2.\ as destination directory
+
+::
+:: Make sure there are files we want in source directory
+::
+if not exist %1.\e-?????.lst goto :end
+
+::
+:: Make source directory the current directory
+::
+cd /d %1
+
+::
+:: put date into an environment variable
+::
+FOR /f "tokens=2-4 delims=/ " %%a in ('DATE/T') do SET date=%%a-%%b-%%c
+::
+:: using xcopy's "d" switch copy the files to another directory.
+::
+XCOPY /F /D:%date% e-?????.lst %2 > copyfile.lst
+::
+:: delete the copied files from the original directory
+::
+FOR /f "tokens=1 delims= " %%i in ('type copyfile.lst') DO del %%i > nul
+2>&1
+del copyfile.lst 
+goto :end
+
+:syntax
+ECHO.
+ECHO Syntax:   MostRecent [Source Directory] [Dest. Directory]
+ECHO Examples: MostRecent h:\ c:\project\mic\ediout\send
+ECHO           MostRecent {for this screen}
+ECHO Moves the most recent files (relative to system date) from the
+ECHO source directory to the destination directory
+ECHO.
+ECHO.
+GOTO :end
+
+:end
+***
+* END - MostRecent.bat
+***
+
+I hope this helps,
+
+Joe
+
+***************************************************************************
+***************************************************************************
+***************************************************************************
+
+
+***************************************************************************
+***************************************************************************
+***************************************************************************

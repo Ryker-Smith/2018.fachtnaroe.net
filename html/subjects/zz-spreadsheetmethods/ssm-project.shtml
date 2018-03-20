@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#include virtual="/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<div id="content">
+<h1>Spreadsheet Methods Project</h1>
+<h2>Project Guidelines</h2>
+<h3>The project consists of three main sections, which in turn can be broken down into sub-sections:</h3>
+<h2>1 Design (40%)</h2>
+<h3>Overview
+<ul>
+<li><i><strong>Environment</strong></i></li>
+One paragraph that gives some details about where the spreadsheet will be used, e.g. whether it's a household budget, a stock control or payroll spreadsheet etc. Make up name for the people, company family etc here.
+<li><i><strong>Purpose</strong></i></li>
+Briefly mention what the spreadsheet is expected to do listing any significant features.
+<li><i><strong>Benefits</strong></i></li>
+Briefly list the expected benefits that will accrue from using this spreadsheet, e.g. assisting with making decisions, better presentation of data, faster calculations etc.
+<li><i><strong>Methodology</strong></i></li>
+List the steps you intend to take, such as generating sample data, designing the layout of the spreadsheet, creating formulae.
+</ul>
+Planning
+<ul>
+<li><i><strong>Data</strong></i></li>
+Explain what sort of data you expect to have to deal with, where it would normally come from, how it gets recorded and how and when it gets transferred to the spreadsheet.
+<li><i><strong>Processing</strong></i></li>
+Explain what will happen to the data in the spreadsheet when it is entered. Explain in English what one of each formula should do, then list one of each of the formulas in Excel format. There is no benefit in listing every individual formula if many of them are similar to each other.
+<li><i><strong>Presentation</strong></i></li>
+Document what sort of formatting you intend to use, indicating whether you'll use colour and if so for what purpose. List what numeric formats will be used and why. List anything (relevant) to the appearance of the sheet.
+<li><i><strong>Layout</strong></i></li>
+Make a hand-sketch of the expected layout and scan and include this. The sketch should be done before the implementation; as it is part of the design mistakes are actually expected. It will help to make the sketch before doing the Processing section above as you can then go through each of the columns and rows listing the formulae required.
+</ul>
+</h3>
+<h2>2 Implementation (50%)</h2>
+<ul>
+<h3>
+<li><i><strong>Completed spreadsheet</strong></i></li>
+Create the spreadsheet in accordance with the design and print it out.
+<p><li><i><strong>Modified spreadsheet</strong></i></li>
+Change some of the values in the spreadsheet so that the formulas will recalculate; print this out to prove that you have used formulas and that they work.
+<p><li><i><strong>Printout of formulae</strong></i></li>
+Print the spreadsheet showing the formulas. This is done </HTML>via the menu bar. Choose Tools/Options/View/General. Note that columns may have to be adjusted to make longer formulae fully visible.
+</ul>
+</h3>
+<h2>3 Modifications (10%)</h2>
+<h3>
+<ul>
+<li><i><strong>Modifications and improvements</strong></i></li>
+Suggest any suitable modifications and improvements that could be made to the spreadsheet. Note that you are not actually required to carry them out - just suggest them. That being said, if some of the improvements are minor you could implement them and include a copy of the changed spreadsheet.
+</ul>
+</h3>
+<h2>Notes:</h2>
+<ul>
+<li>The whole project should be covered by a <a href="../../help/00-MyOwnWork.pdf">My Own Work</a> form and signed.</li>
+<li>The whole project should be stapled top left, and punched for inclusion in an A4 folder.</li>
+<li>Page numbering is preferred - this may need to be overprinted manually.</li>
+<li>Each section should be preceded by a simple section page stating 1. Design, 2. Implementation etc.</li>
+<li>The project text should be standard formatted as appropriate. Marks may be lost otherwise.</li>
+<li>The Design Overview section should not exceed 1 A4 page.</li>
+<li>The Design Overview and Planning sections should be so labelled at the top of their pages.</li>
+<li>The Design Planning stage is not limited in length and can be as long as required to correctly specify the intention for the project.</li>
+<li>Each of the printouts in the Implementation phase should be marked to indicate which is which.</li>
+<li>Ensure you have some form of IF statement in your project. If you have a LOOKUP formula you won't be required to use an IF.</li>
+<li>You should check your submission prior to handing them in against the marking scheme which is available on the school Intranet.</li>
+<li>No handwriting of any form (except in the scanned design, and 'My Own Work' signature) should be on any page.</li>
+<li>Submission is by paper in the submission box in Room 15.</li>
+</ul>
+<h2>December 2001</h2>
+<a href="projectguidelines2002.pdf">These guidlines are also available in PDF format</a>.
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#include virtual="/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<div id="content">
+
+<h1>Research Assignment 2008</h1>
+<center>
+<h2><big><big>Computer Architecture & Systems (Part 1 of 2) &amp;
+<br />Information &amp; Communication Systems:
+<br />Assignment Brief
+</big></big></h2>
+</center>
+<h2>Senior College PLC Applications Process</h2>
+<h3>The Senior College, Clonmel is part of the Central Technical Institute. The College deals with PLC (Post Leaving Certificate) courses. These courses were originally started under an organisation called the NCVA (National Council for Vocational Awards).</h3>
+<h3>This was set up to provide educational opportunities for students who, after their Leaving Certificate, sought employment rather than 3rd Level education. Since such students would otherwise be considered 'unskilled' it was necessary to provide them with vocational (employment oriented) training of a relevant nature. From this requirement the NCVA was born.</h3>
+<h3>Since that time PLC courses and other non-college, pre-college and employment preparation courses have flourished under many service providers such as FÁS, BIM, Teagasc etc. These have now come under the remit of one central organisation called FETAC (Further Education, Training and Awards Council) which has developed a National Framework of Qualifications.</h3>
+<center>
+<img src="/images/FETAC-NationalFramework.jpg">
+</center>
+<h3>The Senior College, Clonmel continues to operate PLC courses under this new framework, but is moving towards the new mechanisms included, such as improved quality control. All areas of operation will be affected by improved quality control, including the PLC application process.</h3>
+<h3>Your project is to examine the application process as it is now understood to exist, identifying all the elements therein. e.g. All data & information; data sources, stores, processes &amp; processors; Actions in the applications process and their sequence. Textually and diagrammatically (using Flow Charts) represent the process so that someone new to it can understand and implement it.</h3>
+<br />
+<center>
+<form>
+<input type="button" value="Back" onclick="history.back()"></form>
+</center>
+</div>
+</body>
+</html>

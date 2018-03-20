@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+
+<h1>xbox controller sample</h1>
+<p>This code sample shows how the <b>xboxdrv</b> program can be used to enable the xbox controller to run with the previous code sample.</p>
+<p>This is the content of a bash executable, which calls and configures the xboxdrv program, before starting the game program. In this case, the fire buttons are 'space' and 'k'. The movements left/right and up/down are mapped to the axes of the two joysticks on the controller.</p>
+<pre>
+#!/bin/bash
+sudo xboxdrv --type xbox --ui-axismap x1=KEY_LEFT:KEY_RIGHT,y2=KEY_UP:KEY_DOWN --ui-buttonmap guide=KEY_X,RT=KEY_SPACE,LT=KEY_K --detach-kernel-driver ./wingsOfwarMultiShot.pl 
+</pre>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="xbox_sample_01.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

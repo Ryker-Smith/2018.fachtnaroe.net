@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/lpr4.1.html -->
+
+<HEAD>
+<TITLE>Examples of using the lpq command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the <SAMP>lpq</SAMP> command</H1>
+
+<P>To display the print queue for your default
+printer:</P>
+
+<PRE WIDTH=80>   <STRONG>lpq</STRONG>
+   Rank    Owner   Job     Files
+   active  joe     483     overheads.ps
+   2nd     sarah   484     /tmp/RFC137
+   3rd     tony    485     report
+</PRE>
+
+<P>This displays the print queue for your default printer:
+the one defined by your <SAMP>PRINTER</SAMP> environment variable.</P>
+
+<P>Each job in the queue has a job number. Details are also
+given about the job's position in the queue and the
+user's name.</P>
+
+<HR>
+
+<P>To display the print queue for a specific printer:</P>
+
+<PRE WIDTH=80>   <STRONG>lpq -Ppsmath</STRONG>
+</PRE>
+
+<P>This displays the print queue for the printer <SAMP>psmath</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

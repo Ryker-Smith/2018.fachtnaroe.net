@@ -1,0 +1,1246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1: User Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the commands and utilities available with this operating system, including commands found only in the SunOS/BSD Compatibility Package, commands for communicating with other systems, commands associated with the Form and Menu Language Interpreter (FMLI), and commands specific to the SunOS&#8482; system.The available options, arguments, and operands for each command are provided in accordance with standard rules of command syntax, along with availability attributes, diagnostic information, and cross-references to other manual pages and reference material with relevant information.This section is for all UNIX&#174; system users.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1461";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1: User Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1461.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1 (821-1461-06)&body=Page: ld-1.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-39.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-193.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-474.html">User Commands</a></p>
+<p class="toc level2"><a href="acctcom-1.html"><tt>acctcom</tt>(1)</a></p>
+<p class="toc level2"><a href="adb-1.html"><tt>adb</tt>(1)</a></p>
+<p class="toc level2"><a href="addbib-1.html"><tt>addbib</tt>(1)</a></p>
+<p class="toc level2"><a href="admin-1.html"><tt>admin</tt>(1)</a></p>
+<p class="toc level2"><a href="alias-1.html"><tt>alias</tt>(1)</a></p>
+<p class="toc level2"><a href="allocate-1.html"><tt>allocate</tt>(1)</a></p>
+<p class="toc level2"><a href="amt-1.html"><tt>amt</tt>(1)</a></p>
+<p class="toc level2"><a href="appcert-1.html"><tt>appcert</tt>(1)</a></p>
+<p class="toc level2"><a href="apptrace-1.html"><tt>apptrace</tt>(1)</a></p>
+<p class="toc level2"><a href="apropos-1.html"><tt>apropos</tt>(1)</a></p>
+<p class="toc level2"><a href="ar-1.html"><tt>ar</tt>(1)</a></p>
+<p class="toc level2"><a href="arch-1.html"><tt>arch</tt>(1)</a></p>
+<p class="toc level2"><a href="as-1.html"><tt>as</tt>(1)</a></p>
+<p class="toc level2"><a href="asa-1.html"><tt>asa</tt>(1)</a></p>
+<p class="toc level2"><a href="at-1.html"><tt>at</tt>(1)</a></p>
+<p class="toc level2"><a href="atq-1.html"><tt>atq</tt>(1)</a></p>
+<p class="toc level2"><a href="atrm-1.html"><tt>atrm</tt>(1)</a></p>
+<p class="toc level2"><a href="audioconvert-1.html"><tt>audioconvert</tt>(1)</a></p>
+<p class="toc level2"><a href="audioctl-1.html"><tt>audioctl</tt>(1)</a></p>
+<p class="toc level2"><a href="audioplay-1.html"><tt>audioplay</tt>(1)</a></p>
+<p class="toc level2"><a href="audiorecord-1.html"><tt>audiorecord</tt>(1)</a></p>
+<p class="toc level2"><a href="audiotest-1.html"><tt>audiotest</tt>(1)</a></p>
+<p class="toc level2"><a href="auths-1.html"><tt>auths</tt>(1)</a></p>
+<p class="toc level2"><a href="auto-ef-1.html"><tt>auto_ef</tt>(1)</a></p>
+<p class="toc level2"><a href="awk-1.html"><tt>awk</tt>(1)</a></p>
+<p class="toc level2"><a href="banner-1.html"><tt>banner</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1.html"><tt>basename</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1b.html"><tt>basename</tt>(1B)</a></p>
+<p class="toc level2"><a href="batch-1.html"><tt>batch</tt>(1)</a></p>
+<p class="toc level2"><a href="bc-1.html"><tt>bc</tt>(1)</a></p>
+<p class="toc level2"><a href="bdiff-1.html"><tt>bdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="bfs-1.html"><tt>bfs</tt>(1)</a></p>
+<p class="toc level2"><a href="bg-1.html"><tt>bg</tt>(1)</a></p>
+<p class="toc level2"><a href="biff-1b.html"><tt>biff</tt>(1B)</a></p>
+<p class="toc level2"><a href="break-1.html"><tt>break</tt>(1)</a></p>
+<p class="toc level2"><a href="builtin-1.html"><tt>builtin</tt>(1)</a></p>
+<p class="toc level2"><a href="cal-1.html"><tt>cal</tt>(1)</a></p>
+<p class="toc level2"><a href="calendar-1.html"><tt>calendar</tt>(1)</a></p>
+<p class="toc level2"><a href="cancel-1.html"><tt>cancel</tt>(1)</a></p>
+<p class="toc level2"><a href="case-1.html"><tt>case</tt>(1)</a></p>
+<p class="toc level2"><a href="cat-1.html"><tt>cat</tt>(1)</a></p>
+<p class="toc level2"><a href="cd-1.html"><tt>cd</tt>(1)</a></p>
+<p class="toc level2"><a href="cdc-1.html"><tt>cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="cdrw-1.html"><tt>cdrw</tt>(1)</a></p>
+<p class="toc level2"><a href="chdir-1.html"><tt>chdir</tt>(1)</a></p>
+<p class="toc level2"><a href="checkeq-1.html"><tt>checkeq</tt>(1)</a></p>
+<p class="toc level2"><a href="checknr-1.html"><tt>checknr</tt>(1)</a></p>
+<p class="toc level2"><a href="chgrp-1.html"><tt>chgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="chkey-1.html"><tt>chkey</tt>(1)</a></p>
+<p class="toc level2"><a href="chmod-1.html"><tt>chmod</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1.html"><tt>chown</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1b.html"><tt>chown</tt>(1B)</a></p>
+<p class="toc level2"><a href="ckdate-1.html"><tt>ckdate</tt>(1)</a></p>
+<p class="toc level2"><a href="ckgid-1.html"><tt>ckgid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckint-1.html"><tt>ckint</tt>(1)</a></p>
+<p class="toc level2"><a href="ckitem-1.html"><tt>ckitem</tt>(1)</a></p>
+<p class="toc level2"><a href="ckkeywd-1.html"><tt>ckkeywd</tt>(1)</a></p>
+<p class="toc level2"><a href="ckpath-1.html"><tt>ckpath</tt>(1)</a></p>
+<p class="toc level2"><a href="ckrange-1.html"><tt>ckrange</tt>(1)</a></p>
+<p class="toc level2"><a href="ckstr-1.html"><tt>ckstr</tt>(1)</a></p>
+<p class="toc level2"><a href="cksum-1.html"><tt>cksum</tt>(1)</a></p>
+<p class="toc level2"><a href="cktime-1.html"><tt>cktime</tt>(1)</a></p>
+<p class="toc level2"><a href="ckuid-1.html"><tt>ckuid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckyorn-1.html"><tt>ckyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="clear-1.html"><tt>clear</tt>(1)</a></p>
+<p class="toc level2"><a href="cmp-1.html"><tt>cmp</tt>(1)</a></p>
+<p class="toc level2"><a href="col-1.html"><tt>col</tt>(1)</a></p>
+<p class="toc level2"><a href="comb-1.html"><tt>comb</tt>(1)</a></p>
+<p class="toc level2"><a href="comm-1.html"><tt>comm</tt>(1)</a></p>
+<p class="toc level2"><a href="command-1.html"><tt>command</tt>(1)</a></p>
+<p class="toc level2"><a href="compress-1.html"><tt>compress</tt>(1)</a></p>
+<p class="toc level2"><a href="continue-1.html"><tt>continue</tt>(1)</a></p>
+<p class="toc level2"><a href="cp-1.html"><tt>cp</tt>(1)</a></p>
+<p class="toc level2"><a href="cpio-1.html"><tt>cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="cpp-1.html"><tt>cpp</tt>(1)</a></p>
+<p class="toc level2"><a href="cputrack-1.html"><tt>cputrack</tt>(1)</a></p>
+<p class="toc level2"><a href="crle-1.html"><tt>crle</tt>(1)</a></p>
+<p class="toc level2"><a href="crontab-1.html"><tt>crontab</tt>(1)</a></p>
+<p class="toc level2"><a href="crypt-1.html"><tt>crypt</tt>(1)</a></p>
+<p class="toc level2"><a href="csh-1.html"><tt>csh</tt>(1)</a></p>
+<p class="toc level2"><a href="csplit-1.html"><tt>csplit</tt>(1)</a></p>
+<p class="toc level2"><a href="ct-1c.html"><tt>ct</tt>(1C)</a></p>
+<p class="toc level2"><a href="ctags-1.html"><tt>ctags</tt>(1)</a></p>
+<p class="toc level2"><a href="ctrun-1.html"><tt>ctrun</tt>(1)</a></p>
+<p class="toc level2"><a href="ctstat-1.html"><tt>ctstat</tt>(1)</a></p>
+<p class="toc level2"><a href="ctwatch-1.html"><tt>ctwatch</tt>(1)</a></p>
+<p class="toc level2"><a href="cu-1c.html"><tt>cu</tt>(1C)</a></p>
+<p class="toc level2"><a href="cut-1.html"><tt>cut</tt>(1)</a></p>
+<p class="toc level2"><a href="date-1.html"><tt>date</tt>(1)</a></p>
+<p class="toc level2"><a href="dc-1.html"><tt>dc</tt>(1)</a></p>
+<p class="toc level2"><a href="deallocate-1.html"><tt>deallocate</tt>(1)</a></p>
+<p class="toc level2"><a href="decrypt-1.html"><tt>decrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="delta-1.html"><tt>delta</tt>(1)</a></p>
+<p class="toc level2"><a href="deroff-1.html"><tt>deroff</tt>(1)</a></p>
+<p class="toc level2"><a href="des-1.html"><tt>des</tt>(1)</a></p>
+<p class="toc level2"><a href="df-1b.html"><tt>df</tt>(1B)</a></p>
+<p class="toc level2"><a href="dhcpinfo-1.html"><tt>dhcpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="diff-1.html"><tt>diff</tt>(1)</a></p>
+<p class="toc level2"><a href="diff3-1.html"><tt>diff3</tt>(1)</a></p>
+<p class="toc level2"><a href="diffmk-1.html"><tt>diffmk</tt>(1)</a></p>
+<p class="toc level2"><a href="digest-1.html"><tt>digest</tt>(1)</a></p>
+<p class="toc level2"><a href="digestp-1.html"><tt>digestp</tt>(1)</a></p>
+<p class="toc level2"><a href="dircmp-1.html"><tt>dircmp</tt>(1)</a></p>
+<p class="toc level2"><a href="dirname-1.html"><tt>dirname</tt>(1)</a></p>
+<p class="toc level2"><a href="dirs-1.html"><tt>dirs</tt>(1)</a></p>
+<p class="toc level2"><a href="dis-1.html"><tt>dis</tt>(1)</a></p>
+<p class="toc level2"><a href="disable-1.html"><tt>disable</tt>(1)</a></p>
+<p class="toc level2"><a href="disown-1.html"><tt>disown</tt>(1)</a></p>
+<p class="toc level2"><a href="dispgid-1.html"><tt>dispgid</tt>(1)</a></p>
+<p class="toc level2"><a href="dispuid-1.html"><tt>dispuid</tt>(1)</a></p>
+<p class="toc level2"><a href="dos2unix-1.html"><tt>dos2unix</tt>(1)</a></p>
+<p class="toc level2"><a href="download-1.html"><tt>download</tt>(1)</a></p>
+<p class="toc level2"><a href="dpost-1.html"><tt>dpost</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1.html"><tt>du</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1b.html"><tt>du</tt>(1B)</a></p>
+<p class="toc level2"><a href="dump-1.html"><tt>dump</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpcs-1.html"><tt>dumpcs</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpkeys-1.html"><tt>dumpkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1.html"><tt>echo</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1b.html"><tt>echo</tt>(1B)</a></p>
+<p class="toc level2"><a href="ed-1.html"><tt>ed</tt>(1)</a></p>
+<p class="toc level2"><a href="edit-1.html"><tt>edit</tt>(1)</a></p>
+<p class="toc level2"><a href="egrep-1.html"><tt>egrep</tt>(1)</a></p>
+<p class="toc level2"><a href="eject-1.html"><tt>eject</tt>(1)</a></p>
+<p class="toc level2"><a href="elfdump-1.html"><tt>elfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="elfedit-1.html"><tt>elfedit</tt>(1)</a></p>
+<p class="toc level2"><a href="elfsign-1.html"><tt>elfsign</tt>(1)</a></p>
+<p class="toc level2"><a href="elfwrap-1.html"><tt>elfwrap</tt>(1)</a></p>
+<p class="toc level2"><a href="enable-1.html"><tt>enable</tt>(1)</a></p>
+<p class="toc level2"><a href="encrypt-1.html"><tt>encrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="enhance-1.html"><tt>enhance</tt>(1)</a></p>
+<p class="toc level2"><a href="env-1.html"><tt>env</tt>(1)</a></p>
+<p class="toc level2"><a href="eqn-1.html"><tt>eqn</tt>(1)</a></p>
+<p class="toc level2"><a href="errange-1.html"><tt>errange</tt>(1)</a></p>
+<p class="toc level2"><a href="errdate-1.html"><tt>errdate</tt>(1)</a></p>
+<p class="toc level2"><a href="errgid-1.html"><tt>errgid</tt>(1)</a></p>
+<p class="toc level2"><a href="errint-1.html"><tt>errint</tt>(1)</a></p>
+<p class="toc level2"><a href="erritem-1.html"><tt>erritem</tt>(1)</a></p>
+<p class="toc level2"><a href="error-1.html"><tt>error</tt>(1)</a></p>
+<p class="toc level2"><a href="errpath-1.html"><tt>errpath</tt>(1)</a></p>
+<p class="toc level2"><a href="errstr-1.html"><tt>errstr</tt>(1)</a></p>
+<p class="toc level2"><a href="errtime-1.html"><tt>errtime</tt>(1)</a></p>
+<p class="toc level2"><a href="erruid-1.html"><tt>erruid</tt>(1)</a></p>
+<p class="toc level2"><a href="erryorn-1.html"><tt>erryorn</tt>(1)</a></p>
+<p class="toc level2"><a href="eval-1.html"><tt>eval</tt>(1)</a></p>
+<p class="toc level2"><a href="ex-1.html"><tt>ex</tt>(1)</a></p>
+<p class="toc level2"><a href="exec-1.html"><tt>exec</tt>(1)</a></p>
+<p class="toc level2"><a href="exit-1.html"><tt>exit</tt>(1)</a></p>
+<p class="toc level2"><a href="expand-1.html"><tt>expand</tt>(1)</a></p>
+<p class="toc level2"><a href="export-1.html"><tt>export</tt>(1)</a></p>
+<p class="toc level2"><a href="exportfs-1b.html"><tt>exportfs</tt>(1B)</a></p>
+<p class="toc level2"><a href="expr-1.html"><tt>expr</tt>(1)</a></p>
+<p class="toc level2"><a href="expr-1b.html"><tt>expr</tt>(1B)</a></p>
+<p class="toc level2"><a href="exstr-1.html"><tt>exstr</tt>(1)</a></p>
+<p class="toc level2"><a href="factor-1.html"><tt>factor</tt>(1)</a></p>
+<p class="toc level2"><a href="false-1.html"><tt>false</tt>(1)</a></p>
+<p class="toc level2"><a href="fastboot-1b.html"><tt>fastboot</tt>(1B)</a></p>
+<p class="toc level2"><a href="fasthalt-1b.html"><tt>fasthalt</tt>(1B)</a></p>
+<p class="toc level2"><a href="fc-1.html"><tt>fc</tt>(1)</a></p>
+<p class="toc level2"><a href="fdformat-1.html"><tt>fdformat</tt>(1)</a></p>
+<p class="toc level2"><a href="fg-1.html"><tt>fg</tt>(1)</a></p>
+<p class="toc level2"><a href="fgrep-1.html"><tt>fgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1.html"><tt>file</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1b.html"><tt>file</tt>(1B)</a></p>
+<p class="toc level2"><a href="filebench-1.html"><tt>filebench</tt>(1)</a></p>
+<p class="toc level2"><a href="filep-1.html"><tt>filep</tt>(1)</a></p>
+<p class="toc level2"><a href="filesync-1.html"><tt>filesync</tt>(1)</a></p>
+<p class="toc level2"><a href="filofaxp-1.html"><tt>filofaxp</tt>(1)</a></p>
+<p class="toc level2"><a href="find-1.html"><tt>find</tt>(1)</a></p>
+<p class="toc level2"><a href="finger-1.html"><tt>finger</tt>(1)</a></p>
+<p class="toc level2"><a href="fmt-1.html"><tt>fmt</tt>(1)</a></p>
+<p class="toc level2"><a href="fmtmsg-1.html"><tt>fmtmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="fold-1.html"><tt>fold</tt>(1)</a></p>
+<p class="toc level2"><a href="for-1.html"><tt>for</tt>(1)</a></p>
+<p class="toc level2"><a href="foreach-1.html"><tt>foreach</tt>(1)</a></p>
+<p class="toc level2"><a href="franklinp-1.html"><tt>franklinp</tt>(1)</a></p>
+<p class="toc level2"><a href="from-1b.html"><tt>from</tt>(1B)</a></p>
+<p class="toc level2"><a href="ftp-1.html"><tt>ftp</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpcount-1.html"><tt>ftpcount</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpwho-1.html"><tt>ftpwho</tt>(1)</a></p>
+<p class="toc level2"><a href="function-1.html"><tt>function</tt>(1)</a></p>
+<p class="toc level2"><a href="gcore-1.html"><tt>gcore</tt>(1)</a></p>
+<p class="toc level2"><a href="gencat-1.html"><tt>gencat</tt>(1)</a></p>
+<p class="toc level2"><a href="geniconvtbl-1.html"><tt>geniconvtbl</tt>(1)</a></p>
+<p class="toc level2"><a href="genmsg-1.html"><tt>genmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="get-1.html"><tt>get</tt>(1)</a></p>
+<p class="toc level2"><a href="getconf-1.html"><tt>getconf</tt>(1)</a></p>
+<p class="toc level2"><a href="getfacl-1.html"><tt>getfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="getlabel-1.html"><tt>getlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="getopt-1.html"><tt>getopt</tt>(1)</a></p>
+<p class="toc level2"><a href="getoptcvt-1.html"><tt>getoptcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="getopts-1.html"><tt>getopts</tt>(1)</a></p>
+<p class="toc level2"><a href="gettext-1.html"><tt>gettext</tt>(1)</a></p>
+<p class="toc level2"><a href="gettxt-1.html"><tt>gettxt</tt>(1)</a></p>
+<p class="toc level2"><a href="getzonepath-1.html"><tt>getzonepath</tt>(1)</a></p>
+<p class="toc level2"><a href="glob-1.html"><tt>glob</tt>(1)</a></p>
+<p class="toc level2"><a href="goto-1.html"><tt>goto</tt>(1)</a></p>
+<p class="toc level2"><a href="gprof-1.html"><tt>gprof</tt>(1)</a></p>
+<p class="toc level2"><a href="grep-1.html"><tt>grep</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1.html"><tt>groups</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1b.html"><tt>groups</tt>(1B)</a></p>
+<p class="toc level2"><a href="grpck-1b.html"><tt>grpck</tt>(1B)</a></p>
+<p class="toc level2"><a href="hash-1.html"><tt>hash</tt>(1)</a></p>
+<p class="toc level2"><a href="hashcheck-1.html"><tt>hashcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="hashmake-1.html"><tt>hashmake</tt>(1)</a></p>
+<p class="toc level2"><a href="hashstat-1.html"><tt>hashstat</tt>(1)</a></p>
+<p class="toc level2"><a href="head-1.html"><tt>head</tt>(1)</a></p>
+<p class="toc level2"><a href="help-1.html"><tt>help</tt>(1)</a></p>
+<p class="toc level2"><a href="helpdate-1.html"><tt>helpdate</tt>(1)</a></p>
+<p class="toc level2"><a href="helpgid-1.html"><tt>helpgid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpint-1.html"><tt>helpint</tt>(1)</a></p>
+<p class="toc level2"><a href="helpitem-1.html"><tt>helpitem</tt>(1)</a></p>
+<p class="toc level2"><a href="helppath-1.html"><tt>helppath</tt>(1)</a></p>
+<p class="toc level2"><a href="helprange-1.html"><tt>helprange</tt>(1)</a></p>
+<p class="toc level2"><a href="helpstr-1.html"><tt>helpstr</tt>(1)</a></p>
+<p class="toc level2"><a href="helptime-1.html"><tt>helptime</tt>(1)</a></p>
+<p class="toc level2"><a href="helpuid-1.html"><tt>helpuid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpyorn-1.html"><tt>helpyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="hist-1.html"><tt>hist</tt>(1)</a></p>
+<p class="toc level2"><a href="history-1.html"><tt>history</tt>(1)</a></p>
+<p class="toc level2"><a href="hostid-1.html"><tt>hostid</tt>(1)</a></p>
+<p class="toc level2"><a href="hostname-1.html"><tt>hostname</tt>(1)</a></p>
+<p class="toc level2"><a href="i286-1.html"><tt>i286</tt>(1)</a></p>
+<p class="toc level2"><a href="i386-1.html"><tt>i386</tt>(1)</a></p>
+<p class="toc level2"><a href="i486-1.html"><tt>i486</tt>(1)</a></p>
+<p class="toc level2"><a href="i860-1.html"><tt>i860</tt>(1)</a></p>
+<p class="toc level2"><a href="iapx286-1.html"><tt>iAPX286</tt>(1)</a></p>
+<p class="toc level2"><a href="iconv-1.html"><tt>iconv</tt>(1)</a></p>
+<p class="toc level2"><a href="idnconv-1.html"><tt>idnconv</tt>(1)</a></p>
+<p class="toc level2"><a href="if-1.html"><tt>if</tt>(1)</a></p>
+<p class="toc level2"><a href="indxbib-1.html"><tt>indxbib</tt>(1)</a></p>
+<p class="toc level2"><a href="install-1b.html"><tt>install</tt>(1B)</a></p>
+<p class="toc level2"><a href="ipcrm-1.html"><tt>ipcrm</tt>(1)</a></p>
+<p class="toc level2"><a href="ipcs-1.html"><tt>ipcs</tt>(1)</a></p>
+<p class="toc level2"><a href="isainfo-1.html"><tt>isainfo</tt>(1)</a></p>
+<p class="toc level2"><a href="isalist-1.html"><tt>isalist</tt>(1)</a></p>
+<p class="toc level2"><a href="jobs-1.html"><tt>jobs</tt>(1)</a></p>
+<p class="toc level2"><a href="join-1.html"><tt>join</tt>(1)</a></p>
+<p class="toc level2"><a href="jsh-1.html"><tt>jsh</tt>(1)</a></p>
+<p class="toc level2"><a href="kbd-1.html"><tt>kbd</tt>(1)</a></p>
+<p class="toc level2"><a href="kdestroy-1.html"><tt>kdestroy</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogin-1.html"><tt>keylogin</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogout-1.html"><tt>keylogout</tt>(1)</a></p>
+<p class="toc level2"><a href="kill-1.html"><tt>kill</tt>(1)</a></p>
+<p class="toc level2"><a href="kinit-1.html"><tt>kinit</tt>(1)</a></p>
+<p class="toc level2"><a href="klist-1.html"><tt>klist</tt>(1)</a></p>
+<p class="toc level2"><a href="kmdb-1.html"><tt>kmdb</tt>(1)</a></p>
+<p class="toc level2"><a href="kmfcfg-1.html"><tt>kmfcfg</tt>(1)</a></p>
+<p class="toc level2"><a href="kpasswd-1.html"><tt>kpasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="krb5-config-1.html"><tt>krb5-config</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh-1.html"><tt>ksh</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh93-1.html"><tt>ksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="ktutil-1.html"><tt>ktutil</tt>(1)</a></p>
+<p class="toc level2"><a href="lari-1.html"><tt>lari</tt>(1)</a></p>
+<p class="toc level2"><a href="last-1.html"><tt>last</tt>(1)</a></p>
+<p class="toc level2"><a href="lastcomm-1.html"><tt>lastcomm</tt>(1)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>ld</tt>(1)</a></p>
+</div>
+<p class="toc level2"><a href="ldap-1.html"><tt>ldap</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapadd-1.html"><tt>ldapadd</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapdelete-1.html"><tt>ldapdelete</tt>(1)</a></p>
+<p class="toc level2"><a href="ldaplist-1.html"><tt>ldaplist</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodify-1.html"><tt>ldapmodify</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodrdn-1.html"><tt>ldapmodrdn</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapsearch-1.html"><tt>ldapsearch</tt>(1)</a></p>
+<p class="toc level2"><a href="ldd-1.html"><tt>ldd</tt>(1)</a></p>
+<p class="toc level2"><a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="let-1.html"><tt>let</tt>(1)</a></p>
+<p class="toc level2"><a href="lex-1.html"><tt>lex</tt>(1)</a></p>
+<p class="toc level2"><a href="lgrpinfo-1.html"><tt>lgrpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="limit-1.html"><tt>limit</tt>(1)</a></p>
+<p class="toc level2"><a href="line-1.html"><tt>line</tt>(1)</a></p>
+<p class="toc level2"><a href="list-devices-1.html"><tt>list_devices</tt>(1)</a></p>
+<p class="toc level2"><a href="listusers-1.html"><tt>listusers</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-autoconfig-1.html"><tt>llc2_autoconfig</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-config-1.html"><tt>llc2_config</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-stats-1.html"><tt>llc2_stats</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1.html"><tt>ln</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1b.html"><tt>ln</tt>(1B)</a></p>
+<p class="toc level2"><a href="loadkeys-1.html"><tt>loadkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="locale-1.html"><tt>locale</tt>(1)</a></p>
+<p class="toc level2"><a href="localedef-1.html"><tt>localedef</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1.html"><tt>logger</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1b.html"><tt>logger</tt>(1B)</a></p>
+<p class="toc level2"><a href="login-1.html"><tt>login</tt>(1)</a></p>
+<p class="toc level2"><a href="logname-1.html"><tt>logname</tt>(1)</a></p>
+<p class="toc level2"><a href="logout-1.html"><tt>logout</tt>(1)</a></p>
+<p class="toc level2"><a href="look-1.html"><tt>look</tt>(1)</a></p>
+<p class="toc level2"><a href="lookbib-1.html"><tt>lookbib</tt>(1)</a></p>
+<p class="toc level2"><a href="lorder-1.html"><tt>lorder</tt>(1)</a></p>
+<p class="toc level2"><a href="lp-1.html"><tt>lp</tt>(1)</a></p>
+<p class="toc level2"><a href="lpc-1b.html"><tt>lpc</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpq-1b.html"><tt>lpq</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpr-1b.html"><tt>lpr</tt>(1B)</a></p>
+<p class="toc level2"><a href="lprm-1b.html"><tt>lprm</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpstat-1.html"><tt>lpstat</tt>(1)</a></p>
+<p class="toc level2"><a href="lptest-1b.html"><tt>lptest</tt>(1B)</a></p>
+<p class="toc level2"><a href="ls-1.html"><tt>ls</tt>(1)</a></p>
+<p class="toc level2"><a href="ls-1b.html"><tt>ls</tt>(1B)</a></p>
+<p class="toc level2"><a href="m4-1.html"><tt>m4</tt>(1)</a></p>
+<p class="toc level2"><a href="mac-1.html"><tt>mac</tt>(1)</a></p>
+<p class="toc level2"><a href="mach-1.html"><tt>mach</tt>(1)</a></p>
+<p class="toc level2"><a href="machid-1.html"><tt>machid</tt>(1)</a></p>
+<p class="toc level2"><a href="madv.so.1-1.html"><tt>madv.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="mail-1.html"><tt>mail</tt>(1)</a></p>
+<p class="toc level2"><a href="z-mail-1b.html"><tt>Mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mail-1b.html"><tt>mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mailcompat-1.html"><tt>mailcompat</tt>(1)</a></p>
+<p class="toc level2"><a href="mailp-1.html"><tt>mailp</tt>(1)</a></p>
+<p class="toc level2"><a href="mailq-1.html"><tt>mailq</tt>(1)</a></p>
+<p class="toc level2"><a href="mailstats-1.html"><tt>mailstats</tt>(1)</a></p>
+<p class="toc level2"><a href="mailx-1.html"><tt>mailx</tt>(1)</a></p>
+<p class="toc level2"><a href="make-1s.html"><tt>make</tt>(1S)</a></p>
+<p class="toc level2"><a href="makekey-1.html"><tt>makekey</tt>(1)</a></p>
+<p class="toc level2"><a href="man-1.html"><tt>man</tt>(1)</a></p>
+<p class="toc level2"><a href="mconnect-1.html"><tt>mconnect</tt>(1)</a></p>
+<p class="toc level2"><a href="mcs-1.html"><tt>mcs</tt>(1)</a></p>
+<p class="toc level2"><a href="mdb-1.html"><tt>mdb</tt>(1)</a></p>
+<p class="toc level2"><a href="mesg-1.html"><tt>mesg</tt>(1)</a></p>
+<p class="toc level2"><a href="mkdir-1.html"><tt>mkdir</tt>(1)</a></p>
+<p class="toc level2"><a href="mkmsgs-1.html"><tt>mkmsgs</tt>(1)</a></p>
+<p class="toc level2"><a href="mkstr-1b.html"><tt>mkstr</tt>(1B)</a></p>
+<p class="toc level2"><a href="mktemp-1.html"><tt>mktemp</tt>(1)</a></p>
+<p class="toc level2"><a href="moe-1.html"><tt>moe</tt>(1)</a></p>
+<p class="toc level2"><a href="more-1.html"><tt>more</tt>(1)</a></p>
+<p class="toc level2"><a href="mp-1.html"><tt>mp</tt>(1)</a></p>
+<p class="toc level2"><a href="mpss.so.1-1.html"><tt>mpss.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcc-1.html"><tt>msgcc</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcpp-1.html"><tt>msgcpp</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcvt-1.html"><tt>msgcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="msgfmt-1.html"><tt>msgfmt</tt>(1)</a></p>
+<p class="toc level2"><a href="msggen-1.html"><tt>msggen</tt>(1)</a></p>
+<p class="toc level2"><a href="msgget-1.html"><tt>msgget</tt>(1)</a></p>
+<p class="toc level2"><a href="mt-1.html"><tt>mt</tt>(1)</a></p>
+<p class="toc level2"><a href="mv-1.html"><tt>mv</tt>(1)</a></p>
+<p class="toc level2"><a href="nawk-1.html"><tt>nawk</tt>(1)</a></p>
+<p class="toc level2"><a href="nc-1.html"><tt>nc</tt>(1)</a></p>
+<p class="toc level2"><a href="nca-1.html"><tt>nca</tt>(1)</a></p>
+<p class="toc level2"><a href="ncab2clf-1.html"><tt>ncab2clf</tt>(1)</a></p>
+<p class="toc level2"><a href="ncakmod-1.html"><tt>ncakmod</tt>(1)</a></p>
+<p class="toc level2"><a href="neqn-1.html"><tt>neqn</tt>(1)</a></p>
+<p class="toc level2"><a href="newform-1.html"><tt>newform</tt>(1)</a></p>
+<p class="toc level2"><a href="newgrp-1.html"><tt>newgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="news-1.html"><tt>news</tt>(1)</a></p>
+<p class="toc level2"><a href="newsp-1.html"><tt>newsp</tt>(1)</a></p>
+<p class="toc level2"><a href="newtask-1.html"><tt>newtask</tt>(1)</a></p>
+<p class="toc level2"><a href="nice-1.html"><tt>nice</tt>(1)</a></p>
+<p class="toc level2"><a href="nl-1.html"><tt>nl</tt>(1)</a></p>
+<p class="toc level2"><a href="nm-1.html"><tt>nm</tt>(1)</a></p>
+<p class="toc level2"><a href="nohup-1.html"><tt>nohup</tt>(1)</a></p>
+<p class="toc level2"><a href="notify-1.html"><tt>notify</tt>(1)</a></p>
+<p class="toc level2"><a href="nroff-1.html"><tt>nroff</tt>(1)</a></p>
+<p class="toc level2"><a href="od-1.html"><tt>od</tt>(1)</a></p>
+<p class="toc level2"><a href="on-1.html"><tt>on</tt>(1)</a></p>
+<p class="toc level2"><a href="onintr-1.html"><tt>onintr</tt>(1)</a></p>
+<p class="toc level2"><a href="optisa-1.html"><tt>optisa</tt>(1)</a></p>
+<p class="toc level2"><a href="pack-1.html"><tt>pack</tt>(1)</a></p>
+<p class="toc level2"><a href="page-1.html"><tt>page</tt>(1)</a></p>
+<p class="toc level2"><a href="pagesize-1.html"><tt>pagesize</tt>(1)</a></p>
+<p class="toc level2"><a href="pargs-1.html"><tt>pargs</tt>(1)</a></p>
+<p class="toc level2"><a href="passwd-1.html"><tt>passwd</tt>(1)</a></p>
+<p class="toc level2"><a href="paste-1.html"><tt>paste</tt>(1)</a></p>
+<p class="toc level2"><a href="patch-1.html"><tt>patch</tt>(1)</a></p>
+<p class="toc level2"><a href="pathchk-1.html"><tt>pathchk</tt>(1)</a></p>
+<p class="toc level2"><a href="pax-1.html"><tt>pax</tt>(1)</a></p>
+<p class="toc level2"><a href="pcat-1.html"><tt>pcat</tt>(1)</a></p>
+<p class="toc level2"><a href="pcred-1.html"><tt>pcred</tt>(1)</a></p>
+<p class="toc level2"><a href="pdp11-1.html"><tt>pdp11</tt>(1)</a></p>
+<p class="toc level2"><a href="perl-1.html"><tt>perl</tt>(1)</a></p>
+<p class="toc level2"><a href="pfcsh-1.html"><tt>pfcsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pfexec-1.html"><tt>pfexec</tt>(1)</a></p>
+<p class="toc level2"><a href="pfiles-1.html"><tt>pfiles</tt>(1)</a></p>
+<p class="toc level2"><a href="pfksh-1.html"><tt>pfksh</tt>(1)</a></p>
+<p class="toc level2"><a href="pflags-1.html"><tt>pflags</tt>(1)</a></p>
+<p class="toc level2"><a href="pfsh-1.html"><tt>pfsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pg-1.html"><tt>pg</tt>(1)</a></p>
+<p class="toc level2"><a href="pgrep-1.html"><tt>pgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="pkcs11-inspect-1.html"><tt>pkcs11_inspect</tt>(1)</a></p>
+<p class="toc level2"><a href="pkginfo-1.html"><tt>pkginfo</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgmk-1.html"><tt>pkgmk</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgparam-1.html"><tt>pkgparam</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgproto-1.html"><tt>pkgproto</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgtrans-1.html"><tt>pkgtrans</tt>(1)</a></p>
+<p class="toc level2"><a href="pkill-1.html"><tt>pkill</tt>(1)</a></p>
+<p class="toc level2"><a href="pklogin-finder-1.html"><tt>pklogin_finder</tt>(1)</a></p>
+<p class="toc level2"><a href="pktool-1.html"><tt>pktool</tt>(1)</a></p>
+<p class="toc level2"><a href="plabel-1.html"><tt>plabel</tt>(1)</a></p>
+<p class="toc level2"><a href="pldd-1.html"><tt>pldd</tt>(1)</a></p>
+<p class="toc level2"><a href="plgrp-1.html"><tt>plgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="plimit-1.html"><tt>plimit</tt>(1)</a></p>
+<p class="toc level2"><a href="pmadvise-1.html"><tt>pmadvise</tt>(1)</a></p>
+<p class="toc level2"><a href="pmap-1.html"><tt>pmap</tt>(1)</a></p>
+<p class="toc level2"><a href="popd-1.html"><tt>popd</tt>(1)</a></p>
+<p class="toc level2"><a href="postdaisy-1.html"><tt>postdaisy</tt>(1)</a></p>
+<p class="toc level2"><a href="postdmd-1.html"><tt>postdmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postio-1.html"><tt>postio</tt>(1)</a></p>
+<p class="toc level2"><a href="postmd-1.html"><tt>postmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postplot-1.html"><tt>postplot</tt>(1)</a></p>
+<p class="toc level2"><a href="postprint-1.html"><tt>postprint</tt>(1)</a></p>
+<p class="toc level2"><a href="postreverse-1.html"><tt>postreverse</tt>(1)</a></p>
+<p class="toc level2"><a href="posttek-1.html"><tt>posttek</tt>(1)</a></p>
+<p class="toc level2"><a href="ppgsz-1.html"><tt>ppgsz</tt>(1)</a></p>
+<p class="toc level2"><a href="ppriv-1.html"><tt>ppriv</tt>(1)</a></p>
+<p class="toc level2"><a href="pr-1.html"><tt>pr</tt>(1)</a></p>
+<p class="toc level2"><a href="praliases-1.html"><tt>praliases</tt>(1)</a></p>
+<p class="toc level2"><a href="prctl-1.html"><tt>prctl</tt>(1)</a></p>
+<p class="toc level2"><a href="preap-1.html"><tt>preap</tt>(1)</a></p>
+<p class="toc level2"><a href="prex-1.html"><tt>prex</tt>(1)</a></p>
+<p class="toc level2"><a href="print-1.html"><tt>print</tt>(1)</a></p>
+<p class="toc level2"><a href="printenv-1b.html"><tt>printenv</tt>(1B)</a></p>
+<p class="toc level2"><a href="printf-1.html"><tt>printf</tt>(1)</a></p>
+<p class="toc level2"><a href="priocntl-1.html"><tt>priocntl</tt>(1)</a></p>
+<p class="toc level2"><a href="proc-1.html"><tt>proc</tt>(1)</a></p>
+<p class="toc level2"><a href="prof-1.html"><tt>prof</tt>(1)</a></p>
+<p class="toc level2"><a href="profiles-1.html"><tt>profiles</tt>(1)</a></p>
+<p class="toc level2"><a href="projects-1.html"><tt>projects</tt>(1)</a></p>
+<p class="toc level2"><a href="prs-1.html"><tt>prs</tt>(1)</a></p>
+<p class="toc level2"><a href="prt-1.html"><tt>prt</tt>(1)</a></p>
+<p class="toc level2"><a href="prun-1.html"><tt>prun</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1.html"><tt>ps</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1b.html"><tt>ps</tt>(1B)</a></p>
+<p class="toc level2"><a href="psig-1.html"><tt>psig</tt>(1)</a></p>
+<p class="toc level2"><a href="pstack-1.html"><tt>pstack</tt>(1)</a></p>
+<p class="toc level2"><a href="pstop-1.html"><tt>pstop</tt>(1)</a></p>
+<p class="toc level2"><a href="ptime-1.html"><tt>ptime</tt>(1)</a></p>
+<p class="toc level2"><a href="ptree-1.html"><tt>ptree</tt>(1)</a></p>
+<p class="toc level2"><a href="pushd-1.html"><tt>pushd</tt>(1)</a></p>
+<p class="toc level2"><a href="pvs-1.html"><tt>pvs</tt>(1)</a></p>
+<p class="toc level2"><a href="pwait-1.html"><tt>pwait</tt>(1)</a></p>
+<p class="toc level2"><a href="pwd-1.html"><tt>pwd</tt>(1)</a></p>
+<p class="toc level2"><a href="pwdx-1.html"><tt>pwdx</tt>(1)</a></p>
+<p class="toc level2"><a href="ranlib-1.html"><tt>ranlib</tt>(1)</a></p>
+<p class="toc level2"><a href="rcapstat-1.html"><tt>rcapstat</tt>(1)</a></p>
+<p class="toc level2"><a href="rcp-1.html"><tt>rcp</tt>(1)</a></p>
+<p class="toc level2"><a href="rdist-1.html"><tt>rdist</tt>(1)</a></p>
+<p class="toc level2"><a href="read-1.html"><tt>read</tt>(1)</a></p>
+<p class="toc level2"><a href="readonly-1.html"><tt>readonly</tt>(1)</a></p>
+<p class="toc level2"><a href="red-1.html"><tt>red</tt>(1)</a></p>
+<p class="toc level2"><a href="refer-1.html"><tt>refer</tt>(1)</a></p>
+<p class="toc level2"><a href="regcmp-1.html"><tt>regcmp</tt>(1)</a></p>
+<p class="toc level2"><a href="rehash-1.html"><tt>rehash</tt>(1)</a></p>
+<p class="toc level2"><a href="remote-shell-1.html"><tt>remote_shell</tt>(1)</a></p>
+<p class="toc level2"><a href="remsh-1.html"><tt>remsh</tt>(1)</a></p>
+<p class="toc level2"><a href="renice-1.html"><tt>renice</tt>(1)</a></p>
+<p class="toc level2"><a href="repeat-1.html"><tt>repeat</tt>(1)</a></p>
+<p class="toc level2"><a href="reset-1b.html"><tt>reset</tt>(1B)</a></p>
+<p class="toc level2"><a href="return-1.html"><tt>return</tt>(1)</a></p>
+<p class="toc level2"><a href="rev-1.html"><tt>rev</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh-1.html"><tt>rksh</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh93-1.html"><tt>rksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="rlogin-1.html"><tt>rlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="rm-1.html"><tt>rm</tt>(1)</a></p>
+<p class="toc level2"><a href="rmail-1.html"><tt>rmail</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdel-1.html"><tt>rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdir-1.html"><tt>rmdir</tt>(1)</a></p>
+<p class="toc level2"><a href="rmformat-1.html"><tt>rmformat</tt>(1)</a></p>
+<p class="toc level2"><a href="rmmount-1.html"><tt>rmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="rmumount-1.html"><tt>rmumount</tt>(1)</a></p>
+<p class="toc level2"><a href="roffbib-1.html"><tt>roffbib</tt>(1)</a></p>
+<p class="toc level2"><a href="roles-1.html"><tt>roles</tt>(1)</a></p>
+<p class="toc level2"><a href="rpcgen-1.html"><tt>rpcgen</tt>(1)</a></p>
+<p class="toc level2"><a href="rpm2cpio-1.html"><tt>rpm2cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="rsh-1.html"><tt>rsh</tt>(1)</a></p>
+<p class="toc level2"><a href="runat-1.html"><tt>runat</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1.html"><tt>rup</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1c.html"><tt>rup</tt>(1C)</a></p>
+<p class="toc level2"><a href="ruptime-1.html"><tt>ruptime</tt>(1)</a></p>
+<p class="toc level2"><a href="rusage-1b.html"><tt>rusage</tt>(1B)</a></p>
+<p class="toc level2"><a href="rusers-1.html"><tt>rusers</tt>(1)</a></p>
+<p class="toc level2"><a href="rwho-1.html"><tt>rwho</tt>(1)</a></p>
+<p class="toc level2"><a href="sact-1.html"><tt>sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sar-1.html"><tt>sar</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-1.html"><tt>sccs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-admin-1.html"><tt>sccs-admin</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-cdc-1.html"><tt>sccs-cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-comb-1.html"><tt>sccs-comb</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-delta-1.html"><tt>sccs-delta</tt>(1)</a></p>
+<p class="toc level2"><a href="sccsdiff-1.html"><tt>sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-get-1.html"><tt>sccs-get</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-help-1.html"><tt>sccs-help</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prs-1.html"><tt>sccs-prs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prt-1.html"><tt>sccs-prt</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-rmdel-1.html"><tt>sccs-rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sact-1.html"><tt>sccs-sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sccsdiff-1.html"><tt>sccs-sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-unget-1.html"><tt>sccs-unget</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-val-1.html"><tt>sccs-val</tt>(1)</a></p>
+<p class="toc level2"><a href="scp-1.html"><tt>scp</tt>(1)</a></p>
+<p class="toc level2"><a href="script-1.html"><tt>script</tt>(1)</a></p>
+<p class="toc level2"><a href="sdiff-1.html"><tt>sdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1.html"><tt>sed</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1b.html"><tt>sed</tt>(1B)</a></p>
+<p class="toc level2"><a href="select-1.html"><tt>select</tt>(1)</a></p>
+<p class="toc level2"><a href="set-1.html"><tt>set</tt>(1)</a></p>
+<p class="toc level2"><a href="setenv-1.html"><tt>setenv</tt>(1)</a></p>
+<p class="toc level2"><a href="setfacl-1.html"><tt>setfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="setlabel-1.html"><tt>setlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="setpgrp-1.html"><tt>setpgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="settime-1.html"><tt>settime</tt>(1)</a></p>
+<p class="toc level2"><a href="sftp-1.html"><tt>sftp</tt>(1)</a></p>
+<p class="toc level2"><a href="sh-1.html"><tt>sh</tt>(1)</a></p>
+<p class="toc level2"><a href="shcomp-1.html"><tt>shcomp</tt>(1)</a></p>
+<p class="toc level2"><a href="shell-builtins-1.html"><tt>shell_builtins</tt>(1)</a></p>
+<p class="toc level2"><a href="shift-1.html"><tt>shift</tt>(1)</a></p>
+<p class="toc level2"><a href="shutdown-1b.html"><tt>shutdown</tt>(1B)</a></p>
+<p class="toc level2"><a href="size-1.html"><tt>size</tt>(1)</a></p>
+<p class="toc level2"><a href="sleep-1.html"><tt>sleep</tt>(1)</a></p>
+<p class="toc level2"><a href="smbutil-1.html"><tt>smbutil</tt>(1)</a></p>
+<p class="toc level2"><a href="snca-1.html"><tt>snca</tt>(1)</a></p>
+<p class="toc level2"><a href="soelim-1.html"><tt>soelim</tt>(1)</a></p>
+<p class="toc level2"><a href="sort-1.html"><tt>sort</tt>(1)</a></p>
+<p class="toc level2"><a href="sortbib-1.html"><tt>sortbib</tt>(1)</a></p>
+<p class="toc level2"><a href="sotruss-1.html"><tt>sotruss</tt>(1)</a></p>
+<p class="toc level2"><a href="source-1.html"><tt>source</tt>(1)</a></p>
+<p class="toc level2"><a href="sparc-1.html"><tt>sparc</tt>(1)</a></p>
+<p class="toc level2"><a href="spell-1.html"><tt>spell</tt>(1)</a></p>
+<p class="toc level2"><a href="spellin-1.html"><tt>spellin</tt>(1)</a></p>
+<p class="toc level2"><a href="split-1.html"><tt>split</tt>(1)</a></p>
+<p class="toc level2"><a href="srchtxt-1.html"><tt>srchtxt</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-1.html"><tt>ssh</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-add-1.html"><tt>ssh-add</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-agent-1.html"><tt>ssh-agent</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-http-proxy-connect-1.html"><tt>ssh-http-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keygen-1.html"><tt>ssh-keygen</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keyscan-1.html"><tt>ssh-keyscan</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-socks5-proxy-connect-1.html"><tt>ssh-socks5-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="stop-1.html"><tt>stop</tt>(1)</a></p>
+<p class="toc level2"><a href="strchg-1.html"><tt>strchg</tt>(1)</a></p>
+<p class="toc level2"><a href="strconf-1.html"><tt>strconf</tt>(1)</a></p>
+<p class="toc level2"><a href="strings-1.html"><tt>strings</tt>(1)</a></p>
+<p class="toc level2"><a href="strip-1.html"><tt>strip</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1.html"><tt>stty</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1b.html"><tt>stty</tt>(1B)</a></p>
+<p class="toc level2"><a href="sum-1.html"><tt>sum</tt>(1)</a></p>
+<p class="toc level2"><a href="sum-1b.html"><tt>sum</tt>(1B)</a></p>
+<p class="toc level2"><a href="sun-1.html"><tt>sun</tt>(1)</a></p>
+<p class="toc level2"><a href="suspend-1.html"><tt>suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="svcprop-1.html"><tt>svcprop</tt>(1)</a></p>
+<p class="toc level2"><a href="svcs-1.html"><tt>svcs</tt>(1)</a></p>
+<p class="toc level2"><a href="switch-1.html"><tt>switch</tt>(1)</a></p>
+<p class="toc level2"><a href="symorder-1.html"><tt>symorder</tt>(1)</a></p>
+<p class="toc level2"><a href="sys-suspend-1.html"><tt>sys-suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="sysv-make-1.html"><tt>sysV-make</tt>(1)</a></p>
+<p class="toc level2"><a href="t300-1.html"><tt>t300</tt>(1)</a></p>
+<p class="toc level2"><a href="t300s-1.html"><tt>t300s</tt>(1)</a></p>
+<p class="toc level2"><a href="t4014-1.html"><tt>t4014</tt>(1)</a></p>
+<p class="toc level2"><a href="t450-1.html"><tt>t450</tt>(1)</a></p>
+<p class="toc level2"><a href="tabs-1.html"><tt>tabs</tt>(1)</a></p>
+<p class="toc level2"><a href="tail-1.html"><tt>tail</tt>(1)</a></p>
+<p class="toc level2"><a href="talk-1.html"><tt>talk</tt>(1)</a></p>
+<p class="toc level2"><a href="tar-1.html"><tt>tar</tt>(1)</a></p>
+<p class="toc level2"><a href="tbl-1.html"><tt>tbl</tt>(1)</a></p>
+<p class="toc level2"><a href="tcopy-1.html"><tt>tcopy</tt>(1)</a></p>
+<p class="toc level2"><a href="tee-1.html"><tt>tee</tt>(1)</a></p>
+<p class="toc level2"><a href="tek-1.html"><tt>tek</tt>(1)</a></p>
+<p class="toc level2"><a href="telnet-1.html"><tt>telnet</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1.html"><tt>test</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1b.html"><tt>test</tt>(1B)</a></p>
+<p class="toc level2"><a href="tftp-1.html"><tt>tftp</tt>(1)</a></p>
+<p class="toc level2"><a href="time-1.html"><tt>time</tt>(1)</a></p>
+<p class="toc level2"><a href="timemanp-1.html"><tt>timemanp</tt>(1)</a></p>
+<p class="toc level2"><a href="times-1.html"><tt>times</tt>(1)</a></p>
+<p class="toc level2"><a href="timesysp-1.html"><tt>timesysp</tt>(1)</a></p>
+<p class="toc level2"><a href="timex-1.html"><tt>timex</tt>(1)</a></p>
+<p class="toc level2"><a href="tip-1.html"><tt>tip</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfdump-1.html"><tt>tnfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfxtract-1.html"><tt>tnfxtract</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1.html"><tt>touch</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1b.html"><tt>touch</tt>(1B)</a></p>
+<p class="toc level2"><a href="tplot-1.html"><tt>tplot</tt>(1)</a></p>
+<p class="toc level2"><a href="tput-1.html"><tt>tput</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1.html"><tt>tr</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1b.html"><tt>tr</tt>(1B)</a></p>
+<p class="toc level2"><a href="trap-1.html"><tt>trap</tt>(1)</a></p>
+<p class="toc level2"><a href="troff-1.html"><tt>troff</tt>(1)</a></p>
+<p class="toc level2"><a href="true-1.html"><tt>true</tt>(1)</a></p>
+<p class="toc level2"><a href="truss-1.html"><tt>truss</tt>(1)</a></p>
+<p class="toc level2"><a href="tset-1b.html"><tt>tset</tt>(1B)</a></p>
+<p class="toc level2"><a href="tsort-1.html"><tt>tsort</tt>(1)</a></p>
+<p class="toc level2"><a href="tty-1.html"><tt>tty</tt>(1)</a></p>
+<p class="toc level2"><a href="type-1.html"><tt>type</tt>(1)</a></p>
+<p class="toc level2"><a href="typeset-1.html"><tt>typeset</tt>(1)</a></p>
+<p class="toc level2"><a href="u370-1.html"><tt>u370</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b-1.html"><tt>u3b</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b15-1.html"><tt>u3b15</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b2-1.html"><tt>u3b2</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b5-1.html"><tt>u3b5</tt>(1)</a></p>
+<p class="toc level2"><a href="ul-1.html"><tt>ul</tt>(1)</a></p>
+<p class="toc level2"><a href="ulimit-1.html"><tt>ulimit</tt>(1)</a></p>
+<p class="toc level2"><a href="umask-1.html"><tt>umask</tt>(1)</a></p>
+<p class="toc level2"><a href="unalias-1.html"><tt>unalias</tt>(1)</a></p>
+<p class="toc level2"><a href="uname-1.html"><tt>uname</tt>(1)</a></p>
+<p class="toc level2"><a href="uncompress-1.html"><tt>uncompress</tt>(1)</a></p>
+<p class="toc level2"><a href="unexpand-1.html"><tt>unexpand</tt>(1)</a></p>
+<p class="toc level2"><a href="unget-1.html"><tt>unget</tt>(1)</a></p>
+<p class="toc level2"><a href="unhash-1.html"><tt>unhash</tt>(1)</a></p>
+<p class="toc level2"><a href="unifdef-1.html"><tt>unifdef</tt>(1)</a></p>
+<p class="toc level2"><a href="uniq-1.html"><tt>uniq</tt>(1)</a></p>
+<p class="toc level2"><a href="units-1.html"><tt>units</tt>(1)</a></p>
+<p class="toc level2"><a href="unix2dos-1.html"><tt>unix2dos</tt>(1)</a></p>
+<p class="toc level2"><a href="unlimit-1.html"><tt>unlimit</tt>(1)</a></p>
+<p class="toc level2"><a href="unpack-1.html"><tt>unpack</tt>(1)</a></p>
+<p class="toc level2"><a href="unset-1.html"><tt>unset</tt>(1)</a></p>
+<p class="toc level2"><a href="unsetenv-1.html"><tt>unsetenv</tt>(1)</a></p>
+<p class="toc level2"><a href="until-1.html"><tt>until</tt>(1)</a></p>
+<p class="toc level2"><a href="uptime-1.html"><tt>uptime</tt>(1)</a></p>
+<p class="toc level2"><a href="userattr-1.html"><tt>userattr</tt>(1)</a></p>
+<p class="toc level2"><a href="users-1b.html"><tt>users</tt>(1B)</a></p>
+<p class="toc level2"><a href="uucp-1c.html"><tt>uucp</tt>(1C)</a></p>
+<p class="toc level2"><a href="uudecode-1c.html"><tt>uudecode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuencode-1c.html"><tt>uuencode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuglist-1c.html"><tt>uuglist</tt>(1C)</a></p>
+<p class="toc level2"><a href="uulog-1c.html"><tt>uulog</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuname-1c.html"><tt>uuname</tt>(1C)</a></p>
+<p class="toc level2"><a href="uupick-1c.html"><tt>uupick</tt>(1C)</a></p>
+<p class="toc level2"><a href="uustat-1c.html"><tt>uustat</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuto-1c.html"><tt>uuto</tt>(1C)</a></p>
+<p class="toc level2"><a href="uux-1c.html"><tt>uux</tt>(1C)</a></p>
+<p class="toc level2"><a href="vacation-1.html"><tt>vacation</tt>(1)</a></p>
+<p class="toc level2"><a href="val-1.html"><tt>val</tt>(1)</a></p>
+<p class="toc level2"><a href="valdate-1.html"><tt>valdate</tt>(1)</a></p>
+<p class="toc level2"><a href="valgid-1.html"><tt>valgid</tt>(1)</a></p>
+<p class="toc level2"><a href="valint-1.html"><tt>valint</tt>(1)</a></p>
+<p class="toc level2"><a href="valpath-1.html"><tt>valpath</tt>(1)</a></p>
+<p class="toc level2"><a href="valrange-1.html"><tt>valrange</tt>(1)</a></p>
+<p class="toc level2"><a href="valstr-1.html"><tt>valstr</tt>(1)</a></p>
+<p class="toc level2"><a href="valtime-1.html"><tt>valtime</tt>(1)</a></p>
+<p class="toc level2"><a href="valuid-1.html"><tt>valuid</tt>(1)</a></p>
+<p class="toc level2"><a href="valyorn-1.html"><tt>valyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="vax-1.html"><tt>vax</tt>(1)</a></p>
+<p class="toc level2"><a href="vc-1.html"><tt>vc</tt>(1)</a></p>
+<p class="toc level2"><a href="vedit-1.html"><tt>vedit</tt>(1)</a></p>
+<p class="toc level2"><a href="ver-1.html"><tt>ver</tt>(1)</a></p>
+<p class="toc level2"><a href="vgrind-1.html"><tt>vgrind</tt>(1)</a></p>
+<p class="toc level2"><a href="vi-1.html"><tt>vi</tt>(1)</a></p>
+<p class="toc level2"><a href="view-1.html"><tt>view</tt>(1)</a></p>
+<p class="toc level2"><a href="vipw-1b.html"><tt>vipw</tt>(1B)</a></p>
+<p class="toc level2"><a href="volcheck-1.html"><tt>volcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="volrmmount-1.html"><tt>volrmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="w-1.html"><tt>w</tt>(1)</a></p>
+<p class="toc level2"><a href="wait-1.html"><tt>wait</tt>(1)</a></p>
+<p class="toc level2"><a href="wc-1.html"><tt>wc</tt>(1)</a></p>
+<p class="toc level2"><a href="what-1.html"><tt>what</tt>(1)</a></p>
+<p class="toc level2"><a href="whatis-1.html"><tt>whatis</tt>(1)</a></p>
+<p class="toc level2"><a href="whence-1.html"><tt>whence</tt>(1)</a></p>
+<p class="toc level2"><a href="whereis-1b.html"><tt>whereis</tt>(1B)</a></p>
+<p class="toc level2"><a href="which-1.html"><tt>which</tt>(1)</a></p>
+<p class="toc level2"><a href="while-1.html"><tt>while</tt>(1)</a></p>
+<p class="toc level2"><a href="who-1.html"><tt>who</tt>(1)</a></p>
+<p class="toc level2"><a href="whoami-1b.html"><tt>whoami</tt>(1B)</a></p>
+<p class="toc level2"><a href="whocalls-1.html"><tt>whocalls</tt>(1)</a></p>
+<p class="toc level2"><a href="whois-1.html"><tt>whois</tt>(1)</a></p>
+<p class="toc level2"><a href="write-1.html"><tt>write</tt>(1)</a></p>
+<p class="toc level2"><a href="xargs-1.html"><tt>xargs</tt>(1)</a></p>
+<p class="toc level2"><a href="xgettext-1.html"><tt>xgettext</tt>(1)</a></p>
+<p class="toc level2"><a href="xstr-1.html"><tt>xstr</tt>(1)</a></p>
+<p class="toc level2"><a href="yacc-1.html"><tt>yacc</tt>(1)</a></p>
+<p class="toc level2"><a href="yes-1.html"><tt>yes</tt>(1)</a></p>
+<p class="toc level2"><a href="ypcat-1.html"><tt>ypcat</tt>(1)</a></p>
+<p class="toc level2"><a href="ypmatch-1.html"><tt>ypmatch</tt>(1)</a></p>
+<p class="toc level2"><a href="yppasswd-1.html"><tt>yppasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="ypwhich-1.html"><tt>ypwhich</tt>(1)</a></p>
+<p class="toc level2"><a href="zcat-1.html"><tt>zcat</tt>(1)</a></p>
+<p class="toc level2"><a href="zlogin-1.html"><tt>zlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="zonename-1.html"><tt>zonename</tt>(1)</a></p>
+<p class="toc level2"><a href="zonestat-1.html"><tt>zonestat</tt>(1)</a></p>
+
+</div>
+
+<a name="REFMAN1content"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1ld-1"></a><a name="ld-1"></a><h3>ld</h3>
+<p>- link-editor for object files</p><h3>Synopsis</h3>
+<pre><tt>ld</tt> [<tt>-32</tt> | <tt>-64</tt>] [<tt>-a</tt> | <tt>-r</tt>] [<tt>-b</tt>] [<tt>-B</tt>direct | nodirect]
+[<tt>-B</tt> dynamic | static] [<tt>-B</tt> eliminate] [<tt>-B</tt> group] [<tt>-B</tt> local]
+[<tt>-B</tt> reduce] [<tt>-B</tt> symbolic] [<tt>-c</tt> <var>name</var>] [<tt>-C</tt>] [<tt>-d</tt> y | n]
+[<tt>-D</tt> <var>token</var>,...] [<tt>-e</tt> <var>epsym</var>] [<tt>-f</tt> <var>name</var> | <tt>-F</tt> <var>name</var>] [<tt>-G</tt>] [<tt>-h</tt> <var>name</var>]
+[<tt>-i</tt>] [<tt>-I</tt> <var>name</var>] [<tt>-l</tt> <var>x</var>] [<tt>-L</tt> <var>path</var>] [<tt>-m</tt>] [<tt>-M</tt> <var>mapfile</var>]
+[<tt>-N</tt> <var>string</var>] [<tt>-o</tt> <var>outfile</var>] [<tt>-p</tt> <var>auditlib</var>] [<tt>-P</tt> <var>auditlib</var>]
+[<tt>-Q</tt> y | n] [<tt>-R</tt> <var>path</var>] [<tt>-s</tt>] [<tt>-S</tt> <var>supportlib</var>] [<tt>-t</tt>]
+[<tt>-u</tt> <var>symname</var>] [<tt>-V</tt>] [<tt>-Y P</tt><var>,dirlist</var>] [<tt>-z</tt> absexec]
+[<tt>-z</tt> allextract | defaultextract | weakextract ]
+[<tt>-z</tt> altexec64] [<tt>-z</tt> combreloc | nocombreloc ]
+[<tt>-z</tt> deferred | nodeferred] [<tt>-z</tt> defs | nodefs]
+[<tt>-z</tt> direct | nodirect] [<tt>-z</tt> endfiltee]
+[<tt>-z</tt> fatal-warnings | nofatal-warnings] [<tt>-z</tt> finiarray=<var>function</var>]
+[<tt>-z</tt> globalaudit] [<tt>-z</tt> groupperm | nogroupperm]
+[<tt>-z</tt> guidance[=item1,item2...]] [<tt>-z</tt> help ]
+[<tt>-z</tt> ignore | record] [<tt>-z</tt> initarray=<var>function</var>] [<tt>-z</tt> initfirst]
+[<tt>-z</tt> interpose] [<tt>-z</tt> lazyload | nolazyload]
+[<tt>-z</tt> ld32=<var>arg1</var>,<var>arg2</var>,...] [<tt>-z</tt> ld64=<var>arg1</var>,<var>arg2</var>,...]
+[<tt>-z</tt> loadfltr] [<tt>-z</tt> muldefs] [<tt>-z</tt> nocompstrtab] [<tt>-z</tt> nodefaultlib]
+[<tt>-z</tt> nodelete] [<tt>-z</tt> nodlopen] [<tt>-z</tt> nodump] [<tt>-z</tt> noldynsym]
+[<tt>-z</tt> nopartial] [<tt>-z</tt> noversion] [<tt>-z</tt> now] [<tt>-z</tt> origin]
+[<tt>-z</tt> preinitarray=<var>function</var>] [<tt>-z</tt> redlocsym] [<tt>-z</tt> relaxreloc]
+[<tt>-z</tt> rescan-now] [<tt>-z</tt> recan] [<tt>-z</tt> rescan-start <var>...</var> <tt>-z</tt> rescan-end]]
+[<tt>-z</tt> symbolcap] [<tt>-z</tt> target=sparc|x86]
+[<tt>-z</tt> text | textwarn | textoff] [<tt>-z</tt> verbose]
+[<tt>-z</tt> wrap=<var>symbol</var>] <var>filename</var>...</pre><h3>Description</h3>
+<p>The link-editor, <tt>ld</tt>, combines relocatable object files by resolving symbol references to symbol
+definitions, together with performing relocations. <tt>ld</tt> operates in two modes, static or dynamic, as
+governed by the <tt>-d</tt> option. In all cases, the output of <tt>ld</tt> is
+left in the file <tt>a.out</tt> by default. See NOTES.</p><p>In dynamic mode, <tt>-dy</tt>, the default, relocatable object files that are provided as
+arguments are combined to produce an executable object file. This file is linked
+at execution with any shared object files that are provided as arguments. If
+the <tt>-G</tt> option is specified, relocatable object files are combined to produce a
+shared object. Without the <tt>-G</tt> option, a dynamic executable is created.</p><p>In static mode, <tt>-dn</tt>, relocatable object files that are provided as arguments are
+combined to produce a static executable file. If the <tt>-r</tt> option is specified,
+relocatable object files are combined to produce one relocatable object file. See <tt>Static Executables</tt>.</p><p>Dynamic linking is the most common model for combining relocatable objects, and the
+eventual creation of processes within Solaris. This environment tightly couples the work of
+the link-editor and the runtime linker, <a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a>. Both of these utilities, together with
+their related technologies and utilities, are extensively documented in the <a href="../819-0690/index.html"><i>Linker and Libraries Guide</i></a>.</p><p>If any argument is a library, <tt>ld</tt> by default searches the library exactly
+once at the point the library is encountered on the argument list. The
+library can be either a shared object or relocatable archive. See <a href="../821-1464/ar.h-3head.html#REFMAN3Far.h-3head"><tt>ar.h</tt>(3HEAD)</a>).</p><p>A shared object consists of an indivisible, whole unit that has been generated
+by a previous link-edit of one or more input files. When the
+link-editor processes a shared object, the entire contents of the shared object become a
+logical part of the resulting output file image. The shared object is
+not physically copied during the link-edit as its actual inclusion is deferred until process
+execution. This logical inclusion means that all symbol entries defined in the shared
+object are made available to the link-editing process. See <a href="../819-0690/chapter4-1.html#LLMchapter4-1">Chapter 4, Shared Objects, in <i>Linker and Libraries Guide</i></a></p><p>For an archive library, <tt>ld</tt> loads only those routines that define an unresolved
+external reference. <tt>ld</tt> searches the symbol table of the archive library sequentially to
+resolve external references that can be satisfied by library members. This search is
+repeated until no external references can be resolved by the archive. Thus, the
+order of members in the library is functionally unimportant, unless multiple library members exist
+that define the same external symbol. Archive libraries that have interdependencies can require
+multiple command line definitions, or the use of one of the <tt>-z</tt>
+<tt>rescan</tt> options. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-83007">Archive Processing in <i>Linker and Libraries Guide</i></a>.</p><p><tt>ld</tt> is a cross link-editor, able to link 32&#8211;bit objects or 64&#8211;bit objects,
+for Sparc or x86 targets. <tt>ld</tt> uses the ELF class and machine type
+of the first relocatable object on the command line to govern the mode
+in which to operate. The mixing of 32&#8211;bit objects and 64&#8211;bit objects is
+not permitted. Similarly, only objects of a single machine type are allowed. See
+the <tt>-32</tt>, <tt>-64</tt> and <tt>-z target</tt> options, and the <tt>LD_NOEXEC_64</tt> environment variable.</p><h4>Static Executables</h4>
+<p>The creation of static executables has been discouraged for many releases. In fact,
+64&#8211;bit system archive libraries have never been provided. Because a static executable is
+built against system archive libraries, the executable contains system implementation details. This self-containment
+has a number of drawbacks.</p>
+<ul><li><p>The executable is immune to the benefits of system patches delivered as shared objects. The executable therefore, must be rebuilt to take advantage of many system improvements.</p></li>
+<li><p>The ability of the executable to run on future releases can be compromised.</p></li>
+<li><p>The duplication of system implementation details negatively affects system performance.</p></li></ul>
+<p>With Solaris 10, 32&#8211;bit system archive libraries are no longer provided. Without these
+libraries, specifically <tt>libc.a</tt>, the creation of static executables is no longer achievable without
+specialized system knowledge. However, the capability of <tt>ld</tt> to process static linking options, and
+the processing of archive libraries, remains unchanged.</p><h3>Options</h3>
+<p>The following options are supported.</p><dl><dt><tt>-32</tt> | <tt>-64</tt></dt>
+<dd><p>Creates a 32&#8211;bit, or 64&#8211;bit object.</p><p>By default, the class of the object being generated is determined from the first ELF object processed from the command line. If no objects are specified, the class is determined by the first object encountered within the first archive processed from the command line. If there are no objects or archives, the link-editor creates a 32&#8211;bit object.</p><p>The <tt>-64</tt> option is required to create a 64&#8211;bit object solely from a <tt>mapfile</tt>.</p><p>The <tt>-32</tt> or <tt>-64</tt> options can also be used in the rare case of linking entirely from an archive that contains a mixture of 32 and 64&#8211;bit objects. If the first object in the archive is not the class of the object that is required to be created, then the <tt>-32</tt> or <tt>-64</tt> option can be used to direct the link-editor.</p></dd>
+<dt><tt>-a</tt></dt>
+<dd><p>In static mode only, produces an executable object file. Undefined references are not permitted. This option is the default behavior for static mode. The <tt>-a</tt> option can not be used with the <tt>-r</tt> option. See <tt>Static Executables</tt> under DESCRIPTION.</p></dd>
+<dt><tt>-b</tt></dt>
+<dd><p>In dynamic mode only, provides no special processing for dynamic executable relocations that reference symbols in shared objects. Without the <tt>-b</tt> option, the link-editor applies techniques within a dynamic executable so that the text segment can remain read-only. One technique is the creation of special position-independent relocations for references to functions that are defined in shared objects. Another technique arranges for data objects that are defined in shared objects to be copied into the memory image of an executable at runtime.</p><p>The <tt>-b</tt> option is intended for specialized dynamic objects and is not recommended for general use. Its use suppresses all specialized processing required to ensure an object's shareability, and can even prevent the relocation of 64&#8211;bit executables.</p></dd>
+<dt><tt>-B</tt> <tt>direct</tt> | <tt>nodirect</tt></dt>
+<dd><p>These options govern direct binding. <tt>-B</tt> <tt>direct</tt> establishes direct binding information by recording the relationship between each symbol reference together with the dependency that provides the definition. In addition, direct binding information is established between each symbol reference and an associated definition within the object being created. The runtime linker uses this information to search directly for a symbol in the associated object rather than to carry out a default symbol search.</p><p>Direct binding information can only be established to dependencies specified with the link-edit. Thus, you should use the <tt>-z</tt> <tt>defs</tt> option. Objects that wish to interpose on symbols in a direct binding environment should identify themselves as interposers with the <tt>-z</tt> <tt>interpose</tt> option. The use of <tt>-B</tt> <tt>direct</tt> enables <tt>-z</tt> <tt>lazyload</tt> for all dependencies.</p><p>The <tt>-B</tt> <tt>nodirect</tt> option prevents any direct binding to the interfaces offered by the object being created. The object being created can continue to directly bind to external interfaces by specifying the <tt>-z</tt> <tt>direct</tt> option. See <a href="../819-0690/aehzq.html#LLMaehzq">Appendix D, <i>Direct Bindings,</i> in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-B</tt> <tt>dynamic</tt> | <tt>static</tt></dt>
+<dd><p>Options governing library inclusion. <tt>-B</tt> <tt>dynamic</tt> is valid in dynamic mode only. These options can be specified any number of times on the command line as toggles: if the <tt>-B</tt> <tt>static</tt> option is given, no shared objects are accepted until <tt>-B</tt> <tt>dynamic</tt> is seen. See the <tt>-l</tt> option.</p></dd>
+<dt><tt>-B</tt> <tt>eliminate</tt></dt>
+<dd><p>Causes any global symbols, not assigned to a version definition, to be eliminated from the symbol table. Version definitions can be supplied by means of a <tt>mapfile</tt> to indicate the global symbols that should remain visible in the generated object. This option achieves the same symbol elimination as the <var>auto-elimination</var> directive that is available as part of a <tt>mapfile</tt> version definition. This option can be useful when combining versioned and non-versioned relocatable objects. See also the <tt>-B</tt> <tt>local</tt> option and the <tt>-B</tt> <tt>reduce</tt> option. See <a href="../819-0690/gjpky.html#LLMgdzmc">SYMBOL_SCOPE / SYMBOL_VERSION Directives in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-B</tt> <tt>group</tt></dt>
+<dd><p>Establishes a shared object and its dependencies as a group. Objects within the group are bound to other members of the group at runtime. This mode is similar to adding the object to the process by using <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a> with the <tt>RTLD_GROUP</tt> mode. An object that has an explicit dependency on a object identified as a group, becomes a member of the group.</p><p>As the group must be self contained, use of the <tt>-B</tt> <tt>group</tt> option also asserts the <tt>-z</tt> <tt>defs</tt> option.</p></dd>
+<dt><tt>-B</tt> <tt>local</tt></dt>
+<dd><p>Causes any global symbols, not assigned to a version definition, to be reduced to local. Version definitions can be supplied by means of a <tt>mapfile</tt> to indicate the global symbols that should remain visible in the generated object. This option achieves the same symbol reduction as the <var>auto-reduction</var> directive that is available as part of a <tt>mapfile</tt> version definition. This option can be useful when combining versioned and non-versioned relocatable objects. See also the <tt>-B</tt> <tt>eliminate</tt> option and the <tt>-B</tt> <tt>reduce</tt> option. See <a href="../819-0690/gjpky.html#LLMgdzmc">SYMBOL_SCOPE / SYMBOL_VERSION Directives in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-B</tt> <tt>reduce</tt></dt>
+<dd><p>When generating a relocatable object, causes the reduction of symbolic information defined by any version definitions. Version definitions can be supplied by means of a <tt>mapfile</tt> to indicate the global symbols that should remain visible in the generated object. By default, when a relocatable object is generated, version definitions are only recorded in the output image. The actual reduction of symbolic information is carried out when the object is used in the construction of a dynamic executable or shared object. The <tt>-B</tt> <tt>reduce</tt> option is applied automatically when a dynamic executable or shared object is created.</p></dd>
+<dt><tt>-B</tt> <tt>symbolic</tt></dt>
+<dd><p>In dynamic mode only. When building a shared object, binds references to global symbols to their definitions, if available, within the object. Normally, references to global symbols within shared objects are not bound until runtime, even if definitions are available. This model allows definitions of the same symbol in an executable or other shared object to override the object's own definition. <tt>ld</tt> issues warnings for undefined symbols unless <tt>-z</tt> <tt>defs</tt> overrides.</p><p>The <tt>-B</tt> <tt>symbolic</tt> option is intended for specialized dynamic objects and is not recommended for general use. To reduce the runtime relocation processing that is required an object, the creation of a version definition is recommended.</p></dd>
+<dt><tt>-c</tt> <var>name</var></dt>
+<dd><p>Records the configuration file <var>name</var> for use at runtime. Configuration files can be employed to alter default search paths, provide a directory cache, together with providing alternative object dependencies. See <a href="crle-1.html"><tt>crle</tt>(1)</a>.</p></dd>
+<dt><tt>-C</tt></dt>
+<dd><p>Demangles C++ symbol names displayed in diagnostic messages.</p></dd>
+<dt><tt>-d</tt> <tt>y</tt> | <tt>n</tt></dt>
+<dd><p>When <tt>-d</tt> <tt>y</tt>, the default, is specified, <tt>ld</tt> uses dynamic linking. When <tt>-d</tt> <tt>n</tt> is specified, <tt>ld</tt> uses static linking. See <tt>Static Executables</tt> under DESCRIPTION, and <tt>-B</tt> <tt>dynamic</tt>|<tt>static</tt>.</p></dd>
+<dt><tt>-D</tt> <var>token</var>,...</dt>
+<dd><p>Prints debugging information as specified by each <var>token</var>, to the standard error. The special token <tt>help</tt> indicates the full list of tokens available. See <a href="../819-0690/chapter2-18.html#LLMchapter2-18">Debugging Aids in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-e</tt> <var>epsym</var></dt>
+<dt><tt>--entry</tt> <var>epsym</var></dt>
+<dd><p>Sets the entry point address for the output file to be the symbol <var>epsym</var>.</p></dd>
+<dt><tt>-f</tt> <var>name</var></dt>
+<dt><tt>--auxiliary</tt> <var>name</var></dt>
+<dd><p>Useful only when building a shared object. Specifies that the symbol table of the shared object is used as an auxiliary filter on the symbol table of the shared object specified by <var>name</var>. Multiple instances of this option are allowed. This option can not be combined with the <tt>-F</tt> option. See <a href="../819-0690/chapter4-4.html#LLMchapter4-5">Generating Auxiliary Filters in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-F</tt> <var>name</var></dt>
+<dt><tt>--filter</tt> <var>name</var></dt>
+<dd><p>Useful only when building a shared object. Specifies that the symbol table of the shared object is used as a filter on the symbol table of the shared object specified by <var>name</var>. Multiple instances of this option are allowed. This option can not be combined with the <tt>-f</tt> option. See <a href="../819-0690/chapter4-4.html#LLMchapter4-31738">Generating Standard Filters in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-G</tt></dt>
+<dt><tt>-shared</tt></dt>
+<dd><p>In dynamic mode only, produces a shared object. Undefined symbols are allowed. See <a href="../819-0690/chapter4-1.html#LLMchapter4-1">Chapter 4, Shared Objects, in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-h</tt> <var>name</var></dt>
+<dt><tt>--soname</tt> <var>name</var></dt>
+<dd><p>In dynamic mode only, when building a shared object, records <var>name</var> in the object's dynamic section. <var>name</var> is recorded in any dynamic objects that are linked with this object rather than the object's file system name. Accordingly, <var>name</var> is used by the runtime linker as the name of the shared object to search for at runtime. See <a href="../819-0690/chapter4-97194.html#LLMchapter4-2-rason">Recording a Shared Object Name in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-i</tt></dt>
+<dd><p>Ignores <tt>LD_LIBRARY_PATH</tt>. This option is useful when an <tt>LD_LIBRARY_PATH</tt> setting is in effect to influence the runtime library search, which would interfere with the link-editing being performed.</p></dd>
+<dt><tt>-I</tt> <var>name</var></dt>
+<dt><tt>--dynamic-linker</tt> <var>name</var></dt>
+<dd><p>When building an executable, uses <var>name</var> as the path name of the interpreter to be written into the program header. The default in static mode is no interpreter. In dynamic mode, the default is the name of the runtime linker, <a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a>. Either case can be overridden by <tt>-I</tt> <var>name</var>. <a href="../821-1463/exec-2.html#REFMAN2exec-2"><tt>exec</tt>(2)</a> loads this interpreter when the <tt>a.out</tt> is loaded, and passes control to the interpreter rather than to the <tt>a.out</tt> directly.</p></dd>
+<dt><tt>-l</tt> <var>x</var></dt>
+<dt><tt>--library</tt> <var>x</var></dt>
+<dd><p>Searches a library <tt>lib</tt><var>x</var><tt>.so</tt> or <tt>lib</tt><var>x</var><tt>.a</tt>, the conventional names for shared object and archive libraries, respectively. In dynamic mode, unless the <tt>-B</tt> <tt>static</tt> option is in effect, <tt>ld</tt> searches each directory specified in the library search path for a <tt>lib</tt><var>x</var><tt>.so</tt> or <tt>lib</tt><var>x</var><tt>.a</tt> file. The directory search stops at the first directory containing either. <tt>ld</tt> chooses the file ending in <tt>.so</tt> if <tt>-l</tt><var>x</var> expands to two files with names of the form <tt>lib</tt><var>x</var><tt>.so</tt> and <tt>lib</tt><var>x</var><tt>.a</tt>. If no <tt>lib</tt><var>x</var><tt>.so</tt> is found, then <tt>ld</tt> accepts <tt>lib</tt><var>x</var><tt>.a</tt>. In static mode, or when the <tt>-B</tt> <tt>static</tt> option is in effect, <tt>ld</tt> selects only the file ending in <tt>.a</tt>. <tt>ld</tt> searches a library when the library is encountered, so the placement of <tt>-l</tt> is significant. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-41106">Linking With Additional Libraries in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-L</tt> <var>path</var></dt>
+<dt><tt>--library-path</tt> <var>path</var></dt>
+<dd><p>Adds <var>path</var> to the library search directories. <tt>ld</tt> searches for libraries first in any directories specified by the <tt>-L</tt> options and then in the standard directories. This option is useful only if the option precedes the <tt>-l</tt> options to which the <tt>-L</tt> option applies. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-79496">Directories Searched by the Link-Editor in <i>Linker and Libraries Guide</i></a>.</p><p>The environment variable <tt>LD_LIBRARY_PATH</tt> can be used to supplement the library search path, however the <tt>-L</tt> option is recommended, as the environment variable is also interpreted by the runtime environment. See <tt>LD_LIBRARY_PATH</tt> under ENVIRONMENT VARIABLES.</p></dd>
+<dt><tt>-m</tt></dt>
+<dd><p>Produces a memory map or listing of the input/output sections, together with any non-fatal multiply-defined symbols, on the standard output.</p></dd>
+<dt><tt>-M</tt> <var>mapfile</var></dt>
+<dd><p>Reads <var>mapfile</var> as a text file of directives to <tt>ld</tt>. This option can be specified multiple times. If <var>mapfile</var> is a directory, then all regular files, as defined by <a href="../821-1463/stat-2.html#REFMAN2stat-2"><tt>stat</tt>(2)</a>, within the directory are processed. See <a href="../819-0690/chapter7-55900.html#LLMchapter7-55900">Appendix E, <i>System V Release 4 (Version 1) Mapfiles,</i> in <i>Linker and Libraries Guide</i></a>. Example mapfiles are provided in <tt>/usr/lib/ld</tt>. See FILES.</p></dd>
+<dt><tt>-N</tt> <var>string</var></dt>
+<dd><p>This option causes a <tt>DT_NEEDED</tt> entry to be added to the <tt>.dynamic</tt> section of the object being built. The value of the <tt>DT_NEEDED</tt> string is the <var>string</var> that is specified on the command line. This option is position dependent, and the <tt>DT_NEEDED</tt> <tt>.dynamic</tt> entry is relative to the other dynamic dependencies discovered on the link-edit line. This option is useful for specifying dependencies within device driver relocatable objects when combined with the <tt>-dy</tt> and <tt>-r</tt> options.</p></dd>
+<dt><tt>-o</tt> <var>outfile</var></dt>
+<dt><tt>--output</tt> <var>outfile</var></dt>
+<dd><p>Produces an output object file that is named <var>outfile</var>. The name of the default object file is <tt>a.out</tt>.</p></dd>
+<dt><tt>-p</tt> <var>auditlib</var></dt>
+<dd><p>Identifies an audit library, <var>auditlib</var>. This audit library is used to audit the object being created at runtime. A shared object identified as requiring auditing with the <tt>-p</tt> option, has this requirement inherited by any object that specifies the shared object as a dependency. See the <tt>-P</tt> option. See <a href="../819-0690/chapter6-1242.html#LLMchapter6-1242">Runtime Linker Auditing Interface in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-P</tt> <var>auditlib</var></dt>
+<dd><p>Identifies an audit library, <var>auditlib</var>. This audit library is used to audit the dependencies of the object being created at runtime. Dependency auditing can also be inherited from dependencies that are identified as requiring auditing. See the <tt>-p</tt> option, and the <tt>-z</tt> <tt>globalaudit</tt> option. See <a href="../819-0690/chapter6-1242.html#LLMchapter6-1242">Runtime Linker Auditing Interface in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-Q</tt> <tt>y</tt> | <tt>n</tt></dt>
+<dd><p>Under <tt>-Q</tt> <tt>y</tt>, an <tt>ident</tt> string is added to the <tt>.comment</tt> section of the output file. This string identifies the version of the <tt>ld</tt> used to create the file. This results in multiple <tt>ld</tt> <tt>idents</tt> when there have been multiple linking steps, such as when using <tt>ld</tt> <tt>-r</tt>. This identification is identical with the default action of the <tt>cc</tt> command. <tt>-Q</tt> <tt>n</tt> suppresses version identification. <tt>.comment</tt> sections can be manipulated by the <a href="mcs-1.html"><tt>mcs</tt>(1)</a> utility.</p></dd>
+<dt><tt>-r</tt></dt>
+<dt><tt>--relocatable</tt></dt>
+<dd><p>Combines relocatable object files to produce one relocatable object file. <tt>ld</tt> does not complain about unresolved references. This option cannot be used with the <tt>-a</tt> option.</p></dd>
+<dt><tt>-R</tt> <var>path</var></dt>
+<dt><tt>-rpath</tt> <var>path</var></dt>
+<dd><p>A colon-separated list of directories used to specify library search directories to the runtime linker. If present and not NULL, the path is recorded in the output object file and passed to the runtime linker. Multiple instances of this option are concatenated together with each <var>path</var> separated by a colon. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-84569">Directories Searched by the Runtime Linker in <i>Linker and Libraries Guide</i></a>.</p><p>The use of a runpath within an associated object is preferable to setting global search paths such as through the <tt>LD_LIBRARY_PATH</tt> environment variable. Only the runpaths that are necessary to find the objects dependencies should be recorded. <a href="ldd-1.html"><tt>ldd</tt>(1)</a> can also be used to discover unused runpaths in dynamic objects, when used with the <tt>-U</tt> option.</p><p>Various tokens can also be supplied with a runpath that provide a flexible means of identifying system capabilities or an objects location. See <a href="../819-0690/appendixc-4.html#LLMappendixc-4">Appendix C, <i>Establishing Dependencies with Dynamic String Tokens,</i> in <i>Linker and Libraries Guide</i></a>. The <tt>$ORIGIN</tt> token is especially useful in allowing dynamic objects to be relocated to different locations in the file system.</p></dd>
+<dt><tt>-s</tt></dt>
+<dt><tt>--strip-all</tt></dt>
+<dd><p>Strips symbolic information from the output file. Any debugging information, that is, <tt>.line</tt>, <tt>.debug*</tt>, and <tt>.stab*</tt> sections, and their associated relocation entries are removed. Except for relocatable files, a symbol table <tt>SHT_SYMTAB</tt> and its associated string table section are not created in the output object file. The elimination of a <tt>SHT_SYMTAB</tt> symbol table can reduce the <tt>.stab*</tt> debugging information that is generated using the compiler drivers <tt>-g</tt> option. See the <tt>-z</tt> <tt>redlocsym</tt> and <tt>-z</tt> <tt>noldynsym</tt> options.</p></dd>
+<dt><tt>-S</tt> <var>supportlib</var></dt>
+<dd><p>The shared object <var>supportlib</var> is loaded with <tt>ld</tt> and given information regarding the linking process. Shared objects that are defined by using the <tt>-S</tt> option can also be supplied using the <tt>SGS_SUPPORT</tt> environment variable. See <a href="../819-0690/chapter6-1240.html#LLMchapter6-1240">Link-Editor Support Interface in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-t</tt></dt>
+<dd><p>Turns off the warning for multiply-defined symbols that have different sizes or different alignments.</p></dd>
+<dt><tt>-u</tt> <var>symname</var></dt>
+<dt><tt>--undefined</tt> <var>symname</var></dt>
+<dd><p>Enters <var>symname</var> as an undefined symbol in the symbol table. This option is useful for loading entirely from an archive library. In this instance, an unresolved reference is needed to force the loading of the first routine. The placement of this option on the command line is significant. This option must be placed before the library that defines the symbol. See <a href="../819-0690/chapter2-90421.html#LLMgdzmd">Defining Additional Symbols with the -u option in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-V</tt></dt>
+<dt><tt>--version</tt></dt>
+<dd><p>Outputs a message giving information about the version of <tt>ld</tt> being used.</p></dd>
+<dt><tt>-Y</tt> <tt>P,</tt><var>dirlist</var></dt>
+<dd><p>Changes the default directories used for finding libraries. <var>dirlist</var> is a colon-separated path list.</p></dd>
+<dt><tt>-z</tt> <tt>absexec</tt></dt>
+<dd><p>Useful only when building a dynamic executable. Specifies that references to external absolute symbols should be resolved immediately instead of being left for resolution at runtime. In very specialized circumstances, this option removes text relocations that can result in excessive swap space demands by an executable.</p></dd>
+<dt><tt>-z</tt> <tt>allextract</tt> | <tt>defaultextract</tt> | <tt>weakextract</tt></dt>
+<dt><tt>--whole-archive</tt> | <tt>--no-whole-archive</tt></dt>
+<dd><p>Alters the extraction criteria of objects from any archives that follow. By default, archive members are extracted to satisfy undefined references and to promote tentative definitions with data definitions. Weak symbol references do not trigger extraction. Under the <tt>-z</tt> <tt>allextract</tt> or <tt>--whole-archive</tt> options, all archive members are extracted from the archive. Under <tt>-z</tt> <tt>weakextract</tt>, weak references trigger archive extraction. The <tt>-z</tt> <tt>defaultextract</tt> or <tt>--no-whole-archive</tt> options provide a means of returning to the default following use of the former extract options. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-83007">Archive Processing in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>altexec64</tt></dt>
+<dd><p>Execute the 64&#8211;bit <tt>ld</tt>. Historically, the class of link-editor that was executed was determined by the class of ELF object being created. Now, the class of the link-editor that is executed is determined by the class of the underlying system. Typically this is 64&#8211;bit. This option is maintained for backward compatibility.</p></dd>
+<dt><tt>-z</tt> <tt>combreloc</tt> | <tt>nocombreloc</tt></dt>
+<dd><p>By default, <tt>ld</tt> combines multiple relocation sections when building executables or shared objects. This section combination differs from relocatable objects, in which relocation sections are maintained in a one-to-one relationship with the sections to which the relocations must be applied. The <tt>-z</tt> <tt>nocombreloc</tt> option disables this merging of relocation sections, and preserves the one-to-one relationship found in the original relocatable objects.</p><p><tt>ld</tt> sorts the entries of data relocation sections by their symbol reference. This sorting reduces runtime symbol lookup. When multiple relocation sections are combined, this sorting produces the least possible relocation overhead when objects are loaded into memory, and speeds the runtime loading of dynamic objects.</p><p>Historically, the individual relocation sections were carried over to any executable or shared object, and the <tt>-z</tt> <tt>combreloc</tt> option was required to enable the relocation section merging previously described. Relocation section merging is now the default. The <tt>-z</tt> <tt>combreloc</tt> option is still accepted for the benefit of old build environments, but the option is unnecessary, and has no effect.</p></dd>
+<dt><tt>-z</tt> <tt>deferred</tt> | <tt>nodeferred</tt></dt>
+<dd><p>Enables or disables the marking of dynamic dependencies as deferred. Dynamic dependencies which are marked <tt>deferred</tt>, are also marked as lazy loadable, and are not loaded at initial process start-up. The loading of deferred dependencies is delayed until process execution, when the first binding to a deferred reference is made. Unlike basic lazy loadable dependencies, deferred dependencies are not processed as part of <tt>LD_BIND_NOW</tt> processing, or through <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a> with the <tt>RTLD_NOW</tt> flag. See <a href="../819-0690/chapter3-7.html#LLMchapter3-7">Lazy Loading of Dynamic Dependencies in <i>Linker and Libraries Guide</i></a>.</p><p>The use of deferred dependencies, together with <a href="../821-1465/dlsym-3c.html#REFMAN3Adlsym-3c"><tt>dlsym</tt>(3C)</a> and the <tt>RTLD_PROBE</tt> handle, provides a flexible mechanism, and natural coding style, for testing for functionality.</p></dd>
+<dt><tt>-z</tt> <tt>defs</tt> | <tt>nodefs</tt></dt>
+<dt><tt>--no-undefined</tt></dt>
+<dd><p>The <tt>-z</tt> <tt>defs</tt> option and the <tt>--no-undefined</tt> option force a fatal error if any undefined symbols remain at the end of the link. This mode is the default when an executable is built. For historic reasons, this mode is <b>not</b> the default when building a shared object. Use of the <tt>-z</tt> <tt>defs</tt> option is recommended, as this mode assures the object being built is self-contained. A self-contained object has all symbolic references resolved internally, or to the object's immediate dependencies.</p><p>The <tt>-z</tt> <tt>nodefs</tt> option allows undefined symbols. For historic reasons, this mode is the default when a shared object is built. When used with executables, the behavior of references to such undefined symbols is unspecified. Use of the <tt>-z</tt> <tt>nodefs</tt> option is not recommended.</p></dd>
+<dt><tt>-z</tt> <tt>direct</tt> | <tt>nodirect</tt></dt>
+<dd><p>Enables or disables direct binding to any dependencies that follow on the command line. These options allow finer control over direct binding than the global counterpart <tt>-B</tt> <tt>direct</tt>. The <tt>-z</tt> <tt>direct</tt> option also differs from the <tt>-B</tt> <tt>direct</tt> option in the following areas. Direct binding information is not established between a symbol reference and an associated definition within the object being created. Lazy loading is not enabled.</p></dd>
+<dt><tt>-z</tt> <tt>endfiltee</tt></dt>
+<dd><p>Marks a filtee so that when processed by a filter, the filtee terminates any further filtee searches by the filter. See <a href="../819-0690/appendixc-1.html#LLMappendixc-2">Reducing Filtee Searches in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>fatal-warnings</tt> | <tt>nofatal-warnings</tt></dt>
+<dt><tt>--fatal-warnings</tt> | <tt>--no-fatal-warnings</tt></dt>
+<dd><p>The <tt>-z</tt> <tt>fatal-warnings</tt> and the <tt>--fatal-warnings</tt> option cause the link-editor to treat warnings as fatal errors.</p><p>The <tt>-z</tt> <tt>nofatal-warnings</tt> and the <tt>--no-fatal-warnings</tt> option cause the link-editor to treat warnings as non-fatal. This is the default behavior.</p></dd>
+<dt><tt>-z</tt> <tt>finiarray=</tt><var>function</var></dt>
+<dd><p>Appends an entry to the <tt>.finiarray</tt> section of the object being built. If no <tt>.finiarray</tt> section is present, a section is created. The new entry is initialized to point to <var>function</var>. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-48195">Initialization and Termination Sections in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>globalaudit</tt></dt>
+<dd><p>This option supplements an audit library definition that has been recorded with the <tt>-P</tt> option. This option is only meaningful when building a dynamic executable. Audit libraries that are defined within an object with the <tt>-P</tt> option typically allow for the auditing of the immediate dependencies of the object. The <tt>-z</tt> <tt>globalaudit</tt> promotes the auditor to a global auditor, thus allowing the auditing of all dependencies. See <a href="../819-0690/chapter6-1242.html#LLMchapter6-4">Invoking the Auditing Interface in <i>Linker and Libraries Guide</i></a>.</p><p>An auditor established with the <tt>-P</tt> option and the <tt>-z</tt> <tt>globalaudit</tt> option, is equivalent to the auditor being established with the <tt>LD_AUDIT</tt> environment variable. See <a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a>.</p></dd>
+<dt><tt>-z</tt> <tt>groupperm</tt> | <tt>nogroupperm</tt></dt>
+<dd><p>Assigns, or deassigns each dependency that follows to a unique group. The assignment of a dependency to a group has the same effect as if the dependency had been built using the <tt>-B</tt> <tt>group</tt> option.</p></dd>
+<dt><tt>-z</tt> <tt>guidance[=</tt><var>item1</var><tt>,</tt><var>item2</var><tt>...]</tt></dt>
+<dd><p>Provide guidance messages to suggest <tt>ld</tt> options that will improve the quality of the resulting object, or which are otherwise considered to be beneficial. The specific guidance offered is subject to change over time as the system evolves. Obsolete guidance offered by older versions of <tt>ld</tt> may be dropped in new versions. Similarly, new guidance may be added to new versions of <tt>ld</tt>. Guidance therefore always represents current best practices.</p><p>It is possible to enable guidance, while preventing specific guidance messages, by providing a list of <var>item</var> tokens, representing the class of guidance to be suppressed. In this way, unwanted advice can be suppressed without losing the benefit of other guidance. Unrecognized <var>item</var> tokens are quietly ignored by <tt>ld</tt>, allowing a given <tt>ld</tt> command line to be executed on a variety of older or newer versions of Solaris.</p><p>The guidance offered by the current version of <tt>ld</tt>, and the <var>item</var> tokens used to disable these messages, are as follows.</p><dl><dt>Specify Required Dependencies</dt>
+<dd><p>Dynamic executables and shared objects should explicitly define all of the dependencies they require. Guidance will recommend the use of the <tt>-z</tt> <tt>defs</tt> option, should any symbol references remain unsatisfied when building dynamic objects. This guidance can be disabled with <tt>-z</tt> <tt>guidance=nodefs</tt>.</p></dd>
+<dt>Do Not Specify Non-Required Dependencies</dt>
+<dd><p>Dynamic executables and shared objects should not define any dependencies that do not satisfy the symbol references made by the dynamic object. Guidance will recommend that unused dependencies be removed. This guidance can be disabled with <tt>-z</tt> <tt>guidance=nounused</tt>.</p></dd>
+<dt>Lazy Loading</dt>
+<dd><p>Dependencies should be identified for lazy loading. Guidance will recommend the use of the <tt>-z</tt> <tt>lazyload</tt> option should any dependency be processed before either a <tt>-z</tt> <tt>lazyload</tt> or <tt>-z</tt> <tt>nolazyload</tt> option is encountered. This guidance can be disabled with <tt>-z</tt> <tt>guidance=nolazyload</tt>.</p></dd>
+<dt>Direct Bindings</dt>
+<dd><p>Dependencies should be referenced with direct bindings. Guidance will recommend the use of the <tt>-B</tt> <tt>direct</tt>, or <tt>-z</tt> <tt>direct</tt> options should any dependency be processed before either of these options, or the <tt>-z</tt> <tt>nodirect</tt> option is encountered. This guidance can be disabled with <tt>-z</tt> <tt>guidance=nodirect</tt>.</p></dd>
+<dt>Pure Text Segment</dt>
+<dd><p>Dynamic objects should not contain relocations to non-writable, allocable sections. Guidance will recommend compiling objects with Position Independent Code (PIC) should any relocations against the text segment remain, and neither the <tt>-z</tt> <tt>textwarn</tt> or <tt>-z</tt> <tt>textoff</tt> options are encountered. This guidance can be disabled with <tt>-z</tt> <tt>guidance=notext</tt>.</p></dd>
+<dt>Mapfile Syntax</dt>
+<dd><p>All mapfiles should use the version 2 mapfile syntax. Guidance will recommend the use of the version 2 syntax should any mapfiles be encountered that use the version 1 syntax. This guidance can be disabled with <tt>-z</tt> <tt>guidance=nomapfile</tt>.</p></dd>
+</dl>
+<p>In addition, <tt>-z</tt> <tt>guidance=noall</tt> can be used to entirely disable the guidance feature. <a href="../819-0690/appendixa-012398.html#LLMappendixa-012398">Appendix A, <i>Link-Editor Quick Reference,</i> in <i>Linker and Libraries Guide</i></a> for more information on guidance and advice for building better objects.</p></dd>
+<dt><tt>-z</tt> <tt>help</tt></dt>
+<dt><tt>--help</tt></dt>
+<dd><p>Print a summary of the command line options on the standard output and exit.</p></dd>
+<dt><tt>-z</tt> <tt>ignore</tt> | <tt>record</tt></dt>
+<dd><p>Ignores, or records, dynamic dependencies that are not referenced as part of the link-edit. Ignores, or records, unreferenced ELF sections from the relocatable objects that are read as part of the link-edit. By default, <tt>-z</tt> <tt>record</tt> is in effect.</p><p>If an ELF section is ignored, the section is eliminated from the output file being generated. A section is ignored when three conditions are true. The eliminated section must contribute to an allocatable segment. The eliminated section must provide no global symbols. No other section from any object that contributes to the link-edit, must reference an eliminated section.</p></dd>
+<dt><tt>-z</tt> <tt>initarray=</tt><var>function</var></dt>
+<dd><p>Appends an entry to the <tt>.initarray</tt> section of the object being built. If no <tt>.initarray</tt> section is present, a section is created. The new entry is initialized to point to <var>function</var>. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-48195">Initialization and Termination Sections in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>initfirst</tt></dt>
+<dd><p>Marks the object so that its runtime initialization occurs before the runtime initialization of any other objects brought into the process at the same time. In addition, the object runtime finalization occurs after the runtime finalization of any other objects removed from the process at the same time. This option is only meaningful when building a shared object.</p></dd>
+<dt><tt>-z</tt> <tt>interpose</tt></dt>
+<dd><p>Marks the object as an interposer. At runtime, an object is identified as an explicit interposer if the object has been tagged using the <tt>-z interpose</tt> option. An explicit interposer is also established when an object is loaded using the <tt>LD_PRELOAD</tt> environment variable. Implicit interposition can occur because of the load order of objects, however, this implicit interposition is unknown to the runtime linker. Explicit interposition can ensure that interposition takes place regardless of the order in which objects are loaded. Explicit interposition also ensures that the runtime linker searches for symbols in any explicit interposers when direct bindings are in effect.</p></dd>
+<dt><tt>-z</tt> <tt>lazyload</tt> | <tt>nolazyload</tt></dt>
+<dd><p>Enables or disables the marking of dynamic dependencies to be lazily loaded. Dynamic dependencies which are marked <tt>lazyload</tt> are not loaded at initial process start-up. These dependencies are delayed until the first binding to the object is made. <b>Note:</b> Lazy loading requires the correct declaration of dependencies, together with associated runpaths for each dynamic object used within a process. See <a href="../819-0690/chapter3-7.html#LLMchapter3-7">Lazy Loading of Dynamic Dependencies in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>ld32</tt>=<var>arg1</var>,<var>arg2</var>,...</dt>
+<dt><tt>-z</tt> <tt>ld64</tt>=<var>arg1</var>,<var>arg2</var>,...</dt>
+<dd><p>The class of the link-editor is affected by the class of the output file being created and by the capabilities of the underlying operating system. The <tt>-z</tt> <tt>ld</tt>[<tt>32</tt>|<tt>64</tt>] options provide a means of defining any link-editor argument. The defined argument is only interpreted, respectively, by the 32&#8211;bit class or 64&#8211;bit class of the link-editor.</p><p>For example, support libraries are class specific, so the correct class of support library can be ensured using:</p><pre><b>ld ... -z ld32=-Saudit32.so.1 -z ld64=-Saudit64.so.1 ...</b></pre><p>The class of link-editor that is invoked is determined from the ELF class of the first relocatable file that is seen on the command line. This determination is carried out <b>prior</b> to any <tt>-z</tt> <tt>ld</tt>[<tt>32</tt>|<tt>64</tt>] processing.</p></dd>
+<dt><tt>-z</tt> <tt>loadfltr</tt></dt>
+<dd><p>Marks a filter to indicate that filtees must be processed immediately at runtime. Normally, filter processing is delayed until a symbol reference is bound to the filter. The runtime processing of an object that contains this flag mimics that which occurs if the <tt>LD_LOADFLTR</tt> environment variable is in effect. See the <a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a>.</p></dd>
+<dt><tt>-z</tt> <tt>muldefs</tt></dt>
+<dt><tt>--allow-multiple-definition</tt></dt>
+<dd><p>Allows multiple symbol definitions. By default, multiple symbol definitions that occur between relocatable objects result in a fatal error condition. This option, suppresses the error condition, allowing the first symbol definition to be taken.</p></dd>
+<dt><tt>-z</tt> <tt>nocompstrtab</tt></dt>
+<dd><p>Disables the compression of ELF string tables. By default, string compression is applied to <tt>SHT_STRTAB</tt> sections, and to <tt>SHT_PROGBITS</tt> sections that have their <tt>SHF_MERGE</tt> and <tt>SHF_STRINGS</tt> section flags set.</p></dd>
+<dt><tt>-z</tt> <tt>nodefaultlib</tt></dt>
+<dd><p>Marks the object so that the runtime default library search path, used after any <tt>LD_LIBRARY_PATH</tt> or runpaths, is ignored. This option implies that all dependencies of the object can be satisfied from its runpath.</p></dd>
+<dt><tt>-z</tt> <tt>nodelete</tt></dt>
+<dd><p>Marks the object as non-deletable at runtime. This mode is similar to adding the object to the process by using <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a> with the <tt>RTLD_NODELETE</tt> mode.</p></dd>
+<dt><tt>-z</tt> <tt>nodlopen</tt></dt>
+<dd><p>Marks the object as not available to <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a>, either as the object specified by the <tt>dlopen()</tt>, or as any form of dependency required by the object specified by the <tt>dlopen()</tt>. This option is only meaningful when building a shared object.</p></dd>
+<dt><tt>-z</tt> <tt>nodump</tt></dt>
+<dd><p>Marks the object as not available to <a href="../821-1465/dldump-3c.html#REFMAN3Adldump-3c"><tt>dldump</tt>(3C)</a>.</p></dd>
+<dt><tt>-z</tt> <tt>noldynsym</tt></dt>
+<dd><p>Prevents the inclusion of a <tt>.SUNW_ldynsym</tt> section in dynamic executables or sharable libraries. The <tt>.SUNW_ldynsym</tt> section augments the <tt>.dynsym</tt> section by providing symbols for local functions. Local function symbols allow debuggers to display local function names in stack traces from stripped programs. Similarly, <a href="../821-1465/dladdr-3c.html#REFMAN3Adladdr-3c"><tt>dladdr</tt>(3C)</a> is able to supply more accurate results.</p><p>The <tt>-z</tt> <tt>noldynsym</tt> option also prevents the inclusion of the two symbol sort sections that are related to the <tt>.SUNW_ldynsym</tt> section. The <tt>.SUNW_dynsymsort</tt> section provides sorted access to regular function and variable symbols. The <tt>.SUNW_dyntlssort</tt> section provides sorted access to thread local storage (TLS) variable symbols.</p><p>The <tt>.SUNW_ldynsym</tt>, <tt>.SUNW_dynsymsort</tt>, and <tt>.SUNW_dyntlssort</tt> sections, which becomes part of the allocable text segment of the resulting file, cannot be removed by <a href="strip-1.html"><tt>strip</tt>(1)</a>. Therefore, the <tt>-z</tt> <tt>noldynsym</tt> option is the only way to prevent their inclusion. See the <tt>-s</tt> and <tt>-z</tt> <tt>redlocsym</tt> options.</p></dd>
+<dt><tt>-z</tt> <tt>nopartial</tt></dt>
+<dd><p>Partially initialized symbols, that are defined within relocatable object files, are expanded in the output file being generated.</p></dd>
+<dt><tt>-z</tt> <tt>noversion</tt></dt>
+<dd><p>Does not record any versioning sections. Any version sections or associated <tt>.dynamic</tt> section entries are not generated in the output image.</p></dd>
+<dt><tt>-z</tt> <tt>now</tt></dt>
+<dd><p>Marks the object as requiring non-lazy runtime binding. This mode is similar to adding the object to the process by using <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a> with the <tt>RTLD_NOW</tt> mode. This mode is also similar to having the <tt>LD_BIND_NOW</tt> environment variable in effect. See <a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a>.</p></dd>
+<dt><tt>-z</tt> <tt>origin</tt></dt>
+<dd><p>Marks the object as requiring immediate <tt>$ORIGIN</tt> processing at runtime. This option is only maintained for historic compatibility, as the runtime analysis of objects to provide for <tt>$ORIGIN</tt> processing is now default.</p></dd>
+<dt><tt>-z</tt> <tt>preinitarray=</tt><var>function</var></dt>
+<dd><p>Appends an entry to the <tt>.preinitarray</tt> section of the object being built. If no <tt>.preinitarray</tt> section is present, a section is created. The new entry is initialized to point to <var>function</var>. See <a href="../819-0690/chapter2-55859.html#LLMchapter2-48195">Initialization and Termination Sections in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>redlocsym</tt></dt>
+<dd><p>Eliminates all local symbols except for the <tt>SECT</tt> symbols from the symbol table <tt>SHT_SYMTAB</tt>. All relocations that refer to local symbols are updated to refer to the corresponding <tt>SECT</tt> symbol. This option allows specialized objects to greatly reduce their symbol table sizes. Eliminated local symbols can reduce the <tt>.stab*</tt> debugging information that is generated using the compiler drivers <tt>-g</tt> option. See the <tt>-s</tt> and <tt>-z</tt> <tt>noldynsym</tt> options.</p></dd>
+<dt><tt>-z</tt> <tt>relaxreloc</tt></dt>
+<dd><p><tt>ld</tt> normally issues a fatal error upon encountering a relocation using a symbol that references an eliminated COMDAT section. If <tt>-z</tt> <tt>relaxreloc</tt> is enabled, <tt>ld</tt> instead redirects such relocations to the equivalent symbol in the COMDAT section that was kept. <tt>-z</tt> <tt>relaxreloc</tt> is a specialized option, mainly of interest to compiler authors, and is not intended for general use.</p></dd>
+<dt><tt>-z</tt> <tt>rescan-now</tt></dt>
+<dt><tt>-z</tt> <tt>rescan</tt></dt>
+<dd><p>These options rescan the archive files that are provided to the link-edit. By default, archives are processed once as the archives appear on the command line. Archives are traditionally specified at the end of the command line so that their symbol definitions resolve any preceding references. However, specifying archives multiple times to satisfy their own interdependencies can be necessary.</p><p><tt>-z</tt> <tt>rescan-now</tt> is a positional option, and is processed by the link-editor immediately when encountered on the command line. All archives seen on the command line up to that point are immediately reprocessed in an attempt to locate additional archive members that resolve symbol references. This archive rescanning is repeated until a pass over the archives occurs in which no new members are extracted.</p><p><tt>-z</tt> <tt>rescan</tt> is a position independent option. The link-editor defers the rescan operation until after it has processed the entire command line, and then initiates a final rescan operation over all archives seen on the command line. The <tt>-z</tt> <tt>rescan</tt> operation can interact incorrectly with objects that contain initialization (.init) or finalization (.fini) sections, preventing the code in those sections from running. For this reason, <tt>-z</tt> <tt>rescan</tt> is deprecated, and use of <tt>-z</tt> <tt>rescan-now</tt> is advised.</p></dd>
+<dt><tt>-z</tt> <tt>rescan-start</tt> ... <tt>-z</tt> <tt>rescan-end</tt></dt>
+<dt><tt>--start-group</tt> ... <tt>--end-group</tt></dt>
+<dt><tt>-(</tt> ... <tt>-)</tt></dt>
+<dd><p>Defines an archive rescan group. This is a positional construct, and is processed by the link-editor immediately upon encountering the closing delimiter option. Archives found within the group delimiter options are reprocessed as a group in an attempt to locate additional archive members that resolve symbol references. This archive rescanning is repeated until a pass over the archives On the occurs in which no new members are extracted. Archive rescan groups cannot be nested.</p></dd>
+<dt><tt>-z</tt> <tt>symbolcap</tt></dt>
+<dd><p>Convert a relocatable object that defines object capabilities into a relocatable object that defines symbol capabilities. See <a href="../819-0690/chapter2-13.html#LLMgiskc">Converting Object Capabilities to Symbol Capabilities in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>target=sparc|x86</tt> <var></var></dt>
+<dd><p>Specifies the machine type for the output object. Supported targets are Sparc and x86. The 32&#8211;bit machine type for the specified target is used unless the <tt>-64</tt> option is also present, in which case the corresponding 64&#8211;bit machine type is used. By default, the machine type of the object being generated is determined from the first ELF object processed from the command line. If no objects are specified, the machine type is determined by the first object encountered within the first archive processed from the command line. If there are no objects or archives, the link-editor assumes the native machine. This option is useful when creating an object directly with <tt>ld</tt> whose input is solely from a <tt>mapfile</tt>. See the <tt>-M</tt> option. It can also be useful in the rare case of linking entirely from an archive that contains objects of different machine types for which the first object is not of the desired machine type.</p></dd>
+<dt><tt>-z</tt> <tt>text</tt></dt>
+<dd><p>In dynamic mode only, forces a fatal error if any relocations against non-writable, allocatable sections remain. For historic reasons, this mode is not the default when building an executable or shared object. However, its use is recommended to ensure that the text segment of the dynamic object being built is shareable between multiple running processes. A shared text segment incurs the least relocation overhead when loaded into memory. See <a href="../819-0690/chapter4-10454.html#LLMchapter4-29405">Position-Independent Code in <i>Linker and Libraries Guide</i></a>.</p></dd>
+<dt><tt>-z</tt> <tt>textoff</tt></dt>
+<dd><p>In dynamic mode only, allows relocations against all allocatable sections, including non-writable ones. This mode is the default when building a shared object.</p></dd>
+<dt><tt>-z</tt> <tt>textwarn</tt></dt>
+<dd><p>In dynamic mode only, lists a warning if any relocations against non-writable, allocatable sections remain. This mode is the default when building an executable.</p></dd>
+<dt><tt>-z</tt> <tt>verbose</tt></dt>
+<dd><p>This option provides additional warning diagnostics during a link-edit. Presently, this option enables the following warnings.</p>
+<ul><li><p>Suspicious use of displacement relocations.</p></li>
+<li><p>Restricted use of static TLS relocations when building shared objects.</p></li>
+<li><p>Symbol visibility inconsistencies.</p></li></ul>
+<p>In the future, this option might be enhanced to provide additional diagnostics that are deemed too noisy to be generated by default.</p></dd>
+<dt><tt>-z</tt><tt>wrap=</tt><var>symbol</var></dt>
+<dt><tt>-wrap=</tt> <var>symbol</var></dt>
+<dt><tt>--wrap=</tt> <var>symbol</var></dt>
+<dd><p>Rename undefined references to <var>symbol</var> in order to allow wrapper code to be linked into the output object without having to modify source code. When <tt>-z wrap</tt> is specified, all undefined references to <var>symbol</var> are modified to reference <tt>__wrap_</tt><var>symbol</var>, and all references to <tt>__real_</tt><var>symbol</var> are modified to reference <var>symbol</var>. The user is expected to provide an object containing the <tt>__wrap_</tt><var>symbol</var> function. This wrapper function can call <tt>__real_</tt><var>symbol</var> in order to reference the actual function being wrapped.</p><p>The following is an example of a wrapper for the <a href="../821-1465/malloc-3c.html#REFMAN3Amalloc-3c"><tt>malloc</tt>(3C)</a> function:</p><pre>void *
+__wrap_malloc(size_t c)
+{
+        (void) printf("malloc called with %zu\n", c);
+        return (__real_malloc(c));
+}</pre><p>If you link other code with this file using <tt>-z</tt> <tt>wrap=malloc</tt> to compile all the objects, then all calls to <tt>malloc</tt> will call the function <tt>__wrap_malloc</tt> instead. The call to <tt>__real_malloc</tt> will call the real <tt>malloc</tt> function.</p><p>The real and wrapped functions should be maintained in separate source files. Otherwise, the compiler or assembler may resolve the call instead of leaving that operation for the link-editor to carry out, and prevent the wrap from occurring.</p></dd>
+</dl>
+<h3>Environment Variables</h3>
+<dl><dt><tt>LD_ALTEXEC</tt></dt>
+<dd><p>An alternative link-editor path name. <tt>ld</tt> executes, and passes control to this alternative link-editor. This environment variable provides a generic means of overriding the default link-editor that is called from the various compiler drivers. See the <tt>-z altexec64</tt> option.</p></dd>
+<dt><tt>LD_LIBRARY_PATH</tt></dt>
+<dd><p>A list of directories in which to search for the libraries specified using the <tt>-l</tt> option. Multiple directories are separated by a colon. In the most general case, this environment variable contains two directory lists separated by a semicolon:</p><pre><var>dirlist1</var><tt>;</tt><var>dirlist2</var></pre><p>If <tt>ld</tt> is called with any number of occurrences of <tt>-L</tt>, as in:</p><pre><b>ld ... -L<var>path1</var> ... -L<var>pathn</var> ...</b></pre><p>then the search path ordering is:</p><pre><b><var>dirlist1 path1</var> ... <var>pathn dirlist2</var> LIBPATH</b></pre><p>When the list of directories does not contain a semicolon, the list is interpreted as <var>dirlist2</var>.</p><p>The <tt>LD_LIBRARY_PATH</tt> environment variable also affects the runtime linkers search for dynamic dependencies.</p><p>This environment variable can be specified with a _32 or _64 suffix. This makes the environment variable specific, respectively, to 32&#8211;bit or 64&#8211;bit processes and overrides any non-suffixed version of the environment variable that is in effect.</p></dd>
+<dt><tt>LD_NOEXEC_64</tt></dt>
+<dd><p>Suppresses the automatic execution of the 64&#8211;bit link-editor. By default, the link-editor executes the 64&#8211;bit version when the ELF class of the first relocatable file identifies a 64&#8211;bit object. The 64&#8211;bit image that a 32&#8211;bit link-editor can create, has some limitations. However, some link-edits might find the use of the 32&#8211;bit link-editor faster.</p></dd>
+<dt><tt>LD_OPTIONS</tt></dt>
+<dd><p>A default set of options to <tt>ld</tt>. <tt>LD_OPTIONS</tt> is interpreted by <tt>ld</tt> just as though its value had been placed on the command line, immediately following the name used to invoke <tt>ld</tt>, as in:</p><pre><b>ld $LD_OPTIONS ... <var>other-arguments</var> ...</b></pre></dd>
+<dt><tt>LD_RUN_PATH</tt></dt>
+<dd><p>An alternative mechanism for specifying a runpath to the link-editor. See the <tt>-R</tt> option. If both <tt>LD_RUN_PATH</tt> and the <tt>-R</tt> option are specified, <tt>-R</tt> supersedes.</p></dd>
+<dt><tt>SGS_SUPPORT</tt></dt>
+<dd><p>Provides a colon-separated list of shared objects that are loaded with the link-editor and given information regarding the linking process. This environment variable can be specified with a _32 or _64 suffix. This makes the environment variable specific, respectively, to the 32&#8211;bit or 64&#8211;bit class of <tt>ld</tt> and overrides any non-suffixed version of the environment variable that is in effect. See the <tt>-S</tt> option.</p></dd>
+</dl>
+<p>Notice that environment variable-names that begin with the characters '<tt>LD_</tt>' are reserved for
+possible future enhancements to <tt>ld</tt> and <a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a>.</p><h3>Files</h3>
+<dl><dt><tt>lib<var>x</var>.so</tt></dt>
+<dd><p>shared object libraries.</p></dd>
+<dt><tt>lib<var>x</var>.a</tt></dt>
+<dd><p>archive libraries.</p></dd>
+<dt><tt>a.out</tt></dt>
+<dd><p>default output file.</p></dd>
+<dt><var>LIBPATH</var></dt>
+<dd><p>For 32&#8211;bit libraries, the default search path is <tt>/usr/ccs/lib</tt>, followed by <tt>/lib</tt>, and finally <tt>/usr/lib</tt>. For 64&#8211;bit libraries, the default search path is <tt>/lib/64</tt>, followed by <tt>/usr/lib/64</tt>.</p></dd>
+<dt><tt>/usr/lib/ld</tt></dt>
+<dd><p>A directory containing several <tt>mapfiles</tt> that can be used during link-editing. These <tt>mapfiles</tt> provide various capabilities, such as defining memory layouts, aligning bss, and defining non-executable stacks.</p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">developer/linker</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Interface Stability</div></td>
+<td align="left" valign="top"><div class="pad5x10">Committed</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h3>See Also</h3>
+<p><a href="as-1.html"><tt>as</tt>(1)</a>, <a href="crle-1.html"><tt>crle</tt>(1)</a>, <a href="gprof-1.html"><tt>gprof</tt>(1)</a>, <a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a>, <a href="ldd-1.html"><tt>ldd</tt>(1)</a>, <a href="mcs-1.html"><tt>mcs</tt>(1)</a>, <a href="pvs-1.html"><tt>pvs</tt>(1)</a>, <a href="../821-1463/exec-2.html#REFMAN2exec-2"><tt>exec</tt>(2)</a>, <a href="../821-1463/stat-2.html#REFMAN2stat-2"><tt>stat</tt>(2)</a>, <a href="../821-1465/dlopen-3c.html#REFMAN3Adlopen-3c"><tt>dlopen</tt>(3C)</a>, <a href="../821-1465/dldump-3c.html#REFMAN3Adldump-3c"><tt>dldump</tt>(3C)</a>, <a href="../821-1467/elf-3elf.html#REFMAN3Delf-3elf"><tt>elf</tt>(3ELF)</a>,
+<a href="../821-1464/ar.h-3head.html#REFMAN3Far.h-3head"><tt>ar.h</tt>(3HEAD)</a>, <a href="../821-1473/a.out-4.html#REFMAN4a.out-4"><tt>a.out</tt>(4)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a></p><p><a href="../819-0690/index.html"><i>Linker and Libraries Guide</i></a></p><h3>Notes</h3>
+<p>Default options applied by <tt>ld</tt> are maintained for historic reasons. In today's programming
+environment, where dynamic objects dominate, alternative defaults would often make more sense. However,
+historic defaults must be maintained to ensure compatibility with existing program development environments. Historic
+defaults are called out wherever possible in this manual. For a description of
+the current recommended options, see <a href="../819-0690/appendixa-012398.html#LLMappendixa-012398">Appendix A, <i>Link-Editor Quick Reference,</i> in <i>Linker and Libraries Guide</i></a>.</p><p>If the file being created by <tt>ld</tt> already exists, the file is unlinked
+after all input files have been processed. A new file with the specified
+name is then created. This allows <tt>ld</tt> to create a new version of
+the file, while simultaneously allowing existing processes that are accessing the old file
+contents to continue running. If the old file has no other links, the
+disk space of the removed file is freed when the last process referencing
+the file terminates.</p><p>The behavior of <tt>ld</tt> when the file being created already exists was changed
+with <tt>SXCE</tt> build <tt>43</tt>. In older versions, the existing file was rewritten in
+place, an approach with the potential to corrupt any running processes that is
+using the file. This change has an implication for output files that have
+multiple hard links in the file system. Previously, all links would remain intact,
+with all links accessing the new file contents. The new <tt>ld</tt> behavior <b>breaks</b>
+such links, with the result that only the specified output file name references
+the new file. All the other links continue to reference the old file.
+To ensure consistent behavior, applications that rely on multiple hard links to linker
+output files should explicitly remove and relink the other file names.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="lastcomm-1.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="ldap-1.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

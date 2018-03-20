@@ -1,0 +1,151 @@
+<html>
+<body>
+<font size=+3>Computer Programming</font></h1></center>
+<b><font size=+1>C Programming Assignment #2</font></b>
+<div class="MsoNormal" style="text-align:center">
+<center>
+<hr size=2 width="100%" align=center></center>
+</div>
+<p><b><i>Brief</i></b>
+<br>Write a program that generates sets of 6 lotto numbers and displays
+them on-screen.
+<p><b><i>Overview of Program Flow</i></b>
+<br>When the program is run the user should be asked how much money they
+wish to spend on the Lotto. The user will type the amount of money (in
+pounds) and the program should generate the appropriate number of sets
+of 6 numbers (6 numbers for 75p).
+<p>When the program has displayed the sets of numbers on the screen the
+user should then be asked if they wish to generate more sets of numbers.
+If the user declines then the program finishes. (This test may alternatively
+be carried out prior to generating any numbers).
+<p><b><i>Restrictions</i></b>
+<br>1. Negative monetary values are not accepted and must be handled in
+some way.
+<br>2. A minimum of two plays must be enforced. (A minimum play is &pound;1.50.)
+<br>3. Additional plays are &pound;0.75 each.
+<br>4. Numbers generated must be in the range of 1-42.
+<p><b><i>Assumptions</i></b>
+<br>1. No allowance for duplicate numbers need be made, but if you successfully cater for this extra marks will be awarded.
+<br>2. No currency symbols need be input, but you may wish to output some.
+<p><b><i>Suggestions</i></b>
+<br>1. The program will need to use <i>loops</i> to repeatedly create random
+numbers, as well as to repeatedly create sets of six numbers, as well as
+to ask if the user wishes to re-run the program. The sixth chapter of the
+course text book deals with loops. While you should work throught the whole
+chapter and try all the exercises, only the <i>while</i> loop construct
+need be used for this assignment. You may wish to use either the <i>do-while</i>
+construct or the <i>for</i> construct, but they are not necessary.
+<p>2.<b> </b>Random numbers are generated using a combination of the <i>srand
+(</i>n<i>)</i> and the <i>rand ()</i> functions. Note that there will be
+two extra <i>#include</i> directives, <i>#include&lt;stdlib.h></i> and<i>
+#include &lt;time.h></i> which will make the required functions available.
+<br>a) The <i>srand (</i>n<i>)</i> function is used only <u>once</u>, at
+the start of the program to 'seed' the random number generator with the
+integer value n. As staring the program with the same value of n each time
+will always give the same values of 'random' numbers, we normally seed
+the generator with the time as the value for n. The time can be returned
+with the <i>time(</i>NULL<i>)</i> function. Refer to page 119 of the text
+book for an explanation of the
+<i>srand</i>,<i> rand</i> and <i>time</i>
+functions. Refer to and experiment with the program on page 120 (type it
+in!) to get experience with using these functions.
+<br>b) Use the command:
+<br>&nbsp;&nbsp;&nbsp; <b>OneNumber = rand ()%42</b>
+<br>in your program to generate a value between 0 and 42 inclusive and
+to assign it into the variable OneNumber (which you would declare).
+<p>3.<b> </b>You will need to use more than one loop. Loops which are positioned
+within other loops are called <i>nested</i> loops. Pages 51 and 52 has
+more details. If you draw a suitable flow chart the nesting of loops is
+easier to cope with.
+<p>4. When drawing your flow chart, it might be easier on this occasion
+to work from the middle out! At the heart of your program you'll have a
+slightly unusual arrangement of boxes at the centre of the assignment,
+such as those shown <a href="assign2-flowchart01.gif">here</a>. This represents
+a <i>while</i> loop. (It's not necessary to put the word while in the diamond
+- that's just for your benefit).
+<p><b><i>Test Data</i></b>
+<br>&nbsp;
+<center><table BORDER CELLPADDING=0 COLS=2 WIDTH="50%" style="width:50.0%;mso-cellspacing:
+ 1.5pt" >
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center><b>Input Data</b></center>
+</td>
+
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center><b>Expected Result</b></center>
+</td>
+</tr>
+
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>-3.00&nbsp;</center>
+</td>
+
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>Error message generated</center>
+</td>
+</tr>
+
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>1.50</center>
+</td>
+
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>2 sets of 6 numbers</center>
+</td>
+</tr>
+
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>3.00</center>
+</td>
+
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>4 sets of 6 numbers</center>
+</td>
+</tr>
+
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>0&nbsp;</center>
+</td>
+
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>No numbers generated</center>
+</td>
+</tr>
+
+<tr>
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>3.75</center>
+</td>
+
+<td style="padding:.75pt .75pt .75pt .75pt">
+<center>5 sets of 6 numbers</center>
+</td>
+</tr>
+</table></center>
+
+<p><b><i>Sample Output</i></b>
+<br>This some <a href="assign2-sampleoutput.html">sample program output</a>.
+Note that this will not be <i>required</i> output but <i>sample</i> ouput.
+<p><b><i>Submission Criteria</i></b>
+<br>Provide evidence of your planning process, the commented source code
+and sample data used. You should also include a hand-drawn as well as a
+SmartDraw formatted flow-chart. Any other appropriate documentation may
+be included if you wish. The submission should be preceeded with a signed
+copy of the 'my own work' form.
+<center>
+<p>Submission materials should be submitted in paper form to the submission
+box in Room 15.
+<p><b>NOTE</b>: There is a lot of deliberate lee-way given in this assignment
+specification. You are advised to exploit this to the full.
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p><b><font color="#FF0000"><font size=+2>Due date: (TBA)-December-2001</font></font></b></center>
+</div>
+</body>
+</html>

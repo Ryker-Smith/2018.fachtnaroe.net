@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Flow Chart Rules</h1>
+<h2>Rules</h2>
+<ol>
+<li>Every box should have arrows in and out. Exceptions: Start box and End box.</li>
+<li>No box should have more than one arrow in.</li>
+<li>No box should have more than one arrow out. Exception: The decision box.</li>
+<li>The decision box has two arrows out.</li>
+<li>Each box should correspond with one action.</li>
+<li>A parallelogram requesting data should have a corresponding parallelogram accepting the data.</li>
+<li>Request boxes correspond with printf statements.</li>
+<li>Accept boxes correspond with scanf statements.</li>
+<li>All boxes should be in sequence joined by lines with arrows to show the sequence.</li>
+<li>Boxes handling data should use the name of the variable in which the data is stored.</li>
+<li>Use parallelograms for I/O statements.</li>
+<li>Use Rounded rectangles for processing.</li>
+<li>Use circles for Start and End boxes</li>
+<li>Use diamonds for decision, including loop completed decisions (while).</li>
+</ol>
+For example, a program to read 2 numbers, add them and output the answer is similar to this:
+<ul class="center">
+<img src="flowchart01.gif" alt="Flowchart 1" width="138" height="415" />
+</ul>
+The flowchart below shows the process of selecting 6 numbers in a set for use in the lotto. Technically, it also describes the steps followed by the TV numbers selection process.
+<ul class="center">
+<img src="lotto-flowchart.png" alt="Flowchart 2" />
+</ul>
+<br>
+<h2>Purpose</h2>
+The use of flowcharts allow for an unambiguous expression of the sequence of instructions of the program. This is also know as the logic of the program. Whilst this method is not fool-proof it is an invaluable tool for getting your mind to approach a problem in a straight line.
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

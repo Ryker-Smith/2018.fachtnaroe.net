@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>POS App 2013: API definition (AKA short versions)</h1>
+<pre>
+
+
+sub product_numbers {
+# Purpose: get a list of EAN13 codes only
+# Expects: nothing
+# Returns: Array: first pop-able element is count of EAN13 values, followed by list of EAN13 values
+
+}
+
+sub product_detail {
+# Purpose: get product details in reponse to EAN13
+# Expects: scalar EAN13
+# Returns: Array with product price, manufacturer number, name
+#         or 'ERR' if match found <> 1
+
+}
+
+sub product_barcode {
+# Purpose: get barcode image data in reponse to EAN13
+# Expects: scalar EAN13
+# Returns: Two-element array of original product barcode filename, barcode image data
+#         or 'ERR' if match found <> 1
+
+}
+
+sub product_image {
+# Purpose: get product image data in reponse to EAN13
+# Expects: scalar EAN13
+# Returns: Two-element array of original product image filename, product image data
+#         or 'ERR' if match found <> 1
+
+}
+
+sub product_manufacturer {
+# Purpose: provide product manufacturer name (brand)
+# Expects: Manufacturer number
+# Returns: string with manufacturer details or "ERR"
+# Note: The manufacturer code is internal to this Quinlough's database only
+
+}
+
+sub product_stocklevel {
+# Purpose: Get or set product stock level
+# Expects:   EAN13 
+#         or EAN13 + Stock Delta
+# Returns: if received->(EAN13 only) returns stock-level or "ERR"
+#          if received->(EAN13 + Stock Delta) returns new stock-level or "ERR"
+# Uses: get_stock and set_stock routines - do not call those directly
+
+}
+</pre>
+<form><input type="button" value="Back" onclick="history.back()"></form>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="pos-api-short-2013.pl.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

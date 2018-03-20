@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Desktop Publishing (&amp; Design)</h1>
+This page is intended for information purposes only. It is not an active assignments page. Cross-reference to <a href="/subjects/imageprocessing/">Image Processing</a>.
+<h2>Tutorials</h2>
+<ul>
+	<li>The primary page make-up program is <a href="http://www.libreoffice.org/">LibreOffice</a> Draw. Formerly we used <a href="http://www.openoffice.org">OpenOffice.org</a> Draw (up to 06.2011).</li>
+	<li>The primary graphics program is the GIMP. Used for image manipulation and making logos <i>etc.</i> as it is very, very powerful.</li>
+	</ul>
+	<ul class="ulul">
+  	<li>To assist you in learning how to use this program <a href="http://gimp-savvy.com/BOOK/index.html?node6.html" target="_blank">click here to grok the gimp</a> - a link to a book that seems to cover <i>everything</i>.</li>
+  </ul>
+  <ul>
+   	<li>The <a href="http://www.gimp.org/tutorials/">official tutorials are here</a>.</li>
+  	<li>GIMP <a href="GIMP-Candy-Text-LinuxMag85.pdf">special effects with text</a> - valid from GIMP >= 2.4.</li>
+<!--  	<li>Guidelines on using the <a href="ScannerOperation-20070316-A4.pdf">Mustek Bearpaw A4 Scanner are here</a>.</li>
+  	<li>Guidelines on using the <a href="ScannerOperation-20071019-A3.pdf">Mustek A3 Scanner are here</a>.</li>
+-->  	
+	<li><a href="http://graphicssoft.about.com/od/gimptutorials/tp/animated-gif.htm">Creating animated gifs <br /><img width="100" src="/images/blinkydick.gif" alt="Charles Dickens"></a></li>
+	<li><a href="http://fhoerni.free.fr/comp/make_a_font.html">Making fonts</a></li>
+  </ul>
+<h2>Some relevant DTP factoids:</h2>
+<ul>
+	<li>An A4 page is 210mm x 297mm in size.</li>
+	<li>An A3 page is twice the area of an A4 sheet, while an A5 page is half the area.</li>
+	<li>A compliment slip is 210mm x 90mm in order to fit comfortably inside a DL envelope.</li>
+	<li>A DL envelope (whether windowed or not) is 220mm x 110mm.</li>
+	<li>A normal business card is 90mm x 50mm but these dimensions may vary to make the card easier to store in a wallet or a card holder.</li>
+	<li>Normal copier &amp; printer paper is 80gsm in weight.</li>
+	<li>Most printers have an upper limit on the gsm weight of paper they can handle. Typically this is about 100-110gsm. Above this weight you are beginning to deal with card.</li>
+</ul>
+<h2>Assessment 2008/9</h2> 
+<ol>
+	<li>Collection of Work (60%)</li>
+	</ol>
+	<ul class="olul">
+		<li><a href="DTP-A1-Logo-2009.pdf">Assignment #1</a></li>
+		<li><a href="DTP-A2-News-2009.pdf">Assignment #2</a></li>
+		<li><a href="DTP-A3-Trifold-2009.pdf">Assignment #3</a></li>
+		</ul>
+	<ol start="2">
+  	<li>Project (40%)</li>
+  	</ol>
+  	<ul class="olul">
+      <li>Your topic for this year is <b>Culloughty's Country Hostel</b> near the town of <b>Ballyamiel</b> (<b>Baile na Meala</b>) not far from the beautiful hill-walking charms of <b>Cnoc M&oacute;r na Cail&iacute;n&iacute;</b>.</li>
+    	<li><a href="DTP-A4-Project-2009.pdf">Project Brief (Assignment #4)</a></li>
+    </ul>
+<h2>Past projects</h2>
+<ul>
+	<li><a href="DTP-A4-Project-2008.pdf">Newspaper/Magazine 2008</a></li>
+  <li><a href="DTP-A4-Project-2007.pdf">Newspaper/Magazine 2007</a></li>
+</ul>
+<h2>Images</h2>
+Shared picture pools for Desktop Publishing, Web Authoring <i>etc.</i>. <b>Only images from these pools may be used</b>. If you don't contribute to the pool for your year, you may <b>not</b> use any image pool. Original artwork is excluded from this rule. Ask if you're not sure!
+<ul>
+  <li><a href="http://www.fachtnaroe.net/subjects/webauthoring/stockimages-2009/">Stock Pictures to use (legally) in your project: from 2009</a></li>
+  <li><a href="http://www.fachtnaroe.net/subjects/webauthoring/stockimages-2008/">Stock Pictures to use (legally) in your project: from 2008</a></li>
+  <li><a href="http://www.fachtnaroe.net/subjects/webauthoring/picture_stock_67.html">Stock Pictures to use (legally) in your project: from 2007</a></li>
+  <li><a href="http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/fieldtrip01/files.html">Stock Pictures to use (legally) in your project: from 2003</a></li>
+  <li><a href="http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/fieldtrip01/files.html">Stock Pictures to use (legally) in your project: from 2002</a></li>
+</ul>
+<h2>Related:</h2>
+<ul>
+	<li><a href="/fetacmodules/2011-E20003_AwardSpecifications_English.pdf">Desktop Publishing Module Descriptor</a></li>
+	<li><a href="/fetacmodules/2011-A20209_AwardSpecifications_English.pdf">Design Module Descriptor</a></li>
+</ul>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

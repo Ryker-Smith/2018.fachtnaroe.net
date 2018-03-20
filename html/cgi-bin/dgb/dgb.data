@@ -1,0 +1,772 @@
+# This is the datafile for dgb.pl
+#
+# Data format:
+# Name%%email%%web%%Location%%Unixtime%%host%%privacy%%comment
+#
+Fachtna Roe%%fachtna@fachtnaroe.servehttp.com%%%%%%1161785781%%%%0%%Just Testing...
+Fachtna Roe%%%%%%%%1161785808%%%%0%%Another test...
+Fachtna Roe%%fachtna@fachtnaroe.servehttp.com%%%%%%1161788525%%%%2%%Right. We're open for business!
+sheila%%it.sheilan@fachtnaroe.servehttp.com%%%%It room%%1161854736%%%%0%%Hi All hope your all enjoying yourselfs and working hard!!!!!!%NEWLINE
+Fachtna Roe%%%%%%%%1161857768%%%%0%%%NEWLINEThis works much more betterly do'nt it? It even had a grammbler checkers!
+Emmet%%e_donlan@hotmail.com%%%%%%1161867952%%%%0%%hey ppl jus testin tis out!!!!!!!!
+Emmet%%e_donlan@hotmail.com%%%%%%1161868396%%%%0%%Just Testing.
+it.sarahb%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1161949500%%%%0%%hello all, just testing
+Fachtna Roe%%fachtna@fachtnaroe.servehttp.com%%%%%%1161950035%%%%0%%Everyone have a good break. I'll see you in a week, all bright-eyed and ready for work!
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1162825833%%mail.cti-clonmel.ie%%0%%Hope everyone has a fab term
+Fachtna Roe%%fachtna@fachtnaroe.servehttp.com%%%%%%1162917312%%%%0%%%NEWLINEYup. Especially me!!!%NEWLINE
+sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1162981334%%mail.cti-clonmel.ie%%0%%That is great to hear, so did I
+Fachtna Roe%%fachtna@fachtnaroe.servehttp.com%%%%%%1163166864%%%%0%%Q: If we use a formula more than once, do we have to write it every where we use it again?%NEWLINE%NEWLINEA: If you have a formula which needs to be 'repeated' it has to be changed for its new location.%NEWLINE%NEWLINEThis means that a formula for Row 1 such as =A1*B1 when copied into Row 2 should be =A2*B2 in order to reflect the fact that even though it's the 'same' formula, it's in a different position.%NEWLINE%NEWLINEThis is made clear in the first task, 101.%NEWLINE%NEWLINEYou must first learn this fact before worrying about shortcuts to achieve this change. But yes, there is a short cut. If you can't find it through the help system I believe it is shown in a later assignment.%NEWLINE%NEWLINEIf you can't wait that long, and I'd prefer you to do things at the pace set out, tell me and I'll let you know the shortcut.%NEWLINE%NEWLINERegards, etc.
+Fachtna Roe%%fachtna@fachtnaroe.servehttp.com%%%%%%1163167459%%%%0%%%NEWLINEPS: Take a look at the programming page....steal a march on next Tuesday.
+sheila%%%%%%School%%1164705862%%mail.cti-clonmel.ie%%0%%Hi All how are you? 
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1164881457%%mail.cti-clonmel.ie%%0%%Good morning to all
+sheila%%%%%%%%1164884553%%mail.cti-clonmel.ie%%0%%Good moring all how are thinks?
+fachtna%%fachtna@fachtnaroe.com%%%%In front of the computer, you twit.%%1165412836%%mail.cti-clonmel.ie%%0%%%NEWLINEShall we kill the blog, or do we need some way to make it more active...?
+fachtna%%fachtna@fachtnaroe.com%%%%In front of the computer, you twit.%%1165415637%%mail.cti-clonmel.ie%%0%%%NEWLINEShall we kill the blog, or do we need some way to make it more active...?
+it.sarahb%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1165486204%%mail.cti-clonmel.ie%%0%%It seems like no one uses the blog
+Sheila x%%%%%%College!%%1166088815%%mail.cti-clonmel.ie%%0%%Hello everyone would like to wish you all a Merry Christmas and a happy new year x x x x x x x x x 
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1166100334%%089-101-196253.ntlworld.ie%%0%%Hello all, Merry Christmas to all!!!!!
+sheila%%%%%%%%1166104389%%mail.cti-clonmel.ie%%0%%Hi sarah hope you have a great time!!!!!!!!!!! :). Cloud you please let me have the info on that credit card for paypal thanks x
+Fachtna Roe%%%%%%%%1166111893%%fachtnaroe.servehttp.com%%0%%%NEWLINEYes, Sarah. Give those details to Sheila. The fastest way is here on the blog where any one of us can, ahem, check that the number is OK and so forth. Ahem. Umm.%NEWLINE
+Sarah%%it.sarahb@fachtnaroeservehttp.com%%%%%%1166215416%%%%0%%Hi Shelia,%NEWLINEHere is the web site for the credit card, www.3v.ie, Have a great day see you soon xxxxx
+danny%%djboydanny@gmail.com%%%%%%1166334899%%%%0%%hello fachtna!! remember me?? me have 3 computers and im learning HTML programming through the internet!! i want to learn more about HTML programming, and you run your own website, so its all about learning from the MASTER!!!
+sarah%%it.sarah@fachtnaroeservehttp.com%%%%%%1166335636%%%%0%%Hello,%NEWLINEHaving a real good time on my break, learing lots.%NEWLINEcommmunication is great!!!
+Fachtna Roe%%fachtna@fachtnaroe.com%%%%%%1166785880%%%%0%%Sarah,%NEWLINE%NEWLINEWhat are you doing Learning? You're on holidays. Wait until you come back - then you'll know the meaning of the word learning!!!!%NEWLINE%NEWLINE:-)%NEWLINE%NEWLINE
+sheila%%%%%%Home Cashel%%1167518575%%83-71-100-242.b-ras1.lmk.limerick.eircom.net%%0%%Hi All having a good break computer still misbehaving. Looking forward to seeing tyou all in 2007.%NEWLINEI hope we all do well in this course, I am going to try my best %NEWLINE%NEWLINEI grant you all one wish :) 
+Fachtna Roe%%%%%%At Work%%1168336268%%mail.cti-clonmel.ie%%0%%Sheila,%NEWLINE%NEWLINEGet off your face and come in to work! (GWS).%NEWLINE%NEWLINE
+sheila%%%%%%home%%1168338564%%%%0%%Thanks for your concern. 
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1168381342%%089-101-196236.ntlworld.ie%%0%%Hello Sheila,%NEWLINEI hope you will be better soon and back to class Sarah 
+Emmet!%%%%%%%%1168423267%%mail.cti-clonmel.ie%%0%%hey sheila! get well soon 
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1168425881%%mail.cti-clonmel.ie%%0%%Everyone get your fingers out and say hello to Sheila!!!!!!!!!!
+Maura%%it.maurac@fachtnaroe.com%%%%%%1168426217%%mail.cti-clonmel.ie%%0%%Hi pet,%NEWLINEHow are you feeling. Did you get the stitches out yesterday? Class is working very hard on our programming. We all miss you very much cant wait to see you on Friday. You take of yourself.%NEWLINEMaura.
+janice%%it.janice@fachtnaroe.com%%%%%%1168437851%%mail.cti-clonmel.ie%%0%%well Sheila heard about your misfortune hope you will be alright see you when you come back.
+Sheila%%%%%%Home%%1168439994%%%%0%%Thank you all so much you have made me smile. I got my stitches out the cut looks tiny, I am glad that it looks tiny. My Black eyes are gone nearly just yellow tinge.%NEWLINEMy last blog was for Fachtna as read his comment before.%NEWLINEEnjoy the  peace and quiet as I will be back with a bang on Friday Please take any notes I need love Sheila the fairy queen 007%NEWLINE
+Maura%%it.maurac@fachtnaroe.com%%%%%%1168521017%%mail.cti-clonmel.ie%%0%%Hi Sheila,%NEWLINEHope you are ready for the morning, I will pick you up at half past eight ok. See you then. %NEWLINEMaura. 
+Fachtna%%%%%%By the keyboard%%1168593637%%mail.cti-clonmel.ie%%0%%Sarah,%NEWLINE%NEWLINECan I put my fingers back in?%NEWLINE%NEWLINE
+Fachtna%%%%%%Still by the keyboard%%1168593781%%mail.cti-clonmel.ie%%0%%%NEWLINESo, Sheila: Does this mean you'll look like Frankenstein or like a Panda with jaundice?%NEWLINE%NEWLINE:-)
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1168708680%%089-101-196022.ntlworld.ie%%0%%Fachtna,%NEWLINEyou never took your finger out on Friday!!!!!!!!!
+Sheila the Fairy Queen 007%%%%%%School%%1168868913%%mail.cti-clonmel.ie%%0%%Hi All it is great being back.%NEWLINEThanks for all your kind words! %NEWLINE%NEWLINEOne wish granted to all who were nice!
+sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1169026944%%mail.cti-clonmel.ie%%0%%Hi Shelia,%NEWLINEYou are some fairy!!!!!!! ha ha!!!!!!!!
+Fairy Queen 007%%%%%%Back of class!!%%1169031357%%mail.cti-clonmel.ie%%0%%I am the only fairy who can't fly home!!!!!%NEWLINEThey took my wings away for being flying drunk home lol....................
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1169049878%%089-101-193150.ntlworld.ie%%0%%Sheila,%NEWLINEThat will teach you not to get that drunk in future, and not all faries have wings!!!!!!!!!!!!
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%%%1169194576%%089-101-193150.ntlworld.ie%%0%%Morning Fachtna,%NEWLINE%NEWLINEI will not be in today, see you when you get back, and have a nice day.%NEWLINESarah
+it.angelamcg%%%%%%At my desk%%1169197224%%mail.cti-clonmel.ie%%0%%Hi Sarah, have a good day off. See you Monday. Now you can't say i never use the blog.
+it.angelamcg%%%%%%same as before.%%1169197295%%mail.cti-clonmel.ie%%0%%Just in case anyone feels left out, hi to all the class.
+the fairy queen 007%%%%%%Fairy land%%1169197984%%mail.cti-clonmel.ie%%0%%Hi Sarah have a great week-end. I will be resting my fairy wings x 
+Fachtna Roe%%%%%%By the computer%%1169211998%%mail.cti-clonmel.ie%%0%%No problem, Sarah. I know they'll all miss me too!%NEWLINE
+fairy queen 007%%%%%%sitting on a toadstool%%1169227223%%%%0%%Have a nice week see you Friday Fachtna.%NEWLINE
+fairy queen 007%%sheiladualla@yahoo.co.uk%%%%up in the clouds!%%1169633459%%mail.cti-clonmel.ie%%0%%Hi all how are things? No one is using the blog!!!!!%NEWLINEI am trying to get to grip's with programming help!!!!! %NEWLINE:(
+it.angelamcg%%%%%%beside you%%1169636375%%mail.cti-clonmel.ie%%0%%Hi sheila hope you get to grip with the programing soon and me with you. talk soon.
+Sheila%%%%%%%%1169726209%%mail.cti-clonmel.ie%%0%%Just to say sorry if I made to much noise I was only pleased I had done the programing and I am having great problems 
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1169730456%%mail.cti-clonmel.ie%%0%%That's ok Sheila, but we all have to work to.
+Fairy queen 007%%%%%%Home %%1170001569%%%%0%%Hi All I put a poem up and it is gone!!!!!!!!!! %NEWLINE%NEWLINEIt was ment to be a little bit of fun so if I have offened anyone I am so sorry :( %NEWLINE%NEWLINEHaving problems with part 17 on programing %NEWLINEgoing to have a break now for a bit and watch the second half of the match. %NEWLINE%NEWLINESee you all in the moring x x x x x:)
+fairy007%%%%%%away with the fairlys!!!%%1170081631%%mail.cti-clonmel.ie%%0%%Having great sport today good to be back even though I hate Mondays!!! Sometimes I wish Sunday would never end see you tomorrow the Fairy Queen 007
+Fairy Queen 007%%%%%%The land of the fairy's%%1170148810%%mail.cti-clonmel.ie%%0%%Good morning one and all wishing you a lovely day and loads of good vibes for our assignment Barcode!!!!%NEWLINE
+Fairy queen 007%%%%%%under a big oak tree%%1170175489%%%%0%%Well I see I am only talking with myself!!!!%NEWLINE%NEWLINEThen again don't know if any one listens to me anyway! %NEWLINEI am getting good at answering my own questions and can even have a conversation with myself now!!lol%NEWLINE%NEWLINESee you in the morning twinkles and wishes to you all.:) :)%NEWLINE
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1170233433%%mail.cti-clonmel.ie%%0%%Hi Sheila,%NEWLINEYou are not talking to yourself girl, I will always answer.%NEWLINE%NEWLINESarah
+Fachtna%%%%%%Here%%1170236106%%mail.cti-clonmel.ie%%0%%Sheila,%NEWLINE%NEWLINEare you sure you want to encourage her?%NEWLINE
+Fairy Queen 007%%%%%%Back of room talking to my computer%%1170237673%%mail.cti-clonmel.ie%%0%%Hi Fachtna %NEWLINE%NEWLINEJust to let you know I don't need a lot of encouragement I would talk all day as  you well no lol......
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1170237711%%mail.cti-clonmel.ie%%0%%Sheila,%NEWLINEare we sure we want to listen to him!!!!!!!!!!!!
+Fairy Queen 007%%%%%%%%1170253767%%mail.cti-clonmel.ie%%0%%
+Fairy Queen 007%%%%%%lost in barcodes!%%1170253862%%mail.cti-clonmel.ie%%0%%Sarah I don't want to listen to him unless he has something useful to say!!!!!!
+Fachtna Roe%%%%%%%%1170254910%%mail.cti-clonmel.ie%%0%%Useful. Useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful, useful. To say.%NEWLINE%NEWLINE:-)%NEWLINE
+Fairy Queen 007%%%%%%By the fire%%1170266619%%%%0%%I learnt a lot form that I did!!!!!!!! :0 lol.......
+The Fairy Queen 007%%%%%%On Mars%%1170320650%%mail.cti-clonmel.ie%%0%%Hi Sarah%NEWLINEHope we sort this barcode thing today I feel like pulling my hair out!!!!!!!%NEWLINEHave a wicked day :)
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1170322790%%mail.cti-clonmel.ie%%0%%I hope we crack it also,I am fair sick of it now
+Fairy queen 007%%%%%%Back of class!!%%1170326900%%mail.cti-clonmel.ie%%0%%I am finding this assignment is draining me I feel lost!!!!!!! :(
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%%%1170410943%%mail.cti-clonmel.ie%%0%%I know how you feel, my head is wrecked!!!!!!!!!!
+Fairy Queen 007%%%%%%Home %%1170424205%%%%0%%Hi Sarah %NEWLINEHope your day has gone well.%NEWLINEI have not had a chance to look at the programimg will do later though.%NEWLINE%NEWLINEHave a great week end x x x x x x x x;)%NEWLINE%NEWLINE
+Fairy Queen 007%%%%%%Up In the Clouds%%1170708422%%%%0%%I have only got to look at the barcodes now, as my other life took over this week end!!! %NEWLINE%NEWLINEBut I have made a break though only a small one though ;)%NEWLINE%NEWLINEWishing all your dreams come True Sheila The best Fairy ever OK :)%NEWLINE
+Fairy Queen%%%%%%Home%%1170782213%%213-94-146-214.b-ras1.lmk.limerick.eircom.net%%0%%Hi Sarah %NEWLINE%NEWLINEHope you feel better soon you are doing great of the old fags %NEWLINEBest Wishes and loads of feeling better hugs coming your way x
+Fairy Queen 007%%%%%%Back of room in Body but away with fairy's in mind!!!!!!!!!!!!!!!!!!!!%%1170854030%%mail.cti-clonmel.ie%%0%%Why don't you use the blog It is lonely taking with myself %NEWLINE
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%right here!!!!!!!!%%1170857760%%mail.cti-clonmel.ie%%0%%thanks Shelia,%NEWLINE%NEWLINEonly the two of us use the blog!!! %NEWLINEWhat is wrong with the rest of the class???????
+Fairy Queen 007%%%%%%Home but still really away with the fairies!%%1170860566%%213-94-146-214.b-ras1.lmk.limerick.eircom.net%%0%%I think the think they are too cool 4 school!!!!lol
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%here again%%1170925836%%mail.cti-clonmel.ie%%0%%Let them off!!!!!!!!!!!!
+Fairy Queen 007%%%%%%Home in the fairy kindom aka my back garden%%1171109870%%213-94-146-214.b-ras1.lmk.limerick.eircom.net%%0%%It is Saturday and I am board all I have to do is my Computer Programing and  Computer and architecture%NEWLINEHope you all have a great saturday %NEWLINEI should just say Sarah have a great week end xxxxxx
+Fairy Queen 007%%%%%%on a Mushroom(not it is not magic!%%1171393530%%213-94-146-214.b-ras1.lmk.limerick.eircom.net%%0%%Hello%NEWLINEeveryone wishing you all a happy valentines day :*%NEWLINEBig hugs and a valentines wish just for you xxxxxx
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%Class%%1171447425%%mail.cti-clonmel.ie%%0%%Happy Valentines Day to everyone xxxxxxx
+Fachtna%%%%%%Bloogabloogaland%%1171448918%%mail.cti-clonmel.ie%%0%%%NEWLINEWhat's the Valentines equivalent to 'Baa-Humbug'?%NEWLINE%NEWLINERoses are Red,%NEWLINEViolets are Violet,%NEWLINEIs there a better word%NEWLINEThan self-flushing-toilet?%NEWLINE
+angela%%%%%%Hell%%1171452908%%mail.cti-clonmel.ie%%0%%Happy Valentines day to everyone in the class. Hope we all get the programming done on time.
+Fairy Queen 007%%%%%%Bar Mushroom%%1171556130%%213-94-146-214.b-ras1.lmk.limerick.eircom.net%%0%%Hi %NEWLINEAll wishing you a wonderful week off %NEWLINEHope all your dreams come true.
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%class%%1172486236%%mail.cti-clonmel.ie%%0%%welcome back to all
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%Efteling%%1172654810%%mail.cti-clonmel.ie%%0%%Morning all, any body out there????????
+Brid%%bridpie@hotmail.com%%%%Kilkenny%%1172836426%%mail.cti-clonmel.ie%%2%%morning every 1.how's every 1 2 day??? jst testin is all!!!
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%Class%%1173091843%%mail.cti-clonmel.ie%%0%%Hi everyone, sorry nobody uses the blog, oh hello Brid.
+Fairy Queen%%%%%%Home %%1173115311%%213-94-146-214.b-ras1.lmk.limerick.eircom.net%%0%%Hi Sarah %NEWLINEI am back I will use the blog%NEWLINEHope all is well :)
+Fairy Queen 007%%%%%%%%1173169968%%mail.cti-clonmel.ie%%0%%Hi All I'm back missed you all 
+Brid%%%%%%Kilkenny%%1173177368%%mail.cti-clonmel.ie%%0%%Hi all.it was great to b back last week.hope u all had a super weekend.tell me how dat went neway lol...Shelia it's nice 2 c u back again.Best wishes,Brid x :) 
+Brid%%%%%%Kilkenny%%1173177646%%mail.cti-clonmel.ie%%0%%Hey fachtna,where's d e-mail assignment?? i can't find it on d website.
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%Class%%1173179674%%mail.cti-clonmel.ie%%0%%Welcome back Sheila.
+Brid%%%%%%middle of class%%1173181541%%mail.cti-clonmel.ie%%0%%Hey sarah :-)
+Brid%%phelan.b1@gmail.com%%%%Kilkenny%%1173190529%%mail.cti-clonmel.ie%%0%%Hey all.hope ur well.jst testin dis yoke is all. :-) :-) :) :) :P :P :D :D ;) ;)
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%home%%1173192210%%089-101-193013.ntlworld.ie%%0%%Hi Brid,%NEWLINE%NEWLINEHope your doing ok?????????
+Brid%%%%%%Kilkenny%%1173177381%%mail.cti-clonmel.ie%%0%%Thanks a million,sarah,i am doing ok thanks.
+Fairy 007 %%%%%%Cloud 9%%1173268146%%mail.cti-clonmel.ie%%0%%Happy CV Day to one and all x
+Brid%%%%%%Kilkenny%%1173269023%%mail.cti-clonmel.ie%%0%%Thank You very much,Shelia and same to urself and every 1 else in d class x :) :) :-) :-)
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%room%%1173269776%%mail.cti-clonmel.ie%%0%%Right back at you!!!!!!!!!!!!!!
+Fairy 007%%%%%%still on cloud 9%%1173270359%%mail.cti-clonmel.ie%%0%%Rock on Brid :)
+Brid%%bridpie@hotmail.com%%%%Kilkenny%%1173277710%%mail.cti-clonmel.ie%%0%%thanks,hun and same 2 urself 2 :-) :-). i will c u all 2 moro...have a great day in d meantime.
+Fairy Queen%%%%%%Home %%1173347912%%213-94-179-247.b-ras1.lmk.limerick.eircom.net%%0%%Hi All just to say will miss you today Have some things to sort at Home when will it stop!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!%NEWLINE:)
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%home%%1173361392%%089-101-193013.ntlworld.ie%%0%%Hi to all, see you all tomorrow!!!!!!!!!!!!!!
+Brid%%phelan.b1@gmail.com%%%%Kilkenny%%1173435616%%mail.cti-clonmel.ie%%0%%Just testin is all!!
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%Class%%1173693228%%mail.cti-clonmel.ie%%0%%Where is everyone today???????????????????????
+Brid%%%%%%Kilkenny%%1173779014%%mail.cti-clonmel.ie%%0%%I no it's a bit late but hope every has a fab 2007.xx :-) :-) :) :)
+Fairy Queen 007%%%%%%Up in the clouds%%1173779416%%mail.cti-clonmel.ie%%0%%Hi All %NEWLINE%NEWLINEHope you keep rocking %NEWLINEMy head is a mess with this split office %NEWLINEyou could say split...............lol
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%home%%1173789306%%089-101-192158.ntlworld.ie%%0%%Hi everyone,%NEWLINEsee you all tomorrow,you will get through it %NEWLINEfairy queen!!!!!!!!!
+fairy queen 007%%%%%%Home up in the clouds%%1173892647%%83-71-103-139.b-ras1.lmk.limerick.eircom.net%%0%%Hi Sarah %NEWLINEThanks for the support.%NEWLINEThough my head is still feeling split.%NEWLINESee you in the morning %NEWLINEFly Fly Fly away to the end of the.............
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%home%%1173947073%%089-101-192158.ntlworld.ie%%0%%Won't be in today, see you on Friday!!!!!!!!!
+Brid P%%bridphelan1987@yahoo.com%%%%in the middle of class%%1173957514%%mail.cti-clonmel.ie%%0%%hi all.hope u are keepin well.av a fanastic st.paddy's day and bank holiday.also njoy d work experience!!! Brid :) :) :-) :-) ;) ;)
+angela%%%%%%at my computer%%1174566102%%213-94-149-80.b-ras1.lmk.limerick.eircom.net%%0%%Hi everyone.Hope ye are all enjoying the work experience. Have fun. See you all soon.
+Maura%%%%%%work experiecne%%1174566335%%213-94-149-80.b-ras1.lmk.limerick.eircom.net%%0%%Hi everybody, hope work is going well for ye all.%NEWLINEKeeping busy im sure. See ye all after Easter.%NEWLINE%NEWLINE
+Fairy Queen%%%%%%Stuck in the fairy ring%%1174572640%%83-71-103-139.b-ras1.lmk.limerick.eircom.net%%0%%Hi Maura and Angela and Sarah and everyone else %NEWLINEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%Home%%1174593970%%089-101-192158.ntlworld.ie%%0%%Hi girls, great to hear from you all. Work experience is going great.%NEWLINESarah
+Fairy Queen%%%%%%Not sure just a bit lost%%1174600764%%83-71-103-139.b-ras1.lmk.limerick.eircom.net%%0%%Hi Sarah %NEWLINEDid you get my email?%NEWLINEPeace out
+squiggles%%it.markmcc@fachtnaroe.servehttp.com%%%%at computer%%1174646035%%%%0%%done ur quiz sheila!!! did alright lol.
+Fairy Queen%%%%%%Cloud 9%%1174765199%%83-71-103-139.b-ras1.lmk.limerick.eircom.net%%0%%Hi Squiggles That's not spelt right?%NEWLINEThanks Pet 
+angela%%%%%%Hawaii%%1174909346%%213-94-149-80.b-ras1.lmk.limerick.eircom.net%%0%%Hi everyone got fed up of work experience so went on holiday instead. Weather is great here lots of fine men and plenty of drinks. &quot;Fine thing&quot; just called me, have to go.%NEWLINESee ye all soon. lol.%NEWLINEAngela.
+Maura%%%%%%Miles from on where%%1174913497%%213-94-149-80.b-ras1.lmk.limerick.eircom.net%%0%%Greetings all.%NEWLINEGlad to here most of ye are copping with doubt me.%NEWLINEHope the good weather is not interrupting were work.%NEWLINETalk to ye soon enough.%NEWLINE%NEWLINEMaura.
+Sheila%%%%%%on the road to know where%%1174981649%%83-71-101-218.b-ras1.lmk.limerick.eircom.net%%0%%Hi Angel Hawaii is it well you could have told me I would have come too lol.................%NEWLINE%NEWLINEHello Maura how are you my little ray of sunshine%NEWLINE%NEWLINEI so miss you all xxxxxxxxxxxxxxxxx%NEWLINE%NEWLINEWell all except Fachtna! No only joking miss you too...............%NEWLINE%NEWLINEPeace out and all wishes granted :)
+Emmet%%e_donlan@hotmail.com%%%%St Peter &amp; Pauls!%%1175157291%%87-41-84-14.ptr.edu.ie%%0%%I said Id leave an aul comment on this..iv bin soo feckin busy da last few weeks i havnt had time to breathe.....neway have a nice easter!...no computers...jus relaxation!:)
+Brid%%%%%%Kilkenny%%1175160063%%%%0%%av a gud easter :-) :-)
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%WE%%1175239221%%089-101-196203.ntlworld.ie%%0%%Hi all, enjoying WE, have a great Easter,%NEWLINESarah xxx
+Maura%%%%%%planet zog%%1175244939%%213-94-144-149.b-ras1.lmk.limerick.eircom.net%%0%%Hi all,%NEWLINELast day of work experience. Lets make it a good one   %NEWLINEHope ye all have a peaceful Easter, don't get to shit-faced. See yous soon.%NEWLINE%NEWLINEMaura.
+Maura%%%%%%Mars%%1175461621%%%%0%%Sarah I think that was u who left that submission with Fachtna, &quot;only kidden&quot; it was Emmet. Ha ha.
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%somewhere%%1175522941%%089-101-196203.ntlworld.ie%%0%%Hey Maura, I didn't give mine in yet!!!!!!!!!!!!%NEWLINEHave a great Easter!!!!!!!!!!!
+angela%%%%%%Still Hawaii%%1175693606%%%%0%%Having a great time here, sun is great, sea is great, so great all round then. Will see you all when we get back. Anyone who applied to the TRBDI dont forget that the interviews are on the 16th thats the same day that we are due back in to Fachtna.
+Fachtna (aka Big Bad Daddie)%%%%%%Over Your Shoulder%%1175892544%%%%0%%%NEWLINESo this is where all the work is(n't) being done. Hope you all have your DB Project and WEXP Assignments done by the deadlines on the Calendar *as well as* having a good Easter.%NEWLINE%NEWLINEAnd Angela, stop pretending you're in Hawaii; we all know you're in Grangemockler in a caravan!!!%NEWLINE%NEWLINE:-)%NEWLINE
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%Home!%%1176198568%%089-101-196043.ntlworld.ie%%0%%I done it, I climb Carrauntoohil on Easter Sunday, which took 5 hours, not bad!!! Up the Devils Ladder we went. It was a bit scary, but we got there, see you all next week%NEWLINESarah
+angela%%%%%%Not Hawaii%%1176209713%%%%0%%OK I'm not in Hawaii but Grangemockler is the very same as Hawaii. Except for the palm trees, the sun and the Hawians!!!!!%NEWLINEOK not really, but a      has to dream. %NEWLINEPlus this is not a caravan I'll have you know, it's the much posher &quot;motor home&quot;.%NEWLINESEE YOU ALL ON MONDAY.
+Sheila%%%%%%not in Venice!!!!!!!!!%%1176305054%%%%0%%Hi All how is it going?%NEWLINE%NEWLINEI am having a melt down over this Database assignment. %NEWLINE%NEWLINEHelp!!!!!!!!!!!!!!!!!!!!!! :(%NEWLINE%NEWLINEHope you all had a great Easter loads of eggs
+Fachtna Roe%%%%%%Back in Clonmel%%1176340791%%%%0%%%NEWLINETemporary glitch with DB assignment access should be OK now. Sorry. It was working when I left....%NEWLINE
+Fachtna Roe%%%%%%%%1176341815%%%%0%%%NEWLINEhttp://fachtnaroe.servehttp.com/subjects/databasemethods/photo2007-04-10T16:15:42-000090.JPG%NEWLINE
+Brid%%brid_phelan@rtgrrrlonline.zzn.com%%%%%%1176717301%%mail.cti-clonmel.ie%%0%%hi all.jst want 2 say hope ye had a gud easter.it's nice 2 b bac.
+Sheila%%%%%%Mars%%1176729855%%mail.cti-clonmel.ie%%0%%Hi all glad to be back  Peace out%NEWLINE
+Brid%%%%%%%%1176801291%%mail.cti-clonmel.ie%%0%%good good 2 hear...hope we av a gud year...watever is left of it lol.
+Brid%%%%%%definitely not home.......somewhere in the middle of the universe!!!!%%1177499659%%mail.cti-clonmel.ie%%0%%jst want 2 say well!!! lol so ere it goes &gt;: &gt;:!!! ha!!! ha!!! dn't no wat else 2 say!!!
+Fairy Queen%%%%%%on a Mushroom(not it is not magic!%%1177624318%%%%0%%Oh Brid you do make me laugh. In a good way Hope your working away on your course work and not Bebo!!!!!!! %NEWLINEWell hello every one else Hope your all still sane I know I am not!!!! %NEWLINE%NEWLINEThis ls our last few weeks they will be worth it . So I am sending you all encouragement and Love to keep you traveling on your way to being successful%NEWLINE%NEWLINELove the Fairy queen 007 x x x x
+Brid%%%%%%Kilkenny%%1177663684%%mail.cti-clonmel.ie%%0%%well sheila for your info.i am doin somethin productive 4 once and no it's not social networking sites lol!!! :) :) :-) :-),dn't worry!!!! of course i hope every 1 has a good wknd. :) :).i'm off 2 get meself a job dis afternoon.so fingers crossed i'll get it :) :).wat do u expect??!! i av 2 find one now :L :L
+Sheila %%%%%%Back of Class %%1178614038%%mail.cti-clonmel.ie%%0%%Good luck everyone :)
+Brid%%%%%%Kilkenny%%1178702191%%mail.cti-clonmel.ie%%0%%thank u :) :) and same 2 u and every 1 :) :) 
+Angela%%%%%%School%%1178785712%%mail.cti-clonmel.ie%%0%%To all the class, hope everyone gets on well with their exam today. C u on the other side!!!
+Brid P %%%%%%Kilkenny%%1178800732%%mail.cti-clonmel.ie%%0%%thank u :) :) good luck every 1 lol!! :) :) 
+sarah%%it.sarahb@fachtnaroe.serfehttp.com%%%%twilight%%1178871082%%mail.cti-clonmel.ie%%0%%Have a great weekend!!!!!!!!!!!!!!!!!!!!!
+Brid%%%%%%Kilkenny%%1178892129%%mail.cti-clonmel.ie%%0%%hey every 1!! hope the exam went well 2 day!! all i want 2 say is have a good weekend x :) 
+Julia and Corey%%%%%%At Home with Sheila %%1179007789%%86-41-200-25.b-ras1.lmk.limerick.eircom.net%%0%%Hi All just want to say we think Sheila rocks ok good luck to all of you what ever you decide to do next year go on mum love Julia
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%Home!%%1180378750%%089-101-193173.ntlworld.ie%%0%%Have a great summer everyone and good luck to everyone%NEWLINE%NEWLINESarah
+Brid%%bridpie@hotmail.com%%%%Kilkenny%%1183459839%%86-41-69-211.b-ras2.chf.cork.eircom.net%%0%%Hey everyone!! just want to say have a nice summer!!! :) :) 
+Brid%%bphelan12@gmail.com%%%%Kilkenny%%1186059700%%86-41-82-132.b-ras2.chf.cork.eircom.net%%0%%Hello everyone!! Hope you are enjoying your summer holidays!!! :) :) 
+Sheila%%%%%%On The Moon %%1188815380%%86-41-200-14.b-ras1.lmk.limerick.eircom.net%%0%%Hi and welcome to the mad world of Fachtna!!!!! :) %NEWLINE%NEWLINEEnjoy your learing experince and work hard :) cause the world offers many mad and wonderful things.%NEWLINE%NEWLINE%NEWLINELet the force be with you.................... :):):)%NEWLINE%NEWLINEI am a Student from last year just wishing you luck and one wish........................................... :)%NEWLINE%NEWLINE%NEWLINEPeace out 
+Angela%%%%%%At Home%%1189072661%%86-41-214-148.b-ras1.lmk.limerick.eircom.net%%0%%This is a little advice for the new students in the I.T. class. Fachtna's bark is far worse than his bite. (He's a pet really.) Make sure and have your work in on time!. And the main piece of advive is to find out what F.G.I. means. These three letter's will get you through the entire year. Good luck to you all and I hope you have a good a year as we all had last year. 
+Angela%%%%%%Not in the C.T.I.%%1190188146%%natty1.tippinst.ie%%0%%Heuston we seem to have a problem. Again.
+fiona%%it.fionak@fachtnaroe.net%%%%my desk in the class%%1190377907%%87-41-58-2.ptr.edu.ie%%0%%hello everybody just wanted to say hi, so hi!!
+Susan%%it.susanc@fachtnaroe.net%%%%At a desk.....beside a window%%1190378539%%87-41-58-2.ptr.edu.ie%%0%%Also saying &quot;Hi&quot;......
+fiona%%it.fionak@fachtnaroe.net%%%%at my computer%%1190638829%%87-41-58-2.ptr.edu.ie%%0%%heyyy shopping trip to cork here i come!!!!!!!!
+Jamie Conroy%%it.jamiec@fachtnaroe.net%%%%Sitting at my computer%%1190796407%%87-41-58-2.ptr.edu.ie%%0%%I think we shouldnt go shopping in Cork as shopping sucks. PS: So does my logic.
+Janice Carroll%%it.janicec@fachtnaroe.com%%%%room 15%%1190797758%%87-41-58-2.ptr.edu.ie%%0%%Hi all the it heads.
+efa!!!%%it.aoifep@fachtnaroe.net%%%%my desk!!%%1190804710%%87-41-58-2.ptr.edu.ie%%0%%ITS LOUSY WE DONT HAV A HALF DAY 2MRA :( :(
+Susan Cloonan%%it.susanc@fachtnaroe.net%%%%%%1190809054%%87-41-58-2.ptr.edu.ie%%0%%What do you mean we don't have a half day tomorrow? Haven't you all got &quot;previously arranged&quot; appointments......like the one I am just about to make?
+efa!!!%%it.aoifep@fachtnaroe.net%%%%my desk%%1190888037%%87-41-58-2.ptr.edu.ie%%0%%dats a gud idea!!
+fiona%%%%%%my desk waiting for the bell 2 go%%1190900173%%87-41-58-2.ptr.edu.ie%%0%%
+fiona%%%%%%still waitn%%1190900280%%87-41-58-2.ptr.edu.ie%%0%%sorry there got cut off wats d story wit d day off friday??%NEWLINE
+fiona%%%%%%@ my desk%%1190976156%%87-41-58-2.ptr.edu.ie%%0%%is it just me or does the hour befor lunch go sssoooooooooooooo slow??%NEWLINE
+aoife%%%%%%my desk!!%%1190976411%%87-41-58-2.ptr.edu.ie%%0%%yep ur rite... its worse dan it was n da pres!!
+Susan Cloonan%%%%%%%%1191224538%%87-41-58-2.ptr.edu.ie%%0%%Spam Filter? Anyone?
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%HOME%%1191261199%%089-101-196084.ntlworld.ie%%0%%Hi Janice,%NEWLINElong time no hear, how the hell are you?????%NEWLINEEnjoy your year at IT haha%NEWLINE%NEWLINESarah
+Fachtna%%%%%%All over the place%%1191267144%%213-202-179-208.bas504.dsl.esat.net%%0%%That better, Susan?
+Fachtna%%%%%%Whereabouts unknown%%1191267329%%213-202-179-208.bas504.dsl.esat.net%%0%%Sarah, you being good?
+Susan C%%%%%%That would be telling%%1191279197%%83-71-14-185.b-ras1.dbn.dublin.eircom.net%%0%%Nice job!%NEWLINE%NEWLINEwww.clubpenguin.com%NEWLINE
+Susan C%%%%%%%%1191326989%%87-41-58-2.ptr.edu.ie%%0%%Ah fer Pete's sake!
+laura t%%%%%%my desk %%1191328281%%87-41-58-2.ptr.edu.ie%%0%%hey :] 
+efa p!!%%%%%%my desk%%1191330562%%87-41-58-2.ptr.edu.ie%%0%%well...........
+Susan C%%%%%%%%1191404224%%87-41-58-2.ptr.edu.ie%%0%%Only 83 more sleeps left till Christmas!!!!
+efa%%%%%%%%1191405961%%87-41-58-2.ptr.edu.ie%%0%%ok....
+fi%%%%%%all round the room%%1191415294%%87-41-58-2.ptr.edu.ie%%0%%is that all??
+Mr. P%%%%%%Here and there%%1191427320%%86-42-71-25.b-ras1.blp.dublin.eircom.net%%0%%It occured to me today that something was Missing from my life. I thought and thought and thought making no assumptions about the shocking state of my mental health. And then it hit me. I need a panda. Yep you heard me, A panda. I don't have one. Yet. Anybody else have a panda? I'm certain at least one of you does. But then again I bet that person is always waiting to be told to start so the panda must frustrate them then, they probably see Red. How long could you keep a panda before its tame anyway? I reckon about 9 months. Seems to be about right. In the dead of night does your panda comfort you? I hope so. That's what pandas are for. 
+Panda Fan%%%%%%%%1191436096%%213-94-253-193.b-ras1.dbn.dublin.eircom.net%%0%%Some people think that the Panda eats shoots and leaves. Beware! The Panda cannot bear bad grammar.%NEWLINE%NEWLINEA Panda walks into a bar and asks for a sandwich. When the barman refuses to serve him, the Panda takes a bite out of the counter. The barman tells the Panda that they don't serve anyone who takes drugs. The Panda says &quot;What drugs?&quot;. The barman says &quot;I saw that bar-bit-you-ate.&quot;
+Susan C%%%%%%......here.....%%1191495314%%87-41-58-2.ptr.edu.ie%%0%%I'm guessing that Happy Foot, the movie, does not involve a dancing (or hopping) single legged penguin. 
+efa%%%%%%my desk..%%1191504268%%87-41-58-2.ptr.edu.ie%%0%%no d one wit d penguin z happy feet:)
+Laura. %%%%%%%%1191504276%%87-41-58-2.ptr.edu.ie%%0%%interesting post Mr.p
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%right here%%1191520017%%089-101-196084.ntlworld.ie%%0%%Hi Fachtna,%NEWLINE%NEWLINEOf course I am good, very busy with college, thanks to yourself, I have a good head start. We are using Java for programming. I do hope you are behaving yourself Fachtna.%NEWLINESarah 
+wouldn't you like to know%%%%%%[see above]%%1191586765%%87-41-58-2.ptr.edu.ie%%0%%wats the deal with the panda??%NEWLINEfreaky or what!!
+Brid%%%%%%%%1191591118%%%%0%%Just wishing every 1 gud luck with their course dis year!! ( I am a pupil of last year!!)
+Susan%%%%%%%%1191676219%%%%0%%Thanks Brid. %NEWLINE%NEWLINEThe fact that you were able to type that message suggests that you're still in one piece...which is reassuring. %NEWLINE%NEWLINE;)%NEWLINE%NEWLINE
+Kieran O B%%%%%%My Desk%%1191835827%%87-41-58-2.ptr.edu.ie%%0%%WARNING. IT Students. Do not ever. Ever, approach Fachtna with a Plastic Sheet. I know from Experience, trust me lol.
+Panda Fan%%%%%%The Zoo%%1191840461%%87-41-58-2.ptr.edu.ie%%0%%Grammar and diction!!! Remember the panda!!!
+not flinda%%%%%%nunya%%1191844846%%87-41-58-2.ptr.edu.ie%%0%%
+Janice%%it.janice@fachtnaroe.net%%%%room 15%%1192009475%%87-41-58-2.ptr.edu.ie%%0%%Well Sarah, how are you, missing you and the lads somthing wicked this year. I hope college is going alright for you. I am doing fine  back with Fachtna for another year its a bit lonely but the new class are grand just have to get to know people a bit more. How are Tommy and the kids hope they are well. Ill keep in touch talk to you later.
+PLASTIC POCKETS%%%%%%Plastic Pocket Factory%%1192104798%%87-41-58-2.ptr.edu.ie%%0%%O2 are the best. Meteor are s***.%NEWLINE%NEWLINEP.S. I love plastic pockets but then again I'm a nutter.
+Jamie%%%%%%Class%%1192104807%%87-41-58-2.ptr.edu.ie%%0%%Hello Class, how are things going? What do you think of our currrent list of asignments?
+Fiona%%%%%%Sitting in Fionas desk%%1192104860%%87-41-58-2.ptr.edu.ie%%0%%Hello Class,%NEWLINEhas anybody started the assignment on bebo yet??
+PLASTIC POCKETS%%%%%%%%1192178384%%87-41-58-2.ptr.edu.ie%%0%%
+Fiona%%%%%%My desk%%1192178483%%87-41-58-2.ptr.edu.ie%%0%%Bring on the weekend!!!!!
+PLASTIC POCKETS%%%%%%Plastic Pocket Land.%%1192178497%%87-41-58-2.ptr.edu.ie%%0%%Plastic Pockets are very useful as they serve a number of functions as keeping your sheets from being damaged, and you can also put your eyeballs in them once they have been gouged out.
+Kieran O B%%%%%%My Desk.%%1192178613%%87-41-58-2.ptr.edu.ie%%0%%Hey, does anybody know who keeps writing about Plastic Pockets?
+Jamie Conroy%%%%%%My computer%%1192178641%%87-41-58-2.ptr.edu.ie%%0%%Hey class, is everyone looking forward to the upcoming demolition of the England rugby team by France. Come on the Irish against Germany come on boys we need this win to get or qualifying campaign back on track 
+Fiona%%%%%%Same bat time same bat place%%1192178825%%87-41-58-2.ptr.edu.ie%%0%%You leave Johnny Wilkinson out of this Come on England!!
+Kieran O B%%%%%%My Desk%%1192178872%%87-41-58-2.ptr.edu.ie%%0%%Im going for a 0-2 win for Germany on Saturday at Croker.
+Fi%%%%%%%%1192178925%%87-41-58-2.ptr.edu.ie%%0%%well he sits in your seat wearing your clothes......
+Jamie Conroy%%%%%%At my computer writing in agony at the thoughts of England going to the World Cup Finals.%%1192178943%%87-41-58-2.ptr.edu.ie%%0%%Hope Johnny gets mangeled and his face is never the same
+Fiona%%%%%%%%1192179028%%87-41-58-2.ptr.edu.ie%%0%%Dont even go there Conroy ' Je suis beau' Yea!
+Unknown%%%%%%%%1192182034%%87-41-58-2.ptr.edu.ie%%2%%COME ON FRANCE AND ARGENTINA!!!
+Jamie Conroy%%%%%%%%1192183873%%87-41-58-2.ptr.edu.ie%%0%%South Africa will hammer Argentina badly.
+Unknown%%%%%%%%1192185172%%87-41-58-2.ptr.edu.ie%%2%%Johnny Wilkinson Is A Mummy`s Boy
+Unknown%%%%%%%%1192186393%%87-41-58-2.ptr.edu.ie%%0%%Who Needs Johnny Wilkinson When You Have Felipe Conterpomi
+Fiona%%%%%%%%1192186676%%87-41-58-2.ptr.edu.ie%%0%%Can anybody find the eagle if yes where is it 
+???%%%%%%Also ???%%1192190150%%87-41-58-2.ptr.edu.ie%%0%%Rugby is ****. Johnny Wilkinson is also ****. 
+***************%%%%%%****************%%1192190233%%87-41-58-2.ptr.edu.ie%%0%%*****************************************************
+Jamie Conroy%%%%%%At my desk%%1192190482%%87-41-58-2.ptr.edu.ie%%0%%Everyone the worst team ever are chelsea as they ruin football with their antics like diving. Buying players just for the sake for buying players who does that its like they are spoilt kids in a candy shop where they want everything. Also kieran I agree rugby should be four stars also whats with you and plastic pockets
+Jamie Conroy%%%%%%At my desk%%1192190489%%87-41-58-2.ptr.edu.ie%%0%%Everyone the worst team ever are chelsea as they ruin football with their antics like diving. Buying players just for the sake for buying players who does that its like they are spoilt kids in a candy shop where they want everything. Also kieran I agree rugby should be four stars also whats with you and plastic pockets
+Jamie Conroy%%%%%%At my desk%%1192190497%%87-41-58-2.ptr.edu.ie%%0%%Everyone the worst team ever are chelsea as they ruin football with their antics like diving. Buying players just for the sake for buying players who does that its like they are spoilt kids in a candy shop where they want everything. Also kieran I agree rugby should be four stars also whats with you and plastic pockets
+Kieran O B%%%%%%My Desk%%1192190657%%87-41-58-2.ptr.edu.ie%%0%%Livershit are a shit team that will never win the Prem. Their supporters are a bunch of scumbags that were actually branded the ''worst in Europe'' by a top UEFA official because of their antics in the Final, which by the way Livershit lost im glad to say lol.
+Unknown%%%%%%%%1192190660%%87-41-58-2.ptr.edu.ie%%2%%Chelsea Should Be Relegated They Are Brutal Even Derby County Are Better Than Them 
+Unknown%%%%%%%%1192190813%%87-41-58-2.ptr.edu.ie%%2%%Liverpool Are Just As Bad
+Jamie%%%%%%%%1192191036%%87-41-58-2.ptr.edu.ie%%0%%Where is that frickin bird for task 208.04. Kieran loves plastic pockets
+Ston51%%%%%%%%1192191038%%87-41-58-2.ptr.edu.ie%%2%%Support A Better Team Like Arsenal
+Fiona%%%%%%My desk%%1192191043%%87-41-58-2.ptr.edu.ie%%0%%Where is the love?
+Liverpool Fan%%%%%%%%1192191248%%87-41-58-2.ptr.edu.ie%%0%%Click here!  	%NEWLINEHONOURS%NEWLINE%NEWLINEThe Liverpool FC Trophy Cabinet%NEWLINELeague Champions 	European Cup 	FA Cup 	League Cup%NEWLINELiverpool 18 	Real Madrid 9 	Man-United 11 	Liverpool 7%NEWLINEMan-United 16 	AC Milan 7 	Arsenal 10 	Aston Villa 5%NEWLINEArsenal 13 	Liverpool 5 	Spurs 8%NEWLINE	Notts Forest 4%NEWLINEEverton 9 	Ajax 4 	Liverpool 7 	Leicester 3%NEWLINEAston Villa 7 	Bayern Munich 4 	Aston Villa 7 	Spurs 3%NEWLINE  	  	Newcastle 6 	Chelsea 4%NEWLINE  	  	Blackburn 6 	 %NEWLINE%NEWLINE%NEWLINE%NEWLINE%NEWLINE%NEWLINE	%NEWLINELeague Champions 	18%NEWLINE1900-01%NEWLINE	%NEWLINE1905-06%NEWLINE	%NEWLINE1921-22%NEWLINE	%NEWLINE1922-23%NEWLINE	%NEWLINE1946-47%NEWLINE1963-64%NEWLINE	%NEWLINE1965-66%NEWLINE	%NEWLINE1972-73%NEWLINE	%NEWLINE1975-76%NEWLINE	%NEWLINE1976-77%NEWLINE1978-79%NEWLINE	%NEWLINE1979-80%NEWLINE	%NEWLINE1981-82%NEWLINE	%NEWLINE1982-83%NEWLINE	%NEWLINE1983-84%NEWLINE1985-86%NEWLINE	%NEWLINE1987-88%NEWLINE	%NEWLINE1989-90%NEWLINE	%NEWLINE	%NEWLINE%NEWLINEDivision Two Winners 	4%NEWLINE1893-94%NEWLINE	%NEWLINE1895-96%NEWLINE	%NEWLINE1904-05%NEWLINE	%NEWLINE1961-62%NEWLINE	 %NEWLINE%NEWLINELancashire League Winners 	1%NEWLINE    1892-93%NEWLINE%NEWLINEFootball Association Challenge Cup Winners 	7%NEWLINE1964-65%NEWLINE	%NEWLINE1973-74%NEWLINE	%NEWLINE1985-86%NEWLINE	%NEWLINE1988-89%NEWLINE	%NEWLINE1991-92%NEWLINE2000-01%NEWLINE	%NEWLINE2005-06%NEWLINE	%NEWLINE	%NEWLINE	%NEWLINE%NEWLINELeague Cup Winners 	7%NEWLINE1980-81%NEWLINE	%NEWLINE1981-82%NEWLINE	%NEWLINE1982-83%NEWLINE	%NEWLINE1983-84%NEWLINE	%NEWLINE1994-95%NEWLINE2000-01%NEWLINE	%NEWLINE2002-03%NEWLINE	%NEWLINE	%NEWLINE	%NEWLINE%NEWLINEFootball Association Charity Shield Winners 	15%NEWLINE1964*%NEWLINE	%NEWLINE1965*%NEWLINE	%NEWLINE1966%NEWLINE	%NEWLINE1974%NEWLINE	%NEWLINE1976%NEWL                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                )
+Kieran O B%%%%%%%%1192626005%%87-41-58-2.ptr.edu.ie%%0%%You are a loser your not even in our class and your writing this bollocks.
+Panda Fan%%%%%%%%1192626077%%87-41-58-2.ptr.edu.ie%%0%%To the Panda Fan who posted at 13:54. If your lonely little brain cell isn't capable of thinking up an original username, then please let me know and I can think of one for you. 
+Peter G%%%%%%%%1192626188%%87-41-58-2.ptr.edu.ie%%2%%Iceman I Feel Sorry For You
+Panda Fan%%%%%%%%1192626232%%87-41-58-2.ptr.edu.ie%%0%%Im cool get down get funky
+Kieran O B%%%%%%%%1192626329%%87-41-58-2.ptr.edu.ie%%0%%Are  u some kind of peado or something?
+Panda Fan%%%%%%%%1192626394%%87-41-58-2.ptr.edu.ie%%0%%Think one up for yourself panda fan is mine now
+Panda Fan%%%%%%%%1192626394%%87-41-58-2.ptr.edu.ie%%0%%Im the next Micheal Jackson Samona
+Susan Cloonan%%%%%%%%1192626416%%87-41-58-2.ptr.edu.ie%%0%%Has the issue of the A3 scanner been resolved?
+Kieran O B%%%%%%%%1192626461%%87-41-58-2.ptr.edu.ie%%0%%I think you need help.
+Panda Fan%%%%%%%%1192626467%%87-41-58-2.ptr.edu.ie%%0%%Think one up for yourself panda fan is mine now
+Jamie Conroy%%%%%%By the new scanner%%1192626505%%87-41-58-2.ptr.edu.ie%%0%%Yeah the scanner is over by my desk lucky  me
+Fiona%%%%%%%%1192626537%%87-41-58-2.ptr.edu.ie%%0%%yes it is hooked up to panda fan i mean jamies computer
+Peter G%%%%%%%%1192626862%%87-41-58-2.ptr.edu.ie%%0%%Why Is Everyone Using Different Names For The Blog  
+Kieran O B%%%%%%%%1192627004%%87-41-58-2.ptr.edu.ie%%0%%Dunno. Id love to know who they are tho.
+Peter G%%%%%%%%1192627071%%87-41-58-2.ptr.edu.ie%%2%%I Agree They Are Taking The Fun Out Of It
+Waterman%%%%%%%%1192627906%%87-41-58-2.ptr.edu.ie%%0%%I agree with you two
+Jamie%%%%%%%%1192627950%%87-41-58-2.ptr.edu.ie%%0%%Why a capital letter for each word
+Jamie%%%%%%%%1192627971%%87-41-58-2.ptr.edu.ie%%0%%Why a capital letter for each word
+Kieran O B%%%%%%%%1192627993%%87-41-58-2.ptr.edu.ie%%0%%So who are u waterman?
+Fiona%%%%%%%%1192628131%%87-41-58-2.ptr.edu.ie%%0%%starts with a J  ends in AIME
+Kieran O B%%%%%%%%1192628132%%87-41-58-2.ptr.edu.ie%%0%%I like bananas
+Fiona%%%%%%%%1192628136%%87-41-58-2.ptr.edu.ie%%0%%starts with a J  ends in AIME
+  %%%%%%%%1192628193%%87-41-58-2.ptr.edu.ie%%0%%  
+PeterG%%%%%%%%1192654448%%213-94-250-223.b-ras1.dbn.dublin.eircom.net%%2%%Did you see the Ireland game tonight! how could draw against Cyprus.
+Kieran O B%%%%%%%%1192701576%%87-41-58-2.ptr.edu.ie%%0%%Ok its now official. Ireland are SHIT. Get Stan out.
+Fiona%%%%%%%%1192701677%%87-41-58-2.ptr.edu.ie%%0%%Bad year for irish sport first the rugby now this
+Jamie Conroy%%%%%%At my computer %%1192701704%%87-41-58-2.ptr.edu.ie%%0%%Ireland were so bad. The only positive thing we can hope for is that we can hardly get any worse than what a pile of **** we were lst night. 
+Peter G%%%%%%%%1192701718%%87-41-58-2.ptr.edu.ie%%2%%Stan is the worst manager ever!!!!!
+Jamie Conroy%%%%%%%%1192701830%%87-41-58-2.ptr.edu.ie%%0%%At least we have the super eight cricket team
+Kieran O B%%%%%%%%1192701833%%87-41-58-2.ptr.edu.ie%%0%%Stan is a muppet. He should manage Clonmel Town instead of Ireland.
+Fiona%%%%%%%%1192701898%%87-41-58-2.ptr.edu.ie%%0%%i wouldnt trust him with it
+Jamie Conroy%%%%%%At my computer%%1192701963%%87-41-58-2.ptr.edu.ie%%1%%Hello to everyone. Just thought I would drop in and say hi. Who else is sickned that Irelands best sport this year is cricket. Those rughby and soccer players dont have the heart to represent their country ever again!!!!!!!!!!!
+Peter G%%%%%%%%1192702139%%87-41-58-2.ptr.edu.ie%%2%%Did anyone hear Eamonn Dunphy he was ashaned of the Irish performance and of the manager 
+Fiona%%%%%%%%1192702148%%87-41-58-2.ptr.edu.ie%%0%%Wash your mouth out Conroy, rugby rocks soccer is crud. No h in rugby
+Jamie Conroy%%%%%%%%1192702438%%87-41-58-2.ptr.edu.ie%%0%%The managers can be blamed to a certain degree but when it comes down to it%NEWLINEthe players are the ones on the field. Yes our rugby campaign was over when we%NEWLINEplayed Argentina but they shouldve still played for pride. How can a team that%NEWLINEis second in world rugby six months ago not even get out of the group stages%NEWLINEof the world cup. Then last night our Euro campagn was over yet they still%NEWLINEcould of gotten revenge on Cyprus after last years dismal result. They%NEWLINEshouldve of played their hearts out and keep going till the very end. We were%NEWLINElucky that Stevie Finnan was in the right place at the right time. 
+Susan C%%%%%%%%1192702459%%87-41-58-2.ptr.edu.ie%%0%%Jamie, did you *have* to send that post to the blog *and* as an e-mail? I *hate* sport! I wouldn't like sport even if I was David Beckham! It has a devastating effect on my life if I've to go to all the trouble of opening my e-mail only to see a sports related topic waiting for me. %NEWLINE%NEWLINESniff......
+Susan C%%%%%%%%1192702549%%87-41-58-2.ptr.edu.ie%%0%%Good lantherin Jehooplahs!!! There's another one! Go away Jamie!
+Jamie Conroy%%%%%%%%1192702573%%87-41-58-2.ptr.edu.ie%%0%%Sorry Susan from jnow on Ill have sport releated content on the topic of the email so you can delete it straight
+Kieran O B%%%%%%%%1192702602%%87-41-58-2.ptr.edu.ie%%0%%Of course he had to. Football comes before everything else.
+Susan C%%%%%%%%1192702674%%87-41-58-2.ptr.edu.ie%%0%%Thanks Jamie.....but hold on......how do I know that you mightn't, some day, disguise a really interesting e-mail by putting a sports title in the subject heading?%NEWLINE%NEWLINESigh! Life can be so difficult at times. 
+Fiona%%%%%%%%1192702751%%87-41-58-2.ptr.edu.ie%%0%%How didn't they play with pride. Can you say that to the likes of Brian O Driscoll who got over foe=r a try in all of the matches. You cqant say they didnt want it because they did they wouldn't be there if they weren't hungry for it. Management are to blame Full stop.
+Peter G%%%%%%%%1192702791%%87-41-58-2.ptr.edu.ie%%2%%Roy Keane should be the next manager of Ireland
+Jamie Conroy%%%%%%%%1192702840%%87-41-58-2.ptr.edu.ie%%0%%Yeah I agree or David O Leary
+Kieran O B%%%%%%%%1192702927%%87-41-58-2.ptr.edu.ie%%0%%lol they could have had Guus Hiddink but John Delaney- being the tightwad he is- wouldnt pay the money for him. 
+Jamie Conroy%%%%%%%%1192703076%%87-41-58-2.ptr.edu.ie%%0%%No you wont an Irish manager. Just somebody that has  experiance
+Peter G%%%%%%%%1192703084%%87-41-58-2.ptr.edu.ie%%2%%Let`s hope they don`t get Steve Mclaren to be the new manager
+Fiona%%%%%%%%1192703129%%87-41-58-2.ptr.edu.ie%%0%%Ill do it. How much would it get
+Kieran O B%%%%%%%%1192705390%%87-41-58-2.ptr.edu.ie%%0%%Its not even that well paid. Bout half a million a year.
+Fiona%%%%%%%%1192706490%%87-41-58-2.ptr.edu.ie%%0%%Ill do it. How much would it get
+Peter G%%%%%%%%1192787115%%87-41-58-2.ptr.edu.ie%%2%%Steve Staunton's reign as Irish manager is expected to come to an end over the weekend with an emergency meeting of the FAI's board
+Kieran O B%%%%%%%%1192788212%%87-41-58-2.ptr.edu.ie%%0%%About time. They should have sacked him after the San Marino game. What a Muppet...
+Peter G%%%%%%%%1192789736%%87-41-58-2.ptr.edu.ie%%2%%Dave O'Leary is the bookies favourite apparently
+Kieran O B%%%%%%%%1192791169%%87-41-58-2.ptr.edu.ie%%0%%I hope O Leary gets the job. I wanted him in before Staunton.
+Peter G%%%%%%%%1192795143%%87-41-58-2.ptr.edu.ie%%2%%Come on South Africa
+England Supporter%%%%%%%%1192796754%%87-41-58-2.ptr.edu.ie%%0%%Come on England.
+Jamie Conroy%%%%%%%%1192796820%%87-41-58-2.ptr.edu.ie%%0%%Hopefully South Africa will win but it should be a good game
+Panda Fan%%%%%%%%1192796854%%87-41-58-2.ptr.edu.ie%%0%%England
+Karate H8r%%%%%%%%1192796901%%87-41-58-2.ptr.edu.ie%%0%%Wheres your Northern Hemisphere support.
+Karate H8r%%%%%%%%1192796939%%87-41-58-2.ptr.edu.ie%%0%%Wheres your Northern Hemisphere support.
+Samurai Jack%%%%%%%%1192797017%%87-41-58-2.ptr.edu.ie%%0%%Why do u hate karate?
+Karate H8r%%%%%%%%1192797095%%87-41-58-2.ptr.edu.ie%%0%%coz its gay
+Jamie Conroy%%%%%%%%1192797121%%87-41-58-2.ptr.edu.ie%%0%%Don't comment on something you know f all about you stupid ignorant person whoever you are
+Karate H8r%%%%%%%%1192797148%%87-41-58-2.ptr.edu.ie%%0%%coz its gay
+Fiona%%%%%%%%1192797211%%87-41-58-2.ptr.edu.ie%%0%%Oooooohhhhhhhhh harsh
+Samurai Jack%%%%%%%%1192797250%%87-41-58-2.ptr.edu.ie%%0%%Piss off. Karate H8r u are a loser.
+Peter G%%%%%%%%1192798431%%87-41-58-2.ptr.edu.ie%%2%%Does anyone like The Simpsons
+Susan C%%%%%%In front of a Dinosaur%%1192825086%%86-41-5-188.b-ras1.dbn.dublin.eircom.net%%0%%The Simpsons are great Peter! %NEWLINE%NEWLINEI am just in from shopping. Getting stuff ready for the weekend. Logged in here and it's a lot different than on my laptop. It's purplier, which is nice. %NEWLINE%NEWLINEThanks for the link Fachtna! Nice one!%NEWLINE%NEWLINEHope you all have a good weekend. I forecast an extremely sore head for myself on Sunday morning, yayyy!!! 
+PeterG%%%%%%%%1192912016%%83-71-7-146.b-ras1.dbn.dublin.eircom.net%%2%%Yes South Africa are the champions percy montgomary you legend
+PeterG%%%%%%%%1192995718%%83-71-12-10.b-ras1.dbn.dublin.eircom.net%%0%%What a weekend Kimi Raikkonen F1 World Champion YES!
+Fiona%%%%%%%%1193039523%%87-41-58-2.ptr.edu.ie%%0%%Nnnnnoooooooooooooo England lost. It was a TOTAL fix. Something has to be done about the ref and the TMO
+Peter G%%%%%%%%1193040508%%87-41-58-2.ptr.edu.ie%%2%%South Africa winger Bryan Habana has been named the International Rugby Board's player of the year.
+Jamie Conroy%%%%%%At my desk%%1193041765%%87-41-58-2.ptr.edu.ie%%0%%I am glad that South Africa won but I think that the ref should not have been Irish. To much history. But these things happen in sport. I am very dissapointed about the F1 result yesterday. I was shouting for Lewis Hamilton but hey as long as Alonso didnt win I dont mind
+Panda Fan%%%%%%%%1193047404%%87-41-58-2.ptr.edu.ie%%0%%I wonder where Mr. P went to. I miss Mr. P.
+Kieran O B%%%%%%%%1193047604%%87-41-58-2.ptr.edu.ie%%0%%Piss off and get a life u loser.
+gobbledegook%%%%%%%%1193047619%%87-41-58-2.ptr.edu.ie%%0%%he died
+Susan C%%%%%%%%1193047824%%87-41-58-2.ptr.edu.ie%%0%%I don't think there's really a need for the foul language, especially on a site that can be so easily accessed by the public.%NEWLINE%NEWLINE&quot;Ignore the trolls&quot;%NEWLINE%NEWLINE;)
+Peter G%%%%%%%%1193047925%%87-41-58-2.ptr.edu.ie%%2%%Lewis Hamilton still has a slim chance of taking the F1 title after McLaren said they would contest a decision not to punish two other teams in Brazil.
+Kieran O B%%%%%%%%1193048447%%87-41-58-2.ptr.edu.ie%%0%%I dont care. This guy is starting to annoy me.
+Susan C%%%%%%%%1193048778%%87-41-58-2.ptr.edu.ie%%0%%You're easily annoyed.%NEWLINE%NEWLINEWho's finished the French assignment? 
+Susan C%%%%%%%%1193049744%%87-41-58-2.ptr.edu.ie%%0%%Well......that was a conversation stopper!
+Jamie Conroy%%%%%%%%1193050729%%87-41-58-2.ptr.edu.ie%%0%%im nearly finished
+Mr P%%%%%%%%1193050753%%87-41-58-2.ptr.edu.ie%%0%%I am back Panda fan
+wouldnt you like to know%%%%%%%%1193053951%%87-41-58-2.ptr.edu.ie%%0%%i thought you died
+Panda Fan%%%%%%%%1193054257%%87-41-58-2.ptr.edu.ie%%0%%It's lovely to see you Mr. P. I hope that you will continue your musings on the Panda World. They were quite enjoyable. 
+Fachtna Roe%%fachtna@fachtnaroe.com%%%%Seeing all from on high...%%1193091983%%%%1%%%NEWLINEKieran, I agree with Susan's comment. Care.
+Kieran O B%%%%%%%%1193211378%%87-41-58-2.ptr.edu.ie%%0%%Haha Stan lost his job. What a muppet.
+Peter G%%%%%%%%1193211539%%87-41-58-2.ptr.edu.ie%%2%%Now let`s get someone in who can actually manage a soccer team
+Kieran O B%%%%%%%%1193213233%%87-41-58-2.ptr.edu.ie%%0%%O Leary and Souness are the 2 favourites I think.
+Peter G%%%%%%%%1193316324%%87-41-58-2.ptr.edu.ie%%2%%Philippe Troussier has expressed an interest in taking charge of the Republic of Ireland following Steve Staunton's sacking
+Anon.%%%%%%%%1193317283%%87-41-58-2.ptr.edu.ie%%0%%You talk like a robot...
+Kieran O B%%%%%%%%1193317573%%87-41-58-2.ptr.edu.ie%%0%%Who is Phillip Troussier?
+Peter G%%%%%%%%1193318208%%87-41-58-2.ptr.edu.ie%%2%%Managed Japan at the 2002 World Cup
+PeterG%%%%%%%%1193348488%%213-94-252-132.b-ras1.dbn.dublin.eircom.net%%2%%Who knows Martin Jol could be the next Ireland manager now he has left Spurs
+Aisling M%%it.aislingm@fachtnaroe.com%%%%the great beyond%%1193389365%%87-41-58-2.ptr.edu.ie%%2%%why is there such hype over stan losing his job?? in fairness the rugby team didnt play muchbetter in the world cup and theres no question over o sullivan losing his job. altho i do believe that if he goes then o gara shouldnt be far behind him. 
+Kieran O B%%%%%%%%1193389861%%87-41-58-2.ptr.edu.ie%%0%%The reason theres such hype over Stan is because Football is a bigger deal than Rugby ever will be.
+Fiona%%%%%%At my desk%%1193389872%%87-41-58-2.ptr.edu.ie%%0%%Yippee last day!!
+Jamie Conroy%%%%%%%%1193390095%%87-41-58-2.ptr.edu.ie%%0%%Today should be good
+Kieran O B%%%%%%%%1193390759%%87-41-58-2.ptr.edu.ie%%0%%Yeah, cause its the last day for a week.
+aisling m%%%%%%my desk%%1193393459%%87-41-58-2.ptr.edu.ie%%0%%in your opinion maybe but rugby will always hold a bigger place in the heart of this nation than soccer. if u recall correctly it was the first non-GAA sport to be played at Coker and the first time god save the queen was allowed to be played inside the walls of the GAA HQ...therefore its a bigger deal to people than soccer. ;)
+Kieran O B%%%%%%%%1193398924%%87-41-58-2.ptr.edu.ie%%0%%No it still isnt im afraid. Football will always be bigger. The roof of that is that every nation in the world has a football team, but do they have a Rugby team? No they dont.
+Peter G%%%%%%%%1193406858%%87-41-58-2.ptr.edu.ie%%2%%Sevilla coach Juande Ramos is being tipped to take over as Tottenham manager after Martin Jol's sacking.
+Kieran O B%%%%%%%%1193406938%%87-41-58-2.ptr.edu.ie%%0%%The were in contact with him before weren't they?
+Kieran O B%%%%%%%%1193406971%%87-41-58-2.ptr.edu.ie%%0%%And Jol didn't get sacked, he stepped down.
+PeterG%%%%%%%%1193432871%%83-71-10-195.b-ras1.dbn.dublin.eircom.net%%2%%He stepped down only after he found out they were going to sack him before the game last night.%NEWLINEHope you have all have a good break!
+Peter G%%%%%%%%1194017128%%86-41-0-6.b-ras1.dbn.dublin.eircom.net%%2%%Former world champion Fernando Alonso has left McLaren after agreeing an early release from his contract. %NEWLINE
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%home%%1194176411%%089-101-193243.ntlworld.ie%%0%%See you on the 30 for graduation.
+Fachtna Roe%%fachtna@fachtnaroe.ie%%http://www.fachtnaroe.ie%%%%1194256935%%87-41-58-2.ptr.edu.ie%%0%%Sarah,%NEWLINEYour system email address has been shortened to the more memorable it.sarahb@fachtnaroe.net - easier to remember, easier to use. Tell any of last years group that the same applies for them, and that sending from other addresses may just wind up in the spam box.%NEWLINE%NEWLINESee you on the 30th.%NEWLINE
+Fiona%%%%%%%%1194256961%%87-41-58-2.ptr.edu.ie%%0%%Nice comeback for Ronan O'Gara on Saturday only hope its lasts for the six nations
+Panda Fan%%%%%%%%1194266018%%87-41-58-2.ptr.edu.ie%%0%%Ah...nice to see everyone back. 
+Panda Fan%%%%%%%%1194266042%%87-41-58-2.ptr.edu.ie%%0%%Ah...nice to see everyone back. 
+Panda H8R%%%%%%%%1194269497%%87-41-58-2.ptr.edu.ie%%0%%Death to all pandas
+Sarah%%it.sarahb@fachtnaroe.servehttp.com%%%%somewhere%%1194295702%%089-101-193243.ntlworld.ie%%0%%Will pass on the message, I used the other email before I read the blog. Now I will change over
+Panda Fan%%%%%%Watching everyone from high up%%1194299299%%213-202-170-69.bas504.dsl.esat.net%%0%%I love pandas, I love pandas, I love pandas, I love pandas, I love pandas, I love pandas, I love pandas, I love pandas, I love pandas, I love pandas, I love pandas, I love pandas,
+Panda Fan%%%%%%Much higher up than that other Panda Fan%%1194303605%%83-70-54-51.b-ras1.dbn.dublin.eircom.net%%0%%Oh how nice. It's another Panda Fan. 
+Sheila007FairyPrincess%%%%%%TI canteen%%1194346268%%natty1.tippinst.ie%%0%%Hi Fachtna %NEWLINESorry I have not been in contact I still have no internet at home loving the course.%NEWLINE%NEWLINEHope all your new students are enjoying their time with you :)%NEWLINE%NEWLINESmile I grant you one wish x
+Jamie C%%%%%%%%1194349713%%87-41-58-2.ptr.edu.ie%%0%%zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+Kieran O B%%%%%%%%1194350946%%87-41-58-2.ptr.edu.ie%%0%%Wake up sleepy head.
+Jamie Conroy%%%%%%At my computer%%1194351051%%87-41-58-2.ptr.edu.ie%%0%%Looks like somebody wants to be me 
+Kieran O B%%%%%%%%1194351091%%87-41-58-2.ptr.edu.ie%%0%%Why? I wouldnt want to be u. 
+Jamie Conroy%%%%%%At my computer%%1194351369%%87-41-58-2.ptr.edu.ie%%0%%Well you should want to be me you wouldve got your WP portfolio done
+Kieran O B%%%%%%%%1194351406%%87-41-58-2.ptr.edu.ie%%0%%Well I was thinking at least I dont support the Livershit.
+Fiona%%%%%%%%1194351910%%87-41-58-2.ptr.edu.ie%%0%%no need to be rude
+Kieran O B%%%%%%%%1194352561%%87-41-58-2.ptr.edu.ie%%0%%Hey Jamie, whats the one ship that will never dock in Liverpool?%NEWLINE%NEWLINEThe premierSHIP! HA!
+Jamie Conroy%%%%%%At my desk%%1194353071%%87-41-58-2.ptr.edu.ie%%0%%Even though I could berate you with millions of replies to that latest comment. I am not going to sink to that petty level
+Kieran O B%%%%%%%%1194353092%%87-41-58-2.ptr.edu.ie%%0%%In other words. Theres nothing u can say cause u no im right.
+Jamie Conroy%%%%%%At my desk%%1194353146%%87-41-58-2.ptr.edu.ie%%0%%Even though I could berate you with millions of replies to that latest comment. I am not going to sink to that petty level
+Jamie Conroy%%%%%%At my desk%%1194353151%%87-41-58-2.ptr.edu.ie%%0%%Even though I could berate you with millions of replies to that latest comment. I am not going to sink to that petty level
+SusanC%%%%%%At my desk%%1194356138%%87-41-58-2.ptr.edu.ie%%0%%Did you know that if you post a reply to the blog and then hit the &quot;refresh&quot; button, that your reply is repeated? %NEWLINE%NEWLINEBoring.......but true. :)
+SusanC%%%%%%At my desk%%1194356156%%87-41-58-2.ptr.edu.ie%%0%%Did you know that if you post a reply to the blog and then hit the &quot;refresh&quot; button, that your reply is repeated? %NEWLINE%NEWLINEBoring.......but true. :)
+Susan C%%%%%%Still at my desk%%1194356177%%87-41-58-2.ptr.edu.ie%%0%%Told ya!
+Kieran O B%%%%%%%%1194356301%%87-41-58-2.ptr.edu.ie%%0%%Cool. Thanks for the hint. 
+Susan C%%%%%%STILL here........%%1194356623%%87-41-58-2.ptr.edu.ie%%0%%You're welcome Kieran. I hope you're not fsqud wotzisface. ;)
+Kieran O B%%%%%%%%1194357120%%87-41-58-2.ptr.edu.ie%%0%%What was that susan? Didnt get it.
+Kieran O B%%%%%%%%1194357208%%87-41-58-2.ptr.edu.ie%%0%%Oh hell no im not that dope.
+Susan C%%%%%%%%1194357628%%87-41-58-2.ptr.edu.ie%%0%%It's allright Kieran. I was only kidding. That's what this ---&gt; ;) meant.
+Kieran O B%%%%%%%%1194360162%%87-41-58-2.ptr.edu.ie%%0%%Oh yeah I know, just in case... I saw your Internet History project. Nice job.
+Peter G%%%%%%%%1194360593%%87-41-58-2.ptr.edu.ie%%2%%I can`t wait for the trip to Cork it should be fun
+Panda Fan%%%%%%%%1194433783%%87-41-58-2.ptr.edu.ie%%0%%Can I come to Cork too? 
+Panda 4 Life%%%%%%China%%1194433990%%87-41-58-2.ptr.edu.ie%%2%%Sorry but no
+Sheila007%%%%%%On the moon %%1194434103%%natty1.tippinst.ie%%0%%Well hello when are you all of to Cork!! %NEWLINE%NEWLINEOh I am a student from last year :) %NEWLINE%NEWLINE
+Panda Fan%%%%%%%%1194434302%%87-41-58-2.ptr.edu.ie%%0%%I'm going anyway. Can we go to the Chinese for bamboo shoots?
+Susan C%%%%%%%%1194434372%%87-41-58-2.ptr.edu.ie%%0%%Hi Sheila! We'll have to e-mail you on that. Otherwise it looks like we could have half a zoo in tow. ;)
+Panda 4 Life%%%%%%%%1194435393%%87-41-58-2.ptr.edu.ie%%2%%No Sheila can not come
+Blogster%%%%%%%%1194435838%%87-41-58-2.ptr.edu.ie%%2%%What music does everyone like
+Panda Fan%%%%%%%%1194436123%%87-41-58-2.ptr.edu.ie%%0%%That's not very nice Panda4Life. Sheila can go with me. We'll go shopping in BTs and have a Chinese. We'll have a much better time than you will. 
+Panada Fan%%%%%%%%1194441011%%87-41-58-2.ptr.edu.ie%%2%%Hope you are all being good
+Panda Fan%%%%%%%%1194442073%%87-41-58-2.ptr.edu.ie%%0%%You like your food Panada yeah?
+Panada Fan%%%%%%%%1194443005%%87-41-58-2.ptr.edu.ie%%2%%A panda goes to a restarant, and the waiter comes over and askes him what he would like to eat. The panda said &quot;i would like to order everything on the menu&quot;%NEWLINE%NEWLINEThe wiater comes back a little later after the panda finishes up his food and says &quot;Here is your check&quot; The panda shoots the waiter.%NEWLINE%NEWLINEThe police come and talk to the pand. the police said &quot;You can not do that&quot; the panda says&quot; Sure i can, look panda up in the dictionary, it says: Panda; eats, shoots and leaves. (eats shoots, and leaves) (shoot is a plant)
+Peter G%%%%%%%%1194444132%%87-41-58-2.ptr.edu.ie%%2%%Someone can`t spell Panda
+Panda Fan%%%%%%%%1194446707%%87-41-58-2.ptr.edu.ie%%0%%That's cos he's a panada fan not a panda fan. I'm the real Panda Fan.
+Kieran O B%%%%%%%%1194522076%%87-41-58-2.ptr.edu.ie%%0%%A real loser more than anything.
+Wondering....%%%%%%At my pc%%1194530332%%87-41-58-2.ptr.edu.ie%%0%%Hmm.....does injuring a &quot;doll&quot; baby constitute as criminal damage....or grievous bodily harm? 
+Kieran O B%%%%%%%%1194532781%%87-41-58-2.ptr.edu.ie%%0%%It's criminal damage for definite. Its not bodily harm because its a piece of plastic.
+Wondering....%%%%%%At my pc%%1194532980%%87-41-58-2.ptr.edu.ie%%0%%Oh well...there goes another one...flying over the heads of the oblivious...
+Peter G%%%%%%%%1194557366%%213-94-254-99.b-ras1.dbn.dublin.eircom.net%%2%%Bolton drew with Bayern Munich what a shock
+Panda Fan%%%%%%%%1194617238%%87-41-58-2.ptr.edu.ie%%0%%So when are we off to Cork then?
+panada fan%%%%%%%%1194859647%%87-41-58-2.ptr.edu.ie%%2%%NO!!!!!!!!!!!
+Panda Fan%%%%%%%%1194866252%%87-41-58-2.ptr.edu.ie%%2%%Why is no one talking to me on the blog
+Panda H8R%%%%%%%%1194868178%%87-41-58-2.ptr.edu.ie%%0%%nobody likes you
+Kieran O B%%%%%%%%1194873778%%87-41-58-2.ptr.edu.ie%%0%%No one likes u either u sad twat.
+Truth Teller%%%%%%%%1194873892%%87-41-58-2.ptr.edu.ie%%0%%You shut up moanie, you're worse than moaning Myrtel
+Jamie Conroy%%%%%%At my computer%%1194873896%%87-41-58-2.ptr.edu.ie%%0%%Now kieran that is not a very nice thing to say. How do you know that nobody likes that person
+Moaning Mrytle%%%%%%Girls Bathroom%%1194873943%%87-41-58-2.ptr.edu.ie%%0%%Yeah your more of a moaner than me
+Jamie Conroy%%%%%%At my computer%%1194874783%%87-41-58-2.ptr.edu.ie%%0%%http://images.google.ie/imgres?imgurl=http://cultura.gencat.net/casm/butlleti/hemeroteca/img/fot-linux3.jpg&amp;imgrefurl=http://del.icio.us/Phlogiston2312/linux&amp;h=444&amp;w=555&amp;sz=33&amp;hl=en&amp;start=12&amp;um=1&amp;tbnid=S-fu2J6-6SjTqM:&amp;tbnh=106&amp;tbnw=133&amp;prev=/images%3Fq%3Dlinux%2Banti%2Bwindows%26svnum%3D10%26um%3D1%26hl%3Den%26client%3Dfirefox-a%26rls%3Dorg.mozilla:en-US:official%26sa%3DG%NEWLINE%NEWLINEIf you love linux
+Jamie Conroy%%%%%%At my computer%%1194874891%%87-41-58-2.ptr.edu.ie%%0%%http://images.google.ie/imgres?imgurl=http://www.visionfutur.com/img/wallpaper/quakea2.jpg&amp;imgrefurl=http://www.visionfutur.com/download.htm&amp;h=768&amp;w=1024&amp;sz=91&amp;hl=en&amp;start=1&amp;um=1&amp;tbnid=c99v7_iAvbRYBM:&amp;tbnh=113&amp;tbnw=150&amp;prev=/images%3Fq%3Dlinux%2Bquake%26svnum%3D10%26um%3D1%26hl%3Den%26client%3Dfirefox-a%26rls%3Dorg.mozilla:en-US:official%26sa%3DG%NEWLINE%NEWLINEAnoother fun linux pic
+Jamie Conroy%%%%%%At my computer%%1194875576%%87-41-58-2.ptr.edu.ie%%0%%http://www.casertaglug.org/wp-content/2007/04/fc1356_linux_vs_windows.jpg%NEWLINE%NEWLINEAnother pic
+Jamie Conroy%%%%%%At my computer%%1194875837%%87-41-58-2.ptr.edu.ie%%0%%Linux vs windows
+Jamie Conroy%%%%%%At my computer%%1194875935%%87-41-58-2.ptr.edu.ie%%0%%http://images.google.ie/imgres?imgurl=http://immortalwolf.com/wp-content/uploads/2007/02/lvmvw.jpg&amp;imgrefurl=http://immortalwolf.com/2007/linux-vs-windows-vs-mac/&amp;h=260&amp;w=455&amp;sz=45&amp;hl=en&amp;start=51&amp;um=1&amp;tbnid=wmZKJAQDoEAtAM:&amp;tbnh=73&amp;tbnw=128&amp;prev=/images%3Fq%3Dlinux%2Bvs%2Bwindows%26start%3D40%26ndsp%3D20%26svnum%3D10%26um%3D1%26hl%3Den%26client%3Dfirefox-a%26rls%3Dorg.mozilla:en-US:official%26sa%3DN%NEWLINE%NEWLINEWho will win???
+Susan C%%%%%%Falling asleep%%1194911808%%83-71-1-245.b-ras1.dbn.dublin.eircom.net%%0%%Jamie, here's a link for you:%NEWLINE%NEWLINEwww.tinyurl.com%NEWLINE%NEWLINE
+Kieran O B%%%%%%%%1194949677%%87-41-58-2.ptr.edu.ie%%0%%Susan how did you know about that site?
+Susan C%%%%%%%%1194951260%%87-41-58-2.ptr.edu.ie%%0%%Hi Kieran,%NEWLINEHow did I find out about tinyurl?%NEWLINEI probably posted a very lengthy url in a past life. :D
+Fiona%%%%%%%%1194955854%%87-41-58-2.ptr.edu.ie%%0%%Try typing &quot;igod&quot; into the google search engine, its  fair good
+Peter G%%%%%%%%1194957302%%87-41-58-2.ptr.edu.ie%%2%%Thanks cool website
+Fiona%%%%%%%%1194957449%%87-41-58-2.ptr.edu.ie%%0%%Try getting really aggressive with &quot;god&quot; he doesnt like it one bit.
+Kieran O B%%%%%%%%1194957861%%87-41-58-2.ptr.edu.ie%%0%%It was my idea.
+    %%%%%%%%1194957921%%87-41-58-2.ptr.edu.ie%%0%%wat
+Kieran O B%%%%%%%%1194958015%%87-41-58-2.ptr.edu.ie%%0%%http://tinyurl.com/2s6q7k%NEWLINE%NEWLINEA very cool Linux pic. And Susan I used the tinyurl site for it. Very handy.
+Iceman%%%%%%%%1194965121%%87-41-58-2.ptr.edu.ie%%2%%Hi I posted a few messages on the blog a while back and I would just like to say sorry if offended anyone you see I live in America and I was just messing about on the computer
+Peter G%%%%%%%%1194965337%%87-41-58-2.ptr.edu.ie%%2%%What is he on about?
+Susan C%%%%%%%%1194965700%%87-41-58-2.ptr.edu.ie%%0%%So, Iceman, you've moved from Finland then? 
+Kieran O B%%%%%%%%1194965798%%87-41-58-2.ptr.edu.ie%%0%%Get a life. First your Finnish now your American. Weirdo.
+Jamie Conroy%%%%%%At my computer writing in agony at the thoughts of England going to the World Cup Finals.%%1194966030%%87-41-58-2.ptr.edu.ie%%0%%http://tinyurl.com/yr2vza
+Jamie Conroy%%%%%%At my pc%%1194966139%%87-41-58-2.ptr.edu.ie%%0%%http://tinyurl.com/ysrd7d
+Susan C%%%%%%%%1194966427%%87-41-58-2.ptr.edu.ie%%0%%Jamie, are you &quot;writing&quot; or &quot;writhing&quot;? LOL!%NEWLINELove the links.
+Rugby Fan%%%%%%%%1194979771%%159-134-51-144.as1.clm.clonmel.eircom.net%%0%%Soccer?? What a waste of valuable blog space
+Iceman%%%%%%%%1195026376%%%%2%%%NEWLINESympathy please? I'm on medication and am not sure what I am never mind where I am. One of my doctors says I could be in all three places. And I know he's OK 'cos he has 'sane' stamped on the back of his hand.%NEWLINE
+Iceman%%%%%%%%1195026610%%%%2%%%NEWLINEHas anyone seen my friend Michael?%NEWLINE
+to iceman%%%%%%%%1195030990%%87-41-58-2.ptr.edu.ie%%0%%leave our blog alone you sick freak
+Peter G%%%%%%%%1195031024%%87-41-58-2.ptr.edu.ie%%2%%Who are these people and why must they keep sending these stupid messages
+Batman%%%%%%Saving the world%%1195050887%%87-41-58-2.ptr.edu.ie%%0%%Well....everyone else is posting. Why shouldn't I?
+Peter G%%%%%%%%1195051457%%87-41-58-2.ptr.edu.ie%%2%%Oh not again
+Kieran O B%%%%%%%%1195052440%%87-41-58-2.ptr.edu.ie%%0%%I think it's fairly obvious that its the same guy the whole time. Probably a freak with no life...
+Batman%%%%%%%%1195055157%%83-70-52-94.b-ras1.dbn.dublin.eircom.net%%0%%1. I'm not the same guy who's posting all the time.%NEWLINE2. This is my first post...(sort of)%NEWLINEand%NEWLINE3. I'm not a guy.%NEWLINE%NEWLINEYou'll have to examine the posts more closely, Kieran.  The last Iceman that posted wasn't the same Iceman that posted before that. 
+Iceman%%%%%%%%1195121696%%87-41-58-2.ptr.edu.ie%%2%%%NEWLINEAnd I have no life. It was snuffed out in a tragic accident in a bubble-gum factory when I was there on a school tour.%NEWLINE%NEWLINETragic.%NEWLINE
+Kieran O B%%%%%%%%1195126866%%87-41-58-2.ptr.edu.ie%%0%%I know you haven't got a life. That's what I said.
+Peter G%%%%%%%%1195127934%%87-41-58-2.ptr.edu.ie%%2%%Iceman is starting to get annoying
+Susan C%%%%%%Daydreamin'%%1195129149%%87-41-58-2.ptr.edu.ie%%0%%Ah, who cares about Icefan and Pandaman?  %NEWLINE%NEWLINEI'm going to see Celine Dion and Il Divo!! Yee Haa!! 
+Peter G %%%%%%%%1195129312%%87-41-58-2.ptr.edu.ie%%2%%Well said Susan this blog should only be for us and past I.T students to use not anonymus people who have nothing better to do
+Emmet!%%e_donlan@hotmail.com%%%%waterford institute of technology!%%1195135095%%%%0%%yo fachtna....emmet here! im in information technology class in college.....
+Jamie Conroy%%%%%%At my desk%%1195135677%%87-41-58-2.ptr.edu.ie%%0%%Hey cuz how is college going for you? Why are you leaving comments on our blog!!! We are the new you are the old!! Nah Im only pulling your chain. So any news
+Jamie Conroy%%%%%%At my desk%%1195136199%%87-41-58-2.ptr.edu.ie%%0%%That wasnt very nice now kieran to be blaming poor sean. Fachtna thinks its you though so thats funny
+Panda Fan%%%%%%%%1195136213%%87-41-58-2.ptr.edu.ie%%0%%Ho Ho Ho! 
+Jamie Conroy%%%%%%At my desk%%1195136293%%87-41-58-2.ptr.edu.ie%%0%%Which is better%NEWLINE%NEWLINEa) Linux%NEWLINEb) Windows xp
+Susan C%%%%%%%%1195136362%%87-41-58-2.ptr.edu.ie%%0%%Oh God! Linux........of course. ;)
+Kieran O B%%%%%%%%1195136390%%87-41-58-2.ptr.edu.ie%%0%%Windows all the way.
+ %%%%%%%%1195136398%%87-41-58-2.ptr.edu.ie%%0%%Windows every time!
+Fiona%%%%%%%%1195136445%%87-41-58-2.ptr.edu.ie%%0%%Windows %NEWLINE
+Jamie Conroy%%%%%%%%1195136476%%87-41-58-2.ptr.edu.ie%%0%%Anybody that would like to specify there choice
+Bart s%%%%%%%%1195136512%%87-41-58-2.ptr.edu.ie%%0%%Its the itchy and sratchy show
+Peter G%%%%%%%%1195136513%%87-41-58-2.ptr.edu.ie%%2%%Windows is the best 
+Kieran O B%%%%%%%%1195136576%%87-41-58-2.ptr.edu.ie%%0%%Because its easier to use and im more used to it.
+Fiona%%%%%%%%1195136579%%87-41-58-2.ptr.edu.ie%%0%%http://www.amigazone.com/images/heilbill.jpg%NEWLINEfor the debate
+Kieran O B%%%%%%%%1195136582%%87-41-58-2.ptr.edu.ie%%0%%Because its easier to use and im more used to it.
+Kieran O B%%%%%%%%1195136661%%87-41-58-2.ptr.edu.ie%%0%%Because its easier to use and im more used to it.
+Susan C%%%%%%%%1195136747%%87-41-58-2.ptr.edu.ie%%0%%Ah, ye can't teach an old dog and all that, eh? 
+Peter G%%%%%%%%1195136767%%87-41-58-2.ptr.edu.ie%%2%%Hopefully now these everyone will their own names not made up ones
+Jamie Conroy%%%%%%At my desk%%1195136872%%87-41-58-2.ptr.edu.ie%%0%%http://www.technion.ac.il/~orenh/linux_penguin.jpg
+Fiona%%%%%%%%1195136905%%87-41-58-2.ptr.edu.ie%%0%%'Tis onl;y a pity ye havent been doing it so far letting othr slightly more innocent people take the blame for ye................ oh its a shame alright.
+Jamie Conroy%%%%%%At my desk%%1195137019%%87-41-58-2.ptr.edu.ie%%0%%I agree with fiona blaming innocent people for things  other people have done like me :(:(:(
+Fiona%%%%%%%%1195137161%%87-41-58-2.ptr.edu.ie%%0%%'Tis onl;y a pity ye havent been doing it so far letting othr slightly more innocent people take the blame for ye................ oh its a shame alright.
+Peter G%%%%%%%%1195137204%%87-41-58-2.ptr.edu.ie%%2%%I just want to say that I have only wrote on the blog under my own name
+Jamie Conroy%%%%%%At my desk%%1195137238%%87-41-58-2.ptr.edu.ie%%0%%Me two
+Panda Fan%%%%%%%%1195137381%%87-41-58-2.ptr.edu.ie%%0%%Me three
+ %%%%%%%%1195137570%%87-41-58-2.ptr.edu.ie%%0%%Yea we believe you
+Susan C%%%%%%Here....as usual%%1195208483%%87-41-58-2.ptr.edu.ie%%0%%Best of luck next week Jamie!!!!
+Jamie Conroy%%%%%%At my desk%%1195209650%%87-41-58-2.ptr.edu.ie%%0%%Thanks Susan.
+Susan C%%%%%%%%1195216238%%87-41-58-2.ptr.edu.ie%%0%%I'm bored. I'm so bored that I feel an irresistable urge to pretend I'm someone else and post something to annoy somebody.%NEWLINE%NEWLINEStop me from doing it now!!!!
+Peter G%%%%%%%%1195216433%%87-41-58-2.ptr.edu.ie%%2%%No Susan don`t do that 
+Peter G%%%%%%%%1195221023%%87-41-58-2.ptr.edu.ie%%2%% Paul Jewell is interested in the Irish managers job 
+Chelsea fan%%%%%%%%1195222126%%87-41-58-2.ptr.edu.ie%%0%%I love chelsea
+Jamie Conroy%%%%%%At my desk%%1195222145%%87-41-58-2.ptr.edu.ie%%0%%Not this again
+Jamie Conroy%%%%%%At my desk%%1195222329%%87-41-58-2.ptr.edu.ie%%0%%Who in this class likes chelsea there cant be that many
+jose fan%%%%%%%%1195222403%%87-41-58-2.ptr.edu.ie%%0%%jose for ireland
+Peter G%%%%%%%%1195222547%%87-41-58-2.ptr.edu.ie%%2%%Man United Are The Best
+Panda Fan%%%%%%%%1195222577%%87-41-58-2.ptr.edu.ie%%0%%Bear with me...please...
+Peter G%%%%%%%%1195222647%%87-41-58-2.ptr.edu.ie%%2%%Jose is being lined up to replace Frank Rijkarrd at Barcelona
+Kieran O B%%%%%%%%1195222767%%87-41-58-2.ptr.edu.ie%%0%%Makes sense. Mourinho is a top class manager that anyone would want.
+Panda Fan%%%%%%Antartic%%1195223955%%87-41-58-2.ptr.edu.ie%%0%%I love rangers
+Peter G%%%%%%%%1195224336%%87-41-58-2.ptr.edu.ie%%2%%No Celtic are better than Rangers
+All the gang%%%%%%%%1195225381%%87-41-58-2.ptr.edu.ie%%0%%Good Luck Jamie%NEWLINE
+Peter G%%%%%%%%1195250147%%%%2%%Yes Kimi keeps his title so now F1 fans everywhere can look forward to next season
+Fachtna%%fachtna@fachtnaroe.ie%%%%At desk in home office.%%1195388110%%%%0%%%NEWLINEEmmet,%NEWLINE%NEWLINEGood to hear from you. Sorry for the belated reply, I don't read the blog every day. I meet your Dad every now and then and he says you're getting on well and generally flying it. This is true?%NEWLINE%NEWLINEAre there others of our VS family down there? Name and shame if so. What's everyone doing now?%NEWLINE%NEWLINEMore to the point, are you staying in Waterford and enjoying full student freedoms...?%NEWLINE%NEWLINEBest of luck, and don't forget the hard work bit!%NEWLINE%NEWLINEThe network company running things here are operating even worse this year than before, so at least your computer systems should work down there.%NEWLINE%NEWLINELooking forward to your response.%NEWLINE%NEWLINE
+Fachtna%%fachtna@fachtnaroe.ie%%%%At desk in home office.%%1195388281%%%%0%%%NEWLINESheila,%NEWLINE%NEWLINEGot your message. Don't worry about what you read - when put in context of what happens here there is no issue to concern you.%NEWLINE%NEWLINEWill email you as soon as I can as well.%NEWLINE%NEWLINEStudy going well?%NEWLINE%NEWLINE
+Susan C%%%%%%%%1195463615%%87-41-58-2.ptr.edu.ie%%0%%Well, did everyone have a good weekend? I was working Saturday and Saturday night, so forgive the snoring from the corner.%NEWLINE%NEWLINENight night!
+Kieran O B%%%%%%%%1195464325%%87-41-58-2.ptr.edu.ie%%0%%Saturday and Saturday? U must be wrecked. i was working Saturday and SUNDAY night. 
+Peter G%%%%%%%%1195466137%%87-41-58-2.ptr.edu.ie%%2%%Did anyone see the Ireland game on Saturday?
+Susan C%%%%%%%%1195466688%%87-41-58-2.ptr.edu.ie%%0%%Must be starting to get busy in there now Kieran.%NEWLINE%NEWLINENo, Peter, didn't see the game. Any good? (Wonder why I just don't ask you? You're sitting right beside me)
+Peter G%%%%%%%%1195466757%%87-41-58-2.ptr.edu.ie%%2%%No it was rubbish we should have beaten Wales 
+Fiona%%%%%%%%1195472392%%87-41-58-2.ptr.edu.ie%%0%%Does any body know how to get gFTP on the computer. Something is wrong with my profile and I no longer have gFTP if anybody could help me to get it I would really appreciate it.
+Fiona%%%%%%%%1195476486%%87-41-58-2.ptr.edu.ie%%0%%Dear Class,%NEWLINE          Fachtna has very kindly helped me to locate my gFTP so i dont need your help. Thanks anyway.
+Kieran O B%%%%%%%%1195653759%%87-41-58-2.ptr.edu.ie%%0%%So is everyone getting sick of this Blog then? Why no posts?
+Susan C%%%%%%%%1195655336%%87-41-58-2.ptr.edu.ie%%0%%We're all busy ye big dosser!! %NEWLINE:p
+Peter G%%%%%%%%1195655489%%87-41-58-2.ptr.edu.ie%%2%%Hi
+Kieran O B%%%%%%%%1195656677%%87-41-58-2.ptr.edu.ie%%0%%So what do ye all think of my page? Kickarse innit?
+Peter G%%%%%%%%1195656731%%87-41-58-2.ptr.edu.ie%%2%%Kieran its cool has anyone seen my page
+Kieran O B%%%%%%%%1195656839%%87-41-58-2.ptr.edu.ie%%0%%It's good as well but not as sexy as mine lol.
+Susan C%%%%%%%%1195656873%%87-41-58-2.ptr.edu.ie%%0%%Not bad at all. Are you going to change the colour of the text? 
+Susan C%%%%%%%%1195656960%%87-41-58-2.ptr.edu.ie%%0%%Sorry. Last question about text colour was directed to Kieran. :)
+Peter G%%%%%%%%1195657242%%87-41-58-2.ptr.edu.ie%%2%%I hope England don`t qualify for Euro 2008 they don`t deserve it
+Peter G%%%%%%%%1195683279%%86-46-98-65.b-ras1.wtd.waterford.eircom.net%%2%%So England are out and Steve Mclaren and Steve Stuanton for me are two of the worst managers ever
+Kieran O B%%%%%%%%1195731833%%87-41-58-2.ptr.edu.ie%%0%%No,i'm not changing the color of anything Susan.I like it the way it is.%NEWLINE%NEWLINEHaha England are out.
+Fiona%%%%%%%%1195731957%%87-41-58-2.ptr.edu.ie%%0%%Pink would be much nicer.
+Kieran O B%%%%%%%%1195732066%%87-41-58-2.ptr.edu.ie%%0%%PINK!? ARE YOU HAVING A LAUGH?!
+Peter G%%%%%%%%1195732214%%87-41-58-2.ptr.edu.ie%%2%%I hope now that Terry Venables has been sacked along with Mclaren that he won`t be the next Ireland manager
+Kieran O B%%%%%%%%1195735384%%87-41-58-2.ptr.edu.ie%%0%%Not even the FAI would be thick enough to give them the job after what happened with England.
+ %%%%%%%%1195736804%%87-41-58-2.ptr.edu.ie%%0%% 
+Peter G%%%%%%%%1195736903%%87-41-58-2.ptr.edu.ie%%2%%Sacked England boss Steve McClaren pockets &pound;2.5 million payoff after Euro shambles 
+Susan C%%%%%%%%1195813501%%87-41-58-2.ptr.edu.ie%%0%%Am I a loner if I open my mail and see nothing only messages from flippin' &quot;Ringo&quot;?%NEWLINE%NEWLINE:(
+Peter G%%%%%%%%1195813765%%87-41-58-2.ptr.edu.ie%%2%%Who else is annoyed about these messages on our E-mail from Ringo
+Peter G%%%%%%%%1195814050%%87-41-58-2.ptr.edu.ie%%2%%Liverpool boss Rafael Benitez has said he may be interested in the England job after an apparent disagreement with the club's owners over transfer targets.
+Susan C%%%%%%Here!%%1195818261%%87-41-58-2.ptr.edu.ie%%0%%I'm BACK!!!!!!%NEWLINE%NEWLINEDid yis all miss me?????%NEWLINE%NEWLINE
+Peter G%%%%%%%%1195818512%%87-41-58-2.ptr.edu.ie%%2%%Hi Susan
+Peter G%%%%%%%%1195824471%%87-41-58-2.ptr.edu.ie%%2%%Former Wigan boss Paul Jewell has withdrawn his interest in the vacant Republic of Ireland manager's job, BBC Sport understands.
+Fiona%%%%%%%%1195831119%%87-41-58-2.ptr.edu.ie%%0%%Peter the Simpsons link on your page is fair deadly.
+Peter G%%%%%%%%1195859580%%86-46-107-144.b-ras1.wtd.waterford.eircom.net%%2%%Thanks Fiona so is your link to the Irish rugby website and your web page is too
+Susan C%%%%%%%%1196068763%%87-41-58-2.ptr.edu.ie%%0%%29!!!
+Peter G%%%%%%%%1196074904%%87-41-58-2.ptr.edu.ie%%2%%I hope Ireland can finish second behind Italy in their World Cup qualifying group 
+Kieran O B%%%%%%%%1196078672%%87-41-58-2.ptr.edu.ie%%0%%I think if they get the right manager they definetly will.
+Kieran O B%%%%%%My Desk... Laughing.%%1196080708%%87-41-58-2.ptr.edu.ie%%0%%Get a load of these jokes about Steve McCLaren.%NEWLINE%NEWLINEEnd of an Error - The McClaren Jokes%NEWLINE%NEWLINEDespite winning the prestigious Carling Cup and finishing in the lofty heights of mid-table with Middlesbrough, Steve McClaren's depressive CV turned out to... well, repeat its self. England are out and so is he. Here's the best jokes.%NEWLINE%NEWLINEWhat is the difference between Louis Hamilton and Steve McClaren? Hamilton will be in Switzerland next year.%NEWLINE%NEWLINEWhat’s the difference between Lewis Hamilton and the England Squad?%NEWLINELewis Hamilton has a McLaren!%NEWLINE%NEWLINEDespite getting the sack, Steve McClaren is still going to the England Christmas fancy dress party. He's going as a pumpkin to see if anyone can turn him into a coach%NEWLINE%NEWLINERolf Harris is tipped to be England’s next manager. Well, at least he knows how to draw.%NEWLINE%NEWLINESteve McClaren has been offered a job helping people overcome chronic constipation. “We’re always in need of crap coaches,” said a spokesman.%NEWLINE%NEWLINEAfter Steve McClaren’s humiliating sacking, Formula 1 constructers McLaren have decided to change their name to something less embarrassing. They are now going to be called Gonorrhoea.%NEWLINE%NEWLINEWayne Bridge has defended Steve McClaren’s 4-5-1 tactics. It’s a shame he didn’t do that on Wednesday.
+Susan C%%%%%%%%1196081327%%87-41-58-2.ptr.edu.ie%%0%%Very good, Kieran. :D
+Peter G%%%%http://www.dailymail.co.uk/pages/live/articles/sport/football.html?in_article_id=495550&amp;in_page_id=1%%%%1196083058%%87-41-58-2.ptr.edu.ie%%2%%Just look and laugh at this loser
+Kieran O B%%%%%%%%1196083407%%87-41-58-2.ptr.edu.ie%%0%%Haha what a loser. Look at the state of that Brolly...
+Peter G%%%%%%%%1196157387%%87-41-58-2.ptr.edu.ie%%2%%Yes we have a half day on Wednesday according to the calendar
+Susan C%%%%%%At a desk somewhere else%%1196163895%%%%0%%Hi Peter%NEWLINEHow are ye gettin' on? Are ye lonely there today? ;)%NEWLINEI am *slavin'* away. %NEWLINE
+Peter G%%%%%%%%1196165174%%87-41-58-2.ptr.edu.ie%%2%%Hi Susan we`re all fine 
+Peter G%%%%%%%%1196173968%%87-41-58-2.ptr.edu.ie%%2%%Ex Dutch footballer Arie Haan says he is interested in becoming Republic of Ireland manager.
+Peter G%%%%%%%%1196175466%%87-41-58-2.ptr.edu.ie%%2%%Noooooooooooooo! it sucks cause we have no half day
+Susan C%%%%%%Still at the desk I was at the last time I posted. %%1196175617%%%%0%%Wonder how many characters the location box takes? (I'm *that* busy.)%NEWLINE%NEWLINEI hope I'm not missing loads of *stuff*. I notice the web authoring page has been updated. %NEWLINE
+Susan C%%%%%%%%1196178722%%%%0%%I'll be in in the morning to reclaim MY chair and MY pc!! 
+Peter G%%%%%%%%1196244194%%87-41-58-2.ptr.edu.ie%%2%%I am gutted Paul Jewell decided to manage Derby instead of Ireland by the way did anyone see Ronaldo`s goal last night it was top class
+Panda Fan%%%%%%%%1196246312%%87-41-58-2.ptr.edu.ie%%0%%You're all very quiet these days.
+ %%%%%%%%1196246759%%87-41-58-2.ptr.edu.ie%%0%%Pee off
+Susan C%%%%%%%%1196247335%%87-41-58-2.ptr.edu.ie%%0%%An interesting website:%NEWLINE%NEWLINEhttp://www.webpagesthatsuck.com/%NEWLINE%NEWLINEWarning: I'd advise investing in a strong pair of shades (or a large bucket) before viewing some of the worst websites listed here. 
+Panda Fan%%%%%%%%1196247844%%87-41-58-2.ptr.edu.ie%%0%%Be nice. You don't know who I am. I could be sitting beside you.
+Peter G%%%%%%%%1196248135%%87-41-58-2.ptr.edu.ie%%2%%Just you thought it was safe to post on the blog  Panda Fan returns 
+Panda Fan%%%%%%%%1196248608%%87-41-58-2.ptr.edu.ie%%0%%You'll miss me when I'm gone. 
+ %%%%%%%%1196249451%%87-41-58-2.ptr.edu.ie%%0%%Just who the hell are you?
+Peter G%%%%%%%%1196249779%%87-41-58-2.ptr.edu.ie%%2%%You enjoy it while it lasts Panda Fan because one day we will discover who it is
+ %%%%%%%%1196335222%%87-41-58-2.ptr.edu.ie%%0%%Well Panda fan I know one thing it would take a very sad person to create a new identity as an animal (and a panda at that)and annoy people. Exactly how much time do you have on your hands?? Some advice grow up and get a life.
+ %%%%%%%%1196335704%%87-41-58-2.ptr.edu.ie%%0%%Well said Fiona.
+Panda Fan%%%%%%%%1196336879%%87-41-58-2.ptr.edu.ie%%0%%Who's created an identity as an animal? I'm a panda fan not an animal. And at least I've scared off all those weird lizard men and ice people. 
+Peter G%%%%%%%%1196337058%%87-41-58-2.ptr.edu.ie%%2%%But unfortunely you are still here
+Susan C%%%%%%%%1196337191%%87-41-58-2.ptr.edu.ie%%0%%Can someone enlighten me as to the web project situation? Are we to upload to a project folder within the public_html folder.......or wah?
+Fiona%%%%%%%%1196337327%%87-41-58-2.ptr.edu.ie%%0%%I think that we have to create the folder
+Susan C%%%%%%%%1196337395%%87-41-58-2.ptr.edu.ie%%0%%Thanks Fiona. I'll try that so.
+Kieran%%%%%%%%1196338730%%87-41-58-2.ptr.edu.ie%%0%%Any comments that do not have a name on them were left by me
+Kieran O B%%%%%%%%1196341555%%87-41-58-2.ptr.edu.ie%%0%%Nice try Jamie.
+ %%%%%%%%1196342439%%87-41-58-2.ptr.edu.ie%%0%%Mwahhhahaha
+Peter G%%%%%%%%1196342786%%87-41-58-2.ptr.edu.ie%%2%%Who is posting messages on the blog without their name
+Kieran%%%%%%%%1196343177%%87-41-58-2.ptr.edu.ie%%0%%It is I keiran
+Kieran O B%%%%%%%%1196343336%%87-41-58-2.ptr.edu.ie%%0%%I think anyone with half a brain cell can tell that isn't me.
+Susan C%%%%%%%%1196343522%%87-41-58-2.ptr.edu.ie%%0%%Well, considering Mr. Imposter Face couldn't spell your name right, Kieran, yes, I think we can tell it wasn't you. ;)
+Fachtna%%%%%%Behind the Panda with an AK47.%%1196343744%%87-41-58-2.ptr.edu.ie%%0%%%NEWLINEFiona is right. Create a folder in your public_html folder and call it &quot;project&quot;. Within that folder your first file will also be called &quot;index.html&quot;.%NEWLINE%NEWLINEFor best marks, make another folder in the &quot;project&quot; folder called &quot;images&quot; and store all your pictures in that. Then specify the &lt;img src=&quot;&quot;&gt; tags to point at that folder and the image files within.%NEWLINE
+Panda Fan%%%%%%%%1196344272%%87-41-58-2.ptr.edu.ie%%0%%Re:Behind the Panda with an AK47. %NEWLINEThank you God for not making me a Panda.
+ %%%%%%%%1196344450%%87-41-58-2.ptr.edu.ie%%0%%No he just made you an annoyance
+Kieran O B%%%%%%%%1196345209%%87-41-58-2.ptr.edu.ie%%0%%Cheers Susan :D
+?%%%%%%%%1196345215%%87-41-58-2.ptr.edu.ie%%2%%Please Panda fan you have had your fun just give it up you obviously attacting a lot of unwanted attention
+Panda Fan%%%%%%%%1196347646%%87-41-58-2.ptr.edu.ie%%2%%Whose website is the best
+Peter G%%%%%%%%1196348423%%87-41-58-2.ptr.edu.ie%%2%%Why do you want to know
+ Kieran%%%%%%%%1196349215%%87-41-58-2.ptr.edu.ie%%0%%I would have to say Fiona's.
+Peter G%%%%%%%%1196372642%%86-46-69-163.b-ras1.wtd.waterford.eircom.net%%2%%They are all good
+Susan C%%%%http://www.dokimos.org/ajff/%%%%1196418235%%87-41-58-2.ptr.edu.ie%%0%%What *not* to do with a website.%NEWLINE%NEWLINE
+Kieran O B%%%%%%%%1196419465%%87-41-58-2.ptr.edu.ie%%0%%Susan how do you come across these sites?
+Susan C%%%%http://www.webpagesthatsuck.com/%%%%1196420882%%87-41-58-2.ptr.edu.ie%%0%%I found that last one on the link above.%NEWLINE%NEWLINEI'm a bit of a Google addict. %NEWLINE%NEWLINE
+Susan C%%%%%%%%1196421625%%87-41-58-2.ptr.edu.ie%%0%%Re: the language option on the website.%NEWLINE%NEWLINEWhat's the method we should use to do this? If we have 6 pages of English, do we need to create 6 pages of French and 6 pages of Irish making a grand total of....er..... (oh help, phone Mensa)...18 pages???%NEWLINE%NEWLINEOr, has there been a more scary, complicated, alternative method suggested?%NEWLINE
+F%%%%%%%%1196421834%%87-41-58-2.ptr.edu.ie%%0%%20
+Susan C%%%%%%%%1196422106%%87-41-58-2.ptr.edu.ie%%0%%24
+Kieran O B%%%%%%%%1196422823%%87-41-58-2.ptr.edu.ie%%0%%Thats a good show I heard.
+Panda Fan%%%%%%%%1196429408%%87-41-58-2.ptr.edu.ie%%2%%Hello
+Kieran O B%%%%%%%%1196429693%%87-41-58-2.ptr.edu.ie%%0%%Just some more Jokes:%NEWLINE%NEWLINEWHILST injured, Wayne Rooney went back to studying for his GCSEs. It’s a shame Louis Saha didn’t do the same – he’d be a Professor by now.%NEWLINE%NEWLINEARSENAL goalkeeper Jens Lehmann wants England fans to support Germany at Euro 2008. Who says the German’s don’t have a sense of humour?
+Peter G%%%%%%%%1196430058%%87-41-58-2.ptr.edu.ie%%2%%Why does Panda Fan keep being so annoying
+Susan C%%%%%%%%1196430143%%87-41-58-2.ptr.edu.ie%%0%%Oh look...the Panda Fan posted at 13:30. I wonder who that was (...said in a tone that says I know exactly who it wasn't). 
+Jamie Conroy%%%%%%At my desk%%1196431243%%87-41-58-2.ptr.edu.ie%%0%%http://th161.photobucket.com/albums/t211/robert07-08LFC/th_92f79700.jpg
+Jamie Conroy%%%%%%At my desk%%1196431317%%87-41-58-2.ptr.edu.ie%%0%%http://photobucket.com/mediadetail/?media=http%3A%2F%2Fi3.photobucket.com%2Falbums%2Fy61%2FArvsta%2FLIVERPOOL%2Flpool0jb.png&amp;searchTerm=liverpool%20champions%20league&amp;pageOffset=10
+Susan C%%%%%%%%1196431448%%87-41-58-2.ptr.edu.ie%%0%%OMG! Jamie! www.tinyurl.com%NEWLINE%NEWLINE*having minor heart seizure here*
+Jamie Conroy%%%%%%At my desk%%1196431570%%87-41-58-2.ptr.edu.ie%%0%%http://tinyurl.com/27j9tj
+Kieran O B%%%%%%%%1196431620%%87-41-58-2.ptr.edu.ie%%0%%I know Susan, I told him that already...
+Jamie Conroy%%%%%%At my desk%%1196431645%%87-41-58-2.ptr.edu.ie%%0%%http://tinyurl.com/2etxlj
+Kieran O B%%%%%%%%1196431707%%87-41-58-2.ptr.edu.ie%%0%%Check out the Hubcap Stealers...%NEWLINE%NEWLINEwww.unitedrant.co.uk/images/scousehubcap.jpg
+Kieran O B%%%%%%%%1196431812%%87-41-58-2.ptr.edu.ie%%0%%Now check em out.%NEWLINE%NEWLINEhttp://tinyurl.com/3dhgoc
+Jamie Conroy%%%%%%At my desk%%1196431964%%87-41-58-2.ptr.edu.ie%%0%%http://tinyurl.com/2gbqff%NEWLINEhttp://tinyurl.com/2hmzqx%NEWLINEhttp://tinyurl.com/2dfw3k
+Jamie Conroy%%%%%%At my desk%%1196432034%%87-41-58-2.ptr.edu.ie%%0%%5 times%NEWLINE5 times%NEWLINE5 times%NEWLINE5 times%NEWLINE5 times
+Jamie Conroy%%%%%%At my desk%%1196432167%%87-41-58-2.ptr.edu.ie%%0%%The lovely chelsea fans%NEWLINEhttp://tinyurl.com/22ulo6
+Kieran O B%%%%%%%%1196432242%%87-41-58-2.ptr.edu.ie%%0%%At least Chelsea Fans work.
+Jamie Conroy%%%%%%At my desk%%1196432418%%87-41-58-2.ptr.edu.ie%%0%%Little fact%NEWLINE%NEWLINE%NEWLINE(Chelsea Smile) is a nickname for the brutal practice of cutting a victim's face from the edges of the mouth to the ears: the cut - or its scars - form an &quot;extension&quot; of what resembles a smile. Sometimes to further hurt or even kill the victim, he or she would then be stabbed or kicked, most notably in the stomach (or in case of kicking, the groin), so that the face would be ripped apart when the victim screams. The practice originated Chelsea, London for Chelsea fans hoping to leave a message to rival football fans.
+Kieran O B%%%%%%%%1196432459%%87-41-58-2.ptr.edu.ie%%0%%In your Liverpool slums In your%NEWLINELiverpool slums you search in the%NEWLINEgarbage for something to eat you find a%NEWLINEdead cat and you think its a treat in%NEWLINEyour Liverpool slums.....In your%NEWLINELiverpool slums In your Liverpool slums%NEWLINEyour mums on the game and your dads in%NEWLINEthe nick, you can't get a job cos your%NEWLINEto f**king thick in your Liverpool%NEWLINEslums...In your Liverpool slums in your%NEWLINELiverpool slums you wear a shell suit%NEWLINEand you've got curly hair all of your%NEWLINEkids are in council care in your%NEWLINELiverpool slums
+Susan C%%%%%%%%1196432676%%87-41-58-2.ptr.edu.ie%%0%%I think we could do with less of the football tripe. %NEWLINE%NEWLINECopied and pasted from earlier on:%NEWLINE%NEWLINE Re: the language option on the website.%NEWLINE%NEWLINEWhat's the method we should use to do this? If we have 6 pages of English, do we need to create 6 pages of French and 6 pages of Irish making a grand total of....er..... (oh help, phone Mensa)...18 pages???%NEWLINE%NEWLINEOr, has there been a more scary, complicated, alternative method suggested?
+Kieran O B%%%%%%%%1196432811%%87-41-58-2.ptr.edu.ie%%0%%Jamie started it anyway, was I supposed to sit back and take it?
+Peter G%%%%%%%%1196432880%%87-41-58-2.ptr.edu.ie%%2%%http://www.manutdpics.com/image/Manchester-United-v-West-Ham-United_458039.jpg
+Jamie Conroy%%%%%%At my desk%%1196432972%%87-41-58-2.ptr.edu.ie%%0%%Its funny to see Kierans reaction when he looks at something that is liverpool or anti chelsea. Thats why I posted it because I needed something to brighten up my day watching him gettin in a huff and puff :(:(:( &lt;---- kieran me----&gt;:):):)
+Kieran O B%%%%%%%%1196433095%%87-41-58-2.ptr.edu.ie%%0%%Really go on.Tell me how I reacted.
+Fiona%%%%%%%%1196433103%%87-41-58-2.ptr.edu.ie%%0%%Is that Chelsea smile story actually true?
+Jamie Conroy%%%%%%At my desk%%1196433132%%87-41-58-2.ptr.edu.ie%%0%%Yeah it is
+Kieran O B%%%%%%%%1196433161%%87-41-58-2.ptr.edu.ie%%0%%What was the score in that game Peter? haha.
+Peter G%%%%%%%%1196433227%%87-41-58-2.ptr.edu.ie%%2%%http://www.devilpage.pl/img/potrojna_korona/treble.jpg%NEWLINE1999 What a year the year we won the treble 
+Fiona%%%%%%%%1196433229%%87-41-58-2.ptr.edu.ie%%0%%Is that Chelsea smile story actually true?
+Fiona%%%%%%%%1196433232%%87-41-58-2.ptr.edu.ie%%0%%Is that Chelsea smile story actually true?
+?%%%%%%%%1196433257%%87-41-58-2.ptr.edu.ie%%0%%Who cares about the score Utd still got the title that day. Well done to them for that
+Fiona%%%%%%%%1196433265%%87-41-58-2.ptr.edu.ie%%0%%Whooppps hit refresh! Sorry
+Jamie Conroy%%%%%%%%1196433435%%87-41-58-2.ptr.edu.ie%%0%%Yeah 1999 prob Man Utd best team team. Not a chance that this years team is better. Liverpool won a smaller not as great treble in 2000 with two shields. When did chelsea ever win three cups in one year
+?%%%%%%%%1196433520%%87-41-58-2.ptr.edu.ie%%0%%Cups of blood maybe.............
+Peter G%%%%%%%%1196433532%%87-41-58-2.ptr.edu.ie%%2%%Jamie just thought I would let you know it was actually 2001
+Jamie Conroy%%%%%%%%1196433650%%87-41-58-2.ptr.edu.ie%%0%%Fuck yeah it was sorry bout that mistake just cant focus when i c kieran getting all mad at soccer funnie
+Peter G%%%%%%%%1196433658%%87-41-58-2.ptr.edu.ie%%2%%Has anyone started their Communications report
+Jamie Conroy%%%%%%%%1196433731%%87-41-58-2.ptr.edu.ie%%0%%I have started it. Began Tue half way through nearly%NEWLINE
+Kieran O B%%%%%%%%1196433745%%87-41-58-2.ptr.edu.ie%%0%%Jamie's just upset that he fucked up in Sardinia so he's trying to take it out on me.
+Fiona%%%%%%%%1196433746%%87-41-58-2.ptr.edu.ie%%0%%Yea barely I only decided what to do it on yesterday. How far have you got.
+Jamie Conroy%%%%%%%%1196433778%%87-41-58-2.ptr.edu.ie%%0%%I have started it. Began Tue half way through nearly%NEWLINE
+Fiona%%%%%%%%1196433833%%87-41-58-2.ptr.edu.ie%%0%%Yea barely I only decided what to do it on yesterday. How far have you got.
+Jamie Conroy%%%%%%%%1196433853%%87-41-58-2.ptr.edu.ie%%0%%Kieran have you ever had the honour of representing Ireland at an International Competition in any sport. No i dont think so. When you do probarly never give me a shout
+?%%%%%%%%1196433900%%87-41-58-2.ptr.edu.ie%%0%%Theres no need to get personal at all.
+Kieran O B%%%%%%%%1196433908%%87-41-58-2.ptr.edu.ie%%0%%And I'll never have the shame of making my Country look bad. 
+Fiona%%%%%%%%1196433958%%87-41-58-2.ptr.edu.ie%%0%%Cop on the pair of ye.
+Susan C%%%%%%%%1196433959%%87-41-58-2.ptr.edu.ie%%0%%LANGUAGE lads!! And, would ye mind keeping the personal stuff to your e-mail in future? This is a &quot;public&quot; message board - readable by anyone...maybe even a future employer? 
+Fiona%%%%%%%%1196434003%%87-41-58-2.ptr.edu.ie%%0%%Well said Susan.
+Kieran O B%%%%%%%%1196434030%%87-41-58-2.ptr.edu.ie%%0%%Hey Susan! I don't care! lol!
+ %%%%%%%%1196434072%%87-41-58-2.ptr.edu.ie%%0%%Must you lol idiot spell it out
+Jamie Conroy%%%%%%%%1196434353%%87-41-58-2.ptr.edu.ie%%0%%LOTS OF LAFFS (LOL)  ok Susan ill stop. So anybody have any news
+Peter G%%%%%%%%1196434364%%87-41-58-2.ptr.edu.ie%%2%%I started last Saturday on my report hope to finsh it soon I would to congratulate everyone from Last years I.T Class who graduate tonight including my father and my cousin and also Susan who was in tourism last year.
+Jamie Conroy%%%%%%%%1196434447%%87-41-58-2.ptr.edu.ie%%0%%Well said Peter I would like to wish congrats to my cousin Emmet Donlan who was in this class last year.
+Unknown%%%%%%%%1196434611%%87-41-58-2.ptr.edu.ie%%2%%I would just like to say that I may not like certain teams but I keep my opinions to myself 
+Susan C%%%%%%%%1196434621%%87-41-58-2.ptr.edu.ie%%0%%Thanks Peter. %NEWLINE%NEWLINETourism was nice. Not many rowdy football wielding/karate chopping people in THAT class. Actually....there weren't many people in the class at all. 
+Fiona%%%%%%%%1196434622%%87-41-58-2.ptr.edu.ie%%0%%Congrats everyone and enjoy your night!
+Susan C%%%%%%%%1196434729%%87-41-58-2.ptr.edu.ie%%0%%Thanks Fiona.
+@%%%%%%%%1196434751%%87-41-58-2.ptr.edu.ie%%0%%Yay Karate kid
+Jamie Conroy%%%%%%%%1196434965%%87-41-58-2.ptr.edu.ie%%0%%Congrats Micheal and Susan
+MichaelGarrett%%%%%%On Top of the World%%1196530035%%86-46-97-90.b-ras1.wtd.waterford.eircom.net%%0%%Thanks for all the good wishes for last night.%NEWLINE We had agreat time it was great to see the rest of last years class.And I hope you are all there next year with Susan and myself to recieve your awards Michael 
+Panda Fan%%%%%%%%1196680247%%87-41-58-2.ptr.edu.ie%%2%%Not long now til Christmas fellow Pandas
+Susan C%%%%%%%%1196680512%%87-41-58-2.ptr.edu.ie%%0%%Yeah ok Kieran. 
+Panda Fan%%%%%%%%1196684840%%87-41-58-2.ptr.edu.ie%%2%%Pandas are better than humans
+Peter G%%%%%%%%1196684982%%87-41-58-2.ptr.edu.ie%%2%%What on earth is Panda Fan on about
+Fiona%%%%%%%%1196685384%%87-41-58-2.ptr.edu.ie%%0%%If you are a FAN of Pandas why would you say fellow Panda's? That was just careless.
+Panda Fan%%%%%%%%1196685485%%87-41-58-2.ptr.edu.ie%%0%%Oh. Ok I'm really a panda. You've caught me.
+Fiona%%%%%%%%1196685515%%87-41-58-2.ptr.edu.ie%%0%%If you are a FAN of Pandas why would you say fellow Panda's? That was just careless.
+Peter G%%%%%%%%1196685606%%87-41-58-2.ptr.edu.ie%%2%%Somehow I do not think you are a panda really come on the game is up Panda Fan this is getting boring
+Fiona%%%%%%%%1196685684%%87-41-58-2.ptr.edu.ie%%0%%Come on we all know who you are%NEWLINE
+Panda Fan%%%%%%%%1196685781%%87-41-58-2.ptr.edu.ie%%0%%Yes. Come on out you imposter. 
+Confused%%%%%%%%1196685833%%87-41-58-2.ptr.edu.ie%%0%%HUBBAWAH???????
+?????%%%%%%%%1196688196%%87-41-58-2.ptr.edu.ie%%2%%MY PROBLEMS WITH THE LINUX KERNEL:%NEWLINEThe program was of use before the release of the duel core processer After which linux never released a new edition to compete with other programs The old OS was to slow to Ever Compliment the processing unit slowing the process of the entire computer down to the Max processing power of the Kernel almost halfing the processing power of the Actual computer also theyres the fact that the kernel never went well with intel operating systems to begin with often causing freezing destruction of files and system information making the program a nuisance  and a hazard to computer networks also the fact that the kernel was not customizable enough to operate most new software at an efficient rate. these are my reasons for disliking the linux program
+Susan C%%%%http://www.browsershots.org%%At my desk%%1196764455%%87-41-58-2.ptr.edu.ie%%0%%Very interesting site. View how your website looks in different browsers at different resolutions....and stay sitting at the one pc for the rest of the year! Yee haaa!!! 
+Fiona%%%%%%%%1196765317%%87-41-58-2.ptr.edu.ie%%0%%Oh you're a FAN of panda's!!  But below you claimed to be a panda. %NEWLINE2007-12-03, 12.38%NEWLINEOh. Ok I'm really a panda. You've caught me.
+?%%%%%%%%1196768613%%87-41-58-2.ptr.edu.ie%%2%%Panda Fan you are turning into a laughing stock.
+Panda Fan%%%%%%%%1196769543%%87-41-58-2.ptr.edu.ie%%0%%Never mind. I've found somewhere else to post where no one will bully me ever again. 
+Peter G%%%%%%%%1196770234%%87-41-58-2.ptr.edu.ie%%2%%Finally no more Pandas
+Kieran O Brien%%%%%%%%1196771788%%87-41-58-2.ptr.edu.ie%%0%%Good bye and good riddens you freak
+?%%%%%%%%1196771799%%87-41-58-2.ptr.edu.ie%%0%%Yea!!  (followed by an air punch)
+Kieran O B%%%%%%%%1196771889%%87-41-58-2.ptr.edu.ie%%0%%Stop impersonating me whoever you are
+Jamie Conroy%%%%%%%%1196771911%%87-41-58-2.ptr.edu.ie%%0%%Yes the idiotic panda fan is gone
+Fiona %%%%%%%%1196772140%%87-41-58-2.ptr.edu.ie%%0%%Hello goodbye panda
+Joshua%%%%%%%%1196772233%%87-41-58-2.ptr.edu.ie%%0%%I basically suck at impersonating people.
+Ernesto%%%%%%%%1196772275%%87-41-58-2.ptr.edu.ie%%0%%So do I.
+Peter G%%%%%%%%1196774452%%87-41-58-2.ptr.edu.ie%%2%%Josh your page is cool
+Fiona%%%%%%%%1196775496%%87-41-58-2.ptr.edu.ie%%0%%Wicked page!
+Fiona%%%%%%%%1196850577%%87-41-58-2.ptr.edu.ie%%0%%Is anybody else bored to death by the communications report?
+Peter G %%%%%%%%1196851091%%87-41-58-2.ptr.edu.ie%%2%%Yes I am bored with it too can't wait to finally get it finished
+Fiona%%%%%%%%1196851449%%87-41-58-2.ptr.edu.ie%%0%%Is anybody else bored to death by the communications report?
+Fiona%%%%%%%%1196851531%%87-41-58-2.ptr.edu.ie%%0%%Whoops refreshed again!! Yea I think it is slowly killing me.
+Kieran O B%%%%%%%%1196851555%%87-41-58-2.ptr.edu.ie%%0%%Nah im enjoying my Report.
+?%%%%%%%%1196858222%%87-41-58-2.ptr.edu.ie%%2%%Does anybody notice no Panda Fan messages today I wonder why maybe it is because the person who is really Panda Fan is out today
+Kieran O B%%%%%%%%1196858372%%87-41-58-2.ptr.edu.ie%%0%%Im doing my report on the super blues as they are the best and every other team is shit like all the scumie liverpool and man utd fans
+Kieran O B%%%%%%%%1196858443%%87-41-58-2.ptr.edu.ie%%0%%no ernesto and josh are in
+Kieran O B%%%%%%%%1196858493%%87-41-58-2.ptr.edu.ie%%0%%Fiona stop impersonating me.
+Fiona%%%%%%%%1196858615%%87-41-58-2.ptr.edu.ie%%0%%Stop  being such a psycho some of us have better things to be doing than posing as you and unless you have proof that I did anything keep your mouth shut.
+Jamie%%%%%%%%1196858661%%87-41-58-2.ptr.edu.ie%%0%%Yeah you shouldnt make accusations without proof of them. We are busy doing our reports
+Kieran O B%%%%%%%%1196858711%%87-41-58-2.ptr.edu.ie%%0%%Well I saw u do it. Just because i deleted ur iPod by mistake ur trying to get back at me.
+Fiona%%%%%%%%1196858880%%87-41-58-2.ptr.edu.ie%%0%%I dont care what you thought you saw dont ever accuse me of anything again.
+Kieran O B%%%%%%%%1196858934%%87-41-58-2.ptr.edu.ie%%0%%Well you have done things like that before havent you?
+Fiona%%%%%%%%1196859011%%87-41-58-2.ptr.edu.ie%%0%%Grow up.
+Kieran O B%%%%%%%%1196949910%%87-41-58-2.ptr.edu.ie%%0%%Hmmmm. Isn't it really odd how in the two days Susan has been out the Panda Fan hasn't posted once?
+?%%%%%%%%1196950440%%87-41-58-2.ptr.edu.ie%%2%%Looks like we have our Panda Fan
+Peter G%%%%%%%%1196951093%%87-41-58-2.ptr.edu.ie%%2%%Yes it is rather odd that Susan is out for two days and the Panda Fan has disappared if she is the Panda Fan then I will be annoyed because all the time thePanda Fan was right beside me.
+Kieran O B%%%%%%%%1196951365%%87-41-58-2.ptr.edu.ie%%0%%And she said it was me before.
+Fiona%%%%%%%%1196952306%%87-41-58-2.ptr.edu.ie%%0%%So its either Sean, Kieran, Michael, Peter or John?%NEWLINEWell it doesn't narrow it down much. another clue?
+Jamie Conroy%%%%%%%%1196952318%%87-41-58-2.ptr.edu.ie%%0%%Its not Peter
+Fiona%%%%%%%%1196952744%%87-41-58-2.ptr.edu.ie%%0%%Sorry hit refresh again right. Peter I believe you.
+Fiona%%%%%%%%1196953610%%87-41-58-2.ptr.edu.ie%%0%%Can you not answer a simple question? Do you love Chelsea?
+laura%%%%%%over here!%%1196953761%%87-41-58-2.ptr.edu.ie%%0%%^,^ entertaining blog. :) 
+Susan C%%%%%%%%1196960234%%86-43-202-102.b-ras1.wtd.waterford.eircom.net%%0%%Honestly. I'm sure I've much better things to be doing than posting as a Panda Fan. ;)%NEWLINE%NEWLINEHad you lot nothing better to be doing, either, than playing Inspector Clouseau? :p
+?%%%%%%%%1196973636%%159-134-50-106.as1.clm.clonmel.eircom.net%%0%%Games up Susan, Peter gave up up.
+Susan C%%%%%%%%1196975313%%86-46-97-55.b-ras1.wtd.waterford.eircom.net%%0%%I haven't been near a computer all day. You need to go on your bear hunt again. There are at least two, if not three, Panda Fans. :D
+Peter G%%%%%%%%1196981965%%86-43-200-57.b-ras1.wtd.waterford.eircom.net%%2%%I really couldn't care anymore about Panda Fan Susan only started it as a laugh but now it has got out of hand
+!%%%%%%%%1196982052%%86-43-200-57.b-ras1.wtd.waterford.eircom.net%%2%%Leave Susan Alone
+Susan C%%%%%%%%1197020557%%86-46-69-201.b-ras1.wtd.waterford.eircom.net%%0%%Ah, it's allright Peter. Everyone's only having a laugh. ;)%NEWLINE%NEWLINEOk...anyone know where I can get a protective vest for Monday? I'm a bit concerned as to the direction that Fachnta might be pointing that AK47. %NEWLINE%NEWLINEI won't be in today by the way. I'm sulking.
+Susan C%%%%%%Learning how to run very fast%%1197020638%%86-46-69-201.b-ras1.wtd.waterford.eircom.net%%0%%It's ok. I've found that vest I was looking for. Just have to change a couple of letters on it. :D
+Kieran O B%%%%%%%%1197025346%%87-41-58-2.ptr.edu.ie%%0%%So what do ye all think bout Katy French?
+Fiona%%%%%%%%1197025566%%87-41-58-2.ptr.edu.ie%%0%%God it's terrible isn't it she was only 24
+Peter G%%%%%%%%1197025648%%87-41-58-2.ptr.edu.ie%%2%%What a waste of a life
+Peter G%%%%%%%%1197027370%%87-41-58-2.ptr.edu.ie%%2%%The chairs are cool
+Jamie Conroy%%it.jamiec@fachtnaroe.net%%%%At my Desk%%1197033180%%87-41-58-2.ptr.edu.ie%%0%%Anybody have any good websites to go to?
+Kieran O B%%it.kieranob@fachtnaroe.com%%%%%%1197038053%%87-41-58-2.ptr.edu.ie%%0%%Ah the Blog is fixed.
+Peter G%%it.peterg@fachtnaroe.net%%%%At my computer%%1197038968%%87-41-58-2.ptr.edu.ie%%0%%Finally the nightmare is over
+Kieran O B%%%%%%%%1197039119%%87-41-58-2.ptr.edu.ie%%0%%Now thats going a bit too far. It was just annoying, thats all.
+Jamie Conroy%%it.jamiec@fachtnaroe.net%%%%At my Desk%%1197039206%%87-41-58-2.ptr.edu.ie%%0%%So listen if your at home and your bored go to www.alluc.org as you can watch free videos and tv shows.
+Brid%%%%%%My work!! :)%%1197045056%%86-46-74-37.b-ras1.wtd.waterford.eircom.net%%0%%Hey everyone! Was great to see everyone last Friday night for the awards ceremony.Congratulations to all!! :) :) 
+Brid%%%%%%My work!! :)%%1197045071%%86-46-74-37.b-ras1.wtd.waterford.eircom.net%%0%%Hey everyone! Was great to see everyone last Friday night for the awards ceremony.Congratulations to all!! :) :) 
+Fiona%%%%%%%%1197285721%%87-41-58-2.ptr.edu.ie%%0%%Good weekend everybody?
+Kieran O B%%%%%%%%1197285741%%87-41-58-2.ptr.edu.ie%%0%%Michael Owen Fitness Update%NEWLINE%NEWLINEEngland and Newcastle hobbler Michael Owen is said to be hurt by people constantly making fun of his injuries. He will be out for six weeks.
+Fiona%%%%%%%%1197285857%%87-41-58-2.ptr.edu.ie%%0%%Not funny
+Kieran O B%%%%%%%%1197286075%%87-41-58-2.ptr.edu.ie%%0%%Maths made easy with Manchester United%NEWLINE%NEWLINEIf one minute of time is taken up in a game for substitutions and one minute for injuries, how much injury time will be added on by the referee if Man Utd are losing at home? %NEWLINE%NEWLINERyan is a Welshman. Express, as a percentage, the number of internationals he has missed on a Wednesday evening compared to the miraculous recoveries he made for the following Saturday.%NEWLINE%NEWLINEYou are the referee at Old Trafford. How near to a visiting defender does a tumbling Ruud van Nistelrooy have to be to earn a penalty if he goes down in the box? (Note: Round your answers down to the nearest 20 yards.) %NEWLINE%NEWLINEProbability. Express the statistical probability of visitors to Old Trafford being awarded a penalty. Compare this with the probability of opponents of Manchester United being awarded a penalty home or away, and then discuss if a penalty awarded to Manchester United would be awarded to their opponents in identical circumstances. 
+Peter G%%%%%%%%1197286077%%87-41-58-2.ptr.edu.ie%%2%%Yes I had a good weekend has anyone finished their report I have almost hope to get it done today.
+Fiona%%%%%%%%1197286318%%87-41-58-2.ptr.edu.ie%%0%%I finished mine last Thursday it looks kind of short  though, doing my desktop publishing now.%NEWLINE
+Jamie Conroy%%it.jamiec@fachtnaroe.net%%%%At my Desk%%1197286963%%87-41-58-2.ptr.edu.ie%%0%%I finished my report last thursday and it looks very long. Anybody want to read 14 pages on Bruce Lee
+Peter G%%%%%%%%1197287132%%87-41-58-2.ptr.edu.ie%%2%%Not long now until Christmas I can't wait
+Peter G%%%%%%%%1197287385%%87-41-58-2.ptr.edu.ie%%2%%What is everybody's report on mine is on Formula One
+Kieran O B%%%%%%%%1197287610%%87-41-58-2.ptr.edu.ie%%0%%Mine is on the History of the Fantastic Chelsea F.C.
+Kieran O B%%%%%%%%1197288406%%87-41-58-2.ptr.edu.ie%%0%%STEVE McCLAREN is set to be the next James Bond. A spokesman said, “Well, he knows what its like to be screwed by the Russians.”%NEWLINE%NEWLINEARSENE WENGER insists there will one day be a strong contingent of English players coming through the youth ranks into his first team squad. Yeah, when he’s left.%NEWLINE
+Kieran O B%%%%%%%%1197288722%%87-41-58-2.ptr.edu.ie%%0%%Manchester City and West Ham are in a fight to sign Marseille striker Djibril Cisse. The loser gets him.
+Peter G%%%%%%%%1197292949%%87-41-58-2.ptr.edu.ie%%2%%Fernando Alonso will return to the Renault team next season.
+Susan C%%%%%%Here%%1197294234%%87-41-58-2.ptr.edu.ie%%0%%Do I *have* to read it (the email) Jamie? You know I hate sport. All that sports stuff should carry a health warning somewhere. 
+Jamie Conroy%%%%%%%%1197294433%%87-41-58-2.ptr.edu.ie%%0%%Ok ill leave a warning on the sports from now on
+Fiona%%%%%%%%1197294521%%87-41-58-2.ptr.edu.ie%%0%%Mine is on Rugby
+Susan C%%%%%%%%1197294707%%87-41-58-2.ptr.edu.ie%%0%%Cheers Jamie! %NEWLINE%NEWLINEI did the project last year, thankfully. I found it very time consuming. Best of luck with it. 
+Peter G%%%%%%%%1197295503%%87-41-58-2.ptr.edu.ie%%2%%Did anyone see the Munster match on Saturday they deserved to win they played so well in especially in them rainy and muddy conditions %NEWLINE%NEWLINEP.S Susan sorry this is about sport 
+Susan C%%%%%%%%1197295751%%87-41-58-2.ptr.edu.ie%%0%%You're allright Peter. I'm sure sport is allowed in the blog....even if zoology isn't. Sniff! %NEWLINE%NEWLINEAnyway, I'm close enough to put manners on you. :p
+Peter G%%%%%%%%1197296547%%87-41-58-2.ptr.edu.ie%%2%%Thanks Susan but really your spelling must getting sloppy because I am sure I have always known alright not to have two l's tut tut
+Susan C%%%%%%%%1197296712%%87-41-58-2.ptr.edu.ie%%0%%Oh darn it anyway.%NEWLINE%NEWLINEhttp://dictionary.reference.com/browse/allright%NEWLINE%NEWLINEI'll half agree with you. I should have put a hyphen thingy in. 
+Fiona%%%%%%%%1197374684%%87-41-58-2.ptr.edu.ie%%0%%Has anybody figured out how to do the web page for Fitzgeralds Park yet?
+Susan C%%%%%%%%1197381084%%86-46-106-188.b-ras1.wtd.waterford.eircom.net%%0%%Hi Fiona%NEWLINE%NEWLINEYes...and no.%NEWLINE%NEWLINEYou need to set up a history folder in your public_html folder. Then upload your index.html (main Fitzgerald's Park page) into the history folder. 
+Susan C%%%%http://typetester.maratz.com/%%%%1197410528%%86-46-100-252.b-ras1.wtd.waterford.eircom.net%%0%%Very handy.
+Fiona%%%%%%%%1197454850%%87-41-58-2.ptr.edu.ie%%0%%Thanks
+Jamie Conroy%%%%%%%%1197455599%%87-41-58-2.ptr.edu.ie%%0%%Please HELP!!! I cant get the web page to upload :(:(:(:(:(:(:(
+Kieran O B%%%%%%%%1197465024%%87-41-58-2.ptr.edu.ie%%0%%Anyone else find this Web Page extremely annoying?
+Peter G%%%%%%%%1197465201%%87-41-58-2.ptr.edu.ie%%2%%Yes I think it is annoying that we have to do a web page on a place we know nothing about as we never went there 
+Fiona%%%%%%%%1197465262%%87-41-58-2.ptr.edu.ie%%0%%Stylesheets and getting new pages within the page? Anyone?
+Kieran O B%%%%%%%%1197466716%%87-41-58-2.ptr.edu.ie%%0%%Hell no.
+Kieran O B%%%%%%%%1197466823%%87-41-58-2.ptr.edu.ie%%0%%Hell no.
+Susan C%%%%%%My kitchen%%1197480635%%86-43-195-116.b-ras1.wtd.waterford.eircom.net%%0%%All I can say%NEWLINEIs FGI%NEWLINE%NEWLINE....that rhymes if you say it right.%NEWLINE%NEWLINE%NEWLINE%NEWLINE
+Fachtna%%%%%%%%1197539602%%%%0%%%NEWLINENew pages within the page, Fiona?%NEWLINE
+Fachtna%%%%%%%%1197539868%%%%0%%%NEWLINEIf you had a job designing websites, Peter, would you test out each companies products first? Hair sprays &amp; gels, marble-counter kitchen tops, cruises on The Shannon,  holiday cottages in Co. Roscommon, dental holidays in Budapest?
+Peter G%%%%%%%%1197545691%%87-41-58-2.ptr.edu.ie%%2%%Fachtna you have a point there
+Susan C%%%%%%%%1197631397%%87-41-58-2.ptr.edu.ie%%0%%Yes to the hair sprays and gels!! 
+Susan C%%%%%%%%1197639267%%87-41-58-2.ptr.edu.ie%%0%%God, this place is dead since the zoo closed.
+Susan C%%%%http://www.visibone.com/colorlab/%%%%1197639654%%87-41-58-2.ptr.edu.ie%%0%%Nice link for colours. You can mix and match and see what various colours look like with each other. 
+Susan C%%%%%%%%1197640230%%87-41-58-2.ptr.edu.ie%%0%%Would anyone interested in &quot;doing lunch&quot; on Tuesday please let me know?%NEWLINE%NEWLINEAny suggestions on where to go? (NOT the Spar shop)
+Peter G%%%%%%%%1197640585%%87-41-58-2.ptr.edu.ie%%2%%Mcdonald's Or Tom Skinnys
+Susan C%%%%%%%%1197641323%%87-41-58-2.ptr.edu.ie%%0%%Does anyone want to change to Thursday now???
+Peter G%%%%%%%%1197641443%%87-41-58-2.ptr.edu.ie%%2%%Yes Thursday would be good
+Kieran O B%%%%%%%%1197641904%%87-41-58-2.ptr.edu.ie%%0%%Thursday sounds better to me.
+Susan C%%%%%%%%1197642521%%87-41-58-2.ptr.edu.ie%%0%%Ok. So far it's:%NEWLINE%NEWLINESusan%NEWLINEPeter%NEWLINEKieran%NEWLINEFiona%NEWLINEJamie%NEWLINERhonda%NEWLINE%NEWLINESuggestions - Tom Skinny's %NEWLINE(Please say no one else wants McDonald's)
+Peter G%%%%%%%%1197642570%%87-41-58-2.ptr.edu.ie%%2%%How about Abrakebabra
+Susan C%%%%%%%%1197642617%%87-41-58-2.ptr.edu.ie%%0%%Peter, are you taking the P...P....Panda Fan?
+Peter G%%%%%%%%1197642782%%87-41-58-2.ptr.edu.ie%%2%%Please don't start that one again Susan
+Fiona%%%%%%%%1197644889%%87-41-58-2.ptr.edu.ie%%0%%I wont be here on Tuesday so Thursday would be more suitable. (That is if ye want me there!) 
+Jamie%%%%%%%%1197644982%%87-41-58-2.ptr.edu.ie%%0%%Tom Skinneys Thur
+
+Kieran O B%%%%%%%%1197885665%%87-41-58-2.ptr.edu.ie%%0%%John Terry is officially a legend. After swallowing his tongue and being knocked out by Arsenal’s Abou Diaby, everyone feared for his life. However, the England and Chelsea skipper soon checked himself out of hospital and joined the Chelsea celebrations until 3am. Meanwhile, Diaby is out for two weeks having injured his ankle in the same incident.
+Fiona%%%%%%%%1197887135%%87-41-58-2.ptr.edu.ie%%0%%hey is gftp working for anybody?
+Peter G%%%%%%%%1197902530%%87-41-58-2.ptr.edu.ie%%2%%Is Lunch Still On Thursday
+Susan C%%%%%%%%1197978012%%87-41-58-2.ptr.edu.ie%%0%%Lunch is still on. So far there are 10 people going.
+Susan C%%%%%%%%1198057761%%87-41-58-2.ptr.edu.ie%%0%%Hi all%NEWLINEI'll be sending around a menu from Tom Skinny's later on. Please pick what you'd like for lunch and we can phone in tomorrow and order it before we go there. They are going to be extremely busy tomorrow.%NEWLINEI have booked for the following:%NEWLINE%NEWLINESusan%NEWLINEPeter%NEWLINERhonda (Liam)%NEWLINEJohn%NEWLINEErnesto%NEWLINELilette%NEWLINEJamie%NEWLINEKieran%NEWLINEFiona%NEWLINE
+Kieran O B%%%%%%%%1198062162%%87-41-58-2.ptr.edu.ie%%0%%Cheers Susan.
+Peter G%%%%%%%%1198063920%%87-41-58-2.ptr.edu.ie%%2%%It is very nice of you Susan to think of everyone of us thank you because you we would be doing nothing to celebrate christmas 
+Fiona%%%%%%%%1198074336%%87-41-58-2.ptr.edu.ie%%0%%Thanks Susan! Looking forward to it already!!
+Saint Nicholas%%%%%%The North Pole%%1198142652%%87-41-58-2.ptr.edu.ie%%0%%Ho Ho Ho!!%NEWLINEMeeerrrrrrry Christmas to all the boys and girls in the I.T. class. I'm sorry I haven't gotten around to you all yet with your pressies. It took me so much time and energy to fix things so that Chelsea would win that match yesterday and I'm utterly exhausted. But don't fear. I'll be with you all late on the 24th.%NEWLINE%NEWLINEMuch love%NEWLINESaint Nicholas%NEWLINE%NEWLINE(Who's Steven?)
+Panda Fan%%%%%%%%1198142999%%87-41-58-2.ptr.edu.ie%%0%%Eh? Dunno about Steven but who's Chelsea?
+Jose%%%%%%%%1198143411%%87-41-58-2.ptr.edu.ie%%2%%Merry Christmas special one
+Avram Grant%%%%%%%%1198143498%%87-41-58-2.ptr.edu.ie%%0%%We have good christmas we are chelsea we are boring. I candnt speak ze english and i wish i jose.
+JT%%%%%%%%1198143552%%87-41-58-2.ptr.edu.ie%%0%%
+Jose:(%%%%%%Portugal%%1198143796%%87-41-58-2.ptr.edu.ie%%0%%Last Christmas I gave you my heart but the very next season you gave it to Avram. This year Ill give it to someone &quot;SPECIAL&quot;.
+Jose%%%%%%%%1198143925%%87-41-58-2.ptr.edu.ie%%2%%Yes believe it it was I Kirean
+Avram%%%%%%Jerluserlem%%1198144140%%87-41-58-2.ptr.edu.ie%%2%%Merry Christmas to all Chelsea fans
+St. Nicholas%%%%%%Lapland%%1198144156%%87-41-58-2.ptr.edu.ie%%0%%Avram the red faced manager had a very shiney face. When all the managers saw him laffed and called him names. Then one september day Roman came to say to him Avram with your face so bright wont you guide my sheva tonight. Then all the other managers laffed so hard they couldnt get bk up.
+Roman%%%%%%%%1198144447%%87-41-58-2.ptr.edu.ie%%2%%All I want for christmas is the Champions League
+Andy Gray, Martin Tylor. Jamie Rednkapp, Rudd Hullit, Gary Mcallistir and the rest of the Sky Sports pundits%%%%%%Sky headquaters.%%1198144531%%87-41-58-2.ptr.edu.ie%%0%%You better watch out you better cry, you better watch out Im telling you why Avram is coming to town.He knows when you are sleeping and he gets upset so you better be sleeping.He know his team are boring and would better be suited for a european diving competition as they would defiantly make to that european final. So you better watch out the Carling Cup semi finalist are coming to town with their Isreal answer to santa claus as their manager.%NEWLINE%NEWLINEWe wish you a Merry Xmas
+Jose%%%%%%%%1198144888%%87-41-58-2.ptr.edu.ie%%2%%I am alone this Christmas without beloved wife Chelsea we went our seperate ways back in September and now I feel like singing a song It will be lonely this Christmas
+Royal Mail%%%%%%Great Britian%%1198145041%%87-41-58-2.ptr.edu.ie%%0%%We would like to publicly apologise for the fact that we have had to recall our Christmas selection of stamps, featuring pictures of Jose Mourinho on them. We have received many complaints from people who were confused as to which side to spit on.
+Chelsea Dagger%%%%%%%%1198145084%%87-41-58-2.ptr.edu.ie%%2%%Chelsea Chelsea I believe that one day you win the Champions League if only my Playstation 3
+Franky Lamps%%%%%%Liverpool, burgling Peipe Reinas house again. I want a champions league medal :(:(:(:(%%1198145177%%87-41-58-2.ptr.edu.ie%%0%%I have a dream, A song to sing to help me through with anything. Can you see the blunders of our Champions League. You can see the future of the semi finals evn if you fail. You believe in Avram something bad in everything he does.You believe in Roman when You know the time is good for money.We cross the title I have a dream.
+Kieran O B%%%%%%%%1198147991%%87-41-58-2.ptr.edu.ie%%0%%Aw, looks like some sore Liverpool Fan. It was the Carling Cup, jeez.
+ %%%%%%%%1198160163%%87-41-58-2.ptr.edu.ie%%0%%WHATEVER
+laura%%%%%%on her psp%%1198460294%%213-94-145-179.b-ras1.lmk.limerick.eircom.net%%0%%happy christmas
+Peter G%%%%%%%%1199488931%%86-43-205-87.b-ras1.wtd.waterford.eircom.net%%2%%A Belated Happy New Year To Everyone
+Susan C%%%%%%%%1199704414%%87-41-58-2.ptr.edu.ie%%0%%Peter!!!%NEWLINE%NEWLINEA VERY merry UNbirthday to you.....to you!%NEWLINE%NEWLINEDrinks are on you! %NEWLINE
+Fiona%%%%%%%%1199709456%%87-41-58-2.ptr.edu.ie%%0%%Happy Birthday to you,%NEWLINEHappy Birthday to you,%NEWLINEHappy Birthday to Peter.......%NEWLINEHappy Birthday to you,
+Peter G%%%%%%%%1199713059%%87-41-58-2.ptr.edu.ie%%2%%There seems to have been a mistake on the E-mail sent by Facthna to the class it is not my birthday until the 1st of July
+Susan C%%%%%%%%1199713149%%87-41-58-2.ptr.edu.ie%%0%%You're way too modest Peter. Don't mind him class. Of COURSE it's his unbirthday. %NEWLINE%NEWLINEBTW, I am willing to take care of any cash gifts for Peter in the meantime....cos I'm nice like that.
+Jamie%%%%%%Class Bare with me for a min%%1199873008%%87-41-58-2.ptr.edu.ie%%0%%Une image d'un petit étang situé au milieu du parc.%NEWLINEA picture of a small pond situated in the middle of the park %NEWLINE%NEWLINEUne image du lac principal avec une fontaine au centre.%NEWLINEA picture of the main lake with a fountain in the center. %NEWLINE%NEWLINEUne manière de promenade que cela mène vers le bas aux lacs avec les arbres pittoresques l'entourant.%NEWLINEA walk way that leads down to the lakes with picturesque trees surrounding it.%NEWLINE%NEWLINEUne image du parc pendant le ressort comme vu par les fleurs.%NEWLINEA picture of the park during the spring as seen by the flowers.%NEWLINE%NEWLINEUne image du lac pris en hiver où le parc est encore pittoresque.%NEWLINEA picture of the lake taken in winter when the park is still picturesque%NEWLINE%NEWLINECette photo a été prise dans le musée et c'est une image d'un générateur hydro-électrique.%NEWLINEThis photo was taken in the museum and it is a picture of a hydro electric generator.%NEWLINE%NEWLINECette image représente la guerre de l'indépendance et les armements et les uniformes utilisés du fait temps%NEWLINEThis picture represents the war of Independence and the weaponry and uniforms used in that time%NEWLINE%NEWLINEc'est une image du musée tiré de l'extérieur. Le bâtiment plus petit est la nouvelle prolongation%NEWLINEThis is a picture of the museum shot from the outside.The smaller building is the new extension.
+Kieran O B%%%%%%My Desk%%1199876167%%87-41-58-2.ptr.edu.ie%%0%%More Footy Humour...%NEWLINE%NEWLINEMAN UNITED put on an internal Christmas Pantomime during the festive period. The stars of the show were Darren Fletcher as Piss in Boots, Jonny Evans as Jack the Raper and Carlos Tevez as Quasimodo.%NEWLINE%NEWLINETOTTENHAM striker Dimitar Berbatov is ready to leave the Spurs for a club that &quot;can match his ambition.&quot; Newcastle are said to be the perfect match as not only are they overly-ambitious but they also only perform four times a season.
+Kieran O B%%%%%%My Desk%%1199876201%%87-41-58-2.ptr.edu.ie%%0%%More Footy Humour...%NEWLINE%NEWLINEMAN UNITED put on an internal Christmas Pantomime during the festive period. The stars of the show were Darren Fletcher as Piss in Boots, Jonny Evans as Jack the Raper and Carlos Tevez as Quasimodo.%NEWLINE%NEWLINEDERBY COUNTY have refused an offer from Richard Branson to sponsor the club. They feel it inappropriate having 'Virgin' on their shirts when they're getting f***ed every week%NEWLINE%NEWLINESOL CAMPBELL wants to go back to Spurs. Apparently, he heard that their forwards were Bent and Keane.%NEWLINE%NEWLINENEWCASTLE owner Mike Ashley faces a £20m bill if he wants to axe under fire boss Sam Allardyce and his backroom staff. Its already being hailed the biggest bargain of 2008.%NEWLINE%NEWLINETOTTENHAM striker Dimitar Berbatov is ready to leave the Spurs for a club that &quot;can match his ambition.&quot; Newcastle are said to be the perfect match as not only are they overly-ambitious but they also only perform four times a season.
+Kieran O B%%%%%%%%1199888174%%87-41-58-2.ptr.edu.ie%%0%%No replies.. Everyone must be getting sick of this thing...
+ %%%%%%%%1199908714%%159-134-51-33.as1.clm.clonmel.eircom.net%%0%%anybody else think lilietes page looks familiar?
+Kieran O B%%%%%%%%1199962069%%87-41-58-2.ptr.edu.ie%%0%%Looks like she stole it from Fiona to me...
+Kieran O B%%%%%%%%1199965292%%87-41-58-2.ptr.edu.ie%%0%%Oh yeah, and she also robbed mine
+Susan C%%%%%%At home%%1199965393%%86-46-64-22.b-ras1.wtd.waterford.eircom.net%%0%%Fachtna%NEWLINEYer email is broken!%NEWLINE%NEWLINESee you tomorrow class! 
+Fachtna%%%%%%At home in my office.%%1200056272%%%%0%%Susan,%NEWLINE%NEWLINEYeh wha? What's broken about it?%NEWLINE%NEWLINE
+Susan C%%%%%%At home in my sitting room having returned from mission that looks impossible and probably is%%1200059902%%86-46-64-22.b-ras1.wtd.waterford.eircom.net%%0%%Fachtna,%NEWLINE%NEWLINEI'll try to elaborate on &quot;It's broken&quot;.%NEWLINE%NEWLINEI am trying to send you an email and am receiving emails back with things like &quot;Mail delivery failed&quot;, &quot;Return to sender&quot;, &quot;Mailer-daemon&quot;,&quot;relaying denied&quot; and other very daunting terminology in them. %NEWLINE%NEWLINEI can't save the world when I'm under this stress.%NEWLINE%NEWLINE
+Fachtna%%%%%%Near space orbit; coping well with saving world despite stress.%%1200081544%%%%0%%Susan,%NEWLINE%NEWLINEWhat e-mail address are you sending to?%NEWLINE(.ie, .net, .org, .com)%NEWLINE%NEWLINEAre you able to log into the webmail server?%NEWLINE

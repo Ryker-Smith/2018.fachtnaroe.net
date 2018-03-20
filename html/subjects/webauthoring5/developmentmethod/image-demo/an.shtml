@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- #include virtual#"/head.shtml" -->
+<body>
+<!-- #include virtual#"/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #include virtual#"/topmenu.shtml" -->
+<!-- #include virtual#"/sidemenu.shtml" -->
+<div id="content">
+<h1>Simple Animated GIF</h1>
+<p>Each animated gif can be viewed as a short cartoon, with an option to re-run.</p>
+<p>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!-- #include virtual#"/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

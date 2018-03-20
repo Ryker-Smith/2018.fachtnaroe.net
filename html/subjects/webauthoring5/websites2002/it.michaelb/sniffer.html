@@ -1,0 +1,32 @@
+
+
+<HTML><HEAD><TITLE></TITLE>
+
+<script language = "javascript" type = "text/javascript"><!--
+
+var nav = " ";
+function sniffer()
+{
+nav = navigator.appName;
+if(nav.indexOf("Microsoft") >-1 )
+	{
+	parent.frames[0].location.href = "ie_top.html";	
+	parent.frames[1].location.href = "ie_bot.html";
+	return;
+	}
+		else
+		{
+		parent.frames[0].location.href = "net_top.html";	
+		parent.frames[1].location.href = "bio.html";	
+		}
+}
+
+//-->
+
+</script>
+
+</HEAD>
+
+<BODY onload="setTimeout('sniffer()',1000)">&nbsp;<P><CENTER>Finding browser...</CENTER></BODY>
+
+</HTML>

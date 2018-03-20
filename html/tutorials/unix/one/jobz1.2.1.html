@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- shell/jobz1.2.1.html -->
+
+<HEAD>
+<TITLE>Example of suspending a foreground process</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Example of suspending a foreground process</H1>
+
+<P>To suspend a foreground process:</P>
+
+<PRE WIDTH=80>   <STRONG>find / -name *.c -print</STRONG>
+   find: cannot read /dev/diag
+   ...
+   <STRONG>^Z</STRONG>
+   [1]+  Stopped                 find / -name *.c -print
+   <STRONG>ps</STRONG>
+   22926 p9 S     0:03 -Tcsh (Tcsh)
+   29857 p9 T     0:00 find / -name *.xdh -print
+   29859 p9 R     0:00 ps
+   <STRONG>mail tony &lt; memo.txt</STRONG>
+</PRE>
+
+<P>The user enters a command to find files with the
+extension <SAMP>.xdh</SAMP> starting at the 
+<A HREF="../glossary/gr.html#rootdir">root directory</A>.</P>
+
+<P>Realising that this process will take a long time to run
+they stop it while they do something else.</P>
+
+<P>They check to see that the process still exists: it does.
+They then send some mail to the user <SAMP>tony</SAMP>.  Now they can
+<A HREF="jobz1.2.2.html">restart the process</A> again in the foreground or run it
+as a <A HREF="jobz3.2.html">background job</A>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,145 @@
+<head>
+<title> UNIX Tutorial - Introduction</title>
+</head>
+
+
+<body bgcolor="white"> 
+ 
+<CENTER>
+</CENTER>
+
+
+
+<hr size="1" noshade>
+<div align="center"><font size="+4" face="Verdana, Arial, Helvetica, sans-serif"><b>UNIX 
+  Introduction</b></font> </div>
+<hr size="1" noshade>
+<blockquote> 
+  <blockquote> 
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">This session concerns 
+      UNIX, which is a common operating system. By operating system, we mean the 
+      suite of programs which make the computer work. UNIX is used by the workstations 
+      and multi-user servers within the school.</font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> On X terminals and 
+      the workstations, X Windows provide a graphical interface between the user 
+      and UNIX. However, knowledge of UNIX is required for operations which aren't 
+      covered by a graphical program, or for when there is no X windows system, 
+      for example, in a telnet session. </font></p>
+  </blockquote>
+</blockquote>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>The 
+        UNIX operating system</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The UNIX operating system 
+      is made up of three parts; the kernel, the shell and the programs. </font></p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">The kernel </font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The kernel of UNIX is 
+      the hub of the operating system: it allocates time and memory to programs 
+      and handles the filestore and communications in response to system calls. 
+      </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> As an illustration 
+      of the way that the shell and the kernel work together, suppose a user types 
+      <b> <font color="#CC0000"> <font face="Courier New, Courier, mono">rm myfile</font></font></b> 
+      (which has the effect of removing the file "<b>myfile</b>"). The shell searches 
+      the filestore for the file containing the program <b><font face="Courier New, Courier, mono" color="#CC0000">rm</font></b>, 
+      and then requests the kernel, through system calls, to execute the program 
+      <b> <font color="#CC0000"> <font face="Courier New, Courier, mono">rm</font></font></b> 
+      on <b>myfile</b>. When the process <b><font face="Courier New, Courier, mono" color="#CC0000">rm 
+      myfile</font></b> has finished running, the shell then returns the UNIX 
+      prompt % to the user, indicating that it is waiting for further commands. 
+      </font></p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">The shell</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The shell acts as an 
+      interface between the user and the kernel. When a user logs in, the login 
+      program checks the username and password, and then starts another program 
+      called the shell. The shell is a command line interpreter (CLI). It interprets 
+      the commands the user types in and arranges for them to be carried out. 
+      The commands are themselves programs: when they terminate, the shell gives 
+      the user another prompt (% on our systems). </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> The adept user can 
+      customise his/her own shell, and users can use different shells on the same 
+      machine. Staff and students in the school have the <b>tcsh</b> shell by 
+      default. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> The tcsh shell has 
+      certain features to help the user inputting commands.</font></p>
+    <blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b>Filename Completion</b> 
+        - By typing part of the name of a command, filename or directory and pressing 
+        the <b>[Tab]</b> key, the tcsh shell will complete the rest of the name 
+        automatically. If the shell finds more than one name beginning with those 
+        letters you have typed, it will beep, prompting you to type a few more 
+        letters before pressing the tab key again. </font></p>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b>History</b> - 
+        The shell keeps a list of the commands you have typed in. If you need 
+        to repeat a command, use the cursor keys to scroll up and down the list 
+        or type <b><font face="Courier New, Courier, mono" color="#CC0000">history</font></b> 
+        for a list of previous commands. </font></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>Files 
+        and processes</b></font></td>
+    </tr>
+  </table>
+  <blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">Everything in UNIX is 
+      either a file or a process. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> A process is an executing 
+      program identified by a unique PID (process identifier). </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> A file is a collection 
+      of data. They are created by users using text editors, running compilers 
+      etc. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Examples of files: 
+      </font></p>
+    <ul>
+      <li><font face="Verdana, Arial, Helvetica, sans-serif"> a document (report, 
+        essay etc.) </font></li>
+      <li><font face="Verdana, Arial, Helvetica, sans-serif"> the text of a program 
+        written in some high-level programming language </font></li>
+      <li><font face="Verdana, Arial, Helvetica, sans-serif"> instructions comprehensible 
+        directly to the machine and incomprehensible to a casual user, for example, 
+        a collection of binary digits (an executable or binary file); </font></li>
+      <li><font face="Verdana, Arial, Helvetica, sans-serif"> a directory, containing 
+        information about its contents, which may be a mixture of other directories 
+        (subdirectories) and ordinary files. </font></li>
+    </ul>
+  </blockquote>
+</blockquote>
+<p>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>The 
+        Directory Structure</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">All the files are grouped 
+      together in the directory structure. The file-system is arranged in a hierarchical 
+      structure, like an inverted tree. The top of the hierarchy is traditionally 
+      called "root". </font></p>
+    <p align="center"> <font face="Verdana, Arial, Helvetica, sans-serif"><img src="tree.gif" width="397" height="224"> 
+      </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> In the diagram above, 
+      we see that the directory <b>ee51ab</b> contains the subdirectory <b>unixstuff</b> 
+      and a file <b>proj.txt</b></font></p>
+  </blockquote>
+</blockquote>
+<hr size="1" noshade>
+<address><font face="Verdana, Arial, Helvetica, sans-serif"><b><font size="-1">M.Stonebank@surrey.ac.uk</font></b></font></address>
+<address><font size="-1"><b><font face="Verdana, Arial, Helvetica, sans-serif"> 
+&copy; 9th October 2000 </font></b></font></address>
+<p> 
+</body>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/trans1.3.3.html -->
+
+<HEAD>
+<TITLE>Did You Know?</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Did You Know?</H1>
+
+<P>Since an encoded file is an <A HREF="../glossary/ga.html#ascii">ASCII</A>
+file, you can <A HREF="../editors/index.html">edit</A> it
+to change the access permissions and file label.  The
+first line of an encoded file might be:</P>
+
+<PRE WIDTH=80>   begin 600 pictures.tar.Z
+</PRE>
+
+<P>The number 600 defines the 
+<A HREF="../tasks/permissions_num.html">access permissions</A> for the
+original file  - which the decoded file will also have.
+This is followed by the <EM>file_label</EM> to be used as the
+filename (<SAMP>pictures.tar.Z</SAMP>) for the decoded file.</P>
+
+<P>To change the access permissions edit the number 600 to
+something more appropriate such as 644 and then save the
+file. You can change the file label in the same way. For
+example:</P>
+
+<PRE WIDTH=80>   begin 644 from_mike.tar.Z
+</PRE>
+
+<P>The decoded file will now have the name 
+<SAMP>from_mike.tar.Z</SAMP> and everyone will be able to 
+<A HREF="../tables/access_permissions.html">read</A> it.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

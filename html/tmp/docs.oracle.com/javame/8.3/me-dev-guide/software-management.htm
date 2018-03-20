@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Software Management</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="dcterms.created" content="2016-07-12T02:30:24Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java ME Embedded Developer&rsquo;s Guide" />
+<meta name="dcterms.identifier" content="E73093-02" />
+<meta name="dcterms.isVersionOf" content="MEEDG" />
+<link rel="Start" href="../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Glossary" href="glossary.htm" title="Glossary" type="text/html" />
+<link rel="Prev" href="security.htm" title="Previous" type="text/html" />
+<link rel="Next" href="general-purpose-input-output.htm" title="Next" type="text/html" />
+<link rel="alternate" href="MEEDG.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="MEEDG.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="MEEDG.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../nav/css/html5.css">
+<link rel="stylesheet" href="../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-2263D95B-0746-4285-94C7-1E2166526504"></a> <span id="PAGE" style="display:none;">7/18</span> <!-- End Header --><a id="MEEDG321"></a>
+<h1 id="MEEDG-GUID-2263D95B-0746-4285-94C7-1E2166526504" class="sect1"><span class="enumeration_chapter">4</span> Software Management</h1>
+<div>
+<p>This chapter introduces the Software Management (SWM) APIs of the Java ME Embedded Profile (MEEP) version 8. These APIs provided extended software management features for Oracle Java ME Embedded applications, as given in the <code>javax.microedition.swm</code> package. There are five interfaces and six classes in this package that can be used by applications to enhance software management. In addition, there are a number of enumerations that are present in the package; these are documented near the classes and methods that use them throughout this chapter.</p>
+</div>
+<a id="MEEDG323"></a><a id="MEEDG322"></a>
+<div class="props_rev_3"><a id="GUID-45D2FF83-D471-41DA-848E-64F1A8BA5EA4"></a>
+<h2 id="MEEDG-GUID-45D2FF83-D471-41DA-848E-64F1A8BA5EA4" class="sect2">SuiteInstallListener Interface</h2>
+<div>
+<div class="section">
+<p><code>SuiteInstallListener</code> is a sub-interface that provides progress data for an installer that is downloading an app or a link.</p>
+<p>The interface consists of two methods, both of which are called at certain times during installation. One is the <code>installationDone()</code> method, which provides only a single code, the definitions of which can be found in the <code>InstallerErrorCode</code> interface. The other is the <code>updateStatus()</code> method, which identifies the current task as one of the <code>SuiteInstallStage</code> constants that are shown in <a href="software-management.htm#GUID-45D2FF83-D471-41DA-848E-64F1A8BA5EA4__BABEHCIA" title="Progress constants and descriptions.">Table 4-1</a>, and provides an integer percentage of completeness.</p>
+</div>
+<!-- class="section" -->
+<div class="tblformal" id="GUID-45D2FF83-D471-41DA-848E-64F1A8BA5EA4__BABEHCIA">
+<hr />
+<p class="titleintable">Table 4-1 SuiteInstallState</p>
+<table class="cellalignment8" title="SuiteInstallState" summary="Progress constants and descriptions.">
+<thead align="left">
+<tr>
+<th class="cellalignment20" id="d29163e70">Name</th>
+<th class="cellalignment21" id="d29163e73">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment20" id="d29163e78" headers="d29163e70">
+<p><code>DONE</code></p>
+</td>
+<td class="cellalignment21" headers="d29163e78 d29163e73">
+<p>Installation has completed</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment20" id="d29163e86" headers="d29163e70">
+<p><code>DOWNLOADING_BODY</code></p>
+</td>
+<td class="cellalignment21" headers="d29163e86 d29163e73">
+<p>Install stage: downloading application body.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment20" id="d29163e94" headers="d29163e70">
+<p><code>DOWNLOADING_DATA</code></p>
+</td>
+<td class="cellalignment21" headers="d29163e94 d29163e73">
+<p>Install stage: downloading additional application data.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment20" id="d29163e102" headers="d29163e70">
+<p><code>DOWNLOADING_DESCRIPTOR</code></p>
+</td>
+<td class="cellalignment21" headers="d29163e102 d29163e73">
+<p>Install stage: downloading application descriptor.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment20" id="d29163e110" headers="d29163e70">
+<p><code>STORING</code></p>
+</td>
+<td class="cellalignment21" headers="d29163e110 d29163e73">
+<p>Install stage: storing application.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment20" id="d29163e118" headers="d29163e70">
+<p><code>VERIFYING</code></p>
+</td>
+<td class="cellalignment21" headers="d29163e118 d29163e73">
+<p>Install stage: verifying downloaded content.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<div class="section">
+<p>Here are the two method defined in the <code>SuiteInstallListener</code> interface:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>void installationDone(int&nbsp;errorCode)</code></p>
+<p>This method is called by the installer to report that the installation has completed. The resulting integer code is contained in the <code>InstallerErrorCode</code> class. See <span class="q">"<a href="software-management.htm#GUID-57A33E2B-1DA9-4CE7-A935-196869EAD45F">InstallerErrorCode</a>"</span> for more information about installation error codes.</p>
+</li>
+<li>
+<p><code>void updateStatus(SuiteManagementTracker tracker, SuiteInstallStage&nbsp;status, int&nbsp;percent)</code></p>
+<p>This method is called by the installer to inform the listener of the current status of the install. The stage is given by an integer constant as shown in <a href="software-management.htm#GUID-45D2FF83-D471-41DA-848E-64F1A8BA5EA4__BABEHCIA" title="Progress constants and descriptions.">Table 4-1</a>. The percent is an integer between 0 and 100.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG324"></a>
+<div class="props_rev_3"><a id="GUID-4DD80B27-EAA1-471B-980E-B7265EB36D6D"></a>
+<h2 id="MEEDG-GUID-4DD80B27-EAA1-471B-980E-B7265EB36D6D" class="sect2">SuiteListener Interface</h2>
+<div>
+<div class="section">
+<p><code>SuiteListener</code> is an interface that provides a notification that the current state of a suite has changed.</p>
+<p>There is only one method defined in the <code>SuiteListener</code> interface:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>void notifySuiteStateChanged(SuiteManagementTracker tracker, SuiteState newState)</code></p>
+<p>This method is called to notify a listener that the current state of a suite has changed. A reference to the current <code>SuiteManagementTracker</code> is included, as well as an instance of <code>SuiteState</code>, which indicates the new state.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG325"></a>
+<div class="props_rev_3"><a id="GUID-C00F48B9-4865-4121-A11E-379434697161"></a>
+<h2 id="MEEDG-GUID-C00F48B9-4865-4121-A11E-379434697161" class="sect2">SuiteManager Interface</h2>
+<div>
+<div class="section">
+<p>The <code>SuiteManager</code> interface consists of only seven methods that add or remove suites, add or remove suite listeners, retrieve a list of the currently installed suites, or retrieve the current <code>SuiteInstaller</code>.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>void addSuiteListener(SuiteListener theListener)</code></p>
+<p>This method adds a <code>SuiteListener</code> object to the current <code>SuiteManager</code>.</p>
+</li>
+<li>
+<p><code>Suite getSuite(java.lang.String vendor, java.lang.String name)</code></p>
+<p>This method returns an instance of the currently installed <code>Suite</code>.</p>
+</li>
+<li>
+<p><code>SuiteInstaller getSuiteInstaller(byte[] instData, int offset, int length, boolean ignoreUpdateLock)</code></p>
+<p>This method returns the current SuiteInstaller.</p>
+</li>
+<li>
+<p><code>SuiteInstaller getSuiteInstaller(java.lang.String locationUrl, boolean ignoreUpdateLock)</code></p>
+<p>This method returns the current SuiteInstaller</p>
+</li>
+<li>
+<p><code>java.util.List&lt;Suite&gt; getSuites(SuiteType type)</code></p>
+<p>This method requests a list of installed suites of specified type.</p>
+</li>
+<li>
+<p><code>void removeSuite(Suite suite, boolean ignoreRemoveLock)</code></p>
+<p>This method removes a Suite.</p>
+</li>
+<li>
+<p><code>void removeSuiteListener(SuiteListener theListener)</code></p>
+<p>This method removes a SuiteListener.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG326"></a>
+<div class="props_rev_3"><a id="GUID-8F9004F2-EEDF-418C-8224-4114C7509A60"></a>
+<h2 id="MEEDG-GUID-8F9004F2-EEDF-418C-8224-4114C7509A60" class="sect2">TaskListener Interface</h2>
+<div>
+<div class="section">
+<p>The <code>TaskListener</code> interface is an interface used to receive updates about a task that is currently running.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>void notifyStatusUpdate(Task task, TaskStatus newStatus)</code></p>
+<p>This method is called when the current task has a new status update to report. The method passes a reference to the <code>Task</code> in question, as well as a <code>TaskStatus</code> object reporting the new status.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG327"></a>
+<div class="props_rev_3"><a id="GUID-19D5F6FD-099C-4A33-8DBA-E8D84DE291F2"></a>
+<h2 id="MEEDG-GUID-19D5F6FD-099C-4A33-8DBA-E8D84DE291F2" class="sect2">TaskManager Interface</h2>
+<div>
+<div class="section">
+<p>The <code>TaskManager</code> interface is an interface used to manage the tasks.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>void addTaskListener(TaskListener) throws SecurityException</code></p>
+<p>This method adds a <code>TaskListener</code>.</p>
+</li>
+<li>
+<p><code>Task getCurrentTask() throws SecurityException</code></p>
+<p>This method returns the current task that is running.</p>
+</li>
+<li>
+<p><code>java.util.List&lt;Task&gt; getTaskList(boolean includeSystem)</code></p>
+<p>This method obtains a list of Task objects. If system tasks are to be included, that can be specified with the boolean parameter.</p>
+</li>
+<li>
+<p><code>void removeTaskListener(TaskListener listener)</code></p>
+<p>This method removes a TaskListener.</p>
+</li>
+<li>
+<p><code>boolean setForegroundTask(Task task) throws java.lang.IllegalArgumentException</code></p>
+<p>This method assigns the specified task to be the currently running foreground task. A task is said to be in the foreground if the LUI API or another UI API is supported and the task is visible on the display, or if the Key API is supported and input device events will be delivered to it. If none of those packages is supported by the implementation, a call to this method has no effect.</p>
+</li>
+<li>
+<p><code>boolean setPriority(Task task, TaskPriority priority) throws java.lang.IllegalArgumentException</code></p>
+<p>Changes the priority for the given task. The method returns true if the change was successful, or false otherwise.</p>
+</li>
+<li>
+<p><code>Task startTask(Suite suite, String className) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException</code></p>
+<p>Starts a <code>Task</code> from the given class name in the given <code>Suite</code>. This method throws an exception if suite is a library and can therefore not be started. Calling this method schedules a new application execution. The new task is created with <code>TaskStatus.STARTING</code> on success or <code>TaskStatus.START_FAILED</code> on failure.</p>
+<p>More than one call to this method can be performed with the same arguments. In this case subsequent calls lead to attempts to re-start the task. In case of unsuccessful attempt to re-start the task, an appropriate exception is thrown or the corresponding state <code>TaskStatus.START_FAILED</code> is set to the returned task object.</p>
+</li>
+<li>
+<p><code>boolean stopTask(Task task)</code> throws java.lang.IllegalArgumentException, java.lang.IllegalStateException</p>
+<p>This method cancels an installation that is in progress. It returns true if the cancellation was successful, or false otherwise.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG328"></a>
+<div class="props_rev_3"><a id="GUID-984DB619-7813-4A1D-8F55-6E57A0FCB307"></a>
+<h2 id="MEEDG-GUID-984DB619-7813-4A1D-8F55-6E57A0FCB307" class="sect2">ManagerFactory Class</h2>
+<div>
+<div class="section">
+<p>The <code>ManagerFactory</code> class is a global factory that is used to obtain a <code>SuiteManager</code> or a <code>TaskManager</code> implementation.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>static SuiteManager getSuiteManager()</code></p>
+<p>This method returns an implementation of a <code>SuiteManager</code>.</p>
+</li>
+<li>
+<p><code>static TaskManager getTaskManager()</code></p>
+<p>This method returns an implementation of a <code>TaskManager</code>.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG330"></a><a id="MEEDG331"></a><a id="MEEDG329"></a>
+<div class="props_rev_3"><a id="GUID-8E817ED6-9F8B-4840-80C6-14457517EF8E"></a>
+<h2 id="MEEDG-GUID-8E817ED6-9F8B-4840-80C6-14457517EF8E" class="sect2">The Suite Class</h2>
+<div>
+<div class="section">
+<p>All IMlet suites maintain a basic set of identification and state information that acts as a <span class="italic">descriptor</span>. This descriptor is represented by the <code>Suite</code> class.</p>
+<p>Suites can be one of four types, presented in the <code>SuiteType</code> enumeration, and shown in <a href="software-management.htm#GUID-8E817ED6-9F8B-4840-80C6-14457517EF8E__BABDIDAE" title="Suite types and descriptions.">Table 4-2</a>:</p>
+</div>
+<!-- class="section" -->
+<div class="tblformal" id="GUID-8E817ED6-9F8B-4840-80C6-14457517EF8E__BABDIDAE">
+<hr />
+<p class="titleintable">Table 4-2 SuiteType Enumeration</p>
+<table class="cellalignment8" title="SuiteType Enumeration" summary="Suite types and descriptions.">
+<thead align="left">
+<tr>
+<th class="cellalignment11" id="d29163e495">Suite Type</th>
+<th class="cellalignment12" id="d29163e498">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment11" id="d29163e503" headers="d29163e495">
+<p><code>ST_APPLICATION</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e503 d29163e498">
+<p>The suite contains one or more MIDlets with an entry point that can be executed.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e511" headers="d29163e495">
+<p><code>ST_LIBRARY</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e511 d29163e498">
+<p>The suite is a library that can be used by one or more applications.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e519" headers="d29163e495">
+<p><code>ST_SYSTEM</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e519 d29163e498">
+<p>The suite is a system-level application.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e527" headers="d29163e495">
+<p><code>ST_INVALID</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e527 d29163e498">
+<p>The suite is invalid and cannot be found or executed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<div class="section">
+<p>In addition, suites contain binary flags that describe their state, presented in the <code>SuiteStateFlag</code> enumeration, and shown in <a href="software-management.htm#GUID-8E817ED6-9F8B-4840-80C6-14457517EF8E__BABDAIDE" title="AMS Suite States and descriptions.">Table 4-3</a>:</p>
+</div>
+<!-- class="section" -->
+<div class="tblformal" id="GUID-8E817ED6-9F8B-4840-80C6-14457517EF8E__BABDAIDE">
+<hr />
+<p class="titleintable">Table 4-3 SuiteStageFlag Enumeration</p>
+<table class="cellalignment8" title="SuiteStageFlag Enumeration" summary="AMS Suite States and descriptions.">
+<thead align="left">
+<tr>
+<th class="cellalignment11" id="d29163e555">State</th>
+<th class="cellalignment12" id="d29163e558">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment11" id="d29163e563" headers="d29163e555">
+<p><code>AVAILABLE</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e563 d29163e558">
+<p>The suite is available for use.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e571" headers="d29163e555">
+<p><code>ENABLED</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e571 d29163e558">
+<p>The suite is enabled. When a suite is disabled, any attempt to run application or use a library from this suite should fail.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e579" headers="d29163e555">
+<p><code>SYSTEM</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e579 d29163e558">
+<p>The suite is a system-level suite.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e587" headers="d29163e555">
+<p><code>PREINSTALLED</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e587 d29163e558">
+<p>The suite is a system-level suite that cannot be updated.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e595" headers="d29163e555">
+<p><code>REMOVE_DENIED</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e595 d29163e558">
+<p>The suite should not be removed.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment11" id="d29163e603" headers="d29163e555">
+<p><code>UPDATE_DENIED</code></p>
+</td>
+<td class="cellalignment12" headers="d29163e603 d29163e558">
+<p>The suite should not be updated.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<div class="section">
+<p>The following are method present in the <code>Suite</code> class.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>java.lang.String getName()</code></p>
+<p>This method returns the name for the given suite.</p>
+</li>
+<li>
+<p><code>java.lang.String getVendor()</code></p>
+<p>This method returns the vendor for the given suite.</p>
+</li>
+<li>
+<p><code>java.lang.String getVersion()</code></p>
+<p>This method returns the version of the given suite.</p>
+</li>
+<li>
+<p><code>java.lang.String getDownloadUrl()</code></p>
+<p>This method returns the URL that the JAD or JAR was downloaded from.</p>
+</li>
+<li>
+<p><code>java.util.Iteration&lt;String&gt; getAttributes()</code></p>
+<p>This method returns a <code>String</code> array that provides the names of the available properties. The properties returned are those from the JAD file and the manifest combined into a single array.</p>
+</li>
+<li>
+<p><code>java.lang.String getAttributeValue(String name)</code></p>
+<p>This method retrieves the value for the respective attribute name.</p>
+</li>
+<li>
+<p><code>SuiteType getSuiteType()</code></p>
+<p>This method returns the suite type. See <a href="software-management.htm#GUID-8E817ED6-9F8B-4840-80C6-14457517EF8E__BABDIDAE" title="Suite types and descriptions.">Table 4-2</a> for more information.</p>
+</li>
+<li>
+<p><code>public boolean isSuiteState(SuiteStateFlag state)</code></p>
+<p>This method checks the current state boolean to see if it is true.</p>
+</li>
+<li>
+<p><code>public void setSuiteStateFlag(SuiteStateFlag state, boolean value) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.SecurityException</code></p>
+<p>This method sets the specified flag to the specified value. If a <code>Suite</code> has been created, <code>SuiteStateFlag.ENABLED</code> and <code>SuiteStateFlag.AVAILABLE</code> are always set to <code>true</code>, while <code>SuiteStateFlag.REMOVE_DENIED</code> and <code>SuiteStateFlag.UPDATE_DENIED</code> are set to <code>false</code>. These states can be changed by calling this method. The <code>SuiteStateFlag.SYSTEM</code> and <code>SuiteStateFlag.PREINSTALLED</code> flags are only set for system suites or pre-installed suites, respectively, and cannot be unset or set by this method. To be able to set suite flags, caller application should request <code>javax.microedition.swm.SWMPermission("client", "manageSuite")</code> or <code>javax.microedition.swm.SWMPermission ("crossClient", "manageSuite")</code> permission. See <code>SWMPermission</code> for more details.</p>
+</li>
+<li>
+<p><code>public java.util.Iterator&lt;java.lang.String&gt; getMIDlets()</code></p>
+<p>This method returns a list of the applications (application class names) in this suite. The first application in the enumeration is the default application as specified in the <code>MIDlet-1</code> field of the descriptor.</p>
+</li>
+<li>
+<p><code>public java.util.Iterator&lt;Suite&gt; getDependencies()</code></p>
+<p>This method returns a list of the shared libraries this <code>Suite</code> depends on</p>
+</li>
+<li>
+<p><code>public boolean isTrusted()</code></p>
+<p>Checks if this <code>Suite</code> is trusted or not. The return value is always true if it is a <code>SYSTEM_SUITE</code>.</p>
+</li>
+<li>
+<p><code>public boolean isInstalled()</code></p>
+<p>Checks if this <code>Suite</code> is still installed or has been removed.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG332"></a>
+<div class="props_rev_3"><a id="GUID-F45FFEF2-B849-4336-A295-D91492050B73"></a>
+<h2 id="MEEDG-GUID-F45FFEF2-B849-4336-A295-D91492050B73" class="sect2">SuiteInstaller Class</h2>
+<div>
+<div class="section">
+<p>The <code>ManagerFactory</code> class is a global factory that is used to obtain a <code>SuiteManager</code> or a <code>TaskManager</code> implementation.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>void addInstallationListener(SuiteInstallListener listener)</code></p>
+<p>This method adds a <code>SuiteInstallListener</code> to this suite installer</p>
+</li>
+<li>
+<p><code>void removeInstallationListener(SuiteInstallationListener listener)</code></p>
+<p>This method removes a <code>SuiteInstallListener</code> to this suite installer.</p>
+</li>
+<li>
+<p><code>SuiteManagementTracker start()</code></p>
+<p>This method starts installation of the suite. The installation can be the first installation of this suite, or a re-installation (update) of a suite that had been installed before. A <code>SuiteInstallListener</code> must be added in order to handle callback requests.This method returns an instance of <code>SuiteManagementTracker</code>; the caller can observe the progress of the installation via the <code>SuiteInstallListener</code> added. Please note that the method may not return quickly. Depending on the provisioning mechanism used in the implementation of MEEP 8, it may be necessary to download the entire JAR data first in order to inspect the manifest of the application suite in order to find out whether this is a new installation or an update of an existing application suite. Depending on the network connection, this may take some time.In case the previous attempt to install this suite (initiated by a previous call of the <code>start()</code> method) has not been finished at the time the new call takes place, the call is queued and the new attempt to install (in case the first one failed) or the re-installation (in case the first call was successful), respectively, starts as soon as the first installation attempt or installation has been finished.A new instance of <code>SuiteManagementTracker</code> will be created for every call to this method and assigned to the <code>Suite</code> to be installed as soon as the installation has been completed successfully. In case of an update of an existing <code>Suite</code>, the <code>SuiteManagementTracker</code> instance is assigned to the existing <code>Suite</code> object from the beginning.If the initiating application does not have the right <code>SWMPermission</code>, the installation will fail with <code>InstallErrorCodes.UNAUTHORIZED_INSTALL</code>.</p>
+</li>
+<li>
+<p><code>void cancel()</code></p>
+<p>Begins installation of the suite.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG333"></a>
+<div class="props_rev_3"><a id="GUID-A1BC2E06-6B69-40AD-9A89-137357AB77E0"></a>
+<h2 id="MEEDG-GUID-A1BC2E06-6B69-40AD-9A89-137357AB77E0" class="sect2">SuiteManagementTracker Class</h2>
+<div>
+<div class="section">
+<p>An instance of this class is generated as soon as an installation or update of a <code>Suite</code> is started using <code>SuiteInstaller.start()</code>. Invoking that method creates a new tracker instance. Whether two trackers refer to the same <code>Suite</code> can be found out by calling <code>getSuite()</code> for both and compare the returned <code>Suite</code> instances. The tracker instance created for a management operation is passed to any call of <code>SuiteListener.notifySuiteStateChanged()</code> in order to inform about the progress of this operation.</p>
+<p>For the installation of a new <code>Suite</code>, as long as the installation hasn't been successfully completed, an instance of <code>SuiteManagementTracker</code> is not assigned to any <code>Suite</code> instance yet, as it does not exit yet. In these cases, a call to <code>getSuite()</code> returns <code>null</code>. In case of an update, the tracker is assigned to the existing <code>Suite</code> from the beginning, though.</p>
+<p>This class has one method.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>Suite getSuite()</code></p>
+<p>This method returns the <code>Suite</code> that this tracker is assigned to, if the installation has completed successfully</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG334"></a>
+<div class="props_rev_3"><a id="GUID-5EE0B845-9160-4E94-9052-38FBC43BF668"></a>
+<h2 id="MEEDG-GUID-5EE0B845-9160-4E94-9052-38FBC43BF668" class="sect2">SWMPermission Class</h2>
+<div>
+<div class="section">
+<p>The <code>SWMPermission</code> provides permission handling for SWM API permissions. An <code>SWMPermission</code> object contains a scope and actions. The scope is the scope of the permission. Valid scopes are "<code>client</code>" stands for permission to perform the listed actions only for applications assigned to the same Client. "<code>crossClient</code>" stands for permission to perform the listed actions also for applications assigned to other Clients. Usually this is a permission reserved for the Root Client. Granting this permissions to other Clients should be figured out well in order to avoid security breaches.The actions to be granted are passed to the constructor in a non-empty string, containing a list of comma-separated keywords. Trailing and leading white spaces as well as those between the keywords and commas in the list are not allowed and lead to an <code>IllegalArgumentException</code>. The possible values can be seen in this table in the Security Policy Provider chapter of the spec. The actions string is converted to lowercase before processing.</p>
+<p>This class has one constructor and several methods.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>SWMPermission(java.lang.String scope, java.lang.String actions)</code></p>
+<p>This method creates a new <code>SWMPermission</code> object with the specified name and actions.</p>
+</li>
+<li>
+<p><code>public boolean implies(java.security.Permission p)</code></p>
+<p>This method checks if the specified permission is "implied" by this object.</p>
+</li>
+<li>
+<p><code>String getActions()</code></p>
+<p>This method returns the permitted actions of this <code>Permission</code> as a comma separated list in alphabetical order.</p>
+</li>
+<li>
+<p><code>java.security.PermissionCollection newPermissionCollection()</code></p>
+<p>This method creates a new <code>SWMPermissionCollection</code>.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG335"></a>
+<div class="props_rev_3"><a id="GUID-93690BC7-26B0-41E8-8260-DE1350FC2A59"></a>
+<h2 id="MEEDG-GUID-93690BC7-26B0-41E8-8260-DE1350FC2A59" class="sect2">Task Class</h2>
+<div>
+<div class="section">
+<p>The <code>Task</code> class is, in effect, a simple task descriptor. A <code>Task</code> is the abstraction of the execution of an application (see <code>javax.microedition.midlet.MIDlet</code>). Tasks are started using the <code>TaskManager.startTask()</code> method, where the arguments specify the application suite and the class within the suite being the starting point of the application. Starting a new task attempts to execute corresponding application. A task has a status, as described in the <code>TaskStatus</code> enumeration, that describes corresponding application lifecycle state. A task has a priority with possible values as described in <code>TaskPriority</code>. Depending on whether the implementation supports multiple VMs, several tasks can run in parallel.There are special tasks called system tasks. Those tasks cannot be started or stopped via this API, but are started by the system. The <code>isSystemTask()</code> method can be used to find out whether a task is a considered a system task.</p>
+<p>The <code>Task</code> class contains the following methods.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>String getName()</code></p>
+<p>This is a convenience method for returning the name of the task. The returned string is the name of the application running in this task.</p>
+</li>
+<li>
+<p><code>TaskPriority getPriority()</code></p>
+<p>This method returns the priority of given task.</p>
+</li>
+<li>
+<p><code>public int getHeapUse()</code></p>
+<p>This method returns the heap use of given task.</p>
+</li>
+<li>
+<p><code>public TaskStatus getStatus()</code></p>
+<p>This method returns the task's status.</p>
+</li>
+<li>
+<p><code>public Suite getSuite()</code></p>
+<p>This method returns the suite information this task executed from.</p>
+</li>
+<li>
+<p><code>public boolean isSystemTask()</code></p>
+<p>This method returns a boolean indicating whether a task is a system task.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG337"></a><a id="MEEDG336"></a>
+<div class="props_rev_3"><a id="GUID-57A33E2B-1DA9-4CE7-A935-196869EAD45F"></a>
+<h2 id="MEEDG-GUID-57A33E2B-1DA9-4CE7-A935-196869EAD45F" class="sect2">InstallerErrorCode</h2>
+<div>
+<div class="section">
+<p>The <code>InstallerErrorCode</code> provides several constants used by the installation routines. These constants are shown in <a href="software-management.htm#GUID-57A33E2B-1DA9-4CE7-A935-196869EAD45F__BABBDAJC" title="Error codes from the command ams-install on the AMS command line interface.">Table 4-4</a>.</p>
+</div>
+<!-- class="section" -->
+<div class="tblformal" id="GUID-57A33E2B-1DA9-4CE7-A935-196869EAD45F__BABBDAJC">
+<hr />
+<p class="titleintable">Table 4-4 Installer Error Codes</p>
+<table class="cellalignment8" title="Installer Error Codes" summary="Error codes from the command ams-install on the AMS command line interface.">
+<thead align="left">
+<tr>
+<th class="cellalignment22" id="d29163e1120">Constant</th>
+<th class="cellalignment23" id="d29163e1123">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment22" id="d29163e1128" headers="d29163e1120">
+<p><code>ALREADY_INSTALLED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1128 d29163e1123">
+<p>The JAD matches a version of a suite already installed.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1136" headers="d29163e1120">
+<p><code>APP_INTEGRITY_FAILURE_DEPENDENCY_CONFLICT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1136 d29163e1123">
+<p>Application Integrity Failure: two or more dependencies exist on the component with the same name and vendor, but have different versions or hashs.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1144" headers="d29163e1120">
+<p><code>APP_INTEGRITY_FAILURE_DEPENDENCY_MISMATCH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1144 d29163e1123">
+<p>Application Integrity Failure: there is a component name or vendor mismatch between the component JAD and IMlet or component JAD that depends on it.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1152" headers="d29163e1120">
+<p><code>APP_INTEGRITY_FAILURE_HASH_MISMATCH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1152 d29163e1123">
+<p>Application Integrity Failure: hash mismatch.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1160" headers="d29163e1120">
+<p><code>ATTRIBUTE_MISMATCH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1160 d29163e1123">
+<p>A attribute in both the JAD and JAR manifest does not match.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1168" headers="d29163e1120">
+<p><code>AUTHORIZATION_FAILURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1168 d29163e1123">
+<p>Application authorization failure, possibly indicating that the application was not digitally signed.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1176" headers="d29163e1120">
+<p><code>CA_DISABLED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1176 d29163e1123">
+<p>Indicates that the trusted certificate authority (CA) for this suite has been disabled for software authorization.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1184" headers="d29163e1120">
+<p><code>CANCELED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1184 d29163e1123">
+<p>Canceled by user.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1192" headers="d29163e1120">
+<p><code>CANNOT_AUTH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1192 d29163e1123">
+<p>The server does not support basic authentication.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1200" headers="d29163e1120">
+<p><code>CIRCULAR_COMPONENT_DEPENDENCY</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1200 d29163e1123">
+<p>Circular dynamic component dependency.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1208" headers="d29163e1120">
+<p><code>COMPONENT_DEPS_LIMIT_EXCEEDED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1208 d29163e1123">
+<p>Dynamic component dependencies limit exceeded.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1217" headers="d29163e1120">
+<p><code>CONTENT_HANDLER_CONFLICT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1217 d29163e1123">
+<p>The installation of a content handler would conflict with an already installed handler.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1225" headers="d29163e1120">
+<p><code>CORRUPT_DEPENDENCY_HASH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1225 d29163e1123">
+<p>A dependency has a corrupt hash code.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1233" headers="d29163e1120">
+<p><code>CORRUPT_JAR</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1233 d29163e1123">
+<p>An entry could not be read from the JAR.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1241" headers="d29163e1120">
+<p><code>CORRUPT_PROVIDER_CERT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1241 d29163e1123">
+<p>The content provider certificate cannot be decoded.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1249" headers="d29163e1120">
+<p><code>CORRUPT_SIGNATURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1249 d29163e1123">
+<p>The JAR signature cannot be decoded.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1257" headers="d29163e1120">
+<p><code>DEVICE_INCOMPATIBLE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1257 d29163e1123">
+<p>The device does not support either the configuration or profile in the JAD.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1265" headers="d29163e1120">
+<p><code>DUPLICATED_KEY</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1265 d29163e1123">
+<p>Duplicated JAD/manifest key attribute</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1273" headers="d29163e1120">
+<p><code>EXPIRED_CA_KEY</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1273 d29163e1123">
+<p>The certificate authority's public key has expired.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1281" headers="d29163e1120">
+<p><code>EXPIRED_PROVIDER_CERT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1281 d29163e1123">
+<p>The content provider certificate has expired.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1289" headers="d29163e1120">
+<p><code>INSUFFICIENT_STORAGE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1289 d29163e1123">
+<p>Not enough storage for this suite to be installed.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1297" headers="d29163e1120">
+<p><code>INVALID_CONTENT_HANDLER</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1297 d29163e1123">
+<p>The <code>MicroEdition-Handler-</code><span class="italic">&lt;n&gt;</span> JAD attribute has invalid values.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1311" headers="d29163e1120">
+<p><code>INVALID_JAD_TYPE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1311 d29163e1123">
+<p>The server did not have a resource with the correct type or the JAD downloaded has the wrong media type.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1319" headers="d29163e1120">
+<p><code>INVALID_JAD_URL</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1319 d29163e1123">
+<p>The JAD URL is invalid.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1327" headers="d29163e1120">
+<p><code>INVALID_JAR_TYPE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1327 d29163e1123">
+<p>The server did not have a resource with the correct type or the JAR downloaded has the wrong media type.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1335" headers="d29163e1120">
+<p><code>INVALID_JAR_URL</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1335 d29163e1123">
+<p>The JAR URL is invalid.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1343" headers="d29163e1120">
+<p><code>INVALID_KEY</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1343 d29163e1123">
+<p>A key for an attribute is not formatted correctly.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1351" headers="d29163e1120">
+<p><code>INVALID_NATIVE_LIBRARY</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1351 d29163e1123">
+<p>A native library contained within the JAR cannot be loaded.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1359" headers="d29163e1120">
+<p><code>INVALID_PAYMENT_INFO</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1359 d29163e1123">
+<p>Indicates that the payment information provided with the IMlet suite is incomplete or incorrect.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1367" headers="d29163e1120">
+<p><code>INVALID_PROVIDER_CERT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1367 d29163e1123">
+<p>The signature of the content provider certificate is invalid.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1375" headers="d29163e1120">
+<p><code>INVALID_SIGNATURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1375 d29163e1123">
+<p>The signature of the JAR is invalid.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1383" headers="d29163e1120">
+<p><code>INVALID_VALUE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1383 d29163e1123">
+<p>A value for an attribute is not formatted correctly.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1391" headers="d29163e1120">
+<p><code>INVALID_VERSION</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1391 d29163e1123">
+<p>The format of the version is invalid.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1400" headers="d29163e1120">
+<p><code>JAD_MOVED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1400 d29163e1123">
+<p>The JAD URL for an installed suite is different than the original JAD URL.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1408" headers="d29163e1120">
+<p><code>JAD_NOT_FOUND</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1408 d29163e1123">
+<p>The JAD was not found.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1416" headers="d29163e1120">
+<p><code>JAD_SERVER_NOT_FOUND</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1416 d29163e1123">
+<p>The server for the JAD was not found.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1424" headers="d29163e1120">
+<p><code>JAR_CLASSES_VERIFICATION_FAILED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1424 d29163e1123">
+<p>Not all classes within JAR package can be successfully verified with class verifier.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1432" headers="d29163e1120">
+<p><code>JAR_IS_LOCKED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1432 d29163e1123">
+<p>Component or MIDlet or IMlet suite is locked by the system.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1440" headers="d29163e1120">
+<p><code>JAR_NOT_FOUND</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1440 d29163e1123">
+<p>The JAR was not found at the URL given in the JAD.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1448" headers="d29163e1120">
+<p><code>JAR_SERVER_NOT_FOUND</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1448 d29163e1123">
+<p>The server for the JAR was not found at the URL given in the JAD.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1456" headers="d29163e1120">
+<p><code>JAR_SIZE_MISMATCH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1456 d29163e1123">
+<p>The JAR downloaded was not the same size as given in the JAD.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1464" headers="d29163e1120">
+<p><code>MISSING_CONFIGURATION</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1464 d29163e1123">
+<p>The configuration is missing from the manifest.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1472" headers="d29163e1120">
+<p><code>MISSING_DEPENDENCY_HASH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1472 d29163e1123">
+<p>A dependency hash code is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1480" headers="d29163e1120">
+<p><code>MISSING_DEPENDENCY_JAD_URL</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1480 d29163e1123">
+<p>A dependency JAD URL is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1489" headers="d29163e1120">
+<p><code>MISSING_JAR_SIZE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1489 d29163e1123">
+<p>The JAR size is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1497" headers="d29163e1120">
+<p><code>MISSING_JAR_URL</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1497 d29163e1123">
+<p>The URL for the JAR is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1505" headers="d29163e1120">
+<p><code>MISSING_PROFILE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1505 d29163e1123">
+<p>The profile is missing from the manifest.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1513" headers="d29163e1120">
+<p><code>MISSING_PROVIDER_CERT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1513 d29163e1123">
+<p>The content provider certificate is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1521" headers="d29163e1120">
+<p><code>MISSING_SUITE_NAME</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1521 d29163e1123">
+<p>The name of MIDlet or IMlet suite is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1529" headers="d29163e1120">
+<p><code>MISSING_VENDOR</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1529 d29163e1123">
+<p>The vendor is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1537" headers="d29163e1120">
+<p><code>MISSING_VERSION</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1537 d29163e1123">
+<p>The version is missing.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1545" headers="d29163e1120">
+<p><code>NEW_VERSION</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1545 d29163e1123">
+<p>This suite is newer that the one currently installed.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1553" headers="d29163e1120">
+<p><code>NO_ERROR</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1553 d29163e1123">
+<p>No error.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1561" headers="d29163e1120">
+<p><code>OLD_VERSION</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1561 d29163e1123">
+<p>This suite is older that the one currently installed.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1569" headers="d29163e1120">
+<p><code>OTHER_ERROR</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1569 d29163e1123">
+<p>Other errors.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1578" headers="d29163e1120">
+<p><code>PROXY_AUTH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1578 d29163e1123">
+<p>Indicates that the user must first authenticate with the proxy.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1586" headers="d29163e1120">
+<p><code>PUSH_CLASS_FAILURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1586 d29163e1123">
+<p>The class in a push attribute is not in <code>MIDlet-</code><span class="italic">&lt;n&gt;</span> attribute.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1599" headers="d29163e1120">
+<p><code>PUSH_DUP_FAILURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1599 d29163e1123">
+<p>The connection in a push entry is already taken.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1607" headers="d29163e1120">
+<p><code>PUSH_FORMAT_FAILURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1607 d29163e1123">
+<p>The format of a push attribute has an invalid format.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1615" headers="d29163e1120">
+<p><code>PUSH_PROTO_FAILURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1615 d29163e1123">
+<p>The connection in a push attribute is not supported.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1623" headers="d29163e1120">
+<p><code>REVOKED_CERT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1623 d29163e1123">
+<p>The certificate has been revoked.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1631" headers="d29163e1120">
+<p><code>RMS_INITIALIZATION_FAILURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1631 d29163e1123">
+<p>Failure to import RMS data.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1639" headers="d29163e1120">
+<p><code>SUITE_NAME_MISMATCH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1639 d29163e1123">
+<p>The MIDlet or IMlet suite name does not match the one in the JAR manifest.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1647" headers="d29163e1120">
+<p><code>TOO_MANY_PROPS</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1647 d29163e1123">
+<p>Indicates that either the JAD or manifest has too many properties to fit into memory.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1655" headers="d29163e1120">
+<p><code>TRUSTED_OVERWRITE_FAILURE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1655 d29163e1123">
+<p>Indicates that the user tried to overwrite a trusted suite with an untrusted suite during an update.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1663" headers="d29163e1120">
+<p><code>UNAUTHORIZED</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1663 d29163e1123">
+<p>Web server authentication failed or is required.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1672" headers="d29163e1120">
+<p><code>UNKNOWN_CA</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1672 d29163e1123">
+<p>The certificate authority (CA) that issued the content provider certificate is unknown.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1680" headers="d29163e1120">
+<p><code>UNKNOWN_CERT_STATUS</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1680 d29163e1123">
+<p>The certificate is unknown to OCSP server.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1688" headers="d29163e1120">
+<p><code>UNSUPPORTED_CERT</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1688 d29163e1123">
+<p>The content provider certificate has an unsupported version.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1696" headers="d29163e1120">
+<p><code>UNSUPPORTED_CHAR_ENCODING</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1696 d29163e1123">
+<p>Indicates that the character encoding specified in the MIME type is not supported.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1704" headers="d29163e1120">
+<p><code>UNSUPPORTED_PAYMENT_INFO</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1704 d29163e1123">
+<p>Indicates that the payment information provided with the MIDlet or IMlet suite is incompatible with the current implementation.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1712" headers="d29163e1120">
+<p><code>UNTRUSTED_PAYMENT_SUITE</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1712 d29163e1123">
+<p>Indicates that the MIDlet or IMlet suite has payment provisioning information but it is not trusted.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1720" headers="d29163e1120">
+<p><code>VENDOR_MISMATCH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1720 d29163e1123">
+<p>The vendor does not match the one in the JAR manifest.</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment22" id="d29163e1728" headers="d29163e1120">
+<p><code>VERSION_MISMATCH</code></p>
+</td>
+<td class="cellalignment23" headers="d29163e1728 d29163e1123">
+<p>The version does not match the one in the JAR manifest.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" --></div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment1">
+<tr>
+<td class="cellalignment16">
+<table class="cellalignment6">
+<tr>
+<td class="cellalignment5"><a href="security.htm"><img width="24" height="24" src="../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment5"><a href="general-purpose-input-output.htm"><img width="24" height="24" src="../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2012, 2016, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment18">
+<table class="cellalignment4">
+<tr>
+<td class="cellalignment5"><a href="../index.html"><img width="24" height="24" src="../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment5"><a href="toc.htm"><img width="24" height="24" src="../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment5"><a href="../dcommon/html/feedback.htm"><img width="24" height="24" src="../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

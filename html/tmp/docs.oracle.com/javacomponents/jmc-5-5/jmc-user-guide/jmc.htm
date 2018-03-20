@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<title>Using the Java Mission Control Client</title>
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Merged Version 1044" />
+<meta name="description" content="This chapter describes how to start the JMC client and use its features." />
+<meta name="dcterms.created" content="2015-02-23T11:19:34Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Java Mission Control User's Guide" />
+<meta name="dcterms.identifier" content="E28023-06" />
+<meta name="dcterms.isVersionOf" content="JMCCI" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="intro.htm" title="Previous" type="text/html" />
+<link rel="Next" href="accessibility.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JMCCI.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JMCCI.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JMCCI.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<span id="PAGE" style="display:none;">5/9</span> <!-- End Header -->
+<div id="JMCCI111" class="chapter"><a id="CHDJJIEJ"></a>
+<h1 class="chapter"><span class="secnum">2</span> Using the Java Mission Control Client</h1>
+<p><a id="JMCCI112"></a>This chapter describes how to start the JMC client and use its features.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+Java Mission Control requires a commercial license for use in production. To learn more about commercial features and how to enable them please visit <code dir="ltr"><a href="http://www.oracle.com/technetwork/java/javaseproducts/">http://www.oracle.com/technetwork/java/javaseproducts/</a></code>.</div>
+<p>The JMC client is the main application from which you connect to JVMs and start the tools included in Java Mission Control. You can run the JMC client either as a standalone application or as an Eclipse plug-in. Ensure that you run the JMC client in a secure environment, because it does not include or run with a security manager.</p>
+<a id="A132179453"></a>
+<div id="JMCCI113" class="sect1">
+<h2 class="sect1"><span class="secnum">2.1</span> Starting the Java Mission Control Client</h2>
+<p>The JMC client executable file is located in the <code dir="ltr">bin</code> directory of the Java SE Development Kit (JDK) installation path (<code dir="ltr">JAVA_HOME</code>). If the <code dir="ltr">JAVA_HOME/bin</code> directory is in the <code dir="ltr">PATH</code> environment variable, you can start the JMC client by entering <code dir="ltr">jmc</code> at the command-line prompt (shell). Otherwise, you have to specify the full path to the JMC executable:</p>
+<ul>
+<li>
+<p><code dir="ltr">JAVA_HOME\bin\jmc.exe</code> (Windows)</p>
+</li>
+<li>
+<p><code dir="ltr">JAVA_HOME/bin/jmc</code> (Linux, OS X)</p>
+</li>
+</ul>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+On Windows, a shortcut to the JMC client executable is added to the <span class="bold">Java Development Kit</span> folder under <span class="bold">All Programs</span> in the <span class="bold">Start</span> menu.</div>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+On OS X, if you cannot find the JMC executable or locate JMC in Spotlight, you can start JMC from the command line using <code dir="ltr">/Library/Java/JavaVirtualMachines/jdk&lt;</code><span class="italic">version</span><code dir="ltr">&gt;.jdk/Contents/Home/bin/jmc</code>. Alternatively, use Finder to browse to <code dir="ltr">/Library/Java/JavaVirtualMachines/jdk&lt;</code><span class="italic">version</span><code dir="ltr">&gt;.jdk/Contents/Home/lib/missioncontrol</code> and double-click the Java Mission Control app.</div>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+On OS X, when you launch the JMC executable, the Terminal window opens. When you close the JMC client, the Terminal is left behind with the text <code dir="ltr">[Process completed]</code>. To avoid this, open the Terminal <span class="bold">Preferences</span>, then open the <span class="bold">Settings</span> tab, select the scheme you use, then select the <span class="bold">Shell</span> tab, and change the <span class="bold">When the shell exits</span> option to <span class="bold">Close if the shell exited cleanly</span>.</div>
+<p class="subhead2"><a id="JMCCI114"></a>Passing JVM Options To the JMC Launcher</p>
+<p>JMC is a Java application, and the JMC client executable is a launcher for this application. JMC startup is controlled by options specified in the <code dir="ltr">jmc.ini</code> file, which is located in the <code dir="ltr">JAVA_HOME/bin</code> directory. Arguments to the <code dir="ltr">-vmargs</code> option in the <code dir="ltr">jmc.ini</code> file are options that are passed to the JVM running the JMC application. You can specify these options to control the way this JVM runs. If you do not want to modify the <code dir="ltr">jmc.ini</code> file, you can specify JVM options on the command line as arguments to the <code dir="ltr">-vmargs</code> option of the <code dir="ltr">jmc</code> command.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+If other options are specified for the <code dir="ltr">jmc</code> command, the <code dir="ltr">-vmargs</code> option must be specified last.</div>
+<p>To start the JMC client with your own set of JVM options (overriding those specified in the <code dir="ltr">jmc.ini</code> file), run the following command (separate multiple arguments with spaces):</p>
+<p class="synopsis">jmc -vmarg <span class="italic">arguments</span></p>
+<pre dir="ltr">
+</pre>
+<p>To start the JMC client with additional JVM options (appending them to those specified in the <code dir="ltr">jmc.ini</code> file), run the following command (separate multiple arguments with spaces):</p>
+<p class="synopsis">jmc --launcher.appendVmargs -vmarg <span class="italic">arguments</span></p>
+<pre dir="ltr">
+</pre>
+<p class="subhead2"><a id="JMCCI115"></a>Using a Workspace Directory</p>
+<p>If you want to copy your settings for the JMC client to another computer or another user, or use different predefined settings for different applications, add the <code dir="ltr">-data</code> command-line option and define a <span class="italic">workspace directory</span> when you start the JMC client:</p>
+<p class="synopsis">jmc -data <span class="italic">workspace-directory</span></p>
+<pre dir="ltr">
+</pre></div>
+<!-- class="sect1" -->
+<div id="JMCCI116" class="sect1"><!-- infolevel="all" infotype="General" --><a id="sthref10"></a>
+<h2 class="sect1"><span class="secnum">2.2</span> Java Mission Control Client GUI</h2>
+<p>When you first launch the JMC client, the left part of the window contains two views by default:</p>
+<ul>
+<li>
+<p><span class="italic">JVM Browser</span> is the plug-in that shows all available JVM connections.</p>
+</li>
+<li>
+<p><span class="italic">Event Types</span> contains a list of event types for a selected flight recording. For information about opening a flight recording, see the Java Flight Recorder plug-in section of the online help.</p>
+</li>
+</ul>
+<p>You can open the <span class="bold">Window</span> menu, select <span class="bold">Show View</span> and then <span class="bold">Other</span> to open a window that lists all available views. Select the necessary views and click <span class="bold">OK</span> to open them. The following views are available in addition to the default ones:</p>
+<ul>
+<li>
+<p><span class="italic">Properties</span> lists the properties of items that you select in tables, including hidden properties that are not displayed in the tables.</p>
+</li>
+<li>
+<p><span class="italic">Progress View</span> displays the progress of running operations, for example, a flight recording.</p>
+</li>
+<li>
+<p><span class="italic">Help</span> displays the Java Mission Control online help.</p>
+</li>
+</ul>
+<p>The other part of the JMC client window is reserved for the Editor Area, which is used to work with the plug-ins for available JVM connections. To launch a plug-in, right-click a JVM connection and select the plug-in (<span class="bold">Start JMX Console</span>, <span class="bold">Open Historical Data</span>, <span class="bold">Start Flight Recording</span>, etc.).</p>
+<div id="JMCCI117" class="sect2"><!-- infolevel="all" infotype="General" --><a id="sthref11"></a>
+<h3 class="sect2"><span class="secnum">2.2.1</span> Tabs and Tab Groups</h3>
+<p>Views and editors are displayed as tabs united into tab groups. You can drag tabs and tab groups around the JMC client window to create a layout that works best for you. View tabs and tab groups can even be detached from the main window.</p>
+<p>You can maximize a tab group to the size of the JMC client window or minimize it to make more room for other tab groups:</p>
+<ul>
+<li>
+<p>To maximize a tab group, click the <span class="bold">Maximize</span> button in the top-right corner. The tab group expands almost to the size of the JMC client window and the <span class="bold">Maximize</span> button changes to the <span class="bold">Restore</span> button. The other tab groups are automatically minimized.</p>
+</li>
+<li>
+<p>To minimize a tab group, click the <span class="bold">Minimize</span> button in the top-right corner. The tab group shrinks and the <span class="bold">Minimize</span> button changes to the <span class="bold">Restore</span> button. The other tab groups fill the rest of the JMC client window proportionally.</p>
+</li>
+<li>
+<p>To restore the tab to its original state, click the <span class="bold">Restore</span> button.</p>
+</li>
+</ul>
+<p>To separate logically related information, editor tabs are divided into subtabs (or subtab groups), allowing you to drill down into specific data. Some of the subtabs have buttons to control the data displayed in them to the right of the subtab name.</p>
+</div>
+<!-- class="sect2" -->
+<div id="JMCCI118" class="sect2"><!-- infolevel="all" infotype="General" --><a id="sthref12"></a>
+<h3 class="sect2"><span class="secnum">2.2.2</span> Panels</h3>
+<p>Editor tabs are composed of panels with logically related information in the form of graphs, tables, lists, and so on. You can modify some of the parameters using various controls in the panels, such as buttons, text fields, drop-down lists, and so on.</p>
+<p>Some panels can be collapsed to make more room for other panels in the tab (using the black triangle show and hide button next to the panel name). To the right of the panel name, there are buttons to add and remove components, refresh data, switch modes, change settings, get online help about the panel, and so on.</p>
+<p>Most panels are unique, but some are similar for different tabs. Information for using each panel is provided in the description for the panel. To see this information, click the question mark button to the right of the panel name.</p>
+</div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" --></div>
+<!-- class="chapter" --></div>
+<!-- class="ind" -->
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment68">
+<tr>
+<td class="cellalignment75">
+<table class="cellalignment73">
+<tr>
+<td class="cellalignment72"><a href="intro.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment72"><a href="accessibility.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2001, 2015,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment77">
+<table class="cellalignment71">
+<tr>
+<td class="cellalignment72"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment72"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment72"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

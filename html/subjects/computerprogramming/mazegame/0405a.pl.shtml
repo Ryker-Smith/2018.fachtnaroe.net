@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Maze Game: Sample Program</h1>
+<h2>0405.pl</h2>
+<pre>
+#!/usr/bin/perl
+require Term::Screen;
+
+$myterminalscreen=new Term::Screen;
+$myterminalscreen->clrscr();
+
+open (MF, "&lt; maze06.map");
+@mappityfile = &lt;MF&gt;;
+close (MF);
+
+$TheYbit=0;
+
+foreach $andeveryline (@mappityfile) {
+  chomp $andeveryline;
+  @oneline = split (/:/, $andeveryline);
+  push @amazingplace, [@oneline];
+  $TheYbit = $TheYbit + 1;
+}
+
+$TheYbit=0;
+while ($TheYbit &lt;= 19) {
+  $TheXbit=0;
+  while ($TheXbit &lt;= 39) {  
+    if ($amazingplace[$TheYbit][$TheXbit] eq "@") {
+      $StartY = $TheYbit;
+      $StartX = $TheXbit;
+    }
+    $myterminalscreen->at($TheYbit, $TheXbit)->puts("$amazingplace[$TheYbit][$TheXbit]");
+    $TheXbit++;
+  }
+  $TheYbit++;
+}
+
+$myterminalscreen->at(22,0)->puts("Y: $StartY X: $StartX\n");
+$myterminalscreen->at(23,0)->puts("");
+</pre>
+<form><input type="button" value="Back" onclick="history.back()"></form>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="0405a.pl.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

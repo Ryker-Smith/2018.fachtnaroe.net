@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 22</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h2>Is it a bird? Is it a plane? No its a...nothing; just a darn Database.</h2>
+<h3>Our problem in the last pair of programs was that we are dealing with a small database: because of this when dealing with the data we are going to have to apply consistency to what we do in terms of input and output.</h3>
+<h3>Specifically, the first program wrote out the names and numbers alternately and in pairs (each name followed by the correct number).</h3>
+<h3>When we went to read in the names and numbers we used a different method - the only one we currently know. The use of <font face="Courier"> @all_the_names = &lt;NAMESFILE&gt;;</font> inputs <b>*all*</b> file data into the array. That's the purpose of that construct: to get a whole file into an array in one line. So when the line <font face="Courier">@all_the_numbers = &lt;NAMESFILE&gt;;</font> shows up the file is already considered to be 'empty' - everything has already been read from it. We could <b>close</b> and re-<b>open</b> the file and fill the numbers array that way, but that isn't a solution. That would put the same contents into the numbers array as are already in the names array.</h3>
+<h3>The fact that the numbers array fills from a pre-read (or 'empty') file explains why when we run program names04b.pl we get a blank for every second value. The numbers array is empty.</h3>
+<h3>That we are alternately getting names and numbers can be attributed to the first line that reads in the file contents. It reads the contents indiscriminately, names and numbers, into the names array. Simply calling the array after 'names' doesn't automatically limit the contents to names, or even to text.</h3>
+<h3>Finally(ish), notice that though there are 5 names and 5 numbers that 10 pieces of information are *not* put on screen by program names04b.pl - since the data is printed to screen using a loop controlled by the value of <b>$max</b> which is preset to 5. Therefore, though there is more data in the names array it never gets to be put on screen. We will need to cope with this also. To see the significance of this, change the value of $max to 10, run the program and see the difference. (You might even try changing it to 15 and see the effect).</h3>
+<h2>Dealing with the Database</h2>
+<h3>What we need is a better method of accepting and storing the names and numbers, plus any other data we like; we then need to have an equivalent method to retrieve that data and re-construct it in the original order and fashion. We also need to recognise that we are not dealing with random bits of data. The name and number are each a <b>field</b> of a Database, and that each name/number pair is a <b>record</b> in that Database. These definitions are the sames as those you've been given in, well, Databases; so nothing new there then.</h3>
+<h3>We can think of the structure of the record as being like this:
+<ul>
+	<li>START_DATABASE</li>
+	<ul>
+		<li>Other records</li>
+		<li>START_RECORD</li>
+			<ol>
+				<li>FIELD: Name</li>
+				<li>FIELD: Number</li>
+				<li>Other fields may be present...</li>
+			</ol>
+		<li>END_RECORD</li>
+		<li>Other records may be present...</li>
+	</ul>
+	<li>END_DATABASE</li>
+</ul>
+<h3>What we can do is save the data in a file using a <a href="http://en.wikipedia.org/wiki/Flat_file_database">flat file database</a> structure. This means that each line will represent one record, and is a well established mechanism for solving the minor problem we face here, as the previous link will explain.</h3>
+<h3>We shall read in the names, the numbers <i>&amp; and any other data</i>. We shall join (or <a href="http://dictionary.reference.com/browse/concatenate">concatenate</a>) the fields so they can be saved onto one line (one record). We will place between the fields a special character of our choosing before writing the records to disk. All of these will then be joined into one line with the concatenate ('.' or 'dot') operator.</h3>
+<h3>Then, when we re-read the records this special character will enable us to <font face="Courier">split</font> the records back from being one line into being separate fields again. Thus we will be able to store, reload and re-use the data as required.</h3>
+<h3>Now to make the great plan real....</h3>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+</div>
+</body>
+</html>

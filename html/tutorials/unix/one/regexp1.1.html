@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- concepts/regexp1.1.html -->
+<HEAD>
+<TITLE>Examples of using regular expressions for file names</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>Examples of using regular expressions for file names</H1>
+
+<P>To list all files with a particular extension:</P>
+
+<PRE WIDTH=80>   <STRONG>ls *.fm</STRONG>
+</PRE>
+
+<P>This will list all the files in the current directory
+that have the extension <SAMP>.fm</SAMP>.</P>
+
+<HR>
+
+<P>To remove a range of files:</P>
+
+<PRE WIDTH=80>   <STRONG>rm prog.?</STRONG>
+</PRE>
+
+<P>This removes all the files in the current directory with
+a single character extension to their name. Files 
+ <SAMP>foo.c</SAMP> and <SAMP>foo.o</SAMP> would be removed as
+would file <SAMP>foo.3</SAMP>.</P>
+
+<HR>
+
+<P>To copy all the files containing the same pattern:</P>
+
+<PRE WIDTH=80>   <STRONG>cp [pP]art[0-9] ../book</STRONG>
+</PRE>
+
+<P>This copies all files whose name contains a pattern that
+starts with either <SAMP>p</SAMP> or <SAMP>P</SAMP> followed 
+by the letters <SAMP>art</SAMP> and ending in any number from 
+ <SAMP>0</SAMP> through to <SAMP>9</SAMP>.</P>
+
+<P>So the file <SAMP>part1</SAMP> would be copied to the parent
+directory <SAMP>book</SAMP> as would the file <SAMP>Part7</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

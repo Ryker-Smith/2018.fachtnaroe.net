@@ -1,0 +1,891 @@
+<html>
+<head>
+<title>Installing an OfficeConnect LAN Modem</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return false;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+
+function launchmanuals(anchorname)
+{
+manu=window.open("../../pdfs/manuals.htm#"+anchorname,"manuals","width=650,scrollbars=yes,height=500,resizable=yes")
+manu.focus()
+}
+
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Section"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<p> 
+  <SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(11));
+</script>
+
+<table width="400" border="0">
+  <tr> 
+    <td width="400"> 
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="Settingupalan"></a></font><font size="2" face="Arial, Helvetica, sans-serif"><a name="3.5.1.1"></a></font><font size="5" face="Arial, Helvetica, sans-serif">1 
+        Overview</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1.1 This subsection 
+        describes how to set up an OfficeConnect LAN Modem and establish a connection 
+        to the Internet.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The OfficeConnect 
+        LAN Modem is available in three different variations:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> The 56K LAN Modem 
+          that uses an analog connection to access the WAN</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The Dual 56K LAN 
+          Modem that uses two analog lines to access the WAN</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The ISDN LAN Modem 
+          that uses an ISDN line to access the WAN</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> More information 
+        about each of these LAN Modems, including complete documentation, can 
+        be obtained by visiting the OfficeConnect product web site at: </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><a href="http://www.3com.com/support/docs/lanmodem" target="_blank">http://www.3com.com/support/docs/lanmodem</a> 
+        </font> </p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The LAN Modem connects 
+        directly to your computer's 10BASE-T Ethernet NIC or your laptop's </font><font size="2" face="Arial, Helvetica, sans-serif">10BASE-T 
+        PCMCIA card, which must be installed on each computer you want to connect 
+        to the LAN Modem. Please contact your supplier or nearest <a  href="javascript:hotlink_sbs('offices/offices.htm','7.4.1.1')"onMouseOver="status=statusbar_sbs;return true">3Com 
+        Sales Office</a> for availability in your region. Information on installing 
+        a NIC into your PC or laptop can be found under <a  href="javascript:hotlink_se('mainoverview_se.htm','')"onMouseOver="status=statusbar_se;return true">Setting 
+        Up a PC</a>.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1.2 <a name="3.5.1.2"></a>To 
+        set-up the LAN Modem for Internet access, you need:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> The OfficeConnect 
+          LAN Modem, the power adapter, telephone cable and the 10BASE-T Ethernet 
+          cable that accompanied the unit.</font></li>
+        <li> <font face="Arial, Helvetica, sans-serif" size="2">An Internet Service 
+          Provider (ISP) account (unless you are only connecting to a private 
+          network).</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">A JavaScript-enabled, 
+          frames-capable Web browser, such as Microsoft Internet Explorer (3.0 
+          or later) or Netscape Navigator (3.0 or later).</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">TCP/IP software 
+          installed and setup on your computer. TCP/IP is included as part of 
+          the Windows 95/98 Operating System.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">An available telephone 
+          outlet appropriate for your LAN Modem type (analog or ISDN). For more 
+          information on cabling, refer to <a  href="javascript:hotlink_ne('connectors/connectors.htm','1.4.4.1')"onMouseOver="status=statusbar_ne;return true">Connectors 
+          and Cabling</a>. </font></li>
+      </ul>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Setting up the LAN 
+        Modem requires three steps: </font></p>
+      <blockquote> 
+        <p><font size="2" face="Arial, Helvetica, sans-serif">1. Physical installation.</font><font size="2" face="Arial, Helvetica, sans-serif"><br>
+          2. Setting up <a href="javascript:launchglossary('tcpip')"onMouseOver="status=statusbar_glos;return true">TCP/IP</a>.</font><font size="2" face="Arial, Helvetica, sans-serif"><br>
+          3. Configuring the LAN Modem's WebWizard for Internet </font><font size="2" face="Arial, Helvetica, sans-serif">access.</font> 
+        <hr width="390" size="3">
+        <p></p>
+      </blockquote>
+      <p><font face="Arial, Helvetica, sans-serif" size="5"> <a name="installation"></a></font><font size="2" face="Arial, Helvetica, sans-serif"><a name="3.5.2.1"></a></font><font face="Arial, Helvetica, sans-serif" size="5">2 
+        Physical installation</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.1 To physically 
+        install the LAN Modem you should:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Install the telephone 
+          cable.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Connect the LAN 
+          Modem to a computer.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Connect any analog 
+          equipment to the LAN Modem.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">Connect the power 
+          cable.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If necessary, connect 
+          the LAN Modem to an Ethernet hub on your network. </font></li>
+      </ul>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><i><img src="../../images/notesymb.gif" width="16" height="22" align="left"></i>Note: 
+        Before you begin, turn off the computer(s) you will connect to your LAN 
+        Modem. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.2 <b><a name="3.5.2.2"></a>Installing 
+        the Telephone </b><b>Cable</b> </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The type of telephone 
+        cable you install will vary depending on the type of LAN Modem you are 
+        using. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">For the 56K LAN Modem, 
+        connect one end of the RJ-11 analog cable to the port labeled Line on 
+        the back panel. Then connect the opposite end of the RJ-11 cable into 
+        an available POTS (plain old telephone system) analog wall jack. For the 
+        Dual 56K LAN Modem you can connect an additional RJ-11 analog cable to 
+        the Line 2 port on the back panel to obtain dual analog access. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The U version of the 
+        ISDN LAN Modem is for North America and other countries that do not require 
+        the use of an external <a href="javascript:launchglossary('nt1')"onMouseOver="status=statusbar_glos;return true">NT-1</a>. 
+        Connect the RJ-45 (8-pin) connector end of the <a href="javascript:launchglossary('rj45')"onMouseOver="status=statusbar_glos;return true">RJ-45</a> 
+        /<a href="javascript:launchglossary('rj11')"onMouseOver="status=statusbar_glos;return true">RJ-11</a> 
+        <a href="javascript:launchglossary('isdn')"onMouseOver="status=statusbar_glos;return true">ISDN</a> 
+        cable to the port labeled <b>ISDN</b> on the back panel. Then connect 
+        the RJ-11 (6-pin) connector end of the RJ-45/RJ-11 ISDN cable to the <br>
+        RJ-11 or RJ-45 ISDN wall jack. </font></p>
+      <p align="center"><img src="images/lan_modem_1.gif" width="400" height="260"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The S/T version of 
+        the ISDN LAN Modem is for Europe and other countries that require the 
+        use of an external <a href="javascript:launchglossary('nt1')"onMouseOver="status=statusbar_glos;return true">NT-1</a>. 
+        Connect the RJ-45 (8-pin) connector end of the RJ-45/RJ-45 ISDN cable 
+        to the port labeled <b>ISDN</b> on the back panel. Then connect the opposite 
+        end of the RJ-45/RJ-45 ISDN cable into an ISDN wall box (NT-1).</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 2.3 <b><a name="3.5.2.3"></a>Connecting 
+        the LAN Modem to a Computer</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The LAN Modem must 
+        be initially configured when attached only to one computer. To connect 
+        the LAN modem to your computer, insert one end of the 10BASE-T Ethernet 
+        cable into any one of the four LAN ports on the back panel of the LAN 
+        Modem.</font></p>
+      <p align="center"><img src="images/lan_modem_2.gif" width="400" height="260"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Then insert the opposite 
+        end of the cable into your computer's 10BASE-T Ethernet port.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.4 <b><a name="3.5.2.4"></a>Connecting 
+        analog equipment to the LAN Modem</b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">You can connect an 
+        analog touch-tone telephone, answering machine, fax machine, or external 
+        analog modem to the LAN Modem's analog ports. The ISDN LAN Modem and Dual 
+        56K LAN Modem provide two analog ports for connecting analog devices. 
+        The 56K LAN Modem provides one. You will need the RJ-11 to RJ-11 analog 
+        cable that accompanied the analog device for each analog phone port connection. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">If the modem has more 
+        than one spare analog port you can place more than one call at a time. 
+        For example, one user may connect to a remote office LAN to check e-mail 
+        while another connects to a locally dialed ISP to browse the Web. The 
+        56K LAN Modem provides one analog port, and does not support simultaneous 
+        voice and data calls. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">To install an analog 
+        device, insert one end of an RJ-11 analog cable into the port labelled 
+        <b>Phone</b> on the back of the LAN Modem. Then insert the other end of 
+        the RJ-11 cable into the appropriate RJ-11 port on the analog device.</font></p>
+      <p align="center"><img src="images/lan_modem_3.gif" width="396" height="215"></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.5 <b><a name="3.5.2.5"></a>Connecting 
+        the </b><b>Power Cable </b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">You must use the power 
+        adapter that was supplied in the LAN Modem package. To install the power 
+        cable, connect the LAN Modem power module cable to the 10-18V DC power 
+        connector on the back panel of the LAN Modem. Plug the other end of the 
+        power module into a surge-protected standard wall outlet. This causes 
+        the indicator LEDs on the LAN Modem's front panel to flash momentarily, 
+        as the unit undergoes a power-up self-test diagnostic. If the LEDs do 
+        not flash, go to the <a href="javascript:launchtrouble('hub leds/hub_leds_0.htm');"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a> 
+        section. </font></p>
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"> </font><img src="images/lan_modem_4.gif" width="257" height="167"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The next step is to 
+        set up the LAN Modem for WAN access.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.6 <b><a name="3.5.2.6"></a>Connecting 
+        the LAN </b><b>Modem to an Ethernet Hub </b></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">You may want to connect 
+        the LAN Modem to an external Ethernet hub, allowing WAN access for up 
+        to 25 users. To do this, you need the following:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">An external hub 
+          (for example, an <a href="javascript:hotlink_hub('device_details/device_details.htm','')"onMouseOver="status=statusbar_hub;return true">OfficeConnect 
+          hub</a>).</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">A 10BASE-T Ethernet 
+          cable, which may have been provided with the additional hub. If the 
+          hub does not have an Uplink/Normal (MDI/MDI-X) switch, you must use 
+          a crossover cable. </font></li>
+      </ul>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">To install 
+        the external hub, insert one end of the 10BASE-T Ethernet cable into one 
+        of the four LAN ports on the back of the LAN Modem. Then insert the opposite 
+        end of the cable into the Uplink port of your hub. </font></p>
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"> </font><img src="images/lan_modem_5.gif" width="400" height="177"></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.7 </font><font size="2" face="Arial, Helvetica, sans-serif"><b><a name="3.5.2.7"></a></b>The 
+        next step is to set up the LAN Modem for WAN access.</font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="5"> <a name="settinguptcp/ip"></a></font><font size="2" face="Arial, Helvetica, sans-serif"><b><a name="3.5.3.1"></a></b></font><font face="Arial, Helvetica, sans-serif" size="5">3 
+        </font><font size="5" face="Arial, Helvetica, sans-serif">Setting up TCP/IP</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.1 The LAN Modem 
+        is optimized for use with dynamic IP addressing, which means that the 
+        LAN Modem will function as the <a href="javascript:launchglossary('dhcp')"onMouseOver="status=statusbar_glos;return true">DHCP</a> 
+        server. In this situation, TCP/IP must be installed and set to its default 
+        values. To do so:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1. Click <i>Start</i>, 
+        <i>Settings</i>, <i>Control Panel</i>.<br>
+        </font><font size="2" face="Arial, Helvetica, sans-serif">2. Choose the 
+        Network control panel. </font> </p>
+      <p align="center"><img src="images/lan_modem_6.gif" width="367" height="456"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">If TCP/IP is shown 
+        in your network components list, it is already installed. In this case, 
+        <a href="#3.2"onMouseOver="status=statusbar_anchor;return true">click 
+        here for instructions on setting TCP/IP to its default values</a>. If 
+        TCP/IP is not shown, the following steps explain how it can be installed. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">From the Network control 
+        panel click <i>Add</i>. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The Select Network 
+        Component Type dialog box opens. </font></p>
+      <p align="center"><img src="images/lan_modem_7.gif" width="395" height="197"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Choose Protocol and 
+        then click <i>Add</i>. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The Select Network 
+        Protocol dialog box opens. </font></p>
+      <p align="center"><img src="images/lan_modem_8.gif" width="400" height="292"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">From the Manufacturers 
+        list box, select Microsoft, and then from the Network Protocols list box, 
+        choose TCP/IP. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Click <i>OK</i> to 
+        return to the Network control panel. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a name="3.2"></a>3.2 
+        <b><a name="3.5.3.2"></a>Setting TCP/IP to the Default Values</b> </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">You can verify that 
+        your TCP/IP values are set to their defaults from within the Network control 
+        panel. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">If it is not currently 
+        open, click <i>Start</i>, <i>Settings</i>, and <i>Control Panel </i> and 
+        choose Network to open the Network control panel. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1. Highlight <i>TCP/IP</i> 
+        and click <i>Properties</i>.</font></p>
+      <p align="center"><img src="images/lan_modem_9.gif" width="356" height="437"></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2. Click the <i>IP 
+        Address</i> tab. <i>Obtain IP address automatically</i> should be enabled. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3. Click the <i>WINS 
+        Configuration</i> tab. <i>Use DHCP for WINS Resolution</i> should be enabled. 
+        </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">4. Click the <i>DNS 
+        Configuration</i> tab. <i>Disable DNS </i> should be selected. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">5. Click <i>OK</i> 
+        to close the TCP/IP Properties window. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">6. Click <i>OK</i> 
+        to close the Network control panel and save any changes if prompted. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">7. You must now restart 
+        your PC or Laptop. </font></p>
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="webwizard"></a></font><font size="2" face="Arial, Helvetica, sans-serif"><b><a name="3.5.4.1"></a></b></font><font size="5" face="Arial, Helvetica, sans-serif">4</font><font size="2" face="Arial, Helvetica, sans-serif"> 
+        <font size="5">Setting up </font><font size="5">the WebWizard for </font></font><font size="5" face="Arial, Helvetica, sans-serif">WAN 
+        access </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">4.1 <b>Before You 
+        Start</b> </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Before you can begin 
+        to access remote sites, such as to the Internet or a remote corporate 
+        LAN, you will need to configure the LAN Modem. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><i><img src="../../images/notesymb.gif" width="16" height="22" align="left"></i>Note: 
+        To configure the LAN Modem you must have a Web Browser on the PC or laptop 
+        that is going to be connected to the LAN Modem. If you do not have a Web 
+        Browser already installed on your PC or laptop, you can install the Web 
+        Browser supplied on the CD-ROM that accompanies your LAN Modem. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">To access the LAN 
+        Modem's configuration screen, launch your Web browser. If there is an 
+        icon for your Web Browser, you can launch the Web Browser by double-clicking 
+        the icon. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">What happens next 
+        depends on the configuration of your PC or laptop. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">4.2 <a name="3.5.4.2"></a>If 
+        you are accessing the Internet for the first time you may see the Internet 
+        Connection Wizard screen (shown below).</font></p>
+      <p align="center"><img src="images/lan_modem_10.gif" width="400" height="310"></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If you see the Internet 
+        Connection Wizard screen above, you must configure your computer for Internet 
+        access before you can configure your LAN Modem. For instruction on configuring 
+        your computer, refer to the <a href="javascript:launchtrouble('modem connections/modem_3.htm');"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a> 
+        section.</font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.3 <a name="3.5.4.3"></a>If 
+        this is the first time you are configuring the LAN Modem (and your computer 
+        is already set up for Internet access), the Web Browser will display the 
+        LAN Modem welcome screen, as shown below.</font></p>
+      <p align="center"><img src="images/lan_modem_11.gif" width="400" height="285"></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Click 
+        <i>Continue</i>.</font></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">4.4 <a name="3.5.4.4"></a>A 
+        message box appears and indicates that the LAN Modem clock is being synchronised 
+        to the date and time on your PC.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">The Set 
+        Password window appears (shown below). This password is used to guard 
+        access to the LAN Modem's configuration program. If you would like to 
+        restrict access to the configuration program, select a password and record 
+        it in a safe place.</font></p>
+      <p align="center"><img src="images/lan_modem_12.gif" width="400" height="285"></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Click 
+        <i>Submit</i>.</font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.5 <a name="3.5.4.5"></a></font><font face="Arial, Helvetica, sans-serif" size="2">The 
+        configuration screen shown next depends on:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The type of telephone 
+          line you are using</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Your geographical 
+          location</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The version of 
+          the LAN Modem you are setting up</font></li>
+      </ul>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Select 
+        the option that applies to you:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="#3.5.4.6"onMouseOver="status=statusbar_anchor;return true">ISDN 
+          LAN Modem in North America</a></font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="#3.5.4.7"onMouseOver="status=statusbar_anchor;return true">ISDN 
+          LAN Modem outside of North America</a></font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="#3.5.4.8"onMouseOver="status=statusbar_anchor;return true">56K 
+          LAN Modem</a></font></li>
+        <li> 
+          <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><a href="#3.5.4.8"onMouseOver="status=statusbar_anchor;return true">Dual 
+            56K LAN Modem</a></font></p>
+        </li>
+      </ul>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">4.6 <b><a name="3.5.4.6"></a>ISDN 
+        user in North </b><b>America</b></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">If you 
+        are setting up the North American ISDN LAN Modem, you should next see 
+        the SPID Wizard configuration screen (shown below). SPID stands for Service 
+        Profile Identifiers, which are required for ISDN lines in North America.</font></p>
+      <p align="center"><img src="images/lan_modem_13.gif" width="398" height="275"></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Enter the telephone 
+          numbers for your ISDN line and click <i>Continue</i>. Refer to your 
+          ISDN LAN Modem User Guide for further ISDN configuration instructions 
+          if needed. Once the SPID Wizard has successfully configured your ISDN 
+          line, continue with <a href="#3.5.4.9"onMouseOver="status=statusbar_anchor;return true">Using 
+          the ISP Wizard</a></font>.</li>
+      </ul>
+      <hr width="390" size="3" align="center">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">4.7 <a name="3.5.4.7"></a><b>ISDN 
+        LAN Modem for outside North America</b></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">If you 
+        are setting up the LAN Modem for outside North America you should next 
+        see the Country Selection screen (shown below).</font></p>
+      <p align="center"><img src="images/lan_modem_14.gif" width="400" height="300"></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Choose the country 
+          where you are located and click <i>Submit</i>.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The ISDN telephone 
+          numbers screen appears (shown below).</font></li>
+      </ul>
+      <p align="center"><img src="images/lan_modem_15.gif" width="400" height="300"></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Enter the telephone 
+          number(s) assigned to your ISDN line and click <i>Submit</i>. Refer 
+          to your ISDN LAN Modem user guide for ISDN configuration details if 
+          necessary. When you have completed the initial configuration, continue 
+          with <a href="#3.5.4.9"onMouseOver="status=statusbar_anchor;return true">Using 
+          the ISP Wizard</a></font>.</li>
+      </ul>
+      <hr width="390" size="3" align="center">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.8<b> <a name="3.5.4.8"></a></b>For 
+        the 56K OfficeConnect Modem</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If you are setting 
+        up the 56K LAN Modem or the Dual 56K LAN Modem, no initial telephone line 
+        configuration steps are required. Continue with <a href="#3.5.4.9"onMouseOver="status=statusbar_anchor;return true">Using 
+        the ISP Wizard</a>.</font><font face="Arial, Helvetica, sans-serif" size="2"> 
+        </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2" color="#000000">4.9<b> 
+        <a name="3.5.4.9"></a></b>Using the ISP Wizard</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Once your telephone 
+        line and telephone numbers are properly configured, the LAN Modem will 
+        automatically open the ISP Wizard in your Web browser. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Before you get started, 
+        make sure you have the following information. Your ISP will provide the 
+        following information</font><font face="Arial, Helvetica, sans-serif" size="2"> 
+        to you:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Telephone number 
+          for the ISP connection.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Your User ID for 
+          the ISP connection.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Your Password to 
+          connect to the ISP.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The DNS address 
+          of the ISP, unless this address is automatically assigned by your ISP. 
+          If you are not sure, you can leave this field blank.</font></li>
+      </ul>
+      <p align="center"><img src="images/lan_modem_16.gif" width="400" height="285"></p>
+      <p> <font face="Arial, Helvetica, sans-serif" size="2"><i><img src="../../images/notesymb.gif" width="16" height="22" align="left"></i>Note: 
+        The screen shown above may differ slightly depending on your LAN Modem 
+        version.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Enter your ISP information 
+        and click <i>Continue</i> at the bottom of the screen. The LAN Modem will 
+        launch a call to your ISP, and take you directly to the LAN Modem's World 
+        Wide Web Homepage on the Internet:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.remoteaccess.3com.com/support/docs/lanmodem/welcome.html" target="_blank">http://www.remoteaccess.3com.com/support</a></font><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.remoteaccess.3com.com/support/docs/lanmodem/welcome.html" target="_blank">/docs/lanmodem/welcome.html</a></font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> You can access the 
+        LAN Modem's WebWizard configuration screens at any time simply by entering 
+        the LAN Modem's URL in your Web browser's address bar: http://lanmodem/.</font> 
+      </p>
+      <p align="center"><img src="images/lan_modem_17.gif" width="400" height="285"></p>
+      <p> <font size="2" face="Arial, Helvetica, sans-serif">For further information 
+        on configuring the LAN Modem refer to your LAN Modem User Guide.</font></p>
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="disconnecting"></a></font><font size="2" face="Arial, Helvetica, sans-serif"><b><a name="3.5.5.1"></a></b></font><font size="5" face="Arial, Helvetica, sans-serif">5</font><font size="5" face="Arial, Helvetica, sans-serif"> 
+        Disconnecting </font><font size="5" face="Arial, Helvetica, sans-serif">the 
+        call </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">5.1 </font><font size="2" face="Arial, Helvetica, sans-serif">The 
+        connection established as a result of the ISP Wizard will automatically 
+        disconnect after a designated period of time. This type of Automatic Call 
+        is placed every time you launch a WAN application, such as a Web browser 
+        to access the Internet, or an e-mail application to read e-mail. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">The length of time 
+        </font><font size="2" face="Arial, Helvetica, sans-serif">for this call 
+        varies depending on the LAN Modem version you are using and the time you 
+        have designated. You can manually disconnect a call at any time via the 
+        Manual Calling screen, which is accessed from the LAN Modem's main page.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b><a name="3.5.6.1"></a></b></font><font face="Arial, Helvetica, sans-serif" size="5">6 
+        Setting up dial-in support on your LAN</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">6.1 If you have an 
+        OfficeConnect ISDN, 56K, or Dual 56K LAN Modem, you can place outgoing 
+        calls from your local LAN to an existing network (such as the Internet 
+        or a private, corporate network), or receive calls into your LAN from 
+        up to 10 specified remote users.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">A LAN Modem can only 
+        accept dial-in calls that match its call type. The 56K and Dual 56K LAN 
+        Modem can only accept dial-in calls from another analog device, such as 
+        a regular analog modem, a 56K LAN Modem or second Dual 56K LAN Modem, 
+        or other analog router. It cannot accept dial-in calls from an ISDN terminal 
+        adapter or ISDN LAN Modem. Similarly, the ISDN LAN Modem can only accept 
+        dial-in calls from another ISDN device.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The term 'server-side' 
+        is used to describe a LAN Modem that receives dial-in calls. The term 
+        'client-side' is used to describe a LAN Modem that makes dial-out calls. 
+        In some cases, the same LAN Modem will be configured as both a server-side 
+        LAN Modem and a client-side device.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">For more information 
+        on setting up an OfficeConnect LAN Modem, refer to Installing an OfficeConnect 
+        LAN Modem.</font></p>
+      <hr width="390" size="3">
+      <p> <font face="Arial, Helvetica, sans-serif" size="2">6.2 Setting up a 
+        LAN Modem for dial-in support is a two-part process:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Configuring the 
+          server-side LAN Modem to receive incoming, dial-in calls.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Configuring a 
+          client device (such as an analog modem or second LAN Modem) for dial-out 
+          access to the server-side LAN Modem.</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">In order to access 
+        LAN resources remotely, any workstation, server, or device attached to 
+        the LAN Modem that will be accessed by a dial-in user must be running 
+        appropriate software, such as Web or FTP server software.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The LAN Modem provides 
+        three dial-in profile types:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Single User - 
+          This profile type applies to a single user dialing in to the LAN Modem 
+          via a single analog modem. It is used to set up a connection between 
+          a server-side LAN Modem and a client device that does not require LAN-to-LAN 
+          connectivity.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> LAN Modem Site-to-Site 
+          - This profile type applies to any LAN Modem that will place outgoing 
+          calls and receive incoming calls from another LAN Modem or LAN Modems. 
+          It is used to set up a network between two or more sites, using a LAN 
+          Modem at each site to create true LAN-to-LAN connectivity. This enables 
+          any device on any LAN to communicate directly with any other device 
+          on any other LAN.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Advanced - This 
+          profile type applies to a network scenario in which a router other than 
+          a LAN Modem will be dialing into the LAN Modem. It assumes that both 
+          the LAN Modem and the other router have been manually configured for 
+          static IP addressing, and each employs a unique range of addresses. 
+          For more information on dial-in user profiles, refer to the <a  href="javascript:launchmanuals('')" onMouseOver="status=statusbar_manu;return true">Release 
+          Notes</a> that accompany your product. </font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"> </font><font face="Arial, Helvetica, sans-serif" size="2">6.3 
+        The first step in configuring the server-side LAN Modem for dial-in support 
+        involves setting up the LAN Modem to receive incoming, dial-in calls. 
+        This process involves three steps:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> <a href="#3.5.6.4"onMouseOver="status=statusbar_anchor;return true">Changing 
+          the Remote Administration Username and Password</a> </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> <a href="#3.5.6.5"onMouseOver="status=statusbar_anchor;return true">Configuring 
+          Dial-in Global Parameters</a> </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> <a href="#3.5.6.6"onMouseOver="status=statusbar_anchor;return true">Creating 
+          a Dial-in User Profile Using the Dial-In Wizard</a></font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><a name="3.5.6.4"></a>6.4 
+        Changing the Remote Administration Username and Password </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The Remote Administration 
+        account allows for limited dial-in access to the LAN Modem for remote 
+        configuration purposes only. A Remote Administration account is already 
+        set up in the LAN Modem, with the following defaults:</font></p>
+      <blockquote> 
+        <p><font face="Arial, Helvetica, sans-serif" size="2"> Username: Admin<br>
+          Password: 1234 </font></p>
+      </blockquote>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Before you can configure 
+        the LAN Modem for full dial-in access, you must change these defaults:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 1. From the LAN Modem 
+        Main Configuration Page, click <i>Dial-in</i>, then click <i>Dial-in User</i>. 
+        The Dial-in User Selection window opens.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 2. Select<i> </i>Admin, 
+        and then click <i>Select</i>. In the Username field, delete the default 
+        name, and enter a unique Username. In the Password field, delete the default 
+        password and enter a new Password. When you configure a client device 
+        for dial-out access to this LAN Modem, you will need this Username and 
+        Password.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 3. Click <i>Submit</i>. 
+        You can now configure dial-in global parameters, discussed in the next 
+        section. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><a name="3.5.6.5"></a>6.5 
+        Configuring Dial-in Global Parameters</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Dial-in Global Parameters 
+        allows you to allocate modem line resources for dial-in calls and to set 
+        dial-in authentication preferences. To do so, follow these steps:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 1. From the LAN Modem 
+        Main Configuration page, click Dial-In. Click Dial-in Global. The Dial-In 
+        Global Parameters window opens.</font></p>
+      <p align="center"><img src="images/lan_modem_18.gif" width="398" height="299"> 
+      </p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">2. Select 1 in the 
+        Channels allocated for Dial-in field to allocate only one telephone line 
+        for dial-in calls (the default). Select 2 to allow both telephone lines 
+        to be used for dial-in calls, either by a single user making a Multilink 
+        PPP call, or by two users dialing in simultaneously. (Note that this option 
+        is not available for the 56K LAN Modem, which uses only one telephone 
+        line.)</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 3. Check the Allow 
+        Multilink field box to allow both telephone lines to be used by a single 
+        caller for a Multilink call, or leave the box unchecked to allow only 
+        one line per dial-in call. (Note that this option is not available for 
+        the 56K LAN Modem, which uses only one telephone line.)</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> If a telephone number 
+        prefix, such as a 9, is required to reach an outside line, enter this 
+        number in the Callback Prefix field. Otherwise, leave this field blank.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 4. In the LAN-to-LAN 
+        Site Number drop-down list box, choose one of the following options to 
+        define this LAN Modem and its corresponding LAN within the overall network:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Choose None if 
+          you are configuring this LAN Modem to only receive dial-in calls from 
+          a Single User Dial-in client device Choosing None will leave the LAN 
+          Modem's IP address unchanged. (Advanced users may want to choose None 
+          if the LAN Modem has already been manually configured for static IP 
+          addressing.)</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Choose Site A 
+          if you are setting up a site-to-site network with two or more LAN Modems, 
+          and this is the first LAN Modem that you are configuring (in other words, 
+          this LAN Modem will place and/or receive calls to another LAN Modem). 
+          <br>
+          Choosing Site A will leave the LAN Modem's IP address set to the default 
+          of 192.168.1.1, unless the IP address has been changed. If changed from 
+          its default, the IP address will revert back to 192.168.1.1.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Choose Site B if 
+          you are setting up a site-to-site network with two or more LAN Modems 
+          and you have already designated another LAN Modem as Site A. Choosing 
+          Site B will cause this LAN Modem to change its IP address to 192.168.2.1.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Choose Site C if 
+          you are setting up a site-to-site network with two or more LAN Modems 
+          and you have already designated another LAN Modem as Site A and/or Site 
+          B. Choosing Site C will cause this LAN Modem to change its IP address 
+          to 192.168.3.1. </font></li>
+      </ul>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">In the PPP Authentication 
+        field, choose the type of PPP authentication you want the LAN Modem to 
+        use when negotiating all dial-in calls. Click Submit to save your changes.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <img src="../../images/notesymb.gif" width="16" height="22"> 
+        If you choose Site B or Site C as the LAN to LAN Site Number, the LAN 
+        Modem will re-initialize itself as it changes its IP address. If you chose 
+        Site B or C, re-start your workstation to allow it to acquire a new IP 
+        address from the LAN Modem's changed subnet.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> This completes the 
+        Dial-in Global Parameters portion of the server-side configuration. You 
+        can now create a dial-in user profile using the Dial-In Wizard in the 
+        next section. A separate Dial-in User Profile must be configured for each 
+        device that will dial in. In the case of a second LAN Modem or other router, 
+        one Dial-in User Profile applies to the LAN Modem and its entire attached 
+        LAN.</font> </p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> <a name="3.5.6.6"></a>6.6 
+        Creating a Dial-In User Profile Using the Dial-In Wizard </font> </p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To use the Dial-in 
+        Wizard to create a single user dial-in profile, perform the following 
+        steps:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> From the LAN Modem 
+        Main Configuration Page, click <i>Dial-In</i>, then click <i>Dial-In Wizard</i>. 
+        The Dial-In Wizard Profile Type Selection window appears.</font></p>
+      <p align="center"><img src="images/lan_modem_19.gif" width="400" height="299"></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Select 
+        <i>Single User</i> from the drop-down list, and then click <i>Next</i>. 
+        The Dial-In Wizard Password window appears. </font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Enter 
+        the unique Username and Password the dial-in user must enter when calling 
+        in to this LAN Modem. (This information will be entered in the Username 
+        and Password fields when you configure your client device.)</font></p>
+      <p align="center"><img src="images/lan_modem_20.gif" width="400" height="299"></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Click Next. The Dial-In 
+        Wizard Internet Service Provider Selection window appears. Select an Internet 
+        Service Provider for this dial-in user to use when accessing the Internet 
+        from the remote location. Click <i>Finish</i>.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> This completes the 
+        server-side portion of the configuration process. To configure the client-side 
+        device for dial-out access to this LAN Modem, refer to your LAN Modem 
+        manual for the section on setting up a client device for dial-out access, 
+        or visit the LAN Modem support site at:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> <a href="http://www.3com.com/support/docs/lanmodem" target="_blank">http://www.3com.com/support/docs/lanmodem</a></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> If you wish to use 
+        the LAN Modem's Callback feature, you must configure callback parameters 
+        for this LAN Modem from the Dial-in User Parameters page, discussed in 
+        <a href="#3.5.7.2"onMouseOver="status=statusbar_anchor;return true">section 7.2</a>. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><a name="3.5.6.7"></a>6.7 
+        Dial-In Wizard for LAN Modem Site-to-Site Dial-In</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">To create 
+        a Dial-in User Profile to allow access by a second site LAN Modem, follow 
+        these steps:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 1. From the LAN Modem 
+        Main Configuration Page, click <i>Dial-In</i>. Click <i>Dial-In Wizard</i>. 
+        The Dial-In Wizard Profile Type Selection window appears.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 2. Select <i>LAN 
+        Modem Site-to-Site</i> from the drop-down list, and then click <i>Next</i>. 
+        The Dial-In Wizard Password window appears.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 3. Enter a unique 
+        Username and Password for the second site LAN Modem. (This information 
+        will be entered in the Username and Password fields when you configure 
+        a Private Network Service Provider profile in the second site LAN Modem.) 
+        Click <i>Next</i>. The Dial-In Wizard Site Assignment window appears.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 4. Using the drop-down 
+        list box assign a Site identity to the remote, second site LAN Modem. 
+        For example, if you designated this LAN Modem as Site A, designate the 
+        second site LAN Modem as Site B or Site C. Click Next. The Dial-In Wizard 
+        Internet Service Provider Selection window appears.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 5. Select an Internet 
+        Service Provider for this dial-in user to use when accessing the Internet 
+        from the remote location. Click <i>Finish</i>.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> This 
+        completes the server-side portion of the configuration for LAN Modem Site-to-Site 
+        Dial-in. To finish the LAN Modem Site-to-Site configuration, you must 
+        also configure this LAN Modem as a client-side device. You must also configure 
+        the second site LAN Modem as both a server-side LAN Modem and a client-side 
+        device, following the same procedure that you used to configure this LAN 
+        Modem. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 6.8 Dial-in Wizard 
+        for Advanced Dial-In </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To create a Dial-In 
+        User Profile for Advanced Dial-In, follow these steps:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 1. From the LAN Modem 
+        Main Configuration Page, click <i>Dial-In</i>. Click <i>Dial-in Wizard</i>. 
+        The Dial-In Wizard Profile Type Selection window appears. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">2. Select <i>Advanced</i> 
+        from the drop-down list, and then click Next. The Password page appears. 
+        Enter a unique Username and Password to identify and verify this analog 
+        router when it calls in to the LAN Modem. This information must be entered 
+        in the analog router when it is configured for dial-out calling to this 
+        LAN Modem. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3. Click <i>Next</i>. 
+        The Dial-in User Parameters page appears. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b><a name="3.5.7.1"></a></b></font><font face="Arial, Helvetica, sans-serif" size="5">7 
+        Configuring dial-in parameters</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">7.1 Once 
+        you have created a Dial-in User profile using the Dial-in Wizard, you 
+        can further define the dial-in user parameters using the Dial-in User 
+        Parameters page. You can also use this page to configure an Advanced Dial-in 
+        User profile, or to create any Dial-in User profile without the Dial-in 
+        Wizard. You can create a total of 10 dial-in user profiles.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> Click 
+        <i>Dial-in Users</i>. The Dial-in User Selection screen opens. Choose 
+        either <i>New Dial-in User</i> to create a new profile, or choose an existing 
+        Dial-in User from the drop-down list, and click <i>Select</i>.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> The 
+        Dial-in User Parameters screen opens. In the Name field, enter a unique 
+        name to designate this dial-in user. In the Password field, enter a password 
+        to verify access when this user dials into the LAN Modem. In the Type 
+        of Use field, select the scenario for which your dial-in situation applies:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Choose Single-User 
+          Dial-in if this user will be accessing the LAN Modem from a regular 
+          analog modem or second analog LAN Modem on which attached workstations 
+          can share a single IP address using NAT.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Choose LAN Modem 
+          Site-to-Site if this user will be dialing in from another LAN Modem 
+          configured as both a server-side and client-side device (for "peer-to-peer" 
+          networking).</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Choose Advanced 
+          if this user will be accessing the LAN Modem from a router other than 
+          a LAN Modem. This scenario requires that all IP addresses be statically 
+          configured, and should be configured by your system administrator.</font></li>
+      </ul>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> In the 
+        Idle Timer field, enter the length of inactivity before the LAN Modem 
+        drops the incoming call. By default this value is 300 seconds (5 minutes).</font><font face="Arial, Helvetica, sans-serif" size="2"> 
+        In the ISP Selection field, select the service providers that this dial-in 
+        user can access. In the Data Compression field, choose to have data compression 
+        active or inactive. By default compression is disabled. (In order for 
+        compression to occur, the other end of the connection must also have compression 
+        active.)</font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b><a name="3.5.7.2"></a></b>7.2 
+        Callback Parameters</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Callback occurs when, 
+        upon a successful connection of dial-in a user, the LAN Modem drops the 
+        incoming call and places a return call to the dial-in user. In order for 
+        callback to work properly, the client-side device must also have callback 
+        active. To specify your Callback parameters, follow these steps:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 1. In the Enable 
+        Callback field, check to activate Callback for this dial-in user. By default, 
+        Callback is disabled. In the Callback Telephone Number field, enter the 
+        number the LAN Modem will call back when this dial-in user accesses the 
+        LAN Modem. In the Callback Alternate Number field, enter a second telephone 
+        to be used for either Multilink PPP or as a second number to try if the 
+        call cannot be established with the first telephone number.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> 2. In the Callback 
+        Authentication field, check the box to require callback authentication 
+        if requested by the client. In the Callback Username field, enter the 
+        username used by the server. In the Callback Password field, enter the 
+        password used by the server. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3. In the Callback 
+        Delay field, enter the amount of time in seconds to wait until the dial-in 
+        user is called back. By default this is set to 10. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">7.3 WAN Parameters</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If the local LAN 
+        Modem WAN link has a static IP address, enter the WAN static IP address 
+        in the LAN Modem WAN IP field. Otherwise leave this field as set by the 
+        Dial-in Wizard. If you are using the Advanced dial-in scenario, enter 
+        the IP address of the LAN Modem which is receiving the dial-in call.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If the remote site 
+        of the WAN link has a static IP address, enter the WAN static IP address 
+        in the Remote LAN IP field. Otherwise, leave this field as set by the 
+        Dial-in Wizard. For the Advanced dial-in scenario, enter the IP address 
+        of the router dialing into the LAN Modem.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If the remote site 
+        of the WAN link has a static IP address, enter the subnet mask of the 
+        remote LAN in the Remote LAN Subnet Mask field. Otherwise, leave this 
+        field as set by the Dial-in Wizard. If you are using the Advanced dial-in 
+        scenario, enter the subnet mask of the remote LAN.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> Enter your Primary 
+        and Secondary (optional) DNS address as instructed by your system administrator, 
+        or as set by the Dial-in Wizard. For the Advanced dial-in scenario, enter 
+        the IP address of the LAN Modem receiving the dial-in call. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">7.4 Placing a Call 
+        from a Client-side LAN Modem</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> Once you have created 
+        a service provider profile on your client LAN Modem, you can place a call 
+        in one of three ways:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Use the client 
+          LAN Modem's Manual Call Control page to place a call manually.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Use the LAN Modem 
+          Desktop Manager on a client workstation to place a call manually.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Enter an IP address 
+          or domain name of a server attached to the remote LAN Modem, and place 
+          the call automatically. Note that this option assumes that you have 
+          configured a Private Network as your service provider, and not an ISP. 
+          </font></li>
+      </ul>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Once connected, you 
+        can use all LAN resources available on the server end of the connection. 
+        For further information, visit the OfficeConnect LAN Modem's Internet 
+        Homepage at </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><a href="http://www.3com.com/support/docs/lanmodem" target="_blank">http://www.3com.com/support/docs/lanmodem</a></font></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>Troubleshooter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(26);
+parent.creator.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(25);
+parent.creator.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(20);
+parent.creator.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(24);
+parent.creator.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(23);
+parent.creator.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(27);
+parent.creator.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="560" border="0">
+  <tr> 
+    <td> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>The Network Neighborhood 
+        Icon is Absent From the Desktop Screen:</b><br>
+        <br>
+        The Network Neighborhood icon looks like this (unless you have personalized 
+        your icons): </font></p>
+      <p align="center"><img src="images/installation_1.gif" width="96" height="97"></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">If the 
+        Network Neighbourhood Icon is missing, check:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">That Card Services 
+          are enabled on the laptop</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The NIC or PCMCIA 
+          is correctly inserted </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The NIC or PCMCIA 
+          card is correctly installed</font></li>
+      </ul>
+      <ol>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">To check that Card 
+          Services are enabled on a laptop follow the instructions in <a  href="javascript:hotlink_se('laptop/laptop.htm','2.2.2.2')">Installing 
+          the PCMCIA card</a>.<font color="#FF6666"><br>
+          </font></font><font face="Arial, Helvetica, sans-serif" size="2"><font color="#FF6666"><br>
+          </font></font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">To check the NIC 
+          or PCMCIA card is inserted correctly:<br>
+          <br>
+          Remove the NIC or PCMCIA card and re-install it. You may need to apply 
+          more pressure to ensure that the NIC is correctly seated in the slot. 
+          When the NIC is correctly seated, the gold connector on the edge of 
+          the NIC is normally completely inside the slot.</font></li>
+      </ol>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">For instructions 
+          on inserting the NIC refer to its user guide and the section <a  href="javascript:hotlink_se('pc/pc.htm','')">Adding 
+          a PC</a>. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">For instructions 
+          on how to insert the PCMCIA card you may need to refer to the user guides 
+          that accompany your laptop and PCMCIA card, and section <a  href="javascript:hotlink_se('laptop/laptop.htm','')">Adding 
+          a Laptop</a>.</font> <br>
+          <br>
+        </li>
+      </ul>
+      <ol start="3">
+        <li> <font face="Arial, Helvetica, sans-serif" size="2"> To see whether 
+          the NIC or PCMCIA card is correctly installed, you need to check that 
+          the card and drivers are correctly shown in the Device Manager. To check 
+          this, carry out the following instructions:</font></li>
+      </ol>
+      <blockquote> 
+        <ol type="a">
+          <li><font face="Arial, Helvetica, sans-serif" size="2">From the <i>Start</i> 
+            menu, choose <i>Settings</i> and then <i>Control</i> <i>Panel</i>.<br>
+            <br>
+            </font></li>
+          <li><font face="Arial, Helvetica, sans-serif" size="2"> In the <i>Control</i> 
+            <i>Panel</i> window, double-click <i>System</i>.<br>
+            <br>
+            </font></li>
+          <li><font face="Arial, Helvetica, sans-serif" size="2"> In the <i>System</i> 
+            <i>Properties</i> dialog box, select the <i>Device</i> <i>Manager</i> 
+            tab.<br>
+            <br>
+            </font></li>
+          <li><font face="Arial, Helvetica, sans-serif" size="2"> If the NIC or 
+            PCMCIA card is physically installed there will be a Network adapters 
+            entry in the listbox.</font></li>
+        </ol>
+        <ul>
+          <li><font face="Arial, Helvetica, sans-serif" size="2">If Network adapters 
+            is not listed, the NIC and PCMCIA card is either incorrectly installed 
+            or may be faulty. If the NIC or PCMCIA card is faulty refer to its 
+            user guide for warranty and service details. </font></li>
+          <li><font face="Arial, Helvetica, sans-serif" size="2">If the Network 
+            adapters entry is listed Double-click on the <i>Network</i> <i>adapters</i> 
+            item. It should expand to show the name of the NIC or PCMCIA card 
+            that has been installed.</font><font face="Arial, Helvetica, sans-serif" size="2"> 
+            Go to step 4.</font></li>
+        </ul>
+      </blockquote>
+      <ol start="4">
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If the NIC or PCMCIA 
+          card icon has a yellow circle and exclamation mark ('!') on it, it could 
+          due to the following:</font> </li>
+      </ol>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">There is a hardware 
+          conflict with another installed device, for example, a sound card.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The software drivers 
+          are either installed incorrectly or are the wrong type for the installed 
+          NIC or PCMCIA card. You need to change the drivers.</font> 
+          <p><font face="Arial, Helvetica, sans-serif" size="2">To check whether 
+            there is a hardware conflict, carry out the following steps:</font></p>
+          <ol type="a">
+            <li><font face="Arial, Helvetica, sans-serif" size="2"> Select the 
+              <i>NIC</i> or <i>PCMCIA</i> card in the listbox.</font></li>
+            <li><font face="Arial, Helvetica, sans-serif" size="2">Click on <i>Properties</i>.</font></li>
+            <li><font face="Arial, Helvetica, sans-serif" size="2">Select the 
+              <i>Resources</i> tab.</font> 
+              <p><font face="Arial, Helvetica, sans-serif" size="2">If there is 
+                a conflict, a conflict message is displayed in the bottom listbox.<br>
+                If there is a device conflict use the Windows 95 or Windows 98 
+                Hardware Conflict Troubleshooter. </font></p>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <blockquote> 
+        <p><font face="Arial, Helvetica, sans-serif" size="2">To check your drivers 
+          configuration see <a  href="javascript:hotlink_se('driver/driver.htm','')">Changing 
+          the Driver</a>.</font></p>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/trans1.3.html -->
+
+<HEAD>
+<TITLE>Encoding files</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Encoding files</H1>
+
+<P>A <A HREF="../glossary/gb.html#binfil">binary
+file</A> can be converted into a 
+<A HREF="../glossary/gt.html#textfile">text file</A> using the
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/man-cgi?uuencode">uuencode</A>
+command. For example:</P>
+
+<PRE WIDTH=80>   <STRONG>uuencode <EM>source_file file_label </EM>&gt; <EM>filename</EM></STRONG>
+</PRE>
+
+<P>The encoded file has the same ownership and access
+permissions as the source file. Make sure that you set
+these to 
+<A HREF="../tasks/access_permissions.html">appropriate values</A>
+before encoding the file and sending it to another user.  The name of
+the file to be encoded is used for the <EM>file_label</EM>.</P>
+
+<P>You can use the 
+<A HREF="trans1.1.html">tar</A>
+command to turn several files into a single file, which is then 
+<A HREF="trans1.2.html">compressed</A>
+before being encoded and mailed to another user.</P>
+
+<UL>
+<LI><A HREF="trans1.3.1.html">Examples</A></LI>
+<LI><A HREF="trans1.3.3.html">Did You Know?</A></LI>
+<LI><A HREF="trans1.3.2.html">Decoding files</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/48/trunk/app_inv_game_server/custom_modules/voting
+END
+voting_commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/48/trunk/app_inv_game_server/custom_modules/voting/voting_commands.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/48/trunk/app_inv_game_server/custom_modules/voting/__init__.py
+END

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- FACHTNA: NOTE TO SELF: No spaces in linked filenames from now on! -->
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Work Experience</h1>
+<a href="/fetacmodules/2011-W20008_AwardSpecifications_English.pdf">Module Descriptor</a>
+<h1><a id="present"></a>Current Year</h1>
+<h2><a id="2015"></a>Assessment 2014-2015:</h2>
+Assessment is by <u>three</u> elements, accounting for 100% of the marks. It is the sole responsibility of the student to ensure all parts of all elements are completed in accordance with instructions given.
+<ol>
+  <li>Portfolio: Preparatory Assignments <i>and</i> <b>Placement Diary</b> - <b>50%</b></li>
+  </ol>
+  <ul class="olul">
+    <li>Preparatory Study 01: (Letter of Application &amp;) <a href="00-WorkExperience-PreparatoryStudy-1-2014-2015.pdf">CV</a>
+    <aside>
+    The Curriculum Vitae - CV - has evolved over the years, from the long letters from which it is descended; it needs to find a middle-ground between everything you ever did and only the bits which are relevant - but leaning strongly towards short and to the point. Yours will not be the only CV to be received by the employer, so don't expect them to know just by seeing your name that you're special. To show that, present the CV attractively in a clean crisp style with a planned layout and easy to find information.
+    </aside>
+    </li>
+    <li>Preparatory Study 02: <a href="00-WorkExperience-PreparatoryStudy-2-2014-2015.pdf">Local employers</a>
+    </li>
+    <li>Preparatory Study 03: <a href="00-WorkExperience-PreparatoryStudy-3-2014-2015.pdf">Letter of Application</a> (&amp; CV)
+    </li>
+    <li>Preparatory Study 04: <a href="00-WorkExperience-PreparatoryStudy-4-2014-2015.pdf">National &amp; international employers</a>
+    </li>
+    <li>Preparatory Study 05: <a href="00-WorkExperienceDetailsForm-2015.pdf">Work Placement Details 2015</a></li>
+    <li>Placement Diary</li>
+  </ul>
+  
+  <ol start="2">
+    <li>Supervisor's Report - <b>30%</b></li>
+    </ol>
+  <ul class="olul">
+    <li>This is a standardised sheet, listing categories under which the employer may rate you from Excellent to Unsatisfactory. Where inappropriate to your workplace, the employer may dismiss a category as <i>Unable to Assess</i>.</li>
+    <li>This sheet may be found in the module descriptor under the title <i>Supervisors Report</i>. It's well worth being highly familiar with this as it is the single largest allocation of marks, and indicates areas under which you are assessed in the workplace.</li>
+    <li>Before going on placement you must complete and return the <i><a href="http://www.fachtnaroe.net/subjects/workexperience/00-WorkExperienceDetailsForm-2014.pdf"></a>placement details form</i>. <b>NB:</b> 1 form should be completed for each location/company where you will do your placement, totalling a <i>minimum</i> of 10 days. Failure to provide all contact details/forms will prevent contact with the workplace(s) if this is required and therefore may prevent the completion of the supervisiors report(s). This in turn may lead to failure in this core module and non-achievement of the main award. Compliance is the responsibility of the candidate. The form is above.</li>
+    </ul>
+    <ol start="3">
+      <li>General Assignment - <b>20%</b></li>
+      </ol>
+    <ul class="olul">
+      <li><a href="WorkExperience-2015-GeneralVocationalAssignment(APEALModeAssignment).odt.pdf">My top 3 jobs in IT in Ireland</a></li>
+      </ul>      
+    <h2>Related:</h2>
+      <ul>      
+        <li><a href="2015-03-12-InsuranceCoverLetter.pdf">Insurance letter for employers</a></li>
+      </ul>
+<h1><a id="past"></a>Previous Years</h1>
+<p><a href="previous.shtml">Click here</a>.</p>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

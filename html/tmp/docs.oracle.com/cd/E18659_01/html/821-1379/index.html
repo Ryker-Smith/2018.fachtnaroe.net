@@ -1,0 +1,1086 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 25226-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Oracle Solaris Studio 12.2: Performance Analyzer - Oracle Solaris Studio 12.2: Performance Analyzer</title>
+
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This Oracle Solaris Studio 12.2: Performance Analyzer manual describes the performance analysis tools in the Oracle Solaris Studio software.The Collector and the Performance Analyzer are a pair of tools that perform statistical profiling of a wide range of performance data and tracing of various system calls, and relate the data to program structure at the function, source line, and instruction levels.">
+<meta name="date" content="2011-06-01">
+
+<link rel="stylesheet" type="text/css" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/tocpagelayout.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script language="javascript1.2" type="text/javascript" src="css/sniff.js"></script>
+
+<noscript>
+	JavaScript is required to interactively collapse and expand the table of contents.
+</noscript>
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E18659_01/html/821-1379";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to
+</noscript>
+
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+			<td class="contentpage-doctitle"><a href="toc.html">Oracle Solaris Studio 12.2: Performance Analyzer </a>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+               
+           </div>
+
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1379.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+
+           </div>
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+<input type="hidden" name="group" value="Documentation" id="group"/>
+                     </form>
+                  </div>
+               </div>
+               
+</div>
+
+
+<a name="SWKSHPPERFSWKSHPPERFcontent"></a><a name="SWKSHPPERFcontent"></a><a name="SWKSHPPERFcontent"></a><a name="content"></a>
+<div class="MainTOCPane">
+			<div class="TitleDiv">      	 
+				<h2 class="DocTitle">Oracle Solaris Studio 12.2: Performance Analyzer</h2>
+				<h3 class="SubTitle"></h3>
+				<h4 class="TitleDate">June 2011</h4>
+				<p class="AbstractTitlePage">This Oracle Solaris Studio 12.2: Performance Analyzer manual describes the performance analysis tools in the Oracle Solaris Studio software.The Collector and the Performance Analyzer are a pair of tools that perform statistical profiling of a wide range of performance data and tracing of various system calls, and relate the data to program structure at the function, source line, and instruction levels.</p>
+			</div>
+
+			<!-- BEGIN G23 COMPONENT V.0 -->
+			<div class="g23 g23v0">
+				<div class="g23w1">
+					<div class="g23w2">
+						<div class="g23w3">
+							<div class="g23w4">
+								<ul class="g23tree">
+
+									<ul>
+<li><a href="docinfo.html#scrolltoc">Document Information</a></li>
+
+<li><a href="gkccj.html#scrolltoc">Preface</a></li>
+
+<li><a href="afabb.html#scrolltoc">1.&#160;&#160;Overview of the Performance Analyzer</a><ul>
+<li><a href="afabd.html#scrolltoc">The Tools of Performance Analysis</a><ul>
+<li><a href="afabd.html#afabe">The Collector Tool</a></li>
+
+<li><a href="afabd.html#afabf">The Performance Analyzer Tool</a></li>
+
+<li><a href="afabd.html#afabg">The <tt>er_print</tt> Utility</a></ul></li>
+
+<li><a href="afabh.html#scrolltoc">The Performance Analyzer Window</a></ul></li>
+
+<li><a href="afabi.html#scrolltoc">2.&#160;&#160;Performance Data</a><ul>
+<li><a href="afabj.html#scrolltoc">What Data the Collector Collects</a><ul>
+<li><a href="afabj.html#afabk">Clock Data</a><ul>
+<li><a href="afabj.html#afabl">Clock-based Profiling Under the Solaris OS</a></li>
+
+<li><a href="afabj.html#afabn">Clock-based Profiling Under the Linux OS</a></li>
+
+<li><a href="afabj.html#gjcps">Clock-based Profiling for MPI Programs</a></li>
+
+<li><a href="afabj.html#givel">Clock-based Profiling for OpenMP Programs</a></ul></li>
+
+<li><a href="afabj.html#afabo">Hardware Counter Overflow Profiling Data</a><ul>
+<li><a href="afabj.html#afabp">Hardware Counter Lists</a><ul>
+<li><a href="afabj.html#afabq">Format of the Aliased Hardware Counter List</a></li>
+
+<li><a href="afabj.html#afabr">Format of the Raw Hardware Counter List</a></ul></li>
+</ul></li>
+
+<li><a href="afabj.html#afabs">Synchronization Wait Tracing Data</a></li>
+
+<li><a href="afabj.html#afabu">Heap Tracing (Memory Allocation) Data</a></li>
+
+<li><a href="afabj.html#afabw">MPI Tracing Data</a></li>
+
+<li><a href="afabj.html#afaca">Global (Sampling) Data</a></ul></li>
+
+<li><a href="afacb.html#scrolltoc">How Metrics Are Assigned to Program Structure</a><ul>
+<li><a href="afacb.html#afacc">Function-Level Metrics: Exclusive, Inclusive, and Attributed</a></li>
+
+<li><a href="afacb.html#afacd">Interpreting Attributed Metrics: An Example</a></li>
+
+<li><a href="afacb.html#afacf">How Recursion Affects Function-Level Metrics</a></ul></li>
+</ul></li>
+
+<li><a href="afacg.html#scrolltoc">3.&#160;&#160;Collecting Performance Data</a><ul>
+<li><a href="afach.html#scrolltoc">Compiling and Linking Your Program</a><ul>
+<li><a href="afach.html#afaci">Source Code Information</a></li>
+
+<li><a href="afach.html#afacj">Static Linking</a></li>
+
+<li><a href="afach.html#givij">Shared Object Handling</a></li>
+
+<li><a href="afach.html#afack">Optimization at Compile Time</a></li>
+
+<li><a href="afach.html#afacl">Compiling Java Programs</a></ul></li>
+
+<li><a href="afacm.html#scrolltoc">Preparing Your Program for Data Collection and Analysis</a><ul>
+<li><a href="afacm.html#afacn">Using Dynamically Allocated Memory</a></li>
+
+<li><a href="afacm.html#afaco">Using System Libraries</a></li>
+
+<li><a href="afacm.html#afacp">Using Signal Handlers</a></li>
+
+<li><a href="afacm.html#afacq">Using <tt>setuid</tt> and <tt>setgid</tt></a></li>
+
+<li><a href="afacm.html#afacr">Program Control of Data Collection</a><ul>
+<li><a href="afacm.html#afacs">The C and C++ Interface</a></li>
+
+<li><a href="afacm.html#afact">The Fortran Interface</a></li>
+
+<li><a href="afacm.html#afacu">The Java Interface</a></ul></li>
+
+<li><a href="afacm.html#afacv">The C, C++, Fortran, and Java API Functions</a></li>
+
+<li><a href="afacm.html#afacw">Dynamic Functions and Modules</a><ul>
+<li><a href="afacm.html#gfkms"><tt>collector_func_load()</tt></a></li>
+
+<li><a href="afacm.html#gfkmk"><tt>collector_func_unload()</tt></a></ul></li>
+</ul></li>
+
+<li><a href="afacy.html#scrolltoc">Limitations on Data Collection</a><ul>
+<li><a href="afacy.html#afacz">Limitations on Clock-Based Profiling</a><ul>
+<li><a href="afacy.html#afada">Runtime Distortion and Dilation with Clock-profiling</a></ul></li>
+
+<li><a href="afacy.html#afadb">Limitations on Collection of Tracing Data</a><ul>
+<li><a href="afacy.html#afadc">Runtime Distortion and Dilation with Tracing</a></ul></li>
+
+<li><a href="afacy.html#afadd">Limitations on Hardware Counter Overflow Profiling</a></li>
+
+<li><a href="afacy.html#afade">Runtime Distortion and Dilation With Hardware Counter Overflow Profiling</a></li>
+
+<li><a href="afacy.html#afadf">Limitations on Data Collection for Descendant Processes</a></li>
+
+<li><a href="afacy.html#givtj">Limitations on OpenMP Profiling</a></li>
+
+<li><a href="afacy.html#afadg">Limitations on Java Profiling</a></li>
+
+<li><a href="afacy.html#afadh">Runtime Performance Distortion and Dilation for Applications Written in the Java Programming Language</a></ul></li>
+
+<li><a href="afadi.html#scrolltoc">Where the Data Is Stored</a><ul>
+<li><a href="afadi.html#afadj">Experiment Names</a></li>
+
+<li><a href="afadi.html#afadk">Moving Experiments</a></ul></li>
+
+<li><a href="afadl.html#scrolltoc">Estimating Storage Requirements</a></li>
+
+<li><a href="afadm.html#scrolltoc">Collecting Data</a></li>
+
+<li><a href="afadn.html#scrolltoc">Collecting Data Using the <tt>collect</tt> Command</a><ul>
+<li><a href="afadn.html#afado">Data Collection Options</a><ul>
+<li><a href="afadn.html#afadp"><tt>-p</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#afadq"><tt>-h <var>counter_definition_1</var>...[,<var>counter_definition_n</var>]</tt></a></li>
+
+<li><a href="afadn.html#afadr"><tt>-s</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#afads"><tt>-H</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#givhz"><tt>-M</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#afadt"><tt>-m</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#afadu"><tt>-S</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#gfblt"><tt>-c</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#givkw"><tt>-I</tt> <var>directory</var></a></li>
+
+<li><a href="afadn.html#giviv"><tt>-N</tt> <var>library_name</var></a></li>
+
+<li><a href="afadn.html#gfblg"><tt>-r</tt> <var>option</var></a></ul></li>
+
+<li><a href="afadn.html#afadv">Experiment Control Options</a><ul>
+<li><a href="afadn.html#afadw"><tt>-F</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#afadx"><tt>-j</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#afady"><tt>-J</tt> <var>java_argument</var></a></li>
+
+<li><a href="afadn.html#afadz"><tt>-l</tt> <var>signal</var></a></li>
+
+<li><a href="afadn.html#gfbyu"><tt>-t</tt> <var>duration</var></a></li>
+
+<li><a href="afadn.html#afaea"><tt>-x</tt></a></li>
+
+<li><a href="afadn.html#afaeb"><tt>-y</tt> <var>signal</var>[ <tt>,r</tt>]</a></ul></li>
+
+<li><a href="afadn.html#afaec">Output Options</a><ul>
+<li><a href="afadn.html#afaed"><tt>-o</tt> <var>experiment_name</var></a></li>
+
+<li><a href="afadn.html#afaee"><tt>-d</tt> <var>directory-name</var></a></li>
+
+<li><a href="afadn.html#afaef"><tt>-g</tt> <var>group-name</var></a></li>
+
+<li><a href="afadn.html#afaeg"><tt>-A</tt> <var>option</var></a></li>
+
+<li><a href="afadn.html#afaeh"><tt>-L</tt> <var>size</var></a></li>
+
+<li><a href="afadn.html#afaei"><tt>-O</tt> <var>file</var></a></ul></li>
+
+<li><a href="afadn.html#afaej">Other Options</a><ul>
+<li><a href="afadn.html#givke"><tt>-P</tt> <var>process_id</var></a></li>
+
+<li><a href="afadn.html#afaek"><tt>-C</tt> <tt>comment</tt><tt></tt></a></li>
+
+<li><a href="afadn.html#afael"><tt>-n</tt><tt></tt></a></li>
+
+<li><a href="afadn.html#afaem"><tt>-R</tt><tt></tt></a></li>
+
+<li><a href="afadn.html#afaen"><tt>-V</tt><tt></tt></a></li>
+
+<li><a href="afadn.html#afaeo"><tt>-v</tt><tt></tt></a></ul></li>
+
+<li><a href="afadn.html#gfcbs">Collecting Data From a Running Process Using the <tt>collect</tt> Utility</a></li>
+
+<li><a href="afadn.html#gfcby">To Collect Data From a Running Process Using the <tt>collect</tt> Utility</a></ul></li>
+
+<li><a href="afaep.html#scrolltoc">Collecting Data Using the <tt>dbx</tt>  <tt>collector</tt> Subcommands</a><ul>
+<li><a href="afaep.html#gfbhj">To Run the Collector From <tt>dbx</tt>:</a></li>
+
+<li><a href="afaep.html#afaeq">Data Collection Subcommands</a><ul>
+<li><a href="afaep.html#afaer"><tt>profile</tt> <var>option</var></a></li>
+
+<li><a href="afaep.html#afaes"><tt>hwprofile</tt> <var>option</var></a></li>
+
+<li><a href="afaep.html#afaet"><tt>synctrace</tt> <var>option</var></a></li>
+
+<li><a href="afaep.html#afaeu"><tt>heaptrace</tt> <var>option</var></a></li>
+
+<li><a href="afaep.html#gfbyo"><tt>tha</tt> <var>option</var></a></li>
+
+<li><a href="afaep.html#afaew"><tt>sample</tt> <var>option</var></a></li>
+
+<li><a href="afaep.html#afaex"><tt>dbxsample</tt> { <tt>on</tt> |  <tt>off</tt> }</a></ul></li>
+
+<li><a href="afaep.html#afaey">Experiment Control Subcommands</a><ul>
+<li><a href="afaep.html#afaez"><tt>disable</tt></a></li>
+
+<li><a href="afaep.html#afafa"><tt>enable</tt></a></li>
+
+<li><a href="afaep.html#afafb"><tt>pause</tt></a></li>
+
+<li><a href="afaep.html#afafc"><tt>resume</tt></a></li>
+
+<li><a href="afaep.html#afafd"><tt>sample record</tt> <var>name</var></a></ul></li>
+
+<li><a href="afaep.html#afafe">Output Subcommands</a><ul>
+<li><a href="afaep.html#afaff"><tt>archive</tt> <var>mode</var></a></li>
+
+<li><a href="afaep.html#afafg"><tt>limit</tt> <var>value</var></a></li>
+
+<li><a href="afaep.html#afafh"><tt>store</tt> <var>option</var></a></ul></li>
+
+<li><a href="afaep.html#afafi">Information Subcommands</a><ul>
+<li><a href="afaep.html#afafj"><tt>show</tt></a></li>
+
+<li><a href="afaep.html#afafk"><tt>status</tt></a></ul></li>
+</ul></li>
+
+<li><a href="afafl.html#scrolltoc">Collecting Data From a Running Process With <tt>dbx</tt> on Solaris Platforms</a><ul>
+<li><a href="afafl.html#givln">To Collect Data From a Running Process That is Not Under the Control of <tt>dbx</tt></a></li>
+
+<li><a href="afafl.html#gfcbk">Collecting Tracing Data From a Running Program</a></ul></li>
+
+<li><a href="afafm.html#scrolltoc">Collecting Data From MPI Programs</a><ul>
+<li><a href="afafm.html#afafo">Running the <tt>collect</tt> Command for MPI</a></li>
+
+<li><a href="afafm.html#afafn">Storing MPI Experiments</a></ul></li>
+
+<li><a href="gkcdf.html#scrolltoc">Collecting Data From Scripts</a></li>
+
+<li><a href="afafq.html#scrolltoc">Using <tt>collect</tt> With <tt>ppgsz</tt></a></ul></li>
+
+<li><a href="afafr.html#scrolltoc">4.&#160;&#160;The Performance Analyzer Tool</a><ul>
+<li><a href="afafs.html#scrolltoc">Starting the Performance Analyzer</a><ul>
+<li><a href="afafs.html#afaft">Analyzer Command Options</a><ul>
+<li><a href="afafs.html#afafu">Java Options</a><ul>
+<li><a href="afafs.html#afafv"><tt>-j | --jdkhome</tt> <var>jvm-path</var></a></li>
+
+<li><a href="afafs.html#afafw"><tt>-J</tt> <var>jvm-options</var></a></ul></li>
+
+<li><a href="afafs.html#afafx">Control Options</a><ul>
+<li><a href="afafs.html#afafy"><tt>-f | --fontsize</tt> <var>size</var></a></li>
+
+<li><a href="afafs.html#afafz"><tt>-v | --verbose</tt></a></ul></li>
+
+<li><a href="afafs.html#afaga">Information Options</a><ul>
+<li><a href="afafs.html#afagb"><tt>-V | --version</tt></a></li>
+
+<li><a href="afafs.html#afagc"><tt>-? | --h | --help</tt></a></ul></li>
+</ul></li>
+
+<li><a href="afafs.html#gflrp">Analyzer Default Settings</a></ul></li>
+
+<li><a href="afagd.html#scrolltoc">Performance Analyzer GUI</a><ul>
+<li><a href="afagd.html#afage">The Menu Bar</a></li>
+
+<li><a href="afagd.html#afagf">The Toolbar</a></li>
+
+<li><a href="afagd.html#afagg">Analyzer Data Displays</a><ul>
+<li><a href="afagd.html#afagh">Data Display, Left Pane</a><ul>
+<li><a href="afagd.html#givlf">The MPI Timeline Tab</a></li>
+
+<li><a href="afagd.html#givnm">MPI Chart Tab</a></li>
+
+<li><a href="afagd.html#gfdht">The Races Tab</a></li>
+
+<li><a href="afagd.html#gfdhq">The Deadlocks tab</a></li>
+
+<li><a href="afagd.html#afagi">The Functions Tab</a></li>
+
+<li><a href="afagd.html#afagj">The Callers-Callees Tab</a></li>
+
+<li><a href="afagd.html#gkcct">The Call Tree Tab</a></li>
+
+<li><a href="afagd.html#gfdia">The Dual-Source Tab</a></li>
+
+<li><a href="afagd.html#gfdio">The Source-Disassembly Tab</a></li>
+
+<li><a href="afagd.html#afagk">The Source Tab</a></li>
+
+<li><a href="afagd.html#afagl">The Lines Tab</a></li>
+
+<li><a href="afagd.html#afagm">The Disassembly Tab</a></li>
+
+<li><a href="afagd.html#afagn">The PCs Tab</a></li>
+
+<li><a href="afagd.html#givks">The OpenMP Parallel Region Tab</a></li>
+
+<li><a href="afagd.html#givnb">The OpenMP Task Tab</a></li>
+
+<li><a href="afagd.html#afagr">The Timeline Tab</a></li>
+
+<li><a href="afagd.html#afags">The LeakList Tab</a></li>
+
+<li><a href="afagd.html#afago">The DataObjects Tab</a></li>
+
+<li><a href="afagd.html#afagp">The DataLayout Tab</a></li>
+
+<li><a href="afagd.html#gfdhk">The Inst-Freq Tab</a></li>
+
+<li><a href="afagd.html#afagt">The Statistics Tab</a></li>
+
+<li><a href="afagd.html#afagu">The Experiments Tab</a></li>
+
+<li><a href="afagd.html#gfdin">The Index Tabs</a></li>
+
+<li><a href="afagd.html#afagq">The MemoryObjects Tabs</a></ul></li>
+
+<li><a href="afagd.html#afagv">Data Display, Right Pane</a><ul>
+<li><a href="afagd.html#givmq">The MPI Timeline Controls tab</a></li>
+
+<li><a href="afagd.html#givmc">The MPI Chart Controls Tab</a></li>
+
+<li><a href="afagd.html#afagw">The Summary Tab</a></li>
+
+<li><a href="afagd.html#afagx">The Event Tab</a></li>
+
+<li><a href="afagd.html#afagz">The Leak Tab</a></li>
+
+<li><a href="afagd.html#gfdie">The Race Detail Tab</a></li>
+
+<li><a href="afagd.html#gfdhm">The Deadlock Detail Tab</a></ul></li>
+</ul></li>
+
+<li><a href="afagd.html#afaha">Setting Data Presentation Options</a><ul>
+<li><a href="afagd.html#afahb">Metrics Tab</a></li>
+
+<li><a href="afagd.html#afahc">Sort Tab</a></li>
+
+<li><a href="afagd.html#afahd">Source/Disassembly Tab</a></li>
+
+<li><a href="afagd.html#afahe">Formats Tab</a></li>
+
+<li><a href="afagd.html#afahf">Timeline Tab</a></li>
+
+<li><a href="afagd.html#afahg">Search Path Tab</a></li>
+
+<li><a href="afagd.html#gfdjv">Pathmaps Tab</a></li>
+
+<li><a href="afagd.html#afahh">Tabs Tab</a></ul></li>
+</ul></li>
+
+<li><a href="afahi.html#scrolltoc">Finding Text and Data</a></li>
+
+<li><a href="afahj.html#scrolltoc">Showing or Hiding Functions</a></li>
+
+<li><a href="afahk.html#scrolltoc">Filtering Data</a><ul>
+<li><a href="afahk.html#gjcfn">Simple Tab</a><ul>
+<li><a href="afahk.html#gjcdl">Experiment Selection</a></li>
+
+<li><a href="afahk.html#gjcgl">Sample Selection</a></li>
+
+<li><a href="afahk.html#gjcdn">Thread Selection</a></li>
+
+<li><a href="afahk.html#gjcem">LWP Selection</a></li>
+
+<li><a href="afahk.html#gjcdb">CPU Selection</a></ul></li>
+
+<li><a href="afahk.html#gjcef">Advanced Tab</a></ul></li>
+
+<li><a href="afahq.html#scrolltoc">Recording Experiments from Analyzer</a></li>
+
+<li><a href="afahs.html#scrolltoc">Default Settings for Analyzer</a><ul>
+<li><a href="afahs.html#gkcro">Settings in the <tt>.er.rc</tt> File</a></ul></li>
+
+<li><a href="gkdbt.html#scrolltoc">Comparing Experiments</a><ul>
+<li><a href="gkdbt.html#gkgcu">Enabling Comparison Mode</a></ul></li>
+</ul></li>
+
+<li><a href="afaid.html#scrolltoc">5.&#160;&#160;The <tt>er_print</tt> Command Line Performance Analysis Tool</a><ul>
+<li><a href="afaie.html#scrolltoc"><tt>er_print</tt> Syntax</a></li>
+
+<li><a href="afaig.html#scrolltoc">Metric Lists</a></li>
+
+<li><a href="afaik.html#scrolltoc">Commands That Control the Function List</a><ul>
+<li><a href="afaik.html#afail"><tt>functions</tt></a></li>
+
+<li><a href="afaik.html#afaim"><tt>metrics</tt> <var>metric_spec</var></a></li>
+
+<li><a href="afaik.html#afain"><tt>sort</tt> <var>metric_spec</var></a></li>
+
+<li><a href="afaik.html#afaio"><tt>fsummary</tt></a></li>
+
+<li><a href="afaik.html#afaip"><tt>fsingle</tt> <var>function_name</var>  <tt>[</tt><var>N</var><tt>]</tt></a></ul></li>
+
+<li><a href="afaiq.html#scrolltoc">Commands That Control the Callers-Callees List</a><ul>
+<li><a href="afaiq.html#afair"><tt>callers-callees</tt></a></li>
+
+<li><a href="afaiq.html#afait"><tt>csingle</tt> <var>function_name</var>  <tt>[</tt><var>N</var><tt>]</tt></a></li>
+
+<li><a href="afaiq.html#gkdan"><tt>cprepend <var>function-name [N | ADDR]</var></tt></a></li>
+
+<li><a href="afaiq.html#gkdal"><tt>cappend <var>function-name [N | ADDR]</var></tt></a></li>
+
+<li><a href="afaiq.html#gkdce"><tt>crmfirst</tt></a></li>
+
+<li><a href="afaiq.html#gkdec"><tt>crmlast</tt></a></ul></li>
+
+<li><a href="gkdea.html#scrolltoc">Commands That Control the Call Tree List</a><ul>
+<li><a href="gkdea.html#gkdds"><tt>calltree</tt></a></ul></li>
+
+<li><a href="afaiv.html#scrolltoc">Commands That Control the Leak and Allocation Lists</a><ul>
+<li><a href="afaiv.html#afaiw"><tt>leaks</tt></a></li>
+
+<li><a href="afaiv.html#afaix"><tt>allocs</tt></a></ul></li>
+
+<li><a href="afaiy.html#scrolltoc">Commands That Control the Source and Disassembly Listings</a><ul>
+<li><a href="afaiy.html#afaiz"><tt>pcs</tt></a></li>
+
+<li><a href="afaiy.html#afaja"><tt>psummary</tt></a></li>
+
+<li><a href="afaiy.html#afajb"><tt>lines</tt></a></li>
+
+<li><a href="afaiy.html#afajc"><tt>lsummary</tt></a></li>
+
+<li><a href="afaiy.html#afajd"><tt>source|src {</tt> <var>filename</var>  <tt>|</tt> <var>function_name</var> <tt>} [</tt> <var>N</var><tt>]</tt></a></li>
+
+<li><a href="afaiy.html#afaje"><tt>disasm|dis {</tt> <var>filename</var>  <tt>|</tt> <var>function_name</var> <tt>} [</tt> <var>N</var><tt>]</tt></a></li>
+
+<li><a href="afaiy.html#afajf"><tt>scc</tt> <var>com_spec</var></a></li>
+
+<li><a href="afaiy.html#afajh"><tt>sthresh</tt> <var>value</var></a></li>
+
+<li><a href="afaiy.html#afaji"><tt>dcc</tt> <var>com_spec</var></a></li>
+
+<li><a href="afaiy.html#afajk"><tt>dthresh</tt> <var>value</var></a></li>
+
+<li><a href="afaiy.html#gfkeh"><tt>cc</tt> <var>com_spec</var></a></li>
+
+<li><a href="afaiy.html#afajl"><tt>setpath</tt> <var>path_list</var></a></li>
+
+<li><a href="afaiy.html#afajm"><tt>addpath</tt> <var>path_list</var></a></li>
+
+<li><a href="afaiy.html#gfdle"><tt>pathmap</tt> <var>old-prefix</var>  <var>new-prefix</var></a></ul></li>
+
+<li><a href="afajn.html#scrolltoc">Commands That Control Hardware Counter Dataspace and Memory Object Lists</a><ul>
+<li><a href="afajn.html#afajo"><tt>data_objects</tt></a></li>
+
+<li><a href="afajn.html#afajp"><tt>data_single</tt> <var>name</var>  <tt>[</tt><var>N</var><tt>]</tt></a></li>
+
+<li><a href="afajn.html#afajq"><tt>data_layout</tt></a></li>
+
+<li><a href="afajn.html#afaju"><tt>memobj</tt> <var>mobj_type</var></a></li>
+
+<li><a href="afajn.html#afajv"><tt>mobj_list</tt></a></li>
+
+<li><a href="afajn.html#afajw"><tt>mobj_define</tt> <var>mobj_type</var>  <var>index_exp</var></a></ul></li>
+
+<li><a href="gfdlk.html#scrolltoc">Commands That Control Index Object Lists</a><ul>
+<li><a href="gfdlk.html#gfdjn"><tt>indxobj</tt> <var>indxobj_type</var></a></li>
+
+<li><a href="gfdlk.html#gfdke"><tt>indxobj_list</tt></a></li>
+
+<li><a href="gfdlk.html#gfdnu"><tt>indxobj_define</tt> <var>indxobj_type</var>  <var>index_exp</var></a></ul></li>
+
+<li><a href="givpy.html#scrolltoc">Commands for the OpenMP Index Objects</a><ul>
+<li><a href="givpy.html#givqo"><tt>OMP_preg</tt></a></li>
+
+<li><a href="givpy.html#givoe"><tt>OMP_task</tt></a></ul></li>
+
+<li><a href="gfdoy.html#scrolltoc">Commands That Support the Thread Analyzer</a><ul>
+<li><a href="gfdoy.html#gfdnf"><tt>races</tt></a></li>
+
+<li><a href="gfdoy.html#gfdow"><tt>rdetail</tt> <var>race_id</var></a></li>
+
+<li><a href="gfdoy.html#gfdoe"><tt>deadlocks</tt></a></li>
+
+<li><a href="gfdoy.html#gfdne"><tt>ddetail</tt> <var>deadlock_id</var></a></ul></li>
+
+<li><a href="afajx.html#scrolltoc">Commands That List Experiments, Samples, Threads, and LWPs</a><ul>
+<li><a href="afajx.html#afajy"><tt>experiment_list</tt></a></li>
+
+<li><a href="afajx.html#afajz"><tt>sample_list</tt></a></li>
+
+<li><a href="afajx.html#afaka"><tt>lwp_list</tt></a></li>
+
+<li><a href="afajx.html#afakb"><tt>thread_list</tt></a></li>
+
+<li><a href="afajx.html#afakc"><tt>cpu_list</tt></a></ul></li>
+
+<li><a href="afakd.html#scrolltoc">Commands That Control Filtering of Experiment Data</a><ul>
+<li><a href="afakd.html#afake">Specifying a Filter Expression</a><ul>
+<li><a href="afakd.html#afakf"><tt>filters</tt> <var>filter_exp</var></a></ul></li>
+
+<li><a href="afakd.html#gkddn">Listing Operand Tokens for a Filter Expression</a><ul>
+<li><a href="afakd.html#gkdbj"><tt>describe</tt></a></ul></li>
+
+<li><a href="afakd.html#afakg">Selecting Samples, Threads, LWPs, and CPUs for Filtering</a><ul>
+<li><a href="afakd.html#afakh">Selection Lists</a></li>
+
+<li><a href="afakd.html#afaki">Selection Commands</a></li>
+
+<li><a href="afakd.html#afakj"><tt>sample_select</tt> <var>sample_spec</var></a></li>
+
+<li><a href="afakd.html#afakk"><tt>lwp_select</tt> <var>lwp_spec</var></a></li>
+
+<li><a href="afakd.html#afakl"><tt>thread_select</tt> <var>thread_spec</var></a></li>
+
+<li><a href="afakd.html#afakm"><tt>cpu_select</tt> <var>cpu_spec</var></a></ul></li>
+</ul></li>
+
+<li><a href="afakn.html#scrolltoc">Commands That Control Load Object Expansion and Collapse</a><ul>
+<li><a href="afakn.html#afako"><tt>object_list</tt></a></li>
+
+<li><a href="afakn.html#givpr"><tt>object_show</tt> <var>object1,object2,...</var></a></li>
+
+<li><a href="afakn.html#givnz"><tt>object_hide</tt> <var>object1,object2,...</var></a></li>
+
+<li><a href="afakn.html#givpq"><tt>object_api</tt> <var>object1,object2,...</var></a></li>
+
+<li><a href="afakn.html#givpa"><tt>objects_default</tt></a></li>
+
+<li><a href="afakn.html#afakp"><tt>object_select</tt> <var>object1,object2,...</var></a></ul></li>
+
+<li><a href="afakq.html#scrolltoc">Commands That List Metrics</a><ul>
+<li><a href="afakq.html#afakr"><tt>metric_list</tt></a></li>
+
+<li><a href="afakq.html#afaks"><tt>cmetric_list</tt></a></li>
+
+<li><a href="afakq.html#afakt"><tt>data_metric_list</tt><tt></tt><tt></tt></a></li>
+
+<li><a href="afakq.html#gfdmm"><tt>indx_metric_list</tt></a></ul></li>
+
+<li><a href="afaku.html#scrolltoc">Commands That Control Output</a><ul>
+<li><a href="afaku.html#afakv"><tt>outfile {</tt> <var>filename</var>  <tt>|</tt> - <tt>}</tt></a></li>
+
+<li><a href="afaku.html#afakw"><tt>appendfile</tt> <var>filename</var></a></li>
+
+<li><a href="afaku.html#afakx"><tt>limit</tt> <var>n</var></a></li>
+
+<li><a href="afaku.html#afaky"><tt>name { long | short } [ :{</tt> <var>shared_object_name</var> <tt>|</tt> <var>no_shared_object_name</var>  <tt>} ]</tt></a></li>
+
+<li><a href="afaku.html#afakz"><tt>viewmode</tt> <tt>{ user| expert | machine }</tt></a></li>
+
+<li><a href="afaku.html#gkcbt"><tt>compare { on | off }</tt></a></ul></li>
+
+<li><a href="afalb.html#scrolltoc">Commands That Print Other Information</a><ul>
+<li><a href="afalb.html#afalc"><tt>header</tt> <var>exp_id</var></a></li>
+
+<li><a href="afalb.html#gfdoa"><tt>ifreq</tt></a></li>
+
+<li><a href="afalb.html#afald"><tt>objects</tt></a></li>
+
+<li><a href="afalb.html#afale"><tt>overview</tt> <var>exp_id</var></a></li>
+
+<li><a href="afalb.html#afalf"><tt>statistics</tt> <var>exp_id</var></a></ul></li>
+
+<li><a href="afalg.html#scrolltoc">Commands That Set Defaults</a><ul>
+<li><a href="afalg.html#afalh"><tt>dmetrics</tt> <var>metric_spec</var></a></li>
+
+<li><a href="afalg.html#afali"><tt>dsort</tt> <var>metric_spec</var></a></li>
+
+<li><a href="afalg.html#afalj"><tt>en_desc { on | off | =</tt><var>regexp</var><tt>}</tt></a></ul></li>
+
+<li><a href="afalk.html#scrolltoc">Commands That Set Defaults Only For the Performance Analyzer</a><ul>
+<li><a href="afalk.html#afall"><tt>tabs</tt> <var>tab_spec</var></a></li>
+
+<li><a href="afalk.html#gfdps"><tt>rtabs</tt> <var>tab_spec</var></a></li>
+
+<li><a href="afalk.html#afalm"><tt>tlmode</tt> <var>tl_mode</var></a></li>
+
+<li><a href="afalk.html#afalo"><tt>tldata</tt> <var>tl_data</var></a></ul></li>
+
+<li><a href="afalq.html#scrolltoc">Miscellaneous Commands</a><ul>
+<li><a href="afalq.html#afals"><tt>procstats</tt></a></li>
+
+<li><a href="afalq.html#afalt"><tt>script</tt> <var>file</var></a></li>
+
+<li><a href="afalq.html#afalu"><tt>version</tt></a></li>
+
+<li><a href="afalq.html#afalv"><tt>quit</tt></a></li>
+
+<li><a href="afalq.html#afalw"><tt>help</tt></a></ul></li>
+
+<li><a href="afalx.html#scrolltoc">Expression Grammar</a><ul>
+<li><a href="afalx.html#gkddt">Example Filter Expressions</a></ul></li>
+
+<li><a href="afaly.html#scrolltoc"><tt>er_print</tt> command Examples</a></ul></li>
+
+<li><a href="afalz.html#scrolltoc">6.&#160;&#160;Understanding the Performance Analyzer and Its Data</a><ul>
+<li><a href="afama.html#scrolltoc">How Data Collection Works</a><ul>
+<li><a href="afama.html#afamb">Experiment Format</a><ul>
+<li><a href="afama.html#afamd">The <tt>archives</tt> Directory</a></li>
+
+<li><a href="afama.html#afame">Descendant Processes</a></li>
+
+<li><a href="afama.html#afamf">Dynamic Functions</a></li>
+
+<li><a href="afama.html#afamg">Java Experiments</a></ul></li>
+
+<li><a href="afama.html#afamh">Recording Experiments</a><ul>
+<li><a href="afama.html#afami">collect Experiments</a></li>
+
+<li><a href="afama.html#afamj">dbx Experiments That Create a Process</a></li>
+
+<li><a href="afama.html#afamk">dbx Experiments on a Running Process</a></ul></li>
+</ul></li>
+
+<li><a href="afaml.html#scrolltoc">Interpreting Performance Metrics</a><ul>
+<li><a href="afaml.html#afamm">Clock-Based Profiling</a><ul>
+<li><a href="afaml.html#afamo">Accuracy of Timing Metrics</a></li>
+
+<li><a href="afaml.html#afamp">Comparisons of Timing Metrics</a></ul></li>
+
+<li><a href="afaml.html#afamq">Synchronization Wait Tracing</a></li>
+
+<li><a href="afaml.html#afamr">Hardware Counter Overflow Profiling</a></li>
+
+<li><a href="afaml.html#afams">Heap Tracing</a></li>
+
+<li><a href="afaml.html#afamt">Dataspace Profiling</a></li>
+
+<li><a href="afaml.html#afamu">MPI Tracing</a></ul></li>
+
+<li><a href="afamv.html#scrolltoc">Call Stacks and Program Execution</a><ul>
+<li><a href="afamv.html#afamw">Single-Threaded Execution and Function Calls</a><ul>
+<li><a href="afamv.html#afamx">Function Calls Between Shared Objects</a></li>
+
+<li><a href="afamv.html#afamy">Signals</a></li>
+
+<li><a href="afamv.html#afamz">Traps</a></li>
+
+<li><a href="afamv.html#afana">Tail-Call Optimization</a></ul></li>
+
+<li><a href="afamv.html#afanb">Explicit Multithreading</a></li>
+
+<li><a href="afamv.html#afanc">Overview of Java Technology-Based Software Execution</a><ul>
+<li><a href="afamv.html#afand">Java Call Stacks and Machine Call Stacks</a></li>
+
+<li><a href="afamv.html#afane">Clock-based Profiling and Hardware Counter Overflow Profiling</a></ul></li>
+
+<li><a href="afamv.html#afanh">Java Processing Representations</a><ul>
+<li><a href="afamv.html#afani">The User Representation</a></li>
+
+<li><a href="afamv.html#afanj">The Expert-User Representation</a></li>
+
+<li><a href="afamv.html#afank">The Machine Representation</a></ul></li>
+
+<li><a href="afamv.html#afanl">Overview of OpenMP Software Execution</a><ul>
+<li><a href="afamv.html#afanm">User Mode View of OpenMP Profile Data</a><ul>
+<li><a href="afamv.html#afann">Artificial Functions</a></li>
+
+<li><a href="afamv.html#afano">User Mode Call Stacks</a></ul></li>
+
+<li><a href="afamv.html#afaoa">OpenMP Metrics</a></li>
+
+<li><a href="afamv.html#gkdak">Expert View Mode of OpenMP Profiling Data</a></li>
+
+<li><a href="afamv.html#afaob">Machine View Mode of OpenMP Profiling Data</a></ul></li>
+
+<li><a href="afamv.html#afaoh">Incomplete Stack Unwinds</a><ul>
+<li><a href="afamv.html#afaoi">Intermediate Files</a></ul></li>
+</ul></li>
+
+<li><a href="afaoj.html#scrolltoc">Mapping Addresses to Program Structure</a><ul>
+<li><a href="afaoj.html#afaok">The Process Image</a></li>
+
+<li><a href="afaoj.html#afaol">Load Objects and Functions</a></li>
+
+<li><a href="afaoj.html#afaom">Aliased Functions</a></li>
+
+<li><a href="afaoj.html#afaon">Non-Unique Function Names</a></li>
+
+<li><a href="afaoj.html#afaoo">Static Functions From Stripped Shared Libraries</a></li>
+
+<li><a href="afaoj.html#afaop">Fortran Alternate Entry Points</a></li>
+
+<li><a href="afaoj.html#afaoq">Cloned Functions</a></li>
+
+<li><a href="afaoj.html#afaor">Inlined Functions</a></li>
+
+<li><a href="afaoj.html#afaos">Compiler-Generated Body Functions</a></li>
+
+<li><a href="afaoj.html#afaot">Outline Functions</a></li>
+
+<li><a href="afaoj.html#afaou">Dynamically Compiled Functions</a></li>
+
+<li><a href="afaoj.html#afaov">The <tt>&#60;Unknown></tt> Function</a></li>
+
+<li><a href="afaoj.html#afaow">OpenMP Special Functions</a></li>
+
+<li><a href="afaoj.html#afaox">The <tt>&#60;JVM-System></tt> Function</a></li>
+
+<li><a href="afaoj.html#afaoy">The <tt>&#60;no</tt> <tt>Java</tt>  <tt>callstack</tt> <tt>recorded></tt> Function</a></li>
+
+<li><a href="afaoj.html#afaoz">The <tt>&#60;Truncated-stack></tt> Function</a></li>
+
+<li><a href="afaoj.html#afapa">The <tt>&#60;Total></tt> Function</a></li>
+
+<li><a href="afaoj.html#afapb">Functions Related to Hardware Counter Overflow Profiling</a></ul></li>
+
+<li><a href="gfgzs.html#scrolltoc">Mapping Performance Data to Index Objects</a></li>
+
+<li><a href="afapc.html#scrolltoc">Mapping Data Addresses to Program Data Objects</a><ul>
+<li><a href="afapc.html#afapd">Data Object Descriptors</a><ul>
+<li><a href="afapc.html#afape">The <tt>&#60;Total></tt> Data Object</a></li>
+
+<li><a href="afapc.html#afapf">The <tt>&#60;Scalars></tt> Data Object</a></li>
+
+<li><a href="afapc.html#afapg">The <tt>&#60;Unknown></tt> Data Object and Its Elements</a></ul></li>
+</ul></li>
+
+<li><a href="afaph.html#scrolltoc">Mapping Performance Data to Memory Objects</a></ul></li>
+
+<li><a href="afapi.html#scrolltoc">7.&#160;&#160;Understanding Annotated Source and Disassembly Data</a><ul>
+<li><a href="afapj.html#scrolltoc">Annotated Source Code</a><ul>
+<li><a href="afapj.html#afapk">Performance Analyzer Source Tab Layout</a><ul>
+<li><a href="afapj.html#afapl">Identifying the Original Source Lines</a></li>
+
+<li><a href="afapj.html#afapm">Index Lines in the Source Tab</a></li>
+
+<li><a href="afapj.html#afapn">Compiler Commentary</a><ul>
+<li><a href="afapj.html#afapo">Common Subexpression Elimination</a></li>
+
+<li><a href="afapj.html#afapp">Loop Optimizations</a></li>
+
+<li><a href="afapj.html#afapq">Inlining of Functions</a></li>
+
+<li><a href="afapj.html#afapr">Parallelization</a></ul></li>
+
+<li><a href="afapj.html#afaps">Special Lines in the Annotated Source</a></li>
+
+<li><a href="afapj.html#afapt">Source Line Metrics</a><ul>
+<li><a href="afapj.html#afapu">Interpreting Source Line Metrics</a></li>
+
+<li><a href="afapj.html#afapv">Metric Formats</a></ul></li>
+</ul></li>
+</ul></li>
+
+<li><a href="afapx.html#scrolltoc">Annotated Disassembly Code</a><ul>
+<li><a href="afapx.html#afapy">Interpreting Annotated Disassembly</a><ul>
+<li><a href="afapx.html#afapz">Instruction Issue Grouping</a></li>
+
+<li><a href="afapx.html#afaqa">Instruction Issue Delay</a></li>
+
+<li><a href="afapx.html#afaqb">Attribution of Hardware Counter Overflows</a></ul></li>
+</ul></li>
+
+<li><a href="afaqc.html#scrolltoc">Special Lines in the Source, Disassembly and PCs Tabs</a><ul>
+<li><a href="afaqc.html#afaqd">Outline Functions</a></li>
+
+<li><a href="afaqc.html#afaqe">Compiler-Generated Body Functions</a></li>
+
+<li><a href="afaqc.html#afaqf">Dynamically Compiled Functions</a></li>
+
+<li><a href="afaqc.html#afaqg">Java Native Functions</a></li>
+
+<li><a href="afaqc.html#afaqh">Cloned Functions</a></li>
+
+<li><a href="afaqc.html#afaqi">Static Functions</a></li>
+
+<li><a href="afaqc.html#afaqj">Inclusive Metrics</a></li>
+
+<li><a href="afaqc.html#afaqk">Branch Target</a></li>
+
+<li><a href="afaqc.html#gkgiy">Annotations for Store and Load Instructions</a></ul></li>
+
+<li><a href="afaql.html#scrolltoc">Viewing Source/Disassembly Without An Experiment</a><ul>
+<li><a href="afaql.html#afaqm"><tt>-func</tt></a><ul>
+<li><a href="afaql.html#afaqn"><tt>-{source,src}</tt> <var>item tag</var></a></li>
+
+<li><a href="afaql.html#afaqo"><tt>-{disasm,dis}</tt> <var>item tag</var></a></li>
+
+<li><a href="afaql.html#afaqp"><tt>-{cc,scc,dcc}</tt> <var>com-spec</var></a></li>
+
+<li><a href="afaql.html#afaqq"><tt>-outfile</tt> <var>filename</var></a></li>
+
+<li><a href="afaql.html#afaqr"><tt>-V</tt></a></ul></li>
+</ul></li>
+</ul></li>
+
+<li><a href="afaqs.html#scrolltoc">8.&#160;&#160;Manipulating Experiments</a><ul>
+<li><a href="afaqt.html#scrolltoc">Manipulating Experiments</a><ul>
+<li><a href="afaqt.html#afaqu">Copying Experiments With the <tt>er_cp</tt> Utility</a></li>
+
+<li><a href="afaqt.html#afaqv">Moving Experiments With the <tt>er_mv</tt> Utility</a></li>
+
+<li><a href="afaqt.html#afaqw">Deleting Experiments With the <tt>er_rm</tt> Utility</a></ul></li>
+
+<li><a href="afaqx.html#scrolltoc">Other Utilities</a><ul>
+<li><a href="afaqx.html#afaqy">The <tt>er_archive</tt> Utility</a><ul>
+<li><a href="afaqx.html#gfgyy"><tt>-n</tt></a></li>
+
+<li><a href="afaqx.html#afaqz"><tt>-q</tt></a></li>
+
+<li><a href="afaqx.html#afara"><tt>-A</tt></a></li>
+
+<li><a href="afaqx.html#afarb"><tt>-F</tt></a></li>
+
+<li><a href="afaqx.html#afarc"><tt>-V</tt></a></ul></li>
+
+<li><a href="afaqx.html#afard">The <tt>er_export</tt> Utility</a></ul></li>
+</ul></li>
+
+<li><a href="afaht.html#scrolltoc">9.&#160;&#160;Kernel Profiling</a><ul>
+<li><a href="afahu.html#scrolltoc">Kernel Experiments</a></li>
+
+<li><a href="afahv.html#scrolltoc">Setting Up Your System for Kernel Profiling</a></li>
+
+<li><a href="afahw.html#scrolltoc">Running the <tt>er_kernel</tt> Utility</a><ul>
+<li><a href="afahw.html#gfajs">Profiling the Kernel</a></li>
+
+<li><a href="afahw.html#gfalh">Profiling Under Load</a></li>
+
+<li><a href="afahw.html#gfakg">Profiling the Kernel and Load Together</a></li>
+
+<li><a href="afahw.html#afaia">Profiling a Specific Process or Kernel Thread</a></ul></li>
+
+<li><a href="afaib.html#scrolltoc">Analyzing a Kernel Profile</a></ul></li>
+
+<li><a href="idx-1.html#scrolltoc">Index</a><ul>
+<li><a href="idx-1.html#idx-1">Numbers and Symbols</a></li>
+
+<li><a href="idx-2.html#scrolltoc">A</a></li>
+
+<li><a href="idx-3.html#scrolltoc">B</a></li>
+
+<li><a href="idx-4.html#scrolltoc">C</a></li>
+
+<li><a href="idx-5.html#scrolltoc">D</a></li>
+
+<li><a href="idx-6.html#scrolltoc">E</a></li>
+
+<li><a href="idx-7.html#scrolltoc">F</a></li>
+
+<li><a href="idx-8.html#scrolltoc">H</a></li>
+
+<li><a href="idx-9.html#scrolltoc">I</a></li>
+
+<li><a href="idx-10.html#scrolltoc">J</a></li>
+
+<li><a href="idx-11.html#scrolltoc">K</a></li>
+
+<li><a href="idx-12.html#scrolltoc">L</a></li>
+
+<li><a href="idx-13.html#scrolltoc">M</a></li>
+
+<li><a href="idx-14.html#scrolltoc">N</a></li>
+
+<li><a href="idx-15.html#scrolltoc">O</a></li>
+
+<li><a href="idx-16.html#scrolltoc">P</a></li>
+
+<li><a href="idx-17.html#scrolltoc">R</a></li>
+
+<li><a href="idx-18.html#scrolltoc">S</a></li>
+
+<li><a href="idx-19.html#scrolltoc">T</a></li>
+
+<li><a href="idx-20.html#scrolltoc">U</a></li>
+
+<li><a href="idx-21.html#scrolltoc">V</a></li>
+
+<li><a href="idx-22.html#scrolltoc">W</a></li>
+
+<li><a href="idx-23.html#scrolltoc">X</a></ul></li>
+</ul>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2009, 2011, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html#scrolltoc">Legal Notices</a>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

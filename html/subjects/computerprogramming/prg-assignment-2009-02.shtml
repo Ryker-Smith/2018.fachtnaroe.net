@@ -1,0 +1,24 @@
+<ul>
+<li>(<!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="prg-assignment-2009-02.shtml" -->)</li>
+<li>Write a script that accepts one of a number of input options, as indicated by a radio-button control, and responds appropriately.</li>
+<li>Provide as many as possible of the features listed below. Start with the easier tasks and build from there. Many of the code elements are re-usable allowing you to create later features from earlier ones.</li>
+<li>Possible input options/requests include:</li>
+  <ol>
+  <li>Duplication for further processing of the previously stored database ("/home/public/hosteldatabase2009.dat") under a new name for processing</li>
+  <li>Where possible remove records from the copied database that are obviously incorrect <i>eg:</i></li>
+    <ol start="0">
+      <li><i>e.g.</i></li>
+      <li>Remove records with empty fields</li>
+      <li>Remove records with more than 12 people booked</li>
+      <li>Remove records with invalid dates</li>
+      <li>...</li>
+    </ol>
+  <li>Retrieve a booking by name for printing or deleting</li>
+  <li>Retrieve a booking by email for printing or deleting</li>
+  <li>Retrieve all of 'todays' bookings</li>
+  <li>Perform a series of statistical/<a href="http://en.wikipedia.org/wiki/Data_processing">data processing</a> calculations</li>
+  </ol>
+<li>A program to generate more sample data for processing is here: <a href="https://www.fachtnaroe.net/~fachtna/make-data-2009.pl.txt">https://www.fachtnaroe.net/~fachtna/make-data-2009.pl.txt</a>. It may be useful as another perl program sample.
+<li>...more may follow...</li>
+</ul>
+

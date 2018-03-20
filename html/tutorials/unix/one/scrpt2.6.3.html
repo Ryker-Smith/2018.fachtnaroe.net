@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt2.6.3.html -->
+
+<HEAD>
+<TITLE>The while and until statements</TITLE>
+</HEAD>
+
+<BODY>
+<H1>The <SAMP>while</SAMP> and <SAMP>until</SAMP> statements</H1>
+
+<P>The <SAMP>while</SAMP> statement has the general form:</P>
+
+<PRE WIDTH=80>   while <EM>command-list1</EM>
+   do
+     <EM>command-list2</EM>
+   done 
+</PRE>
+
+<P>The commands in <EM>command-list1</EM> are executed; and if the
+exit status of the last command in that list is 0 (zero),
+the commands in <EM>command-list2</EM> are executed.</P>
+
+<P>The sequence is repeated as long as the exit status of
+<EM>command-list1</EM> is 0 (zero).</P>
+
+<P>The <SAMP>until</SAMP> statement has the general form:</P>
+
+<PRE WIDTH=80>   until <EM>command-list1</EM>
+   do
+     <EM>command-list2</EM>
+   done
+</PRE>
+
+<P>This is identical in function to the <SAMP>while</SAMP> command except
+that the loop is executed as long as the exit status of
+<EM>command-list1</EM> is non-zero.</P>
+
+<P>The exit status of a <SAMP>while/until</SAMP> command is the exit
+status of the last command executed in <EM>command-list2</EM>.  If
+no such command list is executed, a <SAMP>while/until</SAMP> has an exit
+status of 0 (zero).</P>
+
+<UL>
+<LI><A HREF="scrpt2.6.3.2.html">Examples</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

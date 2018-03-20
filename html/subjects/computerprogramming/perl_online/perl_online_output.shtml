@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Using Perl Online</h1>
+<!--#include virtual="/subjects/computerprogramming/perl_online/navigate.shtml" -->
+<p>Perl is one of the most widely deployed languages on the web for all forms of scripting. It is available on web servers irrespective of OS platform or hardware.</p>
+<p>Perl may be used as the 'P' in a LAMP system.</p>
+<p>For these 3 pages, it is assumed you will access the <b>treebeard.ie</b> computer from the command line through ssh (PuTTY).</p>
+<h2>Output</h2>
+<p>What you might initially find is that the <b>input -> process -> output</b> method that you have been using at the command line is not available to you. It might seem harder to write a program that asks a question, reads the answer and then gives some output; this is what you've been doing at the CLI and it's what you're most familiar with. So for the time being, we won't deal with input or processing. We'll just make sure we can get some output, by using the traditional first program, <a href="http://en.wikipedia.org/wiki/Hello_world_program">Hello World</a> program.</a></p>
+<p>Navigate to:
+<br /><center><b>/home/<i>your_username</i>/public_html/cgi-bin</b></center><br />
+within our server <b>treebeard.ie</b>. Enter that directory and create (touch) the file <b>hello.pl</b> and enter the following code:</p>
+<font face="Courier" >
+<p>#!/usr/bin/perl
+<br />use strict;
+<br />print "Content-type: text/html\n\n";
+<br />
+<br />print "&lt;html&gt;&lt;body&gt;Hello World!&lt;/body&gt;&lt;/html&gt;";
+</font>
+<p>To run this program, use your browser to open the location:
+<br /><center><b>http://treebeard.ie:1916/<i>~your_username</i>/cgi-bin/hello.pl</b></center><br />
+and see what appears on screen. It should be our familiar first program, generating HTML to deliver its traditional message. If you receive any error messages confirm your code is correct. Also make sure that the execute bit is set on the file. (The mode for both the file and the cgi-bin directory should be 755).</p>
+<center><a href="images/hello_world.png"><img border="0" width="85%" src="images/hello_world.png"></a></center>
+<p>For practice, take your earlier programs <b>square.pl</b> and <b>star.pl</b> and copy them into your cgi-bin directory. Convert them to run as web scripts. Note that the perl location directive and the web content type instruction must always come first in these scripts:
+<font face="Courier" >
+<p>#!/usr/bin/perl
+<br />use strict;
+<br />print "Content-type: text/html\n\n";
+</font>
+
+<p>Do the shapes appear as expected? Can you generate other output? Remember that your perl script is writing HTML - which you are  familiar with - so experiment: change code and colours; see can you create tables &amp; other web effects. See what other programs you can port from the CLI environment to the CGI environment.</p>
+<p><a href="perl_online_input.shtml">Next, getting some input...</a></p>
+<br />
+<!--#include virtual="/subjects/computerprogramming/perl_online/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl_online_output.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

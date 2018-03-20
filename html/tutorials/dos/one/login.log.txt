@@ -1,0 +1,52 @@
+    Your problem is finding a way for a logging program 
+    to run anytime someone logs in. If you only want it 
+    to run when the computer is rebooted, you could 
+    reference your batch file in AUTOEXEC.BAT or 
+    WINSTART.BAT. If you only want it to run when Windows 
+    starts, you might add it to the "run=" line in WIN.INI 
+    or put a shortcut to your batch file in the Startup 
+    folder for every user. But if you want it to run for 
+    every user (including new ones) at every login, you're 
+    stuck going into the registry. Press the "Start" 
+    button, select "Run...", type in regedit.exe, and 
+    navigate your way to 
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+    Select "Edit" / "New" / "String Value". Name it 
+    whatever you want, and add the name of your batch 
+    file for the value data.
+    
+    Now then... Here is the batch file I use for similar 
+    things. I call it BOOTLOG.BAT
+
+----------------------------------------------------
+call current.bat
+echo Login occured at %date% %time% >> c:\bootlog.log
+----------------------------------------------------
+
+    The call to CURRENT.BAT is used to set the time and 
+    date into the environment. Here is what I use for CURRENT.BAT:
+
+----------------------------------------------------
+:: This batch file MUST be named CURRENT.BAT
+:: DATE is %4, TIME is %3
+:: Current date is Thu 01-22-1998
+:: Current time is  8:52:28.07a
+if "%3"=="" goto GETDATE
+if "%4"=="" goto SETTIME
+goto SETDATE
+:SETTIME
+set TIME=%3
+goto DONE
+:SETDATE
+set DATE=%4
+goto DONE
+:GETDATE
+echo.|date>temp.bat
+call temp.bat
+echo.|time>temp.bat
+call temp.bat
+if exist temp.bat del temp.bat
+goto DONE
+:DONE
+----------------------------------------------------
+  http://www.calweb.com/~webspace

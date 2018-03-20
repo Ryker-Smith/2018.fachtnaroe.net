@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl - Part 9</h1>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<h2>if Construct Continued: Task 006</h2>
+<p>The last program made no output if the user did not satisfy the age condition of the program. This is unsatisfactory. Programs should always give some form of out put if only to say the user is wrong! Modify the program to cope with the alternate scenario, where the user is too young to vote:</p>
+<center><img width="100%" src="/images/responder01.png"></center>
+<p>When you run the program now, you should get output for all three possible age conditions:
+<ol>
+<li>Less than 18.</li>
+<li>Age equal to 18.</li>
+<li>Age greater than 18.</li>
+</ol>
+<h2>Improving &amp; and extending the use of the if function</h2>
+<p>The program as given above copes with all voting entitlement outcomes. The <b>ge</b> in the first if takes care of possibilities 2 &amp; 3 above. The second if, with <b>lt</b>, caters for the remaining possibility, no. 1 above.</p>
+<p>If you think about it though, since two of the three possibilities are covered, the 1<sup>st</sup> option must be all that remains after the 1<sup>st</sup> if statement. So why run a test using an if to check that it's valid?</p>
+<p>This is a clearly unnecessary test so most programming languages offer a better way to do things, the <b>if...else</b> construct. Perl provides this also.<p>
+<p>To see this change the line:
+<font face="Courier" >
+<br>&nbsp;&nbsp;if ($age lt 18)
+</font>
+<br>to
+<font face="Courier" >
+<br>&nbsp;&nbsp;else
+</font>
+<p>Your program should now work as before, but with less computational overhead. Note how items in the {...} pairs - which are code blocks - are further indented. Use this indentation as shown. This indentation gives a visual indicator of the program structure and greatly assists with, amongst other things, debugging.</p>
+<p>More anon...
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl-part9.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 10</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h2>if Construct Continued: Task 007</h2>
+<h3>The last program made used an if...else to determine which possible output to display. But the if..else construct can be as simple or as complex as you need. In the example below, in the case of a voter they're also informed if they are entitled to free-travel.</h3>
+<h3>Modify the responder.pl file to look as below:</h3>
+<center><img width="100%" src="/images/responder02.png"></center>
+<h3>When you run the program now, you should get output for all three possible age conditions, as well as whether an over 18 is also over 65 and therefore entitled to free travel:
+<ol>
+<li>Less than 18.</li>
+<li>Age equal to 18.</li>
+<li>Age greater than 18.</li>
+	<ul>
+	<li>Possibly entitled to free travel.</li>
+	</ul>
+</ol>
+<h2>Nesting</h2>
+<h3>In the above program, we have used an if..else construction. <i>Within</i> the actions to be taken in the event of the first if yielding a TRUE result is <i>another</i> if construct. Placing one construct inside another of it's own type is called nesting. At first it may seem strange but is very useful for making successive decisions, one after the other.</h3>
+<h2>General form of the if statement</h2>
+<h3>The general form of the if statement without specific vaiables, just the structure, is:
+<font face="Courier" >
+<br>&nbsp;&nbsp;if (condition)
+<br>&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Set of actions if TRUE;
+<br>&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;else
+<br>&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Set of actions if FALSE;
+<br>&nbsp;&nbsp;}
+</font>
+<h3>Memorise the general form; apart from it being a common exam question, have it clear how many brackets of each type are present, etc, to avoid mistakes when programming.</h3>
+<h2>Task 008</h2>
+<h3>Modify the responder.pl program to state that the user is <i>or is not</i> entitled to free travel, as appropriate.<h3>
+<h2>Task 009</h2>
+<h3>Modify the responder.pl program to wish the user, when un-entitled to vote, a happy childhood, or happy teenage years as appropriate. HINT(again): Don't re-invent the wheel<h3>
+<h3>More anon (Sam plays it again)...
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+
+</div>
+</body>
+</html>

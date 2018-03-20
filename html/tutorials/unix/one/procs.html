@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- concepts/procs.html -->
+
+<HEAD>
+<TITLE>Processes</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>Processes</H1>
+
+<P>When you enter a command it invokes a program.  While
+this program is running it is called a <EM>process</EM>.  It is
+important to grasp that although there is only one copy
+of a program held in the <A HREF="bin.html">file system</A>,
+any number of processes can be invoked which run this program.</P>
+
+<P>When the operating system is started after a 
+<A HREF="gb.html#boot">boot</A>, a
+single process is started. This process is the parent of
+all subsequent processes.  Each process created on the
+system has a unique number, known as its 
+<A HREF="pid.html">PID</A>, associated with it.</P>
+
+<P>When you
+ <A HREF="basic1.html">login</A> to the system a process is
+started to run your <A HREF="index12.html">shell</A> program. Any
+processes that are started from within your shell - such as entering a 
+ <A HREF="index8.html">command</A> - are the
+children of this process.  A process can have many
+children, but only one parent.</P>
+
+<P>See <A HREF="jobz.html">Managing jobs and processes</A>
+ for further information.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="index15.html"><IMG SRC="weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="unixhelp_search.html"><IMG SRC="weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="index.html"><IMG SRC="weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Formatting Numeric Output</h1>
+
+<h2>Dividing your output into format and content</h2>
+When you want to apply specific formatting to your output you may find that the simple <font face="Courier">print</font> command will not suffice. If is a rudimentary all-round output statment that offers no guarantee except to get your output on screen.
+For more fancy numeric output it may not be sufficient; as an example the value 2.90 will probably be displayed as 2.9 on screen as the digit 0 at the end is not significant. If you don't know what significant means then think back to your maths where the concept of significant digits comes from.
+To get the last digit (the insignificant 0) to appear you need to split your output from the desired format, put them both in a special <font face="Courier">print<b>f</b></font> statement and continue otherwise as usual.
+<font face="Courier">
+<br>&nbsp;&nbsp;$amount=2.90
+<br>&nbsp;&nbsp;print  "Amount = $amount"; # this will display 2.9
+<br>&nbsp;&nbsp;printf "Amount = %3.2f", $amount; # this will display 2.90
+<br>&nbsp;&nbsp;
+</font>
+Try the code above to see how the formatting works. Generally we understand printf to operate like this:
+<center><font face="Courier">printf "formatting instructions", list, of, output, data...</font></center>
+This is a table that shows some of the formatting codes. Note they all start with a <b>%</b> and end with the relevant code.
+<center>
+<table width="50%">
+<tbody>
+<tr>
+<th width="15%" align=left>Format</th>
+<th align=left>Result</th></tr>
+<tr>
+<td>%%</td>
+<td>A percent sign </td></tr>
+<tr>
+<td>%c</td>
+<td>A character with the given ASCII code </td></tr>
+<tr>
+<td>%s</td>
+<td>A string</td></tr>
+<tr>
+<td>%d</td>
+<td>A signed integer (decimal) </td></tr>
+<tr>
+<td>%u</td>
+<td>An unsigned integer (decimal)</td></tr>
+<tr>
+<td>%o</td>
+<td>An unsigned integer (octal)</td></tr>
+<tr>
+<td>%x</td>
+<td>An unsigned integer (hexadecimal)</td></tr>
+<tr>
+<td>%X</td>
+<td>An unsigned integer (hexadecimal using uppercase characters)</td></tr>
+<tr>
+<td>%e</td>
+<td>A floating point number (scientific notation)</td></tr>
+<tr>
+<td>%E</td>
+<td>A floating point number, uses E instead of e</td></tr>
+<tr>
+<td>%f</td>
+<td>A floating point number (fixed decimal notation)</td></tr>
+<tr>
+<td>%g</td>
+<td>A floating point number (%e or %f notation according to value size)</td></tr>
+<tr>
+<td>%G</td>
+<td>A floating point number (as %g, but using .E. in place of .e. when
+appropriate)</td></tr>
+<tr>
+<td>%p</td>
+<td>A pointer (prints the memory address of the value in hexadecimal)</td></tr>
+<tr>
+<td>%n</td>
+<td>Stores the number of characters output so far into the next variable in
+the parameter list</td></tr>
+</tbody></table>
+<p>Perl also supports flags that optionally adjust the output format. These are specified between the % and conversion letter. They are shown in the following table:</p>
+<table   width="50%">
+<tbody>
+<tr>
+<th width="15%" align=left>Flag</th>
+<th align=left>Result</th></tr>
+<tr>
+<td>space</td>
+<td>Prefix positive number with a space</td></tr>
+<tr>
+<td>+</td>
+<td>Prefix positive number with a plus sign</td></tr>
+<tr>
+<td>-</td>
+<td>Left-justify within field</td></tr>
+<tr>
+<td>0</td>
+<td>Use zeros, not spaces, to right-justify</td></tr>
+<tr>
+<td>#</td>
+<td>Prefix non-zero octal with .0. and hexadecimal with .0x.</td></tr>
+<tr>
+<td>number</td>
+<td>Minimum field width</td></tr>
+<tr>
+<td>.number</td>
+<td>Specify precision (number of digits after decimal point) for floating point numbers</td></tr>
+<tr>
+<td>l</td>
+<td>Interpret integer as C-type .long. or .unsigned long.</td></tr>
+<tr>
+<td>h</td>
+<td>Interpret integer as C-type .short. or .unsigned short.</td></tr>
+<tr>
+<td>V</td>
+<td>Interpret integer as Perl.s standard integer type</td></tr>
+<tr>
+<td>v</td>
+<td>Interpret the string as a series of integers and output as numbers
+separated by periods or by an arbitrary string extracted from the
+argument when the flag is preceded by *.</td></tr>
+</tbody></table>
+</center>
+<p>
+<center>
+<form>
+<input type="button" value="Back" onclick="history.back()"></form>
+</center>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="formatnumbers.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

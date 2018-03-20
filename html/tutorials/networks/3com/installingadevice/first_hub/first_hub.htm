@@ -1,0 +1,342 @@
+<html>
+<head>
+<title>Connecting the First Hub or Switch</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchmanuals(anchorname)
+{
+manu=window.open("../../pdfs/manuals.htm#"+anchorname,"manuals","width=650,scrollbars=yes,height=500,resizable=yes")
+manu.focus()
+}
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Page"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(8));
+</script>
+ 
+<table border="0" width="400">
+  <tr> 
+    <td width="400"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="5"><a name="overview"></a><a name="3.1.1.1"></a>1 
+        Overview</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">1.1 </font><font face="Arial, Helvetica, sans-serif" size="2">This 
+        subsection describes how to create your network by connecting PCs and 
+        laptops to the OfficeConnect device. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The PCs and laptops 
+        you are going to connect to the device should have been set up and configured 
+        first. If they are not, refer to the section <a  href="javascript:hotlink_se('mainoverview_se.htm','')"onMouseOver="status=statusbar_se;return true">Setting 
+        Up a PC</a>.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To connect to the 
+        OfficeConnect device you need: </font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The OfficeConnect 
+          device and power adapter and the user guide that accompanies it. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The rubber pads 
+          if it is to stand on a horizontal surface.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">A 'straight-through' 
+          (the most common type) Category 5 twisted-pair cable.</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> Category 5 twisted-pair 
+        cables are <b>not</b> telephone cables. The network will not work with 
+        telephone cables. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">1.2<a name="3.1.1.2"></a></font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If your OfficeConnect 
+          device is not positioned and powered on, go to <a href="#positioning"onMouseOver="status=statusbar_anchor;return true">Positioning 
+          the device</a>. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If your OfficeConnect 
+          device is already positioned and powered on, go to <a href="#connecting"onMouseOver="status=statusbar_anchor;return true">Connecting 
+          the new unit</a>. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If the OfficeConnect 
+          device does not have enough ports, use this subsection to connect some 
+          of the PCs and laptops to the device, leaving one port free to connect 
+          another OfficeConnect unit. Then refer to the subsection <a  href="javascript:hotlink_hub('another_hub/another_hub.htm','3.2.1.1')"onMouseOver="status=statusbar_hub;return true">Adding 
+          Another Hub or Switch</a><b> </b>for guidance on connecting another 
+          OfficeConnect unit to the current one. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> If you wish to 
+          connect a coaxial network to the OfficeConnect device, go to the subsection 
+          <a  href="javascript:hotlink_hub('coax_network/coax_network.htm','3.3.1.1')"onMouseOver="status=statusbar_hub;return true">Connecting 
+          to a Coaxial Network</a>.</font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="5"> <a name="positioning"></a><a name="3.1.2.1"></a>2 
+        Positioning the device</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">2.1 </font><font face="Arial, Helvetica, sans-serif" size="2">The 
+        first task is to decide on a location for the device within cabling distance 
+        of a power outlet and all the PCs and laptops that you are going to connect 
+        to it. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Make sure that it 
+        is in a secure place where it will not be knocked or disturbed easily. 
+        If you want to place the device on a horizontal surface (such as a table), 
+        stick the rubber pads to the underside of the device, as described in the 
+        user guide that accompanies the device. </font></p>
+      <p align="center"><img src="images/first_hub_1.gif" width="260" height="125" alt="Positioning a hub"></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If you want to wall 
+        mount the device, refer to the user guide that accompanies the device. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">OfficeConnect user 
+        guides can be found in the <a href="javascript:launchmanuals('')"onMouseOver="status=statusbar_manu;return true">Manuals</a> 
+        section of this CD. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">2.2 <a name="3.1.2.2"></a>Connect 
+        the device's power adapter to the power outlet and the device's power socket. 
+        The device's LEDs should light briefly as it powers on. Afterwards, the green 
+        PWR LED should remain lit and the orange Alert LED should be off: </font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If the green PWR 
+          LED is on and the Alert LED is off, the device is ready for use. Go 
+          to <a href="#connecting"onMouseOver="status=statusbar_anchor;return true">Connecting the new unit</a>. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> If the green PWR 
+          LED is off, or the orange Alert LED is on, there is a problem with the 
+          device or its power adapter. Go to the <a href="javascript:launchtrouble('troubleshooter.htm');"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a> 
+          section of this CD.</font></li>
+      </ul>
+      <p align="center"><img src="images/first_hub_2.gif" width="400" height="131" alt="3Com Hub"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="5"> <a name="connecting"></a><a name="3.1.3.1"></a>3 
+        Connecting the new unit </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3.1 </font><font face="Arial, Helvetica, sans-serif" size="2">If 
+        the device is positioned and powered correctly you are ready to connect 
+        your PCs and laptops. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To connect the PCs 
+        and laptops to the device: </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Ensure that the device 
+        is powered on. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If the device is already 
+        a part of an active network, you can connect the new PCs and laptops to 
+        it without affecting the network. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3.2<a name="3.1.3.2"></a> 
+        For each PC, take a 'straight-through' <a href="javascript:launchglossary('category5cabling')"onMouseOver="status=statusbar_glos;return true">Category 
+        5</a> twisted-pair cable. For each PC, connect one end of the cable to 
+        the appropriate socket on the PC's NIC in the back of the PC. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3.3 <a name="3.1.3.3"></a>Connect 
+        the other end of the cable to an RJ-45 port on the back of the OfficeConnect 
+        device. Keep the <A href="javascript:launchglossary('uplinknormal');"onMouseOver="status=statusbar_glos;return true">Uplink/Normal</a> (<A href="javascript:launchglossary('mdimdix');"onMouseOver="status=statusbar_glos;return true">MDI/MDI-X</a>) port free unless no other ports 
+        are available. This is usually the highest numbered port on the device 
+        and can be used for expansion unless no other ports are available. <a href="#3.1.3.6"onMouseOver="status=statusbar_anchor;return true">Click 
+        here to skip laptop configuration section.</a></font></p>
+      <p align="center"><img src="images/first_hub_3.gif" width="395" height="259" alt="Cabling"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3.4<a name="3.1.3.4"></a> 
+        For each laptop, take a suitable PCMCIA cable with an RJ-45 connector. 
+        Connect the PCMCIA end of the cable to the appropriate socket on the PCMCIA 
+        card in the laptop and power on the laptop. </font></p>
+      <p align="center"><img src="images/first_hub_4.gif" width="297" height="238" alt="Laptop"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3.5<a name="3.1.3.5"></a> 
+        Connect the other end of the cable to an RJ-45 port on the back of the 
+        OfficeConnect device. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Keep the <A href="javascript:launchglossary('uplinknormal');"onMouseOver="status=statusbar_glos;return true">Uplink/Normal</a> 
+        (<A href="javascript:launchglossary('mdimdix');"onMouseOver="status=statusbar_glos;return true">MDI/MDI-X</a>) port free. This is usually the highest numbered port on the 
+        device and can be used for expansion unless no other ports are available. 
+        </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Ensure that all the 
+        PCs and laptops are powered on.</font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">3.6 <a name="3.1.3.6"></a>On 
+        the front of the device, check that the Port Status LEDs are lit for the 
+        ports that you have used. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If you have used the 
+        Uplink/Normal port on the device, push the Uplink/Normal switch in and 
+        out (located on the back of the device) until the appropriate LED lights 
+        (the port is now an Normal port).</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If all of the appropriate 
+          LEDs are lit, go to <a href="#newnetwork"onMouseOver="status=statusbar_anchor;return true">Checking 
+          the new network connections</a>. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If some of the 
+          LEDs are not lit for ports that you have used, there is a problem with 
+          those connections. Go to <a href="javascript:launchtrouble('hub leds/hub_leds_0.htm');"onMouseOver="status=statusbar_trou;return true">Hub 
+          or Switch LEDs Indicate a Problem</a>. </font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="3.1.4.1"></a><a name="newnetwork"></a>4 
+        Checking the new network connections</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.1 </font><font face="Arial, Helvetica, sans-serif" size="2">The 
+        computers and laptops should now be connected via your OfficeConnect device. 
+        </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To check the new network 
+        connections: </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Ensure <b>all</b> 
+        of the PCs and laptops are powered on. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.2<a name="3.1.4.2"></a> 
+        For one of the PCs or laptops:</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> In the Windows desktop, 
+        double-click the <i>Network Neighborhood</i> icon. </font></p>
+      <p align="center"><img src="images/first_hub_5.gif" width="78" height="77" alt="Network Neirborhood"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.3<a name="3.1.4.3"></a> 
+        In the Network Neighborhood window, from the <i>View</i> menu select <i>Refresh</i>. 
+        </font></p>
+      <p align="center"><font face="Arial, Helvetica, sans-serif" size="2"><img src="images/first_hub_6.gif" width="400" height="412" alt="Network Neighborhood"></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> The Network Neighborhood 
+        window should contain an icon for each PC and laptop in the network (including 
+        the new PCs and laptops you have just connected): </font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If all of the new 
+          PCs and laptops are shown they are ready to use on the network. </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">If some of the 
+          new PCs and laptops are not shown, the Network Neighborhood has not 
+          been updated. Go on to the next page to ensure that they are connected 
+          correctly. </font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">4.4<a name="3.1.4.4"></a> 
+        If your new PCs and laptops are <b>not</b> all shown in the Network Neighborhood: 
+        </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">From the <i>Start</i> 
+        menu choose <i>Find</i> and then <i>Computer</i>. </font></p>
+      <p align="center"><img src="images/first_hub_7.gif" width="304" height="296" alt="Start menu"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.5<a name="3.1.4.5"></a> 
+        In the <i>Find: Computer</i> dialog box specify the name of one of the 
+        PCs or laptops that is missing and click <i>Find Now</i>. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Windows searches for 
+        the PC or laptop. If it is found it is displayed in the listbox that has 
+        appeared and that PC or laptop is ready for use on the network. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Repeat this step for 
+        every PC and laptop not shown in the Network Neighborhood. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Close the <i>Find: 
+        Computer</i> dialog. </font></p>
+      <p align="center"><img src="images/first_hub_8.gif" width="400" height="163" alt="Find Computer"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.6<a name="3.1.4.6"></a> 
+        If any of the PCs or laptops were still not found there is a problem with 
+        the network setup for those PCs and laptops. Go to <a href="javascript:launchtrouble('Installation problems/installation_7.htm');"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a>.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If PCs and laptops 
+        that were found in the <i>Find: Computer</i> dialog are still not shown 
+        in the Network Neighborhood do not worry. The Network Neighborhood is 
+        sometimes slow to show changes in the network. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.7<a name="3.1.4.7"></a> 
+        There are number of things you may want to do now or in the future as 
+        you expand and improve your network:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If you want to 
+          add more PCs and laptops follow the tasks in <a  href="javascript:hotlink_se('mainoverview_se.htm','')"onMouseOver="status=statusbar_se;return true">Setting 
+          up a PC</a> for each PC and laptop.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If you want to 
+          add a printer to your network go to <a  href="javascript:hotlink_ap('mainoverview_ap.htm','')"onMouseOver="status=statusbar_ap;return true">Adding 
+          a Printer</a>.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If you are expanding 
+          your networkand want to connect another OfficeConnect unit the the current 
+          OfficeConnect device go to the subsection <a  href="javascript:hotlink_hub('another_hub/another_hub.htm','3.2.1.1')"onMouseOver="status=statusbar_hub;return true">Adding 
+          Another Hub or Switch</a>.</font></li>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If you wish to 
+          set up file sharing, e-mail or IP go to <a  href="javascript:hotlink_un('mainoverview_un.htm','')"onMouseOver="status=statusbar_un;return true">Using 
+          Your Network</a>.</font></li>
+      </ul>
+      <p>&nbsp;</p>
+      <p align="right">&nbsp;</p>
+      </td>
+  </tr>
+</table>
+</body>
+</html>

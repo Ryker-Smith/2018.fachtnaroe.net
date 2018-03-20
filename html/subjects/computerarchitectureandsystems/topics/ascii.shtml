@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>ASCII Table and Description</h1>
+<p>ASCII stands for American Standard Code for Information Interchange. Computers can only understand numbers, so an ASCII code is the numerical representation of a character such as 'a' or '@' or an action of some sort. Since it is a standard code all computers are able to communicate using it.
+<p>ASCII was developed a long time ago and now the non-printing characters are rarely used for their original purpose. Below are 2 ASCII character tables including descriptions of the first 32 non-printing characters. ASCII was actually designed for use with teletypes and so the descriptions are somewhat obscure.
+<p>If someone says they want your CV however in ASCII format, all this means is they want 'plain' text with no formatting such as tables, bold or underscoring - the raw format that any computer can understand. This is usually so they can easily import the file into their own applications without issues. Notepad.exe creates ASCII text, or in OpenOffice you can save a file as 'text only'
+<center><a href="00-ASCII.pdf">Table 1 (PDF)</a><br>
+<a href="asciifull.gif">Table 2 (gif)<br>
+<img width="200" src="asciifull.gif" /></a></center>
+The table above also shows Decimal, Hexadecimal and Octal values corresponding to each ASCII character. This is briefly referred to (and explained) on the page on <a href="binary.shtml">binary</a>.
+<br>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="ascii.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

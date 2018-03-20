@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- shell/cmd4.html -->
+
+<HEAD>
+<TITLE>Command name completion</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Command name completion</H1>
+
+<P>This feature is only available with the Bourne Again
+Shell (bash). It is <EM>not</EM> a feature of any other shell.</P>
+
+<P>To complete a command name press the <SAMP>TAB</SAMP> key.</P>
+
+<PRE WIDTH=80>   <STRONG>tel</STRONG>&lt;TAB&gt;<STRONG>net</STRONG>
+   telnet&gt;
+</PRE>
+
+<P>If the shell is unable to identify a unique command from
+the characters already entered it will ring the terminal
+bell.</P>
+
+<P>Pressing the <SAMP>TAB</SAMP> key again displays all the commands on
+your <A HREF="../commanz/path1.html">path</A> that begin with those
+letters.  For example:</P>
+
+<PRE WIDTH=80>   <STRONG>ma</STRONG>&lt;TAB&gt;&lt;TAB&gt;
+   mach        mail        makecookie  man        maze
+   macptopbm   make        makedepend  mapname
+</PRE>
+
+<P>This produces a list of commands that start with the
+letters <SAMP>ma</SAMP>.</P>
+
+<P>Command name completion also works in the middle of a
+command line. For example the command name</P>
+
+<PRE WIDTH=80>   <STRONG>teln</STRONG>&lt;TAB&gt; <STRONG>orion.geo.aber</STRONG>
+</PRE>
+
+<P>expands to:</P>
+
+<PRE WIDTH=80>   <STRONG>telnet orion.geo.aber</STRONG>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

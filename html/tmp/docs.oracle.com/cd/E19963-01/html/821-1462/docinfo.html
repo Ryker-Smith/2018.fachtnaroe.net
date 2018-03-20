@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Document Information - man pages section 1M: System Administration Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the Solaris (TM) system administration and  maintenance utilities and is for system and network administrators.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1462";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1M: System Administration Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1462.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1M (821-1462-06)&body=Page: docinfo.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<div id="scrolltoc" class="onpage">
+<p class="toc level1"><a href="">Document Information</a></p>
+</div>
+<p class="toc level1 tocsp"><a href="gentextid-37.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-194.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-310.html">System Administration Commands - Part 1</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-123700.html">System Administration Commands - Part 2</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-235692.html">System Administration Commands - Part 3</a></p>
+
+</div>
+
+<a name="REFMAN1Mcontent"></a><a name="content"></a>
+<div class="ContentPane">
+	<a name="REFMAN1Mdocumentinfo"></a><a name="documentinfo"></a><p>Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved.</p><p><b>Part No: 821-1462-06</b></p><p><b>November 2010</b></p><p>500 Oracle Parkway<br>Redwood City,  CA 94065<br>U.S.A.</p><blockquote class="sgabstract">
+
+<p>This
+section describes the Solaris (TM) system administration and  maintenance utilities and is
+for system and network administrators.</p></blockquote>
+
+<p>This software and related documentation are provided under
+a license agreement containing restrictions on use and disclosure and are protected by intellectual
+property laws. Except as expressly permitted in your license agreement or allowed by
+law, you may not use, copy, reproduce, translate, broadcast, modify, license, transmit, distribute,
+exhibit, perform, publish, or display any part, in any form, or by any
+means. Reverse engineering, disassembly, or decompilation of this software, unless required by law
+for interoperability, is prohibited.</p>
+
+<p>The information contained herein is subject to change without notice and
+is not warranted to be error-free. If you find any errors, please
+report them to us in writing.</p>
+
+<p>If this is software or related software documentation
+that is delivered to the U.S. Government or anyone licensing it on behalf
+of the U.S. Government, the following notice is applicable:</p>
+
+<p>U.S. GOVERNMENT RIGHTS Programs, software,
+databases, and related documentation and technical data delivered to U.S. Government customers are &#8220;commercial
+computer software&#8221; or &#8220;commercial technical data&#8221; pursuant to the applicable Federal Acquisition Regulation
+and agency-specific supplemental regulations. As such, the use, duplication, disclosure, modification, and adaptation shall
+be subject to the restrictions and license terms set forth in the applicable
+Government contract, and, to the extent applicable by the terms of the Government
+contract, the additional rights set forth in FAR 52.227-19, Commercial Computer Software License (December
+2007). Oracle America, Inc., 500 Oracle Parkway, Redwood City, CA 94065.</p>
+
+<p>This software
+or hardware is developed for general use in a variety of information management
+applications. It is not developed or intended for use in any inherently dangerous
+applications, including applications which may create a risk of personal injury. If you
+use this software or hardware in dangerous applications, then you shall be responsible
+to take all appropriate fail-safe, backup, redundancy, and other measures to ensure its safe
+use. Oracle Corporation and its affiliates disclaim any liability for any damages caused
+by use of this software or hardware in dangerous applications.</p>
+
+<p>Oracle and Java are
+registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of
+their respective owners.</p>
+
+<p>AMD, Opteron, the AMD logo, and the AMD Opteron logo
+are trademarks or registered trademarks of Advanced Micro Devices. Intel and Intel Xeon
+are trademarks or registered trademarks of Intel Corporation. All SPARC trademarks are used under
+license and are trademarks or registered trademarks of SPARC International, Inc. UNIX is
+a registered trademark licensed through X/Open Company, Ltd.</p>
+
+<p>This software or hardware and documentation
+may provide access to or information on content, products, and services from third
+parties. Oracle Corporation and its affiliates are not responsible for and expressly disclaim all
+warranties of any kind with respect to third-party content, products, and services. Oracle
+Corporation and its affiliates will not be responsible for any loss, costs, or
+damages incurred due to your access to or use of third-party content, products,
+or services.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				
+				<a href="gentextid-37.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

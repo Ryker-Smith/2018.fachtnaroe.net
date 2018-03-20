@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/sort3.3.html -->
+
+<HEAD>
+<TITLE>Sorting on several fields</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Sorting on several fields</H1>
+
+<P>You can sort a file on several fields with the same sort
+command. The file is sorted on the first field; if some
+lines have the same value for this field they are sorted
+on the next field you specify and so on.</P>
+
+<P>This is the file <SAMP>scores</SAMP> each line of which gives the
+initial, surname, gender, age and test score of a person. Each
+field is separated by a space.</P>
+
+<PRE WIDTH=80>   J. Arnott F 43 78
+   T. Rice M 42 67
+   M. Macdonald F 39 85
+   A. Board M 36 43
+   M. Mouzin F 27 57
+   R. Bramley M 42 75
+</PRE>
+
+<P>To sort the file on two fields, first by age (field 4) and then by
+score (field 5), placing the output in the file <SAMP>results</SAMP>.</P>
+
+<PRE WIDTH=80>   <STRONG>sort -o results +3 -5 scores</STRONG>
+</PRE>
+
+<P>This gives the following result in the file <SAMP>results</SAMP>.</P>
+
+<PRE WIDTH=80>   M. Mouzin F 27 57
+   A. Board M 36 43
+   M. Macdonald F 39 85
+   T. Rice M 42 67
+   R. Bramley M 42 75
+   J. Arnott F 43 78
+</PRE>
+
+<P>From the first sort on field 4 (age) sort finds that Rice
+and Bramley are the same age so it now sorts these two lines on
+field 5 (score), placing Rice (67) before Bramley (75).</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

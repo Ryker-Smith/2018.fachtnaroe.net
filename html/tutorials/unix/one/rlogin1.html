@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/rlogin.html -->
+
+<HEAD>
+<TITLE>Examples of using the rlogin command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the rlogin command</H1>
+
+<P>To login to the remote system <EM>iona</EM> using the
+same username:</P>
+
+<PRE WIDTH=80>   <STRONG>rlogin iona</STRONG>
+   Password:
+</PRE>
+
+<P>This logs the user in to their account on the remote
+system named <EM>iona</EM>. Their username on this sytem is
+identical to their username on the system they are
+currently using.</P>
+
+<HR>
+
+<P>To login to the remote system <EM>barra</EM> using the username 
+<EM>helper</EM>:</P>
+
+<PRE WIDTH=80>   <STRONG>rlogin barra -l helper</STRONG>
+   Password:
+</PRE>
+
+<P>This logs the user in to the remote system named <EM>barra</EM>
+on which they have an account for the username <EM>helper</EM>.
+This username is different to their username on the
+system they are currently logged in to.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

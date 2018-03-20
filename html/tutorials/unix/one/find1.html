@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/find.html -->
+
+<HEAD>
+<TITLE>Examples of using the find command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the find command</H1>
+
+<P>To find a single file below the current directory:</P>
+
+<PRE WIDTH=80>   <STRONG>find . -name mtg_jan92 -print</STRONG>
+</PRE>
+
+<P>This displays the pathname to the file <SAMP>mtg_jan92</SAMP> starting
+from the current directory.  If the file is not found
+nothing is displayed.</P>
+
+<HR>
+
+<P>To find a file below your home directory:</P>
+
+<PRE WIDTH=80>   <STRONG>find ~/ -name README -print</STRONG>
+</PRE>
+
+<P>This displays the pathname to every file with the name
+<SAMP>README</SAMP> in your home directory or its subdirectories.</P>
+
+<HR>
+
+<P>To find several files below the current directory:</P>
+
+<PRE WIDTH=80>   <STRONG>find . -name '*.fm' -print</STRONG>
+</PRE>
+
+<P>This displays the pathname to any file with the
+extension <SAMP>.fm</SAMP> which exists below the current directory.</P>
+
+<HR>
+
+<P>To find a directory:</P>
+
+<PRE WIDTH=80>   <STRONG>find /usr/local -name gnu -type d -print</STRONG>
+</PRE>
+
+<P>This searches to see if there is a subdirectory <SAMP>gnu</SAMP>
+in the directory <SAMP>/usr/local</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

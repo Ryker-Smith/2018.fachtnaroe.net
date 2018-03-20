@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/change_own.html -->
+
+<HEAD>
+<TITLE>Changing group ownership of files and directories</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Changing group ownership of files and directories</H1>
+
+<P>Every user is a member of one or more 
+<A HREF="gg.html#group">groups</A>.
+To find out which groups you belong to use the command:</P>
+
+<PRE WIDTH=80>    <STRONG>groups</STRONG>
+</PRE>
+
+<P>To find out which groups another user belongs to use the
+command:</P>
+
+<PRE WIDTH=80>    <STRONG>groups <EM>username</EM></STRONG>
+</PRE>
+
+<P>Your files and directories are owned by the 
+<A HREF="gg.html#group">group</A> (or one
+of the groups) that you belong to. This is known as
+their "group ownership".</P>
+
+<P>To list the group ownership of your files:</P>
+
+<PRE WIDTH=80>    <STRONG>ls -gl</STRONG>
+</PRE>
+
+<P>You can change the group ownership of a file or
+directory with the command:</P>
+
+<PRE WIDTH=80>    <STRONG>chgrp <EM>group_name file/directory_name</EM></STRONG>
+</PRE>
+
+<P>You must be a member of the group to which you are
+changing ownership to.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="index15.html"><IMG SRC="weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="unixhelp_search.html"><IMG SRC="weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="index.html"><IMG SRC="weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

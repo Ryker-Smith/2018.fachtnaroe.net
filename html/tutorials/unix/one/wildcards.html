@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/wildcards.html -->
+
+<HEAD>
+<TITLE>Examples of using wildcard characters</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using wildcard characters</H1>
+
+<P>To match any number of characters in a filename:</P>
+
+<PRE WIDTH=80>   <STRONG>ls *.txt</STRONG>
+</PRE>
+
+<P>This lists all the files in the current directory that
+have the extension <SAMP>.txt</SAMP> - so <SAMP>Help.txt</SAMP>
+as well as <SAMP>nonsense.txt</SAMP> would be listed.</P>
+
+<HR>
+
+<P>To match any single character in a filename:</P>
+
+<PRE WIDTH=80>   <STRONG>cat memo? &gt; mymemos</STRONG>
+</PRE>
+
+<P>This concatenates all files with the filename
+
+<PRE WIDTH=80>   memo0 -&gt; memo9
+   memoa -&gt; memoz
+   memoA -&gt; memoZ
+</PRE>
+
+<P>and places their contents in the file <SAMP>mymemos</SAMP>.</P>
+
+<HR>
+
+<P>To remove a range of files:</P>
+
+<PRE WIDTH=80>   <STRONG>rm part[1-3]</STRONG>
+</PRE>
+
+<P>This removes files <SAMP>part1</SAMP>, <SAMP>part2</SAMP> and 
+<SAMP>part3</SAMP> from the current directory. If no files are found that
+match these names the message</P>
+
+<PRE WIDTH=80>   No match
+</PRE>
+
+<P>is displayed.</P>
+
+<HR>
+
+<P>To look for an expression in a file:</P>
+
+<PRE WIDTH=80>   <STRONG>grep '[Jj]ohn' &lt; addresses</STRONG>
+</PRE>
+
+<P>This looks for and, if found, displays the lines
+containing the name <SAMP>john</SAMP> or <SAMP>John</SAMP>
+in the file <SAMP>addresses</SAMP>.</P>
+
+<P>Notice that the expression to be searched for is enclosed
+in 'quotes' to prevent the '[' character being interpreted
+by the shell.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

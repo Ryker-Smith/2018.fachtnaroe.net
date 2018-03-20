@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>Troubleshooter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(26);
+parent.creator.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(25);
+parent.creator.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(20);
+parent.creator.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(24);
+parent.creator.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(23);
+parent.creator.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(27);
+parent.creator.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="560" border="0">
+  <tr valign="top" align="left"> 
+    <td> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>All LEDs are OFF:</b><br>
+        <br>
+        There may be a problem with the power supply or the OfficeConnect device 
+        may be faulty. Make sure that:</font></p>
+      <ol>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> A 3Com approved 
+          and working power cable is securely connected to the OfficeConnect device. 
+          Refer to your supplier for details on how to purchase the correct power 
+          cable. <br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> The power cable 
+          is also connected to a working main power supply socket. <br>
+          Tip: You can check that a socket is working by plugging a device you 
+          know that works into the socket, for example, a lamp.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> If the main power 
+          supply socket has a switch, make sure that it is switched to the ON 
+          position. <br>
+          If the Power LED does not come on, the device may be faulty. Disconnect 
+          the device from the power supply, and refer to your supplier for details 
+          on warranty and service. </font> </li>
+      </ol>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,5866 @@
+# Webalizer V2.01-09 Incremental Data - 08/06/2013 04:21:00
+2013 8 6 4 21 0
+17282 16700 668 1301 201 317 157441740 2272 661 0
+33 27 265 1 6
+3717 3544 29878840 185 771 143
+3044 2899 35216377 165 461 112
+2851 2757 31589636 141 249 125
+3581 3510 21958788 143 283 137
+3620 3533 31037813 174 475 124
+469 457 7760286 33 33 21
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+881 861 10749093 50
+865 841 3259084 94
+867 848 11188645 77
+895 872 4751047 147
+921 898 4163829 234
+870 817 9674231 150
+708 682 6723059 101
+619 599 7435741 76
+596 571 10920528 56
+591 572 3797094 88
+596 587 4547449 91
+558 541 4179426 45
+582 569 9262977 55
+614 602 5403999 64
+716 705 7969543 84
+549 537 2938591 47
+703 667 6159189 154
+693 682 3114217 59
+819 725 4487750 145
+833 790 6122213 175
+751 729 7153398 100
+666 660 6648486 34
+710 678 7470754 90
+679 667 9321397 56
+0
+0
+0
+16700
+0
+0
+0
+0
+0
+36
+0
+91
+0
+0
+212
+0
+0
+1
+0
+0
+8
+233
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/subjects/webauthoring5/websites2004/it.janem/img/PIC00018.jpg
+1 8 0 356117 0 0
+/images/ctidirections-01.gif
+1 3 0 106023 0 0
+/subjects/computerprogramming/XAM2009.pdf
+0 1 0 589297 0 0
+/tutorials/unix/one/mz.html
+0 2 0 4063 0 0
+/images/while02.png
+1 3 0 176700 0 0
+/subjects/computerprogramming/2002-worked-jpg/p2-8.jpg
+1 1 0 0 0 0
+/tutorials/unix/one/www.html
+0 1 0 1405 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/Raheen.html
+0 1 0 215 0 0
+/subjects/webauthoring5/developmentmethod/test.shtml
+0 1 0 4425 0 0
+/subjects/webauthoring5/animatedasterisk/asterisk01.gif
+1 3 0 30145 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/sld018.htm
+0 1 0 1778 1 1
+/tutorials/unix/one/index3.html
+0 2 0 2973 1 0
+/tutorials/unix/one/gf.html
+0 1 0 2162 0 0
+/tutorials/unix/one/oview1.html
+0 1 0 1779 0 0
+/subjects/webauthoring5/websites2003/it.denised/IrishVolunteers.html
+0 2 0 6646 1 1
+/subjects/gamesstudies/SDL_game_loop_05.shtml
+0 6 0 63270 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/prev.gif
+1 1 0 546 0 0
+/tutorials/dos/one/frag-dbg.htm
+0 1 0 7705 0 0
+/images/map_of_the_internet.jpg
+1 13 0 2303753 0 0
+/tutorials/unix/one/science.txt
+0 1 0 8019 0 0
+/subjects/webauthoring5/websites2003/it.susanm/project/moreinfo.html
+0 5 0 25390 0 0
+/tutorials/stylesheets/two/index1.html
+0 3 0 11541 0 0
+/subjects/webauthoring5/websites2002/it.natashag/actual_burning.html
+0 2 0 4360 0 0
+/tutorials/unix/one/gs.html
+0 1 825045554 3313 0 0
+/tutorials/unix/one/rm1.2.html
+0 1 0 1859 0 0
+/subjects/webauthoring5/websites2003/it.claireog/project/
+0 1 0 345 0 0
+/tutorials/unix/one/trans1.html
+0 2 0 3403 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/leftwing.html
+0 1 0 749 0 0
+/subjects/webauthoring5/powerpointpresentation/sld001.htm
+0 1 0 1684 1 0
+/subjects/webauthoring5/animatedasterisk/Screenshot-Export-File.png
+1 5 0 144868 0 0
+/subjects/webauthoring5/powerpointpresentation/sld046.htm
+0 1 0 2143 0 0
+/
+0 203 0 2054900 148 82
+/subjects/webauthoring5/00-historical.shtml
+0 6 0 51480 0 0
+/subjects/webauthoring5/websites2002/it.michaelb/
+0 1 0 495 0 0
+/subjects/webauthoring5/websites2003/it.denised/Join.html
+0 1 0 2036 0 0
+/subjects/computerprogramming/perl_environment/images/vnc-8.jpg
+1 2 0 20926 0 0
+/subjects/webauthoring5/websites2003/it.susanm/project/moreattractions.html
+0 2 0 8161 0 0
+/subjects/computerarchitectureandsystems/topics/d2b.c
+0 1 0 2008 0 0
+/subjects/computerprogramming/perl_general/receipt.shtml
+0 5 0 47375 0 0
+/subjects/webauthoring5/websites2001/it.brianl/roswellconnection.html
+0 1 0 3293 0 0
+/tutorials/dos/one/annoythecat.bat.txt
+0 2 0 2412 0 0
+/subjects/webauthoring5/websites2001/it.seand/navraltypeofvec6.html
+0 4 0 8324 0 0
+/subjects/webauthoring5/websites2003/it.susanm/project/pubsnclubs.html
+0 2 0 6111 0 0
+/tutorials/unix/one/custom.html
+0 1 0 1625 0 0
+/tutorials/unix/one/grep2.1.html
+0 1 0 1428 0 0
+/tutorials/stylesheets/two/vnabokov.html
+0 3 0 8635 1 0
+/subjects/webauthoring5/websites2000/it.cmorrissey/Herald1.JPG
+1 1 0 215 0 0
+/subjects/computerprogramming/perl/perl-part5.shtml
+0 7 0 71491 0 0
+/cgi-bin/flipmenu.js
+0 1 0 12206 0 0
+/tutorials/dos/one/hexsize.bat.txt
+0 1 0 1089 0 0
+/subjects/computerprogramming/2002-worked-jpg/p7-8.jpg
+1 1 0 0 0 0
+/help/legislation/
+0 3 0 22824 1 1
+/tutorials/unix/one/pathfile.html
+0 2 0 5279 0 0
+/subjects/webauthoring5/websites2001/it.latag/page8.htm
+0 1 0 3477 0 0
+/subjects/webauthoring5/websites2001/it.alanv/
+0 6 0 9504 2 2
+/subjects/webauthoring5/websites2002/it.mariag/Bells+of+Shandon.html
+0 2 0 6409 1 0
+/subjects/webauthoring5/websites2001/it.alanv/johnsquire.html
+0 1 0 2374 0 0
+/subjects/databasemethods/01-NCVA+Database+Methods+Exam+2007+(Locally+devised).pdf
+0 1 0 587761 0 0
+/subjects/workexperience/00-WorkExperienceDetailsForm-2013.pdf
+0 1 0 119944 0 0
+/help/legislation/Consultation+Paper+on+EU+Data+Protection+Directive.pdf
+0 1 0 92131 0 0
+/subjects/webauthoring5/websites2003/it.susanm/project/attractions.html
+0 2 0 4377 0 0
+/subjects/webauthoring5/websites2003/it.claireog/page4.html
+0 1 0 1217 0 0
+/subjects/computerprogramming/FourBarcodes.pdf
+0 2 0 31211 0 0
+/subjects/computerarchitectureandsystems/XAM2003-01.pdf
+0 1 0 26042 0 0
+/subjects/webauthoring5/websites2001/it.brianl/links.html
+0 2 0 3542 0 1
+/subjects/webauthoring5/websites2000/vtos.modonovan/greylag.html
+0 2 0 4371 1 0
+/subjects/webauthoring5/websites2000/it.megan/page2.html
+0 2 0 3465 1 0
+/tutorials/unix/one/search.html
+0 1 0 1730 0 0
+/subjects/computerarchitectureandsystems/XAM2012.pdf
+0 1 0 208059 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/startmagazine.html
+0 3 0 4974 1 1
+/tutorials/unix/one/man-cgi_ld.html
+0 1 0 1168 0 0
+/tutorials/dos/one/ftp.script.txt
+0 2 0 4618 0 0
+/tutorials/unix/one/ii.html
+0 2 0 4179 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/educationprogram.html
+0 2 0 4612 0 0
+/subjects/webauthoring5/powerpointpresentation/img040.gif
+1 1 0 214 0 0
+/tutorials/dos/one/index19.htm
+0 1 0 2715 0 0
+/subjects/computerprogramming/posapp/pos-demo-0507.pl.shtml
+0 6 0 34560 0 0
+/subjects/computerarchitectureandsystems/Answers2003-01.pdf
+0 1 0 156396 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/cork-night.JPG
+1 2 0 27952 0 0
+/tutorials/unix/one/change_own.html
+0 1 0 1898 0 0
+/tutorials/unix/one/ma.html
+0 2 0 5173 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/page3.html
+0 3 0 9030 1 0
+/subjects/webauthoring5/websites2001/it.kieranf/
+0 2 0 2147 0 0
+/tutorials/dos/one/mail.htm
+0 4 0 23316 1 1
+/tutorials/unix/one/display1.html
+0 2 0 3267 0 0
+/tutorials/dos/one/line-qb.htm
+0 1 0 4730 0 0
+/tutorials/dos/one/random.bat.txt
+0 2 0 1768 0 0
+/tutorials/unix/one/iv.html
+0 2 0 8511 0 0
+/images/while01.png
+1 3 0 184296 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/Image11.gif
+1 1 0 215 0 0
+/subjects/computerprogramming/perl/perl-part12.shtml
+0 4 0 31720 0 0
+/tutorials/unix/one/lpr4.html
+0 2 0 2639 0 1
+/subjects/webauthoring5/powerpointpresentation/sld034.htm
+0 1 0 215 1 1
+/subjects/webauthoring5/websites2003/it.reginaom/project/page6.html
+0 1 0 2333 0 0
+/subjects/webauthoring5/websites2001/it.maryd/Page3.htm
+0 2 0 5293 0 0
+/tutorials/unix/one/mn.html
+0 2 0 4773 0 0
+/tutorials/unix/one/sccs.html
+0 2 0 4178 0 1
+/subjects/computerarchitectureandsystems/00-2012-Project-01.pdf
+0 1 0 203747 0 0
+/images/putty_tunnel.png
+1 5 0 123517 0 0
+/tutorials/unix/one/mv1.html
+0 2 0 5153 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/page4.html
+0 4 0 13234 1 0
+/subjects/webauthoring5/websites2001/it.latag/Image7.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2000/it.ckennedy/female.html
+0 1 0 4735 1 0
+/subjects/webauthoring5/websites2000/it.patriceh/contents.html
+0 1 0 3064 0 0
+/subjects/webauthoring5/websites2001/it.richardb/3.incongress.html
+0 1 13621 2345 1 0
+/help/00-College+Charter-PLC-20060907.pdf
+0 1 0 100474 0 0
+/subjects/computerprogramming/posapp/pos-sample_key_event.pl.shtml
+0 6 0 35586 0 0
+/subjects/webauthoring5/websites2001/it.oliviak/sideindex.html
+0 2 0 2364 0 0
+/tutorials/unix/one/scrpt1.html
+0 2 0 2930 0 1
+/subjects/computerarchitectureandsystems/library-computer-system-extra-info.pdf
+0 1 0 102250 0 0
+/tutorials/unix/one/kernel1.2.html
+0 1 0 1584 0 0
+/subjects/computerprogramming/checksums/
+0 9 0 82323 3 4
+/images/and01.png
+1 1 0 214 0 0
+/subjects/computerprogramming/perl/perl-part23.shtml
+0 5 0 32980 0 0
+/subjects/webauthoring5/powerpointpresentation/sld045.htm
+0 1 0 2262 0 0
+/subjects/gamesstudies/it.shanemcc_final_game.tar.gz
+0 1 0 1310983 0 0
+/subjects/webauthoring5/websites2001/it.paulm/easterweekdaythree.html
+0 1 0 215 0 0
+/tutorials/unix/one/index4.html
+0 1 0 1817 1 0
+/subjects/webauthoring5/Assignment+2007.pdf
+0 1 0 682492 0 0
+/tutorials/unix/one/gg.html
+0 2 0 3144 1 0
+/subjects/computerprogramming/perl_environment/images/vnc-7.jpg
+1 2 0 12586 0 0
+/tutorials/dos/one/vxe2exe.bat.txt
+0 2 0 5006 0 0
+/tutorials/unix/one/oview2.html
+0 1 0 1614 0 1
+/subjects/computerprogramming/perl_edit/images/gedit02.png
+1 7 0 178765 0 0
+/subjects/webauthoring5/
+0 31 0 1187869 14 13
+/subjects/webauthoring5/websites2004/it.liaml/gallery.html
+0 5 0 8446 2 1
+/subjects/computerarchitectureandsystems/topics/b2d.c
+0 2 0 2608 0 0
+/subjects/webauthoring5/websites2000/it.dmaguire/
+0 3 0 7134 1 0
+/subjects/workexperience/Work+Experience+-+2009+-+General+Vocational+Assignment+(APEAL+Mode+Assignment).pdf
+0 1 0 391159 0 0
+/tutorials/dos/one/jhayes.txt
+0 1 0 14643 0 0
+/tutorials/unix/one/about_menu1.html
+0 2 0 3635 1 0
+/subjects/computerprogramming/programming-index.shtml
+0 7 0 13685 0 0
+/tutorials/unix/one/gt.html
+0 1 0 2051 0 0
+/tutorials/dos/one/unchkico1.gif
+1 1 0 1336 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/07discography.html
+0 1 0 1479 0 0
+/subjects/computerprogramming/2003-worked-jpg/p3-8.jpg
+1 1 0 0 0 0
+/subjects/computerarchitectureandsystems/XAM2000.pdf
+0 1 0 20876 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/rightwing.html
+0 1 0 752 0 0
+/subjects/webauthoring5/websites2001/it.latag/page7.htm
+0 1 0 3112 0 0
+/subjects/webauthoring5/websites2001/it.brianl/boblazar.html
+0 2 0 11304 0 0
+/subjects/webauthoring5/websites2003/it.rositag/circumstances.html
+0 1 0 14454 0 0
+/subjects/computerprogramming/perl/perl-part17.shtml
+0 4 0 27148 0 0
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced_files/Bash_args.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/javascriptevents/mouseover.shtml
+0 4 0 18916 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/next.gif
+1 1 0 548 0 0
+/subjects/webauthoring5/websites2000/vtos.modonovan/introduction.html
+0 2 0 5988 1 1
+/subjects/webauthoring5/websites2001/it.melissaw/introduction.html
+0 2 0 3960 0 0
+/subjects/computerprogramming/00-historical.shtml
+0 10 0 53259 0 0
+/subjects/computerprogramming/2004-worked-jpg/p3-8-jpg.jpg
+1 1 0 0 0 0
+/subjects/webauthoring5/websites2001/it.richardb/1.travelstoeurope.html
+0 4 0 5008 0 1
+/subjects/webauthoring5/websites2004/it.seamusl/
+0 2 0 6565 0 0
+/subjects/webauthoring5/websites2002/it.alanm/Gallery.html
+0 3 0 3819 1 0
+/tutorials/dos/one/obfuscating.txt
+0 1 0 3981 0 0
+/subjects/workexperience/00-WorkExperience-PreparatoryStudy4(Letter)2012-2013.pdf
+0 2 0 105541 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/diet.html
+0 2 0 5471 0 0
+/tutorials/dos/one/loadfix.htm
+0 1 0 3700 1 0
+/subjects/webauthoring5/websites2002/it.michaelm/1999.html
+0 1 0 3195 0 0
+/tutorials/dos/one/closewindow.txt
+0 1 0 697 0 0
+/fetacmodules/2011-E20003_AwardSpecifications_English.pdf
+0 1 0 79117 0 0
+/subjects/webauthoring5/websites2000/it.megan/
+0 3 0 10290 0 0
+/tutorials/dos/one/index18.htm
+0 2 0 9364 1 0
+/subjects/webauthoring5/websites2004/it.janem/stylesheet.css
+0 7 0 7026 0 0
+/tutorials/dos/one/references.gif
+1 4 0 102636 0 0
+/subjects/computerprogramming/flowchart01.gif
+1 2 0 6360 0 0
+/subjects/webauthoring5/websites2003/it.paulm/html/family.html
+0 3 0 15319 1 1
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+2+-+2005-6.pdf
+0 1 0 120398 0 0
+/subjects/webauthoring5/z-index/
+0 5 0 19565 0 0
+/subjects/webauthoring5/websites2001/it.oliviak/
+0 2 0 847 0 0
+/tutorials/dos/one/beep.txt
+0 1 0 2797 0 0
+/tutorials/dos/one/diskfree.bat.txt
+0 1 0 764 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/racing.html
+0 1 0 3065 0 0
+/subjects/computerprogramming/2003-worked-jpg/p8-8.jpg
+1 2 0 0 0 0
+/subjects/webauthoring5/websites2001/it.maryd/Page2.htm
+0 3 0 6504 1 0
+/tutorials/unix/one/ij.html
+0 3 0 8260 1 1
+/subjects/webauthoring5/websites2001/it.brianl/locationarea51.html
+0 2 0 5234 0 0
+/tutorials/dos/one/index29.htm
+0 6 0 24350 4 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00016.jpg
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/
+0 1 0 1007 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/01thespecials.html
+0 3 0 7310 2 1
+/tutorials/unix/one/mb.html
+0 2 0 5021 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/page4.html
+0 2 0 5686 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/05thespecials.html
+0 2 0 6471 0 0
+/subjects/computerarchitectureandsystems/Answers2004.pdf
+0 1 0 171367 0 0
+/subjects/webauthoring5/websites2001/it.seand/requirements3.html
+0 3 0 7449 0 0
+/subjects/computerprogramming/2004-worked-jpg/p6-8-jpg.jpg
+1 1 0 0 0 0
+/tutorials/unix/one/display2.html
+0 1 0 1237 0 0
+/tutorials/unix/one/iw.html
+0 2 0 4119 1 1
+/subjects/webauthoring5/websites2001/it.alanv/ianbrown.html
+0 3 0 8025 2 2
+/subjects/webauthoring5/websites2003/fieldtrip01/PIC00044.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/
+0 4 0 6046 1 1
+/subjects/webauthoring5/websites2002/it.alanm/keanes+profile.html
+0 1 0 2332 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/project/page7.html
+0 2 0 6191 0 0
+/tutorials/dos/one/printall.txt
+0 1 0 1368 0 0
+/tutorials/unix/one/mo.html
+0 2 0 4085 0 0
+/subjects/webauthoring5/websites2000/it.ckennedy/
+0 3 0 2036 1 1
+/subjects/desktoppublishing/DTP-A4-Project-2009.pdf
+0 1 0 110389 0 0
+/subjects/theinternet/url.png
+1 1 0 9474 0 0
+/subjects/computerprogramming/perl_edit/images/gedit01.png
+1 4 0 106511 0 0
+/subjects/computerprogramming/mazegame/baddyfromvps3-01.pl.shtml
+0 5 0 35350 0 0
+/subjects/webauthoring5/websites2002/it.stevenm/clubinfo.html
+0 2 0 8551 0 0
+/subjects/webauthoring5/websites2003/it.claireog/project/images/corkflag.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2000/it.dmaguire/whatsinafag.htm
+0 2 0 8501 0 0
+/subjects/desktoppublishing/
+0 9 0 76464 5 2
+/subjects/webauthoring5/websites2003/it.reginaom/page5.html
+0 4 0 9231 1 1
+/subjects/webauthoring5/websites2003/it.nattalieh/project/
+0 3 0 10578 1 0
+/subjects/computerprogramming/2006-Worked-Solution.pdf
+0 2 0 246501 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/images/corkgaol.jpg
+1 1 2 215 0 0
+/images/scanner-image-00003.jpg
+1 4 0 741074 0 0
+/subjects/webauthoring5/websites2004/it.janem/img/PIC00038.jpg
+1 1 0 60715 0 0
+/subjects/webauthoring5/websites2000/it.bwalsh/Discography.htm
+0 1 0 1914 1 0
+/subjects/webauthoring5/websites2003/it.paulm/html/appendices.html
+0 1 0 3808 0 0
+/subjects/webauthoring5/websites2000/it.dconway/valderrama4th.html
+0 1 0 2043 0 0
+/tutorials/dos/one/comtest.bat.txt
+0 1 0 2303 0 0
+/subjects/webauthoring5/websites2004/it.laurab/horse-racing.html
+0 5 0 40254 1 2
+/subjects/webauthoring5/00-Samples/Garnett2012/index_declanh_garnett.html
+0 4 0 9250 2 2
+/subjects/webauthoring5/websites2002/it.lisab/Introduction.html
+0 1 0 2065 0 0
+/tutorials/unix/one/scrpt2.html
+0 1 0 2199 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/PIC00010.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/powerpointpresentation/sld010.htm
+0 1 0 2112 1 1
+/tutorials/dos/one/frag-man.htm
+0 4 0 10789 1 2
+/subjects/webauthoring5/websites2004/it.janem/oldstmaryschurch.html
+0 4 0 10491 1 1
+/subjects/webauthoring5/websites2001/it.latag/page6.htm
+0 1 0 2517 0 0
+/subjects/webauthoring5/websites2002/it.natashag/intro_cork.html
+0 2 0 4330 0 0
+/tutorials/unix/one/gh.html
+0 3 0 5418 0 1
+/subjects/webauthoring5/websites2003/it.denised/project/
+0 2 0 4637 0 1
+/tutorials/networks/3com/usingcdcentre.htm
+0 2 0 1267 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/alcoholp1a.html
+0 3 0 9210 2 2
+/tutorials/unix/one/whatiseditor.html
+0 1 0 1145 0 0
+/subjects/computerprogramming/perl_hidden_input/hidden_input_demo_02.shtml
+0 5 0 30295 0 0
+/tutorials/dos/one/
+0 1 0 4653 1 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/patricks-Hill.jpg
+1 1 0 47064 0 0
+/subjects/webauthoring5/shortcuticon/
+0 5 0 24275 1 2
+/subjects/computerarchitectureandsystems/Split+Department+-+Computer+Installation+-+Further+Details+2.pdf
+0 1 0 230551 0 0
+/subjects/webauthoring5/websites2002/it.mariag/
+0 2 0 3045 0 0
+/tutorials/unix/one/about_menu2.html
+0 2 0 3347 1 0
+/subjects/webauthoring5/websites2004/it.michaelk/who.html
+0 2 0 3045 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/ireland.jpg
+1 7 0 47908 0 0
+/subjects/webauthoring5/websites2002/it.natashag/cork_mayors.html
+0 2 0 10718 0 0
+/tutorials/unix/one/under_perm1.html
+0 1 0 1989 0 0
+/subjects/webauthoring5/websites2003/it.rositag/introbs.html
+0 4 0 11960 0 0
+/subjects/webauthoring5/websites2000/it.dconway/valderrama.html
+0 1 0 3290 1 0
+/subjects/webauthoring5/websites2003/it.jasond/project/images/giraffe.jpg
+1 1 808594736 215 0 0
+/tutorials/unix/one/files.html
+0 2 0 4031 0 0
+/help/sdl_strawberry_perl.shtml
+0 7 0 68257 0 0
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+5(Letter)+2006-7.pdf
+0 1 0 115411 0 0
+/subjects/webauthoring5/websites2004/it.janem/townhallcoatofarms.html
+0 3 0 8968 0 1
+/tutorials/dos/one/index17.htm
+0 1 0 3889 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/
+0 2 0 1532 0 0
+/tutorials/unix/one/list.html
+0 2 0 3569 0 0
+/subjects/webauthoring5/websites2002/it.niallob/
+0 1 0 2170 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/greyhoundtrack.html
+0 1 0 2251 0 0
+/subjects/theinternet/webpages2002/it.natashag/
+0 3 0 9193 3 3
+/subjects/webauthoring5/websites2003/it.rositag/project/sheet.html
+0 2 0 768 0 0
+/subjects/computerprogramming/00-2005-assign02.pdf
+0 1 0 133596 0 0
+/subjects/gamesstudies/SDLx-App-Sample_04.shtml
+0 4 0 20440 0 0
+/tutorials/dos/one/autotime.bat.txt
+0 1 0 1012 0 0
+/tutorials/stylesheets/two/linkgraphics.html
+0 2 0 5208 0 0
+/help/good_password_policy.shtml
+0 3 0 17304 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/outreachprogram.html
+0 1 0 1869 0 0
+/subjects/workexperience/insurance-2008-9.pdf
+0 2 0 2091382 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/
+0 1 0 825 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/links.html
+0 1 0 782 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/images/next3DCLR.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/html5spec.html
+0 4 0 8349640 2 0
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+0 18 0 731670 3 0
+/subjects/webauthoring5/websites2004/it.michaelk/img/Alcohol-and-Drug-Policy2.jpg
+1 2 0 9121 0 0
+/subjects/webauthoring5/websites2001/it.maryd/Page1.htm
+0 2 0 2596 0 0
+/tutorials/dos/one/index28.htm
+0 2 0 8550 0 1
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+1+-+2009-10.pdf
+0 1 0 215 0 0
+/subjects/webauthoring5/websites2004/it.janem/
+0 4 0 7426 1 1
+/subjects/webauthoring5/websites2002/it.natashag/War_of_independence.html
+0 2 0 7316 0 0
+/tutorials/dos/one/sleep.txt
+0 1 0 3918 0 0
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced_files/Ansi-c_bash.gif
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2004/it.robertd/photos/mainguard.jpeg
+0 1 0 866175 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/images/night.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/ik.html
+0 2 0 4353 0 0
+/subjects/webauthoring5/websites2001/it.pamelaod/page2asthma.htm
+0 1 0 2519 0 0
+/tutorials/stylesheets/two/tips1.html
+0 4 0 16111 0 1
+/subjects/computerprogramming/mazegame/0405a.pl.shtml
+0 7 0 34692 0 0
+/subjects/computerarchitectureandsystems/topics/00-ASCII.pdf
+0 1 0 37611 0 0
+/subjects/computerprogramming/00-2006-assign02-sample-data.txt
+0 4 0 3312 0 0
+/subjects/webauthoring5/websites2000/it.bwalsh/
+0 7 0 15173 4 2
+/images/scanner-image-00002.jpg
+1 5 0 1556138 0 0
+/tutorials/unix/one/mc.html
+0 3 0 13009 1 1
+/subjects/webauthoring5/websites2001/it.shaneg/page5.html
+0 1 0 1781 0 0
+/subjects/webauthoring5/websites2004/it.janem/img/PIC00037.jpg
+1 5 0 193706 0 0
+/tutorials/dos/one/waitfor.txt
+0 1 0 1327 0 0
+/subjects/webauthoring5/websites2004/it.roseh/stylesheet.css
+0 4 0 3388 0 0
+/subjects/computerarchitectureandsystems/c20012-casestudy-2001-2.pdf
+0 1 0 18825 0 0
+/subjects/computerprogramming/00-2010-assign01-sample-data.txt
+0 7 0 5195 0 0
+/tutorials/unix/one/display3.html
+0 1 0 1225 0 0
+/tutorials/unix/one/ix.html
+0 2 0 3563 0 0
+/help/sdl_image_load_error.shtml
+0 4 0 30340 0 0
+/subjects/computerprogramming/perl/perl-part3.shtml
+0 7 0 60977 0 0
+/subjects/webauthoring5/websites2000/it.dmaguire/why.html
+0 1 0 2794 0 0
+/subjects/computerprogramming/2002-worked-jpg/p5-8.jpg
+1 5 0 967816 0 0
+/tutorials/unix/one/index13.html
+0 1 0 1344 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/project/page8.html
+0 2 0 7229 0 0
+/subjects/webauthoring5/websites2001/it.latag/page5.htm
+0 2 0 8246 0 1
+/tutorials/unix/one/mp.html
+0 2 0 6171 0 0
+/help/00-OpenOffice-Key-Combinations.pdf
+0 1 0 65324 0 0
+/subjects/webauthoring5/websites2003/it.susanm/project/images/icbar43538c.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/cd.html
+0 1 0 1528 0 1
+/tutorials/dos/one/add.bat.txt
+0 1 0 2554 0 0
+/subjects/webauthoring5/websites2002/it.mariag/Historical+Sites.html
+0 2 0 8530 1 0
+/subjects/webauthoring5/websites2002/it.niallob/architecture1.html
+0 3 0 6171 2 2
+/tutorials/dos/one/fourqs.htm
+0 1 0 8160 0 0
+/subjects/webauthoring5/websites2000/it.dconway/valderrama11th.html
+0 1 0 1764 0 0
+/subjects/webauthoring5/websites2002/it.maryn/images/map.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/widerquad2.jpg
+1 1 0 57155 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/clonmelcraftfair.html
+0 2 0 2984 0 0
+/subjects/webauthoring5/websites2002/it.niallob/historical.html
+0 1 0 2290 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/page6.html
+0 4 0 9275 0 1
+/subjects/webauthoring5/websites2003/it.reginaom/page1.1.html
+0 3 0 11191 0 0
+/subjects/computerarchitectureandsystems/Split+Department+-+Computer+Installation+-+Further+Details+1.pdf
+0 1 0 364722 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/
+0 1 0 2500 1 1
+/subjects/webauthoring5/WebSafeColourPalette+-+with+codes.gif
+1 12 0 2575269 0 0
+/subjects/computerprogramming/00-lotto-flowchart.shtml
+0 3 0 15339 0 0
+/subjects/computerprogramming/perl-creditcard/business-creditcards.shtml
+0 8 0 56184 0 0
+/subjects/computerprogramming/00-2000-assign01.pdf
+0 1 0 59983 0 0
+/subjects/webauthoring5/websites2002/it.alanm/Roy+at+utd.html
+0 1 0 3464 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/Image11.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/strctfile.html
+0 3 0 5341 0 1
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/4.html
+0 1 0 731 0 0
+/tutorials/dos/one/commlico.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2000/it.dmaguire/contents.html
+0 1 0 1598 0 0
+/tutorials/unix/one/four.html
+0 1 0 2139 0 0
+/tutorials/unix/one/index6.html
+0 1 0 1439 0 0
+/tutorials/dos/one/114x50.gif
+1 2 0 2638 0 0
+/tutorials/dos/one/rootname.bat.txt
+0 1 0 1908 0 0
+/tutorials/unix/one/gi.html
+0 1 0 1738 0 0
+/tutorials/dos/one/index16.htm
+0 2 0 4175 1 0
+/subjects/workexperience/insurance-2013.pdf
+0 2 0 3810662 0 0
+/subjects/webauthoring5/verticaltext/
+0 4 0 18152 0 2
+/subjects/wordprocessing-mode2/
+0 4 0 40788 1 1
+/subjects/webauthoring5/websites2003/it.paulm/html/childhood.html
+0 2 0 5221 1 0
+/tutorials/networks/3com/pdfs/56k_ug.pdf
+0 1 0 215 0 0
+/subjects/webauthoring5/powerpointpresentation/tsld001.htm
+0 1 0 913 1 1
+/subjects/webauthoring5/websites2003/it.jasond/page1.html
+0 2 0 3094 1 1
+/subjects/computerprogramming/vtansi.shtml
+0 9 0 161604 0 0
+/subjects/webauthoring5/websites2001/it.bridl/resultsofquestionnaie1.html
+0 1 0 1692 0 0
+/subjects/webauthoring5/websites2002/it.alanm/
+0 3 0 2928 1 0
+/tutorials/unix/one/about_menu3.html
+0 1 0 1708 0 0
+/subjects/webauthoring5/websites2000/it.patriceh/AG.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/animatedasterisk/Screenshot-Layers.png
+1 5 0 190284 0 0
+/subjects/computerprogramming/perl_online/perl_online_output.shtml
+0 2 0 14516 0 0
+/subjects/webauthoring5/websites2000/
+0 5 0 20227 1 1
+/tutorials/unix/one/under_perm2.html
+0 1 0 2038 0 0
+/subjects/wordprocessing-mode2/00-Collection-Of-Work-Instructions-2011-2012.pdf
+0 1 0 116318 0 0
+/subjects/computerprogramming/perl/perl-part10.shtml
+0 4 0 32096 0 0
+/subjects/webauthoring5/websites2001/it.seand/navral4.html
+0 3 0 6390 0 1
+/subjects/computerprogramming/perl/perl-part8.shtml
+0 4 0 50932 0 0
+/subjects/computerprogramming/perl_online/perl_online_process.shtml
+0 3 0 25050 0 0
+/subjects/webauthoring5/websites2003/it.rositag/britstate.html
+0 1 0 6083 0 0
+/tutorials/dos/one/index27.htm
+0 2 0 8816 0 0
+/subjects/webauthoring5/intermediate/Bare+Bones+Guide+to+HTML_files/invis.gif
+1 2 0 430 0 0
+/help/library/
+0 5 0 114709 1 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00059.jpg
+1 1 3486001 215 0 0
+/tutorials/unix/one/weeindex.gif
+1 2 0 428 0 0
+/subjects/webauthoring5/websites2003/it.rositag/project/corkpic/ship.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/defining.html
+0 2 0 3081 0 0
+/subjects/webauthoring5/websites2003/it.claireog/project/images/dscf0016.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2002/it.niallob/images/tower.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/img/alco.jpg
+1 1 0 5085 0 0
+/subjects/webauthoring5/websites2002/it.stevenm/
+0 2 0 3262 0 0
+/subjects/webauthoring5/websites2001/
+0 5 0 13432 1 2
+/tutorials/unix/one/pwd.html
+0 2 0 2745 0 0
+/subjects/webauthoring5/websites2004/it.roseh/TheWestgate.html
+0 5 0 7282 1 2
+/subjects/webauthoring5/websites2003/it.denised/Activities
+0 1 0 1807 0 0
+/subjects/computerprogramming/perl/perl-part21.shtml
+0 5 0 42400 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/raceday.html
+0 1 0 2159 0 0
+/subjects/theinternet/00-Etiquette+Assignment+2007-8.pdf
+0 1 0 151800 0 0
+/fetacmodules/2011-G20001_AwardSpecifications_English.pdf
+0 1 0 78991 0 0
+/subjects/webauthoring5/websites2001/it.bridl/
+0 3 0 5220 1 1
+/subjects/webauthoring5/websites2000/it.dconway/valderrama16th.html
+0 1 0 1731 0 0
+/inprogress.shtml
+0 2929 0 1063227 0 0
+/subjects/desktoppublishing/DTP-A4-Project-2007.pdf
+0 2 0 1528272 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00025.jpg
+1 4 0 333437 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/project/images4/cork_city_ireland.jpg
+1 13 0 897675 0 0
+/tutorials/dos/one/index9.htm
+0 11 0 253500 9 3
+/subjects/webauthoring5/websites2000/it.senglish/factsindia.htm
+0 2 0 3208 1 1
+/subjects/webauthoring5/websites2003/it.susanm/project/Aboutcork.html
+0 2 0 3014 0 0
+/subjects/webauthoring5/websites2001/it.brianl/whatisarea51.html
+0 1 0 4221 0 0
+/subjects/workexperience/
+0 23 0 855232 12 6
+/images/scanner-image-00001.jpg
+1 7 0 3038764 0 0
+/tutorials/unix/one/grep.html
+0 1 0 2121 0 0
+/subjects/webauthoring5/websites2003/it.rositag/imagesBS/BloodySunday.jpg
+1 2 0 13149 0 0
+/subjects/webauthoring5/websites2003/it.susanm/nutrition.html
+0 1 0 3066 0 0
+/subjects/webauthoring5/websites2002/it.niallob/gallery.html
+0 1 0 2733 0 0
+/subjects/webauthoring5/websites2002/
+0 4 0 10508 0 0
+/tutorials/unix/one/ftp2.html
+0 2 0 3441 0 0
+/subjects/webauthoring5/websites2000/it.patriceh/
+0 2 0 3144 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/welkom4.jpg
+1 8 0 156048 0 0
+/subjects/computerprogramming/2003-worked-jpg/p1-8.jpg
+1 3 0 707832 0 0
+/subjects/webauthoring5/websites2000/it.patriceh/terminology.html
+0 1 0 215 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/
+0 3 0 4813 0 1
+/subjects/webauthoring5/websites2000/vtos.modonovan/whooper+bewicksswans.html
+0 1 0 4167 0 0
+/subjects/webauthoring5/websites2001/it.latag/page4.htm
+0 1 0 2418 0 0
+/subjects/computerprogramming/perl/perl-part15.shtml
+0 5 0 41065 0 0
+/tutorials/unix/one/il.html
+0 2 0 6633 0 0
+/tutorials/dos/one/word-for.htm
+0 1 0 4963 0 0
+/subjects/webauthoring5/websites2004/it.liaml/stylesheet.css
+0 1 0 1801 0 0
+/subjects/computerarchitectureandsystems/XAM1999.pdf
+0 4 0 85652 0 0
+/tutorials/unix/one/ftp2.4.2.1.html
+0 2 0 3583 0 0
+/subjects/webauthoring5/websites2002/it.maryn/shandon.html
+0 1 0 2205 0 0
+/subjects/communications/
+0 15 0 88740 6 4
+/subjects/webauthoring5/powerpointpresentation/tsld034.htm
+0 1 0 214 1 1
+/tutorials/unix/one/md.html
+0 2 0 5199 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/page6.html
+0 1 0 1701 0 0
+/subjects/webauthoring5/websites2004/it.roseh/TheMainGaurd.html
+0 4 0 9691 1 1
+/subjects/webauthoring5/websites2004/it.janem/img/PIC00047.jpg
+1 1 0 63911 0 0
+/subjects/webauthoring5/websites2003/
+0 7 0 24269 4 1
+/tutorials/unix/one/iy.html
+0 2 0 3563 1 1
+/subjects/webauthoring5/websites2001/it.kieranf/problems.html
+0 2 0 3382 0 0
+/cgi-bin/bincount.pl
+0 1 0 29681 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/PIC00064.jpg
+1 1 0 214 0 0
+/tutorials/networks/3com/usingcdright.htm
+0 2 0 2007 0 0
+/subjects/webauthoring5/websites2001/it.martinaf/
+0 2 0 3174 0 0
+/tutorials/unix/one/mq.html
+0 2 0 4037 0 0
+/subjects/workexperience/00-Work+Experience+Details+Form-2007.pdf
+0 1 0 215 0 0
+/subjects/workexperience/insurance-2012.pdf
+0 1 49 4423870 0 0
+/tutorials/unix/one/whatisafile.html
+0 1 0 1425 0 0
+/subjects/webauthoring5/websites2002/it.niallob/architecture2.html
+0 2 0 3858 1 1
+/subjects/theinternet/History+and+Structure+of+The+Internet+Assignment+2009.pdf
+0 1 0 123285 0 0
+/subjects/webauthoring5/serversideincludes/
+0 4 0 35448 0 0
+/subjects/workexperience/00-Work+Experience+-+Self+Assessment+-+2008-9.pdf
+0 1 0 334950 0 0
+/tutorials/dos/one/recent.txt
+0 2 0 1928 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/page7.html
+0 4 0 9492 0 1
+/subjects/computerprogramming/perl/perl-index.shtml
+0 10 0 96750 0 0
+/head.shtml
+0 991 0 980099 0 0
+/subjects/webauthoring5/websites2004/
+0 8 0 18263 2 1
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/5.html
+0 1 0 875 0 0
+/tutorials/dos/one/accessed.bat.txt
+0 1 0 1243 0 0
+/tutorials/dos/one/login.log.txt
+0 1 0 214 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/symptoms.html
+0 4 0 8371 1 0
+/subjects/webauthoring5/websites2001/it.paulm/pics/macdonagh.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2000/it.pclarke/
+0 3 0 4174 0 0
+/tutorials/unix/one/jobz1.html
+0 1 0 1946 0 0
+/subjects/computerprogramming/2003-worked-jpg/p6-8.jpg
+1 2 0 0 0 0
+/tutorials/dos/one/index26.htm
+0 1 0 4637 1 1
+/subjects/webauthoring5/websites2004/it.janem/themainguardjail.html
+0 6 0 15223 2 2
+/subjects/webauthoring5/websites2001/it.bridl/Introduction.html
+0 2 0 4442 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/table.html
+0 1 0 2733 0 0
+/subjects/webauthoring5/websites2001/it.paulm/pics/gun_boat_helga.jpg
+1 2 0 7786 0 0
+/subjects/webauthoring5/websites2003/it.jasond/page2.html
+0 1 0 2872 0 0
+/subjects/webauthoring5/websites2002/it.nicolac/Page+1.html
+0 2 0 2380 1 1
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+0 14 0 49479 9 2
+/subjects/webauthoring5/websites2004/it.janem/img/PIC00024.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/about_menu4.html
+0 2 0 3379 1 1
+/subjects/webauthoring5/websites2002/it.maryn/
+0 1 0 2185 0 0
+/subjects/webauthoring5/websites2004/it.laurab/golf.html
+0 5 0 25399 1 1
+/tutorials/dos/one/iniico.gif
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2001/it.alanv/thegeffenyears.htm
+0 1 0 3417 0 0
+/subjects/theinternet/00-Etiquette+Source+Material+2009.pdf
+0 1 0 66504 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/information.html
+0 1 0 2421 0 0
+/subjects/webauthoring5/websites2003/it.paulm/html/conclusion.html
+0 4 0 21831 1 2
+/subjects/webauthoring5/websites2004/it.michaelk/img/confused.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/cork_city_ireland.jpg
+1 160 0 11047974 0 0
+/subjects/webauthoring5/websites2002/it.maryn/clock.html
+0 1 0 4618 0 0
+/tutorials/unix/one/Unix.html
+0 2 0 10040 1 1
+/subjects/webauthoring5/websites2003/it.rositag/
+0 3 0 1249 2 0
+/subjects/webauthoring5/websites2001/it.kieranf/introductiontoreport.html
+0 2 0 2144 0 0
+/subjects/webauthoring5/websites2001/it.seand/Howtogetstarted5.html
+0 2 0 3514 0 0
+/tutorials/dos/one/yn.txt
+0 2 0 3324 0 0
+/tutorials/unix/one/telnet.html
+0 2 0 3561 0 0
+/tutorials/unix/one/oview2.2.html
+0 1 0 1254 0 1
+/tutorials/dos/one/today.bat.txt
+0 2 0 4956 0 0
+/subjects/webauthoring5/websites2001/it.alanv/Links.html
+0 2 0 2817 0 1
+/tutorials/dos/one/index8.htm
+0 2 0 34660 1 1
+/subjects/webauthoring5/websites2001/it.latag/Index.html
+0 1 0 1835 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/intro.html
+0 4 0 3948 1 0
+/subjects/webauthoring5/websites2001/it.bridl/transcriptofinterview.html
+0 3 0 4005 1 1
+/tutorials/networks/3com/smallbusinesssolutions/offices/latincontacts.htm
+0 1 0 4147 1 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/Fota2.jpg
+1 1 0 16321 0 0
+/images/top_of_page.gif
+1 17 0 112455 0 0
+/subjects/pastpapers/ss/1996/ss-1996.pdf
+0 1 0 109603 0 0
+/tutorials/networks/3com/usingcdleft.htm
+0 2 0 2197 1 1
+/subjects/webauthoring5/websites2001/it.brianl/indexpage.html
+0 2 0 3752 0 0
+/subjects/webauthoring5/websites2004/it.robertd/structuresandbuildings.html
+0 5 0 8319 1 2
+/subjects/webauthoring5/websites2001/it.davide/Introduction.html
+0 2 0 5046 0 0
+/tutorials/unix/one/basic1.3.4.html
+0 1 0 1430 0 0
+/subjects/gamesstudies/SDL_cursor_01.shtml
+0 3 0 14367 0 0
+/tutorials/unix/one/man-cgi_cmp.html
+0 2 0 2096 0 1
+/bottom.shtml
+0 2928 0 2676192 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/intro.html
+0 2 0 6140 0 0
+/tutorials/unix/one/fsystem.html
+0 1 0 1577 0 0
+/subjects/webauthoring5/websites2002/it.natashag/my_home_page.html
+0 2 0 2220 0 0
+/subjects/webauthoring5/websites2001/it.latag/page3.htm
+0 2 0 6106 1 1
+/subjects/webauthoring5/20070522-websizes.html
+0 6 0 6384 1 1
+/subjects/controlsystems/
+0 7 0 30744 4 1
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00035.jpg
+1 3 0 123204 0 0
+/subjects/webauthoring5/websites2000/it.cmorrissey/innocent.html
+0 3 0 32781 3 0
+/subjects/webauthoring5/intermediate/barebonesguidetohtml.html
+0 1 0 48032 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/filmclub.html
+0 2 0 3334 0 0
+/subjects/webauthoring5/websites2002/it.michaelb/top.html
+0 2 0 842 0 0
+/tutorials/unix/one/unix0.html
+0 2 0 7714 1 0
+/subjects/webauthoring5/websites2001/it.latag/page9.html
+0 1 0 2654 0 0
+/subjects/webauthoring5/websites2003/it.davidos/
+0 3 0 5662 1 1
+/subjects/webauthoring5/websites2002/it.alanm/Roy+at+utd+2.html
+0 1 0 3702 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/paw.jpg
+1 1 0 215 0 0
+/subjects/computerprogramming/perl_environment/images/nx-9.jpg
+1 3 0 99411 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/recommend.html
+0 3 0 8682 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/t-ht-0011.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/termsofref.html
+0 2 0 3668 0 0
+/subjects/webauthoring5/websites2000/it.megan/page6.html
+0 1 0 9514 0 0
+/subjects/webauthoring5/websites2003/it.rositag/left.html
+0 2 0 2258 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/sld001.htm
+0 3 0 3405 3 2
+/subjects/computerarchitectureandsystems/horseshoe-terrace.png
+1 1 0 4420508 0 0
+/tutorials/unix/one/im.html
+0 2 0 11255 0 0
+/tutorials/dos/one/index14.htm
+0 2 0 4570 0 1
+/subjects/webauthoring5/websites2003/it.rositag/history.html
+0 1 0 215 0 0
+/subjects/workexperience/insurance-2011.pdf
+0 1 0 569626 0 0
+/subjects/webauthoring5/websites2001/it.liamf/
+0 2 0 4215 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/summary.html
+0 2 0 7156 0 0
+/subjects/webauthoring5/websites2003/it.rositag/victims.html
+0 1 0 2246 0 0
+/tutorials/unix/one/me.html
+0 2 0 6399 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/page7.html
+0 2 0 3320 1 1
+/subjects/gamesstudies/SDLx-App-Sample_02.shtml
+0 5 0 53650 0 0
+/images/webmail-01.gif
+1 1 0 16545 0 0
+/subjects/computerarchitectureandsystems/topics/binary.shtml
+0 4 0 28172 0 0
+/tutorials/unix/one/iz.html
+0 3 0 5335 0 1
+/subjects/webauthoring5/websites2002/it.mariag/Introduction.html
+0 1 0 1784 0 0
+/tutorials/dos/one/frag-bas.htm
+0 1 0 2793 0 0
+/tutorials/unix/one/index15.html
+0 1 2 3566 1 0
+/subjects/computerprogramming/00-2002-assign02.shtml
+0 4 0 34352 0 0
+/tutorials/unix/one/mr.html
+0 3 0 10738 0 0
+/tutorials/dos/one/index25.htm
+0 2 0 8724 1 1
+/subjects/webauthoring5/websites2003/it.reginaom/project/page1.1.html
+0 3 0 11117 1 0
+/subjects/webauthoring5/websites2003/it.nattalieh/project/images4/homeanim.jpg
+1 1 0 27665 0 0
+/subjects/gamesstudies/SDL_game_loop_01.shtml
+0 10 0 70520 0 0
+/subjects/computerprogramming/posapp/pos-functions-demo-2013.pl.shtml
+0 7 0 43659 0 0
+/subjects/webauthoring5/websites2004/it.roseh/TownHall.html
+0 3 0 8866 0 0
+/subjects/theinternet/The+Internet.pdf
+0 2 0 261786 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/findings1.html
+0 4 0 11775 1 1
+/subjects/webauthoring5/websites2003/it.reginaom/page8.html
+0 3 0 10831 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/effects.html
+0 2 0 4097 0 0
+/subjects/computerarchitectureandsystems/Answers2000.pdf
+0 1 0 213 0 0
+/subjects/webauthoring5/websites2000/it.thorne/
+0 1 0 684 0 0
+/tutorials/unix/one/jobz2.html
+0 1 0 2241 0 0
+/tutorials/unix/one/index8.html
+0 1 0 1822 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/hooker.html
+0 1 0 734 0 0
+/subjects/databasemethods/OO-Base+Queries.pdf
+0 1 0 0 0 0
+/subjects/computerprogramming/perl_environment/images/vnc-2.jpg
+1 2 0 23852 0 0
+/subjects/theinternet/gFTP_in_use.jpg
+1 1 0 78017 0 0
+/tutorials/dos/one/index7.htm
+0 1 0 4175 0 0
+/tutorials/unix/one/DOStoUNIX.html
+0 2 0 5799 0 0
+/subjects/computerprogramming/2002-Worked-Solution.pdf
+0 5 0 10813440 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/Fota1.jpg
+1 1 0 13060 0 0
+/subjects/webauthoring5/websites2003/it.jasond/page3.html
+0 2 0 7066 0 0
+/subjects/webauthoring5/websites2002/it.nicolac/Page+2.html
+0 2 0 3227 1 0
+/subjects/webauthoring5/websites2003/it.nattalieh/page2.html
+0 4 0 5517 2 0
+/cgi-bin/submitprogram.pl
+0 4 0 860 0 0
+/subjects/computerprogramming/2007-Sample-2-Solution.pdf
+0 1 0 4717533 0 0
+/subjects/gamesstudies/SDLx-App-Sample_07.shtml
+0 2 0 10860 0 0
+/subjects/webauthoring5/websites2004/it.janem/thequay.html
+0 4 0 10994 1 1
+/subjects/webauthoring5/websites2004/it.ciannaitk/patrickswell.html
+0 1 0 2773 1 0
+/subjects/webauthoring5/websites2000/it.cmorrissey/chair.jpg
+1 8 0 114233 0 0
+/subjects/databasemethods/00-Database-Methods.ppt
+0 3 0 1251183 0 0
+/subjects/webauthoring5/websites2004/it.roseh/Introduction.html
+0 3 0 6073 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/fullback.html
+0 1 0 751 0 0
+/tutorials/dos/one/enter.bat.txt
+0 2 0 4758 0 0
+/subjects/computerprogramming/2002-worked-jpg/p3-8.jpg
+1 1 0 0 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/scrumhalf.html
+0 1 0 652 0 0
+/tutorials/unix/one/finger.html
+0 1 0 1701 0 0
+/subjects/webauthoring5/websites2001/it.latag/page2.htm
+0 1 0 2432 0 0
+/tutorials/unix/one/oview2.3.html
+0 2 0 2540 0 1
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced_files/Rename_files_containing_spaces.gif
+1 2 0 15204 0 0
+/subjects/webauthoring5/websites2001/it.bridl/conclusions.html
+0 3 0 7314 1 1
+/subjects/theinternet/00-PHISHING.pdf
+0 1 0 215 0 0
+/subjects/gamesstudies/SDL_game_loop_06.shtml
+0 5 0 29805 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/thequays.html
+0 2 0 5872 0 0
+/subjects/databasemethods/RelationshipbetweenDatabaseParts.gif
+1 1 0 112504 0 0
+/subjects/computerprogramming/2004-worked-jpg/p1-8-jpg.jpg
+1 3 0 707782 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/next.jpg
+1 7 0 124222 0 0
+/subjects/computerprogramming/perl_edit/perl_edit_index.shtml
+0 8 0 60944 0 0
+/subjects/webauthoring5/00-Samples/Garnett2012/Doctor_Patient_Relationship_01.jpg
+1 4 0 52162 0 0
+/tutorials/dos/one/line-env.htm
+0 8 0 20728 1 1
+/tutorials/unix/one/VMStoUNIX.html
+0 1 0 4368 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/resultstoquestionnaire.html
+0 3 0 5940 1 0
+/tutorials/dos/one/getini.txt
+0 2 0 5296 0 0
+/help/linuxdirectorystructure.shtml
+0 5 0 41675 0 0
+/subjects/webauthoring5/websites2000/it.patriceh/agecard.html
+0 1 0 5021 1 0
+/subjects/webauthoring5/websites2003/it.paulm/
+0 1 0 4173 1 0
+/tutorials/dos/one/index13.htm
+0 1 0 3314 0 0
+/tutorials/networks/3com/usingyournetwork/blank.htm
+0 1 0 214 0 1
+/subjects/theinternet/History+and+Structure+of+The+Internet+Assignment+2007.pdf
+0 1 0 107830 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/present.html
+0 2 0 4302 0 0
+/subjects/webauthoring5/websites2003/it.claireog/project/images/dscf0002.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/00-Samples/Garnett2012/index_jonathant_garnett.html
+0 2 0 7573 0 0
+/subjects/webauthoring5/websites2002/it.adrians/introduction.html
+0 2 0 4824 0 1
+/tutorials/unix/one/ia.html
+0 3 0 10078 1 1
+/subjects/webauthoring5/00-Samples/Garnett2012/Hope_02.jpg
+1 1 0 12239 0 0
+/tutorials/unix/one/cmd1.html
+0 1 0 1784 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/03thebonediggers.html
+0 3 0 5119 1 0
+/help/legislation/Data+Protection+Act+1988.pdf
+0 2 0 206085 0 0
+/subjects/webauthoring5/websites2000/it.megan/page7.html
+0 1 0 5739 0 0
+/tutorials/unix/one/currdir.html
+0 1 0 1344 1 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/images/harp_showcase_md_blk.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2000/it.cmorrissey/contents.html
+0 1 0 1655 0 0
+/subjects/computerprogramming/00-2004-assign01.shtml
+0 4 0 31804 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/frontview12.jpg
+1 1 0 215 0 0
+/tutorials/dos/one/adrive.bat.txt
+0 1 0 7941 0 0
+/subjects/computerprogramming/perl/perl-part6.shtml
+0 5 0 37905 0 0
+/subjects/webauthoring5/websites2001/it.bridl/resultsofquestionnaire2.html
+0 2 0 4416 0 0
+/tutorials/unix/one/in.html
+0 4 0 8519 1 1
+/subjects/computerprogramming/2002-worked-jpg/p8-8.jpg
+1 2 0 214 0 0
+/tutorials/dos/one/index24.htm
+0 1 0 3844 0 0
+/subjects/theinternet/00-History+and+Structure+of+The+Internet+Assignment+2005.pdf
+0 1 0 140215 0 0
+/tutorials/unix/one/copying.html
+0 1 0 1645 0 0
+/subjects/theinternet/e-Mail-Trap.jpg
+1 1 0 201733 0 0
+/tutorials/unix/one/mf.html
+0 5 0 13559 0 3
+/subjects/webauthoring5/websites2001/it.shaneg/page8.html
+0 1 0 1522 1 0
+/tutorials/stylesheets/two/waits.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/cork-map.jpg
+1 8 0 207648 0 0
+/subjects/computerprogramming/2004-worked-jpg/p4-8-jpg.jpg
+1 1 0 0 0 0
+/subjects/computerprogramming/mazegame/0401.pl.shtml
+0 8 0 34856 0 0
+/subjects/wordprocessing-mode2/00-Labels-Instructions.pdf
+0 1 0 176276 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/Image24.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/
+0 3 0 5085 0 0
+/subjects/webauthoring5/websites2000/it.dconway/augustanational.html
+0 2 0 6368 0 0
+/tutorials/unix/one/index16.html
+0 1 0 2713 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/firstcentre.html
+0 1 0 789 0 0
+/tutorials/unix/one/ms.html
+0 2 0 13193 0 0
+/subjects/computerprogramming/perl_environment/images/vnc-1.jpg
+1 1 0 31249 0 0
+/subjects/webauthoring5/websites2000/it.mfox/
+0 1 0 1566 0 0
+/tutorials/dos/one/usernamedebug.bat.txt
+0 1 0 756 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/Image15.jpg
+1 1 0 214 0 0
+/fetacmodules/2011-C20240_AwardSpecifications_English.pdf
+0 1 0 66415 0 0
+/tutorials/dos/one/index6.htm
+0 1 0 6098 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/communityartist.html
+0 2 0 3492 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/findings2.html
+0 2 0 4306 0 0
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+4+(Letter)+2010-2011.pdf
+0 1 0 115417 0 0
+/subjects/webauthoring5/websites2004/it.janem/img/PIC00033.jpg
+1 1 0 59412 0 0
+/robots.txt
+0 412 0 116961 0 0
+/subjects/computerarchitectureandsystems/Answers2010.pdf
+0 1 0 184488 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/stylesheet.css
+0 1 0 1531 0 0
+/tutorials/dos/one/pushpath.bat.txt
+0 2 0 1076 0 0
+/tutorials/dos/one/~webspace.html
+0 11 0 123018 5 1
+/subjects/webauthoring5/websites2001/it.oliviak/pics/reike.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/TOP_.html
+0 1 0 3586 1 0
+/subjects/webauthoring5/websites2001/it.davide/tableofcontent.html
+0 4 0 9332 0 1
+/subjects/webauthoring5/websites2001/it.latag/page1.htm
+0 1 0 3266 0 0
+/tutorials/unix/one/jobz3.html
+0 2 0 2962 0 0
+/subjects/webauthoring5/websites2000/it.dhally/achievements.htm
+0 2 0 5658 1 1
+/tutorials/unix/one/index9.html
+0 2 0 3284 1 1
+/tutorials/unix/one/gl.html
+0 1 0 1749 0 0
+/subjects/computerprogramming/perl/perl-part13.shtml
+0 4 0 34888 0 0
+/fetacmodules/2011-C20013_AwardSpecifications_English.pdf
+0 1 0 215 0 0
+/sidemenu.shtml
+0 2925 0 5031000 0 0
+/tutorials/stylesheets/two/stylesheet.html
+0 4 0 16276 0 0
+/subjects/computerprogramming/read01.c
+0 8 0 12256 0 0
+/subjects/webauthoring5/websites2003/it.jasond/page4.html
+0 1 0 4645 0 0
+/tutorials/stylesheets/two/tomwaits.html
+0 3 0 5128 1 0
+/subjects/webauthoring5/websites2003/it.nattalieh/page3.html
+0 2 0 6775 0 0
+/subjects/webauthoring5/websites2000/it.bwalsh/frontpage.html
+0 2 0 12501 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/tsld142.htm
+0 2 0 1182 2 0
+/subjects/webauthoring5/websites2000/it.bwalsh/Tosh.htm
+0 2 0 3590 2 0
+/subjects/gamesstudies/SDL_Manual.pdf
+0 4 0 1677065 0 0
+/subjects/webauthoring5/websites2001/it.alanv/singles.html
+0 2 0 8610 0 0
+/subjects/webauthoring5/websites2001/it.richardb/2.earlypoliticalcareer.html
+0 3 0 5190 1 0
+/subjects/computerprogramming/2004-worked-jpg/p7-8-jpg.jpg
+1 2 0 262647 0 0
+/subjects/webauthoring5/websites2001/it.bridl/interview.html
+0 2 0 5050 0 0
+/subjects/computerprogramming/perl/perl-part24.shtml
+0 7 0 45815 0 0
+/tutorials/dos/one/index12.htm
+0 1 0 2333 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/what.html
+0 2 0 3389 0 0
+/subjects/webauthoring5/websites2003/it.rositag/imagesBS/funeral.jpg
+1 4 0 99673 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/project/page2.html
+0 1 0 1761 0 0
+/subjects/webauthoring5/websites2004/it.liaml/
+0 4 0 5463 1 1
+/subjects/webauthoring5/animatedasterisk/Screenshot-Save-as-GIF.png
+1 3 0 90732 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/018.jpg
+1 1 0 21304 0 0
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+(Social+Partnership)+5+-+2005-6.pdf
+0 1 0 117550 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/introduction.html
+0 2 0 3382 1 0
+/fetacmodules/2011-C20148_AwardSpecifications_English.pdf
+0 1 0 65697 0 0
+/subjects/computerprogramming/checksums/checksums.shtml
+0 3 0 5865 0 0
+/subjects/webauthoring5/websites2004/it.laurab/soccer.html
+0 7 0 34179 3 0
+/tutorials/dos/one/batch.html
+0 1 0 4652 1 1
+/tutorials/networks/3com/smallbusinesssolutions/offices/europecontacts.htm
+0 1 0 5299 1 1
+/subjects/webauthoring5/websites2000/it.patriceh/hangover.jpg
+1 1 0 214 0 0
+/subjects/theinternet/00-Clever-Phishing.jpg
+1 3 0 610431 0 0
+/help/00-MyOwnWork.pdf
+0 2 0 154234 0 0
+/subjects/webauthoring5/websites2004/it.janem/thewestgatetownwall.html
+0 5 0 15966 1 2
+/subjects/webauthoring5/websites2000/it.pclarke/met.html
+0 2 0 8602 0 0
+/help/software/
+0 14 0 183232 5 1
+/tutorials/unix/one/env6.html
+0 2 0 3579 0 0
+/subjects/webauthoring5/websites2000/it.dmaguire/additives.html
+0 1 0 23968 0 0
+/subjects/computerprogramming/2003-worked-jpg/p4-8.jpg
+1 4 0 758704 0 0
+/subjects/computerprogramming/00-2000-assign01.shtml
+0 3 0 19644 0 0
+/tutorials/dos/one/index23.htm
+0 1 0 5867 0 0
+/subjects/webauthoring5/webauthoring-index.shtml
+0 1 0 1974 0 0
+/subjects/webauthoring5/websites2000/it.patriceh/alcoholismhelp_com.gif
+1 1 0 215 0 0
+/subjects/computerprogramming/perl/perl-part18.shtml
+0 4 0 28328 0 0
+/subjects/webauthoring5/websites2002/it.niallob/tours.html
+0 1 0 1716 0 0
+/subjects/computerarchitectureandsystems/migration.pdf
+0 1 0 214 0 0
+/tutorials/unix/one/ib.html
+0 4 0 11151 2 1
+/tutorials/unix/one/cmd2.html
+0 1 0 2635 0 0
+/help/strawberry_perl_05.png
+1 1 0 411037 0 0
+/subjects/webauthoring5/websites2002/it.stevenm/links.html
+0 2 0 3181 0 0
+/tutorials/unix/one/env_list.html
+0 1 0 1755 0 0
+/subjects/computerprogramming/00-2012-assign02.1.pdf
+0 3 0 646742 0 0
+/subjects/webauthoring5/websites2002/it.adrians/
+0 1 0 1285 0 0
+/subjects/webauthoring5/websites2000/it.patriceh/mixing_drinks.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team.html
+0 1 0 2315 0 0
+/subjects/webauthoring5/websites2002/it.maryn/bells.html
+0 1 0 3018 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/sponsorsandpatrons.html
+0 2 0 7098 0 0
+/subjects/computerprogramming/00-2012-assign02.1-POS-sample-data.txt
+0 4 0 3328 0 0
+/favicon.ico
+0 26 0 461292 0 0
+/tutorials/unix/one/io.html
+0 1 0 2358 0 0
+/subjects/webauthoring5/websites2001/it.seand/gettingstarted2.html
+0 2 0 7540 0 0
+/tutorials/dos/one/index5.htm
+0 4 0 15116 2 1
+/subjects/webauthoring5/websites2001/it.bridl/survey.html
+0 3 0 4923 1 0
+/subjects/databasemethods/
+0 5 0 63095 2 1
+/tutorials/networks/3com/topbar.htm
+0 3 0 5158 0 0
+/subjects/webauthoring5/websites2003/it.claireog/project/frame.html
+0 1 0 942 0 0
+/fetacmodules/2011-C20168_AwardSpecifications_English.pdf
+0 2 0 172088 0 0
+/tutorials/unix/one/man-cgi_stty_from_defaults.html
+0 2 0 1984 1 1
+/tutorials/unix/one/mg.html
+0 2 0 4823 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/page9.html
+0 2 0 2726 1 0
+/subjects/computerarchitectureandsystems/topics/mainmemory.shtml
+0 2 0 11566 0 0
+/subjects/webauthoring5/opacity/
+0 3 0 14924 1 1
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+1+-+2010-11.pdf
+0 1 0 120135 0 0
+/tutorials/unix/one/display.html
+0 1 0 1509 1 1
+/tutorials/unix/one/index17.html
+0 2 0 4685 0 0
+/tutorials/unix/one/mt.html
+0 2 0 7387 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/findings3.html
+0 2 0 4531 1 1
+/subjects/webauthoring5/websites2001/it.paulm/easterweekdayfive.html
+0 1 0 3709 1 1
+/tutorials/unix/one/path1.html
+0 1 0 1707 0 0
+/tutorials/unix/one/opfile.html
+0 1 0 1587 0 0
+/subjects/webauthoring5/websites2003/it.susanm/hairloss.html
+0 2 0 4932 1 1
+/tutorials/dos/one/addition.txt
+0 1 0 4267 0 0
+/subjects/webauthoring5/websites2002/it.stevenm/contact.html
+0 2 0 3621 0 0
+/subjects/webauthoring5/websites2003/it.jasond/project/
+0 1 0 215 1 0
+/subjects/webauthoring5/websites2004/it.seamusl/page2.html
+0 2 0 3852 0 0
+/subjects/computerprogramming/perl_environment/images/nx-6.jpg
+1 2 0 244692 0 0
+/subjects/computerprogramming/perl_general/perl-drawing-text.shtml
+0 7 0 58744 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/8.html
+0 1 0 752 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/visualart.html
+0 2 0 3838 0 0
+/subjects/computerprogramming/lotto-flowchart.png
+1 4 0 13441 0 0
+/subjects/webauthoring5/websites2001/it.richardb/
+0 4 0 8148 1 1
+/subjects/webauthoring5/websites2002/it.stevenm/history.html
+0 2 0 9469 0 0
+/tutorials/networks/3com/networksexplained/components/components.htm
+0 2 0 430 1 1
+/subjects/webauthoring5/websites2003/it.rositag/project/scenic.html
+0 1 0 215 0 0
+/subjects/databasemethods/db-2006.pdf
+0 1 0 125344 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/aboutus.html
+0 3 0 4890 1 0
+/tutorials/unix/one/jobz4.html
+0 2 0 4795 0 0
+/subjects/webauthoring5/websites2002/it.niallob/images/church/view09.jpg
+1 1 0 215 0 0
+/tutorials/stylesheets/two/stylesheet2.html
+0 3 0 16902 1 1
+/subjects/webauthoring5/websites2004/it.laurab/greyhound-racing.html
+0 4 0 10519 1 1
+/tutorials/stylesheets/two/banner_3.gif
+1 1 0 215 0 0
+/tutorials/unix/one/gm.html
+0 1 0 1950 0 0
+/tutorials/stylesheets/two/contact.html
+0 3 0 5710 0 0
+/subjects/computerprogramming/comparisons/
+0 8 0 65208 1 1
+/subjects/theinternet/History+and+Structure+of+The+Internet+Assignment+2005.pdf
+0 3 0 224873 0 0
+/subjects/webauthoring5/websites2002/it.lisab/Pictures+of+old+Artifacts.html
+0 1 0 1634 1 0
+/tutorials/unix/one/two.html
+0 2 0 3563 0 0
+/tutorials/unix/one/sort.html
+0 1 0 2334 0 0
+/subjects/webauthoring5/websites2001/it.pamelaod/page3asthma.htm
+0 1 758134833 2853 0 0
+/tutorials/dos/one/password.txt
+0 1 0 1944 0 0
+/subjects/webauthoring5/websites2003/it.jasond/page5.html
+0 1 0 4276 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/page4.html
+0 1 0 2510 0 0
+/subjects/webauthoring5/websites2001/it.bridl/aims.html
+0 3 0 4974 1 0
+/subjects/webauthoring5/websites2002/it.adrians/quotes.html
+0 1 0 2385 0 0
+/subjects/computerprogramming/murphyslaw.shtml
+0 7 0 59584 0 0
+/search.shtml
+0 1 0 1955 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/
+0 9 0 22387 5 2
+/subjects/webauthoring5/websites2003/it.paulm/html/education.html
+0 1 0 5372 0 0
+/subjects/webauthoring5/websites2004/it.laurab/gaa.html
+0 5 0 17444 0 0
+/tutorials/dos/one/index22.htm
+0 2 0 5716 0 1
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced_files/Bash_floating_point.gif
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/project/page3.html
+0 2 0 6756 0 0
+/tutorials/unix/one/pid.html
+0 2 0 2449 0 0
+/topmenu.shtml
+0 2921 0 2383536 0 0
+/subjects/theinternet/making-index.shtml
+0 2 0 15772 0 0
+/subjects/computerprogramming/perl_hidden_input/hidden_input_demo_03.shtml
+0 6 0 37368 0 0
+/subjects/webauthoring5/websites2000/it.megan/Index.html
+0 1 0 3409 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/building.html
+0 3 0 7218 1 0
+/subjects/computerprogramming/XAM2011.pdf
+0 1 0 619101 0 0
+/help/strawberry_perl_04.png
+1 5 0 255690 0 0
+/subjects/webauthoring5/websites2000/it.dhally/disapointmentsandsucess_html.html
+0 1 0 2793 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/Image22.jpg
+1 1 0 215 0 0
+/subjects/computerprogramming/ansi_usage.shtml
+0 5 0 36065 0 0
+/tutorials/unix/one/man_org.html
+0 1 0 1520 0 0
+/subjects/webauthoring5/intermediate/Bare+Bones+Guide+to+HTML_files/vh40.gif
+1 3 0 645 0 0
+/subjects/computerarchitectureandsystems/Answers1999.pdf
+0 1 0 148605 0 0
+/subjects/webauthoring5/websites2000/it.bfraney/players.html
+0 1 0 3295 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/sld149.htm
+0 1 0 214 0 0
+/subjects/computerprogramming/old/assignment02-2001.html
+0 2 0 12712 1 0
+/tutorials/dos/one/index4.htm
+0 1 0 13911 0 0
+/subjects/theinternet/00-Etiquette+Assignment+2009-10.pdf
+0 1 0 492572 0 0
+/tutorials/unix/one/unix3.html
+0 1 0 16974 1 1
+/tutorials/stylesheets/two/
+0 3 0 50061 2 2
+/subjects/computerprogramming/perl-term-screen/
+0 9 0 71397 4 3
+/subjects/computerprogramming/mazegame/maze06.map.shtml
+0 5 0 28845 0 0
+/tutorials/unix/one/ic.html
+0 2 0 11563 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/tight.html
+0 1 0 756 0 0
+/tutorials/unix/one/cmd3.html
+0 2 0 3595 0 0
+/subjects/gamesstudies/it.coiac_final_game.tar.gz
+0 1 0 67464 0 0
+/subjects/webauthoring5/websites2000/it.senglish/factsthailand.html
+0 1 0 1406 1 1
+/subjects/webauthoring5/websites2003/it.susanm/
+0 1 0 1519 0 0
+/subjects/gamesstudies/SDLx-App-Sample_05.shtml
+0 4 0 23524 0 0
+/subjects/webauthoring5/websites2004/it.liaml/aboutus.html
+0 2 0 7257 0 0
+/subjects/computerprogramming/mazegame/0402.pl.shtml
+0 3 0 13539 0 0
+/tutorials/stylesheets/two/sol_poker.html
+0 3 0 5640 1 1
+/subjects/computerprogramming/2002-worked-jpg/p1-8.jpg
+1 1 0 0 0 0
+/subjects/webauthoring5/websites2000/it.ckennedy/nav.html
+0 2 0 3140 0 0
+/subjects/webauthoring5/00-Samples/Garnett2012/style_declanh_garnett.css
+0 1 0 1298 0 0
+/subjects/webauthoring5/websites2002/it.nicolac/
+0 2 0 2991 1 0
+/subjects/webauthoring5/websites2001/it.seand/
+0 5 0 7931 3 1
+/tutorials/unix/one/ip.html
+0 3 0 17896 0 1
+/subjects/webauthoring5/websites2004/it.liaml/contactus.html
+0 2 0 2047 0 0
+/subjects/webauthoring5/websites2004/it.laurab/img/xpic.gif
+1 1 0 23553 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00031.jpg
+1 3 0 139203 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00076.jpg
+1 1 0 215 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/img132.gif
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/img/westgate.jpg
+1 12 0 1192137 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/00introduction.html
+0 1 0 2036 0 0
+/subjects/computerprogramming/perl_environment/images/puttyX11.png
+1 3 0 124437 0 0
+/subjects/gamesstudies/SDL_game_loop_04.shtml
+0 4 0 32808 0 0
+/tutorials/unix/one/mh.html
+0 2 0 4327 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/questionnaire.html
+0 3 0 7374 1 0
+/subjects/computerprogramming/perl_environment/images/nx-5.jpg
+1 3 0 67632 0 0
+/subjects/webauthoring5/websites2004/it.roseh/
+0 4 0 8712 2 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/img019.gif
+1 2 0 14100 0 0
+/subjects/webauthoring5/centeringanimg.html
+0 4 0 23736 0 1
+/subjects/wordprocessing-mode2/Headed+School+Paper+113.01-20081002.pdf
+0 1 0 0 0 0
+/tutorials/stylesheets/two/re_example1.html
+0 2 0 6534 0 0
+/tutorials/dos/one/random.txt
+0 1 0 1549 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/corkcitygaolp6.html
+0 1 0 3416 0 0
+/subjects/computerprogramming/perl_online/images/final_answer.png
+1 1 0 24105 0 0
+/tutorials/dos/one/filelist.htm
+0 4 0 27376 2 2
+/subjects/webauthoring5/websites2004/it.michaelk/img/coolgraeny.jpg
+1 1 0 3800 0 0
+/tutorials/unix/one/mu.html
+0 2 0 6895 0 0
+/tutorials/dos/one/index10.htm
+0 2 0 3899 2 2
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+1+-+2007-8.pdf
+0 1 0 215 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/blindflanker.html
+0 1 0 620 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/flagsbridge.jpg
+1 1 0 31995 0 0
+/subjects/webauthoring5/websites2000/it.dconway/ballybunion.html
+0 1 0 4271 0 0
+/subjects/webauthoring5/websites2003/it.davidos/page1.html
+0 3 0 5121 1 1
+/subjects/workexperience/00-Work+Experience+-+Self+Assessment+-+2006-7.pdf
+0 1 0 90197 0 0
+/tutorials/unix/one/man-cgi_date.html
+0 1 0 1176 0 0
+/style.css
+0 4 0 24728 0 0
+/images/names04a.png
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2004/it.seamusl/page3.html
+0 1 0 3734 0 0
+/tutorials/unix/one/ga.html
+0 1 0 2440 0 0
+/subjects/webauthoring5/websites2004/it.liaml/img/pic3.gif
+1 1 0 33814 0 0
+/subjects/computerprogramming/perl_environment/images/putty-win.jpg
+1 4 0 212958 0 0
+/images/multy01-pl.png
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/
+0 1 0 344 0 0
+/subjects/webauthoring5/websites2004/it.janem/irishtown.html
+0 6 0 10894 3 2
+/tutorials/unix/one/jobz5.html
+0 2 0 5259 0 0
+/subjects/webauthoring5/websites2004/it.liaml/facilities.html
+0 2 0 8993 1 1
+/subjects/computerprogramming/perl/perl-part4.shtml
+0 5 0 49100 0 0
+/tutorials/stylesheets/two/stylesheet3.html
+0 5 0 37750 1 1
+/tutorials/dos/one/index21.htm
+0 1 0 3898 0 1
+/subjects/webauthoring5/websites2001/it.latag/
+0 3 0 3985 1 0
+/subjects/computerprogramming/2002-worked-jpg/p6-8.jpg
+1 3 0 726947 0 0
+/subjects/computerprogramming/pos.txt
+0 4 0 7076 0 0
+/images/NetworkTopologies.png
+1 58 0 1657166 0 0
+/subjects/webauthoring5/20070523-websizes.html
+0 5 0 4775 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/info.gif
+1 2 0 1147 0 0
+/subjects/webauthoring5/websites2003/it.paulm/html/aims.html
+0 1 0 4789 0 0
+/subjects/webauthoring5/websites2003/it.jasond/page6.html
+0 1 0 3267 0 0
+/subjects/computerarchitectureandsystems/topics/storagecapacity.shtml
+0 3 0 22791 0 0
+/tutorials/unix/one/jobz.html
+0 1 0 1708 1 0
+/subjects/webauthoring5/websites2003/it.susanm/images/child12.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/00-Samples/Garnett2012/stet2.jpg
+1 1 0 215 0 0
+/help/whatislinux.shtml
+0 5 0 30995 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/page5.html
+0 2 0 5012 0 0
+/tutorials/dos/one/subsdemo.bat.txt
+0 2 0 751 0 0
+/subjects/webauthoring5/websites2003/it.claireog/project/page4.html
+0 1 0 3192 0 0
+/subjects/computerprogramming/XAM2010.pdf
+0 1 0 618931 0 0
+/tutorials/unix/one/weetop.gif
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2003/it.denised/
+0 3 0 4534 1 0
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced_files/Bash_08.jpg
+1 1 0 7462 0 0
+/help/strawberry_perl_03.png
+1 2 0 171566 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/
+0 4 0 10907 1 0
+/subjects/webauthoring5/websites2002/it.kathyf/destinations.html
+0 1 0 1644 0 0
+/tutorials/unix/one/man_org2.html
+0 2 0 2778 0 0
+/subjects/webauthoring5/websites2003/it.claireog/images/church.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/racesheet.jpg
+1 1 0 321296 0 0
+/subjects/workexperience/00-WorkExperienceSupervisorsAssessment.pdf
+0 1 0 535555 0 0
+/subjects/webauthoring5/websites2000/it.dhally/tragadyandcreation_html.html
+0 1 0 1917 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/mainguard.html
+0 2 0 5110 1 1
+/subjects/webauthoring5/websites2000/it.bwalsh/Wailer.htm
+0 3 0 6332 2 0
+/tutorials/dos/one/index3.htm
+0 9 0 141459 6 1
+/subjects/webauthoring5/websites2001/it.bridl/couldyoupleasefillthisoutinyourowntime1.html
+0 2 0 3436 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00064.jpg
+1 1 0 117514 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/project/page4.html
+0 3 0 7470 2 1
+/tutorials/unix/one/basic1.html
+0 2 0 3761 0 0
+/tutorials/unix/one/alias.html
+0 2 0 4041 1 0
+/tutorials/dos/one/username.txt
+0 2 0 9440 0 0
+/subjects/computerprogramming/perl_online/images/sample_sum.png
+1 3 0 80277 0 0
+/subjects/webauthoring5/00-Samples/Garnett2012/index_clairef_garnett.html
+0 1 0 4632 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/menu.html
+0 3 0 3549 0 0
+/subjects/desktoppublishing/DTP-A1-Logo-2009.pdf
+0 3 0 110722 0 0
+/help/legislation/a4201.pdf
+0 1 0 389208 0 0
+/tutorials/unix/one/find.html
+0 2 0 3527 0 0
+/subjects/webauthoring5/websites2004/it.roseh/TheQuays.html
+0 3 0 6985 0 0
+/subjects/webauthoring5/websites2002/it.mariag/Shandon+Short+History.html
+0 6 0 50197 4 3
+/tutorials/dos/one/justtime.bat.txt
+0 2 0 2732 0 0
+/subjects/computerarchitectureandsystems/hanson-02.pdf
+0 1 0 91154 0 0
+/subjects/computerprogramming/perl_environment/images/Screenshot-PuTTY+Configuration.png
+1 3 0 57856 0 0
+/subjects/computerprogramming/perl/perl-part11.shtml
+0 6 0 65694 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/02thetearjerkers.html
+0 2 0 5231 0 0
+/subjects/webauthoring5/websites2000/it.dmaguire/quiting.htm
+0 1 0 2810 0 0
+/subjects/computerprogramming/perl/perl-part9.shtml
+0 4 0 30848 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/past.html
+0 1 0 2528 0 0
+/subjects/workexperience/APEALModeInstructions.pdf
+0 2 0 430 0 0
+/subjects/computerprogramming/mazegame/0403b.pl.shtml
+0 6 0 28080 0 0
+/tutorials/unix/one/unix4.html
+0 1 0 9408 0 1
+/tutorials/unix/one/id.html
+0 3 0 11410 0 1
+/tutorials/unix/one/cmd4.html
+0 2 0 3173 0 0
+/subjects/computerprogramming/perl_environment/images/nx-4.jpg
+1 3 0 47235 0 0
+/help/00-UNIXReference.pdf
+0 1 0 48829 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/img/hobo.jpg
+1 1 0 215 0 0
+/subjects/computerprogramming/00-2012-Assignment01.pdf
+0 2 0 325372 0 0
+/images/square01-pl.png
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2001/it.oliviak/pics/findoutmore.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/images/home3a.jpg
+1 2 0 430 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/sld041.htm
+0 1 0 1728 1 1
+/subjects/databasemethods/db-2004.pdf
+0 2 0 272294 0 0
+/tutorials/unix/one/
+0 1 0 1849 0 0
+/tutorials/unix/one/links.html
+0 2 0 3165 0 1
+/tutorials/dos/one/duck.gif
+1 2 0 5926 0 0
+/subjects/webauthoring5/websites2003/it.denised/project/page1.html
+0 2 0 2477 0 0
+/tutorials/unix/one/iq.html
+0 3 0 6421 1 1
+/subjects/workexperience/workexperience-index.shtml
+0 2 0 3910 0 0
+/subjects/computerprogramming/perl/perl-part22.shtml
+0 5 0 50740 0 0
+/subjects/webauthoring5/websites2002/it.sharonf/
+0 1 0 2394 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/015.jpg
+1 1 0 7373 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/project/page1.html
+0 2 0 7241 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/08links.html
+0 1 0 1651 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/townhall.html
+0 1 0 2302 0 0
+/tutorials/unix/one/mi.html
+0 2 0 4563 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/blarneyp5.html
+0 1 0 4352 0 0
+/tutorials/unix/one/man-cgi_mesg.html
+0 1 0 1059 0 0
+/subjects/webauthoring5/websites2004/it.liaml/img/pic2.gif
+1 1 0 57016 0 0
+/subjects/computerprogramming/perl_environment/images/vncsession.png
+1 4 0 133710 0 0
+/subjects/webauthoring5/websites2000/it.dconway/augusta15th.html
+0 1 0 215 0 1
+/tutorials/unix/one/change_perm.html
+0 1 0 2010 0 0
+/mymeteor/
+0 7 0 64547 4 6
+/subjects/webauthoring5/websites2001/it.noreenc/Image15.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2003/it.rositag/project/introcork.html
+0 2 0 2800 0 0
+/subjects/computerprogramming/2003-worked-jpg/p2-8.jpg
+1 4 0 784404 0 0
+/tutorials/unix/one/mv.html
+0 1 0 1631 0 0
+/tutorials/unix/one/basic3.1.html
+0 1 0 1754 0 0
+/tutorials/unix/one/determine.html
+0 1 0 1498 0 0
+/subjects/computerprogramming/perl/perl-part16.shtml
+0 5 0 37220 0 0
+/subjects/webauthoring5/websites2003/it.davidos/page2.html
+0 2 0 2115 1 1
+/help/howto_bypasscensor.shtml
+0 5 0 66990 0 0
+/subjects/webauthoring5/websites2004/it.seamusl/page4.html
+0 1 0 2794 0 0
+/tutorials/unix/one/gb.html
+0 1 0 3317 1 0
+/tutorials/dos/one/numbring.htm
+0 1 0 6411 0 0
+/tutorials/dos/one/created.bat.txt
+0 2 0 3782 0 0
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced_files/Bash_07.jpg
+1 1 0 7536 0 0
+/help/strawberry_perl_02.png
+1 3 0 183993 0 0
+/subjects/webauthoring5/websites2002/it.natashag/city_hall.html
+0 2 0 3238 0 0
+/tutorials/dos/one/disksize.bat.txt
+0 1 0 958 0 0
+/subjects/computerprogramming/00-DataValidationScript-SampleData-2013.pdf
+0 1 0 108610 0 0
+/subjects/webauthoring5/websites2001/it.brianl/
+0 3 0 4356 1 1
+/subjects/computerprogramming/00-2003-assign01.shtml
+0 4 0 53388 0 0
+/tutorials/stylesheets/two/stylesheet4.html
+0 6 0 27132 2 2
+/images/Simple+Network+Layout+01.gif
+1 55 0 2292556 0 0
+/tutorials/dos/one/index31.htm
+0 1 0 5472 0 0
+/fetacmodules/2011-N22953_AwardSpecifications_English.pdf
+0 1 0 505897 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/conclusions.html
+0 4 0 10843 1 0
+/tutorials/dos/one/index2.htm
+0 3 0 9796 1 1
+/tutorials/stylesheets/two/c_review.html
+0 3 0 9166 0 0
+/images/friends01b.png
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2001/it.alanv/thesilverstoneyears.htm
+0 3 0 12342 0 0
+/subjects/webauthoring5/websites2000/it.senglish/
+0 2 0 4354 0 0
+/subjects/computerprogramming/00-2006-assign01-sample+data.txt
+0 3 0 2520 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/page6.html
+0 3 0 9985 1 1
+/subjects/computerprogramming/perl_cookie/cookie_demo_01.shtml
+0 7 0 52752 0 0
+/subjects/webauthoring5/websites2001/it.alanv/thestoneroseswelcome.htm
+0 2 0 3604 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/Image1.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/artcentrehistory.html
+0 2 0 4126 0 0
+/subjects/webauthoring5/websites2003/it.claireog/project/page5.html
+0 1 0 2572 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/openflanker.html
+0 1 0 739 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/alcoholp2.html
+0 2 0 6773 0 0
+/tutorials/unix/one/man_org3.html
+0 1 0 1402 0 0
+/subjects/webauthoring5/websites2002/it.lisab/Index.html
+0 1 0 1788 0 0
+/subjects/webauthoring5/websites2004/it.roseh/OldStMarysChurch.html
+0 5 0 10064 1 1
+/subjects/webauthoring5/websites2003/it.nattalieh/project/page5.html
+0 1 0 4778 0 0
+/subjects/webauthoring5/websites2003/it.rositag/imagesBS/lastrites.jpg
+1 3 0 79817 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/PIC00017.jpg
+1 1 0 215 0 0
+/subjects/computerprogramming/2003-worked-jpg/p7-8.jpg
+1 4 0 544264 0 0
+/subjects/computerprogramming/00-2000-assign04.shtml
+0 3 0 30834 0 0
+/subjects/webauthoring5/websites2002/it.mariag/The+Tower+of+Shandon.html
+0 1 0 2301 0 0
+/subjects/computerprogramming/perl_environment/images/nx-3.jpg
+1 2 0 74806 0 0
+/tutorials/dos/one/vxe-exe.bat.txt
+0 1 0 1409 0 0
+/subjects/gamesstudies/it.evanme_final_game.tar.gz
+0 1 0 80630 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/homeanim.jpg
+1 1 0 27647 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/project/
+0 2 0 3325 0 0
+/subjects/webauthoring5/websites2000/it.dhally/newarrivals_html_.html
+0 3 0 7544 1 0
+/tutorials/dos/one/windowfinish.txt
+0 1 0 1592 0 0
+/subjects/computerarchitectureandsystems/Leeky+Logic+01.pdf
+0 1 0 157327 0 0
+/subjects/computerprogramming/mazegame/0403.pl.shtml
+0 3 0 14592 0 0
+/tutorials/dos/one/line-uni.htm
+0 1 0 1693 0 0
+/tutorials/unix/one/version.html
+0 1 0 1388 0 0
+/subjects/webauthoring5/websites2001/it.paulm/
+0 3 0 3094 0 1
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00040.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/get_source.html
+0 2 0 5325 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/families.html
+0 4 0 8495 1 0
+/subjects/webauthoring5/websites2001/it.brianl/introtoarea51.html
+0 3 0 7812 1 0
+/tutorials/dos/one/1eric.jpg
+1 1 0 214 0 0
+/tutorials/unix/one/ie.html
+0 3 0 13675 1 1
+/tutorials/stylesheets/two/links.html
+0 3 0 22644 0 1
+/subjects/computerprogramming/perl_general/formatnumbers.shtml
+0 5 0 40990 0 0
+/tutorials/dos/one/errors.htm
+0 2 0 20824 1 1
+/tutorials/unix/one/cmd5.html
+0 3 0 4360 0 0
+/subjects/webauthoring5/websites2003/it.denised/FirstAidEducation.html
+0 1 0 3994 0 0
+/fetacmodules/2011-A20209_AwardSpecifications_English.pdf
+0 1 0 70083 0 0
+/subjects/computerprogramming/perl_general/die.shtml
+0 5 0 31600 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/page.html
+0 3 0 1398 2 1
+/subjects/webauthoring5/websites2001/it.noreenc/Image14.jpg
+1 1 0 215 0 0
+/subjects/computerprogramming/00-Sample-Solution-Script-ODG.pdf
+0 1 0 68483 0 0
+/subjects/webauthoring5/websites2003/it.denised/project/page2.html
+0 3 0 4738 1 0
+/subjects/workexperience/00-Work+Experience+Details+Form-2011.pdf
+0 1 0 215 0 0
+/tutorials/unix/one/ir.html
+0 2 0 7689 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00096.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/secondcentre.html
+0 1 0 763 0 0
+/subjects/computerprogramming/perl_environment/images/both-1.jpg
+1 2 0 137318 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/text.gif
+1 1 0 566 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/project/page2.html
+0 2 0 2841 0 0
+/tutorials/dos/one/format.txt
+0 1 0 2503 0 0
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+3+-+2009-10.pdf
+0 1 0 112843 0 0
+/tutorials/unix/one/mj.html
+0 3 0 6085 0 1
+/images/Codis.png
+1 3 0 7026 0 0
+/subjects/webauthoring5/websites2004/it.robertd/history.html
+0 3 0 6580 0 0
+/subjects/computerprogramming/perl_hidden_input/hidden_input_demo_01.shtml
+0 4 0 23108 0 0
+/subjects/webauthoring5/websites2000/it.pclarke/contents.htm
+0 2 0 3127 0 0
+/subjects/webauthoring5/websites2001/it.brianl/main.html
+0 1 0 3386 0 0
+/subjects/webauthoring5/websites2004/it.laurab/
+0 13 0 55029 8 3
+/help/strawberry_perl_01.png
+1 2 0 35108 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/anatomy.html
+0 3 0 8416 0 1
+/subjects/webauthoring5/websites2003/it.rositag/project/file.html
+0 1 0 1004 0 0
+/subjects/computerprogramming/2004-worked-jpg/p2-8-jpg.jpg
+1 3 0 805442 0 0
+/subjects/webauthoring5/websites2000/it.dconway/valderrama5th.html
+0 1 0 1787 0 0
+/tutorials/unix/one/env3a.html
+0 2 0 3700 0 0
+/tutorials/dos/one/computername.bat.txt
+0 1 0 770 0 0
+/tutorials/unix/one/mw.html
+0 2 0 6497 0 0
+/tutorials/dos/one/index30.htm
+0 1 0 2534 0 0
+/subjects/theinternet/00-History+and+Structure+of+The+Internet+Assignment+2011-2012.pdf
+0 1 0 112642 0 0
+/tutorials/dos/one/index1.htm
+0 5 0 19479 4 1
+/subjects/webauthoring5/websites2003/it.davidos/page3.html
+0 1 0 1175 0 0
+/subjects/webauthoring5/websites2003/it.paulm/css/body.css
+0 2 0 3283 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/files.html
+0 4 0 47159 1 0
+/subjects/webauthoring5/websites2001/it.oliviak/home.html
+0 2 0 3126 0 0
+/subjects/webauthoring5/javascriptevents/
+0 5 0 26100 0 1
+/subjects/webauthoring5/00-Samples/Garnett2012/medical4.jpg
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2002/it.maryn/church.html
+0 2 0 4892 1 1
+/subjects/webauthoring5/websites2004/it.seamusl/page5.html
+0 1 0 1101 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/images/corkcon.gif
+1 1 1915629618 215 0 0
+/subjects/computerprogramming/2004-Worked-Solution.pdf
+0 1 0 5633926 0 0
+/subjects/imageprocessing/
+0 7 0 49327 3 3
+/subjects/webauthoring5/websites2000/it.patriceh/AAgraphic.gif
+1 1 0 213 0 0
+/subjects/gamesstudies/SDLx-App-Sample_03.shtml
+0 3 0 17973 0 0
+/subjects/webauthoring5/websites2000/it.dconway/
+0 3 0 8812 1 1
+/help/
+0 28 0 240968 17 6
+/subjects/webauthoring5/websites2000/it.bfraney/
+0 2 0 5019 0 0
+/tutorials/stylesheets/two/stylesheet5.html
+0 3 0 10866 1 0
+/tutorials/unix/one/gp.html
+0 2 0 5443 1 1
+/subjects/webauthoring5/websites2003/it.susanm/femalehairloss.html
+0 1 0 2203 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00073.jpg
+1 2 0 80850 0 0
+/subjects/webauthoring5/websites2004/it.roseh/WhiteMemorial.html
+0 3 0 5383 0 0
+/subjects/gamesstudies/
+0 9 0 89084 4 3
+/subjects/gamesstudies/SDL_game_loop_02.shtml
+0 2 0 14960 0 0
+/subjects/computerprogramming/perl_environment/images/nx-2.jpg
+1 2 0 66214 0 0
+/tutorials/dos/one/alldirs.bat.txt
+0 2 0 4284 0 0
+/subjects/webauthoring5/websites2001/it.alanv/reni.html
+0 2 0 4652 0 0
+/subjects/webauthoring5/websites2000/vtos.modonovan/muteswans.htm
+0 1 0 4295 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/alcoholp3.html
+0 2 0 5481 0 0
+/tutorials/unix/one/man_org4.html
+0 2 0 2997 0 0
+/subjects/computerprogramming/2004-worked-jpg/p5-8-jpg.jpg
+1 1 0 0 0 0
+/subjects/databasemethods/db-2002.pdf
+0 2 0 329488 0 0
+/subjects/webauthoring5/websites2002/it.maryn/history.html
+0 3 0 8355 2 1
+/subjects/computerprogramming/perl_environment/images/nx-B.jpg
+1 3 0 55662 0 0
+/subjects/webauthoring5/websites2000/it.ckennedy/home.html
+0 3 0 6696 1 1
+/subjects/webauthoring5/websites2003/it.nattalieh/project/page6.html
+0 1 0 3321 0 0
+/tutorials/unix/one/basic3.html
+0 1 0 1545 0 0
+/tutorials/unix/one/diff.html
+0 1 0 1873 0 0
+/subjects/webauthoring5/websites2001/it.noreenc/artcentresetup.html
+0 2 0 4056 0 0
+/tutorials/unix/one/uniq.html
+0 1 0 1653 0 0
+/subjects/computerarchitectureandsystems/00-2013-Project-01.pdf
+0 1 0 236725 0 0
+/subjects/webauthoring5/websites2003/it.rositag/questionbs.html
+0 1 0 8332 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/img027.gif
+1 1 0 213 0 0
+/images/7LayerNetworkModel.png
+1 21 0 283653 0 0
+/subjects/webauthoring5/websites2004/it.laurab/stylesheet.css
+0 11 0 19019 0 0
+/subjects/wordprocessing-mode2/00-Collection-Of-Work-Instructions+2007-8.pdf
+0 1 0 126126 0 0
+/subjects/workexperience/00-Work+Experience+-+Preparatory+Study+2+-+2010-11.pdf
+0 1 0 119824 0 0
+/subjects/gamesstudies/SDLx-App-Sample_08.shtml
+0 6 0 59838 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/
+0 5 0 11754 2 1
+/tutorials/dos/one/samples.htm
+0 5 0 59220 2 1
+/subjects/webauthoring5/websites2000/vtos.modonovan/
+0 2 0 4979 0 0
+/subjects/computerprogramming/posapp/pos-api-short-2013.pl.shtml
+0 5 0 28125 0 0
+/subjects/computerprogramming/perl/perl-part2.shtml
+0 6 0 48522 0 0
+/subjects/webauthoring5/websites2003/it.claireog/page1.html
+0 5 0 17154 1 1
+/subjects/webauthoring5/websites2002/it.niallob/introduction.html
+0 2 0 3964 1 1
+/subjects/computerprogramming/2002-worked-jpg/p4-8.jpg
+1 5 0 1162951 0 0
+/subjects/spreadsheetmethods/spreadsheetmethods-index.shtml
+0 3 0 5865 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/alcohol1b.html
+0 2 0 7258 0 0
+/subjects/webauthoring5/websites2001/it.davide/Aims.html
+0 1 0 215 1 0
+/tutorials/unix/one/if.html
+0 2 0 11347 0 0
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced_files/Bash_05.jpg
+1 1 0 7379 0 0
+/subjects/computerarchitectureandsystems/
+0 22 0 452078 16 2
+/images/4LayerNetworkModel.png
+1 14 0 251739 0 0
+/tutorials/networks/3com/
+0 2 0 1682 1 1
+/subjects/computerprogramming/2004-worked-jpg/p8-8-jpg.jpg
+1 3 0 534016 0 0
+/subjects/webauthoring5/websites2001/it.maryd/
+0 3 0 7682 0 1
+/subjects/webauthoring5/websites2003/it.denised/project/page3.html
+0 1 0 2092 0 0
+/tutorials/unix/one/is.html
+0 2 0 14883 0 0
+/subjects/computerprogramming/perl_online/perl_online_input.shtml
+0 4 0 27216 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/stylesheet.css
+0 4 0 12904 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/
+0 3 0 5485 2 1
+/subjects/webauthoring5/websites2003/it.reginaom/project/page3.html
+0 2 0 5373 0 0
+/subjects/webauthoring5/websites2002/it.natashag/
+0 1 0 791 0 0
+/subjects/webauthoring5/websites2000/it.dhally/
+0 3 0 6846 1 0
+/tutorials/unix/one/mk.html
+0 3 0 6151 0 0
+/tutorials/unix/one/man-cgi_talk.html
+0 2 0 2112 0 1
+/subjects/pastpapers/ss/1994/ss-1994.pdf
+0 1 0 104086 0 0
+/tutorials/dos/one/choice.txt
+0 1 0 3567 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/page1.html
+0 3 0 10855 0 0
+/tutorials/stylesheets/two/rthink1.html
+0 3 0 14593 1 1
+/tutorials/dos/one/reboot.txt
+0 1 0 1952 0 0
+/subjects/webauthoring5/websites2002/it.natashag/left.html
+0 2 0 1606 0 0
+/subjects/computerprogramming/flowchart-rules.shtml
+0 7 0 40082 0 0
+/subjects/databasemethods/00-Answer02.pdf
+0 1 0 215 0 0
+/subjects/webauthoring5/animatedasterisk/
+0 7 0 49609 4 2
+/tutorials/unix/one/mx.html
+0 3 0 6604 1 0
+/subjects/computerprogramming/00-2004-assign02.shtml
+0 5 0 30355 0 0
+/subjects/theinternet/00-History+and+Structure+of+The+Internet+Assignment+2012-2013.pdf
+0 1 0 173875 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00072.jpg
+1 1 0 215 0 0
+/subjects/computerprogramming/perl/perl-part7.shtml
+0 6 0 51588 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/images/6.jpg
+1 1 1932419438 215 0 0
+/subjects/computerarchitectureandsystems/XAM2004.pdf
+0 1 0 159845 0 0
+/subjects/webauthoring5/websites2002/it.adrians/honours.html
+0 1 0 2340 0 0
+/subjects/computerarchitectureandsystems/topics/backups.shtml
+0 3 0 40866 0 0
+/subjects/webauthoring5/websites2004/it.robertd/
+0 4 0 6009 1 0
+/tutorials/unix/one/index1.html
+0 1 0 1569 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/stfinbarre.html
+0 1 0 214 1 0
+/tutorials/unix/one/gd.html
+0 1 0 2843 0 0
+/images/final-04.jpg
+1 18 0 468382 0 0
+/subjects/computerprogramming/perl_environment/images/nx-1.jpg
+1 2 0 59702 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/first.gif
+1 3 0 1355 0 0
+/subjects/computerprogramming/00-2007-assign01-sample-data.txt
+0 4 0 3316 0 0
+/style-2012-01.css
+0 48 0 259571 0 0
+/subjects/webauthoring5/websites2002/it.lisab/
+0 1 0 1889 0 0
+/subjects/databasemethods/00-Database+Methods+Project+Brief+2008.pdf
+0 1 0 375405 0 0
+/tutorials/unix/one/3.6.html
+0 2 0 3839 1 0
+/tutorials/stylesheets/two/stylesheet6.html
+0 4 0 20036 1 1
+/subjects/computerprogramming/perl/perl-part20.shtml
+0 4 0 29036 0 0
+/subjects/computerprogramming/00-2012-assign02.2-maze-sample-data.txt
+0 4 0 4368 0 0
+/subjects/workexperience/00-WorkExperience-SelfAssessment-2011-2012.pdf
+0 1 3420466 255732 0 0
+/subjects/webauthoring5/websites2001/it.pamelaod/page1asthma.htm
+0 3 0 8661 1 1
+/tutorials/unix/one/kernel.html
+0 2 0 4045 0 0
+/subjects/webauthoring5/websites2001/it.seand/ser7.html
+0 3 0 8754 0 0
+/help/legislation/a4501.pdf
+0 1 0 360035 0 0
+/subjects/webauthoring5/websites2002/it.stevenm/history4.html
+0 1 0 7074 1 1
+/subjects/computerarchitectureandsystems/powerpointpresentation/last.gif
+1 1 0 565 0 0
+/tutorials/unix/one/man_org5.html
+0 2 0 2971 0 0
+/subjects/computerprogramming/00-2013-Assignment02.pdf
+0 2 0 214014 0 0
+/subjects/computerprogramming/mazegame/0404.pl.shtml
+0 7 0 37191 0 0
+/subjects/webauthoring5/template/
+0 5 0 23270 1 1
+/subjects/webauthoring5/websites2002/it.niallob/images/font.jpg
+1 1 0 215 0 0
+/images/SSH_tunnel-01.png
+1 1 0 33328 0 0
+/subjects/webauthoring5/websites2003/it.rositag/italian.html
+0 1 0 7185 0 0
+/subjects/webauthoring5/websites2000/it.pclarke/mat.html
+0 2 0 15878 0 0
+/tutorials/dos/one/prompts.htm
+0 1 0 3462 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/PIC00037.jpg
+1 1 0 215 0 0
+/tutorials/stylesheets/two/banner_6.jpg
+1 1 0 214 0 0
+/tutorials/unix/one/weesearch.gif
+1 2 0 428 0 0
+/subjects/computerprogramming/perl/perl-part14.shtml
+0 4 0 43372 0 0
+/subjects/computerprogramming/nielsbohr.shtml
+0 6 0 44676 0 0
+/subjects/webauthoring5/websites2002/it.michaelb/sniffer.html
+0 3 0 2496 1 1
+/subjects/webauthoring5/websites2001/it.maryd/Page6.htm
+0 1 0 1392 0 0
+/subjects/webauthoring5/websites2004/it.ciannaitk/jailgate.html
+0 1 0 2150 0 0
+/tutorials/unix/one/ftp.html
+0 1 0 2014 0 0
+/subjects/webauthoring5/websites2003/it.jasond/
+0 3 0 2457 0 0
+/tutorials/unix/one/acknowledge.html
+0 1 0 1958 1 1
+/subjects/webauthoring5/websites2003/it.claireog/page2.html
+0 3 0 5071 1 1
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/rule02.jpg
+1 9 0 34540 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/PIC00003.jpg
+1 1 0 214 0 0
+/subjects/computerprogramming/perl/perl-part25.shtml
+0 7 0 53354 0 0
+/subjects/computerarchitectureandsystems/topics/ascii.shtml
+0 2 0 10794 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/061998topresent.html
+0 4 0 13011 1 0
+/tutorials/unix/one/ig.html
+0 2 0 5157 0 0
+/subjects/webauthoring5/powerpointpresentation/img020.gif
+1 1 2 214 0 0
+/subjects/computerprogramming/mazegame/maze04.map.shtml
+0 6 0 29814 0 0
+/subjects/theinternet/
+0 9 0 158796 4 2
+/tutorials/unix/one/man-cgi_w.html
+0 1 0 1069 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/loose.html
+0 1 0 676 0 0
+/subjects/miscellaneous/
+0 1 0 6270 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/tierney_s_south_tipperary.jpg
+1 1 0 215 0 0
+/subjects/webauthoring5/websites2001/it.shaneg/page1.html
+0 2 0 4406 1 0
+/subjects/webauthoring5/websites2003/it.denised/project/page4.html
+0 1 0 7127 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/shandonclockandbellsp4.html
+0 1 0 3745 0 0
+/tutorials/unix/one/it.html
+0 2 0 7669 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/sld155.htm
+0 1 0 1930 1 1
+/subjects/webauthoring5/websites2004/it.robertd/photos/westgate.jpg
+1 5 0 496757 0 0
+/subjects/webauthoring5/websites2003/fieldtrip01/PIC00014.jpg
+1 1 0 215 0 0
+/subjects/computerprogramming/2003-worked-jpg/p5-8.jpg
+1 3 0 453656 0 0
+/subjects/desktoppublishing/DTP-A2-News-2009.pdf
+0 4 0 240520 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/project/page4.html
+0 2 0 6615 0 0
+/subjects/webauthoring5/websites2002/it.adrians/about.html
+0 1 0 1823 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/files.html
+0 4 0 28199 1 1
+/subjects/computerprogramming/perl/perl-part19.shtml
+0 7 0 61901 0 0
+/tutorials/unix/one/ml.html
+0 2 0 7745 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/champagne_glasses_confetti_md_wht.gif
+1 1 0 215 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/img014.gif
+1 1 0 214 0 0
+/subjects/computerprogramming/perl_online/images/sample_sum2.png
+1 1 0 27703 0 0
+/tutorials/dos/one/username.bat.txt
+0 1 0 984 0 0
+/subjects/databasemethods/00-Database+Methods+Project+Brief+2007.pdf
+0 7 0 3134982 0 0
+/subjects/theinternet/00-Etiquette+Assignment+2010-11.pdf
+0 4 0 684572 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/page2.html
+0 3 0 4255 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/conclusion.html
+0 1 0 2644 0 0
+/subjects/desktoppublishing/DTP-A3-Trifold-2009.pdf
+0 3 0 67071 0 0
+/tutorials/dos/one/stupid.htm
+0 2 0 4187 0 0
+/subjects/webauthoring5/websites2003/it.nattalieh/images4/montage1.jpg
+1 1 0 56073 0 0
+/tutorials/dos/one/control.txt
+0 2 0 3522 0 0
+/tutorials/unix/one/my.html
+0 2 0 4339 0 0
+/subjects/theinternet/00-Etiquette+Assignment+2006-7.pdf
+0 1 0 141320 0 0
+/subjects/webauthoring5/websites2001/it.seand/ssr1.html
+0 3 0 5935 0 1
+/tutorials/unix/one/index2.html
+0 1 0 1478 0 0
+/subjects/webauthoring6/webauthoring6-index.shtml
+0 1 0 9616 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/images/past3.jpg
+1 1 0 215 0 0
+/subjects/theinternet/00-Security+
+0 9 0 785741 7 5
+/tutorials/unix/one/ge.html
+0 1 0 1689 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/
+0 3 0 5530 2 0
+/subjects/pcconstructionandrepair/00-Construction+and+Repair+2005.pdf
+0 1 0 2321734 0 0
+/subjects/computerprogramming/00-2013-Assignment01.pdf
+0 1 0 210074 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/alcohol.html
+0 1 0 215 0 0
+/tutorials/stylesheets/two/stylesheet7.html
+0 3 0 8100 1 0
+/tutorials/unix/one/gr.html
+0 1 0 2615 0 0
+/subjects/computerprogramming/perl_environment/perl_environment_index.shtml
+0 7 0 108199 0 0
+/subjects/webauthoring5/websites2004/it.robertd/sportandleisure.html
+0 5 0 11174 1 2
+/tutorials/dos/one/filename.bat.txt
+0 1 0 1875 0 0
+/subjects/computerprogramming/
+0 43 0 1970643 25 12
+/images/00-web-2009-100_1764.jpg
+1 2 0 0 0 0
+/subjects/webauthoring5/animatedasterisk/asterisk02.gif
+1 1 0 73575 0 0
+/subjects/computerarchitectureandsystems/powerpointpresentation/sld019.htm
+0 3 0 2213 3 0
+/help/email-etiquette.pdf
+0 8 0 46994 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/stfinbarrep2.html
+0 1 0 3725 0 0
+/subjects/workexperience/00-WorkExperience-SelfAssessment-2012-2013.pdf
+0 1 0 255471 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/grounds.html
+0 1 0 1185 0 0
+/tutorials/dos/one/namedate.txt
+0 1 0 4812 0 0
+/subjects/webauthoring5/websites2004/it.michaelk/why.html
+0 2 0 3407 0 0
+/subjects/webauthoring5/websites2000/it.dmaguire/effects.htm
+0 2 0 10857 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/Mulcahys.html
+0 1 0 1150 1 1
+/subjects/webauthoring5/websites2003/it.jasond/project/history.html
+0 1 0 2640 0 1
+/tutorials/unix/one/six.html
+0 1 0 1524 0 0
+/subjects/webauthoring5/websites2004/it.roseh/Home.html
+0 3 0 6460 0 0
+/tutorials/stylesheets/two/bkreview.html
+0 4 0 13639 1 1
+/tutorials/unix/one/man-cgi_df.html
+0 1 0 1199 0 0
+/subjects/computerprogramming/00-POS-SampleCodes.pdf
+0 1 0 49242 0 0
+/help/howto_makebootableusb.shtml
+0 2 0 19774 0 0
+/subjects/webauthoring5/websites2001/it.melissaw/conclusions.html
+0 3 0 6673 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/instructions.html
+0 1 0 514 0 0
+/subjects/webauthoring5/powerpointpresentation/sld002.htm
+0 1 0 1942 1 0
+/subjects/webauthoring5/powerpointpresentation/sld047.htm
+0 2 0 3475 1 2
+/tutorials/unix/one/sysvbsd.html
+0 2 0 3335 0 0
+/subjects/databasemethods/dbm-project-guidelines.shtml
+0 1 0 6433 0 0
+/subjects/gamesstudies/SDLx-App-Sample_01.shtml
+0 4 0 41972 0 0
+/subjects/webauthoring5/websites2001/it.davide/
+0 2 0 3154 0 0
+/subjects/webauthoring5/websites2002/it.kathyf/future.html
+0 1 0 2190 0 0
+/subjects/webauthoring5/websites2000/it.sbonelli/coursing.html
+0 2 0 7015 0 0
+/subjects/webauthoring5/websites2003/it.claireog/page3.html
+0 2 0 8207 0 0
+/subjects/desktoppublishing/GIMP-Candy-Text-LinuxMag85.pdf
+0 1 0 2860295 0 0
+/subjects/webauthoring5/websites2002/fieldtrip01/Img00070.jpg
+1 1 0 214 0 0
+/subjects/workexperience/00-Work+Experience+-+Self+Assessment+-+2009-10.pdf
+0 1 0 334726 0 0
+/subjects/theinternet/00-History+and+Structure+of+The+Internet+Assignment+2010-11.pdf
+0 3 0 133193 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/history.html
+0 1 0 1780 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/chawkesa.jpg
+1 1 0 215 0 0
+/tutorials/unix/one/ih.html
+0 4 0 9379 0 1
+/subjects/webauthoring5/websites2000/it.cmorrissey/
+0 4 0 4169 2 2
+/subjects/webauthoring5/websites2001/it.alanv/mani.html
+0 1 0 2379 0 0
+/tutorials/unix/one/trans.html
+0 1 0 1365 0 0
+/subjects/webauthoring5/websites2001/it.pamelaod/
+0 4 0 6112 1 0
+/subjects/webauthoring5/websites2001/it.shaneg/page2.html
+0 1 0 1764 0 0
+/tutorials/unix/one/five.html
+0 1 0 1416 0 0
+/subjects/webauthoring5/websites2003/it.rositag/project/
+0 2 0 1361 0 0
+/subjects/webauthoring5/websites2001/it.alanv/albums.html
+0 1 0 3770 0 0
+/images/00-01-2007-Demonstrating+Barcode+Reader.jpg
+1 2 0 46117 0 0
+/subjects/webauthoring5/websites2003/it.denised/project/page5.html
+0 2 0 11311 0 0
+/tutorials/unix/one/iu.html
+0 2 0 4017 0 0
+/tutorials/networks/3com/options2.htm
+0 2 0 4195 1 0
+/subjects/webauthoring5/powerpointpresentation/sld024.htm
+0 1 0 1733 1 0
+/tutorials/unix/one/index10.html
+0 1 0 2966 0 0
+/subjects/webauthoring5/websites2003/it.reginaom/project/page5.html
+0 2 0 4625 0 0
+/subjects/webauthoring5/websites2003/it.claireog/
+0 5 0 20613 1 0
+/tutorials/unix/one/mm.html
+0 3 0 9004 0 1
+/subjects/webauthoring5/websites2003/it.susanm/project/
+0 4 0 3873 1 0
+/subjects/webauthoring5/powerpointpresentation/img041.gif
+1 1 0 214 0 0
+/subjects/webauthoring5/websites2002/it.michaelm/the_team/outhalf.html
+0 1 0 839 0 0
+/subjects/webauthoring5/websites2004/it.dennisc/Chawkes.html
+0 1 0 215 1 0
+/subjects/webauthoring5/websites2003/it.paulm/html/travels.html
+0 3 0 22228 1 2
+/subjects/webauthoring5/websites2003/it.reginaom/page3.html
+0 3 0 8053 0 0
+/tutorials/dos/one/zip.gif
+1 1 0 214 0 0
+/tutorials/unix/one/strctfile2.html
+0 2 0 3305 0 0
+/subjects/webauthoring5/websites2001/it.jamesf/04theraiders.html
+0 2 0 2843 0 0
+/subjects/webauthoring5/websites2003/it.rebeccad/project/shandonp3.html
+0 1 0 3727 0 0
+/subjects/gamesstudies/SDLx-App-Sample_06.shtml
+0 3 0 14634 0 0
+# End Of Table - urls
+# -sites- (monthly)
+spider26.picsearch.com
+0 11 11 49626 8 1375670598
+/subjects/webauthoring5/websites2003/it.paulm/
+baiduspider-220-181-108-181.crawl.baidu.com
+0 1 1 13088 1 1375562636
+/help/software/
+089-100-150080.ntlworld.ie
+0 1 1 69049 0 0
+-
+crawl-66-249-72-48.googlebot.com
+0 120 61 1256081 29 1375762860
+/subjects/computerarchitectureandsystems/powerpointpresentation/tsld142.htm
+c-65-34-193-90.hsd1.fl.comcast.net
+0 1 1 69049 0 0
+-
+msnbot-65-55-215-106.search.msn.com
+0 2 2 322829 0 0
+-
+msnbot-131-253-38-100.search.msn.com
+0 2 2 69363 0 0
+-
+185.34.14.37.dynamic.jazztel.es
+0 1 1 51138 0 0
+-
+113.210.132.21
+0 1 1 14170 0 0
+-
+msnbot-199-30-20-16.search.msn.com
+0 2 2 26907 0 0
+-
+46.109.132.235
+0 1 1 69049 0 0
+-
+112.198.82.199
+0 1 1 69049 0 0
+-
+fetcher5.mail.ru
+0 1 1 295 0 0
+-
+205-156-36-12.ssmcnet.noaa.gov
+0 1 1 60715 0 0
+-
+2.51.128.148
+0 1 1 69049 0 0
+-
+41.215.162.13
+0 1 1 29066 0 0
+-
+ool-457a38f0.dyn.optonline.net
+0 1 1 69049 0 0
+-
+msnbot-157-55-36-35.search.msn.com
+0 5 5 719825 0 0
+-
+alnmspsrvz3ts113-dmz.mycingular.net
+0 1 1 234096 0 0
+-
+ec2-204-236-183-158.us-west-1.compute.amazonaws.com
+0 1 1 65536 0 0
+-
+192.74.232.133
+0 1 1 3810447 0 0
+-
+59.red-81-45-52.staticip.rima-tde.net
+0 1 1 69049 0 0
+-
+c-50-137-167-69.hsd1.or.comcast.net
+0 1 1 69049 0 0
+-
+46.70.86.189
+0 1 1 69049 0 0
+-
+110-174-16-249.static.tpgi.com.au
+0 12 10 399187 1 1375755030
+/subjects/computerarchitectureandsystems/
+120.37.229.247
+0 1 1 8606 1 1375725244
+/help/
+msnbot-199-30-20-125.search.msn.com
+0 2 2 14484 0 0
+-
+46.7.62.191
+0 1 1 69049 0 0
+-
+cpe-174-107-176-214.sc.res.rr.com
+0 1 1 69049 0 0
+-
+122.2.43.21.static.pldt.net
+0 1 1 42449 0 0
+-
+ppp-124-120-77-118.revip2.asianet.co.th
+0 1 1 69049 0 0
+-
+173.192.235.226-static.reverse.softlayer.com
+0 182 170 1381128 2 1375678206
+/
+46.165.197.141
+0 6 6 18020 1 1375745577
+/subjects/webauthoring5/websites2000/it.pclarke/met.html
+img-spider-37-140-141-20.yandex.com
+0 15 3 16158 0 0
+-
+66-227-145-170.dhcp.bycy.mi.charter.com
+0 1 1 69049 0 0
+-
+crawl-66-249-72-208.googlebot.com
+0 4 4 16964 1 1375681730
+/
+msnbot-65-55-215-79.search.msn.com
+0 2 2 25841 0 0
+-
+msnbot-199-30-20-83.search.msn.com
+0 2 2 1631 0 0
+-
+fetcher5-2.p.mail.ru
+0 2 2 590 0 0
+-
+120.28.125.77
+0 1 1 42449 0 0
+-
+46.165.197.151
+0 3 2 39044 1 1375531431
+/subjects/webauthoring5/
+loislane.chelanpud.org
+0 1 1 69049 0 0
+-
+hm-esr1-208-102-153-201.fuse.net
+0 4 1 48293 0 0
+-
+41.215.162.48
+0 1 1 29066 0 0
+-
+92.96.184.184
+0 1 1 69049 0 0
+-
+baiduspider-220-181-108-92.crawl.baidu.com
+0 1 1 10137 1 1375554551
+/
+abcd-ovh6.yasni.de
+0 1 1 63911 0 0
+-
+108-214-227-147.lightspeed.irvnca.sbcglobal.net
+0 1 1 19348 0 0
+-
+msnbot-199-30-20-143.search.msn.com
+0 4 4 51908 0 0
+-
+msnbot-65-55-215-88.search.msn.com
+0 2 2 209725 0 0
+-
+msnbot-131-253-24-68.search.msn.com
+0 2 2 6609 1 1375321093
+/subjects/webauthoring5/websites2004/it.laurab/soccer.html
+142.91.79.157.rdns.ubiquity.io
+0 2 2 34256 1 1375673719
+/tutorials/dos/one/~webspace.html
+msnbot-199-30-20-92.search.msn.com
+0 2 2 99654 0 0
+-
+ns4003106.ip-142-4-208.net
+0 6 6 11755 1 1375329456
+/tutorials/unix/one/index8.html
+173-8-46-26-jacksonville.hfc.comcastbusiness.net
+0 1 1 69049 0 0
+-
+bas1-london16-2925402183.dsl.bell.ca
+0 1 1 69049 0 0
+-
+msnbot-157-55-32-39.search.msn.com
+0 23 23 148823 10 1375511355
+/subjects/webauthoring5/websites2001/it.melissaw/resultstoquestionnaire.html
+ip72-192-184-107.sd.sd.cox.net
+0 9 9 377549 1 1375419428
+/subjects/computerarchitectureandsystems/
+27.159.233.51
+0 1 1 8606 1 1375654667
+/help/
+ip68-102-214-165.ks.ok.cox.net
+0 3 0 5916 1 1375394751
+-
+5.10.83.35-static.reverse.softlayer.com
+0 11 11 26941 5 1375758874
+/subjects/webauthoring5/websites2001/it.maryd/Page3.htm
+ec2-50-17-16-162.compute-1.amazonaws.com
+0 90 69 200930 1 1375382393
+-
+93-35-240-159.ip57.fastwebnet.it
+0 1 1 69049 0 0
+-
+99-183-224-56.lightspeed.livnmi.sbcglobal.net
+0 1 1 69049 0 0
+-
+msnbot-65-55-215-97.search.msn.com
+0 2 2 25841 0 0
+-
+83.149.126.98
+0 2 2 10432 1 1375603728
+/
+fetcher5-5.p.mail.ru
+0 2 2 590 0 0
+-
+mctnnbsa51w-156034017092.dhcp-dynamic.fibreop.nb.bellaliant.net
+0 1 1 51138 0 0
+-
+c-24-6-238-90.hsd1.ca.comcast.net
+0 1 1 69049 0 0
+-
+baiduspider-180-76-5-21.crawl.baidu.com
+0 1 1 2234 1 1375614914
+/subjects/webauthoring5/websites2000/it.bwalsh/
+dsl-187-151-105-73-dyn.prod-infinitum.com.mx
+0 1 1 69049 0 0
+-
+112.209.38.60.pldt.net
+0 2 2 60191 0 0
+-
+mail.twinstarcu.com
+0 1 1 69049 0 0
+-
+cpe-75-86-214-128.wi.res.rr.com
+0 1 1 69049 0 0
+-
+msnbot-199-30-20-121.search.msn.com
+0 2 2 741369 0 0
+-
+msnbot-131-253-24-46.search.msn.com
+0 3 2 10655 1 1375440175
+/subjects/webauthoring5/websites2004/
+117.240.168.2
+0 1 1 29066 0 0
+-
+adsl-64-237-229-169.prtc.net
+0 1 1 69049 0 0
+-
+204.12.208.162
+0 7 7 15025 1 1375330965
+/subjects/webauthoring5/websites2001/it.jamesf/061998topresent.html
+ec2-54-208-18-95.compute-1.amazonaws.com
+0 1 1 4880 1 1375544342
+/subjects/webauthoring5/websites2004/it.laurab/soccer.html
+mail.fachtnaroe.net
+0 12694 12694 12134054 0 0
+-
+zen-inetgw-4a.nhs.uk
+0 1 1 69049 0 0
+-
+crawl-66-249-73-187.googlebot.com
+0 1 0 214 0 0
+-
+173.242.125.196
+0 3 3 5754 1 1375684884
+/subjects/webauthoring5/websites2004/it.seamusl/
+baiduspider-180-76-5-147.crawl.baidu.com
+0 1 1 5343 0 0
+-
+202.46.54.62
+0 1 0 421 1 1375503693
+-
+msnbot-131-253-24-15.search.msn.com
+0 2 2 25954 0 0
+-
+69.46.81.222
+0 2 2 42126 1 1375346714
+/subjects/webauthoring5/00-Samples/Garnett2012/index_jonathant_garnett.html
+12.18.245.115
+0 1 1 42449 0 0
+-
+174-17-233-135.phnx.qwest.net
+0 1 1 69049 0 0
+-
+msnbot-65-55-215-75.search.msn.com
+0 4 4 58760 0 0
+-
+cpe-71-64-121-222.neo.res.rr.com
+0 1 1 69049 0 0
+-
+75.sub-70-192-132.myvzw.com
+0 1 1 69049 0 0
+-
+msnbot-131-253-24-95.search.msn.com
+0 2 2 3133 1 1375757265
+/subjects/webauthoring5/websites2004/it.janem/irishtown.html
+d27-96-10-196.evv.wideopenwest.com
+0 1 1 69049 0 0
+-
+79.136.250.38
+0 1 1 11197 1 1375741120
+/tutorials/dos/one/~webspace.html
+baiduspider-180-76-5-150.crawl.baidu.com
+0 1 1 3549 1 1375746165
+/subjects/webauthoring5/websites2003/
+adsl-98-67-94-233.ilm.bellsouth.net
+0 1 1 69049 0 0
+-
+hk2-lr681186g.super-goo.com
+0 1 1 295 0 0
+-
+msnbot-65-55-215-44.search.msn.com
+0 4 4 93392 0 0
+-
+185.176.46.194.ie.dsl.dyn.u.tv
+0 1 1 69049 0 0
+-
+host86-185-149-189.range86-185.btcentralplus.com
+0 1 1 14272 0 0
+-
+baiduspider-220-181-108-115.crawl.baidu.com
+0 1 1 17644 1 1375558632
+/subjects/theinternet/
+c-24-98-150-118.hsd1.ga.comcast.net
+0 1 1 69049 0 0
+-
+msnbot-199-30-16-7.search.msn.com
+0 2 2 25841 0 0
+-
+pc10.kln.ac.lk
+0 2 2 58132 0 0
+-
+baiduspider-123-125-71-17.crawl.baidu.com
+0 1 1 295 0 0
+-
+ppp-124-121-114-42.revip2.asianet.co.th
+0 1 1 14170 0 0
+-
+msnbot-157-55-33-23.search.msn.com
+0 18 17 5799552 4 1375731467
+-
+92.251.255.12.threembb.ie
+0 1 1 99340 0 0
+-
+baiduspider-180-76-5-61.crawl.baidu.com
+0 2 1 4099 2 1375366924
+-
+baiduspider-180-76-5-65.crawl.baidu.com
+0 1 1 3290 1 1375373818
+/subjects/webauthoring5/websites2000/it.dconway/valderrama.html
+tfamlocal.tfam.gov.tw
+0 1 1 69049 0 0
+-
+bluster01.eecs.umich.edu
+0 1 1 12206 0 0
+-
+ns4009078.ip-192-99-2.net
+0 3 3 1251183 0 0
+-
+host86-162-51-212.range86-162.btcentralplus.com
+0 1 1 69049 0 0
+-
+173.252.102.114
+0 1 0 42498 0 0
+-
+msnbot-131-253-24-42.search.msn.com
+0 1 1 2490 1 1375714198
+/subjects/webauthoring5/websites2003/it.nattalieh/project/page4.html
+msnbot-65-55-215-62.search.msn.com
+0 2 2 53544 0 0
+-
+pool-108-54-78-39.nycmny.fios.verizon.net
+0 1 1 69049 0 0
+-
+185.20.131.249
+0 1 1 69049 0 0
+-
+baiduspider-123-125-71-39.crawl.baidu.com
+0 2 2 44643 1 1375570631
+/subjects/webauthoring5/
+50.58.210.13
+0 1 1 26593 0 0
+-
+host-92-24-174-243.ppp.as43234.net
+0 1 1 69049 0 0
+-
+alnmspsrvz4ts327-dmz.mycingular.net
+0 1 1 14272 0 0
+-
+msnbot-131-253-24-11.search.msn.com
+0 8 8 113130 0 0
+-
+182.179.64.139
+0 1 1 69049 0 0
+-
+117.216.172.238
+0 1 1 29090 0 0
+-
+pc-224-128-164-190.cm.vtr.net
+0 1 1 69049 0 0
+-
+baiduspider-123-125-71-46.crawl.baidu.com
+0 1 0 421 1 1375574631
+-
+ec2-54-227-188-31.compute-1.amazonaws.com
+0 8 8 112077 1 1375744077
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+117.26.118.18
+0 1 1 8606 1 1375346365
+/help/
+baiduspider-180-76-5-194.crawl.baidu.com
+0 1 1 2477 1 1375658921
+/subjects/webauthoring5/websites2004/it.michaelk/
+msnbot-131-253-26-243.search.msn.com
+0 2 1 6508 0 0
+-
+bermantech.com
+0 1 1 10137 1 1375710722
+/
+198.74.231.14
+0 112 112 351889 1 1375329715
+/subjects/webauthoring5/websites2004/it.roseh/WhiteMemorial.html
+82-69-123-240.dsl.in-addr.zen.co.uk
+0 1 1 69049 0 0
+-
+baiduspider-123-125-71-103.crawl.baidu.com
+0 1 1 37184 1 1375568632
+/subjects/workexperience/
+211.244.83.248
+0 2 2 10394 1 1375614946
+/
+msnbot-65-55-215-80.search.msn.com
+0 2 2 363778 0 0
+-
+baiduspider-123-125-71-53.crawl.baidu.com
+0 1 1 295 0 0
+-
+173.199.116.19.ahrefs.com
+0 76 74 900180 22 1375476190
+/tutorials/unix/one/unix0.html
+93.102.129.220.rev.optimus.pt
+0 1 1 69049 0 0
+-
+static.170.19.9.176.clients.your-server.de
+0 2 2 20236 2 1375705797
+/
+msnbot-131-253-26-111.search.msn.com
+0 7 7 146457 1 1375413163
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+89.106.136.1
+0 5 5 23476 1 1375638264
+/subjects/webauthoring5/websites2004/it.michaelk/
+ec2-50-17-57-160.compute-1.amazonaws.com
+0 101 64 182350 1 1375509342
+/subjects/webauthoring5/websites2003/it.rositag/introbs.html
+user.sonydadc.com
+0 2 2 158618 0 0
+-
+root2.naefmarco.ch
+0 5 5 15629 1 1375329439
+/subjects/webauthoring5/websites2001/it.maryd/Page3.htm
+175.157.238.197
+0 1 1 29066 0 0
+-
+95.86.37.30
+0 1 1 234096 0 0
+-
+46.229.164.101
+0 3 2 23325 3 1375700854
+/
+46.229.164.102
+0 2 1 13196 2 1375702074
+-
+112.137.166.36
+0 1 1 29066 0 0
+-
+180.76.6.227
+0 1 1 2234 1 1375317143
+/subjects/webauthoring5/websites2000/it.bwalsh/
+176-9-148-197.crawler.sistrix.net
+0 76 63 760055 1 1375424852
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+202.46.56.74
+0 1 1 4392 1 1375503694
+/subjects/controlsystems/
+host.9.static.ffimc.com.ph
+0 1 1 42449 0 0
+-
+abcd-burst2.yasni.de
+0 2 0 3896 2 1375505708
+-
+msnbot-199-30-16-39.search.msn.com
+0 2 2 322829 0 0
+-
+173.252.101.118
+0 1 0 9300 0 0
+-
+182.255.101.34
+0 1 1 29066 0 0
+-
+193.105.210.216
+0 8 8 2805635 5 1375549797
+/
+193.105.210.217
+0 6 6 119526 3 1375683793
+/
+baiduspider-123-125-71-71.crawl.baidu.com
+0 1 1 8606 1 1375564634
+/help/
+cable-119-14.kymp.net
+0 1 1 234096 0 0
+-
+31.184.241.10
+0 11 11 3347944 5 1375579674
+/subjects/computerprogramming/
+31.184.241.11
+0 9 9 2843965 5 1375629666
+/subjects/computerprogramming/
+180.76.6.233
+0 2 2 5312 2 1375658922
+/subjects/webauthoring5/websites2004/it.michaelk/
+205.237.88.147
+0 1 1 10142 1 1375378833
+/
+146.120.132.253
+0 1 0 184 0 0
+-
+cpe185933464d7f-cm185933464d7c.cpe.net.cable.rogers.com
+0 1 1 69049 0 0
+-
+173.252.112.115
+0 1 0 45952 0 0
+-
+msnbot-199-30-20-77.search.msn.com
+0 2 2 379647 0 0
+-
+bb265012.virtua.com.br
+0 1 1 4147 1 1375323307
+/tutorials/networks/3com/smallbusinesssolutions/offices/latincontacts.htm
+c-50-147-215-12.hsd1.ga.comcast.net
+0 1 1 29066 0 0
+-
+124.217.186.173
+0 1 1 69049 0 0
+-
+msnbot-199-30-16-48.search.msn.com
+0 6 6 477916 0 0
+-
+5.10.83.53-static.reverse.softlayer.com
+0 39 39 358156 1 1375370000
+/subjects/webauthoring5/websites2004/it.laurab/greyhound-racing.html
+crawl-66-249-75-57.googlebot.com
+0 5 5 98348 2 1375520693
+/subjects/webauthoring5/websites2002/it.lisab/Pictures+of+old+Artifacts.html
+ec2-50-19-64-240.compute-1.amazonaws.com
+0 5 5 61044 1 1375339266
+/help/software/
+host18.sigtuna.se
+0 2 2 1472224 0 0
+-
+msnbot-199-30-16-17.search.msn.com
+0 2 2 26937 0 0
+-
+195.178.163.66
+0 1 1 234096 0 0
+-
+8.21.4.254
+0 1 0 432 1 1375409703
+-
+120.37.233.83
+0 2 2 21411 2 1375746744
+/help/
+pro1362.startdedicated.com
+0 2 1 27626 0 0
+-
+dsl-189-149-172-106-dyn.prod-infinitum.com.mx
+0 1 1 69049 0 0
+-
+host86-139-197-153.range86-139.btcentralplus.com
+0 1 1 69049 0 0
+-
+58.32.203.133
+0 1 1 17742 0 0
+-
+msnbot-199-30-20-106.search.msn.com
+0 2 2 15285 0 0
+-
+5.10.83.31-static.reverse.softlayer.com
+0 10 10 175392 1 1375516305
+/subjects/webauthoring5/
+spider27.picsearch.com
+0 14 14 4130 0 0
+-
+5.10.83.63-static.reverse.softlayer.com
+0 2 2 552 0 0
+-
+r235-pw-taquariguacu.ibys.com.br
+0 1 1 29066 0 0
+-
+91.231.40.27
+0 14 14 3402290 6 1375722154
+/subjects/webauthoring5/
+91.231.40.28
+0 8 8 2323042 5 1375625111
+/subjects/computerprogramming/
+92-247-227-78.spectrumnet.bg
+0 1 1 69049 0 0
+-
+14-200-153-198.static.tpgi.com.au
+0 14 10 403083 1 1375474376
+/subjects/computerarchitectureandsystems/
+124.6.181.194
+0 1 1 29066 0 0
+-
+static.bannills.net
+0 2 2 34208 1 1375523974
+/tutorials/dos/one/~webspace.html
+bsn-182-152-175.dial-up.dsl.siol.net
+0 1 1 69049 0 0
+-
+126-180.nwlink.spb.ru
+0 8 8 164199 1 1375604401
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+msnbot-199-30-20-64.search.msn.com
+0 2 2 33732 0 0
+-
+70.89.125.57-busname-wa.hfc.comcastbusiness.net
+0 10 8 180507 1 1375379413
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+msnbot-199-30-16-35.search.msn.com
+0 4 4 426013 0 0
+-
+adsl-172-12-18-208.dsl.lsan03.sbcglobal.net
+0 9 9 29925 1 1375332579
+/subjects/computerarchitectureandsystems/powerpointpresentation/sld019.htm
+108-75-172-28.lightspeed.cicril.sbcglobal.net
+0 1 1 19348 0 0
+-
+5.135.114.234
+0 2 2 4174820 1 1375427177
+/subjects/webauthoring5/html5spec.html
+msnbot-65-55-212-90.search.msn.com
+0 2 1 6508 0 0
+-
+210.118.108.252
+0 22 11 444638 1 1375516898
+/subjects/computerarchitectureandsystems/
+uu212-190-201-118.unknown.uunet.be
+0 1 1 42449 0 0
+-
+crawl317.exabot.com
+0 3 3 26881 1 1375463669
+/subjects/webauthoring5/websites2004/it.laurab/
+msnbot-199-30-20-124.search.msn.com
+0 4 4 26690 0 0
+-
+msnbot-199-30-16-44.search.msn.com
+0 2 2 322829 0 0
+-
+5.10.83.73-static.reverse.softlayer.com
+0 29 28 65144 2 1375732922
+/subjects/webauthoring5/websites2001/it.melissaw/findings2.html
+a03-01-05.opera-mini.net
+0 2 2 86791 0 0
+-
+msnbot-65-55-24-216.search.msn.com
+0 10 10 43512 6 1375746805
+/
+c-71-236-161-55.hsd1.or.comcast.net
+0 1 1 69049 0 0
+-
+search01.whoisireland.com
+0 4 4 20864 2 1375756478
+/
+96.19.182.142
+0 1 1 69049 0 0
+-
+121.54.54.149
+0 1 1 4409 0 0
+-
+baiduspider-220-181-108-99.crawl.baidu.com
+0 1 1 7063 1 1375560631
+/subjects/imageprocessing/
+msnbot-157-55-33-88.search.msn.com
+0 36 36 2445082 5 1375741692
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+msnbot-199-30-20-42.search.msn.com
+0 2 2 25006 0 0
+-
+msnbot-65-55-215-78.search.msn.com
+0 2 2 111369 0 0
+-
+msnbot-199-30-16-13.search.msn.com
+0 4 4 67349 0 0
+-
+msnbot-157-56-93-150.search.msn.com
+0 22 22 7680379 3 1375695056
+/subjects/webauthoring5/websites2002/it.michaelm/intro.html
+180.76.6.28
+0 1 1 295 0 0
+-
+s2.960.clients.serverdeals.org
+0 46 46 280587 1 1375665796
+/tutorials/stylesheets/two/tips1.html
+host81-158-206-66.range81-158.btcentralplus.com
+0 1 1 12934 0 0
+-
+xdsl-62-150-52-213.qualitynet.net
+0 1 1 69049 0 0
+-
+baiduspider-180-76-5-13.crawl.baidu.com
+0 1 1 10137 1 1375450582
+/
+msnbot-131-253-24-143.search.msn.com
+0 1 1 13398 0 0
+-
+msnbot-65-55-215-101.search.msn.com
+0 4 4 50436 0 0
+-
+msnbot-199-30-20-102.search.msn.com
+0 6 6 847395 0 0
+-
+211-21-138-151.hinet-ip.hinet.net
+0 1 1 14170 0 0
+-
+out-ar118.tfbnw.net
+0 1 0 45952 0 0
+-
+203.245.33.120.broad.pt.fj.dynamic.163data.com.cn
+0 1 1 8606 1 1375463269
+/help/
+baiduspider-180-76-5-20.crawl.baidu.com
+0 2 1 10558 2 1375524657
+-
+116.232.236.88
+0 1 1 69049 0 0
+-
+61.9.6.233.mozcom.net
+0 2 2 7589 0 0
+-
+msnbot-65-55-215-110.search.msn.com
+0 2 2 388415 0 0
+-
+msnbot-131-253-24-152.search.msn.com
+0 2 1 6508 0 0
+-
+50.115.170.208
+0 2 2 73930 1 1375345787
+/help/
+host247.186-125-137.telecom.net.ar
+0 1 1 234096 0 0
+-
+bas5-kingston08-2925406951.dsl.bell.ca
+0 1 1 69049 0 0
+-
+pool-71-97-238-106.dllstx.dsl-w.verizon.net
+0 1 1 29066 0 0
+-
+71-36-190-50.phnx.qwest.net
+0 1 1 69049 0 0
+-
+hosted-by.leaseweb.com
+0 2 2 10432 1 1375613026
+/
+msnbot-65-55-215-65.search.msn.com
+0 2 2 25841 0 0
+-
+msnbot-199-30-16-40.search.msn.com
+0 2 2 321591 0 0
+-
+117.220.237.129
+0 2 2 58132 0 0
+-
+193.234.166.190
+0 1 1 11173 1 1375603650
+/tutorials/dos/one/~webspace.html
+host86-185-157-88.range86-185.btcentralplus.com
+0 2 2 26105 1 1375568848
+/subjects/webauthoring5/websites2002/it.mariag/Shandon+Short+History.html
+1-38-24-128.live.vodafone.in
+0 1 1 69049 0 0
+-
+46.37.165.184.srvlist.ukfast.net
+0 2 2 86493 1 1375733368
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+122-62-70-168.jetstream.xtra.co.nz
+0 1 1 69049 0 0
+-
+ool-44c1e5d0.dyn.optonline.net
+0 1 1 69049 0 0
+-
+msnbot-131-253-24-14.search.msn.com
+0 2 2 272427 0 0
+-
+168.167.43.129
+0 5 2 229988 0 0
+-
+ec2-54-221-12-122.compute-1.amazonaws.com
+0 1 1 10118 1 1375734879
+/
+122.2.42.2.static.pldt.net
+0 1 1 42449 0 0
+-
+cpc2-cdif14-2-0-cust635.5-1.cable.virginmedia.com
+0 1 1 69049 0 0
+-
+089-101-095243.ntlworld.ie
+0 1 1 69049 0 0
+-
+ec2-54-224-166-162.compute-1.amazonaws.com
+0 71 62 154930 1 1375437043
+/subjects/webauthoring5/websites2002/it.michaelb/sniffer.html
+188.165.174.195
+0 2 2 18334 1 1375757443
+/tutorials/dos/one/line-env.htm
+ec2-184-73-109-101.compute-1.amazonaws.com
+0 67 59 164924 1 1375386469
+/tutorials/unix/one/ftp2.html
+176.61.141.65
+0 2 2 86493 1 1375530606
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+baiduspider-180-76-5-168.crawl.baidu.com
+0 1 1 4331 1 1375571887
+/subjects/webauthoring5/websites2004/it.laurab/
+165.166.201.142
+0 1 1 69049 0 0
+-
+fetcher5-3.p.mail.ru
+0 1 1 295 0 0
+-
+82.141.223.245
+0 1 1 69049 0 0
+-
+msnbot-199-30-16-6.search.msn.com
+0 4 2 4524 0 0
+-
+99-65-169-234.lightspeed.bcvloh.sbcglobal.net
+0 2 2 925587 0 0
+-
+static.vdc.vn
+0 4 3 12624 1 1375630307
+/
+69.197.128.114
+0 15 15 25567 1 1375592713
+/tutorials/unix/one/under_perm2.html
+182.186.149.14
+0 9 9 244803 1 1375368655
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+208.115.113.83
+0 88 87 232567 18 1375693706
+/tutorials/unix/one/cmd5.html
+msnbot-65-55-215-92.search.msn.com
+0 2 2 42763 0 0
+-
+119.157.135.245
+0 5 5 38521 1 1375562216
+/tutorials/dos/one/samples.htm
+180.241.55.56
+0 1 1 759691 0 0
+-
+120.37.211.226
+0 1 1 8606 1 1375490912
+/help/
+bko67.neoplus.adsl.tpnet.pl
+0 7 7 146457 1 1375742488
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+cpe-172-250-134-53.socal.res.rr.com
+0 1 1 42449 0 0
+-
+202.202.0.163
+0 1 1 11192 1 1375657438
+/tutorials/dos/one/~webspace.html
+208.115.113.90
+0 30 30 53983 11 1375753040
+/subjects/webauthoring5/websites2004/it.roseh/OldStMarysChurch.html
+24.115.69.140.res-cmts.sesp.ptd.net
+0 1 1 69049 0 0
+-
+112.110.246.228
+0 1 1 69049 0 0
+-
+fetcher5-6.p.mail.ru
+0 2 2 15910 0 0
+-
+dsl-201-103-127-240-dyn.prod-infinitum.com.mx
+0 1 1 69049 0 0
+-
+c-50-140-47-228.hsd1.fl.comcast.net
+0 1 1 69049 0 0
+-
+nas2.meghbelabroadband.in
+0 1 1 29066 0 0
+-
+173-169-67-89.res.bhn.net
+0 1 1 69049 0 0
+-
+msnbot-131-253-26-233.search.msn.com
+0 2 1 6508 0 0
+-
+ras.beamtele.net
+0 1 1 69049 0 0
+-
+117.197.171.141
+0 1 1 69049 0 0
+-
+baiduspider-123-125-71-102.crawl.baidu.com
+0 1 1 16545 0 0
+-
+msnbot-65-55-213-54.search.msn.com
+0 1 1 3427 1 1375436079
+/subjects/webauthoring5/websites2003/it.claireog/page1.html
+bas3-montreal45-1177831632.dsl.bell.ca
+0 1 1 99340 0 0
+-
+66.248.194.75
+0 2 2 86493 1 1375733976
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+msnbot-65-55-215-70.search.msn.com
+0 2 2 4147 0 0
+-
+baiduspider-180-76-5-93.crawl.baidu.com
+0 1 1 2667 1 1375529059
+/subjects/webauthoring5/websites2002/it.kathyf/
+crawl-66-249-72-57.googlebot.com
+0 10 5 137283 3 1375747769
+/subjects/webauthoring5/websites2001/it.davide/Aims.html
+customer.worldstream.nl
+0 2 1 12104 1 1375372000
+/
+baiduspider-123-125-71-56.crawl.baidu.com
+0 1 1 295 0 0
+-
+baiduspider-220-181-108-158.crawl.baidu.com
+0 1 1 10137 1 1375635770
+/
+c-69-138-98-205.hsd1.fl.comcast.net
+0 1 1 69049 0 0
+-
+sol-fttb.66.7.163.188.sovam.net.ua
+0 1 1 10137 1 1375574559
+/
+host-2-101-146-173.as13285.net
+0 1 1 69049 0 0
+-
+cm-80.111.116.162.ntlworld.ie
+0 1 1 69049 0 0
+-
+c220-237-83-67.fitzg3.qld.optusnet.com.au
+0 1 1 69049 0 0
+-
+baiduspider-123-125-71-113.crawl.baidu.com
+0 1 1 8496 1 1375576631
+/subjects/desktoppublishing/
+62.140.132.193
+0 2 2 86791 0 0
+-
+192.95.16.22
+0 1 1 45830 1 1375603706
+/subjects/computerprogramming/
+1-38-18-29.live.vodafone.in
+0 1 1 69049 0 0
+-
+107-1-144-219-ip-static.hfc.comcastbusiness.net
+0 1 1 69049 0 0
+-
+107-221-193-59.lightspeed.livnmi.sbcglobal.net
+0 1 1 14965 0 0
+-
+msnbot-65-55-215-249.search.msn.com
+0 3 3 7924 2 1375613869
+/subjects/webauthoring5/websites2004/it.liaml/gallery.html
+msnbot-199-30-20-109.search.msn.com
+0 6 6 69892 0 0
+-
+slt-bb-cust.slt.lk
+0 2 2 58132 0 0
+-
+crawl-66-249-75-211.googlebot.com
+0 78 58 6262421 23 1375532325
+/subjects/theinternet/00-Security+
+pool-108-23-54-102.lsanca.fios.verizon.net
+0 1 1 69049 0 0
+-
+host86-129-7-177.range86-129.btcentralplus.com
+0 1 1 69049 0 0
+-
+105-236-177-114.access.mtnbusiness.co.za
+0 9 9 377549 1 1375350853
+/subjects/computerarchitectureandsystems/
+msnbot-65-55-213-32.search.msn.com
+0 2 2 5939 1 1375635340
+/subjects/webauthoring5/websites2004/it.laurab/
+175.44.32.54
+0 94 28 411567 1 1375468641
+/
+proxy.kerridge.com
+0 1 1 42449 0 0
+-
+202.137.117.41
+0 11 9 381445 1 1375357252
+/subjects/computerarchitectureandsystems/
+120.56.182.91
+0 1 1 69049 0 0
+-
+baiduspider-123-125-71-78.crawl.baidu.com
+0 1 1 295 0 0
+-
+202-159-179-206.dyn.iinet.net.au
+0 1 1 42449 0 0
+-
+110.55.66.79.bti.net.ph
+0 12 11 464395 1 1375319433
+/subjects/computerarchitectureandsystems/
+93-81-72-115.broadband.corbina.ru
+0 1 1 10137 1 1375376745
+/
+google-proxy-66-249-81-160.google.com
+0 1 1 246219 0 0
+-
+85.155.93.159.dyn.user.ono.com
+0 2 2 86791 0 0
+-
+msnbot-199-30-20-118.search.msn.com
+0 4 2 4524 0 0
+-
+208-115-111-74-reverse.wowrack.com
+0 30 30 67674 13 1375759734
+/tutorials/unix/one/gs.html
+71-20-36-18.war.clearwire-wmx.net
+0 1 1 69049 0 0
+-
+msnbot-157-55-32-100.search.msn.com
+0 31 30 2378084 8 1375713601
+/subjects/webauthoring5/websites2004/it.ciannaitk/aboutus.html
+ip-49.156.35.67.wicam.com.kh
+0 1 1 29066 0 0
+-
+msnbot-199-30-16-38.search.msn.com
+0 4 4 708422 0 0
+-
+cm-110-171-68-65.revip7.asianet.co.th
+0 1 1 42449 0 0
+-
+baiduspider-123-125-71-81.crawl.baidu.com
+0 1 1 37184 1 1375568634
+/subjects/workexperience/
+pool-108-20-151-65.bstnma.fios.verizon.net
+0 1 1 69049 0 0
+-
+5.10.83.2-static.reverse.softlayer.com
+0 35 33 413517 1 1375323449
+/subjects/computerprogramming/comparisons/
+cpe-174-111-235-050.triad.res.rr.com
+0 1 1 99340 0 0
+-
+69.171.247.117
+0 1 0 45952 0 0
+-
+112.201.150.177.pldt.net
+0 1 1 3180 0 0
+-
+79-114-106-110.rdsnet.ro
+0 2 2 18286 1 1375347800
+/tutorials/dos/one/line-env.htm
+cpc12-telf11-2-0-cust114.wolv.cable.virginmedia.com
+0 1 1 69049 0 0
+-
+msnbot-199-30-16-47.search.msn.com
+0 4 4 534606 0 0
+-
+c-76-127-101-176.hsd1.ca.comcast.net
+0 1 1 69049 0 0
+-
+209.248.176.68.nw.nuvox.net
+0 1 1 69049 0 0
+-
+178-25-80-224-dynip.superkabel.de
+0 4 3 14245 1 1375712071
+/subjects/webauthoring5/z-index/
+172-2-76-135.lightspeed.bkfdca.sbcglobal.net
+0 1 1 69049 0 0
+-
+201-209-194-140.genericrev.cantv.net
+0 1 1 69049 0 0
+-
+abts-north-dynamic-088.182.173.122.airtelbroadband.in
+0 1 1 69049 0 0
+-
+ti-226-99-99.telkomadsl.co.za
+0 2 2 84898 0 0
+-
+msnbot-199-30-20-136.search.msn.com
+0 2 2 14586 0 0
+-
+198.2.203.193
+0 2 2 54436 1 1375386768
+/subjects/computerprogramming/
+msnbot-199-30-20-45.search.msn.com
+0 4 4 82726 0 0
+-
+host86-131-139-246.range86-131.btcentralplus.com
+0 8 8 164199 1 1375729440
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+204.12.208.234
+0 31 31 54085 1 1375600336
+/tutorials/unix/one/telnet.html
+101.227.4.25
+0 3 2 2448 0 0
+-
+msnbot-65-55-215-104.search.msn.com
+0 2 2 40720 0 0
+-
+50.115.173.39
+0 2 2 86493 1 1375707762
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+79-113-102-114.rdsnet.ro
+0 1 1 69049 0 0
+-
+208-115-111-66-reverse.wowrack.com
+0 81 78 290487 21 1375756973
+/tutorials/dos/one/index18.htm
+117.241.240.241
+0 1 1 7050 0 0
+-
+msnbot-157-55-35-36.search.msn.com
+0 32 29 1506952 9 1375759224
+/subjects/webauthoring5/websites2003/it.rositag/introbs.html
+msnbot-199-30-20-54.search.msn.com
+0 2 2 272427 0 0
+-
+089-101-107231.ntlworld.ie
+0 2 2 71515 0 0
+-
+msnbot-65-55-218-54.search.msn.com
+0 1 1 9751 0 0
+-
+mail1.sbpost.ie
+0 5 4 54622 1 1375360108
+/
+202.55.2.107
+0 1 1 69068 0 0
+-
+110-174-50-31.static.tpgi.com.au
+0 1 1 42449 0 0
+-
+ec2-75-101-222-145.compute-1.amazonaws.com
+0 8 5 194664 2 1375734807
+/
+adsl-74-248-233-67.gsp.bellsouth.net
+0 21 21 478389 1 1375501156
+/subjects/webauthoring5/websites2003/it.nattalieh/page3.html
+65-33-146-158.res.bhn.net
+0 1 1 69049 0 0
+-
+221.sub-70-193-12.myvzw.com
+0 1 1 759691 0 0
+-
+msnbot-131-253-24-39.search.msn.com
+0 1 1 8363 1 1375496830
+/subjects/webauthoring5/websites2002/it.mariag/Shandon+Short+History.html
+msnbot-199-30-20-63.search.msn.com
+0 2 2 379647 0 0
+-
+mail.ctutraining.co.za
+0 1 1 29066 0 0
+-
+msnbot-65-55-218-63.search.msn.com
+0 1 1 20549 1 1375667520
+/subjects/computerarchitectureandsystems/
+g224049153.adsl.alicedsl.de
+0 2 2 2083 1 1375355844
+/subjects/webauthoring5/websites2001/it.jamesf/
+host-58115348.fivenetwork.com
+0 1 1 29066 0 0
+-
+baiduspider-220-181-108-90.crawl.baidu.com
+0 1 1 5916 1 1375566631
+/subjects/communications/
+msnbot-65-55-215-223.search.msn.com
+0 2 2 5210 2 1375537356
+/subjects/webauthoring5/websites2003/it.nattalieh/project/
+5.34.241.69
+0 2 2 18334 1 1375409851
+/tutorials/dos/one/line-env.htm
+adsl-74-241-47-169.sdf.bellsouth.net
+0 1 1 69049 0 0
+-
+msnbot-199-30-20-32.search.msn.com
+0 4 4 78080 0 0
+-
+5.10.83.46-static.reverse.softlayer.com
+0 27 23 224983 1 1375348584
+/subjects/webauthoring5/websites2000/it.dmaguire/contents.html
+189.58.21.34.dynamic.adsl.gvt.net.br
+0 1 1 69049 0 0
+-
+msnbot-199-30-16-43.search.msn.com
+0 2 2 34109 0 0
+-
+msnbot-131-253-24-6.search.msn.com
+0 2 2 160264 0 0
+-
+a95-94-7-246.cpe.netcabo.pt
+0 1 1 69049 0 0
+-
+185.3.132.196
+0 2 2 18334 1 1375464370
+/tutorials/dos/one/line-env.htm
+c-71-196-253-89.hsd1.co.comcast.net
+0 1 1 69049 0 0
+-
+prx11.tnz.myschools.net
+0 1 1 69073 0 0
+-
+msnbot-199-30-16-12.search.msn.com
+0 4 3 101916 0 0
+-
+109.255.237.37
+0 1 1 99340 0 0
+-
+195.75.73.1
+0 1 1 29066 0 0
+-
+crawl-66-249-73-134.googlebot.com
+0 22 11 50694 8 1375362452
+/subjects/webauthoring5/websites2002/it.maryn/history.html
+host-78-144-169-94.as13285.net
+0 1 1 29066 0 0
+-
+39.47.123.146
+0 1 1 69049 0 0
+-
+baiduspider-180-76-5-138.crawl.baidu.com
+0 1 1 1020 0 0
+-
+msnbot-65-55-215-46.search.msn.com
+0 2 1 2262 0 0
+-
+112.198.82.58
+0 1 1 69049 0 0
+-
+91.237.249.171
+0 2 2 86469 1 1375375211
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+203.24.148.50
+0 1 0 160 1 1375713219
+/
+71-87-226-255.static.hlrg.nc.charter.com
+0 1 1 69049 0 0
+-
+c-174-51-135-228.hsd1.co.comcast.net
+0 1 1 69049 0 0
+-
+msnbot-199-30-16-9.search.msn.com
+0 2 2 29280 0 0
+-
+175.143.47.89
+0 1 1 14170 0 0
+-
+97e726b5.skybroadband.com
+0 1 1 69049 0 0
+-
+baiduspider-180-76-5-141.crawl.baidu.com
+0 1 1 3278 1 1375687356
+/tutorials/dos/one/index2.htm
+198.2.212.166
+0 1 1 10137 1 1375534856
+/
+142.234.104.2.rdns.ubiquity.io
+0 2 2 34208 1 1375406130
+/tutorials/dos/one/~webspace.html
+105-adsl.ntc.net.np
+0 1 1 69049 0 0
+-
+186.214.25.212.dynamic.adsl.gvt.net.br
+0 11 9 683046 0 0
+-
+msnbot-65-55-215-55.search.msn.com
+0 4 4 383466 0 0
+-
+msnbot-65-55-215-95.search.msn.com
+0 2 2 29380 0 0
+-
+pool-72-89-56-141.nycmny.fios.verizon.net
+0 1 1 69049 0 0
+-
+178-168-31-26.starnet.md
+0 1 1 29066 0 0
+-
+baiduspider-220-181-108-102.crawl.baidu.com
+0 2 2 15829 2 1375566632
+/subjects/communications/
+baiduspider-220-181-108-106.crawl.baidu.com
+0 1 1 20549 1 1375582632
+/subjects/computerarchitectureandsystems/
+ip-50-133-164-193.static.contabo.net
+0 1 1 10118 1 1375463587
+/
+evo-hl21-1.gameservers.net
+0 55 55 166995 1 1375439986
+/tutorials/unix/one/opfile.html
+msnbot-65-55-213-48.search.msn.com
+0 1 1 1700 1 1375661237
+/subjects/webauthoring5/websites2001/it.jamesf/03thebonediggers.html
+shzdmzpr01-ext.sh.intel.com
+0 1 0 1948 0 0
+-
+msnbot-157-55-32-187.search.msn.com
+0 3 3 19000 2 1375623274
+/
+wsl00124
+0 1 1 42449 0 0
+-
+c-68-59-168-108.hsd1.fl.comcast.net
+0 1 1 4409 0 0
+-
+baiduspider-180-76-5-52.crawl.baidu.com
+0 1 1 8512 0 0
+-
+baiduspider-123-125-71-15.crawl.baidu.com
+0 1 1 37184 1 1375578632
+/subjects/workexperience/
+202.46.62.124
+0 1 1 10137 1 1375705001
+/
+baiduspider-123-125-71-19.crawl.baidu.com
+0 1 1 295 0 0
+-
+210.212.246.46
+0 1 1 19348 0 0
+-
+host36.server4.vpn999.com
+0 2 2 86493 1 1375424326
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+95.47.37.250
+0 1 1 282 0 0
+-
+ec2-54-211-35-152.compute-1.amazonaws.com
+0 1 1 10118 1 1375493549
+/
+202.69.12.25
+0 2 2 138098 0 0
+-
+out-ar116.tfbnw.net
+0 1 0 45952 0 0
+-
+71.143.161.114
+0 2 2 60191 0 0
+-
+180.194.30.198
+0 1 1 42449 0 0
+-
+222.76.72.101
+0 1 1 10137 1 1375465988
+/
+46-65-29-69.zone16.bethere.co.uk
+0 1 1 29066 0 0
+-
+static-208-80-194-127.as13448.com
+0 5 5 50685 5 1375729663
+/
+msnbot-65-55-212-78.search.msn.com
+0 1 1 8606 1 1375602771
+/help/
+cpe-72-178-20-67.elp.res.rr.com
+0 1 1 69049 0 0
+-
+5.10.83.12-static.reverse.softlayer.com
+0 14 14 564149 2 1375405843
+/help/
+109.76.31.104
+0 1 1 99340 0 0
+-
+mobile-166-137-191-030.mycingular.net
+0 1 1 69049 0 0
+-
+google-proxy-66-249-85-134.google.com
+0 2 2 158618 0 0
+-
+schmspsrvz1ts109-dmz.mycingular.net
+0 1 1 69049 0 0
+-
+121.96.51.66.bti.net.ph
+0 1 1 112504 0 0
+-
+ec2-54-242-248-162.compute-1.amazonaws.com
+0 2 2 20274 1 1375316152
+/
+msnbot-199-30-16-5.search.msn.com
+0 2 2 99654 0 0
+-
+strathmorelimited.com
+0 1 1 10142 1 1375554737
+/
+ec2-54-211-52-111.compute-1.amazonaws.com
+0 10 7 165104 2 1375493757
+/
+cpe-124-182-42-246.lns6.wel.bigpond.net.au
+0 1 1 42449 0 0
+-
+027e0441.bb.sky.com
+0 1 1 69049 0 0
+-
+82.178.254.166
+0 1 1 69049 0 0
+-
+69.171.237.10
+0 1 0 45952 0 0
+-
+39.47.58.196
+0 1 1 42449 0 0
+-
+130-156-12-86.static.virginmedia.com
+0 5 5 345245 0 0
+-
+baiduspider-123-125-71-44.crawl.baidu.com
+0 1 1 22957 1 1375580631
+/help/library/
+79-114-36-211.rdsnet.ro
+0 1 1 69049 0 0
+-
+baiduspider-180-76-5-192.crawl.baidu.com
+0 2 2 3641 2 1375614913
+/subjects/webauthoring5/websites2000/it.bwalsh/
+baiduspider-123-125-71-48.crawl.baidu.com
+0 1 1 4392 1 1375574631
+/subjects/controlsystems/
+msnbot-65-55-217-221.search.msn.com
+0 9 9 235446 1 1375497097
+/subjects/webauthoring5/animatedasterisk/
+175.110.124.251
+0 7 7 146457 1 1375533881
+/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+msnbot-65-55-213-255.search.msn.com
+0 2 2 6609 1 1375355563
+/subjects/webauthoring5/websites2004/it.laurab/soccer.html
+114.201.35.8.gae.googleusercontent.com
+0 1 1 17742 0 0
+-
+google-proxy-66-249-84-71.google.com
+0 2 2 27860 1 1375719546
+/
+services.hosting.digiweb.ie
+0 1 1 10118 1 1375435285
+/
+msnbot-65-55-215-60.search.msn.com
+0 10 10 1006317 0 0
+-
+wdcsun20.usdoj.gov
+0 1 1 61331 0 0
+-
+baiduspider-123-125-71-51.crawl.baidu.com
+0 1 1 295 0 0
+-
+msnbot-199-30-20-39.search.msn.com
+0 4 4 83847 0 0
+-
+crawl-66-249-73-127.googlebot.com
+0 20 16 1706879 8 1375358550
+/subjects/webauthoring5/
+202.58.180.57
+0 1 1 29066 0 0
+-
+173.227.96.146
+0 1 1 14272 0 0
+-
+crawl-66-249-75-208.googlebot.com
+0 5 5 303325 1 1375530952
+/subjects/workexperience/
+spider25.picsearch.com
+0 16 16 46543 10 1375691940
+/tutorials/unix/one/TOP_.html
+fetcher5-1.p.mail.ru
+0 1 1 535555 0 0
+-
+cpe-108-184-223-173.socal.res.rr.com
+0 1 1 69049 0 0
+-
+42.120.160.8
+0 1 1 10118 1 1375528648
+/
+171.48.154.36
+0 1 1 69049 0 0
+-
+103.10.228.75
+0 1 1 29090 0 0
+-
+142.91.79.62.rdns.ubiquity.io
+0 2 2 34256 1 1375578024
+/tutorials/dos/one/~webspace.html
+101.119.15.200
+0 1 1 57016 0 0
+-
+199.58.86.209
+0 5 4 49474 2 1375429176
+/subjects/webauthoring5/
+5.10.83.96-static.reverse.softlayer.com
+0 2 2 552 0 0
+-
+msnbot-131-253-38-99.search.msn.com
+0 4 4 199308 0 0
+-
+ip241.spr02-04.cs-isp.net
+0 1 1 29066 0 0
+-
+94.143.176.215
+0 1 1 234096 0 0
+-
+cpe-66-66-200-235.rochester.res.rr.com
+0 1 1 69049 0 0
+-
+178.32.254.71
+0 2 2 34256 1 1375565736
+/tutorials/dos/one/~webspace.html
+msnbot-131-253-38-101.search.msn.com
+0 2 2 7866 0 0
+-
+msnbot-199-30-16-1.search.msn.com
+0 2 2 878 0 0
+-
+97-113-194-153.tukw.qwest.net
+0 1 1 69049 0 0
+-
+msnbot-199-30-20-57.search.msn.com
+0 2 2 42763 0 0
+-
+188.165.174.214
+0 2 2 33201 1 1375744147
+/
+msnbot-199-30-16-28.search.msn.com
+0 6 6 83744 0 0
+-
+101.172.42.154
+0 1 1 69049 0 0
+-
+50.115.173.132
+0 2 2 86493 1 1375455870
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+fetcher5-4.p.mail.ru
+0 1 1 295 0 0
+-
+120.29.96.93
+0 1 1 69049 0 0
+-
+194.71.222.189
+0 1 1 4827 1 1375603650
+/tutorials/dos/one/index29.htm
+193.120.253.29
+0 2 2 20236 2 1375619202
+/
+027d9632.bb.sky.com
+0 2 2 468192 0 0
+-
+adsl-64-237-224-232.prtc.net
+0 1 1 24904 0 0
+-
+cpe-24-175-170-79.stx.res.rr.com
+0 1 1 69049 0 0
+-
+host109-153-104-120.range109-153.btcentralplus.com
+0 1 1 69049 0 0
+-
+41-132-14-162.dsl.mweb.co.za
+0 4 4 145089 0 0
+-
+112.198.64.10
+0 1 1 29066 0 0
+-
+msnbot-199-30-20-26.search.msn.com
+0 2 2 99654 0 0
+-
+173.208.150.250
+0 14 14 25971 1 1375418428
+/tutorials/unix/one/sysvbsd.html
+115.254.21.157
+0 1 1 29066 0 0
+-
+z59-13.opera-mini.net
+0 4 4 120382 0 0
+-
+112.204.108.2.pldt.net
+0 2 2 84898 0 0
+-
+ellerine-holdings--gw.telkom-ipnet.co.za
+0 11 10 400046 1 1375712369
+/subjects/computerarchitectureandsystems/
+5.10.83.7-static.reverse.softlayer.com
+0 14 13 56507 2 1375388384
+/tutorials/dos/one/index29.htm
+ec2-184-73-43-224.compute-1.amazonaws.com
+0 79 65 216833 1 1375373747
+/tutorials/unix/one/iq.html
+71-211-145-251.hlrn.qwest.net
+0 1 1 69049 0 0
+-
+shmdmzpr02-ext.sh.intel.com
+0 9 9 377549 1 1375410574
+/subjects/computerarchitectureandsystems/
+msnbot-199-30-16-46.search.msn.com
+0 2 2 387874 0 0
+-
+s0106001e689da841.vc.shawcable.net
+0 1 1 69049 0 0
+-
+fetcher5-7.p.mail.ru
+0 1 1 295 0 0
+-
+ec2-54-242-193-2.compute-1.amazonaws.com
+0 7 7 101959 1 1375577511
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+98.145.71.248
+0 3 0 5916 1 1375397915
+-
+gw1.camboys.er1.b.mel.aarnet.net.au
+0 1 1 69049 0 0
+-
+121.97.142.15.bti.net.ph
+0 4 4 26851 1 1375416967
+/tutorials/dos/one/index29.htm
+61.180.31.3
+0 10 10 101180 10 1375740134
+/
+61.180.31.4
+0 6 6 60708 6 1375747033
+/
+msnbot-199-30-16-15.search.msn.com
+0 2 2 354186 0 0
+-
+5.10.83.84-static.reverse.softlayer.com
+0 150 150 1434752 7 1375591728
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+112.208.172.216.pldt.net
+0 1 1 42449 0 0
+-
+109.202.128.170
+0 1 1 69049 0 0
+-
+66.148.161.146.nw.nuvox.net
+0 1 1 69049 0 0
+-
+crawl-66-249-75-48.googlebot.com
+0 74 31 290379 19 1375533717
+/subjects/webauthoring5/websites2003/it.rebeccad/project/corkcitygaolp6.html
+109.239.19.240
+0 1 1 234096 0 0
+-
+msnbot-65-55-215-49.search.msn.com
+0 2 2 262942 0 0
+-
+a08-04-08.opera-mini.net
+0 2 2 86791 0 0
+-
+161.vympelstroy.ru
+0 4 4 52352 2 1375674680
+/help/software/
+cm-171-101-219-112.revip11.asianet.co.th
+0 1 1 14170 0 0
+-
+allissa.static.korbank.pl
+0 2 2 16000 1 1375496515
+/tutorials/dos/one/~webspace.html
+crawl-66-249-72-211.googlebot.com
+0 134 76 6104335 30 1375756440
+/tutorials/dos/one/index1.htm
+cpe-184-57-23-120.columbus.res.rr.com
+0 1 1 69049 0 0
+-
+ec2-54-216-64-4.eu-west-1.compute.amazonaws.com
+0 1 1 69049 0 0
+-
+adsl-98-80-218-121.mcn.bellsouth.net
+0 1 1 14272 0 0
+-
+86-41-106-229-dynamic.b-ras2.lmk.limerick.eircom.net
+0 13 7 373953 1 1375389790
+/subjects/webauthoring5/
+msnbot-157-55-35-44.search.msn.com
+0 74 74 3050040 25 1375760177
+/subjects/theinternet/00-Security+
+5.10.83.62-static.reverse.softlayer.com
+0 114 100 1265334 7 1375656016
+/subjects/webauthoring5/websites2001/it.bridl/
+5.10.83.94-static.reverse.softlayer.com
+0 26 25 599202 2 1375334638
+/subjects/webauthoring5/websites2000/vtos.modonovan/
+ool-44c3b5e6.dyn.optonline.net
+0 1 1 59278 0 0
+-
+124.142.72.86.rev.sfr.net
+0 1 1 69049 0 0
+-
+ec2-54-215-58-102.us-west-1.compute.amazonaws.com
+0 1 1 65536 0 0
+-
+95.149.204.249
+0 2 2 158618 0 0
+-
+msnbot-199-30-20-3.search.msn.com
+0 2 2 27960 0 0
+-
+81.255.155.161
+0 1 1 69049 0 0
+-
+122.2.48.130.pldt.net
+0 1 1 29066 0 0
+-
+125.60.231.181
+0 2 2 84898 0 0
+-
+223.232.60.168
+0 5 3 683856 0 0
+-
+223.83.183.61.broad.wh.hb.dynamic.163data.com.cn
+0 3 3 101573 1 1375698617
+/subjects/computerprogramming/
+195.red-79-159-29.staticip.rima-tde.net
+0 2 2 86469 1 1375506214
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+z57-11.opera-mini.net
+0 4 4 173582 0 0
+-
+msnbot-65-55-215-76.search.msn.com
+0 4 4 78080 0 0
+-
+5.10.83.72-static.reverse.softlayer.com
+0 6 6 94051 2 1375515058
+/subjects/theinternet/
+176-57-142-28.kryutek.net
+0 1 0 1948 1 1375484215
+-
+120.28.98.155
+0 1 1 42449 0 0
+-
+188.141.10.83
+0 1 1 99340 0 0
+-
+149.135.147.68
+0 1 1 69049 0 0
+-
+203.215.117.118
+0 1 1 42449 0 0
+-
+baiduspider-180-76-5-144.crawl.baidu.com
+0 1 1 3700 1 1375558930
+/tutorials/dos/one/loadfix.htm
+5.10.83.29-static.reverse.softlayer.com
+0 11 11 68629 1 1375440530
+/subjects/computerprogramming/perl-term-screen/
+baiduspider-180-76-5-148.crawl.baidu.com
+0 1 1 4229 1 1375571887
+/subjects/webauthoring5/websites2004/it.laurab/
+87.98.243.207
+0 2 2 18286 1 1375372998
+/tutorials/dos/one/line-env.htm
+guests.burlingtonhotel.ie
+0 1 1 69049 0 0
+-
+www.whois.sc
+0 4 4 20826 1 1375529295
+/
+103.247.50.175
+0 2 2 60191 0 0
+-
+pd9ee7c98.dip0.t-ipconnect.de
+0 11 11 31620 1 1375336189
+/subjects/webauthoring5/websites2003/it.susanm/femalehairloss.html
+ec2-50-17-175-222.compute-1.amazonaws.com
+0 69 49 173537 1 1375385049
+/subjects/webauthoring5/websites2002/it.michaelm/intro.html
+s25-16.opera-mini.net
+0 2 2 86791 0 0
+-
+host86-167-250-63.range86-167.btcentralplus.com
+0 2 2 158618 0 0
+-
+99-110-133-203.lightspeed.irvnca.sbcglobal.net
+0 1 1 69049 0 0
+-
+192.210.203.176
+0 2 2 18334 1 1375326405
+/tutorials/dos/one/line-env.htm
+cpe-66-66-203-238.rochester.res.rr.com
+0 1 1 69049 0 0
+-
+027e5127.bb.sky.com
+0 1 1 69049 0 0
+-
+65.55.119.7
+0 1 1 69049 0 0
+-
+ppp-108-39.21-151.libero.it
+0 1 1 69049 0 0
+-
+msnbot-65-55-215-94.search.msn.com
+0 6 6 190946 0 0
+-
+5.135.80.28
+0 2 2 86469 1 1375676899
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+108-76-156-130.lightspeed.sntcca.sbcglobal.net
+0 1 1 69049 0 0
+-
+pool-72-69-1-226.nycmny.fios.verizon.net
+0 1 1 69049 0 0
+-
+112.203.240.69.pldt.net
+0 2 2 58132 0 0
+-
+baiduspider-180-76-5-59.crawl.baidu.com
+0 1 1 1651 0 0
+-
+shzdmzpr02-ext.sh.intel.com
+0 8 8 148809 1 1375409708
+/subjects/computerarchitectureandsystems/
+188.141.62.177
+0 1 1 234096 0 0
+-
+46.229.164.97
+0 4 4 1104 0 0
+-
+46.229.164.98
+0 1 0 401 1 1375646202
+-
+46.229.164.99
+0 2 1 10536 2 1375729329
+/
+213-94-178-155-dynamic.b-ras1.lmk.limerick.eircom.net
+0 7 6 135866 1 1375355106
+/
+208.43.225.67-static.reverse.softlayer.com
+0 46 46 349311 1 1375453173
+/subjects/computerprogramming/
+173.199.114.139.ahrefs.com
+0 79 76 506034 27 1375762075
+/tutorials/unix/one/index15.html
+host-80-194-39-210.static.cable.virginmedia.com
+0 1 1 29066 0 0
+-
+87.119.100.7.client.entry.bg
+0 1 1 69049 0 0
+-
+96.44.146.79.static.quadranet.com
+0 2 2 86469 1 1375458283
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+static-74-40-166-162.dsl1.stg.mn.frontiernet.net
+0 1 1 69049 0 0
+-
+host20.server15.vpn999.com
+0 2 2 26176 1 1375589321
+/help/software/
+176-9-155-226.crawler.sistrix.net
+0 76 63 760071 1 1375394965
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+msnbot-157-55-32-54.search.msn.com
+0 2 2 10394 1 1375586026
+/
+91.142.98.204
+0 2 2 95005 0 0
+-
+ec2-54-215-65-21.us-west-1.compute.amazonaws.com
+0 1 1 65536 0 0
+-
+ec2-54-234-201-208.compute-1.amazonaws.com
+0 131 117 299783 2 1375462005
+-
+173.234.196.46
+0 2 2 26176 1 1375652015
+/help/software/
+91.236.75.66
+0 1 1 10137 1 1375447769
+/
+msnbot-65-55-215-72.search.msn.com
+0 6 6 64460 0 0
+-
+117.201.202.2
+0 2 2 58180 0 0
+-
+msnbot-131-253-24-92.search.msn.com
+0 2 2 5939 1 1375527149
+/subjects/webauthoring5/websites2004/it.laurab/
+46.7.198.141
+0 1 1 38726 0 0
+-
+85.237.82.108
+0 1 1 276 0 0
+-
+fulltextrobot-77-75-77-32.seznam.cz
+0 4 4 74920 2 1375458968
+/subjects/workexperience/
+spider-95-108-217-251.yandex.com
+0 45 45 11781778 4 1375733240
+/help/
+153.107.33.155
+0 1 1 69068 0 0
+-
+abcd-ovh5.yasni.de
+0 1 0 1948 1 1375634591
+-
+123.151.148.155
+0 7 6 48990 4 1375746326
+-
+c-24-7-173-241.hsd1.ca.comcast.net
+0 1 1 29066 0 0
+-
+tmp.sitefinder.co.nz
+0 2 2 20236 1 1375406587
+/
+5.149.248.84
+0 1 1 10118 1 1375620825
+/
+proxy.i2wd.apg.army.mil
+0 1 1 14170 0 0
+-
+baiduspider-180-76-5-191.crawl.baidu.com
+0 1 1 4392 1 1375524657
+/subjects/controlsystems/
+202.46.49.82
+0 1 1 3318 1 1375630477
+/subjects/webauthoring5/websites2003/it.reginaom/page4.html
+cpc6-linl9-2-0-cust468.18-2.cable.virginmedia.com
+0 1 1 69049 0 0
+-
+46.229.160.208
+0 9 9 749562 0 0
+-
+host-70-45-135-160.onelinkpr.net
+0 2 2 1472224 0 0
+-
+baiduspider-123-125-71-100.crawl.baidu.com
+0 1 1 20549 1 1375572631
+/subjects/computerarchitectureandsystems/
+151.237.189.252
+0 2 2 4174820 1 1375483269
+/subjects/webauthoring5/html5spec.html
+s0106586d8ffdd411.su.shawcable.net
+0 1 1 14272 0 0
+-
+host43.server11.vpn999.com
+0 2 2 86493 1 1375659748
+/subjects/computerprogramming/Bash+Scripting+-+from+Basics+to+Advanced.html
+110.89.60.82
+0 1 1 8606 1 1375377896
+/help/
+5.10.83.70-static.reverse.softlayer.com
+0 116 114 288650 1 1375693370
+/subjects/webauthoring5/websites2001/it.shaneg/page2.html
+ns5000441.ip-142-4-217.net
+0 2 1 12360 2 1375575410
+-
+119.157.148.75
+0 1 1 69049 0 0
+-
+142.35.157.11
+0 1 1 29066 0 0
+-
+baiduspider-123-125-71-54.crawl.baidu.com
+0 1 1 295 0 0
+-
+cm-80.111.20.219.ntlworld.ie
+0 1 1 69049 0 0
+-
+msnbot-199-30-20-69.search.msn.com
+0 2 2 26907 0 0
+-
+c-68-45-21-127.hsd1.nj.comcast.net
+0 1 1 69049 0 0
+-
+5.10.83.27-static.reverse.softlayer.com
+0 17 17 128927 3 1375556931
+/subjects/webauthoring5/
+c-98-210-147-234.hsd1.ca.comcast.net
+0 1 1 14170 0 0
+-
+host-194-46-241-157.dsl-ie.utvinternet.net
+0 5 4 54622 1 1375344457
+/
+ec2-107-22-37-170.compute-1.amazonaws.com
+0 66 62 184930 1 1375733524
+/subjects/webauthoring5/websites2003/it.rositag/project/introcork.html
+google-proxy-66-249-81-212.google.com
+0 2 0 3896 0 0
+-
+ip98-180-83-186.ga.at.cox.net
+0 1 1 69049 0 0
+-
+69.30.238.162
+0 10 10 16163 1 1375330326
+/tutorials/unix/one/version.html
+msnbot-199-30-20-129.search.msn.com
+0 2 2 12534 0 0
+-
+host86-160-67-124.range86-160.btcentralplus.com
+0 1 1 69049 0 0
+-
+175.44.31.84
+0 1 1 23054 1 1375369469
+/tutorials/dos/one/index9.htm
+86-42-79-220-dynamic.b-ras1.blp.dublin.eircom.net
+0 1 1 99340 0 0
+-
+112-79-36-88.live.vodafone.in
+0 1 1 69049 0 0
+-
+cpe-121-218-191-77.lnse4.cht.bigpond.net.au
+0 1 1 69049 0 0
+-
+175.143.12.34
+0 1 1 42449 0 0
+-
+ip70-162-215-22.ph.ph.cox.net
+0 1 1 69049 0 0
+-
+msnbot-157-55-34-166.search.msn.com
+0 25 25 640009 11 1375761581
+/subjects/webauthoring5/websites2003/it.susanm/project/
+c-50-138-45-44.hsd1.fl.comcast.net
+0 1 1 69049 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+crawl-66-249-72-48.googlebot.com
+0 7 2 4501 2 1375762860
+/subjects/computerarchitectureandsystems/powerpointpresentation/tsld142.htm
+110-174-16-249.static.tpgi.com.au
+0 12 10 399187 1 1375755030
+/subjects/computerarchitectureandsystems/
+fetcher5-2.p.mail.ru
+0 1 1 295 0 0
+-
+5.10.83.35-static.reverse.softlayer.com
+0 9 9 22507 3 1375758874
+/subjects/webauthoring5/websites2001/it.maryd/Page3.htm
+mail.fachtnaroe.net
+0 384 384 367508 0 0
+-
+msnbot-131-253-24-95.search.msn.com
+0 2 2 3133 1 1375757265
+/subjects/webauthoring5/websites2004/it.janem/irishtown.html
+baiduspider-123-125-71-17.crawl.baidu.com
+0 1 1 295 0 0
+-
+r235-pw-taquariguacu.ibys.com.br
+0 1 1 29066 0 0
+-
+search01.whoisireland.com
+0 4 4 20864 2 1375756478
+/
+msnbot-157-55-33-88.search.msn.com
+0 2 2 111103 0 0
+-
+188.165.174.195
+0 2 2 18334 1 1375757443
+/tutorials/dos/one/line-env.htm
+fetcher5-3.p.mail.ru
+0 1 1 295 0 0
+-
+208.115.113.83
+0 2 2 5589 0 0
+-
+208.115.113.90
+0 2 2 2285 1 1375753040
+/subjects/webauthoring5/websites2004/it.roseh/OldStMarysChurch.html
+nas2.meghbelabroadband.in
+0 1 1 29066 0 0
+-
+crawl-66-249-72-57.googlebot.com
+0 2 0 429 1 1375747769
+/subjects/webauthoring5/websites2001/it.davide/Aims.html
+baiduspider-123-125-71-56.crawl.baidu.com
+0 1 1 295 0 0
+-
+cm-80.111.116.162.ntlworld.ie
+0 1 1 69049 0 0
+-
+107-1-144-219-ip-static.hfc.comcastbusiness.net
+0 1 1 69049 0 0
+-
+208-115-111-74-reverse.wowrack.com
+0 3 3 5708 1 1375759734
+/tutorials/unix/one/gs.html
+208-115-111-66-reverse.wowrack.com
+0 3 3 6562 1 1375756973
+/tutorials/dos/one/index18.htm
+msnbot-157-55-35-36.search.msn.com
+0 4 4 80765 1 1375759224
+/subjects/webauthoring5/websites2003/it.rositag/introbs.html
+prx11.tnz.myschools.net
+0 1 1 69073 0 0
+-
+97e726b5.skybroadband.com
+0 1 1 69049 0 0
+-
+c-68-59-168-108.hsd1.fl.comcast.net
+0 1 1 4409 0 0
+-
+host109-153-104-120.range109-153.btcentralplus.com
+0 1 1 69049 0 0
+-
+crawl-66-249-72-211.googlebot.com
+0 2 0 429 1 1375756440
+/tutorials/dos/one/index1.htm
+msnbot-157-55-35-44.search.msn.com
+0 2 2 110426 1 1375760177
+/subjects/theinternet/00-Security+
+46.229.164.97
+0 1 1 276 0 0
+-
+173.199.114.139.ahrefs.com
+0 8 7 36973 3 1375762075
+/tutorials/unix/one/index15.html
+spider-95-108-217-251.yandex.com
+0 2 2 4679602 0 0
+-
+host-70-45-135-160.onelinkpr.net
+0 2 2 1472224 0 0
+-
+msnbot-157-55-34-166.search.msn.com
+0 2 2 2891 1 1375761581
+/subjects/webauthoring5/websites2003/it.susanm/project/
+# End Of Table - sites (daily)
+# -referrers- 
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.oliviak
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/art.johnk
+1 1
+https://www.google.com.au/
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.alanv
+1 1
+http://www.fachtnaroe.ie/subjects/computerprogramming/
+0 9
+http://www.google.ro/blank.html
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.nattalieh/page2.html
+1 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.latag
+1 1
+http://www.google.co.za/blank.html
+0 1
+http://br.images.search.yahoo.com/images/view
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.seand
+1 1
+http://whois.domaintools.com/fachtnaroe.ie
+0 1
+http://www.google.co.nz/blank.html
+0 1
+http://www.google.com.kw/search
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.cmorrissey
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.lisab
+1 1
+http://www.google.co.uk/search
+0 3
+http://www.bing.com/images/results.aspx
+0 1
+http://www.google.com.au/search
+0 2
+http://www.fachtnaroe.com/tutorials/dos/one/index9.htm
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.nattalieh/page3.html
+1 3
+http://www.google.com.jm/search
+0 1
+http://www.fachtnaroe.com/subjects/databasemethods/00-Database Methods Project Brief 2007.pdf
+1 7
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.mariag
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.liaml/gallery.html
+1 1
+http://www.google.se/blank.html
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.mariat
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.robertd
+1 1
+http://www.google.es/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.michaelk
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.adrians
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.alanm
+1 1
+http://www.google.co.uk/url
+0 2
+http://www.fachtnaroe.com/
+1 54
+http://www.fachtnaroe.ie/subjects/webauthoring5/
+0 8
+http://www.google.com/search
+0 15
+http://www.google.com.hk/imgres
+0 2
+http://www.google.com.pk/imgres
+0 6
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.roseh
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/vtos.modonovan
+1 1
+http://ca.images.search.yahoo.com/images/view
+0 1
+http://prezi.com/p-tyzt9t1dme/edit/
+0 4
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.jamesf
+1 1
+http://www.fachtnaroe.ie/subjects/gamesstudies/
+0 1
+http://www.fachtnaroe.ie/tutorials/dos/one/index29.htm
+0 2
+http://www.google.com/imgres
+0 14
+http://www.google.com.ph/blank.html
+0 16
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.rositag
+1 1
+http://ca.search.yahoo.com/search
+0 1
+http://www.fachtnaroe.com/subjects/computerprogramming/2002-Worked-Solution.pdf
+1 5
+http://www.fachtnaroe.ie/subjects/computerarchitectureandsystems/
+0 85
+http://www.google.com.pk/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.janem/irishtown.html
+1 1
+http://www.fachtnaroe.ie/images/Simple
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.reginaom
+1 1
+https://www.google.co.uk/
+0 3
+http://kootation.com/hostel-part-ii-wikipedia.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.martinaf
+1 1
+http://www.google.be/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.noreenc
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.davide
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.michaelk/index.html
+1 4
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.sharonf
+1 1
+http://www.google.com.ph/search
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.thorne
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.nattalieh/images4/cork_city_ireland.jpg
+1 10
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.roseh
+1 1
+https://www.google.ie/
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.susanp
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.nattalieh/page6.html
+1 5
+http://www.google.com/blank.html
+0 23
+http://www.google.com.ph/imgres
+0 1
+http://at.images.search.yahoo.com/images/view
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.rositag/project
+1 1
+http://www.dogpile.com/info.dogpl.t5.3/search/images
+0 1
+http://www.fachtnaroe.com/help/
+1 9
+http://yandex.ru/yandsearch
+0 3
+http://www.google.co.th/search
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.ckennedy
+1 1
+http://www.irelandbyways.com/top-irish-peninsulas/irelands-south/clonmel-co-tipperary-2/
+0 8
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.brianl
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.maryd
+1 1
+http://www.google.co.in/search
+0 4
+http://images.search.yahoo.com/images/view
+0 8
+http://www.google.co.za/imgres
+0 4
+http://www.fachtnaroe.com/help/sdl_strawberry_perl.shtml
+1 10
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.pamelaod
+1 1
+http://www.google.az/search
+0 1
+http://www.fachtnaroe.com/help/howto_bypasscensor.shtml
+1 2
+http://www.monstasearch.com
+0 1
+http://fachtnaroe.ie/
+0 8
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.paulm
+1 1
+http://www.google.ca/blank.html
+0 2
+https://www.google.com.br/
+0 1
+http://www.fachtnaroe.ie/
+0 104
+http://image-search.kik.com/
+0 1
+http://www.google.co.in/imgres
+0 3
+https://www.google.ca/
+0 2
+http://www.google.lk/blank.html
+0 4
+http://whoisireland.com/iecctldsurvey.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.mfox
+1 1
+http://www.fachtnaroe.com/mymeteor/
+1 1
+http://www.google.com.pk/url
+0 1
+http://www.fachtnaroe.ie/images/Simple Network Layout 01.gif
+0 3
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.patriceh
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.stevenm
+1 1
+http://www.google.com/url
+0 2
+http://www.google.am/search
+0 1
+http://whois.domaintools.com/fachtnaroe.com
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.michaelb
+1 1
+http://whoisireland.com/irishsitessurvey.html
+0 1
+http://uk.search.yahoo.com/search
+0 3
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.michaelm
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.laurab/soccer.html
+1 2
+http://www.searchya.com/results.php
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.maryn
+1 1
+http://www.fachtnaroe.ie/tutorials/dos/one/references.gif
+0 1
+http://www.google.com.br/blank.html
+0 1
+http://www.google.md/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.claireog
+1 1
+http://www.bing.com/images/search
+0 44
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.laurab
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.dhally
+1 1
+http://www.fachtnaroe.ie/register.php
+0 1
+http://www.fachtnaroe.ie/tutorials/dos/one/index.html
+0 3
+http://www.fachtnaroe.ie/profile.php
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.bwalsh
+1 1
+https://www.google.com/
+0 5
+http://www.google.ae/search
+0 1
+http://domains.checkparams.com/index.php
+0 2
+http://www.google.bg/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.kieranf
+1 1
+http://it.bing.com/images/search
+0 1
+http://www.google.es/search
+0 2
+http://www.fachtnaroe.com/subjects/computerprogramming/
+1 1
+http://www.google.com.ph/url
+0 1
+https://www.google.es/
+0 1
+http://www.fachtnaroe.ie/subjects/workexperience/insurance-2013.pdf
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.denised
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.liamf
+1 1
+http://mobiel.vinden.nl/
+0 1
+http://images.search.conduit.com/ImagePreview/
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.niallob
+1 1
+http://www.google.co.uk/blank.html
+0 5
+http://search.yahoo.com/search
+0 6
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.natashag
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.richardb
+1 1
+http://www.fachtnaroe.com/subjects/computerarchitectureandsystems/powerpointpresentation/sld019.htm
+1 8
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.sbonelli
+1 1
+http://www.fachtnaroe.ie/subjects/computerprogramming/perl/perl-index.shtml
+0 4
+http://search.daum.net/
+0 2
+http://www.google.pt/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.pclarke
+1 1
+http://www.google.com.au/blank.html
+0 2
+http://ph.images.search.yahoo.com/images/view
+0 2
+http://www.google.com.om/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.michaelm/page.html
+1 2
+https://www.google.ru/
+0 1
+http://www.google.co.zw/imgres
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.susanm/project
+1 1
+http://us.yhs4.search.yahoo.com/yhs/search
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.senglish
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.janem
+1 1
+http://www.fachtnaroe.ie/subjects/databasemethods/00-Database-Methods.ppt
+0 3
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.bridl
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.dmaguire
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/index.html
+1 2
+http://www.google.co.th/blank.html
+0 1
+http://search.yahoo.com/tablet/s
+0 3
+http://www.fachtnaroe.ie/tutorials/dos/one/~webspace.html
+0 2
+http://www.google.com/
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/animatedasterisk/index.shtml
+1 8
+http://www.fachtnaroe.ie/join.php
+0 1
+http://www.fachtnaroe.ie/registration_rules.asp
+0 1
+http://www.google.com.gh/blank.html
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.megan
+1 1
+http://www.google.fr/search
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.shaneg
+1 1
+http://www.google.ie/url
+0 1
+http://fachtnaroe.ie/subjects/webauthoring5/
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004/it.laurab/index.html
+1 2
+http://www.google.ca/search
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.kathyf
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.nattalieh/page1.html
+1 44
+http://www.google.co.in/blank.html
+0 11
+http://www.google.com.br/url
+0 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001/it.melissaw
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2001
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2004
+1 1
+http://www.fachtnaroe.ie/index.php
+0 2
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.bfraney
+1 1
+http://www.fachtnaroe.com/help/email-etiquette.pdf
+1 6
+http://uk.images.search.yahoo.com/images/view
+0 3
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2003/it.davidos
+1 1
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2002/it.nicolac
+1 1
+http://www.google.ie/blank.html
+0 3
+http://www.fachtnaroe.com/subjects/webauthoring5/websites2000/it.dconway
+1 1
+http://www.google.com.ng/imgres
+0 2
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0+(iPad;+CPU+OS+6_1_2+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+CriOS/28.0.1500.12+Mobile/10B146+Safari/8536.25
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_2)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/27.0.1453.116+Safari/537.36
+0 2
+Mozilla/5.0+(Nintendo+3DS;+U;+;+en)+Version/1.7552.US
+0 1
+Mozilla/5.0+(iPhone;+CPU+iPhone+OS+6_0_2+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10A551+Safari/8536.25
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SLCC1;++.NET+CLR+1.1.4322;++.NET+CLR+2.0.50727;++.NET+CLR+3.0.04506.648)
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+rv:2.0b7pre)+Gecko/20100921+Firefox/4.0b7pre
+0 2
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SV1;++.NET+CLR+1.1.4322;++.NET+CLR+2.0.50727;++.NET+CLR+3.0.04506.648)
+0 1
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.32+(KHTML,+like+Gecko)+Chrome/27.0.1425.2+Safari/537.32
+0 1
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1;+.NET+CLR+1.1.4322)
+0 2
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+6.1;+Trident/4.0;+GTB7.4;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+MDDC;+.NET4.0C;+MS-RTC+LM+8;+.NET4.0E)
+0 1
+Mozilla/5.0+(X11;+Linux+i686;+rv:6.0)+Gecko/20100101+Firefox/6.0
+0 7
+Mozilla/5.0+(Windows+NT+6.0;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 1
+Mozilla/5.0+(Windows;+U;+Windows+NT+6.1;+en-US;+rv:1.9.2.18)+Gecko/20110614+Firefox/3.6.18
+0 1
+Mozilla/4.0+(compatible;+MSIE+6.0;+MSIE+5.5;+Windows+NT+5.0)+Opera+7.02+Bork-edition+[en]
+0 4
+Mozilla/5.0+(Windows+NT+6.2;+WOW64;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 6
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1;+FunWebProducts;+.NET+CLR+1.1.4322;+PeoplePal+6.2)
+0 2
+Mozilla/5.0+()
+0 1
+Opera/9.80+(Windows+NT+6.2;+Win64;+x64)+Presto/2.12.388+Version/12.15
+0 2
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/536.30.1+(KHTML,+like+Gecko)+Version/6.0.5+Safari/536.30.1
+0 8
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.1;+WOW64;+Trident/6.0;+NP06)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+2.3.6;+en-au;+LG-E400f+V10d+Build/GRK39F)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1+MMS/LG-Android-MMS-V1.2
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0;+.NET+CLR+2.0.50727;+.NET+CLR+3.0.4506.2152;+.NET+CLR+3.5.30729)
+0 2
+Mozilla/5.0+(Windows+NT+5.1;+rv:23.0)+Gecko/20100101+Firefox/23.0
+0 1
+Mozilla/5.0+(Windows+NT+5.1;+rv:14.0)+Gecko/20100101+Firefox/14.0.1
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.11+(KHTML,+like+Gecko)+Chrome/23.0.1271.64+Safari/537.11
+0 1
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.0;+Trident/5.0)
+0 3
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b
+0 16
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+Trident/6.0;+MSAppHost/1.0)
+0 1
+Googlebot-Image/1.0
+0 117
+Mozilla/5.0+(Windows+NT+6.0;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 6
+Mozilla/5.0+(Windows+NT+6.1;+rv:20.0)+Gecko/20100101+Firefox/20.0
+0 1
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/535.7+(KHTML,+like+Gecko)+Chrome/16.0.912.63+Safari/535.7
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.0;+Trident/4.0;+GTB7.5;+SLCC1;+.NET+CLR+2.0.50727;+Media+Center+PC+5.0;+InfoPath.1;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30618;+.NET4.0C)
+0 1
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+en-US;+rv:1.8.1.20)+Gecko/20081217+Firefox/2.0.0.20
+0 1
+Mozilla/5.0+(iPad;+CPU+OS+5_1_1+like+Mac+OS+X)+AppleWebKit/534.46+(KHTML,+like+Gecko)+Version/5.1+Mobile/9B206+Safari/7534.48.3
+0 4
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.1;+Trident/5.0;+yie9)
+0 1
+Mozilla/5.0+(Macintosh;+U;+Intel+Mac+OS+X+10.5;+en-US;+rv:1.9.0.5)+Gecko/2008120121+Firefox/3.0.5
+0 1
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+7.1;+Trident/5.0)
+0 1
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1;)
+0 82
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+WOW64;+Trident/6.0;+MDDCJS)
+0 2
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0;+GTB7.5;+.NET+CLR+1.1.4322;+.NET+CLR+2.0.50727;+.NET+CLR+3.0.4506.2152;+.NET+CLR+3.5.30729;+.NET4.0C;+.NET4.0E;+AskTbWBG/5.9.1.14019)
+0 1
+Mozilla/5.0+(Windows+NT+5.1;+rv:11.0)+Gecko/20100101+Firefox/11.0
+0 3
+Mozilla/5.0+(Windows+NT+6.1;+rv:19.0)+Gecko/20100101+Firefox/19.0
+0 6
+Opera/9.52+(X11;+Linux+i686;+U;+fr)
+0 1
+Mozilla/5.0+(Windows;+U;+MSIE+7.0;+Windows+NT+6.0;+en-US)
+0 1
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 18
+Mozilla/4.0+(compatible;+MSIE+4.01;+Windows+NT),gzip(gfe)+(via+docs.google.com/viewer)
+0 3
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0;+GTB7.4;+MRA+6.0+(build+6005);+User-agent:+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1);+.NET+CLR+1.1.4322;+.NET+CLR+2.0.5072
+0 2
+Mozilla/5.0+(compatible;+MSIE+8.0;+Windows+NT+6.1)
+0 1
+Opera/9.80+(Android;+Opera+Mini/7.5.33361/30.3593;+U;+en)+Presto/2.8.119+Version/11.10
+0 2
+Mozilla/5.0+(compatible;+SISTRIX+Crawler;+http://crawler.sistrix.net/)
+0 152
+Mozilla/5.0+(Windows+NT+5.1;+rv:21.0)+Gecko/20100101+Firefox/21.0
+0 2
+Mozilla/5.0+(Linux;+Android+4.1.2;+GT-N7100+Build/JZO54K)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.94+Mobile+Safari/537.36
+0 1
+Mozilla/5.0+(iPad;+CPU+OS+6_0+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10A403+Safari/8536.25
+0 1
+Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html)
+0 289
+Mozilla/5.0+(Linux;+U;+Android+2.3.5;+en-us;+Sprint+APA9292KT+Build/GRJ90)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 1
+Opera/9.80+(Windows+NT+6.1;+Edition+Yx)+Presto/2.12.388+Version/12.10
+0 2
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Chrome/18.0.1025.1634+Safari/535.19+YE
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/535.1+(KHTML,+like+Gecko)+Chrome/13.0.782.112+Safari/535.1
+0 2
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+en-US)+AppleWebKit/534.16+(KHTML,+like+Gecko)+Chrome/10.0.648.204+Safari/534.16
+0 2
+Mozilla/5.0+(Linux;+U;+Android+4.0.4;+en-us;+SAMSUNG-SGH-I957+Build/IMM76D)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Safari/534.30
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10.8;+rv:21.0)+Gecko/20100101+Firefox/21.0
+0 2
+Mozilla/5.0+(compatible;+YandexBot/3.0;++http://yandex.com/bots)
+0 45
+Mozilla/5.0+(Windows+NT+6.1;+rv:6.0)+Gecko/20110814+Firefox/6.0+Google+(+https://developers.google.com/+/web/snippet/)
+0 2
+Mozilla/5.0+(Windows+NT+6.0;+rv:17.0)+Gecko/17.0+Firefox/17.0
+0 1
+Opera/9.80+(Windows+NT+6.1;+WOW64)+Presto/2.12.388+Version/12.11
+0 1
+Mozilla/5.0+(X11;+Linux+x86_64;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 5
+Mozilla/5.0+(Windows;+U;+Windows+NT+6.1;+en-US)+AppleWebKit/534.3+(KHTML,+like+Gecko)+Chrome/6.0.472.33+Safari/534.3
+0 2
+Opera/9.80+(Windows+NT+6.1;+WOW64)+Presto/2.12.388+Version/12.16
+0 1
+Mozilla/5.0+(X11;+Linux+x86_64)+AppleWebKit/537.22+(KHTML,+like+Gecko)+Ubuntu+Chromium/25.0.1364.160+Chrome/25.0.1364.160+Safari/537.22
+0 2
+Nokia305/2.0+(03.60)+Profile/MIDP-2.1+Configuration/CLDC-1.1+OneBrowser/3.1+(Nokia305/03.60)
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_6_8)+AppleWebKit/534.59.8+(KHTML,+like+Gecko)+Version/5.1.9+Safari/534.59.8
+0 4
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+rv:1.7.3)+Gecko/20041001+Firefox/0.10.1
+0 2
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.71+Safari/537.36
+0 2
+Mozilla/5.0+(compatible;+YYSpider;++http://www.yunyun.com/spider.html)
+0 2
+Mozilla/5.0+(iPhone;+CPU+iPhone+OS+6_1_4+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+CriOS/28.0.1500.16+Mobile/10B350+Safari/8536.25
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+Trident/4.0;+BTRS123324;+GTB7.5;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+.NET4.0C;+InfoPath.3;+AskTb
+0 2
+Mozilla/5.0+(iPhone;+CPU+iPhone+OS+6_0_1+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10A523+Safari/8536.25
+0 2
+Mozilla/5.0+(compatible;+Linux+x86_64;+Mail.RU_Bot/2.0;++http://go.mail.ru/help/robots)
+0 11
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SLCC1;++.NET+CLR+1.1.4322;++.NET+CLR+2.0.40607;++.NET+CLR+3.0.04506.648)
+0 2
+Ruby
+0 2
+Mozilla/5.0+(iPad;+CPU+OS+6_0_1+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10A523+Safari/8536.25
+0 5
+Mozilla/5.0+(Linux;+Android+4.2.2;+ar-ae;+SAMSUNG+GT-I9505+Build/JDQ39)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Version/1.0+Chrome/18.0.1025.308+Mobile+Safari/535.19
+0 1
+Mozilla/5.0+(Windows+NT+6.2;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.72+Safari/537.36
+0 10
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+WOW64;+Trident/6.0;+MAARJS)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.1.1;+en-us;+MyPhone+A888+Duo+Build/JRO03C)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 1
+rarely+used
+0 7
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+en;+rv:1.9.0.13)+Gecko/2009073022+Firefox/3.5.2+(.NET+CLR+3.5.30729)+SurveyBot/2.3+(DomainTools)
+0 4
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SLCC1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.40607;++.NET+CLR+3.0.04506.648)
+0 3
+Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html)
+0 51
+Mozilla/5.0+(Windows+NT+5.2;+rv:16.0)+Gecko/20100101+Firefox/16.0
+0 1
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+ru;+rv:1.9.1.15)+Gecko/20101026+Firefox/3.5.15
+0 1
+Mozilla/5.0+(Windows+NT+6.0)+AppleWebKit/535.1+(KHTML,+like+Gecko)+Chrome/13.0.782.112+Safari/535.1
+0 4
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/535.12+(KHTML,+like+Gecko)+Maxthon/3.0+Chrome/18.0.966.0+Safari/535.12
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/27.0.1453.116+Safari/537.36
+0 1
+Mozilla/5.0+(Windows+NT+6.0;+rv:17.0)+Gecko/20100101+Firefox/17.0
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 47
+Mozilla/5.0+(compatible;+DCPbot/1.5;++http://domains.checkparams.com/)
+0 2
+Opera/9.80+(Windows+NT+6.1;+U;+Edition+Yx;+ru)+Presto/2.10.289+Version/12.02
+0 2
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 16
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/27.0.1453.94+Safari/537.36
+0 1
+Mozilla/4.0+(Windows;+MSIE+6.0;+Windows+NT+5.1;+SV1;+.NET+CLR+2.0.50727)
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+Trident/4.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+.NET4.0C;+InfoPath.3;+.NET4.0E)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+2.3.4;+en-us;+myTouch4G+Build/GRJ22)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.1.2;+en-gb;+GT-I9082+Build/JZO54K)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 5
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+Trident/4.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+MAAU;+InfoPath.2;+Tablet+PC+2.0;+MAAU)
+0 7
+Mozilla/5.0+(Windows+NT+6.2;+WOW64)+AppleWebKit/537.11+(KHTML,+like+Gecko)+Chrome/23.0.1271.64+Safari/537.11
+0 1
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.1;+WOW64;+Trident/6.0;+BOIE9;ENUS)
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SLCC1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.40607;++.NET+CLR+3.0.30729;++.NET+CLR+3.5.30729;++InfoPath.2)
+0 2
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/537.4+(KHTML,+like+Gecko)+Chrome/22.0.1229.94+Safari/537.4
+0 1
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+en-US;+rv:x.x.x)+Gecko/20041107+Firefox/x.x
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 20
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.1;+Trident/5.0)
+0 6
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1)
+0 1
+Mozilla/5.0+(compatible;+IErachnid/5.0a;++http://whoisireland.com/)
+0 4
+Mozilla/5.0+(compatible;+MSIE+or+Firefox+mutant;+not+on+Windows+server;+++http://tab.search.daum.net/aboutWebSearch.html)+Daumoa/3.0
+0 2
+Mozilla/5.0+(Linux;+U;+en-gb;+KFOT+Build/IML74K)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Silk/3.1+Safari/535.19+Silk-Accelerated=true
+0 1
+Opera/9.80+(Windows+NT+6.1;+Win64;+x64;+Edition+Yx)+Presto/2.12.388+Version/12.10
+0 1
+Opera/9.80+(Windows+NT+6.1;+Win64;+x64;+Edition+Yx)+Presto/2.12.388+Version/12.11
+0 1
+Mozilla/5.0+(X11;+Linux+x86_64)+AppleWebKit/537.4+(KHTML,+like+Gecko;+Google+Web+Preview)+Chrome/22.0.1229+Safari/537.4
+0 2
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+6.1;+Trident/6.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+.NET4.0C;+MSOffice+12)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+2.3.5;+en-us;+SCH-I500+Build/GINGERBREAD)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1
+0 1
+Opera/9.80+(Windows+NT+6.1;+WOW64;+U;+ru)+Presto/2.10.289+Version/12.01
+0 1
+Mozilla/5.0+(Windows+NT+5.1;+rv:16.0)+Gecko/20100101+Firefox/16.0
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SV1;++.NET+CLR+1.1.4322)
+0 2
+Mozilla/5.0+(Windows+NT+5.1;+rv:7.0.1)+Gecko/20100101+Firefox/7.0.1
+0 2
+Opera/9.80+(Windows+NT+6.1;+WOW64;+U;+Edition+Next;+Edition+Yx;+ru)+Presto/2.11.310+Version/12.50
+0 1
+Mozilla/5.0+(compatible;+YandexImages/3.0;++http://yandex.com/bots)
+0 15
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+InfoPath.3;+.NET4.0C;+.NET4.0E)
+0 2
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/536.5+(KHTML,+like+Gecko)+YaBrowser/1.1.1084.5409+Chrome/19.1.1084.5409+Safari/536.5
+0 2
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_5_8)+AppleWebKit/534.50.2+(KHTML,+like+Gecko)+Version/5.0.6+Safari/533.22.3
+0 1
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.1;+Win64;+x64;+Trident/5.0)
+0 1
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.1;+WOW64;+Trident/5.0;+DOJ3jx7bf)
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0;+.NET+CLR+2.0.50727;+.NET+CLR+3.0.4506.2152;+.NET+CLR+3.5.30729;+.NET+CLR+1.1.4322;+InfoPath.2)
+0 1
+Opera/9.80+(Windows+NT+5.1)+Presto/2.12.388+Version/12.10
+0 1
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+zh-CN;+rv:1.9.1.2)+Firefox/3.5.2
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;+.NET+CLR+1.1.4322)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.1.1;+fr-fr;+Transformer+Prime+TF201+Build/JRO03C)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Safari/534.30
+0 1
+Opera/9.80+(Series+60;+Opera+Mini/7.1.32451/30.3593;+U;+en)+Presto/2.8.119+Version/11.10
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+rv:23.0)+Gecko/20100101+Firefox/23.0
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:20.0)+Gecko/20100101+Firefox/20.0
+0 2
+Opera/9.80+(J2ME/MIDP;+Opera+Mini/4.1.11473/30.3593;+U;+en)+Presto/2.8.119+Version/11.10
+0 4
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+ARM;+Trident/6.0;+Touch)
+0 1
+Mozilla/5.0+(iPhone;+CPU+iPhone+OS+6_1_4+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10B350+Safari/8536.25
+0 10
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.1;+Trident/6.0;+BOIE9;ENUSMSCOM)
+0 9
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1;+.NET+CLR+2.0.50727)
+0 3
+Mozilla/5.0+(Linux;+U;+Android+4.0.4;+en-in;+SonyEricssonMT11i+Build/4.1.B.0.587)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;+InfoPath.1;+.NET+CLR+2.0.50727;+.NET+CLR+1.1.4322;+MS-RTC+LM+8;+.NET+CLR+3.0.4506.2152;+.NET+CLR+3.5.30729)
+0 1
+Mozilla/5.0+(compatible;+SiteExplorer/1.0b;++http://siteexplorer.info/)
+0 228
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/536.11+(KHTML,+like+Gecko)+Chrome/20.0.1132.57+Safari/536.11
+0 2
+Mozilla/5.0+(Windows+NT+6.2)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 2
+DoCoMo/2.0+N905i(c100;TB;W24H16)+(compatible;+Googlebot-Mobile/2.1;++http://www.google.com/bot.html)
+0 14
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0;+Comcast+Install+1.0;+GTB7.5;+.NET+CLR+1.1.4322;+.NET+CLR+2.0.50727;+.NET+CLR+3.0.04506.30;+eMusic+DLM/4;+.NET+CLR+3.0.04506.648;+.NET+C
+0 1
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.1;+WOW64;+Trident/6.0)
+0 34
+Opera/9.80+(Windows+NT+5.1;+Edition+Yx)+Presto/2.12.388+Version/12.10
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Chrome/18.0.1025.142+Safari/535.19
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.1.1;+en-gb;+GT-P5110+Build/JRO03C)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Safari/534.30
+0 1
+Mozilla/5.0+(X11;+Linux+x86_64)+AppleWebKit/537.31+(KHTML,+like+Gecko)+Chrome/26.0.1410.63+Safari/537.31
+0 4
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+Win64;+x64;+Trident/6.0;+MASEJS)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.1.2;+en-gb;+GT-I8552+Build/JZO54K)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 1
+Opera/9.80+(Windows+NT+5.1;+Edition+Indonesian+Local)+Presto/2.12.388+Version/12.16
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SLCC1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.40607;++.NET+CLR+3.0.30729;++.NET+CLR+3.5.30729;++MS-RTC+LM+8)
+0 3
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+Win64;+x64;+Trident/6.0;+ASU2JS)
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SLCC1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.40607)
+0 3
+SeznamBot/3.0+(+http://fulltext.sblog.cz/)
+0 4
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SV1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.40607;++.NET+CLR+3.0.30729;++.NET+CLR+3.5.30707)
+0 3
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SLCC1)
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SV1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.40607;++.NET+CLR+3.0.30729;++.NET+CLR+3.5.30729;++InfoPath.2)
+0 2
+Mozilla/5.0+(Windows+NT+5.1;+rv:6.0.2)+Gecko/20100101+Firefox/6.0.2
+0 9
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1;MyIE2;+.NET+CLR+2.0.50727;+.NET+CLR+1.1.4322)
+0 16
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.1;+Win64;+x64;+Trident/6.0)
+0 2
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.31+(KHTML,+like+Gecko)+Chrome/26.0.1410.64+Safari/537.31
+0 1
+Mozilla/5.0+(compatible;+Ezooms/1.0;+ezooms.bot@gmail.com)
+0 229
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/535.2+(KHTML,+like+Gecko)+Chrome/15.0.874.102+Safari/535.2
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.63+Safari/537.36
+0 2
+Mozilla/5.0+(X11;+Ubuntu;+Linux+x86_64;+rv:20.0)+Gecko/20100101+Firefox/20.0
+0 2
+Mozilla/5.0+(Linux;+U;+en-gb;+KFJWI+Build/IMM76D)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Silk/3.1+Safari/535.19+Silk-Accelerated=true
+0 1
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/535.2+(KHTML,+like+Gecko)+Chrome/15.0.874.121+Safari/535.2
+0 1
+Opera/9.80+(Windows+NT+6.1;+WOW64;+MRA+6.0+(build+5998))+Presto/2.12.388+Version/12.10
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+InfoPath.3)
+0 1
+Mozilla/4.0+(compatible;+MSIE+4.01;+Windows+NT)
+0 2
+Mozilla/5.0+(Linux;+U;+Android+2.3.6;+nl-nl;+GT-S5830i+Build/GINGERBREAD)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1
+0 2
+AppEngine-Google;+(+http://code.google.com/appengine;+appid:+s~getfavicon27)
+0 1
+Mozilla/5.0+(Windows+NT+6.2;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 22
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:17.0)+Gecko/20100101+Firefox/17.0
+0 1
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1;+MRA+5.8+(build+4157);+.NET+CLR+2.0.50727;+AskTbPTV/5.11.3.15590)
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:9.0.1)+Gecko/20100101+Firefox/9.0.1
+0 4
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SV1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.50727;++.NET+CLR+3.0.04506.648)
+0 3
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+6.1;+Trident/6.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+Tablet+PC+2.0;+.NET4.0C;+InfoPath.2;+AskTbNRO/5
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.71+Safari/537.36
+0 11
+Mozilla/5.0+(Windows+NT+5.1;+rv:5.0.1)+Gecko/20100101+Firefox/5.0.1
+0 5
+YisouSpider
+0 1
+Mozilla/5.0+(Windows+NT+5.2;+WOW64;+rv:16.0)+Gecko/20100101+Firefox/16.0
+0 2
+Baiduspider-image+(+http://www.baidu.com/search/spider.htm)
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_7_5)+AppleWebKit/536.30.1+(KHTML,+like+Gecko)+Version/6.0.5+Safari/536.30.1
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SV1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.40607;++.NET+CLR+3.0.30729;++.NET+CLR+3.5.30707;++InfoPath.2)
+0 2
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.1;+Trident/6.0)
+0 19
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/27.0.1453.116+Safari/537.36
+0 2
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.4+(KHTML,+like+Gecko)+Chrome/22.0.1229.79+Safari/537.4+u01-09
+0 1
+Mozilla/5.0+(Windows+NT+5.1)+Gecko/20100101+Firefox/4.0.1
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.2;+Trident/4.0;+.NET+CLR+1.1.4322)
+0 1
+Mozilla/5.0+(iPhone;+CPU+iPhone+OS+6_1_2+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10B146+Safari/8536.25
+0 1
+Mozilla/5.0+(iPad;+CPU+OS+6_1_2+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10B146+Safari/8536.25
+0 3
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0;+MRA+6.0+(build+5993);+MRA+8.0+(build+5784);+InfoPath.2)
+0 1
+Mozilla/5.0+(Windows+NT+5.1;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 22
+Mozilla/5.0+(Windows+NT+5.1;+rv:13.0)+Gecko/20100101+Firefox/13.0.1
+0 2
+Mozilla/5.0+(X11;+U;+Linux+i686;+en-US;+rv:1.9.2.11)+Gecko/20101013+Ubuntu/10.04+(lucid)+Firefox/3.6.11
+0 1
+Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm)
+0 281
+0+Opera/9.80+(J2ME/MIDP;+Opera+Mini/6.5.27510/30.3593;+U;+en)+Presto/2.8.119+Version/11.10
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/535.11+(KHTML,+like+Gecko)+Chrome/17.0.963.56+Safari/535.11
+0 2
+Mozilla/5.0+(Linux;+U;+Android+4.2.2;+sl-si;+M9+Build/JDQ39)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Safari/534.30+GSA/2.2.10.546669
+0 1
+Mozilla/5.0+(compatible;+Sosospider/2.0;++http://help.soso.com/webspider.htm)
+0 6
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:5.0)+Gecko/20100101+Firefox/5.0
+0 2
+Mozilla/5.0+(compatible;+AhrefsBot/4.0;++http://ahrefs.com/robot/)
+0 155
+=Mozilla/5.0+(Windows;+U;+Windows+NT+6.1;+en-US)+AppleWebKit/534.16+(KHTML,+like+Gecko)+Chrome/10.0.648.204+Safari/534.16
+0 1
+Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1;+SV1)
+0 20
+Mozilla/5.0+(iPhone;+U;+CPU+iPhone+OS+4_1+like+Mac+OS+X;+en-us)+AppleWebKit/532.9+(KHTML,+like+Gecko)+Version/4.0.5+Mobile/8B117+Safari/6531.22.7+(compatible;+Googlebot-Mobile/2.1;++http://www.google
+0 42
+Mozilla/5.0+(Windows+NT+6.0;+WOW64;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 1
+Opera/9.80+(Windows+NT+6.2;+U;+en)+Presto/2.10.289+Version/12.02
+0 2
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/27.0.1453.110+Safari/537.36
+0 2
+Mozilla/5.0+(compatible;+coccoc/1.0;++http://help.coccoc.com/)
+0 4
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_2)+AppleWebKit/536.26.17+(KHTML,+like+Gecko)+Version/6.0.2+Safari/536.26.17
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:15.0)+Gecko/20100101+Firefox/15.0
+0 3
+Mozilla/5.0+(compatible;+AhrefsBot/5.0;++http://ahrefs.com/robot/)
+0 623
+Dalvik/1.6.0+(Linux;+U;+Android+4.1.2;+LT30p+Build/9.1.A.1.141)
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SLCC1;++.NET+CLR+1.1.4322;++.NET+CLR+2.0.50727;++.NET+CLR+3.0.04506.648)
+0 2
+Mozilla/5.0+(Linux;+U;+Android+4.1.2;+en-us;+SCH-I535+Build/JZO54K)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 9
+Mozilla/5.0+(Windows+NT+6.2;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/29.0.1547.2+Safari/537.36
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.31+(KHTML,+like+Gecko)+Chrome/26.0.1410.64+Safari/537.31
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.71+Safari/537.36
+0 2
+Mozilla/5.0+(Windows+NT+5.1;+rv:16.0)+Gecko/20121026+Firefox/16.0+SeaMonkey/2.13.2
+0 1
+SAMSUNG-GT-C3200/1.0+NetFront/3.5+Profile/MIDP-2.0+Configuration/CLDC-1.1
+0 1
+Mozilla/5.0+(X11;+Linux+x86_64)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Chrome/18.0.1025.162+Safari/535.19
+0 1
+Mozilla/5.0+(iPod;+CPU+iPhone+OS+5_0_1+like+Mac+OS+X)+AppleWebKit/534.46+(KHTML,+like+Gecko)+Version/5.1+Mobile/9A405+Safari/7534.48.3
+0 1
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.1;+Trident/5.0;+MDDRJS)
+0 1
+Mozilla/5.0+(Windows+NT+5.1;+rv:19.0)+Gecko/20100101+Firefox/19.0
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10.7;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 2
+Opera/9.80+(Windows+NT+6.1;+WOW64;+MRA+6.0+(build+6001))+Presto/2.12.388+Version/12.11
+0 2
+OneBrowser/3.1+(Nokia305/03.60)
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+rv:16.0)+Gecko/20100101+Firefox/16.0
+0 15
+Opera/9.80+(Windows+NT+5.1;+U;+ru)+Presto/2.10.289+Version/12.01
+0 2
+Opera/9.80+(Windows+NT+5.1;+U;+ru)+Presto/2.10.289+Version/12.02
+0 2
+Mozilla/5.0+(iPad;+CPU+OS+5_0_1+like+Mac+OS+X)+AppleWebKit/534.46+(KHTML,+like+Gecko)+Version/5.1+Mobile/9A405+Safari/7534.48.3
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;+SV1;+.NET+CLR+2.0.50727)
+0 4
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0;+.NET+CLR+2.0.50727;+.NET+CLR+3.0.4506.2152;+.NET+CLR+3.5.30729;+CMDTDF;+MS-RTC+LM+8)
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+6.1;+WOW64;+Trident/4.0;+SLCC2;+.NET+CLR+2.0.50727;+.NET+CLR+3.5.30729;+.NET+CLR+3.0.30729;+Media+Center+PC+6.0;+.NET4.0C;+.NET4.0E;+InfoPath.3)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.0.4;+en-us;+SGH-T769+Build/IMM76D)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 1
+Mozilla/5.0+(Linux;+U;+Android+2.2.2;+es-es;+LG-P920/V10l++Build/FRG83G)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1+MMS/LG-Android-MMS-V1.0/1.2
+0 2
+Mozilla/5.0+(Windows+NT+6.0)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 19
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SV1;++.NET+CLR+1.1.4325;++.NET+CLR+2.0.50727)
+0 2
+Opera/9.80+(Windows+NT+6.2;+U;+en)+Presto/2.10.229+Version/11.60
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;+Trident/4.0;+.NET+CLR+1.1.4322)
+0 2
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/537.4+(KHTML,+like+Gecko)+Chrome/22.0.1229.79+Safari/537.4
+0 2
+Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/27.0.1453.116+Safari/537.36
+0 2
+Mozilla/5.0+(Windows+NT+6.0;+WOW64)+AppleWebKit/537.11+(KHTML,+like+Gecko)+Chrome/23.0.1271.64+Safari/537.11
+0 2
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+WOW64;+Trident/6.0)
+0 3
+Mozilla/5.0+(compatible;+Exabot/3.0+(BiggerBetter);++http://www.exabot.com/go/robot)
+0 3
+Mozilla/5.0+(Windows+NT+6.2;+WOW64;+rv:16.0)+Gecko/20100101+Firefox/16.0
+0 1
+Mozilla/5.0+(iPhone;+CPU+iPhone+OS+6_1_3+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10B329+Safari/8536.25
+0 9
+Mozilla/5.0+(compatible;+MJ12bot/v1.4.3;+http://www.majestic12.co.uk/bot.php?+)
+0 339
+Mozilla/5.0+(iPad;+CPU+OS+6_1_3+like+Mac+OS+X)+AppleWebKit/536.26+(KHTML,+like+Gecko)+Version/6.0+Mobile/10B329+Safari/8536.25
+0 16
+Kik/6.5.1.48+(Android+2.3.6)+Mozilla/5.0+(Linux;+U;+Android+2.3.6;+es-us;+SGH-T679+Build/GINGERBREAD)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1
+0 1
+Mozilla/5.0+(compatible;+linkdexbot/2.0;++http://www.linkdex.com/about/bots/)
+0 20
+Mozilla/5.0+(Windows+NT+5.1;+rv:17.0)+Gecko/20100101+Firefox/17.0
+0 1
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.2;+Trident/4.0;+BTRS98690;+.NET+CLR+1.1.4322;+.NET+CLR+2.0.50727;+.NET+CLR+3.0.4506.2152;+.NET+CLR+3.5.30729;+InfoPath.2;+MS-RTC+LM+8)
+0 11
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_3)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10.6;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 1
+Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+Win64;+x64;+Trident/6.0;+MALNJS)
+0 8
+Mozilla/5.0+(Linux;+Android+4.0.4;+GT-S7562+Build/IMM76I)+AppleWebKit/537.31+(KHTML,+like+Gecko)+Chrome/26.0.1410.58+Mobile+Safari/537.31
+0 1
+libwww-perl/6.03
+0 1
+Mozilla/5.0+(Windows+NT+6.0;+rv:16.0)+Gecko/20100101+Firefox/16.0
+0 2
+Opera/9.80+(Windows+NT+5.1;+U;+ru)+Presto/2.6.30+Version/10.63
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.1.2;+en-au;+GT-I9305T+Build/JZO54K)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:11.0)+Gecko/20100101+Firefox/11.0
+0 1
+facebookexternalhit/1.1+(+http://www.facebook.com/externalhit_uatext.php)
+0 7
+msnbot-media/1.1+(+http://search.msn.com/msnbot.htm)
+0 222
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;++SLCC1;++.NET+CLR+1.1.4322)
+0 1
+SAMSUNG-SGH-E250/1.0+Profile/MIDP-2.0+Configuration/CLDC-1.1+UP.Browser/6.2.3.3.c.1.101+(GUI)+MMP/2.0+(compatible;+Googlebot-Mobile/2.1;++http://www.google.com/bot.html)
+0 11
+Mozilla/5.0+(Linux;+U;+Android+4.1.2;+ar-ae;+GT-I9300+Build/JZO54K)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 1
+ShopWiki/1.0+(++http://www.shopwiki.com/wiki/Help:Bot)
+0 694
+Opera/9.80+(Windows+NT+6.1;+MRA+6.0+(build+6001))+Presto/2.12.388+Version/12.10
+0 1
+Mozilla/5.0+(Windows;+U;+Windows+NT+5.1;+en-US;+rv:1.8.1.1)+Gecko/20061204+Firefox/2.0.0.1
+0 1
+Mozilla/5.0+(compatible;+SemrushBot/0.96.4;++http://www.semrush.com/bot.html)
+0 12
+Windows+Phone+Search+(Windows+Phone+OS+7.10;NOKIA;Lumia+800;7.10;8862)
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.1;++SV1;++.NET+CLR+1.1.4322;++.NET+CLR+2.0.50727;++.NET+CLR+3.0.04506.648)
+0 1
+Mozilla/5.0+(Windows+NT+6.2;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/536.5+(KHTML,+like+Gecko)+YaBrowser/1.1.1084.5409+Chrome/19.1.1084.5409+Safari/536.5
+0 2
+NokiaC3-00/5.0+(07.20)+Profile/MIDP-2.1+Configuration/CLDC-1.1+Mozilla/5.0+AppleWebKit/420++(KHTML,+like+Gecko)+Safari/420+
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+WOW64;+rv:21.0)+Gecko/20100101+Firefox/21.0
+0 9
+Mozilla/4.0+(compatible;+MSIE+8.0;+Windows+NT+5.1;+Trident/4.0)
+0 1
+Mozilla/5.0+(Linux;+U;+Android+2.3.6;+en-ie;+U8655-1+Build/HuaweiU8655)+AppleWebKit/533.1+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/533.1
+0 1
+Mozilla/5.0+(Windows+NT+6.0)+AppleWebKit/537.11+(KHTML,+like+Gecko)+Chrome/23.0.1271.91+Safari/537.11
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+rv:14.0)+Gecko/20100101+Firefox/14.0.1
+0 1
+Opera/9.80+(BlackBerry;+Opera+Mini/7.0.28871/30.3593;+U;+en)+Presto/2.8.119+Version/11.10
+0 4
+Mozilla/5.0+(Linux;+U;+Android+4.0.3;+en-us;+Transformer+TF101+Build/IML74K)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Safari/534.30
+0 1
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Chrome/18.0.1025.1634+Safari/535.19+YE
+0 1
+Mozilla/5.0+(X11;+Ubuntu;+Linux+i686;+rv:11.0)+Gecko/20100101+Firefox/11.0
+0 1
+Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_6_8)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36
+0 4
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/535.19+(KHTML,+like+Gecko)+Chrome/18.0.1025.168+Safari/535.19
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+rv:12.0)+Gecko/20100101+Firefox/12.0
+0 1
+Mozilla/5.0+(iPad;+U;+CPU+OS+4_3_3+like+Mac+OS+X;+es-es)+AppleWebKit/533.17.9+(KHTML,+like+Gecko)+Version/5.0.2+Mobile/8J2+Safari/6533.18.5
+0 1
+Nokia5130c-2/2.0+(07.91)+Profile/MIDP-2.1+Configuration/CLDC-1.1
+0 1
+Mozilla/5.0+(X11;+Linux+i686)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Chrome/12.0.742.100+Safari/534.30
+0 1
+Mozilla/5.0+(Linux;+U;+Android+4.0.4;+en-us;+cm_tenderloin+Build/IML74K)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Safari/534.30
+0 2
+Opera/9.80+(Windows+NT+6.1)+Presto/2.12.388+Version/12.16
+0 2
+libwww-perl/5.805
+0 12694
+psbot/0.1+(+http://www.picsearch.com/bot.html)
+0 41
+Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.1;+WOW64;+Trident/5.0)
+0 6
+DoCoMo/2.0+P900i(c100;TB;W24H11)+(compatible;+ichiro/mobile+goo;+http://search.goo.ne.jp/option/use/sub4/sub4-1/)
+0 1
+Mozilla/4.0+(compatible;+MSIE+7.0;+Windows+NT+5.2;+Trident/4.0;+BTRS98690;+.NET+CLR+1.1.4322;+.NET+CLR+2.0.50727;+.NET+CLR+3.0.4506.2152;+.NET+CLR+3.5.30729;+InfoPath.2;+MS-RTC+LM+8)
+0 11
+Wibble/0.0libwww-perl/5.805
+0 1
+Mozilla/5.0+(Windows+NT+6.1;+rv:22.0)+Gecko/20100101+Firefox/22.0
+0 10
+Mozilla/5.0+(iPhone;+CPU+iPhone+OS+5_1_1+like+Mac+OS+X)+AppleWebKit/534.46+(KHTML,+like+Gecko)+Version/5.1+Mobile/9B206+Safari/7534.48.3
+0 2
+Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.72+Safari/537.36
+0 3
+Mozilla/5.0+(Linux;+U;+Android+4.0.4;+en-us;+SAMSUNG-SGH-I747+Build/IMM76D)+AppleWebKit/534.30+(KHTML,+like+Gecko)+Version/4.0+Mobile+Safari/534.30
+0 1
+Mozilla/5.0+(Windows+NT+5.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.72+Safari/537.36
+0 2
+# End Of Table - agents
+# -search strings- 
+computer network layout
+1
+network layout design
+1
+cork city
+1
+tcp ip 4 layer
+2
+network schematic
+1
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
+# -Error404- 
+# End Of Table - Error404-

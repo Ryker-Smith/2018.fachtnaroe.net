@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+        <title>JavaFX Documentation Home | JavaFX 2 Tutorials and Documentation</title>
+
+        <!-- Start JavaFX meta tags -->
+
+        <meta name="description" content="Refer to these documents and resources to 
+              get started with JavaFX 2." /> <!-- for SEO,from the PPA config file -->
+        <meta name="keywords" content="JavaFX documentation, JavaFX download, download JavaFX, 
+              JavaFX SDK, JavaFX SDK download, download JavaFX SDK, download Java FX, JavaFX, 
+              JavaFX 2, Java FX, Java FX 2 " /> 
+        <!-- for SEO and our local search engine, from the PPA config file -->
+        <!-- End JavaFX meta tags -->
+
+        <!-- Persistent copyright link from DARB output -->
+        <link rel="copyright" href="../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+        <!-- Links to JavaFX output template style sheets -->
+        <link href="../javafx/css/javafx-20-position.css" rel="stylesheet" type="text/css" />
+        <link href="../javafx/css/javafx-20-fonts.css" rel="stylesheet" type="text/css" />
+        <link href="../javafx/css/javafx-20-menu.css" rel="stylesheet" type="text/css" />  
+
+
+	
+	<script language="JavaScript" type="text/javascript" src="../javafx/js/jquery-1.7.2.min.js"></script>   
+    <script language="JavaScript" type="text/javascript" src="../javafx/js/search.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../javafx/js/toptab.js"></script>
+   
+    <script language="JavaScript" type="text/javascript" src="../javafx/js/tabgroup1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../javafx/js/tabgroup2.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../javafx/js/tabgroup3.js"></script>
+
+     
+      
+<!--[if IE 6]>
+<style>
+/*tabs*/
+#tabs{
+height:263px;
+}       
+.tabNo{
+height:40px;
+}
+</style>
+<![endif]-->
+
+
+    </head>
+    <body class="javafx">
+        <!-- The following markup is required for accessibility -->
+
+        <noscript>
+            JavaScript is not supported by your browser.  JavaScript support is required for full functionality of this page.
+        </noscript>
+
+        
+        <!--  Container  -->
+        <div id="container">
+          <!-- Main Content -->
+<div id="mainbody">
+<div style="display:block; position:static; width:740px; padding-left:20px; padding-right:12px">           
+<!-- BEGIN PAGE CONTENT -->
+<div  style="text-align:right; background-image:url(..javafx/images/oralogo-small.gif); height:23px; background-repeat:no-repeat; padding-top:10px; padding-bottom:10px;">
+ <!--<div id="java2search">-->
+<form id="searchForm" name="search" method="post" style="vertical-align: middle;" onsubmit="return submitSearch()">
+<input type="hidden" name="tzoffset" value="420" />
+<input type="hidden" name="default" value="true" />
+<input type="hidden" name="q" value="" id="keywordreal" />
+<input type="hidden" name="start" value="1" />
+<input type="hidden" name="nodeid" value="" />
+<input type="hidden" name="fid" value="" />
+<input type="hidden" name="showSimilarDoc" value="true" />
+<input type="hidden" name="group" value="All" />
+<!--<input type="hidden" name="keyword" value="" id="keywordreal"/>-->
+<label for="s" style="color: #999999; ">Search <input type="text" name="SearchID"  height="22px"  id="s"  style="vertical-align: middle; "/></label><input name="GO" id="go" type="image" value="submit" height="22px"  onclick="return submitSearch()"  src="../javafx/images/go.png" alt="Submit Form"  class="gobut" title="Search"/>                     </form>
+</div>
+
+
+<div style="display:inline; margin-bottom:20px; "><img src="../javafx/images/javafx-documentation.png" width="159" height="59" alt="JavaFX Logo" title="JavaFX Logo" style="vertical-align:middle;" /></div>
+<div class="doctitle">2 Documentation</div>      
+<p></p>
+                
+   
+<div id="toptab1"></div><div id="toptab2"></div><div id="toptab3"></div>
+<div style="float:left; width:100%; height:2px; background-color:#2d5169;"></div>
+
+
+<!--------------------------------->
+
+<div id="tabContainer1" class="titleContainer">
+<!-- Tabs --><div id="tabs">
+<!--Tab 1--><div id="tab1" class="tab"><span class="tabNo">1</span><span class="tabTxt">Get set up</span></div>
+<!--Tab 2--><div id="tab2" class="tab"><span class="tabNo">2</span><span class="tabTxt">Create the  framework</span></div>
+<!--Tab 3--><div id="tab3" class="tab"><span class="tabNo">3</span><span class="tabTxt">Define the UI</span></div>
+<!--Tab 4--><div id="tab4" class="tab"><span class="tabNo">4</span><span class="tabTxt">Lay out the UI controls</span></div>
+<!--Tab 5--><div id="tab5" class="tab"><span class="tabNo">5</span><span class="tabTxt">Deploy</span></div>
+</div>
+<!-- End Tabs -->
+
+<!-- Tab 1 content-->
+  <div id="tab1content" class="tabcontent"><div style="float:right; width:auto; padding-right:40px;padding-left:12px;">
+  <img src="../javafx/images/install-sdk.gif" alt="Install SDK image" title="Install SDK image" width="113" height="223" /></div>
+    <p class="tabtitle">Get set up</p>
+    
+    <div align="left">
+	<p>The first step in getting started with JavaFX is to download and install the Java SE 7 JDK, which includes the 
+	JavaFX runtime libraries and utilities. See the <a href="http://docs.oracle.com/javase/7/docs/webnotes/install/index.html">JDK 7 
+	and JRE 7 Installation Guide</a> for instructions. </p>	  <p>JavaFX Scene Builder provides a simple way to build 
+	the UI for your application and connect it to the application logic. To install this tool, see <a href="../scenebuilder/1/installation_1-1/jsbpub-installation_1-1.htm">Installing JavaFX Scene Builder.</a></p>
+
+    </div>
+  </div>
+
+<!-- Tab 2 content Create the application framework-->
+  <div id="tab2content" class="tabcontent">
+    <p class="tabtitle">Create the application framework</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;">
+    <img src="../javafx/images/box_grey.jpg" alt="Create application framework image" title="Create application framework image" width="149" height="166" /></div>
+    <div align="left">
+      <p>Each JavaFX application has a similar framework. The main class for the application extends the Application 
+      class. The start() method sets up and shows the stage, which 
+      contains the UI for the application. See <a href="get_started/hello_world.htm">Hello World, JavaFX Style</a> for information on setting up a NetBeans project and creating a simple application. </p>
+
+    </div>
+  </div>
+  
+  <!-- Tab 3 content-->
+  <div id="tab3content" class="tabcontent">
+    <p class="tabtitle">Define the UI</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;"><img src="../javafx/images/layout1.gif" alt="Define the UI image" title="Define the UI image" width="128" height="179" /></div>
+    <div align="left">
+      <p>The stage for the application interface contains one or more scenes, which in turn contain the controls, 
+      shapes, and images that make up your user interface. See <a href="ui_controls/jfxpub-ui_controls.htm">Using 
+      JavaFX UI Controls</a> for information on defining controls such as buttons, labels, and text fields for your UI.</p>
+	  <p>The JavaFX Scene Builder's Library panel provides the same UI controls that are available in the SDK. See <a href="../scenebuilder/1/user_guide/library-panel.htm#JSBRG119">Library Panel</a> for more information.</p>
+
+    </div>
+  </div>
+
+  
+  <!-- Tab 4 content-->
+  <div id="tab4content" class="tabcontent">
+    <p class="tabtitle">Lay out the UI controls</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;"><img src="../javafx/images/layout2.gif" alt="Lay out UI controls image" title="Lay out UI controls image" width="128" height="179" /></div>
+    <div align="left">
+      <p>After you decide what controls you want in your UI, use one of the built-in layout panes to manage the size 
+      and position of the controls. See <a href="layout/builtin_layouts.htm">Using Built-in Layout Panes</a> for 
+      information on setting up your UI controls to create the screens for your UI. </p>
+	  <p>An easier way to lay out your UI is available with the Library panel in JavaFX Scene Builder. You can also manage layouts in  JavaFX Scene Builder using the Inspector panel. See
+	  <a href="../scenebuilder/1/user_guide/inspector-panel.htm#JSBRG140">Inspector Panel</a> for information.</p>
+    </div>
+  </div>
+  
+  <!-- Tab 5 content-->
+  <div id="tab5content" class="tabcontent">
+    <p class="tabtitle">Deploy</p>
+    <div style="float:right; width:auto; padding-left:10px; padding-right:40px;">
+    <img src="../javafx/images/jdev.gif" alt="Deploy image" title="Deploy image" width="133" height="205" /></div>
+    <div align="left">
+      <p>JavaFX applications run on a desktop, in a browser, and by using Web Start. When your application is ready, 
+      create the files that your users will run. See 
+      <a href="deployment/deploy_quick_start.htm">Getting Started</a> in Deploying JavaFX Applications for information on packaging and 
+      deploying your application. </p>
+    </div>
+  </div>
+</div>
+
+<!--------------------------------->
+
+<div id="tabContainer2" class="titleContainer">
+<!-- Tabs -->
+<div id="tabs">
+<!--Tab 1--><div id="tab21" class="tab"><span class="tabNo">1</span><span class="tabTxt">Manage the layout</span></div>
+<!--Tab 2--><div id="tab22" class="tab"><span class="tabNo">2</span><span class="tabTxt">Customize UI controls</span></div>
+<!--Tab 3--><div id="tab23" class="tab"><span class="tabNo">3</span><span class="tabTxt">Style with CSS</span></div>
+<!--Tab 4--><div id="tab24" class="tab"><span class="tabNo">4</span><span class="tabTxt">Apply visual effects</span></div>
+<!--Tab 5--><div id="tab25" class="tab"><span class="tabNo">5</span><span class="tabTxt">Apply transformations</span></div>
+
+</div>
+<!-- End Tabs -->
+<!-- Tab 1 content-->
+  <div id="tab21content" class="tabcontent"><div style="float:right; width:auto; padding-right:40px;padding-left:12px;">
+  <img src="../javafx/images/fx-manage-ui.png" alt="Manage UI Controls image" title="Manage UI Controls image" /></div>
+    <p class="tabtitle">Manage the layout</p>
+    
+    <div align="left">
+      <p>Managing the look and feel of your UI starts with the layout.  When the default size and position of the controls don't provide the look you want, see <a href="layout/size_align.htm">Tips for Sizing and Aligning Nodes</a> for ideas on how to adjust the controls and the layout to create your ideal UI. </p>
+	  <p>In JavaFX Scene Builder, you can use the Layout panel to manage the constraints of the nodes. See <a href="../scenebuilder/1/user_guide/inspector-panel.htm#JSBRG145">Layout Panel</a> for information.</p>
+
+    </div>
+  </div>
+  <!-- Tab 2 content-->
+  <div id="tab22content" class="tabcontent">
+    <p class="tabtitle">Customize UI controls</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;"><img src="../javafx/images/fx-custom-ui.png" alt="Customize UI Controls image" title="Customize UI Controls image" /></div>
+    <div align="left">
+      <p>The appearance and behavior of the UI controls can be modified to better fit the look and feel that you want. Custom controls can also be created. See the <a href="ui_controls/custom.htm">Customization of UI Controls</a> for more information. </p>
+	  <p>Custom controls that do not require builders or builder factories can be defined in an FXML file and loaded into JavaFX Scene Builder. See <a href="../scenebuilder/1/user_guide/library-panel.htm#JSBRG135">Custom and Unknown Element Types</a> for more information.</p>
+    </div>
+  </div>
+<!-- Tab 3 content Create the application framework-->
+  <div id="tab23content" class="tabcontent">
+    <p class="tabtitle">Style with CSS</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;">
+    <img src="../javafx/images/fx-css.png" alt="Style your UI with CSS image" title="Style your UI with CSS image" /></div>
+    <div align="left">
+      <p>Colors, fonts, backgrounds, borders, and many other characteristics of your UI can be managed with cascading style sheets (CSS). See <a href="get_started/css.htm">Fancy Forms with JavaFX CSS</a> for an introduction to using CSS. See <a href="css_tutorial/jfxpub-css_tutorial.htm">Skinning JavaFX Applications with CSS</a> for more information on styling your UI. </p>
+	  <p>JavaFX Scene Builder makes it easy to work with styles for your UI controls. See <a href="../scenebuilder/1/user_guide/stylesheet-support.htm#BEHGAGEH">Skinning with CSS and CSS Analyzer</a> for additional information and <a href="../scenebuilder/1/get_started/preview-stylesheet.htm#JSBRG141">Use a Style Sheet</a> for an example.</p>
+
+    </div>
+  </div>
+  <!-- Tab 4 content-->
+  <div id="tab24content" class="tabcontent">
+    <p class="tabtitle">Apply visual effects</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;"><img src="../javafx/images/fx-usefx.png" alt="Apply visual effects with JavaFX image" title="Apply visual effects with JavaFX image" /></div>
+    <div align="left">
+      <p>Visual effects such as a drop shadow, blurring, reflection, and lighting can enhance your UI. See <a href="visual_effects/jfxpub-visual_effects.htm">Creating Visual Effects in JavaFX</a> for information on applying these and other effects to the controls for your UI.</p>
+	  <p>In JavaFX Scene Builder, the Add Effect command in the Modify menu can be used to easily add
+	  effects to your UI elements. See the <a href="../scenebuilder/1/user_guide/menu-bar.htm#JSBRG106">Modify subcommands table</a> in the Scene Builder User Guide for Menu bar information.</p>
+
+    </div>
+  </div>
+  <!-- Tab 5 content-->
+  <div id="tab25content" class="tabcontent">
+    <p class="tabtitle">Apply transformations</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;"><img src="../javafx/images/fx-transform.png" alt="Apply transformations image" title="Apply transformations image" /></div>
+    <div align="left">
+      <p>Objects in your UI can be rotated, scaled, sheared, and shifted to a different location using transformations to create both 2D and 3D effects to highlight different areas of your UI. See <a href="transformations/jfxpub-transformations.htm">Applying Transformations in JavaFX</a> for 
+      information. </p>
+	  <p>In JavaFX Scene Builder, the Properties panel can be used to add
+	  transformations to your UI elements. See <a href="../scenebuilder/1/user_guide/inspector-panel.htm#JSBRG142">Properties Panel</a> for more information.</p>
+    </div>
+  </div>
+  
+</div>
+
+<!--------------------------------->
+
+<div id="tabContainer3" class="titleContainer">
+<!-- Tabs -->
+<div id="tabs">
+<!--Tab 1--><div id="tab31" class="tab"><span class="tabNo">1</span><span class="tabTxt">Review the architecture</span></div>
+<!--Tab 2--><div id="tab32" class="tab"><span class="tabNo">2</span><span class="tabTxt">Work with scene graph</span></div>
+<!--Tab 3--><div id="tab33" class="tab"><span class="tabNo">3</span><span class="tabTxt">Manage threads</span></div>
+<!--Tab 4--><div id="tab34" class="tab"><span class="tabNo">4</span><span class="tabTxt">Handle events</span></div>
+<!--Tab 5--><div id="tab35" class="tab"><span class="tabNo">5</span><span class="tabTxt">Use bindings</span></div>
+
+</div>
+<!-- End Tabs -->
+<!-- Tab 1 content-->
+  <div id="tab31content" class="tabcontent"><div style="float:right; width:auto; padding-right:40px;padding-left:12px;">
+  <img src="../javafx/images/3-1.png" alt="Review the architecture image" title="Review the architecture image" /></div>
+    <p class="tabtitle">Review the architecture</p>
+    
+    <div align="left">
+      <p>An understanding of the architectural components of the JavaFX platform can help you design your JavaFX application. See <a href="architecture/jfxpub-architecture.htm">JavaFX Architecture and Framework</a> for an overview of the platform, an explanation of how the different components interact, and a description of the features of JavaFX. </p>
+
+    </div>
+  </div>
+
+<!-- Tab 2 content Create the application framework-->
+  <div id="tab32content" class="tabcontent">
+    <p class="tabtitle">Work with scene graph</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;">
+    <img src="../javafx/images/3-2.png" alt="Work with scene graph image" title="Work with scene graph image"  /></div>
+    <div align="left">
+      <p>The Scene Graph API provides the underlying framework that renders your GUI to the screen. This API contains the core classes that you use to build the user interface for your JavaFX application. See <a href="scenegraph/jfxpub-scenegraph.htm">Working with the JavaFX Scene Graph</a> for an overview of the Scene Graph API. </p>
+
+    </div>
+  </div>
+  
+  <!-- Tab 3 content-->
+  <div id="tab33content" class="tabcontent">
+    <p class="tabtitle">Manage threads</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;"><img src="../javafx/images/3-3.png" alt="Handle events image" title="Handle events image" /></div>
+    <div align="left">
+      <p>Background threads can execute time-consuming tasks and avoid slowing down the responsiveness of your user interface. See <a href="threads/jfxpub-threads.htm">Concurrency in JavaFX</a> for examples of working with multiple threads in your JavaFX application.</p>
+
+    </div>
+  </div>
+  
+  <!-- Tab 4 content-->
+  <div id="tab34content" class="tabcontent">
+    <p class="tabtitle">Handle events</p>
+    <div style="float:right; width:auto; padding-left:12px; padding-right:40px;"><img src="../javafx/images/3-4.png" alt="Handle events image" title="Handle events image"  /></div>
+    <div align="left">
+      <p>Events are used to notify your JavaFX application of actions taken by the user. Add event handlers and event filters to your application to provide responses to these actions. See <a href="events/jfxpub-events.htm">Handle JavaFX Events</a> for information about events. </p>
+	  <p>In JavaFX Scene Builder, you can use the Code panel to assign event handlers for different types <br />
+of events to your UI controls. See <a href="../scenebuilder/1/user_guide/inspector-panel.htm#JSBRG147">Code Panel</a> for more information.</p>
+    </div>
+  </div>
+  
+  <!-- Tab 5 content-->
+  <div id="tab35content" class="tabcontent">
+    <p class="tabtitle">Use bindings</p>
+    <div style="float:right; width:auto; padding-left:10px; padding-right:40px;">
+    <img src="../javafx/images/3-5.png" alt="Use bindings image" title="Use bindings image"  /></div>
+    <div align="left">
+      <p>Binding is a quick way to update an object when a related object is changed. See 
+      <a href="binding/jfxpub-binding.htm">Using JavaFX Properties and Binding</a> for information on how you can use bindings in your JavaFX application. </p>
+    </div>
+  </div>
+
+
+<!--------------------------------->
+
+<br class="clearfloat"/></div>
+ 
+ <img src="../javafx/images/javafx-hrT.jpg" alt="Horizontal Rule" title="Horizontal Rule" width="740" height="23" />
+
+<div class="fxblurbtitle" style="padding-bottom:20px; text-align: left;">JavaFX 2 Documents</div>
+   
+<!-- START FIRST Row --> 
+<div class="fxBlurbs">
+
+<div class="left">
+<div class="fxcolimg">
+<img src="../javafx/images/javafx-icon-getstarted.gif" alt="Introductory documentation icon" title="Introductory documentation icon" width="32" height="32"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">Getting Started</p>
+<p class="fxblurblink"><a href="overview/jfxpub-overview.htm">What is JavaFX?</a></p>
+<p class="fxblurblink"><a href="get_started/jfxpub-get_started.htm">Get Started with JavaFX</a></p>
+</div>
+</div>
+
+<div class="right">
+<div class="fxcolimg">
+<img src="../javafx/images/javafx-icon-effects.gif" alt="Effects, Animation, Media documentation icon" title="Effects, Animation, Media documentation icon" width="32" height="38"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">Effects, Animation, and Media</p>
+<p class="fxblurblink"><a href="visual_effects/jfxpub-visual_effects.htm">Create Visual Effects</a></p>
+<p class="fxblurblink"><a href="transformations/jfxpub-transformations.htm">Add 2D &amp; 3D Transformations</a></p>
+<p class="fxblurblink"><a href="animations/jfxpub-animations.htm">Add Transitions &amp; Animation</a></p>
+<p class="fxblurblink"><a href="media/jfxpub-media.htm">Incorporate Media</a></p>
+</div>
+</div><!--end right-->
+
+<div class="middle">
+<div class="fxcolimg">
+<img src="../javafx/images/javafx-icon-chart.gif" alt="User Interface documentation icon" title="User Interface documentation icon" width="32" height="30"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">User Interface</p>
+<p class="fxblurblink"><a href="layout/jfxpub-layout.htm">Work with Layouts</a></p>
+<p class="fxblurblink"><a href="text/jfxpub-text.htm">Add Text</a></p>
+<p class="fxblurblink"><a href="ui_controls/jfxpub-ui_controls.htm">Work with UI Controls</a></p>
+<p class="fxblurblink"><a href="fxml_get_started/jfxpub-fxml_get_started.htm">Build UI with FXML</a></p>
+<p class="fxblurblink"><a href="events/jfxpub-events.htm">Handle Events</a></p>
+<p class="fxblurblink"><a href="charts/jfxpub-charts.htm">Create Charts</a></p>
+<p class="fxblurblink"><a href="webview/jfxpub-webview.htm">Add HTML Content</a></p>
+<p class="fxblurblink"><a href="css_tutorial/jfxpub-css_tutorial.htm">Skin Applications with CSS</a></p>
+<p class="fxblurblink"><a href="drag_drop/jfxpub-drag_drop.htm">Drag and Drop Data</a> </p>
+<p class="fxblurblink"><a href="canvas/jfxpub-canvas.htm">Work with Canvas</a></p>
+<p class="fxblurblink"><a href="image_ops/jfxpub-image_ops.htm">Use Image Ops</a></p>
+</div>
+</div><!--end middle-->
+
+<div class="left">
+<div class="fxcolimg">
+<img src="../javafx/images/sbicon-big.png" alt="Scene Builder icon" title="Scene Builder icon" width="32" height="32"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">Scene Builder 1</p>
+<p class="fxblurblink"><a href="../scenebuilder/1/overview/jsbpub-overview.htm">Scene Builder Overview</a></p>
+<p class="fxblurblink"><a href="../scenebuilder/1/get_started/jsbpub-get_started.htm">Get Started with Scene Builder</a> </p>
+<p class="fxblurblink"><a href="../scenebuilder/1/user_guide/jsbpub-user_guide.htm">Scene Builder User Guide</a></p>
+<p class="fxblurblink"><a href="../scenebuilder/1/use_java_ides/jsbpub-use_java_ides.htm">Use with Java IDEs</a></p>
+</div>
+</div><!-- end left-->
+
+</div><!-- end #fxBlurbs -->
+ 
+ 
+ 
+ <br class="clearfloat"/>
+ 
+ 
+     
+<!-- START SECOND Row --> 
+<div class="fxBlurbs">
+
+<div class="left">
+<div class="fxcolimg">
+<img src="../javafx/images/javafx-icon-applogic.gif" alt="Application Logic documentation icon" title="Application Logic documentation icon" width="32" height="34"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">Application Logic</p>
+<p class="fxblurblink"><a href="architecture/jfxpub-architecture.htm">JavaFX Architecture</a></p>
+<p class="fxblurblink"><a href="scenegraph/jfxpub-scenegraph.htm">Work with the Scene Graph</a></p>
+<p class="fxblurblink"><a href="binding/jfxpub-binding.htm">Use Properties and Binding</a></p>
+<p class="fxblurblink"><a href="collections/jfxpub-collections.htm">Work with Collections</a></p>
+<p class="fxblurblink"><a href="threads/jfxpub-threads.htm">Concurrency and Threads</a></p>
+<p class="fxblurblink"><a href="best_practices/jfxpub-best_practices.htm">Implement Best Practices</a></p>
+
+</div>
+</div><!-- end left-->
+
+<div class="right">
+<div class="fxcolimg">
+<img src="../javafx/images/javafx-icon-package.gif" alt="Deployment and More documentation icon" title="Deployment and More documentation icon" width="32" height="34"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">Deployment and More</p>
+<p class="fxblurblink"><a href="deployment/jfxpub-deployment.htm">Packaging and Deployment</a></p>
+<p class="fxblurblink"><a href="swing/jfxpub-swing.htm">JavaFX in Swing</a> </p>
+<p class="fxblurblink"><a href="swt_interoperability/jfxpub-swt_interoperability.htm">Interoperability with SWT</a></p>
+<p class="fxblurblink"><a href="doclet/jfxpub-doclet.htm">Use a Doclet</a></p>
+
+</div>
+</div><!--end right-->
+
+<div class="middle">
+<div class="fxcolimg">
+<img src="../javafx/images/javafx-icon-reference.gif" alt="Reference documentation icon" title="Reference documentation icon" width="32" height="37"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">Reference</p>
+<p class="fxblurblink"><a href="api/index.html">API Documentation</a></p>
+<p class="fxblurblink"><a href="api/javafx/scene/doc-files/cssref.html">CSS Reference Guide</a></p>
+<p class="fxblurblink"><a href="api/javafx/fxml/doc-files/introduction_to_fxml.html">Introduction to FXML </a></p>
+</div><!--end middle-->
+
+</div><!-- end #fxBlurbs -->
+
+
+</div>
+
+
+
+
+
+
+ <br class="clearfloat" />
+
+ <img src="../javafx/images/javafx-hrT.jpg" alt="Horizontal Rule" title="Horizontal Rule" width="740" height="23" /><br class="clearfloat" />
+<div class="fxblurbtitle" style="padding-bottom:20px; text-align: left;">Release Documents</div>
+<!-- 
+ <img src="../javafx/images/javafx-hrT.jpg" alt="Horizontal Rule" title="Horizontal Rule" width="740" height="23" /><br class="clearfloat" />
+
+<div class="fxblurbtitle" style="padding-bottom:20px; text-align: left;">2.0.3 Release Documents</div>
+-->
+<br class="clearfloat" />
+
+<div class="left">
+  <div class="fxcolimg">
+<img src="../javafx/images/fx-sys-s.png" width="32" height="38" style="vertical-align:middle;" alt="JavaFX Release Documents icon" title="JavaFX Release Documents icon"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">JavaFX 2 </p>
+<p class="fxblurblink">(installed with JDK) </p>
+<p class="fxblurblink"><a href="http://www.oracle.com/technetwork/java/javase/downloads/">Java SE Downloads and <br />
+  Release Documentation</a></p>
+</div>
+</div>
+
+
+<div class="middle">
+<div class="fxcolimg">
+<img src="../javafx/images/sbicon-big.png" style="vertical-align:middle;" alt="Scene Builder icon" title="Scene Builder icon"/></div>
+<div class="fxcolumns">
+<p class="fxblurbtitle">Scene Builder 1 </p>
+<p class="fxblurblink"><a href="../scenebuilder/1/installation_1-1/jsbpub-installation_1-1.htm">Scene Builder 1.1 Installation Guide</a></p>
+<p class="fxblurblink"><a href="../scenebuilder/1/release_notes_1-1/jsbpub-release_notes_1-1.htm">Scene Builder 1.1 Release Notes</a></p>
+</div>
+
+<br class="clearfloat" />
+    </div>
+
+ 
+<div style="float:right; font-size:10px; text-align:right; width:50%; margin-right: 10px;"><a href="../release-documentation.html">Other Releases&gt;</a></div>
+
+
+     <br class="clearfloat"/>                
+     
+</div>
+                <!--///////// Footer Content /////////-->
+
+                <div id="footerBar">
+                
+                
+                <div id="left" class="fxfooterlinks">
+                     <a target="_blank" href="http://www.oracle.com/technetwork/java/javafx/downloads/index.html">JavaFX Downloads</a><br />
+                     <a target="_blank" href="http://forums.oracle.com/forums/forum.jspa?forumID=1385">JavaFX Forum</a><br />
+                     <a target="_blank" href="http://www.oracle.com/technetwork/java/javafx/overview/index.html#videos">JavaFX Videos</a><br />
+                     <a target="_blank" href="http://www.oracle.com/technetwork/java/javafx/samples/index.html">JavaFX Samples</a><br />
+                     <a href="../contact.html">Contact Us</a> 
+
+                </div>
+                
+                <div id="right" class="fxfooterlinks">
+                <a target="_blank" href="http://docs.oracle.com/javase/8/javase-clienttechnologies.htm">Latest JavaFX Documentation</a><br />
+                <a target="_blank" href="http://docs.oracle.com/javase/8">Java SE Documentation</a><br />
+                <a target="_blank" href="http://docs.oracle.com/javaee/">Java EE Documentation</a><br />
+                <a target="_blank" href="http://docs.oracle.com/javadb/">Java DB Documentation</a><br />
+                <a target="_blank" href="http://docs.oracle.com/javame/">Java ME Documentation</a>
+
+                </div>
+                
+                <div id="middle" class="fxfooterlinks">
+                    <a target="_blank" href="http://wiki.netbeans.org/JavaFX">JavaFX and NetBeans IDE</a><br />
+                    <a target="_blank" href="http://openjdk.java.net/projects/openjfx/">OpenJFX Project</a><br />
+                    <a target="_blank" href="http://fxexperience.com/">FX Experience Blog</a><br />
+                    <a target="_blank" href="http://blogs.oracle.com/thejavatutorials/">Java Tutorials Blog</a><br />
+                    <a target="_blank" href="http://blogs.oracle.com/java/">The Java Source Blog</a> 
+  
+
+              
+                </div>
+                
+                
+                <br class="clearfloat" />
+           
+              </div>
+
+
+                <!--///////// END Footer Content /////////-->
+      </div>
+            
+            
+            
+            
+<!--///////// Logo Footer /////////-->
+<div id="footer">
+</div><!-- end #footer -->
+</div>
+<!--///////// End Logo Footer /////////-->
+            
+<!-- NH 9-20: Removed extra <div> tag: 
+</div>
+-->
+        
+               
+           <div class="j2copyright" style="position:relative; width:776px; line-height: normal; padding: 8px; margin:0 auto;">Copyright &copy; 2011, 2014 Oracle and/or its affiliates. All rights reserved.<br />
+<a href="../dcommon/html/cpyr.htm">Legal Notices</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../dcommon/html/accss.htm">Accessibility Statement</a></div> 
+            
+       
+            <!--///////// End Main Content /////////-->
+            <!-- Footer Legal info -->
+
+            <!-- Start SiteCatalyst (Omniture) code   -->
+<script type="text/javascript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code_download.js"></script>
+<script type="text/javascript" src="http://www.oracle.com/ocom/groups/systemobject/@mktg_admin/documents/systemobject/s_code.js"></script>
+
+<!-- ********** DO NOT ALTER ANYTHING BELOW THIS LINE ! *********** -->
+
+<!--  Below code will send the info to Omniture server -->
+
+ 
+<!-- End SiteCatalyst code --> 
+
+  <br /><br />
+    <script  type="text/javascript">var s_code=s.t();if(s_code)document.write(s_code)</script>
+</body>
+</html>

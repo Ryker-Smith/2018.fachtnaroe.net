@@ -1,0 +1,1299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1: User Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the commands and utilities available with this operating system, including commands found only in the SunOS/BSD Compatibility Package, commands for communicating with other systems, commands associated with the Form and Menu Language Interpreter (FMLI), and commands specific to the SunOS&#8482; system.The available options, arguments, and operands for each command are provided in accordance with standard rules of command syntax, along with availability attributes, diagnostic information, and cross-references to other manual pages and reference material with relevant information.This section is for all UNIX&#174; system users.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1461";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1: User Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1461.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1 (821-1461-06)&body=Page: sccs-get-1.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-39.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-193.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-474.html">User Commands</a></p>
+<p class="toc level2"><a href="acctcom-1.html"><tt>acctcom</tt>(1)</a></p>
+<p class="toc level2"><a href="adb-1.html"><tt>adb</tt>(1)</a></p>
+<p class="toc level2"><a href="addbib-1.html"><tt>addbib</tt>(1)</a></p>
+<p class="toc level2"><a href="admin-1.html"><tt>admin</tt>(1)</a></p>
+<p class="toc level2"><a href="alias-1.html"><tt>alias</tt>(1)</a></p>
+<p class="toc level2"><a href="allocate-1.html"><tt>allocate</tt>(1)</a></p>
+<p class="toc level2"><a href="amt-1.html"><tt>amt</tt>(1)</a></p>
+<p class="toc level2"><a href="appcert-1.html"><tt>appcert</tt>(1)</a></p>
+<p class="toc level2"><a href="apptrace-1.html"><tt>apptrace</tt>(1)</a></p>
+<p class="toc level2"><a href="apropos-1.html"><tt>apropos</tt>(1)</a></p>
+<p class="toc level2"><a href="ar-1.html"><tt>ar</tt>(1)</a></p>
+<p class="toc level2"><a href="arch-1.html"><tt>arch</tt>(1)</a></p>
+<p class="toc level2"><a href="as-1.html"><tt>as</tt>(1)</a></p>
+<p class="toc level2"><a href="asa-1.html"><tt>asa</tt>(1)</a></p>
+<p class="toc level2"><a href="at-1.html"><tt>at</tt>(1)</a></p>
+<p class="toc level2"><a href="atq-1.html"><tt>atq</tt>(1)</a></p>
+<p class="toc level2"><a href="atrm-1.html"><tt>atrm</tt>(1)</a></p>
+<p class="toc level2"><a href="audioconvert-1.html"><tt>audioconvert</tt>(1)</a></p>
+<p class="toc level2"><a href="audioctl-1.html"><tt>audioctl</tt>(1)</a></p>
+<p class="toc level2"><a href="audioplay-1.html"><tt>audioplay</tt>(1)</a></p>
+<p class="toc level2"><a href="audiorecord-1.html"><tt>audiorecord</tt>(1)</a></p>
+<p class="toc level2"><a href="audiotest-1.html"><tt>audiotest</tt>(1)</a></p>
+<p class="toc level2"><a href="auths-1.html"><tt>auths</tt>(1)</a></p>
+<p class="toc level2"><a href="auto-ef-1.html"><tt>auto_ef</tt>(1)</a></p>
+<p class="toc level2"><a href="awk-1.html"><tt>awk</tt>(1)</a></p>
+<p class="toc level2"><a href="banner-1.html"><tt>banner</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1.html"><tt>basename</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1b.html"><tt>basename</tt>(1B)</a></p>
+<p class="toc level2"><a href="batch-1.html"><tt>batch</tt>(1)</a></p>
+<p class="toc level2"><a href="bc-1.html"><tt>bc</tt>(1)</a></p>
+<p class="toc level2"><a href="bdiff-1.html"><tt>bdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="bfs-1.html"><tt>bfs</tt>(1)</a></p>
+<p class="toc level2"><a href="bg-1.html"><tt>bg</tt>(1)</a></p>
+<p class="toc level2"><a href="biff-1b.html"><tt>biff</tt>(1B)</a></p>
+<p class="toc level2"><a href="break-1.html"><tt>break</tt>(1)</a></p>
+<p class="toc level2"><a href="builtin-1.html"><tt>builtin</tt>(1)</a></p>
+<p class="toc level2"><a href="cal-1.html"><tt>cal</tt>(1)</a></p>
+<p class="toc level2"><a href="calendar-1.html"><tt>calendar</tt>(1)</a></p>
+<p class="toc level2"><a href="cancel-1.html"><tt>cancel</tt>(1)</a></p>
+<p class="toc level2"><a href="case-1.html"><tt>case</tt>(1)</a></p>
+<p class="toc level2"><a href="cat-1.html"><tt>cat</tt>(1)</a></p>
+<p class="toc level2"><a href="cd-1.html"><tt>cd</tt>(1)</a></p>
+<p class="toc level2"><a href="cdc-1.html"><tt>cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="cdrw-1.html"><tt>cdrw</tt>(1)</a></p>
+<p class="toc level2"><a href="chdir-1.html"><tt>chdir</tt>(1)</a></p>
+<p class="toc level2"><a href="checkeq-1.html"><tt>checkeq</tt>(1)</a></p>
+<p class="toc level2"><a href="checknr-1.html"><tt>checknr</tt>(1)</a></p>
+<p class="toc level2"><a href="chgrp-1.html"><tt>chgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="chkey-1.html"><tt>chkey</tt>(1)</a></p>
+<p class="toc level2"><a href="chmod-1.html"><tt>chmod</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1.html"><tt>chown</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1b.html"><tt>chown</tt>(1B)</a></p>
+<p class="toc level2"><a href="ckdate-1.html"><tt>ckdate</tt>(1)</a></p>
+<p class="toc level2"><a href="ckgid-1.html"><tt>ckgid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckint-1.html"><tt>ckint</tt>(1)</a></p>
+<p class="toc level2"><a href="ckitem-1.html"><tt>ckitem</tt>(1)</a></p>
+<p class="toc level2"><a href="ckkeywd-1.html"><tt>ckkeywd</tt>(1)</a></p>
+<p class="toc level2"><a href="ckpath-1.html"><tt>ckpath</tt>(1)</a></p>
+<p class="toc level2"><a href="ckrange-1.html"><tt>ckrange</tt>(1)</a></p>
+<p class="toc level2"><a href="ckstr-1.html"><tt>ckstr</tt>(1)</a></p>
+<p class="toc level2"><a href="cksum-1.html"><tt>cksum</tt>(1)</a></p>
+<p class="toc level2"><a href="cktime-1.html"><tt>cktime</tt>(1)</a></p>
+<p class="toc level2"><a href="ckuid-1.html"><tt>ckuid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckyorn-1.html"><tt>ckyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="clear-1.html"><tt>clear</tt>(1)</a></p>
+<p class="toc level2"><a href="cmp-1.html"><tt>cmp</tt>(1)</a></p>
+<p class="toc level2"><a href="col-1.html"><tt>col</tt>(1)</a></p>
+<p class="toc level2"><a href="comb-1.html"><tt>comb</tt>(1)</a></p>
+<p class="toc level2"><a href="comm-1.html"><tt>comm</tt>(1)</a></p>
+<p class="toc level2"><a href="command-1.html"><tt>command</tt>(1)</a></p>
+<p class="toc level2"><a href="compress-1.html"><tt>compress</tt>(1)</a></p>
+<p class="toc level2"><a href="continue-1.html"><tt>continue</tt>(1)</a></p>
+<p class="toc level2"><a href="cp-1.html"><tt>cp</tt>(1)</a></p>
+<p class="toc level2"><a href="cpio-1.html"><tt>cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="cpp-1.html"><tt>cpp</tt>(1)</a></p>
+<p class="toc level2"><a href="cputrack-1.html"><tt>cputrack</tt>(1)</a></p>
+<p class="toc level2"><a href="crle-1.html"><tt>crle</tt>(1)</a></p>
+<p class="toc level2"><a href="crontab-1.html"><tt>crontab</tt>(1)</a></p>
+<p class="toc level2"><a href="crypt-1.html"><tt>crypt</tt>(1)</a></p>
+<p class="toc level2"><a href="csh-1.html"><tt>csh</tt>(1)</a></p>
+<p class="toc level2"><a href="csplit-1.html"><tt>csplit</tt>(1)</a></p>
+<p class="toc level2"><a href="ct-1c.html"><tt>ct</tt>(1C)</a></p>
+<p class="toc level2"><a href="ctags-1.html"><tt>ctags</tt>(1)</a></p>
+<p class="toc level2"><a href="ctrun-1.html"><tt>ctrun</tt>(1)</a></p>
+<p class="toc level2"><a href="ctstat-1.html"><tt>ctstat</tt>(1)</a></p>
+<p class="toc level2"><a href="ctwatch-1.html"><tt>ctwatch</tt>(1)</a></p>
+<p class="toc level2"><a href="cu-1c.html"><tt>cu</tt>(1C)</a></p>
+<p class="toc level2"><a href="cut-1.html"><tt>cut</tt>(1)</a></p>
+<p class="toc level2"><a href="date-1.html"><tt>date</tt>(1)</a></p>
+<p class="toc level2"><a href="dc-1.html"><tt>dc</tt>(1)</a></p>
+<p class="toc level2"><a href="deallocate-1.html"><tt>deallocate</tt>(1)</a></p>
+<p class="toc level2"><a href="decrypt-1.html"><tt>decrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="delta-1.html"><tt>delta</tt>(1)</a></p>
+<p class="toc level2"><a href="deroff-1.html"><tt>deroff</tt>(1)</a></p>
+<p class="toc level2"><a href="des-1.html"><tt>des</tt>(1)</a></p>
+<p class="toc level2"><a href="df-1b.html"><tt>df</tt>(1B)</a></p>
+<p class="toc level2"><a href="dhcpinfo-1.html"><tt>dhcpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="diff-1.html"><tt>diff</tt>(1)</a></p>
+<p class="toc level2"><a href="diff3-1.html"><tt>diff3</tt>(1)</a></p>
+<p class="toc level2"><a href="diffmk-1.html"><tt>diffmk</tt>(1)</a></p>
+<p class="toc level2"><a href="digest-1.html"><tt>digest</tt>(1)</a></p>
+<p class="toc level2"><a href="digestp-1.html"><tt>digestp</tt>(1)</a></p>
+<p class="toc level2"><a href="dircmp-1.html"><tt>dircmp</tt>(1)</a></p>
+<p class="toc level2"><a href="dirname-1.html"><tt>dirname</tt>(1)</a></p>
+<p class="toc level2"><a href="dirs-1.html"><tt>dirs</tt>(1)</a></p>
+<p class="toc level2"><a href="dis-1.html"><tt>dis</tt>(1)</a></p>
+<p class="toc level2"><a href="disable-1.html"><tt>disable</tt>(1)</a></p>
+<p class="toc level2"><a href="disown-1.html"><tt>disown</tt>(1)</a></p>
+<p class="toc level2"><a href="dispgid-1.html"><tt>dispgid</tt>(1)</a></p>
+<p class="toc level2"><a href="dispuid-1.html"><tt>dispuid</tt>(1)</a></p>
+<p class="toc level2"><a href="dos2unix-1.html"><tt>dos2unix</tt>(1)</a></p>
+<p class="toc level2"><a href="download-1.html"><tt>download</tt>(1)</a></p>
+<p class="toc level2"><a href="dpost-1.html"><tt>dpost</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1.html"><tt>du</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1b.html"><tt>du</tt>(1B)</a></p>
+<p class="toc level2"><a href="dump-1.html"><tt>dump</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpcs-1.html"><tt>dumpcs</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpkeys-1.html"><tt>dumpkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1.html"><tt>echo</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1b.html"><tt>echo</tt>(1B)</a></p>
+<p class="toc level2"><a href="ed-1.html"><tt>ed</tt>(1)</a></p>
+<p class="toc level2"><a href="edit-1.html"><tt>edit</tt>(1)</a></p>
+<p class="toc level2"><a href="egrep-1.html"><tt>egrep</tt>(1)</a></p>
+<p class="toc level2"><a href="eject-1.html"><tt>eject</tt>(1)</a></p>
+<p class="toc level2"><a href="elfdump-1.html"><tt>elfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="elfedit-1.html"><tt>elfedit</tt>(1)</a></p>
+<p class="toc level2"><a href="elfsign-1.html"><tt>elfsign</tt>(1)</a></p>
+<p class="toc level2"><a href="elfwrap-1.html"><tt>elfwrap</tt>(1)</a></p>
+<p class="toc level2"><a href="enable-1.html"><tt>enable</tt>(1)</a></p>
+<p class="toc level2"><a href="encrypt-1.html"><tt>encrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="enhance-1.html"><tt>enhance</tt>(1)</a></p>
+<p class="toc level2"><a href="env-1.html"><tt>env</tt>(1)</a></p>
+<p class="toc level2"><a href="eqn-1.html"><tt>eqn</tt>(1)</a></p>
+<p class="toc level2"><a href="errange-1.html"><tt>errange</tt>(1)</a></p>
+<p class="toc level2"><a href="errdate-1.html"><tt>errdate</tt>(1)</a></p>
+<p class="toc level2"><a href="errgid-1.html"><tt>errgid</tt>(1)</a></p>
+<p class="toc level2"><a href="errint-1.html"><tt>errint</tt>(1)</a></p>
+<p class="toc level2"><a href="erritem-1.html"><tt>erritem</tt>(1)</a></p>
+<p class="toc level2"><a href="error-1.html"><tt>error</tt>(1)</a></p>
+<p class="toc level2"><a href="errpath-1.html"><tt>errpath</tt>(1)</a></p>
+<p class="toc level2"><a href="errstr-1.html"><tt>errstr</tt>(1)</a></p>
+<p class="toc level2"><a href="errtime-1.html"><tt>errtime</tt>(1)</a></p>
+<p class="toc level2"><a href="erruid-1.html"><tt>erruid</tt>(1)</a></p>
+<p class="toc level2"><a href="erryorn-1.html"><tt>erryorn</tt>(1)</a></p>
+<p class="toc level2"><a href="eval-1.html"><tt>eval</tt>(1)</a></p>
+<p class="toc level2"><a href="ex-1.html"><tt>ex</tt>(1)</a></p>
+<p class="toc level2"><a href="exec-1.html"><tt>exec</tt>(1)</a></p>
+<p class="toc level2"><a href="exit-1.html"><tt>exit</tt>(1)</a></p>
+<p class="toc level2"><a href="expand-1.html"><tt>expand</tt>(1)</a></p>
+<p class="toc level2"><a href="export-1.html"><tt>export</tt>(1)</a></p>
+<p class="toc level2"><a href="exportfs-1b.html"><tt>exportfs</tt>(1B)</a></p>
+<p class="toc level2"><a href="expr-1.html"><tt>expr</tt>(1)</a></p>
+<p class="toc level2"><a href="expr-1b.html"><tt>expr</tt>(1B)</a></p>
+<p class="toc level2"><a href="exstr-1.html"><tt>exstr</tt>(1)</a></p>
+<p class="toc level2"><a href="factor-1.html"><tt>factor</tt>(1)</a></p>
+<p class="toc level2"><a href="false-1.html"><tt>false</tt>(1)</a></p>
+<p class="toc level2"><a href="fastboot-1b.html"><tt>fastboot</tt>(1B)</a></p>
+<p class="toc level2"><a href="fasthalt-1b.html"><tt>fasthalt</tt>(1B)</a></p>
+<p class="toc level2"><a href="fc-1.html"><tt>fc</tt>(1)</a></p>
+<p class="toc level2"><a href="fdformat-1.html"><tt>fdformat</tt>(1)</a></p>
+<p class="toc level2"><a href="fg-1.html"><tt>fg</tt>(1)</a></p>
+<p class="toc level2"><a href="fgrep-1.html"><tt>fgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1.html"><tt>file</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1b.html"><tt>file</tt>(1B)</a></p>
+<p class="toc level2"><a href="filebench-1.html"><tt>filebench</tt>(1)</a></p>
+<p class="toc level2"><a href="filep-1.html"><tt>filep</tt>(1)</a></p>
+<p class="toc level2"><a href="filesync-1.html"><tt>filesync</tt>(1)</a></p>
+<p class="toc level2"><a href="filofaxp-1.html"><tt>filofaxp</tt>(1)</a></p>
+<p class="toc level2"><a href="find-1.html"><tt>find</tt>(1)</a></p>
+<p class="toc level2"><a href="finger-1.html"><tt>finger</tt>(1)</a></p>
+<p class="toc level2"><a href="fmt-1.html"><tt>fmt</tt>(1)</a></p>
+<p class="toc level2"><a href="fmtmsg-1.html"><tt>fmtmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="fold-1.html"><tt>fold</tt>(1)</a></p>
+<p class="toc level2"><a href="for-1.html"><tt>for</tt>(1)</a></p>
+<p class="toc level2"><a href="foreach-1.html"><tt>foreach</tt>(1)</a></p>
+<p class="toc level2"><a href="franklinp-1.html"><tt>franklinp</tt>(1)</a></p>
+<p class="toc level2"><a href="from-1b.html"><tt>from</tt>(1B)</a></p>
+<p class="toc level2"><a href="ftp-1.html"><tt>ftp</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpcount-1.html"><tt>ftpcount</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpwho-1.html"><tt>ftpwho</tt>(1)</a></p>
+<p class="toc level2"><a href="function-1.html"><tt>function</tt>(1)</a></p>
+<p class="toc level2"><a href="gcore-1.html"><tt>gcore</tt>(1)</a></p>
+<p class="toc level2"><a href="gencat-1.html"><tt>gencat</tt>(1)</a></p>
+<p class="toc level2"><a href="geniconvtbl-1.html"><tt>geniconvtbl</tt>(1)</a></p>
+<p class="toc level2"><a href="genmsg-1.html"><tt>genmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="get-1.html"><tt>get</tt>(1)</a></p>
+<p class="toc level2"><a href="getconf-1.html"><tt>getconf</tt>(1)</a></p>
+<p class="toc level2"><a href="getfacl-1.html"><tt>getfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="getlabel-1.html"><tt>getlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="getopt-1.html"><tt>getopt</tt>(1)</a></p>
+<p class="toc level2"><a href="getoptcvt-1.html"><tt>getoptcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="getopts-1.html"><tt>getopts</tt>(1)</a></p>
+<p class="toc level2"><a href="gettext-1.html"><tt>gettext</tt>(1)</a></p>
+<p class="toc level2"><a href="gettxt-1.html"><tt>gettxt</tt>(1)</a></p>
+<p class="toc level2"><a href="getzonepath-1.html"><tt>getzonepath</tt>(1)</a></p>
+<p class="toc level2"><a href="glob-1.html"><tt>glob</tt>(1)</a></p>
+<p class="toc level2"><a href="goto-1.html"><tt>goto</tt>(1)</a></p>
+<p class="toc level2"><a href="gprof-1.html"><tt>gprof</tt>(1)</a></p>
+<p class="toc level2"><a href="grep-1.html"><tt>grep</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1.html"><tt>groups</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1b.html"><tt>groups</tt>(1B)</a></p>
+<p class="toc level2"><a href="grpck-1b.html"><tt>grpck</tt>(1B)</a></p>
+<p class="toc level2"><a href="hash-1.html"><tt>hash</tt>(1)</a></p>
+<p class="toc level2"><a href="hashcheck-1.html"><tt>hashcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="hashmake-1.html"><tt>hashmake</tt>(1)</a></p>
+<p class="toc level2"><a href="hashstat-1.html"><tt>hashstat</tt>(1)</a></p>
+<p class="toc level2"><a href="head-1.html"><tt>head</tt>(1)</a></p>
+<p class="toc level2"><a href="help-1.html"><tt>help</tt>(1)</a></p>
+<p class="toc level2"><a href="helpdate-1.html"><tt>helpdate</tt>(1)</a></p>
+<p class="toc level2"><a href="helpgid-1.html"><tt>helpgid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpint-1.html"><tt>helpint</tt>(1)</a></p>
+<p class="toc level2"><a href="helpitem-1.html"><tt>helpitem</tt>(1)</a></p>
+<p class="toc level2"><a href="helppath-1.html"><tt>helppath</tt>(1)</a></p>
+<p class="toc level2"><a href="helprange-1.html"><tt>helprange</tt>(1)</a></p>
+<p class="toc level2"><a href="helpstr-1.html"><tt>helpstr</tt>(1)</a></p>
+<p class="toc level2"><a href="helptime-1.html"><tt>helptime</tt>(1)</a></p>
+<p class="toc level2"><a href="helpuid-1.html"><tt>helpuid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpyorn-1.html"><tt>helpyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="hist-1.html"><tt>hist</tt>(1)</a></p>
+<p class="toc level2"><a href="history-1.html"><tt>history</tt>(1)</a></p>
+<p class="toc level2"><a href="hostid-1.html"><tt>hostid</tt>(1)</a></p>
+<p class="toc level2"><a href="hostname-1.html"><tt>hostname</tt>(1)</a></p>
+<p class="toc level2"><a href="i286-1.html"><tt>i286</tt>(1)</a></p>
+<p class="toc level2"><a href="i386-1.html"><tt>i386</tt>(1)</a></p>
+<p class="toc level2"><a href="i486-1.html"><tt>i486</tt>(1)</a></p>
+<p class="toc level2"><a href="i860-1.html"><tt>i860</tt>(1)</a></p>
+<p class="toc level2"><a href="iapx286-1.html"><tt>iAPX286</tt>(1)</a></p>
+<p class="toc level2"><a href="iconv-1.html"><tt>iconv</tt>(1)</a></p>
+<p class="toc level2"><a href="idnconv-1.html"><tt>idnconv</tt>(1)</a></p>
+<p class="toc level2"><a href="if-1.html"><tt>if</tt>(1)</a></p>
+<p class="toc level2"><a href="indxbib-1.html"><tt>indxbib</tt>(1)</a></p>
+<p class="toc level2"><a href="install-1b.html"><tt>install</tt>(1B)</a></p>
+<p class="toc level2"><a href="ipcrm-1.html"><tt>ipcrm</tt>(1)</a></p>
+<p class="toc level2"><a href="ipcs-1.html"><tt>ipcs</tt>(1)</a></p>
+<p class="toc level2"><a href="isainfo-1.html"><tt>isainfo</tt>(1)</a></p>
+<p class="toc level2"><a href="isalist-1.html"><tt>isalist</tt>(1)</a></p>
+<p class="toc level2"><a href="jobs-1.html"><tt>jobs</tt>(1)</a></p>
+<p class="toc level2"><a href="join-1.html"><tt>join</tt>(1)</a></p>
+<p class="toc level2"><a href="jsh-1.html"><tt>jsh</tt>(1)</a></p>
+<p class="toc level2"><a href="kbd-1.html"><tt>kbd</tt>(1)</a></p>
+<p class="toc level2"><a href="kdestroy-1.html"><tt>kdestroy</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogin-1.html"><tt>keylogin</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogout-1.html"><tt>keylogout</tt>(1)</a></p>
+<p class="toc level2"><a href="kill-1.html"><tt>kill</tt>(1)</a></p>
+<p class="toc level2"><a href="kinit-1.html"><tt>kinit</tt>(1)</a></p>
+<p class="toc level2"><a href="klist-1.html"><tt>klist</tt>(1)</a></p>
+<p class="toc level2"><a href="kmdb-1.html"><tt>kmdb</tt>(1)</a></p>
+<p class="toc level2"><a href="kmfcfg-1.html"><tt>kmfcfg</tt>(1)</a></p>
+<p class="toc level2"><a href="kpasswd-1.html"><tt>kpasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="krb5-config-1.html"><tt>krb5-config</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh-1.html"><tt>ksh</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh93-1.html"><tt>ksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="ktutil-1.html"><tt>ktutil</tt>(1)</a></p>
+<p class="toc level2"><a href="lari-1.html"><tt>lari</tt>(1)</a></p>
+<p class="toc level2"><a href="last-1.html"><tt>last</tt>(1)</a></p>
+<p class="toc level2"><a href="lastcomm-1.html"><tt>lastcomm</tt>(1)</a></p>
+<p class="toc level2"><a href="ld-1.html"><tt>ld</tt>(1)</a></p>
+<p class="toc level2"><a href="ldap-1.html"><tt>ldap</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapadd-1.html"><tt>ldapadd</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapdelete-1.html"><tt>ldapdelete</tt>(1)</a></p>
+<p class="toc level2"><a href="ldaplist-1.html"><tt>ldaplist</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodify-1.html"><tt>ldapmodify</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodrdn-1.html"><tt>ldapmodrdn</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapsearch-1.html"><tt>ldapsearch</tt>(1)</a></p>
+<p class="toc level2"><a href="ldd-1.html"><tt>ldd</tt>(1)</a></p>
+<p class="toc level2"><a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="let-1.html"><tt>let</tt>(1)</a></p>
+<p class="toc level2"><a href="lex-1.html"><tt>lex</tt>(1)</a></p>
+<p class="toc level2"><a href="lgrpinfo-1.html"><tt>lgrpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="limit-1.html"><tt>limit</tt>(1)</a></p>
+<p class="toc level2"><a href="line-1.html"><tt>line</tt>(1)</a></p>
+<p class="toc level2"><a href="list-devices-1.html"><tt>list_devices</tt>(1)</a></p>
+<p class="toc level2"><a href="listusers-1.html"><tt>listusers</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-autoconfig-1.html"><tt>llc2_autoconfig</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-config-1.html"><tt>llc2_config</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-stats-1.html"><tt>llc2_stats</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1.html"><tt>ln</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1b.html"><tt>ln</tt>(1B)</a></p>
+<p class="toc level2"><a href="loadkeys-1.html"><tt>loadkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="locale-1.html"><tt>locale</tt>(1)</a></p>
+<p class="toc level2"><a href="localedef-1.html"><tt>localedef</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1.html"><tt>logger</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1b.html"><tt>logger</tt>(1B)</a></p>
+<p class="toc level2"><a href="login-1.html"><tt>login</tt>(1)</a></p>
+<p class="toc level2"><a href="logname-1.html"><tt>logname</tt>(1)</a></p>
+<p class="toc level2"><a href="logout-1.html"><tt>logout</tt>(1)</a></p>
+<p class="toc level2"><a href="look-1.html"><tt>look</tt>(1)</a></p>
+<p class="toc level2"><a href="lookbib-1.html"><tt>lookbib</tt>(1)</a></p>
+<p class="toc level2"><a href="lorder-1.html"><tt>lorder</tt>(1)</a></p>
+<p class="toc level2"><a href="lp-1.html"><tt>lp</tt>(1)</a></p>
+<p class="toc level2"><a href="lpc-1b.html"><tt>lpc</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpq-1b.html"><tt>lpq</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpr-1b.html"><tt>lpr</tt>(1B)</a></p>
+<p class="toc level2"><a href="lprm-1b.html"><tt>lprm</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpstat-1.html"><tt>lpstat</tt>(1)</a></p>
+<p class="toc level2"><a href="lptest-1b.html"><tt>lptest</tt>(1B)</a></p>
+<p class="toc level2"><a href="ls-1.html"><tt>ls</tt>(1)</a></p>
+<p class="toc level2"><a href="ls-1b.html"><tt>ls</tt>(1B)</a></p>
+<p class="toc level2"><a href="m4-1.html"><tt>m4</tt>(1)</a></p>
+<p class="toc level2"><a href="mac-1.html"><tt>mac</tt>(1)</a></p>
+<p class="toc level2"><a href="mach-1.html"><tt>mach</tt>(1)</a></p>
+<p class="toc level2"><a href="machid-1.html"><tt>machid</tt>(1)</a></p>
+<p class="toc level2"><a href="madv.so.1-1.html"><tt>madv.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="mail-1.html"><tt>mail</tt>(1)</a></p>
+<p class="toc level2"><a href="z-mail-1b.html"><tt>Mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mail-1b.html"><tt>mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mailcompat-1.html"><tt>mailcompat</tt>(1)</a></p>
+<p class="toc level2"><a href="mailp-1.html"><tt>mailp</tt>(1)</a></p>
+<p class="toc level2"><a href="mailq-1.html"><tt>mailq</tt>(1)</a></p>
+<p class="toc level2"><a href="mailstats-1.html"><tt>mailstats</tt>(1)</a></p>
+<p class="toc level2"><a href="mailx-1.html"><tt>mailx</tt>(1)</a></p>
+<p class="toc level2"><a href="make-1s.html"><tt>make</tt>(1S)</a></p>
+<p class="toc level2"><a href="makekey-1.html"><tt>makekey</tt>(1)</a></p>
+<p class="toc level2"><a href="man-1.html"><tt>man</tt>(1)</a></p>
+<p class="toc level2"><a href="mconnect-1.html"><tt>mconnect</tt>(1)</a></p>
+<p class="toc level2"><a href="mcs-1.html"><tt>mcs</tt>(1)</a></p>
+<p class="toc level2"><a href="mdb-1.html"><tt>mdb</tt>(1)</a></p>
+<p class="toc level2"><a href="mesg-1.html"><tt>mesg</tt>(1)</a></p>
+<p class="toc level2"><a href="mkdir-1.html"><tt>mkdir</tt>(1)</a></p>
+<p class="toc level2"><a href="mkmsgs-1.html"><tt>mkmsgs</tt>(1)</a></p>
+<p class="toc level2"><a href="mkstr-1b.html"><tt>mkstr</tt>(1B)</a></p>
+<p class="toc level2"><a href="mktemp-1.html"><tt>mktemp</tt>(1)</a></p>
+<p class="toc level2"><a href="moe-1.html"><tt>moe</tt>(1)</a></p>
+<p class="toc level2"><a href="more-1.html"><tt>more</tt>(1)</a></p>
+<p class="toc level2"><a href="mp-1.html"><tt>mp</tt>(1)</a></p>
+<p class="toc level2"><a href="mpss.so.1-1.html"><tt>mpss.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcc-1.html"><tt>msgcc</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcpp-1.html"><tt>msgcpp</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcvt-1.html"><tt>msgcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="msgfmt-1.html"><tt>msgfmt</tt>(1)</a></p>
+<p class="toc level2"><a href="msggen-1.html"><tt>msggen</tt>(1)</a></p>
+<p class="toc level2"><a href="msgget-1.html"><tt>msgget</tt>(1)</a></p>
+<p class="toc level2"><a href="mt-1.html"><tt>mt</tt>(1)</a></p>
+<p class="toc level2"><a href="mv-1.html"><tt>mv</tt>(1)</a></p>
+<p class="toc level2"><a href="nawk-1.html"><tt>nawk</tt>(1)</a></p>
+<p class="toc level2"><a href="nc-1.html"><tt>nc</tt>(1)</a></p>
+<p class="toc level2"><a href="nca-1.html"><tt>nca</tt>(1)</a></p>
+<p class="toc level2"><a href="ncab2clf-1.html"><tt>ncab2clf</tt>(1)</a></p>
+<p class="toc level2"><a href="ncakmod-1.html"><tt>ncakmod</tt>(1)</a></p>
+<p class="toc level2"><a href="neqn-1.html"><tt>neqn</tt>(1)</a></p>
+<p class="toc level2"><a href="newform-1.html"><tt>newform</tt>(1)</a></p>
+<p class="toc level2"><a href="newgrp-1.html"><tt>newgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="news-1.html"><tt>news</tt>(1)</a></p>
+<p class="toc level2"><a href="newsp-1.html"><tt>newsp</tt>(1)</a></p>
+<p class="toc level2"><a href="newtask-1.html"><tt>newtask</tt>(1)</a></p>
+<p class="toc level2"><a href="nice-1.html"><tt>nice</tt>(1)</a></p>
+<p class="toc level2"><a href="nl-1.html"><tt>nl</tt>(1)</a></p>
+<p class="toc level2"><a href="nm-1.html"><tt>nm</tt>(1)</a></p>
+<p class="toc level2"><a href="nohup-1.html"><tt>nohup</tt>(1)</a></p>
+<p class="toc level2"><a href="notify-1.html"><tt>notify</tt>(1)</a></p>
+<p class="toc level2"><a href="nroff-1.html"><tt>nroff</tt>(1)</a></p>
+<p class="toc level2"><a href="od-1.html"><tt>od</tt>(1)</a></p>
+<p class="toc level2"><a href="on-1.html"><tt>on</tt>(1)</a></p>
+<p class="toc level2"><a href="onintr-1.html"><tt>onintr</tt>(1)</a></p>
+<p class="toc level2"><a href="optisa-1.html"><tt>optisa</tt>(1)</a></p>
+<p class="toc level2"><a href="pack-1.html"><tt>pack</tt>(1)</a></p>
+<p class="toc level2"><a href="page-1.html"><tt>page</tt>(1)</a></p>
+<p class="toc level2"><a href="pagesize-1.html"><tt>pagesize</tt>(1)</a></p>
+<p class="toc level2"><a href="pargs-1.html"><tt>pargs</tt>(1)</a></p>
+<p class="toc level2"><a href="passwd-1.html"><tt>passwd</tt>(1)</a></p>
+<p class="toc level2"><a href="paste-1.html"><tt>paste</tt>(1)</a></p>
+<p class="toc level2"><a href="patch-1.html"><tt>patch</tt>(1)</a></p>
+<p class="toc level2"><a href="pathchk-1.html"><tt>pathchk</tt>(1)</a></p>
+<p class="toc level2"><a href="pax-1.html"><tt>pax</tt>(1)</a></p>
+<p class="toc level2"><a href="pcat-1.html"><tt>pcat</tt>(1)</a></p>
+<p class="toc level2"><a href="pcred-1.html"><tt>pcred</tt>(1)</a></p>
+<p class="toc level2"><a href="pdp11-1.html"><tt>pdp11</tt>(1)</a></p>
+<p class="toc level2"><a href="perl-1.html"><tt>perl</tt>(1)</a></p>
+<p class="toc level2"><a href="pfcsh-1.html"><tt>pfcsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pfexec-1.html"><tt>pfexec</tt>(1)</a></p>
+<p class="toc level2"><a href="pfiles-1.html"><tt>pfiles</tt>(1)</a></p>
+<p class="toc level2"><a href="pfksh-1.html"><tt>pfksh</tt>(1)</a></p>
+<p class="toc level2"><a href="pflags-1.html"><tt>pflags</tt>(1)</a></p>
+<p class="toc level2"><a href="pfsh-1.html"><tt>pfsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pg-1.html"><tt>pg</tt>(1)</a></p>
+<p class="toc level2"><a href="pgrep-1.html"><tt>pgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="pkcs11-inspect-1.html"><tt>pkcs11_inspect</tt>(1)</a></p>
+<p class="toc level2"><a href="pkginfo-1.html"><tt>pkginfo</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgmk-1.html"><tt>pkgmk</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgparam-1.html"><tt>pkgparam</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgproto-1.html"><tt>pkgproto</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgtrans-1.html"><tt>pkgtrans</tt>(1)</a></p>
+<p class="toc level2"><a href="pkill-1.html"><tt>pkill</tt>(1)</a></p>
+<p class="toc level2"><a href="pklogin-finder-1.html"><tt>pklogin_finder</tt>(1)</a></p>
+<p class="toc level2"><a href="pktool-1.html"><tt>pktool</tt>(1)</a></p>
+<p class="toc level2"><a href="plabel-1.html"><tt>plabel</tt>(1)</a></p>
+<p class="toc level2"><a href="pldd-1.html"><tt>pldd</tt>(1)</a></p>
+<p class="toc level2"><a href="plgrp-1.html"><tt>plgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="plimit-1.html"><tt>plimit</tt>(1)</a></p>
+<p class="toc level2"><a href="pmadvise-1.html"><tt>pmadvise</tt>(1)</a></p>
+<p class="toc level2"><a href="pmap-1.html"><tt>pmap</tt>(1)</a></p>
+<p class="toc level2"><a href="popd-1.html"><tt>popd</tt>(1)</a></p>
+<p class="toc level2"><a href="postdaisy-1.html"><tt>postdaisy</tt>(1)</a></p>
+<p class="toc level2"><a href="postdmd-1.html"><tt>postdmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postio-1.html"><tt>postio</tt>(1)</a></p>
+<p class="toc level2"><a href="postmd-1.html"><tt>postmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postplot-1.html"><tt>postplot</tt>(1)</a></p>
+<p class="toc level2"><a href="postprint-1.html"><tt>postprint</tt>(1)</a></p>
+<p class="toc level2"><a href="postreverse-1.html"><tt>postreverse</tt>(1)</a></p>
+<p class="toc level2"><a href="posttek-1.html"><tt>posttek</tt>(1)</a></p>
+<p class="toc level2"><a href="ppgsz-1.html"><tt>ppgsz</tt>(1)</a></p>
+<p class="toc level2"><a href="ppriv-1.html"><tt>ppriv</tt>(1)</a></p>
+<p class="toc level2"><a href="pr-1.html"><tt>pr</tt>(1)</a></p>
+<p class="toc level2"><a href="praliases-1.html"><tt>praliases</tt>(1)</a></p>
+<p class="toc level2"><a href="prctl-1.html"><tt>prctl</tt>(1)</a></p>
+<p class="toc level2"><a href="preap-1.html"><tt>preap</tt>(1)</a></p>
+<p class="toc level2"><a href="prex-1.html"><tt>prex</tt>(1)</a></p>
+<p class="toc level2"><a href="print-1.html"><tt>print</tt>(1)</a></p>
+<p class="toc level2"><a href="printenv-1b.html"><tt>printenv</tt>(1B)</a></p>
+<p class="toc level2"><a href="printf-1.html"><tt>printf</tt>(1)</a></p>
+<p class="toc level2"><a href="priocntl-1.html"><tt>priocntl</tt>(1)</a></p>
+<p class="toc level2"><a href="proc-1.html"><tt>proc</tt>(1)</a></p>
+<p class="toc level2"><a href="prof-1.html"><tt>prof</tt>(1)</a></p>
+<p class="toc level2"><a href="profiles-1.html"><tt>profiles</tt>(1)</a></p>
+<p class="toc level2"><a href="projects-1.html"><tt>projects</tt>(1)</a></p>
+<p class="toc level2"><a href="prs-1.html"><tt>prs</tt>(1)</a></p>
+<p class="toc level2"><a href="prt-1.html"><tt>prt</tt>(1)</a></p>
+<p class="toc level2"><a href="prun-1.html"><tt>prun</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1.html"><tt>ps</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1b.html"><tt>ps</tt>(1B)</a></p>
+<p class="toc level2"><a href="psig-1.html"><tt>psig</tt>(1)</a></p>
+<p class="toc level2"><a href="pstack-1.html"><tt>pstack</tt>(1)</a></p>
+<p class="toc level2"><a href="pstop-1.html"><tt>pstop</tt>(1)</a></p>
+<p class="toc level2"><a href="ptime-1.html"><tt>ptime</tt>(1)</a></p>
+<p class="toc level2"><a href="ptree-1.html"><tt>ptree</tt>(1)</a></p>
+<p class="toc level2"><a href="pushd-1.html"><tt>pushd</tt>(1)</a></p>
+<p class="toc level2"><a href="pvs-1.html"><tt>pvs</tt>(1)</a></p>
+<p class="toc level2"><a href="pwait-1.html"><tt>pwait</tt>(1)</a></p>
+<p class="toc level2"><a href="pwd-1.html"><tt>pwd</tt>(1)</a></p>
+<p class="toc level2"><a href="pwdx-1.html"><tt>pwdx</tt>(1)</a></p>
+<p class="toc level2"><a href="ranlib-1.html"><tt>ranlib</tt>(1)</a></p>
+<p class="toc level2"><a href="rcapstat-1.html"><tt>rcapstat</tt>(1)</a></p>
+<p class="toc level2"><a href="rcp-1.html"><tt>rcp</tt>(1)</a></p>
+<p class="toc level2"><a href="rdist-1.html"><tt>rdist</tt>(1)</a></p>
+<p class="toc level2"><a href="read-1.html"><tt>read</tt>(1)</a></p>
+<p class="toc level2"><a href="readonly-1.html"><tt>readonly</tt>(1)</a></p>
+<p class="toc level2"><a href="red-1.html"><tt>red</tt>(1)</a></p>
+<p class="toc level2"><a href="refer-1.html"><tt>refer</tt>(1)</a></p>
+<p class="toc level2"><a href="regcmp-1.html"><tt>regcmp</tt>(1)</a></p>
+<p class="toc level2"><a href="rehash-1.html"><tt>rehash</tt>(1)</a></p>
+<p class="toc level2"><a href="remote-shell-1.html"><tt>remote_shell</tt>(1)</a></p>
+<p class="toc level2"><a href="remsh-1.html"><tt>remsh</tt>(1)</a></p>
+<p class="toc level2"><a href="renice-1.html"><tt>renice</tt>(1)</a></p>
+<p class="toc level2"><a href="repeat-1.html"><tt>repeat</tt>(1)</a></p>
+<p class="toc level2"><a href="reset-1b.html"><tt>reset</tt>(1B)</a></p>
+<p class="toc level2"><a href="return-1.html"><tt>return</tt>(1)</a></p>
+<p class="toc level2"><a href="rev-1.html"><tt>rev</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh-1.html"><tt>rksh</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh93-1.html"><tt>rksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="rlogin-1.html"><tt>rlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="rm-1.html"><tt>rm</tt>(1)</a></p>
+<p class="toc level2"><a href="rmail-1.html"><tt>rmail</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdel-1.html"><tt>rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdir-1.html"><tt>rmdir</tt>(1)</a></p>
+<p class="toc level2"><a href="rmformat-1.html"><tt>rmformat</tt>(1)</a></p>
+<p class="toc level2"><a href="rmmount-1.html"><tt>rmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="rmumount-1.html"><tt>rmumount</tt>(1)</a></p>
+<p class="toc level2"><a href="roffbib-1.html"><tt>roffbib</tt>(1)</a></p>
+<p class="toc level2"><a href="roles-1.html"><tt>roles</tt>(1)</a></p>
+<p class="toc level2"><a href="rpcgen-1.html"><tt>rpcgen</tt>(1)</a></p>
+<p class="toc level2"><a href="rpm2cpio-1.html"><tt>rpm2cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="rsh-1.html"><tt>rsh</tt>(1)</a></p>
+<p class="toc level2"><a href="runat-1.html"><tt>runat</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1.html"><tt>rup</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1c.html"><tt>rup</tt>(1C)</a></p>
+<p class="toc level2"><a href="ruptime-1.html"><tt>ruptime</tt>(1)</a></p>
+<p class="toc level2"><a href="rusage-1b.html"><tt>rusage</tt>(1B)</a></p>
+<p class="toc level2"><a href="rusers-1.html"><tt>rusers</tt>(1)</a></p>
+<p class="toc level2"><a href="rwho-1.html"><tt>rwho</tt>(1)</a></p>
+<p class="toc level2"><a href="sact-1.html"><tt>sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sar-1.html"><tt>sar</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-1.html"><tt>sccs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-admin-1.html"><tt>sccs-admin</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-cdc-1.html"><tt>sccs-cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-comb-1.html"><tt>sccs-comb</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-delta-1.html"><tt>sccs-delta</tt>(1)</a></p>
+<p class="toc level2"><a href="sccsdiff-1.html"><tt>sccsdiff</tt>(1)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>sccs-get</tt>(1)</a></p>
+</div>
+<p class="toc level2"><a href="sccs-help-1.html"><tt>sccs-help</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prs-1.html"><tt>sccs-prs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prt-1.html"><tt>sccs-prt</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-rmdel-1.html"><tt>sccs-rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sact-1.html"><tt>sccs-sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sccsdiff-1.html"><tt>sccs-sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-unget-1.html"><tt>sccs-unget</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-val-1.html"><tt>sccs-val</tt>(1)</a></p>
+<p class="toc level2"><a href="scp-1.html"><tt>scp</tt>(1)</a></p>
+<p class="toc level2"><a href="script-1.html"><tt>script</tt>(1)</a></p>
+<p class="toc level2"><a href="sdiff-1.html"><tt>sdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1.html"><tt>sed</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1b.html"><tt>sed</tt>(1B)</a></p>
+<p class="toc level2"><a href="select-1.html"><tt>select</tt>(1)</a></p>
+<p class="toc level2"><a href="set-1.html"><tt>set</tt>(1)</a></p>
+<p class="toc level2"><a href="setenv-1.html"><tt>setenv</tt>(1)</a></p>
+<p class="toc level2"><a href="setfacl-1.html"><tt>setfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="setlabel-1.html"><tt>setlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="setpgrp-1.html"><tt>setpgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="settime-1.html"><tt>settime</tt>(1)</a></p>
+<p class="toc level2"><a href="sftp-1.html"><tt>sftp</tt>(1)</a></p>
+<p class="toc level2"><a href="sh-1.html"><tt>sh</tt>(1)</a></p>
+<p class="toc level2"><a href="shcomp-1.html"><tt>shcomp</tt>(1)</a></p>
+<p class="toc level2"><a href="shell-builtins-1.html"><tt>shell_builtins</tt>(1)</a></p>
+<p class="toc level2"><a href="shift-1.html"><tt>shift</tt>(1)</a></p>
+<p class="toc level2"><a href="shutdown-1b.html"><tt>shutdown</tt>(1B)</a></p>
+<p class="toc level2"><a href="size-1.html"><tt>size</tt>(1)</a></p>
+<p class="toc level2"><a href="sleep-1.html"><tt>sleep</tt>(1)</a></p>
+<p class="toc level2"><a href="smbutil-1.html"><tt>smbutil</tt>(1)</a></p>
+<p class="toc level2"><a href="snca-1.html"><tt>snca</tt>(1)</a></p>
+<p class="toc level2"><a href="soelim-1.html"><tt>soelim</tt>(1)</a></p>
+<p class="toc level2"><a href="sort-1.html"><tt>sort</tt>(1)</a></p>
+<p class="toc level2"><a href="sortbib-1.html"><tt>sortbib</tt>(1)</a></p>
+<p class="toc level2"><a href="sotruss-1.html"><tt>sotruss</tt>(1)</a></p>
+<p class="toc level2"><a href="source-1.html"><tt>source</tt>(1)</a></p>
+<p class="toc level2"><a href="sparc-1.html"><tt>sparc</tt>(1)</a></p>
+<p class="toc level2"><a href="spell-1.html"><tt>spell</tt>(1)</a></p>
+<p class="toc level2"><a href="spellin-1.html"><tt>spellin</tt>(1)</a></p>
+<p class="toc level2"><a href="split-1.html"><tt>split</tt>(1)</a></p>
+<p class="toc level2"><a href="srchtxt-1.html"><tt>srchtxt</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-1.html"><tt>ssh</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-add-1.html"><tt>ssh-add</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-agent-1.html"><tt>ssh-agent</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-http-proxy-connect-1.html"><tt>ssh-http-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keygen-1.html"><tt>ssh-keygen</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keyscan-1.html"><tt>ssh-keyscan</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-socks5-proxy-connect-1.html"><tt>ssh-socks5-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="stop-1.html"><tt>stop</tt>(1)</a></p>
+<p class="toc level2"><a href="strchg-1.html"><tt>strchg</tt>(1)</a></p>
+<p class="toc level2"><a href="strconf-1.html"><tt>strconf</tt>(1)</a></p>
+<p class="toc level2"><a href="strings-1.html"><tt>strings</tt>(1)</a></p>
+<p class="toc level2"><a href="strip-1.html"><tt>strip</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1.html"><tt>stty</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1b.html"><tt>stty</tt>(1B)</a></p>
+<p class="toc level2"><a href="sum-1.html"><tt>sum</tt>(1)</a></p>
+<p class="toc level2"><a href="sum-1b.html"><tt>sum</tt>(1B)</a></p>
+<p class="toc level2"><a href="sun-1.html"><tt>sun</tt>(1)</a></p>
+<p class="toc level2"><a href="suspend-1.html"><tt>suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="svcprop-1.html"><tt>svcprop</tt>(1)</a></p>
+<p class="toc level2"><a href="svcs-1.html"><tt>svcs</tt>(1)</a></p>
+<p class="toc level2"><a href="switch-1.html"><tt>switch</tt>(1)</a></p>
+<p class="toc level2"><a href="symorder-1.html"><tt>symorder</tt>(1)</a></p>
+<p class="toc level2"><a href="sys-suspend-1.html"><tt>sys-suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="sysv-make-1.html"><tt>sysV-make</tt>(1)</a></p>
+<p class="toc level2"><a href="t300-1.html"><tt>t300</tt>(1)</a></p>
+<p class="toc level2"><a href="t300s-1.html"><tt>t300s</tt>(1)</a></p>
+<p class="toc level2"><a href="t4014-1.html"><tt>t4014</tt>(1)</a></p>
+<p class="toc level2"><a href="t450-1.html"><tt>t450</tt>(1)</a></p>
+<p class="toc level2"><a href="tabs-1.html"><tt>tabs</tt>(1)</a></p>
+<p class="toc level2"><a href="tail-1.html"><tt>tail</tt>(1)</a></p>
+<p class="toc level2"><a href="talk-1.html"><tt>talk</tt>(1)</a></p>
+<p class="toc level2"><a href="tar-1.html"><tt>tar</tt>(1)</a></p>
+<p class="toc level2"><a href="tbl-1.html"><tt>tbl</tt>(1)</a></p>
+<p class="toc level2"><a href="tcopy-1.html"><tt>tcopy</tt>(1)</a></p>
+<p class="toc level2"><a href="tee-1.html"><tt>tee</tt>(1)</a></p>
+<p class="toc level2"><a href="tek-1.html"><tt>tek</tt>(1)</a></p>
+<p class="toc level2"><a href="telnet-1.html"><tt>telnet</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1.html"><tt>test</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1b.html"><tt>test</tt>(1B)</a></p>
+<p class="toc level2"><a href="tftp-1.html"><tt>tftp</tt>(1)</a></p>
+<p class="toc level2"><a href="time-1.html"><tt>time</tt>(1)</a></p>
+<p class="toc level2"><a href="timemanp-1.html"><tt>timemanp</tt>(1)</a></p>
+<p class="toc level2"><a href="times-1.html"><tt>times</tt>(1)</a></p>
+<p class="toc level2"><a href="timesysp-1.html"><tt>timesysp</tt>(1)</a></p>
+<p class="toc level2"><a href="timex-1.html"><tt>timex</tt>(1)</a></p>
+<p class="toc level2"><a href="tip-1.html"><tt>tip</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfdump-1.html"><tt>tnfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfxtract-1.html"><tt>tnfxtract</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1.html"><tt>touch</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1b.html"><tt>touch</tt>(1B)</a></p>
+<p class="toc level2"><a href="tplot-1.html"><tt>tplot</tt>(1)</a></p>
+<p class="toc level2"><a href="tput-1.html"><tt>tput</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1.html"><tt>tr</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1b.html"><tt>tr</tt>(1B)</a></p>
+<p class="toc level2"><a href="trap-1.html"><tt>trap</tt>(1)</a></p>
+<p class="toc level2"><a href="troff-1.html"><tt>troff</tt>(1)</a></p>
+<p class="toc level2"><a href="true-1.html"><tt>true</tt>(1)</a></p>
+<p class="toc level2"><a href="truss-1.html"><tt>truss</tt>(1)</a></p>
+<p class="toc level2"><a href="tset-1b.html"><tt>tset</tt>(1B)</a></p>
+<p class="toc level2"><a href="tsort-1.html"><tt>tsort</tt>(1)</a></p>
+<p class="toc level2"><a href="tty-1.html"><tt>tty</tt>(1)</a></p>
+<p class="toc level2"><a href="type-1.html"><tt>type</tt>(1)</a></p>
+<p class="toc level2"><a href="typeset-1.html"><tt>typeset</tt>(1)</a></p>
+<p class="toc level2"><a href="u370-1.html"><tt>u370</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b-1.html"><tt>u3b</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b15-1.html"><tt>u3b15</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b2-1.html"><tt>u3b2</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b5-1.html"><tt>u3b5</tt>(1)</a></p>
+<p class="toc level2"><a href="ul-1.html"><tt>ul</tt>(1)</a></p>
+<p class="toc level2"><a href="ulimit-1.html"><tt>ulimit</tt>(1)</a></p>
+<p class="toc level2"><a href="umask-1.html"><tt>umask</tt>(1)</a></p>
+<p class="toc level2"><a href="unalias-1.html"><tt>unalias</tt>(1)</a></p>
+<p class="toc level2"><a href="uname-1.html"><tt>uname</tt>(1)</a></p>
+<p class="toc level2"><a href="uncompress-1.html"><tt>uncompress</tt>(1)</a></p>
+<p class="toc level2"><a href="unexpand-1.html"><tt>unexpand</tt>(1)</a></p>
+<p class="toc level2"><a href="unget-1.html"><tt>unget</tt>(1)</a></p>
+<p class="toc level2"><a href="unhash-1.html"><tt>unhash</tt>(1)</a></p>
+<p class="toc level2"><a href="unifdef-1.html"><tt>unifdef</tt>(1)</a></p>
+<p class="toc level2"><a href="uniq-1.html"><tt>uniq</tt>(1)</a></p>
+<p class="toc level2"><a href="units-1.html"><tt>units</tt>(1)</a></p>
+<p class="toc level2"><a href="unix2dos-1.html"><tt>unix2dos</tt>(1)</a></p>
+<p class="toc level2"><a href="unlimit-1.html"><tt>unlimit</tt>(1)</a></p>
+<p class="toc level2"><a href="unpack-1.html"><tt>unpack</tt>(1)</a></p>
+<p class="toc level2"><a href="unset-1.html"><tt>unset</tt>(1)</a></p>
+<p class="toc level2"><a href="unsetenv-1.html"><tt>unsetenv</tt>(1)</a></p>
+<p class="toc level2"><a href="until-1.html"><tt>until</tt>(1)</a></p>
+<p class="toc level2"><a href="uptime-1.html"><tt>uptime</tt>(1)</a></p>
+<p class="toc level2"><a href="userattr-1.html"><tt>userattr</tt>(1)</a></p>
+<p class="toc level2"><a href="users-1b.html"><tt>users</tt>(1B)</a></p>
+<p class="toc level2"><a href="uucp-1c.html"><tt>uucp</tt>(1C)</a></p>
+<p class="toc level2"><a href="uudecode-1c.html"><tt>uudecode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuencode-1c.html"><tt>uuencode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuglist-1c.html"><tt>uuglist</tt>(1C)</a></p>
+<p class="toc level2"><a href="uulog-1c.html"><tt>uulog</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuname-1c.html"><tt>uuname</tt>(1C)</a></p>
+<p class="toc level2"><a href="uupick-1c.html"><tt>uupick</tt>(1C)</a></p>
+<p class="toc level2"><a href="uustat-1c.html"><tt>uustat</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuto-1c.html"><tt>uuto</tt>(1C)</a></p>
+<p class="toc level2"><a href="uux-1c.html"><tt>uux</tt>(1C)</a></p>
+<p class="toc level2"><a href="vacation-1.html"><tt>vacation</tt>(1)</a></p>
+<p class="toc level2"><a href="val-1.html"><tt>val</tt>(1)</a></p>
+<p class="toc level2"><a href="valdate-1.html"><tt>valdate</tt>(1)</a></p>
+<p class="toc level2"><a href="valgid-1.html"><tt>valgid</tt>(1)</a></p>
+<p class="toc level2"><a href="valint-1.html"><tt>valint</tt>(1)</a></p>
+<p class="toc level2"><a href="valpath-1.html"><tt>valpath</tt>(1)</a></p>
+<p class="toc level2"><a href="valrange-1.html"><tt>valrange</tt>(1)</a></p>
+<p class="toc level2"><a href="valstr-1.html"><tt>valstr</tt>(1)</a></p>
+<p class="toc level2"><a href="valtime-1.html"><tt>valtime</tt>(1)</a></p>
+<p class="toc level2"><a href="valuid-1.html"><tt>valuid</tt>(1)</a></p>
+<p class="toc level2"><a href="valyorn-1.html"><tt>valyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="vax-1.html"><tt>vax</tt>(1)</a></p>
+<p class="toc level2"><a href="vc-1.html"><tt>vc</tt>(1)</a></p>
+<p class="toc level2"><a href="vedit-1.html"><tt>vedit</tt>(1)</a></p>
+<p class="toc level2"><a href="ver-1.html"><tt>ver</tt>(1)</a></p>
+<p class="toc level2"><a href="vgrind-1.html"><tt>vgrind</tt>(1)</a></p>
+<p class="toc level2"><a href="vi-1.html"><tt>vi</tt>(1)</a></p>
+<p class="toc level2"><a href="view-1.html"><tt>view</tt>(1)</a></p>
+<p class="toc level2"><a href="vipw-1b.html"><tt>vipw</tt>(1B)</a></p>
+<p class="toc level2"><a href="volcheck-1.html"><tt>volcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="volrmmount-1.html"><tt>volrmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="w-1.html"><tt>w</tt>(1)</a></p>
+<p class="toc level2"><a href="wait-1.html"><tt>wait</tt>(1)</a></p>
+<p class="toc level2"><a href="wc-1.html"><tt>wc</tt>(1)</a></p>
+<p class="toc level2"><a href="what-1.html"><tt>what</tt>(1)</a></p>
+<p class="toc level2"><a href="whatis-1.html"><tt>whatis</tt>(1)</a></p>
+<p class="toc level2"><a href="whence-1.html"><tt>whence</tt>(1)</a></p>
+<p class="toc level2"><a href="whereis-1b.html"><tt>whereis</tt>(1B)</a></p>
+<p class="toc level2"><a href="which-1.html"><tt>which</tt>(1)</a></p>
+<p class="toc level2"><a href="while-1.html"><tt>while</tt>(1)</a></p>
+<p class="toc level2"><a href="who-1.html"><tt>who</tt>(1)</a></p>
+<p class="toc level2"><a href="whoami-1b.html"><tt>whoami</tt>(1B)</a></p>
+<p class="toc level2"><a href="whocalls-1.html"><tt>whocalls</tt>(1)</a></p>
+<p class="toc level2"><a href="whois-1.html"><tt>whois</tt>(1)</a></p>
+<p class="toc level2"><a href="write-1.html"><tt>write</tt>(1)</a></p>
+<p class="toc level2"><a href="xargs-1.html"><tt>xargs</tt>(1)</a></p>
+<p class="toc level2"><a href="xgettext-1.html"><tt>xgettext</tt>(1)</a></p>
+<p class="toc level2"><a href="xstr-1.html"><tt>xstr</tt>(1)</a></p>
+<p class="toc level2"><a href="yacc-1.html"><tt>yacc</tt>(1)</a></p>
+<p class="toc level2"><a href="yes-1.html"><tt>yes</tt>(1)</a></p>
+<p class="toc level2"><a href="ypcat-1.html"><tt>ypcat</tt>(1)</a></p>
+<p class="toc level2"><a href="ypmatch-1.html"><tt>ypmatch</tt>(1)</a></p>
+<p class="toc level2"><a href="yppasswd-1.html"><tt>yppasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="ypwhich-1.html"><tt>ypwhich</tt>(1)</a></p>
+<p class="toc level2"><a href="zcat-1.html"><tt>zcat</tt>(1)</a></p>
+<p class="toc level2"><a href="zlogin-1.html"><tt>zlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="zonename-1.html"><tt>zonename</tt>(1)</a></p>
+<p class="toc level2"><a href="zonestat-1.html"><tt>zonestat</tt>(1)</a></p>
+
+</div>
+
+<a name="REFMAN1content"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1sccs-get-1"></a><a name="sccs-get-1"></a><h3>sccs-get</h3>
+<h3>, get</h3>
+<p>- retrieve a version of an SCCS file</p><h3>Synopsis</h3>
+<pre><tt>/usr/bin/get</tt> [<tt>-begkmnpst</tt>] [<tt>-l</tt> [p]] [<tt>-a</tt><var>sequence</var>] 
+     [<tt>-c</tt> <var>date-time</var> | <tt>-c</tt><var>date-time</var>] [<tt>-G</tt><var>g-file</var>] 
+     [<tt>-i</tt> <var>sid-list</var> | <tt>-i</tt><var>sid-list</var>] [<tt>-r</tt> [<var>sid</var>]] 
+     [<tt>-x</tt> <var>sid-list</var> | <tt>-x</tt><var>sid-list</var>] <var>s.filename</var>...</pre><pre><tt>/usr/xpg4/bin/get</tt> [<tt>-begkmnpst</tt>] [<tt>-l</tt> [p]] [<tt>-a</tt><var>sequence</var>] 
+     [<tt>-c</tt> <var>date-time</var> | <tt>-c</tt><var>date-time</var>] [<tt>-G</tt><var>g-file</var>] 
+     [<tt>-i</tt> <var>sid-list</var> | <tt>-i</tt><var>sid-list</var>] [<tt>-r</tt> <var>sid</var> | <tt>-r</tt><var>sid</var>] 
+     [<tt>-x</tt> <var>sid-list</var> | <tt>-x</tt><var>sid-list</var>] <var>s.filename</var>...</pre><h3>Description</h3>
+<p>The <tt>get</tt> utility retrieves a working copy from the SCCS history file,
+according to the specified options.</p><p>For each <var>s.filename</var> argument, <tt>get</tt> displays the  SCCS delta ID (SID)
+and number of lines retrieved.</p><p>If a directory name is used in place of the <var>s.filename</var> argument,
+the <tt>get</tt> command applies to all <tt>s.</tt>files in that directory. Unreadable <tt>s.</tt>files
+produce an error; processing continues with the next file (if any). The use
+of `<tt>&#45;</tt>' as the <var>s.filename</var> argument indicates that the names of files
+are to be read from the standard input, one <tt>s.</tt>file per line.</p><p>The retrieved file normally has the same filename base as the <tt>s.</tt>file,
+less the prefix, and is  referred to as the <tt>g-</tt>file.</p><p>For each file processed, <tt>get</tt> responds (on the standard output) with the
+SID being accessed, and with the number of lines retrieved from the
+<tt>s.</tt>file.</p><h3>Options</h3>
+<p>The following options are supported:</p><dl><dt><tt>-a</tt><var>sequence</var></dt>
+<dd><p>Retrieves the version corresponding to the indicated delta sequence number. This option is used primarily by the SCCS <tt>comb</tt> command (see <a href="sccs-comb-1.html"><tt>sccs-comb</tt>(1)</a>). For users, <tt>-r</tt> is an easier way to specify a version. The <tt>-a</tt> option supersedes the <tt>-r</tt> option when both are used.</p></dd>
+<dt><tt>-b</tt></dt>
+<dd><p>Creates a new branch. Used with the <tt>-e</tt> option to indicate that the new delta should have a SID in a new branch. Instead of incrementing the level for version to be checked in, <tt>get</tt> indicates in the <tt>p.</tt>file that the delta to be checked in should either initialize a new branch and sequence (if there is no existing branch at the current level), or increment the branch component of the SID. If the <tt>b</tt> flag is not set in the <tt>s.</tt>file, this option is ignored.</p></dd>
+<dt><tt>-c</tt> <var>date-time</var> | <tt>-c</tt><var>date-time</var></dt>
+<dd><p>Retrieves the latest version checked in prior to the date and time indicated by the <var>date-time</var> argument. <var>date-time</var> takes the form:</p><p><var>yy</var>[<var>mm</var>[<var>dd</var>[ <var>hh</var>[<var>mm</var>[<var>ss</var>]&#32;]&#32;]&#32;]&#32;]</p><p>Units omitted from the indicated date and time default to their maximum possible values; that is <tt></tt><tt>-c</tt><tt>7502</tt> is equivalent to <tt></tt><tt>-c</tt><tt>750228235959</tt>. Values of <var>yy</var> in the range <tt>69</tt>&#45;<tt>99</tt> refer to the twentieth century. Values in the range <tt>00</tt>&#45;<tt>68</tt> refer to the twenty-first century. Any number of non-numeric characters can separate the various 2 digit components. If white-space characters occur, the <var>date-time</var> specification must be quoted.</p></dd>
+<dt><tt>-e</tt></dt>
+<dd><p>Retrieves a version for editing. With this option, <tt>get</tt> places a lock on the <tt>s.</tt>file, so that no one else can check in changes to the version you have checked out. If the <tt>j</tt> flag is set in the <tt>s.</tt>file, the lock is advisory: <tt>get</tt> issues a warning message. Concurrent use of `<tt>get</tt> <tt>-e</tt>' for different SIDs is allowed. However, <tt>get</tt> does not check out a version of the file if a writable version is present in the directory. All SCCS file protections stored in the <tt>s.</tt>file, including the release ceiling, floor, and authorized user list, are honored by `<tt>get</tt> <tt>-e</tt>'.</p></dd>
+<dt><tt>-g</tt></dt>
+<dd><p>Gets the SCCS version ID, without retrieving the version itself. Used to verify the existence of a particular SID.</p></dd>
+<dt><tt>-G</tt><var>newname</var></dt>
+<dd><p>Uses <var>newname</var> as the name of the retrieved version.</p></dd>
+<dt><tt>-i</tt> <var>sid-list</var> | <tt>-i</tt><var>sid-list</var></dt>
+<dd><p>Specifies a list of deltas to include in the retrieved version. The included deltas are noted in the standard output message. <var>sid-list</var> is a comma-separated list of SIDs. To specify a range of deltas, use a `<tt>&#45;</tt>' separator instead of a comma, between two SIDs in the list.</p></dd>
+<dt><tt>-k</tt></dt>
+<dd><p>Suppresses expansion of ID keywords. <tt>-k</tt> is implied by the <tt>-e</tt>.</p></dd>
+<dt><tt>-l</tt>&#32;[&#32;<tt>p</tt>&#32;]</dt>
+<dd><p>Retrieves a summary of the delta table (version log) and write it to a listing file, with the `<tt>l.</tt>' prefix (called `<tt>l.</tt>file'). When <tt>-lp</tt> is used, write the summary onto the standard output.</p></dd>
+<dt><tt>-m</tt></dt>
+<dd><p>Precedes each retrieved line with the SID of the delta in which it was added to the file. The SID is separated from the line with a TAB.</p></dd>
+<dt><tt>-n</tt></dt>
+<dd><p>Precedes each line with the <tt>%M%</tt> ID keyword and a TAB. When both the <tt>-m</tt> and <tt>-n</tt> options are used, the ID keyword precedes the SID, and the line of text.</p></dd>
+<dt><tt>-p</tt></dt>
+<dd><p>Writes the text of the retrieved version to the standard output. All messages that normally go to the standard output are written to the standard error instead.</p></dd>
+<dt><tt>-s</tt></dt>
+<dd><p>Suppresses all output normally written on the standard output. However, fatal error messages (which always go to the standard error) remain unaffected.</p></dd>
+<dt><tt>-t</tt></dt>
+<dd><p>Retrieves the most recently created (top) delta in a given release (for example: <tt>-r1</tt>).</p></dd>
+</dl>
+<h4>/usr/bin/get</h4>
+<dl><dt><tt>-r</tt>[<var>sid</var>]</dt>
+<dd><p>Retrieves the version corresponding to the indicated SID (delta).</p><p>The SID for a given delta is a number, in Dewey decimal format, composed of two or four fields: the <var>release</var> and <var>level</var> fields, and for branch deltas, the <var>branch</var> and <var>sequence</var> fields.  For instance, if <tt>1.2</tt> is the SID, <tt>1</tt> is the release, and <tt>2</tt> is the level number. If <tt>1.2.3.4</tt> is the SID, <tt>3</tt> is the branch and <tt>4</tt> is the sequence number.</p><p>You need not specify the entire SID to retrieve a version with <tt>get</tt>. When you omit <tt>-r</tt> altogether, or when you omit both release and level, <tt>get</tt> normally retrieves the highest release and level. If the <tt>d</tt> flag is set to an SID in the <tt>s.</tt>file and you omit the SID, <tt>get</tt> retrieves the default version indicated by that flag.</p><p>When you specify a release but omit the level, <tt>get</tt> retrieves the highest level in that release. If that release does not exist, <tt>get</tt> retrieves highest level from the next-highest existing release.</p><p>Similarly with branches, if you specify a release, level and branch, <tt>get</tt> retrieves the highest sequence in that branch.</p></dd>
+</dl>
+<h4>/usr/xpg4/bin/get</h4>
+<dl><dt><tt>-r</tt> <var>sid</var> | <tt>-r</tt><var>sid</var></dt>
+<dd><p>Same as for <tt>/usr/bin/get</tt> except that SID is mandatory.</p></dd>
+<dt><tt>-x</tt> <var>sid-list</var> | <tt>-x</tt><var>sid-list</var></dt>
+<dd><p>Excludes the indicated deltas from the retrieved version. The excluded deltas are noted in the standard output message. <var>sid-list</var> is a comma-separated list of SIDs. To specify a range of deltas, use a `<tt>&#45;</tt>' separator instead of a comma, between two SIDs in the list.</p></dd>
+</dl>
+<h3>OUTPUT</h3>
+<h4>/usr/bin/get</h4>
+<p>The output format for <tt>/usr/bin/get</tt> is as follows:</p><pre><tt>"%%s\n%%d lines\n"</tt>, &#60;<var>SID</var>>, &#60;<var>number of lines</var>></pre><h4>/usr/xpg4/bin/get</h4>
+<p>The output format for <tt>/usr/xpg4/bin/get</tt> is as follows:</p><pre><tt>"%%s\n%%d\n"</tt>, &#60;<var>SID</var>>, &#60;<var>number of lines</var>></pre><h3>Usage</h3>
+<p>Usage guidelines are as follows:</p><h4>ID Keywords</h4>
+<p>In the absence of <tt>-e</tt> or <tt>-k</tt>, <tt>get</tt> expands the following 
+ID keywords by replacing them with the indicated values in the text
+of the retrieved source.</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="14%"><col width="85%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding"><var>Keyword</var></div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding"><var>Value</var></div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%%A%%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Shorthand notation for an ID line with  data
+for <a href="what-1.html"><tt>what</tt>(1)</a><tt>: %%Z%%Y% %M% %I%%Z%</tt></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%B%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">SID branch component</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%C%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Current line number. Intended for identifying messages output by
+the program such as ``<var>this shouldn't have happened</var>'' type errors.  It is <var>not</var> intended
+to be used on every line to provide sequence numbers.</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%D%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Current date: <var>yy</var>/<var>mm</var>/<var>dd</var></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%E%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Date
+newest applied delta was created: <var>yy</var>/<var>mm</var>/<var>dd</var></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%F%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">SCCS <tt>s.</tt>file name</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%G%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Date newest applied delta was
+created: <var>mm</var>/<var>dd</var>/<var>yy</var></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%H%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Current date: <var>mm</var><tt>/</tt><var>dd</var><tt>/</tt><var>yy</var></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%I%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">SID of the retrieved version: <tt>%R%.%L%.%B%.%S%</tt></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">SID level component</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%M%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Module name:
+either the value of the <tt>m</tt> flag in the <tt>s.</tt>file (see <a href="sccs-admin-1.html"><tt>sccs-admin</tt>(1)</a>),
+or the name of the <tt>s.</tt>file less the prefix</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%P%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Fully qualified <tt>s.</tt>file name</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%Q%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Value of
+the <tt>q</tt> flag in the <tt>s.</tt>file</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%R%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">SID Release component</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%S%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">SID Sequence component</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%T%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Current time: <var>hh</var><tt>:</tt><var>mm</var><tt>:</tt><var>ss</var></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%U%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Time
+the newest applied delta was created: <var>hh</var><tt>:</tt><var>mm</var><tt>:</tt><var>ss</var></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%W%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Shorthand notation for an ID line
+with data for <tt>what</tt>: <tt>%Z%%&#38;;% %I%</tt></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%Y%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Module type: value of the <tt>t</tt> flag in
+the <tt>s.</tt>file</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>%Z%</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">4-character string: `<tt>@(#)</tt>', recognized by <tt>what</tt></div></td>
+</tr>
+</table>
+</td></tr></table>
+<h4>ID String</h4>
+<p>The table below explains how the  SCCS identification string is 
+determined for retrieving and creating deltas.</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="16%"><col width="16%"><col width="25%"><col width="16%"><col width="25%"><tr><th class="columncaption" colspan="5" align="center" valign="top"><div class="headerpadding">Determination of SCCS Identification String</div></th>
+</tr>
+<tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">SID (1) 
+Specified</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding"><tt>-b</tt> Option Used (2)</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">Other Conditions</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">SID Retrieved</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">SID of Delta to be Created</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">none (3)</div></td>
+<td align="left" valign="top"><div class="pad5x10">no</div></td>
+<td align="left" valign="top"><div class="pad5x10">R
+defaults to mR</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.(mL+1)</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">none (3)</div></td>
+<td align="left" valign="top"><div class="pad5x10">yes</div></td>
+<td align="left" valign="top"><div class="pad5x10">R defaults to mR</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R</div></td>
+<td align="left" valign="top"><div class="pad5x10">no</div></td>
+<td align="left" valign="top"><div class="pad5x10">R > mR</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.1 (4)</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R</div></td>
+<td align="left" valign="top"><div class="pad5x10">no</div></td>
+<td align="left" valign="top"><div class="pad5x10">R = mR</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.(mL+1)</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R</div></td>
+<td align="left" valign="top"><div class="pad5x10">yes</div></td>
+<td align="left" valign="top"><div class="pad5x10">R
+> mR</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R</div></td>
+<td align="left" valign="top"><div class="pad5x10">yes</div></td>
+<td align="left" valign="top"><div class="pad5x10">R = mR</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL</div></td>
+<td align="left" valign="top"><div class="pad5x10">mR.mL.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R</div></td>
+<td align="left" valign="top"><div class="pad5x10">&#45;</div></td>
+<td align="left" valign="top"><div class="pad5x10">R &#60; mR and R does <var>not</var> exist</div></td>
+<td align="left" valign="top"><div class="pad5x10">hR.mL (5)</div></td>
+<td align="left" valign="top"><div class="pad5x10">hR.mL.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R</div></td>
+<td align="left" valign="top"><div class="pad5x10">&#45;</div></td>
+<td align="left" valign="top"><div class="pad5x10">Trunk
+succ. (6) in release > R and R exists</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.mL</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.mL.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L</div></td>
+<td align="left" valign="top"><div class="pad5x10">no</div></td>
+<td align="left" valign="top"><div class="pad5x10">No trunk succ.</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.(L+1)</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L</div></td>
+<td align="left" valign="top"><div class="pad5x10">yes</div></td>
+<td align="left" valign="top"><div class="pad5x10">No trunk
+succ.</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L</div></td>
+<td align="left" valign="top"><div class="pad5x10">&#45;</div></td>
+<td align="left" valign="top"><div class="pad5x10">Trunk succ. in release &#8805; R</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L.B</div></td>
+<td align="left" valign="top"><div class="pad5x10">no</div></td>
+<td align="left" valign="top"><div class="pad5x10">No branch succ.</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.B.mS</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.B.(mS+1)</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L.B</div></td>
+<td align="left" valign="top"><div class="pad5x10">yes</div></td>
+<td align="left" valign="top"><div class="pad5x10">No branch succ.</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.B.mS</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L.B.S</div></td>
+<td align="left" valign="top"><div class="pad5x10">no</div></td>
+<td align="left" valign="top"><div class="pad5x10">No branch succ.</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.B.S</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.B.(S+1)</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L.B.S</div></td>
+<td align="left" valign="top"><div class="pad5x10">yes</div></td>
+<td align="left" valign="top"><div class="pad5x10">No
+branch succ. </div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.B.S</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.(mB+1).1</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">R.L.B.S</div></td>
+<td align="left" valign="top"><div class="pad5x10">&#45;</div></td>
+<td align="left" valign="top"><div class="pad5x10">Branch succ.</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.B.S</div></td>
+<td align="left" valign="top"><div class="pad5x10">R.L.(mB+1).1</div></td>
+</tr>
+</table>
+</td></tr></table>
+<dl><dt>(1)</dt>
+<dd><p>`R', `L', `B', and `S' are the `release', `level', `branch', and `sequence' components of the SID, respectively; `m' means `maximum'. Thus, for example, `R.mL' means `the maximum level number within release R'; `R.L.(mB+1).1' means `the first sequence number on the <var>new</var> branch (that is, maximum branch number plus one) of level L within release R'. <b>Note:</b> If the SID specified is of the form `R.L', `R.L.B', or `R.L.B.S', each of the specified components <b>must</b> exist.</p></dd>
+<dt>(2)</dt>
+<dd><p>The <tt>-b</tt> option is effective only if the <tt>b</tt> flag is present in the file. An entry of `<tt>&#45;</tt>' means `irrelevant'.</p></dd>
+<dt>(3)</dt>
+<dd><p>This case applies if the <tt>d</tt> (default SID) flag is <b>not</b> present in the file. If the <tt>d</tt> flag <b>is</b> present in the file, the SID obtained from the <tt>d</tt> flag is interpreted as if it had been specified on the command line. Thus, one of the other cases in this table applies.</p></dd>
+<dt>(4)</dt>
+<dd><p>Forces creation of the <b>first</b> delta in a <b>new</b> release.</p></dd>
+<dt>(5)</dt>
+<dd><p>`hR' is the highest <b>existing</b> release that is lower than the specified, <b>nonexistent</b>, release R.</p></dd>
+<dt>(6)</dt>
+<dd><p>Successor.</p></dd>
+</dl>
+<h3>Environment Variables</h3>
+<p>See <a href="../821-1474/environ-5.html#REFMAN5environ-5"><tt>environ</tt>(5)</a> for descriptions of the following environment variables that affect the
+execution of <tt>get</tt>: <tt>LANG</tt>, <tt>LC_ALL</tt>, <tt>LC_COLLATE</tt>, <tt>LC_CTYPE</tt>, <tt>LC_MESSAGES</tt>, and <tt>NLSPATH</tt>.</p><h3>Files</h3>
+<dl><dt>``g-file''</dt>
+<dd><p>version retrieved by <tt>get</tt></p></dd>
+<dt><tt>l.</tt><var>file</var></dt>
+<dd><p>file containing extracted delta table info</p></dd>
+<dt><tt>p.</tt><var>file</var></dt>
+<dd><p>permissions (lock) file</p></dd>
+<dt><tt>z.</tt><var>file</var></dt>
+<dd><p>temporary copy of <tt>s.</tt><var>file</var></p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p><h4>/usr/bin/get</h4>
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">developer/build/make</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h4>/usr/xpg4/bin/get</h4>
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">developer/xopen/xcu4</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Interface
+Stability</div></td>
+<td align="left" valign="top"><div class="pad5x10">Committed</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Standard</div></td>
+<td align="left" valign="top"><div class="pad5x10">See <a href="../821-1474/standards-5.html#REFMAN5standards-5"><tt>standards</tt>(5)</a>.</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h3>See Also</h3>
+<p><a href="sccs-1.html"><tt>sccs</tt>(1)</a>, <a href="sccs-admin-1.html"><tt>sccs-admin</tt>(1)</a>, <a href="sccs-delta-1.html"><tt>sccs-delta</tt>(1)</a>, <a href="sccs-help-1.html"><tt>sccs-help</tt>(1)</a>, <a href="sccs-prs-1.html"><tt>sccs-prs</tt>(1)</a>, <a href="sccs-prt-1.html"><tt>sccs-prt</tt>(1)</a>, <a href="sccs-sact-1.html"><tt>sccs-sact</tt>(1)</a>, <a href="sccs-unget-1.html"><tt>sccs-unget</tt>(1)</a>, <a href="what-1.html"><tt>what</tt>(1)</a>, <a href="../821-1473/sccsfile-4.html#REFMAN4sccsfile-4"><tt>sccsfile</tt>(4)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a>, <a href="../821-1474/environ-5.html#REFMAN5environ-5"><tt>environ</tt>(5)</a>,
+<a href="../821-1474/standards-5.html#REFMAN5standards-5"><tt>standards</tt>(5)</a></p><h3>Diagnostics</h3>
+<p>Use the SCCS <tt>help</tt> command for explanations (see <a href="sccs-help-1.html"><tt>sccs-help</tt>(1)</a>).</p><h3>Bugs</h3>
+<p>If the effective user has write permission (either explicitly or implicitly) in
+the directory containing the SCCS files, but the real user does not,
+only one file can be named when using <tt>-e</tt>.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="sccsdiff-1.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="sccs-help-1.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

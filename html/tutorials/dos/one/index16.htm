@@ -1,0 +1,78 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="Description" CONTENT="Remove the space-eating font and alignment information that always fills Excel's HTM tables.">
+   <TITLE>Minimize Excel Web Page Size</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000" BACKGROUND="tile.gif">
+&nbsp;
+<TABLE CELLSPACING=0 WIDTH="100%" >
+<TR>
+<TD ALIGN=LEFT VALIGN=BOTTOM>
+<CENTER><A HREF="~webspace.html"><IMG SRC="smallduck.gif" ALT="Eric's Webspace" HSPACE=10 BORDER=0 HEIGHT=71 WIDTH=150></A></CENTER>
+</TD>
+
+<TD ALIGN=LEFT VALIGN=BOTTOM>
+<CENTER><B><I><FONT SIZE=+3>Minimize Excel Web Page Size</FONT></I></B></CENTER>
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE CELLSPACING=0 CELLPADDING=0 WIDTH="100%" BGCOLOR="#666699" >
+<TR>
+<TD VALIGN=CENTER WIDTH="100%">
+<DIV ALIGN=right><A HREF="http://www.calweb.com/~webspace/nofonts/nofonts.zip"><IMG SRC="download.gif" BORDER=0 HEIGHT=19 WIDTH=130></A>&nbsp;</DIV>
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE>
+<TR>
+<TD><IMG SRC="100.gif" HEIGHT=1 WIDTH=100></TD>
+
+<TD><A HREF="http://www.calweb.com/~webspace/nofonts/nofonts.zip"><IMG SRC="nofonts.gif" BORDER=0 HEIGHT=65 WIDTH=233 ALIGN=LEFT></A>
+"NoFonts" is a program written to minimize the size of the HTM files generated
+by Excel. The problem is that every cell in an Excel-generated table gets
+separate alignment, color, and font information. All this blows the size
+of an average table web page up by a factor of five.&nbsp;
+
+<P>NoFonts removes all font, color, and alignment information from the
+first HTM table in a web page. It does not affect anything except the first
+table. Text before and after the table will be unaffected. Bold and italic
+markers inside the table are also not affected.&nbsp;
+
+<P>Here is a typical sample portion of an Excel HTM file:&nbsp;
+<BR><B><TT><FONT COLOR="#FF0000">&lt;TR ALIGN="center" VALIGN="top" STYLE="vnd.ms-excel.numberformat:0"></FONT></TT></B>&nbsp;
+<BR><B><TT><FONT COLOR="#FF0000">&lt;TD BGCOLOR=#C0C0C0>&lt;FONT FACE="Arial">Technician&lt;/FONT>&lt;/TD></FONT></TT></B>&nbsp;
+<BR>Here's what it looks like in Netscape:&nbsp;
+<BR><IMG SRC="before.gif" HEIGHT=120 WIDTH=299>&nbsp;
+
+<P>Here is that same portion after running NoFonts on it:&nbsp;
+<BR><B><TT><FONT COLOR="#FF0000">&lt;TR></FONT></TT></B>&nbsp;
+<BR><B><TT><FONT COLOR="#FF0000">&lt;TD>Technician&lt;/TD></FONT></TT></B>&nbsp;
+<BR>You can see how much smaller it is! This makes for much faster downloading
+and displaying. Here's what the smaller NoFonts version looks like:&nbsp;
+<BR><IMG SRC="after.gif" HEIGHT=123 WIDTH=278>&nbsp;
+<BR>As you can see, there isn't enough difference in what people see to
+make the huge size worth it.&nbsp;
+
+<P>NoFonts will accept command-line arguments, so you can drop HTM table
+files on it (or on a shortcut to it) for quick operation.&nbsp;
+
+<P>NoFonts was written with Visual Basic version 3 (16-bit) and will run
+under Windows 3.x and Windows 95. Although NoFonts will not display long
+filenames, it will preserve them on the target file. NoFonts requires <A HREF="ftp://ftp.microsoft.com/softlib/mslfiles/vbrun300.exe">VBRUN300.DLL</A>
+in your "System" directory. Since this is a very common file, it is not
+included here. CMDIALOG.VBX is also required and is included.&nbsp;
+
+<P>To download NoFonts, click on the "Download Now!" icon at the top of
+this page.</TD>
+</TR>
+</TABLE>
+
+<P><P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+
+</BODY>
+</HTML>

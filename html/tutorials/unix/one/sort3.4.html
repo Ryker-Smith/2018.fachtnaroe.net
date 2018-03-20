@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/sort3.4.html -->
+
+<HEAD>
+<TITLE>Sorting on a specific part of a field</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Sorting on a specific part of a field</H1>
+
+<P>You can also sort on a specific part of a field if necessary.</P>
+
+<P>To define which part of a field to sort on you give the position
+in the field at which to start the sort followed by the
+position in the field at which to end the sort.</P>
+
+<P>The position at which to start the sort is given as the number
+of fields to skip followed by the number of characters to
+skip. For example:</P>
+
+<PRE WIDTH=80>   <STRONG>+2.3</STRONG>
+</PRE>
+
+<P>tells <STRONG>sort</STRONG> to skip the first two fields and the
+first three characters of field 3.</P>
+
+<P>The position at which to stop the sort is given as the
+number of the field followed by number of the character
+in that field at which the sort is to stop.  For example:</P>
+
+<PRE WIDTH=80>   <STRONG>-3.6</STRONG>
+</PRE>
+
+<P>tells <STRONG>sort</STRONG> to stop the sort at the 6th character
+in field three.</P>
+
+<P>To sort on the fourth and fifth characters of field three:</P>
+
+<PRE WIDTH=80>   <STRONG>+2.3  -3.6</STRONG>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

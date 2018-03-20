@@ -1,0 +1,97 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win95; U) [Netscape]">
+   <meta name="Author" content="Eric Phelps">
+   <meta name="Description" content="A tool you can use to help automate downloads of files from the web. Use it from a batch file or automate it from VBA or the Windows Scripting Host.">
+   <title>WebGet -- Internet File Retriever</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000" background="tile1.gif">
+&nbsp;
+<table CELLSPACING=0 WIDTH="100%" >
+<tr>
+<td ALIGN=LEFT VALIGN=BOTTOM>
+<center><a href="~webspace.html"><img SRC="smallduck1.gif" ALT="Eric's Webspace" HSPACE=10 BORDER=0 height=71 width=150></a></center>
+</td>
+
+<td ALIGN=LEFT VALIGN=BOTTOM WIDTH="100%">
+<center><b><i><font size=+3>WebGet Internet File Retriever</font></i></b></center>
+</td>
+</tr>
+</table>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="100%" BGCOLOR="#666699" >
+<tr>
+<td WIDTH="100%">
+<div align=right><a href="http://www.calweb.com/~webspace/webget/webget.zip"><img SRC="download1.gif" ALT="Download Now!" BORDER=0 height=19 width=130></a><a href="http://www.calweb.com/~webspace/webget/webget.zip"><img SRC="vbclsico1.gif" BORDER=0 height=29 width=35></a></div>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td><img SRC="1001.gif" height=1 width=100></td>
+
+<td WIDTH="100%"><b>Good news - I found a more stable alternative to the
+programs I've written here.</b> It's called WGET and can retrieve files
+via HTTP and FTP <i>and</i> it can resume aborted downloads. I found out
+about it at the <a href="http://member.intraware.com/free/wget.html">Intraware</a>
+site when I was downloading some Informix drivers. <b>Get it <a href="http://sunsite.dk/wget/">here</a>.</b>
+Or you're still welcome to read on and get the tools I wrote...
+<p>I needed to automate the download of data from a web site. There didn't
+seem to be any way to do it. So I had to write a program. WebGet can be
+run from a DOS batch file or from the Windows Scripting Host (Or VBA or
+any ActiveX client). It can retrieve text or binary files under both the
+HTTP and FTP protocols. Although it is technically a Windows program, there
+is no user interface. Click the "Download Now!" icon to get the WebGet
+program, source code, and sample DOS and VBScript code.&nbsp;
+<center>
+<p><b><font color="#FF0000">--- Keep Reading! ---</font></b></center>
+
+<p>I hate to mention this, but some users have reported (and I've confirmed)
+that there are some webservers that the WebGet program seems to retrieve
+only the first 1 or 2 kb of data from. My feeling is that this is due to
+a too-large MTU setting on the webserver resulting in packet fragmentation
+which confuses the MSINET control. Just a guess. Maybe it doesn't like
+the chunking that some servers do. But basically it works for me on the
+servers I use. So there.
+<p>Ouch! And now I find out the darned thing doesn't work at all under
+Windows 98. Okay, so it still works for me under Windows 95. I use it (automated)
+about ten times a day. So that makes it your problem. Ha!
+<p><b>Here's my compromise.</b> I had another project I was working on.
+It retrieves http files (no ftp), but it doesn't use the MSINET control
+that I bet is causing at least half the problems. It uses the MSWINSCK
+control, and even though it is still very basic, it is way more stable.
+I mean it gets full pages where WebGet gets half pages, and it works on
+Windows 98. I call it "Post" (I don't bother trying to come up with creative
+names), and you can get it <b><a href="http://www.calweb.com/~webspace/webget/post.zip">here</a></b>. It works
+with both the http "POST" and "GET" methods. The "WebGet" program only
+did "GET".&nbsp;
+<p>Like everything I have, it comes with samples and source code. And there's
+a good chance it will solve your problem if you need to automate the download
+of web pages.</td>
+</tr>
+</table>
+
+<table WIDTH="100%" >
+<tr>
+<td><img SRC="1001.gif" ALT="100 pixel spacer" height=1 width=100></td>
+
+<td WIDTH="100%"></td>
+</tr>
+</table>
+
+<center>
+<p>Bad links? Questions? <a href="mail.htm">Send
+me mail</a>.</center>
+
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--#include virtual="/head.shtml" -->
+<body>
+<!--#include virtual="/inprogress.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/topmenu.shtml" -->
+<!--#include virtual="/sidemenu.shtml" -->
+<div id="content">
+<h1>Database Methods Project Guidelines</h1>
+Projects are subject to change. <b>Refer back to the briefs constantly; check your email regularly.</b>
+<h2>Steps - Design - 20%</h2>
+<ol>
+  <li>In this stage you design; other than that, you <b>do</b> nothing!</li>
+  <li>If no topic is allocated, choose a suitable topic.
+  </ol>
+	<ul class="olul">
+  	<li>Seems obvious, but decide and stick to your target.</li>
+  	<li>Don't be thinking about other possibilities when you've already started one project.</li>
+  	<li>Think about what you want your database to <b>do</b>.
+  	</ul>
+  	<ol start="2">
+      <li>Now set down the aims of your project.
+      </ol>
+  	<ul class="olul">
+    	<li>Clearly state as many aims as you have.</li>
+    	<li>Don't worry about stating obvious aims - what's obvious to you may not be to the examiner.</li>
+    	<li>Realise that the aims you set now are what you'll seek to achieve in your project.</li>
+    	<li>At some later stage you'll look back and say "This was my aim, and this was my outcome".</li>
+  	</ul>
+  	<ol start="3">
+      <li>Design your database table <i>on paper</i> first.
+      </ol>
+    	<ul class="olul">
+      	<li>Think of each item of data you'll want to store.</li>
+	      <li>For each, decide a name for the data item.</li>
+      	<li>Next choose the details of the data type and size.</li>
+      	<li> ... still all <i>on paper</i>.</li>
+    	</ul>
+    <ol start="4">
+      <li>Next decide how you'll gather that data.</li>
+      <li>What are you going to do with the data once gathered and stored?</li>
+    </ol>
+<h2>Steps - Implementation - 20%</h2>
+<ol>
+  <li>Now, you start to <b>do</b> things previously specified.</li>
+  <li>Carry out and complete the project as you have designed it.</li>
+  <li>A key item to monitor is that each of your project aims are achieved.</li>
+  <li>Optimally this will allow you to write a brief note at the end of the project re-listing your aims and matching them up with what you have achieved.</li>
+</ol>
+<h2>Steps - Review/Modifications - 10%</h2>
+<ol>
+  <li>In this section you review your completed project. You should come up with two or more sensible and relevant improvements that, with hindsight, you feel would improve the project</li>
+  <li>You do <b>not</b> carry out the suggested improvements. Just list them, with your reasons as to why you think they're a good idea.</li>
+</ol>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="dbm-project-guidelines.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

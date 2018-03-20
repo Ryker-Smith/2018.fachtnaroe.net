@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<title>Using PL/SQL Subprograms</title>
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Version 5.1.1 Build 005" />
+<meta name="dcterms.created" content="2009-08-27T3:21:51Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Database PL/SQL Language Reference" />
+<meta name="dcterms.identifier" content="B28370-05" />
+<meta name="dcterms.isVersionOf" content="LNPLS" />
+<link rel="Start" href="../../index.htm" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Index" href="index.htm" title="Index" type="text/html" />
+<link rel="Prev" href="dynamic.htm" title="Previous" type="text/html" />
+<link rel="Next" href="triggers.htm" title="Next" type="text/html" />
+<link rel="alternate" href="../b28370.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="../B28370-05.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="../B28370-05.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<span id="PAGE" style="display:none;">15/89</span> <!-- End Header --><a id="CHDBEJGF"></a>
+<h1 class="chapter"><span class="secnum">8</span> <a id="LNPLS008"></a>Using PL/SQL Subprograms</h1>
+<p><a id="sthref885"></a><a id="sthref886"></a><a id="sthref887"></a><a id="sthref888"></a><a id="sthref889"></a><a id="sthref890"></a>This chapter explains how to turn sets of statements into reusable subprograms. Subprograms are the building blocks of modular, maintainable applications.</p>
+<p>Topics:</p>
+<ul>
+<li>
+<p><a href="#i4079">Overview of PL/SQL Subprograms</a></p>
+</li>
+<li>
+<p><a href="#CHDDCFHD">Subprogram Parts</a></p>
+</li>
+<li>
+<p><a href="#i4096">Creating Nested Subprograms that Invoke Each Other</a></p>
+</li>
+<li>
+<p><a href="#i23202">Declaring and Passing Subprogram Parameters</a></p>
+</li>
+<li>
+<p><a href="#i12352">Overloading PL/SQL Subprogram Names</a></p>
+</li>
+<li>
+<p><a href="#i17794">How PL/SQL Subprogram Calls Are Resolved</a></p>
+</li>
+<li>
+<p><a href="#i18574">Using Invoker's Rights or Definer's Rights (AUTHID Clause)</a></p>
+</li>
+<li>
+<p><a href="#i2884">Using Recursive PL/SQL Subprograms</a></p>
+</li>
+<li>
+<p><a href="#i17145">Invoking External Subprograms</a></p>
+</li>
+<li>
+<p><a href="#i22204">Controlling Side Effects of PL/SQL Subprograms</a></p>
+</li>
+<li>
+<p><a href="#i23489">Understanding PL/SQL Subprogram Parameter Aliasing</a></p>
+</li>
+<li>
+<p><a href="#BABFHACJ">Using the PL/SQL Function Result Cache</a></p>
+</li>
+</ul>
+<a id="i4079"></a>
+<div class="sect1"><!-- infotype="Concept" -->
+<h2 class="sect1"><a id="LNPLS00801"></a>Overview of PL/SQL Subprograms</h2>
+<p>A PL/SQL subprogram is a named PL/SQL block that can be invoked with a set of parameters. A subprogram can be either a procedure or a function. Typically, you use a procedure to perform an action and a function to compute and return a value.</p>
+<p>You can create a subprogram either at schema level, inside a package, or inside a PL/SQL block (which can be another subprogram).</p>
+<p>A subprogram created at schema level is a <span class="bold">standalone stored subprogram</span>. You create it with the <code>CREATE</code> <code>PROCEDURE</code> or <code>CREATE</code> <code>FUNCTION</code> statement. It is stored in the database until you drop it with the <code>DROP</code> <code>PROCEDURE</code> or <code>DROP</code> <code>FUNCTION</code> statement.</p>
+<p>A subprogram created inside a package is a <span class="bold">packaged subprogram</span>. It is stored in the database until you drop the package with the <code>DROP</code> <code>PACKAGE</code> statement.</p>
+<p>A subprogram created inside a PL/SQL block is a <span class="bold">nested subprogram</span>. You can either declare and define it at the same time, or you can declare it first (<span class="bold">forward declaration</span>) and then define it later in the same block. A nested subprogram is stored in the database only if it is nested within a standalone or packaged subprogram.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="create_procedure.htm#i2072424">CREATE PROCEDURE Statement</a> for more information about creating standalone stored procedures</p>
+</li>
+<li>
+<p><a href="create_function.htm#i2153260">CREATE FUNCTION Statement</a> for more information about creating standalone stored functions</p>
+</li>
+<li>
+<p><a href="create_package.htm#i2091914">CREATE PACKAGE Statement</a> for more information about creating standalone stored functions</p>
+</li>
+<li>
+<p><a href="procedure.htm#i35564">Procedure Declaration and Definition</a> for more information about creating procedures inside PL/SQL blocks</p>
+</li>
+<li>
+<p><a href="function.htm#i34368">Function Declaration and Definition</a> for more information about creating functions inside PL/SQL blocks</p>
+</li>
+</ul>
+</div>
+<p class="subhead2"><a id="sthref891"></a>Subprogram Calls</p>
+<p>A subprogram call has this form:</p>
+<pre>
+<span class="italic">subprogram_name</span> [ (<span class="italic">parameter</span> [, <span class="italic">parameter</span>]... ) ]
+</pre>
+<p><a id="sthref892"></a>A procedure call is a PL/SQL statement. For example:</p>
+<pre>
+raise_salary(employee_id, amount);
+</pre>
+<p><a id="sthref893"></a>A function call is part of an expression. For example:</p>
+<pre>
+IF salary_ok(new_salary, new_title) THEN ...
+</pre>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<a href="#i23202">Declaring and Passing Subprogram Parameters</a> for more information about subprogram calls</div>
+<p class="subhead2"><a id="sthref894"></a><a id="LNPLS00802"></a>Reasons to Use Subprograms</p>
+<ul>
+<li>
+<p><a id="sthref895"></a>Subprograms let you extend the PL/SQL language.</p>
+<p>Procedure calls are like new statements. Function calls are like new expressions and operators.</p>
+</li>
+<li>
+<p>Subprograms let you break a program into manageable, well-defined modules.</p>
+<p>You can use top-down design and the stepwise refinement approach to problem solving.</p>
+</li>
+<li>
+<p>Subprograms promote re-usability.</p>
+<p>Once tested, a subprogram can be reused in any number of applications. You can invoke PL/SQL subprograms from many different environments, so that you need not rewrite them each time you use a new language or use a new API to access the database.</p>
+</li>
+<li>
+<p>Subprograms promote maintainability.</p>
+<p>You can change the internal details of a subprogram without changing the other subprograms that invoke it. Subprograms are an important component of other maintainability features, such as packages and object types.</p>
+</li>
+<li>
+<p>Dummy subprograms ("stubs") let you defer the definition of procedures and functions until after you have tested the main program.</p>
+<p>You can design applications from the top down, thinking abstractly, without worrying about implementation details.</p>
+</li>
+<li>
+<p>Subprograms can be grouped into PL/SQL packages.</p>
+<p>Packages make code even more reusable and maintainable, and can be used to define an API.</p>
+</li>
+<li>
+<p>You can hide the implementation details of subprograms by placing them in PL/SQL packages.</p>
+<p>You can define subprograms in a package body without declaring their specifications in the package specification. However, such subprograms can be invoked only from inside the package. At least one statement must appear in the executable part of a subprogram. The <code>NULL</code> statement meets this requirement.</p>
+</li>
+</ul>
+</div>
+<!-- class="sect1" -->
+<a id="CHDDCFHD"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Subprogram Parts</h2>
+<p>A subprogram always has a name, and can have a parameter list.</p>
+<p>Like every PL/SQL block, a subprogram has an optional declarative part, a required executable part, and an optional exception-handling part, and can specify <code>PRAGMA</code> <code>AUTONOMOUS_TRANSACTION</code>, which makes it autonomous (independent).</p>
+<p>The <span class="bold">declarative part</span> of a subprogram does not begin with the keyword <code>DECLARE</code>, as the declarative part of a non-subprogram block does. The declarative part contains declarations of types, cursors, constants, variables, exceptions, and nested subprograms. These items are local to the subprogram and cease to exist when the subprogram completes execution.</p>
+<p>The <span class="bold">executable part</span> of a subprogram contains statements that assign values, control execution, and manipulate data.</p>
+<p>The <span class="bold">exception-handling part</span> of a subprogram contains code that handles run-time errors.</p>
+<p><a href="#CHDBIEEE">Example 8-1</a> declares and defines a procedure (at the same time) inside an anonymous block. The procedure has the required executable part and the optional exception-handling part, but not the optional declarative part. The executable part of the block invokes the procedure.</p>
+<div class="example">
+<p class="titleinexample"><a id="CHDBIEEE"></a>Example 8-1 Declaring, Defining, and Invoking a Simple PL/SQL Procedure</p>
+<pre>
+<span class="bold">-- Declarative part of block begins</span>
+DECLARE
+  in_string  VARCHAR2(100) := 'This is my test string.';
+  out_string VARCHAR2(200);
+
+<span class="bold">  -- Procedure declaration and definition begins</span>
+  PROCEDURE double (original IN VARCHAR2,
+                    new_string OUT VARCHAR2)
+  IS
+    <span class="bold">-- Declarative part of procedure (optional) goes here</span>
+    <span class="bold">-- Executable part of procedure begins</span>
+    BEGIN
+      new_string := original || ' + ' || original;
+    <span class="bold">-- Executable part of procedure ends</span>
+    <span class="bold">-- Exception-handling part of procedure begins</span>
+    EXCEPTION
+      WHEN VALUE_ERROR THEN
+        DBMS_OUTPUT.PUT_LINE('Output buffer not long enough.');
+    END;
+    <span class="bold">-- Exception-handling part of procedure ends</span>
+    <span class="bold">-- Procedure declaration and definition ends</span>
+<span class="bold">-- Declarative part of block ends</span>
+<span class="bold">-- Executable part of block begins</span>
+BEGIN
+  double(in_string, out_string);  <span class="bold">-- Procedure invocation</span>
+  DBMS_OUTPUT.PUT_LINE(in_string || ' - ' || out_string);
+END;
+<span class="bold">-- Executable part of block ends</span>
+/
+</pre></div>
+<!-- class="example" -->
+<p>A procedure and a function have the same structure, except that:</p>
+<ul>
+<li>
+<p>A function heading must include a <code>RETURN</code> clause that specifies the data type of the return value. A procedure heading cannot have a <code>RETURN</code> clause.</p>
+</li>
+<li>
+<p>A function must have at least one <code>RETURN</code> statement in its executable part. In a procedure, the <code>RETURN</code> statement is optional. For details, see <a href="#CHDEBECI">RETURN Statement</a>.</p>
+</li>
+<li>
+<p>Only a function heading can include the following options:</p>
+</li>
+</ul>
+<div class="inftblinformal">
+<table class="cellalignment2098" title="This table lists (in the first column) and describes (in the second column) the syntax items that only functions have. Procedures do not have these items." summary="This table summarizes subprogram types in terms of their clauses, statements, and options." dir="ltr">
+<thead>
+<tr class="cellalignment2092">
+<th class="cellalignment2099" id="r1c1-t4">Option</th>
+<th class="cellalignment2099" id="r1c2-t4">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r2c1-t4" headers="r1c1-t4"><code>DETERMINISTIC</code> option</td>
+<td class="cellalignment2100" headers="r2c1-t4 r1c2-t4">Helps the optimizer avoid redundant function calls.</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r3c1-t4" headers="r1c1-t4"><code>PARALLEL_ENABLED</code> option</td>
+<td class="cellalignment2100" headers="r3c1-t4 r1c2-t4">Allows the function to be used safely in slave sessions of parallel DML evaluations.</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r4c1-t4" headers="r1c1-t4"><code>PIPELINED</code> option</td>
+<td class="cellalignment2100" headers="r4c1-t4 r1c2-t4">Returns the results of a table function iteratively.</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r5c1-t4" headers="r1c1-t4"><code>RESULT_CACHE</code> option</td>
+<td class="cellalignment2100" headers="r5c1-t4 r1c2-t4">Stores function results in the PL/SQL function result cache.</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r6c1-t4" headers="r1c1-t4"><code>RESULT_CACHE</code> clause</td>
+<td class="cellalignment2100" headers="r6c1-t4 r1c2-t4">Specifies the data sources on which the results of a function.</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="inftblinformal" -->
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><a href="procedure.htm#i35564">Procedure Declaration and Definition</a> for the syntax of procedure declarations and definitions</p>
+</li>
+<li>
+<p><a href="function.htm#i34368">Function Declaration and Definition</a> for the syntax of function declarations and definitions, including descriptions of the items in the preceding table</p>
+</li>
+<li>
+<p><a href="#i23202">Declaring and Passing Subprogram Parameters</a> for more information about subprogram parameters</p>
+</li>
+<li>
+<p><a href="#BABFHACJ">Using the PL/SQL Function Result Cache</a> for more information about the <code>RESULT_CACHE</code> option and the <code>RESULT_CACHE</code> clause</p>
+</li>
+</ul>
+</div>
+<p class="subhead2"><a id="CHDEBECI"></a><a id="LNPLS00816"></a>RETURN Statement</p>
+<p><a id="sthref896"></a><a id="sthref897"></a>The <code>RETURN</code> statement (not to be confused with the <code>RETURN</code> clause, which specifies the data type of the return value of a function) immediately ends the execution of the subprogram that contains it and returns control to the caller. Execution continues with the statement following the subprogram call.</p>
+<p>A subprogram can contain several <code>RETURN</code> statements. The subprogram need not end with a <code>RETURN</code> statement. Executing any <code>RETURN</code> statement completes the subprogram immediately.</p>
+<p>In a procedure, a <code>RETURN</code> statement cannot contain an expression and does not return a value.</p>
+<p>In a function, a <code>RETURN</code> statement must contain an expression. When the <code>RETURN</code> statement executes, the expression is evaluated, and its value is assigned to the function identifier. The function identifier acts like a variable of the type specified in the <code>RETURN</code> clause.</p>
+<p>The expression in a function <code>RETURN</code> statement can be arbitrarily complex. For example:</p>
+<pre>
+CREATE OR REPLACE FUNCTION half_of_square(original NUMBER)
+  RETURN NUMBER IS
+BEGIN
+  <span class="bold">RETURN (original * original)/2 + (original * 4);</span>
+END half_of_square;
+/
+</pre>
+<p>A function must have at least one execution path that leads to a <code>RETURN</code> statement.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<a href="return_statement.htm#i35913">RETURN Statement</a> for the syntax of the <code>RETURN</code> statement</div>
+<p><a href="#CIHEAIBE">Example 8-2</a> declares and defines a function (at the same time) inside an anonymous block. The function has the optional declarative part and the required executable part, but not the optional exception-handling part. The executable part of the block invokes the function.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHEAIBE"></a>Example 8-2 Declaring, Defining, and Invoking a Simple PL/SQL Function</p>
+<pre>
+<span class="bold">-- Declarative part of block begins</span>
+DECLARE
+  <span class="bold">-- Function declaration and definition begins</span>
+  FUNCTION square (original NUMBER)
+    RETURN NUMBER  <span class="bold">-- RETURN clause</span>
+  AS
+  <span class="bold">-- Declarative part of function begins</span>
+    original_squared NUMBER;
+  <span class="bold">-- Declarative part of function ends</span>
+  <span class="bold">-- Executable part of function begins</span>
+  BEGIN
+    original_squared := original * original;
+    RETURN original_squared;  <span class="bold">-- RETURN statement</span>
+  <span class="bold">-- Exception-handling part of function (optional) goes here</span>
+  END;
+  <span class="bold">-- Executable part of function ends</span>
+  <span class="bold">-- Function declaration and definition ends</span>
+<span class="bold">-- Declarative part of block ends</span>
+<span class="bold">-- Executable part of block begins</span>
+BEGIN
+  DBMS_OUTPUT.PUT_LINE(square(100));  <span class="bold">-- Function invocation</span>
+END;
+<span class="bold">-- Executable part of block ends</span>
+/
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect1" -->
+<a id="i4096"></a>
+<div class="sect1"><!-- infotype="Concept" -->
+<h2 class="sect1"><a id="LNPLS00805"></a>Creating Nested Subprograms that Invoke Each Other</h2>
+<p><a id="sthref898"></a><a id="sthref899"></a>In a block, you can create multiple nested subprograms. If they invoke each other, you need forward declaration, because a subprogram must be declared before it can be invoked. With forward declaration, you declare a subprogram, but do not define it until after you have defined the other subprograms that invoke it. A forward declaration and its corresponding definition must appear in the same block.</p>
+<p>The block in <a href="#CHDGICCH">Example 8-3</a> creates two procedures that invoke each other.</p>
+<div class="example">
+<p class="titleinexample"><a id="CHDGICCH"></a>Example 8-3 Creating Nested Subprograms that Invoke Each Other</p>
+<pre>
+DECLARE
+  <span class="bold">-- Declare proc1 (forward declaration):</span>
+  PROCEDURE proc1(number1 NUMBER);
+
+  <span class="bold">-- Declare and define proc 2:</span>
+  PROCEDURE proc2(number2 NUMBER) IS
+  BEGIN
+    proc1(number2);
+  END;
+
+  <span class="bold">-- Define proc 1:</span>
+  PROCEDURE proc1(number1 NUMBER) IS
+  BEGIN
+    proc2 (number1);
+  END;
+
+BEGIN
+  NULL;
+END;
+/
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect1" -->
+<a id="i23202"></a>
+<div class="sect1"><!-- infotype="General" -->
+<h2 class="sect1"><a id="LNPLS00806"></a>Declaring and Passing Subprogram Parameters</h2>
+<p>A subprogram heading can declare formal parameters. Each formal parameter declaration can specify a mode and a default value. When you invoke the subprogram, you can pass actual parameters to it.</p>
+<p>Topics:</p>
+<ul>
+<li>
+<p><a href="#i4100">Formal and Actual Subprogram Parameters</a></p>
+</li>
+<li>
+<p><a href="#i4107">Specifying Subprogram Parameter Modes</a></p>
+</li>
+<li>
+<p><a href="#i6821">Specifying Default Values for Subprogram Parameters</a></p>
+</li>
+<li>
+<p><a href="#i4072">Passing Actual Subprogram Parameters with Positional, Named, or Mixed Notation</a></p>
+</li>
+</ul>
+<a id="i4100"></a>
+<div class="sect2">
+<h3 class="sect2">Formal and Actual Subprogram Parameters</h3>
+<p><a id="sthref900"></a><a id="sthref901"></a><span class="bold">Formal parameters</span> are the variables declared in the subprogram header and referenced in its execution part. <span class="bold">Actual parameters</span> are the variables or expressions that you pass to the subprogram when you invoke it. Corresponding formal and actual parameters must have compatible data types.</p>
+<p>A good programming practice is to use different names for formal and actual parameters, as in <a href="#CIHJHJDE">Example 8-4</a>.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHJHJDE"></a>Example 8-4 Formal Parameters and Actual Parameters</p>
+<pre>
+DECLARE
+  emp_num NUMBER(6) := 120;
+  bonus   NUMBER(6) := 100;
+  merit   NUMBER(4) := 50;
+
+  PROCEDURE raise_salary (
+    <span class="bold">emp_id NUMBER,  -- formal parameter</span>
+    <span class="bold">amount NUMBER   -- formal parameter</span>
+  ) IS
+  BEGIN
+    UPDATE employees
+      SET salary = salary + amount
+        WHERE employee_id = emp_id;
+  END raise_salary;
+
+BEGIN
+  raise_salary(<span class="bold">emp_num, bonus</span>);  <span class="bold">-- actual parameters</span>
+  raise_salary(<span class="bold">emp_num, merit + bonus</span>);  <span class="bold">-- actual parameters</span>
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p>When you invoke a subprogram, PL/SQL evaluates each actual parameter and assigns its value to the corresponding formal parameter. If necessary, PL/SQL implicitly converts the data type of the actual parameter to the data type of the corresponding formal parameter before the assignment (this is why corresponding formal and actual parameters must have compatible data types). For information about implicit conversion, see <a href="datatypes.htm#CIHGBADF">Implicit Conversion</a>.</p>
+<p>A good programming practice is to avoid implicit conversion, either by using explicit conversion (explained in <a href="datatypes.htm#CIHCEDIA">Explicit Conversion</a>) or by declaring the variables that you intend to use as actual parameters with the same data types as their corresponding formal parameters. For example, suppose that <code>pkg</code> has this specification:</p>
+<pre>
+PACKAGE pkg IS
+  PROCEDURE s (n IN <span class="bold">PLS_INTEGER</span>);
+END pkg;
+</pre>
+<p>The following invocation of <code>pkg</code>.<code>s</code> avoids implicit conversion:</p>
+<pre>
+DECLARE
+  y <span class="bold">PLS_INTEGER</span> :=1;
+BEGIN
+  pkg.s(y);
+END;
+</pre>
+<p>The following invocation of <code>pkg</code>.<code>s</code> causes implicit conversion:</p>
+<pre>
+DECLARE
+  y <span class="bold">INTEGER</span> :=1;
+BEGIN
+  pkg.s(y);
+END;
+</pre>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+The specifications of many packages and types that Oracle supplies declare formal parameters with the following notation:
+<pre>
+i1 IN VARCHAR2 CHARACTER SET ANY_CS
+i2 IN VARCHAR2 CHARACTER SET i1%CHARSET
+</pre>
+<p>Do not use this notation when declaring your own formal or actual parameters. It is reserved for Oracle implementation of the supplied packages types.</p>
+</div>
+</div>
+<!-- class="sect2" -->
+<a id="i4107"></a>
+<div class="sect2">
+<h3 class="sect2">Specifying Subprogram Parameter Modes</h3>
+<p><a id="sthref902"></a><a id="sthref903"></a>Parameter modes define the action of formal parameters. The three parameter modes are <code>IN</code> (the default), <code>OUT</code>, and <code>IN</code> <code>OUT</code>.</p>
+<p>Any parameter mode can be used with any subprogram. Avoid using the <code>OUT</code> and <code>IN</code> <code>OUT</code> modes with functions. To have a function return multiple values is poor programming practice. Also, make functions free from <a id="sthref904"></a>side effects, which change the values of variables not local to the subprogram.</p>
+<p>Topics:</p>
+<ul>
+<li>
+<p><a href="#BABGACHJ">Using IN Mode</a></p>
+</li>
+<li>
+<p><a href="#BABBEABH">Using OUT Mode</a></p>
+</li>
+<li>
+<p><a href="#BABFHBBC">Using IN OUT Mode</a></p>
+</li>
+<li>
+<p><a href="#BABGDFHB">Summary of Subprogram Parameter Modes</a></p>
+</li>
+</ul>
+<a id="BABGACHJ"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Using IN Mode</h4>
+<p><a id="sthref905"></a><a id="sthref906"></a><a id="sthref907"></a>An <code>IN</code> parameter lets you pass a value to the subprogram being invoked. Inside the subprogram, an <code>IN</code> parameter acts like a constant. It cannot be assigned a value.</p>
+<p>You can pass a constant, literal, initialized variable, or expression as an IN parameter.</p>
+<p>An <code>IN</code> parameter can be initialized to a default value, which is used if that parameter is omitted from the subprogram call. For more information, see <a href="#i6821">Specifying Default Values for Subprogram Parameters</a>.</p>
+</div>
+<!-- class="sect3" -->
+<a id="BABBEABH"></a>
+<div class="sect3">
+<h4 class="sect3">Using OUT Mode</h4>
+<p><a id="sthref908"></a><a id="sthref909"></a><a id="sthref910"></a>An <code>OUT</code> parameter returns a value to the caller of a subprogram. Inside the subprogram, an <code>OUT</code> parameter acts like a variable. You can change its value and reference the value after assigning it, as in <a href="#g1170259">Example 8-5</a>.</p>
+<div class="example">
+<p class="titleinexample"><a id="g1170259"></a>Example 8-5 Using OUT Mode</p>
+<pre>
+DECLARE
+  emp_num       NUMBER(6) := 120;
+  bonus         NUMBER(6) := 50;
+  emp_last_name VARCHAR2(25);
+  PROCEDURE raise_salary (emp_id IN NUMBER, amount IN NUMBER, 
+                          emp_name OUT VARCHAR2) IS
+    BEGIN
+      UPDATE employees SET salary =
+        salary + amount WHERE employee_id = emp_id;
+      SELECT last_name INTO emp_name
+        FROM employees
+       WHERE employee_id = emp_id;
+  END raise_salary;
+BEGIN
+  raise_salary(emp_num, bonus, emp_last_name);
+  DBMS_OUTPUT.PUT_LINE
+    ('Salary was updated for: ' || emp_last_name);
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p>You must pass a variable, not a constant or an expression, to an <code>OUT</code> parameter. Its previous value is lost unless you specify the <code>NOCOPY</code> keyword or the subprogram exits with an unhandled exception. See <a href="#i6821">Specifying Default Values for Subprogram Parameters</a>.</p>
+<p>The initial value of an <code>OUT</code> parameter is <code>NULL</code>; therefore, the data type of an <code>OUT</code> parameter cannot be a subtype defined as <code>NOT</code> <code>NULL</code>, such as the built-in subtype <code>NATURALN</code> or <code>POSITIVEN</code>. Otherwise, when you invoke the subprogram, PL/SQL raises <code>VALUE_ERROR</code>.</p>
+<p>Before exiting a subprogram, assign values to all <code>OUT</code> formal parameters. Otherwise, the corresponding actual parameters will be null. If you exit successfully, PL/SQL assigns values to the actual parameters. If you exit with an unhandled exception, PL/SQL does not assign values to the actual parameters.</p>
+</div>
+<!-- class="sect3" -->
+<a id="BABFHBBC"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Using IN OUT Mode</h4>
+<p><a id="sthref911"></a><a id="sthref912"></a><a id="sthref913"></a>An <code>IN</code> <code>OUT</code> parameter passes an initial value to a subprogram and returns an updated value to the caller. It can be assigned a value and its value can be read. Typically, an <code>IN</code> <code>OUT</code> parameter is a string buffer or numeric accumulator, that is read inside the subprogram and then updated.</p>
+<p>The actual parameter that corresponds to an <code>IN</code> <code>OUT</code> formal parameter must be a variable, not a constant or an expression.</p>
+<p>If you exit a subprogram successfully, PL/SQL assigns values to the actual parameters. If you exit with an unhandled exception, PL/SQL does not assign values to the actual parameters.</p>
+</div>
+<!-- class="sect3" -->
+<a id="BABGDFHB"></a>
+<div class="sect3">
+<h4 class="sect3">Summary of Subprogram Parameter Modes<a id="sthref914"></a><a id="sthref915"></a></h4>
+<p><a href="#BCFHBGBI">Table 8-1</a> summarizes the characteristics of parameter modes.</p>
+<div class="tblformal">
+<p class="titleintable"><a id="sthref916"></a><a id="BCFHBGBI"></a>Table 8-1 Parameter Modes</p>
+<table class="cellalignment2101" title="Parameter Modes" summary="This table summarizes the parameter modes of subprogram parameters." dir="ltr">
+<thead>
+<tr class="cellalignment2092">
+<th class="cellalignment2099" id="r1c1-t8">IN</th>
+<th class="cellalignment2099" id="r1c2-t8">OUT</th>
+<th class="cellalignment2099" id="r1c3-t8">IN OUT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r2c1-t8" headers="r1c1-t8">
+<p>The default</p>
+</td>
+<td class="cellalignment2100" headers="r2c1-t8 r1c2-t8">
+<p>Must be specified</p>
+</td>
+<td class="cellalignment2100" headers="r2c1-t8 r1c3-t8">
+<p>Must be specified</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r3c1-t8" headers="r1c1-t8">
+<p>Passes a value to the subprogram</p>
+</td>
+<td class="cellalignment2100" headers="r3c1-t8 r1c2-t8">
+<p>Returns a value to the caller</p>
+</td>
+<td class="cellalignment2100" headers="r3c1-t8 r1c3-t8">
+<p>Passes an initial value to the subprogram and returns an updated value to the caller</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r4c1-t8" headers="r1c1-t8">
+<p>Formal parameter acts like a constant</p>
+</td>
+<td class="cellalignment2100" headers="r4c1-t8 r1c2-t8">
+<p>Formal parameter acts like an uninitialized variable</p>
+</td>
+<td class="cellalignment2100" headers="r4c1-t8 r1c3-t8">
+<p>Formal parameter acts like an initialized variable</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r5c1-t8" headers="r1c1-t8">
+<p>Formal parameter cannot be assigned a value</p>
+</td>
+<td class="cellalignment2100" headers="r5c1-t8 r1c2-t8">
+<p>Formal parameter must be assigned a value</p>
+</td>
+<td class="cellalignment2100" headers="r5c1-t8 r1c3-t8">
+<p>Formal parameter should be assigned a value</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r6c1-t8" headers="r1c1-t8">
+<p>Actual parameter can be a constant, initialized variable, literal, or expression</p>
+</td>
+<td class="cellalignment2100" headers="r6c1-t8 r1c2-t8">
+<p>Actual parameter must be a variable</p>
+</td>
+<td class="cellalignment2100" headers="r6c1-t8 r1c3-t8">
+<p>Actual parameter must be a variable</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r7c1-t8" headers="r1c1-t8">
+<p>Actual parameter is passed by reference (the caller passes the subprogram a pointer to the value)</p>
+</td>
+<td class="cellalignment2100" headers="r7c1-t8 r1c2-t8">
+<p>Actual parameter is passed by value (the subprogram passes the caller a copy of the value) unless <code>NOCOPY</code> is specified</p>
+</td>
+<td class="cellalignment2100" headers="r7c1-t8 r1c3-t8">
+<p>Actual parameter is passed by value (the caller passes the subprogram a copy of the value and the subprogram passes the caller a copy of the value) unless <code>NOCOPY</code> is specified</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="tblformal" --></div>
+<!-- class="sect3" --></div>
+<!-- class="sect2" -->
+<a id="i6821"></a>
+<div class="sect2">
+<h3 class="sect2">Specifying Default Values for Subprogram Parameters</h3>
+<p><a id="sthref917"></a><a id="sthref918"></a><a id="sthref919"></a>By initializing formal <code>IN</code> parameters to default values, you can pass different numbers of actual parameters to a subprogram, accepting the default values for omitted actual parameters. You can also add new formal parameters without having to change every call to the subprogram.</p>
+<p>If an actual parameter is omitted, the default value of its corresponding formal parameter is used.</p>
+<p>You cannot skip a formal parameter by omitting its actual parameter. To omit the first parameter and specify the second, use named notation (see <a href="#i4072">Passing Actual Subprogram Parameters with Positional, Named, or Mixed Notation</a>).</p>
+<p>You cannot assign <code>NULL</code> to an uninitialized formal parameter by omitting its actual parameter. You must either assign <code>NULL</code> as a default value or pass <code>NULL</code> explicitly.</p>
+<p><a href="#CIHICIAH">Example 8-6</a> illustrates the use of default values for subprogram parameters.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHICIAH"></a>Example 8-6 Procedure with Default Parameter Values</p>
+<pre>
+DECLARE
+  emp_num NUMBER(6) := 120;
+  bonus   NUMBER(6);
+  merit   NUMBER(4);
+  PROCEDURE raise_salary (emp_id IN NUMBER,
+    amount IN NUMBER DEFAULT 100,
+                          extra IN NUMBER DEFAULT 50) IS
+    BEGIN
+      UPDATE employees SET salary = salary + amount + extra 
+        WHERE employee_id = emp_id;
+  END raise_salary;
+BEGIN
+  -- Same as raise_salary(120, 100, 50)
+  raise_salary(120);
+  -- Same as raise_salary(120, 100, 25)
+  raise_salary(emp_num, extra =&gt; 25);
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p><a id="sthref920"></a>If the default value of a formal parameter is an expression, and you provide a corresponding actual parameter when you invoke the subprogram, the expression is not evaluated, as in <a href="#g1782475">Example 8-7</a>.</p>
+<div class="example">
+<p class="titleinexample"><a id="g1782475"></a>Example 8-7 Formal Parameter with Expression as Default Value</p>
+<pre>
+DECLARE
+  cnt pls_integer := 0;
+  FUNCTION dflt RETURN pls_integer IS
+  BEGIN
+    cnt := cnt + 1;
+    RETURN 42;
+  END dflt;
+  -- Default is expression
+  PROCEDURE p(i IN pls_integer DEFAULT dflt()) IS
+     BEGIN
+       DBMS_Output.Put_Line(i);
+  END p;
+BEGIN
+  FOR j IN 1..5 LOOP
+    p(j);  -- Actual parameter is provided
+  END loop;
+  DBMS_Output.Put_Line('cnt: '||cnt);
+  p();  -- Actual parameter is not provided
+  DBMS_Output.Put_Line('cnt: '||cnt);
+END;
+</pre></div>
+<!-- class="example" -->
+<p>The output of <a href="#g1782475">Example 8-7</a> is:</p>
+<pre>
+1
+2
+3
+4
+5
+Cnt: 0
+42
+Cnt: 1
+</pre></div>
+<!-- class="sect2" -->
+<a id="i4072"></a>
+<div class="sect2">
+<h3 class="sect2"><a id="LNPLS00825"></a>Passing Actual Subprogram Parameters with Positional, Named, or Mixed Notation</h3>
+<p><a id="sthref921"></a><a id="sthref922"></a><a id="sthref923"></a><a id="sthref924"></a><a id="sthref925"></a><a id="sthref926"></a>When invoking a subprogram, you can specify the actual parameters using either positional, named, or mixed notation. <a href="#BABBGGHC">Table 8-2</a> compares these notations.</p>
+<div class="tblformal">
+<p class="titleintable"><a id="sthref927"></a><a id="BABBGGHC"></a>Table 8-2 PL/SQL Subprogram Parameter Notations</p>
+<table class="cellalignment2101" title="PL/SQL Subprogram Parameter Notations" summary="This table summarizes the PL/SQL subprogram parameter notations." dir="ltr">
+<thead>
+<tr class="cellalignment2092">
+<th class="cellalignment2099" id="r1c1-t9">Notation</th>
+<th class="cellalignment2099" id="r1c2-t9">Description</th>
+<th class="cellalignment2099" id="r1c3-t9">Usage Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r2c1-t9" headers="r1c1-t9">
+<p>Positional</p>
+</td>
+<td class="cellalignment2100" headers="r2c1-t9 r1c2-t9">
+<p>Specify the same parameters in the same order as the procedure declares them.</p>
+</td>
+<td class="cellalignment2100" headers="r2c1-t9 r1c3-t9">
+<p>Compact and readable, but has these disadvantages:</p>
+<ul>
+<li>
+<p>If you specify the parameters (especially literals) in the wrong order, the bug can be hard to detect.</p>
+</li>
+<li>
+<p>If the procedure's parameter list changes, you must change your code.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r3c1-t9" headers="r1c1-t9">
+<p>Named</p>
+</td>
+<td class="cellalignment2100" headers="r3c1-t9 r1c2-t9">
+<p>Specify the name and value of each parameter, using the association operator, <code>=&gt;</code>. Order of parameters is insignificant.</p>
+</td>
+<td class="cellalignment2100" headers="r3c1-t9 r1c3-t9">
+<p>More verbose than positional notation, but easier to read and maintain. You can sometimes avoid changing your code if the procedure's parameter list changes (for example, if parameters are reordered or a new optional parameter is added). Safer than positional notation when you invoke an API that you did not define, or define an API for others to use.</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r4c1-t9" headers="r1c1-t9">
+<p>Mixed</p>
+</td>
+<td class="cellalignment2100" headers="r4c1-t9 r1c2-t9">
+<p>Start with positional notation, then use named notation for the remaining parameters.</p>
+</td>
+<td class="cellalignment2100" headers="r4c1-t9 r1c3-t9">
+<p>Recommended when you invoke procedures that have required parameters followed by optional parameters, and you must specify only a few of the optional parameters.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="tblformal" -->
+<p><a href="#CIHHBJDE">Example 8-8</a> shows equivalent subprogram calls using positional, named, and mixed notation.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHHBJDE"></a>Example 8-8 Subprogram Calls Using Positional, Named, and Mixed Notation</p>
+<pre>
+SQL&gt; DECLARE
+  2    emp_num NUMBER(6) := 120;
+  3    bonus   NUMBER(6) := 50;
+  4    PROCEDURE raise_salary (emp_id NUMBER, amount NUMBER) IS
+  5      BEGIN
+  6        UPDATE employees SET salary =
+  7          salary + amount WHERE employee_id = emp_id;
+  8    END raise_salary;
+  9  BEGIN
+ 10    <span class="bold">-- Positional notation:</span>
+ 11    raise_salary(emp_num, bonus);
+ 12    <span class="bold">-- Named notation (parameter order is insignificant):</span>
+ 13    raise_salary(amount =&gt; bonus, emp_id =&gt; emp_num);
+ 14    raise_salary(emp_id =&gt; emp_num, amount =&gt; bonus);
+ 15    <span class="bold">-- Mixed notation:</span>
+ 16    raise_salary(emp_num, amount =&gt; bonus);
+ 17  END;
+ 18  /
+ 
+PL/SQL procedure successfully completed.
+ 
+SQL&gt; REM Clean up
+SQL&gt; ROLLBACK;
+ 
+Rollback complete.
+ 
+SQL&gt; 
+SQL&gt; CREATE OR REPLACE FUNCTION compute_bonus (emp_id NUMBER, bonus NUMBER)
+  2    RETURN NUMBER
+  3  IS
+  4    emp_sal NUMBER;
+  5  BEGIN
+  6    SELECT salary INTO emp_sal
+  7      FROM employees
+  8        WHERE employee_id = emp_id;
+  9    RETURN emp_sal + bonus;
+ 10  END compute_bonus;
+ 11  /
+ 
+Function created.
+ 
+</pre>
+<pre>
+SQL&gt; SELECT compute_bonus(120, 50) FROM DUAL;                   <span class="bold">-- positional</span>
+  2  SELECT compute_bonus(bonus =&gt; 50, emp_id =&gt; 120) FROM DUAL; <span class="bold">-- named</span>
+  3  SELECT compute_bonus(120, bonus =&gt; 50) FROM DUAL;           <span class="bold">-- mixed</span>
+  4  
+SQL&gt;
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" -->
+<a id="i12352"></a>
+<div class="sect1">
+<h2 class="sect1"><a id="LNPLS00807"></a>Overloading PL/SQL Subprogram Names</h2>
+<p><a id="sthref928"></a><a id="sthref929"></a>PL/SQL lets you overload local subprograms, packaged subprograms, and type methods. You can use the same name for several different subprograms as long as their formal parameters differ in number, order, or data type family.</p>
+<p><a href="#CIHFCEBD">Example 8-9</a> defines two subprograms with the same name, <code>initialize</code>. The procedures initialize different types of collections. Because the processing in these two procedures is the same, it is logical to give them the same name.</p>
+<p>You can place the two <code>initialize</code> procedures in the same block, subprogram, package, or object type. PL/SQL determines which procedure to invoke by checking their formal parameters. The version of <code>initialize</code> that PL/SQL uses depends on whether you invoke the procedure with a <code>date_tab_typ</code> or <code>num_tab_typ</code> parameter.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHFCEBD"></a>Example 8-9 Overloading a Subprogram Name</p>
+<pre>
+DECLARE
+  TYPE date_tab_typ IS TABLE OF DATE   INDEX BY PLS_INTEGER;
+  TYPE num_tab_typ  IS TABLE OF NUMBER INDEX BY PLS_INTEGER;
+
+  hiredate_tab  date_tab_typ;
+  sal_tab       num_tab_typ;
+
+  PROCEDURE initialize (tab OUT <span class="bold">date_tab_typ</span>, n INTEGER) IS
+  BEGIN
+    FOR i IN 1..n LOOP
+      tab(i) := SYSDATE;
+    END LOOP;
+  END initialize;
+
+  PROCEDURE initialize (tab OUT <span class="bold">num_tab_typ</span>, n INTEGER) IS
+  BEGIN
+    FOR i IN 1..n LOOP
+      tab(i) := 0.0;
+    END LOOP;
+  END initialize;
+
+BEGIN
+  initialize(hiredate_tab, 50);  -- Invokes first (date_tab_typ) version
+  initialize(sal_tab, 100);      -- Invokes second (num_tab_typ) version
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p>For an example of an overloaded procedure in a package, see <a href="packages.htm#CJAIICFE">Example 10-3</a>.</p>
+<p>Topics:</p>
+<ul>
+<li>
+<p><a href="#i23492">Guidelines for Overloading with Numeric Types</a></p>
+</li>
+<li>
+<p><a href="#BABJJIAD">Restrictions on Overloading</a></p>
+</li>
+<li>
+<p><a href="#BABCFIJD">When Compiler Catches Overloading Errors</a></p>
+</li>
+</ul>
+<a id="i23492"></a>
+<div class="sect2">
+<h3 class="sect2">Guidelines for Overloading with Numeric Types</h3>
+<p><a id="sthref930"></a><a id="sthref931"></a>You can overload subprograms if their formal parameters differ only in numeric data type. This technique is useful in writing mathematical application programming interfaces (APIs), because several versions of a function can use the same name, and each can accept a different numeric type. For example, a function that accepts <code>BINARY_FLOAT</code> might be faster, while a function that accepts <code>BINARY_DOUBLE</code> might provide more precision.</p>
+<p>To avoid problems or unexpected results passing parameters to such overloaded subprograms:</p>
+<ul>
+<li>
+<p>Ensure that the expected version of a subprogram is invoked for each set of expected parameters. For example, if you have overloaded functions that accept <code>BINARY_FLOAT</code> and <code>BINARY_DOUBLE</code>, which is invoked if you pass a <code>VARCHAR2</code> literal such as '5.0'?</p>
+</li>
+<li>
+<p>Qualify numeric literals and use conversion functions to make clear what the intended parameter types are. For example, use literals such as <code>5</code>.<code>0f</code> (for <code>BINARY_FLOAT</code>), <code>5</code>.<code>0d</code> (for <code>BINARY_DOUBLE</code>), or conversion functions such as <code>TO_BINARY_FLOAT</code>, <code>TO_BINARY_DOUBLE</code>, and <code>TO_NUMBER</code>.</p>
+</li>
+</ul>
+<p>PL/SQL looks for matching numeric parameters in this order:</p>
+<ol>
+<li>
+<p><code>PLS_INTEGER</code> (or <code>BINARY_INTEGER</code>, an identical data type)</p>
+</li>
+<li>
+<p><code>NUMBER</code></p>
+</li>
+<li>
+<p><code>BINARY_FLOAT</code></p>
+</li>
+<li>
+<p><code>BINARY_DOUBLE</code></p>
+</li>
+</ol>
+<p>A <code>VARCHAR2</code> value can match a <code>NUMBER</code>, <code>BINARY_FLOAT</code>, or <code>BINARY_DOUBLE</code> parameter.</p>
+<p>PL/SQL uses the first overloaded subprogram that matches the supplied parameters. For example, the <code>SQRT</code> function takes a single parameter. There are overloaded versions that accept a <code>NUMBER</code>, a <code>BINARY_FLOAT</code>, or a <code>BINARY_DOUBLE</code> parameter. If you pass a <code>PLS_INTEGER</code> parameter, the first matching overload is the one with a <code>NUMBER</code> parameter.</p>
+<p>The <code>SQRT</code> function that takes a <code>NUMBER</code> parameter is likely to be slowest. To use a faster version, use the <code>TO_BINARY_FLOAT</code> or <code>TO_BINARY_DOUBLE</code> function to convert the parameter to another data type before passing it to the <code>SQRT</code> function.</p>
+<p>If PL/SQL must convert a parameter to another data type, it first tries to convert it to a higher data type. For example:</p>
+<ul>
+<li>
+<p>The <code>ATAN2</code> function takes two parameters of the same type. If you pass parameters of different types&mdash;for example, one <code>PLS_INTEGER</code> and one <code>BINARY_FLOAT</code>&mdash;PL/SQL tries to find a match where both parameters use the higher type. In this case, that is the version of <code>ATAN2</code> that takes two <code>BINARY_FLOAT</code> parameters; the <code>PLS_INTEGER</code> parameter is converted upwards.</p>
+</li>
+<li>
+<p>A function takes two parameters of different types. One overloaded version takes a <code>PLS_INTEGER</code> and a <code>BINARY_FLOAT</code> parameter. Another overloaded version takes a <code>NUMBER</code> and a <code>BINARY_DOUBLE</code> parameter. If you invoke this function and pass two <code>NUMBER</code> parameters, PL/SQL first finds the overloaded version where the second parameter is <code>BINARY_FLOAT</code>. Because this parameter is a closer match than the <code>BINARY_DOUBLE</code> parameter in the other overload, PL/SQL then looks downward and converts the first <code>NUMBER</code> parameter to <code>PLS_INTEGER</code>.</p>
+</li>
+</ul>
+</div>
+<!-- class="sect2" -->
+<a id="BABJJIAD"></a>
+<div class="sect2">
+<h3 class="sect2">Restrictions on Overloading</h3>
+<p><a id="sthref932"></a><a id="sthref933"></a><a id="sthref934"></a>You cannot overload the following subprograms:</p>
+<ul>
+<li>
+<p>Standalone subprograms</p>
+</li>
+<li>
+<p>Subprograms whose formal parameters differ only in mode; for example:</p>
+<pre>
+PACKAGE pkg IS
+  PROCEDURE s (p <span class="bold">IN</span>  VARCHAR2);
+  PROCEDURE s (p <span class="bold">OUT</span> VARCHAR2);
+END pkg;
+</pre></li>
+<li>
+<p>Subprograms whose formal parameters differ only in subtype; for example:</p>
+<pre>
+PACKAGE pkg IS
+  PROCEDURE s (p <span class="bold">INTEGER</span>);
+  PROCEDURE s (p <span class="bold">REAL</span>);
+END pkg;
+</pre>
+<p><code>INTEGER</code> and <code>REAL</code> are subtypes of <code>NUMBER</code>, so they belong to the same data type family.</p>
+</li>
+<li>
+<p>Functions that differ only in return value data type, even if the data types are in different families; for example:</p>
+<pre>
+PACKAGE pkg IS
+  FUNCTION f (p INTEGER) RETURN <span class="bold">BOOLEAN</span>;
+  FUNCTION f (p INTEGER) RETURN <span class="bold">INTEGER</span>;
+END pkg;
+</pre></li>
+</ul>
+</div>
+<!-- class="sect2" -->
+<a id="BABCFIJD"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">When Compiler Catches Overloading Errors</h3>
+<p>The PL/SQL compiler catches overloading errors as soon as it can determine that it will be unable to tell which subprogram was invoked. When subprograms have identical headings, the compiler catches the overloading error when you try to compile the subprograms themselves (if they are local) or when you try to compile the package specification that declares them (if they are packaged); otherwise, it catches the error when you try to compile an ambiguous invocation of a subprogram.</p>
+<p>When you try to compile the package specification in <a href="#BABHJBBI">Example 8-10</a>, which declares subprograms with identical headings, you get compile-time error PLS-00305.</p>
+<div class="example">
+<p class="titleinexample"><a id="BABHJBBI"></a>Example 8-10 Package Specification with Overloading Violation that Causes Compile-Time Error</p>
+<pre>
+PACKAGE pkg1 IS
+  PROCEDURE s (p VARCHAR2);
+  PROCEDURE s (p VARCHAR2);
+END pkg1;
+</pre></div>
+<!-- class="example" -->
+<p>Although the package specification in <a href="#BABEHEGI">Example 8-11</a> violates the rule that you cannot overload subprograms whose formal parameters differ only in subtype, you can compile it without error.</p>
+<div class="example">
+<p class="titleinexample"><a id="BABEHEGI"></a>Example 8-11 Package Specification with Overloading Violation that Compiles Without Error</p>
+<pre>
+PACKAGE pkg2 IS
+  SUBTYPE t1 IS VARCHAR2(10);
+  SUBTYPE t2 IS VARCHAR2(10);
+  PROCEDURE s (p <span class="bold">t1</span>);
+  PROCEDURE s (p <span class="bold">t2</span>);
+END pkg2;
+</pre></div>
+<!-- class="example" -->
+<p>However, when you try to compile an invocation of <code>pkg2</code>.<code>s</code>, such as the one in <a href="#BABEBCCA">Example 8-12</a>, you get compile-time error PLS-00307.</p>
+<div class="example">
+<p class="titleinexample"><a id="BABEBCCA"></a>Example 8-12 Invocation of Improperly Overloaded Subprogram</p>
+<pre>
+PROCEDURE p IS
+  a pkg.t1 := 'a';
+BEGIN
+  <span class="bold">pkg.s(a)  -- Causes compile-time error PLS-00307</span>;
+END p;
+</pre></div>
+<!-- class="example" -->
+<p>Suppose that you correct the overloading violation in <a href="#BABEHEGI">Example 8-11</a> by giving the formal parameters of the overloaded subprograms different names, as follows:</p>
+<pre>
+PACKAGE pkg2 IS
+  SUBTYPE t1 IS VARCHAR2(10);
+  SUBTYPE t2 IS VARCHAR2(10);
+  PROCEDURE s (<span class="bold">p1</span> t1);
+  PROCEDURE s (<span class="bold">p2</span> t2);
+END pkg2;
+</pre>
+<p>Now you can compile an invocation of <code>pkg2</code>.<code>s</code> without error if you specify the actual parameter with named notation. For example:</p>
+<pre>
+PROCEDURE p IS
+  a pkg.t1 := 'a';
+BEGIN
+  <span class="bold">pkg.s(p1=&gt;a);  -- Compiles without error</span>
+END p;
+</pre>
+<p>If you specify the actual parameter with positional notation, as in <a href="#BABEBCCA">Example 8-12</a>, you still get compile-time error PLS-00307.</p>
+<p>The package specification in <a href="#BABJDDCJ">Example 8-13</a> violates no overloading rules and compiles without error. However, you can still get compile-time error PLS-00307 when invoking its overloaded procedure, as in the second invocation in <a href="#BABHCIFC">Example 8-14</a>.</p>
+<div class="example">
+<p class="titleinexample"><a id="BABJDDCJ"></a>Example 8-13 Package Specification Without Overloading Violations</p>
+<pre>
+PACKAGE pkg3 IS
+  PROCEDURE s (p1 VARCHAR2);
+  PROCEDURE s (p1 VARCHAR2, p2 VARCHAR2 := 'p2');
+END pkg3;
+</pre></div>
+<!-- class="example" -->
+<div class="example">
+<p class="titleinexample"><a id="BABHCIFC"></a>Example 8-14 Improper Invocation of Properly Overloaded Subprogram</p>
+<pre>
+PROCEDURE p IS
+  a1 VARCHAR2(10) := 'a1';
+  a2 VARCHAR2(10) := 'a2';
+BEGIN
+  <span class="bold">pkg.s(p1=&gt;a1, p2=&gt;a2);  -- Compiles without error</span>
+  <span class="bold">pkg.s(p1=&gt;a1);          -- Causes compile-time error PLS-00307</span>
+END p;
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" -->
+<a id="i17794"></a>
+<div class="sect1"><!-- infotype="Concept" -->
+<h2 class="sect1"><a id="LNPLS00808"></a>How PL/SQL Subprogram Calls Are Resolved</h2>
+<p><a id="sthref935"></a><a id="sthref936"></a><a href="#i19285">Figure 8-1</a> shows how the PL/SQL compiler resolves subprogram calls. When the compiler encounters a subprogram call, it tries to find a declaration that matches the call. The compiler searches first in the current scope and then, if necessary, in successive enclosing scopes. The compiler looks more closely when it finds one or more subprogram declarations in which the subprogram name matches the name of the called subprogram.</p>
+<p>To resolve a call among possibly like-named subprograms at the same level of scope, the compiler must find an exact match between the actual and formal parameters. They must match in number, order, and data type (unless some formal parameters were assigned default values). If no match is found or if multiple matches are found, the compiler generates a semantic error.</p>
+<div class="figure">
+<p class="titleinfigure"><a id="i19285"></a>Figure 8-1 How the PL/SQL Compiler Resolves Calls</p>
+<img width="319" height="633" src="img/lnpls012.gif" alt="How the PL/SQL Compiler Resolves Calls" title="How the PL/SQL Compiler Resolves Calls" /><br />
+<a id="sthref937" href="img_text/lnpls012.htm">Description of "Figure 8-1 How the PL/SQL Compiler Resolves Calls"</a><br />
+<br /></div>
+<!-- class="figure" -->
+<p><a href="#CHDECFCH">Example 8-15</a> invokes the enclosing procedure <code>swap</code> from the function <code>balance</code>, generating an error because neither declaration of <code>swap</code> within the current scope matches the procedure call.</p>
+<div class="example">
+<p class="titleinexample"><a id="CHDECFCH"></a>Example 8-15 Resolving PL/SQL Procedure Names</p>
+<pre>
+DECLARE
+  PROCEDURE swap (n1 NUMBER, n2 NUMBER) IS
+    num1 NUMBER;
+    num2 NUMBER;
+    FUNCTION balance (bal NUMBER) RETURN NUMBER IS
+      x NUMBER := 10;
+      PROCEDURE swap (d1 DATE, d2 DATE) IS BEGIN NULL; END;
+      PROCEDURE swap (b1 BOOLEAN, b2 BOOLEAN) IS BEGIN NULL; END;
+    BEGIN
+      DBMS_OUTPUT.PUT_LINE('The following raises an exception');
+--      swap(num1, num2);
+--      wrong number or types of arguments in call to 'SWAP'
+      RETURN x;
+    END balance;
+  BEGIN NULL;END swap;
+BEGIN
+  NULL;
+END;
+/
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect1" -->
+<a id="i18574"></a>
+<div class="sect1"><!-- infotype="Concept" -->
+<h2 class="sect1"><a id="LNPLS00809"></a>Using Invoker's Rights or Definer's Rights (AUTHID Clause)</h2>
+<p>The <a id="sthref938"></a><code>AUTHID</code> property of a stored PL/SQL unit affects the name resolution and privilege checking of SQL statements that the unit issues at run time. The <code>AUTHID</code> property does not affect compilation, and has no meaning for units that have no code, such as collection types.</p>
+<p><code>AUTHID</code> property values are exposed in the static data dictionary view <code>*_PROCEDURES</code>. For units for which <code>AUTHID</code> has meaning, the view shows the value <a id="sthref939"></a><a id="sthref940"></a><code>CURRENT_USER</code> or <code>DEFINER</code>; for other units, the view shows <code>NULL</code>.</p>
+<p>For stored PL/SQL units that you create or alter with the following statements, you can use the optional <code>AUTHID</code> clause to specify either <code>CURRENT_USER</code> or <code>DEFINER</code>. The default is <code>DEFINER</code>.</p>
+<ul>
+<li>
+<p><a href="create_function.htm#i2153260">CREATE FUNCTION Statement</a></p>
+</li>
+<li>
+<p><a href="create_package.htm#i2091914">CREATE PACKAGE Statement</a></p>
+</li>
+<li>
+<p><a href="create_procedure.htm#i2072424">CREATE PROCEDURE Statement</a></p>
+</li>
+<li>
+<p><a href="create_type.htm#BABHJHEB">CREATE TYPE Statement</a></p>
+</li>
+<li>
+<p><a href="alter_type.htm#i2057828">ALTER TYPE Statement</a></p>
+</li>
+</ul>
+<p>A unit whose <code>AUTHID</code> value is <code>CURRENT_USER</code> is called an <span class="bold">invoker's rights unit</span>, or <span class="bold">IR unit</span>. A unit whose <code>AUTHID</code> value is <code>DEFINER</code> is called a <span class="bold">definer's rights unit</span>, or <span class="bold">DR unit</span>. An anonymous block always behaves like an IR unit. A trigger or view always behaves like a DR unit.</p>
+<p><a id="sthref941"></a><a id="sthref942"></a>The <code>AUTHID</code> property of a unit determines whether the unit is IR or DR, and it affects both <a id="sthref943"></a><a id="sthref944"></a><a id="sthref945"></a><a id="sthref946"></a>name resolution and <a id="sthref947"></a><a id="sthref948"></a><a id="sthref949"></a><a id="sthref950"></a>privilege checking at run time:</p>
+<ul>
+<li>
+<p>The context for name resolution is <code>CURRENT_SCHEMA</code>.</p>
+</li>
+<li>
+<p>The privileges checked are those of the <code>CURRENT_USER</code> and the enabled roles.</p>
+</li>
+</ul>
+<p>When a session starts, <code>CURRENT_SCHEMA</code> has the value of the schema owned by <code>SESSION_USER</code>, and <code>CURRENT_USER</code> has the same value as <code>SESSION_USER</code>. (To get the current value of <code>CURRENT_SCHEMA</code>, <code>CURRENT_USER</code>, or <code>SESSION_USER</code>, use the <code>SYS_CONTEXT</code> function, documented in <a class="olink SQLRF06117" href="../../server.111/b28286/functions172.htm#SQLRF06117"><span class="italic">Oracle Database SQL Language Reference</span></a>.)</p>
+<p><code>CURRENT_SCHEMA</code> can be changed during the session with the SQL statement <code>ALTER</code> <code>SESSION</code> <code>SET</code> <code>CURRENT_SCHEMA</code>. <code>CURRENT_USER</code> cannot be changed programmatically, but it might change when a PL/SQL unit or a view is pushed onto, or popped from, the call stack.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+Oracle recommends against issuing <code>ALTER</code> <code>SESSION</code> <code>SET</code> <code>CURRENT_SCHEMA</code> from within a stored PL/SQL unit.</div>
+<p>During a server call, when a DR unit is pushed onto the <a id="sthref951"></a><a id="sthref952"></a><a id="sthref953"></a><a id="sthref954"></a>call stack, the database stores the currently enabled roles and the current values of <code>CURRENT_USER</code> and <code>CURRENT_SCHEMA</code>. It then changes both <code>CURRENT_USER</code> and <code>CURRENT_SCHEMA</code> to the owner of the DR unit, and enables only the role <code>PUBLIC</code>. (The stored and new roles and values are not necessarily different.) When the DR unit is popped from the call stack, the database restores the stored roles and values. In contrast, when an IR unit is pushed onto, or popped from, the call stack, the values of <code>CURRENT_USER</code> and <code>CURRENT_SCHEMA</code>, and the currently enabled roles do not change.</p>
+<p>For <a id="sthref955"></a><a id="sthref956"></a><a id="sthref957"></a>dynamic SQL statements issued by a PL/SQL unit, name resolution and privilege checking are done only once, at run time. For <a id="sthref958"></a><a id="sthref959"></a><a id="sthref960"></a>static SQL statements, name resolution and privilege checking are done twice: first, when the PL/SQL unit is compiled, and then again at run time. At compilation time, the <code>AUTHID</code> property has no effect&mdash;both DR and IR units are treated like DR units. At run time, however, the <code>AUTHID</code> property determines whether a unit is IR or DR, and the unit is treated accordingly.</p>
+<p>Topics:</p>
+<ul>
+<li>
+<p><a href="#BABDGGBE">Choosing Between AUTHID CURRENT_USER and AUTHID DEFINER</a></p>
+</li>
+<li>
+<p><a href="#CHDDABCG">AUTHID and the SQL Command SET ROLE</a></p>
+</li>
+<li>
+<p><a href="#BABFDIHA">Need for Template Objects in IR Subprograms</a></p>
+</li>
+<li>
+<p><a href="#BABFAEHF">Overriding Default Name Resolution in IR Subprograms</a></p>
+</li>
+<li>
+<p><a href="#BABBFHFC">Using Views and Database Triggers with IR Subprograms</a></p>
+</li>
+<li>
+<p><a href="#BABDICHG">Using Database Links with IR Subprograms</a></p>
+</li>
+<li>
+<p><a href="#BABHBDHG">Using Object Types with IR Subprograms</a></p>
+</li>
+<li>
+<p><a href="#BABCHDEF">Invoking IR Instance Methods</a></p>
+</li>
+</ul>
+<a id="BABDGGBE"></a>
+<div class="sect2">
+<h3 class="sect2">Choosing Between AUTHID CURRENT_USER and AUTHID DEFINER</h3>
+<p><span class="bold">Scenario:</span> Suppose that you want to create an API whose procedures have unrestricted access to its tables, but you want to prevent ordinary users from selecting table data directly, and from changing it with <code>INSERT</code>, <code>UPDATE</code>, and <code>DELETE</code> statements.</p>
+<p><span class="bold">Solution:</span> In a special schema, create the tables and the procedures that comprise the API. By default, each procedure is a DR unit, so you need not specify <code>AUTHID</code> <code>DEFINER</code> when you create it. To other users, grant the <code>EXECUTE</code> privilege, but do not grant any privileges that allow data access.</p>
+<p><span class="bold">Scenario:</span> Suppose that you want to write a PL/SQL procedure that presents compilation errors to a developer. The procedure will join the static data dictionary views <code>ALL_SOURCE</code> and <code>ALL_ERRORS</code> and use the procedure <code>DBMS_OUTPUT</code>.<code>PUT_LINE</code> to show a window of numbered source lines around each error, following the list of errors for that window. You want all developers to be able to execute the procedure, and you want the procedure to treat each developer as the <code>CURRENT_USER</code> with respect to <code>ALL_SOURCE</code> and <code>ALL_ERRORS</code>.</p>
+<p><span class="bold">Solution:</span> When you create the procedure, specify <code>AUTHID</code> <code>CURRENT_USER</code>. Grant the <code>EXECUTE</code> privilege to <code>PUBLIC</code>. Because the procedure is an IR unit, <code>ALL_SOURCE</code> and <code>ALL_ERRORS</code> will operate from the perspective of the user who invokes the procedure.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+Another solution is to make the procedure a DR unit and grant its owner the <code>SELECT</code> privilege on both <code>DBA_SOURCE</code> and <code>DBA_ERRORS</code>. However, this solution is harder to program, and far harder to audit with respect to the criterion that a user must never see source code for units for which he or she does not have the <code>EXECUTE</code> privilege.</div>
+</div>
+<!-- class="sect2" -->
+<a id="CHDDABCG"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">AUTHID and the SQL Command SET ROLE</h3>
+<p>The SQL command <code>SET</code> <code>ROLE</code> succeeds only if there are no DR units on the call stack. If at least one DR unit is on the call stack, issuing the <code>SET</code> <code>ROLE</code> command causes ORA-06565.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+To execute the <code>SET</code> <code>ROLE</code> command from PL/SQL, you must use dynamic SQL, preferably the <code>EXECUTE</code> <code>IMMEDIATE</code> statement. For information about this statement, see <a href="dynamic.htm#BHCEBBAI">Using the EXECUTE IMMEDIATE Statement</a>.</div>
+</div>
+<!-- class="sect2" -->
+<a id="BABFDIHA"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">Need for Template Objects in IR Subprograms</h3>
+<p>The PL/SQL compiler must resolve all references to tables and other objects at compile time. The owner of an IR subprogram must have objects in the same schema with the right names and columns, even if they do not contain any data. At run time, the corresponding objects in the invoker's schema must have matching definitions. Otherwise, you get an error or unexpected results, such as ignoring table columns that exist in the invoker's schema but not in the schema that contains the subprogram.</p>
+</div>
+<!-- class="sect2" -->
+<a id="BABFAEHF"></a>
+<div class="sect2">
+<h3 class="sect2">Overriding Default Name Resolution in IR Subprograms</h3>
+<p><a id="sthref961"></a><a id="sthref962"></a>Sometimes, the run-time name resolution rules for an IR unit (that cause different invocations to resolve the same unqualified name to different objects) are not desired. Rather, it is required that a specific object be used on every invocation. Nevertheless, an IR unit is needed for other reasons. For example, it might be critical that privileges are evaluated with respect to the <code>CURRENT_USER</code>. Under these circumstances, qualify the name with the schema that owns the object.</p>
+<p>Notice that an unqualified name that intends to denote a public synonym is exposed to the risk of capture if the schema of the <code>CURRENT_USER</code> has a colliding name. A public synonym can be qualified with "PUBLIC". You must enclose PUBLIC in double quotation marks. For example:</p>
+<pre>
+SELECT sysdate INTO today FROM "PUBLIC".DUAL;
+</pre>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+Oracle recommends against issuing the SQL statement <code>ALTER</code> <code>SESSION</code> <code>SET</code> <code>CURRENT_SCHEMA</code> from within a stored PL/SQL unit.</div>
+</div>
+<!-- class="sect2" -->
+<a id="BABBFHFC"></a>
+<div class="sect2">
+<h3 class="sect2">Using Views and Database Triggers with IR Subprograms</h3>
+<p><a id="sthref963"></a><a id="sthref964"></a>For IR subprograms executed within a view expression, the user who created the view, not the user who is querying the view, is considered to be the current user. This rule also applies to database triggers.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+If <code>SYS_CONTEXT</code> is used directly in the defining SQL statement of a view, then the value it returns for <code>CURRENT_USER</code> is the querying user and not the owner of the view.</div>
+</div>
+<!-- class="sect2" -->
+<a id="BABDICHG"></a>
+<div class="sect2">
+<h3 class="sect2">Using Database Links with IR Subprograms</h3>
+<p><a id="sthref965"></a>You can create a database link to use invoker's rights:</p>
+<pre>
+CREATE DATABASE LINK link_name CONNECT TO CURRENT_USER
+  USING connect_string;
+</pre>
+<p>A current-user link lets you connect to a remote database as another user, with that user's privileges. To connect, the database uses the username of the current user (who must be a global user). Suppose an IR subprogram owned by user <code>OE</code> references the following database link. If global user <code>HR</code> invokes the subprogram, it connects to the Dallas database as user <code>HR</code>, who is the current user.</p>
+<pre>
+CREATE DATABASE LINK dallas CONNECT TO CURRENT_USER USING ...
+</pre>
+<p>If it were a definer's rights subprogram, the current user would be <code>OE</code>, and the subprogram would connect to the Dallas database as global user <code>OE</code>.</p>
+</div>
+<!-- class="sect2" -->
+<a id="BABHBDHG"></a>
+<div class="sect2">
+<h3 class="sect2">Using Object Types with IR Subprograms</h3>
+<p><a id="sthref966"></a>To define object types for use in any schema, specify the <code>AUTHID</code> <code>CURRENT_USER</code> clause. For information about object types, see <a class="olink ADOBJ001" href="../../appdev.111/b28371/adobjint.htm#ADOBJ001"><span class="italic">Oracle Database Object-Relational Developer's Guide</span></a>.</p>
+<p>Suppose that user <code>HR</code> creates the object type in <a href="#CIHJCCHH">Example 8-16</a>.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHJCCHH"></a>Example 8-16 Creating an Object Type with AUTHID CURRENT USER</p>
+<pre>
+CREATE TYPE person_typ AUTHID CURRENT_USER AS OBJECT (
+  person_id   NUMBER,
+  person_name VARCHAR2(30),
+  person_job  VARCHAR2(10),
+  STATIC PROCEDURE new_person_typ (
+    person_id NUMBER, person_name VARCHAR2, person_job VARCHAR2,
+    schema_name VARCHAR2, table_name VARCHAR2),
+  MEMBER PROCEDURE change_job (SELF IN OUT NOCOPY person_typ,
+                               new_job VARCHAR2) 
+  );
+/
+CREATE TYPE BODY person_typ AS
+  STATIC PROCEDURE new_person_typ (
+    person_id NUMBER, person_name VARCHAR2, person_job VARCHAR2,
+    schema_name VARCHAR2, table_name VARCHAR2) IS
+    sql_stmt VARCHAR2(200);
+  BEGIN 
+    sql_stmt := 'INSERT INTO ' || schema_name || '.'
+       || table_name || ' VALUES (HR.person_typ(:1, :2, :3))';
+    EXECUTE IMMEDIATE sql_stmt
+      USING person_id, person_name, person_job;
+  END;
+  MEMBER PROCEDURE change_job (SELF IN OUT NOCOPY person_typ,
+                               new_job VARCHAR2) IS
+  BEGIN
+    person_job := new_job;
+  END;
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p>Then user <code>HR</code> grants the <code>EXECUTE</code> privilege on object type <code>person_typ</code> to user <code>OE</code>:</p>
+<pre>
+GRANT EXECUTE ON person_typ TO OE;
+</pre>
+<p>Finally, user <code>OE</code> creates an object table to store objects of type <code>person_typ</code>, then invokes procedure <code>new_person_typ</code> to populate the table:</p>
+<pre>
+CREATE TABLE person_tab OF hr.person_typ;
+
+BEGIN
+  hr.person_typ.new_person_typ(1001,
+                               'Jane Smith',
+                               'CLERK',
+                               'oe',
+                               'person_tab');
+  hr.person_typ.new_person_typ(1002,
+                               'Joe Perkins',
+                               'SALES','oe',
+                               'person_tab');
+  hr.person_typ.new_person_typ(1003,
+                               'Robert Lange',
+                               'DEV',
+                               'oe', 'person_tab');
+                               'oe', 'person_tab');
+END;
+/
+</pre>
+<p>The calls succeed because the procedure executes with the privileges of its current user (<code>OE</code>), not its owner (<code>HR</code>).</p>
+<p>For subtypes in an object type hierarchy, the following rules apply:</p>
+<ul>
+<li>
+<p>If a subtype does not explicitly specify an <code>AUTHID</code> clause, it inherits the <code>AUTHID</code> of its supertype.</p>
+</li>
+<li>
+<p>If a subtype does specify an <code>AUTHID</code> clause, its <code>AUTHID</code> must match the <code>AUTHID</code> of its supertype. Also, if the <code>AUTHID</code> is <code>DEFINER</code>, both the supertype and subtype must have been created in the same schema.</p>
+</li>
+</ul>
+</div>
+<!-- class="sect2" -->
+<a id="BABCHDEF"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">Invoking IR Instance Methods</h3>
+<p>An IR instance method executes with the privileges of the invoker, not the creator of the instance. Suppose that <code>person_typ</code> is an IR object type as created in <a href="#CIHJCCHH">Example 8-16</a>, and that user <code>HR</code> creates <code>p1</code>, an object of type <code>person_typ</code>. If user <code>OE</code> invokes instance method <code>change_job</code> to operate on object <code>p1</code>, the current user of the method is <code>OE</code>, not <code>HR</code>, as shown in <a href="#CHDBCGGH">Example 8-17</a>.</p>
+<div class="example">
+<p class="titleinexample"><a id="CHDBCGGH"></a>Example 8-17 Invoking an IR Instance Methods</p>
+<pre>
+-- OE creates a procedure that invokes change_job
+CREATE PROCEDURE reassign
+  (p IN OUT NOCOPY hr.person_typ, new_job VARCHAR2) AS
+BEGIN
+   p.change_job(new_job); -- executes with the privileges of oe
+END;
+/
+-- OE grants EXECUTE to HR on procedure reassign
+GRANT EXECUTE ON reassign to HR;
+
+-- HR passes a person_typ object to the procedure reassign
+DECLARE
+   p1 person_typ;
+BEGIN
+   p1 := person_typ(1004,  'June Washburn', 'SALES');
+   oe.reassign(p1, 'CLERK'); -- current user is oe, not hr
+END;
+/
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" -->
+<a id="i2884"></a>
+<div class="sect1"><!-- infotype="Concept" -->
+<h2 class="sect1"><a id="LNPLS00810"></a>Using Recursive PL/SQL Subprograms</h2>
+<p><a id="sthref967"></a>A recursive subprogram is one that invokes itself. Each recursive call creates a new instance of any items declared in the subprogram, including parameters, variables, cursors, and exceptions. Likewise, new instances of SQL statements are created at each level in the recursive descent.</p>
+<p>Be careful where you place a recursive call. If you place it inside a cursor <code>FOR</code> loop or between <code>OPEN</code> and <code>CLOSE</code> statements, another cursor is opened at each call, which might exceed the limit set by the database initialization parameter <code>OPEN_CURSORS</code>.</p>
+<p><a id="sthref968"></a>There must be at least two paths through a recursive subprogram: one that leads to the recursive call and one that does not. At least one path must lead to a terminating condition. Otherwise, the recursion continues until PL/SQL runs out of memory and raises the predefined exception <code>STORAGE_ERROR</code>.</p>
+<p><a id="sthref969"></a><a id="sthref970"></a>Recursion is a powerful technique for simplifying the design of algorithms. Basically, recursion means self-reference. In a recursive mathematical sequence, each term is derived by applying a formula to preceding terms. The Fibonacci sequence (0, 1, 1, 2, 3, 5, 8, 13, 21, ...), is an example. Each term in the sequence (after the second) is the sum of the two terms that immediately precede it.</p>
+<p>In a recursive definition, something is defined as simpler versions of itself. Consider the definition of <span class="italic">n</span> factorial (<span class="italic">n!</span>), the product of all integers from 1 to <span class="italic">n</span>:</p>
+<pre>
+n! = n * (n - 1)!
+</pre></div>
+<!-- class="sect1" -->
+<a id="i17145"></a>
+<div class="sect1">
+<h2 class="sect1"><a id="LNPLS00812"></a>Invoking External Subprograms</h2>
+<p><a id="sthref971"></a><a id="sthref972"></a><a id="sthref973"></a><a id="sthref974"></a>Although PL/SQL is a powerful, flexible language, some tasks are more easily done in another language. Low-level languages such as C are very fast. Widely used languages such as Java have reusable libraries for common design patterns.</p>
+<p>You can use PL/SQL call specifications to invoke <a id="sthref975"></a><a id="sthref976"></a>external subprograms written in other languages, making their capabilities and libraries available from PL/SQL. For example, you can invoke <a id="sthref977"></a><a id="sthref978"></a>Java stored procedures from any PL/SQL block, subprogram, or package. For more information about Java stored procedures, see <a class="olink JJDEV01530" href="../../java.111/b31225/chone.htm#JJDEV01530"><span class="italic">Oracle Database Java Developer's Guide</span></a>.</p>
+<p>If the following Java class is stored in the database, it can be invoked as shown in <a href="#CHDEIDIE">Example 8-18</a>.</p>
+<pre>
+import java.sql.*;
+import oracle.jdbc.driver.*;
+public class Adjuster {
+  public static void raiseSalary (int empNo, float percent)
+  throws SQLException {
+    Connection conn = new OracleDriver().defaultConnection();
+    String sql = "UPDATE employees SET salary = salary * ?
+                    WHERE employee_id = ?";
+    try {
+      PreparedStatement pstmt = conn.prepareStatement(sql);
+      pstmt.setFloat(1, (1 + percent / 100));
+      pstmt.setInt(2, empNo);
+      pstmt.executeUpdate();
+      pstmt.close();
+    } catch (SQLException e)
+          {System.err.println(e.getMessage());}
+    }
+}
+</pre>
+<p>The class <code>Adjuster</code> has one method, which raises the salary of an employee by a given percentage. Because <code>raiseSalary</code> is a <code>void</code> method, you publish it as a procedure using the call specification shown in <a href="#CHDEIDIE">Example 8-18</a> and then can invoke the procedure <code>raise_salary</code> from an anonymous PL/SQL block.</p>
+<div class="example">
+<p class="titleinexample"><a id="CHDEIDIE"></a>Example 8-18 Invoking an External Procedure from PL/SQL</p>
+<pre>
+CREATE OR REPLACE PROCEDURE raise_salary (empid NUMBER, pct NUMBER)
+AS <a id="sthref979"></a><a id="sthref980"></a><a id="sthref981"></a>LANGUAGE JAVA
+NAME 'Adjuster.raiseSalary(int, float)';
+/
+
+DECLARE
+   emp_id  NUMBER := 120;
+   percent NUMBER := 10;
+BEGIN
+   -- get values for emp_id and percent
+   raise_salary(emp_id, percent);  -- invoke external subprogram
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p><a id="sthref982"></a>Java call specifications cannot be declared as nested procedures, but can be specified in object type specifications, object type bodies, PL/SQL package specifications, PL/SQL package bodies, and as top level PL/SQL procedures and functions.</p>
+<p><a href="#CHDFAGDA">Example 8-19</a> shows a call to a Java function from a PL/SQL procedure.</p>
+<div class="example">
+<p class="titleinexample"><a id="CHDFAGDA"></a>Example 8-19 Invoking a Java Function from PL/SQL</p>
+<pre>
+-- the following invalid nested Java call spec throws PLS-00999
+--   CREATE PROCEDURE sleep (milli_seconds in number) IS
+--     PROCEDURE java_sleep (milli_seconds IN NUMBER) AS ...
+
+-- Create Java call spec, then call from PL/SQL procedure
+CREATE PROCEDURE java_sleep (milli_seconds IN NUMBER)
+  AS LANGUAGE JAVA NAME 'java.lang.Thread.sleep(long)';
+/
+CREATE PROCEDURE sleep (milli_seconds in number) IS
+-- the following nested PROCEDURE spec is not legal
+--  PROCEDURE java_sleep (milli_seconds IN NUMBER)
+--    AS LANGUAGE JAVA NAME 'java.lang.Thread.sleep(long)';
+BEGIN
+  DBMS_OUTPUT.PUT_LINE(DBMS_UTILITY.get_time());
+  java_sleep (milli_seconds);
+  DBMS_OUTPUT.PUT_LINE(DBMS_UTILITY.get_time());
+END;
+/ 
+</pre></div>
+<!-- class="example" -->
+<p>External C subprograms are used to interface with embedded systems, solve engineering problems, analyze data, or control real-time devices and processes. External C subprograms extend the functionality of the database server, and move computation-bound programs from client to server, where they execute faster. For more information about external C subprograms, see <span class="italic"><a class="olink ADFNS010" href="../../appdev.111/b28424/adfns_externproc.htm#ADFNS010">Oracle Database Advanced Application Developer's Guide</a></span>.</p>
+</div>
+<!-- class="sect1" -->
+<a id="i22204"></a>
+<div class="sect1"><!-- infotype="Concept" -->
+<h2 class="sect1"><a id="LNPLS00814"></a>Controlling Side Effects of PL/SQL Subprograms</h2>
+<p><a id="sthref983"></a><a id="sthref984"></a>The fewer side effects a function has, the better it can be optimized within a query, particularly when the <code>PARALLEL_ENABLE</code> or <code>DETERMINISTIC</code> hints are used.</p>
+<p><a id="sthref985"></a><a id="sthref986"></a>To be callable from SQL statements, a stored function (and any subprograms that it invokes) must obey the following purity rules, which are meant to control side effects:</p>
+<ul>
+<li>
+<p>When invoked from a <code>SELECT</code> statement or a parallelized <code>INSERT</code>, <code>UPDATE</code>, or <code>DELETE</code> statement, the function cannot modify any database tables.</p>
+</li>
+<li>
+<p>When invoked from an <code>INSERT</code>, <code>UPDATE</code>, or <code>DELETE</code> statement, the function cannot query or modify any database tables modified by that statement.</p>
+</li>
+<li>
+<p>When invoked from a <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, or <code>DELETE</code> statement, the function cannot execute SQL transaction control statements (such as <code>COMMIT</code>), session control statements (such as <code>SET</code> <code>ROLE</code>), or system control statements (such as <code>ALTER</code> <code>SYSTEM</code>). Also, it cannot execute DDL statements (such as <code>CREATE</code>) because they are followed by an automatic commit.</p>
+</li>
+</ul>
+<p>If any SQL statement inside the function body violates a rule, you get an error at run time (when the statement is parsed).</p>
+<p><a id="sthref987"></a><a id="sthref988"></a>To check for purity rule violations at compile time, use the <code>RESTRICT_REFERENCES</code> pragma to assert that a function does not read or write database tables or package variables (for syntax, see <a href="restrictreferences_pragma.htm#i35854">RESTRICT_REFERENCES Pragma</a>).</p>
+<p>In <a href="#BABHFDDF">Example 8-20</a>, the <code>RESTRICT_REFERENCES</code> pragma asserts that packaged function <code>credit_ok</code> writes no database state (<code>WNDS</code>) and reads no package state (<code>RNPS</code>).</p>
+<div class="example">
+<p class="titleinexample"><a id="BABHFDDF"></a>Example 8-20 RESTRICT_REFERENCES Pragma</p>
+<pre>
+CREATE PACKAGE loans AS
+   FUNCTION credit_ok RETURN BOOLEAN;
+   <span class="bold">PRAGMA RESTRICT_REFERENCES (credit_ok, WNDS, RNPS);</span>
+END loans;
+/
+</pre></div>
+<!-- class="example" -->
+<p>A static <code>INSERT</code>, <code>UPDATE</code>, or <code>DELETE</code> statement always violates <code>WNDS</code>, and if it reads columns, it also violates <code>RNDS</code> (reads no database state). A dynamic <code>INSERT</code>, <code>UPDATE</code>, or <code>DELETE</code> statement always violates both <code>WNDS</code> and <code>RNDS</code>.</p>
+</div>
+<!-- class="sect1" -->
+<a id="i23489"></a>
+<div class="sect1"><!-- infotype="Concept" -->
+<h2 class="sect1"><a id="LNPLS00815"></a>Understanding PL/SQL Subprogram Parameter Aliasing</h2>
+<p><a id="sthref989"></a><a id="sthref990"></a><a id="sthref991"></a><a id="sthref992"></a><a id="sthref993"></a><a id="sthref994"></a>To optimize a subprogram call, the PL/SQL compiler can choose between two methods of parameter passing. with the <code>BY</code> <code>VALUE</code> method, the value of an actual parameter is passed to the subprogram. With the <code>BY</code> <code>REFERENCE</code> method, only a pointer to the value is passed; the actual and formal parameters reference the same item.</p>
+<p>The <code>NOCOPY</code> compiler hint increases the possibility of <a id="sthref995"></a><a id="sthref996"></a><a id="sthref997"></a>aliasing (that is, having two different names refer to the same memory location). This can occur when a global variable appears as an actual parameter in a subprogram call and then is referenced within the subprogram. The result is indeterminate because it depends on the method of parameter passing chosen by the compiler.</p>
+<p>In <a href="#CIHBCCHI">Example 8-21</a>, procedure <code>ADD_ENTRY</code> refers to varray <code>LEXICON</code> both as a parameter and as a global variable. When <code>ADD_ENTRY</code> is invoked, the identifiers <code>WORD_LIST</code> and <code>LEXICON</code> point to the same varray.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHBCCHI"></a>Example 8-21 Aliasing from Passing Global Variable with NOCOPY Hint</p>
+<pre>
+DECLARE
+  TYPE Definition IS RECORD (
+    word    VARCHAR2(20),
+    meaning VARCHAR2(200));
+  TYPE Dictionary IS VARRAY(2000) OF Definition;
+  lexicon Dictionary := Dictionary();
+  PROCEDURE add_entry (word_list IN OUT NOCOPY Dictionary) IS
+    BEGIN
+      word_list(1).word := 'aardvark';
+      lexicon(1).word := 'aardwolf';
+    END;
+BEGIN
+  lexicon.EXTEND;
+  add_entry(lexicon);
+  DBMS_OUTPUT.PUT_LINE(lexicon(1).word);
+END;
+/
+</pre>
+<p>The program prints <code>aardwolf</code> if the compiler obeys the <code>NOCOPY</code> hint. The assignment to <code>WORD_LIST</code> is done immediately through a pointer, then is overwritten by the assignment to <code>LEXICON</code>.</p>
+<p>The program prints <code>aardvark</code> if the <code>NOCOPY</code> hint is omitted, or if the compiler does not obey the hint. The assignment to <code>WORD_LIST</code> uses an internal copy of the varray, which is copied back to the actual parameter (overwriting the contents of <code>LEXICON</code>) when the procedure ends.</p>
+</div>
+<!-- class="example" -->
+<p>Aliasing can also occur when the same actual parameter appears more than once in a subprogram call. In <a href="#CIHJIDAB">Example 8-22</a>, <code>n2</code> is an <code>IN</code> <code>OUT</code> parameter, so the value of the actual parameter is not updated until the procedure exits. That is why the first <code>PUT_LINE</code> prints 10 (the initial value of <code>n</code>) and the third <code>PUT_LINE</code> prints 20. However, <code>n3</code> is a <code>NOCOPY</code> parameter, so the value of the actual parameter is updated immediately. That is why the second <code>PUT_LINE</code> prints 30.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHJIDAB"></a>Example 8-22 Aliasing Passing Same Parameter Multiple Times</p>
+<pre>
+DECLARE
+   n NUMBER := 10;
+   PROCEDURE do_something (
+      n1 IN NUMBER,
+      n2 IN OUT NUMBER,
+      n3 IN OUT NOCOPY NUMBER) IS
+   BEGIN
+      n2 := 20;
+      DBMS_OUTPUT.put_line(n1);  -- prints 10
+      n3 := 30;
+      DBMS_OUTPUT.put_line(n1);  -- prints 30
+   END;
+BEGIN
+   do_something(n, n, n);
+   DBMS_OUTPUT.put_line(n);  -- prints 20
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p>Because they are pointers, cursor variables also increase the possibility of aliasing. In <a href="#CIHBIFGC">Example 8-23</a>, after the assignment, <code>emp_cv2</code> is an alias of <code>emp_cv1</code>; both point to the same query work area. The first fetch from <code>emp_cv2</code> fetches the third row, not the first, because the first two rows were already fetched from <code>emp_cv1</code>. The second fetch from <code>emp_cv2</code> fails because <code>emp_cv1</code> is closed.</p>
+<div class="example">
+<p class="titleinexample"><a id="CIHBIFGC"></a>Example 8-23 Aliasing from Assigning Cursor Variables to Same Work Area</p>
+<pre>
+DECLARE
+  TYPE EmpCurTyp IS REF CURSOR;
+  c1 EmpCurTyp;
+  c2 EmpCurTyp;
+  PROCEDURE get_emp_data (emp_cv1 IN OUT EmpCurTyp,
+                          emp_cv2 IN OUT EmpCurTyp) IS
+    emp_rec employees%ROWTYPE;
+  BEGIN
+    OPEN emp_cv1 FOR SELECT * FROM employees;
+    emp_cv2 := emp_cv1;
+    FETCH emp_cv1 INTO emp_rec;  -- fetches first row
+    FETCH emp_cv1 INTO emp_rec;  -- fetches second row
+    FETCH emp_cv2 INTO emp_rec;  -- fetches third row
+    CLOSE emp_cv1;
+    DBMS_OUTPUT.put_line('The following raises an invalid cursor');
+--  FETCH emp_cv2 INTO emp_rec;
+--  raises invalid cursor when get_emp_data is invoked
+  END;
+BEGIN
+  get_emp_data(c1, c2);
+END;
+/
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect1" -->
+<a id="BABFHACJ"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a id="LNPLS00817"></a>Using the PL/SQL Function Result Cache</h2>
+<p><a id="sthref998"></a><a id="sthref999"></a><a id="sthref1000"></a>The PL/SQL function result caching mechanism provides a language-supported and system-managed means for caching the results of PL/SQL functions in a shared global area (SGA), which is available to every session that runs your application. The caching mechanism is both efficient and easy to use, and it relieves you of the burden of designing and developing your own caches and cache-management policies.</p>
+<p>To enable result-caching for a function, use the <code>RESULT_CACHE</code> clause. When a result-cached function is invoked, the system checks the cache. If the cache contains the result from a previous call to the function with the same parameter values, the system returns the cached result to the invoker and does not reexecute the function body. If the cache does not contain the result, the system executes the function body and adds the result (for these parameter values) to the cache before returning control to the invoker.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+If function execution results in an unhandled exception, the exception result is not stored in the cache.</div>
+<p>The cache can accumulate very many results&mdash;one result for every unique combination of parameter values with which each result-cached function was invoked. If the system needs more memory, it <span class="bold">ages out</span> (deletes) one or more cached results.</p>
+<p>You can specify the database objects that are used to compute a cached result, so that if any of them are updated, the cached result becomes invalid and must be recomputed. The best candidates for result-caching are functions that are invoked frequently but depend on information that changes infrequently or never.</p>
+<p>Topics:</p>
+<ul>
+<li>
+<p><a href="#BABCDCFA">Enabling Result-Caching for a Function</a></p>
+</li>
+<li>
+<p><a href="#g3294931">Developing Applications with Result-Cached Functions</a></p>
+</li>
+<li>
+<p><a href="#g3335204">Restrictions on Result-Cached Functions</a></p>
+</li>
+<li>
+<p><a href="#g3298100">Examples of Result-Cached Functions</a></p>
+</li>
+<li>
+<p><a href="#g3336645">Advanced Result-Cached Function Topics</a></p>
+</li>
+</ul>
+<a id="BABCDCFA"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">Enabling Result-Caching for a Function</h3>
+<p>To make a function result-cached, do the following:</p>
+<ul>
+<li>
+<p>In the function declaration, include the option <code>RESULT_CACHE</code>.</p>
+</li>
+<li>
+<p>In the function definition:</p>
+<ul>
+<li>
+<p>Include the <code>RESULT_CACHE</code> clause.</p>
+</li>
+<li>
+<p>In the optional <code>RELIES_ON</code> clause, specify any tables or views on which the function results depend.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>For the syntax of the <code>RESULT_CACHE</code> and <code>RELIES_ON</code> clauses, see <a href="function.htm#i34368">Function Declaration and Definition</a>.</p>
+<p>In <a href="#g3307801">Example 8-24</a>, the package <code>department_pks</code> declares and then defines a result-cached function, <code>get_dept_info</code>, which returns the average salary and number of employees in a given department. <code>get_dept_info</code> depends on the database table <code>EMPLOYEES</code>.</p>
+<div class="example">
+<p class="titleinexample"><a id="g3307801"></a>Example 8-24 Declaration and Definition of Result-Cached Function</p>
+<pre>
+-- Package specification
+CREATE OR REPLACE PACKAGE department_pks IS
+  TYPE dept_info_record IS RECORD (average_salary      NUMBER,
+                                   number_of_employees NUMBER);
+  -- <span class="bold">Function declaration</span>
+  FUNCTION get_dept_info (dept_id NUMBER) RETURN dept_info_record
+  <span class="bold">RESULT_CACHE</span>;
+END department_pks;
+/
+CREATE OR REPLACE PACKAGE BODY department_pks AS
+  -- <span class="bold">Function definition</span>
+  FUNCTION get_dept_info (dept_id NUMBER) RETURN dept_info_record
+    <span class="bold">RESULT_CACHE RELIES_ON (EMPLOYEES)</span>
+  IS
+    rec dept_info_record;
+  BEGIN
+    SELECT AVG(SALARY), COUNT(*) INTO rec
+      FROM EMPLOYEES
+        WHERE DEPARTMENT_ID = dept_id;
+    RETURN rec;
+  END get_dept_info;
+END department_pks;
+/
+DECLARE
+  dept_id   NUMBER := 50;
+  avg_sal   NUMBER;
+  no_of_emp NUMBER;
+BEGIN
+  avg_sal   := department_pks.get_dept_info(50).average_salary;
+  no_of_emp := department_pks.get_dept_info(50).number_of_employees;
+  DBMS_OUTPUT.PUT_LINE('dept_id = ' ||dept_id);
+  DBMS_OUTPUT.PUT_LINE('average_salary = '|| avg_sal);
+  DBMS_OUTPUT.PUT_LINE('number_of_employees = ' ||no_of_emp);
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p>You invoke the function <code>get_dept_info</code> as you invoke any function. For example, the following call returns the average salary and the number of employees in department number 10:</p>
+<pre>
+department_pks.get_dept_info(10);
+</pre>
+<p>The following call returns only the average salary in department number 10:</p>
+<pre>
+department_pks.get_dept_info(10).average_salary;
+</pre>
+<p>If the result for <code>get_dept_info(10)</code> is already in the result cache, the result is returned from the cache; otherwise, the result is computed and added to the cache. Because the <code>RELIES_ON</code> clause specifies <code>EMPLOYEES</code>, any update to <code>EMPLOYEES</code> invalidates all cached results for <code>department_pks.get_dept_info</code>, relieving you of programming cache invalidation logic everywhere that <code>EMPLOYEES</code> might change.</p>
+</div>
+<!-- class="sect2" -->
+<a id="g3294931"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">Developing Applications with Result-Cached Functions</h3>
+<p>When developing an application that uses a result-cached function, make no assumptions about the number of times the body of the function will execute for a given set of parameter values.</p>
+<p>Some situations in which the body of a result-cached function executes are:</p>
+<ul>
+<li>
+<p>The first time a session on this database instance invokes the function with these parameter values</p>
+</li>
+<li>
+<p>When the cached result for these parameter values is <span class="bold">invalid</span></p>
+<p>A cached result becomes invalid when any database object specified in the <code>RELIES_ON</code> clause of the function definition changes.</p>
+</li>
+<li>
+<p>When the cached results for these parameter values have aged out</p>
+<p>If the system needs memory, it might discard the oldest cached values.</p>
+</li>
+<li>
+<p>When the function bypasses the cache (see <a href="#BABDGDCJ">Bypassing the Result Cache</a>)</p>
+</li>
+</ul>
+</div>
+<!-- class="sect2" -->
+<a id="g3335204"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">Restrictions on Result-Cached Functions</h3>
+<p>To be result-cached, a function must meet all of the following criteria:</p>
+<ul>
+<li>
+<p>It is not defined in a module that has invoker's rights or in an anonymous block.</p>
+</li>
+<li>
+<p>It is not a pipelined table function.</p>
+</li>
+<li>
+<p>It has no <code>OUT</code> or <code>IN</code> <code>OUT</code> parameters.</p>
+</li>
+<li>
+<p>No <code>IN</code> parameter has one of the following types:</p>
+<ul>
+<li>
+<p><code>BLOB</code></p>
+</li>
+<li>
+<p><code>CLOB</code></p>
+</li>
+<li>
+<p><code>NCLOB</code></p>
+</li>
+<li>
+<p><code>REF</code> <code>CURSOR</code></p>
+</li>
+<li>
+<p>Collection</p>
+</li>
+<li>
+<p>Object</p>
+</li>
+<li>
+<p>Record</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The return type is none of the following:</p>
+<ul>
+<li>
+<p><code>BLOB</code></p>
+</li>
+<li>
+<p><code>CLOB</code></p>
+</li>
+<li>
+<p><code>NCLOB</code></p>
+</li>
+<li>
+<p><code>REF</code> <code>CURSOR</code></p>
+</li>
+<li>
+<p>Object</p>
+</li>
+<li>
+<p>Record or PL/SQL collection that contains one of the preceding unsupported return types</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>It is recommended that a result-cached function also meet the following criteria:</p>
+<ul>
+<li>
+<p>It has no side effects.</p>
+<p>For example, it does not modify the database state, or modify the external state by invoking <code>DBMS_OUTPUT</code> or sending eEmail.</p>
+</li>
+<li>
+<p>It does not depend on session-specific settings.</p>
+<p>For more information, see <a href="#g3336053">Making Result-Cached Functions Handle Session-Specific Settings</a>.</p>
+</li>
+<li>
+<p>It does not depend on session-specific application contexts.</p>
+<p>For more information, see <a href="#g3336065">Making Result-Cached Functions Handle Session-Specific Application Contexts</a>.</p>
+</li>
+</ul>
+</div>
+<!-- class="sect2" -->
+<a id="g3298100"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">Examples of Result-Cached Functions</h3>
+<p>The best candidates for result-caching are functions that are invoked frequently but depend on information that changes infrequently (as might be the case in the first example). Result-caching avoids redundant computations in recursive functions.</p>
+<p>Examples:</p>
+<ul>
+<li>
+<p><a href="#BABCCCIE">Result-Cached Application Configuration Parameters</a></p>
+</li>
+<li>
+<p><a href="#BABFGHGF">Result-Cached Recursive Function</a></p>
+</li>
+</ul>
+<a id="BABCCCIE"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Result-Cached Application Configuration Parameters</h4>
+<p>Consider an application that has configuration parameters that can be set at either the global level, the application level, or the role level. The application stores the configuration information in the following tables:</p>
+<pre>
+-- Global Configuration Settings
+CREATE TABLE global_config_params
+  (name  VARCHAR2(20), -- parameter NAME
+   value VARCHAR2(20), -- parameter VALUE
+   PRIMARY KEY (name)
+  );
+
+-- Application-Level Configuration Settings
+CREATE TABLE app_level_config_params
+  (app_id  VARCHAR2(20), -- application ID
+   name    VARCHAR2(20), -- parameter NAME
+   value   VARCHAR2(20), -- parameter VALUE
+   PRIMARY KEY (app_id, name)
+  );
+
+-- Role-Level Configuration Settings
+CREATE TABLE role_level_config_params
+  (role_id  VARCHAR2(20), -- application (role) ID
+   name     VARCHAR2(20),  -- parameter NAME
+   value    VARCHAR2(20),  -- parameter VALUE
+   PRIMARY KEY (role_id, name)
+  );
+</pre>
+<p>For each configuration parameter, the role-level setting overrides the application-level setting, which overrides the global setting. To determine which setting applies to a parameter, the application defines the PL/SQL function <code>get_value</code>. Given a parameter name, application ID, and role ID, <code>get_value</code> returns the setting that applies to the parameter.</p>
+<p>The function <code>get_value</code> is a good candidate for result-caching if it is invoked frequently and if the configuration information changes infrequently. To ensure that a committed change to <code>global_config_params</code>, <code>app_level_config_params</code>, or <code>role_level_config_params</code> invalidates the cached results of <code>get_value</code>, include their names in the <code>RELIES_ON</code> clause.</p>
+<p><a href="#g3299007">Example 8-25</a> shows a possible definition for <code>get_value</code>.</p>
+<div class="example">
+<p class="titleinexample"><a id="g3299007"></a>Example 8-25 Result-Cached Function that Returns Configuration Parameter Setting</p>
+<pre>
+CREATE OR REPLACE FUNCTION get_value
+  (p_param VARCHAR2,
+   p_app_id  NUMBER,
+   p_role_id NUMBER
+  )
+  RETURN VARCHAR2
+  RESULT_CACHE RELIES_ON
+    (role_level_config_params,
+     app_level_config_params,
+     global_config_params
+    )
+IS
+  answer VARCHAR2(20);
+BEGIN
+  <span class="bold">-- Is parameter set at role level?</span>
+  BEGIN
+    SELECT value INTO answer
+      FROM <span class="bold">role_level_config_params</span>
+        WHERE role_id = p_role_id
+          AND name = p_param;
+    RETURN answer;  -- Found
+    EXCEPTION
+      WHEN no_data_found THEN
+        NULL;  -- Fall through to following code
+  END;
+ <span class="bold"> -- Is parameter set at application level?</span>
+  BEGIN
+    SELECT value INTO answer
+      FROM <span class="bold">app_level_config_params</span>
+        WHERE app_id = p_app_id
+          AND name = p_param;
+    RETURN answer;  -- Found
+    EXCEPTION
+      WHEN no_data_found THEN
+        NULL;  -- Fall through to following code
+  END;
+ <span class="bold"> -- Is parameter set at global level?</span>
+    SELECT value INTO answer
+     FROM <span class="bold">global_config_params</span>
+      WHERE name = p_param;
+    RETURN answer;
+END;
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect3" -->
+<a id="BABFGHGF"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Result-Cached Recursive Function</h4>
+<p>A recursive function for finding the <span class="italic">n</span>th term of a Fibonacci series that mirrors the mathematical definition of the series might do many redundant computations. For example, to evaluate <code>fibonacci(7)</code>, the function must compute <code>fibonacci(6)</code> and <code>fibonacci(5)</code>. To compute <code>fibonacci(6)</code>, the function must compute <code>fibonacci(5)</code> and <code>fibonacci(4)</code>. Therefore, <code>fibonacci(5)</code> and several other terms are computed redundantly. Result-caching avoids these redundant computations. A <code>RELIES_ON</code> clause is unnecessary.</p>
+<pre>
+CREATE OR REPLACE FUNCTION fibonacci (n NUMBER)
+   RETURN NUMBER <span class="bold">RESULT_CACHE</span> IS
+BEGIN
+  IF (n =0) OR (n =1) THEN
+    RETURN 1;
+  ELSE
+    RETURN fibonacci(n - 1) + fibonacci(n - 2);
+  END IF;
+END;
+/
+</pre></div>
+<!-- class="sect3" --></div>
+<!-- class="sect2" -->
+<a id="g3336645"></a>
+<div class="sect2"><!-- infolevel="all" infotype="General" -->
+<h3 class="sect2">Advanced Result-Cached Function Topics</h3>
+<p>Topics:</p>
+<ul>
+<li>
+<p><a href="#BABFAHBI">Rules for a Cache Hit</a></p>
+</li>
+<li>
+<p><a href="#BABDGDCJ">Bypassing the Result Cache</a></p>
+</li>
+<li>
+<p><a href="#g3336053">Making Result-Cached Functions Handle Session-Specific Settings</a></p>
+</li>
+<li>
+<p><a href="#g3336065">Making Result-Cached Functions Handle Session-Specific Application Contexts</a></p>
+</li>
+<li>
+<p><a href="#g3335224">Choosing Result-Caching Granularity</a></p>
+</li>
+<li>
+<p><a href="#g3340664">Result Caches in Oracle RAC Environment</a></p>
+</li>
+<li>
+<p><a href="#BABGBIGI">Managing the Result Cache</a></p>
+</li>
+<li>
+<p><a href="#BABIICDH">Hot-Patching PL/SQL Units on Which Result-Cached Functions Depend</a></p>
+</li>
+</ul>
+<a id="BABFAHBI"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Rules for a Cache Hit</h4>
+<p>Each time a result-cached function is invoked with different parameter values, those parameters and their result are stored in the cache. Subsequently, when the same function is invoked with the same parameter values (that is, when there is a <span class="bold">cache hit</span>), the result is retrieved from the cache, instead of being recomputed.</p>
+<p>The rules for parameter comparison for a cache hit differ from the rules for the PL/SQL "equal to" (=) operator, as follows:</p>
+<div class="inftblinformal">
+<table class="cellalignment2098" title="This table compares the rules for a cache hit to the rules for the &quot;equal to&quot; operator." summary="This table compares the rules for determining whether two parameter values are the same (for a cache hit) to the rules for determining whether two values are equal." dir="ltr">
+<thead>
+<tr class="cellalignment2092">
+<th class="cellalignment2099" id="r1c1-t16">Cache Hit Rules</th>
+<th class="cellalignment2099" id="r1c2-t16">"Equal To" Operator Rules</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r2c1-t16" headers="r1c1-t16"><code>NULL</code> is the same as <code>NULL</code></td>
+<td class="cellalignment2100" headers="r2c1-t16 r1c2-t16"><code>NULL = NULL</code> evaluates to <code>NULL</code>.</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r3c1-t16" headers="r1c1-t16">Non-null scalars are the same if and only if their values are identical; that is, if and only if their values have identical bit patterns on the given platform. For example, <code>CHAR</code> values <code>'AA'</code> and <code>'AA '</code> are not the same. (This rule is stricter than the rule for the "equal to" operator.)</td>
+<td class="cellalignment2100" headers="r3c1-t16 r1c2-t16">Non-null scalars can be equal even if their values do not have identical bit patterns on the given platform; for example, <code>CHAR</code> values <code>'AA'</code> and <code>'AA '</code> are equal.</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="inftblinformal" --></div>
+<!-- class="sect3" -->
+<a id="BABDGDCJ"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Bypassing the Result Cache</h4>
+<p>In some situations, the cache is bypassed. When the cache is bypassed:</p>
+<ul>
+<li>
+<p>The function computes the result instead of retrieving it from the cache.</p>
+</li>
+<li>
+<p>The result that the function computes is not added to the cache.</p>
+</li>
+</ul>
+<p>Some examples of situations in which the cache is bypassed are:</p>
+<ul>
+<li>
+<p>The cache is unavailable to all sessions.</p>
+<p>For example, the database administrator has disabled the use of the result cache during application patching (as in <a href="#BABIICDH">Hot-Patching PL/SQL Units on Which Result-Cached Functions Depend</a>).</p>
+</li>
+<li>
+<p>A session is performing a DML statement on a table or view that was specified in the <code>RELIES_ON</code> clause of a result-cached function. The session bypasses the result cache for that function until the DML statement is completed (either committed or rolled back), and then resumes using the cache for that function.</p>
+<p>Cache bypass ensures the following:</p>
+<ul>
+<li>
+<p>The user of each session sees his or her own uncommitted changes.</p>
+</li>
+<li>
+<p>The PL/SQL function result cache has only committed changes that are visible to all sessions, so that uncommitted changes in one session are not visible to other sessions.</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- class="sect3" -->
+<a id="g3336053"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Making Result-Cached Functions Handle Session-Specific Settings</h4>
+<p>If a function depends on settings that might vary from session to session (such as <code>NLS_DATE_FORMAT</code> and <code>TIME ZONE</code>), make the function result-cached only if you can modify it to handle the various settings.</p>
+<p>Consider the following function:</p>
+<div class="example">
+<p class="titleinexample"><a id="sthref1001"></a>Example 8-26</p>
+<pre>
+CREATE OR REPLACE FUNCTION get_hire_date (emp_id NUMBER) RETURN VARCHAR
+ <span class="bold">RESULT_CACHE RELIES_ON (HR.EMPLOYEES)</span>
+IS
+  date_hired DATE;
+BEGIN
+  SELECT hire_date INTO date_hired
+    FROM HR.EMPLOYEES
+      WHERE EMPLOYEE_ID = emp_id;
+  RETURN <span class="bold">TO_CHAR</span>(date_hired);
+END;
+/
+</pre></div>
+<!-- class="example" -->
+<p>The preceding function, <code>get_hire_date</code>, uses the <code>TO_CHAR</code> function to convert a <code>DATE</code> item to a <code>VARCHAR</code> item. The function <code>get_hire_date</code> does not specify a format mask, so the format mask defaults to the one that <code>NLS_DATE_FORMAT</code> specifies. If sessions that call <code>get_hire_date</code> have different <code>NLS_DATE_FORMAT</code> settings, cached results can have different formats. If a cached result computed by one session ages out, and another session recomputes it, the format might vary even for the same parameter value. If a session gets a cached result whose format differs from its own format, that result will probably be incorrect.</p>
+<p>Some possible solutions to this problem are:</p>
+<ul>
+<li>
+<p>Change the return type of <code>get_hire_date</code> to <code>DATE</code> and have each session invoke the <code>TO_CHAR</code> function.</p>
+</li>
+<li>
+<p>If a common format is acceptable to all sessions, specify a format mask, removing the dependency on <code>NLS_DATE_FORMAT</code>. For example:</p>
+<pre>
+TO_CHAR(date_hired, 'mm/dd/yy');
+</pre></li>
+<li>
+<p>Add a format mask parameter to <code>get_hire_date</code>. For example:</p>
+<pre>
+CREATE OR REPLACE FUNCTION get_hire_date
+  (emp_id NUMBER, <span class="bold">fmt VARCHAR</span>) RETURN VARCHAR
+  RESULT_CACHE RELIES_ON (HR.EMPLOYEES)
+IS
+  date_hired DATE;
+BEGIN
+  SELECT hire_date INTO date_hired
+    FROM HR.EMPLOYEES
+      WHERE EMPLOYEE_ID = emp_id;
+  RETURN TO_CHAR(date_hired, <span class="bold">fmt</span>);
+END;
+/
+</pre></li>
+</ul>
+</div>
+<!-- class="sect3" -->
+<a id="g3336065"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Making Result-Cached Functions Handle Session-Specific Application Contexts</h4>
+<p>An <span class="bold">application context</span>, which can be either global or session-specific, is a set of attributes and their values. A PL/SQL function depends on session-specific application contexts if it does at least one of the following:</p>
+<ul>
+<li>
+<p>Directly invokes the built-in function <code>SYS_CONTEXT</code>, which returns the value of a specified attribute in a specified context</p>
+</li>
+<li>
+<p>Indirectly invokes <code>SYS_CONTEXT</code> by using Virtual Private Database (VPD) mechanisms for fine-grained security</p>
+<p>(For information about VPD, see <span class="italic"><a class="olink DBSEG007" href="../../network.111/b28531/vpd.htm#DBSEG007">Oracle Database Security Guide</a></span>.)</p>
+</li>
+</ul>
+<p>The PL/SQL function result-caching feature does not automatically handle dependence on session-specific application contexts. If you must cache the results of a function that depends on session-specific application contexts, you must pass the application context to the function as a parameter. You can give the parameter a default value, so that not every user must specify it.</p>
+<p>In <a href="#g3297326">Example 8-27</a>, assume that a table, <code>config_tab</code>, has a VPD policy that translates this query:</p>
+<pre>
+SELECT value FROM config_tab
+   WHERE name = param_name;
+</pre>
+<p>To this query:</p>
+<pre>
+SELECT value FROM config_tab
+   WHERE name = param_name
+     <span class="bold">AND app_id = SYS_CONTEXT('Config', 'App_ID')</span>;
+</pre>
+<div class="example">
+<p class="titleinexample"><a id="g3297326"></a>Example 8-27 Result-Cached Function that Depends on Session-Specific Application Context</p>
+<pre>
+CREATE OR REPLACE FUNCTION get_param_value
+  (param_name VARCHAR,
+   <span class="bold">appctx</span>     VARCHAR  <span class="bold">DEFAULT SYS_CONTEXT('Config', 'App_ID')</span>
+  )
+  RETURN VARCHAR
+  RESULT_CACHE RELIES_ON (config_tab)
+IS
+  rec VARCHAR(2000);
+BEGIN
+  SELECT value INTO rec
+    FROM config_tab
+      WHERE Name = param_name;
+END;
+/
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect3" -->
+<a id="g3335224"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Choosing Result-Caching Granularity</h4>
+<p>PL/SQL provides the function result cache, but you choose the caching granularity. To understand the concept of granularity, consider the <code>Product_Descriptions</code> table in the Order Entry (<code>OE</code>) sample schema:</p>
+<pre>
+NAME                     NULL?      TYPE
+----------------------   --------   ---------------
+PRODUCT_ID               NOT NULL   NUMBER(6)
+LANGUAGE_ID              NOT NULL   VARCHAR2(3)
+TRANSLATED_NAME          NOT NULL   NVARCHAR2(50)
+TRANSLATED_DESCRIPTION   NOT NULL   NVARCHAR2(2000)
+</pre>
+<p>The table has the name and description of each product in several languages. The unique key for each row is <code>PRODUCT_ID,LANGUAGE_ID</code>.</p>
+<p>Suppose that you want to define a function that takes a <code>PRODUCT_ID</code> and a <code>LANGUAGE_ID</code> and returns the associated <code>TRANSLATED_NAME</code>. You also want to cache the translated names. Some of the granularity choices for caching the names are:</p>
+<ul>
+<li>
+<p>One name at a time (finer granularity)</p>
+</li>
+<li>
+<p>One language at a time (coarser granularity)</p>
+</li>
+</ul>
+<div class="tblformal">
+<p class="titleintable"><a id="sthref1002"></a><a id="sthref1003"></a>Table 8-3 Comparison of Finer and Coarser Caching Granularity</p>
+<table class="cellalignment2101" title="Comparison of Finer and Coarser Caching Granularity" summary="This table compares finest- and coarsest-grained function result caching." dir="ltr">
+<thead>
+<tr class="cellalignment2092">
+<th class="cellalignment2099" id="r1c1-t17">Finer Granularity</th>
+<th class="cellalignment2099" id="r1c2-t17">Coarser Granularity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r2c1-t17" headers="r1c1-t17">
+<p>Each function result corresponds to one logical result.</p>
+</td>
+<td class="cellalignment2100" headers="r2c1-t17 r1c2-t17">
+<p>Each function result contains many logical subresults.</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r3c1-t17" headers="r1c1-t17">
+<p>Stores only data that is needed at least once.</p>
+</td>
+<td class="cellalignment2100" headers="r3c1-t17 r1c2-t17">
+<p>Might store data that is never used.</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r4c1-t17" headers="r1c1-t17">
+<p>Each data item ages out individually.</p>
+</td>
+<td class="cellalignment2100" headers="r4c1-t17 r1c2-t17">
+<p>One aged-out data item ages out the whole set.</p>
+</td>
+</tr>
+<tr class="cellalignment2092">
+<td class="cellalignment2100" id="r5c1-t17" headers="r1c1-t17">
+<p>Does not allow bulk loading optimizations.</p>
+</td>
+<td class="cellalignment2100" headers="r5c1-t17 r1c2-t17">
+<p>Allows bulk loading optimizations.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="tblformal" -->
+<p>In each of the following four examples, the function <code>productName</code> takes a <code>PRODUCT_ID</code> and a <code>LANGUAGE_ID</code> and returns the associated <code>TRANSLATED_NAME</code>. Each version of <code>productName</code> caches translated names, but at a different granularity.</p>
+<p>In <a href="#BABDDJCD">Example 8-28</a>, <code>get_product_name_1</code> is a result-cached function. Whenever <code>get_product_name_1</code> is invoked with a different <code>PRODUCT_ID</code> and <code>LANGUAGE_ID</code>, it caches the associated <code>TRANSLATED_NAME</code>. Each call to <code>get_product_name_1</code> adds at most one <code>TRANSLATED_NAME</code> to the cache.</p>
+<div class="example">
+<p class="titleinexample"><a id="BABDDJCD"></a>Example 8-28 Caching One Name at a Time (Finer Granularity)</p>
+<pre>
+CREATE OR REPLACE FUNCTION get_product_name_1 (prod_id NUMBER, lang_id VARCHAR2)
+  RETURN NVARCHAR2
+  <span class="bold">RESULT_CACHE RELIES_ON (Product_Descriptions)</span>
+IS
+  result VARCHAR2(50);
+BEGIN
+  SELECT translated_name INTO result
+    FROM Product_Descriptions
+      WHERE PRODUCT_ID = prod_id
+        AND LANGUAGE_ID = lang_id;
+  RETURN result;
+END;
+</pre></div>
+<!-- class="example" -->
+<p>In <a href="#BABCDECH">Example 8-29</a>, <code>get_product_name_2</code> defines a result-cached function, <code>all_product_names</code>. Whenever <code>get_product_name_2</code> invokes <code>all_product_names</code> with a different <code>LANGUAGE_ID</code>, <code>all_product_names</code> caches every <code>TRANSLATED_NAME</code> associated with that <code>LANGUAGE_ID</code>. Each call to <code>all_product_names</code> adds every <code>TRANSLATED_NAME</code> of at most one <code>LANGUAGE_ID</code> to the cache.</p>
+<div class="example">
+<p class="titleinexample"><a id="BABCDECH"></a>Example 8-29 Caching Translated Names One Language at a Time (Coarser Granularity)</p>
+<pre>
+CREATE OR REPLACE FUNCTION get_product_name_2 (prod_id NUMBER, lang_id VARCHAR2)
+  RETURN NVARCHAR2
+IS
+  TYPE product_names IS TABLE OF NVARCHAR2(50) INDEX BY PLS_INTEGER;
+
+  FUNCTION all_product_names (lang_id NUMBER) RETURN product_names
+    <span class="bold">RESULT_CACHE RELIES_ON (Product_Descriptions)</span>
+  IS
+    all_names product_names;
+  BEGIN
+    FOR c IN (SELECT * FROM Product_Descriptions
+      WHERE LANGUAGE_ID = lang_id) LOOP
+        all_names(c.PRODUCT_ID) := c.TRANSLATED_NAME;
+    END LOOP;
+    RETURN all_names;
+  END;
+BEGIN
+  RETURN all_product_names(lang_id)(prod_id);
+END;
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect3" -->
+<a id="g3340664"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Result Caches in Oracle RAC Environment</h4>
+<p>Cached results are stored in the system global area (SGA). In an Oracle RAC environment, each database instance has a private function result cache, available only to sessions on that instance.</p>
+<p>The access pattern and work load of an instance determine the set of results in its private cache; therefore, the private caches of different instances can have different sets of results.</p>
+<p>If a required result is missing from the private cache of the local instance, the body of the function executes to compute the result, which is then added to the local cache. The result is not retrieved from the private cache of another instance.</p>
+<p>Although each database instance might have its own set of cached results, the mechanisms for handling invalid results are Oracle RAC environment-wide. If results were invalidated only in the local instance's result cache, other instances might use invalid results. For example, consider a result cache of item prices that are computed from data in database tables. If any of these database tables is updated in a way that affects the price of an item, the cached price of that item must be invalidated in every database instance in the Oracle RAC environment.</p>
+</div>
+<!-- class="sect3" -->
+<a id="BABGBIGI"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Managing the Result Cache</h4>
+<p>The PL/SQL function result cache shares its administrative and manageability infrastructure with the Result Cache, which is described in <span class="italic"><a class="olink PFGRF10121" href="../../server.111/b28274/memory.htm#PFGRF10121">Oracle Database Performance Tuning Guide</a></span>.</p>
+<p>The database administrator can use the following to manage the Result Cache:</p>
+<ul>
+<li>
+<p><code>RESULT_CACHE_MAX_SIZE</code> and <code>RESULT_CACHE_MAX_RESULT</code> initialization parameters</p>
+<p><code>RESULT_CACHE_MAX_SIZE</code> specifies the maximum amount of SGA memory (in bytes) that the Result Cache can use, and <code>RESULT_CACHE_MAX_RESULT</code> specifies the maximum percentage of the Result Cache that any single result can use. For more information about these parameters, see <span class="italic"><a class="olink REFRN10272" href="../../server.111/b28320/initparams206.htm#REFRN10272">Oracle Database Reference</a></span> and <span class="italic"><a class="olink PFGRF10121" href="../../server.111/b28274/memory.htm#PFGRF10121">Oracle Database Performance Tuning Guide</a></span>.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<ul>
+<li>
+<p><span class="italic"><a class="olink REFRN10272" href="../../server.111/b28320/initparams206.htm#REFRN10272">Oracle Database Reference</a></span> for more information about <code>RESULT_CACHE_MAX_SIZE</code></p>
+</li>
+<li>
+<p><span class="italic"><a class="olink REFRN10298" href="../../server.111/b28320/initparams205.htm#REFRN10298">Oracle Database Reference</a></span> for more information about <code>RESULT_CACHE_MAX_RESULT</code></p>
+</li>
+<li>
+<p><span class="italic"><a class="olink PFGRF10121" href="../../server.111/b28274/memory.htm#PFGRF10121">Oracle Database Performance Tuning Guide</a></span> for more information about Result Cache concepts</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>DBMS_RESULT_CACHE</code> package</p>
+<p>The <code>DBMS_RESULT_CACHE</code> package provides an interface to allow the DBA to administer that part of the shared pool that is used by the SQL result cache and the PL/SQL function result cache. For more information about this package, see <a class="olink ARPLS202" href="../../appdev.111/b28419/d_result_cache.htm#ARPLS202"><span class="italic">Oracle Database PL/SQL Packages and Types Reference</span></a>.</p>
+</li>
+<li>
+<p>Dynamic performance views:</p>
+<ul>
+<li>
+<p><code>[G]V$RESULT_CACHE_STATISTICS</code></p>
+</li>
+<li>
+<p><code>[G]V$RESULT_CACHE_MEMORY</code></p>
+</li>
+<li>
+<p><code>[G]V$RESULT_CACHE_OBJECTS</code></p>
+</li>
+<li>
+<p><code>[G]V$RESULT_CACHE_DEPENDENCY</code></p>
+</li>
+</ul>
+<p>See <span class="italic">Oracle Database Reference</span> for more information about <a class="olink REFRN30439" href="../../server.111/b28320/dynviews_2133.htm#REFRN30439"><code>[G]V$RESULT_CACHE_STATISTICS</code></a>, <a class="olink REFRN30437" href="../../server.111/b28320/dynviews_2131.htm#REFRN30437"><code>[G]V$RESULT_CACHE_MEMORY</code></a>, <a class="olink REFRN30438" href="../../server.111/b28320/dynviews_2132.htm#REFRN30438"><code>[G]V$RESULT_CACHE_OBJECTS</code></a>, and <a class="olink REFRN30436" href="../../server.111/b28320/dynviews_2130.htm#REFRN30436"><code>[G]V$RESULT_CACHE_DEPENDENCY</code></a>.</p>
+</li>
+</ul>
+</div>
+<!-- class="sect3" -->
+<a id="BABIICDH"></a>
+<div class="sect3"><!-- infolevel="all" infotype="General" -->
+<h4 class="sect3">Hot-Patching PL/SQL Units on Which Result-Cached Functions Depend</h4>
+<p>When you hot-patch a PL/SQL unit on which a result-cached function depends (directly or indirectly), the cached results associated with the result-cached function might not be automatically flushed in all cases.</p>
+<p>For example, suppose that the result-cached function <code>P1</code>.<code>foo()</code> depends on the packaged subprogram <code>P2</code>.<code>bar()</code>. If a new version of the body of package <code>P2</code> is loaded, the cached results associated with <code>P1</code>.<code>foo()</code> are not automatically flushed.</p>
+<p>Therefore, this is the recommended procedure for hot-patching a PL/SQL unit:</p>
+<ol>
+<li>
+<p>Put the result cache in bypass mode and flush existing results:</p>
+<pre>
+BEGIN
+  DBMS_RESULT_CACHE.Bypass(TRUE);
+  DBMS_RESULT_CACHE.Flush;
+END;
+/
+</pre>
+<p>In an Oracle RAC environment, perform this step for each database instance.</p>
+</li>
+<li>
+<p>Patch the PL/SQL code.</p>
+</li>
+<li>
+<p>Resume using the result cache:</p>
+<pre>
+BEGIN
+  DBMS_RESULT_CACHE.Bypass(FALSE);
+END;
+/
+</pre>
+<p>In an Oracle RAC environment, perform this step for each database instance.</p>
+</li>
+</ol>
+</div>
+<!-- class="sect3" --></div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" --></div>
+<!-- class="ind" -->
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment2091">
+<tr>
+<td class="cellalignment2100">
+<table class="cellalignment2096">
+<tr>
+<td class="cellalignment2095"><a href="dynamic.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment2095"><a href="triggers.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;1996, 2009,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment2103">
+<table class="cellalignment2094">
+<tr>
+<td class="cellalignment2095"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment2095"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td class="cellalignment2095"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment2095"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td class="cellalignment2095"><a href="../../nav/mindx.htm"><img width="24" height="24" src="../../dcommon/gifs/masterix.gif" alt="Go to Master Index" /><br />
+<span class="icon">Master Index</span></a></td>
+<td class="cellalignment2095"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

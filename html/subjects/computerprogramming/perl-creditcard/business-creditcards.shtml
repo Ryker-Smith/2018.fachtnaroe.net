@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl Business::CreditCard Module</h1>
+<h2>Sample Code 1 (and partial module details)</h2>
+<pre><font face=courier color="#000000">
+NAME
+    "Business::CreditCard" - Validate/generate credit card checksums/names
+
+SYNOPSIS
+        use Business::CreditCard;
+ 
+        print validate("5276 4400 6542 1319");
+        print cardtype("5276 4400 6542 1319");
+        print generate_last_digit("5276 4400 6542 131");
+
+    Business::CreditCard is available at a CPAN site near you.
+
+DESCRIPTION
+    These subroutines tell you whether a credit card number is
+    self-consistent -- whether the last digit of the number is a valid
+    checksum for the preceding digits.
+
+    The validate() subroutine returns 1 if the card number provided passes
+    the checksum test, and 0 otherwise.
+
+    The cardtype() subroutine returns a string containing the type of card.
+    The list of possible return values is more comprehensive than it used to
+    be, but additions are still most welcome.
+
+    Possible return values are:
+
+      VISA card
+      MasterCard
+      Discover card
+      American Express card
+      Diner's Club/Carte Blanche
+      enRoute
+      JCB
+      BankCard
+      Switch
+      Solo
+      China Union Pay
+      Unknown
+</font></pre>
+<h2>Sample Code 2</h2>
+<pre><font face="courier" color="#000000">
+#!/usr/bin/perl
+#
+# Author: Fachtna Roe (Based on Business::CreditCard sample code) Date: 20090201
+# Program_name: test-business-creditcard.pl
+# Program Purpose:  To accept credit card and possible credit card numbers and validate/invalidate them,
+#                   identifying the card type, and the checkdigit. This program is intended for educational
+#                   use to demonstrate how the Business::CreditCard module may be used in a program.
+# Business::CreditCard Author: Jon Orwant, Maintainer: Ivan Kohler &lt;ivan-business-creditcard@420.am&gt;
+#
+# A sample valid number to use for testing:     5276 4400 6542 1319 (MasterCard)
+# A sample IN-valid number to use for testing:  5277 4401 6542 1329
+# A sample valid number to use for testing:     4539 0123 3211 4567 (VISA)
+# A sample IN-valid number to use for testing:  4539 0123 3210 4567
+#
+# The Business::CreditCard module has been installed on the programming
+# server (20090201). It is not automatically provided by the default perl bundle.
+
+  use Business::CreditCard;
+  &amp;big_line;
+  print "Enter a credit card number: ";
+  $card=&lt;STDIN&gt;;
+  if (validate($card)==1) {
+    print "The card number is valid.\n";
+    print "The card type is: ", cardtype($card), ".\n";
+    # Remove EOL character(s) and last digit
+    chop $card; chop $card;
+    print "The check digit is ", generate_last_digit($card), ".\n";
+  }
+  else {
+    print "That card number is not valid.\n";
+  }
+  &amp;big_line;
+  
+  sub big_line {
+    print "\n=========================================\n";
+  }
+</font></pre>
+<center>
+<form>
+<input type="button" value="Back" onclick="history.back()"></form>
+</center>
+<br />
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>
+
+
+
+
+
+

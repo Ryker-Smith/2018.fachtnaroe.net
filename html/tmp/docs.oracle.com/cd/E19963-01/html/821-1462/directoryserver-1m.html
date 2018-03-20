@@ -1,0 +1,1013 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1M: System Administration Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the Solaris (TM) system administration and  maintenance utilities and is for system and network administrators.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1462";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+
+                    <script type="text/javascript">
+                      var w=window;
+                      if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document,AKSB=AKSB||{};AKSB.q=[];AKSB.mark=function(a,b){AKSB.q.push(["mark",a,b||(new Date).getTime()])};AKSB.measure=function(a,b,c){AKSB.q.push(["measure",a,b,c||(new Date).getTime()])};AKSB.done=function(a){AKSB.q.push(["done",a])};AKSB.mark("firstbyte",(new Date).getTime());AKSB.prof={custid:"322179",ustr:"UNKNOWN",originlat:0,clientrtt:40,ghostip:"88.221.89.214",
+                      ipv6:false,pct:10,clientip:"46.7.198.110",requestid:"8fdacb19",protocol:"",blver:10,akM:"dscx",akN:"ae",akTT:"O",akTX:"1",akTI:"8fdacb19",ai:"206465",ra:"",pmgn:"",pmgi:"",pmp:""};(function(a){var b=
+                      d.createElement("script");b.async="async";b.src=a;a=d.getElementsByTagName("script");a=a[a.length-1];a.parentNode.insertBefore(b,a)})(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")};
+                    </script>
+                    </head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1M: System Administration Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1462.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1M (821-1462-06)&body=Page: directoryserver-1m.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-37.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-194.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-310.html">System Administration Commands - Part 1</a></p>
+<p class="toc level2"><a href="x-6to4relay-1m.html"><tt>6to4relay</tt>(1M)</a></p>
+<p class="toc level2"><a href="accept-1m.html"><tt>accept</tt>(1M)</a></p>
+<p class="toc level2"><a href="acct-1m.html"><tt>acct</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctadm-1m.html"><tt>acctadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcms-1m.html"><tt>acctcms</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon1-1m.html"><tt>acctcon1</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon-1m.html"><tt>acctcon</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon2-1m.html"><tt>acctcon2</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctdisk-1m.html"><tt>acctdisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctdusg-1m.html"><tt>acctdusg</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctmerg-1m.html"><tt>acctmerg</tt>(1M)</a></p>
+<p class="toc level2"><a href="accton-1m.html"><tt>accton</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc1-1m.html"><tt>acctprc1</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc-1m.html"><tt>acctprc</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc2-1m.html"><tt>acctprc2</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctsh-1m.html"><tt>acctsh</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctwtmp-1m.html"><tt>acctwtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="acpihpd-1m.html"><tt>acpihpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="adbgen-1m.html"><tt>adbgen</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-allocatable-1m.html"><tt>add_allocatable</tt>(1M)</a></p>
+<p class="toc level2"><a href="addbadsec-1m.html"><tt>addbadsec</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-drv-1m.html"><tt>add_drv</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-install-client-1m.html"><tt>add_install_client</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-to-install-server-1m.html"><tt>add_to_install_server</tt>(1M)</a></p>
+<p class="toc level2"><a href="afbconfig-1m.html"><tt>afbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="apache-1m.html"><tt>apache</tt>(1M)</a></p>
+<p class="toc level2"><a href="arp-1m.html"><tt>arp</tt>(1M)</a></p>
+<p class="toc level2"><a href="atohexlabel-1m.html"><tt>atohexlabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="audit-1m.html"><tt>audit</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditconfig-1m.html"><tt>auditconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditd-1m.html"><tt>auditd</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditrecord-1m.html"><tt>auditrecord</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditreduce-1m.html"><tt>auditreduce</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditstat-1m.html"><tt>auditstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="audit-warn-1m.html"><tt>audit_warn</tt>(1M)</a></p>
+<p class="toc level2"><a href="automount-1m.html"><tt>automount</tt>(1M)</a></p>
+<p class="toc level2"><a href="automountd-1m.html"><tt>automountd</tt>(1M)</a></p>
+<p class="toc level2"><a href="autopush-1m.html"><tt>autopush</tt>(1M)</a></p>
+<p class="toc level2"><a href="bart-1m.html"><tt>bart</tt>(1M)</a></p>
+<p class="toc level2"><a href="beadm-1m.html"><tt>beadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="boot-1m.html"><tt>boot</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootadm-1m.html"><tt>bootadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootconfchk-1m.html"><tt>bootconfchk</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootparamd-1m.html"><tt>bootparamd</tt>(1M)</a></p>
+<p class="toc level2"><a href="busstat-1m.html"><tt>busstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefsd-1m.html"><tt>cachefsd</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefslog-1m.html"><tt>cachefslog</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefspack-1m.html"><tt>cachefspack</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefsstat-1m.html"><tt>cachefsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefswssize-1m.html"><tt>cachefswssize</tt>(1M)</a></p>
+<p class="toc level2"><a href="captoinfo-1m.html"><tt>captoinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="catman-1m.html"><tt>catman</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-1m.html"><tt>cfgadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-ac-1m.html"><tt>cfgadm_ac</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-cardbus-1m.html"><tt>cfgadm_cardbus</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-fp-1m.html"><tt>cfgadm_fp</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-ib-1m.html"><tt>cfgadm_ib</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-pci-1m.html"><tt>cfgadm_pci</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sata-1m.html"><tt>cfgadm_sata</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sbd-1m.html"><tt>cfgadm_sbd</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-scsi-1m.html"><tt>cfgadm_scsi</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sdcard-1m.html"><tt>cfgadm_sdcard</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-shp-1m.html"><tt>cfgadm_shp</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sysctrl-1m.html"><tt>cfgadm_sysctrl</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-usb-1m.html"><tt>cfgadm_usb</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfsadmin-1m.html"><tt>cfsadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="chargefee-1m.html"><tt>chargefee</tt>(1M)</a></p>
+<p class="toc level2"><a href="chat-1m.html"><tt>chat</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-1m.html"><tt>check</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-hostname-1m.html"><tt>check-hostname</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-permissions-1m.html"><tt>check-permissions</tt>(1M)</a></p>
+<p class="toc level2"><a href="chk-encodings-1m.html"><tt>chk_encodings</tt>(1M)</a></p>
+<p class="toc level2"><a href="chroot-1m.html"><tt>chroot</tt>(1M)</a></p>
+<p class="toc level2"><a href="cimworkshop-1m.html"><tt>cimworkshop</tt>(1M)</a></p>
+<p class="toc level2"><a href="ckpacct-1m.html"><tt>ckpacct</tt>(1M)</a></p>
+<p class="toc level2"><a href="clear-locks-1m.html"><tt>clear_locks</tt>(1M)</a></p>
+<p class="toc level2"><a href="clinfo-1m.html"><tt>clinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="closewtmp-1m.html"><tt>closewtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="clri-1m.html"><tt>clri</tt>(1M)</a></p>
+<p class="toc level2"><a href="comsat-1m.html"><tt>comsat</tt>(1M)</a></p>
+<p class="toc level2"><a href="consadm-1m.html"><tt>consadm</tt>(1m)</a></p>
+<p class="toc level2"><a href="conv-lp-1m.html"><tt>conv_lp</tt>(1M)</a></p>
+<p class="toc level2"><a href="conv-lpd-1m.html"><tt>conv_lpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="coreadm-1m.html"><tt>coreadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cpustat-1m.html"><tt>cpustat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cron-1m.html"><tt>cron</tt>(1M)</a></p>
+<p class="toc level2"><a href="cryptoadm-1m.html"><tt>cryptoadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cvcd-1m.html"><tt>cvcd</tt>(1M)</a></p>
+<p class="toc level2"><a href="datadm-1m.html"><tt>datadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dcopy-1m.html"><tt>dcopy</tt>(1M)</a></p>
+<p class="toc level2"><a href="dcs-1m.html"><tt>dcs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dd-1m.html"><tt>dd</tt>(1M)</a></p>
+<p class="toc level2"><a href="devattr-1m.html"><tt>devattr</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfree-1m.html"><tt>devfree</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfsadm-1m.html"><tt>devfsadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfsadmd-1m.html"><tt>devfsadmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="device-allocate-1m.html"><tt>device_allocate</tt>(1M)</a></p>
+<p class="toc level2"><a href="device-remap-1m.html"><tt>device_remap</tt>(1M)</a></p>
+<p class="toc level2"><a href="devinfo-1m.html"><tt>devinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="devlinks-1m.html"><tt>devlinks</tt>(1M)</a></p>
+<p class="toc level2"><a href="devnm-1m.html"><tt>devnm</tt>(1M)</a></p>
+<p class="toc level2"><a href="devprop-1m.html"><tt>devprop</tt>(1M)</a></p>
+<p class="toc level2"><a href="devreserv-1m.html"><tt>devreserv</tt>(1M)</a></p>
+<p class="toc level2"><a href="df-1m.html"><tt>df</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfmounts-1m.html"><tt>dfmounts</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfmounts-nfs-1m.html"><tt>dfmounts_nfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfshares-1m.html"><tt>dfshares</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfshares-nfs-1m.html"><tt>dfshares_nfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="df-ufs-1m.html"><tt>df_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpagent-1m.html"><tt>dhcpagent</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpconfig-1m.html"><tt>dhcpconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpmgr-1m.html"><tt>dhcpmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhtadm-1m.html"><tt>dhtadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dig-1m.html"><tt>dig</tt>(1M)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>directoryserver</tt>(1M)</a></p>
+</div>
+<p class="toc level2"><a href="disks-1m.html"><tt>disks</tt>(1M)</a></p>
+<p class="toc level2"><a href="diskscan-1m.html"><tt>diskscan</tt>(1M)</a></p>
+<p class="toc level2"><a href="dispadmin-1m.html"><tt>dispadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="dladm-1m.html"><tt>dladm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dlmgmtd-1m.html"><tt>dlmgmtd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dlstat-1m.html"><tt>dlstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="dmesg-1m.html"><tt>dmesg</tt>(1M)</a></p>
+<p class="toc level2"><a href="dminfo-1m.html"><tt>dminfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="dns-sd-1m.html"><tt>dns-sd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-dsfromkey-1m.html"><tt>dnssec-dsfromkey</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-keyfromlabel-1m.html"><tt>dnssec-keyfromlabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-keygen-1m.html"><tt>dnssec-keygen</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-makekeyset-1m.html"><tt>dnssec-makekeyset</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-signkey-1m.html"><tt>dnssec-signkey</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-signzone-1m.html"><tt>dnssec-signzone</tt>(1M)</a></p>
+<p class="toc level2"><a href="dodisk-1m.html"><tt>dodisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="domainname-1m.html"><tt>domainname</tt>(1M)</a></p>
+<p class="toc level2"><a href="drd-1m.html"><tt>drd</tt>(1M)</a></p>
+<p class="toc level2"><a href="drvconfig-1m.html"><tt>drvconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsbitmap-1m.html"><tt>dsbitmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfg-1m.html"><tt>dscfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfgadm-1m.html"><tt>dscfgadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfglockd-1m.html"><tt>dscfglockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsstat-1m.html"><tt>dsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsvclockd-1m.html"><tt>dsvclockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dtrace-1m.html"><tt>dtrace</tt>(1M)</a></p>
+<p class="toc level2"><a href="dumpadm-1m.html"><tt>dumpadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="editmap-1m.html"><tt>editmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="edquota-1m.html"><tt>edquota</tt>(1M)</a></p>
+<p class="toc level2"><a href="eeprom-1m.html"><tt>eeprom</tt>(1M)</a></p>
+<p class="toc level2"><a href="efdaemon-1m.html"><tt>efdaemon</tt>(1M)</a></p>
+<p class="toc level2"><a href="embedded-su-1m.html"><tt>embedded_su</tt>(1M)</a></p>
+<p class="toc level2"><a href="etrn-1m.html"><tt>etrn</tt>(1M)</a></p>
+<p class="toc level2"><a href="fbconfig-1m.html"><tt>fbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="fbconf-xorg-1m.html"><tt>fbconf_xorg</tt>(1M)</a></p>
+<p class="toc level2"><a href="fcadm-1m.html"><tt>fcadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fcinfo-1m.html"><tt>fcinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="fdetach-1m.html"><tt>fdetach</tt>(1M)</a></p>
+<p class="toc level2"><a href="fdisk-1m.html"><tt>fdisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="ff-1m.html"><tt>ff</tt>(1M)</a></p>
+<p class="toc level2"><a href="ffbconfig-1m.html"><tt>ffbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ff-ufs-1m.html"><tt>ff_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fingerd-1m.html"><tt>fingerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fiocompress-1m.html"><tt>fiocompress</tt>(1M)</a></p>
+<p class="toc level2"><a href="flar-1m.html"><tt>flar</tt>(1M)</a></p>
+<p class="toc level2"><a href="flarcreate-1m.html"><tt>flarcreate</tt>(1M)</a></p>
+<p class="toc level2"><a href="flowadm-1m.html"><tt>flowadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="flowstat-1m.html"><tt>flowstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmadm-1m.html"><tt>fmadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmd-1m.html"><tt>fmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmdump-1m.html"><tt>fmdump</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmstat-1m.html"><tt>fmstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmthard-1m.html"><tt>fmthard</tt>(1M)</a></p>
+<p class="toc level2"><a href="format-1m.html"><tt>format</tt>(1M)</a></p>
+<p class="toc level2"><a href="fpsd-1m.html"><tt>fpsd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fruadm-1m.html"><tt>fruadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-1m.html"><tt>fsck</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-cachefs-1m.html"><tt>fsck_cachefs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-pcfs-1m.html"><tt>fsck_pcfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-udfs-1m.html"><tt>fsck_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-ufs-1m.html"><tt>fsck_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-1m.html"><tt>fsdb</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-udfs-1m.html"><tt>fsdb_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-ufs-1m.html"><tt>fsdb_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsirand-1m.html"><tt>fsirand</tt>(1M)</a></p>
+<p class="toc level2"><a href="fssnap-1m.html"><tt>fssnap</tt>(1M)</a></p>
+<p class="toc level2"><a href="fssnap-ufs-1m.html"><tt>fssnap_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsstat-1m.html"><tt>fsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fstyp-1m.html"><tt>fstyp</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpaddhost-1m.html"><tt>ftpaddhost</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpconfig-1m.html"><tt>ftpconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpd-1m.html"><tt>ftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftprestart-1m.html"><tt>ftprestart</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpshut-1m.html"><tt>ftpshut</tt>(1M)</a></p>
+<p class="toc level2"><a href="fuser-1m.html"><tt>fuser</tt>(1M)</a></p>
+<p class="toc level2"><a href="fwflash-1m.html"><tt>fwflash</tt>(1M)</a></p>
+<p class="toc level2"><a href="fwtmp-1m.html"><tt>fwtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdev-1m.html"><tt>getdev</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdevpolicy-1m.html"><tt>getdevpolicy</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdgrp-1m.html"><tt>getdgrp</tt>(1M)</a></p>
+<p class="toc level2"><a href="getent-1m.html"><tt>getent</tt>(1M)</a></p>
+<p class="toc level2"><a href="gettable-1m.html"><tt>gettable</tt>(1M)</a></p>
+<p class="toc level2"><a href="getty-1m.html"><tt>getty</tt>(1M)</a></p>
+<p class="toc level2"><a href="getvol-1m.html"><tt>getvol</tt>(1M)</a></p>
+<p class="toc level2"><a href="gfxconfig-1m.html"><tt>GFXconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="gkadmin-1m.html"><tt>gkadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupadd-1m.html"><tt>groupadd</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupdel-1m.html"><tt>groupdel</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupmod-1m.html"><tt>groupmod</tt>(1M)</a></p>
+<p class="toc level2"><a href="growfs-1m.html"><tt>growfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="grpck-1m.html"><tt>grpck</tt>(1M)</a></p>
+<p class="toc level2"><a href="gsscred-1m.html"><tt>gsscred</tt>(1M)</a></p>
+<p class="toc level2"><a href="gssd-1m.html"><tt>gssd</tt>(1M)</a></p>
+<p class="toc level2"><a href="hald-1m.html"><tt>hald</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-device-1m.html"><tt>hal-device</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-fdi-validate-1m.html"><tt>hal-fdi-validate</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-1m.html"><tt>hal-find</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-by-capability-1m.html"><tt>hal-find-by-capability</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-by-property-1m.html"><tt>hal-find-by-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-get-property-1m.html"><tt>hal-get-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-set-property-1m.html"><tt>hal-set-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="halt-1m.html"><tt>halt</tt>(1M)</a></p>
+<p class="toc level2"><a href="hextoalabel-1m.html"><tt>hextoalabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="host-1m.html"><tt>host</tt>(1M)</a></p>
+<p class="toc level2"><a href="hostconfig-1m.html"><tt>hostconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="hotplug-1m.html"><tt>hotplug</tt>(1M)</a></p>
+<p class="toc level2"><a href="hotplugd-1m.html"><tt>hotplugd</tt>(1M)</a></p>
+<p class="toc level2"><a href="htable-1m.html"><tt>htable</tt>(1M)</a></p>
+<p class="toc level2"><a href="ickey-1m.html"><tt>ickey</tt>(1M)</a></p>
+<p class="toc level2"><a href="id-1m.html"><tt>id</tt>(1M)</a></p>
+<p class="toc level2"><a href="idmap-1m.html"><tt>idmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="idmapd-1m.html"><tt>idmapd</tt>(1M)</a></p>
+<p class="toc level2"><a href="idsconfig-1m.html"><tt>idsconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ifconfig-1m.html"><tt>ifconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="if-mpadm-1m.html"><tt>if_mpadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ifparse-1m.html"><tt>ifparse</tt>(1M)</a></p>
+<p class="toc level2"><a href="iiadm-1m.html"><tt>iiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="iicpbmp-1m.html"><tt>iicpbmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="iicpshd-1m.html"><tt>iicpshd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ikeadm-1m.html"><tt>ikeadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ikecert-1m.html"><tt>ikecert</tt>(1M)</a></p>
+<p class="toc level2"><a href="ilbadm-1m.html"><tt>ilbadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ilbd-1m.html"><tt>ilbd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqadmin-1m.html"><tt>imqadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqbrokerd-1m.html"><tt>imqbrokerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqcmd-1m.html"><tt>imqcmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqdbmgr-1m.html"><tt>imqdbmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqkeytool-1m.html"><tt>imqkeytool</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqobjmgr-1m.html"><tt>imqobjmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqusermgr-1m.html"><tt>imqusermgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.chargend-1m.html"><tt>in.chargend</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.comsat-1m.html"><tt>in.comsat</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.daytimed-1m.html"><tt>in.daytimed</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.dhcpd-1m.html"><tt>in.dhcpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.discardd-1m.html"><tt>in.discardd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.echod-1m.html"><tt>in.echod</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetadm-1m.html"><tt>inetadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetconv-1m.html"><tt>inetconv</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetd-1m.html"><tt>inetd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.fingerd-1m.html"><tt>in.fingerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="infocmp-1m.html"><tt>infocmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ftpd-1m.html"><tt>in.ftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.iked-1m.html"><tt>in.iked</tt>(1M)</a></p>
+<p class="toc level2"><a href="init-1m.html"><tt>init</tt>(1M)</a></p>
+<p class="toc level2"><a href="init.sma-1m.html"><tt>init.sma</tt>(1M)</a></p>
+<p class="toc level2"><a href="init.wbem-1m.html"><tt>init.wbem</tt>(1M)</a></p>
+<p class="toc level2"><a href="inityp2l-1m.html"><tt>inityp2l</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.lpd-1m.html"><tt>in.lpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.mpathd-1m.html"><tt>in.mpathd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.named-1m.html"><tt>in.named</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ndpd-1m.html"><tt>in.ndpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rarpd-1m.html"><tt>in.rarpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rdisc-1m.html"><tt>in.rdisc</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rexecd-1m.html"><tt>in.rexecd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ripngd-1m.html"><tt>in.ripngd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rlogind-1m.html"><tt>in.rlogind</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.routed-1m.html"><tt>in.routed</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rshd-1m.html"><tt>in.rshd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rwhod-1m.html"><tt>in.rwhod</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-1m.html"><tt>install</tt>(1M)</a></p>
+<p class="toc level2"><a href="installboot-1m.html"><tt>installboot</tt>(1M)</a></p>
+<p class="toc level2"><a href="installer-1m.html"><tt>installer</tt>(1M)</a></p>
+<p class="toc level2"><a href="installf-1m.html"><tt>installf</tt>(1M)</a></p>
+<p class="toc level2"><a href="installgrub-1m.html"><tt>installgrub</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-scripts-1m.html"><tt>install_scripts</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-solaris-1m.html"><tt>install-solaris</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.stdiscover-1m.html"><tt>in.stdiscover</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.stlisten-1m.html"><tt>in.stlisten</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.talkd-1m.html"><tt>in.talkd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.telnetd-1m.html"><tt>in.telnetd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.tftpd-1m.html"><tt>in.tftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.timed-1m.html"><tt>in.timed</tt>(1M)</a></p>
+<p class="toc level2"><a href="intrd-1m.html"><tt>intrd</tt>(1M)</a></p>
+<p class="toc level2"><a href="intrstat-1m.html"><tt>intrstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.uucpd-1m.html"><tt>in.uucpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="iostat-1m.html"><tt>iostat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipaddrsel-1m.html"><tt>ipaddrsel</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipadm-1m.html"><tt>ipadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipf-1m.html"><tt>ipf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipfs-1m.html"><tt>ipfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipfstat-1m.html"><tt>ipfstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmgmtd-1m.html"><tt>ipmgmtd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmon-1m.html"><tt>ipmon</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmpstat-1m.html"><tt>ipmpstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipnat-1m.html"><tt>ipnat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ippool-1m.html"><tt>ippool</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipqosconf-1m.html"><tt>ipqosconf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipsecalgs-1m.html"><tt>ipsecalgs</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipsecconf-1m.html"><tt>ipsecconf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipseckey-1m.html"><tt>ipseckey</tt>(1M)</a></p>
+<p class="toc level2"><a href="iscsiadm-1m.html"><tt>iscsiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="isns-1m.html"><tt>isns</tt>(1M)</a></p>
+<p class="toc level2"><a href="isnsadm-1m.html"><tt>isnsadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="itadm-1m.html"><tt>itadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="itu-1m.html"><tt>itu</tt>(1M)</a></p>
+<p class="toc level2"><a href="k5srvutil-1m.html"><tt>k5srvutil</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadb-1m.html"><tt>kadb</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmin-1m.html"><tt>kadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmind-1m.html"><tt>kadmind</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmin.local-1m.html"><tt>kadmin.local</tt>(1M)</a></p>
+<p class="toc level2"><a href="kcfd-1m.html"><tt>kcfd</tt>(1M)</a></p>
+<p class="toc level2"><a href="kclient-1m.html"><tt>kclient</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdb5-ldap-util-1m.html"><tt>kdb5_ldap_util</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdb5-util-1m.html"><tt>kdb5_util</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdcmgr-1m.html"><tt>kdcmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="kernel-1m.html"><tt>kernel</tt>(1M)</a></p>
+<p class="toc level2"><a href="keyserv-1m.html"><tt>keyserv</tt>(1M)</a></p>
+<p class="toc level2"><a href="killall-1m.html"><tt>killall</tt>(1M)</a></p>
+<p class="toc level2"><a href="kmscfg-1m.html"><tt>kmscfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="kprop-1m.html"><tt>kprop</tt>(1M)</a></p>
+<p class="toc level2"><a href="kpropd-1m.html"><tt>kpropd</tt>(1M)</a></p>
+<p class="toc level2"><a href="kproplog-1m.html"><tt>kproplog</tt>(1M)</a></p>
+<p class="toc level2"><a href="krb5kdc-1m.html"><tt>krb5kdc</tt>(1M)</a></p>
+<p class="toc level2"><a href="ksslcfg-1m.html"><tt>ksslcfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="kstat-1m.html"><tt>kstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ktkt-warnd-1m.html"><tt>ktkt_warnd</tt>(1M)</a></p>
+<p class="toc level2"><a href="labeld-1m.html"><tt>labeld</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-1m.html"><tt>labelit</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-hsfs-1m.html"><tt>labelit_hsfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-udfs-1m.html"><tt>labelit_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-ufs-1m.html"><tt>labelit_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="lastlogin-1m.html"><tt>lastlogin</tt>(1M)</a></p>
+<p class="toc level2"><a href="latencytop-1m.html"><tt>latencytop</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldapaddent-1m.html"><tt>ldapaddent</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldap-cachemgr-1m.html"><tt>ldap_cachemgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldapclient-1m.html"><tt>ldapclient</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldmad-1m.html"><tt>ldmad</tt>(1M)</a></p>
+<p class="toc level2"><a href="link-1m.html"><tt>link</tt>(1M)</a></p>
+<p class="toc level2"><a href="listdgrp-1m.html"><tt>listdgrp</tt>(1M)</a></p>
+<p class="toc level2"><a href="listen-1m.html"><tt>listen</tt>(1M)</a></p>
+<p class="toc level2"><a href="llc2-loop-1m.html"><tt>llc2_loop</tt>(1M)</a></p>
+<p class="toc level2"><a href="lms-1m.html"><tt>lms</tt>(1M)</a></p>
+<p class="toc level2"><a href="localeadm-1m.html"><tt>localeadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="localectr-1m.html"><tt>localectr</tt>(1M)</a></p>
+<p class="toc level2"><a href="locator-1m.html"><tt>locator</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockd-1m.html"><tt>lockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockfs-1m.html"><tt>lockfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockstat-1m.html"><tt>lockstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="lofiadm-1m.html"><tt>lofiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="logadm-1m.html"><tt>logadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="logins-1m.html"><tt>logins</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpadmin-1m.html"><tt>lpadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpfilter-1m.html"><tt>lpfilter</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpforms-1m.html"><tt>lpforms</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpget-1m.html"><tt>lpget</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpmove-1m.html"><tt>lpmove</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpsched-1m.html"><tt>lpsched</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpset-1m.html"><tt>lpset</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpshut-1m.html"><tt>lpshut</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpsystem-1m.html"><tt>lpsystem</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpusers-1m.html"><tt>lpusers</tt>(1M)</a></p>
+<p class="toc level2"><a href="lu-1m.html"><tt>lu</tt>(1M)</a></p>
+<p class="toc level2"><a href="luactivate-1m.html"><tt>luactivate</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucancel-1m.html"><tt>lucancel</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucompare-1m.html"><tt>lucompare</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucreate-1m.html"><tt>lucreate</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucurr-1m.html"><tt>lucurr</tt>(1M)</a></p>
+<p class="toc level2"><a href="ludelete-1m.html"><tt>ludelete</tt>(1M)</a></p>
+<p class="toc level2"><a href="ludesc-1m.html"><tt>ludesc</tt>(1M)</a></p>
+<p class="toc level2"><a href="lufslist-1m.html"><tt>lufslist</tt>(1M)</a></p>
+<p class="toc level2"><a href="lumake-1m.html"><tt>lumake</tt>(1M)</a></p>
+<p class="toc level2"><a href="lumount-1m.html"><tt>lumount</tt>(1M)</a></p>
+<p class="toc level2"><a href="lurename-1m.html"><tt>lurename</tt>(1M)</a></p>
+<p class="toc level2"><a href="lustatus-1m.html"><tt>lustatus</tt>(1M)</a></p>
+<p class="toc level2"><a href="luumount-1m.html"><tt>luumount</tt>(1M)</a></p>
+<p class="toc level2"><a href="luupgrade-1m.html"><tt>luupgrade</tt>(1M)</a></p>
+<p class="toc level2"><a href="luxadm-1m.html"><tt>luxadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="m64config-1m.html"><tt>m64config</tt>(1M)</a></p>
+<p class="toc level2"><a href="mail.local-1m.html"><tt>mail.local</tt>(1M)</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-123700.html">System Administration Commands - Part 2</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-235692.html">System Administration Commands - Part 3</a></p>
+
+</div>
+
+<a name="REFMAN1Mcontent"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1Mdirectoryserver-1m"></a><a name="directoryserver-1m"></a><h3>directoryserver</h3>
+<p>- front end for the Directory Server (DS)</p><h3>Synopsis</h3>
+<pre><tt>/usr/sbin/directoryserver</tt> 
+     { setup [<tt>-f</tt> <var>configuration_file</var>] | uninstall}</pre><pre><tt>/usr/sbin/directoryserver</tt> 
+     {start-admin | stop-admin | restart-admin | startconsole}</pre><pre><tt>/usr/sbin/directoryserver</tt> [{<tt>-s</tt> | <tt>-server</tt>} server-instance ] 
+     {start | stop | restart}</pre><pre><tt>/usr/sbin/directoryserver</tt> { <tt>-s</tt> |<tt>-server</tt> } server-instance 
+     { monitor | saveconfig | restoreconfig | db2index-task | 
+       ldif2db-task | ldif2db | ldif2ldap | vlvindex | db2ldif | 
+       db2ldif-task | db2bak | db2bak-task | bak2db | bak2db-task | 
+       suffix2instance | account-status | account-activate | 
+       account-inactivate } 
+     {...}</pre><pre><tt>/usr/sbin/directoryserver</tt> nativetoascii | admin_ip | ldif | 
+     pwdhash | idsktune | mmldif | keyupg 
+     {...}</pre><pre><tt>/usr/sbin/directoryserver</tt> { magt | sagt } {...}</pre><pre><tt>/usr/sbin/directoryserver</tt> help [<var>subcommand</var>]</pre><h3>Description</h3>
+<p>The <tt>directoryserver</tt> command is a comprehensive, front end to the utility programs
+provided by the Solaris Directory Server (DS).</p><p>Options for the <tt>directoryserver</tt> command itself must appear before the subcommand. Arguments
+for a subcommand must appear after the subcommand. Subcommands have specific arguments.
+See <tt>SUBCOMMANDS</tt>.</p><h3>SUBCOMMANDS</h3>
+<p>The following subcommands are supported:</p><dl><dt>account-inactivate <var>args</var></dt>
+<dd><p>Inactivates and locks an entry or group of entries.</p><p>The <tt>account-inactivate</tt> subcommand supports the following arguments:</p><dl><dt>[<tt>-D</tt> <var>rootdn</var>]</dt>
+<dd><p>Directory Server <var>userDN</var> with root permissions, such as Directory Manager.</p></dd>
+<dt>[<tt>-h</tt> <var>host</var>]</dt>
+<dd><p>Host name of Directory Server. The default value is the full hostname of the machine where Directory Server is installed. </p></dd>
+<dt><tt>-I</tt> <var>DN</var></dt>
+<dd><p> Entry DN or role DN to activate. </p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p>Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. </p><p>This is considered insecure. Use with extreme caution.</p></dd>
+<dt>[<tt>-p</tt> <var>port</var>]</dt>
+<dd><p>Directory Server port. The default value is the LDAP port of Directory Server specified at installation time. </p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p>Password associated with the user DN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution.</p><p>The value <tt>-</tt> can be used in place the password. The program prompts the user for a password to be entered from the terminal.</p></dd>
+</dl>
+</dd>
+<dt>account-activate <var>args</var></dt>
+<dd><p>Activates an entry or group of entries.</p><p>The <tt>account-activate</tt> subcommand supports the following arguments</p><dl><dt><tt>-D</tt> <var>rootdn</var></dt>
+<dd><p>Directory Server userDN with root permissions, such as Directory Manager.</p></dd>
+<dt><tt>-h</tt> <var>host</var></dt>
+<dd><p>Host name of Directory Server. The default value is the full hostname of the machine where Directory Server is installed. </p></dd>
+<dt><tt>-I</tt> DN</dt>
+<dd><p>Entry DN or role DN to activate. </p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p>Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. </p><p>This is considered insecure. Use with extreme caution.</p></dd>
+<dt><tt>-p</tt> <var>port</var></dt>
+<dd><p>Directory Server port. The default value is the LDAP port of Directory Server specified at installation time. </p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p>Password associated with the user DN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution. </p><p>The value <tt>-</tt>can be used in place the password. The program prompts the user for a password to be entered from the terminal.</p></dd>
+</dl>
+</dd>
+<dt>account-status <var>args</var></dt>
+<dd><p>Provides account status information to establish whether an entry or group of entries is inactivated or not.</p><p>The <tt>account-status</tt> subcommand supports the following arguments:</p><dl><dt><tt>-D</tt> <var>rootdn</var></dt>
+<dd><p></p></dd>
+<dt><tt>-h</tt> <var>host</var></dt>
+<dd><p> Host name of Directory Server. The default value is the full hostname of the machine where Directory Server is installed.</p></dd>
+<dt><tt>-I</tt> <var>DN</var></dt>
+<dd><p>Entry DN or role DN whose status is required.</p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p> Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. </p><p>This is considered insecure. Use with extreme caution.</p></dd>
+<dt><tt>-p</tt> <var>port</var></dt>
+<dd><p>Directory Server port. The default value is the LDAP port of Directory Server specified at installation time.</p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p> Password associated with the rootDN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution.</p><p>The value <tt>-</tt>can be used in place of the password. The program prompts the user for a password to be entered from the terminal. </p></dd>
+</dl>
+</dd>
+<dt>admin_ip <var>args</var></dt>
+<dd><p>Change the IP address of the administrative server in the configuration.</p><p>The <tt>admin_ip</tt> subcommand supports the following arguments:</p><dl><dt><var>dir_mgr_DN</var></dt>
+<dd><p>Directory Manager's DN.</p></dd>
+<dt><var>dir_mgr_password</var></dt>
+<dd><p>Directory Manager's password.</p></dd>
+<dt><var>old_ip</var></dt>
+<dd><p>Old IP.</p></dd>
+<dt><var>new_ip</var></dt>
+<dd><p>New IP.</p></dd>
+<dt><var>port_#</var></dt>
+<dd><p>Port number.</p></dd>
+</dl>
+</dd>
+<dt>bak2db <var>backup_directory</var></dt>
+<dd><p>Restore the database from the most recent archived backup.</p><p>Specify <var>backup_directory</var> as the backup directory.</p></dd>
+<dt>bak2db-task <var>args</var></dt>
+<dd><p>Restore the data to the database.</p><p>The bak2db-task subcommand supports the following arguments: </p><dl><dt>[<tt>-a</tt> <var>directory</var>]</dt>
+<dd><p>Directory where the backup files are stored. By default it is under <tt>/var/ds5/slapd-serverID/bak</tt></p></dd>
+<dt><tt>-D</tt> <var>rootDN</var></dt>
+<dd><p>User DN with root permissions, such as Directory Manager. The default is the DN of the directory manager which is read from the <tt>nsslapd-root</tt> attribute under <tt>cn=config</tt>.</p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p> Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. </p><p>This is considered insecure. Use with extreme caution.</p></dd>
+<dt>[<tt>-t</tt> <var>database_type</var>]</dt>
+<dd><p> Database type. The only possible database type is <tt>ldbm</tt>.</p></dd>
+<dt>[<tt>-v</tt>]</dt>
+<dd><p>Verbose mode.</p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p> Password associated with the user DN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution. </p><p>The value <tt>-</tt> can be used in place the password. The program prompts the user for a password to be entered from the terminal.</p></dd>
+</dl>
+</dd>
+<dt>db2bak-task <var>args</var></dt>
+<dd><p> Back up the contents of the database. It creates an entry in the directory that launches this dynamic task. An entry is generated based upon the values provided for each option.</p><p>The <tt>db2bak-task</tt> subcommand supports the following arguments:</p><dl><dt>[<tt>-a</tt> <var>directory</var>]</dt>
+<dd><p>Directory where the backup files are stored. By default it is under <tt>/var/ds5/slapd-serverID/bak</tt>. The backup file is named according to the year-month-day-hour format (<var>YYYY</var>_<var>MM</var>_<var>DD</var>_<var>hhmmss</var>).</p></dd>
+<dt><tt>-D</tt> <var>rootDN</var></dt>
+<dd><p>User DN with root permissions, such as Directory Manager. The default is the DN of the directory manager which is read from the <tt>nsslapd-root</tt> attribute under <tt>cn=config</tt>.</p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p> Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. </p><p>This is considered insecure. Use with extreme caution.</p></dd>
+<dt><tt>-t</tt> <var>database_type</var></dt>
+<dd><p> Database type. The only possible database type is <tt>ldbm</tt>.</p></dd>
+<dt>[<tt>-v</tt>]</dt>
+<dd><p>Verbose mode.</p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p> Password associated with the user DN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution. </p><p>The value <tt>-</tt> can be used in place the password. The program prompts the user for a password to be entered from the terminal.</p></dd>
+</dl>
+</dd>
+<dt>db2bak [<var>backup_directory</var>]</dt>
+<dd><p>Create a backup of the current database contents. The server must be stopped to run this subcommand.</p><p>The default is <tt>/var/ds5/slapd-serverID/bak</tt>. The backup file is named according to the year-month-day-hour format (<var>YYYY</var>_<var>MM</var>_<var>DD</var>_<var>hhmmss</var>).</p></dd>
+<dt>db2index-text <var>args</var></dt>
+<dd><p>Create and generate the new set of indexes to be maintained following the modification of indexing entries in the <tt>cn=config</tt> configuration file.</p><p>The <tt>db2index-text</tt> subcommand supports the following arguments: </p><dl><dt><tt>-D</tt> <var>rootdn</var></dt>
+<dd><p>User DN with root permissions, such as Directory Manager.</p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p>Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. This is considered insecure. Use with extreme caution.</p></dd>
+<dt><tt>-n</tt> <var>backend_instance</var></dt>
+<dd><p>Instance to be indexed.</p></dd>
+<dt>[<tt>-t </tt> <var>attributeName</var>]</dt>
+<dd><p>Name of the attribute to be indexed. If omitted, all indexes defined for that instance are generated.</p></dd>
+<dt>[<tt>-v</tt>]</dt>
+<dd><p>Verbose mode.</p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p>Password associated with the user DN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution. </p><p>The value <tt>-</tt> can be used in place the password. The program prompts the user for a password to be entered from the terminal. </p></dd>
+</dl>
+</dd>
+<dt>db2ldif-task <var>args</var></dt>
+<dd><p>Exports the contents of the database to LDIF. It creates an entry in the directory that launches this dynamic task. The entry is generated based upon the values you provide for each option. To run this subcommand the server must be running and either <tt>-n</tt> <var>backend_instance</var> or <tt>-s</tt> <var>include</var> suffix is required. </p><p>The <tt>db2ldif-task</tt> subcommand supports the following arguments:</p><dl><dt>[<tt>-a</tt> <var>outputfile</var>]</dt>
+<dd><p>File name of the output LDIF file.</p></dd>
+<dt><tt>-C</tt> </dt>
+<dd><p>Only the main db file is used.</p></dd>
+<dt><tt>-D</tt> <var>rootDN</var></dt>
+<dd><p>User DN with root permissions, such as Directory Manager.</p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p>Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. This is considered insecure.Use with extreme caution.</p></dd>
+<dt>[<tt>-M</tt>]</dt>
+<dd><p>Output LDIF is stored in multiple files.</p></dd>
+<dt>[<tt>-m</tt>]</dt>
+<dd><p>Minimal base 64 encoding.</p></dd>
+<dt>{<tt>-n</tt> <var>backend_instance</var>}*</dt>
+<dd><p>Instance to be exported.</p></dd>
+<dt>[<tt>-N</tt>]</dt>
+<dd><p>Minimal base 64 encoding.</p></dd>
+<dt>[<tt>-o</tt>]</dt>
+<dd><p> Output LDIF to be stored in one file by default with each instance stored in <var>instance_file</var> name.</p></dd>
+<dt>[<tt>-r</tt>]</dt>
+<dd><p>Export replica.</p></dd>
+<dt>[<tt>-s</tt>]<var>includesuffix</var>}*</dt>
+<dd><p> Suffix(es) to be included or to specify the subtrees to be included if <tt>-n</tt> has been used. </p></dd>
+<dt>[<tt>-u</tt>]</dt>
+<dd><p>Request that the unique ID is not exported.</p></dd>
+<dt>[<tt>-U</tt>]</dt>
+<dd><p>Request that the output LDIF is not folded.</p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p>Password associated with the user DN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution. </p><p>The value <tt>-</tt> can be used in place the password. The program prompts the user for a password to be entered from the terminal.</p></dd>
+<dt>{<tt>-x</tt> <var>excludesuffix</var>}*</dt>
+<dd><p>Suffixes to be excluded.</p></dd>
+<dt>[<tt>-1</tt>]</dt>
+<dd><p>Delete, for reasons of backward compatibility the first line of the LDIF file that gives the version of the LDIF standard.</p></dd>
+</dl>
+</dd>
+<dt> db2ldif <var>args</var></dt>
+<dd><p>Export the contents of the database to LDIF. You must specify either the <tt>-n</tt> or the <tt>-s</tt> option or both.</p><p>The <tt>db2ldif</tt> subcommand supports the following options:</p><dl><dt>[<tt>-a</tt> <var>outputfile</var>]</dt>
+<dd><p>File name of the output LDIF file.</p></dd>
+<dt>[<tt>-C</tt>]</dt>
+<dd><p>Only use the main db file.</p></dd>
+<dt>[<tt>-m</tt> <var></var>]</dt>
+<dd><p>Minimal base64 encoding.</p></dd>
+<dt>[<tt>-M</tt> <var></var>]</dt>
+<dd><p>Use of several files for storing the output LDIF with each instance stored in <var>instance_file name </var> (where file name is the file name specified for <tt>-a</tt> option).</p></dd>
+<dt>{<tt>-n</tt> <var>baclemd_instance</var>}*</dt>
+<dd><p>Instance to be exported.</p></dd>
+<dt>[<tt>-N</tt>]</dt>
+<dd><p>Specify that the entry IDs are not to be included in the LDIF output. The entry IDs are necessary only if the <tt>db2ldif</tt> output is to be used as input to <tt>db2index-text</tt>.</p></dd>
+<dt>[<tt>-r</tt>]</dt>
+<dd><p>Export replica.</p></dd>
+<dt>{<tt>-s</tt> <var>includesuffix</var>}*</dt>
+<dd><p>Suffixes to be included or to specify the subtrees to be included if <tt>-n</tt> has been used.</p></dd>
+<dt>[{<tt>-x</tt> <var>excludesuffix</var>}]*</dt>
+<dd><p>Suffixes to be excluded.</p></dd>
+<dt>[<tt>-u</tt>]</dt>
+<dd><p>Request that the unique id is not exported.</p></dd>
+<dt>[<tt>-U</tt> <var></var>]</dt>
+<dd><p>Request that the output LDIF is not folded.</p></dd>
+<dt>[<tt>-1</tt> <var></var>]</dt>
+<dd><p> Delete, for reasons of backward compatibility, the first line of the LDIF file which gives the version of the LDIF standard.</p></dd>
+</dl>
+</dd>
+<dt>help [<var>subcommand</var>]</dt>
+<dd><p>Display <tt>directoryserver</tt> usage message or subcommand specific usage message.</p></dd>
+<dt>idsktune <var>args</var></dt>
+<dd><p>Provide an easy and reliable way of checking the patch levels and kernel parameter settings for your system. You must install the Directory Server before you can run <tt>idsktune</tt>. It gathers information about the operating system, kernel, and TCP stack to make tuning recommendations. </p><p>The <tt>idsktune</tt> subcommand supports the following arguments:</p><dl><dt>[<tt>-c</tt>]</dt>
+<dd><p>Client-specific tuning: the output only includes tuning recommendations for running a directory client application.</p></dd>
+<dt>[<tt>-D</tt>]</dt>
+<dd><p>Debug mode: the output includes the commands it runs internally, preceded by <tt>DEBUG</tt> heading.</p></dd>
+<dt>[<tt>-i</tt> <var>installdir</var>]</dt>
+<dd><p>The install directory.</p></dd>
+<dt>[<tt>-q</tt>]</dt>
+<dd><p>Quiet mode. Output only includes tuning recommendations. OS version statements are omitted.</p></dd>
+<dt>[<tt>-v</tt>]</dt>
+<dd><p>Version. Gives the build date identifying the version of the toll. </p></dd>
+</dl>
+</dd>
+<dt>keyupg <var>args</var></dt>
+<dd><p>Upgrade the key from Lite to normal (only one way).</p><p>The <tt>keyupg</tt> subcommand supports the following arguments:</p><dl><dt><tt>-k</tt><var>key</var></dt>
+<dd><p>The key to be upgraded. </p></dd>
+<dt><tt>-f</tt> <var>key_file_path</var></dt>
+<dd><p>The key file path.</p></dd>
+</dl>
+</dd>
+<dt>ldif2db-task args</dt>
+<dd><p>Import data to the directory. It create an entry in the directory that launches this dynamic task. The entry is generated based upon the values you provide for each option. The server must be running when you run this subcommand.</p><p>The <tt>ldif2sb-task</tt> subcommand supports the following arguments:</p><dl><dt>[<tt>-c</tt>]</dt>
+<dd><p> Request that only the core db is created without attribute indexes.</p></dd>
+<dt><tt>-D</tt> rootDN</dt>
+<dd><p>User DN with root permissions, such as Directory Manager.</p></dd>
+<dt>[<tt>-g</tt> <var>string</var>]</dt>
+<dd><p>Generation of a unique ID. Enter <tt>none</tt> for no unique ID to be generated and <tt>deterministic</tt> for the generated unique ID to be name-based. Generates a time based unique ID by default. </p><p>If you use the <tt>deterministic</tt> generation to have a name-based unique ID, you can also specify the namespace you want the server to use as follows: </p><pre><tt>-g</tt> deterministic <var>namespace_id</var></pre><p>where namespace_id is a string of characters in the following format </p><pre>00-xxxxxxxx-xxxxxxxx-xxxxxxxx-xxxxxxxx</pre><p>Use this option if you want to import the same LDIF file into two different directory servers, and you want the contents of both directories to have the same set of unique IDs. If unique IDs already exist in the LDIF file you are importing, then the existing IDs are imported to the server regardless of the options you have specified.</p></dd>
+<dt>[<tt>-G</tt> <var>namespace_id</var> ]</dt>
+<dd><p>Generate a namespace ID as a name-based unique ID. This is the same as specifying <tt></tt><tt>-g</tt><tt> deterministic</tt>.</p></dd>
+<dt>{<tt>-i</tt> <var>filename</var>}*</dt>
+<dd><p>File name of the input LDIF files. When you import multiple files, they are imported in the order in which you specify them on the command line.</p></dd>
+<dt><tt>-j</tt> <var>file</var></dt>
+<dd><p>Password associated with the user DN. This option allows the password to be stored in clear text in the named file for scripting. This is considered insecure. Use with extreme caution.</p></dd>
+<dt><tt>-n</tt> backend_instance</dt>
+<dd><p> Instance to be imported.</p></dd>
+<dt>[<tt>-O</tt>]</dt>
+<dd><p> Request that only the core db is created without attribute indexes.</p></dd>
+<dt>{<tt>-s</tt> <var>includesuffix</var> }*</dt>
+<dd><p>Suffixes to be included. This argument can also be used to specify the subtrees to be included with <tt>-n</tt>.</p></dd>
+<dt><tt>-w</tt> <var>password</var></dt>
+<dd><p>Password associated with the user DN. Supplying the password on the command line is visible using the <tt>/bin/ps</tt> command. This is considered insecure. Use with extreme caution. </p><p>The value <tt>-</tt> can be used in place the password. The program prompts the user for a password to be entered from the terminal.</p></dd>
+<dt>[{<tt>-x</tt> <var>excludesuffix</var> }*]</dt>
+<dd><p></p></dd>
+<dt>[<tt>-v</tt>]</dt>
+<dd><p>Verbose mode.</p></dd>
+</dl>
+</dd>
+<dt>ldif <var>args</var></dt>
+<dd><p>Format LDIF files, and create base 64 encoded attribute values. With Base 64 Encoding you can represent binary data, such as a JPEG image, in LDIF by using base 64 encoding. You identify base 64 encoded data by using the <tt>::</tt> symbol. The <tt>ldif</tt>subcommand takes any input and formats it with the correct line continuation and appropriate attribute information. The subcommand also senses whether the input requires base 64 encoding.</p><p>The <tt>ldif</tt> subcommand supports the following arguments</p><dl><dt>[<tt>-b</tt>]</dt>
+<dd><p>Interpret the entire input as a single binary value. If <tt>-b</tt> is not present, each line is considered to be a separate input value.</p></dd>
+<dt>[<var>attrtype</var>]</dt>
+<dd><p> If <tt>-b</tt> is specified, the output is <tt>attrtype:: &#60;base 64 encoded value</tt>.</p></dd>
+</dl>
+</dd>
+<dt>ldif2db <var>args</var></dt>
+<dd><p>Import the data to the directory. To run this subcommand the server must be stopped. Note that ldif2db supports LDIF version 1 specifications. You can load an attribute using the URL specifier notation, for example: <tt>jpegphoto:file:///tmp/myphoto.jpg</tt></p><dl><dt>[<tt>-c</tt>]</dt>
+<dd><p>Merge chunk size.</p></dd>
+<dt>[<tt>-g</tt> <var>string</var>]</dt>
+<dd><p>Generation of a unique ID. Type none for no unique ID to be generated and deterministic for the generated unique ID to be name-based. By default a time based unique ID is generated. </p><p>If you use the deterministic generation to have a name-based unique ID, you can also specify the namespace you want the server to use as follows: </p><pre><tt>-g</tt> deterministic <var>namespace_id</var></pre><p> where <var>namespace_id</var> is a string of characters in the following format:</p><pre>00-xxxxxxxx-xxxxxxxx-xxxxxxxx-xxxxxxxx</pre><p>Use this option if you want to import the same LDIF file into two different directory servers, and you want the contents of both directories to have the same set of unique IDs. If unique IDs already exist in the LDIF file you are importing, then the existing IDs are imported to the server regardless of the options you have specified.</p></dd>
+<dt>[<tt>-G</tt> <var>naemspace_id</var>]</dt>
+<dd><p>Generate a namespace ID as a name-based unique ID. This is the same as specifying the <tt></tt><tt>-g</tt><tt> deterministic</tt> option.</p></dd>
+<dt>{<tt>-</tt> <var>filename</var>}*</dt>
+<dd><p>File name of the input LDIF file(s). When you import multiple files, they are imported in the order in which you specify them on the command line.</p></dd>
+<dt><tt>-n</tt> <var>backend_instance</var></dt>
+<dd><p>Instance to be imported.</p></dd>
+<dt>[<tt>-O</tt>]</dt>
+<dd><p>Request that only the core db is created without attribute indexes.</p></dd>
+<dt>{<tt>-s</tt> <var>includesuffix</var>}*</dt>
+<dd><p>Suffixes to be included or to specify the subtrees to be included if <tt>-n</tt> has been used.</p></dd>
+<dt>[{<tt>-x</tt> <var>excludesuffix</var>}*]</dt>
+<dd><p>Suffixes to be excluded</p></dd>
+</dl>
+</dd>
+<dt>ldif2ldap <var>rootDN password filename</var></dt>
+<dd><p> Perform an import operation over LDAP to the Directory Server. To run this subcommand the server must be running. </p><p>The <tt>ldif2ldap</tt> subcommand supports the following arguments:</p><dl><dt><var>rootdn</var></dt>
+<dd><p>User DN with root permissions, such as Directory Manager. </p></dd>
+<dt><var>password</var></dt>
+<dd><p>Password associated with the user DN.</p></dd>
+<dt><var>filename</var></dt>
+<dd><p>File name of the file to be imported. When you import multiple files, they are imported in the order in which you specify them on the command line.</p></dd>
+</dl>
+</dd>
+<dt>magt CONFIG INIT</dt>
+<dd><p>Start SNMP master agent. The Config and INIT files are in <tt>/usr/iplanet/ds5/plugins/snmp/magt</tt>. For more information, see the <a href="http://www.oracle.com/pls/topic/lookup?ctx=dsc&id=/app/docs/doc/816-2670"><i>iPlanet Directory Server 5.1 Administrator&#8217;s Guide</i></a>.</p><p>The <tt>magt</tt> subcommand supports the following options:</p><dl><dt>CONFIG</dt>
+<dd><p>The CONFIG file defines the community and the manager that master agent works with. Specify the manager value as a valid system name or an IP address.</p></dd>
+<dt>INIT</dt>
+<dd><p>The INIT file is a nonvolatile file that contains information from the MIB-II system group, including system location and contact information. If INIT doesn't already exist, starting the master agent for the first time creates it. An invalid manager name in the CONFIG file causes the master agent start-up to fail.</p></dd>
+</dl>
+</dd>
+<dt>monitor</dt>
+<dd><p>Retrieves performance monitoring information using the <tt>ldapsearch</tt> command-line utility.</p></dd>
+<dt>mmldif <var>args</var></dt>
+<dd><p> Combine multiple LDIF files into a single authoritative set of entries. Typically each LDIF file is from a master server cooperating in a multi master replication agreement.[e.g. masters that refuse to sync up for whatever reason]. Optionally, it can generate LDIF change files that could be applied to original to bring it up to date with authoritative. At least two input files must be specified.</p><p>The <tt>mmldif</tt> subcommand supports the following arguments: </p><dl><dt>[<tt>-c</tt> <var>inputfile ...</var>]</dt>
+<dd><p>Write a change file (.delta) for each input file. Specify <var>inputfile</var> as the input LDIF files.</p></dd>
+<dt>[<tt>-D</tt>]</dt>
+<dd><p>Print debugging information.</p></dd>
+<dt>[<tt>-o</tt> <var>out.ldif</var>]</dt>
+<dd><p>Write authoritative data to this file. </p></dd>
+</dl>
+</dd>
+<dt>nativetoascii <var>args</var></dt>
+<dd><p>Convert one language encoding to another. For example, convert a native language to UTF-8 format.</p><p>The <tt>nativetoascii</tt> subcommand supports the following options:</p><dl><dt><tt>-d</tt> <var>Encodings Directory </var></dt>
+<dd><p>Path to the directory which contains the <tt>conv</tt> directory </p></dd>
+<dt>[<tt>-i</tt> <var>input_filename</var> <tt>-o</tt> <var>output_filename</var>]</dt>
+<dd><p>The input file name and output file name. </p></dd>
+<dt><tt>-l</tt></dt>
+<dd><p>List supported encodings</p></dd>
+<dt><tt>-r</tt></dt>
+<dd><p>Replace existing files.</p></dd>
+<dt><tt>-s</tt> <var>suffix</var></dt>
+<dd><p>Suffix to be mapped to the backend.</p></dd>
+<dt><tt>-s</tt> <var>SourceEncoding</var></dt>
+<dd><p>Source Encoding of input stream.</p></dd>
+<dt><tt>-t</tt> <var>TargetEncoding</var></dt>
+<dd><p>Target Encoding of output stream.</p></dd>
+<dt><tt>-v</tt></dt>
+<dd><p>Verbose output.</p></dd>
+</dl>
+</dd>
+<dt>pwdhash <var>args</var></dt>
+<dd><p>Print the encrypted form of a password using one of the server's encryption algorithms. If a user cannot log in, you can use this script to compare the user's password to the password stored in the directory.</p><p>The <tt>pwdhash</tt> subcommand supports the following arguments:</p><dl><dt><tt>-c</tt> <var>comparepwd</var> | <tt>-s</tt> <var>scheme</var></dt>
+<dd><p>The available schemes are <tt>SSHA</tt>, <tt>SHA</tt>, <tt>CRYPT</tt> and <tt>CLEARE</tt>. It generates the encrypted passwords according to scheme's algorithm. The <tt>-c</tt> specifies the encrypted password to be compared with. The result of comparison is either <tt>OK</tt> or <tt>doesn't match</tt>.</p></dd>
+<dt><tt>-D</tt> <var>instance-dir</var></dt>
+<dd><p>The instance directory.</p></dd>
+<dt>[<tt>-H</tt>]</dt>
+<dd><p>The passwords are hex-encoded.</p></dd>
+<dt><var>password</var> ...</dt>
+<dd><p>The clear passwords to generate encrypted form from or to be compared with.</p></dd>
+</dl>
+</dd>
+<dt>restart</dt>
+<dd><p> Restarts the directory server. </p><p>When the <tt>-s</tt> option is not specified, restarts all instances of servers. When the <tt>-s</tt> option is specified, restarts the server specified by <tt>-s</tt>.</p></dd>
+<dt></dt>
+<dd><p>restart-admin</p><p>Restarts the administration server.</p></dd>
+<dt>restoreconfig</dt>
+<dd><p>Restores the most recently saved Administration Server configuration information to the NetscapeRoot partition under <tt>/var/ds5/slapd-serverID/confbak</tt>.</p></dd>
+<dt>sagt <tt>-c</tt> CONFIG</dt>
+<dd><p>Start proxy SNMP agent. For more information, see the <a href="http://www.oracle.com/pls/topic/lookup?ctx=dsc&id=/app/docs/doc/816-2670"><i>iPlanet Directory Server 5.1 Administrator&#8217;s Guide</i></a>.</p><p>The <tt>sagt</tt> subcommand supports the following options:</p><dl><dt><tt>-c</tt> <var>configfile</var></dt>
+<dd><p>The CONFIG file includes the port that the SNMP daemon listens to. It also needs to include the MIB trees and traps that the proxy SNMP agent forwards. Edit the CONFIG file located in <tt>/usr/iplanet/ds5/plugins/snmp/sagt</tt>.</p></dd>
+</dl>
+</dd>
+<dt>saveconfig</dt>
+<dd><p> Saves the administration server configuration information to the <tt>/var/ds5/slapd-serverID/confbak</tt> directory.</p></dd>
+<dt>setup [<tt>-f</tt> <var>configuration_file</var>]</dt>
+<dd><p>Configures an instance of the directory server or administration server. Creates a basic configuration for the directory server and the administrative server that is used to manage the directory. </p><p>The <tt>setup</tt> subcommand has two modes of operation. You can invoke it with a curses-based interaction to gather input. Alternatively, you can provide input in a configuration file using the <tt>-f</tt> option.</p><p>The setup subcommand supports the following option:</p><dl><dt><tt>-f</tt> <var>configuration_file</var></dt>
+<dd><p></p></dd>
+</dl>
+<p>Specifies the configuration file for silent installation.</p></dd>
+<dt>start</dt>
+<dd><p>Starts the directory server. When the <tt>-s</tt> option is not specified, starts servers of all instances. When the <tt>-s</tt> option is specified, starts the server instance specified by <tt>-s</tt>.</p></dd>
+<dt>start-admin</dt>
+<dd><p>Starts the directory server. </p><p>When the <tt>-s</tt> option is not specified, restarts all instances of servers. When the <tt>-s</tt> option is specified, restarts the server specified by <tt>-s</tt>.</p></dd>
+<dt>startconsole</dt>
+<dd><p>Starts the directory console..</p></dd>
+<dt>stop</dt>
+<dd><p>Stops the directory server.</p><p>When the <tt>-s</tt> option is not specified, restarts all instances of servers. When the <tt>-s</tt> option is specified, restarts the server specified by <tt>-s</tt>.</p></dd>
+<dt>stop-admin</dt>
+<dd><p>Stop the administration server.</p></dd>
+<dt> suffix2instance {<tt>-s</tt> <var>suffix</var>}</dt>
+<dd><p>Map a suffix to a backend name.</p><p>Specify <tt>-s</tt> <var>suffix</var> as the suffix to be mapped to the backend.</p></dd>
+<dt>uninstall</dt>
+<dd><p>Uninstalls the directory server and the administration server. </p><p>This subcommand stops servers of all instances and removes all the changes created by setup.</p></dd>
+<dt>vlvindex <var>args</var></dt>
+<dd><p> Create virtual list view (VLV) indexes, known in the Directory Server Console as Browsing Indexes. The server must be stopped beforehand. </p><p>The <tt>vlvindex</tt> subcommand supports the following arguments:</p><dl><dt><tt>-d</tt> <var>debug_level</var></dt>
+<dd><p> Specify the debug level to use during index creation. Debug levels are defined in <tt>nsslapd-errorlog-level (error Log Level)</tt>. See the <a href="http://www.oracle.com/pls/topic/lookup?ctx=dsc&id=/app/docs/doc/816-2671"><i>iPlanet Directory Server 5.1 Configuration, Command, and File Reference</i></a>.</p></dd>
+<dt><tt>-n</tt> <var>backend_instance</var></dt>
+<dd><p>Name of the database containing the entries to index.</p></dd>
+<dt><tt>-s </tt> <var>suffix</var></dt>
+<dd><p>Name of the suffix containing the entries to index.</p></dd>
+<dt><tt>-T</tt> <var>VLVTag</var></dt>
+<dd><p> Name of the database containing the entries to index.</p></dd>
+</dl>
+</dd>
+</dl>
+<h3>Options</h3>
+<p>Options for the <tt>directoryserver</tt> command itself must appear before the subcommand argument.</p><p>The following options are supported:</p><dl><dt><tt>-s</tt> <var>server-instance</var></dt>
+<dt><tt>-server</tt> <var>server-instance</var></dt>
+<dd><p>The server instance name. Specify the directory server instance to process the command against. For some of the listed subcommands the server instance is optional and for other sub commands it is a required option. </p></dd>
+</dl>
+<h3>Examples</h3>
+<p><b>Example&#160;1 Starting All Instances of the Directory Servers</b></p><p>The following command starts all the instances of the directory servers:</p><pre>example% directoryserver start</pre><p><b>Example&#160;2 Starting the Instances of <tt>myhost</tt> of the Directory Server</b></p><p>The following command starts the instances <tt>myhost</tt> of the directory server. </p><pre>example% directoryserver -s myhost start</pre><p><b>Example&#160;3 Running the Monitor Tool and Outputting the Current Status</b></p><p>The following command runs the monitor tool and output the current status
+of the <tt>ephesus</tt> directory instance. </p><pre>example% directoryserver -s ephesus monitor</pre><p><b>Example&#160;4 Running the idsktune Tool and Outputting Performance Tuning Information</b></p><p>The following command runs the idsktune tool and outputs performance tuning information:</p><pre>example% directoryserver idsktune</pre><h3>Exit Status</h3>
+<p>The following exit values are returned:</p><dl><dt><tt>0</tt> </dt>
+<dd><p>Successful completion. </p></dd>
+<dt><tt>non-zero</tt></dt>
+<dd><p>An error occurred.</p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="middle"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="middle"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">IPLTdsr, IPLTdsu</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h3>See Also</h3>
+<p><a href="http://www.oracle.com/pls/topic/lookup?ctx=dsc&id=/app/docs/doc/816-2670"><i>iPlanet Directory Server 5.1 Administrator&#8217;s Guide</i></a></p><p><a href="http://www.oracle.com/pls/topic/lookup?ctx=dsc&id=/app/docs/doc/816-2671"><i>iPlanet Directory Server 5.1 Configuration, Command, and File Reference</i></a></p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="dig-1m.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="disks-1m.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

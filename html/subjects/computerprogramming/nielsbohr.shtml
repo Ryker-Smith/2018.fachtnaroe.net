@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>From the University of Copenhagen:</h1>
+<h2>The following concerns a question in a physics degree exam at the University
+of Copenhagen:</h2>
+<p>"Describe how to determine the height of a skyscraper with a barometer."
+One student replied:</p>
+<p>"You tie a long piece of string to the neck of the barometer, then lower
+the barometer from the roof of the skyscraper to the ground. The length
+of the string plus the length of the barometer will equal the height of
+the building."</p>
+<p>This highly original answer so incensed the examiner that the student
+was failed immediately. He appealed on the grounds that his answer was
+indisputably correct, and the university appointed an independent arbiter
+to decide the case.</p>
+<p>The arbiter judged that the answer was indeed correct, but did not display
+any noticeable knowledge of physics. To resolve the problem it was decided
+to call the student in and allow him six minutes in which to provide a
+verbal answer, which showed at least a minimal familiarity with the basic
+principles of physics. For five minutes the student sat in silence, forehead
+creased in thought.</p>
+<p>The arbiter reminded him that time was running out, to which the student
+replied that he had several extremely relevant answers, but couldn't make
+up his mind which to use. On being advised to hurry up the student replied
+as follows:</p>
+<p>"Firstly, you could take the barometer up to the roof of the skyscraper,
+drop it over the edge, and measure the time it takes to reach the ground.
+The height of the building can then be worked out from the formula 
+<math><mrow><mi>H</mi><mo>=</mo><mn>0.5</mn><mo>&InvisibleTimes;</mo><mi>g</mi><mo>&InvisibleTimes;</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></math> - but bad luck on the barometer."</p>
+<p>"Or if the sun is shining you could measure the height of the barometer,
+then set it on end and measure the length of its shadow. Then you measure
+the length of the skyscraper's shadow, and thereafter it is a simple matter
+of proportional arithmetic to work out the height of the skyscraper."</p>
+<p>"But if you wanted to be highly scientific about it, you could tie a
+short piece of string to the barometer and swing it like a pendulum, first
+at ground level and then on the roof of the skyscraper. The height is worked
+out by the difference in the gravitational restoring force
+<math><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mo>&InvisibleTimes;</mo><mi>&pi;</mi><mo>&InvisibleTimes;</mo><msqrt><mfrac><mrow><mi>l</mi></mrow><mrow><mi>g</mi></mrow></mfrac></msqrt></mrow></math></p>
+<p>"Or if the skyscraper has an outside emergency staircase, it would be
+easier to walk up it and mark off the height of the skyscraper in barometer
+lengths, then add them up."</p>
+<p>"If you merely wanted to be boring and orthodox about it, of course,
+you could use the barometer to measure the air pressure on the roof of
+the skyscraper and on the ground, and convert the difference in millibars
+into feet to give the height of the building.</p>
+<p>But since we are constantly being exhorted to exercise independence
+of mind and apply scientific methods, undoubtedly the best way would be
+to knock on the janitor's door and say to him 'If you would like a nice
+new barometer, I will give you this one if you tell me the height
+of this skyscraper'."</p>
+<p>The student was Nils Bohr, the only Dane to win the Nobel prize for
+Physics.</p>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="nielsbohr.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

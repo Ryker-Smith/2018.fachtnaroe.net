@@ -1,0 +1,1735 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1: User Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the commands and utilities available with this operating system, including commands found only in the SunOS/BSD Compatibility Package, commands for communicating with other systems, commands associated with the Form and Menu Language Interpreter (FMLI), and commands specific to the SunOS&#8482; system.The available options, arguments, and operands for each command are provided in accordance with standard rules of command syntax, along with availability attributes, diagnostic information, and cross-references to other manual pages and reference material with relevant information.This section is for all UNIX&#174; system users.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1461";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1: User Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1461.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1 (821-1461-06)&body=Page: nawk-1.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-39.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-193.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-474.html">User Commands</a></p>
+<p class="toc level2"><a href="acctcom-1.html"><tt>acctcom</tt>(1)</a></p>
+<p class="toc level2"><a href="adb-1.html"><tt>adb</tt>(1)</a></p>
+<p class="toc level2"><a href="addbib-1.html"><tt>addbib</tt>(1)</a></p>
+<p class="toc level2"><a href="admin-1.html"><tt>admin</tt>(1)</a></p>
+<p class="toc level2"><a href="alias-1.html"><tt>alias</tt>(1)</a></p>
+<p class="toc level2"><a href="allocate-1.html"><tt>allocate</tt>(1)</a></p>
+<p class="toc level2"><a href="amt-1.html"><tt>amt</tt>(1)</a></p>
+<p class="toc level2"><a href="appcert-1.html"><tt>appcert</tt>(1)</a></p>
+<p class="toc level2"><a href="apptrace-1.html"><tt>apptrace</tt>(1)</a></p>
+<p class="toc level2"><a href="apropos-1.html"><tt>apropos</tt>(1)</a></p>
+<p class="toc level2"><a href="ar-1.html"><tt>ar</tt>(1)</a></p>
+<p class="toc level2"><a href="arch-1.html"><tt>arch</tt>(1)</a></p>
+<p class="toc level2"><a href="as-1.html"><tt>as</tt>(1)</a></p>
+<p class="toc level2"><a href="asa-1.html"><tt>asa</tt>(1)</a></p>
+<p class="toc level2"><a href="at-1.html"><tt>at</tt>(1)</a></p>
+<p class="toc level2"><a href="atq-1.html"><tt>atq</tt>(1)</a></p>
+<p class="toc level2"><a href="atrm-1.html"><tt>atrm</tt>(1)</a></p>
+<p class="toc level2"><a href="audioconvert-1.html"><tt>audioconvert</tt>(1)</a></p>
+<p class="toc level2"><a href="audioctl-1.html"><tt>audioctl</tt>(1)</a></p>
+<p class="toc level2"><a href="audioplay-1.html"><tt>audioplay</tt>(1)</a></p>
+<p class="toc level2"><a href="audiorecord-1.html"><tt>audiorecord</tt>(1)</a></p>
+<p class="toc level2"><a href="audiotest-1.html"><tt>audiotest</tt>(1)</a></p>
+<p class="toc level2"><a href="auths-1.html"><tt>auths</tt>(1)</a></p>
+<p class="toc level2"><a href="auto-ef-1.html"><tt>auto_ef</tt>(1)</a></p>
+<p class="toc level2"><a href="awk-1.html"><tt>awk</tt>(1)</a></p>
+<p class="toc level2"><a href="banner-1.html"><tt>banner</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1.html"><tt>basename</tt>(1)</a></p>
+<p class="toc level2"><a href="basename-1b.html"><tt>basename</tt>(1B)</a></p>
+<p class="toc level2"><a href="batch-1.html"><tt>batch</tt>(1)</a></p>
+<p class="toc level2"><a href="bc-1.html"><tt>bc</tt>(1)</a></p>
+<p class="toc level2"><a href="bdiff-1.html"><tt>bdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="bfs-1.html"><tt>bfs</tt>(1)</a></p>
+<p class="toc level2"><a href="bg-1.html"><tt>bg</tt>(1)</a></p>
+<p class="toc level2"><a href="biff-1b.html"><tt>biff</tt>(1B)</a></p>
+<p class="toc level2"><a href="break-1.html"><tt>break</tt>(1)</a></p>
+<p class="toc level2"><a href="builtin-1.html"><tt>builtin</tt>(1)</a></p>
+<p class="toc level2"><a href="cal-1.html"><tt>cal</tt>(1)</a></p>
+<p class="toc level2"><a href="calendar-1.html"><tt>calendar</tt>(1)</a></p>
+<p class="toc level2"><a href="cancel-1.html"><tt>cancel</tt>(1)</a></p>
+<p class="toc level2"><a href="case-1.html"><tt>case</tt>(1)</a></p>
+<p class="toc level2"><a href="cat-1.html"><tt>cat</tt>(1)</a></p>
+<p class="toc level2"><a href="cd-1.html"><tt>cd</tt>(1)</a></p>
+<p class="toc level2"><a href="cdc-1.html"><tt>cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="cdrw-1.html"><tt>cdrw</tt>(1)</a></p>
+<p class="toc level2"><a href="chdir-1.html"><tt>chdir</tt>(1)</a></p>
+<p class="toc level2"><a href="checkeq-1.html"><tt>checkeq</tt>(1)</a></p>
+<p class="toc level2"><a href="checknr-1.html"><tt>checknr</tt>(1)</a></p>
+<p class="toc level2"><a href="chgrp-1.html"><tt>chgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="chkey-1.html"><tt>chkey</tt>(1)</a></p>
+<p class="toc level2"><a href="chmod-1.html"><tt>chmod</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1.html"><tt>chown</tt>(1)</a></p>
+<p class="toc level2"><a href="chown-1b.html"><tt>chown</tt>(1B)</a></p>
+<p class="toc level2"><a href="ckdate-1.html"><tt>ckdate</tt>(1)</a></p>
+<p class="toc level2"><a href="ckgid-1.html"><tt>ckgid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckint-1.html"><tt>ckint</tt>(1)</a></p>
+<p class="toc level2"><a href="ckitem-1.html"><tt>ckitem</tt>(1)</a></p>
+<p class="toc level2"><a href="ckkeywd-1.html"><tt>ckkeywd</tt>(1)</a></p>
+<p class="toc level2"><a href="ckpath-1.html"><tt>ckpath</tt>(1)</a></p>
+<p class="toc level2"><a href="ckrange-1.html"><tt>ckrange</tt>(1)</a></p>
+<p class="toc level2"><a href="ckstr-1.html"><tt>ckstr</tt>(1)</a></p>
+<p class="toc level2"><a href="cksum-1.html"><tt>cksum</tt>(1)</a></p>
+<p class="toc level2"><a href="cktime-1.html"><tt>cktime</tt>(1)</a></p>
+<p class="toc level2"><a href="ckuid-1.html"><tt>ckuid</tt>(1)</a></p>
+<p class="toc level2"><a href="ckyorn-1.html"><tt>ckyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="clear-1.html"><tt>clear</tt>(1)</a></p>
+<p class="toc level2"><a href="cmp-1.html"><tt>cmp</tt>(1)</a></p>
+<p class="toc level2"><a href="col-1.html"><tt>col</tt>(1)</a></p>
+<p class="toc level2"><a href="comb-1.html"><tt>comb</tt>(1)</a></p>
+<p class="toc level2"><a href="comm-1.html"><tt>comm</tt>(1)</a></p>
+<p class="toc level2"><a href="command-1.html"><tt>command</tt>(1)</a></p>
+<p class="toc level2"><a href="compress-1.html"><tt>compress</tt>(1)</a></p>
+<p class="toc level2"><a href="continue-1.html"><tt>continue</tt>(1)</a></p>
+<p class="toc level2"><a href="cp-1.html"><tt>cp</tt>(1)</a></p>
+<p class="toc level2"><a href="cpio-1.html"><tt>cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="cpp-1.html"><tt>cpp</tt>(1)</a></p>
+<p class="toc level2"><a href="cputrack-1.html"><tt>cputrack</tt>(1)</a></p>
+<p class="toc level2"><a href="crle-1.html"><tt>crle</tt>(1)</a></p>
+<p class="toc level2"><a href="crontab-1.html"><tt>crontab</tt>(1)</a></p>
+<p class="toc level2"><a href="crypt-1.html"><tt>crypt</tt>(1)</a></p>
+<p class="toc level2"><a href="csh-1.html"><tt>csh</tt>(1)</a></p>
+<p class="toc level2"><a href="csplit-1.html"><tt>csplit</tt>(1)</a></p>
+<p class="toc level2"><a href="ct-1c.html"><tt>ct</tt>(1C)</a></p>
+<p class="toc level2"><a href="ctags-1.html"><tt>ctags</tt>(1)</a></p>
+<p class="toc level2"><a href="ctrun-1.html"><tt>ctrun</tt>(1)</a></p>
+<p class="toc level2"><a href="ctstat-1.html"><tt>ctstat</tt>(1)</a></p>
+<p class="toc level2"><a href="ctwatch-1.html"><tt>ctwatch</tt>(1)</a></p>
+<p class="toc level2"><a href="cu-1c.html"><tt>cu</tt>(1C)</a></p>
+<p class="toc level2"><a href="cut-1.html"><tt>cut</tt>(1)</a></p>
+<p class="toc level2"><a href="date-1.html"><tt>date</tt>(1)</a></p>
+<p class="toc level2"><a href="dc-1.html"><tt>dc</tt>(1)</a></p>
+<p class="toc level2"><a href="deallocate-1.html"><tt>deallocate</tt>(1)</a></p>
+<p class="toc level2"><a href="decrypt-1.html"><tt>decrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="delta-1.html"><tt>delta</tt>(1)</a></p>
+<p class="toc level2"><a href="deroff-1.html"><tt>deroff</tt>(1)</a></p>
+<p class="toc level2"><a href="des-1.html"><tt>des</tt>(1)</a></p>
+<p class="toc level2"><a href="df-1b.html"><tt>df</tt>(1B)</a></p>
+<p class="toc level2"><a href="dhcpinfo-1.html"><tt>dhcpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="diff-1.html"><tt>diff</tt>(1)</a></p>
+<p class="toc level2"><a href="diff3-1.html"><tt>diff3</tt>(1)</a></p>
+<p class="toc level2"><a href="diffmk-1.html"><tt>diffmk</tt>(1)</a></p>
+<p class="toc level2"><a href="digest-1.html"><tt>digest</tt>(1)</a></p>
+<p class="toc level2"><a href="digestp-1.html"><tt>digestp</tt>(1)</a></p>
+<p class="toc level2"><a href="dircmp-1.html"><tt>dircmp</tt>(1)</a></p>
+<p class="toc level2"><a href="dirname-1.html"><tt>dirname</tt>(1)</a></p>
+<p class="toc level2"><a href="dirs-1.html"><tt>dirs</tt>(1)</a></p>
+<p class="toc level2"><a href="dis-1.html"><tt>dis</tt>(1)</a></p>
+<p class="toc level2"><a href="disable-1.html"><tt>disable</tt>(1)</a></p>
+<p class="toc level2"><a href="disown-1.html"><tt>disown</tt>(1)</a></p>
+<p class="toc level2"><a href="dispgid-1.html"><tt>dispgid</tt>(1)</a></p>
+<p class="toc level2"><a href="dispuid-1.html"><tt>dispuid</tt>(1)</a></p>
+<p class="toc level2"><a href="dos2unix-1.html"><tt>dos2unix</tt>(1)</a></p>
+<p class="toc level2"><a href="download-1.html"><tt>download</tt>(1)</a></p>
+<p class="toc level2"><a href="dpost-1.html"><tt>dpost</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1.html"><tt>du</tt>(1)</a></p>
+<p class="toc level2"><a href="du-1b.html"><tt>du</tt>(1B)</a></p>
+<p class="toc level2"><a href="dump-1.html"><tt>dump</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpcs-1.html"><tt>dumpcs</tt>(1)</a></p>
+<p class="toc level2"><a href="dumpkeys-1.html"><tt>dumpkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1.html"><tt>echo</tt>(1)</a></p>
+<p class="toc level2"><a href="echo-1b.html"><tt>echo</tt>(1B)</a></p>
+<p class="toc level2"><a href="ed-1.html"><tt>ed</tt>(1)</a></p>
+<p class="toc level2"><a href="edit-1.html"><tt>edit</tt>(1)</a></p>
+<p class="toc level2"><a href="egrep-1.html"><tt>egrep</tt>(1)</a></p>
+<p class="toc level2"><a href="eject-1.html"><tt>eject</tt>(1)</a></p>
+<p class="toc level2"><a href="elfdump-1.html"><tt>elfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="elfedit-1.html"><tt>elfedit</tt>(1)</a></p>
+<p class="toc level2"><a href="elfsign-1.html"><tt>elfsign</tt>(1)</a></p>
+<p class="toc level2"><a href="elfwrap-1.html"><tt>elfwrap</tt>(1)</a></p>
+<p class="toc level2"><a href="enable-1.html"><tt>enable</tt>(1)</a></p>
+<p class="toc level2"><a href="encrypt-1.html"><tt>encrypt</tt>(1)</a></p>
+<p class="toc level2"><a href="enhance-1.html"><tt>enhance</tt>(1)</a></p>
+<p class="toc level2"><a href="env-1.html"><tt>env</tt>(1)</a></p>
+<p class="toc level2"><a href="eqn-1.html"><tt>eqn</tt>(1)</a></p>
+<p class="toc level2"><a href="errange-1.html"><tt>errange</tt>(1)</a></p>
+<p class="toc level2"><a href="errdate-1.html"><tt>errdate</tt>(1)</a></p>
+<p class="toc level2"><a href="errgid-1.html"><tt>errgid</tt>(1)</a></p>
+<p class="toc level2"><a href="errint-1.html"><tt>errint</tt>(1)</a></p>
+<p class="toc level2"><a href="erritem-1.html"><tt>erritem</tt>(1)</a></p>
+<p class="toc level2"><a href="error-1.html"><tt>error</tt>(1)</a></p>
+<p class="toc level2"><a href="errpath-1.html"><tt>errpath</tt>(1)</a></p>
+<p class="toc level2"><a href="errstr-1.html"><tt>errstr</tt>(1)</a></p>
+<p class="toc level2"><a href="errtime-1.html"><tt>errtime</tt>(1)</a></p>
+<p class="toc level2"><a href="erruid-1.html"><tt>erruid</tt>(1)</a></p>
+<p class="toc level2"><a href="erryorn-1.html"><tt>erryorn</tt>(1)</a></p>
+<p class="toc level2"><a href="eval-1.html"><tt>eval</tt>(1)</a></p>
+<p class="toc level2"><a href="ex-1.html"><tt>ex</tt>(1)</a></p>
+<p class="toc level2"><a href="exec-1.html"><tt>exec</tt>(1)</a></p>
+<p class="toc level2"><a href="exit-1.html"><tt>exit</tt>(1)</a></p>
+<p class="toc level2"><a href="expand-1.html"><tt>expand</tt>(1)</a></p>
+<p class="toc level2"><a href="export-1.html"><tt>export</tt>(1)</a></p>
+<p class="toc level2"><a href="exportfs-1b.html"><tt>exportfs</tt>(1B)</a></p>
+<p class="toc level2"><a href="expr-1.html"><tt>expr</tt>(1)</a></p>
+<p class="toc level2"><a href="expr-1b.html"><tt>expr</tt>(1B)</a></p>
+<p class="toc level2"><a href="exstr-1.html"><tt>exstr</tt>(1)</a></p>
+<p class="toc level2"><a href="factor-1.html"><tt>factor</tt>(1)</a></p>
+<p class="toc level2"><a href="false-1.html"><tt>false</tt>(1)</a></p>
+<p class="toc level2"><a href="fastboot-1b.html"><tt>fastboot</tt>(1B)</a></p>
+<p class="toc level2"><a href="fasthalt-1b.html"><tt>fasthalt</tt>(1B)</a></p>
+<p class="toc level2"><a href="fc-1.html"><tt>fc</tt>(1)</a></p>
+<p class="toc level2"><a href="fdformat-1.html"><tt>fdformat</tt>(1)</a></p>
+<p class="toc level2"><a href="fg-1.html"><tt>fg</tt>(1)</a></p>
+<p class="toc level2"><a href="fgrep-1.html"><tt>fgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1.html"><tt>file</tt>(1)</a></p>
+<p class="toc level2"><a href="file-1b.html"><tt>file</tt>(1B)</a></p>
+<p class="toc level2"><a href="filebench-1.html"><tt>filebench</tt>(1)</a></p>
+<p class="toc level2"><a href="filep-1.html"><tt>filep</tt>(1)</a></p>
+<p class="toc level2"><a href="filesync-1.html"><tt>filesync</tt>(1)</a></p>
+<p class="toc level2"><a href="filofaxp-1.html"><tt>filofaxp</tt>(1)</a></p>
+<p class="toc level2"><a href="find-1.html"><tt>find</tt>(1)</a></p>
+<p class="toc level2"><a href="finger-1.html"><tt>finger</tt>(1)</a></p>
+<p class="toc level2"><a href="fmt-1.html"><tt>fmt</tt>(1)</a></p>
+<p class="toc level2"><a href="fmtmsg-1.html"><tt>fmtmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="fold-1.html"><tt>fold</tt>(1)</a></p>
+<p class="toc level2"><a href="for-1.html"><tt>for</tt>(1)</a></p>
+<p class="toc level2"><a href="foreach-1.html"><tt>foreach</tt>(1)</a></p>
+<p class="toc level2"><a href="franklinp-1.html"><tt>franklinp</tt>(1)</a></p>
+<p class="toc level2"><a href="from-1b.html"><tt>from</tt>(1B)</a></p>
+<p class="toc level2"><a href="ftp-1.html"><tt>ftp</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpcount-1.html"><tt>ftpcount</tt>(1)</a></p>
+<p class="toc level2"><a href="ftpwho-1.html"><tt>ftpwho</tt>(1)</a></p>
+<p class="toc level2"><a href="function-1.html"><tt>function</tt>(1)</a></p>
+<p class="toc level2"><a href="gcore-1.html"><tt>gcore</tt>(1)</a></p>
+<p class="toc level2"><a href="gencat-1.html"><tt>gencat</tt>(1)</a></p>
+<p class="toc level2"><a href="geniconvtbl-1.html"><tt>geniconvtbl</tt>(1)</a></p>
+<p class="toc level2"><a href="genmsg-1.html"><tt>genmsg</tt>(1)</a></p>
+<p class="toc level2"><a href="get-1.html"><tt>get</tt>(1)</a></p>
+<p class="toc level2"><a href="getconf-1.html"><tt>getconf</tt>(1)</a></p>
+<p class="toc level2"><a href="getfacl-1.html"><tt>getfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="getlabel-1.html"><tt>getlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="getopt-1.html"><tt>getopt</tt>(1)</a></p>
+<p class="toc level2"><a href="getoptcvt-1.html"><tt>getoptcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="getopts-1.html"><tt>getopts</tt>(1)</a></p>
+<p class="toc level2"><a href="gettext-1.html"><tt>gettext</tt>(1)</a></p>
+<p class="toc level2"><a href="gettxt-1.html"><tt>gettxt</tt>(1)</a></p>
+<p class="toc level2"><a href="getzonepath-1.html"><tt>getzonepath</tt>(1)</a></p>
+<p class="toc level2"><a href="glob-1.html"><tt>glob</tt>(1)</a></p>
+<p class="toc level2"><a href="goto-1.html"><tt>goto</tt>(1)</a></p>
+<p class="toc level2"><a href="gprof-1.html"><tt>gprof</tt>(1)</a></p>
+<p class="toc level2"><a href="grep-1.html"><tt>grep</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1.html"><tt>groups</tt>(1)</a></p>
+<p class="toc level2"><a href="groups-1b.html"><tt>groups</tt>(1B)</a></p>
+<p class="toc level2"><a href="grpck-1b.html"><tt>grpck</tt>(1B)</a></p>
+<p class="toc level2"><a href="hash-1.html"><tt>hash</tt>(1)</a></p>
+<p class="toc level2"><a href="hashcheck-1.html"><tt>hashcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="hashmake-1.html"><tt>hashmake</tt>(1)</a></p>
+<p class="toc level2"><a href="hashstat-1.html"><tt>hashstat</tt>(1)</a></p>
+<p class="toc level2"><a href="head-1.html"><tt>head</tt>(1)</a></p>
+<p class="toc level2"><a href="help-1.html"><tt>help</tt>(1)</a></p>
+<p class="toc level2"><a href="helpdate-1.html"><tt>helpdate</tt>(1)</a></p>
+<p class="toc level2"><a href="helpgid-1.html"><tt>helpgid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpint-1.html"><tt>helpint</tt>(1)</a></p>
+<p class="toc level2"><a href="helpitem-1.html"><tt>helpitem</tt>(1)</a></p>
+<p class="toc level2"><a href="helppath-1.html"><tt>helppath</tt>(1)</a></p>
+<p class="toc level2"><a href="helprange-1.html"><tt>helprange</tt>(1)</a></p>
+<p class="toc level2"><a href="helpstr-1.html"><tt>helpstr</tt>(1)</a></p>
+<p class="toc level2"><a href="helptime-1.html"><tt>helptime</tt>(1)</a></p>
+<p class="toc level2"><a href="helpuid-1.html"><tt>helpuid</tt>(1)</a></p>
+<p class="toc level2"><a href="helpyorn-1.html"><tt>helpyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="hist-1.html"><tt>hist</tt>(1)</a></p>
+<p class="toc level2"><a href="history-1.html"><tt>history</tt>(1)</a></p>
+<p class="toc level2"><a href="hostid-1.html"><tt>hostid</tt>(1)</a></p>
+<p class="toc level2"><a href="hostname-1.html"><tt>hostname</tt>(1)</a></p>
+<p class="toc level2"><a href="i286-1.html"><tt>i286</tt>(1)</a></p>
+<p class="toc level2"><a href="i386-1.html"><tt>i386</tt>(1)</a></p>
+<p class="toc level2"><a href="i486-1.html"><tt>i486</tt>(1)</a></p>
+<p class="toc level2"><a href="i860-1.html"><tt>i860</tt>(1)</a></p>
+<p class="toc level2"><a href="iapx286-1.html"><tt>iAPX286</tt>(1)</a></p>
+<p class="toc level2"><a href="iconv-1.html"><tt>iconv</tt>(1)</a></p>
+<p class="toc level2"><a href="idnconv-1.html"><tt>idnconv</tt>(1)</a></p>
+<p class="toc level2"><a href="if-1.html"><tt>if</tt>(1)</a></p>
+<p class="toc level2"><a href="indxbib-1.html"><tt>indxbib</tt>(1)</a></p>
+<p class="toc level2"><a href="install-1b.html"><tt>install</tt>(1B)</a></p>
+<p class="toc level2"><a href="ipcrm-1.html"><tt>ipcrm</tt>(1)</a></p>
+<p class="toc level2"><a href="ipcs-1.html"><tt>ipcs</tt>(1)</a></p>
+<p class="toc level2"><a href="isainfo-1.html"><tt>isainfo</tt>(1)</a></p>
+<p class="toc level2"><a href="isalist-1.html"><tt>isalist</tt>(1)</a></p>
+<p class="toc level2"><a href="jobs-1.html"><tt>jobs</tt>(1)</a></p>
+<p class="toc level2"><a href="join-1.html"><tt>join</tt>(1)</a></p>
+<p class="toc level2"><a href="jsh-1.html"><tt>jsh</tt>(1)</a></p>
+<p class="toc level2"><a href="kbd-1.html"><tt>kbd</tt>(1)</a></p>
+<p class="toc level2"><a href="kdestroy-1.html"><tt>kdestroy</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogin-1.html"><tt>keylogin</tt>(1)</a></p>
+<p class="toc level2"><a href="keylogout-1.html"><tt>keylogout</tt>(1)</a></p>
+<p class="toc level2"><a href="kill-1.html"><tt>kill</tt>(1)</a></p>
+<p class="toc level2"><a href="kinit-1.html"><tt>kinit</tt>(1)</a></p>
+<p class="toc level2"><a href="klist-1.html"><tt>klist</tt>(1)</a></p>
+<p class="toc level2"><a href="kmdb-1.html"><tt>kmdb</tt>(1)</a></p>
+<p class="toc level2"><a href="kmfcfg-1.html"><tt>kmfcfg</tt>(1)</a></p>
+<p class="toc level2"><a href="kpasswd-1.html"><tt>kpasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="krb5-config-1.html"><tt>krb5-config</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh-1.html"><tt>ksh</tt>(1)</a></p>
+<p class="toc level2"><a href="ksh93-1.html"><tt>ksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="ktutil-1.html"><tt>ktutil</tt>(1)</a></p>
+<p class="toc level2"><a href="lari-1.html"><tt>lari</tt>(1)</a></p>
+<p class="toc level2"><a href="last-1.html"><tt>last</tt>(1)</a></p>
+<p class="toc level2"><a href="lastcomm-1.html"><tt>lastcomm</tt>(1)</a></p>
+<p class="toc level2"><a href="ld-1.html"><tt>ld</tt>(1)</a></p>
+<p class="toc level2"><a href="ldap-1.html"><tt>ldap</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapadd-1.html"><tt>ldapadd</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapdelete-1.html"><tt>ldapdelete</tt>(1)</a></p>
+<p class="toc level2"><a href="ldaplist-1.html"><tt>ldaplist</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodify-1.html"><tt>ldapmodify</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapmodrdn-1.html"><tt>ldapmodrdn</tt>(1)</a></p>
+<p class="toc level2"><a href="ldapsearch-1.html"><tt>ldapsearch</tt>(1)</a></p>
+<p class="toc level2"><a href="ldd-1.html"><tt>ldd</tt>(1)</a></p>
+<p class="toc level2"><a href="ld.so.1-1.html"><tt>ld.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="let-1.html"><tt>let</tt>(1)</a></p>
+<p class="toc level2"><a href="lex-1.html"><tt>lex</tt>(1)</a></p>
+<p class="toc level2"><a href="lgrpinfo-1.html"><tt>lgrpinfo</tt>(1)</a></p>
+<p class="toc level2"><a href="limit-1.html"><tt>limit</tt>(1)</a></p>
+<p class="toc level2"><a href="line-1.html"><tt>line</tt>(1)</a></p>
+<p class="toc level2"><a href="list-devices-1.html"><tt>list_devices</tt>(1)</a></p>
+<p class="toc level2"><a href="listusers-1.html"><tt>listusers</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-autoconfig-1.html"><tt>llc2_autoconfig</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-config-1.html"><tt>llc2_config</tt>(1)</a></p>
+<p class="toc level2"><a href="llc2-stats-1.html"><tt>llc2_stats</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1.html"><tt>ln</tt>(1)</a></p>
+<p class="toc level2"><a href="ln-1b.html"><tt>ln</tt>(1B)</a></p>
+<p class="toc level2"><a href="loadkeys-1.html"><tt>loadkeys</tt>(1)</a></p>
+<p class="toc level2"><a href="locale-1.html"><tt>locale</tt>(1)</a></p>
+<p class="toc level2"><a href="localedef-1.html"><tt>localedef</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1.html"><tt>logger</tt>(1)</a></p>
+<p class="toc level2"><a href="logger-1b.html"><tt>logger</tt>(1B)</a></p>
+<p class="toc level2"><a href="login-1.html"><tt>login</tt>(1)</a></p>
+<p class="toc level2"><a href="logname-1.html"><tt>logname</tt>(1)</a></p>
+<p class="toc level2"><a href="logout-1.html"><tt>logout</tt>(1)</a></p>
+<p class="toc level2"><a href="look-1.html"><tt>look</tt>(1)</a></p>
+<p class="toc level2"><a href="lookbib-1.html"><tt>lookbib</tt>(1)</a></p>
+<p class="toc level2"><a href="lorder-1.html"><tt>lorder</tt>(1)</a></p>
+<p class="toc level2"><a href="lp-1.html"><tt>lp</tt>(1)</a></p>
+<p class="toc level2"><a href="lpc-1b.html"><tt>lpc</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpq-1b.html"><tt>lpq</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpr-1b.html"><tt>lpr</tt>(1B)</a></p>
+<p class="toc level2"><a href="lprm-1b.html"><tt>lprm</tt>(1B)</a></p>
+<p class="toc level2"><a href="lpstat-1.html"><tt>lpstat</tt>(1)</a></p>
+<p class="toc level2"><a href="lptest-1b.html"><tt>lptest</tt>(1B)</a></p>
+<p class="toc level2"><a href="ls-1.html"><tt>ls</tt>(1)</a></p>
+<p class="toc level2"><a href="ls-1b.html"><tt>ls</tt>(1B)</a></p>
+<p class="toc level2"><a href="m4-1.html"><tt>m4</tt>(1)</a></p>
+<p class="toc level2"><a href="mac-1.html"><tt>mac</tt>(1)</a></p>
+<p class="toc level2"><a href="mach-1.html"><tt>mach</tt>(1)</a></p>
+<p class="toc level2"><a href="machid-1.html"><tt>machid</tt>(1)</a></p>
+<p class="toc level2"><a href="madv.so.1-1.html"><tt>madv.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="mail-1.html"><tt>mail</tt>(1)</a></p>
+<p class="toc level2"><a href="z-mail-1b.html"><tt>Mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mail-1b.html"><tt>mail</tt>(1B)</a></p>
+<p class="toc level2"><a href="mailcompat-1.html"><tt>mailcompat</tt>(1)</a></p>
+<p class="toc level2"><a href="mailp-1.html"><tt>mailp</tt>(1)</a></p>
+<p class="toc level2"><a href="mailq-1.html"><tt>mailq</tt>(1)</a></p>
+<p class="toc level2"><a href="mailstats-1.html"><tt>mailstats</tt>(1)</a></p>
+<p class="toc level2"><a href="mailx-1.html"><tt>mailx</tt>(1)</a></p>
+<p class="toc level2"><a href="make-1s.html"><tt>make</tt>(1S)</a></p>
+<p class="toc level2"><a href="makekey-1.html"><tt>makekey</tt>(1)</a></p>
+<p class="toc level2"><a href="man-1.html"><tt>man</tt>(1)</a></p>
+<p class="toc level2"><a href="mconnect-1.html"><tt>mconnect</tt>(1)</a></p>
+<p class="toc level2"><a href="mcs-1.html"><tt>mcs</tt>(1)</a></p>
+<p class="toc level2"><a href="mdb-1.html"><tt>mdb</tt>(1)</a></p>
+<p class="toc level2"><a href="mesg-1.html"><tt>mesg</tt>(1)</a></p>
+<p class="toc level2"><a href="mkdir-1.html"><tt>mkdir</tt>(1)</a></p>
+<p class="toc level2"><a href="mkmsgs-1.html"><tt>mkmsgs</tt>(1)</a></p>
+<p class="toc level2"><a href="mkstr-1b.html"><tt>mkstr</tt>(1B)</a></p>
+<p class="toc level2"><a href="mktemp-1.html"><tt>mktemp</tt>(1)</a></p>
+<p class="toc level2"><a href="moe-1.html"><tt>moe</tt>(1)</a></p>
+<p class="toc level2"><a href="more-1.html"><tt>more</tt>(1)</a></p>
+<p class="toc level2"><a href="mp-1.html"><tt>mp</tt>(1)</a></p>
+<p class="toc level2"><a href="mpss.so.1-1.html"><tt>mpss.so.1</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcc-1.html"><tt>msgcc</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcpp-1.html"><tt>msgcpp</tt>(1)</a></p>
+<p class="toc level2"><a href="msgcvt-1.html"><tt>msgcvt</tt>(1)</a></p>
+<p class="toc level2"><a href="msgfmt-1.html"><tt>msgfmt</tt>(1)</a></p>
+<p class="toc level2"><a href="msggen-1.html"><tt>msggen</tt>(1)</a></p>
+<p class="toc level2"><a href="msgget-1.html"><tt>msgget</tt>(1)</a></p>
+<p class="toc level2"><a href="mt-1.html"><tt>mt</tt>(1)</a></p>
+<p class="toc level2"><a href="mv-1.html"><tt>mv</tt>(1)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>nawk</tt>(1)</a></p>
+</div>
+<p class="toc level2"><a href="nc-1.html"><tt>nc</tt>(1)</a></p>
+<p class="toc level2"><a href="nca-1.html"><tt>nca</tt>(1)</a></p>
+<p class="toc level2"><a href="ncab2clf-1.html"><tt>ncab2clf</tt>(1)</a></p>
+<p class="toc level2"><a href="ncakmod-1.html"><tt>ncakmod</tt>(1)</a></p>
+<p class="toc level2"><a href="neqn-1.html"><tt>neqn</tt>(1)</a></p>
+<p class="toc level2"><a href="newform-1.html"><tt>newform</tt>(1)</a></p>
+<p class="toc level2"><a href="newgrp-1.html"><tt>newgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="news-1.html"><tt>news</tt>(1)</a></p>
+<p class="toc level2"><a href="newsp-1.html"><tt>newsp</tt>(1)</a></p>
+<p class="toc level2"><a href="newtask-1.html"><tt>newtask</tt>(1)</a></p>
+<p class="toc level2"><a href="nice-1.html"><tt>nice</tt>(1)</a></p>
+<p class="toc level2"><a href="nl-1.html"><tt>nl</tt>(1)</a></p>
+<p class="toc level2"><a href="nm-1.html"><tt>nm</tt>(1)</a></p>
+<p class="toc level2"><a href="nohup-1.html"><tt>nohup</tt>(1)</a></p>
+<p class="toc level2"><a href="notify-1.html"><tt>notify</tt>(1)</a></p>
+<p class="toc level2"><a href="nroff-1.html"><tt>nroff</tt>(1)</a></p>
+<p class="toc level2"><a href="od-1.html"><tt>od</tt>(1)</a></p>
+<p class="toc level2"><a href="on-1.html"><tt>on</tt>(1)</a></p>
+<p class="toc level2"><a href="onintr-1.html"><tt>onintr</tt>(1)</a></p>
+<p class="toc level2"><a href="optisa-1.html"><tt>optisa</tt>(1)</a></p>
+<p class="toc level2"><a href="pack-1.html"><tt>pack</tt>(1)</a></p>
+<p class="toc level2"><a href="page-1.html"><tt>page</tt>(1)</a></p>
+<p class="toc level2"><a href="pagesize-1.html"><tt>pagesize</tt>(1)</a></p>
+<p class="toc level2"><a href="pargs-1.html"><tt>pargs</tt>(1)</a></p>
+<p class="toc level2"><a href="passwd-1.html"><tt>passwd</tt>(1)</a></p>
+<p class="toc level2"><a href="paste-1.html"><tt>paste</tt>(1)</a></p>
+<p class="toc level2"><a href="patch-1.html"><tt>patch</tt>(1)</a></p>
+<p class="toc level2"><a href="pathchk-1.html"><tt>pathchk</tt>(1)</a></p>
+<p class="toc level2"><a href="pax-1.html"><tt>pax</tt>(1)</a></p>
+<p class="toc level2"><a href="pcat-1.html"><tt>pcat</tt>(1)</a></p>
+<p class="toc level2"><a href="pcred-1.html"><tt>pcred</tt>(1)</a></p>
+<p class="toc level2"><a href="pdp11-1.html"><tt>pdp11</tt>(1)</a></p>
+<p class="toc level2"><a href="perl-1.html"><tt>perl</tt>(1)</a></p>
+<p class="toc level2"><a href="pfcsh-1.html"><tt>pfcsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pfexec-1.html"><tt>pfexec</tt>(1)</a></p>
+<p class="toc level2"><a href="pfiles-1.html"><tt>pfiles</tt>(1)</a></p>
+<p class="toc level2"><a href="pfksh-1.html"><tt>pfksh</tt>(1)</a></p>
+<p class="toc level2"><a href="pflags-1.html"><tt>pflags</tt>(1)</a></p>
+<p class="toc level2"><a href="pfsh-1.html"><tt>pfsh</tt>(1)</a></p>
+<p class="toc level2"><a href="pg-1.html"><tt>pg</tt>(1)</a></p>
+<p class="toc level2"><a href="pgrep-1.html"><tt>pgrep</tt>(1)</a></p>
+<p class="toc level2"><a href="pkcs11-inspect-1.html"><tt>pkcs11_inspect</tt>(1)</a></p>
+<p class="toc level2"><a href="pkginfo-1.html"><tt>pkginfo</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgmk-1.html"><tt>pkgmk</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgparam-1.html"><tt>pkgparam</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgproto-1.html"><tt>pkgproto</tt>(1)</a></p>
+<p class="toc level2"><a href="pkgtrans-1.html"><tt>pkgtrans</tt>(1)</a></p>
+<p class="toc level2"><a href="pkill-1.html"><tt>pkill</tt>(1)</a></p>
+<p class="toc level2"><a href="pklogin-finder-1.html"><tt>pklogin_finder</tt>(1)</a></p>
+<p class="toc level2"><a href="pktool-1.html"><tt>pktool</tt>(1)</a></p>
+<p class="toc level2"><a href="plabel-1.html"><tt>plabel</tt>(1)</a></p>
+<p class="toc level2"><a href="pldd-1.html"><tt>pldd</tt>(1)</a></p>
+<p class="toc level2"><a href="plgrp-1.html"><tt>plgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="plimit-1.html"><tt>plimit</tt>(1)</a></p>
+<p class="toc level2"><a href="pmadvise-1.html"><tt>pmadvise</tt>(1)</a></p>
+<p class="toc level2"><a href="pmap-1.html"><tt>pmap</tt>(1)</a></p>
+<p class="toc level2"><a href="popd-1.html"><tt>popd</tt>(1)</a></p>
+<p class="toc level2"><a href="postdaisy-1.html"><tt>postdaisy</tt>(1)</a></p>
+<p class="toc level2"><a href="postdmd-1.html"><tt>postdmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postio-1.html"><tt>postio</tt>(1)</a></p>
+<p class="toc level2"><a href="postmd-1.html"><tt>postmd</tt>(1)</a></p>
+<p class="toc level2"><a href="postplot-1.html"><tt>postplot</tt>(1)</a></p>
+<p class="toc level2"><a href="postprint-1.html"><tt>postprint</tt>(1)</a></p>
+<p class="toc level2"><a href="postreverse-1.html"><tt>postreverse</tt>(1)</a></p>
+<p class="toc level2"><a href="posttek-1.html"><tt>posttek</tt>(1)</a></p>
+<p class="toc level2"><a href="ppgsz-1.html"><tt>ppgsz</tt>(1)</a></p>
+<p class="toc level2"><a href="ppriv-1.html"><tt>ppriv</tt>(1)</a></p>
+<p class="toc level2"><a href="pr-1.html"><tt>pr</tt>(1)</a></p>
+<p class="toc level2"><a href="praliases-1.html"><tt>praliases</tt>(1)</a></p>
+<p class="toc level2"><a href="prctl-1.html"><tt>prctl</tt>(1)</a></p>
+<p class="toc level2"><a href="preap-1.html"><tt>preap</tt>(1)</a></p>
+<p class="toc level2"><a href="prex-1.html"><tt>prex</tt>(1)</a></p>
+<p class="toc level2"><a href="print-1.html"><tt>print</tt>(1)</a></p>
+<p class="toc level2"><a href="printenv-1b.html"><tt>printenv</tt>(1B)</a></p>
+<p class="toc level2"><a href="printf-1.html"><tt>printf</tt>(1)</a></p>
+<p class="toc level2"><a href="priocntl-1.html"><tt>priocntl</tt>(1)</a></p>
+<p class="toc level2"><a href="proc-1.html"><tt>proc</tt>(1)</a></p>
+<p class="toc level2"><a href="prof-1.html"><tt>prof</tt>(1)</a></p>
+<p class="toc level2"><a href="profiles-1.html"><tt>profiles</tt>(1)</a></p>
+<p class="toc level2"><a href="projects-1.html"><tt>projects</tt>(1)</a></p>
+<p class="toc level2"><a href="prs-1.html"><tt>prs</tt>(1)</a></p>
+<p class="toc level2"><a href="prt-1.html"><tt>prt</tt>(1)</a></p>
+<p class="toc level2"><a href="prun-1.html"><tt>prun</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1.html"><tt>ps</tt>(1)</a></p>
+<p class="toc level2"><a href="ps-1b.html"><tt>ps</tt>(1B)</a></p>
+<p class="toc level2"><a href="psig-1.html"><tt>psig</tt>(1)</a></p>
+<p class="toc level2"><a href="pstack-1.html"><tt>pstack</tt>(1)</a></p>
+<p class="toc level2"><a href="pstop-1.html"><tt>pstop</tt>(1)</a></p>
+<p class="toc level2"><a href="ptime-1.html"><tt>ptime</tt>(1)</a></p>
+<p class="toc level2"><a href="ptree-1.html"><tt>ptree</tt>(1)</a></p>
+<p class="toc level2"><a href="pushd-1.html"><tt>pushd</tt>(1)</a></p>
+<p class="toc level2"><a href="pvs-1.html"><tt>pvs</tt>(1)</a></p>
+<p class="toc level2"><a href="pwait-1.html"><tt>pwait</tt>(1)</a></p>
+<p class="toc level2"><a href="pwd-1.html"><tt>pwd</tt>(1)</a></p>
+<p class="toc level2"><a href="pwdx-1.html"><tt>pwdx</tt>(1)</a></p>
+<p class="toc level2"><a href="ranlib-1.html"><tt>ranlib</tt>(1)</a></p>
+<p class="toc level2"><a href="rcapstat-1.html"><tt>rcapstat</tt>(1)</a></p>
+<p class="toc level2"><a href="rcp-1.html"><tt>rcp</tt>(1)</a></p>
+<p class="toc level2"><a href="rdist-1.html"><tt>rdist</tt>(1)</a></p>
+<p class="toc level2"><a href="read-1.html"><tt>read</tt>(1)</a></p>
+<p class="toc level2"><a href="readonly-1.html"><tt>readonly</tt>(1)</a></p>
+<p class="toc level2"><a href="red-1.html"><tt>red</tt>(1)</a></p>
+<p class="toc level2"><a href="refer-1.html"><tt>refer</tt>(1)</a></p>
+<p class="toc level2"><a href="regcmp-1.html"><tt>regcmp</tt>(1)</a></p>
+<p class="toc level2"><a href="rehash-1.html"><tt>rehash</tt>(1)</a></p>
+<p class="toc level2"><a href="remote-shell-1.html"><tt>remote_shell</tt>(1)</a></p>
+<p class="toc level2"><a href="remsh-1.html"><tt>remsh</tt>(1)</a></p>
+<p class="toc level2"><a href="renice-1.html"><tt>renice</tt>(1)</a></p>
+<p class="toc level2"><a href="repeat-1.html"><tt>repeat</tt>(1)</a></p>
+<p class="toc level2"><a href="reset-1b.html"><tt>reset</tt>(1B)</a></p>
+<p class="toc level2"><a href="return-1.html"><tt>return</tt>(1)</a></p>
+<p class="toc level2"><a href="rev-1.html"><tt>rev</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh-1.html"><tt>rksh</tt>(1)</a></p>
+<p class="toc level2"><a href="rksh93-1.html"><tt>rksh93</tt>(1)</a></p>
+<p class="toc level2"><a href="rlogin-1.html"><tt>rlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="rm-1.html"><tt>rm</tt>(1)</a></p>
+<p class="toc level2"><a href="rmail-1.html"><tt>rmail</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdel-1.html"><tt>rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="rmdir-1.html"><tt>rmdir</tt>(1)</a></p>
+<p class="toc level2"><a href="rmformat-1.html"><tt>rmformat</tt>(1)</a></p>
+<p class="toc level2"><a href="rmmount-1.html"><tt>rmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="rmumount-1.html"><tt>rmumount</tt>(1)</a></p>
+<p class="toc level2"><a href="roffbib-1.html"><tt>roffbib</tt>(1)</a></p>
+<p class="toc level2"><a href="roles-1.html"><tt>roles</tt>(1)</a></p>
+<p class="toc level2"><a href="rpcgen-1.html"><tt>rpcgen</tt>(1)</a></p>
+<p class="toc level2"><a href="rpm2cpio-1.html"><tt>rpm2cpio</tt>(1)</a></p>
+<p class="toc level2"><a href="rsh-1.html"><tt>rsh</tt>(1)</a></p>
+<p class="toc level2"><a href="runat-1.html"><tt>runat</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1.html"><tt>rup</tt>(1)</a></p>
+<p class="toc level2"><a href="rup-1c.html"><tt>rup</tt>(1C)</a></p>
+<p class="toc level2"><a href="ruptime-1.html"><tt>ruptime</tt>(1)</a></p>
+<p class="toc level2"><a href="rusage-1b.html"><tt>rusage</tt>(1B)</a></p>
+<p class="toc level2"><a href="rusers-1.html"><tt>rusers</tt>(1)</a></p>
+<p class="toc level2"><a href="rwho-1.html"><tt>rwho</tt>(1)</a></p>
+<p class="toc level2"><a href="sact-1.html"><tt>sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sar-1.html"><tt>sar</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-1.html"><tt>sccs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-admin-1.html"><tt>sccs-admin</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-cdc-1.html"><tt>sccs-cdc</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-comb-1.html"><tt>sccs-comb</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-delta-1.html"><tt>sccs-delta</tt>(1)</a></p>
+<p class="toc level2"><a href="sccsdiff-1.html"><tt>sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-get-1.html"><tt>sccs-get</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-help-1.html"><tt>sccs-help</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prs-1.html"><tt>sccs-prs</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-prt-1.html"><tt>sccs-prt</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-rmdel-1.html"><tt>sccs-rmdel</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sact-1.html"><tt>sccs-sact</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-sccsdiff-1.html"><tt>sccs-sccsdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-unget-1.html"><tt>sccs-unget</tt>(1)</a></p>
+<p class="toc level2"><a href="sccs-val-1.html"><tt>sccs-val</tt>(1)</a></p>
+<p class="toc level2"><a href="scp-1.html"><tt>scp</tt>(1)</a></p>
+<p class="toc level2"><a href="script-1.html"><tt>script</tt>(1)</a></p>
+<p class="toc level2"><a href="sdiff-1.html"><tt>sdiff</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1.html"><tt>sed</tt>(1)</a></p>
+<p class="toc level2"><a href="sed-1b.html"><tt>sed</tt>(1B)</a></p>
+<p class="toc level2"><a href="select-1.html"><tt>select</tt>(1)</a></p>
+<p class="toc level2"><a href="set-1.html"><tt>set</tt>(1)</a></p>
+<p class="toc level2"><a href="setenv-1.html"><tt>setenv</tt>(1)</a></p>
+<p class="toc level2"><a href="setfacl-1.html"><tt>setfacl</tt>(1)</a></p>
+<p class="toc level2"><a href="setlabel-1.html"><tt>setlabel</tt>(1)</a></p>
+<p class="toc level2"><a href="setpgrp-1.html"><tt>setpgrp</tt>(1)</a></p>
+<p class="toc level2"><a href="settime-1.html"><tt>settime</tt>(1)</a></p>
+<p class="toc level2"><a href="sftp-1.html"><tt>sftp</tt>(1)</a></p>
+<p class="toc level2"><a href="sh-1.html"><tt>sh</tt>(1)</a></p>
+<p class="toc level2"><a href="shcomp-1.html"><tt>shcomp</tt>(1)</a></p>
+<p class="toc level2"><a href="shell-builtins-1.html"><tt>shell_builtins</tt>(1)</a></p>
+<p class="toc level2"><a href="shift-1.html"><tt>shift</tt>(1)</a></p>
+<p class="toc level2"><a href="shutdown-1b.html"><tt>shutdown</tt>(1B)</a></p>
+<p class="toc level2"><a href="size-1.html"><tt>size</tt>(1)</a></p>
+<p class="toc level2"><a href="sleep-1.html"><tt>sleep</tt>(1)</a></p>
+<p class="toc level2"><a href="smbutil-1.html"><tt>smbutil</tt>(1)</a></p>
+<p class="toc level2"><a href="snca-1.html"><tt>snca</tt>(1)</a></p>
+<p class="toc level2"><a href="soelim-1.html"><tt>soelim</tt>(1)</a></p>
+<p class="toc level2"><a href="sort-1.html"><tt>sort</tt>(1)</a></p>
+<p class="toc level2"><a href="sortbib-1.html"><tt>sortbib</tt>(1)</a></p>
+<p class="toc level2"><a href="sotruss-1.html"><tt>sotruss</tt>(1)</a></p>
+<p class="toc level2"><a href="source-1.html"><tt>source</tt>(1)</a></p>
+<p class="toc level2"><a href="sparc-1.html"><tt>sparc</tt>(1)</a></p>
+<p class="toc level2"><a href="spell-1.html"><tt>spell</tt>(1)</a></p>
+<p class="toc level2"><a href="spellin-1.html"><tt>spellin</tt>(1)</a></p>
+<p class="toc level2"><a href="split-1.html"><tt>split</tt>(1)</a></p>
+<p class="toc level2"><a href="srchtxt-1.html"><tt>srchtxt</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-1.html"><tt>ssh</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-add-1.html"><tt>ssh-add</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-agent-1.html"><tt>ssh-agent</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-http-proxy-connect-1.html"><tt>ssh-http-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keygen-1.html"><tt>ssh-keygen</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-keyscan-1.html"><tt>ssh-keyscan</tt>(1)</a></p>
+<p class="toc level2"><a href="ssh-socks5-proxy-connect-1.html"><tt>ssh-socks5-proxy-connect</tt>(1)</a></p>
+<p class="toc level2"><a href="stop-1.html"><tt>stop</tt>(1)</a></p>
+<p class="toc level2"><a href="strchg-1.html"><tt>strchg</tt>(1)</a></p>
+<p class="toc level2"><a href="strconf-1.html"><tt>strconf</tt>(1)</a></p>
+<p class="toc level2"><a href="strings-1.html"><tt>strings</tt>(1)</a></p>
+<p class="toc level2"><a href="strip-1.html"><tt>strip</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1.html"><tt>stty</tt>(1)</a></p>
+<p class="toc level2"><a href="stty-1b.html"><tt>stty</tt>(1B)</a></p>
+<p class="toc level2"><a href="sum-1.html"><tt>sum</tt>(1)</a></p>
+<p class="toc level2"><a href="sum-1b.html"><tt>sum</tt>(1B)</a></p>
+<p class="toc level2"><a href="sun-1.html"><tt>sun</tt>(1)</a></p>
+<p class="toc level2"><a href="suspend-1.html"><tt>suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="svcprop-1.html"><tt>svcprop</tt>(1)</a></p>
+<p class="toc level2"><a href="svcs-1.html"><tt>svcs</tt>(1)</a></p>
+<p class="toc level2"><a href="switch-1.html"><tt>switch</tt>(1)</a></p>
+<p class="toc level2"><a href="symorder-1.html"><tt>symorder</tt>(1)</a></p>
+<p class="toc level2"><a href="sys-suspend-1.html"><tt>sys-suspend</tt>(1)</a></p>
+<p class="toc level2"><a href="sysv-make-1.html"><tt>sysV-make</tt>(1)</a></p>
+<p class="toc level2"><a href="t300-1.html"><tt>t300</tt>(1)</a></p>
+<p class="toc level2"><a href="t300s-1.html"><tt>t300s</tt>(1)</a></p>
+<p class="toc level2"><a href="t4014-1.html"><tt>t4014</tt>(1)</a></p>
+<p class="toc level2"><a href="t450-1.html"><tt>t450</tt>(1)</a></p>
+<p class="toc level2"><a href="tabs-1.html"><tt>tabs</tt>(1)</a></p>
+<p class="toc level2"><a href="tail-1.html"><tt>tail</tt>(1)</a></p>
+<p class="toc level2"><a href="talk-1.html"><tt>talk</tt>(1)</a></p>
+<p class="toc level2"><a href="tar-1.html"><tt>tar</tt>(1)</a></p>
+<p class="toc level2"><a href="tbl-1.html"><tt>tbl</tt>(1)</a></p>
+<p class="toc level2"><a href="tcopy-1.html"><tt>tcopy</tt>(1)</a></p>
+<p class="toc level2"><a href="tee-1.html"><tt>tee</tt>(1)</a></p>
+<p class="toc level2"><a href="tek-1.html"><tt>tek</tt>(1)</a></p>
+<p class="toc level2"><a href="telnet-1.html"><tt>telnet</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1.html"><tt>test</tt>(1)</a></p>
+<p class="toc level2"><a href="test-1b.html"><tt>test</tt>(1B)</a></p>
+<p class="toc level2"><a href="tftp-1.html"><tt>tftp</tt>(1)</a></p>
+<p class="toc level2"><a href="time-1.html"><tt>time</tt>(1)</a></p>
+<p class="toc level2"><a href="timemanp-1.html"><tt>timemanp</tt>(1)</a></p>
+<p class="toc level2"><a href="times-1.html"><tt>times</tt>(1)</a></p>
+<p class="toc level2"><a href="timesysp-1.html"><tt>timesysp</tt>(1)</a></p>
+<p class="toc level2"><a href="timex-1.html"><tt>timex</tt>(1)</a></p>
+<p class="toc level2"><a href="tip-1.html"><tt>tip</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfdump-1.html"><tt>tnfdump</tt>(1)</a></p>
+<p class="toc level2"><a href="tnfxtract-1.html"><tt>tnfxtract</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1.html"><tt>touch</tt>(1)</a></p>
+<p class="toc level2"><a href="touch-1b.html"><tt>touch</tt>(1B)</a></p>
+<p class="toc level2"><a href="tplot-1.html"><tt>tplot</tt>(1)</a></p>
+<p class="toc level2"><a href="tput-1.html"><tt>tput</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1.html"><tt>tr</tt>(1)</a></p>
+<p class="toc level2"><a href="tr-1b.html"><tt>tr</tt>(1B)</a></p>
+<p class="toc level2"><a href="trap-1.html"><tt>trap</tt>(1)</a></p>
+<p class="toc level2"><a href="troff-1.html"><tt>troff</tt>(1)</a></p>
+<p class="toc level2"><a href="true-1.html"><tt>true</tt>(1)</a></p>
+<p class="toc level2"><a href="truss-1.html"><tt>truss</tt>(1)</a></p>
+<p class="toc level2"><a href="tset-1b.html"><tt>tset</tt>(1B)</a></p>
+<p class="toc level2"><a href="tsort-1.html"><tt>tsort</tt>(1)</a></p>
+<p class="toc level2"><a href="tty-1.html"><tt>tty</tt>(1)</a></p>
+<p class="toc level2"><a href="type-1.html"><tt>type</tt>(1)</a></p>
+<p class="toc level2"><a href="typeset-1.html"><tt>typeset</tt>(1)</a></p>
+<p class="toc level2"><a href="u370-1.html"><tt>u370</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b-1.html"><tt>u3b</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b15-1.html"><tt>u3b15</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b2-1.html"><tt>u3b2</tt>(1)</a></p>
+<p class="toc level2"><a href="u3b5-1.html"><tt>u3b5</tt>(1)</a></p>
+<p class="toc level2"><a href="ul-1.html"><tt>ul</tt>(1)</a></p>
+<p class="toc level2"><a href="ulimit-1.html"><tt>ulimit</tt>(1)</a></p>
+<p class="toc level2"><a href="umask-1.html"><tt>umask</tt>(1)</a></p>
+<p class="toc level2"><a href="unalias-1.html"><tt>unalias</tt>(1)</a></p>
+<p class="toc level2"><a href="uname-1.html"><tt>uname</tt>(1)</a></p>
+<p class="toc level2"><a href="uncompress-1.html"><tt>uncompress</tt>(1)</a></p>
+<p class="toc level2"><a href="unexpand-1.html"><tt>unexpand</tt>(1)</a></p>
+<p class="toc level2"><a href="unget-1.html"><tt>unget</tt>(1)</a></p>
+<p class="toc level2"><a href="unhash-1.html"><tt>unhash</tt>(1)</a></p>
+<p class="toc level2"><a href="unifdef-1.html"><tt>unifdef</tt>(1)</a></p>
+<p class="toc level2"><a href="uniq-1.html"><tt>uniq</tt>(1)</a></p>
+<p class="toc level2"><a href="units-1.html"><tt>units</tt>(1)</a></p>
+<p class="toc level2"><a href="unix2dos-1.html"><tt>unix2dos</tt>(1)</a></p>
+<p class="toc level2"><a href="unlimit-1.html"><tt>unlimit</tt>(1)</a></p>
+<p class="toc level2"><a href="unpack-1.html"><tt>unpack</tt>(1)</a></p>
+<p class="toc level2"><a href="unset-1.html"><tt>unset</tt>(1)</a></p>
+<p class="toc level2"><a href="unsetenv-1.html"><tt>unsetenv</tt>(1)</a></p>
+<p class="toc level2"><a href="until-1.html"><tt>until</tt>(1)</a></p>
+<p class="toc level2"><a href="uptime-1.html"><tt>uptime</tt>(1)</a></p>
+<p class="toc level2"><a href="userattr-1.html"><tt>userattr</tt>(1)</a></p>
+<p class="toc level2"><a href="users-1b.html"><tt>users</tt>(1B)</a></p>
+<p class="toc level2"><a href="uucp-1c.html"><tt>uucp</tt>(1C)</a></p>
+<p class="toc level2"><a href="uudecode-1c.html"><tt>uudecode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuencode-1c.html"><tt>uuencode</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuglist-1c.html"><tt>uuglist</tt>(1C)</a></p>
+<p class="toc level2"><a href="uulog-1c.html"><tt>uulog</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuname-1c.html"><tt>uuname</tt>(1C)</a></p>
+<p class="toc level2"><a href="uupick-1c.html"><tt>uupick</tt>(1C)</a></p>
+<p class="toc level2"><a href="uustat-1c.html"><tt>uustat</tt>(1C)</a></p>
+<p class="toc level2"><a href="uuto-1c.html"><tt>uuto</tt>(1C)</a></p>
+<p class="toc level2"><a href="uux-1c.html"><tt>uux</tt>(1C)</a></p>
+<p class="toc level2"><a href="vacation-1.html"><tt>vacation</tt>(1)</a></p>
+<p class="toc level2"><a href="val-1.html"><tt>val</tt>(1)</a></p>
+<p class="toc level2"><a href="valdate-1.html"><tt>valdate</tt>(1)</a></p>
+<p class="toc level2"><a href="valgid-1.html"><tt>valgid</tt>(1)</a></p>
+<p class="toc level2"><a href="valint-1.html"><tt>valint</tt>(1)</a></p>
+<p class="toc level2"><a href="valpath-1.html"><tt>valpath</tt>(1)</a></p>
+<p class="toc level2"><a href="valrange-1.html"><tt>valrange</tt>(1)</a></p>
+<p class="toc level2"><a href="valstr-1.html"><tt>valstr</tt>(1)</a></p>
+<p class="toc level2"><a href="valtime-1.html"><tt>valtime</tt>(1)</a></p>
+<p class="toc level2"><a href="valuid-1.html"><tt>valuid</tt>(1)</a></p>
+<p class="toc level2"><a href="valyorn-1.html"><tt>valyorn</tt>(1)</a></p>
+<p class="toc level2"><a href="vax-1.html"><tt>vax</tt>(1)</a></p>
+<p class="toc level2"><a href="vc-1.html"><tt>vc</tt>(1)</a></p>
+<p class="toc level2"><a href="vedit-1.html"><tt>vedit</tt>(1)</a></p>
+<p class="toc level2"><a href="ver-1.html"><tt>ver</tt>(1)</a></p>
+<p class="toc level2"><a href="vgrind-1.html"><tt>vgrind</tt>(1)</a></p>
+<p class="toc level2"><a href="vi-1.html"><tt>vi</tt>(1)</a></p>
+<p class="toc level2"><a href="view-1.html"><tt>view</tt>(1)</a></p>
+<p class="toc level2"><a href="vipw-1b.html"><tt>vipw</tt>(1B)</a></p>
+<p class="toc level2"><a href="volcheck-1.html"><tt>volcheck</tt>(1)</a></p>
+<p class="toc level2"><a href="volrmmount-1.html"><tt>volrmmount</tt>(1)</a></p>
+<p class="toc level2"><a href="w-1.html"><tt>w</tt>(1)</a></p>
+<p class="toc level2"><a href="wait-1.html"><tt>wait</tt>(1)</a></p>
+<p class="toc level2"><a href="wc-1.html"><tt>wc</tt>(1)</a></p>
+<p class="toc level2"><a href="what-1.html"><tt>what</tt>(1)</a></p>
+<p class="toc level2"><a href="whatis-1.html"><tt>whatis</tt>(1)</a></p>
+<p class="toc level2"><a href="whence-1.html"><tt>whence</tt>(1)</a></p>
+<p class="toc level2"><a href="whereis-1b.html"><tt>whereis</tt>(1B)</a></p>
+<p class="toc level2"><a href="which-1.html"><tt>which</tt>(1)</a></p>
+<p class="toc level2"><a href="while-1.html"><tt>while</tt>(1)</a></p>
+<p class="toc level2"><a href="who-1.html"><tt>who</tt>(1)</a></p>
+<p class="toc level2"><a href="whoami-1b.html"><tt>whoami</tt>(1B)</a></p>
+<p class="toc level2"><a href="whocalls-1.html"><tt>whocalls</tt>(1)</a></p>
+<p class="toc level2"><a href="whois-1.html"><tt>whois</tt>(1)</a></p>
+<p class="toc level2"><a href="write-1.html"><tt>write</tt>(1)</a></p>
+<p class="toc level2"><a href="xargs-1.html"><tt>xargs</tt>(1)</a></p>
+<p class="toc level2"><a href="xgettext-1.html"><tt>xgettext</tt>(1)</a></p>
+<p class="toc level2"><a href="xstr-1.html"><tt>xstr</tt>(1)</a></p>
+<p class="toc level2"><a href="yacc-1.html"><tt>yacc</tt>(1)</a></p>
+<p class="toc level2"><a href="yes-1.html"><tt>yes</tt>(1)</a></p>
+<p class="toc level2"><a href="ypcat-1.html"><tt>ypcat</tt>(1)</a></p>
+<p class="toc level2"><a href="ypmatch-1.html"><tt>ypmatch</tt>(1)</a></p>
+<p class="toc level2"><a href="yppasswd-1.html"><tt>yppasswd</tt>(1)</a></p>
+<p class="toc level2"><a href="ypwhich-1.html"><tt>ypwhich</tt>(1)</a></p>
+<p class="toc level2"><a href="zcat-1.html"><tt>zcat</tt>(1)</a></p>
+<p class="toc level2"><a href="zlogin-1.html"><tt>zlogin</tt>(1)</a></p>
+<p class="toc level2"><a href="zonename-1.html"><tt>zonename</tt>(1)</a></p>
+<p class="toc level2"><a href="zonestat-1.html"><tt>zonestat</tt>(1)</a></p>
+
+</div>
+
+<a name="REFMAN1content"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1nawk-1"></a><a name="nawk-1"></a><h3>nawk</h3>
+<p>- pattern scanning and processing language</p><h3>Synopsis</h3>
+<pre><tt>/usr/bin/nawk</tt> [<tt>-F</tt> <var>ERE</var>] [<tt>-v</tt> <var>assignment</var>] <var>'program'</var> | <tt>-f</tt> <var>progfile</var>... 
+     [<var>argument</var>]...</pre><pre><tt>/usr/xpg4/bin/awk</tt> [<tt>-F</tt> <var>ERE</var>] [<tt>-v</tt> <var>assignment</var>]... <var>'program'</var> | <tt>-f</tt> <var>progfile</var>... 
+     [<var>argument</var>]...</pre><h3>Description</h3>
+<p>The <tt>/usr/bin/nawk</tt> and <tt>/usr/xpg4/bin/awk</tt> utilities execute <var>program</var>s written in the <tt>nawk</tt> programming
+language, which is specialized for textual data manipulation. A <tt>nawk</tt> <var>program</var> is a
+sequence of patterns and corresponding actions. The string specifying <var>program</var> must be
+enclosed in single quotes (') to protect it from interpretation by the
+shell. The sequence of pattern - action statements can be specified in
+the command line as <var>program</var> or in one, or more, file(s) specified by
+the <tt>-f</tt><var>progfile</var> option. When input is read that matches a pattern, the
+action associated with the pattern is performed.</p><p>Input is interpreted as a sequence of records. By default, a record
+is a line, but this can be changed by using the <tt>RS</tt>
+built-in variable. Each record of input is matched to each pattern in
+the <var>program</var>. For each pattern matched, the associated action is executed.</p><p>The <tt>nawk</tt> utility interprets each input record as a sequence of fields
+where, by default, a field is a string of non-blank characters. This
+default white-space field delimiter (blanks and/or tabs) can be changed by using
+the <tt>FS</tt> built-in variable or the <tt>-F</tt><var>ERE</var> option. The <tt>nawk</tt> utility denotes
+the first field in a record <tt>$1</tt>, the second <tt>$2</tt>, and so
+forth. The symbol <tt>$0</tt> refers to the entire record; setting any other
+field causes the reevaluation of <tt>$0</tt>. Assigning to <tt>$0</tt> resets the values of
+all fields and the <tt>NF</tt> built-in variable.</p><h3>Options</h3>
+<p>The following options are supported:</p><dl><dt><tt>-F</tt> <var>ERE</var></dt>
+<dd><p>Define the input field separator to be the extended regular expression <var>ERE</var>, before any input is read (can be a character).</p></dd>
+<dt><tt>-f</tt> <var>progfile</var></dt>
+<dd><p>Specifies the pathname of the file <var>progfile</var> containing a <tt>nawk</tt> program. If multiple instances of this option are specified, the concatenation of the files specified as <var>progfile</var> in the order specified is the <tt>nawk</tt> program. The <tt>nawk</tt> program can alternatively be specified in the command line as a single argument.</p></dd>
+<dt><tt>-v</tt> <var>assignment</var></dt>
+<dd><p>The <var>assignment</var> argument must be in the same form as an <var>assignment</var> operand. The assignment is of the form <var>var=value</var>, where <var>var</var> is the name of one of the variables described below. The specified assignment occurs before executing the <tt>nawk</tt> program, including the actions associated with <tt>BEGIN</tt> patterns (if any). Multiple occurrences of this option can be specified.</p></dd>
+</dl>
+<h3>Operands</h3>
+<p>The following operands are supported:</p><dl><dt><var>program</var></dt>
+<dd><p>If no <tt>-f</tt> option is specified, the first operand to <tt>nawk</tt> is the text of the <tt>nawk</tt> program. The application supplies the <var>program</var> operand as a single argument to <tt>nawk.</tt> If the text does not end in a newline character, <tt>nawk</tt> interprets the text as if it did.</p></dd>
+<dt><var>argument</var></dt>
+<dd><p>Either of the following two types of <var>argument</var> can be intermixed: </p><dl><dt><var>file</var></dt>
+<dd><p>A pathname of a file that contains the input to be read, which is matched against the set of patterns in the program. If no <i>file</i> operands are specified, or if a <i>file</i> operand is <tt>&#45;</tt>, the standard input is used.</p></dd>
+<dt><var>assignment</var></dt>
+<dd><p>An operand that begins with an underscore or alphabetic character from the portable character set, followed by a sequence of underscores, digits and alphabetics from the portable character set, followed by the <tt>=</tt> character specifies a variable assignment rather than a pathname. The characters before the <tt>=</tt> represent the name of a <tt>nawk</tt> variable. If that name is a <tt>nawk</tt> reserved word, the behavior is undefined. The characters following the equal sign is interpreted as if they appeared in the <tt>nawk</tt> program preceded and followed by a double-quote (<tt>"</tt>) character, as a <tt>STRING</tt> token , except that if the last character is an unescaped backslash, it is interpreted as a literal backslash rather than as the first character of the sequence <tt>\</tt>.. The variable is assigned the value of that <tt>STRING</tt> token. If the value is considered a <var>numeric</var>string<var>,</var> the variable is assigned its numeric value. Each such variable assignment is performed just before the processing of the following <i>file</i>, if any. Thus, an assignment before the first <tt>file</tt> argument is executed after the <tt>BEGIN</tt> actions (if any), while an assignment after the last <i>file</i> argument is executed before the <tt>END</tt> actions (if any). If there are no <i>file</i> arguments, assignments are executed before processing the standard input.</p></dd>
+</dl>
+</dd>
+</dl>
+<h3>INPUT FILES</h3>
+<p>Input files to the <tt>nawk</tt> program from any of the following sources:</p>
+<ul><li><p>any <i>file</i> operands or their equivalents, achieved by modifying the <tt>nawk</tt> variables <tt>ARGV</tt> and <tt>ARGC</tt></p></li>
+<li><p>standard input in the absence of any <i>file</i> operands</p></li>
+<li><p>arguments to the <tt>getline</tt> function</p></li></ul>
+<p>must be text files. Whether the variable <tt>RS</tt> is set to a
+value other than a newline character or not, for these files, implementations
+support records terminated with the specified separator up to <tt>{LINE_MAX}</tt> bytes and
+can support longer records.</p><p>If <tt>-</tt><tt>f</tt> <var>progfile</var> is specified, the files named by each of the
+<var>progfile</var> option-arguments must be text files containing an <tt>nawk</tt> program.</p><p>The standard input are used only if no <i>file</i> operands are specified,
+or if a <i>file</i> operand is <tt>&#45;</tt>.</p><h3>Extended Description</h3>
+<p>A <tt>nawk</tt> program is composed of pairs of the form:</p><pre>pattern { <var>action</var> }</pre><p>Either the pattern or the action (including the enclosing brace characters) can
+be omitted. Pattern-action statements are separated by a semicolon or by a
+newline.</p><p>A missing pattern matches any record of input, and a missing action
+is equivalent to an action that writes the matched record of input
+to standard output.</p><p>Execution of the <tt>nawk</tt> program starts by first executing the actions associated
+with all <tt>BEGIN</tt> patterns in the order they occur in the program.
+Then each <i>file</i> operand (or standard input if no files were specified)
+is processed by reading data from the file until a record separator is
+seen (a newline character by default), splitting the current record into fields
+using the current value of <tt>FS</tt>, evaluating each pattern in the program
+in the order of occurrence, and executing the action associated with each pattern
+that matches the current record. The action for a matching pattern is
+executed before evaluating subsequent patterns. Last, the actions associated with all <tt>END</tt>
+patterns is executed in the order they occur in the program.</p><h4>Expressions in nawk</h4>
+<p>Expressions describe computations used in <var>patterns</var> and <var>actions</var>. In the following table,
+valid expression operations are given in groups from highest precedence first to
+lowest precedence last, with equal-precedence operators grouped between horizontal lines. In expression evaluation,
+where the grammar is formally ambiguous, higher precedence operators are evaluated before
+lower precedence operators.  In this table <var>expr,</var> <var>expr1,</var> <var>expr2,</var> and <var>expr3</var>
+represent any expression, while <var>lvalue</var> represents any entity that can be assigned to
+(that is, on the left side of an assignment operator).</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="25%"><col width="25%"><col width="24%"><col width="25%"><tr><th class="columncaption" align="left" valign="top"><div class="headerpadding"><tt>Syntax</tt></div></th>
+<th class="columncaption" align="left" valign="top"><div class="headerpadding"><tt>Name</tt></div></th>
+<th class="columncaption" align="left" valign="top"><div class="headerpadding"><tt>Type of Result</tt></div></th>
+<th class="columncaption" align="left" valign="top"><div class="headerpadding"><tt>Associativity</tt></div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">( <i>expr</i> )</div></td>
+<td align="left" valign="top"><div class="pad5x10">Grouping</div></td>
+<td align="left" valign="top"><div class="pad5x10">type
+of <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">$<i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Field reference</div></td>
+<td align="left" valign="top"><div class="pad5x10">string</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">++ <var>lvalue</var></div></td>
+<td align="left" valign="top"><div class="pad5x10">Pre-increment</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"> &#45;&#45;<var>lvalue</var></div></td>
+<td align="left" valign="top"><div class="pad5x10">Pre-decrement</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> ++</div></td>
+<td align="left" valign="top"><div class="pad5x10">Post-increment</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> &#45;&#45;</div></td>
+<td align="left" valign="top"><div class="pad5x10">Post-decrement </div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> ^ <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Exponentiation</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">! <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Logical not</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">+
+<i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Unary plus</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">&#45; <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Unary minus</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">n/a</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> * <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Multiplication</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> / <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Division</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> % <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Modulus</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> + <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Addition</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i>
+&#45; <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Subtraction</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric </div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">String concatenation</div></td>
+<td align="left" valign="top"><div class="pad5x10">string</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> &#60; <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Less than</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> &#60;= <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Less than or
+equal to</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> != <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Not equal to</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> == <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Equal to</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> > <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Greater than</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i>
+>= <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Greater than or equal to</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> ~ <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">ERE match</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> !~ <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">ERE non-match</div></td>
+<td align="left" valign="top"><div class="pad5x10">
+numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">none</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><i>expr</i> in array</div></td>
+<td align="left" valign="top"><div class="pad5x10">Array membership</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">( <var>index</var> ) in</div></td>
+<td align="left" valign="top"><div class="pad5x10">Multi-dimension array</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">    <var>array</var></div></td>
+<td align="left" valign="top"><div class="pad5x10">
+   membership</div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><tt>expr</tt> &#38;&#38; <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Logical AND</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><tt>expr</tt> |&#32;| <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Logical OR</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">left</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>expr1</var> ? <var>expr2</var></div></td>
+<td align="left" valign="top"><div class="pad5x10">Conditional
+expression</div></td>
+<td align="left" valign="top"><div class="pad5x10">type of selected</div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">    : <var>expr3</var></div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+<td align="left" valign="top"><div class="pad5x10">   <var>expr2</var> or
+<var>expr3</var></div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> ^= <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Exponentiation</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">right </div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+<td align="left" valign="top"><div class="pad5x10">assignment</div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> %= <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Modulus assignment</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> *= <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Multiplication</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+<td align="left" valign="top"><div class="pad5x10">assignment</div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+<td align="left" valign="top"><div class="pad5x10"></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> /= <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Division assignment</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var>
++=  <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Addition assignment</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> &#45;= <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Subtraction assignment</div></td>
+<td align="left" valign="top"><div class="pad5x10">numeric</div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10"><var>lvalue</var> = <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">Assignment</div></td>
+<td align="left" valign="top"><div class="pad5x10">type of <i>expr</i></div></td>
+<td align="left" valign="top"><div class="pad5x10">right</div></td>
+</tr>
+</table>
+</td></tr></table>
+<p>Each expression has either a string value, a numeric value or both.
+Except as stated for specific contexts, the value of an expression is
+implicitly converted to the type needed for the context in which it
+is used.  A string value is converted to a numeric value
+by the equivalent of the following calls:</p><pre>setlocale(LC_NUMERIC, "");
+<var>numeric_value</var> = atof(<var>string_value</var>);</pre><p>A numeric value that is exactly equal to the value of an
+integer is converted to a string by the equivalent of a call
+to the <tt>sprintf</tt> function with the string <tt>%d</tt> as the <tt>fmt</tt> argument
+and the numeric value being converted as the first and only <i>expr</i> argument.
+ Any other numeric value is converted to a string by the
+equivalent of a call to the <tt>sprintf</tt> function with the value of
+the variable <tt>CONVFMT</tt> as the <tt>fmt</tt> argument and the numeric value being
+converted as the first and only <i>expr</i> argument.</p><p>A string value is considered to be a <var>numeric string</var> in the following
+case:</p>
+<ol><li><p>Any leading and trailing blank characters is ignored.</p></li>
+<li><p>If the first unignored character is a <tt>+</tt> or <tt>&#45;</tt>, it is ignored.</p></li>
+<li><p>If the remaining unignored characters would be lexically recognized as a <tt>NUMBER</tt> token, the string is considered a <var>numeric string</var>.</p></li></ol>
+<p>If a <tt>&#45;</tt> character is ignored in the above steps, the numeric
+value of the <var>numeric string</var> is the negation of the numeric value of
+the recognized <tt>NUMBER</tt> token. Otherwise the numeric value of the <var>numeric string</var> is the
+numeric value of the recognized <tt>NUMBER</tt> token. Whether or not a string
+is a <var>numeric string</var> is relevant only in contexts where that term is
+used in this section.</p><p>When an expression is used in a Boolean context, if it has
+a numeric value, a value of zero is treated as false and
+any other value is treated as true. Otherwise, a string value of
+the null string is treated as false and any other value is
+treated as true. A Boolean context is one of the following:</p>
+<ul><li><p>the first subexpression of a conditional expression.</p></li>
+<li><p>an expression operated on by logical NOT, logical AND, or logical OR.</p></li>
+<li><p>the second expression of a <tt>for</tt> statement.</p></li>
+<li><p>the expression of an <tt>if</tt> statement.</p></li>
+<li><p>the expression of the <tt>while</tt> clause in either a <tt>while</tt> or <tt>do</tt> <tt>.&#32;.&#32;.</tt> <tt>while</tt> statement.</p></li>
+<li><p>an expression used as a pattern (as in Overall Program Structure).</p></li></ul>
+<p>The <tt>nawk</tt> language supplies arrays that are used for storing numbers or
+strings. Arrays need not be declared. They are initially empty, and their
+sizes changes dynamically. The subscripts, or element identifiers, are strings, providing a
+type of associative array capability. An array name followed by a subscript within
+square brackets can be used as an <var>lvalue</var> and as an expression,
+as described in the grammar.  Unsubscripted array names are used in
+only the following contexts:</p>
+<ul><li><p>a parameter in a function definition or function call.</p></li>
+<li><p>the <tt>NAME</tt> token following any use of the keyword <tt>in</tt>.</p></li></ul>
+<p>A valid array <var>index</var> consists of one or more comma-separated expressions, similar
+to the way in which multi-dimensional arrays are indexed in some programming
+languages. Because <tt>nawk</tt> arrays are really one-dimensional, such a comma-separated list is converted
+to a single string by concatenating the string values of the separate
+expressions, each separated from the other by the value of the <tt>SUBSEP</tt>
+variable.</p><p>Thus, the following two index operations are equivalent:</p><pre>var[expr1, expr2, ... exprn]
+var[expr1 SUBSEP expr2 SUBSEP ... SUBSEP exprn]</pre><p>A multi-dimensioned <var>index</var> used with the <tt>in</tt> operator must be put in
+parentheses. The <tt>in</tt> operator, which tests for the existence of a particular
+array element, does not create the element if it does not exist.
+ Any other reference to a non-existent array element automatically creates it.</p><h4>Variables and Special Variables</h4>
+<p>Variables can be used in an <tt>nawk</tt> program by referencing them. With
+the exception of function parameters, they are not explicitly declared. Uninitialized scalar
+variables and array elements have both a numeric value of zero and
+a string value of the empty string.</p><p>Field variables are designated by a <tt>$</tt> followed by a number or
+numerical expression. The effect of the field number <var>expression</var> evaluating to anything
+other than a non-negative integer is unspecified. Uninitialized variables or string values
+need not be converted to numeric values in this context. New field variables
+are created by assigning a value to them. References to non-existent fields
+(that is, fields after <tt>$NF</tt>) produce the null string. However, assigning to
+a non-existent field (for example, <tt>$(NF+2) = 5</tt>) increases the value of <tt>NF</tt>, create
+any intervening fields with the null string as their values and cause
+the value of <tt>$0</tt> to be recomputed, with the fields being separated
+by the value of <tt>OFS</tt>. Each field variable has a string value when
+created. If the string, with any occurrence of the decimal-point character from
+the current locale changed to a period character, is considered a <var>numeric string</var>
+(see <tt>Expressions in nawk</tt> above), the field variable also has the numeric value of the
+<var>numeric string</var>.</p><h4>/usr/bin/nawk, /usr/xpg4/bin/awk</h4>
+<p><tt>nawk</tt> sets the following special variables that are supported by both <tt>/usr/bin/nawk</tt>
+and <tt>/usr/xpg4/bin/awk</tt>:</p><dl><dt><tt>ARGC</tt></dt>
+<dd><p>The number of elements in the <tt>ARGV</tt> array.</p></dd>
+<dt><tt>ARGV</tt></dt>
+<dd><p>An array of command line arguments, excluding options and the <var>program</var> argument, numbered from zero to <tt>ARGC</tt>&#45;1.</p><p>The arguments in <tt>ARGV</tt> can be modified or added to; <tt>ARGC</tt> can be altered. As each input file ends, <tt>nawk</tt> treats the next non-null element of <tt>ARGV</tt>, up to the current value of <tt>ARGC</tt>&#45;1, inclusive, as the name of the next input file. Setting an element of <tt>ARGV</tt> to null means that it is not treated as an input file. The name <tt>&#45;</tt> indicates the standard input. If an argument matches the format of an <var>assignment</var> operand, this argument is treated as an assignment rather than a <i>file</i> argument.</p></dd>
+<dt><tt>ENVIRON</tt></dt>
+<dd><p>The variable <tt>ENVIRON</tt> is an array representing the value of the environment. The indices of the array are strings consisting of the names of the environment variables, and the value of each array element is a string consisting of the value of that variable. If the value of an environment variable is considered a <var>numeric string</var>, the array element also has its numeric value.</p><p>In all cases where <tt>nawk</tt> behavior is affected by environment variables (including the environment of any commands that <tt>nawk</tt> executes via the <tt>system</tt> function or via pipeline redirections with the <tt>print</tt> statement, the <tt>printf</tt> statement, or the <tt>getline</tt> function), the environment used is the environment at the time <tt>nawk</tt> began executing.</p></dd>
+<dt><tt>FILENAME</tt></dt>
+<dd><p>A pathname of the current input file. Inside a <tt>BEGIN</tt> action the value is undefined. Inside an <tt>END</tt> action the value is the name of the last input file processed.</p></dd>
+<dt><tt>FNR</tt></dt>
+<dd><p>The ordinal number of the current record in the current file. Inside a <tt>BEGIN</tt> action the value is zero. Inside an <tt>END</tt> action the value is the number of the last record processed in the last file processed.</p></dd>
+<dt><tt>FS</tt></dt>
+<dd><p>Input field separator regular expression; a space character by default.</p></dd>
+<dt><tt>NF</tt></dt>
+<dd><p>The number of fields in the current record. Inside a <tt>BEGIN</tt> action, the use of <tt>NF</tt> is undefined unless a <tt>getline</tt> function without a <var>var</var> argument is executed previously. Inside an <tt>END</tt> action, <tt>NF</tt> retains the value it had for the last record read, unless a subsequent, redirected, <tt>getline</tt> function without a <var>var</var> argument is performed prior to entering the <tt>END</tt> action.</p></dd>
+<dt><tt>NR</tt></dt>
+<dd><p>The ordinal number of the current record from the start of input. Inside a <tt>BEGIN</tt> action the value is zero. Inside an <tt>END</tt> action the value is the number of the last record processed.</p></dd>
+<dt><tt>OFMT</tt></dt>
+<dd><p>The <tt>printf</tt> format for converting numbers to strings in output statements <tt>"%.6g"</tt> by default. The result of the conversion is unspecified if the value of <tt>OFMT</tt> is not a floating-point format specification.</p></dd>
+<dt><tt>OFS</tt></dt>
+<dd><p>The <tt>print</tt> statement output field separator; a space character by default.</p></dd>
+<dt><tt>ORS</tt></dt>
+<dd><p>The <tt>print</tt> output record separator; a newline character by default.</p></dd>
+<dt><tt>LENGTH</tt></dt>
+<dd><p>The length of the string matched by the <tt>match</tt> function.</p></dd>
+<dt><tt>RS</tt></dt>
+<dd><p>The first character of the string value of <tt>RS</tt> is the input record separator; a newline character by default. If <tt>RS</tt> contains more than one character, the results are unspecified. If <tt>RS</tt> is null, then records are separated by sequences of one or more blank lines. Leading or trailing blank lines do not produce empty records at the beginning or end of input, and the field separator is always newline, no matter what the value of <tt>FS</tt>.</p></dd>
+<dt><tt>RSTART</tt></dt>
+<dd><p>The starting position of the string matched by the <tt>match</tt> function, numbering from 1. This is always equivalent to the return value of the <tt>match</tt> function.</p></dd>
+<dt><tt>SUBSEP</tt></dt>
+<dd><p>The subscript separator string for multi-dimensional arrays. The default value is <tt>\034</tt>.</p></dd>
+</dl>
+<h4>/usr/xpg4/bin/awk</h4>
+<p>The following variable is supported for <tt>/usr/xpg4/bin/awk</tt> only:</p><dl><dt><tt>CONVFMT</tt></dt>
+<dd><p>The <tt>printf</tt> format for converting numbers to strings (except for output statements, where <tt>OFMT</tt> is used). The default is <tt>%.6g</tt>.</p></dd>
+</dl>
+<h4>Regular Expressions</h4>
+<p>The <tt>/usr/xpg4/bin/nawk</tt> utility makes use of the extended regular expression notation (see
+<a href="../821-1474/regex-5.html#REFMAN5regex-5"><tt>regex</tt>(5)</a>) except that it allows the use of C-language conventions to escape special
+characters within the EREs, namely <tt>\\</tt>, <tt>\a</tt>, <tt>\b</tt>, <tt>\f</tt>, <tt>\n</tt>, <tt>\r</tt>, <tt>\t</tt>,
+<tt>\v</tt>, and those specified in the following table.  These escape sequences are
+recognized both inside and outside bracket expressions. Records need not be separated
+by newline characters and string constants can contain newline characters, so even
+the <tt>\n</tt> sequence is valid in <tt>nawk</tt> EREs.  Using a slash
+character within the regular expression requires escaping as shown in the table
+below:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="11%"><col width="44%"><col width="44%">
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>Escape Sequence</tt></div></td>
+<td align="center" valign="top"><div class="pad5x10"><tt>Description</tt></div></td>
+<td align="center" valign="top"><div class="pad5x10"><tt>Meaning</tt></div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>\"</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Backslash quotation-mark</div></td>
+<td align="left" valign="top"><div class="pad5x10">Quotation-mark character</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>\/</tt></div></td>
+<td align="left" valign="top"><div class="pad5x10">Backslash slash</div></td>
+<td align="left" valign="top"><div class="pad5x10">Slash character</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>\</tt><var>ddd</var></div></td>
+<td align="left" valign="top"><div class="pad5x10">A backslash character followed by the longest sequence
+of one, two, or three octal-digit characters (01234567).  If all of
+the digits are 0, (that is, representation of the NULL character), the
+behavior is undefined.</div></td>
+<td align="left" valign="top"><div class="pad5x10">The character encoded by the one-, two- or three-digit octal
+integer. Multi-byte characters require multiple, concatenated escape sequences, including the leading \
+for each byte.</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="center" valign="top"><div class="pad5x10"><tt>\</tt><var>c</var></div></td>
+<td align="left" valign="top"><div class="pad5x10">A backslash character followed by any character not described in
+this table or special characters (<tt>\\</tt>, <tt>\a</tt>, <tt>\b</tt>, <tt>\f</tt>, <tt>\n</tt>, <tt>\r</tt>, <tt>\t</tt>,
+<tt>\v</tt>). </div></td>
+<td align="left" valign="top"><div class="pad5x10">Undefined</div></td>
+</tr>
+</table>
+</td></tr></table>
+<p>A regular expression can be matched against a specific field or string
+by using one of the two regular expression matching operators, <tt>~</tt> and
+<tt>!&#32;~</tt>. These operators interpret their right-hand operand as a regular expression and
+their left-hand operand as a string. If the regular expression matches the string,
+the <tt>~</tt> expression evaluates to the value <tt>1</tt>, and the <tt>!&#32;~</tt> expression
+evaluates to the value <tt>0</tt>. If the regular expression does not match
+the string, the <tt>~</tt> expression evaluates to the value <tt>0</tt>, and the
+<tt>!&#32;~</tt> expression evaluates to the value <tt>1</tt>. If the right-hand operand is
+any expression other than the lexical token <tt>ERE</tt>, the string value of
+the expression is interpreted as an extended regular expression, including the escape conventions
+described above. Notice that these same escape conventions also are applied in
+the determining the value of a string literal (the lexical token <tt>STRING</tt>),
+and is applied a second time when a string literal is used in
+this context.</p><p>When an <tt>ERE</tt> token appears as an expression in any context other
+than as the right-hand of the <tt>~</tt> or <tt>!&#32;~</tt> operator or as
+one of the built-in function arguments described below, the value of the
+resulting expression is the equivalent of:</p><pre>$0 ~ /<var>ere</var>/</pre><p>The <var>ere</var> argument to the <tt>gsub,</tt> <tt>match,</tt> <tt>sub</tt> functions, and the <var>fs</var>
+argument to the <tt>split</tt> function (see <tt>String Functions</tt>) is interpreted as extended regular expressions.
+These can be either <tt>ERE</tt> tokens or arbitrary expressions, and are interpreted
+in the same manner as the right-hand side of the <tt>~</tt> or
+<tt>!&#32;~</tt> operator.</p><p>An extended regular expression can be used to separate fields by using
+the <tt>-F</tt> <var>ERE</var> option or by assigning a string containing the expression
+to the built-in variable <tt>FS</tt>. The default value of the <tt>FS</tt> variable
+is a single space character. The following describes <tt>FS</tt> behavior:</p>
+<ol><li><p>If <tt>FS</tt> is a single character: </p>
+<ul><li><p>If <tt>FS</tt> is the space character, skip leading and trailing blank characters; fields are delimited by sets of one or more blank characters.</p></li>
+<li><p>Otherwise, if <tt>FS</tt> is any other character <var>c</var>, fields are delimited by each single occurrence of <var>c</var>.</p></li></ul>
+</li>
+<li><p>Otherwise, the string value of <tt>FS</tt> is considered to be an extended regular expression. Each occurrence of a sequence matching the extended regular expression delimits fields.</p></li></ol>
+<p>Except in the <tt>gsub</tt>, <tt>match</tt>, <tt>split</tt>, and <tt>sub</tt> built-in functions, regular expression
+matching is based on input records. That is, record separator characters (the
+first character of the value of the variable <tt>RS</tt>, a newline character by
+default) cannot be embedded in the expression, and no expression matches the
+record separator character. If the record separator is not a newline character,
+newline characters embedded in the expression can be matched. In those four
+built-in functions, regular expression matching are based on text strings. So, any character
+(including the newline character and the record separator) can be embedded in
+the pattern and an appropriate pattern matches any character. However, in all
+<tt>nawk</tt> regular expression matching, the use of one or more NULL characters in
+the pattern, input record or text string produces undefined results.</p><h4>Patterns</h4>
+<p>A <var>pattern</var> is any valid <var>expression,</var> a range specified by two expressions
+separated by comma, or one of the two special patterns <tt>BEGIN</tt> or
+<tt>END</tt>.</p><h4>Special Patterns</h4>
+<p>The <tt>nawk</tt> utility recognizes two special patterns, <tt>BEGIN</tt> and <tt>END</tt>. Each <tt>BEGIN</tt>
+pattern is matched once and its associated action executed before the first
+record of input is read (except possibly by use of the <tt>getline</tt>
+function in a prior <tt>BEGIN</tt> action) and before command line assignment is
+done. Each <tt>END</tt> pattern is matched once and its associated action executed
+after the last record of input has been read. These two patterns
+have associated actions.</p><p><tt>BEGIN</tt> and <tt>END</tt> do not combine with other patterns.  Multiple <tt>BEGIN</tt>
+and <tt>END</tt> patterns are allowed. The actions associated with the <tt>BEGIN</tt> patterns
+are executed in the order specified in the program, as are the <tt>END</tt>
+actions. An <tt>END</tt> pattern can precede a <tt>BEGIN</tt> pattern in a program.</p><p>If an <tt>nawk</tt> program consists of only actions with the pattern <tt>BEGIN</tt>,
+and the <tt>BEGIN</tt> action contains no <tt>getline</tt> function, <tt>nawk</tt> exits without reading
+its input when the last statement in the last <tt>BEGIN</tt> action is
+executed. If an <tt>nawk</tt> program consists of only actions with the pattern
+<tt>END</tt> or only actions with the patterns <tt>BEGIN</tt> and <tt>END</tt>, the input
+is read before the statements in the <tt>END</tt> actions are executed.</p><h4>Expression Patterns</h4>
+<p>An expression pattern is evaluated as if it were an expression in
+a Boolean context. If the result is true, the pattern is considered
+to match, and the associated action (if any) is executed. If the
+result is false, the action is not executed.</p><h4>Pattern Ranges</h4>
+<p>A pattern range consists of two expressions separated by a comma. In
+this case, the action is performed for all records between a match
+of the first expression and the following match of the second expression,
+inclusive. At this point, the pattern range can be repeated starting at
+input records subsequent to the end of the matched range.</p><h4>Actions</h4>
+<p>An action is a sequence of statements. A statement can be one
+of the following:</p><pre>if ( <var>expression</var> ) <var>statement</var> [ else <var>statement</var> ]
+while ( <var>expression</var> ) <var>statement</var> 
+do <var>statement</var> while ( <var>expression</var> )
+for ( <var>expression</var> ; <var>expression</var> ; <var>expression</var> ) <var>statement</var> 
+for ( <var>var</var> in <var>array</var> ) <var>statement</var> 
+delete <var>array</var>[<var>subscript</var>] #delete an array element
+break
+continue
+{ [ <var>statement</var> ] .&#32;.&#32;. }
+<var>expression</var>        # commonly variable = expression
+print [ <var>expression-list</var> ] [ ><var>expression</var> ]
+printf format [ ,<var>expression-list</var> ] [ ><var>expression</var> ]
+next              # skip remaining patterns on this input line
+exit [expr] # skip the rest of the input; exit status is expr
+return [expr]</pre><p>Any single statement can be replaced by a statement list enclosed in
+braces.  The statements are terminated by newline characters or semicolons, and
+are executed sequentially in the order that they appear.</p><p>The <tt>next</tt> statement causes all further processing of the current input record
+to be abandoned. The behavior is undefined if a <tt>next</tt> statement appears
+or is invoked in a <tt>BEGIN</tt> or <tt>END</tt> action.</p><p>The <tt>exit</tt> statement invokes all <tt>END</tt> actions in the order in which
+they occur in the program source and then terminate the program without
+reading further input. An <tt>exit</tt> statement inside an <tt>END</tt> action terminates the program
+without further execution of <tt>END</tt> actions.  If an expression is specified
+in an <tt>exit</tt> statement, its numeric value is the exit status of
+<tt>nawk</tt>, unless subsequent errors are encountered or a subsequent <tt>exit</tt> statement with an
+expression is executed.</p><h4>Output Statements</h4>
+<p>Both <tt>print</tt> and <tt>printf</tt> statements write to standard output by default. 
+The output is written to the location specified by <var>output_redirection</var> if one
+is supplied, as follows:</p><pre><tt>></tt> <var>expression</var><tt>>></tt> <var>expression</var><tt>|</tt> <var>expression</var></pre><p>In all cases, the <var>expression</var> is evaluated to produce a string that
+is used as a full pathname to write into (for <tt>></tt> or
+<tt>>></tt>) or as a command to be executed (for <tt>|</tt>). Using the
+first two forms, if the file of that name is not currently open,
+it is opened, creating it if necessary and using the first form,
+truncating the file. The output then is appended to the file. 
+As long as the file remains open, subsequent calls in which <var>expression</var>
+evaluates to the same string value simply appends output to the file. The
+file remains open until the <tt>close</tt> function, which is called with an
+expression that evaluates to the same string value.</p><p>The third form writes output onto a stream piped to the input
+of a command. The stream is created if no stream is currently
+open with the value of <var>expression</var> as its command name.  The
+stream created is equivalent to one created by a call to the
+<a href="../821-1465/popen-3c.html#REFMAN3Apopen-3c"><tt>popen</tt>(3C)</a> function with the value of <var>expression</var> as the <i>command</i> argument and
+a value of <tt>w</tt> as the <var>mode</var> argument.  As long as
+the stream remains open, subsequent calls in which <var>expression</var> evaluates to the
+same string value writes output to the existing stream. The stream remains
+open until the <tt>close</tt> function is called with an expression that evaluates to
+the same string value.  At that time, the stream is closed
+as if by a call to the <tt>pclose</tt> function.</p><p>These output statements take a comma-separated list of <var>expression</var> <var>s</var> referred in
+the grammar by the non-terminal symbols <tt>expr_list,</tt> <tt>print_expr_list</tt> or <tt>print_expr_list_opt.</tt> This list is
+referred to here as the <var>expression list</var>, and each member is referred to
+as an <var>expression argument</var>.</p><p>The <tt>print</tt> statement writes the value of each expression argument onto the
+indicated output stream separated by the current output field separator (see variable
+<tt>OFS</tt> above), and terminated by the output record separator (see variable <tt>ORS</tt>
+above). All expression arguments is taken as strings, being converted if necessary; with
+the exception that the <tt>printf</tt> format in <tt>OFMT</tt> is used instead of
+the value in <tt>CONVFMT</tt>. An empty expression list stands for the whole
+input record <tt>(</tt>$0<tt>)</tt>.</p><p>The <tt>printf</tt> statement produces output based on a notation similar to the
+File Format Notation used to describe file formats in this document Output
+is produced as specified with the first expression argument as the string
+<tt>format</tt> and subsequent expression arguments as the strings <tt>arg1</tt> to <tt>argn,</tt> inclusive, with
+the following exceptions:</p>
+<ol><li><p>The <i>format</i> is an actual character string rather than a graphical representation. Therefore, it cannot contain empty character positions. The space character in the <i>format</i> string, in any context other than a <var>flag</var> of a conversion specification, is treated as an ordinary character that is copied to the output.</p></li>
+<li><p>If the character set contains a Delta character and that character appears in the <i>format</i> string, it is treated as an ordinary character that is copied to the output.</p></li>
+<li><p>The <var>escape sequences</var> beginning with a backslash character is treated as sequences of ordinary characters that are copied to the output. Note that these same sequences is interpreted lexically by <tt>nawk</tt> when they appear in literal strings, but they is not treated specially by the <tt>printf</tt> statement.</p></li>
+<li><p>A <var>field width</var> or <var>precision</var> can be specified as the <tt>*</tt> character instead of a digit string. In this case the next argument from the expression list is fetched and its numeric value taken as the field width or precision.</p></li>
+<li><p>The implementation does not precede or follow output from the <tt>d</tt> or <tt>u</tt> conversion specifications with blank characters not specified by the <i>format</i> string.</p></li>
+<li><p>The implementation does not precede output from the <tt>o</tt> conversion specification with leading zeros not specified by the <i>format</i> string.</p></li>
+<li><p>For the <tt>c</tt> conversion specification: if the argument has a numeric value, the character whose encoding is that value is output. If the value is zero or is not the encoding of any character in the character set, the behavior is undefined. If the argument does not have a numeric value, the first character of the string value is output; if the string does not contain any characters the behavior is undefined.</p></li>
+<li><p>For each conversion specification that consumes an argument, the next expression argument is evaluated. With the exception of the <tt>c</tt> conversion, the value is converted to the appropriate type for the conversion specification.</p></li>
+<li><p>If there are insufficient expression arguments to satisfy all the conversion specifications in the <i>format</i> string, the behavior is undefined.</p></li>
+<li><p>If any character sequence in the <i>format</i> string begins with a % character, but does not form a valid conversion specification, the behavior is unspecified.</p></li></ol>
+<p>Both <tt>print</tt> and <tt>printf</tt> can output at least <tt>{LINE_MAX}</tt> bytes.</p><h4>Functions</h4>
+<p>The <tt>nawk</tt> language has a variety of built-in functions: arithmetic, string, input/output
+and general.</p><h4>Arithmetic Functions</h4>
+<p>The arithmetic functions, except for <tt>int</tt>, are based on the <tt>ISO</tt> <tt>C</tt>
+standard. The behavior is undefined in cases where the <tt>ISO</tt> <tt>C</tt> standard
+specifies that an error be returned or that the behavior is undefined. Although
+the grammar permits built-in functions to appear with no arguments or parentheses,
+unless the argument or parentheses are indicated as optional in the following
+list (by displaying them within the <tt>[ ]</tt> brackets), such use is undefined.</p><dl><dt><tt>atan2(</tt><var>y</var>,<var>x</var><tt>)</tt></dt>
+<dd><p>Return arctangent of <var>y</var>/<var>x</var>.</p></dd>
+<dt><tt>cos</tt>(<var>x</var>)</dt>
+<dd><p>Return cosine of <var>x,</var> where <var>x</var> is in radians.</p></dd>
+<dt><tt>sin</tt>(<var>x</var>)</dt>
+<dd><p>Return sine of <var>x,</var> where <var>x</var> is in radians.</p></dd>
+<dt><tt>exp</tt>(<var>x</var>)</dt>
+<dd><p>Return the exponential function of <var>x</var>.</p></dd>
+<dt><tt>log</tt>(<var>x</var>)</dt>
+<dd><p>Return the natural logarithm of <var>x</var>.</p></dd>
+<dt><tt>sqrt</tt>(<var>x</var>)</dt>
+<dd><p>Return the square root of <var>x</var>.</p></dd>
+<dt><tt>int</tt>(<var>x</var>)</dt>
+<dd><p>Truncate its argument to an integer. It is truncated toward 0 when <var>x</var> > 0.</p></dd>
+<dt><tt>rand()</tt></dt>
+<dd><p>Return a random number <var>n</var>, such that 0 &#8804; <var>n</var> &#60; 1.</p></dd>
+<dt><tt>srand</tt>([<tt>expr</tt>])</dt>
+<dd><p>Set the seed value for <tt>rand</tt> to <i>expr</i> or use the time of day if <i>expr</i> is omitted. The previous seed value is returned.</p></dd>
+</dl>
+<h4>String Functions</h4>
+<p>The string functions in the following list shall be supported. Although the
+grammar permits built-in functions to appear with no arguments or parentheses, unless
+the argument or parentheses are indicated as optional in the following list
+(by displaying them within the <tt>[ ]</tt> brackets), such use is undefined.</p><dl><dt><tt>gsub</tt>(<var>ere</var>,<var>repl</var>[,&#32;<var>in</var>])</dt>
+<dd><p>Behave like <tt>sub</tt> (see below), except that it replaces all occurrences of the regular expression (like the <tt>ed</tt> utility global substitute) in <tt>$0</tt> or in the <var>in</var> argument, when specified.</p></dd>
+<dt><tt>index</tt>(<var>s</var>,<var>t</var>)</dt>
+<dd><p>Return the position, in characters, numbering from 1, in string <var>s</var> where string <var>t</var> first occurs, or zero if it does not occur at all.</p></dd>
+<dt><tt>length</tt>[([<var>s</var>])]</dt>
+<dd><p>Return the length, in characters, of its argument taken as a string, or of the whole record, <tt>$0</tt>, if there is no argument.</p></dd>
+<dt><tt>match</tt>(<var>s</var>,<var>ere</var>)</dt>
+<dd><p>Return the position, in characters, numbering from 1, in string <var>s</var> where the extended regular expression <var>ere</var> occurs, or zero if it does not occur at all. <tt>RSTART</tt> is set to the starting position (which is the same as the returned value), zero if no match is found; <tt>RLENGTH</tt> is set to the length of the matched string, &#45;1 if no match is found.</p></dd>
+<dt><tt>split</tt>(<var>s</var>,<var>a</var>[,&#32;<var>fs</var>])</dt>
+<dd><p>Split the string <var>s</var> into array elements <var>a</var>[1], <var>a</var>[2], <tt>...,</tt> <var>a</var>[<var>n</var>], and return <var>n</var>. The separation is done with the extended regular expression <var>fs</var> or with the field separator <tt>FS</tt> if <var>fs</var> is not given. Each array element has a string value when created. If the string assigned to any array element, with any occurrence of the decimal-point character from the current locale changed to a period character, would be considered a <var>numeric string</var>; the array element also has the numeric value of the <var>numeric string</var>. The effect of a null string as the value of <var>fs</var> is unspecified.</p></dd>
+<dt><tt>sprintf</tt>(<tt>fmt</tt>,<i>expr</i>,<i>expr</i>,<tt>...</tt>)</dt>
+<dd><p>Format the expressions according to the <tt>printf</tt> format given by <i>fmt</i> and return the resulting string.</p></dd>
+<dt><tt>sub</tt>(<var>ere</var>,<var>repl</var>[,&#32;<var>in</var>])</dt>
+<dd><p>Substitute the string <var>repl</var> in place of the first instance of the extended regular expression <tt>ERE</tt> in string in and return the number of substitutions. An ampersand ( <tt>&#38;</tt> ) appearing in the string <var>repl</var> is replaced by the string from in that matches the regular expression. An ampersand preceded with a backslash ( <tt>\</tt> ) is interpreted as the literal ampersand character. An occurrence of two consecutive backslashes is interpreted as just a single literal backslash character.  Any other occurrence of a backslash (for example, preceding any other character) is treated as a literal backslash character. If <var>repl</var> is a string literal, the handling of the ampersand character occurs after any lexical processing, including any lexical backslash escape sequence processing. If <tt>in</tt> is specified and it is not an <tt>lvalue</tt> the behavior is undefined. If in is omitted, <tt>nawk</tt> uses the current record (<tt>$0</tt>) in its place. </p></dd>
+<dt><tt>substr</tt>(<var>s</var>,<var>m</var>[,&#32;<var>n</var>])</dt>
+<dd><p>Return the at most <var>n</var>-character substring of <var>s</var> that begins at position <var>m,</var> numbering from 1. If <var>n</var> is missing, the length of the substring is limited by the length of the string <var>s</var>.</p></dd>
+<dt><tt>tolower</tt>(<var>s</var>)</dt>
+<dd><p>Return a string based on the string <var>s</var>. Each character in <var>s</var> that is an upper-case letter specified to have a <tt>tolower</tt> mapping by the <tt>LC_CTYPE</tt> category of the current locale is replaced in the returned string by the lower-case letter specified by the mapping. Other characters in <var>s</var> are unchanged in the returned string.</p></dd>
+<dt><tt>toupper</tt>(<var>s</var>)</dt>
+<dd><p>Return a string based on the string <var>s</var>. Each character in <var>s</var> that is a lower-case letter specified to have a <tt>toupper</tt> mapping by the <tt>LC_CTYPE</tt> category of the current locale is replaced in the returned string by the upper-case letter specified by the mapping. Other characters in <var>s</var> are unchanged in the returned string.</p></dd>
+</dl>
+<p>All of the preceding functions that take <var>ERE</var> as a parameter expect
+a pattern or a string valued expression that is a regular expression
+as defined below.</p><h4>Input/Output and General Functions</h4>
+<p>The input/output and general functions are:</p><dl><dt><tt>close(</tt><var>expression</var>)</dt>
+<dd><p>Close the file or pipe opened by a <tt>print</tt> or <tt>printf</tt> statement or a call to <tt>getline</tt> with the same string-valued <var>expression</var>. If the close was successful, the function returns <tt>0</tt>; otherwise, it returns non-zero.</p></dd>
+<dt><var>expression</var>|<tt>getline</tt>[<var>var</var>]</dt>
+<dd><p>Read a record of input from a stream piped from the output of a command. The stream is created if no stream is currently open with the value of <var>expression</var> as its command name. The stream created is equivalent to one created by a call to the <tt>popen</tt> function with the value of <var>expression</var> as the <i>command</i> argument and a value of <tt>r</tt> as the <var>mode</var> argument. As long as the stream remains open, subsequent calls in which <var>expression</var> evaluates to the same string value reads subsequent records from the file. The stream remains open until the <tt>close</tt> function is called with an expression that evaluates to the same string value. At that time, the stream is closed as if by a call to the <tt>pclose</tt> function. If <var>var</var> is missing, <tt>$0</tt> and <tt>NF</tt> is set. Otherwise, <var>var</var> is set.</p><p>The <tt>getline</tt> operator can form ambiguous constructs when there are operators that are not in parentheses (including concatenate) to the left of the <tt>|</tt> (to the beginning of the expression containing <tt>getline</tt>). In the context of the <tt>$</tt> operator, <tt>|</tt> behaves as if it had a lower precedence than <tt>$</tt>. The result of evaluating other operators is unspecified, and all such uses of portable applications must be put in parentheses properly.</p></dd>
+</dl>
+<dl><dt><tt>getline</tt></dt>
+<dd><p>Set <tt>$0</tt> to the next input record from the current input file. This form of <tt>getline</tt> sets the <tt>NF</tt>, <tt>NR</tt>, and <tt>FNR</tt> variables.</p></dd>
+<dt><tt>getline</tt> <var>var</var></dt>
+<dd><p>Set variable <var>var</var> to the next input record from the current input file. This form of <tt>getline</tt> sets the <tt>FNR</tt> and <tt>NR</tt> variables.</p></dd>
+<dt><tt>getline</tt> [<var>var</var>] <tt>&#60;</tt> <var>expression</var></dt>
+<dd><p>Read the next record of input from a named file. The <var>expression</var> is evaluated to produce a string that is used as a full pathname. If the file of that name is not currently open, it is opened. As long as the stream remains open, subsequent calls in which <var>expression</var> evaluates to the same string value reads subsequent records from the file. The file remains open until the <tt>close</tt> function is called with an expression that evaluates to the same string value. If <var>var</var> is missing, <tt>$0</tt> and <tt>NF</tt> is set. Otherwise, <var>var</var> is set.</p><p>The <tt>getline</tt> operator can form ambiguous constructs when there are binary operators that are not in parentheses (including concatenate) to the right of the <tt>&#60;</tt> (up to the end of the expression containing the <tt>getline</tt>). The result of evaluating such a construct is unspecified, and all such uses of portable applications must be put in parentheses properly.</p></dd>
+<dt><tt>system</tt>(<var>expression</var>)</dt>
+<dd><p>Execute the command given by <var>expression</var> in a manner equivalent to the <a href="../821-1465/system-3c.html#REFMAN3Asystem-3c"><tt>system</tt>(3C)</a> function and return the exit status of the command.</p></dd>
+</dl>
+<p>All forms of <tt>getline</tt> return <tt>1</tt> for successful input, <tt>0</tt> for end
+of file, and <tt>&#45;1</tt> for an error.</p><p>Where strings are used as the name of a file or pipeline,
+the strings must be textually identical. The terminology ``same string value'' implies
+that ``equivalent strings'', even those that differ only by space characters, represent
+different files.</p><h4>User-defined Functions</h4>
+<p>The <tt>nawk</tt> language also provides user-defined functions. Such functions can be defined
+as:</p><pre><tt>function</tt> <var>name</var>(<var>args</var>,&#32;.&#32;.&#32;.) { <var>statements</var> }</pre><p>A function can be referred to anywhere in an <tt>nawk</tt> program; in
+particular, its use can precede its definition. The scope of a function
+is global.</p><p>Function arguments can be either scalars or arrays; the behavior is undefined
+if an array name is passed as an argument that the function
+uses as a scalar, or if a scalar expression is passed as
+an argument that the function uses as an array. Function arguments are
+passed by value if scalar and by reference if array name. Argument names
+are local to the function; all other variable names are global. The
+same name is not used as both an argument name and as
+the name of a function or a special <tt>nawk</tt> variable. The same
+name must not be used both as a variable name with global scope
+and as the name of a function. The same name must not
+be used within the same scope both as a scalar variable and
+as an array.</p><p>The number of parameters in the function definition need not match the
+number of parameters in the function call. Excess formal parameters can be
+used as local variables. If fewer arguments are supplied in a function
+call than are in the function definition, the extra parameters that are used
+in the function body as scalars are initialized with a string value
+of the null string and a numeric value of zero, and the
+extra parameters that are used in the function body as arrays are
+initialized as empty arrays. If more arguments are supplied in a function
+call than are in the function definition, the behavior is undefined.</p><p>When invoking a function, no white space can be placed between the
+function name and the opening parenthesis. Function calls can be nested and
+recursive calls can be made upon functions. Upon return from any nested
+or recursive function call, the values of all of the calling function's
+parameters are unchanged, except for array parameters passed by reference. The <tt>return</tt> statement
+can be used to return a value. If a <tt>return</tt> statement appears
+outside of a function definition, the behavior is undefined.</p><p>In the function definition, newline characters are optional before the opening brace
+and after the closing brace. Function definitions can appear anywhere in the
+program where a <var>pattern-action</var> pair is allowed.</p><h3>Usage</h3>
+<p>The <tt>index</tt>, <tt>length</tt>, <tt>match</tt>, and <tt>substr</tt> functions should not be confused with
+similar functions in the ISO C standard; the <tt>nawk</tt> versions deal with characters,
+while the ISO C standard deals with bytes.</p><p>Because the concatenation operation is represented by adjacent expressions rather than an
+explicit operator, it is often necessary to use parentheses to enforce the
+proper evaluation precedence.</p><p>See <a href="../821-1474/largefile-5.html#REFMAN5largefile-5"><tt>largefile</tt>(5)</a> for the description of the behavior of <tt>nawk</tt> when encountering
+files greater than or equal to 2 Gbyte (2<sup>31</sup> bytes).</p><h3>Examples</h3>
+<p>The <tt>nawk</tt> program specified in the command line is most easily specified
+within single-quotes (for example, <tt>'</tt><var>program</var><tt>'</tt>) for applications using <tt>sh</tt>, because <tt>nawk</tt> programs commonly
+contain characters that are special to the shell, including double-quotes. In the
+cases where a <tt>nawk</tt> program contains single-quote characters, it is usually easiest
+to specify most of the program as strings within single-quotes concatenated by
+the shell with quoted single-quote characters. For example:</p><pre>nawk '/'\''/ { print "quote:", $0 }'</pre><p>prints all lines from the standard input containing a single-quote character, prefixed
+with <tt>quote:</tt>.</p><p>The following are examples of simple <tt>nawk</tt> programs:</p><p><b>Example&#160;1 Write to the standard output all input lines for which field 3 is greater than 5:</b></p><pre><b>$3 > 5</b></pre><p><b>Example&#160;2 Write every tenth line:</b></p><pre><b>(NR % 10) == 0</b></pre><p><b>Example&#160;3 Write any line with a substring matching the regular expression:</b></p><pre><b>/(G|D)(2[0-9][[:alpha:]]*)/</b></pre><p><b>Example&#160;4 Print any line with a substring containing a G or D, followed by a sequence of digits and characters:</b></p><p>This example uses character classes <tt>digit</tt> and <tt>alpha</tt> to match language-independent digit
+and alphabetic characters, respectively.</p><pre><b>/(G|D)([[:digit:][:alpha:]]*)/</b></pre><p><b>Example&#160;5 Write any line in which the second field matches the regular expression and the fourth field does not:</b></p><pre><b>$2 ~ /xyz/ &#38;&#38; $4 !~ /xyz/</b></pre><p><b>Example&#160;6 Write any line in which the second field contains a backslash:</b></p><pre><b>$2 ~ /\\/</b></pre><p><b>Example&#160;7 Write any line in which the second field contains a backslash (alternate method):</b></p><p>Notice that backslash escapes are interpreted twice, once in lexical processing of
+the string and once in processing the regular expression.</p><pre><b>$2 ~ "\\\\"</b></pre><p><b>Example&#160;8 Write the second to the last and the last field in each line, separating the fields by a colon:</b></p><pre><b>{OFS=":";print $(NF-1), $NF}</b></pre><p><b>Example&#160;9 Write the line number and number of fields in each line:</b></p><p>The three strings representing the line number, the colon and the number
+of fields are concatenated and that string is written to standard output.</p><pre><b>{print NR ":" NF}</b></pre><p><b>Example&#160;10 Write lines longer than 72 characters:</b></p><pre><b>{length($0) > 72}</b></pre><p><b>Example&#160;11 Write first two fields in opposite order separated by the OFS:</b></p><pre><b>{ print $2, $1 }</b></pre><p><b>Example&#160;12 Same, with input fields separated by comma or space and tab characters, or both:</b></p><pre><b>BEGIN { FS = ",[\t]*|[\t]+" } { print $2, $1 }</b></pre><p><b>Example&#160;13 Add up first column, print sum and average:</b></p><pre><b>{s += $1 } END {print "sum is ", s, " average is", s/NR}</b></pre><p><b>Example&#160;14 Write fields in reverse order, one per line (many lines out for each line in):</b></p><pre><b>{ for (i = NF; i > 0; --i) print $i }</b></pre><p><b>Example&#160;15 Write all lines between occurrences of the strings &#8220;start&#8221; and &#8220;stop&#8221;:</b></p><pre><b>/start/, /stop/</b></pre><p><b>Example&#160;16 Write all lines whose first field is different from the previous one:</b></p><pre><b>$1 != prev { print; prev = $1 }</b></pre><p><b>Example&#160;17 Simulate the echo command:</b></p><pre><b>BEGIN { for (i = 1; i &#60; ARGC; ++i) printf "%s%s", ARGV[i], i==ARGC-1?"\n":"" }</b></pre><p><b>Example&#160;18 Write the path prefixes contained in the PATH environment variable, one per line:</b></p><pre><b>BEGIN { n = split (ENVIRON["PATH"], path, ":") for (i = 1; i &#60;= n; ++i) print path[i] }</b> </pre><p><b>Example&#160;19 Print the file &#8220;input&#8221;, filling in page numbers starting at 5:</b></p><p>If there is a file named <tt>input</tt> containing page headers of the
+form</p><pre>Page#</pre><p>and a file named <tt>program</tt> that contains</p><pre>/Page/{ $2 = n++; }
+{ print }</pre><p>then the command line</p><pre><b>nawk -f program n=5 input</b></pre><p>prints the file <tt>input</tt>, filling in page numbers starting at 5.</p><h3>Environment Variables</h3>
+<p>See <a href="../821-1474/environ-5.html#REFMAN5environ-5"><tt>environ</tt>(5)</a> for descriptions of the following environment variables that affect execution:
+<tt>LC_COLLATE</tt>, <tt>LC_CTYPE</tt>, <tt>LC_MESSAGES</tt>, and <tt>NLSPATH</tt>.</p><dl><dt><tt>LC_NUMERIC</tt></dt>
+<dd><p>Determine the radix character used when interpreting numeric input, performing conversions between numeric and string values and formatting numeric output. Regardless of locale, the period character (the decimal-point character of the POSIX locale) is the decimal-point character recognized in processing <tt>awk</tt> programs (including assignments in command-line arguments).</p></dd>
+</dl>
+<h3>Exit Status</h3>
+<p>The following exit values are returned:</p><dl><dt><tt>0</tt></dt>
+<dd><p>All input files were processed successfully.</p></dd>
+<dt><tt>>0</tt></dt>
+<dd><p>An error occurred.</p></dd>
+</dl>
+<p>The exit status can be altered within the program by using an
+<tt>exit</tt> expression.</p><h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p><h4>/usr/bin/nawk</h4>
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">SUNWcs</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h4>/usr/xpg4/bin/awk</h4>
+
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="top"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">SUNWxcu4</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h3>See Also</h3>
+<p><a href="awk-1.html"><tt>awk</tt>(1)</a>, <a href="ed-1.html"><tt>ed</tt>(1)</a>, <a href="egrep-1.html"><tt>egrep</tt>(1)</a>, <a href="grep-1.html"><tt>grep</tt>(1)</a>, <a href="lex-1.html"><tt>lex</tt>(1)</a>, <a href="sed-1.html"><tt>sed</tt>(1)</a>, <a href="../821-1465/popen-3c.html#REFMAN3Apopen-3c"><tt>popen</tt>(3C)</a>, <a href="../821-1465/printf-3c.html#REFMAN3Aprintf-3c"><tt>printf</tt>(3C)</a>, <a href="../821-1465/system-3c.html#REFMAN3Asystem-3c"><tt>system</tt>(3C)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a>, <a href="../821-1474/environ-5.html#REFMAN5environ-5"><tt>environ</tt>(5)</a>, <a href="../821-1474/largefile-5.html#REFMAN5largefile-5"><tt>largefile</tt>(5)</a>,
+<a href="../821-1474/regex-5.html#REFMAN5regex-5"><tt>regex</tt>(5)</a>, <a href="../821-1474/xpg4-5.html#REFMAN5xpg4-5"><tt>XPG4</tt>(5)</a></p><p>Aho, A. V., B. W. Kernighan, and P. J. Weinberger, <i>The AWK Programming Language</i>, Addison-Wesley,
+1988.</p><h3>Diagnostics</h3>
+<p>If any <i>file</i> operand is specified and the named file cannot be
+accessed, <tt>nawk</tt> writes a diagnostic message to standard error and terminate without
+any further action.</p><p>If the program specified by either the <var>program</var> operand or a <var>progfile</var>
+operand is not a valid <tt>nawk</tt> program (as specified in <tt>EXTENDED DESCRIPTION</tt>), the
+behavior is undefined.</p><h3>Notes</h3>
+<p>Input white space is not preserved on output if fields are involved.</p><p>There are no explicit conversions between numbers and strings. To force an
+expression to be treated as a number add 0 to it; to
+force it to be treated as a string concatenate the null string
+(<tt>""</tt>) to it.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="mv-1.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="nc-1.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

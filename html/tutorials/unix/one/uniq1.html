@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/uniq1.html -->
+
+<HEAD>
+<TITLE>Examples of using the uniq command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the uniq command</H1>
+
+<P>To remove consecutive duplicate lines from a file:</P>
+
+<PRE WIDTH=80>   <STRONG>uniq acc_nos accounts</STRONG>
+</PRE>
+
+<P>This removes all consecutive duplicate lines from the
+file <SAMP>acc_nos</SAMP> and places the output in the file
+<SAMP>accounts</SAMP>.</P>
+
+<HR>
+
+<P>To list the consecutive duplicate lines and the
+number of times that each occurs:</P>
+
+<PRE WIDTH=80>   <STRONG>uniq -c tel_nos errors</STRONG>
+</PRE>
+
+<P>This lists each of the consecutive duplicate lines in the
+file <SAMP>tel_nos</SAMP> and the number of times that each is
+repeated. The results are placed in the file 
+<SAMP>errors</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

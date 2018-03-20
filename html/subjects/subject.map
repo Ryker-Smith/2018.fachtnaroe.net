@@ -1,0 +1,20 @@
+#$MTIMFH
+#$-:Image Map file created by Map THIS!
+#$-:Map THIS! free image map editor by Todd C. Wilson
+#$-:Please do not edit lines starting with "#$"
+#$VERSION:1.30
+#$TITLE:indexlogo
+#$DATE:Thu Apr 05 12:37:07 2001
+#$PATH:\\LINUX1\html\images\
+#$GIF:indexlogo.gif
+#$FORMAT:ncsa
+#$EOH
+default /subjects/index.html
+rect http://linux1/subjects/webauthoring/webauthoring-index.html 40,104 144,258 
+rect http://linux1/subjects/desktoppublishing/desktoppublishing2000.pdf 82,258 266,380
+rect http://linux1/subjects/theinternet/theinternet-index.html 380,270 458,376
+rect http://linux1/subjects/spreadsheetmethods/spreadsheetmethods-index.html 462,186 590,314
+rect http://linux1/subjects/databasemethods/databasemethods-index.html 328,20 402,118
+rect http://linux1/subjects/wordprocessing/wordprocessing-index.html 184,130 430,252
+rect http://linux1/subjects/computerarchitectureandsystems/computerarchitectureandsystems-index.html 119,32 259,116
+rect http://linux1/subjects/computerprogramming/programming-index.html 438,6 552,180

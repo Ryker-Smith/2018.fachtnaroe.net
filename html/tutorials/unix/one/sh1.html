@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/sh.html -->
+
+<HEAD>
+<TITLE>Examples of changing environment variables: Bourne shell</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of changing environment variables: Bourne shell</H1>
+
+<P>To change to using another printer for the
+current login session:</P>
+
+<PRE>   <STRONG>PRINTER=ps2</STRONG>
+</PRE>
+
+<P>Whenever the user prints a file, the output will be sent
+to the printer ps2.</P>
+
+<HR>
+
+<P>To change to using another editor for the
+current login session and inform (export) this value
+to other programs which use it:</P>
+
+<PRE>   <STRONG>EDITOR=vi</STRONG>
+   <STRONG>export EDITOR</STRONG>
+</PRE>
+
+<P>This changes the user's default editor to vi and exports
+this value to other programs - such as electronic mail -
+which make use of it.</P>
+
+<HR>
+
+<P>To change to using another pager for viewing
+files the user adds the following lines to their
+<SAMP>.profile</SAMP> file.</P>
+
+<PRE>   <STRONG>PAGER=less;export PAGER</STRONG>
+</PRE>
+
+<P>To make this change take immediate effect enter the
+command:</P>
+
+<PRE>   <STRONG>. .profile</STRONG>
+</PRE>
+
+<P>This causes the <SAMP>.profile</SAMP> file to be read, setting the
+variables to their new values.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

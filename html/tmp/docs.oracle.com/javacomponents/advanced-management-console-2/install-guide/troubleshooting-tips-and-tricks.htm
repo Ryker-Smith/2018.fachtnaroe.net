@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Troubleshooting Tricks</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="dcterms.created" content="2017-01-17T10:23:38Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Advanced Management Console Installation and Configuration Guide" />
+<meta name="dcterms.identifier" content="E58638-09" />
+<meta name="dcterms.isVersionOf" content="JSAMI" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="security-compliance-advanced-management-console.htm" title="Previous" type="text/html" />
+<link rel="alternate" href="JSAMI.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSAMI.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSAMI.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-A090B46B-E2B0-4041-B949-AD5B2CE0A660"></a> <span id="PAGE" style="display:none;">16/16</span> <!-- End Header -->
+<h1 id="JSAMI-GUID-A090B46B-E2B0-4041-B949-AD5B2CE0A660" class="sect1"><span class="enumeration_appendix">C</span> Troubleshooting Tricks</h1>
+<div>
+<p>This topic contains a few known issues in the <span>Advanced Management Console</span> and how to troubleshoot them.</p>
+<p>This topic contains the following sections:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="troubleshooting-tips-and-tricks.htm#GUID-43D18A37-64A9-443E-BAEA-87FFB72A0979">Agent: Tips and Tricks</a></p>
+</li>
+<li>
+<p><a href="troubleshooting-tips-and-tricks.htm#GUID-93C39B3D-7848-419A-9A8B-9ED3A348E2DC">Server: Tips and Tricks</a></p>
+</li>
+<li>
+<p><a href="troubleshooting-tips-and-tricks.htm#GUID-8F7B9F46-6355-40AC-8EC5-50592BD93837">Important Directory Locations (On a Windows Environment)</a></p>
+</li>
+<li>
+<p><a href="troubleshooting-tips-and-tricks.htm#GUID-8F7B9F46-6355-40AC-8EC5-50592BD93837">Important Directory Locations (On an OS X Environment)</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2"><a id="GUID-43D18A37-64A9-443E-BAEA-87FFB72A0979"></a>
+<h2 id="JSAMI-GUID-43D18A37-64A9-443E-BAEA-87FFB72A0979" class="sect2">Agent</h2>
+<div>
+<div class="section">
+<p>Tips and Tricks to Ensure that the <span>Advanced Management Console</span> Agent Runs Efficiently:</p>
+<ol>
+<li>
+<p>Verify that the <span>Advanced Management Console</span> agent is running.</p>
+<ol>
+<li>
+<p>From the Windows Control Panel, open <span class="bold">Services</span>, locate <code>AMC Agent</code> and verify whether it&rsquo;s running. If not, right click the <span class="bold">AMC Agent</span> and select <span class="bold">Start</span>.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Verify that the <span>Advanced Management Console</span> agent is communicating. Do the following to verify:</p>
+<ol>
+<li>
+<p>Open&nbsp;<code>C:\ProgramData\Oracle\Java_AMC\agent.log.0</code>.&nbsp;</p>
+</li>
+<li>
+<div class="p">Check the log file to validate that the agent does not have any communication errors to the server. For example:
+<pre dir="ltr">
+2016-06-14 14:54:19 Communication: sending com.oracle.amc.agent.client.GetCommandMessage@1c00735
+2016-06-14 14:54:19 Communication: exception: java.net.UnknownHostException: <span class="italic">&lt;amc-server-host&gt;</span> 
+16-06-14 14:54:19 com.oracle.amc.agent.task.GetCommandTask: got communication error; rescheduling try #1
+</pre></div>
+</li>
+<li>
+<p>Check the log file to validate that the Agent is posting Java Runtime Environment (JRE) installs to the server and that the server is delivering updates to the Agent (for example, (DRS)).</p>
+<div class="infobox-note" id="GUID-43D18A37-64A9-443E-BAEA-87FFB72A0979__GUID-04BA15D6-DE7B-437A-8552-EF17D770F824">
+<p class="notep1">Note:</p>
+To initiate the agent to communicate with the server, right click the <span class="bold">AMC Agent</span> in the <span class="bold">Services</span> dialog box of the Windows Control Panel, and select <span class="bold">Restart</span>.</div>
+</li>
+</ol>
+</li>
+<li>
+<p>Verify that the desktop hosting the agent shows up in the <span class="bold">Desktops</span> tab of the <span>Advanced Management Console</span>.</p>
+</li>
+<li>
+<p>Verify that <span>Advanced Management Console</span> Server has pushed a DeploymentRuleSet. Do the following to let the <span>Advanced Management Console</span> update <code>DeploymentRuleSet.jar</code>.</p>
+<ol>
+<li>
+<p>Check the status of DRS pushing command to the desktop in the <span class="bold">Status</span> tab of the <span>Advanced Management Console</span>.</p>
+</li>
+<li>
+<p>Check the agent log in <code>C:\ProgramData\Oracle\Java_AMC\agent.log.0</code> for messages relating to DRS upload.</p>
+</li>
+<li>
+<p>From the Java Control Panel, open the Security Tab, and click <span class="bold">View the Active Deployment Rule Set</span> to ensure that the most current version of the rules are shown.</p>
+</li>
+<li>
+<p>If the rules are not updated, then check <code>C:\Windows\Sun\Java\Deployment</code> to locate a <code>DeploymentRuleSet.tmp</code> file. If you see <code>DeploymentRuleSet.tmp</code> in this location, then ensure that all applets and Java Web Start applications are terminated. Restart the <span class="bold">AMC Agent</span> service from the <span class="bold">Services</span> dialog box of the Windows Control Panel.</p>
+Once the agent is restarted, ensure that the <code>DeploymentRuleSet.tmp</code> file is no longer available and the <code>DeploymentRuleSet.jar</code> is updated to the latest version.</li>
+</ol>
+</li>
+<li>
+<p>Verify DRS processing:</p>
+<ol>
+<li>
+<p>Set the deployment logging properties in the <code>&lt;USER_DIR&gt;\AppData\LocalLow\Sun\Deployment\deployment.properties</code> as follows:</p>
+<pre dir="ltr">
+deployment.trace=true
+deployment.trace.level=ALL
+</pre></li>
+<li>
+<p>Check the log files in <code>&lt;USER_DIR&gt;\AppData\LocalLow\Sun\Deployment\log</code>. &nbsp;(Verify both <code>plugin*</code> and <code>javaws*</code> trace files.) Usually, there are two paired trace files produced for an application. One is the log message for the Main plugin Java Version and the other is the trace file for the Java Version defined from the Deployment Rule.</p>
+</li>
+<li>
+<p>Locate the word ruleset in the log file to debug the ruleset processing and find all the ruleset logging.</p>
+<ol>
+<li>
+<p>Verify that the DeploymentRule can be read by the plugin. If there is a certificate error, then ensure that the <code>deployment.properties</code> file is available in the following location: <code>C:\Windows\Sun\Java\Deployment</code>. Also, ensure that the <code>deployment.properties</code> contains the following property: <code>deployment.user.security.trusted.cacerts=C:\\Windows\\Sun\\Java\Deployment\\drscacerts</code>. The <span>Advanced Management Console</span> agent should automatically update this file.</p>
+</li>
+<li>
+<p>If only one trace file is produced and you expected more, there is an issue with the browser bits compared to the Java versions installed. For example, the browser is a 32 bit, but only a 64 bit Java is installed. Look for the word Exception in the log file.</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Verify Internet Explorer (IE) and Java Bits: IE 11 32 bit and 64 bit is the same application in Windows. To swap between 32 bit and 64 bit, in the <span class="bold">Advanced Options</span> tab of the Internet Options dialog box, select the <span class="bold">Enable Enhanced Protection Mode*</span> for &nbsp;64 bit, and ensure that the check box is not selected for 32 bit.</p>
+<p>In Internet Options of IE 11, you can set it as follows:</p>
+<ol>
+<li>
+<p>Go to the Control Panel and open the Action Center. Click <span class="bold">Change User Account Control Settings</span> and verify that the slider is not set to <span class="bold">Never notify</span>.&nbsp; If User Account Control is set to <span class="bold">Never notify</span>, then the Enhanced Protected Mode can't be enabled.</p>
+</li>
+<li>
+<p>In the <span class="bold">Security</span> tab of Internet Options, verify that the <span class="bold">Enable Protected Mode</span> check box is selected.</p>
+</li>
+<li>
+<p>In the <span class="bold">Advanced</span> tab of Internet Options, verify that <span class="bold">Enable Enhanced Protection Mode*</span> is enabled.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Reinstall the agent: When you want to re-install <span>Advanced Management Console</span> agent, either keep its <code>\conf</code> folder intact or run <code>AMCAgent -remove</code>. This also saves you from hitting the agent registration limit from the same IP address.</p>
+</li>
+</ol>
+</div>
+<!-- class="section" --></div>
+</div>
+<div class="sect2"><a id="GUID-93C39B3D-7848-419A-9A8B-9ED3A348E2DC"></a>
+<h2 id="JSAMI-GUID-93C39B3D-7848-419A-9A8B-9ED3A348E2DC" class="sect2">Server</h2>
+<div>
+<div class="section">
+<p>Tips and Tricks to Ensure that the <span>Advanced Management Console</span> Server Runs Efficiently:</p>
+<ol>
+<li>You may encounter error messages, such as <code>404</code>, <code>HTTP_NOT_FOUND</code> while initializing the <span>Advanced Management Console</span>:
+<ul style="list-style-type: disc;">
+<li>
+<p>If you get error messages, such as, <code>Connection refused</code> or <code>Cannot connect to the server</code> while trying to load <code>/amcwebui</code> in the browsers, then the WebLogic server where <span>Advanced Management Console</span> is deployed to is either not started, or is unreachable.</p>
+</li>
+<li>
+<p>If you get a warning message indicating that the page or the server is not trusted by the host, then it means that an unknown SSL certificate is used by the WebLogic Server.</p>
+</li>
+<li>
+<p>If an HTTP Page Not Found (404) error is displayed, then it means that one of the following can be the issue:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>WebLogic Server is started, but <span>Advanced Management Console</span> is not installed.</p>
+</li>
+<li>
+<p>WebLogic Server is started and <span>Advanced Management Console</span> is installed (deployed), but the <span>Advanced Management Console</span> is not targeted to the correct managed server.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If the <span>Advanced Management Console</span> server has been already initialized, but loading <code>/amcwebui</code> still shows the initialization wizard, then there may be a broken database connection. Verify that you can connect to the database from the <span>Advanced Management Console</span> server and that the data source is configured correctly (check whether or not the user credentials are valid), and then restart the <span>Advanced Management Console</span> or the Managed Server, where the <span>Advanced Management Console</span> is deployed to.</p>
+</li>
+<li>
+<p>If the WebLogic Server is started and the <span>Advanced Management Console</span> is installed, but the dependencies, such as the Data Source or JAX-RS 2.0 library are not deployed to the managed servers, then <code>/amcwebui</code> fails to be loaded and an HTTP Page Not Found (404) error is displayed.</p>
+</li>
+<li>
+<p>If you deploy the <span>Advanced Management Console</span> on an unsupported version of the Oracle WebLogic server, then the page gets redirected to the initialization page when loading <code>/amcwebui</code> and a <code>Datasource Cannot be Found</code> error message gets displayed when you continue to initialize the <span>Advanced Management Console</span> manually.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Ensure the following: agent desktops should get registered with the <span>Advanced Management Console</span> and also the Java Usage Tracker records should get registered with the <span>Advanced Management Console</span>. If not, check the WebLogic Server log in the following location: <code>&lt;WebLogicHome&gt;\user_projects\domains\base_domain\servers\AMCServer\logs\AMCServer.log</code>.</p>
+</li>
+<li>
+<p>If you have an Out of Memory (OOM) exception, then you need to increase the Java Heap Space. By default the WebLogic Server uses 512 m. Set this to at least 4 GB. Set&nbsp;<code>USER_MEM_ARGS=-Xmx4g</code>&nbsp;before you invoke <code>setDomainEnv.cmd</code>.</p>
+</li>
+<li>
+<p>Certificate issues can occur if system proxy is not defined. To define proxy servers:</p>
+<ol>
+<li>
+<p>If connection to Internet requires proxy server, then set the following properties:&nbsp;<code>http.proxyHost</code>,&nbsp;<code>http.proxyPort</code>,&nbsp;<code>http.nonProxyHosts</code>,&nbsp;<code>https.proxyHost</code>,&nbsp;<code>https.proxyPort</code>. See <a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-88FC8225-7757-4524-A134-93A0AA0B647B">Setting Up Java Heap Size and Proxy Servers</a>.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>At times, there is a very slow network connection to the server and some <span>Advanced Management Console</span> threads can be marked as Stuck by the Oracle WebLogic Server. For example, if you download an agent bundle from the <span>Advanced Management Console</span> UI, it can take more than 10 minutes. It can take a long time, if agents download JREs to install as well.</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>As a workaround to this issue, you need to configure the WebLogic Server to use a greater timeout than (default) 600s, in case you see a lot of threads marked as Stuck. To configure the timeout, in the WebLogic Administration Console, go to the <span class="bold">Server</span>, expand <span class="bold">Configuration</span>, and then select <span class="bold">Overload</span>, and then update <span class="bold">Max Stuck Thread Time</span> to a greater value.</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<!-- class="section" --></div>
+</div>
+<div class="sect2"><a id="GUID-8F7B9F46-6355-40AC-8EC5-50592BD93837"></a>
+<h2 id="JSAMI-GUID-8F7B9F46-6355-40AC-8EC5-50592BD93837" class="sect2">Important Directory Locations (On a Windows Environment)</h2>
+<div>
+<div class="section">
+<p>The following is a list of important directory locations:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>C:\Windows\Sun\Java\Deployment\</code>: If you want to use self-signed certificates, then ensure that the following files are available in the <code>C:\Windows\Sun\Java\Deployment\</code> location:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>deployment.properties</code>:</p>
+The content of this file is as follows:
+<pre dir="ltr">
+#Updated by AMC   #Fri Aug 19 08:15:55 EDT 2016   
+deployment.user.security.trusted.cacerts=C\:\\windows\\Sun\\Java\\Deployment\\drscacerts
+</pre></li>
+<li>
+<p><code>drscacerts</code>: The Keystore pointed to in the <code>deployment.properties</code> file containing the self-signed certificate.</p>
+</li>
+<li>If you have a signing certificate from a certificate authority, then it&rsquo;s sufficient if you have the <code>DeploymentRuleSet.jar</code> file in your Windows directory, for example, <code>C:\Windows\Sun\Java\Deployment\DeploymentRuleSet.jar</code>.</li>
+</ul>
+</li>
+<li><code>C:\Users\user\AppData\LocalLow\Sun\Java\Deployment\</code>: The client log files and the <code>deployment.properties</code> file are located in this directory. You can capture additional information by adding the following properties to the <code>deployment.properties</code> file:
+<pre dir="ltr">
+deployment.trace=true
+deployment.trace.level=all
+</pre></li>
+<li><code>$JRE_HOME%\lib\management\usagetracker.properties</code>: To troubleshoot the Java Usage Tracker, add the following in the <code>usagetracker.properties</code> file:
+<pre dir="ltr">
+com.oracle.usagetracker.logToFile = ${user.home}/.java_usagetracker
+com.oracle.usagetracker.verbose = true
+</pre>
+If you still find issues, then add the properties to <code>C:\Program Files\Java\conf</code>.</li>
+<li><code>%ProgramData%\Oracle\Java_AMC\</code>: The <span>Advanced Management Console</span> log conversations with the <span>Advanced Management Console</span> server are available here. The content of the log file is as follows:
+<pre dir="ltr">
+%AMC_HOME%\Middleware\Oracle_Home\user_projects\domains\base_domain\servers\AdminServer\logs\{base_domain.log and AdminServer.log}
+%AMC_HOME%\Middleware\Oracle_Home\user_projects\domains\base_domain\servers\AMC-Server\logs\AMC-Server.log
+</pre></li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<div class="sect2"><a id="GUID-83B86787-EC3F-480C-B521-B378F44DE6C2"></a>
+<h2 id="JSAMI-GUID-83B86787-EC3F-480C-B521-B378F44DE6C2" class="sect2">Important Directory Locations (On an OS X Environment)</h2>
+<div>
+<div class="section">
+<p>The following is a list of important directory locations:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>/Library/Application Support/Oracle/Java</code>: The Desktop-wide Java settings, such as the Java Usage Tracker configuration file (<code>usagetracker.properties</code>) are stored here. The Deployment rule set is in <code>Deployment/&lt;sub-folder&gt;</code>.</p>
+</li>
+<li>
+<p><code>/Library/Application Support/Oracle/Java_AMC</code>: This is the <span>Advanced Management Console</span> agent folder that also contains log files apart from other folders.</p>
+</li>
+<li>
+<p><code>~/Library/Application Support/Oracle/Java/Deployment</code>: This is the user-specific-deployment home directory. Settings from the Java Control Panel are stored for each user in this folder.</p>
+</li>
+<li>
+<p><code>/Library/Internet Plug-Ins/JavaAppletPlugin.plugin</code>: This folder contains the system-wide JREs that are used to run Java applets in browsers. On an OS X environment, typically, there maybe just one JRE installed.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment82">
+<tr>
+<td class="cellalignment89">
+<table class="cellalignment93">
+<tr>
+<td class="cellalignment86"><a href="security-compliance-advanced-management-console.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2014, 2017, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment91">
+<table class="cellalignment85">
+<tr>
+<td class="cellalignment86"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment86"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment86"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

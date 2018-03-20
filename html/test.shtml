@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deals-on-Wheels</title>
+<style>
+#banner {
+  text-align: center;
+}
+#content {
+  width: 700px;
+  height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+  text-align: justify;
+  color: #300e04;
+}
+#left {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+#right {
+  float: right;
+  height: 100%;
+  width: 80%;
+}
+#footer {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div id="banner">
+<img src="test.gif" alt="">
+</div> <!--#banner -->
+<div id="content">
+<!--#include virtual="divleft.shtml" -->
+<div id="right">
+<h1>Best Buys on the 'Net!</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce velit massa, posuere at egestas id, ultricies a lectus. Aliquam purus nisi, pharetra at gravida sit amet, egestas nec justo. Nullam accumsan feugiat felis ac lobortis. Nunc gravida gravida risus in sollicitudin. Ut dictum, diam at volutpat malesuada, tellus felis molestie urna, vel aliquet purus purus et eros. Ut at turpis ut dolor lacinia laoreet at non arcu. Proin nibh lacus, imperdiet sit amet congue eget, feugiat sed odio. Etiam massa leo, sollicitudin id tristique sit amet, venenatis non risus. Praesent fringilla mattis feugiat. Morbi pretium neque sit amet purus cursus molestie. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse mi est, commodo sagittis tempus sed, sagittis at tortor. Fusce quis nulla justo. Cras rhoncus ultricies pretium.</p>
+<p>Nunc ut pellentesque urna. Vivamus tortor libero, dapibus sit amet porttitor sed, rhoncus eget metus. Vivamus erat risus, pharetra quis sagittis sit amet, auctor sit amet elit. In accumsan pulvinar condimentum. Etiam est ipsum, venenatis tristique facilisis id, pellentesque nec sapien. Proin fringilla, dolor non placerat viverra, sem ipsum tristique lectus, eu fringilla sapien est id mauris. Praesent risus orci, cursus nec hendrerit vitae, sagittis at odio.</p>
+<p>Aliquam nisi nunc, fringilla quis vehicula vel, adipiscing et tellus. Suspendisse blandit, augue vitae suscipit gravida, nisi orci dignissim augue, vitae tincidunt mauris dui eu nisl. Suspendisse potenti. Pellentesque fermentum eros non odio lacinia interdum. Cras elit arcu, tristique sit amet vulputate vitae, convallis sed felis. Donec sagittis diam non massa pharetra ultricies. Ut tincidunt tortor non leo volutpat sit amet tempor lectus porttitor.</p>
+</div> <!--#right -->
+</div> <!--#content -->
+<div id="footer">
+<img src="test2.gif" alt="">
+</div> <!--#footer -->
+</body>
+</html>

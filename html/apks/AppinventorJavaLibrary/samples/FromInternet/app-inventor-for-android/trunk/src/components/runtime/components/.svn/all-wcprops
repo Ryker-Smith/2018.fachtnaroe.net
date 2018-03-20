@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/49/trunk/src/components/runtime/components
+END
+SpriteComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/49/trunk/src/components/runtime/components/SpriteComponent.java
+END
+AlarmHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/49/trunk/src/components/runtime/components/AlarmHandler.java
+END
+SensorComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/49/trunk/src/components/runtime/components/SensorComponent.java
+END
+HandlesEventDispatching.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/49/trunk/src/components/runtime/components/HandlesEventDispatching.java
+END
+VisibleComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/49/trunk/src/components/runtime/components/VisibleComponent.java
+END
+Component.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/49/trunk/src/components/runtime/components/Component.java
+END

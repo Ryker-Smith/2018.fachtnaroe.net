@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- shell/jobz2.html -->
+
+<HEAD>
+<TITLE>Running processes as background jobs</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Running processes as background jobs</H1>
+
+<P>To run a process in the background as a <EM>job</EM> and carry
+on working add an <SAMP>&</SAMP> (ampersand) at the end of the command
+line. For example:</P>
+
+<PRE WIDTH=80>   <STRONG>find /usr/man -name *.1 -print &gt; sect1 &</STRONG>
+   [1] 2548
+</PRE>
+
+<P>The shell forks a child process to run the command and
+displays the job number (<SAMP>[</SAMP><EM>n</EM><SAMP>]</SAMP>) and the PID
+(Process IDentifier) number. The shell prompt returns and
+you can enter further commands.</P>
+
+<P>Redirect the <A HREF="http://www.ee.surrey.ac.uk/Docs/Unixhelp/commanz/cmd3.2.html">standard output</A>
+for a command that is being
+run in the background to a file.  This prevents the
+output from the command appearing on your screen and
+interrupting your current work.</P>
+
+<P>If the command is likely to produce error messages you
+will need to redirect standard error.  Otherwise all
+error messages are sent to your screen.</P>
+
+<P>Do not run an interactive command that requires you to
+type something at the terminal as a background job.  If
+you do the job will stop and wait for user input.  You
+will then have to <A HREF="jobz5.html">kill its process</A>.</P>
+
+<UL>
+<LI><A HREF="index12.html">Did You Know?</A>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="index15.html"><IMG SRC="weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="unixhelp_search.html"><IMG SRC="weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="index.html"><IMG SRC="weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

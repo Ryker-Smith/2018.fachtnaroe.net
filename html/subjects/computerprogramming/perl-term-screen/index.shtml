@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Computer Programming: <b>Term::Screen</b> test program</h1>
+<p>This program, written in Perl, is the official test file for the <b>Term::Screen</b> module. Once the module has been installed this program should be able to run. If not, the module would need re-installation.</p>
+<p>Since <b>Term::Screen</b> is already installed on the programming server you can copy and paste this file to see what it does. You can then examine the code in it to see <i>how</i> it does what it does. In so understanding you should be able to begin to see how you might start using the module for your assignment.</p>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<pre>
+#!/usr/bin/perl
+#
+# TCtest.pl
+#
+# test program to exercise the screen contol module
+#
+# by Mark Kaehny 1995
+# this file is available under the same terms as the perl language 
+# distribution. See the Artistic License.
+#
+
+require Term::Screen;
+
+$scr = new Term::Screen;
+
+#test clear screen and output
+$scr-&gt;clrscr();
+$scr-&gt;puts("Test series for Screen.pm module for perl5");
+
+# test cursor movement, output and linking together
+$scr-&gt;at(2,3)-&gt;puts("1. Should be at row 2 col 3 (upper left is 0,0)");
+
+#test current position update
+$r = $scr-&gt;{'r'}; $c = $scr-&gt;{'c'};
+$scr-&gt;at(3,0)-&gt;puts("2. Last position $r $c -- should be 2 50.");
+
+#test rows and cols ( should be updated for signal )
+$scr-&gt;at(4,0)-&gt;puts("3. Screen size: " . $scr-&gt;{'rows'} . " rows and " . 
+                                           $scr-&gt;{'cols'} . " columns.");
+# test standout and normal test
+$scr-&gt;at(6,0);
+$scr-&gt;puts("4. Testing ")-&gt;reverse()-&gt;puts("reverse");
+$scr-&gt;normal()-&gt;puts(" mode, ");
+$scr-&gt;bold()-&gt;puts("bold")-&gt;normal()-&gt;puts(" mode, ");
+$scr-&gt;bold()-&gt;reverse()-&gt;puts("and both")-&gt;normal()-&gt;puts(" together.");
+
+# test clreol 
+# first put some stuff up
+$line = "0---------10--------20--------30--------40--------50--------60--------70-------";
+$scr-&gt;at(7,0)-&gt;puts("5. Testing clreol - " . 
+                      "   The next 2 lines should end at col 20 and 30.");
+for (8 .. 10) {$scr-&gt;at($_,0)-&gt;puts($line);}
+$scr-&gt;at(8,20)-&gt;clreol()-&gt;at(9,30)-&gt;clreol();
+
+# test clreos
+for (11 .. 20) { $scr-&gt;at($_,0)-&gt;puts($line); }
+$scr-&gt;at(11,0)-&gt;puts("6. Clreos - Hit a key to clear all right and below:");
+$scr-&gt;getch();
+$scr-&gt;clreos();
+
+#test insert line and delete line
+$scr-&gt;at(12,0)-&gt;puts("7. Test insert and delete line - 15 deleted, and ...");
+for (13 .. 16) { $scr-&gt;at($_,0)-&gt;puts($_ . substr($line,2)); }
+$scr-&gt;at(15,0)-&gt;dl();
+$scr-&gt;at(14,0)-&gt;il()-&gt;at(14,0)-&gt;puts("... this is where line 14 was");
+
+# test key_pressed
+$scr-&gt;at(18,0)-&gt;puts("8. Key_pressed - Don't Hit a key in the next 5 seconds: ");
+if ($scr-&gt;key_pressed(5)) { $scr-&gt;puts("HEY A KEY WAS HIT"); } 
+  else { $scr-&gt;puts("GOOD - NO KEY HIT!"); }
+$scr-&gt;at(19,0)-&gt;puts("Hit a key in next 15 seconds: ");
+if ($scr-&gt;key_pressed(15)) { $scr-&gt;puts("KEY HIT!"); } 
+  else { $scr-&gt;puts("NO KEY HIT"); }
+
+# test getch
+# clear buffer out
+$scr-&gt;flush_input();
+$scr-&gt;at(21,0)-&gt;puts("Testing getch, Enter Key (q to quit): ")-&gt;at(21,40);
+$ch = '';
+while(($ch = $scr-&gt;getch()) ne 'q') 
+{
+  if (length($ch) == 1) 
+    {
+      $scr-&gt;at(21,50)-&gt;clreol()-&gt;puts("ord of char is: ");
+      $scr-&gt;puts(ord($ch))-&gt;at(21,40);
+    }
+  else 
+    {
+      $scr-&gt;at(21,50)-&gt;clreol()-&gt;puts("function value: $ch");
+      $scr-&gt;at(21,40);
+    }
+}
+
+$scr-&gt;at(22,0);
+</pre>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<h2>Sample Task 1</h2>
+Try starting (as we always do) with a "Hello World" program, but with the "Hello World" positioned top left on a blank screen...
+<form>
+<input type="button" value="Back" onclick="history.back()"></form>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

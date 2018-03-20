@@ -1,0 +1,101 @@
+h1	{
+	font-size: 200%;
+	font-weight: 100;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	} 
+
+h2	{
+	color: #0c0b0c;
+	font-size: 150%;
+	font-weight: 600;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	}
+
+h3	{
+	color: #808080;
+	font-size: 100%;
+	font-weight: 600;
+	}
+
+h4	{
+	font-size: 80%;
+	font-weight: 100;
+	}
+
+h5	{
+	font-size: 60%;
+	font-weight: 100;
+	color: #808080;
+	text-align: center;
+	}
+
+h6	{
+	font-weight: 100;
+	font-size: 50%;
+	}
+
+#logo {
+	width: 100%;
+	height: 73px;
+	background-color: #050b61;
+	background-image: url(img/xpic.gif);
+	background-repeat: no-repeat;
+	background-position: right;
+	}
+#logo h1{
+	color: white;1207ef
+	text-align: left;
+	padding: 10px;
+	}
+
+#links	{
+	background-color: #0c46f4;
+	position: absolute;
+	text-align: right;
+	top: 90px;
+	left: 100px;
+	width: 150px;
+	}
+
+#content{
+	position: absolute;
+	top: 73px;
+	left: 250px;
+	right: 100px;
+	padding: 10px;
+	border-bottom: 1px #808080 solid;
+	border-left: 1px #808080 solid;
+	border-right: 1px #808080 solid;	
+	}
+
+body	{
+	color: #000;
+	background-color: #fff;
+	margin:0px;
+	padding:0px;
+	font: 100% Arial, Sans-Serif;
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	}
+
+#links a{
+	font-size: 80%;
+	color: #000;
+	text-decoration: none;
+	padding-left: 12px;
+	padding-right: 12px;
+	width: 150px;
+	}
+
+#links a:hover {
+	font-weight: 600;
+	padding-right: 10px;
+	border-right: 10px #f2ee15 solid;
+	background-image: url(img/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: top left;
+	}

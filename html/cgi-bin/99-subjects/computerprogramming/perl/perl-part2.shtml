@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 2</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h3>What can I do in Perl? If it's for report extraction and so on surely it's not a general programming language; won't it be dull and limited?</h3>
+<h3>No. Perl was written with a wide core functionality that allows a lot of freedom. However, the language was designed to be extensible - you can add things to it! And people did, such was the popularity of the language. If you want to know more about how to do anything, find a suitable site and do a search. Download the <b>module</b> necessary, include it in you program and away you go.<h3>
+<h3>For example if you wanted to do clever stuff with the keyboard, <a href="http://perldoc.perl.org/perlfaq8.html#How-do-I-do-fancy-stuff-with-the-keyboard%2fscreen%2fmouse%3f">look here</a>.<h3>
+<h2>How do I start?<h2>
+<h3>All programming languages need <b><u>3</u></b> components:
+<ol>
+<li>An editor to create the program</li>
+<li>A <b>Compiler</b> or <b>Interpreter</b> to translate and execute the program</li>
+<li>An environment in which to run the created programs (a.k.a. a computer!)</li>
+</ol></h3>
+ <h3>So to get started, log in to a UNIX/Linux computer. Perl is available for Windows<sup>&trade;</sup> as well but why use an imitation of the real thing; why have glitter when you can have gold?</h3>
+<h2>Programming Component 3: Where do I Log In?</h2>
+<h3>If the school computer system was correctly set up, you'd have full access to a complete Linux GUI and could program very easily. As it is not, we have to rely on some older techniques that are still solid and dependable, just not so user friendly.</h3>
+<h3>We're going to use a CLI for the 3<sup>rd</sup> element above. We are going to use a system called Telnet to connect to a remote computer that will support our programming effort. From the <b>P:</b> drive, find the program called Dave's Telnet, or <b>dtelnet</b>, and double click on the icon that looks like a computer. This will start the telnet program. It's called <b>D</b>telnet after <b>D</b>ave Cole, the original opensource developer of the program.</h3>
+<h3>If you want your own copy of the dtelnet program, make sure you select all the dtelnet files and copy them to your personal <b>Z:</b> drive.</h3>
+<h3>If you're working at home you can also find a link to the official download site in the software downloads section of the help area of this site (normally on the left).</h3>
+<h3>When you start dtelnet, click on Connect and then choose Remote System from the menu. You then specify the computer you will be using for your programming. The settings look like this:</h3>
+<p><center><img src="/images/telnet01.jpg" width="90%"></center>
+<h3>If it's not clear from the above image, the remote host is <b>fachtnaroe.servehttp.com</b>, the port is <b>telnet</b> (port number 23), the connection protocol is also <b>telnet</b> and the TERM type is <b>linux</b> - though when this is unavailable in a program VT100 is generally as good.</h3>
+<h3>Once the server, port and other settings are correct (and generally you'll only ever change the server you connect to) click on OK. Provide your username and password to the remote system and you're ready to start.</h3>
+<h3>You'll know you're ready to start because after a successful login you'll see a command prompt with a flashing cursor waiting for your next move........</h3>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+</div>
+</body>
+</html>

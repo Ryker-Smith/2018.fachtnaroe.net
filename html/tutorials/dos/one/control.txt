@@ -1,0 +1,35 @@
+Many times you will have an automated process running that 
+you want shut down at a certain time of day. What you are 
+asking is a generic "How can I control another program in 
+Windows" question. I have a few suggestions. 
+
+First, Win98 has built-in scripting. You can use Microsoft's 
+VBScript or JScript. Allegedly you can use Perl, but I haven't 
+seen an example. Amazingly, the scripting will run on Win95 
+& NT and is available as a free download. See
+http://www.microsoft.com/scripting
+
+Second, there is a program called WinBatch that allows you 
+to do lots of things. I played with it a few years ago and 
+it seemed to work as advertised. See
+http://www.hotfiles.com/?0003D9
+
+Third, I wrote a program that can be used to crudely script 
+other Windows programs. Basically. it can send keystrokes. 
+No programming. Just two functions: "AppActivate" gives focus 
+to a window and "SendKeys" sends keystrokes. See
+http://www.calweb.com/~webspace/slideshow
+
+Finally, the time of day problem. Your basic approach here 
+is to schedule a program to run at a certain time of day. 
+This scheduled program (Script, WinBatch, SlideShow) will 
+then kill your other program.
+
+Frankly, you might want to read the Windows help on the 
+"System Agent". I don't use it, but I think it is capable 
+of scheduling programs. McAfee and Norton Antivirus both 
+include a scheduler as well. There are other schedulers 
+available like PC Magazine's free one. See
+http://www.hotfiles.com/?000OHP
+
+http://www.calweb.com/~webspace

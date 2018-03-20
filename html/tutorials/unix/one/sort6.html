@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/sort6.html -->
+
+<HEAD>
+<TITLE>Merging sorted files</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Merging sorted files</H1>
+
+<P>You can merge two or more files at the same time as they
+are sorted. For example:</P>
+
+<PRE WIDTH=80>   <STRONG> sort -m -o accounts +1 -2 month[1-3]</STRONG>
+</PRE>
+
+<P>This sorts the files <SAMP>month1</SAMP> through <SAMP>month3</SAMP>
+on the
+information in the second field of each line of each
+file.  The results are merged and sent to the file
+<SAMP>accounts</SAMP>.</P>
+
+<P>Files that have already been sorted can be merged using
+only the <STRONG>-m</STRONG> option. For example:</P>
+
+<PRE WIDTH=80>   <STRONG>sort -m first_qtr second_qtr &gt; halfyear</STRONG>
+</PRE>
+
+<P>This merges the contents of files <SAMP>first_qtr</SAMP> and
+<SAMP>second_qtr</SAMP> and places the result in the file 
+<SAMP>halfyear</SAMP>.</P>
+
+<P>The <SAMP>&gt;</SAMP> character is used to <A HREF="../commanz/cmd3.2.1.html">direct the output</A> of the
+sort command into the file <SAMP>halfyear</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

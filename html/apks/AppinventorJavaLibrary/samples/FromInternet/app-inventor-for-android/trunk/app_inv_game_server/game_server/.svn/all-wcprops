@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server
+END
+autoretry_datastore.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/autoretry_datastore.py
+END
+server.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/server.py
+END
+server_commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/server_commands.py
+END
+iso8601.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/iso8601.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/__init__.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/48/trunk/app_inv_game_server/game_server/utils.py
+END

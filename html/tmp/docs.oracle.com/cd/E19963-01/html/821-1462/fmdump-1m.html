@@ -1,0 +1,825 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 1M: System Administration Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the Solaris (TM) system administration and  maintenance utilities and is for system and network administrators.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1462";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1M: System Administration Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1462.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1M (821-1462-06)&body=Page: fmdump-1m.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-37.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-194.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-310.html">System Administration Commands - Part 1</a></p>
+<p class="toc level2"><a href="x-6to4relay-1m.html"><tt>6to4relay</tt>(1M)</a></p>
+<p class="toc level2"><a href="accept-1m.html"><tt>accept</tt>(1M)</a></p>
+<p class="toc level2"><a href="acct-1m.html"><tt>acct</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctadm-1m.html"><tt>acctadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcms-1m.html"><tt>acctcms</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon1-1m.html"><tt>acctcon1</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon-1m.html"><tt>acctcon</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctcon2-1m.html"><tt>acctcon2</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctdisk-1m.html"><tt>acctdisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctdusg-1m.html"><tt>acctdusg</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctmerg-1m.html"><tt>acctmerg</tt>(1M)</a></p>
+<p class="toc level2"><a href="accton-1m.html"><tt>accton</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc1-1m.html"><tt>acctprc1</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc-1m.html"><tt>acctprc</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctprc2-1m.html"><tt>acctprc2</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctsh-1m.html"><tt>acctsh</tt>(1M)</a></p>
+<p class="toc level2"><a href="acctwtmp-1m.html"><tt>acctwtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="acpihpd-1m.html"><tt>acpihpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="adbgen-1m.html"><tt>adbgen</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-allocatable-1m.html"><tt>add_allocatable</tt>(1M)</a></p>
+<p class="toc level2"><a href="addbadsec-1m.html"><tt>addbadsec</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-drv-1m.html"><tt>add_drv</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-install-client-1m.html"><tt>add_install_client</tt>(1M)</a></p>
+<p class="toc level2"><a href="add-to-install-server-1m.html"><tt>add_to_install_server</tt>(1M)</a></p>
+<p class="toc level2"><a href="afbconfig-1m.html"><tt>afbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="apache-1m.html"><tt>apache</tt>(1M)</a></p>
+<p class="toc level2"><a href="arp-1m.html"><tt>arp</tt>(1M)</a></p>
+<p class="toc level2"><a href="atohexlabel-1m.html"><tt>atohexlabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="audit-1m.html"><tt>audit</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditconfig-1m.html"><tt>auditconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditd-1m.html"><tt>auditd</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditrecord-1m.html"><tt>auditrecord</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditreduce-1m.html"><tt>auditreduce</tt>(1M)</a></p>
+<p class="toc level2"><a href="auditstat-1m.html"><tt>auditstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="audit-warn-1m.html"><tt>audit_warn</tt>(1M)</a></p>
+<p class="toc level2"><a href="automount-1m.html"><tt>automount</tt>(1M)</a></p>
+<p class="toc level2"><a href="automountd-1m.html"><tt>automountd</tt>(1M)</a></p>
+<p class="toc level2"><a href="autopush-1m.html"><tt>autopush</tt>(1M)</a></p>
+<p class="toc level2"><a href="bart-1m.html"><tt>bart</tt>(1M)</a></p>
+<p class="toc level2"><a href="beadm-1m.html"><tt>beadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="boot-1m.html"><tt>boot</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootadm-1m.html"><tt>bootadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootconfchk-1m.html"><tt>bootconfchk</tt>(1M)</a></p>
+<p class="toc level2"><a href="bootparamd-1m.html"><tt>bootparamd</tt>(1M)</a></p>
+<p class="toc level2"><a href="busstat-1m.html"><tt>busstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefsd-1m.html"><tt>cachefsd</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefslog-1m.html"><tt>cachefslog</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefspack-1m.html"><tt>cachefspack</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefsstat-1m.html"><tt>cachefsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cachefswssize-1m.html"><tt>cachefswssize</tt>(1M)</a></p>
+<p class="toc level2"><a href="captoinfo-1m.html"><tt>captoinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="catman-1m.html"><tt>catman</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-1m.html"><tt>cfgadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-ac-1m.html"><tt>cfgadm_ac</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-cardbus-1m.html"><tt>cfgadm_cardbus</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-fp-1m.html"><tt>cfgadm_fp</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-ib-1m.html"><tt>cfgadm_ib</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-pci-1m.html"><tt>cfgadm_pci</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sata-1m.html"><tt>cfgadm_sata</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sbd-1m.html"><tt>cfgadm_sbd</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-scsi-1m.html"><tt>cfgadm_scsi</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sdcard-1m.html"><tt>cfgadm_sdcard</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-shp-1m.html"><tt>cfgadm_shp</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-sysctrl-1m.html"><tt>cfgadm_sysctrl</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfgadm-usb-1m.html"><tt>cfgadm_usb</tt>(1M)</a></p>
+<p class="toc level2"><a href="cfsadmin-1m.html"><tt>cfsadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="chargefee-1m.html"><tt>chargefee</tt>(1M)</a></p>
+<p class="toc level2"><a href="chat-1m.html"><tt>chat</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-1m.html"><tt>check</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-hostname-1m.html"><tt>check-hostname</tt>(1M)</a></p>
+<p class="toc level2"><a href="check-permissions-1m.html"><tt>check-permissions</tt>(1M)</a></p>
+<p class="toc level2"><a href="chk-encodings-1m.html"><tt>chk_encodings</tt>(1M)</a></p>
+<p class="toc level2"><a href="chroot-1m.html"><tt>chroot</tt>(1M)</a></p>
+<p class="toc level2"><a href="cimworkshop-1m.html"><tt>cimworkshop</tt>(1M)</a></p>
+<p class="toc level2"><a href="ckpacct-1m.html"><tt>ckpacct</tt>(1M)</a></p>
+<p class="toc level2"><a href="clear-locks-1m.html"><tt>clear_locks</tt>(1M)</a></p>
+<p class="toc level2"><a href="clinfo-1m.html"><tt>clinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="closewtmp-1m.html"><tt>closewtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="clri-1m.html"><tt>clri</tt>(1M)</a></p>
+<p class="toc level2"><a href="comsat-1m.html"><tt>comsat</tt>(1M)</a></p>
+<p class="toc level2"><a href="consadm-1m.html"><tt>consadm</tt>(1m)</a></p>
+<p class="toc level2"><a href="conv-lp-1m.html"><tt>conv_lp</tt>(1M)</a></p>
+<p class="toc level2"><a href="conv-lpd-1m.html"><tt>conv_lpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="coreadm-1m.html"><tt>coreadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cpustat-1m.html"><tt>cpustat</tt>(1M)</a></p>
+<p class="toc level2"><a href="cron-1m.html"><tt>cron</tt>(1M)</a></p>
+<p class="toc level2"><a href="cryptoadm-1m.html"><tt>cryptoadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="cvcd-1m.html"><tt>cvcd</tt>(1M)</a></p>
+<p class="toc level2"><a href="datadm-1m.html"><tt>datadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dcopy-1m.html"><tt>dcopy</tt>(1M)</a></p>
+<p class="toc level2"><a href="dcs-1m.html"><tt>dcs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dd-1m.html"><tt>dd</tt>(1M)</a></p>
+<p class="toc level2"><a href="devattr-1m.html"><tt>devattr</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfree-1m.html"><tt>devfree</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfsadm-1m.html"><tt>devfsadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="devfsadmd-1m.html"><tt>devfsadmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="device-allocate-1m.html"><tt>device_allocate</tt>(1M)</a></p>
+<p class="toc level2"><a href="device-remap-1m.html"><tt>device_remap</tt>(1M)</a></p>
+<p class="toc level2"><a href="devinfo-1m.html"><tt>devinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="devlinks-1m.html"><tt>devlinks</tt>(1M)</a></p>
+<p class="toc level2"><a href="devnm-1m.html"><tt>devnm</tt>(1M)</a></p>
+<p class="toc level2"><a href="devprop-1m.html"><tt>devprop</tt>(1M)</a></p>
+<p class="toc level2"><a href="devreserv-1m.html"><tt>devreserv</tt>(1M)</a></p>
+<p class="toc level2"><a href="df-1m.html"><tt>df</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfmounts-1m.html"><tt>dfmounts</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfmounts-nfs-1m.html"><tt>dfmounts_nfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfshares-1m.html"><tt>dfshares</tt>(1M)</a></p>
+<p class="toc level2"><a href="dfshares-nfs-1m.html"><tt>dfshares_nfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="df-ufs-1m.html"><tt>df_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpagent-1m.html"><tt>dhcpagent</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpconfig-1m.html"><tt>dhcpconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhcpmgr-1m.html"><tt>dhcpmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="dhtadm-1m.html"><tt>dhtadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dig-1m.html"><tt>dig</tt>(1M)</a></p>
+<p class="toc level2"><a href="directoryserver-1m.html"><tt>directoryserver</tt>(1M)</a></p>
+<p class="toc level2"><a href="disks-1m.html"><tt>disks</tt>(1M)</a></p>
+<p class="toc level2"><a href="diskscan-1m.html"><tt>diskscan</tt>(1M)</a></p>
+<p class="toc level2"><a href="dispadmin-1m.html"><tt>dispadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="dladm-1m.html"><tt>dladm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dlmgmtd-1m.html"><tt>dlmgmtd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dlstat-1m.html"><tt>dlstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="dmesg-1m.html"><tt>dmesg</tt>(1M)</a></p>
+<p class="toc level2"><a href="dminfo-1m.html"><tt>dminfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="dns-sd-1m.html"><tt>dns-sd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-dsfromkey-1m.html"><tt>dnssec-dsfromkey</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-keyfromlabel-1m.html"><tt>dnssec-keyfromlabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-keygen-1m.html"><tt>dnssec-keygen</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-makekeyset-1m.html"><tt>dnssec-makekeyset</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-signkey-1m.html"><tt>dnssec-signkey</tt>(1M)</a></p>
+<p class="toc level2"><a href="dnssec-signzone-1m.html"><tt>dnssec-signzone</tt>(1M)</a></p>
+<p class="toc level2"><a href="dodisk-1m.html"><tt>dodisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="domainname-1m.html"><tt>domainname</tt>(1M)</a></p>
+<p class="toc level2"><a href="drd-1m.html"><tt>drd</tt>(1M)</a></p>
+<p class="toc level2"><a href="drvconfig-1m.html"><tt>drvconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsbitmap-1m.html"><tt>dsbitmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfg-1m.html"><tt>dscfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfgadm-1m.html"><tt>dscfgadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="dscfglockd-1m.html"><tt>dscfglockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsstat-1m.html"><tt>dsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="dsvclockd-1m.html"><tt>dsvclockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="dtrace-1m.html"><tt>dtrace</tt>(1M)</a></p>
+<p class="toc level2"><a href="dumpadm-1m.html"><tt>dumpadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="editmap-1m.html"><tt>editmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="edquota-1m.html"><tt>edquota</tt>(1M)</a></p>
+<p class="toc level2"><a href="eeprom-1m.html"><tt>eeprom</tt>(1M)</a></p>
+<p class="toc level2"><a href="efdaemon-1m.html"><tt>efdaemon</tt>(1M)</a></p>
+<p class="toc level2"><a href="embedded-su-1m.html"><tt>embedded_su</tt>(1M)</a></p>
+<p class="toc level2"><a href="etrn-1m.html"><tt>etrn</tt>(1M)</a></p>
+<p class="toc level2"><a href="fbconfig-1m.html"><tt>fbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="fbconf-xorg-1m.html"><tt>fbconf_xorg</tt>(1M)</a></p>
+<p class="toc level2"><a href="fcadm-1m.html"><tt>fcadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fcinfo-1m.html"><tt>fcinfo</tt>(1M)</a></p>
+<p class="toc level2"><a href="fdetach-1m.html"><tt>fdetach</tt>(1M)</a></p>
+<p class="toc level2"><a href="fdisk-1m.html"><tt>fdisk</tt>(1M)</a></p>
+<p class="toc level2"><a href="ff-1m.html"><tt>ff</tt>(1M)</a></p>
+<p class="toc level2"><a href="ffbconfig-1m.html"><tt>ffbconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ff-ufs-1m.html"><tt>ff_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fingerd-1m.html"><tt>fingerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fiocompress-1m.html"><tt>fiocompress</tt>(1M)</a></p>
+<p class="toc level2"><a href="flar-1m.html"><tt>flar</tt>(1M)</a></p>
+<p class="toc level2"><a href="flarcreate-1m.html"><tt>flarcreate</tt>(1M)</a></p>
+<p class="toc level2"><a href="flowadm-1m.html"><tt>flowadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="flowstat-1m.html"><tt>flowstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmadm-1m.html"><tt>fmadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmd-1m.html"><tt>fmd</tt>(1M)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>fmdump</tt>(1M)</a></p>
+</div>
+<p class="toc level2"><a href="fmstat-1m.html"><tt>fmstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fmthard-1m.html"><tt>fmthard</tt>(1M)</a></p>
+<p class="toc level2"><a href="format-1m.html"><tt>format</tt>(1M)</a></p>
+<p class="toc level2"><a href="fpsd-1m.html"><tt>fpsd</tt>(1M)</a></p>
+<p class="toc level2"><a href="fruadm-1m.html"><tt>fruadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-1m.html"><tt>fsck</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-cachefs-1m.html"><tt>fsck_cachefs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-pcfs-1m.html"><tt>fsck_pcfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-udfs-1m.html"><tt>fsck_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsck-ufs-1m.html"><tt>fsck_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-1m.html"><tt>fsdb</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-udfs-1m.html"><tt>fsdb_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsdb-ufs-1m.html"><tt>fsdb_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsirand-1m.html"><tt>fsirand</tt>(1M)</a></p>
+<p class="toc level2"><a href="fssnap-1m.html"><tt>fssnap</tt>(1M)</a></p>
+<p class="toc level2"><a href="fssnap-ufs-1m.html"><tt>fssnap_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="fsstat-1m.html"><tt>fsstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="fstyp-1m.html"><tt>fstyp</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpaddhost-1m.html"><tt>ftpaddhost</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpconfig-1m.html"><tt>ftpconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpd-1m.html"><tt>ftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftprestart-1m.html"><tt>ftprestart</tt>(1M)</a></p>
+<p class="toc level2"><a href="ftpshut-1m.html"><tt>ftpshut</tt>(1M)</a></p>
+<p class="toc level2"><a href="fuser-1m.html"><tt>fuser</tt>(1M)</a></p>
+<p class="toc level2"><a href="fwflash-1m.html"><tt>fwflash</tt>(1M)</a></p>
+<p class="toc level2"><a href="fwtmp-1m.html"><tt>fwtmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdev-1m.html"><tt>getdev</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdevpolicy-1m.html"><tt>getdevpolicy</tt>(1M)</a></p>
+<p class="toc level2"><a href="getdgrp-1m.html"><tt>getdgrp</tt>(1M)</a></p>
+<p class="toc level2"><a href="getent-1m.html"><tt>getent</tt>(1M)</a></p>
+<p class="toc level2"><a href="gettable-1m.html"><tt>gettable</tt>(1M)</a></p>
+<p class="toc level2"><a href="getty-1m.html"><tt>getty</tt>(1M)</a></p>
+<p class="toc level2"><a href="getvol-1m.html"><tt>getvol</tt>(1M)</a></p>
+<p class="toc level2"><a href="gfxconfig-1m.html"><tt>GFXconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="gkadmin-1m.html"><tt>gkadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupadd-1m.html"><tt>groupadd</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupdel-1m.html"><tt>groupdel</tt>(1M)</a></p>
+<p class="toc level2"><a href="groupmod-1m.html"><tt>groupmod</tt>(1M)</a></p>
+<p class="toc level2"><a href="growfs-1m.html"><tt>growfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="grpck-1m.html"><tt>grpck</tt>(1M)</a></p>
+<p class="toc level2"><a href="gsscred-1m.html"><tt>gsscred</tt>(1M)</a></p>
+<p class="toc level2"><a href="gssd-1m.html"><tt>gssd</tt>(1M)</a></p>
+<p class="toc level2"><a href="hald-1m.html"><tt>hald</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-device-1m.html"><tt>hal-device</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-fdi-validate-1m.html"><tt>hal-fdi-validate</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-1m.html"><tt>hal-find</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-by-capability-1m.html"><tt>hal-find-by-capability</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-find-by-property-1m.html"><tt>hal-find-by-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-get-property-1m.html"><tt>hal-get-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="hal-set-property-1m.html"><tt>hal-set-property</tt>(1M)</a></p>
+<p class="toc level2"><a href="halt-1m.html"><tt>halt</tt>(1M)</a></p>
+<p class="toc level2"><a href="hextoalabel-1m.html"><tt>hextoalabel</tt>(1M)</a></p>
+<p class="toc level2"><a href="host-1m.html"><tt>host</tt>(1M)</a></p>
+<p class="toc level2"><a href="hostconfig-1m.html"><tt>hostconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="hotplug-1m.html"><tt>hotplug</tt>(1M)</a></p>
+<p class="toc level2"><a href="hotplugd-1m.html"><tt>hotplugd</tt>(1M)</a></p>
+<p class="toc level2"><a href="htable-1m.html"><tt>htable</tt>(1M)</a></p>
+<p class="toc level2"><a href="ickey-1m.html"><tt>ickey</tt>(1M)</a></p>
+<p class="toc level2"><a href="id-1m.html"><tt>id</tt>(1M)</a></p>
+<p class="toc level2"><a href="idmap-1m.html"><tt>idmap</tt>(1M)</a></p>
+<p class="toc level2"><a href="idmapd-1m.html"><tt>idmapd</tt>(1M)</a></p>
+<p class="toc level2"><a href="idsconfig-1m.html"><tt>idsconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="ifconfig-1m.html"><tt>ifconfig</tt>(1M)</a></p>
+<p class="toc level2"><a href="if-mpadm-1m.html"><tt>if_mpadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ifparse-1m.html"><tt>ifparse</tt>(1M)</a></p>
+<p class="toc level2"><a href="iiadm-1m.html"><tt>iiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="iicpbmp-1m.html"><tt>iicpbmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="iicpshd-1m.html"><tt>iicpshd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ikeadm-1m.html"><tt>ikeadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ikecert-1m.html"><tt>ikecert</tt>(1M)</a></p>
+<p class="toc level2"><a href="ilbadm-1m.html"><tt>ilbadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ilbd-1m.html"><tt>ilbd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqadmin-1m.html"><tt>imqadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqbrokerd-1m.html"><tt>imqbrokerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqcmd-1m.html"><tt>imqcmd</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqdbmgr-1m.html"><tt>imqdbmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqkeytool-1m.html"><tt>imqkeytool</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqobjmgr-1m.html"><tt>imqobjmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="imqusermgr-1m.html"><tt>imqusermgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.chargend-1m.html"><tt>in.chargend</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.comsat-1m.html"><tt>in.comsat</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.daytimed-1m.html"><tt>in.daytimed</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.dhcpd-1m.html"><tt>in.dhcpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.discardd-1m.html"><tt>in.discardd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.echod-1m.html"><tt>in.echod</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetadm-1m.html"><tt>inetadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetconv-1m.html"><tt>inetconv</tt>(1M)</a></p>
+<p class="toc level2"><a href="inetd-1m.html"><tt>inetd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.fingerd-1m.html"><tt>in.fingerd</tt>(1M)</a></p>
+<p class="toc level2"><a href="infocmp-1m.html"><tt>infocmp</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ftpd-1m.html"><tt>in.ftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.iked-1m.html"><tt>in.iked</tt>(1M)</a></p>
+<p class="toc level2"><a href="init-1m.html"><tt>init</tt>(1M)</a></p>
+<p class="toc level2"><a href="init.sma-1m.html"><tt>init.sma</tt>(1M)</a></p>
+<p class="toc level2"><a href="init.wbem-1m.html"><tt>init.wbem</tt>(1M)</a></p>
+<p class="toc level2"><a href="inityp2l-1m.html"><tt>inityp2l</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.lpd-1m.html"><tt>in.lpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.mpathd-1m.html"><tt>in.mpathd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.named-1m.html"><tt>in.named</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ndpd-1m.html"><tt>in.ndpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rarpd-1m.html"><tt>in.rarpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rdisc-1m.html"><tt>in.rdisc</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rexecd-1m.html"><tt>in.rexecd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.ripngd-1m.html"><tt>in.ripngd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rlogind-1m.html"><tt>in.rlogind</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.routed-1m.html"><tt>in.routed</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rshd-1m.html"><tt>in.rshd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.rwhod-1m.html"><tt>in.rwhod</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-1m.html"><tt>install</tt>(1M)</a></p>
+<p class="toc level2"><a href="installboot-1m.html"><tt>installboot</tt>(1M)</a></p>
+<p class="toc level2"><a href="installer-1m.html"><tt>installer</tt>(1M)</a></p>
+<p class="toc level2"><a href="installf-1m.html"><tt>installf</tt>(1M)</a></p>
+<p class="toc level2"><a href="installgrub-1m.html"><tt>installgrub</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-scripts-1m.html"><tt>install_scripts</tt>(1M)</a></p>
+<p class="toc level2"><a href="install-solaris-1m.html"><tt>install-solaris</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.stdiscover-1m.html"><tt>in.stdiscover</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.stlisten-1m.html"><tt>in.stlisten</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.talkd-1m.html"><tt>in.talkd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.telnetd-1m.html"><tt>in.telnetd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.tftpd-1m.html"><tt>in.tftpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.timed-1m.html"><tt>in.timed</tt>(1M)</a></p>
+<p class="toc level2"><a href="intrd-1m.html"><tt>intrd</tt>(1M)</a></p>
+<p class="toc level2"><a href="intrstat-1m.html"><tt>intrstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="in.uucpd-1m.html"><tt>in.uucpd</tt>(1M)</a></p>
+<p class="toc level2"><a href="iostat-1m.html"><tt>iostat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipaddrsel-1m.html"><tt>ipaddrsel</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipadm-1m.html"><tt>ipadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipf-1m.html"><tt>ipf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipfs-1m.html"><tt>ipfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipfstat-1m.html"><tt>ipfstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmgmtd-1m.html"><tt>ipmgmtd</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmon-1m.html"><tt>ipmon</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipmpstat-1m.html"><tt>ipmpstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipnat-1m.html"><tt>ipnat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ippool-1m.html"><tt>ippool</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipqosconf-1m.html"><tt>ipqosconf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipsecalgs-1m.html"><tt>ipsecalgs</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipsecconf-1m.html"><tt>ipsecconf</tt>(1M)</a></p>
+<p class="toc level2"><a href="ipseckey-1m.html"><tt>ipseckey</tt>(1M)</a></p>
+<p class="toc level2"><a href="iscsiadm-1m.html"><tt>iscsiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="isns-1m.html"><tt>isns</tt>(1M)</a></p>
+<p class="toc level2"><a href="isnsadm-1m.html"><tt>isnsadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="itadm-1m.html"><tt>itadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="itu-1m.html"><tt>itu</tt>(1M)</a></p>
+<p class="toc level2"><a href="k5srvutil-1m.html"><tt>k5srvutil</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadb-1m.html"><tt>kadb</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmin-1m.html"><tt>kadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmind-1m.html"><tt>kadmind</tt>(1M)</a></p>
+<p class="toc level2"><a href="kadmin.local-1m.html"><tt>kadmin.local</tt>(1M)</a></p>
+<p class="toc level2"><a href="kcfd-1m.html"><tt>kcfd</tt>(1M)</a></p>
+<p class="toc level2"><a href="kclient-1m.html"><tt>kclient</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdb5-ldap-util-1m.html"><tt>kdb5_ldap_util</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdb5-util-1m.html"><tt>kdb5_util</tt>(1M)</a></p>
+<p class="toc level2"><a href="kdcmgr-1m.html"><tt>kdcmgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="kernel-1m.html"><tt>kernel</tt>(1M)</a></p>
+<p class="toc level2"><a href="keyserv-1m.html"><tt>keyserv</tt>(1M)</a></p>
+<p class="toc level2"><a href="killall-1m.html"><tt>killall</tt>(1M)</a></p>
+<p class="toc level2"><a href="kmscfg-1m.html"><tt>kmscfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="kprop-1m.html"><tt>kprop</tt>(1M)</a></p>
+<p class="toc level2"><a href="kpropd-1m.html"><tt>kpropd</tt>(1M)</a></p>
+<p class="toc level2"><a href="kproplog-1m.html"><tt>kproplog</tt>(1M)</a></p>
+<p class="toc level2"><a href="krb5kdc-1m.html"><tt>krb5kdc</tt>(1M)</a></p>
+<p class="toc level2"><a href="ksslcfg-1m.html"><tt>ksslcfg</tt>(1M)</a></p>
+<p class="toc level2"><a href="kstat-1m.html"><tt>kstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="ktkt-warnd-1m.html"><tt>ktkt_warnd</tt>(1M)</a></p>
+<p class="toc level2"><a href="labeld-1m.html"><tt>labeld</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-1m.html"><tt>labelit</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-hsfs-1m.html"><tt>labelit_hsfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-udfs-1m.html"><tt>labelit_udfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="labelit-ufs-1m.html"><tt>labelit_ufs</tt>(1M)</a></p>
+<p class="toc level2"><a href="lastlogin-1m.html"><tt>lastlogin</tt>(1M)</a></p>
+<p class="toc level2"><a href="latencytop-1m.html"><tt>latencytop</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldapaddent-1m.html"><tt>ldapaddent</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldap-cachemgr-1m.html"><tt>ldap_cachemgr</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldapclient-1m.html"><tt>ldapclient</tt>(1M)</a></p>
+<p class="toc level2"><a href="ldmad-1m.html"><tt>ldmad</tt>(1M)</a></p>
+<p class="toc level2"><a href="link-1m.html"><tt>link</tt>(1M)</a></p>
+<p class="toc level2"><a href="listdgrp-1m.html"><tt>listdgrp</tt>(1M)</a></p>
+<p class="toc level2"><a href="listen-1m.html"><tt>listen</tt>(1M)</a></p>
+<p class="toc level2"><a href="llc2-loop-1m.html"><tt>llc2_loop</tt>(1M)</a></p>
+<p class="toc level2"><a href="lms-1m.html"><tt>lms</tt>(1M)</a></p>
+<p class="toc level2"><a href="localeadm-1m.html"><tt>localeadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="localectr-1m.html"><tt>localectr</tt>(1M)</a></p>
+<p class="toc level2"><a href="locator-1m.html"><tt>locator</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockd-1m.html"><tt>lockd</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockfs-1m.html"><tt>lockfs</tt>(1M)</a></p>
+<p class="toc level2"><a href="lockstat-1m.html"><tt>lockstat</tt>(1M)</a></p>
+<p class="toc level2"><a href="lofiadm-1m.html"><tt>lofiadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="logadm-1m.html"><tt>logadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="logins-1m.html"><tt>logins</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpadmin-1m.html"><tt>lpadmin</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpfilter-1m.html"><tt>lpfilter</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpforms-1m.html"><tt>lpforms</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpget-1m.html"><tt>lpget</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpmove-1m.html"><tt>lpmove</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpsched-1m.html"><tt>lpsched</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpset-1m.html"><tt>lpset</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpshut-1m.html"><tt>lpshut</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpsystem-1m.html"><tt>lpsystem</tt>(1M)</a></p>
+<p class="toc level2"><a href="lpusers-1m.html"><tt>lpusers</tt>(1M)</a></p>
+<p class="toc level2"><a href="lu-1m.html"><tt>lu</tt>(1M)</a></p>
+<p class="toc level2"><a href="luactivate-1m.html"><tt>luactivate</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucancel-1m.html"><tt>lucancel</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucompare-1m.html"><tt>lucompare</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucreate-1m.html"><tt>lucreate</tt>(1M)</a></p>
+<p class="toc level2"><a href="lucurr-1m.html"><tt>lucurr</tt>(1M)</a></p>
+<p class="toc level2"><a href="ludelete-1m.html"><tt>ludelete</tt>(1M)</a></p>
+<p class="toc level2"><a href="ludesc-1m.html"><tt>ludesc</tt>(1M)</a></p>
+<p class="toc level2"><a href="lufslist-1m.html"><tt>lufslist</tt>(1M)</a></p>
+<p class="toc level2"><a href="lumake-1m.html"><tt>lumake</tt>(1M)</a></p>
+<p class="toc level2"><a href="lumount-1m.html"><tt>lumount</tt>(1M)</a></p>
+<p class="toc level2"><a href="lurename-1m.html"><tt>lurename</tt>(1M)</a></p>
+<p class="toc level2"><a href="lustatus-1m.html"><tt>lustatus</tt>(1M)</a></p>
+<p class="toc level2"><a href="luumount-1m.html"><tt>luumount</tt>(1M)</a></p>
+<p class="toc level2"><a href="luupgrade-1m.html"><tt>luupgrade</tt>(1M)</a></p>
+<p class="toc level2"><a href="luxadm-1m.html"><tt>luxadm</tt>(1M)</a></p>
+<p class="toc level2"><a href="m64config-1m.html"><tt>m64config</tt>(1M)</a></p>
+<p class="toc level2"><a href="mail.local-1m.html"><tt>mail.local</tt>(1M)</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-123700.html">System Administration Commands - Part 2</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-235692.html">System Administration Commands - Part 3</a></p>
+
+</div>
+
+<a name="REFMAN1Mcontent"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN1Mfmdump-1m"></a><a name="fmdump-1m"></a><h3>fmdump</h3>
+<p>- fault management log viewer</p><h3>Synopsis</h3>
+<pre><tt>fmdump</tt> [[<tt>-e</tt> | <tt>-i</tt> | <tt>-I</tt>] | <tt>-A</tt> ] [<tt>-f</tt>] [<tt>-mvVp</tt>] [<tt>-c</tt> <var>class</var>] [<tt>-R</tt> <var>root</var>]
+     [<tt>-t</tt> <var>time</var>] [<tt>-T</tt> <var>time</var>] [<tt>-u</tt> <var>uid</var>] [<tt>-n</tt> <var>name</var>[.<var>name</var>]*[=<var>value</var>]] [<var>file</var>] ...</pre><h3>Description</h3>
+<p>The <tt>fmdump</tt> utility can be used to display the contents of any
+of the log files associated with the Solaris Fault Manager, <a href="fmd-1m.html"><tt>fmd</tt>(1M)</a>. The Fault
+Manager runs in the background on each Solaris system. It receives telemetry
+information relating to problems detected by the system software, diagnoses these problems,
+and initiates proactive self-healing activities such as disabling faulty components.</p><p>The <tt>fmdump</tt> utility is not intended as the primary administrative interface to
+the Fault Manager. For that purpose, use <tt>fmadm</tt> (and see <a href="fmadm-1m.html"><tt>fmadm</tt>(1M)</a>). The
+<tt>fmdump</tt> utility simply dumps Fault Manager historical logs with little further interpretation,
+and can include implementation detail without explanation. See the <tt>ATTRIBUTES</tt> section below.</p><p>The Fault Manager maintains several sets of log files for use by
+service personnel and, to a lesser extent, administrators:</p><dl><dt>error log</dt>
+<dd><p>A log that records error telemetry, the symptoms of problems detected by the system.</p></dd>
+<dt>info log</dt>
+<dd><p>A log that records informational events. This is realized as two sets of log files: high-value informational events, and other informational events.</p></dd>
+<dt>fault log</dt>
+<dd><p>A log that records fault diagnosis information, the problems believed to explain the symptoms recorded in the error and info logs.</p></dd>
+</dl>
+<p>A log file set consists of the current active log file together
+with a possible number of older rotated log files in that set.
+All logs are managed with <a href="logadm-1m.html"><tt>logadm</tt>(1M)</a> and have entries in <tt>/etc/logadm.conf</tt>.</p><p>Note that the <tt>fmdump</tt> utility dumps the current log file and all
+rotated log files for the target set. It therefore displays the entire
+log history. For the fault log, in particular, it is important to
+recognize that <tt>fmdump</tt> will show all problems <b>ever</b> diagnosed and is not
+limited to still-current problems. (Use <tt>fmadm</tt> faulty for that information.)</p><p>By default, <tt>fmdump</tt> displays the contents of the fault log, which records
+the result of each diagnosis made by the fault manager or one
+of its component modules. The error log can be selected using <tt>-e</tt>,
+the info log with <tt>-i</tt>, and the high-value info log with <tt>-I</tt>; or
+a specific log file path may be specified as [<var>file</var>] on the
+command line (which will dump just that file and not look for
+rotated versions of the log). One can also use option <tt>-A</tt> to
+aggregate all logs, or a set of log file paths listed on the
+command line.</p><p>An example of a default <tt>fmdump</tt> display follows:</p><pre># <b>fmdump</b>
+TIME                 UUID                                 SUNW-MSG-ID EVENT
+Mar 23 14:06:35.2682 0a11a1a7-a8ce-c941-8527-8d7a9d320071 ZFS-8000-CS Diagnosed
+Mar 25 14:51:41.2261 0a11a1a7-a8ce-c941-8527-8d7a9d320071 FMD-8000-4M Repaired
+Mar 25 14:51:41.2523 0a11a1a7-a8ce-c941-8527-8d7a9d320071 FMD-8000-6U Resolved
+May 31 23:35:39.9146 c63ac52e-506b-c1cc-e965-ff3b8544490d SMF-8000-YX Diagnosed
+...</pre><p>(Output wraps on displays of 80 or fewer characters.)</p><p>This dumps the fault log, because no command line options or arguments
+selected any other log. The fault log records the lifecycle of problems
+diagnosed by the Fault Manager or its component modules, from initial problem
+diagnosis to problem resolution.</p><p>Each problem recorded in the fault log is identified by:</p>
+<ul><li><p>The timestamp of the event describing the problem lifecycle state change.</p></li>
+<li><p>A Universal Unique Identifier (UUID) that can be used to uniquely identify this particular problem across any set of systems. All events describing problem lifecycle state changes for a given problem will use the same UUID (as above: we see initial diagnosis and, later, repair and resolution all quoting the same problem UUID).</p></li>
+<li><p>A message identifier that can be used to access a corresponding knowledge article located at Sun's web site, <a href="http://www.oracle.com/us/sun">http://www.oracle.com/us/sun/msg/</a></p></li></ul>
+<p>If a problem requires action by a human administrator or service technician
+or affects system behavior, the Fault Manager also issues a human-readable message
+to <a href="syslogd-1m.html"><tt>syslogd</tt>(1M)</a>. This message provides a summary of the problem and a
+reference to the knowledge article on the Sun web site, <a href="http://www.oracle.com/us/sun">http://www.oracle.com/us/sun/msg/</a>. The
+<tt>fmdump</tt> utility can dump <tt>fltlog</tt> entries in a similar format to that rendered
+to <tt>syslog</tt> through use of the <tt>-m</tt> option.</p><p>You can use the <tt>-v</tt> and <tt>-V</tt> options to expand the display
+from a single-line summary to increased levels of detail for each event
+recorded in the log. The <tt>-p</tt> option can be used with <tt>-V</tt>
+to request &#8220;prettier&#8221; output.</p><p>The <tt>-c</tt>, <tt>-t</tt>, <tt>-T</tt>, <tt>-n</tt> and <tt>-u</tt> options can be used to
+filter the output by selecting only those events that match the specified
+class, range of times, or uuid. If more than one filter option
+is present on the command-line, the options combine to display only those events
+that are selected by the logical <tt>AND</tt> of the options. If more
+than one instance of the same filter option is present on the
+command-line, the like options combine to display any events selected by the
+logical <tt>OR</tt> of the options. For example, the command: </p><pre># <b>fmdump -u uuid1 -u uuid2 -t 02Dec09</b></pre><p>...selects events whose attributes are (<tt>uuid1 OR uuid2</tt>) <tt>AND</tt> (time on or after <tt>02Dec09</tt>).
+</p><h3>Options</h3>
+<p>The following options are supported:</p><dl><dt><tt>-A</tt></dt>
+<dd><p>Perform log aggregation. If one of more log file paths are listed on the command line, then aggregate those files; otherwise aggregate all known log types, including all <tt>logadm</tt>-rotated files. Logs are merged in time order but with the characteristic that any two records from the same log file are ordered in the aggregation exactly as they were in the original log file (which is in the order they were received and processed by the Fault Manager, which will be an approximate time order).</p><p>You cannot use other log set selection options with <tt>-A</tt>: <tt>-e</tt>, <tt>-i</tt>, or <tt>-I</tt>. Filter options such as <tt>-c</tt>, <tt>-t</tt>, <tt>-T</tt>, and <tt>-n</tt> can be used, but <tt>-u</tt> cannot. Output options <tt>-v</tt>, <tt>-V</tt>, and <tt>-p</tt> are available, but <tt>-m</tt> is not. Option <tt>-f</tt> will follow all the selected logs.</p></dd>
+<dt><tt>-c</tt> <var>class</var></dt>
+<dd><p>Select events that match the specified class. The class argument can use the glob pattern matching syntax described in <a href="../821-1461/sh-1.html#REFMAN1sh-1"><tt>sh</tt>(1)</a>. The class represents a hierarchical classification string indicating the type of telemetry event. More information about Sun's telemetry protocol is available at Sun's web site, <a href="http://www.oracle.com/us/sun">http://www.oracle.com/us/sun/msg/</a>.</p></dd>
+<dt><tt>-e</tt></dt>
+<dd><p>Display events from the fault management error log instead of the fault log.</p><p>The error log contains Private telemetry information used by Sun's automated diagnosis software. This information is recorded to facilitate post-mortem analysis of problems and event replay, and should not be parsed or relied upon for the development of scripts and other tools. See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for information about Sun's rules for Private interfaces.</p></dd>
+<dt><tt>-f</tt></dt>
+<dd><p>Follow the growth of the log file (or files if using <tt>-A</tt>) by waiting for additional data. <tt>fmdump</tt> enters an infinite loop where it will sleep for a second, attempt to read and format new data from the log file, and then go back to sleep. This loop can be terminated at any time by sending an interrupt (<tt>Control-C</tt>).</p></dd>
+<dt><tt>-m</tt></dt>
+<dd><p>Print the localized diagnosis message associated with each entry in the fault log.</p></dd>
+<dt><tt>-n</tt> <var>name</var>[.<var>name</var>]*[=<var>value</var>]</dt>
+<dd><p>Select log events (from the log(s) selected on the command line) that have properties with a matching name (and optionally a matching value). For string properties the value can be a regular expression match. Regular expression syntax is described in the EXTENDED REGULAR EXPRESSIONS section of the <a href="../821-1474/regex-5.html#REFMAN5regex-5"><tt>regex</tt>(5)</a> manual page. Be careful when using the characters:</p><pre>$  *  {  ^  |  (  )  \</pre><p>...or a regular expression, because these are meaningful to the shell. It is safest to enclose any of these in single quotes. For numeric properties, the value can be octal, hex, or decimal.</p></dd>
+<dt><tt>-p</tt></dt>
+<dd><p>Combined with <tt>-V</tt> (very verbose) option, requests that the pretty-printing options that are available are, in fact, performed.</p></dd>
+<dt><tt>-R</tt> <var>dir</var></dt>
+<dd><p>Use the specified root directory for the log files accessed by <tt>fmdump</tt>, instead of the default root (<tt>/</tt>). </p></dd>
+<dt><tt>-t</tt> <var>time</var></dt>
+<dd><p>Select events that occurred at or after the specified time. The time can be specified using any of the following forms: </p><dl><dt><tt><var>mm</var>/<var>dd</var>/<var>yy hh</var>:<var>mm</var>:<var>ss</var></tt></dt>
+<dd><p>Month, day, year, hour in 24-hour format, minute, and second. Any amount of whitespace can separate the date and time. The argument should be quoted so that the shell interprets the two strings as a single argument.</p></dd>
+<dt><tt><var>mm</var>/<var>dd</var>/<var>yy hh</var>:<var>mm</var></tt></dt>
+<dd><p>Month, day, year, hour in 24-hour format, and minute. Any amount of whitespace can separate the date and time. The argument should be quoted so that the shell interprets the two strings as a single argument.</p></dd>
+<dt><tt><var>mm</var>/<var>dd</var>/<var>yy</var></tt></dt>
+<dd><p>12:00:00AM on the specified month, day, and year.</p></dd>
+<dt><tt><var>ddMonyy hh</var>:<var>mm</var>:<var>ss</var></tt></dt>
+<dd><p>Day, month name, year, hour in 24-hour format, minute, and second. Any amount of whitespace can separate the date and time. The argument should be quoted so that the shell interprets the two strings as a single argument.</p></dd>
+<dt><tt><var>ddMonyy hh</var>:<var>mm</var></tt></dt>
+<dd><p>Day, month name, year, hour in 24-hour format, and minute. Any amount of whitespace can separate the date and time. The argument should be quoted so that the shell interprets the two strings as a single argument.</p></dd>
+<dt><tt><var>Mon</var> <var>dd</var> <var>hh</var>:<var>mm</var>:<var>ss</var></tt></dt>
+<dd><p>Month, day, hour in 24-hour format, minute, and second of the current year.</p></dd>
+<dt><tt><var>yyyy</var>-<var>mm</var>-<var>dd</var> [T <var>hh</var>:<var>mm</var>[:<var>ss</var>]]</tt></dt>
+<dd><p>Year, month, day, and optional hour in 24-hour format, minute, and second. The second, or hour, minute, and second, can be optionally omitted.</p></dd>
+<dt><var>ddMonyy</var></dt>
+<dd><p>12:00:00AM on the specified day, month name, and year.</p></dd>
+<dt><tt><var>hh</var>:<var>mm</var>:<var>ss</var></tt></dt>
+<dd><p>Hour in 24-hour format, minute, and second of the current day.</p></dd>
+<dt><tt><var>hh</var>:<var>mm</var></tt></dt>
+<dd><p>Hour in 24-hour format and minute of the current day.</p></dd>
+<dt><var>T</var><tt>ns</tt> | <var>T</var><tt>nsec</tt></dt>
+<dd><p><var>T</var> nanoseconds ago where T is an integer value specified in base 10.</p></dd>
+<dt><tt><var>T</var>us |<var>T</var>usec</tt></dt>
+<dd><p><var>T</var> microseconds ago where T is an integer value specified in base 10.</p></dd>
+<dt><var>T</var><tt>ms</tt> | <var>T</var><tt>msec</tt></dt>
+<dd><p>T milliseconds ago where T is an integer value specified in base 10.</p></dd>
+<dt><tt><var>T</var>s | <var>T</var>sec</tt></dt>
+<dd><p>T seconds ago where <var>T</var> is an integer value specified in base 10.</p></dd>
+<dt><tt><var>T</var>m |<var>T</var>min</tt></dt>
+<dd><p><var>T</var> minutes ago where <var>T</var> is an integer value specified in base 10.</p></dd>
+<dt><tt><var>T</var>h |<var>T</var>hour</tt></dt>
+<dd><p><var>T</var> hours ago where <var>T</var> is an integer value specified in base 10. </p></dd>
+<dt><tt><var>T</var>d |<var>T</var>day</tt></dt>
+<dd><p><var>T</var> days ago where <var>T</var> is an integer value specified in base 10.</p></dd>
+</dl>
+<p>You can append a decimal fraction of the form <tt>.</tt><var>n</var> to any <tt>-t</tt> option argument to indicate a fractional number of seconds beyond the specified time. </p></dd>
+<dt><tt>-T</tt> <var>time</var></dt>
+<dd><p>Select events that occurred at or before the specified time. <var>time</var> can be specified using any of the time formats described for the <tt>-t</tt> option.</p></dd>
+<dt><tt>-u</tt> <var>uuid</var></dt>
+<dd><p>Select problem diagnosis events in the fault log that exactly match the specified <var>uuid</var>. Each diagnosis is associated with a Universal Unique Identifier (UUID) for identification purposes. The <tt>-u</tt> option can be combined with other options, such as <tt>-v</tt>, to show all of the details associated with a particular diagnosis. Note that multiple fault log events can be associated with the same problem diagnosis UUID&#8212;all events describing the lifecycle of a single problem (from initial diagnosis to final resolution) quote the same problem UUID.</p><p>If the <tt>-e</tt> option and <tt>-u</tt> option are both present, the error events that are cross-referenced by the specified diagnosis are displayed.</p></dd>
+<dt><tt>-v</tt></dt>
+<dd><p>Display verbose event detail. The event display is enlarged to show additional common members of the selected events. </p></dd>
+<dt><tt>-V</tt></dt>
+<dd><p>Display very verbose event detail. The event display is enlarged to show every member of the name-value pair list associated with each event. In addition, for fault logs, the event display includes a list of cross-references to the corresponding errors that were associated with the diagnosis.</p><p>Use <tt>-p</tt> with <tt>-V</tt> to request pretty-printing.</p></dd>
+</dl>
+<h3>Operands</h3>
+<p>The following operands are supported:</p><dl><dt><var>file</var></dt>
+<dd><p>Specifies an alternate log file (or files if using <tt>-A</tt>) to display instead of the system fault log. The <tt>fmdump</tt> utility determines the type of the specified log automatically and produces appropriate output for the selected log.</p></dd>
+</dl>
+<h3>Examples</h3>
+<p><b>Example&#160;1 Retrieving Given Class from <tt>fmd</tt> Log</b></p><p>Use any of the following commands to retrieve information about a specified
+class from the <tt>fmd</tt> log. The complete class name is <tt>ereport.io.ddi.context</tt>.</p><pre># <b>fmdump -Ve -c 'ereport.io.ddi.context'</b>
+# <b>fmdump -Ve -c 'ereport.*.context'</b>
+# <b>fmdump -Ve -n 'class=ereport.io.ddi.context'</b>
+# <b>fmdump -Ve -n 'class=ereport.*.context'</b></pre><p>Any of the preceding commands produces the following output:</p><pre>Oct 06 2007 11:53:20.975021712 ereport.io.ddi.context
+        nvlist version: 0
+                class = ereport.io.ddi.context
+                ena = 0x1b03a15ecf00001
+                detector = (embedded nvlist)
+                nvlist version: 0
+                        version = 0x0
+                        scheme = dev
+                        device-path = /
+                (end detector)
+
+                __ttl = 0x1
+                __tod = 0x470706b0 0x3a1da690</pre><p><b>Example&#160;2 Retrieving Specific Detector Device Path from <tt>fmd</tt> Log</b></p><p>The following command retrieves a detector device path from the <tt>fmd</tt> log.</p><pre># <b>fmdump -Ve -n 'detector.device-path=.*/disk@1,0$'</b>
+Oct 06 2007 12:04:28.065660760 ereport.io.scsi.disk.rqs
+nvlist version: 0
+       class = ereport.io.scsi.disk.rqs
+       ena = 0x453ff3732400401
+       detector = (embedded nvlist)
+                nvlist version: 0
+                        version = 0x0
+                        scheme = dev
+                        device-path = /pci@0,0/pci1000,3060@3/disk@1,0
+                (end detector)
+
+                __ttl = 0x1
+                __tod = 0x4707094c 0x3e9e758</pre><h3>Exit Status</h3>
+<p>The following exit values are returned:</p><dl><dt><tt>0</tt></dt>
+<dd><p>Successful completion. All records in the log file were examined successfully.</p></dd>
+<dt><tt>1</tt></dt>
+<dd><p>A fatal error occurred. This prevented any log file data from being examined, such as failure to open the specified file.</p></dd>
+<dt><tt>2</tt></dt>
+<dd><p>Invalid command-line options were specified.</p></dd>
+<dt><tt>3</tt></dt>
+<dd><p>The log file was opened successfully, but one or more log file records were not displayed, either due to an I/O error or because the records themselves were malformed. <tt>fmdump</tt> issues a warning message for each record that could not be displayed, and then continues on and attempts to display other records.</p></dd>
+</dl>
+<h3>Files</h3>
+<dl><dt><tt>/var/fm/fmd</tt></dt>
+<dd><p>Fault management log directory</p></dd>
+<dt><tt>/var/fm/fmd/errlog</tt></dt>
+<dd><p>Fault management error log</p></dd>
+<dt><tt>/var/fm/fmd/fltlog</tt></dt>
+<dd><p>Fault management fault log</p></dd>
+<dt><tt>/var/fm/fmd/infolog_hival</tt></dt>
+<dd><p>High-value informational log</p></dd>
+<dt><tt>/var/fm/fmd/infolog</tt></dt>
+<dd><p>Informational log</p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="middle"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="middle"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">service/fault-management</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Interface Stability</div></td>
+<td align="left" valign="top"><div class="pad5x10">See below.</div></td>
+</tr>
+</table>
+</td></tr></table>
+<p>The command-line options are Uncommitted. The human-readable error log and informational log
+output is Private. The human-readable fault log output is Uncommitted.</p><h3>See Also</h3>
+<p><a href="../821-1461/sh-1.html#REFMAN1sh-1"><tt>sh</tt>(1)</a>, <a href="fmadm-1m.html"><tt>fmadm</tt>(1M)</a>, <a href="fmd-1m.html"><tt>fmd</tt>(1M)</a>, <a href="fmstat-1m.html"><tt>fmstat</tt>(1M)</a>, <a href="logadm-1m.html"><tt>logadm</tt>(1M)</a>, <a href="syslogd-1m.html"><tt>syslogd</tt>(1M)</a>, <a href="../821-1464/libexacct-3lib.html#REFMAN3Flibexacct-3lib"><tt>libexacct</tt>(3LIB)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a>, <a href="../821-1474/regex-5.html#REFMAN5regex-5"><tt>regex</tt>(5)</a></p><p><a href="../821-1456/index.html"><i>System Administration Guide: Security Services</i></a></p><p><a href="http://www.oracle.com/us/sun">http://www.oracle.com/us/sun/msg/</a></p><h3>Notes</h3>
+<p>Fault logs contain references to records stored in error logs that can
+be displayed using <tt>fmdump</tt> <tt>-V</tt> to understand the errors that were used
+in the diagnosis of a particular fault. These links are preserved if
+an error log is renamed as part of log rotation. They can be
+broken by removing an error log file, or by moving it to
+another filesystem directory. <tt>fmdump</tt> can not display error information for such broken
+links. It continues to display any and all information present in the
+fault log.</p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="fmd-1m.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="fmstat-1m.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

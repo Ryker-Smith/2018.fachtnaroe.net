@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt2.7.2.html -->
+
+<HEAD>
+<TITLE>Including text in a shell script</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Including text in a shell script</H1>
+
+<P>Text can be included in the shell script by using a here
+document, a special form of input redirection.</P>
+
+<P>The <SAMP>&lt;&lt;</SAMP> symbol is used to indicate that text should be
+read up to a given mark. For example:</P>
+
+<PRE WIDTH=80>   #!/bin/sh
+   # this script outputs the given text before it runs
+   cat &lt;&lt; EOF
+   This shellscript is currently under development, please
+   report any problems to Danny (danny@cornflake.ed)
+   EOF
+   exec /usr/local/test/bin/test_version
+</PRE>
+
+<P>The text is read from the script until a pattern is found
+which matches that after the <SAMP>&lt;&lt;</SAMP> symbol; execution then
+proceeds as normal.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Troubleshooter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(26);
+parent.creator.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(25);
+parent.creator.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(20);
+parent.creator.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(24);
+parent.creator.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(23);
+parent.creator.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(27);
+parent.creator.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="560" border="0">
+  <tr> 
+    <td> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b><a name="win95errors2"></a>Unable 
+        to Browse the Network:</b></font> </p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">There are three main 
+        reasons why you cannot browse the network:</font> 
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">You have not logged 
+          onto the Network.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Your PC does not 
+          have the same Workgroup name as the other PCs on the network.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The Microsoft Browse 
+          Master has not recognized the new device.</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To check that you 
+        have logged onto the Network: </font>
+      <ol>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Restart the PC 
+          or Laptop.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> At the network 
+          login prompt enter your network user name and password.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>OK</i>.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Check the Network 
+          Neighborhood again. If you still cannot browse the network continue 
+          to the next page.</font> </li>
+      </ol>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To check that your 
+        PC has the same Workgroup name as the other PCs on the network: </font>
+      <ol>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> From the <i>Start</i> 
+          menu, choose <i>Settings</i> and then <i>Control Panel</i>.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> In the Control 
+          Panel window, double-click <i>Network</i>.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> In the Network 
+          dialog box, select the <i>Identification</i> tab.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> The workgroup 
+          name for the PC is shown in the <i>Workgroup</i> field. Make sure the 
+          workgroup name (which is the name of the network) is the same for all 
+          of the PCs and Laptops that need to communicate with each other. </font> 
+        </li>
+      </ol>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Microsoft Browse Master 
+        work-around:<br>
+        <br>
+        When a new device is added to the network, it may take the Microsoft Browse 
+        Master some time to recognise that the new device has been added. <br>
+        <br>
+        Instead of waiting for your PC's network information to be updated, you 
+        can use the <i>Find</i> option to find a specific PC or all PCs on your 
+        network:</font> 
+      <ol>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click on the <i>Start</i> 
+          Menu.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click on the <i>Find</i> 
+          option.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click on the <i>Computer</i> 
+          option.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> In the Named field 
+          enter the name of the computer you are trying to find. The results of 
+          the search are shown in the <i>Find</i> listbox.</font> </li>
+      </ol>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

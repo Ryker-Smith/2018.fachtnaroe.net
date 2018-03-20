@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<!--#include file="includes/head.shtml" -->
+<body onload="onloadProc()">
+<a name="top_of_page"></a>
+<!--#include file="includes/animation.shtml"-->
+<div id="pagewrap">
+<!--#include file="includes/sitename.shtml"-->
+<div id="topstripe"></div>
+<!--#include file="includes/sidemenu.shtml"-->
+<div id="content">
+  <!--#include file="includes/topblurb.shtml"-->
+<h1>Subjects 2014-2015</h1>
+<br>
+<div id="subjectsTable">
+<table class="tablenoliney">
+<tr>
+<th class="tablenolineyleft">Subject</th>
+<th class="tablenoliney">Course<br>Option #1</th>
+<th class="tablenoliney">Course<br>Option #2</th></tr>
+<tr><td  class="tablenolineyleft">Database Methods<br><small>(available from September 2014)</small></td><td class="tablenoliney">&mdash;</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/communications/">Communications</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/computerarchitectureandsystems/">Computer Architecture &amp; Systems</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">&mdash;</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/computerprogramming/">Computer Programming</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/controlsystems">Control Systems</a><br><small>(AKA Introduction to Robotics &amp; Embedded Computing)</small></td><td class="tablenoliney">Yes</td><td class="tablenoliney">&mdash;</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/desktoppublishing/">Desktop Publishing</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/gamesstudies/">Games Studies</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">&mdash;</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/imageprocessing/">Image Processing</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft">Information &amp; Communication Systems<br><small>(available from September 2014)</small></td><td class="tablenoliney">&mdash;</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft">Spreadsheet Methods<br><small>(available from September 2014)</small></td><td class="tablenoliney">&mdash;</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/theinternet/">The Internet</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/webauthoring5/">Web Authoring - CSS</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft"><a href="subjects/workexperience/">Work Experience</a></td><td class="tablenoliney">Yes</td><td class="tablenoliney">Yes</td></tr>
+<tr><td  class="tablenolineyleft">Mathematics</td><td class="tablenoliney"><small>tbd</small></td><td class="tablenoliney"><small>tbd</small></td></tr>
+<tr><td class="tablenoliney"><i>... leading to ...</i><br><b>Certification:</b></td><td class="tablenoliney"><small>Information Technology<br><a href="http://www.fetac.ie/fetac/awardsDirectory.do?method=getMajorAwardDetails&amp;majorAwardId=5424&amp;fromPage=awardsByField">Cert: CITXX</a><br></small></td><td class="tablenoliney"><small>Information Processing<br><a href="https://www.fetac.ie/fetac/awardsDirectory.do?method=getMajorAwardDetails&amp;majorAwardId=12307">Cert:  5M2067</a></small></td></tr>
+</table>
+</div>
+<h1><a id="CITXX"></a><b>Course Option 1:</b> Computer Systems &amp; Programming (IT)&nbsp;&nbsp;&mdash;&nbsp;&nbsp;FETAC/QQI level 5</h1>
+<p>This course seeks to provide participants with high levels of competence in the digital world, encouraging creative thought both on paper and online.</p>
+<p>While we seek to prepare students for successful progression to 3<sup>rd</sup> level education, this course equally offers skills which no modern Irish worker should be without.</p>
+<p>The computer is meant to be an enabling technology, facilitating the imagination in finding creative solutions to unexpected challenges. We seek to facilitate the student in achieving a set of software skills in excess of the standard, with a view to self reliance and independence of thought.</p>
+<p>While this course is very much geared towards the student who has an interest and fascination with the computer itself, it will also provide the student with the problem-solving skills essential to function effectively in a changing office environment.</p>
+<!--<p>Our aim is to provide participants with high levels of competence in the digital world, encouraging creative thought both on paper and online.</p><p>As well as preparation for college entry, this course offers knowledge and skills which no modern Irish worker or college student should be without:</p> -->
+<p>This course is a full-time course run by CTI Senior College, Clonmel. Students completing this course are eligble for reserved places and bonus points in LIT (Tipperary).</p>
+<p>This course option leads to <a href="http://www.fetac.ie/fetac/awardsDirectory.do?method=getMajorAwardDetails&amp;majorAwardId=5424&amp;fromPage=awardsByField">certificate CITXX</a>, Information Technology.</p>
+<!-- <p><a href="https://www.cti.ie/seniorcollege/plccourses/programming5.html">See the CTI web page for this course option</a>.</p> -->
+<h1><a id="5M2067"></a><b>Course Option 2:</b> Information Systems &amp; Computer Applications (IP)&nbsp;&nbsp;&mdash;&nbsp;&nbsp;FETAC/QQI level 5</h1>
+<p>A course providing participants with high levels of competence in the use of computer applications, and a clear understanding of the importance of information systems to modern businesses.</p>
+<p>While many students will successfully progress to 3rd level education, this course offers skills which Irish workers depend on every day.</p>
+<p>Computers are an enabling technology for business management, facilitating managers in their daily acquisition of knowledge to assist in decision making, and in finding creative solutions to unexpected challenges. We facilitate the learner in achieving self reliance and independence of thought when using these tools.</p>
+<p>This course is very much geared towards the student who has a keen  interest in computing, but also seeks the computer-based skills essential to function effectively in a changing office environment.</p>
+<p>This course option leads to <a href="https://www.fetac.ie/fetac/awardsDirectory.do?method=getMajorAwardDetails&amp;majorAwardId=12307">certificate 5M2067</a>, Information Processing.</p>
+<p><a href="https://www.cti.ie/seniorcollege/plccourses/infosystems5.html">See the CTI web page for this course option</a>.</p>
+<br>
+<h1>Getting your award</h1>
+<ul>
+  <li>You need to complete core IT modules.</li>
+  <li>You need to complete general modules, such as Work Experience and Communications</li>
+  <li>A minimum total of <b>8</b> modules <b>including</b> the mandatory modules.
+  <aside>
+  The FETAC system is undergoing changes at the moment as part of the move over to a Common National Awards System. The mechanism of calculation for Computing and Information Technology awards is changing from December 2014 onwards. You'll need to check back to keep up-to-date...
+  </aside></li>
+  <li>You will be expected to attempt and complete in excess of the minimum; this will begin to raise your IT knowledge levels to the standard required of a successful IT professional in the modern workplace.</li>
+  </ul>
+<h1>Component Certificate</h1>
+<p>A Component Certificate (<i>formerly a</i> Record of Achievement) is awarded to a learner who successfully completes one <i>or more</i> modules at any level, but does not have either:</p>
+<ul class="ulul">
+    <li>sufficient modules (minimum 8) for that level, or</li>
+    <li>an apropriate combination of modules for an award,</li>
+    <li>and thus does qualify for a full award Certificate.</li>
+</ul>
+<p>Component Certificates are awarded for the achievement of individual areas of learning, which can stand alone or build towards the achievement of a full certificate. Components are of interest to employers because they name specific areas which can further inform their choice of candidate.</p>
+<p>For further details please consult the publication <a href="http://www.fetac.ie/fetac/awardsinfo/directory/directory.htm">FETAC (NCVA) Awards</a> or visit <a href="http://www.fetac.ie">www.fetac.ie</a>.</p>
+<h1>Obtaining a Second FETAC Level 5 Certificate</h1>
+<ul>
+  <li>A maximum of four module credits (to include <a href="subjects/communications/index.shtml">Communications</a>, the <a href="subjects/workexperience/index.shtml">Work Experience</a> module, and two other modules) <b>must</b> be carried forward to another certificate, where a candidate has already met the requirements for a previous certificate.</li>
+  <li>To qualify for the second certificate, a candidate must reach the required standards in four additional vocational modules from the list for that certificate.</li>
+  <li>The extra four modules <strong>must</strong> include the vocational mandatory modules required for the second award.</li>
+  <li>In the case of Information Technology (<a href="#CITXX">CITXX</a>) these required modules are:</li>
+  </ul>
+	<ul class="ulul">
+	  <li><a href="subjects/computerprogramming/">Computer Programming</a></li>
+	  <li><a href="subjects/computerarchitectureandsystems/">Computer Architecture &amp; Systems</a></li>
+  </ul>
+  <ul>
+  <li>In the case of Information Processing (<a href="#5M2067">5M2067</a>) these required modules are:</li>
+  </ul>
+  <ul class="ulul">
+    <li>Spreadsheet Methods</li>
+    <li><a href="subjects/databasemethods/">Database Methods</a></li>
+    <li>Information &amp; Communication Systems</li>
+  </ul>
+  <ul>
+    <li>Talk to your tutor to clarify your situation.</li>
+  </ul>
+<h1>Miscellaneous: Other links, subjects, CAO, HELS</h1>
+<ul>
+  <li>Level 6 award available: <a href="http://qsearch.qqi.ie/WebPart/AwardDetails?awardCode=CCNTX">Networks and Software Systems</a> Level 5 Information Technology (<a href="#CITXX">CITXX</a>) <b>must</b> be completed first.</li>
+  <li>All Level 5 FETAC module descriptors may be found <a href="http://www.fetac.ie/fetac/awardsinfo/awards.htm">here</a>.</li>
+  <li><a href="http://www.cao.ie/index.php?page=scoring&amp;s=fetac">CAO Points</a> for your FETAC subjects.</li>
+  <li>The <a href="http://fetac.ie/fetac/learners/hels/hels.htm">3<sup>rd</sup> Level Links Scheme</a> on the FETAC website.</li>
+</ul>
+<h1>Level 6: Networks &amp; Software Systems</h1>
+<ul>
+  <li>Systems Software</li>
+  <li>Network Models &amp; Technologies</li>
+  <li>Client Server Networks</li>
+  <li>Network Administration</li>
+  <li>Relational Database</li>
+  <li>Windows Programming</li>
+  <li>Internet Programming Java</li>
+  <li>Web Authoring</li>
+  <li>Fundamentals of Object Oriented Programming (L5)</li>
+</ul>
+<h1>Sharing</h1>
+<p>If nature has made any one thing less susceptible than all others of exclusive property, it is the action of the thinking power called an idea, which an individual may exclusively possess as long as he keeps it to himself; but the moment it is divulged, it forces itself into the possession of every one, and the receiver cannot dispossess himself of it. Its peculiar character, too, is that no one possesses the less, because every other possesses the whole of it. He who receives an idea from me, receives instruction himself without lessening mine; as he who lights his taper at mine, receives light without darkening me. <br>-<i>Thomas Jefferson</i> 1813.</p>
+</div> <!-- content -->
+
+<!--#include file="includes/backtotop.shtml"-->
+
+</div> <!-- pagewrap -->
+
+</body>
+</html>

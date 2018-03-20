@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Troubleshooter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(26);
+parent.creator.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(25);
+parent.creator.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(20);
+parent.creator.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(24);
+parent.creator.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(23);
+parent.creator.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(27);
+parent.creator.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="560" border="0">
+  <tr> 
+    <td> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>General Network 
+        Response is Slow for Everyone:</b><br>
+        <br>
+        There are two main reasons why the network is giving a slow response:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">There may be a 
+          configuration problem or faulty equipment on the network.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The network may 
+          be unable to cope with the amount of traffic generated. </font> </li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Configuration problem 
+        or faulty equipment on the network <br>
+        Check that:</font>
+      <ol type="1">
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> The network does 
+          not break any of the Ethernet or Fast Ethernet configuration rules.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> There is not a 
+          speed mis-match between OfficeConnect devices. <br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> There is only 
+          one path to each device on your network. If there is more than one path, 
+          there is an illegal Network Loop.<br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Devices on the 
+          network are working correctly. For example:</font> </li>
+      </ol>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Faulty cables can 
+          corrupt traffic on your network and cause requests to fail.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Faulty devices, 
+          such as transceivers, can produce excess traffic that uses up the available 
+          bandwidth.</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Network unable to 
+        cope with the amount of traffic generated <br>
+        If your device has Utilization LEDs and these LEDs show that 50% or more 
+        of the available bandwidth is constantly in use, it is time to reconfigure 
+        or upgrade your network. You can:</font> 
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Use Ethernet Switches 
+          to divide the network into smaller less congested sections.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Use Fast Ethernet 
+          to provide more bandwidth.</font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">See <a  href="javascript:hotlink_ne('expanding/expanding.htm','1.5.1.1')">Expanding and Upgrading</a> for more details.</font> 
+    </td>
+  </tr>
+</table>
+</body>
+</html>

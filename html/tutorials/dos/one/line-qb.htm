@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="Description" CONTENT="How to add any desired text to the beginning of all lines in a file using the PRINT statement.">
+   <TITLE>Using QBASIC to Prefix Anything to Every Line in a File.</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H2>
+Using QBASIC to "Prepend" to All Lines in a File</H2></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"><I>QBASIC allows a straightforward solution to the problem
+of how to add any desired text to the beginning of all lines in a file.</I>&nbsp;
+<HR WIDTH="100%"></CENTER>
+
+
+<P>Quick: What's the opposite of "Append"? No, it isn't "Prepend". Prefix?
+Maybe I should switch to Esperanto...
+<BR>What is needed (and QBASIC can supply) is a way to put <B>whatever</B>
+we want at the beginning of every line in a list. Yes, this includes the
+word CALL! That makes processing an entire list easy! Here's one way to
+do this:
+<PRE><B><TT>echo OPEN "input.txt" FOR INPUT AS #1 > prepend.bas
+echo DO WHILE NOT EOF(1) >> prepend.bas
+echo&nbsp;&nbsp; LINE INPUT #1, dataline$ >> prepend.bas
+echo&nbsp;&nbsp; IF NOT dataline$ = "" THEN PRINT "call process.bat "; dataline$ >> prepend.bas
+echo LOOP >> prepend.bas
+echo SYSTEM >> prepend.bas
+qbasic /run prepend.bas > output.bat
+del prepend.bas</TT></B></PRE>
+The first six lines use redirected <B>ECHO</B> to create the <B>PREPEND.BAS</B>
+Basic program. The seventh line runs the program. Now let's examine the
+QBASIC code in the "prepend.bas" file we will generate:
+
+<P><B><TT>OPEN "input.txt" FOR INPUT AS #1</TT></B>
+<BR><B><TT>DO WHILE NOT EOF(1)</TT></B>
+<BR><B><TT>&nbsp; LINE INPUT #1, dataline$</TT></B>
+<BR><B><TT>&nbsp; IF NOT dataline$ = "" THEN PRINT "call process.bat ";
+dataline$</TT></B>
+<BR><B><TT>LOOP</TT></B>
+<BR><B><TT>SYSTEM</TT></B>
+<BR>&nbsp;
+
+<P>First we <B>OPEN</B> the file we'll be reading. I used <B>INPUT.TXT</B>.
+You use whatever you want. Notice I never bother to CLOSE the file. I let
+QBASIC do it for me when it ends. Hey, it saves a line! Next is the<B>
+DO</B>. It is matched up to the <B>LOOP</B> at the end of the QBASIC program.
+There's only one way out of this loop, and that's when we hit the end of
+the input file (And that condition is tested for in the DO line). Now we're
+into the meat. The <B>LINE INPUT</B> reads a line from the input file.
+If it turns out to be a blank line (as evidenced by the <B>IF NOT DATALINE$=""
+</B>test), then the line is skipped. If the line is good, it is <B>PRINT</B>ed
+to the standard output along with whatever it is we want added to the front
+of the line. Using PRINT like this (instead of having a dedicated output
+file) lets us either redirect it into a file (which I did with the<B> >
+OUTPUT.BAT </B>line) or pipe it through more filtering. Finally, <B>SYSTEM</B>
+will end the running Basic program and exit QBasic, thereby returning control
+to our batch file. You'll need to write a PROCESS.BAT which will process
+each line one-at-a-time.&nbsp;
+<HR WIDTH="100%">
+
+<P>If you want flexible, try input <U>and</U> output piping with this QBASIC
+batch program:
+<PRE><B><TT>echo+ON ERROR GOTO done > prepend.bas
+echo DO >> prepend.bas
+echo&nbsp;&nbsp; LINE INPUT "call process.bat ", dataline$ >> prepend.bas
+echo LOOP >> prepend.bas
+echo done: >> prepend.bas
+echo SYSTEM >> prepend.bas
+qbasic /run prepend.bas &lt; input.txt > output.bat
+del prepend.bas</TT></B></PRE>
+The only real difference is the <B>LINE INPUT</B>. Without a file number
+specified, it reads lines from "Standard Input". This can be either the
+keyboard or a redirected or piped input. But telling where the end of the
+piped input is becomes a problem! It just keeps reading until it crashes
+with an "Input Past End of File" error. So we simply use <B>ON ERROR</B>
+to trap that error and use it to end the program. A side effect of not
+being able to see the end until you're past it is that this method puts
+an extra CALL PROCESS.BAT at the end of your output file. You'll have to
+make sure whatever your PROCESS.BAT does, it ignores being called with
+no arguments. If you read this far, you deserve to know <A HREF="index8.htm#echo">about
+the plus sign</A> on the first line.
+<P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+</BODY>
+</HTML>

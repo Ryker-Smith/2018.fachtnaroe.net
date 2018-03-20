@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>WildeWare Studios</title>
+		
+		<link rel="stylesheet" HREF="../../images/style.css" type="text/css">
+
+  </head>
+
+  <BODY bgcolor="white" topmargin="0" leftmargin="0">
+    <table border="0" bgcolor="black" width="100%">
+      <tr><td><a href="index.html"><img src="http://wildeware.tripod.com/images/logo.jpg" border="0"></a></td></tr>
+    </table>
+
+    <table border="0" bgcolor="silver" width="100%">
+      <tr><td><font face="arial" size="2"><i>&nbsp;Some cause happiness wherever they go; others whenever they go.</i></font></td></tr>
+    </table>
+
+    <br>
+
+    <table border="0" width="100%" align="center">
+      <tr bgcolor="white"><td valign="top" width="23%">
+      <font face="verdana" size="2"><b>Article Navigation</B></font><br><br>
+      <font face="arial" size="2">- Introduction</font><br>
+      <font face="arial" size="2">- <a href="http://wildeware.tripod.com/algo/rthink/rthink2.html">A Pinch of Style</a></font><br>
+      <font face="arial" size="2">- <a href="http://wildeware.tripod.com/algo/rthink/rthink3.html">Applying Recursion</a></font><br>
+      </td>
+      
+      <td valign="top" width="60%">
+        <b>Recursive Thinking - Teto Ponders the Future of Recursion</B></font><hr size="2">
+        <font face="verdana" size="2"><i>Robert E. Teto</i></font><br><br>
+        <font face="arial" size="2">
+        If there was ever a way to fold logic back onto itself, then recursion accomplishes this without question. A recursive function is a normal
+        function that calls itself before reaching its end. These are useful in calculating sums and factorials, whereby an argument is passed to the
+        same function, and the return value is used in the previous function's manipulation. I suddenly realized the other day that this technique
+        could be very useful in coding an update for my graphing calculator, the TGC.<br><br>
+
+        For instance, say you had a function called AddFirstThree() that returns the sum of the numbers 1 through 3, and it took an argument
+        representing the first number. During the first call, it is obvious that this number will be 1. Here's a little QBasic snippet...<br><br>
+
+        <blockquote><code>
+        DIM sum AS INTEGER<br><br>
+
+        sum = AddFirstThree(1)<br>
+        PRINT sum<br><br>
+
+        FUNCTION AddFirstThree(x AS INTEGER)<br>
+        &nbsp;&nbsp;IF x <> 3 THEN&nbsp;&nbsp; ' If it has reached 3, then don't keep going.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;x = x + AddFirstThree(x + 1)<br>
+        &nbsp;&nbsp;END IF<br><br>
+
+        &nbsp;&nbsp;AddFirstThree = x&nbsp;&nbsp; 'Return the value to where it was called<br>
+        END FUNCTION<br>
+        </code></Blockquote>
+
+        The code calls AddFirstThree and x becomes 1. Each time it is called within itself, an argument is passed that is 1 added to the value of x.
+        So with each successive call, x becomes 2, and the next time it becomes 3. When it becomes 3, it stops calling itself and returns back to
+        the next-to-last function. Then it takes that number, adds it to the previous x value that was already in that function, and assigns it to x.
+        Then it keeps returning, doing the same thing until it reaches that very first function call, and returns it back to the main submodule.<br><br>
+
+        You may be a little confused. Don't worry, most chimps didn't understand it the first time either. Here's a picture that may help you
+        understand it a little better...<br><br>
+
+        <div align="center"><img src="rthink.gif" width="462" height="269"></div><br><br>
+
+        Examine that closely. Each time it returns the added portion it adds that to the previous number. You may be wondering what the
+        advantages of recursion are. Wouldn't it be easier to just use a standard loop? Yes, but then you couldn't make a debugger's life a
+        living hell then could you? If you're interested in spicing up your code, then you won't want to miss the next section.</font><br><br>
+
+       <div align="right">
+         <a href="http://wildeware.tripod.com/algo/rthink/rthink2.html"><font face="verdana" size="2"><i>A Dash of Recursion and a Pinch of Style...</i></font></a>
+       </div><br><br>
+      </td>
+
+      <td valign="top" width="17%">
+      </td></tr>
+    </table>
+
+    <div align="center"><font face="arial" size="2">
+      Copyright (c) 2000 WildeWare Studios<br>
+      <a href="mailto:webmaster@wildeware.tripod.com">webmaster@wildeware.tripod.com</a><br>
+    </div>
+  </BODY>
+</html>

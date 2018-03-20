@@ -1,0 +1,1442 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0042)http://werbach.com/barebones/barebone.html -->
+<HTML><HEAD><TITLE>Bare Bones Guide to HTML</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2314.1000" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD bgColor=#cccccc>
+      <HR noShade SIZE=4 width=480>
+
+      <H1 align=center>THE BARE BONES GUIDE TO HTML </H1>
+      <P align=center><B>by <A href="mailto:barebones@werbach.com">Kevin 
+      Werbach</A> </B><I><BR>Version 4.0 Formatted -- February 1999 </I><BR>
+      <HR noShade SIZE=4 width=480>
+    </TD></TR></TBODY></TABLE>
+<P>The latest version of this document is available at <A 
+href="http://werbach.com/barebones/">http://werbach.com/barebones/</A>, where 
+you will also find the text version, translations, and background materials. 
+</P>The Bare Bones Guide to HTML lists all the tags that current browsers are 
+likely to recognize. I have included all the elements in the official HTML 4.0 
+recommendation with common attributes, as well as Netscape and Microsoft 
+extensions. This document is a quick reference, not a complete specification; 
+for official information about HTML and its development, see the World Wide Web 
+Consortium site at <A 
+href="http://www.w3.org/MarkUp/">http://www.w3.org/MarkUp/</A>. 
+<P>The Guide is designed to be as concise as possible, and therefore it doesn't 
+go into any detail about how to use the various tags. A few tags link to notes 
+that address frequently-asked questions. If you're looking for more detailed 
+step-by-step information, see my <A 
+href="http://werbach.com/web/wwwhelp.html">WWW Help Page</A>. 
+<P>
+<P><A name=contents></A></P><FONT size=4><B>Table of Contents </B></FONT>
+<OL>
+  <LI><B>INTRODUCTORY MATERIAL </B>
+  <UL>
+    <LI><A href="http://werbach.com/barebones/intro.html#unique"><B>What is 
+    unique about this guide </B></A>
+    <LI><A href="http://werbach.com/barebones/intro.html#included"><B>Which HTML 
+    tags are included </B></A>
+    <LI><A href="http://werbach.com/barebones/intro.html#formatting"><B>How this 
+    document is formatted </B></A>(including a description of symbols and 
+    abbreviations) </LI></UL>
+  <P></P>
+  <LI><B>HTML TAGS </B>
+  <UL>
+    <LI><A href="http://werbach.com/barebones/barebone.html#general"><B>basic 
+    elements </B></A>(all HTML documents should have these) 
+    <LI><A 
+    href="http://werbach.com/barebones/barebone.html#structure"><B>structural 
+    definition </B></A>(appearance controlled by the browser's preferences) 
+    <LI><A 
+    href="http://werbach.com/barebones/barebone.html#presentation"><B>presentation 
+    formatting </B></A>(author specifies text appearance) 
+    <LI><A href="http://werbach.com/barebones/barebone.html#links"><B>links, 
+    graphics, and sounds </B></A>
+    <LI><A 
+    href="http://werbach.com/barebones/barebone.html#positioning"><B>positioning 
+    </B></A>
+    <LI><A 
+    href="http://werbach.com/barebones/barebone.html#dividers"><B>dividers 
+    </B></A>
+    <LI><A href="http://werbach.com/barebones/barebone.html#lists"><B>lists 
+    </B></A>
+    <LI><A 
+    href="http://werbach.com/barebones/barebone.html#color"><B>backgrounds and 
+    colors </B></A>
+    <LI><A href="http://werbach.com/barebones/barebone.html#special"><B>special 
+    characters </B></A>
+    <LI><A href="http://werbach.com/barebones/barebone.html#forms"><B>forms 
+    </B></A>
+    <LI><A href="http://werbach.com/barebones/barebone.html#tables"><B>tables 
+    </B></A>
+    <LI><A href="http://werbach.com/barebones/barebone.html#frames"><B>frames 
+    </B></A>
+    <LI><A href="http://werbach.com/barebones/barebone.html#java"><B>scripts and 
+    java </B></A>
+    <LI><A 
+    href="http://werbach.com/barebones/barebone.html#miscellaneous"><B>miscellaneous 
+    </B></A></LI></UL>
+  <P><B>Important: </B>If you are not clear about the differences between the 
+  various versions of HTML, I suggest that you read my discussion of <A 
+  href="http://werbach.com/barebones/notes.html#HTML">the development of 
+  HTML</A>, or the <A href="http://www.w3.org/pub/WWW/MarkUp/Activity">World 
+  Wide Web Consortium HTML activity statement.</A></P></LI></OL>
+<P align=center><A name=general></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>BASIC ELEMENTS </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Document Type </B></TD>
+    <TD width=200><TT>&lt;HTML&gt;&lt;/HTML&gt; </TT></TD>
+    <TD>(beginning and end of file) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Title </B></TD>
+    <TD><TT>&lt;TITLE&gt;&lt;/TITLE&gt; </TT></TD>
+    <TD>(must be in header) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Header </B></TD>
+    <TD><TT>&lt;HEAD&gt;&lt;/HEAD&gt; </TT></TD>
+    <TD>(descriptive info, such as title) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Body </B></TD>
+    <TD><TT>&lt;BODY&gt;&lt;/BODY&gt; </TT></TD>
+    <TD>(bulk of the page) </TD></TR></TBODY></TABLE>
+<P align=center><A name=structure></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>STRUCTURAL DEFINITION </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Heading </B></TD>
+    <TD width=200><TT>&lt;H?&gt;&lt;/H?&gt; </TT></TD>
+    <TD>(the spec. defines 6 levels) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Align Heading </B></TD>
+    <TD><TT>&lt;H? ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/H?&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Division </B></TD>
+    <TD><TT>&lt;DIV&gt;&lt;/DIV&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Align Division </B></TD>
+    <TD colSpan=2><TT>&lt;DIV ALIGN=LEFT|RIGHT|CENTER|JUSTIFY&gt;&lt;/DIV&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Defined Content </B></TD>
+    <TD><TT>&lt;SPAN&gt;&lt;/SPAN&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B><A href="http://werbach.com/barebones/notes.html#blockquote">Block 
+      Quote</A> </B></TD>
+    <TD><TT>&lt;BLOCKQUOTE&gt;&lt;/BLOCKQUOTE&gt; </TT></TD>
+    <TD>(usually indented) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Quote </B></TD>
+    <TD><TT>&lt;Q&gt;&lt;/Q&gt; </TT></TD>
+    <TD>(for short quotations) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Citation </B></TD>
+    <TD><TT>&lt;Q CITE="URL"&gt;&lt;/Q&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Emphasis </B></TD>
+    <TD><TT>&lt;EM&gt;&lt;/EM&gt; </TT></TD>
+    <TD>(usually displayed as italic) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Strong Emphasis </B></TD>
+    <TD><TT>&lt;STRONG&gt;&lt;/STRONG&gt; </TT></TD>
+    <TD>(usually displayed as bold) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Citation </B></TD>
+    <TD><TT>&lt;CITE&gt;&lt;/CITE&gt; </TT></TD>
+    <TD>(usually italics) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Code </B></TD>
+    <TD><TT>&lt;CODE&gt;&lt;/CODE&gt; </TT></TD>
+    <TD>(for source code listings) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Sample Output </B></TD>
+    <TD><TT>&lt;SAMP&gt;&lt;/SAMP&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Keyboard Input </B></TD>
+    <TD><TT>&lt;KBD&gt;&lt;/KBD&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Variable </B></TD>
+    <TD><TT>&lt;VAR&gt;&lt;/VAR&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Definition </B></TD>
+    <TD><TT>&lt;DFN&gt;&lt;/DFN&gt; </TT></TD>
+    <TD>(not widely implemented) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Author's Address </B></TD>
+    <TD><TT>&lt;ADDRESS&gt;&lt;/ADDRESS&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Large Font Size </B></TD>
+    <TD><TT>&lt;BIG&gt;&lt;/BIG&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Small Font Size </B></TD>
+    <TD><TT>&lt;SMALL&gt;&lt;/SMALL&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Insert </B></TD>
+    <TD><TT>&lt;INS&gt;&lt;/INS&gt; </TT></TD>
+    <TD>(marks additions in a new version) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Time of Change </B></TD>
+    <TD><TT>&lt;INS DATETIME=":::"&gt;&lt;/INS&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Comments </B></TD>
+    <TD><TT>&lt;INS CITE="URL"&gt;&lt;/INS&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Delete </B></TD>
+    <TD><TT>&lt;DEL&gt;&lt;/DEL&gt; </TT></TD>
+    <TD>(marks deletions in a new version) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Time of Change </B></TD>
+    <TD><TT>&lt;DEL DATETIME=":::"&gt;&lt;/DEL&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Comments </B></TD>
+    <TD><TT>&lt;DEL CITE="URL"&gt;&lt;/DEL&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Acronym </B></TD>
+    <TD><TT>&lt;ACRONYM&gt;&lt;/ACRONYM&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Abbreviation </B></TD>
+    <TD><TT>&lt;ABBR&gt;&lt;/ABBR&gt; </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=presentation></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>PRESENTATION FORMATTING </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Bold </B></TD>
+    <TD width=200><TT>&lt;B&gt;&lt;/B&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Italic </B></TD>
+    <TD><TT>&lt;I&gt;&lt;/I&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Underline </B></TD>
+    <TD><TT>&lt;U&gt;&lt;/U&gt; </TT></TD>
+    <TD>(not widely implemented) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Strikeout </B></TD>
+    <TD><TT>&lt;STRIKE&gt;&lt;/STRIKE&gt; </TT></TD>
+    <TD>(not widely implemented) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Strikeout </B></TD>
+    <TD><TT>&lt;S&gt;&lt;/S&gt; </TT></TD>
+    <TD>(not widely implemented) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Subscript </B></TD>
+    <TD><TT>&lt;SUB&gt;&lt;/SUB&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Superscript </B></TD>
+    <TD><TT>&lt;SUP&gt;&lt;/SUP&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Typewriter </B></TD>
+    <TD><TT>&lt;TT&gt;&lt;/TT&gt; </TT></TD>
+    <TD>(displays in a monospaced font) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B><A 
+      href="http://werbach.com/barebones/notes.html#xmp">Preformatted</A> 
+</B></TD>
+    <TD><TT>&lt;PRE&gt;&lt;/PRE&gt; </TT></TD>
+    <TD>(display text spacing as-is) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Width </B></TD>
+    <TD><TT>&lt;PRE WIDTH=?&gt;&lt;/PRE&gt; </TT></TD>
+    <TD>(in characters) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B><A href="http://werbach.com/barebones/notes.html#align">Center</A> 
+      </B></TD>
+    <TD><TT>&lt;CENTER&gt;&lt;/CENTER&gt; </TT></TD>
+    <TD>(for both text and images) </TD></TR>
+  <TR>
+    <TD>N1 </TD>
+    <TD><B>Blinking </B></TD>
+    <TD><TT>&lt;BLINK&gt;&lt;/BLINK&gt; </TT></TD>
+    <TD>(the most derided tag ever) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Font Size </B></TD>
+    <TD><TT>&lt;FONT SIZE=?&gt;&lt;/FONT&gt; </TT></TD>
+    <TD>(ranges from 1-7) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Change Font Size </B></TD>
+    <TD><TT>&lt;FONT SIZE="+|-?"&gt;&lt;/FONT&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Font Color </B></TD>
+    <TD><TT>&lt;FONT COLOR="#$$$$$$"&gt;&lt;/FONT&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Select Font </B></TD>
+    <TD><TT>&lt;FONT FACE="***"&gt;&lt;/FONT&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Point size </B></TD>
+    <TD><TT>&lt;FONT POINT-SIZE=?&gt;&lt;/FONT&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Weight </B></TD>
+    <TD><TT>&lt;FONT WEIGHT=?&gt;&lt;/FONT&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Base Font Size </B></TD>
+    <TD><TT>&lt;BASEFONT SIZE=?&gt; </TT></TD>
+    <TD>(from 1-7; default is 3) </TD></TR>
+  <TR>
+    <TD>MS </TD>
+    <TD><B>Marquee </B></TD>
+    <TD><TT>&lt;MARQUEE&gt;&lt;/MARQUEE&gt; </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=positioning></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>POSITIONING </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>N3 </TD>
+    <TD width=120><B>Multi-Column </B></TD>
+    <TD width=200><TT>&lt;MULTICOL COLS=?&gt;&lt;/MULTICOL&gt; </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Column Gutter </B></TD>
+    <TD><TT>&lt;MULTICOL GUTTER=?&gt;&lt;/MULTICOL&gt; </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Column Width </B></TD>
+    <TD><TT>&lt;MULTICOL WIDTH=?&gt;&lt;/MULTICOL&gt; </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Spacer </B></TD>
+    <TD><TT>&lt;SPACER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Spacer Type </B></TD>
+    <TD><TT>&lt;SPACER TYPE=HORIZONTAL|VERTICAL|BLOCK&gt; </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Size </B></TD>
+    <TD><TT>&lt;SPACER SIZE=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Dimensions </B></TD>
+    <TD><TT>&lt;SPACER WIDTH=? HEIGHT=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Alignment </B></TD>
+    <TD><TT>&lt;SPACER ALIGN=LEFT|RIGHT|CENTER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Layer </B></TD>
+    <TD><TT>&lt;LAYER&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Name </B></TD>
+    <TD><TT>&lt;LAYER ID="***"&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Location </B></TD>
+    <TD><TT>&lt;LAYER LEFT=? TOP=?&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Rel. Position </B></TD>
+    <TD><TT>&lt;LAYER PAGEX=? PAGEY=?&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Source File </B></TD>
+    <TD><TT>&lt;LAYER SRC="***"&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Stacking </B></TD>
+    <TD><TT>&lt;LAYER Z-INDEX=?&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Stack Position </B></TD>
+    <TD><TT>&lt;LAYER ABOVE="***" BELOW="***"&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Dimensions </B></TD>
+    <TD><TT>&lt;LAYER HEIGHT=? WIDTH=?&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Clipping Path </B></TD>
+    <TD><TT>&lt;LAYER CLIP=,,,&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Visible? </B></TD>
+    <TD colSpan=2><TT>&lt;LAYER 
+      VISIBILITY=SHOW|HIDDEN|INHERIT&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Background </B></TD>
+    <TD><TT>&lt;LAYER BACKGROUND="$$$$$$"&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Color </B></TD>
+    <TD><TT>&lt;LAYER BGCOLOR="$$$$$$"&gt;&lt;/LAYER&gt; </TT></TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Inline Layer </B></TD>
+    <TD><TT>&lt;ILAYER&gt;&lt;/ILAYER&gt; </TT></TD>
+    <TD>(takes same attributes as LAYER) </TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Alt. Content </B></TD>
+    <TD><TT>&lt;NOLAYER&gt;&lt;/NOLAYER&gt; </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=links></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>LINKS, GRAPHICS, AND SOUNDS </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Link Something </B></TD>
+    <TD width=200><TT>&lt;A HREF="URL"&gt;&lt;/A&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Link to Location </B></TD>
+    <TD><TT>&lt;A HREF="URL#***"&gt;&lt;/A&gt; </TT></TD>
+    <TD>(if in another document) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B></B></TD>
+    <TD><TT>&lt;A HREF="#***"&gt;&lt;/A&gt; </TT></TD>
+    <TD>(if in current document) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Target Window </B></TD>
+    <TD><TT>&lt;A HREF="URL" TARGET="***"&gt;&lt;/A&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Action on Click </B></TD>
+    <TD><TT>&lt;A HREF="URL" ONCLICK="***"&gt;&lt;/A&gt; </TT></TD>
+    <TD>(Javascript) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Mouseover Action </B></TD>
+    <TD><TT>&lt;A HREF="URL" ONMOUSEOVER="***"&gt;&lt;/A&gt; </TT></TD>
+    <TD>(Javascript) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Mouse out Action </B></TD>
+    <TD><TT>&lt;A HREF="URL" ONMOUSEOUT="***"&gt;&lt;/A&gt; </TT></TD>
+    <TD>(Javascript) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Link to Email </B></TD>
+    <TD><TT>&lt;A HREF="mailto:@"&gt;&lt;/A&gt; </TT></TD></TR>
+  <TR>
+    <TD>N, MS </TD>
+    <TD><B>Specify Subject </B></TD>
+    <TD><TT>&lt;A HREF="mailto:@?SUBJECT=***"&gt;&lt;/A&gt; </TT></TD>
+    <TD>(use a real question mark) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Define Location </B></TD>
+    <TD><TT>&lt;A NAME="***"&gt;&lt;/A&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Display Image </B></TD>
+    <TD><TT>&lt;IMG SRC="URL"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alignment </B></TD>
+    <TD colSpan=2><TT>&lt;IMG SRC="URL" ALIGN=TOP|BOTTOM|MIDDLE|LEFT|RIGHT&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>N1 </TD>
+    <TD><B>Alignment </B></TD>
+    <TD colSpan=2><TT>&lt;IMG SRC="URL" 
+      ALIGN=TEXTTOP|ABSMIDDLE|BASELINE|ABSBOTTOM&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alternate </B></TD>
+    <TD><TT>&lt;IMG SRC="URL" ALT="***"&gt; </TT></TD>
+    <TD>(if image not displayed) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Dimensions </B></TD>
+    <TD><TT>&lt;IMG SRC="URL" WIDTH=? HEIGHT=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B></B></TD>
+    <TD><TT>&lt;IMG SRC="URL" WIDTH=% HEIGHT=%&gt; </TT></TD>
+    <TD>(as percentage of page width/height) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Border </B></TD>
+    <TD><TT>&lt;IMG SRC="URL" BORDER=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Runaround Space </B></TD>
+    <TD><TT>&lt;IMG SRC="URL" HSPACE=? VSPACE=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>N1 </TD>
+    <TD><B>Low-Res Proxy </B></TD>
+    <TD><TT>&lt;IMG SRC="URL" LOWSRC="URL"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Imagemap </B></TD>
+    <TD><TT>&lt;IMG SRC="URL" ISMAP&gt; </TT></TD>
+    <TD>(requires a script) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Imagemap </B></TD>
+    <TD><TT>&lt;IMG SRC="URL" USEMAP="URL"&gt; </TT></TD></TR>
+  <TR>
+    <TD>MS </TD>
+    <TD><B>Movie Clip </B></TD>
+    <TD><TT>&lt;IMG DYNSRC="***" START="***" LOOP=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>MS </TD>
+    <TD><B>Background Sound </B></TD>
+    <TD><TT>&lt;BGSOUND SRC="***" LOOP=?|INFINITE&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Client-Side Map </B></TD>
+    <TD><TT>&lt;MAP NAME="***"&gt;&lt;/MAP&gt; </TT></TD>
+    <TD>(describes the map) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Map Section </B></TD>
+    <TD colSpan=2><TT>&lt;AREA SHAPE="DEFAULT|RECT|CIRCLE|POLY" COORDS=",,," 
+      HREF="URL"|NOHREF&gt; </TT></TD></TR>
+  <TR>
+    <TD>N1 </TD>
+    <TD><B>Client Pull </B></TD>
+    <TD colSpan=2><TT>&lt;META HTTP-EQUIV="Refresh" CONTENT="?; URL=URL"&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>N2 </TD>
+    <TD><B>Embed Object </B></TD>
+    <TD><TT>&lt;EMBED SRC="URL"&gt; </TT></TD>
+    <TD>(insert object into page) </TD></TR>
+  <TR>
+    <TD>N2 </TD>
+    <TD><B>Object Size </B></TD>
+    <TD><TT>&lt;EMBED SRC="URL" WIDTH=? HEIGHT=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Object </B></TD>
+    <TD><TT>&lt;OBJECT&gt;&lt;/OBJECT&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Parameters </B></TD>
+    <TD><TT>&lt;PARAM&gt; </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=dividers></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>DIVIDERS </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B><A 
+      href="http://werbach.com/barebones/notes.html#paragraph">Paragraph</A> 
+    </B></TD>
+    <TD width=200><TT>&lt;P&gt;&lt;/P&gt; </TT></TD>
+    <TD>(closing tag often unnecessary) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B><A href="http://werbach.com/barebones/notes.html#align">Align 
+      Text</A> </B></TD>
+    <TD><TT>&lt;P ALIGN=LEFT|CENTER|RIGHT&gt;&lt;/P&gt; </TT></TD></TR>
+  <TR>
+    <TD>N </TD>
+    <TD><B>Justify Text </B></TD>
+    <TD><TT>&lt;P ALIGN=JUSTIFY&gt;&lt;/P&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Line Break </B></TD>
+    <TD><TT>&lt;BR&gt; </TT></TD>
+    <TD>(a single carriage return) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Clear Textwrap </B></TD>
+    <TD><TT>&lt;BR CLEAR=LEFT|RIGHT|ALL&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Horizontal Rule </B></TD>
+    <TD><TT>&lt;HR&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alignment </B></TD>
+    <TD><TT>&lt;HR ALIGN=LEFT|RIGHT|CENTER&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Thickness </B></TD>
+    <TD><TT>&lt;HR SIZE=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Width </B></TD>
+    <TD><TT>&lt;HR WIDTH=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Width Percent </B></TD>
+    <TD><TT>&lt;HR WIDTH="%"&gt; </TT></TD>
+    <TD>(as a percentage of page width) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Solid Line </B></TD>
+    <TD><TT>&lt;HR NOSHADE&gt; </TT></TD>
+    <TD>(without the 3D cutout look) </TD></TR>
+  <TR>
+    <TD>N1 </TD>
+    <TD><B>No Break </B></TD>
+    <TD><TT>&lt;NOBR&gt;&lt;/NOBR&gt; </TT></TD>
+    <TD>(prevents line breaks) </TD></TR>
+  <TR>
+    <TD>N1 </TD>
+    <TD><B>Word Break </B></TD>
+    <TD><TT>&lt;WBR&gt; </TT></TD>
+    <TD>(where to break a line if needed) </TD></TR></TBODY></TABLE>
+<P align=center><A name=lists></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>LISTS </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Unordered List </B></TD>
+    <TD width=200><TT>&lt;UL&gt;&lt;LI&gt;&lt;/UL&gt; </TT></TD>
+    <TD>(before each list item) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Compact </B></TD>
+    <TD><TT>&lt;UL COMPACT&gt;&lt;/UL&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Bullet Type </B></TD>
+    <TD><TT>&lt;UL TYPE=DISC|CIRCLE|SQUARE&gt; </TT></TD>
+    <TD>(for the whole list) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Bullet Type </B></TD>
+    <TD><TT>&lt;LI TYPE=DISC|CIRCLE|SQUARE&gt; </TT></TD>
+    <TD>(this &amp; subsequent) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Ordered List </B></TD>
+    <TD><TT>&lt;OL&gt;&lt;LI&gt;&lt;/OL&gt; </TT></TD>
+    <TD>(before each list item) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Compact </B></TD>
+    <TD><TT>&lt;OL COMPACT&gt;&lt;/OL&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Numbering Type </B></TD>
+    <TD><TT>&lt;OL TYPE=A|a|I|i|1&gt; </TT></TD>
+    <TD>(for the whole list) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Numbering Type </B></TD>
+    <TD><TT>&lt;LI TYPE=A|a|I|i|1&gt; </TT></TD>
+    <TD>(this &amp; subsequent) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Starting Number </B></TD>
+    <TD><TT>&lt;OL START=?&gt; </TT></TD>
+    <TD>(for the whole list) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Starting Number </B></TD>
+    <TD><TT>&lt;LI VALUE=?&gt; </TT></TD>
+    <TD>(this &amp; subsequent) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Definition List </B></TD>
+    <TD><TT>&lt;DL&gt;&lt;DT&gt;&lt;DD&gt;&lt;/DL&gt; </TT></TD>
+    <TD>(&lt;DT&gt;=term, &lt;DD&gt;=definition) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Compact </B></TD>
+    <TD><TT>&lt;DL COMPACT&gt;&lt;/DL&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Menu List </B></TD>
+    <TD><TT>&lt;MENU&gt;&lt;LI&gt;&lt;/MENU&gt; </TT></TD>
+    <TD>(before each list item) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Compact </B></TD>
+    <TD><TT>&lt;MENU COMPACT&gt;&lt;/MENU&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Directory List </B></TD>
+    <TD><TT>&lt;DIR&gt;&lt;LI&gt;&lt;/DIR&gt; </TT></TD>
+    <TD>(before each list item) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Compact </B></TD>
+    <TD><TT>&lt;DIR COMPACT&gt;&lt;/DIR&gt; </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=color></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>BACKGROUNDS AND <A 
+      href="http://werbach.com/barebones/notes.html#color">COLORS</A> </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Tiled Bkground </B></TD>
+    <TD width=200><TT>&lt;BODY BACKGROUND="URL"&gt; </TT></TD></TR>
+  <TR>
+    <TD>MS </TD>
+    <TD><B>Watermark </B></TD>
+    <TD><TT>&lt;BODY BGPROPERTIES="FIXED"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Bkground Color </B></TD>
+    <TD><TT>&lt;BODY BGCOLOR="#$$$$$$"&gt; </TT></TD>
+    <TD>(order is red/green/blue) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Text Color </B></TD>
+    <TD><TT>&lt;BODY TEXT="#$$$$$$"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Link Color </B></TD>
+    <TD><TT>&lt;BODY LINK="#$$$$$$"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Visited Link </B></TD>
+    <TD><TT>&lt;BODY VLINK="#$$$$$$"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Active Link </B></TD>
+    <TD><TT>&lt;BODY ALINK="#$$$$$$"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD colSpan=4>(More info at <A 
+      href="http://werbach.com/web/wwwhelp.html#color">http://werbach.com/web/wwwhelp.html#color</A>) 
+    </TD></TR></TBODY></TABLE>
+<P align=center><A name=special></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>SPECIAL CHARACTERS </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Special Character </B></TD>
+    <TD width=60><TT>&amp;#?; </TT></TD>
+    <TD>(where ? is the ISO 8859-1 code) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>&lt; </B></TD>
+    <TD><TT>&amp;lt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>&gt; </B></TD>
+    <TD><TT>&amp;gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>&amp; </B></TD>
+    <TD><TT>&amp;amp; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>" </B></TD>
+    <TD><TT>&amp;quot; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Registered TM </B></TD>
+    <TD><TT>&amp;#174; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Registered TM </B></TD>
+    <TD><TT>&amp;reg; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Copyright </B></TD>
+    <TD><TT>&amp;#169; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Copyright </B></TD>
+    <TD><TT>&amp;copy; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Non-Breaking Space </B></TD>
+    <TD><TT>&amp;nbsp; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD colSpan=4>(Complete list at <A 
+      href="http://www.uni-passau.de/~ramsch/iso8859-1.html">http://www.uni-passau.de/~ramsch/iso8859-1.html</A>) 
+    </TD></TR></TBODY></TABLE>
+<P align=center><A name=forms></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>FORMS </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Define Form </B></TD>
+    <TD width=200><TT>&lt;FORM ACTION="URL" METHOD=GET|POST&gt;&lt;/FORM&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>File Upload </B></TD>
+    <TD colSpan=2><TT>&lt;FORM ENCTYPE="multipart/form-data"&gt;&lt;/FORM&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Input Field </B></TD>
+    <TD colSpan=2><TT>&lt;INPUT TYPE="TEXT|PASSWORD|CHECKBOX|RADIO| 
+      <BR>FILE|BUTTON|IMAGE|HIDDEN|SUBMIT|RESET"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Field Name </B></TD>
+    <TD><TT>&lt;INPUT NAME="***"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Field Value </B></TD>
+    <TD><TT>&lt;INPUT VALUE="***"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Checked? </B></TD>
+    <TD><TT>&lt;INPUT CHECKED&gt; </TT></TD>
+    <TD>(checkboxes and radio boxes) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Field Size </B></TD>
+    <TD><TT>&lt;INPUT SIZE=?&gt; </TT></TD>
+    <TD>(in characters) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Max Length </B></TD>
+    <TD><TT>&lt;INPUT MAXLENGTH=?&gt; </TT></TD>
+    <TD>(in characters) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Button </B></TD>
+    <TD><TT>&lt;BUTTON&gt;&lt;/BUTTON&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Button Name </B></TD>
+    <TD><TT>&lt;BUTTON NAME="***"&gt;&lt;/BUTTON&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Button Type </B></TD>
+    <TD colSpan=2><TT>&lt;BUTTON TYPE="SUBMIT|RESET|BUTTON"&gt;&lt;/BUTTON&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Default Value </B></TD>
+    <TD><TT>&lt;BUTTON VALUE="***"&gt;&lt;/BUTTON&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Label </B></TD>
+    <TD><TT>&lt;LABEL&gt;&lt;/LABEL&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Item Labelled </B></TD>
+    <TD><TT>&lt;LABEL FOR="***"&gt;&lt;/LABEL&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Selection List </B></TD>
+    <TD><TT>&lt;SELECT&gt;&lt;/SELECT&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Name of List </B></TD>
+    <TD><TT>&lt;SELECT NAME="***"&gt;&lt;/SELECT&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B># of Options </B></TD>
+    <TD><TT>&lt;SELECT SIZE=?&gt;&lt;/SELECT&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Multiple Choice </B></TD>
+    <TD><TT>&lt;SELECT MULTIPLE&gt; </TT></TD>
+    <TD>(can select more than one) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Option </B></TD>
+    <TD><TT>&lt;OPTION&gt; </TT></TD>
+    <TD>(items that can be selected) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Default Option </B></TD>
+    <TD><TT>&lt;OPTION SELECTED&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Option Value </B></TD>
+    <TD><TT>&lt;OPTION VALUE="***"&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Option Group </B></TD>
+    <TD><TT>&lt;OPTGROUP LABEL="***"&gt;&lt;/OPTGROUP&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Input Box Size </B></TD>
+    <TD><TT>&lt;TEXTAREA ROWS=? COLS=?&gt;&lt;/TEXTAREA&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Name of Box </B></TD>
+    <TD><TT>&lt;TEXTAREA NAME="***"&gt;&lt;/TEXTAREA&gt; </TT></TD></TR>
+  <TR>
+    <TD>N2 </TD>
+    <TD><B>Wrap Text </B></TD>
+    <TD colSpan=2><TT>&lt;TEXTAREA WRAP=OFF|HARD|SOFT&gt;&lt;/TEXTAREA&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Group elements </B></TD>
+    <TD><TT>&lt;FIELDSET&gt;&lt;/FIELDSET&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Legend </B></TD>
+    <TD><TT>&lt;LEGEND&gt;&lt;/LEGEND&gt; </TT></TD>
+    <TD>(caption for fieldsets) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Alignment </B></TD>
+    <TD colSpan=2><TT>&lt;LEGEND 
+      ALIGN="TOP|BOTTOM|LEFT|RIGHT"&gt;&lt;/LEGEND&gt; </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=tables></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>TABLES </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Define Table </B></TD>
+    <TD width=200><TT>&lt;TABLE&gt;&lt;/TABLE&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Table Alignment </B></TD>
+    <TD><TT>&lt;TABLE ALIGN=LEFT|RIGHT|CENTER&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Table Border </B></TD>
+    <TD><TT>&lt;TABLE BORDER&gt;&lt;/TABLE&gt; </TT></TD>
+    <TD>(either on or off) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Table Border </B></TD>
+    <TD><TT>&lt;TABLE BORDER=?&gt;&lt;/TABLE&gt; </TT></TD>
+    <TD>(you can set the value) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Cell Spacing </B></TD>
+    <TD><TT>&lt;TABLE CELLSPACING=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Cell Padding </B></TD>
+    <TD><TT>&lt;TABLE CELLPADDING=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Desired Width </B></TD>
+    <TD><TT>&lt;TABLE WIDTH=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Width Percent </B></TD>
+    <TD><TT>&lt;TABLE WIDTH=%&gt; </TT></TD>
+    <TD>(percentage of page) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Table Color </B></TD>
+    <TD><TT>&lt;TABLE BGCOLOR="$$$$$$"&gt;&lt;/TABLE&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Table Frame </B></TD>
+    <TD colSpan=2><TT>&lt;TABLE FRAME=VOID|ABOVE|BELOW|HSIDES|LHS|RHS| 
+      <BR>VSIDES|BOX|BORDER&gt;&lt;/TABLE&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Table Rules </B></TD>
+    <TD colSpan=2><TT>&lt;TABLE 
+      RULES=NONE|GROUPS|ROWS|COLS|ALL&gt;&lt;/TABLE&gt; </TT></TD></TR>
+  <TR>
+    <TD>MS </TD>
+    <TD><B>Border Color </B></TD>
+    <TD><TT>&lt;TABLE BORDERCOLOR="$$$$$$"&gt;&lt;/TABLE&gt; </TT></TD></TR>
+  <TR>
+    <TD>MS </TD>
+    <TD><B>Dark Border </B></TD>
+    <TD><TT>&lt;TABLE BORDERCOLORDARK="$$$$$$"&gt;&lt;/TABLE&gt; </TT></TD></TR>
+  <TR>
+    <TD>MS </TD>
+    <TD><B>Light Border </B></TD>
+    <TD><TT>&lt;TABLE BORDERCOLORLIGHT="$$$$$$"&gt;&lt;/TABLE&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Table Row </B></TD>
+    <TD><TT>&lt;TR&gt;&lt;/TR&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alignment </B></TD>
+    <TD colSpan=2><TT>&lt;TR ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM&gt; 
+  </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Table Cell </B></TD>
+    <TD><TT>&lt;TD&gt;&lt;/TD&gt; </TT></TD>
+    <TD>(must appear within table rows) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alignment </B></TD>
+    <TD colSpan=2><TT>&lt;TD ALIGN=LEFT|RIGHT|CENTER 
+      VALIGN=TOP|MIDDLE|BOTTOM&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>No linebreaks </B></TD>
+    <TD><TT>&lt;TD NOWRAP&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Columns to Span </B></TD>
+    <TD><TT>&lt;TD COLSPAN=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Rows to Span </B></TD>
+    <TD><TT>&lt;TD ROWSPAN=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Desired Width </B></TD>
+    <TD><TT>&lt;TD WIDTH=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Width Percent </B></TD>
+    <TD><TT>&lt;TD WIDTH="%"&gt; </TT></TD>
+    <TD>(percentage of table) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Cell Color </B></TD>
+    <TD><TT>&lt;TD BGCOLOR="#$$$$$$"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Header Cell </B></TD>
+    <TD><TT>&lt;TH&gt;&lt;/TH&gt; </TT></TD>
+    <TD>(same as data, except bold centered) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alignment </B></TD>
+    <TD colSpan=2><TT>&lt;TH ALIGN=LEFT|RIGHT|CENTER|MIDDLE|BOTTOM&gt; 
+  </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>No Linebreaks </B></TD>
+    <TD><TT>&lt;TH NOWRAP&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Columns to Span </B></TD>
+    <TD><TT>&lt;TH COLSPAN=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Rows to Span </B></TD>
+    <TD><TT>&lt;TH ROWSPAN=?&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Desired Width </B></TD>
+    <TD><TT>&lt;TH WIDTH=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Width Percent </B></TD>
+    <TD><TT>&lt;TH WIDTH="%"&gt; </TT></TD>
+    <TD>(percentage of table) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Cell Color </B></TD>
+    <TD><TT>&lt;TH BGCOLOR="#$$$$$$"&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Table Body </B></TD>
+    <TD><TT>&lt;TBODY&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Table Footer </B></TD>
+    <TD><TT>&lt;TFOOT&gt;&lt;/TFOOT&gt; </TT></TD>
+    <TD>(must come before <TT>THEAD&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Table Header </B></TD>
+    <TD><TT>&lt;THEAD&gt;&lt;/THEAD&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Table Caption </B></TD>
+    <TD><TT>&lt;CAPTION&gt;&lt;/CAPTION&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alignment </B></TD>
+    <TD><TT>&lt;CAPTION ALIGN=TOP|BOTTOM|LEFT|RIGHT&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Column </B></TD>
+    <TD><TT>&lt;COL&gt;&lt;/COL&gt; </TT></TD>
+    <TD>(groups column attributes) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Columns Spanned </B></TD>
+    <TD><TT>&lt;COL SPAN=?&gt;&lt;/COL&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Column Width </B></TD>
+    <TD><TT>&lt;COL WIDTH=?&gt;&lt;/COL&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Width Percent </B></TD>
+    <TD><TT>&lt;COL WIDTH="%"&gt;&lt;/COL&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Group columns </B></TD>
+    <TD><TT>&lt;COLGROUP&gt;&lt;/COLGROUP&gt; </TT></TD>
+    <TD>(groups column structure) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Columns Spanned </B></TD>
+    <TD><TT>&lt;COLGROUP SPAN=?&gt;&lt;/COLGROUP&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Group Width </B></TD>
+    <TD><TT>&lt;COLGROUP WIDTH=?&gt;&lt;/COLGROUP&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Width Percent </B></TD>
+    <TD><TT>&lt;COLGROUP WIDTH="%"&gt;&lt;/COLGROUP&gt; 
+</TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=frames></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>FRAMES </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>4.0* </TD>
+    <TD width=120><B>Frame Document </B></TD>
+    <TD width=200><TT>&lt;FRAMESET&gt;&lt;/FRAMESET&gt; </TT></TD>
+    <TD>(instead of &lt;BODY&gt;) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Row Heights </B></TD>
+    <TD><TT>&lt;FRAMESET ROWS=,,,&gt;&lt;/FRAMESET&gt; </TT></TD>
+    <TD>(pixels or %) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Row Heights </B></TD>
+    <TD><TT>&lt;FRAMESET ROWS=*&gt;&lt;/FRAMESET&gt; </TT></TD>
+    <TD>(* = relative size) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Column Widths </B></TD>
+    <TD><TT>&lt;FRAMESET COLS=,,,&gt;&lt;/FRAMESET&gt; </TT></TD>
+    <TD>(pixels or %) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Column Widths </B></TD>
+    <TD><TT>&lt;FRAMESET COLS=*&gt;&lt;/FRAMESET&gt; </TT></TD>
+    <TD>(* = relative size) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Borders </B></TD>
+    <TD colSpan=2><TT>&lt;FRAMESET FRAMEBORDER="yes|no"&gt;&lt;/FRAMESET&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Border Width </B></TD>
+    <TD><TT>&lt;FRAMESET BORDER=?&gt;&lt;/FRAMESET&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Border Color </B></TD>
+    <TD colSpan=2><TT>&lt;FRAMESET BORDERCOLOR="#$$$$$$"&gt;&lt;/FRAMESET&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>N3 </TD>
+    <TD><B>Frame Spacing </B></TD>
+    <TD><TT>&lt;FRAMESET FRAMESPACING=?&gt;&lt;/FRAMESET&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Define Frame </B></TD>
+    <TD><TT>&lt;FRAME&gt; </TT></TD>
+    <TD>(contents of an individual frame) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Display Document </B></TD>
+    <TD><TT>&lt;FRAME SRC="URL"&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Frame Name </B></TD>
+    <TD colSpan=2><TT>&lt;FRAME NAME="***"|_blank|_self|_parent|_top&gt; 
+    </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Margin Width </B></TD>
+    <TD><TT>&lt;FRAME MARGINWIDTH=?&gt; </TT></TD>
+    <TD>(left and right margins) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Margin Height </B></TD>
+    <TD><TT>&lt;FRAME MARGINHEIGHT=?&gt; </TT></TD>
+    <TD>(top and bottom margins) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Scrollbar? </B></TD>
+    <TD><TT>&lt;FRAME SCROLLING="YES|NO|AUTO"&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Not Resizable </B></TD>
+    <TD><TT>&lt;FRAME NORESIZE&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Borders </B></TD>
+    <TD><TT>&lt;FRAME FRAMEBORDER="yes|no"&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Border Color </B></TD>
+    <TD><TT>&lt;FRAME BORDERCOLOR="#$$$$$$"&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Unframed Content </B></TD>
+    <TD><TT>&lt;NOFRAMES&gt;&lt;/NOFRAMES&gt; </TT></TD>
+    <TD>(for non-frames browsers) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Inline Frame </B></TD>
+    <TD><TT>&lt;IFRAME&gt;&lt;/IFRAME&gt; </TT></TD>
+    <TD>(takes same attributes as FRAME) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Dimensions </B></TD>
+    <TD><TT>&lt;IFRAME WIDTH=? HEIGHT=?&gt;&lt;/IFRAME&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Dimensions </B></TD>
+    <TD><TT>&lt;IFRAME WIDTH="%" HEIGHT="%"&gt;&lt;/IFRAME&gt; 
+  </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=java></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>SCRIPTS AND JAVA </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Script </B></TD>
+    <TD width=200><TT>&lt;SCRIPT&gt;&lt;/SCRIPT&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Location </B></TD>
+    <TD><TT>&lt;SCRIPT SRC="URL"&gt;&lt;/SCRIPT&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Type </B></TD>
+    <TD><TT>&lt;SCRIPT TYPE="***"&gt;&lt;/SCRIPT&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Language </B></TD>
+    <TD><TT>&lt;SCRIPT LANGUAGE="***"&gt;&lt;/SCRIPT&gt; </TT></TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Other Content </B></TD>
+    <TD><TT>&lt;NOSCRIPT&gt;&lt;/NOSCRIPT&gt; </TT></TD>
+    <TD>(if scripts not supported) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Applet </B></TD>
+    <TD><TT>&lt;APPLET&gt;&lt;/APPLET&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>File Name </B></TD>
+    <TD><TT>&lt;APPLET CODE="***"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Parameters </B></TD>
+    <TD><TT>&lt;APPLET PARAM NAME="***"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Location </B></TD>
+    <TD><TT>&lt;APPLET CODEBASE="URL"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Identifier </B></TD>
+    <TD><TT>&lt;APPLET NAME="***"&gt; </TT></TD>
+    <TD>(for references) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alt Text </B></TD>
+    <TD><TT>&lt;APPLET ALT="***"&gt; </TT></TD>
+    <TD>(for non-Java browsers) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Alignment </B></TD>
+    <TD><TT>&lt;APPLET ALIGN="LEFT|RIGHT|CENTER"&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Size </B></TD>
+    <TD><TT>&lt;APPLET WIDTH=? HEIGHT=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Spacing </B></TD>
+    <TD><TT>&lt;APPLET HSPACE=? VSPACE=?&gt; </TT></TD>
+    <TD>(in pixels) </TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Server Script </B></TD>
+    <TD><TT>&lt;SERVER&gt;&lt;/SERVER&gt; </TT></TD></TR></TBODY></TABLE>
+<P align=center><A name=miscellaneous></A>
+<TABLE border=0 width="100%">
+  <TBODY>
+  <TR>
+    <TH colSpan=4><FONT size=6>MISCELLANEOUS </FONT>
+      <HR noShade SIZE=1>
+    </TH></TR>
+  <TR>
+    <TD width=40>&nbsp; </TD>
+    <TD width=120><B>Comment </B></TD>
+    <TD width=200><TT>&lt;!-- *** --&gt; </TT></TD>
+    <TD>(not displayed by the browser) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B><A 
+      href="http://werbach.com/barebones/notes.html#prologue">Prologue</A> 
+    </B></TD>
+    <TD colSpan=2><TT>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"&gt; 
+      </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Searchable </B></TD>
+    <TD><TT>&lt;ISINDEX&gt; </TT></TD>
+    <TD>(indicates a searchable index) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Prompt </B></TD>
+    <TD><TT>&lt;ISINDEX PROMPT="***"&gt; </TT></TD>
+    <TD>(text to prompt input) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Send Search </B></TD>
+    <TD><TT>&lt;A HREF="URL?***"&gt;&lt;/a&gt; </TT></TD>
+    <TD>(use a real question mark) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>URL of This File </B></TD>
+    <TD><TT>&lt;BASE HREF="URL"&gt; </TT></TD>
+    <TD>(must be in header) </TD></TR>
+  <TR>
+    <TD>4.0* </TD>
+    <TD><B>Base Window Name </B></TD>
+    <TD><TT>&lt;BASE TARGET="***"&gt; </TT></TD>
+    <TD>(must be in header) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Relationship </B></TD>
+    <TD><TT>&lt;LINK REV="***" REL="***" HREF="URL"&gt; </TT></TD>
+    <TD>(in header) </TD></TR>
+  <TR>
+    <TD>N4 </TD>
+    <TD><B>Linked File </B></TD>
+    <TD><TT>&lt;LINK TYPE="***" SRC="***"&gt;&lt;/LINK&gt; </TT></TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Meta Information </B></TD>
+    <TD><TT>&lt;META&gt; </TT></TD>
+    <TD>(must be in header) </TD></TR>
+  <TR>
+    <TD>&nbsp; </TD>
+    <TD><B>Style Sheets </B></TD>
+    <TD><TT>&lt;STYLE&gt;&lt;/STYLE&gt; </TT></TD>
+    <TD>(implementations vary) </TD></TR>
+  <TR>
+    <TD>4.0 </TD>
+    <TD><B>Bidirect Off </B></TD>
+    <TD><TT>&lt;BDO DIR=LTR|RTL&gt;&lt;/BDO&gt; </TT></TD>
+    <TD>(for certain character sets) </TD></TR></TBODY></TABLE><PRE> 
+</PRE>
+<TABLE bgColor=#cccccc border=0 cellPadding=6 width="100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <CENTER>Copyright ©1995-1999 <A href="mailto:barebones@werbach.com">Kevin 
+      Werbach</A>. Redistribution is permitted, so long as there is no charge 
+      and this document is included without alteration in its entirety. This 
+      Guide is not a product of Bare Bones Software. More information is 
+      available at <A 
+      href="http://werbach.com/barebones">http://werbach.com/barebones</A>. 
+      <BR><A href="http://validator.w3.org/"><IMG alt="Valid HTML 4.0!" border=0 
+      height=31 src="Bare Bones Guide to HTML_files/vh40.gif" width=88> </A><!-- Start SuperStats code version 2.0f.  Do not alter this code!
+     http://www.superstats.com -->
+      <SCRIPT language=JavaScript>
+var code = ' ';
+</SCRIPT>
+
+      <SCRIPT src="">
+</SCRIPT>
+
+      <SCRIPT language=JavaScript>
+document.write(code);
+</SCRIPT>
+      <NOSCRIPT><A href="http://stats.superstats.com/c.cgi?u=kwerb" 
+      target=_top><IMG border=0 
+      src="Bare Bones Guide to HTML_files/invis.gif" width="1" height="1"></A></NOSCRIPT> <!-- End SuperStats tracking code. --></CENTER></TD></TR></TBODY></TABLE></BODY></HTML>

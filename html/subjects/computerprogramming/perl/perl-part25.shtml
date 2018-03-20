@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl - Part 25</h1>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<h2>Task 028</h2>
+Create the file <font face="Courier">friends02.pl</font> below. Use it to test that your database is storing your values properly, as well as determining that the pieces of text previously concatenated can be separated from each other for use.
+<center><img width="100%" src="/images/friends02a.png"></center>
+If the system is satisfactory, <b>you're now ready to complete the final part of the database trio of programs</b>!
+<h2>Task 029</h2>
+Here we go. You've made the program to accept data; you've got a test program to ensure the data is saved correctly, now you'll create the program that given a name returns the details of your friend from your database. This is the culmination of the 25 parts of this tutorial. You get that? The <big><big>culmination</big></big> of the process that prepares you for the barcode reader programming assignment</a>. The <center><big><big><big>CUL<big><big>MIN<big>A</big>T</big></big>IO<big>N</big></big></big></big>!!<big><big>!</big></big></center>
+So what do you do next? Well, just copy <font face="Courier">friends02.pl</font> into <font face="Courier">friends03.pl</font>; go back to <font face="Courier">names05.pl</font>; copy the bit between the &lt;SNIP&gt;s from that program into the new <font face="Courier">friends03.pl</font>; change a few variable names to make both program halves match and the job is done. There. Easy.
+Below is a sample run of how the program may look when running. You can touch it up (and really should) to make it look, well, nice on screen.
+<center><img width="90%" src="/images/friends03a.png"></center>
+Bit of an anti-climax, eh? Try the <a href="../">relevant programming assignment</a> for flavour...
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl-part25.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

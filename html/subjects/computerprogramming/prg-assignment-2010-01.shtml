@@ -1,0 +1,29 @@
+<h3>Use the link above to view the Perl tutorial pages explaining the skills required for the assignments.</h3>
+<ul>
+<li>(<!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="prg-assignment-2010-01.shtml" -->)</li>
+<li><a name="2007.1"></a>Assignment #1 - <a href="00-2010-assign01.pdf">Barcode Shopping Reader Program with Product Database (POS application)</a></li>
+	<li><a href="perl/perl-index.shtml"><b>Tutorial trail for Assignment #1</b></a></li>
+	<ul>
+
+	<li>The <a href="00-2010-assign01-sample-data.txt">sample data</a> (in plaintext text format) to use in your database file. The program expects this file to be called "<b>barcodes.dat</b>" unless you choose to change it.</li>
+	<li>These are <a href="Barcodes Assembled.pdf">sample barcodes</a> (in PDF format) for testing purpose.</li>
+	<li><a href="pos.txt">Sample output</a> from a program run.</li>
+
+	<li>A visual demonstration on how to use the barcode scanner:</li>
+		<ul>
+		<li>This model of barcode scanner plugs into the PS/2 keyboard port at the rear of the computer.<a href="/images/scanner-image-00001.jpg"><img border="0" src="/images/scanner-image-00001-thumb.jpg" width="150"></a> The keyboard then plugs into the scanner. This is known as a keyboard wedge.</li>
+		<li>The scanner it self can have its mode of operation changed by scanning codes from the manual.<a href="/images/scanner-image-00002.jpg"><img border="0" src="/images/scanner-image-00002-thumb.jpg" width="150"></a> For example, whether the scanner transmits a CR, an LF or a CR+LF is controlled this way. This influences whether the <b>chop</b> function will be required. Also, the scanner is pre-set by this means to read <a href="http://en.wikipedia.org/wiki/European_Article_Number">EAN-13</a> barcodes.<li>
+		<li>The barcode scanner (typically) uses red light <a href="/images/scanner-image-00003.jpg"><img border="0" src="/images/scanner-image-00003-thumb.jpg" width="150"></a> to pick up the barcode from the object and essentially 'types' the code into whatever program is running.</li>
+		<li>This is a typical EAN-13 barcode: <a href="/images/Codis.png"><img border="0" src="/images/Codis.png" width="150"></a></li>
+  		</ul>
+      </ul>		
+</ul>
+<!-- Assignment changed 11/2009.
+<li>Write a script that:</li>
+  <ol>
+    <li>Accepts a user input request for a local history/environment document. The document is distributed on one per person (validated by PPS) basis in the local area only.</li>
+    <li>Record delivered documents in a central database.</li>
+    <li>...more to follow...</li>
+  </ol>
+  --!>
+</ul>

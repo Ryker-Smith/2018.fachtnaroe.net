@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>WildeWare Studios: Stylesheet Tutorial - Lesson Five </title>
+
+<link rel="stylesheet" HREF="../../images/style.css" type="text/css">
+
+</head>
+
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+
+<table border="0" bgcolor="black" width="100%">
+      <tr><td><a href="index.html"><img src="http://wildeware.tripod.com/images/logo.jpg" border="0" alt="[home]"></a></td></tr>
+</table>
+
+<table border="0" bgcolor="silver" width="100%">
+      <tr><td><font face="arial" size="2"><i>&nbsp;Some cause happiness wherever they go; others whenever they go.</i></font></td></tr>
+</table>
+
+<br><br>
+
+<div align="center">
+<table border="0" width="100%" cellpadding="7">
+<tr>
+
+<!-- Navigation -->
+<td width="23%" valign="top">
+<font face="arial" size="2">
+<b> Article Navigation: </B><br><br>
+-<a href="stylesheet.html">Introduction<a> <br>
+-<a href="stylesheet2.html">Adding CSS to your pages</a><br>
+-<a href="stylesheet3.html">Controlling Fonts</a><br>
+-<a href="stylesheet4.html">Controlling Layout</a><br>
+-<a href="stylesheet5.html">Color and Background</a><br>
+-Position and Visibility<br>
+-<a href="stylesheet7.html">Conclusion</a>
+</td>
+
+<!-- Main column with article text -->
+<td width="60%" valign="top">
+<font face="times" size="3"><b>LESSON FOUR: Positioning and Visibility</B></font>
+<hr size="2">
+<font face="arial" size="2">
+
+
+<p>We mentioned before about a method that would allow you to effectively overlap items on your
+page. This final section is devoted to CSS properties that give you exact control over the
+positioning, visibility, z-index, and several other properties for elements on the page.</p>
+
+<b>POSITIONING</B>
+
+<p>Positioning is declared as either <code>absolute</code> or <code>relative</code>. The difference is that absolute allows you
+to set the exact position of the item, while relative takes into account where the elements
+appears in the normal layout of the page. A few examples should make this more clear.</p>
+
+<blockquote><code>
+h1 { position: absolute; left: 50 px; top: 10 px }
+</code></Blockquote>
+
+<p>This line of code would position the text contained in the &lt;h1&gt; tag 50 pixels from the left and 10
+pixels from the top of the window, no matter what. So even if this code was placed at the end of a
+page, the element would still appear in that position.</p>
+
+<blockquote><code>
+h4 { position: relative; left: 100 px; top: -10 px }
+</code></Blockquote>
+
+<p>With relative positioning the placement of the element within the normal flow of the page is taken
+into account, and the position is changed accordingly. So the text in the &lt;h4&gt; tag would be placed
+100 pixels to the left and -10 pixels from the top in its normal position within the page. Note
+that top and left are the only two directions specified.</p>
+
+<p>Using the position properties is the most effective way to overlap text. The following lines of code
+is an example of how to get two headings to overlap.</p>
+
+<blockquote><code>
+h1 { position: relative; left: 100 px; top: 0 px } <br>
+h2 { position: relative; left: 75 px; top: -35 px } 
+</code></Blockquote>
+
+<h1 style="position: relative; left: 100 px; top: 0 px">WildeWare</h1>
+<h2 style="color: silver; position: relative; left: 75 px; top: -35 px">Studios</h2>
+
+<p>Assuming that the <code>&lt;h2&gt;</code> tag was placed right after the <code>&lt;h1&gt;</code> tag, the two elements will overlap.</p>
+
+<b>Z-INDEX</B>
+
+<p>This property is used to decide what element will be displayed on top of another when elements
+are overlapped. Simply use a higher whole number value for the element you wish to be placed
+in front of the other.</p>
+
+<blockquote><code>
+h1 { position: relative; left: 100 px; top: 0 px; z-index: 2 } <br>
+h2 { position: relative; left: 75 px; top: -10 px; z-index: 1 } 
+</code></Blockquote>
+
+<b>VISIBILITY</B>
+
+<p>This property is especially useful when used in dynamic HTML, since is gives you the power to
+display or hide elements on your page when certain conditions are met or other actions are
+performed by the user.</p>
+
+<blockquote><code>
+h4 { visibility: hidden } 
+</code></Blockquote>
+
+
+<p>Setting the property to <code>visible</code> will obviously show instead of hide the element.</p>
+
+<br><br>
+<div align="right">
+<a href="stylesheet7.html"> Next page... </a>
+</div>
+<br><br>
+
+<div align="center"><font face="arial" size="2">
+      Copyright (c) 2000 WildeWare Studios<br>
+      <a href="mailto:webmaster@wildeware.tripod.com">webmaster@wildeware.tripod.com</a><br>
+</div>
+</td>
+
+<!-- Right hand navigation -->
+<td width="20%" valign="top">
+</td>
+
+</tr>
+</table>
+</div>
+
+</font>
+</BODY>
+</html>
+
+
+
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>Cti-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>C Computer Programming Assignment #2 (2003/4)</h1>
+<h3>You are to write a grading program for school use.
+<P>Your program should accept and store students names and marks. Once the
+marks have been entered the program should then print those details
+out again but now with the FETAC grade included.
+<br>Sample output from a run of a possible implementation is shown here:</h3>
+<pre><font  color="#FFFFFF"><big>[fachtna@office cprogs]$ gcc  a2-2004.c
+[fachtna@office cprogs]$ ./a.out
+This program is designed to accept students names and marks and to grade
+them according to the FETAC marking scheme. Up to 10 names may be
+entered.
+Please enter the number of students to process: 4
+==============================================
+Enter students name and mark: Andrew 23
+Enter students name and mark: Willy -9
+The mark for Willy is not valid. Please re-enter: 90
+Enter students name and mark: James 76
+Enter students name and mark: Peter 54
+==============================================
+Name           Mark    Grade
+Andrew         23      F
+Willy          90      D
+James          76      M
+Peter          54      p
+[fachtna@office cprogs]$</big></big></pre>
+You are to try to present your program output attractively. If it is
+possible to do so you should also try to include a sanity check on
+the input data as, for example, negative marks aren't allowed.You
+may assume that there will be a maximum of ten names of up to ten
+characters each.
+<h2>Submission</h2>
+Date:	Friday 7<sup>th</sup> May 2004, 15:15
+<br>Submission Method:	Electronic &amp; Paper
+An array is a collection of variables that share a name. Each variable
+is identified by a combination of the shared name and a number. A
+numeric array of 5 elements is declared in this manner:</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">int
+some_array[5];</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">When
+using the array elements at a later stage the same method for reading
+and writing that <I>type</I> of data is followed, just add the number
+of the specific element you wish to work with. These samples show how
+to read the first and write the second elements of the array:</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">scanf
+(&ldquo;%d&rdquo;, &amp;some_array[0]);</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">printf
+(&ldquo;%d&rdquo;, some_array[1];</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Note
+that the first element is zero, not one. The 5 elements are 0,1,2,3,4
+&ndash; if you want to use 1,2,3,4,5 you can declare an array of 6
+elements and not use the first. The element number is often called
+the array subscript.</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Arial Black">Using
+Arrays</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">The
+reason that arrays are used is to allow us to program to carry out
+some action on the whole collection of elements at once. Typically
+this involves the use of a variable to specify the array subscript.
+This is because we can use a <b>while</b><span STYLE="font-weight: medium">
+loop to ensure that a range of values in turn go through the
+subscript variable. It is a relatively simple thing to generate a
+sequence of 1,2,3,4,5 using a loop:</span></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">subscript_variable = 1;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">while (subscript_variable &lt;= 5)</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">{</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm">
+<font FACE="Courier New">printf (&ldquo;%d\n&rdquo;,
+some_array[subscript_variable]);</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm">
+<font FACE="Courier New">subscript_variable++;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">}</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Arial Black">Character
+Arrays</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">A
+character is just one letter or symbol from the keyboard. Several
+characters combined is called a string. These are created using a
+character array.</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Words
+and names are stored in character arrays.  A character array is
+declared in this form:</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">char
+ sample_char_array[20];</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">When
+reading or writing such an array the <b>string</b><span STYLE="font-weight: medium">
+or </span><b>%s</b><span STYLE="font-weight: medium"> marker is used
+in the I/O statement:</span></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">printf (&ldquo;%s&rdquo;,
+sample_char_array);</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Arial Black">An
+Array Of Arrays</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">An
+array of character arrays (strings) is declared as follows</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">char
+string_array[5][20];</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">This
+is actually a two dimensional array of characters. You can think of
+it as a 5 by 20 grid. This is similar to having storage for 20 words
+of 5 characters each. To use each word just use a single subscript
+with the string <b>(%s</b><span STYLE="font-weight: medium">)
+formatter</span><b>:</b></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">scanf
+(&ldquo;%s&rdquo;, &amp;string_array[1]);</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Arial Black">if
+Statements</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">The
+FETAC  marking scheme is as follows:</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">0-49	Unsuccessful</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">50-64	pass</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">65-79	Merit</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">80-100	Distinction</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Marks
+below 0 and above 100 are not possible and therefore are not valid
+input.</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">To
+decide which grade is allocated an <b>if</b> statement is used. The
+general form of an <b>if</b><span STYLE="font-weight: medium">
+statement is:</span></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">if (condition)</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+ <font FACE="Courier New">statement1;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Times New Roman">If
+the (condition) is true then statement1 will be carried out.
+Otherwise it will not.</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Arial Black">else
+Statements</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Times New Roman">Where
+there is only one other possibility &ndash; when the (condition)
+evaluates as false an else may be used:</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">if (condition)</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+ <font FACE="Courier New">statement1;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">else</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+ <font FACE="Courier New">statement2;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Arial Black">Nested
+if/else Statements</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Times New Roman">Note
+that statement1 and statement2 could both be other if/else
+combinations or multiple statements enclosed in curly brackets:</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">if (condition1)</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">{</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+ <font FACE="Courier New">statement1;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+ <font FACE="Courier New">statement2;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">}</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">else</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+ <font FACE="Courier New">if (condition2)</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+  <font FACE="Courier New">statement3;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+<font FACE="Courier New">else</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm; font-weight: medium">
+  <font FACE="Courier New">statement4;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Arial Black">Logical
+Operators</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman"><span STYLE="font-weight: medium">Logical
+operators are used where there is more than one condition to be
+evaluated. In this circumstance you may wish for the combination of
+the conditions to all be true (AND) or that only one or more be true
+(OR).</span> These are the same logical operators used in
+spreadsheets, just written differently. AND is written as <font FACE="Courier New">&amp;&amp;</font>
+and OR is written as <font FACE="Courier New">||</font></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New"><font SIZE=3>if
+( (condition1) &amp;&amp; (condition2) )</font></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm">
+<font FACE="Courier New"><font SIZE=3>statement1; <b><font SIZE=2>//
+both conditions are true</font></B></font></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New"><font SIZE=3>else</font></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"> <font FACE="Courier New"><font SIZE=3>if
+( (condition1) || (condition2) )</font></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"> 
+<font FACE="Courier New"><font SIZE=3>statement2; <b><font SIZE=2>//
+one or other of the conditions is true</font></b></font></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Logical
+operators can be used in <b>while</b><span STYLE="font-weight: medium">
+statements as well:</span></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New"><span STYLE="font-weight: medium">while
+( (condition1</span>) &amp;&amp; (condition2) )</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">{</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm">
+<font FACE="Courier New">body of loop goes here;</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-left: 4.41cm; margin-bottom: 0cm"><font FACE="Courier New">}</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Arial Black">Important
+Note</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Times New Roman">In
+these pages care has been taken to ensure that all brackets,
+semi-colons and punctuation marks are in the correct place. When
+applying the general forms of arrays, if/else statements etc make
+sure that the correct numbers and positionings of these in your
+implementation or compilation and run-time errors <U>will</U><span STYLE="text-decoration: none">
+occur.</span></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Arial Black">Suggested
+Implementation</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">This
+is the suggested set of steps to complete the program. It is assumed
+that each step when completed will compile and run and is tested
+<U>before</U> moving on. Each step builds on the earlier steps.</font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman"><B>Full
+marks will be available for completion of all steps but marks <U>will</U><span STYLE="text-decoration: none">
+be awarded for any steps completed and submitted as long as the
+submitted code will compile.</span></B><span STYLE="text-decoration: none">
+Marks are also awarded for indentation, commenting, use of constants,
+meaningful variable names, elegance etc.</span></font></p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Write
+a program that:</font></p>
+<ol>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Reads
+	and writes back out one letter</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Reads
+	and writes back out one name</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Reads
+	and writes back out one name and mark</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Declare
+	an array of names</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Declare
+	an array of numbers</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><font FACE="Times New Roman">Modify
+	program from <B>3</B><span STYLE="font-weight: medium"> to use the
+	array variables instead of the variables originally used</span></font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium">
+	<font FACE="Times New Roman">Encapsulate <B>6</B> in a <B>while</B>
+	loop</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium">
+	<font FACE="Times New Roman">Remove the writing back out aspect of <B>7</B>
+	and place in a new loop after the first</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium">
+	<font FACE="Times New Roman">Ensure that the loops at <b>8</b> are
+	able to accept, store and display more than one name, mark pair</font></p>
+	<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"></p>
+	<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Times New Roman"><I>At
+	this point you should have a program that reads in names and marks
+	and then prints them out in the same order with no other processing
+	being done</I></font></p>
+	<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium">
+	<font FACE="Times New Roman">In the second loop introduce an <b>if</b>
+	and <B>else </B>statement that determines whether the student has
+	passed or failed</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium">
+	<font FACE="Times New Roman">Add further <b>else</b>s and <b>if</b>s<B>
+	</b>to account for the other possible grades</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium">
+	<font FACE="Times New Roman">present the output attractively. Use <b>\t</B>
+	for a <b>tab</b> character in your output</font></p>
+	<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"></p>
+	<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><font FACE="Times New Roman"><I>At
+	this point your program should write out the names, marks and grades</I>
+	<I>with no data validation being done</I></font></p>
+	<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium">
+	<font FACE="Times New Roman">Use a <b>while</b> loop <u>within</u><span STYLE="text-decoration: none">
+	the first <b>while</b> loop to repeatedly request valid numeric
+	input. A logical (<font FACE="Courier New">&amp;&amp;</font>,<font FACE="Courier New">
+	||</font>) in the <b>while</b> loop may make this easier</span></font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium; text-decoration: none">
+	<font FACE="Times New Roman">Add output formatting of your choice to
+	make the screen display attractive</font></p>
+	<li><p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium; text-decoration: none">
+	<font FACE="Times New Roman">Ensure your program is properly
+	indented and commented before submitting.</font></p>
+</OL>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><br>
+</p>
+<p ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; font-weight: medium"><br>
+</p>
+<DIV TYPE=FOOTER>
+	<p ALIGN=LEFT STYLE="margin-top: 0.5cm; margin-bottom: 0cm; border-top: 1px solid #000000; border-bottom: none; border-left: none; border-right: none; padding-top: 0.05cm; padding-bottom: 0cm; padding-left: 0cm; padding-right: 0cm">
+	<font SIZE=2>page 3
+	of 4 &copy;
+	Fachtna Roe 2004</font></p>
+</div>
+</body>
+</html>

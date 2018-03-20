@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Advanced Management Console Migration</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="The migration of the Advanced Management Console to the latest available version involves redeploying the latest Enterprise Archive (EAR) file over the previous Advanced Management Console version within the WebLogic Server Administrator Console. The migration process is facilitated by an update wizard, where the Advanced Management Console server updates the database either manually or automatically. The Advanced Management Console agent is then updated to the latest version to be consistent with the redeployed Advanced Management Console server." />
+<meta name="dcterms.created" content="2017-01-17T10:23:38Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Advanced Management Console Installation and Configuration Guide" />
+<meta name="dcterms.identifier" content="E58638-09" />
+<meta name="dcterms.isVersionOf" content="JSAMI" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="browser-setup-advanced-management-console.htm" title="Previous" type="text/html" />
+<link rel="Next" href="oracle-weblogic-server-installation-example.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JSAMI.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSAMI.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSAMI.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-2F97ABFC-7658-48DA-B443-4CEC2605BCDA"></a> <span id="PAGE" style="display:none;">13/16</span> <!-- End Header -->
+<a id="JSAMI190"></a><a id="JSAMI189"></a>
+<h1 id="JSAMI-GUID-2F97ABFC-7658-48DA-B443-4CEC2605BCDA" class="sect1"><span class="enumeration_chapter">10</span> <span>Advanced Management Console</span> Migration</h1>
+<div>
+<p>The migration of the <span>Advanced Management Console</span> to the latest available version involves redeploying the latest Enterprise Archive (EAR) file over the previous <span>Advanced Management Console</span> version within the WebLogic Server Administrator Console. The migration process is facilitated by an update wizard, where the <span>Advanced Management Console</span> server updates the database either manually or automatically. The <span>Advanced Management Console</span> agent is then updated to the latest version to be consistent with the redeployed <span>Advanced Management Console</span> server.</p>
+<div class="infobox-note" id="GUID-2F97ABFC-7658-48DA-B443-4CEC2605BCDA__GUID-43CFF307-4821-49AB-A883-AAED60DC3A6B">
+<p class="notep1">Note:</p>
+As a best practice, always ensure to take a back up or a snapshot of the existing database before you continue with the upgrade process. If there is no back up, then you can&rsquo;t go back and try to upgrade subsequently, in case an error occurs at any point.</div>
+<p>During the migration process, the <span>Advanced Management Console</span> server stops processing requests from the agent, processing Java Usage Tracker records, and updating security baseline records.</p>
+<p>This topic contains the following sections that describe the <span>Advanced Management Console</span> server upgrade to the latest version, the <span>Advanced Management Console</span> database update, and the <span>Advanced Management Console</span> agent update:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="advanced-management-console-migration.htm#GUID-94A3F4E4-D9EC-4FA1-BA6D-0208ADBAD745" title="The Advanced Management Console migration process begins with redeploying the latest Enterprise Archive (EAR) file over the previous Advanced Management Console version within the WebLogic Server administration console. You need WebLogic Server administrator credentials to perform this migration task.">Uploading a New Version of Advanced Management Console Server</a></p>
+</li>
+<li>
+<p><a href="advanced-management-console-migration.htm#GUID-8DC76A6B-4829-46F0-BE33-F8CDB328DCD5" title="After you have uploaded a new version of the Advanced Management Console EAR file, for example, JavaAMC-2_6.ear to WebLogic Server, the Advanced Management Console administrator must update the Advanced Management Console database.">Updating the Advanced Management Console Database</a></p>
+</li>
+<li>
+<p><a href="advanced-management-console-migration.htm#GUID-D3747AD7-DDCC-42E9-B687-18D9974CF022" title="After you have updated the database, update the Advanced Management Console agent to the latest release to be consistent with the redeployed Advanced Management Console server. If you want to update the agent from Advanced Management Console 2.0 to a later Advanced Management Console release, such as 2.2, 2.3, 2.4, 2.5, or 2.6 then you must manually update the agent.">Updating the Advanced Management Console Agent</a></p>
+</li>
+</ul>
+<div class="infobox-note" id="GUID-2F97ABFC-7658-48DA-B443-4CEC2605BCDA__GUID-DA0DABC2-3294-4483-A5C4-0D1496CB7511">
+<p class="notep1">Note:</p>
+Ensure to always clear browser cache, after the <span>Advanced Management Console</span> is updated to a new version.</div>
+</div>
+<a id="JSAMI191"></a>
+<div class="props_rev_3"><a id="GUID-94A3F4E4-D9EC-4FA1-BA6D-0208ADBAD745"></a>
+<h2 id="JSAMI-GUID-94A3F4E4-D9EC-4FA1-BA6D-0208ADBAD745" class="sect2">Uploading a New Version of <span>Advanced Management Console</span> Server</h2>
+<div>
+<div><span>The <span>Advanced Management Console</span> migration process begins with redeploying the latest Enterprise Archive (EAR) file over the previous <span>Advanced Management Console</span> version within the WebLogic Server administration console. You need WebLogic Server administrator credentials to perform this migration task.</span></div>
+<div class="section">
+<p>To upload the <span>Advanced Management Console</span> over the previous version:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li><span>Enter <code>https://<span class="codeinlineitalic">wls-hostname</span>:/<span class="codeinlineitalic">port</span>/console</code> in a web browser, where <code><span class="codeinlineitalic">wls-hostname</span></code> and <code><span class="codeinlineitalic">port</span></code> are the DNS name and SSL listen port number of the Administration Server.</span></li>
+<li><span>Authenticate using your administrator credentials.</span></li>
+<li><span>Select the <span class="bold">Deployments</span> option from the <span class="bold">Domain Structure</span> panel.</span></li>
+<li><span>In the right panel, select the check box for the <span>Advanced Management Console</span> application.</span></li>
+<li><span>Click <span class="bold">Update</span>.</span></li>
+<li><span>In the navigation panel, locate the EAR file for the latest version of the <span>Advanced Management Console</span> file and check it in. For example, the EAR file for the 2.6 version is <code>JavaAMC-2_6.ear</code>.</span></li>
+<li><span>Click <span class="bold">Next</span>. Use the default values.</span></li>
+<li><span>Click <span class="bold">Finish</span>.</span></li>
+<li><span>Restart the WebLogic Server after <span>Advanced Management Console</span> is deployed.</span></li>
+</ol>
+</div>
+</div>
+<a id="JSAMI192"></a>
+<div class="props_rev_3"><a id="GUID-8DC76A6B-4829-46F0-BE33-F8CDB328DCD5"></a>
+<h2 id="JSAMI-GUID-8DC76A6B-4829-46F0-BE33-F8CDB328DCD5" class="sect2">Updating the <span>Advanced Management Console</span> Database</h2>
+<div>
+<p>After you have uploaded a new version of the <span>Advanced Management Console</span> EAR file, for example, <code>JavaAMC-2_6.ear</code> to WebLogic Server, the <span>Advanced Management Console</span> administrator must update the <span>Advanced Management Console</span> database.</p>
+<div class="infobox-note" id="GUID-8DC76A6B-4829-46F0-BE33-F8CDB328DCD5__GUID-323E0E44-ED5C-4B44-9182-345084F52124">
+<p class="notep1">Note:</p>
+You need not update the database if there are no changes to the database between the previous and the later <span>Advanced Management Console</span> versions.</div>
+<p>To update the database, load the <code>/amcwebui</code> and check whether or not the <span>Advanced Management Console</span> Database Update screen (update wizard) is displayed. If the screen is not displayed, then no changes are required, and the <span>Advanced Management Console</span> is fully operational. If the screen is displayed, then it guides you to perform database updates.</p>
+<p>The database can be updated either manually or automatically using administrator credentials. If no database updates are required from the current <span>Advanced Management Console</span> version to the latest one, then the update wizard is not displayed and you do not need to explicitly perform any task. Follow these topics to update the <span>Advanced Management Console</span>:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="advanced-management-console-migration.htm#GUID-5997993E-D510-4FEF-B10D-DEED424E05BB">Automatic Update of the Database</a></p>
+</li>
+<li>
+<p><a href="advanced-management-console-migration.htm#GUID-4C8888FE-A91C-4550-AE7A-4F280719184D">Manual Update of the Database</a></p>
+</li>
+<li>
+<p><a href="oracle-weblogic-server-configuration-advanced-management-console.htm#GUID-B00161C6-B941-424F-A99B-DDC417FA0C37" title="You can configure Oracle WebLogic Server with MySQL database to provide services to access and modify user data. The database is accessed using JDBC. You can configure Oracle WebLogic Server with Oracle database to provide services to access and modify user data. The database is accessed using JDBC.">Configuring WebLogic Server with Databases</a></p>
+</li>
+</ul>
+</div>
+<a id="JSAMI194"></a><a id="JSAMI193"></a>
+<div class="props_rev_3"><a id="GUID-5997993E-D510-4FEF-B10D-DEED424E05BB"></a>
+<h3 id="JSAMI-GUID-5997993E-D510-4FEF-B10D-DEED424E05BB" class="sect3">Automatic Update of the Database</h3>
+<div>
+<div class="section">
+<p>To do an automatic update of the <span>Advanced Management Console</span> database:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Enter <code>https://<span class="variable">wls-hostname</span>:port/console</code> in a web browser where <code><span class="codeinlineitalic">wls-hostname</span></code> and <code><span class="codeinlineitalic">port</span></code> are the DNS name and the SSL listen port the WebLogic server instance (the default port is 7002) to start the WebLogic Server Administration Console. A Welcome screen is displayed that indicates a database update.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span> on the Welcome screen to choose between automatic or manual database update as shown in <a href="advanced-management-console-migration.htm#GUID-5997993E-D510-4FEF-B10D-DEED424E05BB__GUID-4085E237-4C7F-4FF1-9BA1-8578D7756B1A">Figure 10-1</a>.</span>
+<div>
+<div class="figure" id="GUID-5997993E-D510-4FEF-B10D-DEED424E05BB__GUID-4085E237-4C7F-4FF1-9BA1-8578D7756B1A">
+<p class="titleinfigure">Figure 10-1 Advanced Management Console Database Update &mdash; Welcome Screen</p>
+<img width="897" height="561" src="img/amc-upgradedb.png" alt="Description of Figure 10-1 follows" title="Description of Figure 10-1 follows" /><br />
+<a href="img_text/amc-upgradedb.htm">Description of "Figure 10-1 Advanced Management Console Database Update &mdash; Welcome Screen"</a></div>
+<!-- class="figure" --></div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Update Automatically</span> for the <span>Advanced Management Console</span> server to update the database for you.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Update</span> to complete the process. Or, click <span class="bold">Cancel</span> to cancel the automatic database update.</span></li>
+</ol>
+<div class="section">
+<p>When the update is completed, a screen is displayed indicating that the <span>Advanced Management Console</span> database is successfully updated.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="JSAMI195"></a>
+<div class="props_rev_3"><a id="GUID-4C8888FE-A91C-4550-AE7A-4F280719184D"></a>
+<h3 id="JSAMI-GUID-4C8888FE-A91C-4550-AE7A-4F280719184D" class="sect3">Manual Update of the Database</h3>
+<div>
+<div class="section">
+<p>To do a manual update of the <span>Advanced Management Console</span> database:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Enter <code>https://wls-hostname:port/console</code> in a browser where <code><span class="codeinlineitalic">wls-hostname</span></code> and <code><span class="codeinlineitalic">port</span></code> are the DNS name and the SSL listen port the WebLogic server instance (the default port is 7002) to start the WebLogic Server Administration Console. A Welcome screen is displayed that indicates a database update.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span> on the Welcome screen to select between an automatic or manual database update.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Update Manually</span> to update the database using a SQL script.</span></li>
+<li class="stepexpand"><span>Click the <span class="bold">SQL script</span> link to download the SQL script.</span>
+<div>
+<p>The SQL script is saved as <code>amc_mysql_update.sql</code>. Connect to <span>Advanced Management Console</span> database to apply it.</p>
+</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Continue</span> after applying the SQL script on your database. Or, click <span class="bold">Cancel</span> to cancel the manual database update.</span></li>
+</ol>
+<div class="section">
+<p>After the update is completed, a message is displayed to indicate that the <span>Advanced Management Console</span> database is successfully updated.</p>
+</div>
+<!-- class="section" --></div>
+</div>
+</div>
+<a id="JSAMI196"></a>
+<div class="props_rev_3"><a id="GUID-D3747AD7-DDCC-42E9-B687-18D9974CF022"></a>
+<h2 id="JSAMI-GUID-D3747AD7-DDCC-42E9-B687-18D9974CF022" class="sect2">Updating the <span>Advanced Management Console</span> Agent</h2>
+<div>
+<p>After you have updated the database, update the <span>Advanced Management Console</span> agent to the latest release to be consistent with the redeployed <span>Advanced Management Console</span> server. If you want to update the agent from <span>Advanced Management Console</span> 2.0 to a later <span>Advanced Management Console</span> release, such as 2.2, 2.3, 2.4, 2.5, or 2.6 then you must manually update the agent.</p>
+<div class="section">
+<div class="infobox-note" id="GUID-D3747AD7-DDCC-42E9-B687-18D9974CF022__GUID-AA049590-A0EC-48EE-8853-16FF0780159F">
+<p class="notep1">Note:</p>
+If you want to update from <span>Advanced Management Console</span> 2.1 release to a later <span>Advanced Management Console</span> release, such as 2.2, 2.3, 2.4, 2.5, or 2.6, then the <span>Advanced Management Console</span> agent automatically updates itself to the agent that is specific to the <span>Advanced Management Console</span> later release.</div>
+<p>To manually update the <span>Advanced Management Console</span> agent:</p>
+</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>Stop the agent service.</span></li>
+<li class="stepexpand"><span>Run <code>%AMC_DIR%\bin\AMCAgent.exe -remove</code> to uninstall the current version of <span>Advanced Management Console</span> agent.</span></li>
+<li class="stepexpand"><span>Download the latest agent bundle from the server after you have updated the server to the latest release of the <span>Advanced Management Console</span>, and then use this bundle to install the latest release of the <span>Advanced Management Console</span> agent.</span>
+<div>
+<p>You can extract the <code>.zip</code> file for the new agent to the folder of the previous version or to a new folder. Either option works.</p>
+<p>If <span>Advanced Management Console</span> 2.0 agent is updated to a later <span>Advanced Management Console</span> release, such as 2.2, 2.3, 2.4, 2.5, or 2.6 and <code>%programData%\Oracle\Java_AMC_2</code> folder is preserved, then the previous agent settings are picked up by the new agent automatically. If the folder is removed, then the new agent registers on the server.</p>
+<div class="infobox-note" id="GUID-D3747AD7-DDCC-42E9-B687-18D9974CF022__GUID-40532AB0-5264-4E48-B311-AA6CD7C7ABD3">
+<p class="notep1">Note:</p>
+Starting with the <span>Advanced Management Console</span> 2.1, the agent settings are not stored in the <code>%ProgramData%\</code> folder, but in the <code>%AMC_DIR%</code> folder. The updates from <span>Advanced Management Console</span> to a later <span>Advanced Management Console</span> release, such as 2.2, 2.3, 2.4, 2.5, or 2.6 are automatically done by agents and their user settings are preserved. However, if either the previous or the latest release folders are removed, and you manually install a new agent, then the settings from the previous agent do not get picked up.</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment82">
+<tr>
+<td class="cellalignment89">
+<table class="cellalignment87">
+<tr>
+<td class="cellalignment86"><a href="browser-setup-advanced-management-console.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment86"><a href="oracle-weblogic-server-installation-example.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2014, 2017, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment91">
+<table class="cellalignment85">
+<tr>
+<td class="cellalignment86"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment86"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment86"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

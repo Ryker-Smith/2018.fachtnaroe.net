@@ -1,0 +1,568 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Synopsis - man pages section 4: File Formats</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section outlines the formats of various files including the C structure declarations where applicable. The headers containing  these structure declarations are generally found in the directories  /usr/include or /usr/include/sys.In the pages that outline the various library structures, both public  and private interfaces are listed. A public interface provides a stable,  committed set of symbols for application development. Private interfaces  are for internal use only, and may change at any time. This section is for software engineers.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1473";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 4: File Formats </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1473.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN4 (821-1473-06)&body=Page: kadm5.acl-4.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-39.html">Preface</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-196.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-220.html">File Formats</a></p>
+<p class="toc level2"><a href="addresses-4.html"><tt>addresses</tt>(4)</a></p>
+<p class="toc level2"><a href="admin-4.html"><tt>admin</tt>(4)</a></p>
+<p class="toc level2"><a href="alias-4.html"><tt>alias</tt>(4)</a></p>
+<p class="toc level2"><a href="aliases-4.html"><tt>aliases</tt>(4)</a></p>
+<p class="toc level2"><a href="a.out-4.html"><tt>a.out</tt>(4)</a></p>
+<p class="toc level2"><a href="au-4.html"><tt>au</tt>(4)</a></p>
+<p class="toc level2"><a href="audit-class-4.html"><tt>audit_class</tt>(4)</a></p>
+<p class="toc level2"><a href="audit-event-4.html"><tt>audit_event</tt>(4)</a></p>
+<p class="toc level2"><a href="audit.log-4.html"><tt>audit.log</tt>(4)</a></p>
+<p class="toc level2"><a href="auth-attr-4.html"><tt>auth_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="autofs-4.html"><tt>autofs</tt>(4)</a></p>
+<p class="toc level2"><a href="bart-manifest-4.html"><tt>bart_manifest</tt>(4)</a></p>
+<p class="toc level2"><a href="bart-rules-4.html"><tt>bart_rules</tt>(4)</a></p>
+<p class="toc level2"><a href="bootparams-4.html"><tt>bootparams</tt>(4)</a></p>
+<p class="toc level2"><a href="cardbus-4.html"><tt>cardbus</tt>(4)</a></p>
+<p class="toc level2"><a href="cdtoc-4.html"><tt>cdtoc</tt>(4)</a></p>
+<p class="toc level2"><a href="clustertoc-4.html"><tt>clustertoc</tt>(4)</a></p>
+<p class="toc level2"><a href="compver-4.html"><tt>compver</tt>(4)</a></p>
+<p class="toc level2"><a href="contents-4.html"><tt>contents</tt>(4)</a></p>
+<p class="toc level2"><a href="contract-4.html"><tt>contract</tt>(4)</a></p>
+<p class="toc level2"><a href="copyright-4.html"><tt>copyright</tt>(4)</a></p>
+<p class="toc level2"><a href="core-4.html"><tt>core</tt>(4)</a></p>
+<p class="toc level2"><a href="crypt.conf-4.html"><tt>crypt.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="crypto-certs-4.html"><tt>crypto_certs</tt>(4)</a></p>
+<p class="toc level2"><a href="dacf.conf-4.html"><tt>dacf.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="dat.conf-4.html"><tt>dat.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="defaultdomain-4.html"><tt>defaultdomain</tt>(4)</a></p>
+<p class="toc level2"><a href="default-fs-4.html"><tt>default_fs</tt>(4)</a></p>
+<p class="toc level2"><a href="defaultrouter-4.html"><tt>defaultrouter</tt>(4)</a></p>
+<p class="toc level2"><a href="depend-4.html"><tt>depend</tt>(4)</a></p>
+<p class="toc level2"><a href="device-allocate-4.html"><tt>device_allocate</tt>(4)</a></p>
+<p class="toc level2"><a href="device-contract-4.html"><tt>device_contract</tt>(4)</a></p>
+<p class="toc level2"><a href="device-maps-4.html"><tt>device_maps</tt>(4)</a></p>
+<p class="toc level2"><a href="devices-4.html"><tt>devices</tt>(4)</a></p>
+<p class="toc level2"><a href="devid-cache-4.html"><tt>devid_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="devname-cache-4.html"><tt>devname_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="dfstab-4.html"><tt>dfstab</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcp-inittab-4.html"><tt>dhcp_inittab</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcp-network-4.html"><tt>dhcp_network</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcpsvc.conf-4.html"><tt>dhcpsvc.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="dhcptab-4.html"><tt>dhcptab</tt>(4)</a></p>
+<p class="toc level2"><a href="dialups-4.html"><tt>dialups</tt>(4)</a></p>
+<p class="toc level2"><a href="dir-4.html"><tt>dir</tt>(4)</a></p>
+<p class="toc level2"><a href="dir-ufs-4.html"><tt>dir_ufs</tt>(4)</a></p>
+<p class="toc level2"><a href="d-passwd-4.html"><tt>d_passwd</tt>(4)</a></p>
+<p class="toc level2"><a href="driver.conf-4.html"><tt>driver.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ds.log-4.html"><tt>ds.log</tt>(4)</a></p>
+<p class="toc level2"><a href="dumpdates-4.html"><tt>dumpdates</tt>(4)</a></p>
+<p class="toc level2"><a href="ethers-4.html"><tt>ethers</tt>(4)</a></p>
+<p class="toc level2"><a href="exec-attr-4.html"><tt>exec_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="fbtab-4.html"><tt>fbtab</tt>(4)</a></p>
+<p class="toc level2"><a href="fd-4.html"><tt>fd</tt>(4)</a></p>
+<p class="toc level2"><a href="fdi-4.html"><tt>fdi</tt>(4)</a></p>
+<p class="toc level2"><a href="flash-archive-4.html"><tt>flash_archive</tt>(4)</a></p>
+<p class="toc level2"><a href="format.dat-4.html"><tt>format.dat</tt>(4)</a></p>
+<p class="toc level2"><a href="forward-4.html"><tt>forward</tt>(4)</a></p>
+<p class="toc level2"><a href="fs-4.html"><tt>fs</tt>(4)</a></p>
+<p class="toc level2"><a href="fspec-4.html"><tt>fspec</tt>(4)</a></p>
+<p class="toc level2"><a href="fstypes-4.html"><tt>fstypes</tt>(4)</a></p>
+<p class="toc level2"><a href="ftp-4.html"><tt>ftp</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpaccess-4.html"><tt>ftpaccess</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpconversions-4.html"><tt>ftpconversions</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpgroups-4.html"><tt>ftpgroups</tt>(4)</a></p>
+<p class="toc level2"><a href="ftphosts-4.html"><tt>ftphosts</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpservers-4.html"><tt>ftpservers</tt>(4)</a></p>
+<p class="toc level2"><a href="ftpusers-4.html"><tt>ftpusers</tt>(4)</a></p>
+<p class="toc level2"><a href="fx-dptbl-4.html"><tt>fx_dptbl</tt>(4)</a></p>
+<p class="toc level2"><a href="gateways-4.html"><tt>gateways</tt>(4)</a></p>
+<p class="toc level2"><a href="geniconvtbl-4.html"><tt>geniconvtbl</tt>(4)</a></p>
+<p class="toc level2"><a href="group-4.html"><tt>group</tt>(4)</a></p>
+<p class="toc level2"><a href="gsscred.conf-4.html"><tt>gsscred.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="hba.conf-4.html"><tt>hba.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="holidays-4.html"><tt>holidays</tt>(4)</a></p>
+<p class="toc level2"><a href="hosts-4.html"><tt>hosts</tt>(4)</a></p>
+<p class="toc level2"><a href="hosts.equiv-4.html"><tt>hosts.equiv</tt>(4)</a></p>
+<p class="toc level2"><a href="ib-4.html"><tt>ib</tt>(4)</a></p>
+<p class="toc level2"><a href="idnkit.pc-4.html"><tt>idnkit.pc</tt>(4)</a></p>
+<p class="toc level2"><a href="ike.config-4.html"><tt>ike.config</tt>(4)</a></p>
+<p class="toc level2"><a href="ike.preshared-4.html"><tt>ike.preshared</tt>(4)</a></p>
+<p class="toc level2"><a href="inetd.conf-4.html"><tt>inetd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="inet-type-4.html"><tt>inet_type</tt>(4)</a></p>
+<p class="toc level2"><a href="infiniband-hca-persistent-cache-4.html"><tt>infiniband_hca_persistent_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="init.d-4.html"><tt>init.d</tt>(4)</a></p>
+<p class="toc level2"><a href="inittab-4.html"><tt>inittab</tt>(4)</a></p>
+<p class="toc level2"><a href="ipaddrsel.conf-4.html"><tt>ipaddrsel.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipf-4.html"><tt>ipf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipf.conf-4.html"><tt>ipf.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipnat-4.html"><tt>ipnat</tt>(4)</a></p>
+<p class="toc level2"><a href="ipnat.conf-4.html"><tt>ipnat.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ipnodes-4.html"><tt>ipnodes</tt>(4)</a></p>
+<p class="toc level2"><a href="ippool-4.html"><tt>ippool</tt>(4)</a></p>
+<p class="toc level2"><a href="ippool.conf-4.html"><tt>ippool.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="isa-4.html"><tt>isa</tt>(4)</a></p>
+<p class="toc level2"><a href="issue-4.html"><tt>issue</tt>(4)</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level2"><a href=""><tt>kadm5.acl</tt>(4)</a></p>
+</div>
+<p class="toc level2"><a href="kdc.conf-4.html"><tt>kdc.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="keytables-4.html"><tt>keytables</tt>(4)</a></p>
+<p class="toc level2"><a href="krb5.conf-4.html"><tt>krb5.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="label-encodings-4.html"><tt>label_encodings</tt>(4)</a></p>
+<p class="toc level2"><a href="ldapfilter.conf-4.html"><tt>ldapfilter.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ldapsearchprefs.conf-4.html"><tt>ldapsearchprefs.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ldaptemplates.conf-4.html"><tt>ldaptemplates.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="llc2-4.html"><tt>llc2</tt>(4)</a></p>
+<p class="toc level2"><a href="logadm.conf-4.html"><tt>logadm.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="logindevperm-4.html"><tt>logindevperm</tt>(4)</a></p>
+<p class="toc level2"><a href="loginlog-4.html"><tt>loginlog</tt>(4)</a></p>
+<p class="toc level2"><a href="lutab-4.html"><tt>lutab</tt>(4)</a></p>
+<p class="toc level2"><a href="magic-4.html"><tt>magic</tt>(4)</a></p>
+<p class="toc level2"><a href="md.cf-4.html"><tt>md.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="mddb.cf-4.html"><tt>mddb.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="mdi-ib-cache-4.html"><tt>mdi_ib_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="mdi-scsi-vhci-cache-4.html"><tt>mdi_scsi_vhci_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="md.tab-4.html"><tt>md.tab</tt>(4)</a></p>
+<p class="toc level2"><a href="mech-4.html"><tt>mech</tt>(4)</a></p>
+<p class="toc level2"><a href="meddb-4.html"><tt>meddb</tt>(4)</a></p>
+<p class="toc level2"><a href="mnttab-4.html"><tt>mnttab</tt>(4)</a></p>
+<p class="toc level2"><a href="mod-ipp-4.html"><tt>mod_ipp</tt>(4)</a></p>
+<p class="toc level2"><a href="mpapi.conf-4.html"><tt>mpapi.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="named.conf-4.html"><tt>named.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ncad-addr-4.html"><tt>ncad_addr</tt>(4)</a></p>
+<p class="toc level2"><a href="nca.if-4.html"><tt>nca.if</tt>(4)</a></p>
+<p class="toc level2"><a href="ncakmod.conf-4.html"><tt>ncakmod.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ncalogd.conf-4.html"><tt>ncalogd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ncaport.conf-4.html"><tt>ncaport.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="ndmp-4.html"><tt>ndmp</tt>(4)</a></p>
+<p class="toc level2"><a href="ndpd.conf-4.html"><tt>ndpd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="netconfig-4.html"><tt>netconfig</tt>(4)</a></p>
+<p class="toc level2"><a href="netgroup-4.html"><tt>netgroup</tt>(4)</a></p>
+<p class="toc level2"><a href="netid-4.html"><tt>netid</tt>(4)</a></p>
+<p class="toc level2"><a href="netmasks-4.html"><tt>netmasks</tt>(4)</a></p>
+<p class="toc level2"><a href="netrc-4.html"><tt>netrc</tt>(4)</a></p>
+<p class="toc level2"><a href="networks-4.html"><tt>networks</tt>(4)</a></p>
+<p class="toc level2"><a href="nfs-4.html"><tt>nfs</tt>(4)</a></p>
+<p class="toc level2"><a href="nfslog.conf-4.html"><tt>nfslog.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="nfssec.conf-4.html"><tt>nfssec.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="nisldapmapping-4.html"><tt>NISLDAPmapping</tt>(4)</a></p>
+<p class="toc level2"><a href="nodename-4.html"><tt>nodename</tt>(4)</a></p>
+<p class="toc level2"><a href="nologin-4.html"><tt>nologin</tt>(4)</a></p>
+<p class="toc level2"><a href="note-4.html"><tt>note</tt>(4)</a></p>
+<p class="toc level2"><a href="notrouter-4.html"><tt>notrouter</tt>(4)</a></p>
+<p class="toc level2"><a href="nscd.conf-4.html"><tt>nscd.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="nsmbrc-4.html"><tt>nsmbrc</tt>(4)</a></p>
+<p class="toc level2"><a href="nss-4.html"><tt>nss</tt>(4)</a></p>
+<p class="toc level2"><a href="nsswitch.conf-4.html"><tt>nsswitch.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="order-4.html"><tt>order</tt>(4)</a></p>
+<p class="toc level2"><a href="packagetoc-4.html"><tt>packagetoc</tt>(4)</a></p>
+<p class="toc level2"><a href="packingrules-4.html"><tt>packingrules</tt>(4)</a></p>
+<p class="toc level2"><a href="pam.conf-4.html"><tt>pam.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="passwd-4.html"><tt>passwd</tt>(4)</a></p>
+<p class="toc level2"><a href="path-to-inst-4.html"><tt>path_to_inst</tt>(4)</a></p>
+<p class="toc level2"><a href="pci-4.html"><tt>pci</tt>(4)</a></p>
+<p class="toc level2"><a href="pcie-4.html"><tt>pcie</tt>(4)</a></p>
+<p class="toc level2"><a href="pci-unitaddr-persistent-4.html"><tt>pci_unitaddr_persistent</tt>(4)</a></p>
+<p class="toc level2"><a href="phones-4.html"><tt>phones</tt>(4)</a></p>
+<p class="toc level2"><a href="pkginfo-4.html"><tt>pkginfo</tt>(4)</a></p>
+<p class="toc level2"><a href="pkgmap-4.html"><tt>pkgmap</tt>(4)</a></p>
+<p class="toc level2"><a href="platform-4.html"><tt>platform</tt>(4)</a></p>
+<p class="toc level2"><a href="plot-4b.html"><tt>plot</tt>(4B)</a></p>
+<p class="toc level2"><a href="policy.conf-4.html"><tt>policy.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="power.conf-4.html"><tt>power.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="printers-4.html"><tt>printers</tt>(4)</a></p>
+<p class="toc level2"><a href="printers.conf-4.html"><tt>printers.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="priv-names-4.html"><tt>priv_names</tt>(4)</a></p>
+<p class="toc level2"><a href="proc-4.html"><tt>proc</tt>(4)</a></p>
+<p class="toc level2"><a href="process-4.html"><tt>process</tt>(4)</a></p>
+<p class="toc level2"><a href="prof-attr-4.html"><tt>prof_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="profile-4.html"><tt>profile</tt>(4)</a></p>
+<p class="toc level2"><a href="project-4.html"><tt>project</tt>(4)</a></p>
+<p class="toc level2"><a href="protocols-4.html"><tt>protocols</tt>(4)</a></p>
+<p class="toc level2"><a href="prototype-4.html"><tt>prototype</tt>(4)</a></p>
+<p class="toc level2"><a href="pseudo-4.html"><tt>pseudo</tt>(4)</a></p>
+<p class="toc level2"><a href="publickey-4.html"><tt>publickey</tt>(4)</a></p>
+<p class="toc level2"><a href="qop-4.html"><tt>qop</tt>(4)</a></p>
+<p class="toc level2"><a href="queuedefs-4.html"><tt>queuedefs</tt>(4)</a></p>
+<p class="toc level2"><a href="rcmscript-4.html"><tt>rcmscript</tt>(4)</a></p>
+<p class="toc level2"><a href="rdc.cf-4.html"><tt>rdc.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="registration-profile-4.html"><tt>registration_profile</tt>(4)</a></p>
+<p class="toc level2"><a href="remote-4.html"><tt>remote</tt>(4)</a></p>
+<p class="toc level2"><a href="resolv.conf-4.html"><tt>resolv.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="rhosts-4.html"><tt>rhosts</tt>(4)</a></p>
+<p class="toc level2"><a href="rmtab-4.html"><tt>rmtab</tt>(4)</a></p>
+<p class="toc level2"><a href="rndc.conf-4.html"><tt>rndc.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="rpc-4.html"><tt>rpc</tt>(4)</a></p>
+<p class="toc level2"><a href="rt-dptbl-4.html"><tt>rt_dptbl</tt>(4)</a></p>
+<p class="toc level2"><a href="sasl-appname.conf-4.html"><tt>sasl_appname.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="sbus-4.html"><tt>sbus</tt>(4)</a></p>
+<p class="toc level2"><a href="sccsfile-4.html"><tt>sccsfile</tt>(4)</a></p>
+<p class="toc level2"><a href="scsi-4.html"><tt>scsi</tt>(4)</a></p>
+<p class="toc level2"><a href="securenets-4.html"><tt>securenets</tt>(4)</a></p>
+<p class="toc level2"><a href="sel-config-4.html"><tt>sel_config</tt>(4)</a></p>
+<p class="toc level2"><a href="sendmail-4.html"><tt>sendmail</tt>(4)</a></p>
+<p class="toc level2"><a href="sendmail.cf-4.html"><tt>sendmail.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="service-bundle-4.html"><tt>service_bundle</tt>(4)</a></p>
+<p class="toc level2"><a href="service-provider.conf-4.html"><tt>service_provider.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="services-4.html"><tt>services</tt>(4)</a></p>
+<p class="toc level2"><a href="shadow-4.html"><tt>shadow</tt>(4)</a></p>
+<p class="toc level2"><a href="sharetab-4.html"><tt>sharetab</tt>(4)</a></p>
+<p class="toc level2"><a href="shells-4.html"><tt>shells</tt>(4)</a></p>
+<p class="toc level2"><a href="slp.conf-4.html"><tt>slp.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="slpd.reg-4.html"><tt>slpd.reg</tt>(4)</a></p>
+<p class="toc level2"><a href="smb-4.html"><tt>smb</tt>(4)</a></p>
+<p class="toc level2"><a href="smbautohome-4.html"><tt>smbautohome</tt>(4)</a></p>
+<p class="toc level2"><a href="smhba.conf-4.html"><tt>smhba.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="snapshot-cache-4.html"><tt>snapshot_cache</tt>(4)</a></p>
+<p class="toc level2"><a href="sndr-4.html"><tt>sndr</tt>(4)</a></p>
+<p class="toc level2"><a href="sock2path.d-4.html"><tt>sock2path.d</tt>(4)</a></p>
+<p class="toc level2"><a href="space-4.html"><tt>space</tt>(4)</a></p>
+<p class="toc level2"><a href="ssh-config-4.html"><tt>ssh_config</tt>(4)</a></p>
+<p class="toc level2"><a href="sshd-config-4.html"><tt>sshd_config</tt>(4)</a></p>
+<p class="toc level2"><a href="submit.cf-4.html"><tt>submit.cf</tt>(4)</a></p>
+<p class="toc level2"><a href="sulog-4.html"><tt>sulog</tt>(4)</a></p>
+<p class="toc level2"><a href="synclist-4.html"><tt>synclist</tt>(4)</a></p>
+<p class="toc level2"><a href="sysbus-4.html"><tt>sysbus</tt>(4)</a></p>
+<p class="toc level2"><a href="sysidcfg-4.html"><tt>sysidcfg</tt>(4)</a></p>
+<p class="toc level2"><a href="syslog.conf-4.html"><tt>syslog.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="system-4.html"><tt>system</tt>(4)</a></p>
+<p class="toc level2"><a href="telnetrc-4.html"><tt>telnetrc</tt>(4)</a></p>
+<p class="toc level2"><a href="term-4.html"><tt>term</tt>(4)</a></p>
+<p class="toc level2"><a href="terminfo-4.html"><tt>terminfo</tt>(4)</a></p>
+<p class="toc level2"><a href="uc-timezone-4.html"><tt>TIMEZONE</tt>(4)</a></p>
+<p class="toc level2"><a href="timezone-4.html"><tt>timezone</tt>(4)</a></p>
+<p class="toc level2"><a href="tnf-kernel-probes-4.html"><tt>tnf_kernel_probes</tt>(4)</a></p>
+<p class="toc level2"><a href="trustedextensionspolicy-4.html"><tt>TrustedExtensionsPolicy</tt>(4)</a></p>
+<p class="toc level2"><a href="ts-dptbl-4.html"><tt>ts_dptbl</tt>(4)</a></p>
+<p class="toc level2"><a href="ttydefs-4.html"><tt>ttydefs</tt>(4)</a></p>
+<p class="toc level2"><a href="ttysrch-4.html"><tt>ttysrch</tt>(4)</a></p>
+<p class="toc level2"><a href="ufsdump-4.html"><tt>ufsdump</tt>(4)</a></p>
+<p class="toc level2"><a href="updaters-4.html"><tt>updaters</tt>(4)</a></p>
+<p class="toc level2"><a href="user-attr-4.html"><tt>user_attr</tt>(4)</a></p>
+<p class="toc level2"><a href="utmp-4.html"><tt>utmp</tt>(4)</a></p>
+<p class="toc level2"><a href="utmpx-4.html"><tt>utmpx</tt>(4)</a></p>
+<p class="toc level2"><a href="vfstab-4.html"><tt>vfstab</tt>(4)</a></p>
+<p class="toc level2"><a href="volume-config-4.html"><tt>volume-config</tt>(4)</a></p>
+<p class="toc level2"><a href="volume-defaults-4.html"><tt>volume-defaults</tt>(4)</a></p>
+<p class="toc level2"><a href="volume-request-4.html"><tt>volume-request</tt>(4)</a></p>
+<p class="toc level2"><a href="wanboot.conf-4.html"><tt>wanboot.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="warn.conf-4.html"><tt>warn.conf</tt>(4)</a></p>
+<p class="toc level2"><a href="wtmp-4.html"><tt>wtmp</tt>(4)</a></p>
+<p class="toc level2"><a href="wtmpx-4.html"><tt>wtmpx</tt>(4)</a></p>
+<p class="toc level2"><a href="xferlog-4.html"><tt>xferlog</tt>(4)</a></p>
+<p class="toc level2"><a href="ypfiles-4.html"><tt>ypfiles</tt>(4)</a></p>
+<p class="toc level2"><a href="yppasswdd-4.html"><tt>yppasswdd</tt>(4)</a></p>
+<p class="toc level2"><a href="ypserv-4.html"><tt>ypserv</tt>(4)</a></p>
+<p class="toc level2"><a href="zoneinfo-4.html"><tt>zoneinfo</tt>(4)</a></p>
+
+</div>
+
+<a name="REFMAN4content"></a><a name="content"></a>
+<div class="ContentPane">
+	
+
+<a name="REFMAN4kadm5.acl-4"></a><a name="kadm5.acl-4"></a><h3>kadm5.acl</h3>
+<p>- Kerberos access control list (ACL) file </p><h3>Synopsis</h3>
+<pre><tt>/etc/krb5/kadm5.acl</tt></pre><h3>Description</h3>
+<p>The ACL file is used by the <a href="../821-1462/kadmind-1m.html#REFMAN1Mkadmind-1m"><tt>kadmind</tt>(1M)</a> command to determine which
+principals are allowed to perform Kerberos administration actions. For operations that affect principals,
+the ACL file also controls which principals can operate on which other
+principals. The location of the ACL file is determined by the <tt>acl_file</tt>
+configuration variable in the <a href="kdc.conf-4.html"><tt>kdc.conf</tt>(4)</a> file. The default location is <tt>/etc/krb5/kadm5.acl</tt>.</p><p>For incremental propagation, see <a href="../821-1462/kadmind-1m.html#REFMAN1Mkadmind-1m"><tt>kadmind</tt>(1M)</a>. The ACL file must contain the <tt>kiprop</tt>
+service principal with propagation privileges in order for the slave KDC to pull
+updates from the master's principal database. Refer to the EXAMPLES section for
+this case.</p><p>The ACL file can contain comment lines, null lines, or lines that
+contain ACL entries. Comment lines start with the pound sign (<tt>#</tt>) and
+continue until the end of the line. </p><p>The order of entries is significant. The first matching entry specifies the
+principal on which the control access applies, whether it is on just
+the principal or on the principal when it operates on a target
+principal.</p><p>Lines containing ACL entries must have the following format:</p><pre><var>principal</var> <var>operation-mask</var> [<var>operation-target</var>]</pre><dl><dt><var>principal</var></dt>
+<dd><p>Specifies the principal on which the <var>operation-mask</var> applies. Can specify either a partially or fully qualified Kerberos principal name. Each component of the name can be substituted with a wildcard, using the asterisk ( <tt>*</tt> ) character.</p></dd>
+<dt><var>operation-mask</var></dt>
+<dd><p>Specifies what operations can or cannot be performed by a principal matching a particular entry. Specify <var>operation-mask</var> as one or more <var>privilege</var>s. </p><p>A <var>privilege</var> is a string of one or more of the following characters: <tt>a</tt>, <tt>A</tt>, <tt>c</tt>, <tt>C</tt>, <tt>d</tt>, <tt>D</tt>, <tt>i</tt>, <tt>I</tt>, <tt>l</tt>, <tt>L</tt>, <tt>m</tt>, <tt>M</tt>, <tt>p</tt>, <tt>P</tt>, <tt>u</tt>, <tt>U</tt>, <tt>x</tt>, or <tt>*</tt>. Generally, if the character is lowercase, the privilege is allowed and if the character is uppercase, the operation is disallowed. The <tt>x</tt> and <tt>*</tt> characters are exceptions to the uppercase convention.</p><p>The following <var>privilege</var>s are supported: </p><dl><dt><tt>a</tt></dt>
+<dd><p>Allows the addition of principals or policies in the database.</p></dd>
+<dt><tt>A</tt></dt>
+<dd><p>Disallows the addition of principals or policies in the database.</p></dd>
+<dt><tt>c</tt></dt>
+<dd><p>Allows the changing of passwords for principals in the database.</p></dd>
+<dt><tt>C</tt></dt>
+<dd><p>Disallows the changing of passwords for principals in the database.</p></dd>
+<dt><tt>d</tt></dt>
+<dd><p>Allows the deletion of principals or policies in the database.</p></dd>
+<dt><tt>D</tt></dt>
+<dd><p>Disallows the deletion of principals or policies in the database.</p></dd>
+<dt><tt>i</tt></dt>
+<dd><p>Allows inquiries to the database.</p></dd>
+<dt><tt>I</tt></dt>
+<dd><p>Disallows inquiries to the database.</p></dd>
+<dt><tt>l</tt></dt>
+<dd><p>Allows the listing of principals or policies in the database.</p></dd>
+<dt><tt>L</tt></dt>
+<dd><p>Disallows the listing of principals or policies in the database.</p></dd>
+<dt><tt>m</tt></dt>
+<dd><p>Allows the modification of principals or policies in the database.</p></dd>
+<dt><tt>M</tt></dt>
+<dd><p>Disallows the modification of principals or policies in the database.</p></dd>
+<dt><tt>p</tt></dt>
+<dd><p>Allow the propagation of the principal database.</p></dd>
+<dt><tt>P</tt></dt>
+<dd><p>Disallow the propagation of the principal database.</p></dd>
+<dt><tt>u</tt></dt>
+<dd><p>Allows the creation of one-component user principals whose password can be validated with PAM.</p></dd>
+<dt><tt>U</tt></dt>
+<dd><p>Negates the <tt>u</tt> privilege.</p></dd>
+<dt><tt>x</tt></dt>
+<dd><p>Short for specifying privileges <tt>a</tt>, <tt>d</tt>,<tt>m</tt>,<tt>c</tt>,<tt>i</tt>, and <tt>l</tt>. The same as <tt>*</tt>.</p></dd>
+<dt><tt>*</tt></dt>
+<dd><p>Short for specifying privileges <tt>a</tt>, <tt>d</tt>,<tt>m</tt>,<tt>c</tt>,<tt>i</tt>, and <tt>l</tt>. The same as <tt>x</tt>.</p></dd>
+</dl>
+</dd>
+<dt><var>operation-target</var></dt>
+<dd><p>Optional. When specified, the <var>privileges</var> apply to the <var>principal</var> when it operates on the <var>operation-target</var>. For the <var>operation-target</var>, you can specify a partially or fully qualified Kerberos principal name. Each component of the name can be substituted by a wildcard, using the asterisk ( <tt>*</tt> ) character.</p></dd>
+</dl>
+<h3>Examples</h3>
+<p><b>Example&#160;1 Specifying a Standard, Fully Qualified Name</b></p><p>The following ACL entry specifies a standard, fully qualified name:</p><pre>user/instance@realm adm </pre><p>The <var>operation-mask</var> applies only to the <tt>user/instance@realm</tt> principal and specifies that the
+principal can add, delete, or modify principals and policies, but it cannot
+change passwords.</p><p><b>Example&#160;2 Specifying a Standard Fully Qualified Name and Target</b></p><p>The following ACL entry specifies a standard, fully qualified name:</p><pre>user/instance@realm cim service/instance@realm </pre><p>The <var>operation-mask</var> applies only to the <tt>user/instance@realm</tt> principal operating on the <tt>service/instance@realm</tt>
+target, and specifies that the principal can change the target's password, request
+information about the target, and modify it.</p><p><b>Example&#160;3 Specifying a Name Using a Wildcard</b></p><p>The following ACL entry specifies a name using a wildcard:</p><pre>user/*@realm ac </pre><p>The <var>operation-mask</var> applies to all principals in realm <tt>realm</tt> whose first component
+is <tt>user</tt> and specifies that the principals can add principals and change
+passwords.</p><p><b>Example&#160;4 Specifying a Name Using a Wildcard and a Target</b></p><p>The following ACL entry specifies a name using a wildcard and a
+target:</p><pre>user/*@realm i */instance@realm</pre><p>The <var>operation-mask</var> applies to all principals in realm <tt>realm</tt> whose first component
+is <tt>user</tt> and specifies that the principals can perform inquiries on principals
+whose second component is <tt>instance</tt> and realm is <tt>realm</tt>. </p><p><b>Example&#160;5 Specifying Incremental Propagation Privileges</b></p><p>The following ACL entry specifies propagation privileges for the <tt>kiprop</tt> service principal:</p><pre>kiprop/slavehost@realm p</pre><p>The operation-mask applies to the <tt>kiprop</tt> service principal for the specified slave
+host <tt>slavehost</tt> in realm <tt>realm</tt>. This specifies that the associated <tt>kiprop</tt> service
+principal can receive incremental principal updates.</p><h3>Files</h3>
+<dl><dt><tt>/etc/krb5/kdc.conf</tt></dt>
+<dd><p>KDC configuration information.</p></dd>
+</dl>
+<h3>Attributes</h3>
+<p>See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for descriptions of the following attributes:</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop"><col width="50%"><col width="50%"><tr><th class="columncaption" align="center" valign="middle"><div class="headerpadding">ATTRIBUTE TYPE</div></th>
+<th class="columncaption" align="center" valign="middle"><div class="headerpadding">ATTRIBUTE VALUE</div></th>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Availability</div></td>
+<td align="left" valign="top"><div class="pad5x10">system/security/kerberos-5</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Interface Stability</div></td>
+<td align="left" valign="top"><div class="pad5x10">Committed</div></td>
+</tr>
+</table>
+</td></tr></table>
+<h3>See Also</h3>
+<p><a href="../821-1461/kpasswd-1.html#REFMAN1kpasswd-1"><tt>kpasswd</tt>(1)</a>, <a href="../821-1462/gkadmin-1m.html#REFMAN1Mgkadmin-1m"><tt>gkadmin</tt>(1M)</a>, <a href="../821-1462/kadmind-1m.html#REFMAN1Mkadmind-1m"><tt>kadmind</tt>(1M)</a>, <a href="../821-1462/kadmin.local-1m.html#REFMAN1Mkadmin.local-1m"><tt>kadmin.local</tt>(1M)</a>, <a href="../821-1462/kdb5-util-1m.html#REFMAN1Mkdb5-util-1m"><tt>kdb5_util</tt>(1M)</a>, <a href="kdc.conf-4.html"><tt>kdc.conf</tt>(4)</a>, <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a>, <a href="../821-1474/kerberos-5.html#REFMAN5kerberos-5"><tt>kerberos</tt>(5)</a>, <a href="../821-1474/pam-krb5-migrate-5.html#REFMAN5pam-krb5-migrate-5"><tt>pam_krb5_migrate</tt>(5)</a></p>
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="issue-4.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="kdc.conf-4.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

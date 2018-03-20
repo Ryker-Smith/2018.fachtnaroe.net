@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/permissions_num.html -->
+
+<HEAD>
+<TITLE>Setting access permissions numerically</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Setting access permissions numerically</H1>
+
+<P>There is a shorthand way of setting permissions by
+using octal numbers.  Read permission is given the
+value 4, write permission the value 2 and execute
+permission 1.</P>
+
+<PRE>    <STRONG>r  w  x</STRONG>
+    4  2  1
+</PRE>
+
+<P>These values are added together for any one user
+category:</P>
+
+<PRE WIDTH=80>
+    <STRONG>1</STRONG>   =   execute only
+    <STRONG>2</STRONG>   =   write only
+    <STRONG>3</STRONG>   =   write and execute (1+2)
+    <STRONG>4</STRONG>   =   read only
+    <STRONG>5</STRONG>   =   read and execute (4+1)
+    <STRONG>6</STRONG>   =   read and write (4+2)
+    <STRONG>7</STRONG>   =   read and write and execute (4+2+1)
+</PRE>
+
+<P>So access permissions can be expressed as three digits.  For example:</P>
+
+<PRE WIDTH=80>
+                          user    group   others
+
+    chmod 640 file1       rw-     r--     ---
+    chmod 754 file1       rwx     r-x     r--
+    chmod 664 file1       rw-     rw-     r--
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

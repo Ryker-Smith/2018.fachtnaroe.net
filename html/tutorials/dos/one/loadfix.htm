@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Description" CONTENT="By using a COM file, we can get around the program flow problems that plague us when running (instead of CALLing) batch programs from other batch programs.">
+   <TITLE>Renaming LOADFIX.COM</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H2>
+Renaming LOADFIX.COM</H2></CENTER>
+
+<CENTER>
+<HR width="100%"><I>By using a COM file, we can get around the program
+flow problems that plague us when running batch programs from other batch
+programs.</I>&nbsp;
+<HR width="100%"></CENTER>
+
+
+<P>If you've managed to get this far, I have to assume you know how to
+take a list like:
+<BR><B><TT>data1</TT></B>
+<BR><B><TT>data2</TT></B>
+<BR><B><TT>data3</TT></B>
+<BR>and add key words to the beginning of each line:
+<BR><B><TT>Enter new time: data1</TT></B>
+<BR><B><TT>Enter new time: data2</TT></B>
+<BR><B><TT>Enter new time: data3</TT></B>
+
+<P>The problem with running a file like the one above is that you will
+typically create an ENTER.BAT which will try to process it's third argument
+(new being 1, time: being 2, and data... being 3). This will work for the
+first line, but once your ENTER.BAT finishes, control will pass "up", not
+to the next line! If we had an ENTER.COM or an ENTER.EXE instead of an
+ENTER.BAT, things would continue normally to the next line. What we need
+in this mythical ENTER program is that it do no more than start another
+program. I know three programs that fit that bill: LOADFIX.COM (from DOS
+5,6,&amp;7), COMMAND.COM, and START.EXE (DOS 7). No, you can't use CALL.
+CALL is internal to COMMAND.COM, and isn't a standalone command. The problem
+with START and COMMAND is that they both require options to work as desired
+(COMMAND needs the /C option, and START needs the /W option). That leaves
+LOADFIX.COM.
+
+<P>All you have to do is make a copy of LOADFIX.COM and name it ENTER.COM.
+If you don't have loadfix, look for it on your Windows 95 CDROM in the
+\Other\Oldmsdos directory or <A HREF="ftp://ftp.microsoft.com/softlib/mslfiles/olddos.exe">download
+it from Microsoft</A>.
+<BR>&nbsp;
+<CENTER><TABLE BORDER CELLPADDING=5 >
+<TR>
+<TD>
+<CENTER><I>DATA.BAT</I></CENTER>
+</TD>
+
+<TD>
+<CENTER><I>MAIN.BAT</I></CENTER>
+</TD>
+
+<TD>
+<CENTER><I>NEW.BAT</I></CENTER>
+</TD>
+</TR>
+
+<TR ALIGN=LEFT VALIGN=TOP>
+<TD NOWRAP><B><TT>Enter new time: data1&nbsp;</TT></B>
+<BR><B><TT>Enter new time: data2&nbsp;</TT></B>
+<BR><B><TT>Enter new time: data3</TT></B></TD>
+
+<TD NOWRAP><B><TT>@echo off</TT></B>
+<BR><B><TT>copy c:\windows\command\loadfix.com enter.com</TT></B>
+<BR><B><TT>call data.bat</TT></B>
+<BR><B><TT>del enter.com</TT></B></TD>
+
+<TD NOWRAP><B><TT>echo Processing %2</TT></B></TD>
+</TR>
+</TABLE></CENTER>
+When MAIN.BAT CALLs DATA.BAT, DATA.BAT will run ENTER.COM. ENTER.COM will
+in turn start NEW.BAT, passing it two parameters (time: and data...). NEW.BAT
+is then responsible for actually processing the listed items. Note that
+I created and deleted ENTER.COM on-the-fly. You might want to create and
+run an "ENTER.BAT" later on, and having an ENTER.COM floating around could
+really screw you up.
+<P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+</BODY>
+</HTML>

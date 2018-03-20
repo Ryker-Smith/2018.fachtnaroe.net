@@ -1,0 +1,184 @@
+body	{
+	color: #000;
+	background-color: #fff;
+	margin: 0px;
+	padding: 0px;
+	font: 100% Arial, Sans-Serif;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	}
+
+h1	{
+	font-size: 200%;
+	font-weight: 100;
+	padding: 0px;
+	margin: 0px;
+	} 
+
+h2	{
+	color: #769400;
+	font-size: 150%
+	font-weight: 600;
+	padding: 0px;
+	margin: 0px;
+	}
+
+h3	{
+	color: black;
+	font-size: 100%;
+	font-weight: 100;
+	}
+
+h4	{
+	font-size: 80%;
+	font-weight: 100;
+	}
+
+h5	{
+	font-size: 60%;
+	font-weight: 100;
+	color: #808080;
+	text-align: center;
+	}
+
+h6	{
+	font-weight: 100;
+	font-size: 50%;
+	}
+
+#logo	{
+	width: 100%;
+	height: 100px;
+	background-color: #5261b4;
+	border-bottom: 1px #808080 solid;
+	background-image: url(img/alco.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	}
+
+#logo h1{
+	display: none;
+	}
+
+#links	{
+	position: absolute;
+	text-align: left;
+	top: 110px;
+	right: 0px;
+	width: 150px;
+	}
+
+#content{
+	position: absolute;
+	top: 101px;
+	left: 0px;
+	right: 150px;
+	padding: 10px;
+	border-bottom: 1px #808080 solid;
+	border-left: 1px #808080 solid;
+	border-right: 1px #808080 solid;
+	}
+
+#links	a{
+	font-size: 80%;
+	color: #000;
+	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 150px;
+	}
+
+#links	a:hover{
+	font-weight: 600;
+	padding-right: 10px;
+	border-left: 10px #769400 solid;
+	<img src="img/glutton.jpg" alt="picture" align="right" height="250" width="150">
+	}
+
+#picture	{
+	position: absolute;
+	top: 10px;
+	left: 40%;
+	width: 130px;
+	height: 81px;
+	background-image: url(img/bottles.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px black solid;
+	}
+
+#picture2	{
+	position: absolute;
+	top: 3px;
+	left: 40%;
+	width: 130px;
+	height: 91px;
+	background-image: url(img/drunkguy2.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px black solid;
+	}
+
+#picture3	{
+	position: absolute;
+	top: 3px;
+	left: 40%;
+	width: 130px;
+	height: 91px;
+	background-image: url(img/drunklass2.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px black solid;
+	}
+
+#picture4	{
+	position: absolute;
+	top: 3px;
+	left: 40%;
+	width: 99px;
+	height: 90px;
+	background-image: url(img/girlAlcohol3.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px black solid;
+	}
+
+#picture5	{
+	position: absolute;
+	top: 3px;
+	left: 40%;
+	width: 120px;
+	height: 30px;
+	background-image: url(img/drunkeness.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px black solid;
+	}
+
+#picture6	{
+	position: absolute;
+	top: 3px;
+	left: 40%;
+	width: 120px;
+	height: 90px;
+	background-image: url(img/libel2.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px black solid;
+	}
+
+#picture7	{
+	position: absolute;
+	top: 3px;
+	left: 40%;
+	width: 120px;
+	height: 90px;
+	background-image: url(img/coolgraeny.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 1px black solid;
+	}
+
+
+
+

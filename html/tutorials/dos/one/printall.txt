@@ -1,0 +1,27 @@
+You have lots of documents you want printed, but you 
+don't want to sit there and do each one separately? 
+Maybe you don't even want to open all of them at once? 
+Well, most word processing programs will print the file 
+passed to them if you use the /p option. If you use START 
+with the /w option, only one file will be done at a time. 
+If you use START's /m option as well, your word processor 
+will stay minimized so you don't have to watch it (much). 
+In the example below, I assume you want to print all TXT 
+and BAT files in the current directory, and that you'll 
+use NOTEPAD to do the printing. NOTEPAD is nice because by
+default it prints filenames at the top of each page and 
+page numbers at the bottom. 
+
+for %%x in (*.txt *.bat) do start /w /m notepad.exe /p "%%x" 
+
+If you want to change the file name that gets printed, type:
+lfnfor off
+before you run it and you'll get short file names. Type:
+lfnfor on
+to get long file names.
+
+If you want to print 10 copies, Make a separate batch file 
+to call the first one:
+for %%x in (1 2 3 4 5 6 7 8 9 10) do call printall.bat
+
+http://www.calweb.com/~webspace

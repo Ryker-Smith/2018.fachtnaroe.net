@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 24</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h2>Task 027</h2>
+<h3>Once the program <font face="Courier">friends01.pl</font> is functioning add in the code below at the end of the file.</h3>
+<center><img width="100%" src="/images/friends01b.png"></center>
+<h3>Note how we use the symbol &gt;&gt; when opening the file name. This is to prevent the contents of the database file from being erased everytime we add new records.</h3>
+<h3>Test the program using the cat command on the database file:</h3>
+<center><img width="90%" src="/images/friends01c.png"></center>
+<h3>If the program behaves correctly, you can move on and start creating the other half of the Address Book database program set.</h3>
+<h3>Onwards...</h3>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+</div>
+</body>
+</html>

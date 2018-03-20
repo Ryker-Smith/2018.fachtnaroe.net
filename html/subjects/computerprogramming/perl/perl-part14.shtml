@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Perl - Part 14</h1>
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<h2>Storing Multiple Values</h2>
+<h2>Task 018</h2>
+<p>Create the following program (called <font face="Courier">names01.pl</font>) to read in 5 names:</p>
+<font face="Courier">
+<b>&nbsp;&nbsp;...<br>
+&nbsp;&nbsp;...You should know what to enter as a program header here...<br>
+&nbsp;&nbsp;...</b><br>
+<br>&nbsp;&nbsp;print "\nEnter a name: ";
+<br>&nbsp;&nbsp;$name1 = &lt;STDIN&gt;;
+<br>&nbsp;&nbsp;chop $name1;
+<br>&nbsp;&nbsp;print "\nEnter a name: ";
+<br>&nbsp;&nbsp;$name2 = &lt;STDIN&gt;;
+<br>&nbsp;&nbsp;chop $name2;
+<br>&nbsp;&nbsp;print "\nEnter a name: ";
+<br>&nbsp;&nbsp;$name3 = &lt;STDIN&gt;;
+<br>&nbsp;&nbsp;chop $name3;
+<br>&nbsp;&nbsp;print "\nEnter a name: ";
+<br>&nbsp;&nbsp;$name4 = &lt;STDIN&gt;;
+<br>&nbsp;&nbsp;chop $name4;
+<br>&nbsp;&nbsp;print "\nEnter a name: ";
+<br>&nbsp;&nbsp;$name5 = &lt;STDIN&gt;;
+<br>&nbsp;&nbsp;chop $name5;
+<br>&nbsp;&nbsp;$which_name = -1;
+<br>&nbsp;&nbsp;while ($which_name != 0)
+<br>&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;print "\nYou entered 5 names. Choose (1-5) to see a name or 0 to exit: ";
+<br>&nbsp;&nbsp;&nbsp;&nbsp;$which_name = &lt;STDIN&gt;;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;chop $which_name;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if ($which_name == 1)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "=> $name1\n";
+<br>&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;else
+<br>&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($which_name == 2)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "=> $name2\n";
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($which_name == 3)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "=> $name3\n";
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($which_name == 4)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "=> $name4\n";
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if ($which_name == 5)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "=> $name5\n";
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} # end of else 4
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} # end of else 3
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} # end of else 2
+<br>&nbsp;&nbsp;&nbsp;&nbsp;} # end of else 1
+<br>&nbsp;&nbsp;} # Curly bracket for while
+</font><p>The last program read 5 names manually into 5 variables. Ask yourself the following questions:
+<ol>
+<li>What would need to be done to change the number of names from 5 to 3?</li>
+<li>What would need to be done to change the number of names from 5 to 10?</li>
+<li>Is there anyway of shortening the asking and responding section at the end?</li>
+<li>What happens if the user requests to see name 17?</li>
+</ol>
+<p>The answer to the last question is more straightforward. A loop to check for valid values can be added. Enter:<p>
+<font face="Courier">
+<br>&nbsp;&nbsp;&nbsp;&nbsp;if ( ($which_name >= 1) && ($which_name <= 5) )
+<br>&nbsp;&nbsp;&nbsp;&nbsp;{
+</font>
+<p>below the line:<p>
+<font face="Courier">
+&nbsp;&nbsp;&nbsp;&nbsp;chop $which_name;
+</font>
+<p>Then indent <i>all</i> the program <i>except</i> the last curly bracket by two extra spaces. Before the last remaining bracket, correctly indented enter:</p>
+<font face="Courier">
+<br>&nbsp;&nbsp;&nbsp;&nbsp;} # end of 1-5 section
+<br>&nbsp;&nbsp;&nbsp;&nbsp;else
+<br>&nbsp;&nbsp;&nbsp;&nbsp;{
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print "\nERROR - Bad Value Entered\n";
+<br>&nbsp;&nbsp;&nbsp;&nbsp;} # end of error message
+</font>
+<p>This takes care of the 4<sup>th</sup> question but leaves the other, more important 3.</p>
+<ol>
+<li>What would need to be done to change the number of names from 5 to 3?</li>
+<li>What would need to be done to change the number of names from 5 to 10?</li>
+<li>Is there anyway of shortening the asking and responding section at the end?</li>
+<li><strike>What happens if the user requests to see name 17?</strike></li>
+</ol>
+<p>Read on for a solution...
+<!--#include virtual="/subjects/computerprogramming/perl/navigate.shtml" -->
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="perl-part14.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

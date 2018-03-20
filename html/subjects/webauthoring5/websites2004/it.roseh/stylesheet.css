@@ -1,0 +1,51 @@
+body	{
+	background-color: #e9eabe;	
+	padding-left: 160px;}
+
+h1	{
+	color: #0f0000;
+	font-size: 200%;
+	font-weight: 100%;
+	Padding: 0px;
+	margin: 0px;
+	text-align: center;
+	}
+	
+h2	{
+	color: #0f0000;
+	font-size: 100%;
+	font-weight: 100;
+	padding: 0px;
+	margin: 0px;
+	}
+	
+h3	{
+	color: #0f0000;
+	font-size: 100%;
+	font-weight: 600;
+	}
+	
+h4	{
+	font-size: 80%;
+	font-weight: 100;
+	}
+	
+h5	{
+	font-size: 60%;
+	font-weight: 100;
+	color: #0f000;
+	text-align: center;
+	}
+	
+h6	{
+	font-weight: 100;
+	font-size: 50%;
+	}
+
+#links {
+	position: absolute;
+	text-align: left;
+	top: 200px;
+	left: 0px;
+	width: 100px;
+	}

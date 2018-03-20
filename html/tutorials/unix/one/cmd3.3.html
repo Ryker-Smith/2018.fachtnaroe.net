@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- commanz/cmd3.3.html -->
+
+<HEAD>
+<TITLE>Appending standard output to a file</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>Appending standard output to a file</H1>
+
+<P>To append the standard output from a command to a file
+use two <SAMP>&gt;&gt;</SAMP> (greater than) symbols followed by
+the name of the file.  If the file does not exist it is created.  For
+example:</P>
+
+<PRE WIDTH=80>   <STRONG>cat part1 &gt; chapt2
+   cat part2 &gt;&gt; chapt2</STRONG>
+</PRE>
+
+<P>This creates a file called <SAMP>chapt2</SAMP> with the same contents
+as <SAMP>part1</SAMP>. It then reads the contents of <SAMP>part2</SAMP>
+and appends them to the file <SAMP>chapt2</SAMP>. The file
+<SAMP>chapt2</SAMP> now contains the data from <SAMP>part1</SAMP>
+followed by the data from <SAMP>part2</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

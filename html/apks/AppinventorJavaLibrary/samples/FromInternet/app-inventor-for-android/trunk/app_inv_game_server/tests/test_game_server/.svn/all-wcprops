@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_game_server
+END
+test_server_utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_game_server/test_server_utils.py
+END
+test_server.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_game_server/test_server.py
+END
+test_server_commands.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_game_server/test_server_commands.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/48/trunk/app_inv_game_server/tests/test_game_server/__init__.py
+END

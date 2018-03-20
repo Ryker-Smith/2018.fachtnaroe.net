@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- utilities2/sort1.html -->
+
+<HEAD>
+<TITLE>Examples of using the sort command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the sort command</H1>
+
+<P>These examples include the use of options and features
+explained in later sections.  Read these sections if you
+cannot understand an example.</P>
+
+<HR>
+
+<P>To sort a file on field2 (the third word):</P>
+
+<PRE WIDTH=80>   <STRONG>sort +2 -3 names</STRONG>
+</PRE>
+
+<P>This sorts the file <SAMP>names</SAMP> on the third word of
+each line.</P>
+
+<HR>
+
+<P>To sort several files using a different sort
+order and send the results to another file:</P>
+
+<PRE WIDTH=80>   <STRONG>sort -n -o report +1 -2 month[1-3]</STRONG>
+</PRE>
+
+<P>This sorts the files <SAMP>month1</SAMP> through <SAMP>month3</SAMP>
+on field1 (the
+second word) according to their numeric value and places
+the result in the file <SAMP>report</SAMP>.</P>
+
+<HR>
+
+<P>To sort a file on a specific part of one field, using
+a different field delimiter, removing duplicate lines and
+sending the output to another file:</P>
+
+<PRE WIDTH=80>   <STRONG>sort -t: -o birthdays +3.2 -4.5 friends</STRONG>
+</PRE>
+
+<P>This sorts the file <SAMP>friends</SAMP> on the third and fourth
+characters of field3 (fourth word). Each field in this
+file is delimited by a <STRONG>:</STRONG> (colon). The results are
+placed in the file <SAMP>birthdays</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

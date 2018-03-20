@@ -1,0 +1,135 @@
+    Doing math in a batch file is a waste of time.
+    There are no math functions. Luckily, all
+    most people need to do is increment a counter
+    of some sort. This can be done via string 
+    comparisons -- something that batch files CAN 
+    do. Here I show code which will increment a 
+    three digit number each time it is called. 
+    Looking at the code, you can see how easy it 
+    would be to extend it to any length. The number 
+    here is actually stored in the environment as 
+    three separate variables E0, E1, and E2. To 
+    refer to the entire number, you'd say this: 
+    %E2%%E1%%E0%
+
+------------------------------------------------------------
+@echo off
+:: Increments a three digit number
+:: Works by comparing each digit
+:: E2=hundreds, E1=tens, E0=ones
+if [%E2%]==[] set E2=0
+if [%E1%]==[] set E1=0
+if [%E0%]==[] set E0=0
+:E0
+if %E0%==9 goto E1
+if %E0%==8 set E0=9
+if %E0%==7 set E0=8
+if %E0%==6 set E0=7
+if %E0%==5 set E0=6
+if %E0%==4 set E0=5
+if %E0%==3 set E0=4
+if %E0%==2 set E0=3
+if %E0%==1 set E0=2
+if %E0%==0 set E0=1
+goto DONE
+:E1
+set E0=0
+if %E1%==9 goto E2
+if %E1%==8 set E1=9
+if %E1%==7 set E1=8
+if %E1%==6 set E1=7
+if %E1%==5 set E1=6
+if %E1%==4 set E1=5
+if %E1%==3 set E1=4
+if %E1%==2 set E1=3
+if %E1%==1 set E1=2
+if %E1%==0 set E1=1
+goto DONE
+:E2
+set E1=0
+if %E2%==9 set E2=0
+if %E2%==8 set E2=9
+if %E2%==7 set E2=8
+if %E2%==6 set E2=7
+if %E2%==5 set E2=6
+if %E2%==4 set E2=5
+if %E2%==3 set E2=4
+if %E2%==2 set E2=3
+if %E2%==1 set E2=2
+if %E2%==0 set E2=1
+goto E0
+:DONE
+------------------------------------------------------------
+
+    The way the code is shown above, the environment 
+    will "remember" the value of the counter. This 
+    means the next time you start the program (if you 
+    start it in the same memory space), it will 
+    continue counting where it left off. This is 
+    great sometimes, but a bother others. If you 
+    want it to always start counting over, just add 
+    code like this to the batch file just before the 
+    line that calls the addition batch file:
+
+set E2=0
+set E1=0
+set E0=0
+call add.bat
+
+    Or you can start the counting at some 
+    predetermined number like 127:
+
+set E2=1
+set E1=2
+set E0=7
+call add.bat
+
+    Of course, as soon as you call add.bat, the count 
+    will be at 128.
+
+    But there are times when you just don't 
+    want the leading zeros that the above 
+    method mandates. For that, real math is 
+    handy. Here is a routine that will 
+    increment any number. Because it uses 
+    QBASIC, it works great on NT, but will 
+    only work on Win9x if you installed QBASIC.
+
+------------------------------------------------------------
+@echo off
+if [%number%]==[] set number=-1
+> ~temp.bas echo PRINT "set number="; LTRIM$(STR$(VAL(ENVIRON$("NUMBER")) + 1))
+>>~temp.bas echo SYSTEM
+qbasic /run ~temp.bas > ~temp.bat
+call ~temp.bat
+del ~temp.ba?
+------------------------------------------------------------
+
+    Batch does have the ability to count. Sort 
+    of. The FIND command can count lines in a 
+    file that contain certain strings. So here 
+    I show a way to use a file "~counter.txt" 
+    that gets a new "X" added to it every time. 
+    I can count the lines to retrieve the value. 
+    The cool thing about this method is that 
+    several different programs in different 
+    memory space can be using the same counter 
+    file. If you just wanted to read the value 
+    without incrementing it, just leave off the 
+    second line (echo X >> ~counter.txt). If you 
+    want to set the counter file to a value of 
+    zero in your code, use a line like this:
+echo.> ~counter.txt
+    and if you want it set to a value of one:
+echo X > ~counter.txt
+
+------------------------------------------------------------
+@echo off
+echo X >> ~counter.txt
+type ~counter.txt | find /c "X" > ~temp.txt
+fc ~temp.txt nul /lb1 /n | date | find "1:" > en#er.bat
+del ~temp.txt > nul
+echo set number=%%5> enter.bat
+call en#er.bat
+del en?er.bat > nul
+------------------------------------------------------------

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- #exec cgi="/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!-- #exec cgi="/navigation.shtml" -->
+<div id="content">
+<h1>Spreadsheet Methods Solutions</h1>
+<h2>Editable Solutions 2004</h2>
+<h3>The  spreadsheet files below can be opened and edited. You may also use them to see the formulas. The required printouts are in PDF format with row/column headers, gridlines and selected areas only included.
+<ul>
+<li><a href="../XAM2004.pdf"><strong>The 2004 Exam</strong></a></li>
+<li><a href="MARKSTOWN01.sxc">MARKSTOWN01</a> (OpenOffice.org 1.x format)</a>
+<!--	<ul>
+	<li><a href="MARKSTOWN01-XLS.xls">MARKSTOWN01</a> (Microsoft Excel format)</a>
+	</ul>-->
+<li>The first required printout is <a href="MARKSTOWN01.pdf">here</a></li>
+<li>The second required printout (formulas) is <a href="2004-MARKSTOWN01-formulas.pdf">here</a>.</li>
+<li><a href="MARKSTOWN02.sxc">MARKSTOWN02</a> (OpenOffice.org 1.x format)</a>
+<!--	<ul>
+	<li><a href="MARKSTOWN02-XLS.xls">MARKSTOWN02</a> (Microsoft Excel format)</a>
+	</ul>-->
+<li>The third printout is <a href="MARKSTOWN02.pdf">here</a>.</li>
+<li>The fourth printout (formulas) is <a href="2004-MARKSTOWN02-formulas.pdf">here</a>.</li>
+<li>The fifth print out, <a href="2004-Graph-01.png"><img src="2004-Graph-01.png" width="25"/>the chart</a> is here.</li>
+<li>The marking scheme is <a href="XAM2004-Marking.pdf">here</a>.</li>
+</ul>
+<h3>Click <a href="../2003/00-2003-solution.shtml">here</a> for the 2003 paper or <a href="../1997/00-1997-solution.shtml">here</a> for the 1997 paper</h3>
+</div>
+</body>
+</html>

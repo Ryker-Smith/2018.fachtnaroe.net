@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Description" CONTENT="The surest way to preserve user input or long file names is to put it in the environment.">
+   <TITLE>Placing a Line in the Environment</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H2>
+Placing a Line in the Environment</H2></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"><I>Placing an entire line in the environment is the only
+way to preserve delimiters.&nbsp;</I>&nbsp;
+<HR WIDTH="100%"></CENTER>
+
+
+<P>There is no other method (I know of) which will allow you to work with
+long filenames. File names with (for example) several sequential spaces
+are legal, but are impossible to process since DOS sees all the spaces
+as a single delimiter between the characters to either side of the spaces.
+DOS can't tell the difference between a space and a comma. They are both
+delimiters. Any time you work with user input, you expose yourself to the
+same problem. Placing an entire line in the environment won't allow you
+to process and dissect it, but it at least allows you to store it intact
+so you can restore it or append to it.
+
+<P>Assume you have a file (named TESTLINE.TXT) with a single line in it
+like this:
+<BR><B><TT>Test line ,,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+End of line.</TT></B>
+<BR>This would be impossible to process in a batch file. But if we could
+create a batch file like this,
+<BR><B><TT>SET TESTLINE=Test line ,,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+End of line.</TT></B>
+<BR>it would create an environment variable named TESTLINE that would store
+the line intact. To do this, we simply <A HREF="line-uni.htm">isolate the
+particular line</A> in TESTLINE.TXT (if it's the only line, it should be
+easy!), <A HREF="frag-man.htm">create a line fragment</A> containing SET
+TESTLINE= and concatenate the two of them with a command like
+<BR><B><TT>copy fragment.txt + testline.txt setenv.bat</TT></B>
+<BR>This would create a SETENV.BAT we could CALL which would place the
+line in the environment.
+<P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+</BODY>
+</HTML>

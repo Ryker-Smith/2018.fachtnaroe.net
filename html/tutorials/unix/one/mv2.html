@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/mv2.html -->
+
+<HEAD>
+<TITLE>Examples of using the mv command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the <SAMP>mv</SAMP> command</H1>
+
+<P>To rename a file:</P>
+
+<PRE WIDTH=80>   <STRONG>mv junk precious</STRONG>
+</PRE>
+
+<P>This renames the file <SAMP>junk</SAMP> as the file 
+<SAMP>precious</SAMP>.</P>
+
+<HR>
+
+<P>To be prompted when using the <STRONG>mv</STRONG> command:</P>
+
+<PRE WIDTH=80>   <STRONG> mv -i draft1.txt part1.txt</STRONG>
+    remove part1.txt? <STRONG>n</STRONG>
+</PRE>
+
+<P>This command prompts you to confirm that you really want
+to move the file <SAMP>draft1.txt</SAMP> to the file <SAMP>part1.txt</SAMP>; a file
+with that name already exists.</P>
+
+<P>Entering <STRONG>n</STRONG> cancels this action: a <STRONG>y</STRONG>
+confirms it.</P>
+
+<HR>
+
+<P>To move a file to another directory:</P>
+
+<PRE WIDTH=80>   <STRONG> mv precious treasure</STRONG>
+</PRE>
+
+<P>This moves the file <SAMP>precious</SAMP> from the current directory
+to the directory <SAMP>treasure</SAMP>.</P>
+
+<HR>
+
+<P>To move a file to another directory and rename it:</P>
+
+<PRE WIDTH=80>   <STRONG>mv jewel casket/amethyst</STRONG>
+</PRE>
+
+<P>This moves the file <SAMP>jewel</SAMP> to the filename 
+<SAMP>amethyst</SAMP> in the subdirectory <SAMP>casket</SAMP>.</P>
+
+<HR>
+
+<P>To move and rename a directory:</P>
+
+<PRE WIDTH=80>   <STRONG>mv vr1.1 ../environments/virtual_rooms</STRONG>
+</PRE>
+
+<P>This moves the directory <SAMP>vr1.1</SAMP> from the current
+directory to the directory <SAMP>../environments</SAMP> and
+renames it as <SAMP>virtual_rooms</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,114 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="Description" CONTENT="Assuming you have a line in the environment, FOR can separate the words for you.">
+   <TITLE>Using FOR to Process Data Lines</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER>
+<H2>
+Using FOR To Process Data Lines</H2></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"><I>FOR looks like just another way to process lines. But
+it has one thing going for it under Windows 95. If the data line you happen
+to be processing is a list of file masks (like *.xls or 1999*.doc), the
+LFNFOR command can be used to modify how FOR will read the file names --
+as long or short names.&nbsp;</I>&nbsp;
+<HR WIDTH="100%"></CENTER>
+
+
+<P>Let's jump straight into a command-line example of how to use FOR:
+<PRE><B>E:\>for %x in (one two three) do echo %x
+
+E:\>echo one
+one
+
+E:\>echo two
+two
+
+E:\>echo three
+three</B></PRE>
+As you can see, the FOR command caused echo to be executed three times
+-- once for each word in it's "set" of arguments. If we were able to replace
+the "set" with an entire data line, we could do some real processing without
+the crazy antics other methods need. Obviously, we'll have to replace the
+echo command with something a bit more useful, but you already figured
+that out. Now, the only reasonable way I can see to get an entire data
+line into the middle of our FOR line is to put that line in the environment.
+So we'll go to the next example, this one a batch file assuming the prior
+existence of an environment variable named "DATALINE":
+<PRE><B><TT>@echo off
+echo echo %%1> process.bat
+for %%x in (%dataline%) do call process.bat %%x
+del process.bat</TT></B></PRE>
+Assuming our environment variable DATALINE contains the same<B><TT> one
+two three </TT></B>text, the example above would generate this output:
+<BR><B><TT>one</TT></B>
+<BR><B><TT>two</TT></B>
+<BR><B><TT>three</TT></B>
+<BR>Admittedly, our PROCESS.BAT was rather simple. The trick was the assumption
+of the prior existence of our data in an environment variable. And that's
+where the trouble is. Putting a line in the environment requires the antics
+I'd hoped to avoid. Check here for tips on how to <A HREF="line-env.htm">put
+data lines in the environment</A>.
+
+<P><A NAME="lfnfor"></A><B><FONT SIZE=+1>Now lets discuss file masks and
+the LFNFOR command.</FONT></B>
+<UL>
+<LI>
+First I want to show another simple command-line example. I've created
+a long file named "long file name.txt". Here is the directory listing:</LI>
+</UL>
+
+<PRE><B>C:\Temp>dir
+
+&nbsp;Volume in drive C is WINDOWS95
+&nbsp;Volume Serial Number is 1251-1BED
+&nbsp;Directory of C:\Temp
+
+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;DIR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04-14-97&nbsp; 8:23a .
+..&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;DIR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 04-14-97&nbsp; 8:23a ..
+LONGFI~1 TXT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16&nbsp; 06-12-98&nbsp; 8:52a long file name.txt
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 file(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16 bytes
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 dir(s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 55,918,592 bytes free</B></PRE>
+
+<UL>
+<LI>
+Now we'll turn lfnfor <U>on</U> and see how FOR processes a file mask:</LI>
+</UL>
+
+<PRE><B><TT>C:\Temp>lfnfor on
+
+C:\Temp>for %x in (*.*) do echo %x
+
+C:\Temp>echo long file name.txt
+long file name.txt</TT></B></PRE>
+
+<UL>
+<LI>
+Now turn lfnfor <U>off</U>, run the same FOR command, and notice the difference
+in the output:</LI>
+</UL>
+
+<PRE><B><TT>C:\Temp>lfnfor off
+
+C:\Temp>for %x in (*.*) do echo %x
+
+C:\Temp>echo LONGFI~1.TXT
+LONGFI~1.TXT</TT></B></PRE>
+So let's put it all together. Suppose you want to print out all your basic
+and batch files. Notepad can do this under batch control with the /p option.
+But it prints out the title at the top of each page, and it will print
+the long or short name depending on how it opened the file. So this line
+in a batch file:
+<BR><B><TT>for %%x in (*.bas *.bat) do start /w /m notepad.exe /p "%%x"</TT></B>
+<BR>would give you long file names at the top of each page if you preceded
+it with <B><TT>lfnfor on</TT></B>, or short names at the top of each page
+if you preceded it with <B><TT>lfnfor off</TT></B>.
+<P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+</BODY>
+</HTML>

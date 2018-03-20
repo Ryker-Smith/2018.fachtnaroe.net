@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Error displaying images using SDL: Can't call method "w" on an undefined value</h1>
+<p>OS: Fedora Core; Release: 17; Arch: x86_64;</p>
+<p>Summary: you're using SDL but your program is stopping unexpectedly because it is looking for an image file which it can't find.
+<p>Problem: the image file does exist but can't be loaded because to do so SDL wants to use a shared library file which can't be found; the library file may exist but doesn't get linked to as part of any package installed; the link must therefore be provided manually.</p>
+<p>This scenario assumes code like this (taken from sample file <a href="http://sdl.perl.org/SDL-Tutorial-LunarLander.html">lander.pl</a>):
+<pre>
+my $background = SDL::Image::load('images/background.jpg');
+my $background_rect = SDL::Rect->new(0,0,
+    $background->w,  # <- program is stopping here
+    $background->h,
+); 
+</pre>
+<p>If you get the error:
+<pre>Can't call method "w" on an undefined value...</pre>
+this means that the image cannot be found where your program expects it, <i>or</i> there's a library error.</p>
+<p>Firstly, confirm that you're correctly referencing the image file. That means <i>test!</i> Just because you <i>feel</i> you are correctly referencing, doesn't mean that you <i>are</i> correctly referencing; the simplest test is to either use the full path to the image file, or try to use a different file.</p>
+<p>If the problem persists, you may have a shared libraries problem.</p>
+<p>Before you assume that, however, go back and test whether all the SDL packages have been installed. The command:
+<pre>yum install *SDL*  cpan</pre>
+is a good start. Follow it with:
+<pre>cpan SDL<i>x</i>::App</pre>
+... from which command you will accept all the default values. Do not try to proceed forward until all issues are resolved. Now test your program again. If the original error still persists, continue as below.</p>
+<p>To enable more detailed debugging, between the two ($background/$background_rect) lines above, use:
+<pre>
+if (!(-e $image_file_name)) {
+  print "File doesn't exist.\n";
+}
+</pre>
+to confirm file existance. If the file is not flagged as missing but you're getting the same error, we can assume we have a library problem and move to the next stage.</p>
+<p>This code, inserted <i>after</i> the SDL::Image::load and <i>before</i> the call to SDL::Rect which is stopping the program, will give more information:
+<pre>
+if (!$background) {
+  my $error = SDL::get_error;
+  print "Error loading image: $error\n";
+  exit;
+} 
+</pre>
+<p>The more detailed information which I then received was:
+<pre>
+Error loading image: Failed loading libjpeg.so.8: libjpeg.so.8: cannot open shared object file: No such file or directory
+</pre>
+which led to using:
+<pre>yum provides */libjpeg.so.8</pre>
+which should tell me the package which provided the file (sometimes it doesn't so skip to <b>locate</b> below). After using:
+<pre>yum reinstall <i>package_name</i></pre>
+the problem persisted. Therefore I used:
+<pre>locate libjpeg.so.8</pre>
+which told me the file existed in the Alien-SDL directory elsewhere in the system. The solution was to provide a link (known in MS Windows as a shortcut) to the file. Use the output of the <b>locate</b> command from above to customise this:
+<pre>ln -s  /usr/local/share/perl5/auto/share/dist/Alien-SDL/<b><big>put your Alien-SDL version here</big></b>/lib/libjpeg.so.8  /lib64/libjpeg.so.8 </pre>
+ which solved the problem. You may have to use different file and directory names, but this may resolve the issue for you too.
+<br/><small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="sdl_image_load_error.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

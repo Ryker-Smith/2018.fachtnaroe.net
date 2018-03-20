@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/index.html -->
+
+<HEAD>
+<TITLE>Changing access permissions using the chmod command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Changing access permissions using the chmod command</H1>
+
+<P>To give yourself permission to execute a file that you own:</P>
+
+<PRE WIDTH=80>   <STRONG>chmod u+x file1</STRONG>
+</PRE>
+
+<P>This gives you execute permission for the file "file1".</P>
+
+<HR>
+
+<P>To give members of your group permission to read a file:</P>
+
+<PRE WIDTH=80>   <STRONG>chmod g+r file2</STRONG>
+</PRE>
+
+<P>This gives the group permission to read the file "file2".</P>
+
+<HR>
+
+<P>To give read permission to everyone for a particular type of file:</P>
+
+<PRE WIDTH=80>   <STRONG>chmod a+r *.pub</STRONG>
+</PRE>
+
+<P>This gives everyone permission to read all files
+with the extension <SAMP>.pub</SAMP>.</P>
+
+<HR>
+
+<P>To give the group write and execute permission:</P>
+
+<PRE WIDTH=80>   <STRONG>chmod g+wx $HOME/SCCS</STRONG>
+</PRE>
+
+<P>This gives all members of the group permission to place
+files in the directory SCCS in your home directory. They
+can also list (<SAMP>ls</SAMP>) the contents of this directory.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,100 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.72 [en] (Win95; U) [Netscape]">
+   <meta name="Author" content="Eric Phelps">
+   <meta name="Description" content="How to create a slide show using JavaScript, Visual Basic,  ASF, Real Audio, or SMIL.">
+   <title>Slide Shows -- Do It on the Web</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000" background="tile.gif">
+&nbsp;
+<table CELLSPACING=0 WIDTH="100%" >
+<tr>
+<td ALIGN=LEFT VALIGN=BOTTOM>
+<center><a href="~webspace.html"><img SRC="smallduck.gif" ALT="Eric's Webspace" HSPACE=10 BORDER=0 height=71 width=150></a></center>
+</td>
+
+<td ALIGN=LEFT VALIGN=BOTTOM>
+<center><b><i><font size=+3>Slide Shows -- Ways to Do It</font></i></b></center>
+</td>
+</tr>
+</table>
+
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="100%" BGCOLOR="#666699" >
+<tr>
+<td WIDTH="100%">&nbsp;</td>
+</tr>
+</table>
+
+<table WIDTH="100%" >
+<tr>
+<td><img SRC="100.gif" ALT="100 pixel spacer" height=1 width=100></td>
+
+<td>I needed to create self-running slide shows for training purposes.
+Each slide would be associated with audio narration. I wanted them to be
+able to be run from a floppy disk or the web. I formed an early dislike
+of Microsoft's PowerPoint because of the way it blanked the screen while
+loading -- and loading might take a while on floppies or over the web.
+So I looked into other methods. Here I'll share what I found.&nbsp;
+<p><b><a href="http://www.calweb.com/~webspace/slideshow/vb/index.htm">Visual Basic</a></b>&nbsp; Written a long
+time ago, this was my first slide show effort. It needs only a list of
+pictures and sounds. It automatically advances to the next picture after
+the sound finishes. Separate versions are included (with source code) for
+Windows 3.1 and Windows 95. Great for kiosk-type presentations. Compatible
+with the Microsoft "PC Speaker Driver" for computers without a sound card.&nbsp;
+<p><b><a href="http://www.calweb.com/~webspace/slideshow/manualadvance">JavaScript Manual Advance</a></b>&nbsp; It
+works. Runs on my 3 browsers (IE 5.0, Netscape 4.72, NeoPlanet 5.1) and
+uses no browser-specific code. All the navigation code is in a separate
+frame. This means you can display pictures or web pages as part of your
+presentation without modifying them.&nbsp;
+<p><b>Everything below this point is still being developed! Presentation
+descriptions may not match actual features, download links may be missing,
+or presentations may only be three page demos. If you like it, grab it,
+but expect me to make changes over the next couple months.</b>
+<p><b><a href="http://www.calweb.com/~webspace/slideshow/autoadvance">JavaScript with Automatic Advance</a></b>&nbsp;
+This should only be considered where download time is stable or insignifigant.
+Like ummm... play it from your hard drive or over a fast intranet connection.
+The slide advance timing is preset by you (the creator) and has to take
+download time into consideration. I set the timings in this show for my
+28.8 dialin to my ISP. I'm betting your connection has a longer route and
+you may get the last second or two of audio cut off. Which shows you why
+you really should limit this to your hard drive or in-building LAN. Consider
+this demonstration code. Read on to see solutions to the download time
+problem.&nbsp;
+<p><b><a href="http://www.calweb.com/~webspace/slideshow/truespeech">JavaScript with TrueSpeech</a></b>&nbsp; Improving
+the JavaScript slide show under Netscape by streaming the audio with TrueSpeech.
+With streaming, we no longer have to take download time into consideration.
+The TrueSpeech plugin is a little quirky, but that's half the fun. When
+IE is used, it uses it's native MediaPlayer streaming audio player. Neither
+solution, of course, will work for my Linux friends.
+<p><b><a href="http://www.calweb.com/~webspace/slideshow/mplayer">JavaScript with Microsoft MediaPlayer</a></b>&nbsp;
+Improving the JavaScript slide show under Netscape by streaming the audio
+with the Microsoft Media Player. As long as your Netscape end users can
+follow directions to install the Media Player <b>and</b> it's associated
+plugin, they can use the same streaming audio player used in IE. Again,
+the use of MediaPlayer will probably be less than successfull with Linux
+users.
+<p><b><a href="http://www.calweb.com/~webspace/slideshow/buffered">JavaScript with Buffering</a></b>&nbsp; Improving
+the JavaScript slide show under Netscape by buffering. By buffering the
+audio (and pictures), presentations play just as well as if they were on
+your hard drive. The buffering only works on Netscape, but that's the only
+place it is really needed. The good part is that there is no need to have
+Netscape users install any plugins. When IE is used, it uses it's native
+MPlayer2 streaming audio player, so the lack of buffering under IE isn't
+a real problem.&nbsp;
+<p><b><a href="http://www.calweb.com/~webspace/slideshow/events">JavaScript with Events</a></b>&nbsp; About as far
+as I can go. Again using Microsoft's MediaPlayer, but this time I sink
+the MediaPlayer "PlayStateChange" event to tell when the audio clip has
+finished playing. As a result, you no longer have to specify slide advance
+timings.
+<p>Being built: Java Audio, Real Player, Microsoft ASF, SMIL.
+<br>&nbsp;</td>
+</tr>
+</table>
+
+<center>
+<p>Bad links? Questions? <a href="mail.htm">Send me mail</a>.</center>
+
+</body>
+</html>

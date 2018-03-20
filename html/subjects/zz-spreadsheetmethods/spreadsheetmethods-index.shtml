@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#include virtual="/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<div id="content">
+<h1>Spreadsheet Methods</h1>
+<h2>Tutorials</h2>
+<h3>You will be given a series of tasks in a manner similar to the Word Processing assignments of the first term. However, where the first term WP tasks built into a portfolio for assessment, these spreadsheet tasks are given to build up your skills. Each completed task should be presented for evaluation/correction in order to receive the next task in the series.</h3>
+<h3>Each task adds new skills until you begin to be ready to face the first element of assessment, the project.</h3>
+<h3>The second element of assessment, the 2 hour practical exam has several samples available below. In particular the later tasks are required for succesful completion of the exam. To this end, hold on to the tasks as well as the corrected solutions for last minute preparations.</h3>
+<h3>There are <a href="10generalssmtips.shtml">10 Common Exam Tips</a> available.</h3>
+<h3>The project is a common project for all with details below.</h3>
+<h2>Assessment 2009/2010</h2>
+<ul>
+<li>Project (50%)</li>
+<ul>
+<li><a href="Spreadsheet Methods Project Guidlines 2010.pdf">Conversion of manual recording system to automatic calculating system</a>
+</ul>
+<li>Exam (50%)</li>
+</ul>
+<h2>Assessment 2008/9</h2>
+<ul>
+<li>Project (50%)</li>
+  <ul>
+    <li>Survey of Consumer Service Usage Patterns (<b>N</b>=20)</li>
+    <li><a href="00-GeneralConsumerSurvey2009.pdf">Draft of general survey options &amp; guidelines.</a> (PDF format, version 27)</li>
+    <li><b>Allocated option 1: Mobile Phone Usage</b></li>
+    <li>For the purposes of this assignment it will be assumed that these are the mobile phone companies in Ireland:</li>
+    <li>
+	  <table><tr><td>3<td>(083)</tr>
+		 <tr><td>Meteor<td>(085)</tr>
+		 <tr><td>O2<td>(086)</tr>
+		 <tr><td>Vodafone<td>(087)</tr>
+		 <tr><td>Tesco<td>(089)</tr></table></li>
+    <li>These are the survey questions:</li>
+    <ol>
+      <li>Which service provider are they with</li>
+      <li>Are they prepaid or postpaid customers</li>
+      <li>How satisfied (0-5) are they with their phone company (0 is least satisfied)</li>
+      <li>Do they have a prefix from another company (ie have they moved in the past)</li>
+      <li>If 'yes' above did they move because of value for money issues, better service(s) or both</li>
+      <li>Does the surveyed person use the company website</li>
+      <li>How satisfied (0-5) are they with the website (0 is least satisfied)</li>
+      <li>Does the person have more than one phone</li>
+    </ol>
+    <li><b>Allocated option 2: Broadband Availability &amp; Usage</b></li>
+    <li>For the purposes of this assignment it will be assumed that these are the broadband service providers in Clonmel:</li>
+    <li>BT Ireland
+    <br />Chorus/NTL/UPC
+    <br />Digiweb
+    <br />eircom
+    <br />imagine/Irish Broadband
+    <br />perlico
+    <br />Other (includes all mobile broadband services)</li>
+    <li>These are the survey questions:</li>
+    <ol>
+      <li>Is broadband (not dialup) available in their area (survey terminates if 'no')</li>
+      <li>Do they have broadband in their home (not dialup) (survey terminates if 'no')</li>
+      <li>What service provider (ISP) are they with</li>
+      <li>How satisfied (0-5) are they with their service provider (0 is least satisfied)</li>
+      <li>Have they moved broadband provider (ISP) in the past</li>
+      <li>If 'yes' above did they move because of value for money issues, service issues or both</li>
+      <li>Who pays for the broadband service, themselves or another</li>
+      <li>Do they use a wireless connection (WiFi) in the home</li>
+    </ol>
+  </ul>
+<li>Exam (50%)</li>
+  <ul>
+  <li><a href="XAM2009.pdf">Practical Exam 2009</a></li>
+  <li><a href="XAM2009-Answers1.pdf">SKILLS2+Chart</a></li>
+  <li><a href="XAM2009-Answers2.pdf">SKILLS2+Chart - Formulas</a></li>  
+  </ul>
+</ul>
+<h2>Assessment 2007/8</h2>
+<ul>
+<li>Project (50%)</li>
+  <ul>
+  <li>Read the instructions below on <i>electronic</i> as well as paper submission.</li>
+  <ul>
+  <li>Apart from an OpenOffice Spreadsheet file, you should email <i>one</i> other document containing all the other elements of your paper submission - even the cover sheet. All relevant elements should be linked or embedded in this one document.</li>
+  </ul>
+  <li><a href="00-MobilePhoneSurvey2008.pdf"><b>Mobile Phone Survey</b></a> (PDF format)</li>
+  <li><a href="00-MobilePhoneSurvey2008.shtml">Mobile Phone Survey</a> (HTML format)</li>
+  <li><a href="00-Spreadsheet Methods Project Requirements-FETAC 2008.pdf"><i>General project guidelines</i></a> (PDF format)</li>
+  <li><b>N</b>=25</li>
+  </ul>
+<li>Exam (50%)</li>
+  <ul>
+    <li><a href="XAM2008.pdf">Practical Exam 2008</a></li>
+    <li><a href="2008/XAM2008-Marking.pdf">Marking Scheme</a></li>
+    <li>Solutions:</li>
+      <ul>
+         <li>OpenOffice.org format: <a href="2008/OO-BROWNS1.ods">First File</a> - <a href="2008/OO-BROWNS2.ods">Second File</a></li>
+         <li>Excel format: <a href="2008/XL-BROWNS1.xls">First File</a> - <a href="2008/XL-BROWNS2.xls">Second File</a></li>
+      </ul>
+  </ul>
+</ul>
+<h2>General Assessment</h2>
+<ol>
+	<li>Project - 50%</li>
+		<ul>
+		<li><a href="ssm-project.shtml">General summary of FETAC requirements</a>
+		</ul>
+	<li>Practical examination - 50%</li>
+		<ul>
+		<li>Previous papers are listed below</li>
+		</ul>
+</ol>
+<h2>For past papers click below:</h2>
+<ul>
+<li>The 2008 paper, can be found <a href="XAM2008.pdf">here</a>. (2 sat: 2 Merits awarded)
+<li>The 2006 paper, can be found <a href="XAM2006.pdf">here</a>.
+<li>The 2005 paper, can be found <a href="XAM2005.pdf">here</a>.
+<li>The 2004 paper, can be found <a href="XAM2004.pdf">here</a>. The solutions and marking scheme are <a href="2004/00-2004-solution.shtml">here</a>.
+<li>The 2003 paper, can be found <a href="XAM2003.pdf">here</a>. The solutions and marking scheme are <a href="2003/00-2003-solution.shtml">here</a>.
+<li>The 2002 paper, can be found <a href="XAM2002.pdf">here</a>.
+<li>The 2001 paper, can be found <a href="../pastpapers/ss/2001/ss-2001.pdf"> here</a>. The solutions are <a href="../pastpapers/ss/2001/ss-solutions-2001.pdf">here</a>.</li>
+<li>The 2000 paper, can be found <a href="../pastpapers/ss/2000/ss-2000.pdf"> here</a></li>
+<li>The 1997 paper, can be found <a href="../pastpapers/ss/1997/ss-1997.pdf"> here</a> The incomplete solutions are <a href="1997/00-1997-solution.shtml">here</a>.</li>
+<li>The 1996 paper, can be found <a href="../pastpapers/ss/1996/ss-1996.pdf"> here</a></li> 
+<li>The 1994 paper, can be found <a href="../pastpapers/ss/1994/ss-1994.pdf"> here</a></li> 
+</ul>
+
+<h2>Related</h2>
+<ul>
+<li><a href="http://www.fetac.ie/modules/b20028.pdf">Module Descriptor</a>.</li>
+</ul>
+</div>
+</body>
+</html>

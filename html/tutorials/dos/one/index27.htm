@@ -1,0 +1,92 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="Description" CONTENT="Replace multiple words in multiple documents of multiple types.">
+   <TITLE>Word Global Search and Replace</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000" BACKGROUND="tile.gif">
+&nbsp;
+<TABLE CELLSPACING=0 WIDTH="100%" >
+<TR>
+<TD ALIGN=LEFT VALIGN=BOTTOM>
+<CENTER><A HREF="~webspace.html"><IMG SRC="smallduck.gif" ALT="Eric's Webspace" HSPACE=10 BORDER=0 HEIGHT=71 WIDTH=150></A></CENTER>
+</TD>
+
+<TD ALIGN=LEFT VALIGN=BOTTOM>
+<CENTER><B><I><FONT SIZE=+3>Word Global Search &amp; Replace</FONT></I></B></CENTER>
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE CELLSPACING=0 CELLPADDING=0 WIDTH="100%" BGCOLOR="#666699" >
+<TR>
+<TD WIDTH="100%">
+<DIV ALIGN=right><A HREF="http://www.calweb.com/~webspace/word/gsr.doc"><IMG SRC="download.gif" ALT="Download Now!" BORDER=0 HEIGHT=19 WIDTH=130></A><A HREF="http://www.calweb.com/~webspace/word/gsr.doc"><IMG SRC="wordico1.gif" BORDER=0 HEIGHT=32 WIDTH=33></A></DIV>
+</TD>
+</TR>
+</TABLE>
+&nbsp;
+<TABLE>
+<TR>
+<TD><IMG SRC="100.gif" HEIGHT=1 WIDTH=100></TD>
+
+<TD>This is a Word 97 document with embedded macros which allow you to
+automatically search through multiple documents in multiple directories,
+and replace multiple words. For example, you could replace "Smart SMR of
+California" with "Nextel Communications", and simultaneously replace "SMART"
+with "Nextel" -- and do it on hundreds of files scattered across your network.&nbsp;
+
+<P>Why did I write it? Because the California Nextel legal entity did go
+through a name change! We needed to change thousands of documents and templates.
+They were estimating it would take six months to complete. And they were
+actually doing it manually. I spent one week writing and testing the program,
+then gave it to our property manager who let it loose on the network. After
+two hours of watching the screen fly, our office finished the "six month"
+job.
+
+<P>You'll have to fill out a list of your file masks and word replacements,
+for example:&nbsp;
+<BR><B><TT>E:\data\Projects\Leases\*.doc&nbsp;</TT></B>&nbsp;
+<BR><B><TT>C:\Documents\*.doc&nbsp;</TT></B>&nbsp;
+<BR><B><TT>SMART SMR=NEXTEL COMMUNICATIONS</TT></B>&nbsp;
+<BR><B><TT>Smart SMR=Nextel Communications</TT></B>&nbsp;
+<BR><B><TT>SMART=NEXTEL</TT></B>&nbsp;
+<BR><B><TT>Smart=Nextel</TT></B>&nbsp;
+
+<P>Frankly, there are other programs written that can do this, but I couldn't
+get them to work. By using Word 97, I am able to open almost anything.
+Obviously, you'll need to have Word configured so it can open and save
+whatever it is you'll be modifying.
+
+<P>I've noticed that the "GSR.DOC" file doesn't like to be run from the
+network. It throws a path/file access error at startup. So put the darn
+thing on your local (C:) drive and run it from there!
+
+<P>If files are read-protected by a password, you'll have to enter the
+password when the macro stops and asks you for it. If you hit a file that
+is write-protected, The macro will skip it. Any file that the macro cannot
+do an open, replace, and save operation on will be logged (And the list
+is displayed automatically for you when the macro finishes). Likewise,
+a list is generated and displayed showing every change that was made.
+
+<P>Because the file linked in the "Download Now" is the actual Word document,
+you may have to right-click to convince your browser to
+download (versus display) the file.
+
+<P>A nice fellow asked me about changing text in headers and footers, so 
+I added that capability as well <A HREF="http://www.calweb.com/~webspace/word/gsr2.doc">here</a>. Unfortunately, 
+I haven't tested this modification on hundreds of documents like my original 
+version. Let me know if it works for you.
+<BR>&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<BR>&nbsp;
+<CENTER></CENTER>
+
+<CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+
+</BODY>
+</HTML>

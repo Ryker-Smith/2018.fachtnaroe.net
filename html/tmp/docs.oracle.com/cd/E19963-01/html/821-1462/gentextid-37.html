@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en-US">
+<head>
+<!-- GenHTML revision 17044-->
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>Preface - man pages section 1M: System Administration Commands</title>
+<meta http-equiv="content-language" content="en-US">
+<meta name="robots" content="index,follow">
+<meta name="language" content="en">
+<meta name="collection" content="reference">
+<meta name="keywords" content="">
+<meta name="description" content="This section describes the Solaris (TM) system administration and  maintenance utilities and is for system and network administrators.">
+<meta name="date" content="2010-11-01">
+<link rel="stylesheet" type="text/css" title="screen" href="css/default.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/pagelayout.css">
+<link rel="alternate stylesheet" type="text/css" title="print" href="css/print.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/advanced.css">
+<link rel="stylesheet" type="text/css" title="screen" href="css/search.css">
+
+<script type="text/javascript" src="css/util.js"></script>
+
+<script type="text/javascript">
+
+function SubmitSearch() {
+	var form = document.getElementById("SearchForm");
+	var searchterm = document.getElementById("searchterm");
+	var q = document.getElementById("q");
+	var scope;
+	var library;
+	var path;
+
+	for (var i=0; i < form.scope.length; i++) {
+		if (form.scope[i].checked) {
+			scope = form.scope[i].value;
+		}
+	}
+
+	if (searchterm.value.length == 0) {
+		alert("search field is empty");
+		return false;
+	}
+	
+	path = "docs/cd/E19963_01/html/821-1462";
+	if (scope == "doc") {
+		q.value = searchterm.value + " site:download.oracle.com url:/" + path;
+	}
+	else {
+		library = path.match(/docs.cd.[A-Z][0-9,_]*/);    // This is a regular expressions -- . is used in place of / for path separators
+		if (library == null) {
+			library = path;
+		}
+		q.value = searchterm.value + " site:download.oracle.com url:/" + library;
+	}
+
+	form.action = "http://search.oracle.com/search/search";
+	form.method = "get";
+	form.target = "_top";
+	form.submit();
+}
+</script>
+
+<noscript>
+	JavaScript is required to for searching.
+</noscript>
+
+<meta http-equiv="refresh" content="0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'">
+</head>
+
+
+<body>
+
+<div class="MastheadPane">
+	<table class="MastheadTable" width="100%">
+		<tr class="skipnavigation">
+			<td>
+				<a href="#content">Skip Navigation Links</a>
+			</td>
+		</tr>
+
+		<tr class="closeprintview">
+			<td align="right">
+				<a href="#" onclick="setActiveStyleSheet('screen')">Exit Print View</a>
+			</td>
+		</tr>
+
+		
+		<tr class="titlebar">
+			<td class="smallLogo"><a href="http://www.oracle.com"><img alt="Link to oracle.com" src="graphics/smallOracleLogo.gif"></a>
+			</td>
+
+<td class="contentpage-doctitle"><a href="toc.html">man pages section 1M: System Administration Commands </a><span class="shortContext">&nbsp;&nbsp;&nbsp;&nbsp;Oracle Solaris 11 Express 11/10</span>			</td>
+		</tr>
+	</table>
+</div>
+
+
+<div class="ButtonPane">
+           <div class="ButtonArea1">
+               <div class="Button">
+                  <a href="http://www.oracle.com/technology/documentation/index.html" >
+                      <img border="0" src="graphics/btn_otn.png" alt="Oracle Technology Network" title="Oracle Technology Network">
+                  </a>
+               </div>
+
+               <div class="Button">
+                  <a href="../../index.html
+" >
+                      <img border="0" src="graphics/btn_library.png" alt="Library" title="Library">
+                  </a>
+               </div>
+           </div>
+           
+           <div class="ButtonArea2">
+
+               <div class="Button">
+		  
+                  <a href="../../pdf/821-1462.pdf"  target="table4" onclick="openPopup('','table4',550,550,'yes',0,0,0,0,0,0); return true;">
+                      <img border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+                  </a>
+		  <!--
+		  <img class="grayout" border="0" src="graphics/btn_pdf.png" alt="PDF" title="PDF">
+		  -->
+               </div>
+               
+               <div class="Button">
+                  <a href="#" onclick="setActiveStyleSheet('print')">
+                      <img border="0" src="graphics/btn_print-view.png" alt="Print View" title="Print View">
+                  </a>
+               </div>
+               
+               <!-- Feedback button -->
+                              <div class="Button">
+                  <a href="mailto:solaris-doc-feedback_ww@oracle.com?subject=Customer Feedback for REFMAN1M (821-1462-06)&body=Page: gentextid-37.html%0A%0A_________________________________%0A%0A%0A(Add comment here)">
+                      <img border="0" src="graphics/btn_feedback.png" alt="Feedback" title="Feedback">
+                  </a>
+               </div>
+
+
+           </div>
+
+
+               <div style="WIDTH: 173px; FLOAT: right; clear: right; margin-right: 30px">
+                  <div class="search_position" id="img5">
+                     <form id="SearchForm" name="SearchForm" onsubmit="SubmitSearch()">
+                         <input name="q" id="q" value="" type="hidden">
+
+                         <div id="serch_txtbox">
+                            <div class="search_text">
+                               <a  onclick="mvqMOv('panelDiv_search','img5');" href="#"><img alt="search filter icon" src="graphics/search-filter-btn.png" /></a>
+                            </div>
+
+                            <div class="textbg">
+                               <input id="searchterm" name="searchterm" class="textcnt" value="Search"
+                                      onClick="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}"
+                                      onKeyDown="javascript:isUserInput=true;" 
+                                      onMouseDown="javascript:if(!isUserInput) {document.SearchForm.searchterm.value='';}" />
+                               <input type="hidden" name="keyword" value="" id="keyword"/>
+                            </div>
+
+                            <div class="search_button">
+                               <a onClick="SubmitSearch()"><img alt="search icon" src="graphics/search-icon.gif" /></a>
+                            </div>
+                         </div><!--start sugession -->
+
+                         <div id="panelDiv_search" onMouseOver="mvqMOv('panelDiv_search','img5');" onMouseOut="mvqMOu('panelDiv_search')";>
+                            <div class="TopleftCurv"></div>
+                               <div class="centerTop"></div>
+                                  <div class="ToprightCurv"></div>
+                                     <div class="contentBg">&#160;<strong>Search Scope:</strong>
+                                     <div style="padding-bottom:5px; *padding-bottom:1px;"></div>
+                                     <ul>
+                                        <li><input value="doc" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')"/>&#160;&#160;This Document</li>
+                                        <li><input value="library" type="radio" name="scope" onclick="mvqMOu('panelDiv_search')" />&#160;&#160;Entire Library</li>
+                                     </ul>
+                                  </div>
+                               <div class="BottomleftCurv"></div>
+                            <div class="centerBottom"></div>
+                            <div class="BottomrightCurv"></div>
+                          </div>
+                     </form>
+                  </div>
+               </div>
+               
+
+</div>
+
+
+<div class="TOCPane">
+	<p class="toc level1"><a href="docinfo.html">Document Information</a></p>
+<div id="scrolltoc" class="onpage">
+<p class="toc level1 tocsp"><a href="">Preface</a></p>
+</div>
+<p class="toc level1 tocsp"><a href="gentextid-194.html">Introduction</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-310.html">System Administration Commands - Part 1</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-123700.html">System Administration Commands - Part 2</a></p>
+<p class="toc level1 tocsp"><a href="gentextid-235692.html">System Administration Commands - Part 3</a></p>
+
+</div>
+
+<a name="REFMAN1Mcontent"></a><a name="content"></a>
+<div class="ContentPane">
+	<a name="REFMAN1Mgentextid-37"></a><a name="gentextid-37"></a><h2>Preface</h2>
+
+<p>Both novice users and those familar with the SunOS operating system can use
+online man pages to obtain information about the system and its features. A
+man page is intended to answer concisely the question &#8220;What does it do?&#8221;
+The man pages in general comprise a reference manual. They are not intended
+to be a tutorial. </p>
+
+
+
+<a name="REFMAN1Mgentextid-41"></a><a name="gentextid-41"></a><h3>Overview</h3>
+
+
+<p>The following contains a brief description of each man page section  and
+the information it references: </p>
+<ul><li>
+
+<p>Section 1 describes, in alphabetical order, commands available with the operating system. </p></li>
+<li>
+
+<p>Section 1M describes, in alphabetical order, commands that are used chiefly for system maintenance and administration purposes. </p></li>
+<li>
+
+<p>Section 2 describes all of the system calls. Most of these calls have one or more error returns. An error condition is indicated by an otherwise impossible returned value.</p></li>
+<li>
+
+<p>Section 3 describes functions found in various libraries, other than those functions that directly invoke UNIX system primitives, which are described in Section 2. </p></li>
+<li>
+
+<p>Section 4 outlines the formats of various files. The C structure declarations for the file formats are given where applicable. </p></li>
+<li>
+
+<p>Section 5 contains miscellaneous documentation such as character-set tables. </p></li>
+<li>
+
+<p>Section 7 describes various special files that refer to specific hardware peripherals and device drivers. STREAMS software drivers, modules and the STREAMS-generic set of system calls are also described.</p></li>
+<li>
+
+<p>Section 9E describes the DDI (Device Driver Interface)/DKI (Driver/Kernel Interface), DDI-only, and DKI-only entry-point routines a developer can include in a device driver. </p></li>
+<li>
+
+<p>Section 9F describes the kernel functions available for use by device drivers. </p></li>
+<li>
+
+<p>Section 9S describes the data structures used by drivers to share information between the driver and the kernel. </p></li></ul>
+
+
+<p>Below is a generic format for man pages. The man pages of
+each manual section generally follow this order, but include only needed headings. For example,
+if there are no bugs to report, there is no BUGS section.
+See the <tt>intro</tt> pages for more information and detail about each section, and
+<a href="../821-1461/man-1.html#REFMAN1man-1"><tt>man</tt>(1)</a> for more information about man pages in general. </p><dl><dt>NAME</dt>
+<dd>This section gives the names of the commands or functions documented, followed by a brief description of what they do. </dd>
+<dt>SYNOPSIS</dt>
+<dd><p>This section shows the syntax of commands or functions. When a command or file does not exist in the standard path, its full path name is shown. Options and arguments are alphabetized, with single letter arguments first, and options with arguments next, unless a different argument order is required. </p><p>The following special characters are used in this section: </p><dl><dt>[&#32; ]</dt>
+<dd><p>Brackets. The option or argument enclosed in these brackets is optional. If the brackets are omitted, the argument must be specified.</p></dd>
+<dt>. &#32;.&#32; .</dt>
+<dd><p>Ellipses. Several values can be provided for the previous argument, or the previous argument can be specified multiple times, for example,  "<tt>filename</tt> . . ." . </p></dd>
+<dt>|</dt>
+<dd><p> Separator. Only one of the arguments separated by this character can be specified at a time. </p></dd>
+<dt>{&#32; }</dt>
+<dd><p>Braces. The options and/or arguments enclosed within braces are interdependent, such that everything enclosed must be treated as a unit.</p></dd>
+</dl>
+</dd>
+<dt>PROTOCOL</dt>
+<dd><p>This section occurs only in subsection 3R to indicate the protocol description file.</p></dd>
+<dt>DESCRIPTION</dt>
+<dd><p>This section defines the functionality and behavior of the service. Thus it describes concisely what the command does. It does not discuss OPTIONS or cite EXAMPLES. Interactive commands, subcommands, requests, macros, and functions are described under USAGE.</p></dd>
+<dt>IOCTL</dt>
+<dd><p>This section appears on pages in Section 7 only. Only the device class that supplies appropriate parameters to the <a href="../821-1463/ioctl-2.html#REFMAN2ioctl-2"><tt>ioctl</tt>(2)</a> system call is called <tt>ioctl</tt> and generates its own heading. <tt>ioctl</tt> calls for a specific device are listed alphabetically (on the man page for that specific device). <tt>ioctl</tt> calls are used for a particular class of devices all of which have an <tt>io</tt> ending, such as <a href="../821-1475/mtio-7i.html#REFMAN7mtio-7i"><tt>mtio</tt>(7I)</a>. </p></dd>
+<dt>OPTIONS</dt>
+<dd><p>This secton lists the command options with a concise summary of what each option does. The options are listed literally and in the order they appear in the SYNOPSIS section. Possible arguments to options are discussed under the option, and where appropriate, default values are supplied. </p></dd>
+<dt>OPERANDS</dt>
+<dd><p>This section lists the command operands and describes how they affect the actions of the command.</p></dd>
+<dt>OUTPUT</dt>
+<dd><p>This section describes the output &#8211; standard output, standard error, or output files &#8211; generated by the command. </p></dd>
+<dt>RETURN VALUES</dt>
+<dd><p>If the man page documents functions that return values, this section lists these values and describes the conditions under which they are returned. If a function can return only constant values, such as 0 or &#8211;1, these values are listed in tagged paragraphs. Otherwise, a single paragraph describes the return values of each function. Functions declared void do not return values, so they are not discussed in RETURN VALUES. </p></dd>
+<dt>ERRORS</dt>
+<dd><p>On failure, most functions place an error code in the global variable <tt>errno</tt> indicating why they failed. This section lists alphabetically all error codes a function can generate and describes the conditions that cause each error. When more than one condition can cause the same error, each condition is described in a separate paragraph under the error code.</p></dd>
+<dt>USAGE</dt>
+<dd><p>This section lists special rules, features, and commands that require in-depth explanations. The subsections listed here are used to explain built-in functionality: </p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="dkgrey1" width="100%">
+<tr><td><table border="0" cellpadding="0" cellspacing="1" width="100%" class="vatop">
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Commands</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Modifiers</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Variables</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Expressions</div></td>
+</tr>
+
+<tr class="yellow2">
+<td align="left" valign="top"><div class="pad5x10">Input Grammar</div></td>
+</tr>
+</table>
+</td></tr></table>
+</dd>
+<dt>EXAMPLES</dt>
+<dd><p>This section provides examples of usage or of how to use a command or function. Wherever possible a complete example including command-line entry and machine response is shown. Whenever an example is given, the prompt is shown as <tt>example%</tt>, or if the user must be superuser, <tt>example#</tt>. Examples are followed by explanations, variable substitution rules, or returned values. Most examples illustrate concepts from the SYNOPSIS, DESCRIPTION, OPTIONS, and USAGE sections. </p></dd>
+<dt>ENVIRONMENT VARIABLES</dt>
+<dd><p>This section lists any environment variables that the command or function affects, followed by a brief description of the effect. </p></dd>
+<dt>EXIT STATUS</dt>
+<dd><p>This section lists the values the command returns to the calling program or shell and the conditions that cause these values to be returned. Usually, zero is returned for successful completion, and values other than zero for various error conditions. </p></dd>
+<dt>FILES</dt>
+<dd><p>This section lists all file names referred to by the man page, files of interest, and files created or required by commands. Each is followed by a descriptive summary or explanation. </p></dd>
+<dt>ATTRIBUTES</dt>
+<dd><p>This section lists characteristics of commands, utilities, and device drivers by defining the attribute type and its corresponding value. See <a href="../821-1474/attributes-5.html#REFMAN5attributes-5"><tt>attributes</tt>(5)</a> for more information.</p></dd>
+<dt>SEE ALSO</dt>
+<dd><p>This section lists references to other man pages, in-house documentation, and outside publications. </p></dd>
+<dt>DIAGNOSTICS</dt>
+<dd><p>This section lists diagnostic messages with a brief explanation of the condition causing the error. </p></dd>
+<dt>WARNINGS</dt>
+<dd><p>This section lists warnings about special conditions which could seriously affect your working conditions. This is not a list of diagnostics.</p></dd>
+<dt>NOTES</dt>
+<dd><p>This section lists additional information that does not belong anywhere else on the page. It takes the form of an aside to the user, covering points of special interest. Critical information is never covered here. </p></dd>
+<dt>BUGS</dt>
+<dd><p>This section describes known bugs and, wherever possible, suggests workarounds. </p></dd>
+</dl>
+
+</div>
+
+<div class="BottomPageControlPane">
+	<table class="pagecontrol">
+		<tr>
+			<td>
+				<div class="pagefooterlinks">
+					Copyright &#169; 2010, Oracle and/or its affiliates. All rights reserved. <a href="docinfo.html">Legal Notices</a>
+				</div>
+			</td>
+			<td class="pagenavlinks">
+				<a href="docinfo.html"><img src="graphics/leftButton.png" border="0" alt="Previous" title="Previous"></a>
+				<a href="gentextid-194.html"><img src="graphics/rightButton.png" border="0" alt="Next" title="Next"></a>
+			</td>
+		</tr>
+	</table>
+	
+</div>
+
+
+
+
+
+
+</body>
+</html>
+

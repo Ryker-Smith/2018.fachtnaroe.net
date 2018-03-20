@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Working with Java ME Encryption</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="Learn about the the encryption functionality available to the Java ME Embedded programmer with the Oracle Java ME Embedded 8.3 release." />
+<meta name="dcterms.created" content="2016-07-12T02:30:24Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java ME Embedded Developer&rsquo;s Guide" />
+<meta name="dcterms.identifier" content="E73093-02" />
+<meta name="dcterms.isVersionOf" content="MEEDG" />
+<link rel="Start" href="../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Glossary" href="glossary.htm" title="Glossary" type="text/html" />
+<link rel="Prev" href="serial-peripheral-interface-spi-bus.htm" title="Previous" type="text/html" />
+<link rel="Next" href="java-me-optimization-techniques.htm" title="Next" type="text/html" />
+<link rel="alternate" href="MEEDG.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="MEEDG.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="MEEDG.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../nav/css/html5.css">
+<link rel="stylesheet" href="../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-4CED5ACA-4E2F-4FA3-B936-6DB009AB5FED"></a> <span id="PAGE" style="display:none;">11/18</span> <!-- End Header --><a id="MEEDG390"></a>
+<h1 id="MEEDG-GUID-4CED5ACA-4E2F-4FA3-B936-6DB009AB5FED" class="sect1"><span class="enumeration_chapter">8</span> Working with Java ME Encryption</h1>
+<div>
+<p>Learn about the the encryption functionality available to the Java ME Embedded programmer with the Oracle Java ME Embedded <span>8.3</span> release.</p>
+<p>Topics:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="working-java-me-encryption.htm#GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738">Connecting to an SSL Server</a></p>
+</li>
+<li>
+<p><a href="working-java-me-encryption.htm#GUID-DCC40E35-1A5F-4C8B-89BB-58039C549589">Authenticating an SSL Server</a></p>
+</li>
+<li>
+<p><a href="working-java-me-encryption.htm#GUID-00328ACE-BDDF-48D3-A17D-2816F599F6F7">Accessing the Keystore</a></p>
+</li>
+<li>
+<p><a href="working-java-me-encryption.htm#GUID-E72386B1-EE08-4414-851B-DA45EB3991FD">Configuring the Board as a Secure Server</a></p>
+</li>
+</ul>
+</div>
+<a id="MEEDG392"></a><a id="MEEDG394"></a><a id="MEEDG395"></a><a id="MEEDG391"></a>
+<div class="props_rev_3"><a id="GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738"></a>
+<h2 id="MEEDG-GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738" class="sect2">Connecting to an SSL Server</h2>
+<div>
+<div class="section">
+<p>Creating a connection to an SSL server only requires the programmer to include an appropriate <code>ConnectionOption</code> object in the call to <code>Connector.open()</code>. This example requires the following hardware:</p>
+<div class="tblformal" id="GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738__GUID-3F47785F-974C-4B0A-90D2-0A6057B9B773">
+<hr />
+<p class="titleintable">Table 8-1 Hardware for Example 1-1</p>
+<table class="cellalignment8" title="Hardware for Example 1-1" summary="Hardware for Example 1-1">
+<thead align="left">
+<tr>
+<th class="cellalignment11" id="d40608e80">Hardware</th>
+<th class="cellalignment12" id="d40608e83">Where to Obtain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment11" id="d40608e88" headers="d40608e80">
+<p>Raspberry Pi 512 MB Rev B, B+, or Raspberry Pi 2</p>
+</td>
+<td class="cellalignment12" headers="d40608e88 d40608e83">
+<p>Various third-party sellers</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<p>In this example, we use the Oracle Java ME Embedded runtime to connect to a server on the network that is running TLSv1.1 or higher on port 443. Note that this example requires the user to configure a web server that will accept an incoming connection on that port and uses the proper protocol and is properly signed by a valid certificate authority. After this is setup, the value of the <code>sTestServerAddr</code> variable should be changed accordingly. The following example shows the source code.</p>
+<pre dir="ltr">
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import javax.microedition.io.ConnectionOption;
+import javax.microedition.io.Connector;
+import javax.microedition.io.SecureConnection;
+import javax.microedition.midlet.MIDlet;
+
+
+public class SSLConnect extends MIDlet {
+
+    @Override
+    public void startApp() {
+
+        SecureConnection sc;
+        ConnectionOption&lt;String&gt; protocol;
+        InputStream is;
+        OutputStream os;
+        DataInputStream dis;
+        DataOutputStream dos;
+        
+        String sTestServerAddr = "example.com:443";
+        
+        try {
+            
+            protocol = new ConnectionOption&lt;&gt;("Protocol", "TLSv1.1");
+            sc = (SecureConnection) Connector.open("ssl://" +
+                sTestServerAddr, protocol);
+         
+            System.out.println("Connection successful to:");
+            System.out.println("Address: " + sc.getAddress());
+            System.out.println("Port: " + sc.getPort());
+            System.out.println("Cipher Suite: " +
+                sc.getSecurityInfo().getCipherSuite());
+            System.out.println("Protocol Name: " +
+                sc.getSecurityInfo().getProtocolName());
+            System.out.println("Protocol Version: " +
+                sc.getSecurityInfo().getProtocolVersion());
+ 
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    @Override
+    public void pauseApp() {
+    }
+
+    @Override
+    public void destroyApp(boolean unconditional) {
+    }
+
+}
+</pre>
+<p>The following permissions must be added to the Application Descriptor of the IMlet so that it will execute without any security exceptions from the Oracle Java ME Embedded runtime.</p>
+<div class="tblformal" id="GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738__GUID-B127571F-0147-42C8-9143-DC9D5D77F115">
+<hr />
+<p class="titleintable">Table 8-2 Permissions for Example 4-1</p>
+<table class="cellalignment8" title="Permissions for Example 4-1" summary="Permissions for Example 1-1">
+<thead align="left">
+<tr>
+<th class="cellalignment28" id="d40608e113">Permission</th>
+<th class="cellalignment29" id="d40608e116">Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment28" id="d40608e121" headers="d40608e113">
+<p><code>javax.microedition.io.SSLProtocolPermission</code></p>
+</td>
+<td class="cellalignment29" headers="d40608e121 d40608e116">
+<p><code>ssl://*:*</code></p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment28" id="d40608e130" headers="d40608e113">
+<p><code>javax.microedition.io.SocketProtocolPermission</code></p>
+</td>
+<td class="cellalignment29" headers="d40608e130 d40608e116">
+<p><code>socket://*:*</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<p>Note that if you're using an IDE such as NetBeans as the development environment, you will need to access the project properties of the project and set API permissions under the application descriptor, as shown in <a href="working-java-me-encryption.htm#GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738__BGBFJFHF">Figure 8-1</a>.</p>
+<div class="figure" id="GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738__BGBFJFHF">
+<p class="titleinfigure">Figure 8-1 API Permissions in the Project Properties Dialog in NetBeans</p>
+<img width="814" height="586" src="img/sslpermissions.jpg" alt="Description of Figure 8-1 follows" title="Description of Figure 8-1 follows" /><br />
+<a href="img_text/sslpermissions.htm">Description of "Figure 8-1 API Permissions in the Project Properties Dialog in NetBeans"</a></div>
+<!-- class="figure" -->
+<div class="infoboxnotealso" id="GUID-C067D687-3F0E-4635-98E4-8CB9C9CCF738__GUID-3CC60129-4260-4CE8-A8C5-F3A0BB1F2C09">
+<p class="notep1">Tip:</p>
+<p>If your server does not currently use a certificate from a signed certificate authority (CA), you can import a server certificate to the Java ME Embedded device. Locate the MEKeytool executable in the bin directory of the Oracle Java ME Embedded SDK distribution, and enter the following command using a Windows command prompt.</p>
+<pre dir="ltr">
+C:\SDK\bin&gt; mekeytool.exe -import -Xdevice:EmbeddedExternalDevice1 -keystore myCert.crt
+</pre>
+<p>This command will connect to the keystore on the embedded device currently recognized by the Device Manager as "EmbeddedExternalDevice1" and install the certificate with the filename <code>myCert.crt</code>. Note that this certificate must be identical to the one residing on the server that is authenticating SSL/TLS connections, or the Java embedded runtime will throw a <code>javax.microedition.pki.CertificateException</code> when attempting a secure connection. See Appendix D for more information on using the MEKeyTool utility.</p>
+</div>
+<p>After running the application, you should see output that identifies a successful connection to the server at the address and port specified. The program will then output the address and port, as well as the security connection parameters that were used to make the connection.</p>
+<pre dir="ltr">
+Connection successful to:Address: 192.168.1.125Port: 443Cipher Suite: TLS_RSA_WITH_AES_256_CBC_SHAProtocol Name: TLSProtocol Version: 3.2
+</pre></div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG398"></a><a id="MEEDG396"></a>
+<div class="props_rev_3"><a id="GUID-DCC40E35-1A5F-4C8B-89BB-58039C549589"></a>
+<h2 id="MEEDG-GUID-DCC40E35-1A5F-4C8B-89BB-58039C549589" class="sect2">Authenticating an SSL Server</h2>
+<div>
+<div class="section">
+<p>In this example, we expand on the <code>ConnectionOption</code> objects to provide an option to authenticate an HTTPS server. As with the previous example, the value of the <code>serverAddr</code> variable should be modified to point to a properly configured server. The following example shows the source code.</p>
+<div class="infobox-note" id="GUID-DCC40E35-1A5F-4C8B-89BB-58039C549589__GUID-125E44B6-43E8-4093-95F8-7F041ACDDC7A">
+<p class="notep1">Note:</p>
+<p>Oracle Java ME Embedded 8.2 has removed support for SSLv3 due to a widely-publicized security vulnerability. However, the source code example is applicable to other forms of transport-layer security included with Oracle Java ME Embedded <span>8.3</span>.</p>
+</div>
+<pre dir="ltr">
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.microedition.io.ConnectionOption;
+import javax.microedition.io.Connector;
+import javax.microedition.io.HttpConnection;
+import javax.microedition.io.HttpsConnection;
+import javax.microedition.midlet.MIDlet;
+import javax.microedition.rms.RecordStore;
+ 
+/**
+public class AuthenticateServer extends MIDlet {
+ 
+    public static final int PASSED = 1;
+    public static final int FAILED = -1;
+    
+    @Override
+    public void startApp() {
+ 
+        String serverAddr = "https://example.com:443";
+ 
+        HttpsConnection hc;
+        ConnectionOption&lt;String&gt; auth;
+        ConnectionOption&lt;String&gt; protocol;
+        int response = HttpConnection.HTTP_NOT_FOUND;
+ 
+        try {
+ 
+            auth = new ConnectionOption&lt;&gt;("AuthenticateServer", "TRUE");
+            protocol = new ConnectionOption&lt;&gt;("Protocol", "TLSv1.1");
+ 
+            hc = (HttpsConnection) Connector.open(serverAddr,
+                Connector.READ_WRITE, auth, protocol);
+            response = sendReqAndgetResp(hc); //request GET
+ 
+            if (response == PASSED) {
+                System.out.println("Pass");
+            } else {
+                System.out.println("Failed");
+            }
+ 
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } catch (SecurityException ex) {
+            ex.printStackTrace();
+        } catch (RuntimeException ex) {
+            ex.printStackTrace();
+        }
+    }
+ 
+    @Override
+    public void destroyApp(boolean unconditional) {
+    }
+ 
+    private int sendReqAndgetResp(HttpsConnection hc) {
+        
+        int resCode = -1;
+        boolean pass = true;
+ 
+        OutputStream os;
+ 
+        try {
+            ((HttpsConnection) hc).setRequestMethod(HttpConnection.GET);
+            resCode = ((HttpsConnection) hc).getResponseCode();
+            System.out.println("Response code is: " + resCode);
+            
+            if (resCode == HttpConnection.HTTP_OK) {
+                return PASSED;
+            } else {
+                return FAILED;
+            }
+            
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return FAILED;
+        } finally {
+            try {
+                hc.close();
+            } catch (IOException ex) {
+            }         
+        }
+    }
+}
+</pre>
+<p>The following permissions must be added to the Application Descriptor of the IMlet. Note that because we are using HTTPS, we require the HTTPS protocol permission, even through the implementing protocol we requested for HTTPS (TLSv1.1) is the same.</p>
+<div class="tblformal" id="GUID-DCC40E35-1A5F-4C8B-89BB-58039C549589__GUID-874D5F6C-5A0F-49E4-B1C4-8D8BAA851DC4">
+<hr />
+<p class="titleintable">Table 8-3 Permissions for Example 4-2</p>
+<table class="cellalignment8" title="Permissions for Example 4-2" summary="Permissions for Example 1-1">
+<thead align="left">
+<tr>
+<th class="cellalignment28" id="d40608e211">Permission</th>
+<th class="cellalignment29" id="d40608e214">Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment28" id="d40608e219" headers="d40608e211">
+<p><code>javax.microedition.io.HTTPSProtocolPermission</code></p>
+</td>
+<td class="cellalignment29" headers="d40608e219 d40608e214">
+<p><code>https://*:*</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<p>This example is similar to the previous example. Here, however, we create an HTTPS connection with requests and responses (instead of a direct SSL connection). An additional <code>ConnectionOption</code> object also instructs the Java ME example to authenticate the server.</p>
+<pre dir="ltr">
+auth = new ConnectionOption&lt;&gt;("AuthenticateServer", "TRUE");
+</pre>
+<p>Enabling this option will verify that the server certificate is valid and has been signed by a valid certificate authority, as well as performing a number of verification steps against the data presented by the certificate. If the test is successful, you should see output that identifies a connection to the HTTPS server at the address and port specified.</p>
+<pre dir="ltr">
+Pass
+</pre></div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG401"></a><a id="MEEDG399"></a>
+<div class="props_rev_3"><a id="GUID-00328ACE-BDDF-48D3-A17D-2816F599F6F7"></a>
+<h2 id="MEEDG-GUID-00328ACE-BDDF-48D3-A17D-2816F599F6F7" class="sect2">Accessing the Keystore</h2>
+<div>
+<div class="section">
+<p>Each Java ME Embedded implementation has one or more keystores, typically located under the <code>appdb/certs</code> directory. There is one keystore for each application privilege level (such as <code>untrusted</code> or <code>operator</code>). In order to programmatically access the keystore, use the classes in the <code>com.oracle.crypto.keystore</code> package.</p>
+<p>The following example shows source code used to create five certificates, store them in the keystore, and then iterate over the contents of the keystore when completed.</p>
+<pre dir="ltr">
+import java.io.DataInputStream;
+import com.oracle.crypto.cert.X509Certificate;
+import com.oracle.crypto.cert.X509CertificateBuilder;
+import com.oracle.crypto.keypair.KeyPair;
+import com.oracle.crypto.keypair.KeyPairGenerator;
+import com.oracle.crypto.keypair.PrivateKey;
+import com.oracle.crypto.keypair.spec.RSAKeyGenParameterSpec;
+import com.oracle.crypto.keystore.KeyStore;
+import com.oracle.crypto.keystore.KeyStoreEntry;
+import com.oracle.crypto.keystore.KeyStoreException;
+import java.security.spec.AlgorithmParameterSpec;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.microedition.midlet.MIDlet;
+ 
+
+public class GenerateKeystore extends MIDlet {
+ 
+    @Override
+    public void startApp() {
+ 
+        try {
+ 
+            HashMap&lt;String, KeyStoreEntry&gt; shadow = new HashMap();
+            KeyStore ks = KeyStore.getInstance(KeyStore.STORAGE.CLIENT);
+ 
+            for (int i = 0; i &lt; 5; i++) {
+                
+                KeyStoreEntry kse = generateRandomKeyStoreEntry();
+                System.out.println("Add entry with certificate serial number: " +
+                        kse.getCertificate().getSerialNumber());
+                ks.addEntry(kse);
+ 
+            }
+ 
+            List&lt;KeyStoreEntry&gt; list = ks.getEntries();
+            Iterator&lt;KeyStoreEntry&gt; iter = list.iterator();
+ 
+            while (iter.hasNext()) {
+                KeyStoreEntry kse = iter.next();
+                String subject = kse.getCertificate().getSubject();
+                System.out.println("Certificate Subject: " + subject);
+ 
+                PrivateKey entryKey = kse.getPrivateKey();
+                byte[] entryEncoded = entryKey.getEncoded();
+ 
+                System.out.println("Private Key: " + entryEncoded.toString());
+ 
+            }
+ 
+        } catch (SecurityException ex) {
+            //  Handle exception
+        } catch (KeyStoreException ex) {
+            //  Handle exception
+        }
+ 
+    }
+ 
+    @Override
+    public void destroyApp(boolean unconditional) {
+    }
+ 
+    private KeyStoreEntry generateRandomKeyStoreEntry() {
+ 
+        KeyStoreEntry entry = null;
+        try {
+ 
+            AlgorithmParameterSpec param;
+            param = new RSAKeyGenParameterSpec(512, 3);
+ 
+            KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA");
+            kpg.initialize(param);
+            KeyPair kp = kpg.generateKeyPair();
+ 
+            int serialNumber = (int)(Math.random() * 1000000);
+ 
+            System.out.println("Create X509 Certificate serial: " + serialNumber);
+ 
+            X509CertificateBuilder builder = new X509CertificateBuilder(kp);
+            builder.setSerialNumber("" + serialNumber);
+            builder.setSubject("C=JP;ST=NE;L=Menlo;O=Oracle;OU=Java;CN=Test." +
+                serialNumber);
+            builder.setValidityInDays(365);
+            X509Certificate cert = builder.create();
+ 
+            entry = new KeyStoreEntry(cert, kp.getPrivate(), "test");
+ 
+        } catch (Throwable ex) {
+            ex.printStackTrace();
+        }
+        return entry;
+    }
+}
+</pre>
+<p>The following permissions must be added to the Application Descriptor of the IMlet to access the keystore on the Java ME Embedded device.</p>
+<div class="tblformal" id="GUID-00328ACE-BDDF-48D3-A17D-2816F599F6F7__GUID-41F8E0D9-4989-4367-81D8-1EC889CAC675">
+<hr />
+<p class="titleintable">Table 8-4 Permissions for Example 4-3</p>
+<table class="cellalignment8" title="Permissions for Example 4-3" summary="Permissions for Example 1-1">
+<thead align="left">
+<tr>
+<th class="cellalignment28" id="d40608e286">Permission</th>
+<th class="cellalignment29" id="d40608e289">Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment28" id="d40608e294" headers="d40608e286">
+<p><code>com.oracle.crypto.keystore.KeyStorePermission</code></p>
+</td>
+<td class="cellalignment29" headers="d40608e294 d40608e289">
+<p><code>client_only</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<p>This example will access the local keystore on the embedded board (client) with the following call:</p>
+<pre dir="ltr">
+KeyStore ks = KeyStore.getInstance(KeyStore.STORAGE.CLIENT);
+</pre>
+<p>Note that the keystore that is accessed will depend on the trust level of the application. If the Java ME embedded application is not signed, it will fall into the <code>untrusted</code> security domain by default.</p>
+<p>We can access the keystore similar to accessing it with the Java SE environment. First, we create a <code>KeyStoreEntry</code> object and populate it with a certificate. This is, in turn, added to the embedded keystore via a simple loop and iterated over later in the program. Here is the output after running the program:</p>
+<pre dir="ltr">
+Creating X509 Certificate with serial number: 798364Add keystore entry with certificate serial number: 4F:53:40Creating X509 Certificate with serial number: 67079Add keystore entry with certificate serial number: 43:07:09Creating X509 Certificate with serial number: 723418Add keystore entry with certificate serial number: 48:22:12Creating X509 Certificate with serial number: 792956Add keystore entry with certificate serial number: 4F:1D:38Creating X509 Certificate with serial number: 661145Add keystore entry with certificate serial number: 42:0B:2D
+
+Certificate Subject: C=JP,ST=NE,L=Menlo,O=Oracle,OU=Java,CN=Test.798364Private Key: [B@fcd4cfc2Certificate Subject: C=JP,ST=NE,L=Menlo,O=Oracle,OU=Java,CN=Test.67079Private Key: [B@1c1cc1a5Certificate Subject: C=JP,ST=NE,L=Menlo,O=Oracle,OU=Java,CN=Test.723418Private Key: [B@e854b14cCertificate Subject: C=JP,ST=NE,L=Menlo,O=Oracle,OU=Java,CN=Test.792956Private Key: [B@1d69c567Certificate Subject: C=JP,ST=NE,L=Menlo,O=Oracle,OU=Java,CN=Test.661145Private Key: [B@1a5796e6
+</pre></div>
+<!-- class="section" --></div>
+</div>
+<a id="MEEDG404"></a><a id="MEEDG402"></a>
+<div class="props_rev_3"><a id="GUID-E72386B1-EE08-4414-851B-DA45EB3991FD"></a>
+<h2 id="MEEDG-GUID-E72386B1-EE08-4414-851B-DA45EB3991FD" class="sect2">Configuring the Board as a Secure Server</h2>
+<div>
+<div class="section">
+<p>The Java ME Embedded binary contains functionality that enables an embedded board to function as a server using secure protocols. The functionality is identical to the configuration of a Java SE server.</p>
+<div class="p">The secure server connection requires a server certificate on the device. This certificate should be imported into the device with a private key.
+<pre dir="ltr">
+mekeytool.exe -import -Xdevice:EmbeddedExternalDevice1 -keystore myServertCert.jks -storepass &lt;store password&gt; -keypass &lt;private key password&gt;
+</pre></div>
+<p>The following example shows source code used to setup the embedded board as a server.</p>
+<pre dir="ltr">
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.microedition.io.ConnectionOption;
+import javax.microedition.io.Connector;
+import javax.microedition.io.SecureConnection;
+import javax.microedition.io.SecureServerConnection;
+import javax.microedition.midlet.MIDlet;
+ 
+public class EmbeddedServer extends MIDlet {
+ 
+    @Override
+    public void startApp() {
+ 
+        String PORT = "10005";
+ 
+        SecureServerConnection ssc = null;
+        ConnectionOption&lt;String&gt; protocol = null;
+ 
+        try {
+ 
+            protocol = new ConnectionOption&lt;&gt;("Protocol", "TLSv1.1");
+                          ConnectionOption serverCert = new ConnectionOption("Certificate", &lt;Certificate Subject DN&gt;);
+            ssc = (SecureServerConnection) Connector.open("ssl://:"+PORT,
+                protocol, serverCert);
+ 
+            System.out.println("Connection listening on:");
+            System.out.println("Address: " + ssc.getLocalAddress());
+            System.out.println("Port: " + ssc.getLocalPort());
+ 
+            ssc.acceptAndOpen();
+ 
+            System.out.println("Connection made!");
+ 
+        } catch (SecurityException ex) {
+            ex.printStackTrace();
+        } catch (RuntimeException ex) {
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
+ 
+    @Override
+    public void destroyApp(boolean unconditional) {
+    }
+}
+</pre>
+<div class="infobox-note" id="GUID-E72386B1-EE08-4414-851B-DA45EB3991FD__GUID-717006FA-7078-46A6-830F-8F5ABB12A787">
+<p class="notep1">Note:</p>
+In this code example the <code>&lt;Certificate Subject DN&gt;</code> parameter should be replaced with the Subject DN of the used certificate.</div>
+<p>The following permissions must be added to the Application Descriptor of the IMlet to access the keystore on the Java ME Embedded device.</p>
+<div class="tblformal" id="GUID-E72386B1-EE08-4414-851B-DA45EB3991FD__GUID-7680F7CC-E347-45E0-91DA-D3BA67728ED7">
+<hr />
+<p class="titleintable">Table 8-5 Permissions for Example 4-3</p>
+<table class="cellalignment8" title="Permissions for Example 4-3" summary="Permissions for Example 1-1">
+<thead align="left">
+<tr>
+<th class="cellalignment28" id="d40608e365">Permission</th>
+<th class="cellalignment29" id="d40608e368">Device</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment28" id="d40608e373" headers="d40608e365">
+<p><code>javax.microedition.io.SSLProtocolPermission</code></p>
+</td>
+<td class="cellalignment29" headers="d40608e373 d40608e368">
+<p><code>ssl://*:*</code></p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment28" id="d40608e382" headers="d40608e365">
+<p><code>javax.microedition.io.SSLProtocolPermission</code></p>
+</td>
+<td class="cellalignment29" headers="d40608e382 d40608e368">
+<p><code>ssl://:*</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" -->
+<p>This example uses a <code>SecureServerConnection</code> object, which creates a socket at port 10005 using the SSL protocol. It is essential to include the following line as well:</p>
+<pre dir="ltr">
+ssc.acceptAndOpen();
+</pre>
+<p>Without this line, the secure socket will never accept an incoming connection, and any attempt to make a connection will result in a runtime exception. Note that a call to this method will block until a successful connection is made.</p>
+<p>As with the previous examples, the Java ME Embedded keystore must have a valid server certificate for the trust-level that the application is running under, which will be validated upon any secure connection. If the certificate is absent, or is not valid, an exception will be thrown on the server.</p>
+<p>The client-side code to make the connection is nearly identical to the client-side example earlier in this chapter, with a slight change to the port and the protocol. A successful connection should output the following:</p>
+<pre dir="ltr">
+Address: 192.168.1.80
+Port: 10005
+Connection made!
+
+</pre></div>
+<!-- class="section" --></div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment1">
+<tr>
+<td class="cellalignment16">
+<table class="cellalignment6">
+<tr>
+<td class="cellalignment5"><a href="serial-peripheral-interface-spi-bus.htm"><img width="24" height="24" src="../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment5"><a href="java-me-optimization-techniques.htm"><img width="24" height="24" src="../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2012, 2016, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment18">
+<table class="cellalignment4">
+<tr>
+<td class="cellalignment5"><a href="../index.html"><img width="24" height="24" src="../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment5"><a href="toc.htm"><img width="24" height="24" src="../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment5"><a href="../dcommon/html/feedback.htm"><img width="24" height="24" src="../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

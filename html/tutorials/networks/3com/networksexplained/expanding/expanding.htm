@@ -1,0 +1,282 @@
+
+<HTML>
+<HEAD>
+<TITLE>Expanding and Upgrading</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+ 
+  glos.document.open() 
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Page"
+</script>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF">
+
+<SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(12));
+</script>
+
+<TABLE border="0" width="400">
+	
+  <TR> 
+    <TD align="left" valign="top" width="400"> 
+      <P><FONT size="5" face="Arial, Helvetica, sans-serif"><a name="overview"></a><a name="1.5.1.1"></a>1 
+        Overview</FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">1.1 </FONT><FONT face="Arial, Helvetica, sans-serif" size="2">This 
+        subsection shows you:</FONT></P>
+      <ul>
+        <li><FONT face="Arial, Helvetica, sans-serif" size="2">When to expand 
+          your network</FONT></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">What equipment 
+          you need to expand your network</font></li>
+      </ul>
+      <hr width="390" size="3">
+      <P><FONT face="Arial, Helvetica, sans-serif" size="5"><A name="whendoiexpand"></A><a name="1.5.2.1"></a>2 
+        When do I expand or upgrade the network?</FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">2.1 Networks provide 
+        the connections and features that are required now, while remaining flexible 
+        for growth in the future.</FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2"> There are three common 
+        reasons for expanding and upgrading the network:</FONT></P>
+      <UL>
+        <LI><FONT face="Arial, Helvetica, sans-serif" size="2">More ports are 
+          required, for example, to accommodate more users</FONT></LI>
+        <LI><FONT face="Arial, Helvetica, sans-serif" size="2">More <A href="javascript:launchglossary('bandwidth')"onMouseOver="status=statusbar_glos;return true">bandwidth</a> 
+          is required</FONT></LI>
+        <LI><FONT face="Arial, Helvetica, sans-serif" size="2">Peer-to-peer networking 
+          has become complicated</FONT></LI>
+      </UL>
+      <P><font face="Arial, Helvetica, sans-serif" size="2">Before adding more 
+        network equipment such as another hub or switch, refer to the <b>Network 
+        Rules</b> section.</font></P>
+      <hr width="390" size="3">
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">2.2 <a name="1.5.2.2"></a>When 
+        you need to add more users to the network, you can simply connect another 
+        OfficeConnect hub to provide more ports.</FONT></P>
+      <P><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="400" height="300">
+          <param name="SRC" value="images/expanding_1.swf">
+          <embed src="images/expanding_1.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="400" height="300">
+          </embed> 
+        </object></P>
+      <hr width="390" size="3">
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">2.3 <a name="1.5.2.3"></a>An 
+        Ethernet hub-based network is suitable for small networks with basic networking 
+        needs. However if you require more bandwidth due to a high level of network 
+        use, large file transfer or multi-media applications you should upgrade 
+        to a Fast Ethernet network.</FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">Fast Ethernet (100Mbps) 
+        provides 10 times more bandwidth than Ethernet (10Mbps), which speeds 
+        up the network. To move from an Ethernet to a Fast Ethernet network you 
+        can use a 10/100 autosensing device (known as <i>dual speed</i>) which 
+        allows you to combine 10Mbps and 100Mbps devices in a network. When upgrading 
+        to Fast Ethernet you can add either a Fast Ethernet Hub or a Fast Ethernet 
+        Switch.</FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2"><b>Fast Ethernet hubs</b></FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">Fast Ethernet hubs 
+        provide additional bandwidth which is shared among all the users. With 
+        increasing bandwidth requirements of some of today's software applications, 
+        3Com recommends installing an OfficeConnect Dual Speed Hub. </FONT></P>
+      <P align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="400" height="183">
+          <param name="SRC" value="images/expanding_2.swf">
+          <embed src="images/expanding_2.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="400" height="183">
+          </embed> 
+        </object><FONT face="Arial, Helvetica, sans-serif" size="2"> </FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2"><b>Fast Ethernet switches 
+        </b></FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">Adding a switch to 
+        a network divides the network into smaller less congested segments by 
+        providing dedicated bandwidth from the switch to the attached device, 
+        whether this is a desktop PC, another hub, or a server. Fast Ethernet 
+        switching is ideal for:</FONT></P>
+      <ul>
+        <li><FONT face="Arial, Helvetica, sans-serif" size="2">Users who are moving 
+          high volumes of data or large multi-media files.</FONT></li>
+        <li><FONT face="Arial, Helvetica, sans-serif" size="2">Dedicated high-speed 
+          links to the server to reduce congestion on the central resource.</FONT></li>
+        <li><FONT face="Arial, Helvetica, sans-serif" size="2">Connecting several 
+          hubs together to create smaller, less congested segments.</FONT></li>
+      </ul>
+      <P align="center"><img src="images/expanding_3.gif" width="378" height="226"></P>
+      <hr width="390" size="3">
+      <p><FONT face="Arial, Helvetica, sans-serif" size="2">2.4<a name="1.5.2.4"></a></FONT><FONT face="Arial, Helvetica, sans-serif" size="2"> 
+        Upgrading to Fast Ethernet requires Fast Ethernet NICs and <A href="javascript:launchglossary('pcmcia')"onMouseOver="status=statusbar_glos;return true">PCMCIA</a> 
+        cards (in network PCs and laptops). If the NICs and PCMCIA cards are not 
+        capable of Fast Ethernet, they must be upgraded.</FONT><FONT face="Arial, Helvetica, sans-serif" size="2"> 
+        </FONT></p>
+      <hr width="390" size="3">
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2">2.5 <a name="1.5.2.5"></a>As 
+        the network grows, it can be harder to implement peer-to-peer networking:</FONT></P>
+      <UL>
+        <LI><FONT face="Arial, Helvetica, sans-serif" size="2">It can be difficult 
+          to keep track of folders' locations and who is accessing them.</FONT></LI>
+        <LI><FONT face="Arial, Helvetica, sans-serif" size="2">If shared folders 
+          and local printers are accessed heavily, it can make the PCs that contain 
+          them run slower. </FONT></LI>
+      </UL>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2"> If peer-to-peer networking 
+        has become too complicated, it may be necessary to move to a <A href="javascript:launchglossary('clientservernetwork')"onMouseOver="status=statusbar_glos;return true">client/server 
+        network</a>. A client/server network has centralized resources, such as 
+        network drives and printers, which are controlled by one or more servers 
+        (in effect, a larger PC). Users (the clients) access the servers to gain 
+        use of the network drives and printers.</FONT></P>
+      <P><FONT face="Arial, Helvetica, sans-serif" size="2"> This CD does not 
+        describe how to set up a client/server network. To find out how to set 
+        up such a network you should contact your supplier. </FONT></P>
+      <hr width="390" size="3">
+      <P><font face="Arial, Helvetica, sans-serif" size="5"><a name="1.5.3.1"></a>3 
+        Adding WAN access</font></P>
+      <P><font face="Arial, Helvetica, sans-serif">3.1 </font><FONT face="Arial, Helvetica, sans-serif" size="2">When 
+        you want to incorporate WAN access into your LAN, allowing you to send 
+        and receive e-mail across the Internet or transfer files to and from a 
+        remote location, you can easily introduce a LAN Modem into your network, 
+        such as 3Com's OfficeConnect LAN Modem. </FONT></P>
+      <P align="center"><img src="images/expanding_4.gif" width="398" height="225"></P>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="5"><a name="1.5.4.1"></a>4 
+        Introducing wireless local area networks</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.1 A wireless local 
+        area network (WLAN) links computers and peripheral devices over radio 
+        frequency (RF) or infrared (IR) connections instead of cable connections. 
+        Otherwise, the components of a wireless network are similar to those required 
+        for a cabled LAN, and include:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> One or more <a href="javascript:launchglossary('wirelessclient')"onMouseOver="status=statusbar_glos;return true">wireless 
+          clients</a></font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> At least one <a href="javascript:launchglossary('accesspoint')"onMouseOver="status=statusbar_glos;return true">access 
+          point</a></font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> A network operating 
+          system </font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">A WLAN can also be 
+        installed as an extension to an existing Ethernet network, in which case 
+        an Ethernet cable is required to connect the wireless network's access 
+        point to the Ethernet backbone.</font></p>
+      <hr width="390" size="3">
+      <P align="left"><font size="2" face="Arial, Helvetica, sans-serif">4.2 How 
+        does a wireless network work? Each access port holds a list of the wireless 
+        clients it can associate with. When a wireless client such as a computer 
+        is ready to communicate with the network, its wireless NIC broadcasts 
+        a radio signal. When the access point detects a signal from an associated 
+        wireless client, the signal is answered and a network link is established. 
+        A wireless client may be associated with several different access points, 
+        either because of increased coverage by access points in a particular 
+        service area or because the wireless client is moving from access point 
+        to access point within an extended coverage area.</font></P>
+      <P align="left"><font size="2" face="Arial, Helvetica, sans-serif"> For 
+        example, when you carry a notebook computer from an office to a conference 
+        room, the signal between its wireless client and the current access point 
+        may weaken. The wireless client automatically scans for a stronger signal 
+        from another access point, then establishes a new connection with the 
+        second access point as the signal strength increases. The wireless client 
+        can connect automatically to successive access points along the route 
+        without interrupting the network link. This is called <a href="javascript:launchglossary('roaming')"onMouseOver="status=statusbar_glos;return true">roaming</a>. 
+        </font></P>
+      <P align="left"><font size="2" face="Arial, Helvetica, sans-serif">Roaming 
+        ensures steady and uninterrupted network service even while a computer 
+        is on the move. </font></P>
+      <P align="left">&nbsp;</P>
+      <P align="left">&nbsp;</P>
+    </TD>
+	</TR>
+</TABLE>
+</BODY>
+</HTML>

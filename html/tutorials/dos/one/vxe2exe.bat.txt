@@ -1,0 +1,64 @@
+@echo off
+:: This batch file will compile a list of all directories,
+:: change into each of the subdirectories, then 
+:: rename all vxe files it finds to exe. Yes, there
+:: are faster ways to do this. Code derived from:
+:: http://www.calweb.com/~webspace/batch/samples/alldirs.bat.txt
+:: NOTE: This program uses the environment! You may need to
+:: increase the size of your environment for it to work
+:: properly. Put a line like this in your C:\Config.sys file:
+:: shell=command.com /e:4096 /p
+:: and then reboot your computer. No more environment problems!
+
+:: Check if I can see myself. Needed so I can change
+:: back to my home directory. You should ALWAYS use full
+:: path and file name (like c:\utils\vxe2exe.bat) when
+:: running this program. Or you can double-click it or
+:: do drag'n'drops on it.
+if not exist %0 goto DONE    
+:: Change to my home directory if I'm not there already
+%0\
+cd %0\..
+
+:: Make a line fragment
+:: See http://www.calweb.com/~webspace/batch/lines/frag-dbg.htm
+echo e 100 "set dir="> script
+echo rcx>> script
+echo 8>> script
+echo n setdir.txt>> script
+echo w>> script
+echo q>>script
+debug < script > nul
+del script
+
+:: Now make a list of directories
+echo Please wait while searching for and renaming vxe files...
+dir c:\ /ad /b /s | find /v ":\RECYCLED" > directories.txt
+
+:: Now process each line
+:LOOPSTART
+    rem Check to see if directories.txt is zero bytes
+    dir directories.txt | find "directories.txt" | find " 0 " > nul
+    if not errorlevel 1 goto DONE
+    copy /b setdir.txt + directories.txt directories.bat > nul
+    rem Create a new directories.txt minus the first line
+    type directories.bat | find /v "set dir=" > directories.txt
+    rem Trim the bat file so it only has the first line
+    type directories.bat | find "set dir=" > directories.bat
+    call directories.bat
+    rem Change to the indicated drive and directory
+    "%dir%\"
+    cd "%dir%"
+    rem ******************* MAGIC HAPPENS HERE *******************
+    if exist *.vxe ren "*.vxe" "*.exe"
+    rem ******************* MAGIC HAPPENS HERE *******************
+    rem Change back to my home directory
+    %0\
+    cd %0\..
+goto LOOPSTART    
+:DONE
+
+:: Clean up
+del setdir.txt > nul
+del directories.txt > nul
+del directories.bat > nul

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/under_perm2.html -->
+<HEAD>
+<TITLE>Understanding access permissions</TITLE>
+</HEAD>
+<BODY>
+<A NAME=under_perm2>
+<H1>Understanding access permissions</H1>
+</A>
+<P>
+
+There are three types of permissions:
+
+<PRE WIDTH=80>   <STRONG>r</STRONG>  read the file or directory
+   <STRONG>w</STRONG>  write to the file or directory
+   <STRONG>x</STRONG>  execute the file or search the directory
+</PRE>
+
+<P>Each of these permissions can be set for any one
+of three types of user:</P>
+
+<PRE WIDTH=80>   <STRONG>u</STRONG>  the user who owns the file (usually you)
+   <STRONG>g</STRONG>  members of the <A HREF="gg.html#group">group</A> to which the owner belongs
+   <STRONG>o</STRONG>  all other users
+</PRE>
+
+<P>The access permissions for all three types of user
+can be given as a string of nine characters:</P>
+
+<PRE WIDTH=80>   user    group   others
+   r w x   r w x   r w x
+</PRE>
+
+<P>These permissions have 
+<A HREF="http://www.ee.surrey.ac.uk/Docs/Unixhelp/tables/access_permissions.html">different meanings</A>
+for files and directories.</P>
+
+<UL>
+<LI><A HREF="http://www.ee.surrey.ac.uk/Docs/Unixhelp/examples/permissions.html">Examples</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="index15.html"><IMG SRC="weetop.gif" ALT="[Home]" width="32" height="32"></A>
+<A HREF="unixhelp_search.html"><IMG SRC="weesearch.gif" ALT="[Search]" width="32" height="32"></A>
+<A HREF="index.html"><IMG SRC="weeindex.gif" ALT="[Index]" width="32" height="32"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

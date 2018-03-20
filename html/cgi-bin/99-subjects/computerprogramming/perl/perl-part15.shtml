@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>Central Technical Institute Intranet</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<div class="hide">Skip to:<a href="#info">content</a>, <a href="#navigation">navigation</a></div>
+<div id="logo"><h1>CTI-Clonmel Intranet</h1></div><br clear="all" />
+<div id="nav">
+<ul>
+	<li>Tools</li>
+	<li class="mail"><a href="https://mail.cti-clonmel.ie/cgi-bin/openwebmail/openwebmail.pl">Web Mail</a></li>
+	<li class="cal"><a href="http://webmail.cti-clonmel.ie/cgi-bin/events/event-list.pl#today">Calendar</a></li>
+	<li class="search"><a href="http://www.google.ie">Internet Search</a></li>
+	<li class="password"><a href="http://193.120.102.192:81/cgi-bin/changepassword.cgi">Password Change</a></li>
+	<li class="help"><a href="/help">Help</a></li>
+</ul>
+<ul>
+	<li class="material"><a href="/subjects/subjectsmain.html">Course Material</a></li>
+</ul>
+</div>
+<div id="content">
+<h1>Perl - Part 15</h1>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+<h2>Storing Multiple Values - <i>Easily</i></h2>
+<h3>The previous program in some ways raises more questions than it answers, especially about how to handle different amounts of data.</h3>
+<ol>
+<li>What would need to be done to change the number of names from 5 to 3?</li>
+<li>What would need to be done to change the number of names from 5 to 10?</li>
+<li>Is there anyway of shortening the asking and responding section at the end?</li>
+</ol>
+<h3>At present the answer to questions 1 and 2 would be to include less or more variables, input and chop lines. This is possibly acceptable for smaller amounts of numbers, but what if we wish to accept 100 names? Or a thousand? That represents a <u>lot</u> of typing!</h3>
+<h3>As for the third question, the indentation used for 5 names is probably confusing. It would quickly become unmanageable on larger quantities - possibly even before you reached a 10<sup>th</sup> name mentioned in point 2!<h3>
+<h3>No computer language could exist and be popular if it had no mechanism for shortening this. Perl is no different. For the tidier and more efficient version of this task, we'll use <a href="http://en.wikipedia.org/wiki/Array">arrays</a>.</h3>
+<h3>Enter this program, called <font face="Courier">names02.pl</font> instead:<h3>
+<center><img width="100%" src="/images/names02-01.png"></center>
+<h3>In this case we are using an array of variables. An array is a collection of variables with the same name. In this case the array is called <font face="Courier">@all_the_names</font>. Notice how the symbol <b>@</b> is used instead of <b>$</b>. When <b>@</b> is used <i>all</i> the elements are being referred to. When <b>$</b> is used only <i>one</i> element is being referred to. That's why in the program above <b>$</b> is used; as we are referring to (or using) only one element at a time. But we identify each element by it's number in the array which we get from <font face="Courier">[$counter]</font>.</h3>
+<h3>As the value of <font face="Courier">$counter</font> changes with the loop, so to does the element of the array that we are using.</h3>
+<h3>Best of all, by changing the initial value of <font face="Courier">$max=<i>whatever_number_you_like</i>;</font> at the start you can make the program work for 3, 10 or 1000 names.</h3>
+<h3>More joy ahead...</h3>
+<!--#exec cgi="/cgi-bin/shtml/navigate.shtml" -->
+</div>
+</body>
+</html>

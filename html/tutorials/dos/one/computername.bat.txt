@@ -1,0 +1,17 @@
+@echo off
+:: Parses the output of the "net config" command to get
+:: the computer name. Uses debug to trim
+:: away all unwanted info from the response line.
+set value=
+:: Use net config to get lots of data, then filter it
+net config | find "Computer name" > setvalue.bat
+:: Use DEBUG to overwrite the beginning data
+>  script echo e 0100 "                       set value="
+>> script echo w
+>> script echo q
+debug setvalue.bat < script > nul
+del script
+call setvalue.bat
+del setvalue.bat
+echo Computer name is %value%
+

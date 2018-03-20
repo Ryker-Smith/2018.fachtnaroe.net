@@ -1,0 +1,123 @@
+
+$tempfilepath = '/home/httpd/cgi-submissions/temp/';
+$submitfilepath = '/home/httpd/cgi-submissions/programming/';
+$indentpage = '/cgi-bin/indent.pl';
+
+sub section1 {
+print '<HTML> 
+<TITLE>Computer Programming Assignment Submission Form</TITLE> 
+<HEAD Form created by Fachtna Roe (c) 2000> 
+</HEAD> 
+<BODY> 
+<FONT FACE=VERDANA, HELVETICA> 
+<H1>Programming Assignment Submission Form</H1> ';
+}
+
+sub section2 {
+print '<FORM METHOD=POST ACTION="/cgi-bin/verifyprogramsubmission.pl"> 
+<P><B>Student Name:</B> 
+<SELECT NAME="userid"> 
+<OPTION VALUE="nouseridgiven">Choose your name here 
+<OPTION VALUE="it.carstenb"> Carsten Boettger 
+<OPTION VALUE="it.richardb"> Richard Bourke 
+<OPTION VALUE="it.noreenc"> Noreen Conway 
+<OPTION VALUE="it.maryd"> Mary Dempsey 
+<OPTION VALUE="it.seand"> Seán Doyle 
+<OPTION VALUE="it.noleend"> Noleen Drohan 
+<OPTION VALUE="it.davide"> David Egan 
+<OPTION VALUE="it.kieranf"> Kieran Fahey 
+<OPTION VALUE="it.liamf"> Liam Fahey 
+<OPTION VALUE="it.jamesf"> James Flynn 
+<OPTION VALUE="it.martinaf"> Martina Fox 
+<OPTION VALUE="it.shaneg"> Shane Greene 
+<OPTION VALUE="it.latag"> Lata Gulati 
+<OPTION VALUE="it.oliviak"> Olivia Kennedy 
+<OPTION VALUE="it.brianl"> Brian Landers 
+<OPTION VALUE="it.bridl"> Bríd Lee 
+<OPTION VALUE="it.damienm"> Damien McEvoy 
+<OPTION VALUE="it.paulm"> Paul Murphy 
+<OPTION VALUE="it.pamelaod"> Pamela O\'Donnell 
+<OPTION VALUE="it.thomasok"> Thomas O\'Keeffe 
+<OPTION VALUE="fachtna">Fachtna Roe 
+<OPTION VALUE="it.alanv"> Alan Vahey 
+<OPTION VALUE="it.melissaw"> Melissa Walsh 
+</SELECT> 
+<B>Password:</B> 
+<INPUT TYPE="password" NAME="password"> 
+<P><B>Assignment #:</B> 
+<INPUT type="radio" NAME="assignnum" VALUE="1">One 
+<INPUT type="radio" NAME="assignnum" VALUE="2">Two 
+<INPUT type="radio" NAME="assignnum" VALUE="3">Three 
+<INPUT type="radio" NAME="assignnum" VALUE="4">Four 
+<P> 
+<B>Paste Your Program Here:</B> 
+<P>';
+}
+
+sub section4 {
+print '<TEXTAREA NAME="sourcecode" ROWS=16 COLS=80 WRAP></TEXTAREA><P> ';
+}
+
+sub section5 {
+print '<TEXTAREA NAME=sourcecode ROWS=16 COLS=80 WRAP>';
+open (OFILE, "<$tempfilepath$filename.o.tmp");
+flock (OFILE, 2);
+@modifiedcode = <OFILE>;
+foreach $lineofcode (@modifiedcode)
+{
+ print "$lineofcode";
+}
+print "</TEXTAREA><P>";
+flock (OFILE, 8);
+close (OFILE);
+chmod 777, "$tempfilepath$filename.o.tmp";
+system ("rm -f $tempfilepath$filename.o.tmp");
+}
+
+sub section6 {
+print '<INPUT TYPE="submit" VALUE="Submit Assignment Now"> 
+<INPUT TYPE="reset" VALUE="Clear Form"> 
+</FORM> 
+</BODY> 
+</HTML>';
+}
+
+sub section3 {
+print '<H4>To automatically indent your program, click <A HREF="'.$indentpage.'">here</A>. To see how these pages are coded, click <A HREF="/cgi-bin/howsitdone.pl">here</A>.</H4> ';
+}
+
+sub nicefont {
+print '<FONT FACE=VERDANA, HELVETICA>';
+}
+
+sub manglewarning {
+&RedColor;
+print 'Using this indentation tool may mangle your program. Check your program afterwards.';
+&BlackColor;
+}
+
+sub section7 {
+print '<FORM METHOD=POST ACTION="/cgi-bin/indentprogram.pl">
+<B>Paste Your Program Here:</B>
+<P>
+<TEXTAREA NAME="sourcecode" ROWS=16 COLS=80 WRAP></TEXTAREA>
+<P>
+<INPUT TYPE="submit" VALUE="Indent Assignment Now">
+<INPUT TYPE="reset" VALUE="Clear Form">
+</FORM>
+</BODY>
+</HTML>';
+}
+
+sub section8 {
+&manglewarning;
+print '<H1>Programming Assignment Automatic Indentation Tool</H1><HR>';
+}
+
+sub section9 {
+print '<P><FORM METHOD=POST ACTION="/cgi-bin/submitindented.pl">
+<B>Your indented code is here:</B>
+<P>';
+print "<INPUT type=hidden name=tempfilename value = $filename>";
+print '<TEXTAREA NAME=sourcecode ROWS=16 COLS=80 WRAP>';
+}

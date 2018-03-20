@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- didyou/vi.3.html -->
+
+<HEAD>
+<TITLE>Recovering a file after a system crash</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Recovering a file after a system crash</H1>
+
+<P>Suppose the system fails while you are editing a file!
+You can recover the file when you next log on to the
+system again by using the <SAMP>-r</SAMP> option to the
+<STRONG>vi</STRONG> command.  For example:</P>
+
+<PRE WIDTH=80>   <STRONG>vi -r help.xdh</STRONG>
+</PRE>
+
+<P>This restores the <STRONG>vi</STRONG> buffer for the file 
+<SAMP>help.xdh</SAMP>to exactly the state it was in immediately before the
+system failed.</P>
+
+<P>You can continue to edit the file or write the contents
+of the buffer to the file.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h2><a id="2014"></a>Assessment 2013/2014</h2>
+<ul>
+  <li><a href="XAM2014.pdf">Written Exam 2014</a> (40%)</li>
+  <li><a href="00-ComputerProgramming2014Solutions.pdf">Suggested solutions 2014<a/></li>
+  <li>Assignment 01 (30%)</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="00-2014-Assignment01.pdf">Create a Linux command</a> &mdash; <b>mkuser</b> &mdash; which takes a file of proper names and generates user-names from that data. <br>
+    <aside>I used to do this every year using a spreadsheet. The ease of being able to use a spreadsheet to do that is part of what sold me on Linux in the first place. Over time, the spreadsheet became more complex, but always right. I'd have to scratch off some mental dust and wonder what had I meant by =CONCATENATE("useradd ",J10," -c """,E10," ",,C10,D10,""" "," ") why didn't I just put comments in my code just like I try to teach others to do? Great example.
+    Anyhoo, I just used dust off the sheets and  after a quick copy and paste into the CLI I'd have a bunch of new users; repeat for change passwords etc.
+    This program represents the next logical stage, take plain-text and do everything in one fell swoop.
+    </aside>
+    When finished, submit your program on paper and <a href="http://treebeard.ie/~fachtna/cgi-bin/progSubmit.pl">electronically here</a>.
+    <br> </li>
+    </ul>
+  <ul>
+  <li>Assignment 02 (30%)</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="00-2014-Assignment02.pdf">Create a perl web-app for an online sales form</a>. This is in support of your main project.<br>    
+    When finished, submit your program on paper and <a href="http://treebeard.ie/~fachtna/cgi-bin/progSubmit.pl">electronically here</a>.</li>
+  </ul>
+<hr>
+<h2><a id="2013"></a>Assessment 2012/2013</h2>
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="XAM2013.pdf">Written Exam 2013</a> (40%)</li>
+    <li><a href="00-ComputerProgramming2013Solutions.pdf">Suggested solutions 2013<a/></li>
+    </ul>
+    <ul>
+      <li>Assignments: (2 @ 30% each = 60%)</li>
+      </ul>
+      <ol class="ulol">
+        <li><a href="00-2013-Assignment01.pdf">Create a backend perl CGI script to validate and process</a> the input received from the reservation form which is part of the Quinlough Hostel Project (<a href="../webauthoring5/index.shtml#2013">web authoring project</a> this year). Required functionality may be determined from the brief above and from this <a href="http://progserv.fachtnaroe.net:1918/~fachtna/00-reservations-2013.html">sample form with functioning backend script</a>. Use this <a href="00-DataValidationScript-SampleData-2013.pdf">sample data</a> to test your script. <p>&gt;&gt;<a href="http://progserv.fachtnaroe.net:1918/~fachtna/cgi-bin/database-2013.pl">Click here to view the reservations database</a>.&lt;&lt;</li>
+        </ol>
+<table class="table75center">
+<tr><td>      
+  <b>Assignment-specific examples &amp; tools</b>
+  <br><a href="http://192.168.1.246/cgi-bin/web_light_switch.pl">Concept demonstrator</a> (accessible from LAN only)
+  <br><a href="posapp/pos-demo-0507.pl.shtml">push-pop example</a> 
+  <br><a href="http://progserv.fachtnaroe.net:1918/~fachtna/cgi-bin/check_vacancy_questions.pl">Data received by the check_vacancy API</a>
+  <br><a href="perl_hidden_input/hidden_input_demo_01.shtml">Hidden input demo 01</a>
+  <br><a href="perl_hidden_input/hidden_input_demo_02.shtml">Hidden input demo 02</a>
+  <br><a href="perl_hidden_input/hidden_input_demo_03.shtml">Hidden input demo 03</a>
+  <br><a href="perl-creditcard/business-creditcards.shtml">Business::CreditCard sample usage</a>
+  <br><a href="http://progserv.fachtnaroe.net:1918/~fachtna/cgi-bin/confirm_booking_questions.pl">Data received by the confirm_booking API</a>
+  <br><a href="perl_cookie/cookie_demo_01.shtml">Cookie demo 01</a> 
+</td></tr></table>
+        <ol class="ulol" start="2">
+        <li>Create a <a href="00-2013-Assignment02.pdf">graphical point-of-sale (POS) program</a>. For this assignment you will use barcodes and the APIs provided to implement the logical portion of a cash register. The barcodes will be interpreted by the barcode scanner; the resulting product numbers will be used to query the Quinlough shop database.<p>The product details are stored in a MySQL database; you will interact with the database via the APIs provided. These APIs will allow you to get product names, prices <i>etc</i> as well as monitor/control stock levels. The <a href="posapp/pos-api-short-2013.pl.shtml">APIs (short form) are here</a> and <a href="posapp/pos-functions-demo-2013.pl.shtml">examples of usage are here</a>. The long form APIs are available in class.<p>The program should be written as a text-only program first; when this is working you'll convert the program to a graphical display using SDL.
+        </ol>
+<table class="table75center">
+<tr><td>      
+  <b>Assignment-specific examples &amp; tools</b>
+  <br><a href="posapp/pos-api-short-2013.pl.shtml">Short form APIs</a>
+  <br><a href="posapp/pos-functions-demo-2013.pl.shtml">API usage examples</a>  
+  <br><a href="FourBarcodes.pdf">Short dataset for testing (4 items)</a>
+  <br><a href="00-POS-SampleCodes.pdf">Medium dataset for testing (7 items, full details)</a>
+  <br><a href="http://progserv.fachtnaroe.net:1918/~fachtna/cgi-bin/last.pl">Logfile analysis of time logged in</a> 
+  <br><a href="http://progserv.fachtnaroe.net:1918/~fachtna/cgi-bin/pos_questions.pl">Data received by the POS APIs (last 1000 queries only)</a>
+<!--  <br><a href="http://192.168.1.247:1918/~fachtna/cgi-bin/pos_questions.pl">Data received by the POS APIs - LAN version (20130117)</a> -->
+  <br><a href="http://fachtnaroe.ie/subjects/gamesstudies/SDL_game_loop_01.shtml">Basic 'game' loop as used by the graphical POS</a>
+  <br><a href="http://fachtnaroe.ie/subjects/gamesstudies/SDL_game_loop_05.shtml">Displaying different sized images</a>
+  <br><a href="ansi_usage.shtml">Formatting text output with ANSI codes</a>
+  <br><a href="posapp/pos-sample_key_event.pl.shtml">Using the SDL key event loop like &lt;STDIN&gt;</a>
+</td></tr></table>        
+<hr>
+<h2><a id="2012"></a>Assessment 2011/2012</h2>
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="XAM2012.pdf">Written Exam 2012</a></li>
+    <li><a href="00-ComputerProgramming2012Solutions.pdf">Suggested solutions 2012<a/></li>
+    </ul>
+    <ul>
+      <li>Assignments: (2 @ 30% each = 60%)</li>
+      </ul>
+      <ol class="ulol">
+        <li><a href="00-2012-Assignment01.pdf">Create a backend perl CGI script to validate and process</a> the input received from the reservation form which is part of the Waterfront Hotel Project
+(<a href="../webauthoring5/index.shtml#2012">web authoring project</a> this year). Required functionality may be determined from the brief above and from this <a href="http://progserv.fachtnaroe.net:1918/~fachtna/00-reservations-2012.html">sample form with functioning backend script</a>. Use this <a href="00-DataValidationScript-SampleData.pdf">sample data</a> to test your script. <p>&gt;&gt;<a href="http://progserv.fachtnaroe.net:1918/~fachtna/cgi-bin/database-2012.pl">Click here to view the reservations database</a>.&lt;&lt;</li>
+        </ol>
+        <ol class="ulol" start="2">
+          <li>Group 1: <a href="00-2012-assign02.1.pdf">POS Application</a><br>You can use this <a href="00-2012-assign02.1-POS-sample-data.txt">sample flat file database</a> to get started. Later, you can explore linking to a MySQL database.
+            <p><a href="perl/perl-index.shtml">Tutorial which parallels the barcode assignment</a>.</p>
+
+          <p><b>*</b><a href="posapp/pos-demo-0507.pl.shtml">Sample program</a> with push-ing, pop-ing and tabbed output.</p>
+          <br/>Group 2: <a href="00-2012-assign02.2.pdf">Maze Game</a><br>You can use this <a href="00-2012-assign02.2-maze-sample-data.txt">sample maze text file</a> to get started. Later, you can explore using OpenGL (<b>maybe!</b>).
+<p>For an example of how this program might work, log in to the programming server and change directory to <b>/home/public</b> - within that folder is a pre-compiled binary of a C program that largely does as this years assignment is required to do. The file is called <b>amazing.bin</b> and can be directly executed within that directory using the command <b>./amazing.bin</b> - your character is the <b>@</b> symbol. If you have read the brief you'll know the meaning of the other symbols, as well as the purpose of the program.</p>
+<p>Please use the <a href="http://search.cpan.org/search?mode=all&amp;query=Term%3A%3AScreen"><b>Term::Screen</b></a> module for this program. Also <b>use strict;</b> and proper indentation! Remember to search and replace the variable names in the samples below.</p>
+<p>Sample Steps:</p></li>
+  </ol>
+  <ol class="ululol">
+  <li><a href="mazegame/0401.pl.shtml">0401.pl</a> ("Hello World" using <b>Term::Screen</b>)</li>
+  <li><a href="mazegame/0402.pl.shtml">0402.pl</a> (put a map on the screen quickly: uses file <b><a href="mazegame/maze04.map.shtml">maze04.map</a></b>)</li>
+  <li><a href="mazegame/0403.pl.shtml">0403.pl</a> (control the position of a character on screen)</li>
+  <li><a href="mazegame/0403b.pl.shtml">0403.pl.txt</a> (doing position checking in the maze)</li>
+  <li><a href="mazegame/0404.pl.shtml">0404.pl</a> (faulty, but ask yourself "What's wrong?")</li>
+  <li><a href="mazegame/0405a.pl.shtml">0405a.pl</a> (corrected use of 2D array: uses file <b><a href="mazegame/maze06.map.shtml">maze06.map</a></b>)</li>
+  <li><a href="mazegame/baddyfromvps3-01.pl.shtml">0406.pl</a> (Run this and see)</li>
+  </ol>
+<hr>
+  <h2>Assessment 2010/2011</h2><a id="2011"></a>
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="XAM2011.pdf">Written Exam 2011</a></li>
+    <li><a href="00-Computer%20Programming%202011%20Solutions.pdf">Suggested solutions 2011</a></li>
+    </ul>
+    <ul>
+      <li>Assignments: (2 @ 30% each = 60%)</li>
+      </ul>
+      <ol class="ulol">
+        <li>Create a backend perl script to validate the input received from the enrollment form which is part of the <a href="../webauthoring5/index.shtml#2011">web authoring project</a>
+this year. Required functionality may be determined from this <a href="http://www.fachtnaroe.net/~fachtna/00-enrollment-2010.html">sample form with functioning backend script</a>. <p>&gt;&gt;<a href="http://www.fachtnaroe.net/cgi-bin/fachtna/database-2010.pl">Click here to view the enrollment database</a>.&lt;&lt;</li>
+        </ol>
+      <ol class="ulol" start="2">
+        <li>(<i>Team challenge: <a href="00-2011-assign02.pdf">'Hangman' type game</a>. CLI based using the perl <b>Term::Screen</b> module for positioning of elements on-screen.</i>)<br/>Assignment changed to: <a href="00-2011-assign02-A.pdf">Number Guessing Game</a>.<br />(<b>Please note modified submission details displayed in class.</b>)</li>
+      </ol>
+<hr>      
+<h2><a id="2010"></a>Assessment 2009/10:</h2>
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="XAM2010.pdf">Written Exam 2010</a></li>
+    <li><a href="00-Computer%20Programming%202010%20-%20Answers.pdf">Suggested solutions 2010</a></li>
+    </ul>
+    <ul>
+      <li>Assignments: (2 @ 30% each = 60%) For each assignment submit:</li>
+      </ul>
+      <ol class="ulol">
+        <li>Standard Cover Sheet</li>
+        <li>Program Listing (print out)</li>
+        <li>Flow Chart (<i>should be completed <u>first</u></i>)</li>
+        <li>Screen shots of sample program runs <i>etc</i></li>
+        <li>Any other appropriate items in support of your assignment</li>
+      </ol>
+    <ul>
+      <li>Assignment #1 - <a href="00-2010-assign01.pdf">Barcode Shopping Reader Program with Product Database (POS application)</a></li>
+      </ul>
+      <ul class="ulul">
+        <li><a href="perl/perl-index.shtml"><b>Tutorial trail for Assignment #1</b></a></li>
+        <li>The <a href="00-2010-assign01-sample-data.txt">sample data</a> (in plaintext text format) to use in your database file. The program expects this file to be called "<b>barcodes.dat</b>" unless you choose to change it.</li>
+        <li>These are <a href="Barcodes%20Assembled.pdf">sample barcodes</a> (in PDF format) for testing purpose.</li>
+        <li><a href="pos.txt">Sample output</a> from a program run.</li>
+        <li>A visual demonstration on how to use the barcode scanner:</li>
+        <li><a href="/images/scanner-image-00001.jpg"><img src="/images/scanner-image-00001-thumb.jpg" width="150" alt=""></a> This model of barcode scanner plugs into the PS/2 keyboard port at the rear of the computer. The keyboard then plugs into the scanner. This is known as a keyboard wedge.</li>
+        <li><a href="/images/scanner-image-00002.jpg"><img src="/images/scanner-image-00002-thumb.jpg" width="150" alt=""></a> The scanner itself can have its mode of operation changed by scanning codes from the manual. For example, whether the scanner transmits a CR, an LF or a CR+LF is controlled this way. This influences whether the <b>chop</b> function will be required. Also, the scanner is pre-set by this means to read <a href="http://en.wikipedia.org/wiki/European_Article_Number">EAN-13</a> barcodes.<li>
+        <li> <a href="/images/scanner-image-00003.jpg"><img src="/images/scanner-image-00003-thumb.jpg" width="150" alt=""></a> The barcode scanner (typically) uses red light to pick up the barcode from the object and essentially 'types' the code into whatever program is running.</li>
+        <li> <a href="/images/Codis.png"><img src="/images/Codis.png" width="150" alt=""></a> This is a typical EAN-13 barcode.</li>
+      </ul>
+    <ul>
+      <li>Assignment #2: <a href="00-2008-assign02.pdf">Maze Game</a>. <a href="#2000.4">(Almost) identical to the 4<sup>th</sup> assignment from 2000 and the second assignment from 2008</a>.</li>
+      </ul>
+      <ul class="ulul">
+        <li>For an example of how this program might work in actuality, log in to the programming server and change directory to <b>/home/public</b> - within that folder is a pre-compiled binary of a C program that largely does as this years assignment is required to do. The file is called <b>amazing.bin</b> and can be directly executed within that directory using the command <b>./amazing.bin</b> - your character is the <b>@</b> symbol. If you have read the brief you'll know the meaning of the other symbols, as well as the purpose of the program.</li>
+        <li>Please use the <a href="http://search.cpan.org/search?mode=all&amp;query=Term%3A%3AScreen"><b>Term::Screen</b></a> module for this program.</li>
+        <li>Sample Steps:</li>
+        </ul>
+        <ol class="ululol">
+          <li><a href="mazegame/0401.pl.shtml">0401.pl</a> ("Hello World" using <b>Term::Screen</b>)</li>
+          <li><a href="mazegame/0402.pl.shtml">0402.pl</a> (put a map on the screen quickly: uses file <b><a href="mazegame/maze04.map.shtml">maze04.map</a></b>)</li>
+          <li><a href="mazegame/0403.pl.shtml">0403.pl</a> (control the position of a character on screen)</li>
+          <li><a href="mazegame/0403b.pl.shtml">0403.pl.txt</a> (doing position checking in the maze)</li>
+          <li><a href="mazegame/0404.pl.shtml">0404.pl</a> (faulty!)</li>
+          <li><a href="mazegame/0405a.pl.shtml">0405a.pl</a> (corrected use of 2D array: uses file <b><a href="mazegame/maze06.map.shtml">maze06.map</a></b>)</li>
+        </ol>
+<hr>        
+<h2><a id="2009"></a>Assessment 2008/9:</h2>
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="XAM2009.pdf">Written Exam 2009</a></li>
+    </ul>
+  <ul> 
+    <li>Assignments: (2 @ 30% each = 60%) For each assignment submit:</li>
+    </ul>
+    <ol class="ulol">
+      <li>Standard Cover Sheet</li>
+      <li>Program Listing (print out)</li>
+      <li>Flow Chart (<i>should be completed <u>first</u></i>)</li>
+      <li>Screen shots of sample program runs <i>etc</i></li>
+      <li>Any other appropriate items in support of your assignment</li>
+      <li><b>Submit your script by email.</b></li>
+      </ol>
+    <ul>
+      <li>Assignment #1, Culloughtys Country Hostel: <a href="00-2009-assign01.pdf">Reservation Form validation program</a></li>
+      </ul>
+      <ul class="ulul">
+        <li><a href="http://www.fachtnaroe.net/~fachtna/00-booking-2009.html">Reservation form from which to validate input with demonstration script.</a></li>
+        <!--<li><a href="checksums/checksums.shtml">Read up on checksums</a>!</li>-->
+        <li>Perl <a href="perl-creditcard/business-creditcards.shtml"><b>Business::CreditCard</b></a> module.</li>
+        <li>After a sanity check on the user input data the following criteria to a booking will apply:</li>
+        </ul>
+        <ol class="ululol">
+          <li>No booking for more than 12 people may be made</li>
+          <li>Bookings may only be made for the following month.</li>
+          <li>Bookings of children only are not acceptable.</li>
+          <li>Only VISA credit cards are accepted.</li>
+          <li>The card holders name should have two or more parts.</li>
+          <li>The credit card number should be potentially viable.</li>
+          <li>The card expiry date should be potentially viable.</li>
+          <li>The completed booking should be stored in the file "/home/public/hosteldatabase2009.dat"</li>
+          <li>Open the database file in append data (">>") mode.</li>
+          <li>Save each valid booking record as a series of fields using colons (:) as the delimiter.</li>
+          <li>Separate each record in the database by an EOL. Therefore each line is a record.</li>
+          <li>Concatenate all the data fields with the '.' operator</li>
+          <li>The first field in the booking record should be your username.</li>
+        </ol>
+        <ul class="ulul">
+          <li><a target="_top" href="http://mymailbox.fachtnaroe.net/cgi-bin/fachtna/database-2009.pl">View the reservations database.</a></li>
+        </ul>
+      <ul>
+        <li>Click below to test your form &amp; script combination:</li>  
+        </ul>
+        <ul class="ulul">
+          <li><b><a href="http://mymailbox.fachtnaroe.net/~fachtna/00-booking-2009.html">sample</a></b></li>
+          <li><a href="http://mymailbox.fachtnaroe.net/~it.sarahc/project/booking.html">it.sarahc</a></li>
+        </ul>
+      <ul>
+        <li>The reservation database is now closed to further entries.</li>
+      </ul>
+    <ul>
+      <li>Assignment #2, Culloughtys Country Hostel: <a href="00-2009-assign02.pdf">Reservation database manipulation program</a>(Version <b>89</b>)</li>
+      </ul>
+      <ul class="ulul">
+        <li>Write a script that accepts one of a number of input options, as indicated by a radio-button control, and responds appropriately.</li>
+        <li>Provide as many as possible of the features listed below. Start with the easier tasks and build from there. Many of the code elements are re-usable allowing you to create later features from earlier ones.</li>
+        <li>Possible input options/requests include:</li>
+        </ul>
+        <ol class="ulol">
+          <li>Duplication for further processing of the previously stored database ("/home/public/hosteldatabase2009.dat") under a new name for processing</li>
+          <li>Where possible remove records from the copied database that are obviously incorrect <i>eg:</i> Remove records with empty fields,remove records with more than 12 people booked, remove records with invalid dates</li>
+          <li>Retrieve a booking by name for printing or deleting</li>
+          <li>Retrieve a booking by email for printing or deleting</li>
+          <li>Retrieve all of 'todays' bookings</li>
+          <li>Perform a series of statistical/<a href="http://en.wikipedia.org/wiki/Data_processing">data processing</a> calculations</li>
+        </ol>
+        <ul class="ulul">
+          <li>A program to generate more sample data for processing is here: <a href="http://www.fachtnaroe.net/~fachtna/make-data-2009.pl.txt">http://www.fachtnaroe.net/~fachtna/make-data-2009.pl.txt</a>. It may be useful as another perl program sample.</li>
+        </ul>
+      <ul>        
+        <li>Click below to test your customised form &amp; script combination:</li>
+        </ul>
+        <ul class="ulul">
+          <li><b><a href="http://mymailbox.fachtnaroe.net/~fachtna/00-dataprocess-2009.shtml">sample</a></b></li>
+          <li><a href="http://mymailbox.fachtnaroe.net/~it.sarahc/project/00-dataprocess-2009.shtml">it.sarahc</a></li>
+        </ul>
+        <ul>
+          <li>Apart from the reservation database from Assignment #1, you may also use <b>/home/public/00-2009-sample-reservations.dat</b> (250 records), <b>/home/public/01-2009-sample-reservations.dat</b> (1000 records), <b>/home/public/comparative.dat</b> (1000 records) and <b>/home/public/00-comparative-2009.dat</b> (250000 records).
+        </ul>
+<hr>        
+<h2><a id="2008"></a>Assessment 2007/8:</h2>
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li><a href="00-Computer%20Programming%202008.pdf">Written Exam 2008</a></li>
+    <li><a href="00-Computer%20Programming%202008-Solutions.pdf">Solutions to 2008 Written Exam</a></li>
+  </ul>
+  <ul>
+    <li>Assignments: (2 @ 30% each = 60%) For each assignment submit:</li>
+    </ul>
+    <ol class="ulol">
+      <li>Standard Cover Sheet</li>
+      <li>Program Listing</li>
+      <li>Flow Chart (<i>should be completed <u>first</u></i>)</li>
+      <li>Screen shots of sample program runs <i>etc</i></li>
+      <li>Any other appropriate items in support of your assignment</li>
+      </ol>
+  <ul>
+    <li>Assignment #1, Option 1: <a href="00-2008-assign01.pdf">Perl CGI program to verify user input</a> - <b>Tour Booking</b>. Cross reference to <a href="http://www.fachtnaroe.com/subjects/webauthoring5/">Web Authoring</a></li>
+    </ul>
+    <ul class="ulul">
+      <li>After a sanity check on the user input data the following criteria to a booking will apply:</li>
+      </ul>
+      <ol class="ululol">
+        <li>No booking for in excess of the guide figure from the form may be made.</li>
+        <li>No booking for less than 10 people may be made</li>
+        <li>Bookings may only be made for the following month.</li>
+        <li>Bookings of children only are not acceptable.</li>
+        <li>The completed booking should be stored in the file ">> /home/public/fitzgerald2008.dat"</li>
+        <li>Write the record of the booking as a series of fields (even if empty) separated by colons (:) as the delimiter</li>
+        <li>Concatenate all the data with the '.' operator</li>
+        <li>The first item in the record should be your username.</li>
+      </ol>
+      <ul class="ulul">
+        <li><a href="http://mymailbox.fachtnaroe.net/~fachtna/00-booking-2008.html">Sample Tour Booking Form with functioning script.</a></li>
+        <li>Use the name "bookings.html" for the HTML file containing your version of the booking form.</li>
+        <li>Booking forms so far:</li>
+        </ul>
+        <ol class="ululol">
+          <li><a href="http://home.fachtnaroe.net/~it.susanc/project/bookings.html">it.susanc</a></li>
+        </ol>
+      <ul class="ulul">
+        <li><a target="_top" href="http://mymailbox.fachtnaroe.net/cgi-bin/fachtna/database-2008.pl">View the tour bookings database.</a></li>
+      </ul>
+    <ul>
+      <li>Assignment #1, Option 2:  - <a href="00-2007-assign01.pdf">Barcode Shopping Reader Program (Assignment #1 from 2006/7)</a>.
+      <li>Assignment #2, Option 1:  - <a href="00-2008-assign02.pdf">Maze Game</a>. <a href="00-2000-assign04.pdf">(Almost) identical to the 4<sup>th</sup> assignment from 2000</a>.
+      </ul>
+      <ul class="ulul">
+        <li>For an example of how this program might work in actuality, log in to the programming server and change directory to <b>/home/public</b> - within that folder is a pre-compiled binary of a C program that largely does as this years assignment is required to do. The file is called <b>amazing.bin</b> and can be directly executed within that directory using the command <b>./amazing.bin</b> - your character is the <b>@</b> symbol. If you have read the brief you'll know the meaning of the other symbols, as well as the purpose of the program.</li>
+        <li>Please use the <a href="http://search.cpan.org/search?mode=all&amp;query=Term%3A%3AScreen"><b>Term::Screen</b></a> module for this program.</li>
+        <li>Sample Steps:</li>
+        </ul>
+        <ol class="ululol">
+          <li><a href="mazegame/0401.pl.shtml">0401.pl</a> ("Hello World" using <b>Term::Screen</b>)</li>
+          <li><a href="mazegame/0402.pl.shtml">0402.pl</a> (put a map on the screen quickly: uses file <b><a href="mazegame/maze04.map.shtml">maze04.map</a></b>)</li>
+          <li><a href="mazegame/0403.pl.shtml">0403.pl</a> (control the position of a character on screen)</li>
+          <li><a href="mazegame/0403b.pl.shtml">0403.pl.txt</a> (doing position checking in the maze)</li>
+          <li><a href="mazegame/0404.pl.shtml">0404.pl</a> (faulty!)</li>
+          <li><a href="mazegame/0405a.pl.shtml">0405a.pl</a> (corrected use of 2D array: uses file <b><a href="mazegame/maze06.map.shtml">maze06.map</a></b>)</li>
+        </ol>
+      <ul>
+        <li>Assignment #2, Option 2:  - Bomb Defuser Game (FKA 'hangman').
+        </ul>
+        <ul class="ulul">
+          <li>Please use the <a href="http://search.cpan.org/search?mode=all&amp;query=Term%3A%3AScreen"><b>Term::Screen</b></a> module for this program.</li>
+        </ul>
+<hr>
+<h2><a id="2007"></a>Assessment 2006/7:</h2>
+This years assessment structure will not vary from that of previous years. However, the language taught is to change again. Once we programmed in a beautiful language called <a href="http://en.wikipedia.org/wiki/Pascal_%28programming_language%29">Pascal</a>. Then we changed to <a href="http://en.wikipedia.org/wiki/C_%28programming_language%29">C</a>. Now we change again to a 'new' language: <a href="http://en.wikipedia.org/wiki/Perl">Perl</a> (see above). Use the link above to view the Perl tutorial pages explaining the skills required for the assignments.
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li>The 2007 exam paper is <a href="XAM2007.pdf">here</a>.</li>
+    <li>Samples:</li>
+    </ul>
+    <ol class="ululol">
+      <li><a href="00-Computer%20Programming%202007%20(Sample%2001).pdf">Perl SAMPLE Programming Paper #1</a>
+      <br/>with <a href="2007-Sample-1-Solution.pdf">Sample 1 Solution</a> (617K)</li>
+      <li><a href="00-Computer%20Programming%202007%20(Sample%2002).pdf">Perl SAMPLE Programming Paper #2</a>
+      <br/>with <a href="2007-Sample-2-Solution.pdf">Sample 2 Solution</a> (4.7MB)</li>
+      </ol>
+  <ul>
+    <li>Assignments: (2 @ 30% each = 60%) For each assignment submit:</li>
+    </ul>
+    <ol class="ulol">
+      <li>Standard Cover Sheet</li>
+      <li>Program Listing</li>
+      <li>Flow Chart</li>
+      <li>Screen shots of sample program runs <i>etc</i></li>
+      <li>Any other appropriate items in support of your assignment</li>
+      </ol>
+    <ul>
+      <li>Assignment #1 - <a href="00-2007-assign01.pdf">Barcode Shopping Reader Program with Product Database (POS application)</a></li>
+    </ul>
+    <ul class="ulul">
+          <li><a href="perl/perl-index.shtml">Tutorial trail for Assignment #1</a></li>
+        </ul>
+      <ul class="ulul">
+        <li>The <a href="00-2007-assign01-sample-data.txt">sample data</a> (in text form) to use in your database file. The program expects this file to be called "barcodes.dat" unless you choose to change it.</li>
+        <li>These are <a href="Barcodes%20Assembled.pdf">sample barcodes</a> for testing purpose.</li>
+        <li><a href="pos.txt">Sample output</a> from a program run.</li>
+        <li>You will be shown how the barcode scanner interacts with the operating system. The underlying principles are the same for similar devices.
+        <br><img src="/images/00-01-2007-Demonstrating%20Barcode%20Reader.jpg" width="150" alt=""/></li>
+        </ul>
+    <ul>
+      <li>Assignment #2 - <a href="00-2007-assign02.pdf">Perl CGI program to verify user input</a> - <b>Tour Booking</b>. Cross reference to <a href="http://www.fachtnaroe.com/subjects/webauthoring5/">Web Authoring</a></li>
+      </ul>
+      <ul class="ulul">
+        <li>After a sanity check on the user input data the following criteria to a booking will apply:</li>
+        </ul>
+        <ol class="ululol">
+          <li>No booking for in excess of 60 people may be made.</li>
+          <li>No booking for less than 15 people may be made, with exceptions:</li>
+          <li>A booking of 5 of more Special Needs Visitors, with one adult per 5 SNVs is acceptable.</li>
+          <li>Bookings may only be made for the following month.</li>
+          <li>Bookings of children only are not acceptable.</li>
+          <li>The completed booking should be stored in the file ">> /home/public/greenstock.dat"</li>
+          <li>Write the record of the booking as a series of fields (even if empty) separated by colons (:)</li>
+          <li>The first item in the record should be your username.</li>
+          <li>Concatenate all the data with the '.' operator</li>
+          </ol>
+    <ul>
+      <li><a href="http://mymailbox.fachtnaroe.net/~fachtna/00-booking-2007.html">Sample Tour Booking Form with functioning script.</a></li>
+      <li><a target="_top" href="http://mymailbox.fachtnaroe.net/cgi-bin/fachtna/database-2007.pl">View tour bookings database</a></li>
+      <li><a href="00-Sample-Solution-Script-ODG.pdf">Sample Solution in PS/PDF format</a></li>
+    </ul>
+<hr>
+<h2><a id="2006"></a>Assessment 2005/6:</h2>
+<ul>
+  <li>Written Exam 40%</li>
+  </ul>
+  <ul class="ulul">
+    <li>The 2006 exam paper is <a href="XAM2006.pdf">here</a>.</li>
+    <li>There is a worked solution <a href="2006-Worked-Solution.pdf">here</a>. (PDF, 226K)</li>
+    </ul>
+    <ul>
+      <li>Assignments: (2 @ 30% each = 60%) For each assignment submit:</li>
+      </ul>
+      <ol class="ulol">
+        <li>Standard Cover Sheet</li>
+        <li>Program Listing</li>
+        <li>Flow Chart</li>
+        <li>Screen shot of sample program run</li>
+        <li>Any other appropriate items in support of your assignment</li>
+        </ol>
+      <ul>
+        <li>Assignment #1 - <a href="00-2006-assign01.pdf">Simple Phone Database Program with Menu Driven Control</a>
+        <br/>(<a href="00-2006-assign01-sample%20data.txt">Click here for sample data your program might be tested with</a>)</li>
+        </ul>
+      <ul>
+        <li>Assignment #2 - <a href="00-2006-assign02.pdf">Barcode Shopping Reader Program with Product Database (POS application)</a>
+        </ul>
+        <ul class="ulul">
+          <li>This <a href="read01.c">sample code</a> will get you started. It reads the barcode database file and makes its contents usable in your program.</li>
+          <li>The <a href="00-2006-assign02-sample-data.txt">sample data</a> (in text form) to use in your database file. The program expects this file to be called "barcodes.dat" unless you choose to change it.</li>
+          <li>These are <a href="Barcodes%20Assembled.pdf">sample barcodes</a> for testing purpose.</li>
+          </ul>
+       <ul>   
+        <li>Code segments will be provided to enable the above assignments if appropriate.</li>
+      </ul>
+
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="previous.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

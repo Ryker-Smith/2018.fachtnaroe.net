@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/lpr5.1.html -->
+
+<HEAD>
+<TITLE>Examples of using the lprm command</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of using the <SAMP>lprm</SAMP> command</H1>
+
+<P>To remove a print job from the queue for your
+default printer:</P>
+
+<PRE WIDTH=80>   <STRONG>lpq</STRONG>
+   Rank    Owner   Job     Files
+   active  joe     483     overheads.ps
+   2nd     sarah   484     /tmp/RFC137
+   3rd     tony    485     report
+
+   <STRONG>lprm 484</STRONG>
+</PRE>
+
+<P>The user <SAMP>sarah</SAMP> has removed their print job from the
+the printer queue.</P>
+
+<HR>
+
+<P>To remove a print job that has been placed in
+another printer's queue:</P>
+
+<PRE WIDTH=80>   <STRONG>lpq -Pps3</STRONG>
+   Rank    Owner   Job     Files
+   active  jim     112     doc.ps
+   2nd     sally   113     presentation.ps
+   3rd     tom     114     draft
+
+   <STRONG>lprm -Pps3 113</STRONG>
+</PRE>
+
+<P>The user <SAMP>sally</SAMP> has removed her print job from the
+queue for the printer <SAMP>ps3</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

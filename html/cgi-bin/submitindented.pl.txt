@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+require "htmlutilities.lib";
+require "subparseform.lib";
+require "commonsubmit.lib";
+
+&#38;Parse_Form;
+&#38;ContentType;
+
+$filename = $formdata {'tempfilename'};
+&#38;section1;
+print "&#60;HR&#62;";
+&#38;section2;
+&#38;section5;
+&#38;section6;
+

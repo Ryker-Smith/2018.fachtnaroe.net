@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt2.1.2.html -->
+
+<HEAD>
+<TITLE>Examples of passing arguments to the shell</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of passing arguments to the shell</H1>
+
+<P>To pass several arguments from the command line to the
+shell:</P>
+
+<PRE WIDTH=80>   <STRONG>cat first_5args</STRONG>
+   # This script echoes the first five arguments
+   # supplied to the script
+   echo The first five command line
+   echo arguments are $1 $2 $3 $4 $5
+   <STRONG>first_5args mines a pint john o.k.</STRONG>
+   The first five command line
+   arguments are mines a pint john o.k.
+</PRE>
+
+<P>This passes the arguments represented by parameters <SAMP>$1</SAMP>
+through <SAMP>$5</SAMP> to the shell script.</P>
+
+<HR>
+
+<P>To pass the value of each positional parameter to the
+shell script:</P>
+
+<PRE WIDTH=80>   <STRONG>cat printps</STRONG>
+   # This script converts ASCII files to PostScript
+   # and sends them to the PostScript printer ps1
+   # It uses a local utility "a2ps"
+   a2ps $* | lpr -Pps1
+   <STRONG>printps elm.txt vi.ref msg</STRONG>
+</PRE>
+
+<P>This processes the three files given as arguments to the
+command <SAMP>printps</SAMP>.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

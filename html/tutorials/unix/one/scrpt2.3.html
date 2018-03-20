@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt2.3.html -->
+
+<HEAD>
+<TITLE>Reading user input</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Reading user input</H1>
+
+<P>To read <A HREF="../glossary/gs.html#stdin">standard input</A> into a shell script use the read
+command. For example:</P>
+
+<PRE WIDTH=80>   echo "Please enter your name:"
+   read name
+   echo "Welcome to Edinburgh $name"
+</PRE>
+
+<P>This prompts the user for input, assigns this to the
+variable <SAMP>name</SAMP> and then displays the value of this
+variable to <A HREF="../glossary/gs.html#stdout">standard output</A>.</P>
+
+<P>If there is more than one word in the input, each word
+can be assigned to a different variable. Any words left
+over are assigned to the last named variable. For
+example:</P>
+
+<PRE WIDTH=80>   echo "Please enter your surname\n"
+   echo "followed by your first name: \c"
+   read name1 name2
+   echo "Welcome to Glasgow $name2 $name1"
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

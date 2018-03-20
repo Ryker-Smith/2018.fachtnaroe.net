@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!--#include virtual=/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!--#include virtual="/navigation.shtml" -->
+<div id="content">
+<h1>Computer Programming Sample Solution</h1>
+<table cellspacing="0" cellpadding="0">
+<tr><td><h3>This program, written in the C programming language, was submitted by an on-line submission system that was in use at the time. It would not have been accepted by that system if it were not <i>syntactically</i> correct, as determining that automatically was a key function of that submission system.</h3><td></tr>
+<table border="0" cellspacing="0" cellpadding="1" align="center" bgcolor="#000000">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" bgcolor="#ffffff">
+<tr>
+<td>
+<pre>
+/*
+========================================================
+Submitted on: 20010330 at: 11:25:05 from: 193.120.70.26
+========================================================
+*/
+//Author: Melissa Walsh
+//Programming Assignment 4 - Maze Game
+//Programming Language: C
+
+#include &lt;stdio.h&gt;
+#include &lt;curses.h&gt;
+#include &lt;string.h&gt;
+
+char gamearray[21][41];
+
+char Key, onechar;
+int X, Y, gameover, lives, playerdead, exitreached;
+main ()
+
+{
+ initscr (); //start window
+ erase ();
+ noecho ();
+ refresh ();
+ drawmap ();
+ findplayer();
+ movemoi ();
+ gameover = 0;
+ playerdead = 0;
+ exitreached = 0;
+ lives = 1;
+ refresh ();
+ while (gameover != 1 ) // while the game is not over or doesn't have a value of 1 do the
+ {                      // following
+  onechar = getch ();   
+  movemoi (onechar);
+  refresh ();
+  checknewcoords ();
+
+  mvprintw (26, 0,"Lives: (%d)\n", lives);
+  if ((onechar == 'Q') || (onechar == 'q')) // if user types 'q' or 'Q' to quit the game
+  {
+   gameover = 1; // then the game is over
+  }
+  if ((playerdead == 1) || (exitreached == 1)) // if player dies or exit is reached
+  {
+   gameover = 1; // the game is over
+  }
+ }
+ endwin (); //end window
+}
+int drawmap ()  //function to draw the map on screen
+{
+ int mapfile, looper;
+ char oneline[41];
+ mapfile = fopen ("maze04.map", "r");
+ looper = 0;
+ while (fgets (oneline, 42, mapfile) != NULL)
+ {
+  strcpy (gamearray[looper], oneline);
+  printw ("%s", gamearray[looper]);
+  looper ++;
+  refresh;
+ }
+ fclose (mapfile);
+}
+
+int findplayer () //function to locate the player in maze
+{
+ int xloop, yloop, xloc, yloc;
+ yloop = 1;
+ while (yloop&lt;=21)
+ {
+  xloop = 1;
+  while (xloop&lt;=41)
+  {
+   if (gamearray [yloop][xloop] == '@')
+   {
+    xloc = xloop;
+    yloc = yloop;
+    mvprintw (22,0,"This is a maze game. The object of the game is to try and find the exit!\n");
+    mvprintw (23,0,"To quit enter q/Q. To move use the arrows. If you die, it will be indicated");
+    mvprintw (24,0,"If you successfully find the exit you will be told. G'luck!\n");
+    mvprintw (25,0,"Located player at:(%c)[%2d][%2d]\n", gamearray [yloop][xloop], yloc, xloc);
+   }
+   xloop++;
+  }
+  yloop++;
+ }
+ X = xloc;
+ Y = yloc;
+ return;
+}
+
+int checknewcoords () //function to check the co-ordinates of the player
+ {
+  if (gamearray[Y][X] == 'T') // if player comes into contact with 'T' (tonic) then player gains a life
+  {
+   lives++;
+   gamearray[Y][X] = ' '; // as soon as player gains a life the 'T' is removed from the maze
+  }
+  if (gamearray[Y][X] == 'P') // if player comes into contact with a 'P' (poison)
+                              // then player loses a life
+  {
+   lives--;
+   gamearray[Y][X] = ' '; // as soon as player loses a life the 'P' is removed from the maze
+  }
+  if ( lives == 0) // if player has no lives left
+  {
+   playerdead = 1; // then the player is dead
+   mvprintw (27, 0,"\nSorry, no lives left!!!\n");
+  }
+  if ((gamearray[Y][X-1] == '[') &amp;&amp; (gamearray[Y][X+1] == ']')) // if player is between
+  {                                                             // the exit symbols
+   exitreached = 1; // then the exit has been reached
+   mvprintw (27, 0,"\nWell done, you have successfully reached the exit\n");
+  }
+  refresh ();
+ }
+
+int movemoi (int Key) // function to move the player
+{
+ //move up
+ if (Key == 'A')
+  if ((gamearray[Y - 1][X] != '[') &amp;&amp; (gamearray[Y - 1][X] != ']') ) // if the exit symbols
+  {                                                                  // aren't above the player
+   if (gamearray[Y - 1][X] != '#') // or if there isn't a wall
+   {
+    mvprintw (Y, X, " "); // then take player out of present position
+    Y--; // move up
+    mvprintw (Y, X, "@"); // and place player in its new position
+   }
+  }
+  //move down
+  if (Key == 'B')
+   if (gamearray[Y + 1][X] != '#') // if a wall is not below the player
+   {
+    mvprintw (Y, X, " "); // then take player out of present position
+    Y++; // move down
+    mvprintw (Y, X, "@"); // and place player in its new position
+   }
+   //move right
+   if (Key == 'C')
+    if (gamearray[Y][X + 1] != '#') // if a wall is not to the right of the player
+    {
+     mvprintw (Y, X, " "); // then take player out of present position
+     X++; // move to the right
+     mvprintw (Y, X, "@"); // and place the player in its new position
+    }
+    //move left
+    if (Key == 'D')
+     if (gamearray[Y][X - 1] != '#') // if a wall is not to the left of the player
+     {
+      mvprintw (Y, X, " "); // then take player out of present position
+      X--; // move to the left
+      mvprintw (Y, X, "@");   // and place the player in its new position
+     }
+}
+</pre>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<tr class="real_empty"><td class="real_empty">&nbsp;</td></tr>
+</table>
+</div>
+</body>
+</html>

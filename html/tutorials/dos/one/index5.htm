@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <META NAME="Author" CONTENT="Eric Phelps">
+   <META NAME="Description" CONTENT="The most powerful method of processing lines involves getting the name of a batch file on the beginning of the line. This allows the words to be passed as arguments to the batch file.">
+   <TITLE>Processing Lines</TITLE>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+&nbsp;
+<BR>&nbsp;
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" >
+<TR>
+<TD ALIGN=LEFT VALIGN=BOTTOM><A HREF="~webspace.html"><IMG SRC="duck.gif" BORDER=0 HEIGHT=82 WIDTH=159></A></TD>
+
+<TD>
+<CENTER>
+<H1>
+Processing Lines&nbsp;</H1></CENTER>
+</TD>
+</TR>
+
+<TR BGCOLOR="#666699">
+<TD BGCOLOR="#666699">&nbsp;</TD>
+
+<TD WIDTH="100%">&nbsp;</TD>
+</TR>
+
+<TR>
+<TD ALIGN=LEFT VALIGN=TOP><IMG SRC="114x50.gif" HEIGHT=50 WIDTH=114></TD>
+
+<TD>
+<CENTER><I>&nbsp;The most powerful method of processing lines involves
+getting the name of a batch file on the beginning of the line. This allows
+the words to be passed as arguments to the batch file.</I></CENTER>
+</TD>
+</TR>
+</TABLE>
+<B><FONT SIZE=+1>&nbsp;</FONT></B>
+<BR><B><FONT SIZE=+1>Creating Line Fragments </FONT></B>Lines without the
+usual carriage-return on the end ("line fragments") can have your data
+lines appended to them to create batch files.
+<UL>
+<LI>
+<A HREF="frag-man.htm">Manual Creation</A> Manually create a line fragment
+ahead of time and copy it as needed.</LI>
+
+<LI>
+<A HREF="frag-bas.htm">QBASIC</A> Create your fragment by having your batch
+program make and run a BASIC program using the simple PRINT statement.</LI>
+
+<LI>
+<A HREF="frag-dbg.htm">DEBUG</A> Easily invoked by a batch program, DEBUG
+can be used as a simple binary editor to create any desired fragment.</LI>
+
+<LI>
+<A HREF="errors.htm#mode">MODE</A> Taking advantage of a quirk of this
+Windows 95 command is the quickest way to create a line fragment.</LI>
+</UL>
+<B><FONT SIZE=+1><A HREF="prompts.htm">Capturing DOS Prompts</A></FONT></B>
+Since the prompt always appears at the beginning of a line, capturing an
+intact line -- with a custom prompt you define -- can be used to turn a
+line of data into a batch file.
+
+<P><B><FONT SIZE=+1><A HREF="errors.htm">Error Messages and Prompts</A></FONT></B>
+Several DOS commands will place your data on the same line with some kind
+of message. If the message precedes your data, you can turn the line into
+a batch file. In addition to the widely-known DATE, six other commands
+are analyzed.
+
+<P><B><FONT SIZE=+1><A HREF="word-for.htm">FOR</A></FONT></B> Unlike the
+other methods, it doesn't turn your line of data into a batch file. But
+FOR does the actual job of separating the words in the line. If the words
+on the line happen to be file masks, FOR is the best choice.
+
+<P><B><FONT SIZE=+1>Isolating a Line</FONT></B> Sometimes the problem is
+that you have lots of lines and only want one.
+<UL>
+<LI>
+<A HREF="line-uni.htm">FIND</A> If your line is at all unique, it can be
+separated from the junk.</LI>
+
+<LI>
+<A HREF="numbring.htm">Numbering lines</A>. Both FIND and FC can place
+unique sequential numbers at the beginning of each line of data in a file.
+This makes every line unique.</LI>
+</UL>
+<P><CENTER>Bad links? Questions? <A HREF="mail.htm">Send me mail</A>.</CENTER>
+</BODY>
+</HTML>

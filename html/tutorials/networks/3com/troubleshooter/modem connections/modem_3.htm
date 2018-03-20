@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Troubleshooter</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(26);
+parent.creator.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(25);
+parent.creator.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(20);
+parent.creator.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(24);
+parent.creator.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(23);
+parent.creator.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.creator.frames[0].document.embeds[0].GotoFrame(27);
+parent.creator.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table width="560" border="0">
+  <tr align="left"> 
+    <td> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>The Internet Connection 
+        Wizard is Displayed Instead of the LAN Modem Configuration Screens:</b></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> When you click on 
+        your Web browser icon you may see the Internet Connection Wizard screen 
+        instead of the LAN Modem configuration screen you were expecting. This 
+        happens when you try to access the Internet for the first time. </font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><img src="../../images/notesymb.gif" width="16" height="22" align="top">Note: 
+        The example shown below is based on Windows 95. Your screens may be slightly 
+        different for Windows 98, but the principle is the same. You must tell 
+        your computer that the LAN Modem should be contacted over the network 
+        rather than through a serial connection.</font></p>
+      <blockquote>
+        <p><img src="images/modem_1.gif" width="355" height="255"></p>
+      </blockquote>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> To ensure that the 
+        PC can communicate with the LAN Modem complete the following steps: </font></p>
+      <ol>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>Next</i>. 
+          The Setup Options screen is displayed.<br>
+          <br>
+          </font><img src="images/modem_2.gif" width="355" height="254"><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Make sure that 
+          you select the middle option (as shown in the screen above). <br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>Next</i>. 
+          The Set Up Your Internet Connection screen is displayed.<br>
+          <br>
+          </font><img src="images/modem_3.gif" width="335" height="249"><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Select <i>Connect</i> 
+          using my local area network [LAN] option. <br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>Next</i>. 
+          The Proxy Server screen is shown.<br>
+          <br>
+          </font><img src="images/modem_4.gif" width="335" height="249"><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Select the <i>No</i> 
+          option. <br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>Next</i>. 
+          The Setup Your Internet Mail Account screen is shown.<br>
+          <br>
+          </font><img src="images/modem_5.gif" width="335" height="249"><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Select the <i>No</i> 
+          option. </font><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>Next</i>. 
+          The Set Up Your Internet News Account screen is displayed.<br>
+          <br>
+          </font><img src="images/modem_6.gif" width="335" height="249"><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Select the <i>No</i> 
+          option. <br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>Next</i>. 
+          The Set Up Your Internet Directory Service screen is shown.<br>
+          <br>
+          </font><img src="images/modem_7.gif" width="335" height="249"><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Select the <i>No</i> 
+          option. The Complete Configuration screen is shown.<br>
+          <br>
+          </font><img src="images/modem_8.gif" width="355" height="243"><br>
+          <br>
+        </li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Click <i>Finish</i>. 
+          <br>
+          <br>
+          </font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> Configure your 
+          LAN Modem as described in <a  href="javascript:hotlink_hub('lan_modem/lan_modem.htm','3.5.4.1')">Setting 
+          up the WebWizard for WAN access</a>. </font></li>
+      </ol>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/links2.2.2.html -->
+
+<HEAD>
+<TITLE>Did You Know?</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Did You Know?</H1>
+
+<P>You can make a symbolic link that points to a file that
+does not exist.  The link becomes active when the
+file that it points to is created.</P>
+
+<P>Removing the file does not affect the symbolic link
+itself and you can substitute another file for it to
+point to. Look at this example:</P>
+
+<PRE WIDTH=80>   <STRONG>ln -s $HOME/accounts/pending current</STRONG>
+       <EM>(make a symbolic link to a non-existent file)</EM>
+   <STRONG>more current</STRONG>
+   cat: accounts/pending: No such file or directory
+       <EM>(this is what happens if you try to page it)</EM>
+   <STRONG>cp ~/accounts/may ~/accounts/pending</STRONG>
+       <EM>(now to create the file that the symbolic link points to)</EM>
+   <STRONG>more current</STRONG>
+   XYZ Co. Accounts for May 1993
+   .....
+       <EM>(and the symbolic link works)</EM>
+   <STRONG>rm ~/accounts/pending; more current</STRONG>
+   cat: accounts/pending: No such file or directory
+       <EM>(removing the file makes the symbolic link inactive)</EM>
+   <STRONG>cp ~/accounts/june ~/accounts/pending</STRONG>
+   <STRONG>more current</STRONG>
+   XYZ Co. Accounts for June 1993
+   ...
+       <EM>(creating another file that the link points to
+       <EM> makes it active once again)</EM>
+</PRE>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

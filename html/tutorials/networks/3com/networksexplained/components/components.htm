@@ -1,0 +1,403 @@
+
+<HTML>
+<HEAD>
+<TITLE>Networking Components</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open()
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+  
+  trou.document.open()
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Page"
+</script>
+
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+
+<SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(9));
+</script>
+<table border="0" width="400">
+  <tr> 
+    <td align="left" valign="top" width="400"> 
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="overview"></a><a name="1.2.1.1"></a>1 
+        Overview</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1.1 A small network 
+        generally consists of:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> PCs, cabling and 
+          peripherals such as printers and print servers</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Equipment that 
+          allows your PCs and peripherals to communicate such as an OfficeConnect 
+          hub or switch</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">Modems, LAN modems 
+          and routers</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2"> A network operating 
+          system (<a href="javascript:launchglossary('nos')"onMouseOver="status=statusbar_glos;return true">NOS</a>) 
+          such as Windows 95 or 98</font><font size="2" face="Arial, Helvetica, sans-serif"> 
+          </font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><a name="nics"></a><font size="5"><a name="1.2.2.1"></a>2 
+        NICs</font></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">2.1 </font><font size="2" face="Arial, Helvetica, sans-serif"><font face="Arial, Helvetica, sans-serif" size="2"><font face="Arial, Helvetica, sans-serif" size="2"><img src="images/components_1.gif" width="211" height="139" align="right"></font>All 
+        PCs require network interface cards (<a href="javascript:launchglossary('nic')"onMouseOver="status=statusbar_glos;return true">NICs</a>) 
+        to make them ready for network use. Some are supplied with NICs already 
+        in them. When choosing a NIC (also known as an adapter card) for a PC 
+        you should consider:</font></font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The speed of your 
+          hub, switch, or print server&#151; <a href="javascript:launchglossary('ethernet')"onMouseOver="status=statusbar_glos;return true">Ethernet</a> 
+          (10Mbps) or <a href="javascript:launchglossary('fastethernet')"onMouseOver="status=statusbar_glos;return true">Fast 
+          Ethernet</a> (100Mbps).</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The type of connection 
+          you need&#151;<a href="javascript:launchglossary('rj45')"onMouseOver="status=statusbar_glos;return true">RJ-45</a> 
+          for <a href="javascript:launchglossary('twistedpair')"onMouseOver="status=statusbar_glos;return true">twisted 
+          pair</a> or <a href="javascript:launchglossary('bnc')"onMouseOver="status=statusbar_glos;return true">BNC</a> 
+          for <a href="javascript:launchglossary('coaxialcable')"onMouseOver="status=statusbar_glos;return true">coaxial</a> 
+          cable.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The type of NIC 
+          connector available inside your PC&#151;<a href="javascript:launchglossary('isa')"onMouseOver="status=statusbar_glos;return true">ISA</a> 
+          or <a href="javascript:launchglossary('pci')"onMouseOver="status=statusbar_glos;return true">PCI</a>. 
+          </font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><font size="5"><a name="1.2.2.2"></a></font>2.2<b> 
+        Connection Speed</b></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">An Ethernet 
+        NIC must be used with an Ethernet hub or switch, and a Fast Ethernet NIC 
+        must be used with a Fast Ethernet hub or switch.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">If you 
+        are connecting your PC to a dual speed device that supports both 10 and 
+        100Mbps, you can use either a 10Mbps or a 100Mbps NIC. A port on a dual 
+        speed device automatically adjusts its speed to match the highest speed 
+        supported by both ends of the connection. For example if the NIC only 
+        supports 10Mbps the port on a dual speed hub that is connected to that 
+        NIC becomes a 10Mbps port. If the NIC supports 100Mbps the port speed 
+        on the hub will be 100Mbps.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">In a 
+        similar way, if you have a dual speed NIC, you can connect it to either 
+        a 10Mbps Ethernet hub or a 100Mbps Fast Ethernet hub. The dual speed NIC 
+        will adjust its speed to match the highest speed supported by both ends 
+        of the connection.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><img src="../../images/notesymb.gif" width="16" height="22" align="left">Note: 
+        Dual speed devices are also known as auto-negotiating, auto-sensing, or 
+        10/100 device.</font></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><font size="5"><a name="1.2.2.3"></a></font>2.3 
+        <b>Connection Type</b></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">If you 
+        are setting up a network that uses twisted pair cabling you will need 
+        a NIC with an RJ-45 connector.</font></p>
+      <p align="center"><img src="images/components_2.gif" width="250" height="139"></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><font size="5"><a name="1.2.2.4"></a></font>2.4 
+        <b>ISA and PCI Connectors</b></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">There 
+        are two common types of NIC connectors for PCs:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">ISA (Industry Standard 
+          Architecture) sockets are about 14cm long.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">PCI (Peripheral 
+          Component Interconnect) sockets are used in all Pentium desktop PCs. 
+          PCI sockets provide a much higher performance than ISA. PCI sockets 
+          are about 9cm long.</font></li>
+      </ul>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Refer 
+        to your PC's user guide to find out which connector type is available 
+        on your PC.</font></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"><font size="5"><a name="1.2.2.5"></a></font>2.5 
+        <b>Specialized NICs</b></font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">In certain 
+        cases you may need specialized NICs. For example, if you have a laptop 
+        you will require a PCMCIA card.</font></p>
+      <p align="center"><img src="images/components_3.jpg" width="250" height="139"></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> When 
+        choosing a PCMCIA card you should consider:</font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The speed of your 
+          hub, switch, or print server&#151;Ethernet (10Mbps) or Fast Ethernet 
+          (100Mbps).</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The type of connection 
+          you need&#151;RJ-45 for twisted pair or BNC for coaxial cable.</font></li>
+      </ul>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">If you 
+        have a <a href="javascript:launchglossary('usb')"onMouseOver="status=statusbar_glos;return true">USB</a> 
+        port, you may consider using a <a href="javascript:launchglossary('usbnetworkinterface')"onMouseOver="status=statusbar_glos;return true">USB 
+        Network Interface</a>. </font></p>
+      <p align="center"><img src="images/components_4.jpg" width="250" height="175"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><font size="5"><a name="1.2.3.1"></a>3 
+        Hubs and switches</font></font></p>
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif">3.1 <a href="javascript:launchglossary('hub')"onMouseOver="status=statusbar_glos;return true">Hubs</a> 
+        and <a href="javascript:launchglossary('switch')"onMouseOver="status=statusbar_glos;return true">switches</a> 
+        are used to connect your PCs, printers and other devices. Hubs differ 
+        from switches in the way that they pass on the network <a href="javascript:launchglossary('traffic')"onMouseOver="status=statusbar_glos;return true">traffic</a>. 
+        </font></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> 3.2<a name="1.2.3.2"></a> 
+        The term “hub” is sometimes used to refer to any piece of network equipment 
+        that connects PCs together, but actually serves as a <i>repeater</i>. 
+        This is because it passes on or <i>repeats</i> all the information it 
+        receives, to all its ports.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> Hubs 
+        can be used to extend a network. However, this can result in a lot of 
+        unnecessary traffic because the same information is sent to all devices 
+        on a network.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> Hubs 
+        are fine for small networks, but heavily used networks may require additional 
+        networking equipment such as a switch which will reduce unnecessary traffic.</font></p>
+      <p align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="400" height="260">
+          <param name="SRC" value="images/components_5.swf">
+          <embed src="images/components_5.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="400" height="260">
+          </embed> 
+        </object></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">3.3 <a name="1.2.3.3"></a>Switches 
+        use the address information in each packet to control the flow of network 
+        traffic. By monitoring the packets it receives, a switch learns which 
+        devices are connected to its <a href="javascript:launchglossary('port')"onMouseOver="status=statusbar_glos;return true">ports</a> 
+        and then sends on the packets to the appropriate ports only. </font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> A switch 
+        reduces the amount of unnecessary traffic because information received 
+        on a port is only forwarded to the device with the appropriate destination 
+        address, unlike a hub, which forwards to all ports.</font></p>
+      <p align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="400" height="270">
+          <param name="SRC" value="images/components_6.swf">
+          <embed src="images/components_6.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="400" height="270">
+          </embed> 
+        </object></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> 3.4 
+        <a name="1.2.3.4"></a>Switches and hubs are often used in the same network. 
+        The hubs extend the network by providing more ports, and the switches 
+        divide the network into smaller, less congested sections.</font></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">3.5 <a name="1.2.3.5"></a>In 
+        a small network, hubs can easily cope with the network traffic generated. 
+        When the network reaches about 25 users, you may need to cut down unnecessary 
+        traffic. A suitable switch, such as one from the OfficeConnect range, 
+        will divide the network to achieve this. </font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">Some 
+        hubs have Network Utilization <a href="javascript:launchglossary('led')"onMouseOver="status=statusbar_glos;return true">LEDs</a>, 
+        which you can use to view the amount of traffic on the network. If the 
+        traffic is constantly high, you may need to divide up the network using 
+        a switch.</font></p>
+      <p align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="400" height="200">
+          <param name="SRC" value="images/components_7.swf">
+          <embed src="images/components_7.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="400" height="200">
+          </embed> 
+        </object></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">3.6<a name="1.2.3.6"></a> 
+        When adding hubs to the network there are rules you need to know about 
+        the number of hubs you can connect together. Switches can be used to extend 
+        the number of hubs in your network. Refer to the <b>Network Rules</b> 
+        section of this CD for more information.<br>
+        </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><a name="modemsandrouters"></a><font face="Arial, Helvetica, sans-serif" size="2"><a name="1.2.4.1"></a></font><font size="5">4 
+        Modems, Routers and Firewalls</font></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.1 A modem is a device 
+        that connects directly to your computer and uses the telephone line to 
+        dial remote sites, such as an online service or an <a href="javascript:launchglossary('isp')"onMouseOver="status=statusbar_glos;return true">ISP</a>. 
+        A modem's essential task is to convert the digital data required by your 
+        computer into analog signals for transmission over the telephone line 
+        and vice versa.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">The speed at which 
+        a modem connects is measured in Kilobits per second (<a href="javascript:launchglossary('kbps')"onMouseOver="status=statusbar_glos;return true">Kbps</a>). 
+        Most modems used today connect at speeds ranging from 28.8Kbps to 56Kbps. 
+        Modems are also defined according to their <a href="javascript:launchglossary('itu')"onMouseOver="status=statusbar_glos;return true">ITU</a> 
+        standard. For example, a modem that is capable of download speeds of up 
+        to 56Kbps is referred to by the designation V.90. </font></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.2 <a name="1.2.4.2"></a> 
+        A LAN Modem is similar to a stand-alone modem in that it is a device that 
+        uses the telephone line to dial remote sites. 3Com's OfficeConnect LAN 
+        Modem, for example, is essentially an <a href="javascript:launchglossary('isdn')"onMouseOver="status=statusbar_glos;return true">ISDN</a> 
+        or <a href="javascript:launchglossary('analog')"onMouseOver="status=statusbar_glos;return true">analog</a> 
+        <a href="javascript:launchglossary('router')"onMouseOver="status=statusbar_glos;return true">router</a> 
+        with a built-in <a href="javascript:launchglossary('ethernet')"onMouseOver="status=statusbar_glos;return true">Ethernet</a> 
+        <a href="javascript:launchglossary('hub')"onMouseOver="status=statusbar_glos;return true">hub</a>, 
+        allowing users to share phone lines and modem connections. A LAN Modem 
+        is connected directly to each attached computer's Ethernet network port, 
+        allowing for potentially faster data transfers than stand-alone modems. 
+        </font></p>
+      <p align="center"><img src="images/components_8.gif" width="400" height="300"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2">4.3 <a name="1.2.4.3"></a> 
+        You can increase the number of LAN users (up to 25) that can share access 
+        to the WAN by connecting a 10BASE-T Ethernet Hub to one of the LAN Modem's 
+        LAN ports. Here's an example showing 10 users by adding an OfficeConnect 
+        Ethernet Hub 8.</font></p>
+      <p align="center"><img src="images/components_9.gif" width="398" height="375"></p>
+      <hr width="390" size="3">
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2">4.4 In 
+        a network a firewall is a node set up as a barrier to prevent unwanted 
+        traffic crossing from one segment to another. Firewalls also improve network 
+        security, and may serve as a barrier between connected public and private 
+        networks. A firewall may be implemented in a router or it may be a network 
+        device specialised for this purpose.</font></p>
+      <p align="left"><font face="Arial, Helvetica, sans-serif" size="2"> By using 
+        a firewall you can prevent access to inappropriate material, keep a log 
+        of which sites are being accessed most frequently and analyse how much 
+        bandwidth your Internet connection is using. The diagram below illustrates 
+        a firewall in a network. The <a href="javascript:launchglossary('dmz')"onMouseOver="status=statusbar_glos;return true">DMZ</a> 
+        (De-Militarized Zone) connection can be found on the OfficeConnect Internet 
+        Firewall DMZ which protects your network from outside attack (<a href="javascript:launchglossary('hacker')"onMouseOver="status=statusbar_glos;return true">hacker</a> 
+        attack) but also allows external access to your network from Internet 
+        users. For example, customers are allowed to see your Web site without 
+        being able to.access the rest of your network.</font></p>
+      <p align="left"><img src="images/components_10.gif" width="398" height="345"></p>
+      <hr width="390" size="3">
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><font face="Arial, Helvetica, sans-serif" size="2"><font face="Arial, Helvetica, sans-serif" size="2"><a name="1.2.5.1"></a></font></font><font size="5">5 
+        Network Operating Systems</font></font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">5.1 Your computer 
+        has a <a href="javascript:launchglossary('nos')"onMouseOver="status=statusbar_glos;return true">Network 
+        Operating System</a> that allows it to offer services to other users over 
+        the network.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">There are different 
+        types of Network Operating Systems. For example, Microsoft has produced 
+        a number of operating systems including <i>Windows 95</i>, <i>Windows 
+        NT</i>, and more recently the <i>Windows 98</i> operating system. These 
+        operating systems communicate with other devices on your network using 
+        a set of rules. These rules are known as <i>Protocols</i>.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">An operating system 
+        can support several protocols, but only devices using the same protocol 
+        can communicate with each other.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">When you connect your 
+        computer to the network (using a NIC, PCMCIA card or modem) the computer 
+        will automatically associate a protocol with that device. The protocol 
+        associated with the device by default will depend on the operating system 
+        installed on your computer.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">For example, Windows 
+        95 installs the <a href="javascript:launchglossary('netbeui')"onMouseOver="status=statusbar_glos;return true">NetBEUI</a> 
+        protocol by default and Windows 98 installs the <a href="javascript:launchglossary('tcpip')"onMouseOver="status=statusbar_glos;return true">TCP/IP</a> 
+        protocol by default.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If you have some computers 
+        using NetBEUI while other use TCP/IP, you will have two different networks. 
+        The computers using NetBEUI (typically with Windows 95 operating systems) 
+        will only be able to recognise and communicate with other computers using 
+        NetBEUI. Computers using TCP/IP (typically with Windows 98 operating systems) 
+        will only be able to communicate with other computers using TCP/IP.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">To solve this problem, 
+        you must make sure that all computers on the network use the same protocol.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">We recommend that 
+        you configure your computers to use TCP/IP if: </font></p>
+      <ul>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">You require Internet 
+          access either now or in the future.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">You will be using 
+          software that requires TCP/IP. For example, many computer games now 
+          require TCP/IP.</font></li>
+        <li><font face="Arial, Helvetica, sans-serif" size="2">The majority of 
+          your computers already have Windows 98 installed. </font></li>
+      </ul>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Setting up TCP/IP 
+        is described in <b>Setting up IP</b> within the <b>Using Your Network</b> 
+        section of this tutorial.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><img src="../../images/notesymb.gif" width="16" height="22" align="left">Note: 
+        If you have a 3Com OfficeConnect LAN Modem refer to the instructions in 
+        <b>Installing an OfficeConnect LAN Modem</b> under <b>Installing a Device</b>.</font>
+      <p>&nbsp;
+      <p>&nbsp;
+      </table>
+</BODY>
+</HTML>

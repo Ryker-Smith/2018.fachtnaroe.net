@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml" -->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml" -->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml" -->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml" -->
+<h1>Backups</h1>
+When we daily use computers we find them to be reliable and for the most part dependable. Sure, there are programs that crash and sometimes even the computer itself crashes but we reboot and continue.
+<p>But what if you can't continue? What if the computer won't reboot?
+<p>Then, if you've been a good bunny you reach for your backups content in the knowledge you haven't lost much of your precious data; you have the confidence of knowing that whatever comes next you haven't lost all your work going back days, weeks, months or even years.
+<p>Of course, if you've been a bad bunny, you might as well go find a fox: your computing life is over anyway.
+<h2>What is a Backup?</h2>
+At it's simplest a backup is a secondary copy of data that you do not want to lose.
+<p>Don't confuse this with the operating system (OS) or your applications (Microsoft Office or OpenOffice.org <i>etc</i>). These are normally on CD and can be re-installed. No, the data in question is yours - generated over time - and stored in the PC. You can easily re-install the software from the CD but how do you re-create all of your personal files?
+<p>And yes, you do have irreplaceable data. You've just got so used to it being there in the computer that it never occurred to you that you had to look after it.
+<h2>What data do you mean?</h2>
+Well, what about your CV, photographs, emails sent and received, more photographs, favorites from your browser, remembered passwords to get into regular websites quickly, letters, scanned items, more pictures, texts & numbers & photos transferred from your mobile phone, all the driver files for new hardware added since you got the PC. You've probably even chosen a nice background and a cool screen saver. If you're a busy bunny, you've probably got <a href="storagecapacity.shtml">gigabytes</a> of data.
+<h2>What do I do?</h2>
+A <b>backup</b>! Take a copy of your data and keep the copy safe. Weren't you paying attention?
+Of course, there are different backup types depending on your data and it's importance...
+<h2>Local Backup</h2>
+Select the top level folder in which all your files are stored. Choose <b>copy</b>, navigate to somewhere else in the computer and <b>paste</b> the copy there.
+<p>Of course it helps if you gather your data into a series of subfolders under a top level folder as described above.
+It also helps to make a folder called <b>backups</b> and dedicate it to that purpose. Call it something clever like, say, backups. Every time you do a backup, create a folder in that master Backup folder with a name based on the date: 20061107 (it's in the format YYYYMMDD) and copy your files into the date-named folder. This means you can tell new from old backups and eventually (<u>not</u> immediately) delete older backup copies.
+<ul>
+    <li>Advantages</li>
+  </ul>
+	<ul class="ulul">
+	  <li>Cheap</li>
+	  <li>Readily accessible</li>
+  	<li>Easy to do</li>
+	  <li>A cure for accidental deletion of some or all of the main fileset</li>
+	</ul>
+	<ul>
+    <li>Dis-Advantages</li>
+  </ul>
+	<ul class="ulul">
+  	<li>Too easily lost - they're stored in the computer that you're worried about in the first place!
+	</ul>
+<h2>Other Media Backups</h2>
+The advantage of backing up onto other media is that the backed up files can then be kept separate from the computer. Whether backed up to CD, tape, pendisk <i>etc</i>, keep the backups somewhere near to the PC in a fixed place so you'll know where to find them if required. Backups have a tendency to sprout legs if left alone.
+<p>With this mechanism if the computer needs to be wiped you can re-install your operating system and applications from CD; download your drivers from the internet if you didn't keep the original disks; and finally re-install from your separate backup medium - into the place of you choice - the last work done since a backup will be lost but at least the bulk will still be there.
+<h2>Backup Media Types</h2>
+<ul>
+  <li>Floppy disk</li>
+  </ul>
+	<ul class="ulul">
+	  <li>If you're still using these you're either stupid, desperate or both. Most PCs and laptops don't even have floppy drives any more. Generally these disks are still favoured by people whose brains have lost the ability to learn and cannot understand new fangled gizmos like the CD; remember to give up your seat on the bus to them.</li>
+	</ul>
+	<ul>
+    <li>CD</li>
+  </ul>
+	<ul class="ulul">
+  	<li>At <i>up to</i> 556 times the capacity of a floppy disk the CD is a good contender in the backup stakes. You have to use special ones though. The CD-R and CD-RW types are required because - with a CD burner drive, not an ordinary CDROM drive - they can be burned (written to) in order to put on a copy of your data.</li>
+	  <li>How your burner and software operates varies from product to product. RTFM and you'll be OK.</li>
+	  <li>A nice advantage of having a CD burner is that you can burn your favorite music tracks onto a CD-R and make a CD for your walkman with exactly the music mix you like.</li>
+	  <li>An extension of that idea is to make backup copies of your favorite CD's and only play the copies. Then if they get scratched, damaged or lost, go back and make another copy of the original and away you happily hop.</li>
+	  <li>The downside of CDs for backups is that they scratch easily making them unreadable; however most backup media are damageable in some way or another so simple care overcomes this common issue.</li>
+	  <li>The real disadvantage of CD backup is the capacity of the disk. Since each CD will hold a maximum of <a href="storagecapacity.shtml">800MB</a> (normally <a href="storagecapacity.shtml">650MB</a>) simple backups (copy & paste) will only work up to that size. Beyond that size, many backup programs will allow 'spanning' so that you can backup across a set of CDs; the downside is you need to buy backup software (that supports that feature).</li>
+	</ul>
+<ul>
+  <li>DVD</li>
+  </ul>
+	<ul class="ulul">
+  	<li>Much of what has been said about CDs also applies to DVDs. Especially the fact that you need a DVD burner drive, not a regular one.</li>
+  	<li>Funnily enough, though the capacity of a regular DVD is a whopping <a href="storagecapacity.shtml">4.7GB</a> (or <a href="storagecapacity.shtml">4700MB</a>) this won't be sufficient to back up all of a full hard-drive, or a large photo collection.</li>
+  </ul>
+<ul>
+ 	<li>Memory Stick</li>
+	</ul>
+  <ul class="ulul">
+    <li>Flash memory in the form of USB memory sticks have become very affordable and reliable. They're easy to use and portable. Though a little more expensive than CDs and DVDs they are more easily reusable.</li>
+    <li>Because they're small they'll disappear! Keep an eye on them. Their very convenience is their greatest weakness.</li>
+  </ul>
+<h2>Offsite Backup</h2>
+If you backup your files and keep the <i>only</i> backup beside the computer, what happens if there's a fire?
+<p>True, in a household situation lost data will initially seem a small problem compared to having no roof over your head for a while. But it will become an issue eventually if you had irreplaceable data.
+<p>In a business there is also a need to keep data available in the event of disaster. Clients <i>will</i> go elsewhere if you can't do their work.
+Get around this problem by keeping a copy offsite in a secured location. A CD copy in the glove compartment of the car doesn't count as secure!
+<h2>Backup Rotation</h2>
+Eventually you're probably going to have to reuse some media.
+<p>Don't stumble upon the need to do this. Plan how many copies of data you intend to keep before reusing - then calculate the cost of keeping that number of CDs or storage devices to make sure you can afford it.
+<p>Plan when you'll overwrite earlier backups to avoid doing so in a panic and losing data of which there is no other copy.
+<p>Rotation plans like Grandfather, Father, Son exist that can get you started on your rotation plan.
+<h2>Incremental vs Full Backup</h2>
+When you do a backup, what will be in it?
+<p>Will you backup every file every time you do a backup, or will you only backup changed files? If you only backup changes, that's called an incremental backup.
+<p>Incremental backups reduce the size of each daily backup, but put constraints on how you'll restore the data in the event of needing to do so. For restore of an incremental backup sequence, you first need to restore the last full backup. Then apply each set of incremental backups in turn until you're back to where you were.
+<p>Full backups are easier to make and much easier to restore. But they take longer and will cost more as greater quantities of storage are required.
+<h2>Disaster Recovery</h2>
+So, you just deleted a file by accident and want to restore an earlier copy?
+<p>When that happens it helps to know your backups are in place <i>and that they work.</i> Just as you shouldn't wait until a disaster to start securing your data, you shouldn't wait until a disaster to test your recovery procedure.
+<p>Plan what you'll do in the event of a disaster recovery. Write it down as you may be stressed and not thinking clearly at that time. Make sure your backups are accessible and test your backups regularly. One way of doing this is to choose a file at random from the backup, restore it to a temporary location and then compare the restored file to the original that it's meant to be a copy of.
+<p>Make backing up and restoring second nature; this way the first time you need your recovery system and find it works you'll feel absolutely great about yourself!
+<br>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="backups.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

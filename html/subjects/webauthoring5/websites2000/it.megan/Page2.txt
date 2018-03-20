@@ -1,0 +1,40 @@
+Mary Egan
+Page 2
+
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <title>page2</title>
+</head>
+<body text="#000000" bgcolor="#C0C0FF" link="#0000FF" vlink="#800080" alink="#FF0080">
+&nbsp;
+<center>
+<p><b><u><font face="Courier New,Courier"><font size=+2>What causes cancer?</font></font></u></b></center>
+
+<p><br>
+<br>
+<br>
+<p><font face="Courier New,Courier">In cancer, cells go wrong as a result
+of faults in their genes, which means that there are mistakes in the cell's
+instructions.</font>
+<p><font face="Courier New,Courier">Genetic faults can either be inherited
+from our parents, or more often they are the result of damage by cancer
+causing agents such as tobacco, viruses, sunlight or dietary factors that
+we encounter from day to day.</font>
+<p><font face="Courier New,Courier">It takes more than one fault to turn
+a cell into a cancer cell, but as we go through life we tend to accumulate
+these genetic mistakes.</font>
+<p><font face="Courier New,Courier">Cancer-causing agents that damage genes
+are known as carcinogens.</font>
+<center>
+<p><font face="Courier New,Courier">TOBACCO,FOOD,SUN,VIRSUS ETC.</font>
+<br>&nbsp;
+<br>&nbsp;
+<p><img SRC="file:////Vienna/itclass1999/it.megan/ashtray.jpg" height=256 width=256>
+<p>&nbsp;<a href="file:////Vienna/itclass1999/it.megan/index.html">Return
+to Index</a></center>
+
+</body>
+</html>

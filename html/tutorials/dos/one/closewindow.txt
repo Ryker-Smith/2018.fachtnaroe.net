@@ -1,0 +1,15 @@
+FAQ: How do I get my batch file to close it's DOS 
+window after it finishes?
+
+Answer: Clear the screen! Just add the following 
+two lines to the end of your batch file:
+@echo off
+cls
+
+It actually makes sense if you think about it. If 
+there is something on the screen, DOS will hold 
+the window open so you can see the results. But if 
+there is NOTHING on the screen, there is no reason 
+to keep the window open!
+
+http://www.calweb.com/~webspace

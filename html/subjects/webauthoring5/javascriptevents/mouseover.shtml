@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml"-->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml"-->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml"-->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml"-->
+<script type="text/javascript">
+function mouse_over (nameofsomething) {
+/* The element name is passed in to nameofsomething 
+   I'm using a span in which the HTML can be re-written
+*/
+  document.getElementById(nameofsomething).innerHTML="Mouse is over";
+}
+function apples (dog) {
+  document.getElementById(dog).innerHTML="You clicked";
+}
+function mouse_out (nameofsomething) {
+  document.getElementById(nameofsomething).innerHTML="Mouse is out";
+}
+</script>
+
+<div >
+<span id="demo" onclick="apples('my_thing')" onmouseover="mouse_over('my_thing')" onmouseout="mouse_out('my_thing')">Move your mouse <b>here</b> and ...</span>
+</div> <!-- # -->
+<div id="my_thing">...this text will change in response to the events over the text above
+</div> <!-- # -->
+</div> <!-- #content -->
+<!-- #include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>Maze Game: Sample Program</h1>
+<h2>0404.pl - faulty!</h2>
+<pre>
+#!/usr/bin/perl
+use strict;
+require Term::Screen;
+
+my (to student: list your variables here)
+
+#
+# Substitute your own variable names into this code
+#
+
+# Prepare a new terminal screen
+$silly_var=new Term::Screen;
+$silly_var-&gt;clrscr();
+
+# Get the contents of the map file
+open (MF, "&lt; maze04.map");
+@the_map_that_was_in_the_file_on_disk = &lt;MF&gt;;
+close (MF);
+
+# Force the fracking lines into the the_actual_maze_that_i_will_use mit einer kleiner shosen hornen
+@the_actual_maze_that_i_will_use="";
+foreach $l (@the_map_that_was_in_the_file_on_disk) {
+  push @the_actual_maze_that_i_will_use, [$l];
+}
+
+# Who's got my little man. Give me back my little man. Gimme, gimme, gimme back my man in the corner
+for ($y=0;$y&lt;=20;$y++) {
+ for ($x=0;$x&lt;=40;$x++) {
+    $silly_var-&gt;at($y,$x)-&gt;puts("$the_actual_maze_that_i_will_use[$y][$x]");
+    if ($the_actual_maze_that_i_will_use[$y][$x] == "@") {
+      $thar_she_blows_left=$x;
+      $thar_she_blows_down=$y;
+    }
+  }
+}
+
+$silly_var-&gt;at($y+1,0)-&gt;puts("Player is at Y: $thar_she_blows_down X: $thar_she_blows_left");
+$silly_var-&gt;at($y+2,0)-&gt;puts("");
+</pre>
+<form><input type="button" value="Back" onclick="history.back()"></form>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="0404.pl.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

@@ -1,0 +1,192 @@
+<table border="1" cellspacing="0" width="95%">
+	<THEAD>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><FONT COLOR="#000000"><FONT FACE="sans-serif"><B>WP</B></FONT></FONT></P>
+				<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="sans-serif"><B>Task
+				#</B></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="sans-serif"><B>Task
+				ID</B></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P><FONT COLOR="#000000"><FONT FACE="sans-serif"><B>Some
+				Skills Assessed</B></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P><FONT COLOR="#000000"><FONT FACE="sans-serif"><B>Description</B></FONT></FONT></P>
+			</TD>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">1</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">105.01</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Text
+				formatting, suitable page spacing, line spacing, font colours</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Bus
+				Timetable</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">2</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">103</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Text
+				entry, suitable sizing, line spacing, paper size, manual
+				duplexing.</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Warning
+				Notice</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">3</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">105.02</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Text
+				entry, tabs (with fill character), bullets, fractions</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Golden
+				Rum Cake</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">4</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">110</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Text
+				entry bullets (including numbered bullets), indenting</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Legal
+				letter excerpt</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">5</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">107</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Text
+				modification, page breaks, line spacing, headers, footers, edit
+				text, borders, indenting</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Tale
+				of Two Cities</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">6</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">108.03
+				<I>or</I> 108.04 <I>as given</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Insert
+				graphic, graphic resize, text formatting; automatic duplexing;
+				use of non-English/Roman characters.</I></FONT></FONT></P>
+			</TD>
+			<TD >
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Poema
+				or Libre</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">7</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">111.02</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Tables,
+				cell merging, table borders, cell alignment (vertical).</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>System
+				Troubleshooter</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">8</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">112</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Copy
+				&amp; paste between documents, non-standard bullets</I></FONT></FONT></P>
+			</TD>
+			<TD >
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Declaration
+				of Independence</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">9</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">113.01</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Mail
+				merge – use of headed paper. (Include the data source)</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Parent
+				Teacher Meeting</I></FONT></FONT></P>
+			</TD>
+		</TR>
+		<TR>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">10</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=CENTER STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif">114</FONT></FONT></P>
+			</TD>
+			<TD>
+				<P ALIGN=JUSTIFY STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Labels
+				(– include data source)</I></FONT></FONT></P>
+			</TD>
+			<TD>
+				<P STYLE="font-weight: medium"><FONT COLOR="#000000"><FONT FACE="sans-serif"><I>Stockroom
+				Labels</I></FONT></FONT></P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+</BODY>
+</HTML>

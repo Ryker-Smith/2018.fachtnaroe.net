@@ -1,0 +1,187 @@
+<head> 
+<title> UNIX Tutorial Four </title> 
+</head> 
+ 
+<body bgcolor="white"> 
+ 
+<CENTER>
+</CENTER>
+
+
+
+<hr size="1" noshade>
+<div align="center"><font size="+4" face="Verdana, Arial, Helvetica, sans-serif"><b>UNIX 
+  Tutorial Four</b></font> </div>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>4.1 
+        Wildcards</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">The characters * and 
+      ?</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The character <b>*</b> 
+      is called a wildcard, and will match against none or more character(s) in 
+      a file (or directory) name. For example, in your <b>unixstuff</b> directory, 
+      type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        ls list*</font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">This will list all files 
+      in the current directory starting with "list..." </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Try typing </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        ls *list</font></b></font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">This will list all files 
+      in the current directory ending with "...list" </font></p>
+    <p>&nbsp;</p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">The character <b>?</b> 
+      will match exactly one character.<br>
+      So <b><font face="Courier New, Courier, mono" color="#CC0000">ls ?ouse</font></b> 
+      will match files like <b>house</b> and <b>mouse</b>, but not <b>grouse</b>. 
+      <br>
+      Try typing </font></p>
+    <blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        ls ?list</font></b></font></p>
+      <p>&nbsp;</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>4.2 
+        Filename conventions</b></font></td>
+    </tr>
+  </table>
+  <blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">We should note here 
+      that a directory is merely a special type of file. So the rules and conventions 
+      for naming files apply also to directories. </font> </p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> In naming files, characters 
+      with special meanings such as <b>/</b>,<b>*</b>,<b>&amp;</b>,<b>%</b> etc., 
+      should be avoided. Also, avoid using spaces within names. The safest way 
+      to name a file is to use only alphanumeric characters, that is, letters 
+      and numbers, together with <b>_</b> (underscore) and <b>.</b> (dot). </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> File names conventionally 
+      start with a lower-case letter, and may end with a dot followed by a group 
+      of letters indicating the contents of the file. For example, all files consisting 
+      of Pascal code may be named with the ending <b>.p</b>, for example, <b>prog1.p</b> 
+      . Then in order to list all files containing Pascal code in your home directory, 
+      you need only type <b><font face="Courier New, Courier, mono" color="#CC0000">ls 
+      *.p</font></b> in that directory. </font> </p>
+    <p> <font face="Verdana, Arial, Helvetica, sans-serif"><b>Beware</b>: some 
+      applications give the same name to all the output files they generate. For 
+      example, some compilers, unless given the appropriate option, produced compiled 
+      files named <b>a.out</b>. Should you forget to use that option, you are 
+      advised to rename the compiled file immediately, otherwise the next such 
+      file will overwrite it and it will be lost. </font></p>
+  </blockquote>
+  <p>&nbsp; </p>
+</blockquote>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>4.3 
+        Getting Help</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">On-line Manuals</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">There are on-line manuals 
+      which gives information about most commands. The manual pages tell you which 
+      options a particular command can take, and how each option modifies the 
+      behaviour of the command. Type man command to read the manual page for a 
+      particular command. </font></p>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> For example, to find 
+      out more about the wc (word count) command, type </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        man wc </font></b> </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> Alternatively </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        whatis wc </font></b> </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> gives a one-line description 
+      of the command, but omits any information about options etc. </font></p>
+    <p>&nbsp;</p>
+    <h3><font face="Verdana, Arial, Helvetica, sans-serif">Apropos</font></h3>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif">When you are not sure 
+      of the exact name of a command, </font></p>
+    <blockquote> 
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        apropos <i>keyword</i> </font></b> </font></p>
+    </blockquote>
+    <p><font face="Verdana, Arial, Helvetica, sans-serif"> will give you the commands 
+      with <i>keyword</i> in their manual page header. For example, try typing 
+      </font></p>
+    <blockquote>
+      <p><font face="Verdana, Arial, Helvetica, sans-serif"> <b><font face="Courier New, Courier, mono">%</font><font face="Courier New, Courier, mono" color="#CC0000"> 
+        apropos copy</font></b><br>
+        </font></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>
+<hr size="1" noshade>
+<blockquote> 
+  <table width="80%" border="0" cellpadding="5" bgcolor="#336699">
+    <tr> 
+      <td> <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="+1"><b>Summary</b></font></td>
+    </tr>
+  </table>
+  <blockquote> 
+    <table border="0" cellpadding="5">
+      <tr> 
+        <td><b><font face="Courier New, Courier, mono" color="#CC0000">*</font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">match any number 
+          of characters</font></td>
+      </tr>
+      <tr> 
+        <td><b><font face="Courier New, Courier, mono" color="#CC0000">?</font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">match one character</font></td>
+      </tr>
+      <tr> 
+        <td><b><font face="Courier New, Courier, mono" color="#CC0000">man <i>command</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">read the online 
+          manual page for a command</font></td>
+      </tr>
+      <tr> 
+        <td><b><font face="Courier New, Courier, mono" color="#CC0000">whatis 
+          <i>command</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">brief description 
+          of a command</font></td>
+      </tr>
+      <tr> 
+        <td><b><font face="Courier New, Courier, mono" color="#CC0000">apropos 
+          <i>keyword</i></font></b></td>
+        <td><font face="Verdana, Arial, Helvetica, sans-serif">match commands 
+          with keyword in their man pages</font></td>
+      </tr>
+    </table>
+    
+  </blockquote>
+</blockquote>
+
+
+
+<p> 
+<hr size="1" noshade>
+<address><font face="Verdana, Arial, Helvetica, sans-serif"><b><font size="-1">M.Stonebank@surrey.ac.uk</font></b></font></address>
+<address><font size="-1"><b><font face="Verdana, Arial, Helvetica, sans-serif"> 
+&copy; 9th October 2000 </font></b></font></address>
+<address></address> 
+ 
+</body> 

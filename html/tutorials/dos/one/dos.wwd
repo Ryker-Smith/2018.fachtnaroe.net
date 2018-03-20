@@ -1,0 +1,1175 @@
+WebWhacker-Cache-1
+toc toc.htm
+opt filenames long
+url http://www.calweb.com/~webspace/batch/index.htm DOS Batch Programming
+url http://www.calweb.com/~webspace/ Eric's Webspace
+url http://www.calweb.com/~webspace/batch/basics/index.htm Missing DOS Commands
+url http://www.calweb.com/~webspace/batch/nt/index.htm NT Batch Programming
+url http://www.calweb.com/~webspace/batch/samples/samples.htm Sample Win9x Batch Programs
+url http://www.calweb.com/~webspace/batch/userin/index.htm Getting User Input
+url http://www.calweb.com/~webspace/batch/secondry/index.htm Creating Secondary Batch Files and Scripts
+url http://www.calweb.com/~webspace/batch/lines/index.htm Processing Lines
+url http://www.calweb.com/~webspace/batch/charactr/index.htm Batch Files - Processing Characters in a Word
+url http://www.calweb.com/~webspace/batch/lists/index.htm Processing All Lines in a File
+url http://www.calweb.com/~webspace/batch/lists/filelist.htm Creating and Processing Lists of File Names
+url http://www.calweb.com/~webspace/batch/tricks/index.htm
+url http://www.calweb.com/~webspace/mail/mail.htm Send Me Mail
+url http://www.calweb.com/~webspace/scripting/index.htm Windows Scripting
+url http://www.calweb.com/~webspace/commlink/index.htm CommLink
+url http://www.calweb.com/~webspace/commtool/index.htm CommTool
+url http://www.calweb.com/~webspace/crlf/index.htm DOS, Unix, and Apple Text Conversion
+url http://www.calweb.com/~webspace/exitwindows/index.htm Exit Windows
+url http://www.calweb.com/~webspace/ffind/index.htm FFIND
+url http://www.calweb.com/~webspace/headers/index.htm Header Viewer
+url http://www.calweb.com/~webspace/nofonts/index.htm Minimize Excel Web Page Size
+url http://www.calweb.com/~webspace/pong/index.htm Pong for Excel 97
+url http://www.calweb.com/~webspace/pop3/index.htm POP3 Internet Mail Retriever
+url http://www.calweb.com/~webspace/probeme/index.htm Probe Me!
+url http://www.calweb.com/~webspace/prn2pbm/index.htm Capturing Printer Output to Graphics
+url http://www.calweb.com/~webspace/schedule/index.htm Schedule
+url http://www.calweb.com/~webspace/setini/index.htm Read and Write INI Files From DOS
+url http://www.calweb.com/~webspace/slideshow/index.htm Slide Shows -- Do It on the Web
+url http://www.calweb.com/~webspace/tnef/index.htm Extracting files from application/ms-tnef attachments
+url http://www.calweb.com/~webspace/uncheck/index.htm Recover CHK Files
+url http://www.calweb.com/~webspace/webget/index.htm WebGet -- Internet File Retriever
+url http://www.calweb.com/~webspace/word/index.htm Word Global Search and Replace
+url http://www.calweb.com/~webspace/mail/fourqs.htm The Four Questions
+url http://www.calweb.com/~webspace/old31/index.htm Don't Throw Out Windows 3.1 Disks!
+url http://www.calweb.com/~webspace/plus/index.htm Microsoft Plus! Theme Manager for FREE
+url http://www.calweb.com/~webspace/virus/stupid.htm I Think You Are a Big Stupid Jerk.
+url http://www.calweb.com/~webspace/excel/index.htm Office 97 File Opening Problems
+url http://www.calweb.com/~webspace/about/index.htm About Eric Phelps
+url http://www.calweb.com/~webspace/batch/ DOS Batch Programming
+url http://www.calweb.com/~webspace/batch/samples/ntinput.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/ntdate.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/getqbasic.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/jhayes.txt
+url http://www.calweb.com/~webspace/batch/samples/pushpath.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/adrive.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/format.txt
+url http://www.calweb.com/~webspace/batch/samples/alldirs.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/comtest.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/accessed.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/rootname.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/disksize.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/diskfree.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/obfuscating.txt
+url http://www.calweb.com/~webspace/batch/samples/created.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/beep.txt
+url http://www.calweb.com/~webspace/batch/samples/sleep.txt
+url http://www.calweb.com/~webspace/batch/samples/addition.txt
+url http://www.calweb.com/~webspace/batch/samples/huntftp.zip
+url http://www.calweb.com/~webspace/batch/samples/random.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/enter.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/justtime.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/choice.txt
+url http://www.calweb.com/~webspace/batch/samples/getini.txt
+url http://www.calweb.com/~webspace/batch/samples/username.txt
+url http://www.calweb.com/~webspace/batch/samples/username.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/usernamedebug.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/computername.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/recent.txt
+url http://www.calweb.com/~webspace/batch/samples/login.log.txt
+url http://www.calweb.com/~webspace/batch/samples/control.txt
+url http://www.calweb.com/~webspace/batch/samples/autotime.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/subsdemo.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/ftp.script.txt
+url http://www.calweb.com/~webspace/batch/samples/hexsize.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/filename.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/printall.txt
+url http://www.calweb.com/~webspace/batch/samples/closewindow.txt
+url http://www.calweb.com/~webspace/batch/samples/windowfinish.txt
+url http://www.calweb.com/~webspace/batch/samples/reboot.txt
+url http://www.calweb.com/~webspace/batch/samples/today.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/yn.txt
+url http://www.calweb.com/~webspace/batch/samples/random.txt
+url http://www.calweb.com/~webspace/batch/samples/waitfor.txt
+url http://www.calweb.com/~webspace/batch/samples/password.txt
+url http://www.calweb.com/~webspace/batch/samples/add.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/annoythecat.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/namedate.txt
+url http://www.calweb.com/~webspace/batch/samples/vxe-exe.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/vxe2exe.bat.txt
+url http://www.calweb.com/~webspace/batch/samples/ip.zip
+url http://www.calweb.com/~webspace/batch/lines/frag-man.htm Creating Line Fragments
+url http://www.calweb.com/~webspace/batch/lines/errors.htm Redirecting Error Messages &amp; Prompts
+url http://www.calweb.com/~webspace/batch/lines/line-env.htm Placing a Line in the Environment
+url http://www.calweb.com/~webspace/batch/lines/frag-bas.htm Creating Line Fragments Using DEBUG
+url http://www.calweb.com/~webspace/batch/lines/frag-dbg.htm Creating Line Fragments Using DEBUG
+url http://www.calweb.com/~webspace/batch/lines/prompts.htm Batch Programming: Capturing Prompts
+url http://www.calweb.com/~webspace/batch/lines/word-for.htm Using FOR to Process Data Lines
+url http://www.calweb.com/~webspace/batch/lines/line-uni.htm Batch Files: Isolating a Unique Line
+url http://www.calweb.com/~webspace/batch/lines/numbring.htm Numbering Lines with FIND
+url http://www.calweb.com/~webspace/batch/lists/line-qb.htm Using QBASIC to Prefix Anything to Every Line in a File.
+url http://www.calweb.com/~webspace/batch/lists/line-seq.htm Batch Sequential Processing of a List
+url http://www.calweb.com/~webspace/batch/lists/loadfix.htm Renaming LOADFIX.COM
+url http://www.calweb.com/~webspace/batch/lists/word.gif
+try http://www.calweb.com/~webspace/batch/index.htm 976643705
+log 0 index.htm http://www.calweb.com/~webspace/batch/index.htm text/html 4408
+docstart http://www.calweb.com/~webspace/batch/index.htm
+t DOS Batch Programming
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/batch/basics/index.htm Readme
+u http://www.calweb.com/~webspace/batch/nt/index.htm NT Batch Programming
+u http://www.calweb.com/~webspace/batch/samples/samples.htm Sample Batch Files
+u http://www.calweb.com/~webspace/batch/userin/index.htm Getting User Input
+u http://www.calweb.com/~webspace/batch/secondry/index.htm Creating Secondary Batch Files
+u http://www.calweb.com/~webspace/batch/lines/index.htm Processing a Line of Data
+u http://www.calweb.com/~webspace/batch/charactr/index.htm Processing Characters in a Word
+u http://www.calweb.com/~webspace/batch/lists/index.htm Processing Lists
+u http://www.calweb.com/~webspace/batch/lists/filelist.htm Making and Processing Lists of File Names
+u http://www.calweb.com/~webspace/batch/tricks/index.htm Stupid DOS Tricks
+u http://gatsby.tafe.tas.edu.au/batch/ The Ancient Art of DOS Batch Files
+u http://bigfoot.com/~batfiles Batfiles - The DOS batch file programming handbook
+u http://www.csulb.edu/~murdock/dosindex.html EasyDOS Command Index
+u http://www.fpschultze.de/batstuff.html Frank-Peter Schultze
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/ 976643709
+log 0 ~webspace.html http://www.calweb.com/~webspace/ text/html 11217
+docstart http://www.calweb.com/~webspace/
+t Eric's Webspace
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/dos5ico.gif
+i http://www.calweb.com/~webspace/image/vbsico.gif
+i http://www.calweb.com/~webspace/image/commlico.gif
+i http://www.calweb.com/~webspace/image/commtico.gif
+i http://www.calweb.com/~webspace/image/dos1ico.gif
+i http://www.calweb.com/~webspace/image/stop.gif
+i http://www.calweb.com/~webspace/image/dos2ico.gif
+i http://www.calweb.com/~webspace/image/vbdefaultico.gif
+i http://www.calweb.com/~webspace/image/excelico.gif
+i http://www.calweb.com/~webspace/image/vbclsico.gif
+i http://www.calweb.com/~webspace/image/filcpico.gif
+i http://www.calweb.com/~webspace/image/dos4ico.gif
+i http://www.calweb.com/~webspace/image/sldshico.gif
+i http://www.calweb.com/~webspace/image/tnef.gif
+i http://www.calweb.com/~webspace/image/unchkico.gif
+i http://www.calweb.com/~webspace/image/wordico.gif
+i http://www.calweb.com/~webspace/image/attach.gif
+i http://www.calweb.com/~webspace/image/win1.gif
+i http://www.calweb.com/~webspace/image/plusico.gif
+i http://www.calweb.com/~webspace/image/stupid.gif
+u http://www.calweb.com/~webspace/batch/index.htm Batch Programs
+u http://www.calweb.com/~webspace/scripting/index.htm Windows Scripting
+u http://www.calweb.com/~webspace/commlink/index.htm CommLink
+u http://www.calweb.com/~webspace/commtool/index.htm CommTool
+u http://www.calweb.com/~webspace/crlf/index.htm CRLF
+u http://www.calweb.com/~webspace/exitwindows/index.htm ExitWindows
+u http://www.calweb.com/~webspace/ffind/index.htm FFIND
+u http://www.calweb.com/~webspace/headers/index.htm Headers
+u http://www.calweb.com/~webspace/nofonts/index.htm NoFonts
+u http://www.calweb.com/~webspace/pong/index.htm Pong
+u http://www.calweb.com/~webspace/pop3/index.htm Pop3
+u http://www.calweb.com/~webspace/probeme/index.htm ProbeMe!
+u http://www.calweb.com/~webspace/prn2pbm/index.htm FileCap / Prn2Pbm
+u http://www.calweb.com/~webspace/schedule/index.htm Schedule
+u http://www.calweb.com/~webspace/setini/index.htm SetIni
+u http://www.calweb.com/~webspace/slideshow/index.htm Slideshow
+u http://www.calweb.com/~webspace/tnef/index.htm Tnef
+u http://www.calweb.com/~webspace/uncheck/index.htm UnCheck
+u http://www.calweb.com/~webspace/webget/index.htm WebGet
+u http://www.calweb.com/~webspace/word/index.htm Word Search &amp; Replace
+u http://www.calweb.com/~webspace/mail/fourqs.htm The Four Questions
+u http://www.calweb.com/~webspace/old31/index.htm Keep Those Windows 3.1 Disks
+u http://www.calweb.com/~webspace/plus/index.htm Plus! For Free
+u http://www.calweb.com/~webspace/virus/stupid.htm I Think You Are A Big Stupid Jerk
+u http://www.calweb.com/~webspace/excel/index.htm File Opening Errors
+u http://www.calweb.com/~webspace/about/index.htm About me&nbsp;
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/basics/index.htm 976643805
+log 0 index1.htm http://www.calweb.com/~webspace/batch/basics/index.htm text/html 4525
+docstart http://www.calweb.com/~webspace/batch/basics/index.htm
+t Missing DOS Commands
+u http://www.microsoft.com/windows/downloads/bin/W95olddos.exe http://www.microsoft.com/windows/downloads/bin/W95olddos.exe
+u http://www.microsoft.com/windows/download/olddos.exe http://www.microsoft.com/windows/download/olddos.exe
+u ftp://ftp.microsoft.com/Products/Windows/Windows95/CDRomExtras/OtherUtilities/olddos.exe ftp://ftp.microsoft.com/Products/Windows/Windows95/CDRomExtr
+u ftp://ftp.microsoft.com/softlib/mslfiles/olddos.exe ftp://ftp.microsoft.com/softlib/mslfiles/olddos.exe
+u ftp://ftp.microsoft.com/Products/Windows/Windows95/CDRomExtras/AdministrationTools/ApplicationTools/envars.exe ftp://ftp.microsoft.com/Products/Windows/Windows95/CDRomExtr
+u file:///C|/WINDOWS/Config.txt Config.txt
+u file:///C|/WINDOWS/Msdosdrv.txt Msdosdrv.txt
+u file:///C|/WINDOWS/Programs.txt Programs.txt
+u file:///C|/WINDOWS/Tips.txt Tips.txt
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/nt/index.htm 976643807
+log 0 index2.htm http://www.calweb.com/~webspace/batch/nt/index.htm text/html 3019
+docstart http://www.calweb.com/~webspace/batch/nt/index.htm
+t NT Batch Programming
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/batch/ my main batch page
+u http://www.calweb.com/~webspace/batch/samples/ntinput.bat.txt Get user input from an NT batch file
+u http://www.calweb.com/~webspace/batch/samples/ntdate.bat.txt Put the date into the environment
+u http://www.zdnet.com/pcmag/pctech/content/solutions/uu1720a.htm slightly more complicated
+u http://www.calweb.com/~webspace/batch/samples/getqbasic.bat.txt Insure QBASIC exists on a Win95 user's machine
+u http://www.calweb.com/~webspace/batch/samples/jhayes.txt Joseph Hayes Tips
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/samples/samples.htm 976643808
+log 0 samples.htm http://www.calweb.com/~webspace/batch/samples/samples.htm text/html 11405
+docstart http://www.calweb.com/~webspace/batch/samples/samples.htm
+t Sample Win9x Batch Programs
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/batch/samples/getqbasic.bat.txt Insure QBASIC exists on a user's machine
+u http://www.calweb.com/~webspace/batch/samples/pushpath.bat.txt Save the current directory
+u http://www.calweb.com/~webspace/batch/samples/adrive.bat.txt Is there a disk in the A: drive?
+u http://www.calweb.com/~webspace/batch/samples/format.txt How to format a disk automatically
+u http://www.calweb.com/~webspace/batch/samples/alldirs.bat.txt Run a command in every subdirectory
+u http://www.calweb.com/~webspace/batch/samples/comtest.bat.txt Is a COM port available
+u http://www.calweb.com/~webspace/batch/samples/accessed.bat.txt When was a file last accessed?
+u http://www.calweb.com/~webspace/batch/samples/rootname.bat.txt Get the root name of a file
+u http://www.calweb.com/~webspace/batch/samples/disksize.bat.txt Find Disk Size
+u http://www.calweb.com/~webspace/batch/samples/diskfree.bat.txt Find Disk free space
+u http://www.calweb.com/~webspace/batch/samples/obfuscating.txt Hide your batch file code
+u http://www.calweb.com/~webspace/batch/samples/created.bat.txt When was a file created?
+u http://www.calweb.com/~webspace/batch/samples/beep.txt Make a beep
+u http://www.calweb.com/~webspace/batch/samples/sleep.txt Make a time delay
+u http://www.calweb.com/~webspace/batch/samples/addition.txt Incrementing
+u http://www.calweb.com/~webspace/batch/samples/huntftp.zip Find all FTP servers
+u http://www.calweb.com/~webspace/batch/samples/random.bat.txt Generate a random number
+u http://www.calweb.com/~webspace/batch/samples/enter.bat.txt Get user input from batch file
+u http://www.calweb.com/~webspace/batch/samples/ntinput.bat.txt Get user input from an NT batch file
+u http://www.calweb.com/~webspace/batch/samples/justtime.bat.txt Put the time into the environment
+u http://www.calweb.com/~webspace/batch/samples/choice.txt Read the output of DOS commands
+u http://www.calweb.com/~webspace/batch/samples/getini.txt Read and write to INI files
+u http://www.calweb.com/~webspace/batch/samples/username.txt Get the user name
+u http://www.calweb.com/~webspace/batch/samples/username.bat.txt Get the user name
+u http://www.calweb.com/~webspace/batch/samples/usernamedebug.bat.txt Get the user name
+u http://www.calweb.com/~webspace/batch/samples/computername.bat.txt Get the computer name
+u http://www.calweb.com/~webspace/batch/samples/recent.txt Copy the most recent file
+u http://www.calweb.com/~webspace/batch/samples/login.log.txt Track when anybody logs in
+u http://www.calweb.com/~webspace/batch/samples/control.txt How to shut down a Windows program
+u http://www.calweb.com/~webspace/batch/samples/autotime.bat.txt Time delay and For-Next loops
+u http://www.calweb.com/~webspace/batch/samples/subsdemo.bat.txt Subroutines in batch files.
+u http://www.calweb.com/~webspace/batch/samples/ftp.script.txt FTP scripting
+u http://www.calweb.com/~webspace/batch/samples/hexsize.bat.txt Get file sizes in HEX
+u http://www.calweb.com/~webspace/batch/samples/filename.bat.txt Long and short file names
+u http://www.calweb.com/~webspace/batch/samples/printall.txt Print multiple files or multiple copies
+u http://www.calweb.com/~webspace/batch/samples/closewindow.txt How to make a DOS window close
+u http://www.calweb.com/~webspace/batch/samples/windowfinish.txt Running a batch file after Windows shuts down.
+u http://www.calweb.com/~webspace/batch/samples/reboot.txt Want to know how to exit windows and shut down your computer
+u http://www.calweb.com/~webspace/batch/samples/today.bat.txt Run a specified program only on certain days at boot time.
+u http://www.calweb.com/~webspace/batch/samples/yn.txt How to get around the "Do you really want to do this?" promp
+u http://www.calweb.com/~webspace/batch/samples/random.txt How to make a randomly-named file.
+u http://www.calweb.com/~webspace/batch/samples/waitfor.txt Wait for your friend's dynamic web site
+u http://www.calweb.com/~webspace/batch/samples/password.txt Enter your password automatically
+u http://www.calweb.com/~webspace/batch/samples/add.bat.txt Ping an entire subnet and find the live computers.
+u http://www.calweb.com/~webspace/batch/samples/annoythecat.bat.txt Play sounds
+u http://www.calweb.com/~webspace/batch/samples/namedate.txt Rename Files with time and date
+u http://www.calweb.com/~webspace/batch/samples/vxe-exe.bat.txt Rename all files from one extension to another
+u http://www.calweb.com/~webspace/batch/samples/vxe2exe.bat.txt Rename all files from one extension to another
+u http://www.calweb.com/~webspace/batch/samples/ip.zip Inner Peace
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/userin/index.htm 976643811
+log 0 index3.htm http://www.calweb.com/~webspace/batch/userin/index.htm text/html 15236
+docstart http://www.calweb.com/~webspace/batch/userin/index.htm
+t Getting User Input
+u http://www.calweb.com/~webspace/batch/samples/ntinput.bat.txt QBASIC or Windows Scripting
+u http://www.calweb.com/~webspace/batch/lines/frag-man.htm line fragmentline fragment
+u http://www.calweb.com/~webspace/batch/lines/errors.htm#date pipe the output of FC into DATE
+u http://www.calweb.com/~webspace/batch/lines/line-env.htm line preserved intact in an environment variable
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/secondry/index.htm 976643819
+log 0 index4.htm http://www.calweb.com/~webspace/batch/secondry/index.htm text/html 13409
+docstart http://www.calweb.com/~webspace/batch/secondry/index.htm
+t Creating Secondary Batch Files and Scripts
+u http://www.zdnet.com/pcmag/issues/1421/pcm00155.htm PC Magazine
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/index.htm 976643837
+log 0 index5.htm http://www.calweb.com/~webspace/batch/lines/index.htm text/html 3491
+docstart http://www.calweb.com/~webspace/batch/lines/index.htm
+t Processing Lines
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/batch/lines/frag-man.htm Manual Creation
+u http://www.calweb.com/~webspace/batch/lines/frag-bas.htm QBASIC
+u http://www.calweb.com/~webspace/batch/lines/frag-dbg.htm DEBUG
+u http://www.calweb.com/~webspace/batch/lines/errors.htm#mode MODE
+u http://www.calweb.com/~webspace/batch/lines/prompts.htm Capturing DOS Prompts
+u http://www.calweb.com/~webspace/batch/lines/errors.htm Error Messages and Prompts
+u http://www.calweb.com/~webspace/batch/lines/word-for.htm FOR
+u http://www.calweb.com/~webspace/batch/lines/line-uni.htm FIND
+u http://www.calweb.com/~webspace/batch/lines/numbring.htm Numbering lines
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/charactr/index.htm 976643842
+log 0 index6.htm http://www.calweb.com/~webspace/batch/charactr/index.htm text/html 5726
+docstart http://www.calweb.com/~webspace/batch/charactr/index.htm
+t Batch Files - Processing Characters in a Word
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lists/index.htm 976643856
+log 0 index7.htm http://www.calweb.com/~webspace/batch/lists/index.htm text/html 3888
+docstart http://www.calweb.com/~webspace/batch/lists/index.htm
+t Processing All Lines in a File
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/batch/lists/line-qb.htm writing a filter with QBASIC
+u ftp://ftp.zdnet.com/pcmag/1994/0531/v13n10.zip DEBUG
+u http://www.calweb.com/~webspace/batch/lists/line-seq.htm Intentionally only process the first line
+u http://www.calweb.com/~webspace/batch/lists/loadfix.htm rename LOADFIX.COM
+u http://www.calweb.com/~webspace/batch/lists/word.gif a little example
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lists/filelist.htm 976643860
+log 0 filelist.htm http://www.calweb.com/~webspace/batch/lists/filelist.htm text/html 6491
+docstart http://www.calweb.com/~webspace/batch/lists/filelist.htm
+t Creating and Processing Lists of File Names
+u http://www.calweb.com/~webspace/batch/lists/line-seq.htm Batch Sequential Processing of a List
+u http://www.calweb.com/~webspace/batch/lists/index.htm different ways to process
+u http://www.calweb.com/~webspace/batch/lists/loadfix.htm Renaming LOADFIX.COM
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/tricks/index.htm 976643875
+log 0 index8.htm http://www.calweb.com/~webspace/batch/tricks/index.htm text/html 16686
+docstart http://www.calweb.com/~webspace/batch/tricks/index.htm
+i http://www.calweb.com/~webspace/batch/tricks/more.gif
+i http://www.calweb.com/~webspace/batch/tricks/dos.gif
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/mail/mail.htm 976643935
+log 0 mail.htm http://www.calweb.com/~webspace/mail/mail.htm text/html 5471
+docstart http://www.calweb.com/~webspace/mail/mail.htm
+t Send Me Mail
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/ start at my home page
+docend
+try http://www.calweb.com/~webspace/scripting/index.htm 976643951
+log 0 index9.htm http://www.calweb.com/~webspace/scripting/index.htm text/html 22295
+docstart http://www.calweb.com/~webspace/scripting/index.htm
+t Windows Scripting
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+i http://www.calweb.com/~webspace/scripting/references.gif
+u http://www.calweb.com/~webspace/
+u http://msdn.microsoft.com/scripting/windowshost/default.htm Getting Scripting
+u http://www.microsoft.com/trainingandservices/content/downloads/1080_web.exe Learning Scripting
+u http://wsh.glazier.co.nz/ Ian Morrish
+u http://cwashington.netreach.net/ Clarence Washington Jr.
+u http://ourworld.compuserve.com/homepages/Guenter_Born/WSHBazaar/WSHBazaar.htm Guenter Born
+u news://msnews.microsoft.com/microsoft.public.scripting.vbscript News:Vbscript
+u news://msnews.microsoft.com/microsoft.public.scripting.wsh News:Wsh
+u http://localhost/iisHelp/iis/misc/default.asp Are you sitting at an NT web server?
+u http://www.sapien.com/ Primal SCRIPT
+u http://www.netobjects.com/products/html/nsb3.html ScriptBuilder
+u http://www.petes-place.com/codemagic.html Code Magic
+u http://www.winmain.com CodeMax
+u http://www.vim.org/ Vim
+u http://msdn.microsoft.com/vbasic/downloads/cce/default.asp download
+u http://msdn.microsoft.com/downloads/tools/visualbasic/vbcce.asp Visual Basic Control Creation Edition
+u http://www.calweb.com/~webspace/scripting/samples/edit.reg here
+u http://msdn.microsoft.com/scripting/debugger/dbdown.htm scripting debugger
+u http://www.calweb.com/~webspace/scripting/samples/PrintWebPageWithWord.vbs PrintWebPageWithWord.vbs
+u http://www.calweb.com/~webspace/scripting/samples/MakeAndRunBatchFile.vbs MakeAndRunBatchFile.vbs
+u http://www.calweb.com/~webspace/scripting/samples/UserIn.bat UserIn.bat
+u http://www.calweb.com/~webspace/scripting/samples/WebPageCounterCGI/index.htm WebPageCounterCGI
+u http://www.calweb.com/~webspace/scripting/samples/ChatCGI/index.htm ChatCGI
+u http://www.calweb.com/~webspace/scripting/samples/DateName.vbs DateName.vbs
+u http://www.calweb.com/~webspace/scripting/samples/TimeDateName.vbs TimeDateName.vbs
+u http://www.calweb.com/~webspace/scripting/samples/TrimLogFiles.vbs TrimLogFiles.vbs
+u http://www.calweb.com/~webspace/scripting/samples/DeleteOldFiles.vbs DeleteOldFiles.vbs
+u http://www.calweb.com/~webspace/scripting/samples/NoOldFiles.vbs NoOldFiles.vbs
+u http://www.calweb.com/~webspace/scripting/samples/RecursiveLowerCase.vbs RecursiveLowerCase.vbs
+u http://www.calweb.com/~webspace/scripting/samples/RecursiveNoSpaces.vbs RecursiveNoSpaces.vbs
+u http://www.calweb.com/~webspace/scripting/samples/SearchAndReplace.vbs SearchAndReplace.vbs
+u http://www.calweb.com/~webspace/scripting/samples/GlobalSearchAndReplace.vbs GlobalSearchAndReplace.vbs
+u http://www.calweb.com/~webspace/scripting/samples/ChangeFileNameCase.vbs ChangeFileNameCase.vbs
+u http://www.calweb.com/~webspace/scripting/samples/UnGutenberg.vbs UnGutenberg.vbs
+u http://promo.net/cgi-promo/pg/t9.cgi Gutenberg
+u http://www.pkware.com/shareware/pkz250dos.html PKUNZIP
+u http://www.hotfiles.com/?000UMP MAKEDOC
+u http://www.calweb.com/~webspace/scripting/samples/MakeFtpScript.vbs MakeFtpScript.vbs
+u http://www.calweb.com/~webspace/scripting/samples/FtpUpload.vbs FtpUpload.vbs
+u http://www.calweb.com/~webspace/scripting/samples/FtpFileUpload.vbs FtpFileUpload.vbs
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/commlink/index.htm 976643990
+log 0 index10.htm http://www.calweb.com/~webspace/commlink/index.htm text/html 3263
+docstart http://www.calweb.com/~webspace/commlink/index.htm
+t CommLink
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/commlico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/image/commlink.gif
+i http://www.calweb.com/~webspace/image/commlxls.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/commlink/commlink.zip
+u http://www.win-tech.com/html/monitor.htm Win-Tech
+u ftp://ftp.microsoft.com/softlib/mslfiles/vbrun300.exe VBRUN300.DLL
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+err http://www.calweb.com/~webspace/commlink/index.htm 3 14 http://www.calweb.com/~webspace/image/commlink.gif
+err http://www.calweb.com/~webspace/commlink/index.htm 3 14 http://www.calweb.com/~webspace/image/commlxls.gif
+try http://www.calweb.com/~webspace/commtool/index.htm 976644061
+log 0 index11.htm http://www.calweb.com/~webspace/commtool/index.htm text/html 2788
+docstart http://www.calweb.com/~webspace/commtool/index.htm
+t CommTool
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/commtool/commtico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/commtool/comtool.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/commtool/commtool.zip &nbsp;
+u ftp://ftp.microsoft.com/softlib/mslfiles/vbrun300.exe VBRUN300.DLL
+u http://www.calweb.com/~webspace/commtool/ctdemo.gif Click here to see a demo
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/crlf/index.htm 976644066
+log 0 index12.htm http://www.calweb.com/~webspace/crlf/index.htm text/html 1943
+docstart http://www.calweb.com/~webspace/crlf/index.htm
+t DOS, Unix, and Apple Text Conversion
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/100.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/crlf/lf-crlf.zip LF-CRLF
+u http://www.calweb.com/~webspace/crlf/crlf-cr.zip CRLF-CR
+u http://www.calweb.com/~webspace/crlf/crlf-lf.zip CRLF-LF
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/exitwindows/index.htm 976644067
+log 0 index13.htm http://www.calweb.com/~webspace/exitwindows/index.htm text/html 2921
+docstart http://www.calweb.com/~webspace/exitwindows/index.htm
+t Exit Windows
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/100.gif
+u http://www.calweb.com/~webspace/index.htm
+u http://www.calweb.com/~webspace/exitwindows/ExitWindowsEx.zip
+u http://www.calweb.com/~webspace/exitwindows/exitwindows.gif file properties
+u ftp://ftp.microsoft.com/Softlib/MSLFILES/MSVBVM50.EXE Microsoft
+u http://www.hotfiles.com/?000LU3 Ziff-Davis
+docend
+try http://www.calweb.com/~webspace/ffind/index.htm 976644068
+log 0 index14.htm http://www.calweb.com/~webspace/ffind/index.htm text/html 1977
+docstart http://www.calweb.com/~webspace/ffind/index.htm
+t FFIND
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/100.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/ffind/ffind.zip
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/headers/index.htm 976644069
+log 0 index15.htm http://www.calweb.com/~webspace/headers/index.htm text/html 2210
+docstart http://www.calweb.com/~webspace/headers/index.htm
+t Header Viewer
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/vbdefaultico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/headers/headers.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/headers/headers.zip
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/nofonts/index.htm 976644096
+log 0 index16.htm http://www.calweb.com/~webspace/nofonts/index.htm text/html 3585
+docstart http://www.calweb.com/~webspace/nofonts/index.htm
+t Minimize Excel Web Page Size
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/nofonts/nofonts.gif
+i http://www.calweb.com/~webspace/nofonts/before.gif
+i http://www.calweb.com/~webspace/nofonts/after.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/nofonts/nofonts.zip
+u ftp://ftp.microsoft.com/softlib/mslfiles/vbrun300.exe VBRUN300.DLL
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/pong/index.htm 976644179
+log 0 index17.htm http://www.calweb.com/~webspace/pong/index.htm text/html 3426
+docstart http://www.calweb.com/~webspace/pong/index.htm
+t Pong for Excel 97
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/excelico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/pong/play.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/pong/pong.zip
+u http://www.calweb.com/~webspace/pong/pong.gif how to add the pong module
+u http://www.calweb.com/~webspace/pong/pong.txt the actual pong module
+u http://www.calweb.com/~webspace/pong/pong.xls the pong module already installed
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/pop3/index.htm 976644219
+log 0 index18.htm http://www.calweb.com/~webspace/pop3/index.htm text/html 4322
+docstart http://www.calweb.com/~webspace/pop3/index.htm
+t POP3 Internet Mail Retriever
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/vbclsico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/pop3/pop3.gif
+i http://www.calweb.com/~webspace/pop3/pop3dos.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/pop3/pop3.zip
+u ftp://ftp.microsoft.com/Softlib/MSLFILES/MSVBVM50.EXE Microsoft 
+u http://www.hotfiles.com/?000LU3 Ziff-Davis
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/probeme/index.htm 976644268
+log 0 index19.htm http://www.calweb.com/~webspace/probeme/index.htm text/html 2349
+docstart http://www.calweb.com/~webspace/probeme/index.htm
+t Probe Me!
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/vbdefaultico.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/image/probeme.gif
+u http://www.calweb.com/~webspace/index.htm
+u http://www.calweb.com/~webspace/probeme/probeme.zip
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+err http://www.calweb.com/~webspace/probeme/index.htm 3 14 http://www.calweb.com/~webspace/image/probeme.gif
+try http://www.calweb.com/~webspace/prn2pbm/index.htm 976644291
+log 0 index20.htm http://www.calweb.com/~webspace/prn2pbm/index.htm text/html 4397
+docstart http://www.calweb.com/~webspace/prn2pbm/index.htm
+t Capturing Printer Output to Graphics
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/prn2pbm/filcpico.gif
+i http://www.calweb.com/~webspace/prn2pbm/printico.gif
+i http://www.calweb.com/~webspace/prn2pbm/prn2pico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/prn2pbm/filecap.gif
+i http://www.calweb.com/~webspace/prn2pbm/prn2pbm.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/prn2pbm/filecap.zip
+u http://www.calweb.com/~webspace/prn2pbm/prn2pbm.zip
+u http://www.calweb.com/~webspace/prn2pbm/doscap.zip
+u http://www.calweb.com/~webspace/prn2pbm/r2660.gif R2660 spectrum analyzer
+u http://www.calweb.com/~webspace/prn2pbm/sunset.gif SunSet T1 test set
+u http://www.calweb.com/~webspace/prn2pbm/win95.gif Windows 95 Printer Test Page
+u http://www.hotfiles.com/?000LU3 VB5 runtime filesVB5 runtime files
+u http://www.lview.com/ LView
+u http://www.jasc.com/ PaintShop
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/schedule/index.htm 976644336
+log 0 index21.htm http://www.calweb.com/~webspace/schedule/index.htm text/html 3551
+docstart http://www.calweb.com/~webspace/schedule/index.htm
+t Schedule
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/vbdefaultico.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/100.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/schedule/schedule.zip
+u ftp://ftp.microsoft.com/Softlib/MSLFILES/MSVBVM50.EXE Microsoft         VB5 Runtime files
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/setini/index.htm 976644337
+log 0 index22.htm http://www.calweb.com/~webspace/setini/index.htm text/html 2464
+docstart http://www.calweb.com/~webspace/setini/index.htm
+t Read and Write INI Files From DOS
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/setini/iniico.gif
+i http://www.calweb.com/~webspace/setini/setico.gif
+i http://www.calweb.com/~webspace/setini/getico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/setini/ini.zip
+u http://www.calweb.com/~webspace/setini/setini.zip
+u http://www.calweb.com/~webspace/setini/getini.zip
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/slideshow/index.htm 976644342
+log 0 index23.htm http://www.calweb.com/~webspace/slideshow/index.htm text/html 5246
+docstart http://www.calweb.com/~webspace/slideshow/index.htm
+t Slide Shows -- Do It on the Web
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/100.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/slideshow/vb/index.htm Visual Basic
+u http://www.calweb.com/~webspace/slideshow/manualadvance JavaScript Manual Advance
+u http://www.calweb.com/~webspace/slideshow/autoadvance JavaScript with Automatic Advance
+u http://www.calweb.com/~webspace/slideshow/truespeech JavaScript with TrueSpeech
+u http://www.calweb.com/~webspace/slideshow/mplayer JavaScript with Microsoft MediaPlayer
+u http://www.calweb.com/~webspace/slideshow/buffered JavaScript with Buffering
+u http://www.calweb.com/~webspace/slideshow/events JavaScript with Events
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/tnef/index.htm 976644343
+log 0 index24.htm http://www.calweb.com/~webspace/tnef/index.htm text/html 3511
+docstart http://www.calweb.com/~webspace/tnef/index.htm
+t Extracting files from application/ms-tnef attachments
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/tnef.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/tnef/mstnef.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/tnef/tnef.zip
+u ftp://ftp.microsoft.com/Softlib/MSLFILES/MSVBVM50.EXE Microsoft VB5 Runtime files
+u http://www.hotfiles.com/?000LU3 Generic VB5 Runtime files
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/uncheck/index.htm 976644381
+log 0 index25.htm http://www.calweb.com/~webspace/uncheck/index.htm text/html 3942
+docstart http://www.calweb.com/~webspace/uncheck/index.htm
+t Recover CHK Files
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/uncheck/unchkico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+i http://www.calweb.com/~webspace/uncheck/unchk.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/uncheck/unchk.zip &nbsp;
+u ftp://ftp.microsoft.com/softlib/mslfiles/vbrun300.exe VBRUN300.DLL
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/webget/index.htm 976644399
+log 0 index26.htm http://www.calweb.com/~webspace/webget/index.htm text/html 4191
+docstart http://www.calweb.com/~webspace/webget/index.htm
+t WebGet -- Internet File Retriever
+i http://www.calweb.com/~webspace/webget/tile.gif
+i http://www.calweb.com/~webspace/webget/smallduck.gif
+i http://www.calweb.com/~webspace/webget/download.gif
+i http://www.calweb.com/~webspace/webget/vbclsico.gif
+i http://www.calweb.com/~webspace/webget/100.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/webget/webget.zip
+u http://member.intraware.com/free/wget.html Intraware
+u http://sunsite.dk/wget/ here
+u http://www.calweb.com/~webspace/webget/post.zip here
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/word/index.htm 976644410
+log 0 index27.htm http://www.calweb.com/~webspace/word/index.htm text/html 3986
+docstart http://www.calweb.com/~webspace/word/index.htm
+t Word Global Search and Replace
+i http://www.calweb.com/~webspace/image/tile.gif
+i http://www.calweb.com/~webspace/image/smallduck.gif
+i http://www.calweb.com/~webspace/image/download.gif
+i http://www.calweb.com/~webspace/word/wordico.gif
+i http://www.calweb.com/~webspace/image/100.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/word/gsr.doc
+u http://www.calweb.com/~webspace/word/gsr2.doc here
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/mail/fourqs.htm 976644412
+log 0 fourqs.htm http://www.calweb.com/~webspace/mail/fourqs.htm text/html 7742
+docstart http://www.calweb.com/~webspace/mail/fourqs.htm
+t The Four Questions
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.hotfiles.com/?0001ES WinCode
+u ftp://ftp.andrew.cmu.edu/pub/mpack/mpack15d.zip MPack
+u ftp://ftp.simtel.net/pub/simtelnet/msdos/decode/netsend1.zip NetSend.netsend
+u http://www.winzip.com/ WinZip
+u http://www.zdwebopedia.com/Uuencode.htm UU
+u http://www.cis.ohio-state.edu/text/faq/usenet/mail/mime-faq/top.html MIME
+u http://www.browncs.com/binhex.html BINHEX
+u http://www.calweb.com/~webspace/tnef/index.htm MS-TNEF
+u http://www.matisse.net/files/formats.html ZIP, ARJ, LHA, ARC, PAK, or TAR
+u ftp://ftp.microsoft.com/softlib/mslfiles/olddos.exe QBASIC
+u http://www.calweb.com/~webspace/mail/uudecode.bas.txt UUDECODE.BAS
+u http://www.calweb.com/~webspace/mail/smallduck.txt here
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/old31/index.htm 976644414
+log 0 index28.htm http://www.calweb.com/~webspace/old31/index.htm text/html 3954
+docstart http://www.calweb.com/~webspace/old31/index.htm
+t Don't Throw Out Windows 3.1 Disks!
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/plus/index.htm 976644416
+log 0 index29.htm http://www.calweb.com/~webspace/plus/index.htm text/html 4453
+docstart http://www.calweb.com/~webspace/plus/index.htm
+t Microsoft Plus! Theme Manager for FREE
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.microsoft.com/kids Microsoft's kids web site
+u ftp://ftp.microsoft.com/deskapps/kids/kidplusd.exe get it on their FTP site
+u http://www.winzip.com WinZip
+u ftp://ftp.microsoft.com/Softlib/MSLFILES/themes.exe Microsoft's FTP site
+u http://www.microsoft.com/windows95/downloads/contents/wutoys/w95pwrtoysset/default.asp cabview
+u http://www.calweb.com/~webspace/plus/plus.gif here
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/virus/stupid.htm 976644417
+log 0 stupid.htm http://www.calweb.com/~webspace/virus/stupid.htm text/html 3465
+docstart http://www.calweb.com/~webspace/virus/stupid.htm
+t I Think You Are a Big Stupid Jerk.
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+i http://www.calweb.com/~webspace/image/zip.gif
+i http://www.calweb.com/~webspace/image/stupid.gif
+u http://www.calweb.com/~webspace/virus/stupid.zip stupid.zip
+u http://www.calweb.com/~webspace/virus/stupid.exe stupid.exe
+u http://www.calweb.com/~webspace/virus/jerk.zip jerk.zip
+docend
+try http://www.calweb.com/~webspace/excel/index.htm 976644425
+log 0 index30.htm http://www.calweb.com/~webspace/excel/index.htm text/html 2229
+docstart http://www.calweb.com/~webspace/excel/index.htm
+t Office 97 File Opening Problems
+i http://www.calweb.com/~webspace/excel/LfnFlaw1.gif
+i http://www.calweb.com/~webspace/excel/Reopening.gif
+u http://support.microsoft.com/support/kb/articles/q159/4/74.asp?FR=0 Excel
+u http://support.microsoft.com/support/kb/articles/q70/0/14.asp?FR=0 Word
+u http://support.microsoft.com/support/kb/articles/q105/1/28.asp?FR=0 Access
+u http://www.calweb.com/~webspace/excel/regserver.gif use a shortcut
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/about/index.htm 976644429
+log 0 index31.htm http://www.calweb.com/~webspace/about/index.htm text/html 5124
+docstart http://www.calweb.com/~webspace/about/index.htm
+t About Eric Phelps
+i http://www.calweb.com/~webspace/about/1eric.jpg
+i http://www.calweb.com/~webspace/about/site.jpg
+i http://www.calweb.com/~webspace/about/eat.jpg
+i http://www.calweb.com/~webspace/about/book.jpg
+i http://www.calweb.com/~webspace/about/flower.jpg
+i http://www.calweb.com/~webspace/about/horse.jpg
+i http://www.calweb.com/~webspace/about/wedding.jpg
+i http://www.calweb.com/~webspace/about/mary.jpg
+i http://www.calweb.com/~webspace/about/hawaii.jpg
+docend
+try http://www.calweb.com/~webspace/batch/ 976644506
+log 0 batch.html http://www.calweb.com/~webspace/batch/ text/html 4408
+docstart http://www.calweb.com/~webspace/batch/
+t DOS Batch Programming
+i http://www.calweb.com/~webspace/image/duck.gif
+i http://www.calweb.com/~webspace/image/114x50.gif
+u http://www.calweb.com/~webspace/
+u http://www.calweb.com/~webspace/batch/basics/index.htm Readme
+u http://www.calweb.com/~webspace/batch/nt/index.htm NT Batch Programming
+u http://www.calweb.com/~webspace/batch/samples/samples.htm Sample Batch Files
+u http://www.calweb.com/~webspace/batch/userin/index.htm Getting User Input
+u http://www.calweb.com/~webspace/batch/secondry/index.htm Creating Secondary Batch Files
+u http://www.calweb.com/~webspace/batch/lines/index.htm Processing a Line of Data
+u http://www.calweb.com/~webspace/batch/charactr/index.htm Processing Characters in a Word
+u http://www.calweb.com/~webspace/batch/lists/index.htm Processing Lists
+u http://www.calweb.com/~webspace/batch/lists/filelist.htm Making and Processing Lists of File Names
+u http://www.calweb.com/~webspace/batch/tricks/index.htm Stupid DOS Tricks
+u http://gatsby.tafe.tas.edu.au/batch/ The Ancient Art of DOS Batch Files
+u http://bigfoot.com/~batfiles Batfiles - The DOS batch file programming handbook
+u http://www.csulb.edu/~murdock/dosindex.html EasyDOS Command Index
+u http://www.fpschultze.de/batstuff.html Frank-Peter Schultze
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/samples/ntinput.bat.txt 976644507
+log 967152004 ntinput.bat.txt http://www.calweb.com/~webspace/batch/samples/ntinput.bat.txt text/plain 6704
+try http://www.calweb.com/~webspace/batch/samples/ntdate.bat.txt 976644509
+log 967152000 ntdate.bat.txt http://www.calweb.com/~webspace/batch/samples/ntdate.bat.txt text/plain 154
+try http://www.calweb.com/~webspace/batch/samples/getqbasic.bat.txt 976644510
+log 952618792 getqbasic.bat.txt http://www.calweb.com/~webspace/batch/samples/getqbasic.bat.txt text/plain 4505
+try http://www.calweb.com/~webspace/batch/samples/jhayes.txt 976644511
+log 973967111 jhayes.txt http://www.calweb.com/~webspace/batch/samples/jhayes.txt text/plain 14389
+try http://www.calweb.com/~webspace/batch/samples/pushpath.bat.txt 976644518
+log 976476421 pushpath.bat.txt http://www.calweb.com/~webspace/batch/samples/pushpath.bat.txt text/plain 611
+try http://www.calweb.com/~webspace/batch/samples/adrive.bat.txt 976644518
+log 934393339 adrive.bat.txt http://www.calweb.com/~webspace/batch/samples/adrive.bat.txt text/plain 7688
+try http://www.calweb.com/~webspace/batch/samples/format.txt 976644520
+log 968285776 format.txt http://www.calweb.com/~webspace/batch/samples/format.txt text/plain 2250
+try http://www.calweb.com/~webspace/batch/samples/alldirs.bat.txt 976644521
+log 956553112 alldirs.bat.txt http://www.calweb.com/~webspace/batch/samples/alldirs.bat.txt text/plain 1890
+try http://www.calweb.com/~webspace/batch/samples/comtest.bat.txt 976644522
+log 949502891 comtest.bat.txt http://www.calweb.com/~webspace/batch/samples/comtest.bat.txt text/plain 2052
+try http://www.calweb.com/~webspace/batch/samples/accessed.bat.txt 976644523
+log 954619236 accessed.bat.txt http://www.calweb.com/~webspace/batch/samples/accessed.bat.txt text/plain 992
+try http://www.calweb.com/~webspace/batch/samples/rootname.bat.txt 976644524
+log 966099537 rootname.bat.txt http://www.calweb.com/~webspace/batch/samples/rootname.bat.txt text/plain 1655
+try http://www.calweb.com/~webspace/batch/samples/disksize.bat.txt 976644525
+log 968285459 disksize.bat.txt http://www.calweb.com/~webspace/batch/samples/disksize.bat.txt text/plain 707
+try http://www.calweb.com/~webspace/batch/samples/diskfree.bat.txt 976644525
+log 968285458 diskfree.bat.txt http://www.calweb.com/~webspace/batch/samples/diskfree.bat.txt text/plain 513
+try http://www.calweb.com/~webspace/batch/samples/obfuscating.txt 976644526
+log 976479037 obfuscating.txt http://www.calweb.com/~webspace/batch/samples/obfuscating.txt text/plain 3730
+try http://www.calweb.com/~webspace/batch/samples/created.bat.txt 976644527
+log 958961384 created.bat.txt http://www.calweb.com/~webspace/batch/samples/created.bat.txt text/plain 1638
+try http://www.calweb.com/~webspace/batch/samples/beep.txt 976644528
+log 922133426 beep.txt http://www.calweb.com/~webspace/batch/samples/beep.txt text/plain 2545
+try http://www.calweb.com/~webspace/batch/samples/sleep.txt 976644529
+log 927561076 sleep.txt http://www.calweb.com/~webspace/batch/samples/sleep.txt text/plain 3667
+try http://www.calweb.com/~webspace/batch/samples/addition.txt 976644530
+log 975008889 addition.txt http://www.calweb.com/~webspace/batch/samples/addition.txt text/plain 4016
+try http://www.calweb.com/~webspace/batch/samples/huntftp.zip 976644531
+log 922133428 huntftp.zip http://www.calweb.com/~webspace/batch/samples/huntftp.zip application/zip 849
+try http://www.calweb.com/~webspace/batch/samples/random.bat.txt 976644532
+log 911453483 random.bat.txt http://www.calweb.com/~webspace/batch/samples/random.bat.txt text/plain 632
+try http://www.calweb.com/~webspace/batch/samples/enter.bat.txt 976644533
+log 909537301 enter.bat.txt http://www.calweb.com/~webspace/batch/samples/enter.bat.txt text/plain 2127
+try http://www.calweb.com/~webspace/batch/samples/justtime.bat.txt 976644534
+log 909537312 justtime.bat.txt http://www.calweb.com/~webspace/batch/samples/justtime.bat.txt text/plain 1113
+try http://www.calweb.com/~webspace/batch/samples/choice.txt 976644534
+log 909537293 choice.txt http://www.calweb.com/~webspace/batch/samples/choice.txt text/plain 3316
+try http://www.calweb.com/~webspace/batch/samples/getini.txt 976644535
+log 966099529 getini.txt http://www.calweb.com/~webspace/batch/samples/getini.txt text/plain 4828
+try http://www.calweb.com/~webspace/batch/samples/username.txt 976644537
+log 956553114 username.txt http://www.calweb.com/~webspace/batch/samples/username.txt text/plain 4467
+try http://www.calweb.com/~webspace/batch/samples/username.bat.txt 976644538
+log 966099536 username.bat.txt http://www.calweb.com/~webspace/batch/samples/username.bat.txt text/plain 733
+try http://www.calweb.com/~webspace/batch/samples/usernamedebug.bat.txt 976644539
+log 966099540 usernamedebug.bat.txt http://www.calweb.com/~webspace/batch/samples/usernamedebug.bat.txt text/plain 505
+try http://www.calweb.com/~webspace/batch/samples/computername.bat.txt 976644539
+log 966099539 computername.bat.txt http://www.calweb.com/~webspace/batch/samples/computername.bat.txt text/plain 519
+try http://www.calweb.com/~webspace/batch/samples/recent.txt 976644540
+log 909537325 recent.txt http://www.calweb.com/~webspace/batch/samples/recent.txt text/plain 714
+try http://www.calweb.com/~webspace/batch/samples/login.log.txt 976644541
+log 909537313 login.log.txt http://www.calweb.com/~webspace/batch/samples/login.log.txt text/plain 1779
+try http://www.calweb.com/~webspace/batch/samples/control.txt 976644542
+log 909537298 control.txt http://www.calweb.com/~webspace/batch/samples/control.txt text/plain 1508
+try http://www.calweb.com/~webspace/batch/samples/autotime.bat.txt 976644543
+log 909537291 autotime.bat.txt http://www.calweb.com/~webspace/batch/samples/autotime.bat.txt text/plain 761
+try http://www.calweb.com/~webspace/batch/samples/subsdemo.bat.txt 976644543
+log 909537329 subsdemo.bat.txt http://www.calweb.com/~webspace/batch/samples/subsdemo.bat.txt text/plain 286
+try http://www.calweb.com/~webspace/batch/samples/ftp.script.txt 976644544
+log 957887735 ftp.script.txt http://www.calweb.com/~webspace/batch/samples/ftp.script.txt text/plain 4152
+try http://www.calweb.com/~webspace/batch/samples/hexsize.bat.txt 976644545
+log 909537310 hexsize.bat.txt http://www.calweb.com/~webspace/batch/samples/hexsize.bat.txt text/plain 837
+try http://www.calweb.com/~webspace/batch/samples/filename.bat.txt 976644546
+log 909537303 filename.bat.txt http://www.calweb.com/~webspace/batch/samples/filename.bat.txt text/plain 1622
+try http://www.calweb.com/~webspace/batch/samples/printall.txt 976644547
+log 909537319 printall.txt http://www.calweb.com/~webspace/batch/samples/printall.txt text/plain 1115
+try http://www.calweb.com/~webspace/batch/samples/closewindow.txt 976644548
+log 909537296 closewindow.txt http://www.calweb.com/~webspace/batch/samples/closewindow.txt text/plain 446
+try http://www.calweb.com/~webspace/batch/samples/windowfinish.txt 976644548
+log 909537339 windowfinish.txt http://www.calweb.com/~webspace/batch/samples/windowfinish.txt text/plain 1339
+try http://www.calweb.com/~webspace/batch/samples/reboot.txt 976644549
+log 930761239 reboot.txt http://www.calweb.com/~webspace/batch/samples/reboot.txt text/plain 1700
+try http://www.calweb.com/~webspace/batch/samples/today.bat.txt 976644550
+log 909537331 today.bat.txt http://www.calweb.com/~webspace/batch/samples/today.bat.txt text/plain 2225
+try http://www.calweb.com/~webspace/batch/samples/yn.txt 976644551
+log 909537341 yn.txt http://www.calweb.com/~webspace/batch/samples/yn.txt text/plain 1409
+try http://www.calweb.com/~webspace/batch/samples/random.txt 976644552
+log 909537320 random.txt http://www.calweb.com/~webspace/batch/samples/random.txt text/plain 1296
+try http://www.calweb.com/~webspace/batch/samples/waitfor.txt 976644553
+log 909537336 waitfor.txt http://www.calweb.com/~webspace/batch/samples/waitfor.txt text/plain 1074
+try http://www.calweb.com/~webspace/batch/samples/password.txt 976644554
+log 909537318 password.txt http://www.calweb.com/~webspace/batch/samples/password.txt text/plain 1692
+try http://www.calweb.com/~webspace/batch/samples/add.bat.txt 976644555
+log 909537287 add.bat.txt http://www.calweb.com/~webspace/batch/samples/add.bat.txt text/plain 2301
+try http://www.calweb.com/~webspace/batch/samples/annoythecat.bat.txt 976644558
+log 909537290 annoythecat.bat.txt http://www.calweb.com/~webspace/batch/samples/annoythecat.bat.txt text/plain 954
+try http://www.calweb.com/~webspace/batch/samples/namedate.txt 976644559
+log 967032360 namedate.txt http://www.calweb.com/~webspace/batch/samples/namedate.txt text/plain 4559
+try http://www.calweb.com/~webspace/batch/samples/vxe-exe.bat.txt 976644560
+log 966099541 vxe-exe.bat.txt http://www.calweb.com/~webspace/batch/samples/vxe-exe.bat.txt text/plain 1157
+try http://www.calweb.com/~webspace/batch/samples/vxe2exe.bat.txt 976644561
+log 966099534 vxe2exe.bat.txt http://www.calweb.com/~webspace/batch/samples/vxe2exe.bat.txt text/plain 2250
+try http://www.calweb.com/~webspace/batch/samples/ip.zip 976644562
+log 899304880 ip.zip http://www.calweb.com/~webspace/batch/samples/ip.zip application/zip 65743
+try http://www.calweb.com/~webspace/batch/lines/frag-man.htm 976644581
+log 0 frag-man.htm http://www.calweb.com/~webspace/batch/lines/frag-man.htm text/html 3250
+docstart http://www.calweb.com/~webspace/batch/lines/frag-man.htm
+t Creating Line Fragments
+i http://www.calweb.com/~webspace/batch/lines/frag-ntp.gif
+i http://www.calweb.com/~webspace/batch/lines/frag-dos.gif
+i http://www.calweb.com/~webspace/batch/lines/frag-edt.gif
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/errors.htm 976644586
+log 0 errors.htm http://www.calweb.com/~webspace/batch/lines/errors.htm text/html 9984
+docstart http://www.calweb.com/~webspace/batch/lines/errors.htm
+t Redirecting Error Messages &amp; Prompts
+u http://www.calweb.com/~webspace/batch/lines/numbring.htm poison your data lines by numbering themnumber the input dat
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/line-env.htm 976644588
+log 0 line-env.htm http://www.calweb.com/~webspace/batch/lines/line-env.htm text/html 2315
+docstart http://www.calweb.com/~webspace/batch/lines/line-env.htm
+t Placing a Line in the Environment
+u http://www.calweb.com/~webspace/batch/lines/line-uni.htm isolate the particular line
+u http://www.calweb.com/~webspace/batch/lines/frag-man.htm create a line fragment
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/frag-bas.htm 976644589
+log 0 frag-bas.htm http://www.calweb.com/~webspace/batch/lines/frag-bas.htm text/html 2527
+docstart http://www.calweb.com/~webspace/batch/lines/frag-bas.htm
+t Creating Line Fragments Using DEBUG
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/frag-dbg.htm 976644591
+log 0 frag-dbg.htm http://www.calweb.com/~webspace/batch/lines/frag-dbg.htm text/html 7342
+docstart http://www.calweb.com/~webspace/batch/lines/frag-dbg.htm
+t Creating Line Fragments Using DEBUG
+u ftp://ftp.zdnet.com/pcmag/1993/1026/v12n18.zip ECH.COM
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/prompts.htm 976644593
+log 0 prompts.htm http://www.calweb.com/~webspace/batch/lines/prompts.htm text/html 3182
+docstart http://www.calweb.com/~webspace/batch/lines/prompts.htm
+t Batch Programming: Capturing Prompts
+u http://www.calweb.com/~webspace/batch/lines/numbring.htm poison your lines by numbering them.
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/word-for.htm 976644594
+log 0 word-for.htm http://www.calweb.com/~webspace/batch/lines/word-for.htm text/html 4635
+docstart http://www.calweb.com/~webspace/batch/lines/word-for.htm
+t Using FOR to Process Data Lines
+u http://www.calweb.com/~webspace/batch/lines/line-env.htm put data lines in the environment
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/line-uni.htm 976644596
+log 0 line-uni.htm http://www.calweb.com/~webspace/batch/lines/line-uni.htm text/html 1446
+docstart http://www.calweb.com/~webspace/batch/lines/line-uni.htm
+t Batch Files: Isolating a Unique Line
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lines/numbring.htm 976644597
+log 0 numbring.htm http://www.calweb.com/~webspace/batch/lines/numbring.htm text/html 6109
+docstart http://www.calweb.com/~webspace/batch/lines/numbring.htm
+t Numbering Lines with FIND
+u http://www.calweb.com/~webspace/batch/lines/prompts.htm pass them all as commands to a separate command processor
+u http://www.calweb.com/~webspace/batch/lines/errors.htm pass them as arguments to commands
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lists/line-qb.htm 976644599
+log 0 line-qb.htm http://www.calweb.com/~webspace/batch/lists/line-qb.htm text/html 4435
+docstart http://www.calweb.com/~webspace/batch/lists/line-qb.htm
+t Using QBASIC to Prefix Anything to Every Line in a File.
+u http://www.calweb.com/~webspace/batch/tricks/index.htm#echo about the plus sign
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lists/line-seq.htm 976644601
+log 0 line-seq.htm http://www.calweb.com/~webspace/batch/lists/line-seq.htm text/html 3690
+docstart http://www.calweb.com/~webspace/batch/lists/line-seq.htm
+t Batch Sequential Processing of a List
+u http://www.calweb.com/~webspace/batch/lines/frag-man.htm Create a line fragment
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lists/loadfix.htm 976644603
+log 0 loadfix.htm http://www.calweb.com/~webspace/batch/lists/loadfix.htm text/html 3379
+docstart http://www.calweb.com/~webspace/batch/lists/loadfix.htm
+t Renaming LOADFIX.COM
+u ftp://ftp.microsoft.com/softlib/mslfiles/olddos.exe download it from Microsoft
+u http://www.calweb.com/~webspace/mail/mail.htm Send me mail
+docend
+try http://www.calweb.com/~webspace/batch/lists/word.gif 976644605
+log 902173973 word.gif http://www.calweb.com/~webspace/batch/lists/word.gif image/gif 262703
+try http://www.calweb.com/~webspace/webget/tile.gif 976644406
+log 972869202 tile1.gif http://www.calweb.com/~webspace/webget/tile.gif image/gif 884
+try http://www.calweb.com/~webspace/pop3/pop3dos.gif 976644244
+log 924044815 pop3dos.gif http://www.calweb.com/~webspace/pop3/pop3dos.gif image/gif 7482
+try http://www.calweb.com/~webspace/image/filcpico.gif 976643797
+log 975128868 filcpico.gif http://www.calweb.com/~webspace/image/filcpico.gif image/gif 1179
+try http://www.calweb.com/~webspace/prn2pbm/prn2pbm.gif 976644335
+log 897949783 prn2pbm.gif http://www.calweb.com/~webspace/prn2pbm/prn2pbm.gif image/gif 5542
+try http://www.calweb.com/~webspace/image/attach.gif 976643802
+log 897949629 attach.gif http://www.calweb.com/~webspace/image/attach.gif image/gif 1024
+try http://www.calweb.com/~webspace/batch/lines/frag-edt.gif 976644585
+log 897949511 frag-edt.gif http://www.calweb.com/~webspace/batch/lines/frag-edt.gif image/gif 2984
+try http://www.calweb.com/~webspace/webget/100.gif 976644409
+log 972869220 1001.gif http://www.calweb.com/~webspace/webget/100.gif image/gif 822
+try http://www.calweb.com/~webspace/webget/vbclsico.gif 976644409
+log 972869216 vbclsico1.gif http://www.calweb.com/~webspace/webget/vbclsico.gif image/gif 1092
+try http://www.calweb.com/~webspace/batch/lines/frag-ntp.gif 976644582
+log 897949514 frag-ntp.gif http://www.calweb.com/~webspace/batch/lines/frag-ntp.gif image/gif 8509
+try http://www.calweb.com/~webspace/pop3/pop3.gif 976644233
+log 923443554 pop3.gif http://www.calweb.com/~webspace/pop3/pop3.gif image/gif 3869
+try http://www.calweb.com/~webspace/nofonts/nofonts.gif 976644111
+log 897949728 nofonts.gif http://www.calweb.com/~webspace/nofonts/nofonts.gif image/gif 1710
+try http://www.calweb.com/~webspace/image/dos5ico.gif 976643736
+log 897949635 dos5ico.gif http://www.calweb.com/~webspace/image/dos5ico.gif image/gif 1103
+try http://www.calweb.com/~webspace/image/tnef.gif 976643800
+log 944527331 tnef.gif http://www.calweb.com/~webspace/image/tnef.gif image/gif 1011
+try http://www.calweb.com/~webspace/excel/Reopening.gif 976644428
+log 909623812 Reopening.gif http://www.calweb.com/~webspace/excel/Reopening.gif image/gif 3172
+try http://www.calweb.com/~webspace/commtool/commtico.gif 976644063
+log 897949600 commtico1.gif http://www.calweb.com/~webspace/commtool/commtico.gif image/gif 1172
+try http://www.calweb.com/~webspace/prn2pbm/printico.gif 976644329
+log 897949781 printico.gif http://www.calweb.com/~webspace/prn2pbm/printico.gif image/gif 1186
+try http://www.calweb.com/~webspace/batch/tricks/dos.gif 976643909
+log 897949559 dos.gif http://www.calweb.com/~webspace/batch/tricks/dos.gif image/gif 15157
+try http://www.calweb.com/~webspace/image/smallduck.gif 976643711
+log 897949641 smallduck.gif http://www.calweb.com/~webspace/image/smallduck.gif image/gif 2419
+try http://www.calweb.com/~webspace/pong/play.gif 976644195
+log 897949749 play.gif http://www.calweb.com/~webspace/pong/play.gif image/gif 48818
+try http://www.calweb.com/~webspace/image/download.gif 976644024
+log 897949636 download.gif http://www.calweb.com/~webspace/image/download.gif image/gif 1100
+try http://www.calweb.com/~webspace/nofonts/before.gif 976644133
+log 897949726 before.gif http://www.calweb.com/~webspace/nofonts/before.gif image/gif 2905
+try http://www.calweb.com/~webspace/batch/tricks/more.gif 976643891
+log 897949562 more.gif http://www.calweb.com/~webspace/batch/tricks/more.gif image/gif 10422
+try http://www.calweb.com/~webspace/image/commlxls.gif 976644061
+try http://www.calweb.com/~webspace/image/plusico.gif 976643804
+log 975128874 plusico.gif http://www.calweb.com/~webspace/image/plusico.gif image/gif 1194
+try http://www.calweb.com/~webspace/about/mary.jpg 976644498
+log 897949481 mary.jpg http://www.calweb.com/~webspace/about/mary.jpg image/jpeg 9903
+try http://www.calweb.com/~webspace/nofonts/after.gif 976644157
+log 897949725 after.gif http://www.calweb.com/~webspace/nofonts/after.gif image/gif 2781
+try http://www.calweb.com/~webspace/image/commtico.gif 976643791
+log 975128867 commtico.gif http://www.calweb.com/~webspace/image/commtico.gif image/gif 1172
+try http://www.calweb.com/~webspace/prn2pbm/filecap.gif 976644334
+log 897949769 filecap.gif http://www.calweb.com/~webspace/prn2pbm/filecap.gif image/gif 5581
+try http://www.calweb.com/~webspace/headers/headers.gif 976644084
+log 920927888 headers.gif http://www.calweb.com/~webspace/headers/headers.gif image/gif 10664
+try http://www.calweb.com/~webspace/scripting/references.gif 976643967
+log 948170148 references.gif http://www.calweb.com/~webspace/scripting/references.gif image/gif 25387
+try http://www.calweb.com/~webspace/image/commlico.gif 976643790
+log 975128865 commlico.gif http://www.calweb.com/~webspace/image/commlico.gif image/gif 1101
+try http://www.calweb.com/~webspace/uncheck/unchk.gif 976644399
+log 897949831 unchk.gif http://www.calweb.com/~webspace/uncheck/unchk.gif image/gif 1987
+try http://www.calweb.com/~webspace/commtool/comtool.gif 976644064
+log 897949604 comtool.gif http://www.calweb.com/~webspace/commtool/comtool.gif image/gif 7927
+try http://www.calweb.com/~webspace/setini/iniico.gif 976644339
+log 898536755 iniico.gif http://www.calweb.com/~webspace/setini/iniico.gif image/gif 1112
+try http://www.calweb.com/~webspace/about/wedding.jpg 976644489
+log 956512681 wedding.jpg http://www.calweb.com/~webspace/about/wedding.jpg image/jpeg 23050
+try http://www.calweb.com/~webspace/word/wordico.gif 976644411
+log 897949840 wordico1.gif http://www.calweb.com/~webspace/word/wordico.gif image/gif 1061
+try http://www.calweb.com/~webspace/batch/lines/frag-dos.gif 976644584
+log 897949510 frag-dos.gif http://www.calweb.com/~webspace/batch/lines/frag-dos.gif image/gif 3679
+try http://www.calweb.com/~webspace/image/win1.gif 976643803
+log 897949645 win1.gif http://www.calweb.com/~webspace/image/win1.gif image/gif 1088
+try http://www.calweb.com/~webspace/image/unchkico.gif 976643800
+log 975128871 unchkico.gif http://www.calweb.com/~webspace/image/unchkico.gif image/gif 1065
+try http://www.calweb.com/~webspace/about/horse.jpg 976644476
+log 897949477 horse.jpg http://www.calweb.com/~webspace/about/horse.jpg image/jpeg 40603
+try http://www.calweb.com/~webspace/about/site.jpg 976644432
+log 897949483 site.jpg http://www.calweb.com/~webspace/about/site.jpg image/jpeg 36167
+try http://www.calweb.com/~webspace/image/vbdefaultico.gif 976643795
+log 920930120 vbdefaultico.gif http://www.calweb.com/~webspace/image/vbdefaultico.gif image/gif 959
+try http://www.calweb.com/~webspace/image/sldshico.gif 976643799
+log 975128870 sldshico.gif http://www.calweb.com/~webspace/image/sldshico.gif image/gif 1057
+try http://www.calweb.com/~webspace/tnef/mstnef.gif 976644357
+log 944614597 mstnef.gif http://www.calweb.com/~webspace/tnef/mstnef.gif image/gif 5174
+try http://www.calweb.com/~webspace/image/114x50.gif 976643708
+log 897949627 114x50.gif http://www.calweb.com/~webspace/image/114x50.gif image/gif 1067
+try http://www.calweb.com/~webspace/image/commlink.gif 976644060
+try http://www.calweb.com/~webspace/about/book.jpg 976644451
+log 897949467 book.jpg http://www.calweb.com/~webspace/about/book.jpg image/jpeg 43314
+try http://www.calweb.com/~webspace/image/zip.gif 976644424
+log 914864303 zip.gif http://www.calweb.com/~webspace/image/zip.gif image/gif 1043
+try http://www.calweb.com/~webspace/setini/setico.gif 976644340
+log 898536760 setico.gif http://www.calweb.com/~webspace/setini/setico.gif image/gif 1145
+try http://www.calweb.com/~webspace/image/duck.gif 976643707
+log 897949638 duck.gif http://www.calweb.com/~webspace/image/duck.gif image/gif 2711
+try http://www.calweb.com/~webspace/prn2pbm/filcpico.gif 976644306
+log 897949768 filcpico1.gif http://www.calweb.com/~webspace/prn2pbm/filcpico.gif image/gif 1179
+try http://www.calweb.com/~webspace/image/stop.gif 976643793
+log 938661592 stop.gif http://www.calweb.com/~webspace/image/stop.gif image/gif 981
+try http://www.calweb.com/~webspace/image/stupid.gif 976643805
+log 914864298 stupid.gif http://www.calweb.com/~webspace/image/stupid.gif image/gif 947
+try http://www.calweb.com/~webspace/about/hawaii.jpg 976644500
+log 956512672 hawaii.jpg http://www.calweb.com/~webspace/about/hawaii.jpg image/jpeg 42111
+try http://www.calweb.com/~webspace/uncheck/unchkico.gif 976644397
+log 897949834 unchkico1.gif http://www.calweb.com/~webspace/uncheck/unchkico.gif image/gif 1065
+try http://www.calweb.com/~webspace/image/wordico.gif 976643801
+log 975128872 wordico.gif http://www.calweb.com/~webspace/image/wordico.gif image/gif 1061
+try http://www.calweb.com/~webspace/about/eat.jpg 976644441
+log 897949469 eat.jpg http://www.calweb.com/~webspace/about/eat.jpg image/jpeg 32206
+try http://www.calweb.com/~webspace/image/probeme.gif 976644275
+try http://www.calweb.com/~webspace/webget/download.gif 976644408
+log 972869212 download1.gif http://www.calweb.com/~webspace/webget/download.gif image/gif 1100
+try http://www.calweb.com/~webspace/prn2pbm/prn2pico.gif 976644333
+log 897949804 prn2pico.gif http://www.calweb.com/~webspace/prn2pbm/prn2pico.gif image/gif 1026
+try http://www.calweb.com/~webspace/about/flower.jpg 976644464
+log 897949475 flower.jpg http://www.calweb.com/~webspace/about/flower.jpg image/jpeg 43055
+try http://www.calweb.com/~webspace/image/100.gif 976644045
+log 897949626 100.gif http://www.calweb.com/~webspace/image/100.gif image/gif 822
+try http://www.calweb.com/~webspace/image/tile.gif 976644002
+log 897949642 tile.gif http://www.calweb.com/~webspace/image/tile.gif image/gif 884
+try http://www.calweb.com/~webspace/image/dos2ico.gif 976643794
+log 897949634 dos2ico.gif http://www.calweb.com/~webspace/image/dos2ico.gif image/gif 1241
+try http://www.calweb.com/~webspace/excel/LfnFlaw1.gif 976644426
+log 909623806 LfnFlaw1.gif http://www.calweb.com/~webspace/excel/LfnFlaw1.gif image/gif 3983
+try http://www.calweb.com/~webspace/setini/getico.gif 976644341
+log 898536748 getico.gif http://www.calweb.com/~webspace/setini/getico.gif image/gif 1148
+try http://www.calweb.com/~webspace/image/vbclsico.gif 976643796
+log 920930122 vbclsico.gif http://www.calweb.com/~webspace/image/vbclsico.gif image/gif 1092
+try http://www.calweb.com/~webspace/image/vbsico.gif 976643768
+log 920930115 vbsico.gif http://www.calweb.com/~webspace/image/vbsico.gif image/gif 1093
+try http://www.calweb.com/~webspace/about/1eric.jpg 976644430
+log 897949459 1eric.jpg http://www.calweb.com/~webspace/about/1eric.jpg image/jpeg 2795
+try http://www.calweb.com/~webspace/image/dos4ico.gif 976643798
+log 897949634 dos4ico.gif http://www.calweb.com/~webspace/image/dos4ico.gif image/gif 1008
+try http://www.calweb.com/~webspace/image/excelico.gif 976643795
+log 897949639 excelico.gif http://www.calweb.com/~webspace/image/excelico.gif image/gif 1133
+try http://www.calweb.com/~webspace/webget/smallduck.gif 976644407
+log 972869207 smallduck1.gif http://www.calweb.com/~webspace/webget/smallduck.gif image/gif 2419
+try http://www.calweb.com/~webspace/image/dos1ico.gif 976643792
+log 897949630 dos1ico.gif http://www.calweb.com/~webspace/image/dos1ico.gif image/gif 1052
+loc http://www.calweb.com/~webspace/batch/index.htm
+loc http://www.calweb.com/~webspace/
+loc http://www.calweb.com/~webspace/batch/basics/index.htm
+loc http://www.calweb.com/~webspace/batch/nt/index.htm
+loc http://www.calweb.com/~webspace/batch/samples/samples.htm
+loc http://www.calweb.com/~webspace/batch/userin/index.htm
+loc http://www.calweb.com/~webspace/batch/secondry/index.htm
+loc http://www.calweb.com/~webspace/batch/lines/index.htm
+loc http://www.calweb.com/~webspace/batch/charactr/index.htm
+loc http://www.calweb.com/~webspace/batch/lists/index.htm
+loc http://www.calweb.com/~webspace/batch/lists/filelist.htm
+loc http://www.calweb.com/~webspace/batch/tricks/index.htm
+loc http://www.calweb.com/~webspace/mail/mail.htm
+loc http://www.calweb.com/~webspace/scripting/index.htm
+loc http://www.calweb.com/~webspace/commlink/index.htm
+loc http://www.calweb.com/~webspace/commtool/index.htm
+loc http://www.calweb.com/~webspace/crlf/index.htm
+loc http://www.calweb.com/~webspace/exitwindows/index.htm
+loc http://www.calweb.com/~webspace/ffind/index.htm
+loc http://www.calweb.com/~webspace/headers/index.htm
+loc http://www.calweb.com/~webspace/nofonts/index.htm
+loc http://www.calweb.com/~webspace/pong/index.htm
+loc http://www.calweb.com/~webspace/pop3/index.htm
+loc http://www.calweb.com/~webspace/probeme/index.htm
+loc http://www.calweb.com/~webspace/prn2pbm/index.htm
+loc http://www.calweb.com/~webspace/schedule/index.htm
+loc http://www.calweb.com/~webspace/setini/index.htm
+loc http://www.calweb.com/~webspace/slideshow/index.htm
+loc http://www.calweb.com/~webspace/tnef/index.htm
+loc http://www.calweb.com/~webspace/uncheck/index.htm
+loc http://www.calweb.com/~webspace/webget/index.htm
+loc http://www.calweb.com/~webspace/word/index.htm
+loc http://www.calweb.com/~webspace/mail/fourqs.htm
+loc http://www.calweb.com/~webspace/old31/index.htm
+loc http://www.calweb.com/~webspace/plus/index.htm
+loc http://www.calweb.com/~webspace/virus/stupid.htm
+loc http://www.calweb.com/~webspace/excel/index.htm
+loc http://www.calweb.com/~webspace/about/index.htm
+loc http://www.calweb.com/~webspace/batch/
+loc http://www.calweb.com/~webspace/batch/lines/frag-man.htm
+loc http://www.calweb.com/~webspace/batch/lines/errors.htm
+loc http://www.calweb.com/~webspace/batch/lines/line-env.htm
+loc http://www.calweb.com/~webspace/batch/lines/frag-bas.htm
+loc http://www.calweb.com/~webspace/batch/lines/frag-dbg.htm
+loc http://www.calweb.com/~webspace/batch/lines/prompts.htm
+loc http://www.calweb.com/~webspace/batch/lines/word-for.htm
+loc http://www.calweb.com/~webspace/batch/lines/line-uni.htm
+loc http://www.calweb.com/~webspace/batch/lines/numbring.htm
+loc http://www.calweb.com/~webspace/batch/lists/line-qb.htm
+loc http://www.calweb.com/~webspace/batch/lists/line-seq.htm
+loc http://www.calweb.com/~webspace/batch/lists/loadfix.htm

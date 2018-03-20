@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- tasks/ftp2.3.1.html -->
+
+<HEAD>
+<TITLE>Examples of sending files with the ftp program</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of sending files with the <SAMP>ftp</SAMP> program</H1>
+
+<P>To send a single file from your current directory
+on the local host to the current directory on the remote
+host:</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>send afile</STRONG>
+</PRE>
+
+<P>This copies the file <SAMP>afile</SAMP> from your current directory
+on the local host to your current directory on the remote
+host.</P>
+
+<P>If you don't give a name for the remote-file the name of the
+local-file you are copying is used to name the remote-file.</P>
+
+<HR>
+
+<P>To use file pathnames to define both the local-file
+and the remote-file:</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>put REPORTS/april  reports/month4</STRONG>
+</PRE>
+
+<P>This copies the contents of the file <SAMP>april</SAMP> in the
+sub-directory <SAMP>REPORTS</SAMP>, which is in your current directory
+on the local host to the file <SAMP>month4</SAMP> in the sub-directory
+<SAMP>reports</SAMP>, which is in your login directory on the remote
+host.</P>
+
+<HR>
+
+<P>To send multiple files to a remote host:</P>
+
+<PRE WIDTH=80>   ftp&gt; <STRONG>mput *.xdh</STRONG>
+   mput index.xdh?
+</PRE>
+
+<P>This prompts you to confirm for each file with the
+extension <SAMP>*.xdh</SAMP> in the subdirectory <SAMP>help</SAMP> on your
+local host that it is to be copied to your current
+directory on the remote host.</P>
+
+<P>Entering a <STRONG>y</STRONG> copies the file; an <STRONG>n</STRONG>
+cancels this.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

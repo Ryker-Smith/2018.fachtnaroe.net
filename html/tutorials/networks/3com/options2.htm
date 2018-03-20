@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Main Options</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+
+  glos.document.open()  
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchmanuals(anchorname)
+{
+manu=window.open("pdfs/manuals.htm#"+anchorname,"manuals","width=650,scrollbars=yes,height=500,resizable=yes")
+manu.focus()
+}
+</script>
+
+<SCRIPT Language="Javascript">
+function printit() 
+{
+parent.frames[2].focus()
+parent.frames[2].window.print()
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_language="Change Language"
+statusbar_print="Print the Central Section"
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#3,0,0,0" width="191" height="100">
+  <param name="SRC" value="images/options.swf">
+  <embed src="images/options.swf" pluginspage="http://www.macromedia.com/shockwave/download/" type="application/x-shockwave-flash" width="191" height="100">
+  </embed> 
+</object> 
+</body>
+</html>

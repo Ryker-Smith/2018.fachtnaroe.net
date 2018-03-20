@@ -1,0 +1,89 @@
+         The example below shows how to read an INI file from inside any 
+batch file. Note that this method isn't sophisticated enough to handle 
+section names or commented lines. 
+
+@echo off
+find "BorderWidth=" c:\windows\win.ini | sort /r | date | find "=" > en#er.bat
+echo set value=%%5> enter.bat
+call en#er.bat
+del en?er.bat > nul
+echo Value is %value%.
+set value=
+
+        Why use DATE? Not to find the date or time! Instead, we take advantage 
+of the fact that it outputs a line with the word "Enter" at the beginning, and 
+whatever we put into it shows up on the end of that same line. Since "Enter" is 
+not a reserved word, we can write a batch file named ENTER.BAT. If we redirect 
+the output of DATE into a batch file (in this case EN#ER.BAT), when we call that 
+batch file, it will in turn run our ENTER.BAT, passing all the other words on 
+the line as command-line arguments. Our added words show up starting at the 
+fourth argument. In this case, "BorderWidth" will be that word. Since the "=" 
+sign acts as a delimiter, "3" will be the fifth argument (assuming your 
+BorderWidth is set to 3 in your WIN.INI).
+        Since we dump quite a bit of garbage into DATE, we will get quite a 
+lot of output. We search the output for the line we want (it contains the "=" 
+sign) for one reason: we want that line to be first. In fact, ONLY the first 
+line in EN#ER.BAT will be executed because it will "run" ENTER.BAT instead of 
+"calling" it. Because of this, control will never return to EN#ER.BAT after 
+it runs ENTER.BAT. Program control will instead return to our original batch 
+file right where we want it (because we remembered to "call" EN#ER.BAT).
+        To terminate the DATE command, a blank line (CR/LF only) must be 
+entered at the end. FC (the original way) provides this at the end of it's 
+output. FIND, however, puts an extra CR/LF at the beginning of it's output. 
+By running FIND through SORT /R, we are able to move the CR/LF back to the 
+end where it belongs so we can pipe it through DATE.
+        There are three traps here: (1) Make sure there are no spaces in the 
+"value=%%5>" part, or you'll end up with spaces in your environment variable. 
+(2) Put this batch file in a directory where ENTER.BAT and EN#ER.BAT can safely 
+be created. Don't specify a path for the BAT files. Let them be created and run 
+in the default directory. (3) Watch out for similar names: As written, this 
+code could respond to the name "PictureBorderWidth" because it contains 
+"BorderWidth". Obviously, this technique is best used on private INI files 
+under your complete control.
+
+        In fact it is easy to feed DATE with the output of almost any command 
+by simply appending an extra CR/LF to the end. FIND, for example, doesn't put 
+out any extra CR/LF if it searches a "piped" file. Here's how to make it work 
+anyway:
+
+type c:\windows\win.ini | find "BorderWidth=" > enter.txt
+echo.>> enter.txt
+type enter.txt | date | find "=" > en#er.bat
+del enter.txt > nul
+
+        The "echo." adds the extra CR/LF to the end of the temporary ENTER.TXT 
+file. All that is needed is to add the last 5 lines from the previous example 
+to the end of this one to finish it out.
+
+
+        To complete the picture, we only need a way to write to an INI file. 
+This, at least, is easy and has no tricks (with the restriction of no section 
+names, no order requirement, and no commented lines in the INI file). Try this 
+example code (but first use a real "filename", "keyname", and "value"):
+
+type filename.ini | find /v "keyname=" > filename.ini
+echo keyname=value>> filename.ini
+
+        The first line removes the old existing value from the INI file, (if 
+it exists) while the second line adds the new value. Again, just as when 
+reading INI files, watch out for similar names. This example would have removed 
+the "keyname" line (as desired), but would also remove lines with a keyname 
+like "mykeyname".
+        WARNING: The above code (like all my code) is for Win9x. Running it
+under NT could wipe out your "filename.ini" file! I am relying on Win9x
+to generate a temporary file for the pipe so I can get away with using the same
+file name for input and output. If you use NT (or want to write compatible 
+code), try it with an explicit intermediate file:
+type filename.ini | find /v "keyname=" > filename.tmp
+copy /y filename.tmp filename.ini
+echo keyname=value>> filename.ini
+
+
+        The ability to read and write to INI files gives your batch files a 
+way to communicate with other programs, a way to store many variables without 
+exceeding the environment space, and a way for you to write adaptive and easily 
+maintained batch files for your less creative friends. There are more people 
+out there who can edit an INI file than there are people who can modify a batch 
+file...
+
+http://www.calweb.com/~webspace

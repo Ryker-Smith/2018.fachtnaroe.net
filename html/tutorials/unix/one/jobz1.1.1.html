@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- shell/jobz1.1.1.html -->
+
+<HEAD>
+<TITLE>Example of cancelling a foreground process</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Example of cancelling a foreground process</H1>
+
+<P>To cancel the foreground process:
+
+<PRE WIDTH=80>   <STRONG>find / -name '*.ps' -print</STRONG>
+   ...
+   ...
+   <STRONG>^C</STRONG>
+   <STRONG>pwd</STRONG>
+   /home/jeremy/book
+   <STRONG>find . -name '*.ps' -print</STRONG>
+</PRE>
+
+<P>The user enters a command to find files with the
+extension <SAMP>.ps</SAMP> starting from the 
+<A HREF="../glossary/gr.html#rootdir">root directory</A>!</P>
+
+<P>Realising that this command will take a long time to
+run and is not appropriate, they cancel it, check their
+current directory and re-run the command from there.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

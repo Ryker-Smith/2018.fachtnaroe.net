@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- examples/permissions.html -->
+
+<HEAD>
+<TITLE>Examples of access permissions</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of access permissions</H1>
+
+<PRE WIDTH=80>   <STRONG>ls -l file1</STRONG>
+   -rw-------  2 unixjohn     3287 Apr  8 12:10 file1
+</PRE>
+
+<P>The owner of the file has read and write permission.</P>
+
+<HR>
+
+<PRE WIDTH=80>   <STRONG>ls -l file2</STRONG>
+   -rw-r--r--  2 unixjohn     3287 Apr  8 12:11 file2
+</PRE>
+
+<P>The owner has read and write permission.  Everyone
+else - the group and all other users - can read the
+file.</P>
+
+<HR>
+
+<PRE WIDTH=80>   <STRONG>ls -l myprog</STRONG>
+   -rwx--x--x  2 unixjohn     3287 Apr  8 12:10 myprog
+</PRE>
+
+<P>The user has read, write and execute permission.
+Everyone else -the group and all others- can execute
+the file.</P>
+
+<HR>
+
+<PRE WIDTH=80>   <STRONG>ls -l</STRONG>
+   ...
+   drwxr-x---  2 erpl08       1024 Jun 17 10:00 SCCS
+</PRE>
+
+<P>This is a directory. The user has red, write and
+execute permission. The group has read and execute
+permission on the 
+<A HREF="../tables/access_permissions.html">directory</A>.  Nobody else can get
+access to it.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- scrpt/scrpt2.6.1.html -->
+
+<HEAD>
+<TITLE>The case statement</TITLE>
+</HEAD>
+
+<BODY>
+<H1>The <SAMP>case</SAMP> statement</H1>
+
+<P><SAMP>case</SAMP> is a flow control construct that provides for
+multi-way branching based on patterns.</P>
+
+<P>Program flow is controlled on the basis of the <EM>word</EM>given.  This 
+<EM>word</EM> is compared with each <EM>pattern</EM> in
+order until a match is found, at which point the
+associated <EM>command</EM>(<EM>s</EM>) are executed.</P>
+
+<PRE WIDTH=80>   case <EM>word</EM> in
+   <EM>pattern1</EM>) <EM>command(s)</EM>
+   ;;
+   <EM>pattern2</EM>) <EM>command(s)</EM>
+   ;;
+   <EM>patternN</EM>) <EM>command(s)</EM>
+   ;;
+   esac
+</PRE>
+
+<P>When all the commands are executed control is passed to
+the first statement after the <SAMP>esac</SAMP>.  Each list of
+commands must end with a double semi-colon (<SAMP>;;</SAMP>).</P>
+
+<P>A command can be associated with more than one pattern.
+Patterns can be separated from each other by a <SAMP>|</SAMP> symbol.
+For example:</P>
+
+<PRE WIDTH=80>   case <EM>word</EM> in
+   <EM>pattern1|pattern2</EM>) <EM>command</EM>
+   ...					;;
+</PRE>
+
+<P>Patterns are checked for a match in the order in which
+they appear. A command is always carried out after the
+first instance of a pattern.</P>
+
+<P>The <SAMP>*</SAMP> character can be used to specify a default pattern
+as the <SAMP>*</SAMP> character is the shell 
+<A HREF="../concepts/regexp1.html">wildcard</A> character.</P>
+
+<UL>
+<LI><A HREF="scrpt2.6.1.1.html">Example</A></LI>
+</UL>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

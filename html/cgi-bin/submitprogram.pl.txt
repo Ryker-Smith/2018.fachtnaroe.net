@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+require "htmlutilities.lib";
+require "commonsubmit.lib";
+# HTML header
+&#38;ContentType;
+# Display the top of page.
+&#38;section1;
+# Display the offer to link to the automatic formatting pages
+&#38;section3;
+print '&#60;HR&#62;';
+# Display the form proper with the student names etc.
+&#38;section2;
+# USe the empty text area
+&#38;section4;
+# Close the form
+&#38;section6;

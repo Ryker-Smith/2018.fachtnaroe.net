@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- environment/csh_tip.html -->
+
+<HEAD>
+<TITLE>C Shell: Tip...</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1>C Shell: Tip...</H1>
+
+<P>If a shell and an environment variable have the same
+name, the value of the local shell variable will be used.
+You can avoid problems by making sure that shell and
+environment variables with the same name are set to the
+same value in your <SAMP>.cshrc</SAMP> (<SAMP>.tcshrc</SAMP>).</P>
+
+<P>For example, suppose you set the following variables in
+this order in your <SAMP>.cshrc</SAMP> (<SAMP>.tcshrc</SAMP>) file:</P>
+
+<PRE>   setenv TERM vt100
+   ...
+   ...
+   set term=xterm
+</PRE>
+
+<P>When a shell is invoked, the value of the environment
+variable TERM is copied into the shell variable term.
+But the value of this shell variable is set later on
+in the <SAMP>.cshrc</SAMP> (<SAMP>.tcshrc</SAMP>) file, and it is this
+value which is then copied back into the environment value TERM
+which is then exported to the general environment.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

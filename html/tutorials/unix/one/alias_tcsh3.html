@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN//2.0">
+<HTML>
+<!-- Copyright University of Edinburgh -->
+<!-- Version 1.3 -->
+<!-- shell/alias_tcsh3.html -->
+
+<HEAD>
+<TITLE>Examples of creating command aliases in the TC shell</TITLE>
+</HEAD>
+
+<BODY>
+<H1>Examples of creating command aliases in the TC shell</H1>
+
+<P>To create a simple command alias:</P>
+
+<PRE WIDTH=80>   <STRONG>alias del 'rm -i'</STRONG>
+   <STRONG>del memo.txt</STRONG>
+   rm: remove memo.txt? <STRONG>y</STRONG>
+</PRE>
+
+<P>This creates the alias <STRONG>del</STRONG> for the command 
+<STRONG>rm -i</STRONG> which prompts you for confirmation that
+you want to remove a file before it does so.</P>
+
+<P>Make this alias a permanent feature of your environment by 
+<A HREF="alias_tcsh1.html">adding it to your shell start up file</A>
+ <SAMP>.tcshrc</SAMP>.</P>
+
+<HR>
+
+<P>To create a command alias that consists of several
+commands:</P>
+
+<PRE WIDTH=80>   <STRONG>alias what 'ps -aux | grep $USER | less'</STRONG>
+</PRE>
+
+<P>This creates the alias <STRONG>what</STRONG>.</P>
+
+<P>Entering the command <STRONG>what</STRONG>
+ will now run the command</P>
+
+<PRE WIDTH=80>   ps -aux | grep $USER | less
+</PRE>
+
+<P>which consists of three commands
+ <A HREF="../commanz/cmd4.html">linked together</A> with pipes.</P>
+
+<HR>
+
+<P>To refer to another command alias within an alias:
+
+<PRE WIDTH=80>   <STRONG>alias h history</STRONG>
+   <STRONG>alias rev  'h | tail -10'</STRONG>
+</PRE>
+
+<P>The first command assigns the alias <STRONG>h</STRONG> to the 
+<STRONG>history</STRONG> command. The next command assigns the alias 
+<STRONG>rev</STRONG> to the command <STRONG>h | tail -10</STRONG>.
+This takes the output from the alias <STRONG>h</STRONG> ( the 
+<SAMP>history</SAMP> command) and pipes it through the
+<STRONG>tail</STRONG> command to list the ten most recent commands in the
+command history.</P>
+
+<HR>
+
+<P>To pass command arguments to the alias:</P>
+
+<PRE WIDTH=80>   <STRONG>alias print 'lpr \\!^ -Pps5'</STRONG>
+</PRE>
+
+<P>To print a file to the printer <SAMP>ps5</SAMP> the user enters a
+command such as:</P>
+
+<PRE WIDTH=80>   <STRONG>print memo.txt</STRONG>
+</PRE>
+
+<P>The notation <SAMP>!^</SAMP> causes the first argument to the command
+alias <STRONG>print</STRONG> to be inserted in the command at this point.
+The command that is carried out is:</P>
+
+<PRE WIDTH=80>   lpr memo.txt -Pps5
+</PRE>
+
+<P>Notice that the <SAMP>!</SAMP> character is preceded by a 
+<SAMP>\\</SAMP> to <A HREF="../concepts/regexp2.html">prevent it being
+interpreted</A> by the shell as a history command.</P>
+
+<!--Footer-->
+<HR>
+<ADDRESS>
+<A HREF="../index.html"><IMG SRC="../Images/weetop.gif" ALT="[Home]"></A>
+<A HREF="http://www.ee.surrey.ac.uk/cgi-bin/unixhelp_search"><IMG SRC="../Images/weesearch.gif" ALT="[Search]"></A>
+<A HREF="../index/index.html"><IMG SRC="../Images/weeindex.gif" ALT="[Index]"></A>
+ This site maintained by
+<A HREF="mailto:problems@ee.surrey.ac.uk">problems@ee.surrey.ac.uk</A>
+
+</ADDRESS>
+
+</BODY>
+</HTML>

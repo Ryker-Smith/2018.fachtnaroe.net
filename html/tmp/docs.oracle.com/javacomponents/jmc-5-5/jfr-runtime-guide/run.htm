@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<title>Running Java Flight Recorder</title>
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Merged Version 1044" />
+<meta name="description" content="This chapter describes how you can run Java Flight Recorder." />
+<meta name="dcterms.created" content="2015-02-23T12:12:36Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Java Flight Recorder Runtime Guide" />
+<meta name="dcterms.identifier" content="E28976-04" />
+<meta name="dcterms.isVersionOf" content="JFRRT" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="about.htm" title="Previous" type="text/html" />
+<link rel="Next" href="comline.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JFRRT.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JFRRT.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JFRRT.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<span id="PAGE" style="display:none;">5/6</span> <!-- End Header -->
+<div id="JFRRT164" class="chapter"><a id="CHDEHEAC"></a>
+<h1 class="chapter"><span class="secnum">2</span> Running Java Flight Recorder</h1>
+<p><a id="JFRRT170"></a>This chapter describes how you can run Java Flight Recorder.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+Java Flight Recorder requires a commercial license for use in production. To learn more about commercial features and how to enable them please visit <code dir="ltr"><a href="http://www.oracle.com/technetwork/java/javaseproducts/">http://www.oracle.com/technetwork/java/javaseproducts/</a></code>.</div>
+<p>You can run multiple recordings concurrently and configure each recording using different settings; in particular, you can configure different recordings to capture different sets of events. However, in order to make the internal logic of Java Flight Recorder as streamlined as possible, the resulting recording always contains the union of all events for all recordings active at that time. This means that if more than one recording is running, you might end up with more information in the recording than you wanted. This can be confusing but has no other negative implications.</p>
+<p>The easiest and most intuitive way to use JFR is through the Flight Recorder plug-in that is integrated into Java Mission Control. This plug-in enables access to JFR functionality through an intuitive GUI. For more information about using the JMC client to control JFR, see the Flight Recorder Plug-in section of the Java Mission Control help.</p>
+<p>This chapter explains more advanced ways of running and managing JFR recordings and contains the following sections:</p>
+<ul>
+<li>
+<p><a href="#CHDIDCHG">Using the Command Line</a></p>
+</li>
+<li>
+<p><a href="#A1118227">Using Diagnostic Commands</a></p>
+</li>
+<li>
+<p><a href="#CHDCHAFF">Configuring Recordings</a></p>
+</li>
+<li>
+<p><a href="#CHDICEAE">Creating Recordings Automatically</a></p>
+</li>
+<li>
+<p><a href="#A1118624">Security</a></p>
+</li>
+<li>
+<p><a href="#A1092559">Troubleshooting</a></p>
+</li>
+</ul>
+<a id="CHDIDCHG"></a>
+<div id="JFRRT171" class="sect1"><!-- infolevel="all" infotype="Task" -->
+<h2 class="sect1"><span class="secnum">2.1</span> Using the Command Line</h2>
+<p>Before creating a flight recording, you must first unlock commercial features and enable Java Flight Recorder. This can be done in a variety of ways, ranging from <code dir="ltr">java</code> command line options, to <code dir="ltr">jcmd</code> diagnostic commands, to Graphical User Interface (GUI) controls within Java Mission Control. This flexibility enables you to provide the appropriate options at startup, or interact with JFR later, after the JVM is already running.</p>
+<p>The following example uses <code dir="ltr">java</code> command-line options to run <code dir="ltr">MyApp</code> and immediately start a 60-second recording. The recording will be saved to a file named <code dir="ltr">myrecording.jfr</code>:</p>
+<pre dir="ltr">
+java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -XX:StartFlightRecording=duration=60s,filename=myrecording.jfr MyApp
+</pre>
+<p>For more information about the supported command-line options, see <a href="comline.htm#BABHIICD">Appendix A, "Command-Line Options"</a>.</p>
+</div>
+<!-- class="sect1" -->
+<a id="A1118227"></a>
+<div id="JFRRT172" class="sect1"><!-- infolevel="all" infotype="Tutorial" -->
+<h2 class="sect1"><span class="secnum">2.2</span> Using Diagnostic Commands</h2>
+<p>It is possible to control recordings using <code dir="ltr">jcmd</code> and JFR-specific diagnostic commands. For a more detailed description of Diagnostic Commands, see <a href="comline.htm#BABBGJCF">Appendix A, "Diagnostic Command Reference"</a>.</p>
+<p>The simplest way to execute a diagnostic command is to use the <code dir="ltr">jcmd</code> tool (located in the Java installation directory). To issue a command, you must pass the process identifier of the JVM (or the name of the main class) and the actual command as arguments to <code dir="ltr">jcmd</code>.</p>
+<p>For example, to start a 60-second recording on the running Java process with the identifier 5368 and save it to <code dir="ltr">myrecording.jfr</code> in the current directory, use the following:</p>
+<pre dir="ltr">
+jcmd 5368 JFR.start duration=60s filename=myrecording.jfr
+</pre>
+<p>To see a list of all running Java processes, run the <code dir="ltr">jcmd</code> command without any arguments. To see a complete list of commands available to a running Java application, specify <code dir="ltr">help</code> as the diagnostic command after the process identifier (or the name of the main class).</p>
+<p>The following examples show various use cases for running <code dir="ltr">jcmd</code> with Java Flight Recorder, assuming a demo program that lives in <code dir="ltr">MyApp.jar</code>.</p>
+<div id="JFRRT195" class="example">
+<p class="titleinexample"><a id="sthref11"></a>Example 2-1 Dynamic Interaction Using jcmd</p>
+<p>Example 2-1 unlocks commercial features and enables Java Flight Recorder dynamically at runtime. No extra options are provided when the Java application is launched. Once the JVM is running, the <code dir="ltr">jcmd</code> commands <code dir="ltr">VM.unlock_commercial_features</code> and <code dir="ltr">JFR.start</code> are used to unlock commercial features and start a new flight recording.</p>
+<pre dir="ltr">
+$java -jar MyApp.jar
+$jcmd 40019 VM.command_line
+40019:
+VM Arguments:
+java_command: MyApp.jar
+java_class_path (initial): MyApp.jar
+Launcher Type: SUN_STANDARD
+
+$jcmd 40019 VM.check_commercial_features
+40019:
+Commercial Features are locked.
+
+$jcmd 40019 JFR.check
+40019:
+Java Flight Recorder not enabled.
+
+Use VM.unlock_commercial_features to enable.
+
+$jcmd 40019 VM.unlock_commercial_features
+40019:
+Commercial Features now unlocked.
+
+$jcmd 40019 VM.check_commercial_features
+40019:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has not been used.
+Resource Management is disabled.
+
+$jcmd 40019 JFR.check
+40019:
+
+No available recordings.
+
+Use JFR.start to start a recording.
+
+$jcmd 40019 JFR.start name=my_recording filename=myrecording.jfr dumponexit=true
+40019:
+Started recording 1. No limit (duration/maxsize/maxage) in use.
+
+Use JFR.dump name=my_recording to copy recording data to file.
+
+$jcmd 40019 VM.check_commercial_features
+40019:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has been used.
+  Resource Management is disabled.
+
+$jcmd 40019 JFR.check
+40019:
+Recording: recording=1 name="my_recording" filename="myrecording.jfr" compress=false (running)
+
+$
+</pre></div>
+<!-- class="example" -->
+<div id="JFRRT196" class="example">
+<p class="titleinexample"><a id="sthref12"></a>Example 2-2 Using -XX:+UnlockCommercialFeatures and -XX:+FlightRecorder</p>
+<p>Example 2-2 unlocks commercial features and enables JFR by passing options <code dir="ltr">-XX:+UnlockCommercialFeatures</code> and <code dir="ltr">-XX:+FlightRecorder</code> to the <code dir="ltr">java</code> command when the application starts.</p>
+<pre dir="ltr">
+$java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -jar MyApp.jar
+
+$jcmd 37152 VM.command_line
+37152:
+VM Arguments:
+jvm_args: -XX:+UnlockCommercialFeatures -XX:+FlightRecorder
+java_command: MyApp.jar
+java_class_path (initial): MyApp.jar
+Launcher Type: SUN_STANDARD
+$jcmd 37152 VM.check_commercial_features
+37152:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has not been used.
+  Resource Management is disabled.
+
+$jcmd 37152 JFR.check
+37152:
+No available recordings.
+
+Use JFR.start to start a recording.
+
+$jcmd 37152 JFR.start name=my_recording filename=myrecording.jfr dumponexit=true
+37152:
+Started recording 1. No limit (duration/maxsize/maxage) in use.
+
+Use JFR.dump name=my_recording to copy recording data to file.
+
+
+$jcmd 37152 JFR.check
+37152:
+Recording: recording=1 name="my_recording" filename="myrecording.jfr" compress=false (running)
+
+$jcmd 37152 VM.check_commercial_features
+37152:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has been used.
+  Resource Management is disabled.
+$
+</pre></div>
+<!-- class="example" -->
+<div id="JFRRT197" class="example">
+<p class="titleinexample"><a id="sthref13"></a>Example 2-3 Using -XX:+UnlockCommercialFeatures with a JFR Dynamic Start</p>
+<p>Example 2-3 starts JFR dynamically (using <code dir="ltr">JFR.start</code>) after the application has been launched with <code dir="ltr">-XX:+UnlockCommercialFeatures</code>.</p>
+<pre dir="ltr">
+$java -XX:+UnlockCommercialFeatures -jar MyApp.jar
+
+$jcmd 39970 VM.command_line
+39970:
+VM Arguments:
+jvm_args: -XX:+UnlockCommercialFeatures
+java_command: MyApp.jar
+java_class_path (initial): MyApp.jar
+Launcher Type: SUN_STANDARD
+
+$jcmd 39970 VM.check_commercial_features
+39970:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has not been used.
+  Resource Management is disabled.
+
+$jcmd 39970 JFR.check
+39970:
+No available recordings.
+
+Use JFR.start to start a recording.
+
+$jcmd 39970 VM.check_commercial_features
+39970:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has not been used.
+  Resource Management is disabled.
+
+$jcmd 39970 JFR.start name=my_recording filename=myrecording.jfr dumponexit=true
+
+39970:
+
+Started recording 1. No limit (duration/maxsize/maxage) in use.
+
+Use JFR.dump name=my_recording to copy recording data to file.
+
+$jcmd 39970 VM.check_commercial_features
+
+39970:
+
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has been used.
+  Resource Management is disabled.
+
+$jcmd 39970 JFR.check
+39970:
+Recording: recording=1 name="my_recording" filename="myrecording.jfr" compress=false (running)
+$
+</pre></div>
+<!-- class="example" -->
+<div id="JFRRT198" class="example">
+<p class="titleinexample"><a id="sthref14"></a>Example 2-4 Locking Commercial Features with -XX:-UnlockCommercialFeatures</p>
+<p>Example 2-4 launches the application with commercial features explicitly locked (<code dir="ltr">-XX:-UnlockCommercialFeatures</code>). It then unlocks commercial features with <code dir="ltr">VM.unlock_commercial_features</code>, and starts a new flight recording with <code dir="ltr">JFR.start</code>.</p>
+<pre dir="ltr">
+$ java -XX:-UnlockCommercialFeatures -jar MyApp.jar
+
+$jcmd 40110 VM.command_line
+40110:
+VM Arguments:
+jvm_args: -XX:-UnlockCommercialFeatures
+java_command: MyApp.jar
+java_class_path (initial): MyApp.jar
+Launcher Type: SUN_STANDARD
+
+$jcmd 40110 VM.check_commercial_features
+40110:
+Commercial Features are locked.
+
+$jcmd 40110 VM.unlock_commercial_features
+40110:
+Commercial Features now unlocked.
+
+$jcmd 40110 VM.check_commercial_features
+40110:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has not been used.
+  Resource Management is disabled.
+
+$jcmd 40110 JFR.start name=my_recording filename=myrecording.jfr dumponexit=true
+40110:
+Started recording 1. No limit (duration/maxsize/maxage) in use.
+
+Use JFR.dump name=my_recording to copy recording data to file.
+
+$jcmd 40110 JFR.check
+40110:
+Recording: recording=1 name="my_recording" filename="myrecording.jfr" compress=false (running)
+
+$jcmd 40110 VM.check_commercial_features
+40110:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder has been used.
+  Resource Management is disabled.$
+</pre></div>
+<!-- class="example" -->
+<div id="JFRRT199" class="example">
+<p class="titleinexample"><a id="sthref15"></a>Example 2-5 Disabling JFR with -XX:-FlightRecorder</p>
+<p>Example 2-5 disables JFR entirely by passing <code dir="ltr">-XX:-FlightRecorder</code> to the <code dir="ltr">java</code> command when the application starts. It is not possible to dynamically create a new flight recording if this option has been specified.</p>
+<pre dir="ltr">
+$java -XX:+UnlockCommercialFeatures -XX:-FlightRecorder -jar MyApp.jar
+$jcmd 39589 VM.command_line
+39589:
+VM Arguments:
+jvm_args: -XX:+UnlockCommercialFeatures -XX:-FlightRecorder 
+java_command: MyApp.jar
+java_class_path (initial): MyApp.jar
+Launcher Type: SUN_STANDARD
+
+$jcmd 39589 VM.check_commercial_features
+
+39589:
+Commercial Features are unlocked.
+Status of individual features:
+  Java Flight Recorder is disabled.
+  Resource Management is disabled.
+
+$jcmd 39589 JFR.check
+39589:
+Java Flight Recorder is disabled.
+
+$jcmd 39589 JFR.stop
+39589:
+Java Flight Recorder is disabled.
+
+$jcmd 39589 VM.unlock_commercial_features
+39589:
+Commercial Features already unlocked.
+
+$jcmd 39589 JFR.start name=my_recording filename=myrecording.jfr dumponexit=true
+39589:
+Java Flight Recorder is disabled.
+$
+</pre></div>
+<!-- class="example" -->
+<div id="JFRRT200" class="example">
+<p class="titleinexample"><a id="sthref16"></a>Example 2-6 Invalid Option Combinations</p>
+<p>Example 2-6 shows what happens when invalid option combinations are passed to the <code dir="ltr">java</code> command. In this case, the user attempts to enable JFR (<code dir="ltr">-XX:+FlightRecorder</code>) with simultaneously locking commercial features (<code dir="ltr">-XX:-UnlockCommercialFeatures</code>).</p>
+<pre dir="ltr">
+$ java -XX:-UnlockCommercialFeatures -XX:+FlightRecorder -jar MyApp.jar
+Error: To use 'FlightRecorder', first unlock using -XX:+UnlockCommercialFeatures.
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+$
+</pre></div>
+<!-- class="example" --></div>
+<!-- class="sect1" -->
+<a id="CHDCHAFF"></a>
+<div id="JFRRT173" class="sect1"><!-- infolevel="all" infotype="Concept" -->
+<h2 class="sect1"><span class="secnum">2.3</span> Configuring Recordings</h2>
+<p>You can configure an explicit recording in a number of other ways. These techniques work the same regardless of how you start a recording (that is, either by using the command-line approach or by using diagnostic commands).</p>
+<a id="CHDCJHGF"></a>
+<div id="JFRRT174" class="sect2"><!-- infolevel="all" infotype="Reference" -->
+<h3 class="sect2"><span class="secnum">2.3.1</span> Setting Maximum Size and Age</h3>
+<p>You can configure an explicit recording to have a maximum size or age by using the following parameters:</p>
+<ul>
+<li>
+<pre dir="ltr">
+maxsize=<span class="italic">size</span>
+</pre>
+<p>Append the letter <code dir="ltr">k</code> or <code dir="ltr">K</code> to indicate kilobytes, <code dir="ltr">m</code> or <code dir="ltr">M</code> to indicate megabytes, <code dir="ltr">g</code> or <code dir="ltr">G</code> to indicate gigabytes, or do not specify any suffix to set the size in bytes.</p>
+</li>
+<li>
+<pre dir="ltr">
+maxage=<span class="italic">age</span>
+</pre>
+<p>Append the letter <code dir="ltr">s</code> to indicate seconds, <code dir="ltr">m</code> to indicate minutes, <code dir="ltr">h</code> to indicate hours, or <code dir="ltr">d</code> to indicate days.</p>
+</li>
+</ul>
+<p>If both a size limit and an age are specified, the data is deleted when either limit is reached.</p>
+</div>
+<!-- class="sect2" -->
+<a id="CHDHBCDE"></a>
+<div id="JFRRT175" class="sect2"><!-- infolevel="all" infotype="Reference" -->
+<h3 class="sect2"><span class="secnum">2.3.2</span> Setting the Delay</h3>
+<p>When scheduling a recording. you might want to add a delay before the recording is actually started; for example, when running from the command line, you might want the application to boot or reach a steady state before starting the recording. To achieve this, use the <code dir="ltr">delay</code> parameter:</p>
+<pre dir="ltr">
+delay=<span class="italic">delay</span>
+</pre>
+<p>Append the letter <code dir="ltr">s</code> to indicate seconds, <code dir="ltr">m</code> to indicate minutes, <code dir="ltr">h</code> to indicate hours, or <code dir="ltr">d</code> to indicate days.</p>
+</div>
+<!-- class="sect2" -->
+<a id="CHDGJDGH"></a>
+<div id="JFRRT176" class="sect2"><!-- infolevel="all" infotype="Reference" -->
+<h3 class="sect2"><span class="secnum">2.3.3</span> Setting Compression</h3>
+<p>Although the recording file format is very compact, you can compress it further by adding it to a ZIP archive. To enable compression, use the following parameter:</p>
+<pre dir="ltr">
+compress=true
+</pre>
+<p>Note that CPU resources are required for the compression, which can negatively impact performance.</p>
+</div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" -->
+<a id="CHDICEAE"></a>
+<div id="JFRRT177" class="sect1"><!-- infolevel="all" infotype="Concept" -->
+<h2 class="sect1"><span class="secnum">2.4</span> Creating Recordings Automatically</h2>
+<p>When running with a default recording you can configure Java Flight Recorder to automatically save the current in-memory recording data to a file whenever certain conditions occur. If a disk repository is used, the current information in the disk repository will also be included.</p>
+<a id="CHDFFBBB"></a>
+<div id="JFRRT178" class="sect2"><!-- infolevel="all" infotype="Task" -->
+<h3 class="sect2"><span class="secnum">2.4.1</span> Creating a Recording On Exit</h3>
+<p>To save the recording data to the specified path every time the JVM exits, start your application with the following option:</p>
+<pre dir="ltr">
+-XX:FlightRecorderOptions=defaultrecording=true,dumponexit=true,dumponexitpath=<span class="italic">path</span>
+</pre>
+<p>Set <span class="italic">path</span> to the location where the recording should be saved. If you specify a directory, a file with the date and time as the name is created in that directory. If you specify a file name, that name is used. If you do not specify a path, the recording will be saved in the current directory.</p>
+<p>You can also specify <code dir="ltr">dumponexit=true</code> as a parameter to the <code dir="ltr">-XX:StartFlightRecording</code> option:</p>
+<pre dir="ltr">
+-XX:StartFlightRecording=name=test,filename=D:\test.jfr,dumponexit=true
+</pre>
+<p>In this case, the dump file will be written to the location defined by the filename parameter.</p>
+</div>
+<!-- class="sect2" -->
+<a id="CHDJGAHG"></a>
+<div id="JFRRT179" class="sect2"><!-- infolevel="all" infotype="Concept" -->
+<h3 class="sect2"><span class="secnum">2.4.2</span> Creating a Recording Using Triggers</h3>
+<p>You can use the Console in Java Mission Control to set <span class="italic">triggers</span>. A trigger is a rule that executes an action whenever a condition specified by the rule is true. For example, you can create a rule that triggers a flight recording to commence whenever the heap size exceeds 100 MB. Triggers in Java Mission Control can use any property exposed through a JMX MBean as the input to the rule. They can launch many other actions than just Flight Recorder dumps.</p>
+<p>Define triggers on the <span class="bold">Triggers</span> tab of the JMX Console. For more information on how to create triggers, see the Java Mission Control help.</p>
+</div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" -->
+<a id="A1118624"></a>
+<div id="JFRRT180" class="sect1"><!-- infolevel="all" infotype="Tutorial" -->
+<h2 class="sect1"><span class="secnum">2.5</span> Security</h2>
+<p>The recording file can potentially contain confidential information such as Java command-line options and environment variables. Use extreme care when you store or transfer the recording files as you would do with diagnostic core files or heap dumps.</p>
+<p><a href="#BABHIGGE">Table 2-1</a> describes security permissions for various methods of using JFR.</p>
+<div id="JFRRT181" class="tblformal">
+<p class="titleintable"><a id="sthref17"></a><a id="BABHIGGE"></a>Table 2-1 Security Permissions</p>
+<table class="cellalignment67" title="Security Permissions" summary="This is a two-column table. The left-hand column lists the type of command and the right-hand column describes the se urity premissions for the associated command type." dir="ltr">
+<thead>
+<tr class="cellalignment54">
+<th class="cellalignment66" id="r1c1-t3">Method</th>
+<th class="cellalignment66" id="r1c2-t3">Security</th>
+</tr>
+</thead>
+<tbody>
+<tr class="cellalignment54">
+<td class="cellalignment60" id="r2c1-t3" headers="r1c1-t3">
+<p>Command line</p>
+</td>
+<td class="cellalignment60" headers="r2c1-t3 r1c2-t3">
+<p>Anyone with access to the command line of the Java process must be trusted.</p>
+</td>
+</tr>
+<tr class="cellalignment54">
+<td class="cellalignment60" id="r3c1-t3" headers="r1c1-t3">
+<p>Diagnostic commands</p>
+</td>
+<td class="cellalignment60" headers="r3c1-t3 r1c2-t3">
+<p>Only the owner of the Java process can use <code dir="ltr">jcmd</code> to control the process.</p>
+</td>
+</tr>
+<tr class="cellalignment54">
+<td class="cellalignment60" id="r4c1-t3" headers="r1c1-t3">
+<p>Java Mission Control Client</p>
+</td>
+<td class="cellalignment60" headers="r4c1-t3 r1c2-t3">
+<p>Java Mission Control Client uses JMX to access the JVM.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="tblformal" --></div>
+<!-- class="sect1" -->
+<a id="A1092559"></a>
+<div id="JFRRT182" class="sect1"><!-- infolevel="all" infotype="Reference" -->
+<h2 class="sect1"><span class="secnum">2.6</span> Troubleshooting</h2>
+<p>You can collect a significant amount of diagnostic information from Java Flight Recorder by starting the JVM with one of the following options:</p>
+<ul>
+<li>
+<p><code dir="ltr">-XX:FlightRecorderOptions=loglevel=debug</code></p>
+</li>
+<li>
+<p><code dir="ltr">-XX:FlightRecorderOptions=loglevel=trace</code>.</p>
+</li>
+</ul>
+</div>
+<!-- class="sect1" --></div>
+<!-- class="chapter" --></div>
+<!-- class="ind" -->
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment53">
+<tr>
+<td class="cellalignment60">
+<table class="cellalignment58">
+<tr>
+<td class="cellalignment57"><a href="about.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment57"><a href="comline.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2001, 2015,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment62">
+<table class="cellalignment56">
+<tr>
+<td class="cellalignment57"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment57"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment57"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

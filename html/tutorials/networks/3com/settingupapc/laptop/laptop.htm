@@ -1,0 +1,359 @@
+<html>
+<head>
+<title>Adding a Laptop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+defaultStatus="3Com OfficeConnect Network Assistant v3.0"
+</script>
+
+<script language="javascript">
+
+<!--
+// IE3 workaround vbscript objects
+DA = (document.all) ? 1 : 0
+
+window.onerror=handle_error
+
+function handle_error(){return true;
+}
+//-->
+
+</script>
+
+<script language="JavaScript">
+function launchglossary(anchorname)
+{
+glos=window.open('', 'glossary',"width=600,height=400")
+  
+  glos.document.open() 
+  glos.document.write('<html>'
+    +'<head>'
+    +'<title>Glossary</title>'
+    +'</head>'
+    +'<frameset  cols="*,23%">'
+    +'<frame name="glosmainframe" src="../../glossary/glossary.htm#' + anchorname + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'<frame name="glossidebar" src="../../glossary/suboptions_glos.htm"marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'</frameset>');
+  
+  glos.document.close();
+glos.focus();
+}
+function launchtrouble(troublename)
+{
+trou=window.open('', 'troubleshooter',"width=600,scrollbars=yes,height=500,resizable=yes")
+ 
+  trou.document.open() 
+  trou.document.write('<html>'
+    +'<head>'
+    +'<title>Troubleshooting</title>'
+    +'</head>'
+    +'<frameset  rows="12%,*">'
+    +'<frame name="topbar" src="../../troubleshooter/trou_nav.htm" marginwidth="10" marginheight="10" scrolling="no" frameborder="no">'
+    +'<frame name="mainframe" src="../../troubleshooter/' + troublename + '" marginwidth="10" marginheight="10" scrolling="auto" frameborder="no">'
+    +'</frameset>');
+  
+  trou.document.close();
+ trou.creator=parent;
+trou.focus();
+}
+</script>
+
+<script language="JavaScript">
+function hotlink_ne(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(26);
+parent.frames[2].window.open('../../networksexplained/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_se(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(25);
+parent.frames[2].window.open('../../settingupapc/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_hub(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(20);
+parent.frames[2].window.open('../../installingadevice/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_ap(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(24);
+parent.frames[2].window.open('../../addingaprinter/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_un(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(23);
+parent.frames[2].window.open('../../usingyournetwork/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+function hotlink_sbs(mainstagehtm,mainstageanchor)
+{
+parent.frames[0].document.embeds[0].GotoFrame(27);
+parent.frames[2].window.open('../../smallbusinesssolutions/'+mainstagehtm+'#'+mainstageanchor,'mainstage');
+}
+</script>
+
+<SCRIPT Language="Javascript">
+statusbar_ne="Go to 'Networks Explained'"
+statusbar_se="Go to 'Setting Up a PC'"
+statusbar_hub="Go to 'Installing a Device'"
+statusbar_ap="Go to 'Adding a Printer'"
+statusbar_un="Go to 'Using Your Network'"
+statusbar_sbs="Go to 'Small Business Solutions'"
+statusbar_trou="Launch Troubleshooting"
+statusbar_glos="Launch Glossary"
+statusbar_manu="Launch Manuals"
+statusbar_anchor="Jump to Another Page"
+</script>
+
+</head>
+
+<body bgcolor="#ffffff">
+
+<SCRIPT Language="Javascript">
+onLoad=(parent.frames[1].document.embeds[0].GotoFrame(9));
+</script>
+
+<table border="0" width="400">
+  <tr> 
+    <td width="400" height="1063"> 
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="overview"></a><a name="2.2.1.1"></a>1 
+        Overview</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1.1 Every laptop you 
+        want to use on the network has to have a network card installed. This 
+        subsection describes how to install a PCMCIA card (sometimes known as 
+        a PC card) in the laptop and how to configure the laptop for use with 
+        the network. </font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>We assume that 
+        Windows 95 or Windows 98 is already installed on the PC.</b></font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If the laptop 
+          does not have a PCMCIA card, you need to insert one. Go to <a href="#2.2.2.1"onMouseOver="status=statusbar_anchor;return true">Installing 
+          the PCMCIA card</a>.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If the laptop 
+          does have a PCMCIA card and suitable connector go to <a href="#2.2.3.1"onMouseOver="status=statusbar_anchor;return true">Making 
+          a laptop ready for network use</a>.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If you are not 
+          sure whether the laptop already has a PCMCIA card in it, look in the 
+          card slots. If there is one and you have an adapter cable for it, go 
+          to <a href="#2.2.3.1"onMouseOver="status=statusbar_anchor;return true">Making 
+          a laptop ready for network use</a>.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If you want to 
+          upgrade the PCMCIA card's driver go to the subsection <a  href="javascript:hotlink_se('driver/driver.htm','2.3.1.1')"onMouseOver="status=statusbar_se;return true">Changing 
+          the Driver</a>.</font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="insertpcmcia"></a><a name="2.2.2.1"></a>2 
+        Installing the PCMCIA card</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.1 To install your 
+        PCMCIA card you should have: </font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> The manual that 
+          accompanies your laptop.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif">The PCMCIA card 
+          and accompanying disks, CDs and manuals.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> An appropriate 
+          adapter cable for the PCMCIA card to connect it to the network.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Your Windows 95 
+          or 98 CD-ROM or disks.</font></li>
+      </ul>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <IMG align=right alt="Inserting the PCMCIA card" height  =145 src="images/laptop_1.gif" width=261 >Some 
+        laptops do not have built-in disk drives and instead use their PCMCIA 
+        card slot to attach external disk drives to the laptop. If the laptop 
+        into which you are inserting the PCMCIA card is one of these, you may 
+        need to copy various configuration files (from the disk supplied with 
+        the PCMCIA card) onto the laptop <b>before</b> inserting the PCMCIA card. 
+        Refer to the PCMCIA card's manual.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.2<a name="2.2.2.2"></a> 
+        For a successful installation <A href="javascript:launchglossary('cardservices');"onMouseOver="status=statusbar_glos;return true">Card 
+        Services</a> must be enabled on the laptop. To check this:<br>
+        1. Power on the laptop and start Windows 95 or Windows 98.<br>
+        2. From the <i>Start</i> menu choose <i>Settings</i> and then <i>Control 
+        Panel</i>.</font></p>
+      <p align="center"><IMG alt="Start Menu" height=295 src="images/laptop_2.gif" width=288 ></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 2.3<a name="2.2.2.3"></a> 
+        In the Control Panel window double-click <i>PC</i> <i>Card (PCMCIA)</i>.</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If the PC Card 
+          (PCMCIA) Properties dialog box appears, Card Services is enabled. (Card 
+          Services is required to detect insertion of a PCMCIA card into a laptop.)</font> 
+      </ul>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If the PC Card 
+          (PCMCIA) Wizard appears, Card Services is not enabled. In the Wizard 
+          select <i>No</i> and click <i>Next&gt;</i>. Click <i>Finish</i>. Restart 
+          the laptop and Windows as prompted.</font></li>
+      </ul>
+      <div align="center"> 
+        <p><font size="2" face="Arial, Helvetica, sans-serif"><img alt="PC Card Properties" height=333 src ="images/laptop_3.gif" width=344 ></font></p>
+      </div>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.4<a name="2.2.2.4"></a> 
+        To insert the PCMCIA card into the laptop:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 1. Power off the 
+        laptop and disconnect its power cable.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 2. Refer to the PCMCIA 
+        card's manual to check if the adapter cable has to be connected before 
+        the card is inserted into the laptop. If so, connect the cable.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <IMG align=right alt="PCMCIA Card" height=145 src="images/laptop_4.gif" width=261 >3. 
+        Insert the PCMCIA card into the laptop (ensuring it is the right way round).</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 4. Power on the laptop 
+        and start Windows.</font></p>
+      <p align="right">&nbsp;</p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 2.5 <a name="2.2.2.5"></a> 
+        When the laptop and Windows 95 or Windows 98 are starting up, the PCMCIA 
+        card may be detected automatically. If this is the case, configuration 
+        screens will appear to allow you to configure it; go on to <a href="#2.2.2.6"onMouseOver="status=statusbar_anchor;return true">section 
+        2.7</a>.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If the PCMCIA card 
+        is not detected:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">1. Ensure that the 
+        card is inserted correctly.<br>
+        2. Ensure that Card Services is enabled on the laptop. To check Card Services 
+        follow the instructions on <a href="#2.2.2.2"onMouseOver="status=statusbar_anchor;return true">section 
+        2.2 </a> <a href="#2.2.2.3"onMouseOver="status=statusbar_anchor;return true">and 
+        section 2.3</a> of this topic.</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2">If the PCMCIA card 
+        is still not detected, go to the <a href="javascript:launchtrouble('Installation problems/installation_5.htm');"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a> 
+        section of this CD.</font> </p>
+      <hr width="390" size="3">
+      <br>
+      <font size="2" face="Arial, Helvetica, sans-serif"> </font><font size="2" face="Arial, Helvetica, sans-serif"> 
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 2.6<a name="2.2.2.6"></a> 
+        If the PCMCIA card is detected after restarting the laptop go to <a href="#2.2.2.7"onMouseOver="status=statusbar_anchor;return true">section 
+        2.7</a>. </font></p>
+      </font> 
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If the PCMCIA card 
+        is detected automatically and configuration screens appear for it, follow 
+        the configuration instructions on the PC screen and those that are in 
+        the PCMCIA card's manual.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> Other hardware may 
+        be detected at the same time as the PCMCIA card (if that hardware had 
+        not been previously installed). Refer to the documentation accompanying 
+        that hardware for information on installing it.</font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.7<a name="2.2.2.7"></a> 
+        When configuring the PCMCIA card you may be asked for:</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><b>The Computer name</b><br>
+        This is the name that will identify the laptop on the network. It can 
+        be any name (such as 'Jane's laptop') but it must be unique from other 
+        PCs and laptops on the network. We recommend that you keep a record of 
+        all the names on the network.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> <b>The Workgroup 
+        name</b><br>
+        This is the name for the network. It can be any name but it must be the 
+        same as the workgroup name entered for other PCs and laptops on the network. 
+        We recommend that you keep a record of the workgroup name. </font></p>
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"><img alt="Network ID" height=460 src="images/laptop_5.gif" width=367 ></font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">2.8<a name="2.2.2.8"></a> 
+        When the configuration process is completed, restart the laptop and Windows 
+        as prompted and go to <a href="#2.2.3.1"onMouseOver="status=statusbar_anchor;return true">Making 
+        a laptop ready for network use</a>.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If a DHCP error message 
+        appears when the PC and Windows has been restarted go the <a href="javascript:launchtrouble('troubleshooter.htm');"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a> 
+        section</font>.</p>
+      <p align="center"><IMG alt="DHCP Client" height=97 src="images/laptop_6.gif" width=400 ></p>
+      <hr width="390" size="3">
+      <p><font size="5" face="Arial, Helvetica, sans-serif"><a name="laptop"></a><a name="2.2.3.1"></a>3 
+        Making a laptop ready for network use</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.1 To make a laptop 
+        ready for network use:<br>
+        </font><font size="2" face="Arial, Helvetica, sans-serif"><br>
+        Start Windows 95 or 98.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> If the NIC was automatically 
+        detected and the Computer name and Workgroup have already been specified, 
+        Windows may ask you to log on. If you have logged on to this laptop before, 
+        enter your User name and Password as normal. If this is the <i>first</i> 
+        time you have logged on to this laptop, enter a new User name in the <i>User 
+        name</i> field (for example, your name). This name should be unique to 
+        the network. To set a password, simply type the desired password into 
+        the <i>Password</i> field. Click <i>OK</i>. Windows asks you to confirm 
+        the password. Retype it and click <i>OK</i>.</font></p>
+      <p align="center"><IMG alt="Enter network password" height=128 src ="images/laptop_7.gif" width=400 ></p>
+      <hr width="390" size="3">
+      <p align="left"><font size="2" face="Arial, Helvetica, sans-serif"> 3.2<a name="2.2.3.2"></a> 
+        Look to see that the desktop contains an icon called Network Neighborhood:</font></p>
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"><br>
+        <img alt="Network Neighborhood" height=77 src="images/laptop_8.gif" width=78 > 
+        </font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If the icon is 
+          present the PCMCIA card is installed correctly. Go to the <a href="#2.2.3.3"onMouseOver="status=statusbar_anchor;return true">section 
+          3.3</a>.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif">If the icon is 
+          not present the PCMCIA card is not installed correctly. Go to the <a href="javascript:launchtrouble('cannot access files/access_1.htm');"onMouseOver="status=statusbar_trou;return true">Network 
+          Neighborhood icon is absent from the desktop screen</a> section.</font></li>
+      </ul>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.3<a name="2.2.3.3"></a> 
+        You now need to configure the laptop so that it can be recognized on the 
+        network.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> From the <i>Start</i> 
+        menu, choose <i>Settings</i> and then <i>Control Panel.</i></font></p>
+      <p align="center"><img alt="Start menu" height=295 src="images/laptop_9.gif" width=288 ></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.4<a name="2.2.3.4"></a> 
+        In the Control Panel window, double-click <i>System</i>.</font></p>
+      <p align="center"><img alt="Control Panel" height=369 src="images/laptop_10.gif" width=395 ></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 3.5<a name="2.2.3.5"></a> 
+        In the Systems Properties dialog box select the <i>Device Manager</i> 
+        tab.</font></p>
+      <p align="center"><img alt="System Properties" height=437 src="images/laptop_11.gif" width=400 ></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> 3.6<a name="2.2.3.6"></a> 
+        In the listbox double-click <i>Network Adapters</i>. <br>
+        The Network adapters item should expand to show the name of the PCMCIA 
+        card that you have inserted.</font></p>
+      <p align="center"><font size="2" face="Arial, Helvetica, sans-serif"><img src="images/laptop_12.gif" width="400" height="241"></font><font size="2" face="Arial, Helvetica, sans-serif"><br>
+        </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.7<a name="2.2.3.7"></a></font><font size="2" face="Arial, Helvetica, sans-serif"> 
+        </font><font size="2" face="Arial, Helvetica, sans-serif">If the PCMCIA 
+        card<b> is</b> detected (and the icon for it does not have a yellow circle 
+        and exclamation mark (!) on it), the PCMCIA card is configured correctly. 
+        In the System Properties dialog box click <i>Cancel</i> and continue with 
+        this topic. </font> </p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">If the PCMCIA card 
+        is <b>not</b> detected (or the icon for it has a yellow circle and exclamation 
+        mark (!) on it), the PCMCIA card is configured incorrectly. Go to the 
+        <a href="javascript:launchtrouble('troubleshooter.htm');"onMouseOver="status=statusbar_trou;return true">Troubleshooting</a> 
+        section. </font></p>
+      <hr width="390" size="3">
+      <p><font size="2" face="Arial, Helvetica, sans-serif">3.8<a name="2.2.3.8"></a> 
+        In the future when you power on the laptop and start Windows, you will 
+        be asked to log in.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> You must specify 
+        the user name in the <i>User name</i> field (and specify a password if 
+        one has been used previously) and click<i> OK </i>to log in to the network.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif"> To set a password 
+        (if one is not already set up) simply type in the desired password into 
+        the <i>Password</i> field on the Enter Network Password dialogue box. 
+        Click <i>OK</i>, Windows asks you to confirm the password. Retype it and 
+        click <i>OK.</i></font></p>
+      <p align="center"><img alt="Enter Network Password" height=128 src ="images/laptop_13.gif" width=400 > 
+      </p>
+      <hr width="390" size="3">
+      <p> <font size="2" face="Arial, Helvetica, sans-serif"><a name="2.2.3.9"></a>3.9 
+        This laptop is now ready to be installed on your network.<br>
+        Tasks to perform next:</font></p>
+      <ul>
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Do you have other 
+          laptops to set up?&#151;go through this subsection again for each laptop.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> Do you have PCs 
+          to set up?&#151;go through the subsection <a  href="javascript:hotlink_se('pc/pc.htm','2.1.1.1')"onMouseOver="status=statusbar_se;return true">Adding 
+          a PC</a> for each PC.</font> 
+        <li><font size="2" face="Arial, Helvetica, sans-serif"> If all your PCs 
+          and laptops are ready to connect to the OfficeConnect device&#151;go 
+          to the next section<b> </b><a  href="javascript:hotlink_hub('mainoverview_hub.htm','')"onMouseOver="status=statusbar_hub;return true">Installing 
+          a Device</a>.</font></li>
+      </ul>
+      <p align="right">&nbsp;</p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml"-->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml"-->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml"-->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml"-->
+<h1>Web Authoring - CSS</h1>
+<a href="http://ibiblio.org/pjones/old.page.html">The first page (1991)</a> and <a href="http://ibiblio.org/pjones/blog/the-story-behind-the-hypertext-91-demo-page-and-unc-and-me/">some background</a>.
+<h2>Reference:</h2>
+<ul>
+  <li><a href="http://dev.w3.org/html5/markup/spec.html">HTML 5</a></li>
+  <li><a href="http://www.w3.org/Style/">CSS</a></li>
+  <li><a href="http://www.w3schools.com/cssref/default.asp">CSS</a></li>
+  <li><a href="http://publib.boulder.ibm.com/iseries/v5r2/ic2924/info/rzaie/rzaieenvvar.htm">http environment variables</a> (available to CGI programs on the http server)</li>
+  <li><a href="http://www.lemoda.net/perl/perl-js/perl-js.html">Javascript/perl equivalency chart</a></li>
+  </ul>
+<h2>Tutorials</h2>
+<ul>
+  <li><a href="http://www.beginnersguidetohtml.com/">Beginners guide to html</a></li>
+  <li><a href="intermediate/barebonesguidetohtml.html">Bare Bones Guide to HTML</a></li>
+  <li>There is a <a href="/tutorials/stylesheets/two/stylesheet.html">short css tutorial</a>, and a more <a href="http://www.w3schools.com/css/default.asp">detailed one</a>.</li>
+  <li><a href="http://www.cssdrive.com/">http://www.cssdrive.com/</a></li>
+  <li><a href="http://www.dynamicdrive.com/style/">http://www.dynamicdrive.com/style/</a></li>
+  <li><a href="http://www.thesitewizard.com/">http://www.thesitewizard.com/</a></li>
+  <li><a href="http://www.pageresource.com/dhtml/">http://www.pageresource.com/dhtml/</a></li>
+  <li><a href="http://www.tizag.com/ ">http://www.tizag.com/</a></li>
+	<li><a href="http://en.wikipedia.org/wiki/Server_Side_Includes">Server Side Includes</a> on Wikipedia</li>
+	<li><a href="http://httpd.apache.org/docs/2.0/howto/ssi.html">Apache Tutorial on SSI</a></li>
+	<li><a href="serversideincludes/index.shtml">Server Side Includes</a></li>
+  <li><a href="shortcuticon/index.shtml">Adding a shortcut icon</a></li>
+<!--	<li><a href="developmentmethod/test.shtml">&nbsp;&nbsp;&nbsp;</a></li> -->
+	<li><a href="http://www.globalization-group.com/edge/resources/color-meanings-by-culture/">Colours have meanings</a>...</li>
+	<li><a href="animatedasterisk/index.shtml">Animation example</a>
+	<li><a href="http://www.gimp.org/tutorials/Simple_Animations/">Animated GIFs</a></li>
+	<li><a href="http://www.jimthatcher.com/webcoursec.htm">Accessibility</a></li>
+</ul>
+<h2>CSS Samples</h2>
+<ol>
+	<li>A <a href="template/">simple template</a> to start with....</li>
+  <li><a href="z-index/">Use of <b>z-index</b></a><p>- uses <b>z-index</b> to layer elements in the browser as one does in DTP and image editing. Requires <b>top</b> and <b>left</b> coordinates and a <b>position</b>ing statement also.</p></li>
+  <li><a href="opacity/">Opacity of shape and text</a><p>- shows use of <b>opacity</b> (control alpha value) for text and for a shape, <b>z-index</b>, and <b>border-radius</b>.</p>
+<p>Note that <b>border-radius</b> is css 3 and will only display correctly using the border-radius property in browsers that support this. Other earlier variants such as <b>-moz-border-radius</b> and <b>-webkit-border-radius</b> should not be used; if used these may allow rounded corners in earlier browsers but will break css 3.</p>
+<p>Your design solution should not in any case depend on rounded corners for success. They should only be used to enhance the user experience.</p>
+<li><a href="centeringanimg.html">Centering an <b>img</b></a></li>
+<li><a href="verticaltext/">Vertical Text</a><p>Note that as presently implemented, this method uses non CSS 3 instructions. However, these are required to get the browsers we are currently using to do as we wish. For really important text using this effect, use images of text.</p></li>
+<li><a href="javascriptevents/">Javascript events</a></li>
+</ol>
+<h2>Useful tools</h2>
+<ul>
+        <li><a href="http://validator.w3.org/">HTML Validation tool - all your work must be validated here!</a></li>
+        <li><a href="http://jigsaw.w3.org/css-validator/">CSS validation</a></li>
+	<li><a href="http://www.lipsum.com/">Lorem Ipsum text generator</a></li>
+	<li><a href="http://browserling.com/">Browserling (cross-browser testing)</a></li>
+  <li><a href="http://browsershots.org/">BrowserShots.org (cross-browser testing)</a></li>
+	<li><a href="http://www.urbanfonts.com/fonts/futuristic-fonts.htm">Futuristic Fonts</a></li>
+	<li><a href="http://www.iconfinder.com/">Icon Finder</a></li>
+	<li><a href="http://www.koehnline.com/newgifs/">Examples of what you can do with animated gifs</a></li>
+  <li><a href="http://cssfontstack.com/">'Web-safe' font stacks</a></li>
+</ul>
+<p><b>IMPORTANT:</b> The most important tutorials will be given in class when sample webpages will be created showing you the fundamentals of HTML; these classes will also include the uploading of files, creating editing and modifying files and properties and any other aspects of HTML you ask about. So <i>ask</i>!</p>
+<h2>Assessment</h2>
+<p>Assessment is by:</p>
+<ol>
+	<li>Assignment - 30%</li>
+	<li>Project - 50%</li>
+	<li>Learner Record - 20%</li>
+</ol>
+<p>(Prior to 2012 assessment was by project only, accounting for 100% of the marks, where students created one working web<i>site</i>. You may view current/previous submissions by clicking in the sections below. Please note that the links in the sections below are <b>not</b> examples of best practice; they are merely examples of past work.)</p>
+<p>Your assignment and project should be created in a plain text editor - <b>Notepad</b> for Microsoft<sup><small>&reg;</small></sup> Windows<sup><small>&reg;</small></sup>, or <b>gedit</b> or <b>vi</b> for <a href="/help/whatislinux.shtml">Linux</a> is recommended (marks may be deducted heavily for the use of any other publishing tool such as <b>FrontPage</b><sup><small>&reg;</small></sup>).</p>
+<p>What colours <i>can</i> I use? Technically you can use any colour that you like; but how the codes for that colour will cause the colour to appear on someone elses computer may be completely different. That's why the idea of "Web-Safe Colors" was introduced.</p>
+<a href="WebSafeColourPalette%20-%20with%20codes.gif"><img src="WebSafeColourPalette%20-%20with%20codes.gif" width="75" alt="websafe Colour Palette"></a>
+<p>Today, most peoples computers are sufficiently well equipped to display all necessary colours. But if unsure, choose a colour from the set above.</p>
+<p>What colours <i>should</i> I use? Firstly, choose a consistent colour scheme for the whole site. This scheme should in some way reflect the type of site you're creating. There are good guidelines for which colours will look well with others on many sites, all based on tried and true colour theory. Here is one such sample site: <a href="http://colorschemedesigner.com/">http://colorschemedesigner.com/</a>. Just watch out for the fact that the scheme designer should be taken as a guideline for which web-safe colours you use.</p>
+<p>Generating non-standard characters such as &aacute;ccented characters appropriately is also easy enough: just choose them from <a href="SpecialCharacters.pdf">the list</a> (PDF 17.7KB) and insert the proper &ccedil;&ouml;d&egrave;s.</p>
+<p><b>NB</b> All of your work should conform to recognised standards. This site <a href="http://interact.webstandards.org/advocate/">http://interact.webstandards.org/</a> may set you clear why we have defined standards in the first place.</p>
+<p>Validate your site! Use:</p>
+<ul>
+	<li><a href="http://validator.w3.org/">http://validator.w3.org/</a></li>
+	<li><a href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a></li>
+</ul>
+<p>to validate your HTML (should be HTML5) and your CSS (should be level 3) respectively.</p>
+<p>You'll also find <a href="http://www.browsershots.org">browsershots.org</a> useful to make sure your site is compatible with other browsers. Don't check against every browser possible at this site - just the main ones. If unsure, ask!</p>
+<h1><a id="present"></a>Present Year</h1>
+<ol>
+  <li>Assignment (30%)<br>
+    Create a look-and-feel demonstration page for <a href="../theinternet/00-HistoryandStructureofTheInternetAssignment-2014-2015.pdf">Butler's Educational Essays</a>.</li>
+  <li>Project (50%)</li>
+  <li>Learner Record (20%) (<a href="../00-LearnerRecord-2014.pdf">click here for general guidelines</a>) </li>
+</ol>
+<p>The due dates will be on the calendar.</p>
+<p>You must create a website for the project 'The Digital Pet Shop' for which you will:</p>
+<ol>
+  <li><b>Design &amp; Plan</b></li>
+  </ol>
+  <ul class="olul">
+    <li>Provide textual, graphical and any other planning materials you consider relevant</li>
+    <li>Identify a target audience</li>
+    </ul>
+    <ul class="ululul">
+      <li>Clearly identify the purpose of the website</li>
+      <li>Identify the main communications intent of the website</li>
+      <li>Document how you intend to achieve the purpose and communications intent of the site</li>
+      </ul>
+    <ul class="olul">
+      <li>Develop a consistent design solution (style) for the website. This will involve the use of an externally linked <a href="http://en.wikipedia.org/wiki/Css">CSS</a> file. Links to tutorials are shown above.</li>
+      </ul>
+    <ul class="olulul">
+      <li>Provide a master page design. This will be one or more pages that accurately represent the design solution you have chosen</li>
+      </ul>
+    <ul class="olul">
+      <li>Develop a consistent site navigation solution with ease of use as the prime aspiration.</li>
+    </ul>
+    <ul class="olulul">
+      <li>Provide a website map</li>  
+      <li>Document how you expect this navigation solution to work</li>
+      </ul>
+  <ol start="2">
+    <li><b>Implement</b></li>
+    </ol>
+    <ul class="olul">
+      <li>Create at least 6 (six) webpages.</li>
+      <li>Use original artwork &amp; photography as already developed for <a href="../imageprocessing/#2011">Image Processing</a></li>
+      <li>Create each page in accordance with best practice</li>
+      <li>Use any/all appropriate materials delivered in class as content on your site</li>
+      <li>Conform to file naming conventions and use a logical directory structure</li>
+      <li>Remain within the storage size allocated to the project (currently <b>5MB</b>)</li>
+<!--       <li>At least one of the pages will be a data entry form which will be validated using a computer program which will be your <a href="../computerprogramming/#2012">second computer programming assignment</a>. -->
+      <li>The materials generated will also be used for your 8 A4 (2 double-sided A3) magazine which you will generate for <a href="../desktoppublishing/#2011">Desktop Publishing</a>.</li>
+    </ul>
+  <ol start="3">
+    <li><b>Review/Evaluate</b></li>
+    </ol>
+    <ul class="olul">
+      <li>Objectively evaluate the completed website</li>
+      <li>Provide documentary evidence of this evaluation</li>
+    </ul>
+  <ol start="4">
+    <li><b>Submit</b>
+    </ol>
+  <ul class="olul">
+    <li>Create and submit 1 bound project containing all materials: include screen grabs, sample HTML, CSS code, typed descriptions of target audience and plan and method for site creation, typed critical review, site-maps &amp;c (refer to the marking scheme distributed). Also submit via normal website upload to the location designated. Your website will be stored in your <b>public_html/webauthoring</b> folder on <b>https://www.fachtnaroe.net</b>. The first file in the site will be called <b>index.html</b> - you may have to overwrite the place holder file with this name if it already exists.</li>
+    </ul>
+<p>The due date is on the <a href="/calendar#today">calendar</a>.</p>
+<h1>Student sites 2015</h1>
+<div id="table75center">
+The Project Sites and the Assignment Pages are on <a href="https://treebeard.ie/">treebeard.ie</a>.
+<table id="table75center">
+<tr><th>Personal Site</th></tr>
+<tr><td><a href="http://it.coletten.fachtnaroe.net">it.coletten</a></td></tr>
+<tr><td><a href="http://it.danielr.fachtnaroe.net">it.danielr</a></td></tr>
+<tr><td><a href="http://it.davidd.fachtnaroe.net">it.davidd</a></td></tr>
+<tr><td><a href="http://it.darrenm.fachtnaroe.net">it.darrenm</a></td></tr>
+<tr><td><a href="http://it.giovannip.fachtnaroe.net">it.giovannip</a></td></tr>
+<tr><td><a href="http://it.joeyp.fachtnaroe.net">it.joeyp</a></td></tr>
+<tr><td><a href="http://it.johnc.fachtnaroe.net">it.johnc</a></td></tr>
+<tr><td><a href="http://it.johns.fachtnaroe.net">it.johns</a></td></tr>
+<tr><td><a href="http://it.josephkj.fachtnaroe.net">it.josephkj</a></td></tr>
+<tr><td><a href="http://it.josephk2.fachtnaroe.net">it.josephk2</a></td></tr>
+<tr><td><a href="http://it.josephr.fachtnaroe.net">it.josephr</a></td></tr>
+<tr><td><a href="http://it.kevinr.fachtnaroe.net">it.kevinr</a></td></tr>
+<tr><td><a href="http://it.kieranf.fachtnaroe.net">it.kieranf</a></td></tr>
+<tr><td><a href="http://it.niallm.fachtnaroe.net">it.niallm</a></td></tr>
+<tr><td><a href="http://it.paulm.fachtnaroe.net">it.paulm</a></td></tr>
+<tr><td><a href="http://it.roisinor.fachtnaroe.net">it.roisinor</a></td></tr>
+</table>
+</div>
+<h1><a id="past"></a>Previous Years</h1>
+<p><a href="previous.shtml">Click here</a>.</p>
+<h2>Related:</h2>
+<ul>
+  <li><small>(<a href="/fetacmodules/2011-C20148_AwardSpecifications_English.pdf">Old module descriptor</a>)</small></li>
+	<li><a href="/fetacmodules/2011-N22953_AwardSpecifications_English.pdf">Module Descriptor</a></li>
+  <li><a href="00-historical.shtml">Older materials</a>
+</ul>
+<h2>Miscellaneous:</h2>
+<p>Photographs from field trips:</p>
+<ul>
+  <li><a href="websites2003/fieldtrip01/files.html">Field Trip, 2003</a></li>
+  <li><a href="websites2002/fieldtrip01/files.html">Field Trip, 2002</a></li>
+</ul>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Java Runtime Environment Management</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="description" content="The Advanced Management Console agents enables you to install or uninstall the Java Runtime Environment Management (JRE) from managed desktops. You can customize a JRE version on Installers tab and select it for installing on targeted desktops. The installed JREs from managed desktops can also be uninstalled for targeted desktops." />
+<meta name="dcterms.created" content="2017-01-20T02:15:31Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Advanced Management Console User's Guide" />
+<meta name="dcterms.identifier" content="E62444-09" />
+<meta name="dcterms.isVersionOf" content="JSAMV" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="java-usage.htm" title="Previous" type="text/html" />
+<link rel="Next" href="installer-configuration.htm" title="Next" type="text/html" />
+<link rel="alternate" href="JSAMV.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JSAMV.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JSAMV.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<a id="GUID-7055051E-B038-430B-B3FE-BEE6CE6DEBA6"></a> <span id="PAGE" style="display:none;">8/13</span> <!-- End Header -->
+<h1 id="JSAMV-GUID-7055051E-B038-430B-B3FE-BEE6CE6DEBA6" class="sect1"><span class="enumeration_chapter">5</span> Java Runtime Environment Management</h1>
+<div>
+<p>The <span>Advanced Management Console</span> agents enables you to install or uninstall the Java Runtime Environment Management (JRE) from managed desktops. You can customize a JRE version on Installers tab and select it for installing on targeted desktops. The installed JREs from managed desktops can also be uninstalled for targeted desktops.</p>
+<p>The JRE Management topic consists of the following sections:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="jre-management.htm#GUID-AAD0F712-D96E-4111-92B0-A4FA82C02DAB" title="The Java Runtime Environment (JRE) management workflow consists of the following components: User Interface (UI), Server, and agents.">About the JRE Management Architecture</a></p>
+</li>
+<li>
+<p><a href="jre-management.htm#GUID-427D4B6B-B8FB-4427-A66E-F202EBA01C73" title="In the Desktop tab of /amcwebui, click Install JRE to install a configured Java Runtime Environment (JRE).">Installing JRE</a></p>
+</li>
+<li>
+<p><a href="jre-management.htm#GUID-65A46378-7C64-4F1A-9C7B-C4593EE74952" title="You can uninstall detected Oracle JREs on managed desktops, which are installed using Oracle Java Runtime Environment (JRE) installers or Enterprise Microsoft Windows Installer (MSI). The Advanced Management Console does not uninstall privately-installed JREs or JREs that are present on the desktops but are not actually installed.">Uninstalling JREs</a></p>
+</li>
+<li>
+<p><a href="jre-management.htm#GUID-0516DC85-4717-4EF1-9CD1-4C5717546D05" title="The Status tab forms a major User Interface (UI) component of the Java Runtime Engine (JRE) management architecture. This tab further comprises the following tabs: Commands, Desktop, Java, and Java Releases tabs.">Status</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2"><a id="GUID-AAD0F712-D96E-4111-92B0-A4FA82C02DAB"></a>
+<h2 id="JSAMV-GUID-AAD0F712-D96E-4111-92B0-A4FA82C02DAB" class="sect2">About the JRE Management Architecture</h2>
+<div>
+<p>The Java Runtime Environment (JRE) management workflow consists of the following components: User Interface (UI), Server, and agents.</p>
+<div class="p">This topic describes the JRE architecture:
+<ul style="list-style-type: disc;">
+<li>
+<div class="p"><span class="bold">UI</span>: The user interface for JRE Management is facilitated through the Desktop and the Status tabs in the <span>Advanced Management Console</span>
+<ul style="list-style-type: disc;">
+<li>
+<p><span class="bold">Desktops</span>: In the Desktops tab, select required desktops, where a JRE should be installed or uninstalled, and click <span class="bold">Install JRE</span> or <span class="bold">Uninstall JRE</span> respectively.</p>
+</li>
+<li>
+<p><span class="bold">Status</span>: In the <a href="jre-management.htm#GUID-0516DC85-4717-4EF1-9CD1-4C5717546D05" title="The Status tab forms a major User Interface (UI) component of the Java Runtime Engine (JRE) management architecture. This tab further comprises the following tabs: Commands, Desktop, Java, and Java Releases tabs."><span class="bold">Status Tab</span></a>, you can see view the details of all the scheduled actions (commands) with information about the number of desktops, where each action is completed, failed, or in progress.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><span class="bold">Server/Database</span>: The information about each <a href="jre-management.htm#GUID-427D4B6B-B8FB-4427-A66E-F202EBA01C73" title="In the Desktop tab of /amcwebui, click Install JRE to install a configured Java Runtime Environment (JRE).">install JRE</a> or <a href="jre-management.htm#GUID-65A46378-7C64-4F1A-9C7B-C4593EE74952" title="You can uninstall detected Oracle JREs on managed desktops, which are installed using Oracle Java Runtime Environment (JRE) installers or Enterprise Microsoft Windows Installer (MSI). The Advanced Management Console does not uninstall privately-installed JREs or JREs that are present on the desktops but are not actually installed.">uninstall JRE</a> action is stored. Each action contains information about all desktops, where it is targeted to, as well as status on each desktop</p>
+</li>
+<li>
+<p><span class="bold">Agents</span>: The agent actions perform the JRE installation and uninstallation processes.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2"><a id="GUID-427D4B6B-B8FB-4427-A66E-F202EBA01C73"></a>
+<h2 id="JSAMV-GUID-427D4B6B-B8FB-4427-A66E-F202EBA01C73" class="sect2">Installing JRE</h2>
+<div>
+<p>In the Desktop tab of <code>/amcwebui</code>, click <span class="bold">Install JRE</span> to install a configured Java Runtime Environment (JRE).</p>
+<div class="p">In the Installer tab of the <span>Advanced Management Console</span>, click <span class="bold">Add Java Version</span> to add and configure a Java version before you start with the JRE installation process:</div>
+<!-- class="section" -->
+<div class="section">To install JRE:</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Desktops</span> tab. Ensure that you have selected the targeted Desktop from the <span class="bold">Display</span> drop-down list.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Install JRE</span> to display the Install JRE dialog.</span></li>
+<li class="stepexpand"><span>Select a JRE from the from the <span class="bold">Select JRE to install</span> drop-down list.</span>
+<div>You can select an available JRE version added to Installers tab. Once you select a JRE, the corresponding Configuration is displayed in the <span class="bold">Select a Configuration for <span class="variable">JRE</span></span> drop-down list. For example, if you select Java 8 Update 91 JRE, then in the <span class="bold">Select a Configuration for Java 8 Update 91</span> drop-down list, 8u91 configuration is displayed.
+<div class="figure" id="GUID-427D4B6B-B8FB-4427-A66E-F202EBA01C73__GUID-1289ADF1-CF40-42F0-90E8-332CC318C57A"><img width="755" height="506" src="img/install-jre.png" alt="Description of install-jre.png follows" title="Description of install-jre.png follows" /><br />
+<a href="img_text/install-jre.htm">Description of the illustration install-jre.png</a></div>
+<!-- class="figure" --></div>
+</li>
+<li class="stepexpand"><span>Select target desktops on which to install the selected JRE. You can either select the <span class="bold">Selected Desktop</span> or <span class="bold">All Filtered Desktops</span>.</span>
+<div>Once you select either of these options, <span class="bold">Next</span> is enabled.</div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span> to display the summary of the selected JRE:</span>
+<div>
+<div class="figure" id="GUID-427D4B6B-B8FB-4427-A66E-F202EBA01C73__GUID-2A20F4A7-5DBA-4864-B151-BFB3CCAD0E34"><img width="747" height="490" src="img/install-jre-summary.png" alt="Description of install-jre-summary.png follows" title="Description of install-jre-summary.png follows" /><br />
+<a href="img_text/install-jre-summary.htm">Description of the illustration install-jre-summary.png</a></div>
+<!-- class="figure" --></div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Install JRE</span> to schedule Install JRE command.</span></li>
+</ol>
+</div>
+</div>
+<div class="sect2"><a id="GUID-65A46378-7C64-4F1A-9C7B-C4593EE74952"></a>
+<h2 id="JSAMV-GUID-65A46378-7C64-4F1A-9C7B-C4593EE74952" class="sect2">Uninstalling JREs</h2>
+<div>
+<p>You can uninstall detected Oracle JREs on managed desktops, which are installed using Oracle Java Runtime Environment (JRE) installers or Enterprise Microsoft Windows Installer (MSI). The <span>Advanced Management Console</span> does not uninstall privately-installed JREs or JREs that are present on the desktops but are not actually installed.</p>
+<div class="section">To uninstall JREs:</div>
+<!-- class="section" -->
+<ol>
+<li class="stepexpand"><span>In the <span>Advanced Management Console</span>, click the <span class="bold">Desktops</span> tab. Ensure that you have selected targeted Desktops from the <span class="bold">Display</span> drop-down list.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Uninstall JRE</span> to display the Uninstall JRE dialog.</span></li>
+<li class="stepexpand"><span>Select the target desktops from which you want to uninstall the JREs. Select either of the following target options: <span class="bold">Selected Desktops</span> or <span class="bold">All Filtered Desktops</span>.</span></li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span>.</span></li>
+<li class="stepexpand"><span>Select how you would like to uninstall JRE versions.. You can select either of the following options: <span class="bold">Uninstall JRE versions below the security baseline</span> or <span class="bold">Uninstall specific JRE versions</span>.</span>
+<div>The <span class="bold">Next</span> button is enabled only when you select either of these options. If you select <span class="bold">Uninstall specific JRE versions</span>, then a list of JRE versions are displayed as shown:
+<div class="figure" id="GUID-65A46378-7C64-4F1A-9C7B-C4593EE74952__GUID-AB3E2DF6-06E4-470A-952E-52856A78FF46"><img width="736" height="534" src="img/uninstalljre.png" alt="Description of uninstalljre.png follows" title="Description of uninstalljre.png follows" /><br />
+<a href="img_text/uninstalljre.htm">Description of the illustration uninstalljre.png</a></div>
+<!-- class="figure" --></div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Next</span> to display the Summary of the JREs selected to be uninstalled.</span>
+<div>
+<div class="figure" id="GUID-65A46378-7C64-4F1A-9C7B-C4593EE74952__GUID-B7603A42-4002-47DA-A793-389693896E91"><img width="728" height="521" src="img/uninstalljre-summary.png" alt="Description of uninstalljre-summary.png follows" title="Description of uninstalljre-summary.png follows" /><br />
+<a href="img_text/uninstalljre-summary.htm">Description of the illustration uninstalljre-summary.png</a></div>
+<!-- class="figure" --></div>
+</li>
+<li class="stepexpand"><span>Click <span class="bold">Uninstall JRE</span> to uninstall the selected JREs.</span></li>
+</ol>
+</div>
+</div>
+<div class="sect2"><a id="GUID-0516DC85-4717-4EF1-9CD1-4C5717546D05"></a>
+<h2 id="JSAMV-GUID-0516DC85-4717-4EF1-9CD1-4C5717546D05" class="sect2">Status</h2>
+<div>
+<p>The Status tab forms a major User Interface (UI) component of the Java Runtime Engine (JRE) management architecture. This tab further comprises the following tabs: <span class="bold">Commands</span>, <span class="bold">Desktop</span>, <span class="bold">Java</span>, and <span class="bold">Java Releases</span> tabs.</p>
+<div class="p">
+<ul style="list-style-type: disc;">
+<li>
+<p><span class="bold">Commands</span>: In the <span class="bold">Commands</span> tab, you can view the details of the agent actions, such as Install JRE and Uninstall JRE, along with their status: whether Scheduled, In Progress, Completed, Failed, or Cancelled. For each of these command status, you can click on the counter to see all the desktops, where the command is in the specified state. To cancel any of the actions, click the <span class="bold">Cancel</span> icon.</p>
+</li>
+<li>
+<p><span class="bold">Desktops</span>: In the <span class="bold">Desktops</span> tab, you can view the details of the rule sets that have failed and retired desktops. Click <span class="bold">Display data in Desktops tab</span> to go to the Desktop tab.</p>
+</li>
+<li>
+<p><span class="bold">Java</span>: In the <span class="bold">Java</span> tab, you can view the details of the number of processed and failed Java Usage Tracker records, as well as information about Java Security Baseline.</p>
+</li>
+<li>
+<p><span class="bold">Java Releases</span>: In the <span class="bold">Java Releases</span> tab, information about the upcoming and released CPUs are displayed. The Java Versions, Type (CPU/LU/PSU), and Date are displayed in a tabular format in this tab. Also, a warning appears as a number next to the <span class="bold">Java Releases</span> tab that indicates the number of new releases that you may not be aware of. For example, (4), where (4) indicates that 4 new releases have happened since you last visited the <span class="bold">Java Releases</span> tab.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- class="ind" --><!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment106">
+<tr>
+<td class="cellalignment113">
+<table class="cellalignment111">
+<tr>
+<td class="cellalignment110"><a href="java-usage.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td class="cellalignment110"><a href="installer-configuration.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2014, 2017, Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment115">
+<table class="cellalignment109">
+<tr>
+<td class="cellalignment110"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment110"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment110"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- #exec cgi="/head.shtml" -->
+<body>
+<!-- #exec cgi="/inprogress.shtml" -->
+<div id="pagewrap">
+<!-- #exec cgi="/topmenu.shtml" -->
+<!-- #exec cgi="/sidemenu.shtml" -->
+<div id="content">
+<h1>POS App 2013: API Usage Examples</h1>
+<pre>
+#!/usr/bin/perl
+use strict;
+require "/home/public/pos_functions.pl";
+
+use constant ERR => "ERR";
+use constant DEMO_CHANGE => +1; # Change to -1 to reduce stock
+
+# Usage samples for POS APIs
+# CR convention: RHS
+# Date: 2013-01
+
+my (@numbers, @product, $result, @barcode, $ean, $barcodefilename, @image, $imagefilename);
+$ean = 1335596612122; # This is just a demo, normally scan this
+@numbers=&product_numbers;
+if (@numbers eq ERR) { # ????
+  print "Error\n";
+}
+else {  
+  my $token = 0;
+  foreach (@numbers) {
+    if ($_ eq $ean) { # see if the product exists
+      $token = 1;
+    }
+  }
+  if ($token == 1) { # This means we found the product
+    @product=&product_detail($ean);
+    # because of the existance test above, should be no error
+    print "Name: [$product[0]] Manf. code: [$product[1]] Price: [$product[2]]\n";
+    @barcode= &product_barcode($ean);
+    if (@barcode ne ERR) {
+      $barcodefilename = pop @barcode; 
+      print "Orig. barcode file: [$barcodefilename]\n";
+      # when the filename is removed, all that's left
+      # in the array is the barcode image data
+      # therefore we can:
+      # print @barcode;
+      # to see the internal image data (not recommended!)
+    }
+    @image = &product_image($ean);
+    if (@image ne ERR) {
+      $imagefilename = pop @image; 
+      print "Orig. image file: [$imagefilename]\n";
+      # when the filename is popped, all that's left
+      # in the array is the product picture data
+      # therefore we can:
+      # print @image;
+      # to see the internal image data (not recommended!) ...
+      # ... makes more sense to print into a file
+    }    
+    print "Made by: [",&product_manufacturer($product[1]), "]\n";
+    print "Stock: [",&product_stocklevel($ean), "]";
+    print "Change: [",DEMO_CHANGE, "] ";
+    $result = &product_stocklevel($ean, DEMO_CHANGE);
+    if ($result ne ERR) {
+      print "New stock: [",&product_stocklevel($ean), "]\n";
+    }
+    else {
+      print "Problem updating stock\n";
+    }
+    
+  }
+  else {
+    print "Product not found\n";
+  }
+}
+</pre>
+<form><input type="button" value="Back" onclick="history.back()"></form>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="pos-functions-demo-2013.pl.shtml" --></small>
+</div> <!-- #content -->
+<!-- #exec cgi="/bottom.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

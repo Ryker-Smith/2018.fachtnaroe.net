@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta charset="utf-8">
+<title>Frequently Asked Questions</title>
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Merged Version 1044" />
+<meta name="description" content="This chapter contains frequently asked questions and answers about Java Mission Control." />
+<meta name="dcterms.created" content="2015-02-23T11:19:34Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java Platform, Standard Edition Java Mission Control User's Guide" />
+<meta name="dcterms.identifier" content="E28023-06" />
+<meta name="dcterms.isVersionOf" content="JMCCI" />
+<link rel="Start" href="../../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"  src="../../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"  src="../../nav/js/doccd.js"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Prev" href="experimental.htm" title="Previous" type="text/html" />
+<link rel="alternate" href="JMCCI.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="JMCCI.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="JMCCI.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../../nav/css/html5.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript" src="../../dcommon/js/modernizr.js"></script>
+<script type="application/javascript" src="../../dcommon/js/codemirror.js"></script>
+<script type="application/javascript" src="../../dcommon/js/jquery.js"></script>
+<script type="application/javascript" src="../../dcommon/js/foundation.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript" src="../../dcommon/js/jqfns.js"></script>
+<script type="application/javascript" src="../../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="text/javascript" src="../../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns" dir="ltr">
+<a id="BEGIN" name="BEGIN"></a>
+<span id="PAGE" style="display:none;">9/9</span> <!-- End Header -->
+<div id="JMCCI133" class="chapter"><a id="CBAJCBDD"></a>
+<h1 class="chapter"><span class="secnum">6</span> Frequently Asked Questions</h1>
+<p><a id="JMCCI134"></a>This chapter contains frequently asked questions and answers about Java Mission Control.</p>
+<div class="infobox-note">
+<p class="notep1">Note:</p>
+Java Mission Control requires a commercial license for use in production. To learn more about commercial features and how to enable them please visit <code dir="ltr"><a href="http://www.oracle.com/technetwork/java/javaseproducts/">http://www.oracle.com/technetwork/java/javaseproducts/</a></code>.</div>
+<p>The following issues sometimes arise:</p>
+<dl>
+<dd><a id="JMCCI135"></a><a id="sthref16"></a></dd>
+<dt class="seghead">Issue 1&nbsp;&nbsp;&nbsp;I cannot connect to the JVM. What could be the problem?</dt>
+<dd>
+<p>Consider the following:</p>
+<ul>
+<li>
+<p>Are you using the correct protocol?</p>
+<p>Ensure that you are using the same version of the JVM that you want to monitor as is being used by the JVM running the JMC client.</p>
+<p>The format of the service URL is:</p>
+<p><code dir="ltr">service:jmx:rmi:///jndi/rmi://&lt;hostname&gt;/jmxrmi</code></p>
+</li>
+<li>
+<p>Are the correct ports opened?</p>
+<p>Note that running JMX over RMI requires two ports and that one of the ports will not be known beforehand.</p>
+</li>
+<li>
+<p>Is the communication caught in a firewall?</p>
+<p>For more information, see "Java Mission Control Communications" in the <span class="italic">Introduction to Java Mission Control</span> on the Oracle Technology Network.</p>
+</li>
+</ul>
+</dd>
+<dd><a id="JMCCI136"></a><a id="sthref17"></a></dd>
+<dt class="seghead">Issue 2&nbsp;&nbsp;&nbsp;When attempting to connect to a JVM, I get a stack trace indicating that the JVM attempts to communicate with a strange IP or host name. What does this mean?</dt>
+<dd>
+<p>Sometimes RMI can have a problem determining which address to use. This can happen because of any of the following:</p>
+<ul>
+<li>
+<p>There are access restrictions in the Security manager.</p>
+</li>
+<li>
+<p>The machine is multihomed and RMI is selecting the wrong interface.</p>
+</li>
+<li>
+<p>There is a mis-configured hosts file or a number of different network related configuration problems.</p>
+</li>
+</ul>
+<p>If all else fails, you can try specifying the <code dir="ltr">java.rmi.server.hostname</code> system property. Note that this can affect applications running on the JVM.</p>
+</dd>
+<dd><a id="JMCCI137"></a><a id="sthref18"></a></dd>
+<dt class="seghead">Issue 3&nbsp;&nbsp;&nbsp;I am getting exceptions during startup about classes not being found. What is wrong?</dt>
+<dd>
+<p>Ensure that you are using <code dir="ltr">JAVA_HOME/bin/jmc</code> to start the JMC client.</p>
+</dd>
+<dd><a id="JMCCI138"></a><a id="sthref19"></a></dd>
+<dt class="seghead">Issue 4&nbsp;&nbsp;&nbsp;Why does Java Mission Control fail to find any local JVMs?</dt>
+<dd>
+<p>Consider the following:</p>
+<ul>
+<li>
+<p>Make sure that you are using <code dir="ltr">JAVA_HOME/bin/jmc</code> to start the JMC client.</p>
+</li>
+<li>
+<p>If you are running JMC from Eclipse, make sure that Eclipse is running on a JDK (not JRE).</p>
+</li>
+<li>
+<p>Make sure that there is a directory named <code dir="ltr">hsperfdata_</code><span class="italic">username</span> in the system's <code dir="ltr">tmp</code> directory, that it is writable by the user running JMC, and that the file system supports access control lists (ACLs).</p>
+</li>
+</ul>
+</dd>
+<dd><a id="JMCCI139"></a><a id="sthref20"></a></dd>
+<dt class="seghead">Issue 5&nbsp;&nbsp;&nbsp;How do I connect to JBoss?</dt>
+<dd>
+<p>Before starting JMC, you need to add the <code dir="ltr">-Xbootclasspath/a</code> option to the <code dir="ltr">-vmargs</code> section of the <code dir="ltr">jmc.ini</code> file. The value for this option (after a colon) should be set to the extended classpath that is generated by JBoss's <code dir="ltr">jconsole.bat</code> file (for this, add <code dir="ltr">@echo on</code> to the file and run it).</p>
+</dd>
+</dl>
+</div>
+<!-- class="chapter" --></div>
+<!-- class="ind" -->
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment68">
+<tr>
+<td class="cellalignment75">
+<table class="cellalignment79">
+<tr>
+<td class="cellalignment72"><a href="experimental.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+</tr>
+</table>
+</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2001, 2015,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment77">
+<table class="cellalignment71">
+<tr>
+<td class="cellalignment72"><a href="../../index.html"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment72"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment72"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

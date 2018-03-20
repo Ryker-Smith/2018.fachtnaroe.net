@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--#include virtual="/includes/head.shtml" -->
+<body onload="onloadProc()">
+<!--#include virtual="/includes/inprogress.shtml" -->
+<!--#include virtual="/includes/animation.shtml"-->
+<div id="pagewrap">
+<!--#include virtual="/includes/sitename.shtml"-->
+<div id="topstripe"></div>
+<!--#include virtual="/includes/sidemenu.shtml"-->
+<div id="content">
+<!--#include virtual="/includes/topblurb.shtml"-->
+<h1>Server Side Includes</h1>
+<p>Server side includes is an HTML pre-serving tool that can be used to simplify the creation of your website.</p>
+<p>Pages served from the web server are first scanned to see if SSI directives are present. If there are, then the directives are processed by the server and the results are inserted into the HTML being served at the point where the directive is found.</p>
+<p>SSI may not be supported by all hosting service providers; also, when SSI is supported only a subset of the directives might be offered. If you can't get your desired directive to operate, first check that some other simpler directives will operate; if so SSI is enabled so check for errors. If SSI is enabled but you cannot get your desired option to go, seek a workaround.</p>
+<p>One of the most useful directives is the <b>#include</b> directive. This can be used to insert HTML from one file into another. This is most useful for putting a common header and footer on each page being served from a site.</p>
+<p>This site is an example of a site using SSI. The top and bottom of each page is common. This is intended to give every page a common look and layout. Where SSI shines is in labour-saving automatic insertion of HTML and ease of maintenance of a site. When a file is <b>#include</b>d using a directive, every page that references that file will change automatically when next loaded in a browser.</p>
+<p>The directives need to be inserted in HTML comments. A HTML comment begins with &lt;!-- and ends with --&gt; and is ignored by the browser. Within those comments directives can be inserted.</p>
+<p>Failure of an SSI directive will yield an error such as <br /><b>[an error occurred while processing this directive]</b><br />or<br /><b>Cannot perform flastmod(): Win32 Error Code =</b> XXX<br /> or something similar.</p>
+<p><b>Example:</b> To include a "last modified" timestamp on pages in your site, put an entry like this in your HTML:</p>
+<pre>
+This document last modified &lt;!--#flastmod file="index.shtml" --&gt;
+</pre> 
+<p>...where "index.shtml" is the name of your file and the file is in the current directory.</p>
+<p>Notice that a file extension of <b>.shtml</b> is used for the files. This is used to indicate which files being served should be scanned for SSI directives. It is possible to turn on scanning of all files, or to scan files that have the excute bit set (using chmod +x) but <b>.shtml</b> is the only file extension permitted on the server you are using.</p>
+<p><b>Example:</b> To include time on the server, put a line like this in your HTML:</p>
+<pre>
+&lt;!--#config timefmt="%A %B %d, %Y" --&gt;Today is &lt;!--#echo var="DATE_LOCAL" --&gt;
+</pre>
+<p>The <b>#config</b> gives the format in which the following data should be presented. Codes for formatting are given here:</p>
+<table><tr><td><big><b>Code</b></big></td><td><big><b>Function</b></big></td><td><big><b>Examples</b></big></td></tr>
+<tr><td>%A</td><td>Full weekday name</td><td>Monday, Wednesday</td></tr>
+<tr> <td>%a</td><td>Abbreviated weekday name</td><td>Mon, Wed</td></tr>
+<tr> <td>%B</td><td>Full month name</td><td>January, December</td></tr>
+<tr> <td>%b</td><td>Abbreviated month name</td><td>Jan, Dec</td></tr>
+<tr> <td>%d</td><td>Number of day in month</td><td>03</td></tr>
+<tr><td>%e</td><td>Number of day in month</td><td>3, 15</td></tr>
+<tr><td>%H</td><td>Hour (1-24)</td><td>05, 22</td></tr>
+<tr><td>%I</td><td>Hour (under 12)</td><td>03, 11</td></tr>
+<tr><td>%j</td><td>Day number in year</td><td>12, 245</td></tr>
+<tr><td>%m</td><td>Number of month</td><td>1, 12</td></tr>
+<tr><td>%M</td><td>Minute</td><td>12, 59</td></tr>
+<tr><td>%p</td><td>AM or PM</td><td>AM, PM</td></tr>
+<tr><td>%n</td><td>New Line</td><td></td></tr>
+<tr><td>%S</td><td>Second </td><td>12, 57</td></tr>
+<tr><td>%t</td><td>Tab</td><td></td></tr>
+<tr><td>%y</td><td>2 Digit Year</td><td>99, 03</td></tr>
+<tr> <td>%Y</td><td>4 Digit Year</td><td>1999, 2003</td></tr>
+<tr> <td>%Z</td><td>Time Zone</td><td>EST, GMT</td></tr>
+</table>
+<p><b>Example:</b> To include the contents of another file into the file being served use a line like this:</p>
+<pre>
+&lt;!--#include virtual="/head.shtml" --&gt;
+</pre>
+<p>...where "/head.shtml" is the file to be included and the file is in the root of the directory structure being served. In your case, this file would be in your <b>public_html</b> directory.</p>
+<p><b>Example:</b> To include the output from a script into the HTML of your file use a line like this:</p>
+<pre>
+&lt;!--#exec cgi="/cgi-bin/somescript.pl" --&gt;
+</pre>
+<p>...where the script is called "somescript.pl" and is in the "/var/www/cgi-bin/" directory.</p>
+<p>The are more examples provided by Apache (your http server software) <a href="http://httpd.apache.org/docs/2.0/howto/ssi.html">here</a>.</p>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="index.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

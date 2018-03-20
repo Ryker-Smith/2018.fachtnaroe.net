@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta http-equiv="Content-Type" content="UTF-8" />
+<title>Oracle&reg; Java ME Embedded Reference Platform Release Notes (STM32429I-EVAL)</title>
+<meta name="generator" content="DITA Open Toolkit version 1.8.5 (Mode = doc)" />
+<meta name="dcterms.created" content="2016-04-19T13:46:25Z" />
+<meta name="robots" content="all" />
+<meta name="dcterms.title" content="Java ME Embedded Reference Platform Release Notes (STM32429I-EVAL)" />
+<meta name="dcterms.identifier" content="E73092-01" />
+<meta name="dcterms.isVersionOf" content="MEESR" />
+<link rel="Start" href="../index.html" title="Home" type="text/html" />
+<link rel="Copyright" href="../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+
+<script type="application/javascript"   src="../dcommon/js/headfoot.js"></script>
+<script type="application/javascript"   src="../nav/js/doccd.js" charset="UTF-8"></script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="alternate" href="MEESR.pdf" title="PDF version" type="application/pdf" />
+<link rel="alternate" href="MEESR.epub" title="ePub version" type="application/epub+zip" />
+<link rel="alternate" href="MEESR.mobi" title="Mobipocket version" type="application/x-mobipocket-ebook" />
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+<link rel="stylesheet" href="../dcommon/css/fusiondoc.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/header.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/footer.css">
+<link rel="stylesheet" type="text/css"  href="../dcommon/css/fonts.css">
+<link rel="stylesheet" href="../dcommon/css/foundation.css">
+<link rel="stylesheet" href="../dcommon/css/codemirror.css">
+<link rel="stylesheet" type="text/css" title="Default" href="../nav/css/html5.css">
+<link rel="stylesheet" href="../dcommon/css/respond-480-tablet.css">
+<link rel="stylesheet" href="../dcommon/css/respond-768-laptop.css">
+<link rel="stylesheet" href="../dcommon/css/respond-1140-deskop.css">
+<script type="application/javascript"  src="../dcommon/js/modernizr.js"></script>
+<script type="application/javascript"  src="../dcommon/js/codemirror.js"></script>
+<script type="application/javascript"  src="../dcommon/js/jquery.js"></script>
+<script type="application/javascript"  src="../dcommon/js/foundation.min.js"></script>
+<script type="application/javascript"  src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-552992c80ef99c8d" async="async"></script>
+<script type="application/javascript"  src="../dcommon/js/jqfns.js"></script>
+<script type="application/javascript"  src="../dcommon/js/ohc-inline-videos.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../dcommon/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="application/javascript"  src="../dcommon/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5"  type="text/css" media="screen" />
+<script type="application/javascript"  src="../dcommon/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="application/javascript"  src="../dcommon/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet"  href="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7"  type="text/css" media="screen" />
+<script type="application/javascript"  src="../dcommon/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
+</head>
+<body>
+<a href="#BEGIN" class="accessibility-top skipto" tabindex="0">Go to main content</a>
+<header><!--
+<div class="zz-skip-header"><a id="top" href="#BEGIN">Go to main content</a>--></header>
+<div class="row" id="CONTENT">
+<div class="IND large-9 medium-8 columns">
+<a id="BEGIN" name="BEGIN"></a>
+<!-- End Header -->
+<div class="letterstyle">
+<h1><span>Oracle&reg; Java ME Embedded</span></h1>
+<p class="booktitle"><span><span>Reference Platform Release Notes (STM32429I-EVAL)</span></span></p>
+<p><span class="revnumber"><span><span>Release 8.3</span></span></span></p>
+<p class="invpartnumber">E73092-01</p>
+<p class="date">April 2016</p>
+<a id="MEESR101"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" --><a id="GUID-65097217-D54A-4469-A0CE-562F31906AB1"></a>
+<h1 id="MEESR-GUID-65097217-D54A-4469-A0CE-562F31906AB1" class="sect1">Table of Contents</h1>
+<div>
+<ul style="list-style-type: disc;">
+<li>
+<p><a href="#GUID-1D86ED3B-AA22-4580-A552-DB33E612C792">Introduction</a></p>
+</li>
+<li>
+<p><a href="#GUID-F267E6F1-2B16-487A-8300-DDA5B24DBB93">What&rsquo;s Supported in This Release</a></p>
+</li>
+<li>
+<p><a href="#GUID-26001458-E913-4AFE-8090-7F96741B66DE">Usage Notes</a></p>
+</li>
+<li>
+<p><a href="#GUID-FE4A02FA-37A8-402E-8D5F-AE7F3DAC8FCB">Installation and Runtime Security Guidelines</a></p>
+</li>
+<li>
+<p><a href="#GUID-D9ED7A21-5295-4649-9184-D3F5015345D7">Known Bugs</a></p>
+</li>
+<li>
+<p><a href="#GUID-BA77163E-9347-4107-9494-03970DC5B249">Product Documentation</a></p>
+</li>
+</ul>
+</div>
+</div>
+<a id="MEESR102"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" --><a id="GUID-1D86ED3B-AA22-4580-A552-DB33E612C792"></a>
+<h1 id="MEESR-GUID-1D86ED3B-AA22-4580-A552-DB33E612C792" class="sect1">Introduction</h1>
+<div>
+<p>The Oracle Java ME Embedded release <span>8.3</span> software for the STM32429I-EVAL platform is a ready-to-run binary for use with STM32F4 MCU family, not only an ST Micro STM32429I-EVAL board. See the <a href="#GUID-26001458-E913-4AFE-8090-7F96741B66DE">Usage Notes</a> for more details.</p>
+<p>The <span>Oracle Java ME Embedded</span> software uses an optimized platform stack for small embedded devices, which includes the Connected Limited Device Configuration (CLDC) HotSpot Implementation (Java Virtual Machine) version 8, the Micro Edition Embedded Profile (MEEP) application environment, the Generic Connection Framework (GCF) API, and enhanced support for various Java Specification Requests (JSRs).</p>
+</div>
+</div>
+<a id="MEESR103"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" --><a id="GUID-F267E6F1-2B16-487A-8300-DDA5B24DBB93"></a>
+<h1 id="MEESR-GUID-F267E6F1-2B16-487A-8300-DDA5B24DBB93" class="sect1">What&rsquo;s Supported in This Release</h1>
+<div>
+<div class="section">
+<p>The following features are included in the <span>Oracle Java ME Embedded</span> software:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>ARM CMSIS-RTX</p>
+</li>
+<li>
+<p>CLDC 8 (JSR-360) (full CLDC) including MVM support with just-in-time (JIT) compilation</p>
+</li>
+<li>
+<p>Generic Connection Framework (GCF) 8</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Datagram (<code>datagram://</code>)</p>
+</li>
+<li>
+<p>TCP/IP client socket (<code>socket://</code>)</p>
+</li>
+<li>
+<p>TCP/IP server socket (<code>socket://</code>)</p>
+</li>
+<li>
+<p>Secure client socket (<code>ssl://</code>)</p>
+</li>
+<li>
+<p>HTTP (<code>http://</code>)</p>
+</li>
+<li>
+<p>The <code>NetworkUtilities</code> class</p>
+</li>
+<li>
+<p>Access Points</p>
+</li>
+<li>
+<p><code>javax.microedition.pki</code> and other security-related enhancements</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Java ME Embedded Profile (MEEP) 8:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p><code>javax.microedition.power</code></p>
+</li>
+<li>
+<p><code>javax.microedition.io</code> (<code>IMC</code>, <code>PushRegistry</code>)</p>
+</li>
+<li>
+<p><code>javax.microedition.midlet</code></p>
+</li>
+<li>
+<p><code>javax.microedition.rms</code></p>
+</li>
+<li>
+<p><code>javax.microedition.swm</code></p>
+</li>
+<li>
+<p><code>javax.microedition.lui</code></p>
+</li>
+<li>
+<p><code>javax.microedition.event</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Device I/O APIs, which provide enhanced device controls and improved input/output (I/O) for small embedded devices:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>General-purpose input/output (GPIO)</p>
+</li>
+<li>
+<p>Analog-to-digital converter (ADC)</p>
+</li>
+<li>
+<p>Inter-Integrated Circuit (I2C)</p>
+</li>
+<li>
+<p>Serial Peripheral Interface (SPI)</p>
+</li>
+<li>
+<p>Universal Asynchronous Receiver/Transmitter (UART)</p>
+</li>
+<li>
+<p>Watchdog Timer</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Ongoing support for the following optional packages:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>JSR 172 - Web Services</p>
+</li>
+<li>
+<p>JSR 177 - Security and Trust Services API (SATSA-CRYPTO package only) and SATSA Extensions excluding Key Store API</p>
+</li>
+<li>
+<p>JSR 280 - XML API for Java ME</p>
+</li>
+<li>
+<p>Support for JSON, Async HTTP, OAuth 2.0</p>
+</li>
+<li>
+<p>Runtime Update API</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Headless on-device debugging</p>
+</li>
+<li>
+<p>File System on SD card</p>
+</li>
+<li>
+<p>OpenSSL</p>
+</li>
+<li>
+<p>Tooling over:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Ethernet</p>
+</li>
+<li>
+<p>USB/Serial</p>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEESR104"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" --><a id="GUID-26001458-E913-4AFE-8090-7F96741B66DE"></a>
+<h1 id="MEESR-GUID-26001458-E913-4AFE-8090-7F96741B66DE" class="sect1">Usage Notes</h1>
+<div>
+<p>The <span>Oracle Java ME Embedded</span> software for the reference board platform includes an CLDC implementation with a high-performance Java Virtual Machine that can run IMlets and access input/output ports. This runtime is optimized for the reference board platform.</p>
+<p><span class="italic">Getting Started Guide for the Reference Platform (STM32429I-EVAL)</span> describes how to install the Oracle Java ME Embedded distribution on the SD card, how to connect to the board from the development host computer, and how to install, run, and debug IMlets on the board.</p>
+<p>Note the following important information before running the <span>Oracle Java ME Embedded</span> software on the STM32429I-EVAL board:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Network interfaces and access points are only minimally supported. There is only one network interface (type: "<code>WIRED</code>"; name: "<code>Ethernet_Interface</code>"), and there is no way to create, modify, or delete access points. Doing so will throw an <code>IOException</code>. Also, there is only one system access point (network interface type: "<code>WIRED</code>"; name: "<code>System_ethernet</code>"), which is connected automatically. Any attempt to explicitly connect or disconnect to this access point will throw an <code>IOException</code>.</p>
+</li>
+<li>
+<p>The following GCF protocols are supported on the platform: datagram, TCP/IP client socket, TCP/IP server socket, and HTTP. The following protocol schemes can be used: "<code>datagram://</code>", "<code>socket://</code>" (client and server), "<code>ssl://</code>" (client only), "<code>http://</code>", "<code>https://</code>". The socket timeout option is not supported because of platform limitations.</p>
+</li>
+<li>
+<p>This platform implementation supports HTTPS and TLSv1.2 client cryptographic connections only. The connection options "<code>Protocol</code>" and "<code>CipherSuite</code>" are supported. However, "<code>Certificate</code>" is not supported, as there is no client authentication. The TLSv1.2 protocol supports the following cipher suites:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>TLS_RSA_EXPORT_WITH_RC4_40_MD5</p>
+</li>
+<li>
+<p>TLS_RSA_WITH_RC4_128_MD5</p>
+</li>
+<li>
+<p>TLS_RSA_WITH_RC4_128_SHA</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Instances of <code>CommConnection</code>, <code>ModemConnection</code>, any multicasting, and IPv6 addressing is not supported.</p>
+</li>
+<li>
+<p>Only the <code>PowerStateEvent.POWER_STATE_OFF</code> and <code>PowerStateEvent.POWER_STATE_FULL_POWER</code> states are supported in this implementation. Using the <code>PowerManager.setPowerState()</code> method with any other value will throw an <code>ILLEGAL_STATE_TRANSITION_REQUEST</code> exception.</p>
+</li>
+<li>
+<p>The only root directory visible to the IMlet user is <code>/root</code>, which is mapped to the SD card as <code>/java/appdb/root</code>. Therefore, the user's accessible directories are <code>/root/user</code> and <code>/root/tmp</code>.</p>
+</li>
+<li>
+<p>The file system (FS) must be based on FAT (FAT12, FAT16, FAT32).</p>
+</li>
+<li>
+<p>The correct path separator for the file system is the forward slash (<code>/</code>).</p>
+</li>
+<li>
+<p>The maximum number of open files is four (4).</p>
+</li>
+<li>
+<p>Timestamps are constrained by the DOS epoch (Jan 1, 1980 - Dec 31, 2107). In addition, only creation and modification of timestamps are supported.</p>
+</li>
+<li>
+<p>The <code>javax.microedition.cellular</code> package, <code>javax.microedition.key</code> package, and the <code>javax.microedition.media</code> package are not supported.</p>
+</li>
+<li>
+<p>To connect the board to the SDK, additional files for the proxy are needed. These files are available via the SDK Update Center.</p>
+</li>
+<li>
+<p>Math/crypto hardware acceleration is not supported.</p>
+</li>
+</ul>
+</div>
+</div>
+<a id="MEESR105"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" --><a id="GUID-FE4A02FA-37A8-402E-8D5F-AE7F3DAC8FCB"></a>
+<h1 id="MEESR-GUID-FE4A02FA-37A8-402E-8D5F-AE7F3DAC8FCB" class="sect1">Installation and Runtime Security Guidelines</h1>
+<div>
+<p>The <span>Oracle Java ME Embedded</span> release <span>8.3</span> software installation requires an execution model that ensures certain networked resources available. These required resources might include, but are not limited to, a variety of communication capabilities between the product's installed components.</p>
+<p>It is important to note that the product's installation and runtime system is fundamentally a developer system that is not specifically designed to guard against malicious attacks from outside intruders. Given this, the product's architecture can present an insecure operating environment to the installation file system and its runtime environment, during execution. For this reason, it is critically important to observe the precautions outlined in the following security guidelines when installing and running the software.</p>
+<div class="infobox-note" id="GUID-FE4A02FA-37A8-402E-8D5F-AE7F3DAC8FCB__GUID-87DD88A6-3307-4C31-B0DD-D119A7106763">
+<p class="notep1">Note:</p>
+<p>The security-related functionality of a final developed application for release into the field is supported by the available components of the <span>Oracle Java ME Embedded</span> software stack incorporated by the developer into the application. The security precautions required by applications in the field are beyond the scope of these recommendations, but must be observed by the application developer.</p>
+</div>
+<p>To maintain optimum network security, the software package can be installed and run in a <span class="italic">closed</span> network operating environment; the software system that is not connected directly to the Internet or to a company intranet environment that could introduce unwanted exposure to malicious intrusion. This is the ideal secure operating environment whenever the application under development does not require an Internet connection.</p>
+<p>When the application under development requires an Internet connection, you must conform to the guidelines highlighted in <a href="#GUID-646E5393-4790-4E2C-88A5-6598F81B2DEB">Protecting Operating Environment From Malicious Intrusion</a>.</p>
+</div>
+<a id="MEESR106"></a>
+<div class="props_rev_3"><a id="GUID-646E5393-4790-4E2C-88A5-6598F81B2DEB"></a>
+<h2 id="MEESR-GUID-646E5393-4790-4E2C-88A5-6598F81B2DEB" class="sect2">Protecting Operating Environment From Malicious Intrusion</h2>
+<div>
+<p>If the operating environment is open to network access, you must observe the following precautions to protect valuable resources from malicious intrusion:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>Locate the development environment behind a secure firewall that strictly limits unauthorized network access to its file system and services. Limit access privileges to those that are required for development while allowing all the bidirectional local network communications that are necessary for the application's functionality. The firewall configuration must support these requirements to run the software while also addressing them from a security standpoint.</p>
+</li>
+<li>
+<p>Follow the principle of least privilege by assigning the minimum set of system access permissions required for installation and execution of the software.</p>
+</li>
+<li>
+<p>Do not store any sensitive information on the same file system that hosts the installation.</p>
+</li>
+<li>
+<p>Ensure that the operating system patches are up-to-date on host machines in the development environment.</p>
+</li>
+</ul>
+</div>
+</div>
+<a id="MEESR107"></a>
+<div class="props_rev_3"><a id="GUID-25EC7983-F641-4B17-879D-D90C916A53B8"></a>
+<h2 id="MEESR-GUID-25EC7983-F641-4B17-879D-D90C916A53B8" class="sect2">Developer Agent Precautions</h2>
+<div>
+<p>The CLI is incorporated in the Developer Agent, which communicates with a device through an unsecured protocol. The Developer Agent is a Java SE application that can be reverse engineered to tamper with or to get information about the communication protocol, which might be used by an untrusted entity to manipulate the device. If you decide to implement the Developer Agent in a product deployment, it is your responsibility to incorporate adequate security measures around the Developer Agent communication channel.</p>
+</div>
+</div>
+</div>
+<a id="MEESR108"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" --><a id="GUID-D9ED7A21-5295-4649-9184-D3F5015345D7"></a>
+<h1 id="MEESR-GUID-D9ED7A21-5295-4649-9184-D3F5015345D7" class="sect1">Known Bugs</h1>
+<div>
+<div class="section">
+<p>For generic bugs in this release of the Oracle Java ME SDK that might affect this platform, see <a href="../release-notes-sdk/toc.htm" target="_blank"><span class="italic">Oracle Java ME Software Development Kit Release Notes</span></a>.</p>
+<p>The following are known bugs in this release of the <span>Oracle Java ME Embedded</span> software:</p>
+<ul style="list-style-type: disc;">
+<li>
+<p>An attempt to open an SPI device with an unsupported clock frequency does not throw the <code>InvalidDeviceConfigException</code>. Instead, <code>DeviceManager.open(SPIDeviceConfig cfg)</code>, where <code>cfg.getClockFrequency()</code> is not supported, tries to set an &ldquo;adjusted&rdquo; clock frequency in the range of MIN-MAX values.</p>
+</li>
+</ul>
+</div>
+<!-- class="section" --></div>
+</div>
+<a id="MEESR109"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" --><a id="GUID-BA77163E-9347-4107-9494-03970DC5B249"></a>
+<h1 id="MEESR-GUID-BA77163E-9347-4107-9494-03970DC5B249" class="sect1">Product Documentation</h1>
+<div>
+<div class="section">
+<p>The following documentation is included with this release of the <span>Oracle Java ME Embedded</span> software. See <a href="http://docs.oracle.com/javame/" target="_blank"><code>http://docs.oracle.com/javame/</code></a>.</p>
+</div>
+<!-- class="section" -->
+<div class="tblformalwide" id="GUID-BA77163E-9347-4107-9494-03970DC5B249__GUID-DD118923-0056-4389-9B48-35C4F26E3436">
+<hr />
+<table class="cellalignment219" summary="Related documentation listing with links">
+<thead align="left">
+<tr>
+<th class="cellalignment220" id="d907e33">Application</th>
+<th class="cellalignment221" id="d907e36">Title</th>
+<th class="cellalignment222" id="d907e39">Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="cellalignment220" id="d907e44" headers="d907e33">
+<p>All (this document)</p>
+</td>
+<td class="cellalignment221" headers="d907e44 d907e36">
+<p><span class="italic"><span>Reference Platform Release Notes (STM32429I-EVAL)</span></span></p>
+</td>
+<td class="cellalignment222" headers="d907e44 d907e39">
+<p>HTML</p>
+<p>PDF</p>
+</td>
+</tr>
+<tr>
+<td class="cellalignment220" id="d907e58" headers="d907e33">
+<p>Demonstrates how to install, run, and troubleshoot the Oracle Java ME Embedded software on the STM32429I-EVAL platform.</p>
+</td>
+<td class="cellalignment221" headers="d907e58 d907e36">
+<p><cite>Getting Started Guide <span>for the Reference Platform (STM32429I-EVAL)</span></cite></p>
+</td>
+<td class="cellalignment222" headers="d907e58 d907e39">
+<p>PDF</p>
+<p>HTML</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr /></div>
+<!-- class="inftblhruleinformal" --></div>
+</div>
+</div>
+<hr />
+<div class="notices">
+<p><span>Oracle&reg; Java ME Embedded</span> <span><span>Reference Platform Release Notes (STM32429I-EVAL)</span></span>, <span><span>Release 8.3</span></span></p>
+<p>E73092-01</p>
+<p>Copyright &copy; 2015, 2016,&nbsp;Oracle and/or its affiliates. All rights reserved.</p>
+<div>
+<div>
+<p>This software and related documentation are provided under a license agreement containing restrictions on use and disclosure and are protected by intellectual property laws. Except as expressly permitted in your license agreement or allowed by law, you may not use, copy, reproduce, translate, broadcast, modify, license, transmit, distribute, exhibit, perform, publish, or display any part, in any form, or by any means. Reverse engineering, disassembly, or decompilation of this software, unless required by law for interoperability, is prohibited.</p>
+<p>The information contained herein is subject to change without notice and is not warranted to be error-free. If you find any errors, please report them to us in writing.</p>
+</div>
+</div>
+<div>
+<div>
+<p>If this is software or related documentation that is delivered to the U.S. Government or anyone licensing it on behalf of the U.S. Government, the following notice is applicable:</p>
+<p>U.S. GOVERNMENT END USERS: Oracle programs, including any operating system, integrated software, any programs installed on the hardware, and/or documentation, delivered to U.S. Government end users are "commercial computer software" pursuant to the applicable Federal Acquisition Regulation and agency-specific supplemental regulations. As such, use, duplication, disclosure, modification, and adaptation of the programs, including any operating system, integrated software, any programs installed on the hardware, and/or documentation, shall be subject to license terms and license restrictions applicable to the programs. No other rights are granted to the U.S. Government.</p>
+</div>
+</div>
+<div>
+<div>
+<p>This software or hardware is developed for general use in a variety of information management applications. It is not developed or intended for use in any inherently dangerous applications, including applications that may create a risk of personal injury. If you use this software or hardware in dangerous applications, then you shall be responsible to take all appropriate fail-safe, backup, redundancy, and other measures to ensure its safe use. Oracle Corporation and its affiliates disclaim any liability for any damages caused by use of this software or hardware in dangerous applications.</p>
+</div>
+</div>
+<div>
+<div>
+<p>Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.</p>
+<p>Intel and Intel Xeon are trademarks or registered trademarks of Intel Corporation. All SPARC trademarks are used under license and are trademarks or registered trademarks of SPARC International, Inc. AMD, Opteron, the AMD logo, and the AMD Opteron logo are trademarks or registered trademarks of Advanced Micro Devices. UNIX is a registered trademark of The Open Group.</p>
+</div>
+</div>
+<div>
+<div>
+<p>This software or hardware and documentation may provide access to or information about content, products, and services from third parties. Oracle Corporation and its affiliates are not responsible for and expressly disclaim all warranties of any kind with respect to third-party content, products, and services unless otherwise set forth in an applicable agreement between you and Oracle. Oracle Corporation and its affiliates will not be responsible for any loss, costs, or damages incurred due to your access to or use of third-party content, products, or services, except as set forth in an applicable agreement between you and Oracle.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Start Footer -->
+</div>
+<!-- add extra wrapper close div-->
+<footer><!--
+<hr />
+<table class="cellalignment213">
+<tr>
+<td class="cellalignment223">&nbsp;</td>
+<td class="cellalignment-copyrightlogo"><img width="144" height="18" src="../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2015, 2016,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td class="cellalignment225">
+<table class="cellalignment216">
+<tr>
+<td class="cellalignment217"><a href="../index.html"><img width="24" height="24" src="../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td class="cellalignment217"><a href="toc.htm"><img width="24" height="24" src="../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td class="cellalignment217"><a href="../dcommon/html/feedback.htm"><img width="24" height="24" src="../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+--></footer>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- #exec cgi="/title.shtml" -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<a name="top"></a>
+<!-- #exec cgi="/navigation.shtml" -->
+<div id="content">
+<h1>Spreadsheet Methods Solutions</h1>
+<h2>Editable Solutions 2003</h2>
+<h3>The  spreadsheet files below can be opened and edited. You may also use them to see the formulas. The required printouts are in PDF format with row/column headers, gridlines and selected areas only included. For some of the files it may help to right-click and download the files before opening them locally, rather than opening them online.
+<ul>
+<li><a href="../XAM2003.pdf"><strong>The 2003 Exam</strong></a></li>
+<li><a href="./2003-GOODHEW01.sxc">GOODHEW01</a> (OpenOffice.org 1.x format)</a>
+<li><a href="./2003-GOODHEW01.ods">GOODHEW01</a> (OpenOffice.org 3.x format)</a>
+	<ul>
+	<li><a href="2003-GOODHEW01-XLS.xls">GOODHEW01</a> (Microsoft Excel format (>16MB))</a>
+	</ul>
+<li>The first required printout is <a href="2003-GOODHEW01.pdf">here</a></li>
+<li>The second required printout (formulas) is <a href="2003-GOODHEW01-formulas.pdf">here</a>.</li>
+<li><a href="2003-GOODHEW02.sxc">GOODHEW02</a> (OpenOffice.org 1.x format)</a>
+<li><a href="2003-GOODHEW02.ods">GOODHEW02</a> (OpenOffice.org 3.x format)</a>
+	<ul>
+	<li><a href="2003-GOODHEW02-XLS.xls">GOODHEW02</a> (Microsoft Excel format (>16MB))</a>
+	</ul>
+<li>The third printout is <a href="2003-GOODHEW02.pdf">here</a>.</li>
+<li>The fourth printout (formulas) is <a href="2003-GOODHEW02-formulas.pdf">here</a>.</li>
+<li>The fifth print out, <a href="2003-Graph-01.png"><img src="2003-Graph-01.png" width="25"/>the chart</a> is here.</li>
+<li>The marking scheme is <a href="XAM2003-Marking.pdf">here</a>.</li>
+</ul>
+<h3>Click <a href="../1997/00-1997-solution.shtml">here</a> for the 1997 paper. Click <a href="../2004/00-2004-solution.shtml">here</a> for the 2004 paper.</h3>
+</div>
+</body>
+</html>
