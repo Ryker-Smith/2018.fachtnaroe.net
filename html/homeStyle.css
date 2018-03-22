@@ -10,7 +10,8 @@ body
 
 #container 
 {
-	position:absolute;
+	position:fixed;
+	background-color: blue;
 }
 #elem
 {
@@ -22,4 +23,22 @@ body
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
+}
+
+#testElem2
+{
+  position: absolute;
+    background-color: green;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
+
+#topSpacer
+{
+  height: 10%;
+  width:  100%;
 }

@@ -1,8 +1,10 @@
+var myObject = document.getElementById("elem");
+
+var objectWidth = myObject.width;
+var objectHeight = myObject.height;
+
 function getResolution()
 {
-	var objectWidth = document.getElementById("elem").width;
-	var objectHeight = document.getElementById("elem").height;
-
-	document.getElementById("container").style.width = screen.width - objectWidth;
-	document.getElementById("container").style.height = screen.height - objectHeight;
+	document.getElementById("container").style.width = body.width - objectWidth;
+	document.getElementById("container").style.height = body.height - objectHeight;
 }
