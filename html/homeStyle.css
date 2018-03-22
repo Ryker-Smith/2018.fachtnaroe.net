@@ -37,8 +37,7 @@ body
     user-select: none;
 }
 
-#topSpacer
+.navbar
 {
-  height: 10%;
-  width:  100%;
+  margin-top: 20px;
 }
