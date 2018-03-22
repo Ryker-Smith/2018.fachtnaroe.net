@@ -96,17 +96,25 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div id='container' style="top:70px;left:0;bottom:20px;right:0px; height: 400; width: 400">     
-    <div id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
-      <div style='width:100%;height:100%;padding:10px'>
+<div id='container' style="width: 600px;height: 400px;top:50px;left:50px;">   
+      <div id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
+        <div style='width:100%;height:100%;padding:10px'>
+        <select id=test>
+          <option value=1>first
+          <option value=2>second
+        </select>
+        <INPUT TYPE=text value="123">
+        </div>
       </div>
-    </div>
 
-    <div id="testElem2" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
+      <div id="testElem2" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
       <div style='width:100%;height:100%;padding:10px'>
       </div>
     </div>
-</div> 
+</div>
 
 </body>
 </html>
+
+
+
