@@ -16,13 +16,13 @@ body
 #elem
 {
 	position: absolute;
-    background-color: green;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    -ms-user-select: none;
-    -khtml-user-select: none;     
-    user-select: none;
+  background-color: green;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;     
+   user-select: none;
 }
 
 #testElem2
@@ -37,8 +37,7 @@ body
     user-select: none;
 }
 
-#topSpacer
+.navbar
 {
-  height: 10%;
-  width:  100%;
+  margin: 10px 10px 10px 10px;
 }

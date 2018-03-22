@@ -53,11 +53,8 @@
   </script>
 </head>
 <body  ondragover="drag_over(event)" ondrop="drop(event)">
-
-<div>
-<div id="topSpacer">
   
-</div>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -98,21 +95,26 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<div id='container' style="width: 600px;height: 400px;top:50px;left:50px;">   
+      <div id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
+        <div style='width:100%;height:100%;padding:10px'>
+        <select id=test>
+          <option value=1>first
+          <option value=2>second
+        </select>
+        <INPUT TYPE=text value="123">
+        </div>
+      </div>
+
+      <div id="testElem2" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
+      <div style='width:100%;height:100%;padding:10px'>
+      </div>
+    </div>
 </div>
-
-</div>
-
-<div id='container' style="top:50px;left:0; height: 400; width: 400">     
-            <div id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
-                <div style='width:100%;height:100%;padding:10px'>
-                </div>
-            </div>
-
-            <div id="testElem2" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
-                <div style='width:100%;height:100%;padding:10px'>
-                </div>
-            </div>
-        </div> 
 
 </body>
 </html>
+
+
+
