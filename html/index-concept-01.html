@@ -9,7 +9,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="resolution.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript"> getResolution();</script>
   <script type="text/javascript">
     var mydragg = function(){
                 return {
@@ -54,7 +53,7 @@
             }();
   </script>
 </head>
-<body  ondragover="drag_over(event)" ondrop="drop(event)">
+<body  ondragover="drag_over(event)" ondrop="drop(event)" onload="getResolution();">
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -101,7 +100,7 @@
 
 </div>
 
-<div id='container' style="top:50px;left:0; right: 500">     
+<div id='container' style="top:50px;left:0;>     
             <div id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
                 <div style='width:100%;height:100%;padding:10px'>
                 <select id=test>
