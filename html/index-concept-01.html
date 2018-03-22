@@ -1,150 +1,117 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Space Desktop</title>
-<style type="text/css">
-
-body {
-background-image: url(/data/openwebmail/images/backgrounds/starfield.gif);
-background-color:"#000000";
-background-repeat: repeat;
-font-family: Arial, Helvetica, sans-serif; font-size: 10pt
-}
-A:link    { text-decoration: none; color: blue}
-A:visited { text-decoration: none; color: blue}
-A:hover   { text-decoration: none; color: red}
-.medtext { font-size: 9pt;}
-
-#testbox {
-  background-color: red;
-  width: 100px;
-  height:100px;
-  z-index: 10;
-  top: 100;
-  left: 100;
-  position: absolute;
-  border: 2px blue;
-}
-
-#viewer {
-  float: right;
-  position: relative;
-  width: 200px;
-  height: 400px;
-  font: 40px;
-  color: black;
-  background-color: white;
-  border: 1px solid black;
-}
-
-*[id$='_head'] {  /* wildcard to select all titles  */
-  background-color: white;
-}
-</style>
-
-<script  type="text/javascript">
-
-function startAnimation() {
-    var divAnim = document.body;
-    var changeX=0;
-    var changeY=0;
-    // should this be setTimeout ?
-    setInterval(function () {
-        changeX +=1;
-        changeY +=1;
-        divAnim.style.backgroundPosition = changeX + "px " + changeY + "px";
-    }, 100);
-  }
-
-  function onloadProc() {
-  // Is this required too?
-    startAnimation();
-    // this is an invocation of the function that will (Eventually!) create new 'windows' for us easily.
-    
-    
-    newWindow('sample1', 'sample1', 'nothing here');
-    newWindow('sample2', 'sample2', 'more nothing here');
-    newWindow('sample3', 'sample3', 'still nothing here');
-//     newWindow('testbox', 'testbox', 'nothing here');
-dragElement(document.getElementById("testbox"));
-  }
-
-   function newWindow (title, id, content) {
-    var temp;
-     temp = '<div id="' + id + '"><div id="' + id + '_head">' + title + '</div><div id="' + id + '_content">' + content + '</div></div>' +
-     '<style> #' + id + '{ background-color: green; float: right; z-index: 5; width: 200px; height: 200px; position: absolute;  }</style>';
-     
-     document.getElementById('body').innerHTML = document.getElementById('body').innerHTML + temp;
-     document.getElementById('debug2').value= document.getElementById('debug2').value + temp;
-     dragElement(document.getElementById(id));
-//      dragElement(document.getElementById((id + '_head')));
-   }
-//Make the DIV element draggagle:
-
-  function clickWindowSize(e) {
-    var head = e.target.id;
-    var body = head.replace ('_head', '_content');
-//     alert(body);
-    document.getElementById(body).style.visible="false";
-    if (document.getElementById(body).style.height = "0px") {
-        document.getElementById(body).style.height = "100px";
-    } else {
-        document.getElementById(body).style.height = "0px";
-    }
-    
-  }
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "_head")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "_head").onmousedown = dragMouseDown;
-    document.getElementById(elmnt.id + "_head").onclick = clickWindowSize;
-  } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-    document.getElementById('debug1').value= '(' + pos3 + ',' + pos4 + ')';
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-    document.getElementById('debug1').value= '(' + pos3 + ',' + pos4 + ')';
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-
-</script>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="homeStyle.css">       
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="resolution.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript"> getResolution();</script>
+  <script type="text/javascript">
+    var mydragg = function(){
+                return {
+                    move : function(divid,xpos,ypos){
+                        divid.style.left = xpos + 'px';
+                        divid.style.top = ypos + 'px';
+                    },
+                    startMoving : function(divid,container,evt){
+                        evt = evt || window.event;
+                        var posX = evt.clientX,
+                            posY = evt.clientY,
+                        divTop = divid.style.top,
+                        divLeft = divid.style.left,
+                        eWi = parseInt(divid.style.width),
+                        eHe = parseInt(divid.style.height),
+                        cWi = parseInt(document.getElementById(container).style.width),
+                        cHe = parseInt(document.getElementById(container).style.height);
+                        document.getElementById(container).style.cursor='move';
+                        divTop = divTop.replace('px','');
+                        divLeft = divLeft.replace('px','');
+                        var diffX = posX - divLeft,
+                            diffY = posY - divTop;
+                        document.onmousemove = function(evt){
+                            evt = evt || window.event;
+                            var posX = evt.clientX,
+                                posY = evt.clientY,
+                                aX = posX - diffX,
+                                aY = posY - diffY;
+                                if (aX < 0) aX = 0;
+                                if (aY < 0) aY = 0;
+                                if (aX + eWi > cWi) aX = cWi - eWi;
+                                if (aY + eHe > cHe) aY = cHe -eHe;
+                            mydragg.move(divid,aX,aY);
+                        }
+                    },
+                    stopMoving : function(container){
+                        var a = document.createElement('script');
+                        document.getElementById(container).style.cursor='default';
+                        document.onmousemove = function(){}
+                    },
+                }
+            }();
+  </script>
 </head>
-<body id="body" onload="onloadProc()">
+<body  ondragover="drag_over(event)" ondrop="drop(event)">
 
-<div id="testbox"><div id="testbox_head">Window title</div><div id="testbox_content">Window Content</div></div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Fachtna Roe</a>
+    </div>
 
-<div id="viewer">Some stuff here<input type="text" id ="debug1"><textarea id ="debug2" width="100%" height="100%"></textarea></div>
-<a href="https://www.w3schools.com/jsref/dom_obj_event.asp">https://www.w3schools.com/jsref/dom_obj_event.asp</a>
-</body></html> 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Option One</a></li>
+        <li><a href="#">Option Two</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id=spacer>
+
+</div>
+
+<div id='container' style="top:50px;left:0; right: 500">     
+            <div id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
+                <div style='width:100%;height:100%;padding:10px'>
+                <select id=test>
+                    <option value=1>first
+                    <option value=2>second
+                </select>
+                <INPUT TYPE=text value="123">
+                </div>
+            </div>
+        </div> 
+
+</body>
+</html>
