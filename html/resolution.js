@@ -5,6 +5,6 @@ var objectHeight = myObject.height;
 
 function getResolution()
 {
-	document.getElementById("container").style.width = screen.width - objectWidth;
-	document.getElementById("container").style.height = screen.height - objectHeight;
+	document.getElementById("container").style.width = body.width - objectWidth;
+	document.getElementById("container").style.height = body.height - objectHeight;
 }
