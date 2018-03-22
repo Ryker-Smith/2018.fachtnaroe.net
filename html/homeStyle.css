@@ -1,6 +1,6 @@
 body 
 {
-  background: url('images/Galaxy.jpg') no-repeat center center fixed;
+  background: url('Galaxy.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -11,15 +11,28 @@ body
 #container 
 {
 	position:fixed;
+	background-color: blue;
 }
 #elem
 {
 	position: absolute;
-  background-color: green;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-  -khtml-user-select: none;     
-  user-select: none;
+    background-color: green;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
+
+#testElem2
+{
+  position: absolute;
+    background-color: green;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
 }

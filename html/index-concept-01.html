@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
   <link rel="stylesheet" type="text/css" href="homeStyle.css">       
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="resolution.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript">
     var mydragg = function(){
@@ -53,7 +52,9 @@
             }();
   </script>
 </head>
-<body  ondragover="drag_over(event)" ondrop="drop(event)" onload='getResolution()'>
+<body  ondragover="drag_over(event)" ondrop="drop(event)">
+
+
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
@@ -96,18 +97,16 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<div id=spacer>
-
 </div>
 
-<div id='container' style="top:50px;left:0;>     
+<div id='container' style="top:50px;left:0; height: 400; width: 400">     
             <div id="elem" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
                 <div style='width:100%;height:100%;padding:10px'>
-                <select id=test>
-                    <option value=1>first
-                    <option value=2>second
-                </select>
-                <INPUT TYPE=text value="123">
+                </div>
+            </div>
+
+            <div id="testElem2" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 100px;">
+                <div style='width:100%;height:100%;padding:10px'>
                 </div>
             </div>
         </div> 
