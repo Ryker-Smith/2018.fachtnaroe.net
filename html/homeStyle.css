@@ -36,3 +36,8 @@ body
     -khtml-user-select: none;     
     user-select: none;
 }
+
+.navbar
+{
+  padding-top: 40px;
+}
