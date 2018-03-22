@@ -10,8 +10,7 @@ body
 
 #container 
 {
-	position:fixed;
-	background-color: blue;
+	position:absolute;
 }
 #elem
 {
