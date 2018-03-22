@@ -1,7 +1,0 @@
-@echo off
-echo.|date|find "current" >t#e.bat
-echo set date=%%5> the.bat
-call t#e.bat
-del t?e.bat > nul
-:: Thanks to Joseph P. Hayes
-:: joephayes@yahoo.com
