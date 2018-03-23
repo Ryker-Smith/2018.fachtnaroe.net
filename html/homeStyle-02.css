@@ -17,6 +17,8 @@ body
 {
 	position: absolute;
     background-color: green;
+	top 80px;
+	right 400px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
@@ -28,6 +30,8 @@ body
 #testElem2
 {
   position: absolute;
+	top 200px;
+	right 300px;
     background-color: green;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -39,6 +43,8 @@ body
 #testElem3
 {
   position: absolute;
+	top 320px;
+	right 100px;
     background-color: green;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -50,6 +56,8 @@ body
 #testElem4
 {
   position: absolute;
+	top 440px;
+	right 200px;
     background-color: green;
     -webkit-user-select: none;
     -moz-user-select: none;
