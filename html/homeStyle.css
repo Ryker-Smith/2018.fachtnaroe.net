@@ -36,3 +36,8 @@ body
     -khtml-user-select: none;     
     user-select: none;
 }
+
+.navbar
+{
+  margin: 10px 10px 10px 10px;
+}
