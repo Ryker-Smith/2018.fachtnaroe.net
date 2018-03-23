@@ -32,10 +32,11 @@ function newDraggable (elementParent, elementId, w, h, t) {
   setRandomColor(newDiv_inner);
   // insert the starting text provided
   newDiv_inner.innerHTML=t;
-  // add the new outer div to the parent as child
-  popsicle.appendChild(newDiv);
   // add the new inner div to the new child
   newDiv.appendChild(newDiv_inner);
+  // add the new outer div to the parent as child
+  popsicle.appendChild(newDiv);
+  
   
 }
 
@@ -62,3 +63,4 @@ function getRandomColor() {
 function setRandomColor(me) {
   $(me).css("background-color", getRandomColor());
 }
+
