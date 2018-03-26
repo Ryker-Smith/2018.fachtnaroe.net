@@ -13,10 +13,10 @@ body
 	position:fixed;
 }
 
-#testElem1
+#educationPlanet
 {
 	position: absolute;
-    background-color: green;
+  background: url('images/Education.png');
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
@@ -25,10 +25,11 @@ body
     user-select: none;
 }
 
-#testElem2
+#equalityPlanet
 {
   position: absolute;
-    background-color: green;
+  background: url('images/Equality.png');
+    -webkit-user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
