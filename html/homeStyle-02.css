@@ -14,8 +14,7 @@ body
 }
 
 #testElem1
-{
-	position: absolute;
+{	position: absolute;
     background-color: green;
 	top 80px;
 	right 400px;
