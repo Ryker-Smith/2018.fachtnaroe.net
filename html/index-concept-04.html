@@ -82,10 +82,72 @@
 
 <style>
 #myNavBar {
-  background-color: #3a3d6a;
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid black;
   color: white;
   border-radius: 10px;
+  background-image: url('images/digital_art_texture_146_by_mercurycode-d7gzb12.jpg');
+  background-attachment: fixed;
+  background-position: center; 
+  height: 50px;
+  
+}
+#siteName{
+  float: middle;
+  position: relative;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 0;
+  display: inherit;
+  font-family: inherit;
+  background-color: inherit;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: white;
+  text-align: inherit;
+  position: relative;
+}
+#motto{
+  float: inherit;
+  font-size: 10px;
+  font-family: inherit;
+  display: inherit;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: inherit;
+  text-align: inherit;
+  position: relative;
+}
+#siteIdentity {
+/*   background-color: black; */
+  color: white;
+  float: middle;
+  text-align: center;
+  border: 1px solid white;
+  height: 65px; 
+  top: -10px;
+  position: relative;
+  font-family: Tahoma, Verdana, Sans Serif;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  box-shadow:
+     2px 2px 0 #000,
+     2px 2px 0 #000,
+    2px 2px 0 #000,
+     2px 2px 0 #000;
+  background-image: url('images/texture_87_2048x3289_by_frostbo-d4gbmvq.png.jpg');
+/*   background-attachment: fixed; */
+/*   background-position: left;  */
 }
 </style>
 <nav id="myNavBar" class="navbar navbar-inverse navbar-fixed-top ">
@@ -98,8 +160,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Fachtna Roe</a>
-    </div>
+      <div id="siteIdentity">
+<!--         <a class="navbar-brand" href="#"> -->
+        <span id="siteName">fachtnaroe.net<span id="motto">&mdash; because if it was easy, everyone would do it</span></span>
+<!--         </a> -->
+      </div>
+      </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
