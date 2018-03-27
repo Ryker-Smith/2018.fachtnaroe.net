@@ -1,0 +1,8 @@
+Use bg div at z of -100, to be reserved for the animation.
+
+Inserting file:///var/www/2018.fachtnaroe.net/workingStuff/videoplayback-06.mp4 in same as placeholder.
+
+Creating new content, rotating nebula image, plus JS stars, transparencies (possibly 3 depth images)
+
+Flashing stars - images (DR)
+Flashing stars - transparencies by JS (FR)
