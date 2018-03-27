@@ -50,29 +50,28 @@
                     },
                 }
             }();
-	var redPlanet = ['images/redFrames/redFrame1.png','images/redFrames/redFrame2.png','images/redFrames/redFrame3.png','images/redFrames/redFrame4.png','images/redFrames/redFrame5.png','images/redFrames/redFrame6.png','images/redFrames/redFrame7.png','images/redFrames/redFrame8.png','images/redFrames/redFrame9.png','images/redFrames/redFrame10.png','images/redFrames/redFrame11.png','images/redFrames/redFrame12.png','images/redFrames/redFrame13.png','images/redFrames/redFrame14.png','images/redFrames/redFrame15.png','images/redFrames/redFrame16.png','images/redFrames/redFrame17.png','images/redFrames/redFrame18.png','images/redFrames/redFrame19.png','images/redFrames/redFrame20.png','images/redFrames/redFrame21.png','images/redFrames/redFrame22.png','images/redFrames/redFrame23.png','images/redFrames/redFrame24.png','images/redFrames/redFrame25.png','images/redFrames/redFrame26.png','images/redFrames/redFrame27.png','images/redFrames/redFrame28.png','images/redFrames/redFrame29.png','images/redFrames/redFrame30.png','images/redFrames/redFrame31.png','images/redFrames/redFrame32.png','images/redFrames/redFrame33.png','images/redFrames/redFrame34.png','images/redFrames/redFrame35.png'];
+	var redPlanet = ['images/redFrames/redFrame1.png','images/redFrames/redFrame2.png','images/redFrames/redFrame3.png','images/redFrames/redFrame4.png','images/redFrames/redFrame5.png','images/redFrames/redFrame6.png','images/redFrames/redFrame7.png','images/redFrames/redFrame8.png','images/redFrames/redFrame9.png','images/redFrames/redFrame10.png','images/redFrames/redFrame11.png','images/redFrames/redFrame12.png','images/redFrames/redFrame13.png','images/redFrames/redFrame14.png','images/redFrames/redFrame15.png','images/redFrames/redFrame16.png','images/redFrames/redFrame17.png','images/redFrames/redFrame18.png','images/redFrames/redFrame19.png','images/redFrames/redFrame20.png','images/redFrames/redFrame21.png','images/redFrames/redFrame22.png','images/redFrames/redFrame23.png','images/redFrames/redFrame24.png','images/redFrames/redFrame25.png','images/redFrames/redFrame26.png','images/redFrames/redFrame27.png','images/redFrames/redFrame28.png','images/redFrames/redFrame29.png','images/redFrames/redFrame30.png','images/redFrames/redFrame31.png','images/redFrames/redFrame32.png','images/redFrames/redFrame33.png','images/redFrames/redFrame34.png','images/redFrames/redFrame35.png']
 	
 	var counter;
 	counter = 0;
 	function rotatePlanet(){
         var a = document.getElementById("planetPic");
+		counter += 1;
 		if (counter > 34){
 			counter = 0;
 		} 
 		a.src = redPlanet[counter];
-		counter++;
+		
 	}
-	window.setInterval(rotatePlanet, 250);		
-	function onloadFunc() {
-      window.setInterval(rotatePlanet, 250);		
-	}
+	setInterval(rotatePlanet, 250);		
+
   </script>
 </head>
-<body  ondrop="drop(event)" >
+<body  ondragover="drag_over(event)" ondrop="drop(event)" >
 <style>
 #planetPic {
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 #testElem4 {
   background-color: transparent;

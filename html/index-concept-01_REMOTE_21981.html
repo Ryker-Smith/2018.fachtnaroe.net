@@ -51,34 +51,22 @@
                 }
             }();
 	var redPlanet = ['images/redFrames/redFrame1.png','images/redFrames/redFrame2.png','images/redFrames/redFrame3.png','images/redFrames/redFrame4.png','images/redFrames/redFrame5.png','images/redFrames/redFrame6.png','images/redFrames/redFrame7.png','images/redFrames/redFrame8.png','images/redFrames/redFrame9.png','images/redFrames/redFrame10.png','images/redFrames/redFrame11.png','images/redFrames/redFrame12.png','images/redFrames/redFrame13.png','images/redFrames/redFrame14.png','images/redFrames/redFrame15.png','images/redFrames/redFrame16.png','images/redFrames/redFrame17.png','images/redFrames/redFrame18.png','images/redFrames/redFrame19.png','images/redFrames/redFrame20.png','images/redFrames/redFrame21.png','images/redFrames/redFrame22.png','images/redFrames/redFrame23.png','images/redFrames/redFrame24.png','images/redFrames/redFrame25.png','images/redFrames/redFrame26.png','images/redFrames/redFrame27.png','images/redFrames/redFrame28.png','images/redFrames/redFrame29.png','images/redFrames/redFrame30.png','images/redFrames/redFrame31.png','images/redFrames/redFrame32.png','images/redFrames/redFrame33.png','images/redFrames/redFrame34.png','images/redFrames/redFrame35.png'];
-	
 	var counter;
 	counter = 0;
 	function rotatePlanet(){
-        var a = document.getElementById("planetPic");
+		counter++;
 		if (counter > 34){
 			counter = 0;
 		} 
-		a.src = redPlanet[counter];
-		counter++;
+		document.getElementById("testElem4").src = redPlanet[counter];
+		startTimer();
 	}
-	window.setInterval(rotatePlanet, 250);		
-	function onloadFunc() {
-      window.setInterval(rotatePlanet, 250);		
-	}
+	function startTimer(){
+		setInterval(rotatePlanet, 50);
+	}		
   </script>
 </head>
-<body  ondrop="drop(event)" >
-<style>
-#planetPic {
-  width: 100%;
-  height: 100%;
-}
-#testElem4 {
-  background-color: transparent;
-  border: none;
-}
-</style>
+<body  ondragover="drag_over(event)" ondrop="drop(event)" onload="startTimer()">
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -121,9 +109,19 @@
 </nav>
 
 <div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">   
+      <div id="testElem1" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px;">
+        <div style='width:100%;height:100%;padding:10px'>One</div>
+      </div>
 
-      <div id="testElem4" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
-		<img id="planetPic" src="images/redFrames/redFrame1.png" >
+      <div id="testElem2" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px;">
+        <div style='width:100%;height:100%;padding:10px'>Two</div>
+      </div>
+      
+      <div id="testElem3" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px;">
+        <div style='width:100%;height:100%;padding:10px'>Three</div>
+      </div>
+      <div id="testElem4" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px;">
+		<img src = "images/redFrames/redFrame1.png" alt "frame1">
       </div>
 </div>
 
