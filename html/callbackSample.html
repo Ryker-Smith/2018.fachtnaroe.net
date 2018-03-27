@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <style>
+    #sampleDiv {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+      color: white;
+    }
+    </style>
+  </head>
+  <body>
+  
+  <button onclick="getFileFromServer('sampleDiv', 'help/library', 'index.html')">Click me</button>
+  <div id="sampleDiv">
+  This is the target div for the data when returned
+  </div>
+  
+  <script type="text/javascript">
+    function getFileFromServer(displayInDiv, path, filename) {
+      var targetFile = path + "/" + filename;
+      var targetDiv=document.getElementById(displayInDiv);
+      
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            targetDiv.innerHTML = this.responseText;
+        }
+        else {
+            targetDiv.innerHTML="Error: " + this.status;
+        }
+      };
+    
+      xhttp.open("GET", targetFile, true);
+      xhttp.send();
+    
+    }
+  </script>
+  
+  </body>
+</html>
