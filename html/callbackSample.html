@@ -8,6 +8,7 @@
       height: 200px;
       background-color: black;
       color: white;
+      overflow: hidden;
     }
     </style>
   </head>
@@ -26,6 +27,7 @@
       var xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
+            targetDiv.style.width="300px";
             targetDiv.innerHTML = this.responseText;
         }
         else {
