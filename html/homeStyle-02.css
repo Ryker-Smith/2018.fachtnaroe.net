@@ -26,6 +26,7 @@ body
     user-select: none;
 }
 
+
 #testElem2
 {
   position: absolute;
@@ -65,3 +66,8 @@ body
     -khtml-user-select: none;     
     user-select: none;
 }
+#preload { 
+		position: absolute;
+		left: -9999px;
+		top:  -9999px; }
+
