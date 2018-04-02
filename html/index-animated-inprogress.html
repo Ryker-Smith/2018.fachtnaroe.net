@@ -35,8 +35,12 @@
   z-index: -1;
 }*/
 #canvas_rear {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: -101;
 /*   background: url(images/SpiralGalaxy_02.jpg) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -44,50 +48,70 @@
   background-size: cover;
 }
 #canvas_middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+/*   opacity: 1; */
+  background-color: transparent;
+/*   background: url(images/SpiralGalaxy_01.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #canvas_front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  opacity: .1; 
+  background-color: transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 </style>
 
 </head>
 <body onload="setTimeout('drawBg()', canvas_rear_speed);">
 <canvas id="canvas_rear"></canvas>
+<canvas id="canvas_middle"></canvas>
+<canvas id="canvas_front"></canvas>
+
+<script src="js/starfield.js"></script>
+<script type="text/javascript">
+  var starfield = StarField('canvas_front', screen.width, screen.height, 80);
+  starfield.draw();
+</script>
+
 <script type="text/javascript">
 
-    var inDraw=false;
-    var intervalToggle;
     var canvas_rear_speed=250;
+    var angle=.1;
     var canvas=document.getElementById('canvas_rear');
     var ctx=canvas.getContext("2d");
     canvas.width=screen.width;
     canvas.height=screen.height;
-    var angle=0;
     var image=document.createElement("img");
     image.src="images/SpiralGalaxy_02.jpg";
-    stretchWidth=image.width*1.5;
-    stretchHeight=image.height*1.5;
-
-//     intervalToggle=setInterval(function(){ clearInterval(intervalToggle); drawBg(); }, canvas_rear_speed);
-//     setTimeout('drawBg()', canvas_rear_speed);
-    
+   
     function drawBg() {
-//       clearInterval(intervalToggle);
       ctx.clearRect(0,0,canvas.width,canvas.height);
       ctx.translate(canvas.width/2, canvas.height/2);
-      angle+=.001;
       tempAngle=angle.toFixed(5);
-//       angle=Math.floor(angle, 2);
-      console.log ("Angle: "+angle);
-      //0, 0, image.width, image.height,
-      ctx.rotate(tempAngle*Math.PI/180);
-      console.log("This: ",tempAngle);
+      ctx.rotate(tempAngle*(Math.PI/180));
       ctx.translate(-canvas.width/2, -canvas.height/2);
-      ctx.drawImage(image,  0, 0, image.width, image.height, -((1920-screen.width)/2), -((1920-screen.height)/2), 1920, 1920);
-//       intervalToggle=setInterval(function(){ clearInterval(intervalToggle); drawBg(); }, canvas_rear_speed);
+      ctx.drawImage(image,  0, 0, image.width, image.height, -((image.width-screen.width)/2), -((image.width-screen.height)/2), image.width, image.height);
       setTimeout('drawBg()', canvas_rear_speed);
     }
-
+   
 </script>
 
 
