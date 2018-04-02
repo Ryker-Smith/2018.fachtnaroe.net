@@ -17,6 +17,7 @@ var StarField=function (canvas_id, width, height, num_stars, star_size, stars) {
     star.y = Math.random() * height - origin_y;
     star.z = star.max_depth = Math.max(width, height);
     star.size=star_size;
+//     star.thing=thing;
     var xcoeff = star.x > 0 ? 1 : -1;
     var ycoeff = star.y > 0 ? 1 : -1;
     if (Math.abs(star.x) > Math.abs(star.y)) {
@@ -45,7 +46,7 @@ var StarField=function (canvas_id, width, height, num_stars, star_size, stars) {
     star.width = 1 + ((star.max_depth - star.z) * .1);
   }
   
-  update_stars=function (ctx, stars) {
+  function update_stars (ctx, stars) {
     ctx.fillStyle = '#fff';
     for (var i = 0; i < stars.length; i++) {
       move(stars[i]);
@@ -55,22 +56,33 @@ var StarField=function (canvas_id, width, height, num_stars, star_size, stars) {
         stars[i] = create_star();
       }
       else {
-        var circle = new Path2D();
-        circle.moveTo(stars[i].x + origin_x, stars[i].y + origin_y);
-        circle.arc(stars[i].x + origin_x, stars[i].y + origin_y, stars[i].size, 0, 2 * Math.PI);
-        ctx.fill(circle);
+//           if (stars[i].thing.localeCompare("img")!=0) {
+// //               console.log(stars[i].thing);
+//             var circle = new Path2D();
+//             circle.moveTo(stars[i].x + origin_x, stars[i].y + origin_y);
+//             circle.arc(stars[i].x + origin_x, stars[i].y + origin_y, stars[i].size, 0, 2 * Math.PI);
+//             ctx.fill(circle);
+//           }
+//           else {
+//               console.log(stars[i].thing);
+            var image=document.createElement("img");
+            image.src="images/OneStar.png";
+            ctx.drawImage(image, 0, 0, image.width, image.height, stars[i].x + origin_x, stars[i].y + origin_y, image.width/3, image.height/3);
+//           }
       }
     }
   }
   
   // drawing routine
-  this.draw = function() {
+  this.draw = function(canvas_id) {
+      canvas = document.getElementById(canvas_id);
+      ctx = canvas.getContext('2d');
 //     ctx.fillStyle = "#fff";
 //     ctx.fillRect(0, 0, width, height);
       ctx.clearRect(0, 0, width, height);
-      
-    update_stars(ctx, stars);
-    t = setTimeout("draw()", 30);
+//       console.log(canvas_id, thing);
+      update_stars(ctx, stars);
+    t = setTimeout(function(){draw(canvas_id)}, 30);
   }
   
   for (var i=0; i < num_stars; i++) {
