@@ -52,7 +52,7 @@
             }();
   </script>
 </head>
-<body  ondragover="drag_over(event)" ondrop="drop(event)" onload="setTimeout('draw_canvas_rear()', canvas_rear_speed);">
+<body  ondragover="drag_over(event)" ondrop="drop(event)">
 <!-- SNIP SNIP -->
 <div id="animation" height="100%">
 <style>
@@ -60,108 +60,23 @@
   border: none;
   margin: none;
   padding: none;
-  background-color: transparent;
 }
 #animation {
   width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: transparent;
+  background-color: black;
   position: absolute;
   z-index: -100;
 }
-#canvas_rear {
-  position: absolute;
-  top: 0;
-  left: 0;
+#video {
   width: 100%;
-  height: 100%;
-  z-index: -101;
-/*   background: url(images/SpiralGalaxy_02.jpg) no-repeat center center fixed; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-#canvas_middle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-/*   opacity: 1; */
-  background-color: transparent;
-/*   background: url(images/SpiralGalaxy_01.jpg) no-repeat center center fixed; */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-#canvas_front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100;
-/*   opacity: .5;  */
-  background-color: transparent;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 </style>
-<canvas id="canvas_rear"></canvas>
-<canvas id="canvas_middle"></canvas>
-<canvas id="canvas_front"></canvas>
-
-<script src="js/starfield.js"></script>
-<script type="text/javascript">
-  
-</script>
-
-<script type="text/javascript">
-
-    var canvas_rear_speed=250;
-    var angle=.1;
-    var canvas_rear=document.getElementById('canvas_rear');
-    var ctx_rear=canvas_rear.getContext("2d");
-    canvas_rear.width=screen.width;
-    canvas_rear.height=screen.height;
-    var image=document.createElement("img");
-    image.src="images/SpiralGalaxy_02.jpg";
-   
-    function draw_canvas_rear() {
-      ctx_rear.clearRect(0,0,canvas_rear.width,canvas_rear.height);
-      ctx_rear.translate(canvas_rear.width/2, canvas_rear.height/2);
-      tempAngle=angle.toFixed(5);
-      ctx_rear.rotate(tempAngle*(Math.PI/180));
-      ctx_rear.translate(-canvas_rear.width/2, -canvas_rear.height/2);
-      ctx_rear.drawImage(image,  0, 0, image.width, image.height, -((image.width-screen.width)/2), -((image.width-screen.height)/2), image.width, image.height);
-      setTimeout('draw_canvas_rear()', canvas_rear_speed);
-    }
-    
-    var canvas_middle=document.getElementById('canvas_middle');
-    var ctx_middle=canvas_middle.getContext("2d");
-    canvas_middle.width=screen.width;
-    canvas_middle.height=screen.height;
-    stars1=[];
-    var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 100, 1, stars1);
-    starfield_middle.draw();
-    
-    var canvas_front=document.getElementById('canvas_front');
-    var ctx_front=canvas_front.getContext("2d");
-    canvas_front.width=screen.width;
-    canvas_front.height=screen.height;
-    stars2=[];
-    var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 10, 2, stars2);
-    starfield_front.draw();
-    
-</script>
+<video autoplay loop id="video">
+  <source src="videos/videoplayback-06.mp4" type="video/mp4">
+</video>
 <!-- animation div ends at base of document -->
 <!-- SNIP SNIP -->
 
