@@ -64,6 +64,16 @@ body
     -khtml-user-select: none;     
     user-select: none;
 }
+#testElem6
+{
+  position: absolute;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
 #preload { 
 		position: absolute;
 		left: -9999px;
