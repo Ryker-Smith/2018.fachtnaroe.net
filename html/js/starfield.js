@@ -47,7 +47,7 @@ function StarField(canvas_id, width, height, num_stars) {
   }
   
   function update_stars(ctx) {
-    ctx.fillStyle = '#fff';
+    ctx.fillStyle = '#f00';
     for (var i = 0; i < stars.length; i++) {
       move(stars[i]);
       if (stars[i].x < -origin_x || stars[i].x > origin_x ||
@@ -67,13 +67,9 @@ function StarField(canvas_id, width, height, num_stars) {
   
   // drawing routine
   this.draw = function() {
-    // fill game board black
-    ctx.fillStyle = "#000";
+// //     ctx.fillStyle = "#000";
     ctx.fillRect(0, 0, width, height);
-
     update_stars(ctx);
-    
-    // calculate timeout using level
     t = setTimeout("draw()", 30);
   }
   

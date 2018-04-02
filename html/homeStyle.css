@@ -1,6 +1,8 @@
 body 
 {
-  background: url('images/Galaxy.jpg') no-repeat center center fixed;
+  /* background image deactivated in favour of transparency FR 20180402
+     background: url('images/Galaxy.jpg') no-repeat center center fixed; */
+  background-color: transparent;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
