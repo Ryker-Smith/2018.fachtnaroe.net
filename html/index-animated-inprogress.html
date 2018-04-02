@@ -1,0 +1,129 @@
+<html>
+<!-- proof of concept file -->
+  <head>
+    <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="homeStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+* {
+  border: none;
+  margin: none;
+  padding: none;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+/*#outer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+}
+#inner {
+  width: 1024px;
+  height: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}*/
+#canvas_rear {
+  width: 100%;
+  height: 100%;
+/*   background: url(images/SpiralGalaxy_02.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#canvas_middle {
+}
+
+#canvas_front {
+}
+</style>
+
+</head>
+<body >
+<canvas id="canvas_rear"></canvas>
+<script type="text/javascript">
+
+    var inDraw=false;
+    var intervalToggle;
+    var canvas=document.getElementById('canvas_rear');
+    var ctx=canvas.getContext("2d");
+    canvas.width=screen.width;
+    canvas.height=screen.height;
+    var angle=0;
+    var image=document.createElement("img");
+    image.src="images/SpiralGalaxy_02.jpg";
+    stretchWidth=image.width*1.5;
+    stretchHeight=image.height*1.5;
+    var intervalToggle=setInterval('drawBg()', 250);
+    
+    function drawBg() {
+      clearInterval(intervalToggle);
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.translate(canvas.width/2, canvas.height/2);
+      angle+=.001;
+      console.log ("Angle: "+angle+" ", image.width, canvas.width);
+      //0, 0, image.width, image.height,
+      ctx.rotate(angle*Math.PI/180);
+      ctx.translate(-canvas.width/2, -canvas.height/2);
+      ctx.drawImage(image,  0, 0, image.width, image.height, -((1920-screen.width)/2), -((1920-screen.height)/2), 1920, 1920);
+      intervalToggle=setInterval('drawBg()', 250);
+    }
+    
+// var timeout;
+// var angleInDegrees
+// 
+//   function wiggle() {
+//     var canvas=document.getElementById('canvas_rear');
+//     var ctx=canvas.getContext("2d");
+// 
+//     angleInDegrees=0;
+// 
+//     var image=document.createElement("img");
+// //     image.onload=function(){
+// //         ctx.drawImage(image,canvas.width,canvas.height);
+// //     }
+// //     console.log('A');
+// //     image.src="images/SpiralGalaxy_01.jpg";
+// //     angleInDegrees+=10;
+// //     drawRotated(angleInDegrees);
+//     timeout=setInterval('drawRotated()',1000, angleInDegrees);
+//   }
+// 
+//   function drawRotated(degrees){
+//     degrees=angleInDegrees;
+//     angleInDegrees+=60;
+//     var canvas=document.getElementById('canvas_rear');
+//     var ctx=canvas.getContext("2d");
+//     var image=document.createElement("img");
+//     console.log(degrees);
+//     image.src="images/SpiralGalaxy_01.jpg";
+//     degrees+=10;
+//     ctx.clearRect(0,0,canvas.width,canvas.height);
+//     ctx.save();
+//     ctx.translate(canvas.width/2,canvas.height/2);
+//     ctx.rotate(degrees*Math.PI/180);
+//     ctx.drawImage(image,0,0, -image.width/2,-image.width/2);
+//     ctx.restore();
+//     if (angleInDegrees >= 360) {
+//         angleInDegrees = 0;
+//     }
+//     
+//   }
+
+</script>
+
+
+</body>
+</html>
