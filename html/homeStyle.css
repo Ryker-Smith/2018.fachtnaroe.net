@@ -14,7 +14,7 @@ body
 {
 	position:fixed;
 }
-#testElem1
+#educationPlanet
 {	position: absolute;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -25,7 +25,7 @@ body
 	left: 250px;
 	top: 200px;
 }
-#testElem2
+#advocacyPlanet
 {
   position: absolute;
     -webkit-user-select: none;
@@ -37,7 +37,7 @@ body
 	left: 250px;
 	top: 400px;
 }
-#testElem3
+#equalityPlanet
 {
   position: absolute;
     -webkit-user-select: none;
@@ -49,7 +49,7 @@ body
 	left: 500px;
 	top: 200px;
 }
-#testElem4
+#republicanismPlanet
 {
   position: absolute;
     -webkit-user-select: none;
@@ -61,7 +61,7 @@ body
 	left: 500px;
 	top: 400px;
 }
-#testElem5
+#resourcesPlanet
 {
   position: absolute;  
     -webkit-user-select: none;
@@ -73,7 +73,7 @@ body
 	left: 750px;
 	top: 200px;
 }
-#testElem6
+#archivePlanet
 {
   position: absolute;  
     -webkit-user-select: none;
