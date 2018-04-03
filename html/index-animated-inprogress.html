@@ -62,20 +62,70 @@
   -o-background-size: cover;
   background-size: cover;
 }
+
 </style>
 
 </head>
 <body onload="setTimeout('draw_canvas_rear()', canvas_rear_speed);">
+
+<!-- SNIP SNIP SNIP  Quotes-->
+<style>
+#quoteBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: auto;
+  z-index: +100;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  border: 1px solid white;
+  overflow: hidden;
+  vertical-align: center;
+  padding: 1px;
+  padding-top: 2px;
+  font-size: 10px;
+}
+#quoteBox_theWords{
+ z-index: inherit;
+ float: left;
+ background-color: transparent;
+ height: 75%;
+ text-align: center;
+ vertical-align: super;
+ overflow: visible;
+}
+#quoteBox_theSpeaker{
+ position: relative;
+ float: right;
+ color: white;
+ z-index: inherit;
+ height: auto;
+ font-style: italic;
+ text-align: right;
+ vertical-align: sub;
+}
+</style>
+<div id="quoteBox"></div>
+<script src="js/randomQuote.js"></script>
+<script type="text/javascript">
+$(quoteBox).replaceWith(randomQuote('quoteBox', -1, '&mdash; '));
+</script>
+<!-- SNIP SNIP SNIP Quotes-->
+
+
 <canvas id="canvas_rear"></canvas>
 <canvas id="canvas_middle"></canvas>
 <canvas id="canvas_front"></canvas>
-
 <script src="js/starfield.js"></script>
 <script type="text/javascript">
   
 </script>
 
 <script type="text/javascript">
+
 
     var canvas_rear_speed=250;
     var angle=.1;
@@ -102,7 +152,7 @@
     canvas_middle.height=screen.height;
     stars1=[];
     var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 100, 1, stars1);
-    starfield_middle.draw('canvas_middle');
+//     starfield_middle.draw('canvas_middle');
     
     var canvas_front=document.getElementById('canvas_front');
     var ctx_front=canvas_front.getContext("2d");
@@ -110,7 +160,7 @@
     canvas_front.height=screen.height;
     stars2=[];
     var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 10, 2, stars2);
-    starfield_front.draw('canvas_front');
+//     starfield_front.draw('canvas_front');
     
 </script>
 
