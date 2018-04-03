@@ -1,4 +1,9 @@
 function randomQuote (displayDiv, quoteNumber, prefix) {
+    /* Purpose: provide a named div containing a random (attributed) quote.
+              The returned html can be used to replace existing div content, or
+              as the innerHTML of something else. Styling should be done via CSS in
+              main file using displayDiv as the root, with *_theWords and *_theSpeaker
+    */
     // initialize quotes list. Quotes use ::: to separate words from speaker
     var quotes=[
         "Survive, stand like a rock; that the waters change course around you, and others without distraction may see further.",
