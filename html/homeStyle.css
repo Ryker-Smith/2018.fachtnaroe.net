@@ -22,6 +22,8 @@ body
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
+	left: 25%;
+	top: 30%;
 }
 #testElem2
 {
@@ -32,6 +34,8 @@ body
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
+	left: 25%;
+	top: 60%;
 }
 #testElem3
 {
@@ -42,6 +46,8 @@ body
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
+	left: 50%;
+	top: 30%;
 }
 #testElem4
 {
@@ -52,6 +58,8 @@ body
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
+	left: 50%;
+	top: 60%;
 }
 #testElem5
 {
@@ -62,6 +70,8 @@ body
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
+	left: 75%;
+	top: 30%;
 }
 #testElem6
 {
@@ -72,6 +82,8 @@ body
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
+	left: 75%;
+	top: 60%;
 }
 #preload { 
 		position: absolute;
