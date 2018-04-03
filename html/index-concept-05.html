@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="homeStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    var mydragg = function(){
+                return {
+                    move : function(divid,xpos,ypos){
+                        divid.style.left = xpos + 'px';
+                        divid.style.top = ypos + 'px';
+                    },
+                    startMoving : function(divid,container,evt){
+                        evt = evt || window.event;
+                        var posX = evt.clientX,
+                            posY = evt.clientY,
+                        divTop = divid.style.top,
+                        divLeft = divid.style.left,
+                        eWi = parseInt(divid.style.width),
+                        eHe = parseInt(divid.style.height),
+                        cWi = parseInt(document.getElementById(container).style.width),
+                        cHe = parseInt(document.getElementById(container).style.height);
+                        document.getElementById(container).style.cursor='move';
+                        divTop = divTop.replace('px','');
+                        divLeft = divLeft.replace('px','');
+                        var diffX = posX - divLeft,
+                            diffY = posY - divTop;
+                        document.onmousemove = function(evt){
+                            evt = evt || window.event;
+                            var posX = evt.clientX,
+                                posY = evt.clientY,
+                                aX = posX - diffX,
+                                aY = posY - diffY;
+                                if (aX < 0) aX = 0;
+                                if (aY < 0) aY = 0;
+                                if (aX + eWi > cWi) aX = cWi - eWi;
+                                if (aY + eHe > cHe) aY = cHe -eHe;
+                            mydragg.move(divid,aX,aY);
+                        }
+                    },
+                    stopMoving : function(container){
+                        var a = document.createElement('script');
+                        document.getElementById(container).style.cursor='default';
+                        document.onmousemove = function(){}
+                    },
+                }
+            }();
+  </script>
+</head>
+<body  ondragover="drag_over(event)" ondrop="drop(event)" onload="setTimeout('draw_canvas_rear()', canvas_rear_speed);">
+<!-- SNIP SNIP SNIP starfield-->
+<div id="animation" height="100%">
+<style>
+* {
+  border: none;
+  margin: none;
+  padding: none;
+  background-color: transparent;
+}
+#animation {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: transparent;
+  position: absolute;
+  z-index: -100;
+}
+#canvas_rear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -101;
+/*   background: url(images/SpiralGalaxy_02.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#canvas_middle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+/*   opacity: 1; */
+  background-color: transparent;
+/*   background: url(images/SpiralGalaxy_01.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#canvas_front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+/*   opacity: .5;  */
+  background-color: transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+<canvas id="canvas_rear"></canvas>
+<canvas id="canvas_middle"></canvas>
+<canvas id="canvas_front"></canvas>
+
+<script src="js/starfield.js"></script>
+<script type="text/javascript">
+  
+</script>
+
+<script type="text/javascript">
+
+    var canvas_rear_speed=250;
+    var angle=.1;
+    var canvas_rear=document.getElementById('canvas_rear');
+    var ctx_rear=canvas_rear.getContext("2d");
+    canvas_rear.width=screen.width;
+    canvas_rear.height=screen.height;
+    var image=document.createElement("img");
+    image.src="images/SpiralGalaxy_02.jpg";
+   
+    function draw_canvas_rear() {
+      ctx_rear.clearRect(0,0,canvas_rear.width,canvas_rear.height);
+      ctx_rear.translate(canvas_rear.width/2, canvas_rear.height/2);
+      tempAngle=angle.toFixed(5);
+      ctx_rear.rotate(tempAngle*(Math.PI/180));
+      ctx_rear.translate(-canvas_rear.width/2, -canvas_rear.height/2);
+      ctx_rear.drawImage(image,  0, 0, image.width, image.height, -((image.width-screen.width)/2), -((image.width-screen.height)/2), image.width, image.height);
+      setTimeout('draw_canvas_rear()', canvas_rear_speed);
+    }
+    
+    var canvas_middle=document.getElementById('canvas_middle');
+    var ctx_middle=canvas_middle.getContext("2d");
+    canvas_middle.width=screen.width;
+    canvas_middle.height=screen.height;
+    stars1=[];
+    var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 100, 1, stars1);
+    starfield_middle.draw();
+    
+    var canvas_front=document.getElementById('canvas_front');
+    var ctx_front=canvas_front.getContext("2d");
+    canvas_front.width=screen.width;
+    canvas_front.height=screen.height;
+    stars2=[];
+    var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 10, 2, stars2);
+    starfield_front.draw();
+    
+</script>
+<!-- animation div ends at base of document -->
+<!-- SNIP SNIP SNIP starfield-->
+
+<style>
+#myNavBar {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  background-image: url('images/digital_art_texture_146_by_mercurycode-d7gzb12.jpg');
+  background-attachment: fixed;
+  background-position: center; 
+  height: 50px;
+  
+}
+#siteName{
+  float: middle;
+  position: relative;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 0;
+  display: inherit;
+  font-family: inherit;
+  background-color: inherit;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: white;
+  text-align: inherit;
+  position: relative;
+}
+#motto{
+  float: inherit;
+  font-size: 10px;
+  font-family: inherit;
+  display: inherit;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: inherit;
+  text-align: inherit;
+  position: relative;
+}
+#siteIdentity {
+/*   background-color: black; */
+  color: white;
+  float: middle;
+  text-align: center;
+  border: 1px solid white;
+  height: 75px; 
+  top: -10px;
+  position: relative;
+  font-family: Tahoma, Verdana, Sans Serif;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  box-shadow:
+     2px 2px 0 #111111,
+     2px 2px 0 #111111,
+    2px 2px 0 #111111,
+     2px 2px 0 #111111;
+  background-image: url('images/texture_87_2048x3289_by_frostbo-d4gbmvq.png.jpg');
+/*   background-attachment: fixed; */
+/*   background-position: left;  */
+}
+</style>
+<nav class="navbar navbar-inverse navbar-fixed-top ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<!--       <div id="siteIdentity"> -->
+        <a class="navbar-brand" href="#">
+<!--         <span id="siteName">fachtnaroe.net<span id="motto">&mdash; because if it was easy, everyone would do it</span></span> -->
+        </a>
+<!--       </div> -->
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Subjects</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advocacy <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Example</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equality <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Education Equality</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Republicanism <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Example</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="http://fachtnaroe.net/webmail">Webmail</a></li>
+          </ul>
+        <li><a href="#">Archive</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <button class="btn btn-danger" onClick="window.location.reload()"><small>Reset</small></button>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id='container' style="width: 1260px;height: 580px;top:70px;left:50px;">
+      <div id="educationPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 200px;">
+        <div style='width:100%;height:100%;padding:10px'>
+        <select id=test>
+          <option value=1>first
+          <option value=2>second
+        </select>
+        </div>
+      </div>
+
+      <div id="equalityPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 200px;">
+      <div style='width:100%;height:100%;padding:10px'>
+      </div>
+    </div>
+</div>
+<!-- SNIP SNIP SNIP  Quotes-->
+<style>
+#quoteBox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 200px;
+  height: auto;
+  z-index: +100;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  border: 1px solid white;
+  overflow: hidden;
+  vertical-align: center;
+  padding: 1px;
+  padding-top: 2px;
+  font-size: 10px;
+}
+#quoteBox_theWords{
+ z-index: inherit;
+ float: left;
+ background-color: transparent;
+ height: 75%;
+ text-align: center;
+ vertical-align: super;
+ overflow: visible;
+}
+#quoteBox_theSpeaker{
+ position: relative;
+ float: right;
+ color: white;
+ z-index: inherit;
+ height: auto;
+ font-style: italic;
+ text-align: right;
+ vertical-align: sub;
+}
+</style>
+<!-- the div to serve as a container; style this with css -->
+<div id="quoteBox"></div>
+<!-- include the code file -->
+<script src="js/randomQuote.js"></script>
+<!-- call the quotes routine from code file -->
+<script type="text/javascript">
+// invoke the div replacement
+// replace 'quoteBox' twice with whatever div id you're using
+// parms are: (name_of_div_to_replace, random_or_chosen_quote, with_what_to_prefix_speaker_name)
+$(quoteBox).replaceWith(randomQuote('quoteBox', -1, '&mdash; '));
+</script>
+<!-- SNIP SNIP SNIP Quotes-->
+</div> <!-- close of animation div -->
+</body>
+</html>
