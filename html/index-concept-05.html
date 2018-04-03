@@ -149,15 +149,15 @@
     var ctx_middle=canvas_middle.getContext("2d");
     canvas_middle.width=screen.width;
     canvas_middle.height=screen.height;
-    var stars_list=[];
-    var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 20, 1);
+    var stars=[];
+    var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 10, 1, "images/rockGrey.png");
     starfield_middle.draw('canvas_middle');
     
     var canvas_front=document.getElementById('canvas_front');
     var ctx_front=canvas_front.getContext("2d");
     canvas_front.width=screen.width;
     canvas_front.height=screen.height;
-    var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 2, 2);
+    var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 2, 2, "images/rockRed.png");
     starfield_front.draw('canvas_front');
 </script>	
 
@@ -469,6 +469,40 @@
 $(quoteBox).replaceWith(randomQuote('quoteBox', -1, '&mdash; '));
 </script>
 <!-- SNIP SNIP SNIP Quotes-->
+
+<!-- SNIP SNIP SNIP -->
+<style>
+#msg1{
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 200px;
+  height: auto;
+  z-index: +100;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  border: 1px solid white;
+  vertical-align: center;
+  background-color: white;
+  padding: 1px;
+  padding-top: 2px;
+  font-size: 11px;
+  text-align: justify;
+  border-radius: 2px;
+}
+</style>
+<!-- the div to serve as a container; style this with css -->
+<div id="msg1"></div>
+<!-- include the code file -->
+<script src="js/messageInBox.js"></script>
+<!-- call the quotes routine from code file -->
+<script type="text/javascript">
+var credits = "Site is being re-deleloped by Stevey Cullen, Noelle Kennedy, Craig Roe, Dara Ryan, of Templemore College of Further Education.";
+$(msg1).replaceWith(messageInBox('msg1', credits));
+</script>
+<!-- SNIP SNIP SNIP -->
 </div> <!-- close of animation div -->
 </body>
 </html>
