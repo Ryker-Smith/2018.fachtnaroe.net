@@ -151,7 +151,7 @@
     canvas_middle.height=screen.height;
     stars1=[];
     var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 100, 1, stars1);
-    starfield_middle.draw();
+    starfield_middle.draw('canvas_middle');
     
     var canvas_front=document.getElementById('canvas_front');
     var ctx_front=canvas_front.getContext("2d");
@@ -159,7 +159,7 @@
     canvas_front.height=screen.height;
     stars2=[];
     var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 10, 2, stars2);
-    starfield_front.draw();
+    starfield_front.draw('canvas_front');
     
 </script>
 <!-- animation div ends at base of document -->

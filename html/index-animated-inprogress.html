@@ -25,7 +25,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -101;
+  z-index: -102;
 /*   background: url(images/SpiralGalaxy_02.jpg) no-repeat center center fixed; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -38,7 +38,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -100;
+  z-index: -101;
 /*   opacity: 1; */
   background-color: transparent;
 /*   background: url(images/SpiralGalaxy_01.jpg) no-repeat center center fixed; */
@@ -160,7 +160,7 @@ $(quoteBox).replaceWith(randomQuote('quoteBox', -1, '&mdash; '));
     canvas_middle.height=screen.height;
     stars1=[];
     var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 100, 1, stars1);
-//     starfield_middle.draw('canvas_middle');
+    starfield_middle.draw('canvas_middle');
     
     var canvas_front=document.getElementById('canvas_front');
     var ctx_front=canvas_front.getContext("2d");
@@ -168,7 +168,7 @@ $(quoteBox).replaceWith(randomQuote('quoteBox', -1, '&mdash; '));
     canvas_front.height=screen.height;
     stars2=[];
     var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 10, 2, stars2);
-//     starfield_front.draw('canvas_front');
+    starfield_front.draw('canvas_front');
     
 </script>
 
