@@ -14,37 +14,81 @@ body
 {
 	position:fixed;
 }
-
 #educationPlanet
-{
-	position: absolute;
-  background: url('images/Education.png');
-  background-size: 100%;
+{	position: absolute;
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
-  left: 30%;  
-  top: 30%;  
+	left: 250px;
+	top: 200px;
 }
-
+#advocacyPlanet
+{
+  position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+	left: 250px;
+	top: 400px;
+}
 #equalityPlanet
 {
   position: absolute;
-  background: url('images/Equality.png');
-  background-size: 100%;
-    -webkit-user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
-  left: 60%;  
-  top: 45%;
+	left: 500px;
+	top: 200px;
 }
+#republicanismPlanet
+{
+  position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+	left: 500px;
+	top: 400px;
+}
+#resourcesPlanet
+{
+  position: absolute;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+	left: 750px;
+	top: 200px;
+}
+#archivePlanet
+{
+  position: absolute;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+	left: 750px;
+	top: 400px;
+}
+#preload { 
+		position: absolute;
+		left: -9999px;
+		top:  -9999px; }
 
 .navbar
 {
