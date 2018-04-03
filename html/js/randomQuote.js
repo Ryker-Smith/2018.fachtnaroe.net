@@ -23,7 +23,10 @@ function randomQuote (displayDiv, quoteNumber, prefix) {
         "We are all born ignorant, but one must work hard to remain stupid.:::Benjamin Franklin",
         "A house is not a home unless it contains food and fire for the mind as well as the body.:::Benjamin Franklin",
         "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.:::Buddha",
-        "The mind is everything. What you think you become.:::Buddha"
+        "The mind is everything. What you think you become.:::Buddha",
+        "Everyone, Republican or otherwise has their own particular part to play. No part is too great or too small, no one is too old or too young to do something.:::Bobby Sands",
+        "It is not those who can inflict the most but those who can endure the most who will conquer.:::Terence MacSwiney",
+        "You can't make a silk purse out of a sow's ear.:::Liam Mellows"
 
     ];
     // randomly choose a quote, or use quoteNumber provided (if in range)
