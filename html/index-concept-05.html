@@ -159,7 +159,90 @@
     canvas_front.height=screen.height;
     var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 2, 2);
     starfield_front.draw('canvas_front');
-    
+    var redPlanet = ['images/redFrames/redFrame1.png','images/redFrames/redFrame2.png','images/redFrames/redFrame3.png','images/redFrames/redFrame4.png','images/redFrames/redFrame5.png','images/redFrames/redFrame6.png','images/redFrames/redFrame7.png','images/redFrames/redFrame8.png','images/redFrames/redFrame9.png','images/redFrames/redFrame10.png','images/redFrames/redFrame11.png','images/redFrames/redFrame12.png','images/redFrames/redFrame13.png','images/redFrames/redFrame14.png','images/redFrames/redFrame15.png','images/redFrames/redFrame16.png','images/redFrames/redFrame17.png','images/redFrames/redFrame18.png','images/redFrames/redFrame19.png','images/redFrames/redFrame20.png','images/redFrames/redFrame21.png','images/redFrames/redFrame22.png','images/redFrames/redFrame23.png','images/redFrames/redFrame24.png','images/redFrames/redFrame25.png','images/redFrames/redFrame26.png','images/redFrames/redFrame27.png','images/redFrames/redFrame28.png','images/redFrames/redFrame29.png','images/redFrames/redFrame30.png','images/redFrames/redFrame31.png','images/redFrames/redFrame32.png','images/redFrames/redFrame33.png','images/redFrames/redFrame34.png','images/redFrames/redFrame35.png'];
+	var bluePlanet = ['images/blueFrames/blueFrame1.png','images/blueFrames/blueFrame2.png','images/blueFrames/blueFrame3.png','images/blueFrames/blueFrame4.png','images/blueFrames/blueFrame5.png','images/blueFrames/blueFrame6.png','images/blueFrames/blueFrame7.png','images/blueFrames/blueFrame8.png','images/blueFrames/blueFrame9.png','images/blueFrames/blueFrame10.png','images/blueFrames/blueFrame11.png','images/blueFrames/blueFrame12.png','images/blueFrames/blueFrame13.png','images/blueFrames/blueFrame14.png','images/blueFrames/blueFrame15.png','images/blueFrames/blueFrame16.png','images/blueFrames/blueFrame17.png','images/blueFrames/blueFrame18.png','images/blueFrames/blueFrame19.png','images/blueFrames/blueFrame20.png','images/blueFrames/blueFrame21.png','images/blueFrames/blueFrame22.png','images/blueFrames/blueFrame23.png','images/blueFrames/blueFrame24.png','images/blueFrames/blueFrame25.png','images/blueFrames/blueFrame26.png','images/blueFrames/blueFrame27.png','images/blueFrames/blueFrame28.png','images/blueFrames/blueFrame29.png','images/blueFrames/blueFrame30.png','images/blueFrames/blueFrame31.png','images/blueFrames/blueFrame32.png','images/blueFrames/blueFrame33.png','images/blueFrames/blueFrame34.png','images/blueFrames/blueFrame35.png','images/blueFrames/blueFrame36.png','images/blueFrames/blueFrame37.png','images/blueFrames/blueFrame38.png','images/blueFrames/blueFrame39.png','images/blueFrames/blueFrame40.png','images/blueFrames/blueFrame41.png','images/blueFrames/blueFrame42.png','images/blueFrames/blueFrame43.png'];
+	var blackPlanet = ['images/blackFrames/blackFrame1.png','images/blackFrames/blackFrame2.png','images/blackFrames/blackFrame3.png','images/blackFrames/blackFrame4.png','images/blackFrames/blackFrame5.png','images/blackFrames/blackFrame6.png','images/blackFrames/blackFrame7.png','images/blackFrames/blackFrame8.png','images/blackFrames/blackFrame9.png','images/blackFrames/blackFrame10.png','images/blackFrames/blackFrame11.png','images/blackFrames/blackFrame12.png','images/blackFrames/blackFrame13.png','images/blackFrames/blackFrame14.png','images/blackFrames/blackFrame15.png','images/blackFrames/blackFrame16.png','images/blackFrames/blackFrame17.png','images/blackFrames/blackFrame18.png','images/blackFrames/blackFrame19.png','images/blackFrames/blackFrame20.png','images/blackFrames/blackFrame21.png','images/blackFrames/blackFrame22.png','images/blackFrames/blackFrame23.png','images/blackFrames/blackFrame24.png','images/blackFrames/blackFrame25.png','images/blackFrames/blackFrame26.png','images/blackFrames/blackFrame27.png','images/blackFrames/blackFrame28.png','images/blackFrames/blackFrame29.png','images/blackFrames/blackFrame30.png','images/blackFrames/blackFrame31.png','images/blackFrames/blackFrame32.png','images/blackFrames/blackFrame33.png','images/blackFrames/blackFrame34.png','images/blackFrames/blackFrame35.png','images/blackFrames/blackFrame36.png','images/blackFrames/blackFrame37.png','images/blackFrames/blackFrame38.png','images/blackFrames/blackFrame39.png','images/blackFrames/blackFrame40.png','images/blackFrames/blackFrame41.png','images/blackFrames/blackFrame42.png','images/blackFrames/blackFrame43.png','images/blackFrames/blackFrame44.png','images/blackFrames/blackFrame45.png','images/blackFrames/blackFrame46.png','images/blackFrames/blackFrame47.png'];
+	var gasGiant = ['images/gasGiantFrames/gasGiantFrame1.png','images/gasGiantFrames/gasGiantFrame2.png','images/gasGiantFrames/gasGiantFrame3.png','images/gasGiantFrames/gasGiantFrame4.png','images/gasGiantFrames/gasGiantFrame5.png','images/gasGiantFrames/gasGiantFrame6.png','images/gasGiantFrames/gasGiantFrame7.png','images/gasGiantFrames/gasGiantFrame8.png','images/gasGiantFrames/gasGiantFrame9.png','images/gasGiantFrames/gasGiantFrame10.png','images/gasGiantFrames/gasGiantFrame11.png','images/gasGiantFrames/gasGiantFrame12.png','images/gasGiantFrames/gasGiantFrame13.png','images/gasGiantFrames/gasGiantFrame14.png','images/gasGiantFrames/gasGiantFrame15.png','images/gasGiantFrames/gasGiantFrame16.png','images/gasGiantFrames/gasGiantFrame17.png','images/gasGiantFrames/gasGiantFrame18.png','images/gasGiantFrames/gasGiantFrame19.png','images/gasGiantFrames/gasGiantFrame20.png','images/gasGiantFrames/gasGiantFrame21.png','images/gasGiantFrames/gasGiantFrame22.png','images/gasGiantFrames/gasGiantFrame23.png','images/gasGiantFrames/gasGiantFrame24.png','images/gasGiantFrames/gasGiantFrame25.png'];
+	var greenPlanet = ['images/greenFrames/greenFrame1.png','images/greenFrames/greenFrame2.png','images/greenFrames/greenFrame3.png','images/greenFrames/greenFrame4.png','images/greenFrames/greenFrame5.png','images/greenFrames/greenFrame6.png','images/greenFrames/greenFrame7.png','images/greenFrames/greenFrame8.png','images/greenFrames/greenFrame9.png','images/greenFrames/greenFrame10.png','images/greenFrames/greenFrame11.png','images/greenFrames/greenFrame12.png','images/greenFrames/greenFrame13.png','images/greenFrames/greenFrame14.png','images/greenFrames/greenFrame15.png','images/greenFrames/greenFrame16.png','images/greenFrames/greenFrame17.png','images/greenFrames/greenFrame18.png','images/greenFrames/greenFrame19.png','images/greenFrames/greenFrame20.png','images/greenFrames/greenFrame21.png','images/greenFrames/greenFrame22.png','images/greenFrames/greenFrame23.png','images/greenFrames/greenFrame24.png','images/greenFrames/greenFrame25.png','images/greenFrames/greenFrame26.png','images/greenFrames/greenFrame27.png'];
+	var lavaPlanet = ['images/lavaFrames/lavaFrame1.png','images/lavaFrames/lavaFrame2.png','images/lavaFrames/lavaFrame3.png','images/lavaFrames/lavaFrame4.png','images/lavaFrames/lavaFrame5.png','images/lavaFrames/lavaFrame6.png','images/lavaFrames/lavaFrame7.png','images/lavaFrames/lavaFrame8.png','images/lavaFrames/lavaFrame9.png','images/lavaFrames/lavaFrame10.png','images/lavaFrames/lavaFrame11.png','images/lavaFrames/lavaFrame12.png','images/lavaFrames/lavaFrame13.png','images/lavaFrames/lavaFrame14.png','images/lavaFrames/lavaFrame15.png','images/lavaFrames/lavaFrame16.png','images/lavaFrames/lavaFrame17.png','images/lavaFrames/lavaFrame18.png','images/lavaFrames/lavaFrame19.png','images/lavaFrames/lavaFrame20.png','images/lavaFrames/lavaFrame21.png','images/lavaFrames/lavaFrame22.png','images/lavaFrames/lavaFrame23.png','images/lavaFrames/lavaFrame24.png','images/lavaFrames/lavaFrame25.png','images/lavaFrames/lavaFrame26.png','images/lavaFrames/lavaFrame27.png','images/lavaFrames/lavaFrame28.png','images/lavaFrames/lavaFrame29.png','images/lavaFrames/lavaFrame30.png','images/lavaFrames/lavaFrame31.png','images/lavaFrames/lavaFrame32.png','images/lavaFrames/lavaFrame33.png','images/lavaFrames/lavaFrame34.png','images/lavaFrames/lavaFrame35.png'];
+	var counter;
+	var blueCounter;
+	var blackCounter;
+	var gasGiantCounter;
+	var greenCounter;
+	var lavaCounter;
+	counter = 0;
+	blueCounter = 0;
+	blackCounter = 0;
+	gasGiantCounter = 0;
+	greenCounter = 0;
+	lavaCounter = 0;
+	function rotatePlanet(){
+        var a = document.getElementById("planetPic");
+		var b = document.getElementById("bluePlanetPic");
+		var c = document.getElementById("blackPlanetPic");
+		var d = document.getElementById("preloadRed");
+		var e = document.getElementById("preloadBlue");
+		var f = document.getElementById("preloadBlack");
+		var g = document.getElementById("gasGiantPlanetPic");
+		var h = document.getElementById("preloadGasGiant");
+		var i = document.getElementById("greenPlanetPic");
+		var j = document.getElementById("preloadGreen");
+		var k = document.getElementById("lavaPlanetPic");
+		var l = document.getElementById("preloadLava");
+		if (counter > 34){
+			counter = 0;
+		} 
+		else {
+			d.src = redPlanet[counter + 1];
+		}
+		if (blueCounter > 42){
+			blueCounter = 0;
+		}
+		else{
+			e.src = bluePlanet[blueCounter + 1];
+		}
+		if (blackCounter > 46){
+			blackCounter = 0;
+		}
+		else{
+			f.src = blackPlanet[blackCounter + 1];
+		}
+		if (gasGiantCounter > 24){
+			gasGiantCounter = 0;
+		}
+		else{
+			h.src = gasGiant[gasGiantCounter + 1];
+		}
+		if (greenCounter > 26){
+			greenCounter = 0;
+		}
+		else{
+			j.src = greenPlanet[greenCounter];
+		}
+		if (lavaCounter > 34){
+			lavaCounter = 0;
+		}
+		else{
+			l.src = lavaPlanet[lavaCounter];
+		}
+		a.src = redPlanet[counter];
+		b.src = bluePlanet[blueCounter];
+		c.src = blackPlanet[blackCounter];
+		g.src = gasGiant[gasGiantCounter];
+		i.src = greenPlanet[greenCounter];
+		k.src = lavaPlanet[lavaCounter];
+		counter++;
+		blueCounter++;
+		blackCounter++;
+		gasGiantCounter++;
+		greenCounter++;
+		lavaCounter++;
+	}
+	window.setInterval(rotatePlanet, 250);		
+	function onloadFunc() {
+      window.setInterval(rotatePlanet, 250);		
+	}
 </script>
 <!-- animation div ends at base of document -->
 <!-- SNIP SNIP SNIP starfield-->
@@ -299,21 +382,36 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">   
 
-<div id='container' style="width: 1260px;height: 580px;top:70px;left:50px;">
-      <div id="educationPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 200px;">
-        <div style='width:100%;height:100%;padding:10px'>
-        <select id=test>
-          <option value=1>first
-          <option value=2>second
-        </select>
-        </div>
+      <div id="testElem4" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
+		<img id="planetPic" src="images/redFrames/redFrame1.png" >
       </div>
-
-      <div id="equalityPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 200px;height: 200px;">
-      <div style='width:100%;height:100%;padding:10px'>
+	  <div id="testElem3" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
+		<img id="bluePlanetPic" src="images/blueFrames/blueFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
       </div>
-    </div>
+	  <div id="testElem2" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
+		<img id="blackPlanetPic" src="images/blackFrames/blackFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
+      </div>
+	  <div id="testElem1" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
+		<img id="gasGiantPlanetPic" src="images/blackFrames/gasGiantFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
+      </div>
+	  <div id="testElem5" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
+		<img id="greenPlanetPic" src="images/greenFrames/greenFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
+      </div>
+	  <div id="testElem6" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
+		<img id="lavaPlanetPic" src="images/lavaFrames/lavaFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
+      </div>
+	  
+	  
+	  <div id="preload">
+		<img id = "preloadRed" src = redFrame1.png width = "1" height = "1" alt "redPreload" />
+		<img id = "preloadBlue" src = blueFrame1.png width = "1" height = "1" alt "bluePreload" />
+		<img id = "preloadBlack" src blackFrame1.png width = "1" height = "1" alt "blackPreload" />
+		<img id = "preloadGasGiant" src gasGiantFrame1.png width = "1" height = "1" alt "gasGiantPreload" />
+		<img id = "preloadGreen" src greenFrame1.png width = "1" height = "1" alt "greenPreload" />
+		<img id = "preloadLava" src lavaFrame1.png width = "1" height = "1" alt "lavaPreload" />
+	 </div>
 </div>
 <!-- SNIP SNIP SNIP  Quotes-->
 <style>

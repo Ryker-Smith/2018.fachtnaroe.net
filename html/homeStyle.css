@@ -14,37 +14,69 @@ body
 {
 	position:fixed;
 }
-
-#educationPlanet
-{
-	position: absolute;
-  background: url('images/Education.png');
-  background-size: 100%;
+#testElem1
+{	position: absolute;
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
-  left: 30%;  
-  top: 30%;  
 }
-
-#equalityPlanet
+#testElem2
 {
   position: absolute;
-  background: url('images/Equality.png');
-  background-size: 100%;
-    -webkit-user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
     -ms-user-select: none;
     -khtml-user-select: none;     
     user-select: none;
-  left: 60%;  
-  top: 45%;
 }
+#testElem3
+{
+  position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
+#testElem4
+{
+  position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
+#testElem5
+{
+  position: absolute;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
+#testElem6
+{
+  position: absolute;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
+#preload { 
+		position: absolute;
+		left: -9999px;
+		top:  -9999px; }
 
 .navbar
 {
