@@ -72,7 +72,7 @@
 <style>
 #quoteBox {
   position: absolute;
-  top: 0;
+  top: 0%;
   left: 0;
   width: 200px;
   height: auto;
@@ -108,9 +108,15 @@
  vertical-align: sub;
 }
 </style>
+<!-- the div to serve as a container; style this with css -->
 <div id="quoteBox"></div>
+<!-- include the code file -->
 <script src="js/randomQuote.js"></script>
+<!-- call the quotes routine from code file -->
 <script type="text/javascript">
+// invoke the div replacement
+// replace 'quoteBox' twice with whatever div id you're using
+// parms are: (name_of_div_to_replace, random_or_chosen_quote, with_what_to_prefix_speaker_name)
 $(quoteBox).replaceWith(randomQuote('quoteBox', -1, '&mdash; '));
 </script>
 <!-- SNIP SNIP SNIP Quotes-->
@@ -123,6 +129,8 @@ $(quoteBox).replaceWith(randomQuote('quoteBox', -1, '&mdash; '));
 <script type="text/javascript">
   
 </script>
+
+
 
 <script type="text/javascript">
 

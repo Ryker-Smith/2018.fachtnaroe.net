@@ -27,5 +27,3 @@ function randomQuote (displayDiv, quoteNumber, prefix) {
           '</span><span id="' + displayDiv + '_theSpeaker">' + prefix + theSpeaker + '</span>';
     return myDiv;
 }
-
-//<div id="' + displayDiv + '">
