@@ -18,6 +18,7 @@ var StarField=function (canvas_id, width, height, num_stars, star_size, starImag
     star.size=star_size;
     star.canvas_id=canvas_id;
     star.image=starImage;
+    star.iteration=0;
     var xcoeff = star.x > 0 ? .1 : -.1;
     var ycoeff = star.y > 0 ? .1 : -.1;
     if (Math.abs(star.x) > Math.abs(star.y)) {
@@ -44,6 +45,7 @@ var StarField=function (canvas_id, width, height, num_stars, star_size, starImag
     star.dx += star.ddx;
     star.dy += star.ddy;
     star.width = 1+ ((star.max_depth - star.z) * .1);
+    star.iteration++;
 //     console.log(star.width);
   }
   
@@ -82,8 +84,11 @@ var StarField=function (canvas_id, width, height, num_stars, star_size, starImag
 //                 image.src="images/rockRed.png";
 // //                 console.log("red");
 //             }
+            if (stars[i].iteration <= 3) {
+                image.src="images/burstStar1.png";
+            }
             ctx.drawImage(image, 0, 0, image.width, image.height, stars[i].x + origin_x, stars[i].y + origin_y,
-                          (image.width * stars[i].width)/25, (image.height * stars[i].width)/25); //(stars[i].width)
+                          (image.width * stars[i].width)/20, (image.height * stars[i].width)/20); //(stars[i].width)
 //           }
       }
     }
