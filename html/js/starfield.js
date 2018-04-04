@@ -83,7 +83,7 @@ var StarField=function (canvas_id, width, height, num_stars, star_size, starImag
 // //                 console.log("red");
 //             }
             ctx.drawImage(image, 0, 0, image.width, image.height, stars[i].x + origin_x, stars[i].y + origin_y,
-                          image.width/2, image.height/2); //(stars[i].width)
+                          (image.width * stars[i].width)/25, (image.height * stars[i].width)/25); //(stars[i].width)
 //           }
       }
     }
