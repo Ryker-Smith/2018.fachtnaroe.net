@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Linux Directory Structure</title>
+</head>
+<body margin="10" bgcolor=white>
+<h1>Linux Directory Structure</h1>
+<p>The directory structure of Linux is quite intimidating for the new user, particularly if they are migrating from Windows. In Windows, almost all programs install their files in the directory named <b>C:\Program Files</b>. The Windows operating system proper lives in <b>C:\Windows</b>.  This is not the case for Linux. The directory structure places files in different directories based on function. For example, all configuration files for all applications are in <b>/etc</b>, all system binary files are in <b>/sbin</b>. This table shows most of the directory structure and directory contents.</p>
+<table>
+<tr><td><pre>/</pre></td><td>'root' directory which is the start of the Linux file system. All files, directories and devices are contained logically inside the root directory regardless of their physical location</td></tr>
+<tr><td><pre>/bin</pre></td><td>Contains the binary (executable) programs that are part of the Linux operating system. Many common commands such as cat, cp, df, ls, more, and tar, are here</td></tr>
+<tr><td><pre>/boot</pre></td><td>Contains the Linux kernel and other files needed by the boot manager to boot (start) the operating system</td></tr>
+<tr><td><pre>/dev</pre></td><td>Linux treats each device as a special file; those files are located here. Some interesting files such as <b>/dev/null</b> (the 'bit-bucket') are here (anything sent to the bit-bucket disappears)</td></tr>
+<tr><td><pre>/etc</pre></td><td>Contains almost all system configuration files as well as system initialisation scripts</td></tr>
+<tr><td><pre>/home</pre></td><td>This is the parent directory of the home directories of users</td></tr>
+<tr><td><pre>/lib &amp; /lib64</pre></td><td>Contain library files, including loadable driver modules, used by and shared between programs</td></tr>
+<tr><td><pre>/lost+found</pre></td><td>Lost files directory; there's one on every disk partition</td></tr>
+<tr><td><pre>/media &amp; /mnt</pre></td><td>Temporary &amp; removable file systems are mounted under these <i>eg</i> CD, DVD drives, USB flash memory, cameras</td></tr>
+<tr><td><pre>/opt</pre></td><td>Optional software packages install files here <i>eg</i> Google Chrome, Adobe Reader</td></tr>
+<tr><td><pre>/proc</pre></td><td>A quite cool virtual filesystem, in which the contents of files show values relevant to the operation of the system. Changing these values (if you have that permission) changes the operation of the computer <i>eg</i> Changing <b>/proc/sys/net/ipv4/tcp_keepalive_time</b> can help if your ssh connections freeze</td></tr>
+<tr><td><pre>/root</pre></td><td>The home directory of the root user</td></tr>
+<tr><td><pre>/sbin</pre></td><td>Contains system binary (executable) files. Commands such as fdisk, mount, shutdown, umount live here</td></tr>
+<tr><td><pre>/sys</pre></td><td>Another virtual filesystem; a directory where files contain information about devices, as seen by the Linux kernel</td></tr>
+<tr><td><pre>/tmp</pre></td><td>Temporary directory which is used as storage for temporary files. The contents of this directory are intended to be cleared each time the system boots</td></tr>
+<tr><td><pre>/usr</pre></td><td>This holds user installed binaries. It contains subdirectories (confusingly) similar to the root file system.</td></tr>
+<tr><td><pre>/usr/sbin</pre></td><td>Has further system function binaries</td></tr>
+<tr><td><pre>/usr/share</pre></td><td>Contains files that are shared such as default configuration files, images etc</td></tr>
+<tr><td><pre>/usr/src</pre></td><td>Contains the source code for the Linux kernel (if that has been installed)</td></tr>
+<tr><td><pre>/var</pre></td><td>Contains various writeable system and application files such as logs, mail directories, databases, print spooling <i>etc</i> which tend to change in numbers and size over time; these should survive past reboot</td></tr>
+<tr><td><pre>/var/www/html</pre><i>or</i><pre>/var/www/htdocs</pre></td><td>Contains the files served by the web server</td></tr>
+<tr><td><pre>/var/www/cgi-bin</pre></td><td>Contains <b>cgi</b> programs which are run by the web server; the output of the programs is then served (prefix your program output with "Content-type: text/html\n\n" so the web server knows what to do with it!)</td></tr>
+</table>
+<small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="linuxdirectorystructure.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Howto: by-pass the censor with ssh</title>
+</head>
+<body margin="10" bgcolor=white>
+<h1>Howto: by-pass the censor with ssh</h1>
+<pre>
+ssh username@remote_server -L local_port_to_use:localhost:proxy_service_port [-p ssh_port] [-X]
+</pre>
+<h2>The explanation</h2>
+<p>Use an ssh tunnel to by-pass the censor. You may only perform this operation under academic supervision and for purposes described by the AUP. You'll learn quite a bit about the Internet from this.</p>
+<h2>To set up the by-pass tunnel</h2>
+<p>You need to know:</p>
+<ol>
+<li>The name or IP address of a suitable proxy computer (we refer to this as the proxy-server)</li>
+<li>A user account on the proxy computer (you need to be able to log in to it)</li>
+<li>The port used by the proxy service running on the proxy computer</li>
+<li>The port used by the ssh service running on the proxy computer</li>
+</ol>
+<p>You can get the names and numbers above from your tutor. When you've got them, drop to a terminal session and do the following:</p>
+<p>With these, prepare to issue the <b>ssh</b> command followed by the user account name on the proxy server. In this example the user name is <b>me</b> and the proxy computer is called <b>proxy.server.com</b>:</p>
+<pre>ssh me@proxy.server.com</pre>
+<p>The parameter for port-forwarding is <b>-L</b>
+<p>With this you can choose a local port (which is not already in use) to accept connections. In this example I'm using <b>7890</b>.</p>
+<p>We want traffic going to this port to be forwarded through the local device (localhost) out to the port used by the remote proxy service. In this example the proxy port is <b>3128</b>.</p>
+<p>The parameter becomes:</p>
+<pre>-L 7890:localhost:3128</pre>
+<p>Finally, if needed, add a parameter to change the ssh port connected to on the remote computer. The default port for ssh is <b>22</b>. If the ssh service is running on that port you don't need to specify this. In this example the ssh port on the remote computer is <b>1800</b> so I will add:</p>
+<pre>-p 1800</pre>
+<p>(You can also add <b>-X</b> if you think you want to run X-windows applications on the remote computer) My full command therfore is:</p>
+<pre>
+ssh me@proxy.server.com -L 7890:localhost:3128 -p 1800 -X
+</pre>
+<p>When this command is issued you will be connected to the remote computer where you can log in. After you log in there will be an unseen tunnel from your local computer to the remote computer through which you can access the proxy service on the other end. As long as this tunnel remains open you will be able to access the remote proxy service.</p>
+<p>To close down the tunnel, exit the remote ssh session by typing <b>exit</b> or by closing the terminal window.</p>
+<h2>To use the by-pass tunnel</h2>
+<p>Configure your browser to use the local end of the tunnel to access the proxy service at the other end.</p>
+<p>In Firefox this involves clicking on <b>Edit</b>/<b>Preferences</b>/<b>Advanced</b>/<b>Network</b>/<b>Settings</b>/<b>Manual proxy configuration</b>. Then put <b>localhost</b> in the <b>HTTP Proxy</b> field and <b>7890</b> in the <b>Port</b> field. You can also select <b>Use this proxy server for...</b></p>
+<p>Now click on <b>OK</b> and then <b>Close</b> and you're done. Browse, research, learn.</p>
+<h2>How does this work?</h2>
+<p>Consider the diagram below. Scenario <b>1</b> is the normal web browsing scenario. The client connects directly to the web server. Scenario <b>2</b> is also quite normal; we often use proxy servers for reasons of efficiency, convenience and voluntary control.</p>
+<p>Both scenarios are plain text communication between two computers. Any system that the packets of data pass through can take a peek inside and see what's going on. This is inherently insecure and enables easy censorship. For that reason we examine scenario <b>3</b>. Secure encrypted communication is possible using the secure shell protocol. This is often used on the Internet for secure logon to a remote workstation.</p>
+<p>In scenario <b>4</b> &mdash; which is much more complicated than scenarios 1 or 2 &mdash; we use a combination of scenarios 2 and 3. Scenario <b>4</b> as shown below diagrams this command:</p>
+<pre>ssh me@proxy.server.com -L 7890:localhost:3128</pre>
+<img width="700" src="/images/SSH_tunnel-01.png">
+<p>When your tunnel is in operation and your browser is configured to use the tunnel, diagram <b>4</b> above describes how things work. When your browser requests a page from the web server the request goes through local port <b>7890</b>, is then sent up the ssh tunnel, at the other end the request packets are passed to the proxy service. The proxy service obtains the web page from the server, returns the packets containing the web page through the tunnel, and the data pops out on the local end and is displayed by your browser. Voil&agrave;!</p>
+<h2>Other examples</h2>
+<p>User name <b>john</b>, remote computer called <b>pictures.somenet.ie</b>, local port <b>4020</b>, remote proxy service on port <b>9500</b>, standard ssh port, no X-windowing:</p>
+<pre>ssh john@pictures.somenet.ie -L 4020:localhost:9500</pre>
+<p>User name <b>pquinn</b>, remote computer called <b>www.overnight.org</b>, local port <b>444</b>, remote proxy service on port <b>5921</b>, ssh service on port <b>5604</b>, no X-windowing:</p>
+<pre>ssh pquinn@www.overnight.org -L 444:localhost:5921 -p 5604</pre>
+<h2>FAQ:</h2>
+<p><b>Q.</b> Do I have to use local port <b>7890</b>?</p>
+<p><b>A.</b> No. Use any other local port value in the range <b>1</b>..<b>65535</b> that is not already in use. Check <a href="http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">here</a> for a list of common ports already in use. Make sure you use the same port number when configuring your browser.<p>
+<p><b>Q.</b> What happens if I don't use the same port when configuring the browser?</p>
+<p><b>A.</b> The connection to the end of the tunnel won't be made; plus, you won't be able to browse at all until the setting is corrected or the browser is configured not to use any proxy.</p>
+<p><b>Q.</b> Must I use port <b>3128</b>?</p>
+<p><b>A.</b> Probably. You will use whatever port number is used for the proxy service on the proxy server. <b>3128</b> is used in these example because it is the normal port number for the <a href="http://en.wikipedia.org/wiki/Squid_proxy">Squid proxy</a> program. Port <b>8080</b> is also commonly used. Ask the owner of the proxy server what number port she's using.</p>
+<p><b>Q.</b> Do I have to do this everytime I want to use the 'net?</p>
+<p><b>A.</b> Depends. If the site you want to look at is not blocked then configure your browser not to use a proxy server. If it is, then set up the tunnel.</p>
+<p><b>Q.</b> What happens to the tunnel when I log out?</p>
+<p><b>A.</b> When you log out the ssh terminal session will be closed. The tunnel will close with it.</p>
+<p><b>Q.</b> Is it possible to snoop on ssh traffic?</p>
+<p><b>A.</b> Yes. It's just really, really, really hard to do in real-time.</p>
+<p><b>Q.</b> Can I choose to use a different ssh port?</p>
+<p><b>A.</b> No. Find out the ssh port on the server and use that; if you try a different port number you won't connect to the ssh service.</p>
+<p><b>Q.</b> Can I use this technique for other stuff?</p>
+<p><b>A.</b> Yes. Other services which run in plain text mode can be re-directed in this manner; set-up the tunnel and configure the software.</p>
+<p><b>Q.</b> I used this yesterday and now I can't use the Internet at all!</p>
+<p><b>A.</b> Either re-configure your browser to use no proxy or re-establish the tunnel.</p>
+<p><b>Q.</b> Do I have to use <b>-X</b>?</p>
+<p><b>A.</b> No. That's to use remote X-windowing. If you don't intend using remote X-windowing, don't put that in. But if you do you won't break anything.</p>
+<p><b>Q.</b> Can I use any server for this?</p>
+<p><b>A.</b> No. Apart from needing a user account on the server, the server must run ssh and proxying (Linux has these services but they might not be turned on), and the server has to be on the other side of the obstacle you are trying to avoid.</p>
+<p><b>Q.</b> Can I do this under Microsoft Windows?</p>
+<p><b>A.</b> Yes. But you'll have to download an ssh client first. Go <a href="/help/software/">here</a> and start reading.</p>
+<p><b>Q.</b> Will this make my browser faster or slower?</p>
+<p><b>A.</b> Slower. By definition, using a proxy server means your web request has an extra journey to make; and making the web request go through the tunnel requires an extra few milliseconds for encryption and decryption on either end. But the total delay should be negligible and measured in milliseconds.</p>
+<p><b>Q.</b> Can I do this under Windows?</p>
+<p><b>A.</b> Yes; use PuTTY, and configure in the Category list <b>Connection/SSH/Tunnels</b>. The settings are shown here:</p>
+<a href="/images/putty_tunnel.png"><img width="100" src="/images/putty_tunnel.png" alt=""></a>
+<!-- 
+<p><b>Q.</b></p>
+<p><b>A.</b></p>
+-->
+<!-- <p>To use a tunnel that has already been set up on another computer on your local network you won't need to set up your own ssh tunnel. Instead find out the IP address of the other computer and the <i>local</i> port that it's using as it's end of the tunnel. Put the IP address and the port number into the Firefox proxy settings. (Note that the setting up of the proxy on the first computer will be different to that outlined above)</p> -->
+<br/><small><!--#config timefmt="%Y%m%d-%H:%M" -->Last updated: <!--#flastmod file="howto_bypasscensor.shtml" --></small>
+</div> <!-- #content -->
+<!--#include virtual="/includes/backtotop.shtml" -->
+</div> <!-- #pagewrap -->
+</body>
+</html>
