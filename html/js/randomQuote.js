@@ -26,7 +26,9 @@ function randomQuote (displayDiv, quoteNumber, prefix) {
         "The mind is everything. What you think you become.:::Buddha",
         "Everyone, Republican or otherwise has their own particular part to play. No part is too great or too small, no one is too old or too young to do something.:::Bobby Sands",
         "It is not those who can inflict the most but those who can endure the most who will conquer.:::Terence MacSwiney",
-        "You can't make a silk purse out of a sow's ear.:::Liam Mellows"
+        "It is a fallacy to believe that a Republic of any kind can be won through the shackled Free State. You can't make a silk purse out of a sow's ear.:::Liam Mellows",
+        "Ireland unfree shall never be at peace:::Pádraig Pearse",
+        "Dearly beloved, we are gathered here today to get through this thing called life.:::Prince"
 
     ];
     // randomly choose a quote, or use quoteNumber provided (if in range)
