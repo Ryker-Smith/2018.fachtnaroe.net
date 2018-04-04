@@ -50,9 +50,14 @@
                     },
                 }
             }();
+            
+    function startAllStartyUppyStuff () {
+        t=setTimeout('draw_canvas_rear()', canvas_rear_speed);
+        p=setTimeout(function(){rotatePlanet()}, 300);
+    }
   </script>
 </head>
-<body  ondragover="drag_over(event)" ondrop="drop(event)" onload="setTimeout('draw_canvas_rear()', canvas_rear_speed);">
+<body  ondragover="drag_over(event)" ondrop="drop(event)" onload="startAllStartyUppyStuff();">
 <!-- SNIP SNIP SNIP starfield-->
 <div id="animation" height="100%">
 <style>
@@ -145,20 +150,20 @@
       setTimeout('draw_canvas_rear()', canvas_rear_speed);
     }
     
-//     var canvas_middle=document.getElementById('canvas_middle');
-//     var ctx_middle=canvas_middle.getContext("2d");
-//     canvas_middle.width=screen.width;
-//     canvas_middle.height=screen.height;
-//     var stars=[];
-//     var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 10, 1, "images/rockGrey.png");
-//     starfield_middle.draw('canvas_middle');
-//     
-//     var canvas_front=document.getElementById('canvas_front');
-//     var ctx_front=canvas_front.getContext("2d");
-//     canvas_front.width=screen.width;
-//     canvas_front.height=screen.height;
-//     var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 2, 2, "images/rockRed.png");
-//     starfield_front.draw('canvas_front');
+    var canvas_middle=document.getElementById('canvas_middle');
+    var ctx_middle=canvas_middle.getContext("2d");
+    canvas_middle.width=screen.width;
+    canvas_middle.height=screen.height;
+    var stars=[];
+    var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 10, 1, "images/rockGrey.png");
+    starfield_middle.draw('canvas_middle');
+    
+    var canvas_front=document.getElementById('canvas_front');
+    var ctx_front=canvas_front.getContext("2d");
+    canvas_front.width=screen.width;
+    canvas_front.height=screen.height;
+    var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 2, 2, "images/rockRed.png");
+    starfield_front.draw('canvas_front');
     
 </script>	
 
@@ -251,7 +256,6 @@
 		p=setTimeout(function(){rotatePlanet()}, 300);		
 	}
 // 	window.setInterval(rotatePlanet, 300);		
-    p=setTimeout(function(){rotatePlanet()}, 300);
 // 	function onloadFunc() {
 //       window.setInterval(rotatePlanet, 30);		
 // 	}
