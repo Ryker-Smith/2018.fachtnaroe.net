@@ -3,7 +3,7 @@ function planetsMakeFileNames (path, filename, filetype, min, max) {
     var localArray=[];
     for (var i = min; i<=max; i++ ) {
         planetFilename = path + "/" + filename + i + "." + filetype;
-        console.log(planetFilename);
+//         console.log(planetFilename);
         localArray.push(planetFilename);
     }
     return localArray;

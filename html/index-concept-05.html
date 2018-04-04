@@ -168,87 +168,90 @@
 <script src="js/planetsBits.js"></script>
 <script>
 
-	var counter;
-	var blueCounter;
-	var blackCounter;
-	var gasGiantCounter;
-	var greenCounter;
-	var lavaCounter;
-	counter = 0;
-	blueCounter = 0;
-	blackCounter = 0;
-	gasGiantCounter = 0;
-	greenCounter = 0;
-	lavaCounter = 0;
+	var redCounter=0;
+	var blueCounter=0;
+	var blackCounter=0;
+	var gasGiantCounter=0;
+	var greenCounter=0;
+	var lavaCounter=0;
+	
 	var redPlanet=planetsMakeFileNames('images/redFrames', 'redFrame', 'png', 1, 35);
 	var bluePlanet=planetsMakeFileNames('images/blueFrames', 'blueFrame', 'png', 1, 43);
 	var blackPlanet=planetsMakeFileNames('images/blackFrames', 'blackFrame', 'png', 1, 47);
 	var gasGiant=planetsMakeFileNames('images/gasGiantFrames', 'gasGiantFrame', 'png', 1, 25);
 	var greenPlanet=planetsMakeFileNames('images/greenFrames', 'greenFrame', 'png', 1, 27);
 	var lavaPlanet=planetsMakeFileNames('images/lavaFrames', 'lavaFrame', 'png', 1, 35);
+	
 	function rotatePlanet(){
-        var a = document.getElementById("planetPic");
+        var a = document.getElementById("redPlanetPic");
 		var b = document.getElementById("bluePlanetPic");
 		var c = document.getElementById("blackPlanetPic");
-		var d = document.getElementById("preloadRed");
-		var e = document.getElementById("preloadBlue");
-		var f = document.getElementById("preloadBlack");
+// 		var d = document.getElementById("preloadRed");
+// 		var e = document.getElementById("preloadBlue");
+// 		var f = document.getElementById("preloadBlack");
 		var g = document.getElementById("gasGiantPlanetPic");
-		var h = document.getElementById("preloadGasGiant");
+// 		var h = document.getElementById("preloadGasGiant");
 		var i = document.getElementById("greenPlanetPic");
-		var j = document.getElementById("preloadGreen");
+// 		var j = document.getElementById("preloadGreen");
 		var k = document.getElementById("lavaPlanetPic");
-		var l = document.getElementById("preloadLava");
-		if (counter > 34){
-			counter = 0;
+// 		var l = document.getElementById("preloadLava");
+		
+		if (redCounter > redPlanet.length-1){
+			redCounter = 0;
 		} 
-		else {
-			d.src = redPlanet[counter + 1];
-		}
-		if (blueCounter > 42){
+// 		else {
+// 			d.src = redPlanet[redCounter];
+// 		}
+		
+		if (blueCounter > bluePlanet.length-1){
 			blueCounter = 0;
 		}
-		else{
-			e.src = bluePlanet[blueCounter + 1];
-		}
-		if (blackCounter > 46){
+// 		else{
+// 			e.src = bluePlanet[blueCounter];
+// 		}
+		
+		if (blackCounter >= blackPlanet.length-1){
 			blackCounter = 0;
 		}
-		else{
-			f.src = blackPlanet[blackCounter + 1];
-		}
-		if (gasGiantCounter > 24){
+// 		else{
+// 			f.src = blackPlanet[blackCounter];
+// 		}
+		
+		if (gasGiantCounter >= gasGiant.length-1){
 			gasGiantCounter = 0;
 		}
-		else{
-			h.src = gasGiant[gasGiantCounter + 1];
-		}
-		if (greenCounter > 26){
+// 		else{
+// 			h.src = gasGiant[gasGiantCounter];
+// 		}
+		
+		if (greenCounter >= greenPlanet.length-1){
 			greenCounter = 0;
 		}
-		else{
-			j.src = greenPlanet[greenCounter];
-		}
-		if (lavaCounter > 34){
+// 		else{
+// 			j.src = greenPlanet[greenCounter];
+// 		}
+		if (lavaCounter >= lavaPlanet.length-1){
 			lavaCounter = 0;
 		}
-		else{
-			l.src = lavaPlanet[lavaCounter];
-		}
-		a.src = redPlanet[counter];
+// 		else{
+// // 			l.src = lavaPlanet[lavaCounter];
+// 		}
+		a.src = redPlanet[redCounter];
 		b.src = bluePlanet[blueCounter];
 		c.src = blackPlanet[blackCounter];
 		g.src = gasGiant[gasGiantCounter];
 		i.src = greenPlanet[greenCounter];
 		k.src = lavaPlanet[lavaCounter];
-		counter++;
+		redCounter++;
 		blueCounter++;
 		blackCounter++;
 		gasGiantCounter++;
 		greenCounter++;
 		lavaCounter++;
+		p=setTimeout(function(){rotatePlanet()}, 300);		
 	}
-	window.setInterval(rotatePlanet, 300);		
+// 	window.setInterval(rotatePlanet, 300);		
+    p=setTimeout(function(){rotatePlanet()}, 300);
 // 	function onloadFunc() {
 //       window.setInterval(rotatePlanet, 30);		
 // 	}
@@ -393,7 +396,7 @@
 <div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">   
 
       <div id="republicanismPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
-		<img id="planetPic" src="images/redFrames/redFrame1.png" >
+		<img id="redPlanetPic" src="images/redFrames/redFrame1.png" >
       </div>
 	  <div id="equalityPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
 		<img id="bluePlanetPic" src="images/blueFrames/blueFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
@@ -412,14 +415,14 @@
       </div>
 	  
 	  
-	  <div id="preload">
+<!--	  <div id="preload">
 		<img id = "preloadRed" src ="images/redFrames/redFrame1.png" width = "1" height = "1" alt= "redPreload" />
 		<img id = "preloadBlue" src = "images/blueFrames/blueFrame1.png" width = "1" height = "1" alt ="bluePreload" />
 		<img id = "preloadBlack" src="images/blackFrames/blackFrame1.png" width = "1" height = "1" alt= "blackPreload" />
 		<img id = "preloadGasGiant" src="images/gasGiantFrames/gasGiantFrame1.png" width = "1" height = "1" alt= "gasGiantPreload" />
 		<img id = "preloadGreen" src="images/greenFrames/greenFrame1.png" width = "1" height = "1" alt ="greenPreload" />
 		<img id = "preloadLava" src="images/lavaFrames/lavaFrame1.png" width = "1" height = "1" alt ="lavaPreload" />
-	 </div>
+	 </div>-->
 </div>
 <!-- SNIP SNIP SNIP  Quotes-->
 <style>
