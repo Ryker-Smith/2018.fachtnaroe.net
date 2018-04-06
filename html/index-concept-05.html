@@ -50,7 +50,7 @@
                     },
                 }
             }();
-            
+
     function startAllStartyUppyStuff () {
         t=setTimeout('draw_canvas_rear()', canvas_rear_speed);
         p=setTimeout(function(){rotatePlanet()}, 300);
@@ -126,7 +126,7 @@
 
 <script src="js/starfield.js"></script>
 <script type="text/javascript">
-  
+
 </script>
 
 <script type="text/javascript">
@@ -139,7 +139,7 @@
     canvas_rear.height=screen.height;
     var image=document.createElement("img");
     image.src="images/SpiralGalaxy_02.jpg";
-   
+
     function draw_canvas_rear() {
       ctx_rear.clearRect(0,0,canvas_rear.width,canvas_rear.height);
       ctx_rear.translate(canvas_rear.width/2, canvas_rear.height/2);
@@ -149,7 +149,7 @@
       ctx_rear.drawImage(image,  0, 0, image.width, image.height, -((image.width-screen.width)/2), -((image.width-screen.height)/2), image.width, image.height);
       setTimeout('draw_canvas_rear()', canvas_rear_speed);
     }
-    
+
     var canvas_middle=document.getElementById('canvas_middle');
     var ctx_middle=canvas_middle.getContext("2d");
     canvas_middle.width=screen.width;
@@ -157,15 +157,15 @@
     var stars=[];
     var starfield_middle = StarField('canvas_middle', canvas_middle.width, canvas_middle.height, 10, 1, "images/rockGrey.png");
     starfield_middle.draw('canvas_middle');
-    
+
     var canvas_front=document.getElementById('canvas_front');
     var ctx_front=canvas_front.getContext("2d");
     canvas_front.width=screen.width;
     canvas_front.height=screen.height;
     var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 2, 2, "images/rockRed.png");
     starfield_front.draw('canvas_front');
-    
-</script>	
+
+</script>
 
 <!-- animation div ends at base of document -->
 <!-- SNIP SNIP SNIP starfield-->
@@ -179,14 +179,14 @@
 	var gasGiantCounter=0;
 	var greenCounter=0;
 	var lavaCounter=0;
-	
+
 	var redPlanet=planetsMakeFileNames('images/redFrames', 'redFrame', 'png', 1, 35);
 	var bluePlanet=planetsMakeFileNames('images/blueFrames', 'blueFrame', 'png', 1, 43);
 	var blackPlanet=planetsMakeFileNames('images/blackFrames', 'blackFrame', 'png', 1, 47);
 	var gasGiant=planetsMakeFileNames('images/gasGiantFrames', 'gasGiantFrame', 'png', 1, 25);
 	var greenPlanet=planetsMakeFileNames('images/greenFrames', 'greenFrame', 'png', 1, 27);
 	var lavaPlanet=planetsMakeFileNames('images/lavaFrames', 'lavaFrame', 'png', 1, 35);
-	
+
 	function rotatePlanet(){
         var a = document.getElementById("redPlanetPic");
 		var b = document.getElementById("bluePlanetPic");
@@ -200,35 +200,35 @@
 // 		var j = document.getElementById("preloadGreen");
 		var k = document.getElementById("lavaPlanetPic");
 // 		var l = document.getElementById("preloadLava");
-		
+
 		if (redCounter > redPlanet.length-1){
 			redCounter = 0;
-		} 
+		}
 // 		else {
 // 			d.src = redPlanet[redCounter];
 // 		}
-		
+
 		if (blueCounter > bluePlanet.length-1){
 			blueCounter = 0;
 		}
 // 		else{
 // 			e.src = bluePlanet[blueCounter];
 // 		}
-		
+
 		if (blackCounter >= blackPlanet.length-1){
 			blackCounter = 0;
 		}
 // 		else{
 // 			f.src = blackPlanet[blackCounter];
 // 		}
-		
+
 		if (gasGiantCounter >= gasGiant.length-1){
 			gasGiantCounter = 0;
 		}
 // 		else{
 // 			h.src = gasGiant[gasGiantCounter];
 // 		}
-		
+
 		if (greenCounter >= greenPlanet.length-1){
 			greenCounter = 0;
 		}
@@ -253,11 +253,11 @@
 		gasGiantCounter++;
 		greenCounter++;
 		lavaCounter++;
-		p=setTimeout(function(){rotatePlanet()}, 300);		
+		p=setTimeout(function(){rotatePlanet()}, 300);
 	}
-// 	window.setInterval(rotatePlanet, 300);		
+// 	window.setInterval(rotatePlanet, 300);
 // 	function onloadFunc() {
-//       window.setInterval(rotatePlanet, 30);		
+//       window.setInterval(rotatePlanet, 30);
 // 	}
 </script>
 <!--end of planets animation code -->
@@ -269,9 +269,9 @@
   border-radius: 10px;
   background-image: url('images/digital_art_texture_146_by_mercurycode-d7gzb12.jpg');
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   height: 50px;
-  
+
 }
 #siteName{
   float: middle;
@@ -312,7 +312,7 @@
   float: middle;
   text-align: center;
   border: 1px solid white;
-  height: 75px; 
+  height: 75px;
   top: -10px;
   position: relative;
   font-family: Tahoma, Verdana, Sans Serif;
@@ -380,6 +380,35 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
           <ul class="dropdown-menu">
+
+            <Library onclick="getFileFromServer('sampleDiv', 'help/library', 'index.html')">Click me</button>
+            <div id="sampleDiv">
+            </div>
+
+            <script type="text/javascript">
+              function getFileFromServer(displayInDiv, path, filename) {
+                var targetFile = path + "/" + filename;
+                var targetDiv=document.getElementById(displayInDiv);
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                      targetDiv.style.width="800px";
+                      targetDiv.style.height="75%";
+                      targetDiv.innerHTML = this.responseText;
+                      targetDiv.style.background="#000";
+                  }
+                  else {
+                      targetDiv.innerHTML="Error: " + this.status;
+                  }
+                };
+
+                xhttp.open("GET", targetFile, true);
+                xhttp.send();
+
+              }
+            </script>
+
             <li><a href="#">Library</a></li>
             <li><a href="#">Links</a></li>
             <li><a href="http://fachtnaroe.net/webmail">Webmail</a></li>
@@ -397,7 +426,7 @@
   </div><!-- /.container-fluid -->
 </nav>
 <!-- planets -->
-<div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">   
+<div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">
 
 <<<<<<< HEAD
       <div id="republicanismPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="top: 350; left: 500; width: 100px;height: 100px; background-color: transparent;">
@@ -427,8 +456,8 @@
 	  <div id="archivePlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="top: 350; left: 750; width: 100px;height: 100px; background-color: transparent;">
 		<img id="lavaPlanetPic" src="images/lavaFrames/lavaFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
       </div>
-	  
-	  
+
+
 <!--	  <div id="preload">
 		<img id = "preloadRed" src ="images/redFrames/redFrame1.png" width = "1" height = "1" alt= "redPreload" />
 		<img id = "preloadBlue" src = "images/blueFrames/blueFrame1.png" width = "1" height = "1" alt ="bluePreload" />
