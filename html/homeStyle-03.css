@@ -1,0 +1,103 @@
+body 
+{
+  background: url('images/Galaxy.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+}
+
+#container 
+{
+	position:fixed;
+}
+
+#containerP
+{
+  position: fixed;
+}
+
+#gasP
+{	
+  position: absolute;
+      top: 60%;
+      left: 40%;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+}
+
+#blueP
+{
+  position: absolute;
+      top: 75%;
+      left: 50%;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+
+}
+#greenP
+{
+  position: absolute;
+      top: 40%;
+      left: 10%;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+
+}
+#redP
+{
+  position: absolute;
+      top: 20%;
+      left: 60%;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+
+}
+#blackP
+{
+  position: absolute;
+      top: 10%;
+      left: 30%;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+
+}
+#lavaP
+{
+  position: absolute;
+      top: 50%;
+      left: 70%;  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;     
+    user-select: none;
+
+ }   
+#preload { 
+    position: absolute;
+    left: -9999px;
+    top:  -9999px; 
+  }

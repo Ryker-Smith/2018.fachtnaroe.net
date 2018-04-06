@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="homeStyle-03.css">       
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  var mydragg = function(){
+                return {
+                    move : function(divid,xpos,ypos){
+                        divid.style.left = xpos + 'px';
+                        divid.style.top = ypos + 'px';
+                    },
+                    startMoving : function(divid,containerP,evt){
+                        evt = evt || window.event;
+                        var posX = evt.clientX,
+                            posY = evt.clientY,
+                        divTop = divid.style.top,
+                        divLeft = divid.style.left,
+                        eWi = parseInt(divid.style.width),
+                        eHe = parseInt(divid.style.height),
+                        cWi = parseInt(document.getElementById(containerP).style.width),
+                        cHe = parseInt(document.getElementById(containerP).style.height);
+                        document.getElementById(containerP).style.cursor='move';
+                        divTop = divTop.replace('px','');
+                        divLeft = divLeft.replace('px','');
+                        var diffX = posX - divLeft,
+                            diffY = posY - divTop;
+                        document.onmousemove = function(evt){
+                            evt = evt || window.event;
+                            var posX = evt.clientX,
+                                posY = evt.clientY,
+                                aX = posX - diffX,
+                                aY = posY - diffY;
+                                if (aX < 0) aX = 0;
+                                if (aY < 0) aY = 0;
+                                if (aX + eWi > cWi) aX = cWi - eWi;
+                                if (aY + eHe > cHe) aY = cHe -eHe;
+                            mydragg.move(divid,aX,aY);
+                        }
+                    },
+                    stopMoving : function(containerP){
+                        var a = document.createElement('script');
+                        document.getElementById(containerP).style.cursor='default';
+                        document.onmousemove = function(){}
+                    },
+                }
+            }();
+
+
+	var redCounter=0;
+	var blueCounter=0;
+	var blackCounter=0;
+	var gasGiantCounter=0;
+	var greenCounter=0;
+	var lavaCounter=0;
+
+	function planetsMakeFileNames (path, filename, filetype, min, max) {
+    var localArray=[];
+    for (var i = min; i<=max; i++ ) {
+        planetFilename = path + "/" + filename + i + "." + filetype;
+//         console.log(planetFilename);
+        localArray.push(planetFilename);
+    }
+    return localArray;
+}
+
+	var redPlanet=planetsMakeFileNames('images/redFrames', 'redFrame', 'png', 1, 35);
+	var bluePlanet=planetsMakeFileNames('images/blueFrames', 'blueFrame', 'png', 1, 43);
+	var blackPlanet=planetsMakeFileNames('images/blackFrames', 'blackFrame', 'png', 1, 47);
+	var gasGiantPlanet=planetsMakeFileNames('images/gasGiantFrames', 'gasGiantFrame', 'png', 1, 25);
+	var greenPlanet=planetsMakeFileNames('images/greenFrames', 'greenFrame', 'png', 1, 27);
+	var lavaPlanet=planetsMakeFileNames('images/lavaFrames', 'lavaFrame', 'png', 1, 35);
+	
+	function rotatePlanet(){
+        var a = document.getElementById("redPlanetPic");
+		var b = document.getElementById("bluePlanetPic");
+		var c = document.getElementById("blackPlanetPic");
+		var d = document.getElementById("gasGiantPlanetPic");
+		var e = document.getElementById("greenPlanetPic");
+		var f = document.getElementById("lavaPlanetPic");
+		var aa = document.getElementById("preloadredPlanet");
+		var bb = document.getElementById("preloadbluePlanet");
+		var cc = document.getElementById("preloadblackPlanet");
+		var dd = document.getElementById("preloadgasGiantPlanet");
+		var ee = document.getElementById("preloadgreenPlanet");
+		var ff = document.getElementById("preloadlavaPlanet");
+
+		if (redCounter > redPlanet.length-1){
+			redCounter = 0;
+		} 
+ //		else {
+ //			a.src = redPlanet[redCounter];
+ //			 }
+		
+		if (blueCounter > bluePlanet.length-1){
+			blueCounter = 0;
+		}
+// 		else{
+// 			e.src = bluePlanet[blueCounter];
+// 		}
+		
+		if (blackCounter >= blackPlanet.length-1){
+			blackCounter = 0;
+		}
+// 		else{
+// 			f.src = blackPlanet[blackCounter];
+// 		}
+		
+		if (gasGiantCounter >= gasGiantPlanet.length-1){
+			gasGiantCounter = 0;
+		}
+// 		else{
+// 			h.src = gasGiant[gasGiantCounter];
+// 		}
+		
+		if (greenCounter >= greenPlanet.length-1){
+			greenCounter = 0;
+		}
+// 		else{
+// 			j.src = greenPlanet[greenCounter];
+// 		}
+		if (lavaCounter >= lavaPlanet.length-1){
+			lavaCounter = 0;
+		}
+// 		else{
+// // 			l.src = lavaPlanet[lavaCounter];
+// 		}
+		a.src = redPlanet[redCounter];
+		b.src = bluePlanet[blueCounter];
+		c.src = blackPlanet[blackCounter];
+		d.src = gasGiantPlanet[gasGiantCounter];
+		e.src = greenPlanet[greenCounter];
+		f.src = lavaPlanet[lavaCounter];
+		redCounter++;
+		blueCounter++;
+		blackCounter++;
+		gasGiantCounter++;
+		greenCounter++;
+		lavaCounter++;
+		p=setTimeout(function(){rotatePlanet()}, 300);		
+	}
+</script>
+</head>
+<body  ondrop="drop(event)" >
+<style> 
+				
+<style>
+#planetPic {
+  width: 100%;
+  height: 100%;
+}
+#video {
+  width: 100%;
+
+}
+</style>
+<video autoplay loop id="video">
+  <source src="videos/videoplayback-06.mp4" type="video/mp4">
+</video>
+<!-- animation div ends at base of document -->
+<!-- SNIP SNIP -->
+
+<style>
+#myNavBar {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+  color: white;
+  border-radius: 10px;
+  background-image: url('images/digital_art_texture_146_by_mercurycode-d7gzb12.jpg');
+  background-attachment: fixed;
+  background-position: center; 
+  height: 50px;
+  
+}
+#siteName{
+  float: middle;
+  position: relative;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 0;
+  display: inherit;
+  font-family: inherit;
+  background-color: inherit;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: white;
+  text-align: inherit;
+  position: relative;
+}
+#motto{
+  float: inherit;
+  font-size: 10px;
+  font-family: inherit;
+  display: inherit;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  color: inherit;
+  text-align: inherit;
+  position: relative;
+}
+#siteIdentity {
+/*   background-color: black; */
+  color: white;
+  float: middle;
+  text-align: center;
+  border: 1px solid white;
+  height: 75px; 
+  top: -10px;
+  position: relative;
+  font-family: Tahoma, Verdana, Sans Serif;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  box-shadow:
+     2px 2px 0 #111111,
+     2px 2px 0 #111111,
+    2px 2px 0 #111111,
+     2px 2px 0 #111111;
+  background-image: url('images/texture_87_2048x3289_by_frostbo-d4gbmvq.png.jpg');
+/*   background-attachment: fixed; */
+/*   background-position: left;  */
+}
+</style>
+
+  
+
+<nav id="myNavBar" class="navbar navbar-inverse navbar-fixed-top ">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div id="siteIdentity">
+<!--         <a class="navbar-brand" href="#"> -->
+        <span id="siteName">fachtnaroe.net<span id="motto">&mdash; because if it was easy, everyone would do it</span></span>
+<!--         </a> -->
+      </div>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Subjects</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advocacy <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Example</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equality <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Education Equality</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Republicanism <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Example</a></li>
+          </ul>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Library</a></li>
+            <li><a href="resources/help/index.html" onclick='document.getElementByName("testFrame").style.display ="block";'>Help</a></li>
+            <li><a href="#">Software</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="http://fachtnaroe.net/webmail">Webmail</a></li>
+            <li><a href="https://news.google.com/news/headlines/section/topic/TECHNOLOGY?ned=en_ie&gl=IE&hl=en-IE">Technology News</a></li>
+            <li><a href="https://www.facebook.com/Technical-Shtuff-You-Should-Know-351544945268074" onclick='document.getElementByName("testFrame").style.display = "block";'>Facebook - Technical Shtuff You Sould Know</a></li>
+          </ul>
+        <li><a href="#">Archive</a></li>
+      </ul>
+      <form class="navbar-form navbar-right">
+        <button class="btn btn-danger" onClick="window.location.reload()"><small>Reset</small></button>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.containerP-fluid -->
+</nav>
+<div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">   
+<div id='containerP' style="width: 1050px;height: 400px;top:200px;left:200px;">  
+</div>
+
+<iframe name="testFrame" scr="#" style='display: none;' position="center" height="80%" width="80%" border="2" ></iframe> 
+
+</div>
+      <div id="redP" onmousedown='mydragg.startMoving(this,"containerP",event);' onmouseup='mydragg.stopMoving("containerP");' background-color: transparent;">
+    <img id="redPlanetPic" src="images/redFrames/redFrame1.png" style="width:100%; height:100%;">
+      </div>
+</div>
+      <div id="greenP" onmousedown='mydragg.startMoving(this,"containerP",event);' onmouseup='mydragg.stopMoving("containerP");' background-color: transparent;">
+    <img id="greenPlanetPic" src="images/greenFrames/greenFrame1.png" style="width:45%; height:45%;">
+      </div>
+</div>
+ 	  <div id="gasP" onmousedown='mydragg.startMoving(this,"containerP",event);' onmouseup='mydragg.stopMoving("containerP");' background-color: transparent;">
+    <img id="gasPlanetPic" src="images/gasGiantFrames/gasGiantFrame1.png" style="width:55%; height:55%;">
+      </div>
+</div>
+  <div id="blueP" onmousedown='mydragg.startMoving(this,"containerP",event);' onmouseup='mydragg.stopMoving("containerP");' background-color: transparent;">
+    <img id="bluePlanetPic" src="images/blueFrames/blueFrame1.png" style="width:35%; height:35%;">
+      </div>
+</div>
+  <div id="blackP" onmousedown='mydragg.startMoving(this,"containerP",event);' onmouseup='mydragg.stopMoving("containerP");'background-color: transparent;">
+    <img id="blackPlanetPic" src="images/blackFrames/blackFrame1.png" style="width: 50%; height:50%;">
+</div>
+    <div id="lavaP" onmousedown='mydragg.startMoving(this,"containerP",event);' onmouseup='mydragg.stopMoving("containerP");' background-color: transparent;">
+    <img id="lavaPlanetPic" src="images/lavaFrames/lavaFrame1.png" style="width:55%; height:55%;">
+</div>
+	<div id="preload">
+		<img id = "preloadred" src = redFrame1.png alt "redPreload" />
+		<img id = "preloadblue" src = blueFrame1.png alt "bluePreload" />
+		<img id = "preloadblack" src = blackFrame1.png alt "blackPreload" />
+		<img id = "preloadgreen" src = greenFrame1.png alt "greenPreload" />
+		<img id = "preloadgas" src = gasGiantFrame1.png alt "gasPreload" />
+		<img id = "preloadlava" src = lavaFrame1.png alt "lavaPreload" />
+	 </div>
+</div> <!-- close of animation div -->
+</body>
+</html>
