@@ -29,7 +29,8 @@ function randomQuote (displayDiv, quoteNumber, prefix) {
         "It is a fallacy to believe that a Republic of any kind can be won through the shackled Free State. You can't make a silk purse out of a sow's ear.:::Liam Mellows",
         "Ireland unfree shall never be at peace:::Pádraig Pearse",
         "Dearly beloved, we are gathered here today to get through this thing called life.:::Prince",
-        "Get up, stand up, stand up for your rights. Get up, stand up, don't give up the fight.:::Bob Marley"
+        "Get up, stand up, stand up for your rights. Get up, stand up, don't give up the fight.:::Bob Marley",
+        "Injustice anywhere is a threat to justice everywhere.:::Martin Luther King, Jr."
 
     ];
     // randomly choose a quote, or use quoteNumber provided (if in range)
