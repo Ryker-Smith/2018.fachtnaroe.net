@@ -288,12 +288,12 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Library</a></li>
-            <li><a href="resources/help/index.html" onclick='document.getElementByName("testFrame").style.display ="block";'>Help</a></li>
+            <li><a href="#" onclick='document.getElementById("helpFrame").style.display ="block";'>Help</a></li>
             <li><a href="#">Software</a></li>
             <li><a href="#">Links</a></li>
             <li><a href="http://fachtnaroe.net/webmail">Webmail</a></li>
             <li><a href="https://news.google.com/news/headlines/section/topic/TECHNOLOGY?ned=en_ie&gl=IE&hl=en-IE">Technology News</a></li>
-            <li><a href="https://www.facebook.com/Technical-Shtuff-You-Should-Know-351544945268074" onclick='document.getElementByName("testFrame").style.display = "block";'>Facebook - Technical Shtuff You Sould Know</a></li>
+            <li><a href="#" onclick='document.getElementById("TechShtuffFrame").style.display = "block";'>Facebook - Technical Shtuff You Sould Know</a></li>
           </ul>
         <li><a href="#">Archive</a></li>
       </ul>
@@ -311,9 +311,11 @@
 <div id='containerP' style="width: 1050px;height: 400px;top:200px;left:200px;">  
 </div>
 
-<iframe name="testFrame" scr="#" style='display: none;' position="center" height="80%" width="80%" border="2" ></iframe> 
 
-</div>
+<iframe src="https://www.facebook.com/Technical-Shtuff-You-Should-Know-351544945268074" id="TechShtuffFrame" style='display: none;' border="2" height="90%" width="90%" align="center" ></iframe>
+<iframe src="resources/help/index.html" id="helpFrame" style='display: none;' height="90%" width="90%" align="center" ></iframe>
+
+
       <div id="redP" onmousedown='mydragg.startMoving(this,"containerP",event);' onmouseup='mydragg.stopMoving("containerP");' background-color: transparent;">
     <img id="redPlanetPic" src="images/redFrames/redFrame1.png" style="width:100%; height:100%;">
       </div>
