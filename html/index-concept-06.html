@@ -55,6 +55,28 @@
         t=setTimeout('draw_canvas_rear()', canvas_rear_speed);
         p=setTimeout(function(){rotatePlanet()}, 300);
     }
+    
+    function getFileFromServer(displayInDiv, path, filename) {
+      var targetFile = path + "/" + filename;
+      var targetDiv=document.getElementById(displayInDiv);
+
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			targetDiv.style.width="800px";
+			targetDiv.style.height="75%";
+			targetDiv.innerHTML = this.responseText;
+			targetDiv.style.background="#000";
+		}
+		else {
+			targetDiv.innerHTML="Error: " + this.status;
+		}
+      };
+
+      xhttp.open("GET", targetFile, true);
+      xhttp.send();
+
+      }
   </script>
 </head>
 <body  ondragover="drag_over(event)" ondrop="drop(event)" onload="startAllStartyUppyStuff();">
@@ -191,56 +213,34 @@
         var a = document.getElementById("redPlanetPic");
 		var b = document.getElementById("bluePlanetPic");
 		var c = document.getElementById("blackPlanetPic");
-// 		var d = document.getElementById("preloadRed");
-// 		var e = document.getElementById("preloadBlue");
-// 		var f = document.getElementById("preloadBlack");
 		var g = document.getElementById("gasGiantPlanetPic");
-// 		var h = document.getElementById("preloadGasGiant");
 		var i = document.getElementById("greenPlanetPic");
-// 		var j = document.getElementById("preloadGreen");
 		var k = document.getElementById("lavaPlanetPic");
-// 		var l = document.getElementById("preloadLava");
 		
 		if (redCounter > redPlanet.length-1){
 			redCounter = 0;
 		} 
-// 		else {
-// 			d.src = redPlanet[redCounter];
-// 		}
 		
 		if (blueCounter > bluePlanet.length-1){
 			blueCounter = 0;
 		}
-// 		else{
-// 			e.src = bluePlanet[blueCounter];
-// 		}
 		
 		if (blackCounter >= blackPlanet.length-1){
 			blackCounter = 0;
 		}
-// 		else{
-// 			f.src = blackPlanet[blackCounter];
-// 		}
 		
 		if (gasGiantCounter >= gasGiant.length-1){
 			gasGiantCounter = 0;
 		}
-// 		else{
-// 			h.src = gasGiant[gasGiantCounter];
-// 		}
 		
 		if (greenCounter >= greenPlanet.length-1){
 			greenCounter = 0;
 		}
-// 		else{
-// 			j.src = greenPlanet[greenCounter];
-// 		}
+
 		if (lavaCounter >= lavaPlanet.length-1){
 			lavaCounter = 0;
 		}
-// 		else{
-// // 			l.src = lavaPlanet[lavaCounter];
-// 		}
+
 		a.src = redPlanet[redCounter];
 		b.src = bluePlanet[blueCounter];
 		c.src = blackPlanet[blackCounter];
@@ -255,10 +255,6 @@
 		lavaCounter++;
 		p=setTimeout(function(){rotatePlanet()}, 300);		
 	}
-// 	window.setInterval(rotatePlanet, 300);		
-// 	function onloadFunc() {
-//       window.setInterval(rotatePlanet, 30);		
-// 	}
 </script>
 <!--end of planets animation code -->
 <style>
@@ -362,27 +358,31 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Advocacy <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Example</a></li>
+            <li><a href="#">Equality</a></li>
+            <li><a href="#">Republicanism</a></li>
           </ul>
 
-        <li class="dropdown">
+<!--        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Equality <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Education Equality</a></li>
-          </ul>
+          </ul>-->
 
-        <li class="dropdown">
+<!--        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Republicanism <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Example</a></li>
-          </ul>
+          </ul>-->
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Library</a></li>
+            <li><a href="#" onclick="getFileFromServer('republicanismPlanet', 'help/library', 'index.html')">Library</a></li>
+            <li><a href="#" onclick="getFileFromServer('equalityPlanet', 'resources/help','index.html')">Help</a></li>
             <li><a href="#">Links</a></li>
-            <li><a href="http://fachtnaroe.net/webmail">Webmail</a></li>
+            <li><a href="https://news.google.com/news/headlines/section/topic/TECHNOLOGY?ned=en_ie&gl=IE&hl=en-IE">Technology News</a></li>
+            <li><a href="https://www.facebook.com/Technical-Shtuff-You-Should-Know-351544945268074">Facebook Page</a></li>
+            <li><a href="https://fachtnaroe.net/webmail" target="_webmail">Webmail</a></li>
           </ul>
         <li><a href="#">Archive</a></li>
       </ul>
@@ -398,7 +398,10 @@
 </nav>
 <!-- planets -->
 <div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">   
-
+<script src="js/newDraggable.js">
+<script type="text/javascript">
+newDraggable ("republicanismPlanet", "redPlanetPic", 100, 100, '<img id="redPlanetPic" src="images/redFrames/redFrame1.png" >');
+</script>
       <div id="republicanismPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
 		<img id="redPlanetPic" src="images/redFrames/redFrame1.png" >
 
