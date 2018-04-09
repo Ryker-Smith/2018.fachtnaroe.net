@@ -50,24 +50,64 @@
                     },
                 }
             }();
-	var redSpriteSheet = new image(), blueSpriteSheet = new image(), blackSpriteSheet = new image(), gasGiantSpriteSheet = new image(), greenSpriteSheet = new image(), lavaSpriteSheet = new image();
+	var redSpriteSheet = new image(), blueSpriteSheet = new image(), blackSpriteSheet = new image(), gasGiantSpriteSheet = new image(), 
+		greenSpriteSheet = new image(), lavaSpriteSheet = new image();
+	var red = document.getElementById("redPlanet"),blue = document.getElementById("bluePlanet"),black = document.getElementById("blackPlanet"),
+		gasGiant = document.getElementById("gasGiantPlanet"),green = document.getElementById("greenPlanet"),lava = document.getElementById("lavaPlanet");
+	var redSprite = sprite({context: canvas.getContext("2d"),width: 5250,height: 150,image: redSpriteSheet,numberOfFrames: 35,ticksPerFrame: 200}),
+		blueSprite = sprite({context: canvas.getContext("2d"),width: 6450,height: 150,image: blueSpriteSheet,numberOfFrames: 43, ticksPerFrame: 200}),
+		blackSprite = sprite({context: canvas.getContext("2d"),width: 7050,height: 150,image: blackSpriteSheet,numberOfFrames: 47,ticksPerFrame: 200}),
+		gasGiantSprite = sprite({context: canvas.getContext("2d"),width: 3750,height: 150,image: gasGiantSpriteSheet,numberOfFrames: 25,ticksPerFrame: 200}),
+		greenSprite = sprite({context: canvas.getContext("2d"),width: 4050,height: 150,image: greenSpriteSheet,numberOfFrames: 27,ticksPerFrame: 200}),
+		lavaSprite = sprite({context: canvas.getContext("2d"),width: 5250,height: 150,image: lavaSpriteSheet,numberOfFrames: 35, ticksPerFrame: 200});
+	red.height=100;
+	red.width=100;
+	blue.height=100;
+	blue.width=100;
+	green.height=100;
+	green.width=100;
+	black.height=100;
+	black.width=100;
+	lava.height=100;
+	lava.width=100;
+	gasGiant.height=100;
+	gasGiant.width=100;
+	redSpriteSheet.addEventListener("load", animationLoop);
+	blueSpriteSheet.addEventListener("load", animationLoop);
+	blackSpriteSheet.addEventListener("load", animationLoop);
+	gasGiantSpriteSheet.addEventListener("load", animationLoop);
+	lavaSpriteSheet.addEventListener("load", animationLoop);
+	greenSpriteSheet.addEventListener("load", animationLoop);
 	redSpriteSheet.src = images/redFrames/redSpriteSheet.png;
 	blueSpriteShhet.src = images/blueFrames/blueSpriteSheet.png;
 	blackSpriteSheet.src = images/blackFrames/blackSpriteSheet.png;
 	gasGiantSprtieSheet.src = images/gasGiantFrames/gasGiantSpriteSheet.png;
 	greenSpriteSheet.src = images/greenFrames/greenSpriteSheet.png;
 	lavaSpriteSheet.src = images/lavaFrames/lavaSpriteSheet.png;
+	function animationLoop () {
+		window.requestAnimationFrame(animationLoop);
+		red.render();
+		blue.render();
+		black.render();
+		gasGiant.render();
+		green.render();
+		lava.render();
+		red.update();
+		blue.udate();
+		black.update();
+		gasGiant.update();
+		green.update();
+		lava.update();
+	}
 	function sprite (options) {		
-		var that = {};			
+		var that = {},frameIndex = 0,tickCount = 0,ticksPerFrame = options.ticksPerFrame || 0,numberOfFrames = options.numberOfFrames || 1;;
 		that.context = options.context;
 		that.width = options.width;
 		that.height = options.height;
 		that.image = options.image;
-		return that;
 		that.render = function () {
 			that.context.drawImage(that.image,frameIndex * that.width / numberOfFrames,0,that.width / numberOfFrames,that.height,0,0,that.width / numberOfFrames,that.height);
 		};
-		var that = {},frameIndex = 0,tickCount = 0,ticksPerFrame = options.ticksPerFrame || 0,numberOfFrames = options.numberOfFrames || 1;;
 		that.loop = options.loop;
 		that.update = function () {
 			tickCount += 1;
@@ -81,15 +121,34 @@
 				}
 			}
 		}; 
+		that.render = function(){
+			that.context.clearRect(0, 0, that.width, that.height);
+			that.context.drawImage(that.image,frameIndex * that.width / numberOfFrames,0,that.width / numberOfFrames,that.height,0,0,that.width / numberOfFrames,that.height);
+		};
+		return that;
 	}
-	var red = document.getElementById("redPlanet"),blue = document.getElementById("bluePlanet"),black = document.getElementById("blackPlanet"),gasGiant = document.getElementById("gasGiantPlanet"),green = document.getElementById("greenPlanet"),lava = document.getElementById("lavaPlanet");
-	var redSprite = sprite({context: canvas.getContext("2d"),width: 100,height: 100,image: redSpriteSheet}),blueSprite = sprite({context: canvas.getContext("2d"),width: 100,height: 100,image: blueSpriteSheet}),blackSprite = sprite({context: canvas.getContext("2d"),width: 100,height: 100,image: blackSpriteSheet}),gasGiantSprite = sprite({context: canvas.getContext("2d"),width: 100,height: 100,image: gasGiantSpriteSheet}),greenSprite = sprite({context: canvas.getContext("2d"),width: 100,height: 100,image: greenSpriteSheet}),lavaSprite = sprite({context: canvas.getContext("2d"),width: 100,height: 100,image: lavaSpriteSheet});
-	red render();
-	blue render();
-	black render();
-	gasGiant render();
-	green render();
-	lava render();
+	var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+                                   || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+ 
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+ 
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
   </script>
 </head>
 <body  ondrop="drop(event)" >
