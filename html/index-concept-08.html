@@ -32,11 +32,12 @@
   width: 100%;
   height: 100%;
   z-index: -101;
-/*   background: url(images/SpiralGalaxy_02.jpg) no-repeat center center fixed; */
+  background: url("images/SpiralGalaxy_02.jpg" ) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: black;
 }
 #canvas_middle {
   position: absolute;
@@ -193,11 +194,11 @@
 }
 </style>
 
-  <script src="js/planetsBits.js"></script>
-  <script src="js/starfield.js"></script>
-  <script src="js/randomQuote.js"></script>
-  <script src="js/messageInBox.js"></script>
-  <script src="js/newDraggable.js"></script>
+<script src="js/planetsBits.js"></script>
+<script src="js/starfield.js"></script>
+<script src="js/randomQuote.js"></script>
+<script src="js/messageInBox.js"></script>
+<script src="js/newDraggable.js"></script>
   
 <script type="text/javascript">
     var mydragg = function(){
@@ -244,7 +245,10 @@
             
     function startAllStartyUppyStuff () {
         t=setTimeout('draw_canvas_rear()', canvas_rear_speed);
-        p=setTimeout(function(){rotatePlanet()}, 300);
+        p=setTimeout(
+            function(){
+              rotatePlanet()
+            }, 300);
     }
     
     function getFileFromServer(displayInDiv, path, filename) {
@@ -267,9 +271,8 @@
       xhttp.open("GET", targetFile, true);
       xhttp.send();
 
-      }
+    }
       
-
 	var redCounter=0;
 	var blueCounter=0;
 	var blackCounter=0;
@@ -285,12 +288,12 @@
 	var lavaPlanet=planetsMakeFileNames('images/lavaFrames', 'lavaFrame', 'png', 1, 35);
 	
   function rotatePlanet(){
-      var a = document.getElementById("redPlanetPic");
-	var b = document.getElementById("bluePlanetPic");
-	var c = document.getElementById("blackPlanetPic");
-	var g = document.getElementById("gasGiantPlanetPic");
-	var i = document.getElementById("greenPlanetPic");
-	var k = document.getElementById("lavaPlanetPic");
+    var a = document.getElementById("republicanismPlanet_red_inner");
+	var b = document.getElementById("equalityPlanet_blue_inner");
+	var c = document.getElementById("advocacyPlanet_black_inner");
+	var g = document.getElementById("educationPlanet_gas_inner");
+	var i = document.getElementById("resourcesPlanet_green");
+	var k = document.getElementById("archivePlanet_lava");
 		
 	if (redCounter > redPlanet.length-1){
 		redCounter = 0;
@@ -328,9 +331,10 @@
 	gasGiantCounter++;
 	greenCounter++;
 	lavaCounter++;
-	p=setTimeout(function(){rotatePlanet()}, 300);		
+	p=setTimeout(function(){rotatePlanet()}, 300);
   }
-  
+
+
   </script>
 </head>
 <body  ondragover="drag_over(event)" ondrop="drop(event)" onload="startAllStartyUppyStuff();">
@@ -400,39 +404,14 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<!-- planets -->
+
+
+<!-- thge div to contain the planets -->
 <div id='container' style="width: 1250px;height: 600px;top:50px;left:50px;">   
-
-<script type="text/javascript">
-newDraggable ("republicanismPlanet", "redPlanetPic", 100, 100, '<img id="redPlanetPic" src="images/redFrames/redFrame1.png" >');
-</script>
-      <div id="republicanismPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
-		<img id="redPlanetPic" src="images/redFrames/redFrame1.png" >
-
-      </div>
-	  <div id="equalityPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="top: 200; left: 500; width: 100px;height: 100px; background-color: transparent;">
-		<img id="bluePlanetPic" src="images/blueFrames/blueFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
-      </div>
-      
-	  <div id="advocacyPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="top: 350; left: 250; width: 100px;height: 100px; background-color: transparent;">
-		<img id="blackPlanetPic" src="images/blackFrames/blackFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
-      </div>
-      
-	  <div id="educationPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;">
-		<img id="gasGiantPlanetPic" src="images/gasGiantFrames/gasGiantFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
-
-      </div>
-      
-	  <div id="resourcesPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="top: 200; left: 750; width: 100px;height: 100px; background-color: transparent;">
-		<img id="greenPlanetPic" src="images/greenFrames/greenFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
-      </div>
-      
-	  <div id="archivePlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="top: 350; left: 750; width: 100px;height: 100px; background-color: transparent;">
-		<img id="lavaPlanetPic" src="images/lavaFrames/lavaFrame1.png" style = 'height: 100%; width: 100%; object-fit: contain'/>
-      </div>
-	  
+<!--       <div id="republicanismPlanet" onmousedown='mydragg.startMoving(this,"container",event);' onmouseup='mydragg.stopMoving("container");' style="width: 100px;height: 100px; background-color: transparent;"> -->
+<!-- 		<img id="redPlanetPic" src="images/redFrames/redFrame1.png" > -->
+<!--       </div> -->
 </div>
-
 <!-- the div to serve as a container; style this with css -->
 <div id="quoteBox"></div>
 <!-- the div to serve as a container; style this with css -->
@@ -441,7 +420,10 @@ newDraggable ("republicanismPlanet", "redPlanetPic", 100, 100, '<img id="redPlan
 </div> <!-- close of animation div -->
 </body>
 
-<script type="text/javascript">    
+<script type="text/javascript">
+
+    // JS elements here at end require knowledge of a pre-exisitng div 
+    
 	var credits = "Site is being re-deleloped by Stevey Cullen, Noelle Kennedy, Craig Roe, Dara Ryan, of Templemore College of Further Education.";
 	$(msg1).replaceWith(messageInBox('msg1', credits));
 	// invoke the div replacement
@@ -484,5 +466,12 @@ newDraggable ("republicanismPlanet", "redPlanetPic", 100, 100, '<img id="redPlan
     var starfield_front = StarField('canvas_front', canvas_front.width, canvas_front.height, 2, 2, "images/rockRed.png");
     starfield_front.draw('canvas_front'); 
     
+    newDraggable ("container", "republicanismPlanet_red", 100, 100, '');
+    newDraggable ("container", "equalityPlanet_blue", 100, 100, '');
+    newDraggable ("container", "advocacyPlanet_black", 100, 100, '');
+    newDraggable ("container", "educationPlanet_gas", 100, 100, '');
+    newDraggable ("container", "resourcesPlanet_green", 100, 100, '');
+    newDraggable ("container", "archivePlanet_lava", 100, 100, '');
+
 </script>
 </html>
