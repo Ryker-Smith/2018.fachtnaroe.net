@@ -14,7 +14,7 @@ body
 {
 	position:fixed;
 }
-#educationPlanet
+#educationPlanet_gas
 {	position: absolute;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -25,7 +25,7 @@ body
 	left: 250px;
 	top: 200px;
 }
-#advocacyPlanet
+#advocacyPlanet_black
 {
   position: absolute;
     -webkit-user-select: none;
@@ -37,7 +37,7 @@ body
 	left: 250px;
 	top: 400px;
 }
-#equalityPlanet
+#equalityPlanet_blue
 {
   position: absolute;
     -webkit-user-select: none;
@@ -49,7 +49,7 @@ body
 	left: 500px;
 	top: 200px;
 }
-#republicanismPlanet
+#republicanismPlanet_red
 {
   position: absolute;
     -webkit-user-select: none;
@@ -61,7 +61,7 @@ body
 	left: 500px;
 	top: 400px;
 }
-#resourcesPlanet
+#resourcesPlanet_green
 {
   position: absolute;  
     -webkit-user-select: none;
@@ -73,7 +73,7 @@ body
 	left: 750px;
 	top: 200px;
 }
-#archivePlanet
+#archivePlanet_lava
 {
   position: absolute;  
     -webkit-user-select: none;
@@ -85,11 +85,11 @@ body
 	left: 750px;
 	top: 400px;
 }
-#preload { 
+/*#preload { 
 		position: absolute;
 		left: -9999px;
 		top:  -9999px; }
-
+*/
 .navbar
 {
   margin: 10px 10px 10px 10px;
