@@ -30,7 +30,8 @@ function randomQuote (displayDiv, quoteNumber, prefix) {
         "Ireland unfree shall never be at peace:::Pádraig Pearse",
         "Dearly beloved, we are gathered here today to get through this thing called life.:::Prince",
         "Get up, stand up, stand up for your rights. Get up, stand up, don't give up the fight.:::Bob Marley",
-        "Injustice anywhere is a threat to justice everywhere.:::Martin Luther King, Jr."
+        "Injustice anywhere is a threat to justice everywhere.:::Martin Luther King, Jr.",
+        "Remember to look up at the stars and not down at your feet.:::Stephen Hawking"
 
     ];
     // randomly choose a quote, or use quoteNumber provided (if in range)
